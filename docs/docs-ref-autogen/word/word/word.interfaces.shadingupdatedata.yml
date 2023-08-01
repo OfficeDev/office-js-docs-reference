@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShadingUpdateData
+uid: 'word!Word.Interfaces.ShadingUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ShadingUpdateData
+summary: 'An interface for updating data on the Shading object, for use in `shading.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backgroundPatternColor
+    uid: 'word!Word.Interfaces.ShadingUpdateData#backgroundPatternColor:member'
+    package: word!
+    fullName: backgroundPatternColor
+    summary: >-
+      Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'backgroundPatternColor?: string;'
+      return:
+        type: string
+  - name: foregroundPatternColor
+    uid: 'word!Word.Interfaces.ShadingUpdateData#foregroundPatternColor:member'
+    package: word!
+    fullName: foregroundPatternColor
+    summary: >-
+      Specifies the color for the foreground of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'foregroundPatternColor?: string;'
+      return:
+        type: string
+  - name: texture
+    uid: 'word!Word.Interfaces.ShadingUpdateData#texture:member'
+    package: word!
+    fullName: texture
+    summary: >-
+      Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see [Add,
+      change, or delete the background color in
+      Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        texture?: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" |
+        "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" |
+        "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" |
+        "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" |
+        "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" |
+        "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" |
+        "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" |
+        "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" |
+        "TextureSolid";
+      return:
+        type: >-
+          <xref uid="word!Word.ShadingTextureType:enum" /> | "Texture10Percent" | "Texture12Pt5Percent" |
+          "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" |
+          "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" |
+          "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" |
+          "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" |
+          "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" |
+          "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" |
+          "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" |
+          "TextureLightVertical" | "TextureNone" | "TextureSolid"

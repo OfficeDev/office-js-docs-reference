@@ -6557,6 +6557,14 @@ export declare namespace Word {
          */
         readonly paragraphFormat: Word.ParagraphFormat;
         /**
+         * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shading: Word.Shading;
+        /**
          * Gets the name of an existing style to use as the base formatting of another style.
          *
          * @remarks
@@ -6690,6 +6698,83 @@ export declare namespace Word {
         * Whereas the original Word.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.StyleData;
+    }
+    /**
+     * Represents the shading object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Shading extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        backgroundPatternColor: string;
+        /**
+         * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        foregroundPatternColor: string;
+        /**
+         * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShadingUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Shading): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShadingLoadOptions): Word.Shading;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Shading;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Shading;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Shading;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Shading;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.Shading object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ShadingData;
     }
     /**
      * Represents a table in a Word document.
@@ -11448,6 +11533,274 @@ export declare namespace Word {
          */
         legalLZ = "LegalLZ",
     }
+    /**
+     * Represents the shading texture. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShadingTextureType {
+        /**
+         * Represents 10 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture10Percent = "Texture10Percent",
+        /**
+         * Represents 12.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture12Pt5Percent = "Texture12Pt5Percent",
+        /**
+         * Represents 15 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture15Percent = "Texture15Percent",
+        /**
+         * Represents 20 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture20Percent = "Texture20Percent",
+        /**
+         * Represents 25 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture25Percent = "Texture25Percent",
+        /**
+         * Represents 30 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture30Percent = "Texture30Percent",
+        /**
+         * Represents 35 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture35Percent = "Texture35Percent",
+        /**
+         * Represents 37.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture37Pt5Percent = "Texture37Pt5Percent",
+        /**
+         * Represents 40 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture40Percent = "Texture40Percent",
+        /**
+         * Represents 45 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture45Percent = "Texture45Percent",
+        /**
+         * Represents 50 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture50Percent = "Texture50Percent",
+        /**
+         * Represents 55 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture55Percent = "Texture55Percent",
+        /**
+         * Represents 5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture5Percent = "Texture5Percent",
+        /**
+         * Represents 60 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture60Percent = "Texture60Percent",
+        /**
+         * Represents 62.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture62Pt5Percent = "Texture62Pt5Percent",
+        /**
+         * Represents 65 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture65Percent = "Texture65Percent",
+        /**
+         * Represents 70 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture70Percent = "Texture70Percent",
+        /**
+         * Represents 75 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture75Percent = "Texture75Percent",
+        /**
+         * Represents 80 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture80Percent = "Texture80Percent",
+        /**
+         * Represents 85 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture85Percent = "Texture85Percent",
+        /**
+         * Represents 87.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture87Pt5Percent = "Texture87Pt5Percent",
+        /**
+         * Represents 90 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture90Percent = "Texture90Percent",
+        /**
+         * Represents 95 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        texture95Percent = "Texture95Percent",
+        /**
+         * Represents dark diagonal-down texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkDiagonalDown = "TextureDarkDiagonalDown",
+        /**
+         * Represents dark diagonal-up texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkDiagonalUp = "TextureDarkDiagonalUp",
+        /**
+         * Represents dark horizontal-cross texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkGrid = "TextureDarkGrid",
+        /**
+         * Represents dark horizontal texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkHorizontal = "TextureDarkHorizontal",
+        /**
+         * Represents dark diagonal-cross texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkTrellis = "TextureDarkTrellis",
+        /**
+         * Represents dark vertical texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureDarkVertical = "TextureDarkVertical",
+        /**
+         * Represents light diagonal-down texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightDiagonalDown = "TextureLightDiagonalDown",
+        /**
+         * Represents light diagonal-up texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightDiagonalUp = "TextureLightDiagonalUp",
+        /**
+         * Represents light horizontal-cross texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightGrid = "TextureLightGrid",
+        /**
+         * Represents light horizontal texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightHorizontal = "TextureLightHorizontal",
+        /**
+         * Represents light diagonal-cross texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightTrellis = "TextureLightTrellis",
+        /**
+         * Represents light vertical texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureLightVertical = "TextureLightVertical",
+        /**
+         * Represents that there's no texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureNone = "TextureNone",
+        /**
+         * Represents solid texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textureSolid = "TextureSolid",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -12472,6 +12825,14 @@ export declare namespace Word {
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;
             /**
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shading?: Word.Interfaces.ShadingUpdateData;
+            /**
              * Specifies the priority.
              *
              * @remarks
@@ -12499,6 +12860,33 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
+        }
+        /** An interface for updating data on the Shading object, for use in `shading.set({ ... })`. */
+        export interface ShadingUpdateData {
+            /**
+             * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundPatternColor?: string;
+            /**
+             * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundPatternColor?: string;
+            /**
+             * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            texture?: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -14263,6 +14651,14 @@ export declare namespace Word {
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatData;
             /**
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shading?: Word.Interfaces.ShadingData;
+            /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
@@ -14347,6 +14743,33 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
+        }
+        /** An interface describing the data returned by calling `shading.toJSON()`. */
+        export interface ShadingData {
+            /**
+             * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundPatternColor?: string;
+            /**
+             * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundPatternColor?: string;
+            /**
+             * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            texture?: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -17595,6 +18018,14 @@ export declare namespace Word {
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
+            * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shading?: Word.Interfaces.ShadingLoadOptions;
+            /**
              * For EACH ITEM in the collection: Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
@@ -17714,6 +18145,14 @@ export declare namespace Word {
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shading?: Word.Interfaces.ShadingLoadOptions;
+            /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
@@ -17798,6 +18237,43 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
+        }
+        /**
+         * Represents the shading object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShadingLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            backgroundPatternColor?: boolean;
+            /**
+             * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foregroundPatternColor?: boolean;
+            /**
+             * Specifies the shading texture of the object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            texture?: boolean;
         }
         /**
          * Represents a table in a Word document.

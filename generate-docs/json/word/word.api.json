@@ -53409,6 +53409,337 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.ShadingData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shading.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShadingData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShadingData",
+                  "preserveMemberOrder": false,
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingData#backgroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "backgroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "backgroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingData#foregroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "foregroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "foregroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingData#texture:member",
+                      "docComment": "/**\n * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "texture?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.ShadingTextureType",
+                          "canonicalReference": "word!Word.ShadingTextureType:enum"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": " | \"Texture10Percent\" | \"Texture12Pt5Percent\" | \"Texture15Percent\" | \"Texture20Percent\" | \"Texture25Percent\" | \"Texture30Percent\" | \"Texture35Percent\" | \"Texture37Pt5Percent\" | \"Texture40Percent\" | \"Texture45Percent\" | \"Texture50Percent\" | \"Texture55Percent\" | \"Texture5Percent\" | \"Texture60Percent\" | \"Texture62Pt5Percent\" | \"Texture65Percent\" | \"Texture70Percent\" | \"Texture75Percent\" | \"Texture80Percent\" | \"Texture85Percent\" | \"Texture87Pt5Percent\" | \"Texture90Percent\" | \"Texture95Percent\" | \"TextureDarkDiagonalDown\" | \"TextureDarkDiagonalUp\" | \"TextureDarkGrid\" | \"TextureDarkHorizontal\" | \"TextureDarkTrellis\" | \"TextureDarkVertical\" | \"TextureLightDiagonalDown\" | \"TextureLightDiagonalUp\" | \"TextureLightGrid\" | \"TextureLightHorizontal\" | \"TextureLightTrellis\" | \"TextureLightVertical\" | \"TextureNone\" | \"TextureSolid\""
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "texture",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions:interface",
+                  "docComment": "/**\n * Represents the shading object.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShadingLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "ShadingLoadOptions",
+                  "preserveMemberOrder": false,
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions#backgroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "backgroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "backgroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions#foregroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "foregroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "foregroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions#texture:member",
+                      "docComment": "/**\n * Specifies the shading texture of the object.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "texture?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "texture",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.ShadingUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Shading object, for use in `shading.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShadingUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShadingUpdateData",
+                  "preserveMemberOrder": false,
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingUpdateData#backgroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "backgroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "backgroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingUpdateData#foregroundPatternColor:member",
+                      "docComment": "/**\n * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "foregroundPatternColor?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "foregroundPatternColor",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.ShadingUpdateData#texture:member",
+                      "docComment": "/**\n * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "texture?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.ShadingTextureType",
+                          "canonicalReference": "word!Word.ShadingTextureType:enum"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": " | \"Texture10Percent\" | \"Texture12Pt5Percent\" | \"Texture15Percent\" | \"Texture20Percent\" | \"Texture25Percent\" | \"Texture30Percent\" | \"Texture35Percent\" | \"Texture37Pt5Percent\" | \"Texture40Percent\" | \"Texture45Percent\" | \"Texture50Percent\" | \"Texture55Percent\" | \"Texture5Percent\" | \"Texture60Percent\" | \"Texture62Pt5Percent\" | \"Texture65Percent\" | \"Texture70Percent\" | \"Texture75Percent\" | \"Texture80Percent\" | \"Texture85Percent\" | \"Texture87Pt5Percent\" | \"Texture90Percent\" | \"Texture95Percent\" | \"TextureDarkDiagonalDown\" | \"TextureDarkDiagonalUp\" | \"TextureDarkGrid\" | \"TextureDarkHorizontal\" | \"TextureDarkTrellis\" | \"TextureDarkVertical\" | \"TextureLightDiagonalDown\" | \"TextureLightDiagonalUp\" | \"TextureLightGrid\" | \"TextureLightHorizontal\" | \"TextureLightTrellis\" | \"TextureLightVertical\" | \"TextureNone\" | \"TextureSolid\""
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "texture",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.StyleCollectionData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `styleCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -53819,6 +54150,34 @@
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "quickStyle",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.StyleCollectionLoadOptions#shading:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "shading?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.ShadingLoadOptions",
+                          "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "shading",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -54300,6 +54659,34 @@
                     },
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.StyleData#shading:member",
+                      "docComment": "/**\n * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "shading?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.ShadingData",
+                          "canonicalReference": "word!Word.Interfaces.ShadingData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "shading",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.StyleData#type:member",
                       "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi 1.5]\n */\n",
                       "excerptTokens": [
@@ -54757,6 +55144,34 @@
                     },
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.StyleLoadOptions#shading:member",
+                      "docComment": "/**\n * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "shading?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.ShadingLoadOptions",
+                          "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "shading",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.StyleLoadOptions#type:member",
                       "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi 1.5]\n */\n",
                       "excerptTokens": [
@@ -54986,6 +55401,34 @@
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "quickStyle",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.StyleUpdateData#shading:member",
+                      "docComment": "/**\n * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "shading?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.ShadingUpdateData",
+                          "canonicalReference": "word!Word.Interfaces.ShadingUpdateData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isReadonly": false,
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "shading",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -80584,6 +81027,1315 @@
             },
             {
               "kind": "Class",
+              "canonicalReference": "word!Word.Shading:class",
+              "docComment": "/**\n * Represents the shading object.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export class Shading extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeExtension.ClientObject",
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "isAbstract": false,
+              "name": "Shading",
+              "preserveMemberOrder": false,
+              "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Shading#backgroundPatternColor:member",
+                  "docComment": "/**\n * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "backgroundPatternColor: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "backgroundPatternColor",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Shading#context:member",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "context: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext",
+                      "canonicalReference": "word!Word.RequestContext:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Shading#foregroundPatternColor:member",
+                  "docComment": "/**\n * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "foregroundPatternColor: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "foregroundPatternColor",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#load:member(1)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Interfaces.ShadingLoadOptions",
+                      "canonicalReference": "word!Word.Interfaces.ShadingLoadOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#load:member(2)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNames?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNames",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#load:member(3)",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load(propertyNamesAndPaths?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 3,
+                  "parameters": [
+                    {
+                      "parameterName": "propertyNamesAndPaths",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#set:member(1)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "set(properties: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces.ShadingUpdateData",
+                      "canonicalReference": "word!Word.Interfaces.ShadingUpdateData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.UpdateOptions",
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#set:member(2)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "set(properties: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "set"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Shading#texture:member",
+                  "docComment": "/**\n * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ShadingTextureType",
+                      "canonicalReference": "word!Word.ShadingTextureType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Texture10Percent\" | \"Texture12Pt5Percent\" | \"Texture15Percent\" | \"Texture20Percent\" | \"Texture25Percent\" | \"Texture30Percent\" | \"Texture35Percent\" | \"Texture37Pt5Percent\" | \"Texture40Percent\" | \"Texture45Percent\" | \"Texture50Percent\" | \"Texture55Percent\" | \"Texture5Percent\" | \"Texture60Percent\" | \"Texture62Pt5Percent\" | \"Texture65Percent\" | \"Texture70Percent\" | \"Texture75Percent\" | \"Texture80Percent\" | \"Texture85Percent\" | \"Texture87Pt5Percent\" | \"Texture90Percent\" | \"Texture95Percent\" | \"TextureDarkDiagonalDown\" | \"TextureDarkDiagonalUp\" | \"TextureDarkGrid\" | \"TextureDarkHorizontal\" | \"TextureDarkTrellis\" | \"TextureDarkVertical\" | \"TextureLightDiagonalDown\" | \"TextureLightDiagonalUp\" | \"TextureLightGrid\" | \"TextureLightHorizontal\" | \"TextureLightTrellis\" | \"TextureLightVertical\" | \"TextureNone\" | \"TextureSolid\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "texture",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#toJSON:member(1)",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Shading object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadingData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "toJSON(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Interfaces.ShadingData",
+                      "canonicalReference": "word!Word.Interfaces.ShadingData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "toJSON"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#track:member(1)",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "track(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "track"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Shading#untrack:member(1)",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "untrack(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "isProtected": false,
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
+                  "name": "untrack"
+                }
+              ],
+              "extendsTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "implementsTokenRanges": []
+            },
+            {
+              "kind": "Enum",
+              "canonicalReference": "word!Word.ShadingTextureType:enum",
+              "docComment": "/**\n * Represents the shading texture. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enum ShadingTextureType "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "ShadingTextureType",
+              "preserveMemberOrder": false,
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture10Percent:member",
+                  "docComment": "/**\n * Represents 10 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture10Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture10Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture10Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture12Pt5Percent:member",
+                  "docComment": "/**\n * Represents 12.5 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture12Pt5Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture12Pt5Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture12Pt5Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture15Percent:member",
+                  "docComment": "/**\n * Represents 15 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture15Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture15Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture15Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture20Percent:member",
+                  "docComment": "/**\n * Represents 20 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture20Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture20Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture20Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture25Percent:member",
+                  "docComment": "/**\n * Represents 25 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture25Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture25Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture25Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture30Percent:member",
+                  "docComment": "/**\n * Represents 30 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture30Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture30Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture30Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture35Percent:member",
+                  "docComment": "/**\n * Represents 35 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture35Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture35Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture35Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture37Pt5Percent:member",
+                  "docComment": "/**\n * Represents 37.5 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture37Pt5Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture37Pt5Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture37Pt5Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture40Percent:member",
+                  "docComment": "/**\n * Represents 40 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture40Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture40Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture40Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture45Percent:member",
+                  "docComment": "/**\n * Represents 45 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture45Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture45Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture45Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture50Percent:member",
+                  "docComment": "/**\n * Represents 50 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture50Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture50Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture50Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture55Percent:member",
+                  "docComment": "/**\n * Represents 55 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture55Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture55Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture55Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture5Percent:member",
+                  "docComment": "/**\n * Represents 5 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture5Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture5Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture5Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture60Percent:member",
+                  "docComment": "/**\n * Represents 60 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture60Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture60Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture60Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture62Pt5Percent:member",
+                  "docComment": "/**\n * Represents 62.5 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture62Pt5Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture62Pt5Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture62Pt5Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture65Percent:member",
+                  "docComment": "/**\n * Represents 65 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture65Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture65Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture65Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture70Percent:member",
+                  "docComment": "/**\n * Represents 70 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture70Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture70Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture70Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture75Percent:member",
+                  "docComment": "/**\n * Represents 75 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture75Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture75Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture75Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture80Percent:member",
+                  "docComment": "/**\n * Represents 80 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture80Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture80Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture80Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture85Percent:member",
+                  "docComment": "/**\n * Represents 85 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture85Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture85Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture85Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture87Pt5Percent:member",
+                  "docComment": "/**\n * Represents 87.5 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture87Pt5Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture87Pt5Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture87Pt5Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture90Percent:member",
+                  "docComment": "/**\n * Represents 90 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture90Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture90Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture90Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.texture95Percent:member",
+                  "docComment": "/**\n * Represents 95 percent texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "texture95Percent = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Texture95Percent\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "texture95Percent"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkDiagonalDown:member",
+                  "docComment": "/**\n * Represents dark diagonal-down texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkDiagonalDown = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkDiagonalDown\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkDiagonalDown"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkDiagonalUp:member",
+                  "docComment": "/**\n * Represents dark diagonal-up texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkDiagonalUp = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkDiagonalUp\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkDiagonalUp"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkGrid:member",
+                  "docComment": "/**\n * Represents dark horizontal-cross texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkGrid = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkGrid\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkGrid"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkHorizontal:member",
+                  "docComment": "/**\n * Represents dark horizontal texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkHorizontal = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkHorizontal\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkHorizontal"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkTrellis:member",
+                  "docComment": "/**\n * Represents dark diagonal-cross texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkTrellis = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkTrellis\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkTrellis"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureDarkVertical:member",
+                  "docComment": "/**\n * Represents dark vertical texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureDarkVertical = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureDarkVertical\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureDarkVertical"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightDiagonalDown:member",
+                  "docComment": "/**\n * Represents light diagonal-down texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightDiagonalDown = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightDiagonalDown\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightDiagonalDown"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightDiagonalUp:member",
+                  "docComment": "/**\n * Represents light diagonal-up texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightDiagonalUp = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightDiagonalUp\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightDiagonalUp"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightGrid:member",
+                  "docComment": "/**\n * Represents light horizontal-cross texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightGrid = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightGrid\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightGrid"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightHorizontal:member",
+                  "docComment": "/**\n * Represents light horizontal texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightHorizontal = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightHorizontal\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightHorizontal"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightTrellis:member",
+                  "docComment": "/**\n * Represents light diagonal-cross texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightTrellis = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightTrellis\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightTrellis"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureLightVertical:member",
+                  "docComment": "/**\n * Represents light vertical texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureLightVertical = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureLightVertical\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureLightVertical"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureNone:member",
+                  "docComment": "/**\n * Represents that there's no texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureNone = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureNone\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureNone"
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ShadingTextureType.textureSolid:member",
+                  "docComment": "/**\n * Represents solid texture.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "textureSolid = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TextureSolid\""
+                    }
+                  ],
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "name": "textureSolid"
+                }
+              ]
+            },
+            {
+              "kind": "Class",
               "canonicalReference": "word!Word.Style:class",
               "docComment": "/**\n * Represents a style in a Word document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
               "excerptTokens": [
@@ -81293,6 +83045,37 @@
                   "isOptional": false,
                   "isAbstract": false,
                   "name": "set"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Style#shading:member",
+                  "docComment": "/**\n * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly shading: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.Shading",
+                      "canonicalReference": "word!Word.Shading:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": true,
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "shading",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
