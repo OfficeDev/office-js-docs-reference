@@ -163,7 +163,7 @@ Added additional `event.completed` options to customize the **Don't Send** butto
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)
+#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride?view=outlook-js-preview&preserve-view=true)
 
 Added an enum to specify the send mode option that overrides the option set in the manifest at runtime.
 
