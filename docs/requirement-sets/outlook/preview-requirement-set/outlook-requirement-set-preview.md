@@ -159,9 +159,13 @@ Added additional `event.completed` options to customize the **Don't Send** butto
 
 #### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)
 
-Add an enum to specify the send mode option that overrides the option set in the manifest at runtime.
+Added an enum to specify the send mode option that overrides the option set in the manifest at runtime.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+To learn how to implement these features, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
+
+<br>
 
 ---
 
@@ -186,8 +190,6 @@ Added an object that provides properties to temporarily set the content displaye
 Added an object that provides a method to temporarily set the content displayed in the body of a message in read mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
 
 #### [Office.DisplayedSubject](/javascript/api/outlook/office.displayedsubject?view=outlook-js-preview&preserve-view=true)
 
