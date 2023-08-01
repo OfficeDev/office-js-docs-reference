@@ -85,6 +85,8 @@ items:
                 uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
+              - name: ShadingTextureType
+                uid: 'word!Word.ShadingTextureType:enum'
               - name: StyleType
                 uid: 'word!Word.StyleType:enum'
               - name: TrailingCharacter
@@ -197,6 +199,8 @@ items:
             uid: 'word!Word.Setting:class'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
+          - name: Shading
+            uid: 'word!Word.Shading:class'
           - name: Style
             uid: 'word!Word.Style:class'
           - name: StyleCollection
