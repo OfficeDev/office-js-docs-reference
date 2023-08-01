@@ -69,6 +69,18 @@ properties:
       content: 'quickStyle?: boolean;'
       return:
         type: boolean
+  - name: shading
+    uid: 'word!Word.Interfaces.StyleUpdateData#shading:member'
+    package: word!
+    fullName: shading
+    summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShadingUpdateData:interface" />'
   - name: unhideWhenUsed
     uid: 'word!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member'
     package: word!

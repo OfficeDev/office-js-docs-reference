@@ -171,6 +171,18 @@ properties:
       content: 'quickStyle?: boolean;'
       return:
         type: boolean
+  - name: shading
+    uid: 'word!Word.Interfaces.StyleLoadOptions#shading:member'
+    package: word!
+    fullName: shading
+    summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShadingLoadOptions:interface" />'
   - name: type
     uid: 'word!Word.Interfaces.StyleLoadOptions#type:member'
     package: word!
