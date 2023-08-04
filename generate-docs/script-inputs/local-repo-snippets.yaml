@@ -1704,7 +1704,7 @@ Office.AddinCommands.EventCompletedOptions#folderName:member:
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
                 folderName: "Reported Messages",
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
@@ -1734,7 +1734,7 @@ Office.AddinCommands.EventCompletedOptions#onErrorDeleteItem:member:
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder,
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder,
                 onErrorDeleteItem: true,
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
@@ -1763,7 +1763,7 @@ Office.AddinCommands.EventCompletedOptions#postProcessingAction:member:
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: Office.MailboxEnums.MoveSpamItemTo.JunkFolder,
+                postProcessingAction: "moveToSpamFolder",
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
                     description: "Thank you for reporting this message.",
@@ -1790,7 +1790,7 @@ Office.AddinCommands.EventCompletedOptions#showPostProcessingDialog:member:
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: Office.MailboxEnums.MoveSpamItemTo.NoMove,
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove,
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
                     description: "Thank you for reporting this message.",
