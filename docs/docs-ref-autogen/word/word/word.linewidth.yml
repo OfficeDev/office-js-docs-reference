@@ -1,0 +1,98 @@
+### YamlMime:TSEnum
+name: Word.LineWidth
+uid: 'word!Word.LineWidth:enum'
+package: word!
+fullName: Word.LineWidth
+summary: Represents the width of a style's border.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: mixed
+    uid: 'word!Word.LineWidth.mixed:member'
+    package: word!
+    summary: |-
+      Mixed width.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: none
+    uid: 'word!Word.LineWidth.none:member'
+    package: word!
+    summary: |-
+      None width.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: pt025
+    uid: 'word!Word.LineWidth.pt025:member'
+    package: word!
+    summary: |-
+      0.25 point.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt025"'
+  - name: pt050
+    uid: 'word!Word.LineWidth.pt050:member'
+    package: word!
+    summary: |-
+      0.50 point.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt050"'
+  - name: pt075
+    uid: 'word!Word.LineWidth.pt075:member'
+    package: word!
+    summary: |-
+      0.75 point.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt075"'
+  - name: pt100
+    uid: 'word!Word.LineWidth.pt100:member'
+    package: word!
+    summary: |-
+      1.00 point. This is the default.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt100"'
+  - name: pt150
+    uid: 'word!Word.LineWidth.pt150:member'
+    package: word!
+    summary: |-
+      1.50 points.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt150"'
+  - name: pt225
+    uid: 'word!Word.LineWidth.pt225:member'
+    package: word!
+    summary: |-
+      2.25 points.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt225"'
+  - name: pt300
+    uid: 'word!Word.LineWidth.pt300:member'
+    package: word!
+    summary: |-
+      3.00 points.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt300"'
+  - name: pt450
+    uid: 'word!Word.LineWidth.pt450:member'
+    package: word!
+    summary: |-
+      4.50 points.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt450"'
+  - name: pt600
+    uid: 'word!Word.LineWidth.pt600:member'
+    package: word!
+    summary: |-
+      6.00 points.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pt600"'

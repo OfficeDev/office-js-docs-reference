@@ -64,26 +64,20 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        texture: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" |
-        "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" |
-        "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" |
-        "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" |
-        "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" |
-        "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" |
-        "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" |
-        "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" |
-        "TextureSolid";
+        texture: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" |
+        "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" |
+        "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" |
+        "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50"
+        | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" |
+        "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
       return:
         type: >-
-          <xref uid="word!Word.ShadingTextureType:enum" /> | "Texture10Percent" | "Texture12Pt5Percent" |
-          "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" |
-          "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" |
-          "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" |
-          "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" |
-          "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" |
-          "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" |
-          "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" |
-          "TextureLightVertical" | "TextureNone" | "TextureSolid"
+          <xref uid="word!Word.ShadingTextureType:enum" /> | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" |
+          "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" |
+          "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" |
+          "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" |
+          "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" |
+          "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid"
 methods:
   - name: load(options)
     uid: 'word!Word.Shading#load:member(1)'

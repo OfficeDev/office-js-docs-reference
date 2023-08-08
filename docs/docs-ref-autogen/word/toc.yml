@@ -25,6 +25,8 @@ items:
                 uid: 'word!Word.BodyType:enum'
               - name: BorderLocation
                 uid: 'word!Word.BorderLocation:enum'
+              - name: BorderPositionType
+                uid: 'word!Word.BorderPositionType:enum'
               - name: BorderType
                 uid: 'word!Word.BorderType:enum'
               - name: BreakType
@@ -65,6 +67,10 @@ items:
                 uid: 'word!Word.ImageFormat:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
+              - name: LineStyle
+                uid: 'word!Word.LineStyle:enum'
+              - name: LineWidth
+                uid: 'word!Word.LineWidth:enum'
               - name: ListBuiltInNumberStyle
                 uid: 'word!Word.ListBuiltInNumberStyle:enum'
               - name: ListBullet
@@ -99,6 +105,8 @@ items:
             uid: 'word!Word.Application:class'
           - name: Body
             uid: 'word!Word.Body:class'
+          - name: Border
+            uid: 'word!Word.Border:class'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection
@@ -179,8 +187,14 @@ items:
             uid: 'word!Word.NoteItemCollection:class'
           - name: Paragraph
             uid: 'word!Word.Paragraph:class'
+          - name: ParagraphAddedEventArgs
+            uid: 'word!Word.ParagraphAddedEventArgs:interface'
+          - name: ParagraphChangedEventArgs
+            uid: 'word!Word.ParagraphChangedEventArgs:interface'
           - name: ParagraphCollection
             uid: 'word!Word.ParagraphCollection:class'
+          - name: ParagraphDeletedEventArgs
+            uid: 'word!Word.ParagraphDeletedEventArgs:interface'
           - name: ParagraphFormat
             uid: 'word!Word.ParagraphFormat:class'
           - name: Range
@@ -219,6 +233,8 @@ items:
             uid: 'word!Word.TableRow:class'
           - name: TableRowCollection
             uid: 'word!Word.TableRowCollection:class'
+          - name: TableStyle
+            uid: 'word!Word.TableStyle:class'
       - name: Common APIs
         uid: office!
         items:

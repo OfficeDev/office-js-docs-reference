@@ -1,7 +1,7 @@
 ---
 title: Office namespace - requirement set 1.12
 description: Office namespace members available for Outlook add-ins using Mailbox API requirement set 1.12.
-ms.date: 09/09/2022
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ---
 
@@ -108,6 +108,7 @@ Specifies the event associated with an event handler.
 |`AppointmentTimeChanged`| String | The date or time of the selected appointment or series has changed. | 1.7 |
 |`AttachmentsChanged`| String | An attachment has been added to or removed from the item. | 1.8 |
 |`EnhancedLocationsChanged`| String | The location of the selected appointment has changed. | 1.8 |
+|`InfobarClicked`| String | An action on a notification message is selected. | 1.10 |
 |`ItemChanged`| String | A different Outlook item is selected for viewing while the task pane is pinned. | 1.5 |
 |`RecipientsChanged`| String | The recipient list of the selected item or appointment location has changed. | 1.7 |
 |`RecurrenceChanged`| String | The recurrence pattern of the selected series has changed. | 1.7 |

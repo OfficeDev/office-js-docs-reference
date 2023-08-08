@@ -115,3 +115,27 @@ fields:
 
       * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'
+  - name: paragraphAdded
+    uid: 'word!Word.EventType.paragraphAdded:member'
+    package: word!
+    summary: |-
+      Represents that one or more new paragraphs were added.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ParagraphAdded"'
+  - name: paragraphChanged
+    uid: 'word!Word.EventType.paragraphChanged:member'
+    package: word!
+    summary: |-
+      Represents that one or more paragraphs were changed.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ParagraphChanged"'
+  - name: paragraphDeleted
+    uid: 'word!Word.EventType.paragraphDeleted:member'
+    package: word!
+    summary: |-
+      Represents that one or more paragraphs were deleted.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ParagraphDeleted"'

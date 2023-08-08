@@ -195,6 +195,20 @@ properties:
       content: 'shading?: Word.Interfaces.ShadingLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.ShadingLoadOptions:interface" />'
+  - name: tableStyle
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member'
+    package: word!
+    fullName: tableStyle
+    summary: >-
+      For EACH ITEM in the collection: Gets a TableStyle object representing Style properties that can be applied to a
+      table.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableStyle?: Word.Interfaces.TableStyleLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableStyleLoadOptions:interface" />'
   - name: type
     uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#type:member'
     package: word!

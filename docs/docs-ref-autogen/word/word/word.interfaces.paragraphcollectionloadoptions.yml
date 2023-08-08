@@ -410,3 +410,15 @@ properties:
       content: 'text?: boolean;'
       return:
         type: boolean
+  - name: uniqueLocalId
+    uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#uniqueLocalId:member'
+    package: word!
+    fullName: uniqueLocalId
+    summary: 'For EACH ITEM in the collection: Gets a string that represents the paragraph identifier in the current session.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalId?: boolean;'
+      return:
+        type: boolean
