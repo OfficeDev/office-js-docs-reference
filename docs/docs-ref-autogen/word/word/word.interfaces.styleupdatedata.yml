@@ -81,6 +81,18 @@ properties:
       content: 'shading?: Word.Interfaces.ShadingUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.ShadingUpdateData:interface" />'
+  - name: tableStyle
+    uid: 'word!Word.Interfaces.StyleUpdateData#tableStyle:member'
+    package: word!
+    fullName: tableStyle
+    summary: Gets a TableStyle object representing Style properties that can be applied to a table.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tableStyle?: Word.Interfaces.TableStyleUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableStyleUpdateData:interface" />'
   - name: unhideWhenUsed
     uid: 'word!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member'
     package: word!

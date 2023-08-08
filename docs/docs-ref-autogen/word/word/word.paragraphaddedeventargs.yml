@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Word.ParagraphAddedEventArgs
+uid: 'word!Word.ParagraphAddedEventArgs:interface'
+package: word!
+fullName: Word.ParagraphAddedEventArgs
+summary: Provides information about the paragraphs that raised the paragraphAdded event.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: ids
+    uid: 'word!Word.ParagraphAddedEventArgs#ids:member'
+    package: word!
+    fullName: ids
+    summary: Gets the IDs of the involved paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ids: string[];'
+      return:
+        type: 'string[]'
+  - name: source
+    uid: 'word!Word.ParagraphAddedEventArgs#source:member'
+    package: word!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'word!Word.ParagraphAddedEventArgs#type:member'
+    package: word!
+    fullName: type
+    summary: The event type. See Word.EventType for details.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
+        | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" |
+        "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" |
+        "ParagraphDeleted";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" |
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
