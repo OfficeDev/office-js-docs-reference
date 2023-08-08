@@ -335,3 +335,15 @@ properties:
       content: 'text?: string;'
       return:
         type: string
+  - name: uniqueLocalId
+    uid: 'word!Word.Interfaces.ParagraphData#uniqueLocalId:member'
+    package: word!
+    fullName: uniqueLocalId
+    summary: Gets a string that represents the paragraph identifier in the current session.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalId?: string;'
+      return:
+        type: string

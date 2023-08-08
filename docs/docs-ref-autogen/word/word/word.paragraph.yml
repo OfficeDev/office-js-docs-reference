@@ -698,6 +698,18 @@ properties:
       content: 'readonly text: string;'
       return:
         type: string
+  - name: uniqueLocalId
+    uid: 'word!Word.Paragraph#uniqueLocalId:member'
+    package: word!
+    fullName: uniqueLocalId
+    summary: Gets a string that represents the paragraph identifier in the current session.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly uniqueLocalId: string;'
+      return:
+        type: string
 methods:
   - name: 'attachToList(listId, level)'
     uid: 'word!Word.Paragraph#attachToList:member(1)'

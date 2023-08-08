@@ -294,6 +294,18 @@ properties:
       content: 'readonly shading: Word.Shading;'
       return:
         type: '<xref uid="word!Word.Shading:class" />'
+  - name: tableStyle
+    uid: 'word!Word.Style#tableStyle:member'
+    package: word!
+    fullName: tableStyle
+    summary: Gets a TableStyle object representing Style properties that can be applied to a table.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tableStyle: Word.TableStyle;'
+      return:
+        type: '<xref uid="word!Word.TableStyle:class" />'
   - name: type
     uid: 'word!Word.Style#type:member'
     package: word!

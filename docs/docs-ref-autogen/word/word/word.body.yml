@@ -800,6 +800,23 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
+  - name: getParagraphById(id)
+    uid: 'word!Word.Body#getParagraphById:member(1)'
+    package: word!
+    fullName: getParagraphById(id)
+    summary: Gets the paragraph by its unique id. Throws an `ItemNotFound` error if the collection is empty.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getParagraphById(id: string): Word.Paragraph;'
+      parameters:
+        - id: id
+          description: Required. Unique Paragraph Id.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Paragraph:class" />'
+        description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Body#getRange:member(1)'
     package: word!
@@ -1740,4 +1757,46 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
+  - name: onParagraphAdded
+    uid: 'word!Word.Body#onParagraphAdded:member'
+    package: word!
+    fullName: onParagraphAdded
+    summary: Occurs when new paragraphs are added.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
+  - name: onParagraphChanged
+    uid: 'word!Word.Body#onParagraphChanged:member'
+    package: word!
+    fullName: onParagraphChanged
+    summary: Occurs when paragraphs are changed.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
+  - name: onParagraphDeleted
+    uid: 'word!Word.Body#onParagraphDeleted:member'
+    package: word!
+    fullName: onParagraphDeleted
+    summary: Occurs when paragraphs are deleted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

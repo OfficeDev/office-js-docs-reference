@@ -1,0 +1,268 @@
+### YamlMime:TSType
+name: Word.Border
+uid: 'word!Word.Border:class'
+package: word!
+fullName: Word.Border
+summary: 'Represents the Border object for text, a paragraph, or a table.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.Border#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: lineColor
+    uid: 'word!Word.Border#lineColor:member'
+    package: word!
+    fullName: lineColor
+    summary: Specifies the line color for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineColor: string;'
+      return:
+        type: string
+  - name: lineStyle
+    uid: 'word!Word.Border#lineStyle:member'
+    package: word!
+    fullName: lineStyle
+    summary: Specifies the line style for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        lineStyle: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" |
+        "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" | "Single" |
+        "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" |
+        "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
+        "ThinThickThinSmallGap" | "Triple";
+      return:
+        type: >-
+          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
+          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" |
+          "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap"
+          | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
+          "ThinThickThinSmallGap" | "Triple"
+  - name: lineWidth
+    uid: 'word!Word.Border#lineWidth:member'
+    package: word!
+    fullName: lineWidth
+    summary: Specifies the line width for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        lineWidth: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" |
+        "Pt450" | "Pt600" | "Mixed";
+      return:
+        type: >-
+          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
+          "Pt300" | "Pt450" | "Pt600" | "Mixed"
+  - name: positionType
+    uid: 'word!Word.Border#positionType:member'
+    package: word!
+    fullName: positionType
+    summary: Gets the position type of the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly positionType: Word.BorderPositionType | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" | "Vertical"
+        | "DiagonalDown" | "DiagonalUp";
+      return:
+        type: >-
+          <xref uid="word!Word.BorderPositionType:enum" /> | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" |
+          "Vertical" | "DiagonalDown" | "DiagonalUp"
+  - name: visible
+    uid: 'word!Word.Border#visible:member'
+    package: word!
+    fullName: visible
+    summary: Specifies whether the border is visible.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: load(options)
+    uid: 'word!Word.Border#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.BorderLoadOptions): Word.Border;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.BorderLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Border:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.Border#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Border;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.Border:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Border#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Border;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.Border:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Border#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.BorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.BorderUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Border#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Border): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.Border:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Border#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Border object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.BorderData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.BorderData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BorderData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.Border#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Border;'
+      return:
+        type: '<xref uid="word!Word.Border:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.Border#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Border;'
+      return:
+        type: '<xref uid="word!Word.Border:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

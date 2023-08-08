@@ -234,6 +234,16 @@ export declare namespace Word {
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
+         * Gets the paragraph by its unique id. Throws an `ItemNotFound` error if the collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - Required. Unique Paragraph Id.
+         */
+        getParagraphById(id: string): Word.Paragraph;
+        /**
          * Gets the whole body, or the starting or ending point of the body, as a range.
          *
          * @remarks
@@ -461,6 +471,36 @@ export declare namespace Word {
          */
         readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
         /**
+         * Occurs when new paragraphs are added.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;
+        /**
+         * Occurs when paragraphs are changed.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;
+        /**
+         * Occurs when paragraphs are deleted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;
+        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
         track(): Word.Body;
@@ -473,6 +513,99 @@ export declare namespace Word {
         * Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.BodyData;
+    }
+    /**
+     * Represents the Border object for text, a paragraph, or a table.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Border extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the line color for the border.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineColor: string;
+        /**
+         * Specifies the line style for the border.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineStyle: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple";
+        /**
+         * Specifies the line width for the border.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineWidth: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
+        /**
+         * Gets the position type of the border.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly positionType: Word.BorderPositionType | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" | "Vertical" | "DiagonalDown" | "DiagonalUp";
+        /**
+         * Specifies whether the border is visible.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        visible: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.BorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Border): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.BorderLoadOptions): Word.Border;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Border;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Border;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Border;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Border;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.Border object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.BorderData;
     }
     /**
      * Represents a comment in the document.
@@ -4715,6 +4848,14 @@ export declare namespace Word {
          */
         readonly text: string;
         /**
+         * Gets a string that represents the paragraph identifier in the current session.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly uniqueLocalId: string;
+        /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
@@ -6565,6 +6706,14 @@ export declare namespace Word {
          */
         readonly shading: Word.Shading;
         /**
+         * Gets a TableStyle object representing Style properties that can be applied to a table.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tableStyle: Word.TableStyle;
+        /**
          * Gets the name of an existing style to use as the base formatting of another style.
          *
          * @remarks
@@ -6732,7 +6881,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        texture: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
+        texture: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -7311,6 +7460,115 @@ export declare namespace Word {
         * Whereas the original Word.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.TableData;
+    }
+    /**
+     * Represents the TableStyle object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class TableStyle extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the table's alignment against the page margin.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+        /**
+         * Specifies whether lines in tables formatted with a specified style break across pages.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowBreakAcrossPage: boolean;
+        /**
+         * Specifies the amount of space to add between the contents and the bottom borders of the cells.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomCellMargin: number;
+        /**
+         * Specifies the spacing (in points) between the cells in a table style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cellSpacing: number;
+        /**
+         * Specifies the amount of space to add between the contents and the left borders of the cells.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftCellMargin: number;
+        /**
+         * Specifies the amount of space to add between the contents and the right borders of the cells.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightCellMargin: number;
+        /**
+         * Specifies the amount of space to add between the contents and the top borders of the cells.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topCellMargin: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableStyleUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.TableStyle): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.TableStyleLoadOptions): Word.TableStyle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.TableStyle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.TableStyle;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.TableStyle;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.TableStyle;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.TableStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
+         */
+        toJSON(): Word.Interfaces.TableStyleData;
     }
     /**
      * Contains the collection of the document's Table objects.
@@ -8265,6 +8523,27 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         contentControlExited = "ContentControlExited",
+        /**
+         * Represents that one or more new paragraphs were added.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphAdded = "ParagraphAdded",
+        /**
+         * Represents that one or more paragraphs were changed.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphChanged = "ParagraphChanged",
+        /**
+         * Represents that one or more paragraphs were deleted.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraphDeleted = "ParagraphDeleted",
     }
     /**
      * An enum that specifies an event's source. It can be local or remote (through coauthoring).
@@ -8307,7 +8586,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8338,7 +8617,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8367,7 +8646,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8396,7 +8675,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8425,7 +8704,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8454,7 +8733,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8483,7 +8762,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
         /**
          * Gets the content control IDs.
          *
@@ -8498,6 +8777,105 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the paragraphs that raised the paragraphAdded event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ParagraphAddedEventArgs {
+        /**
+         * Gets the IDs of the involved paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: string[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
+    }
+    /**
+     * Provides information about the paragraphs that raised the paragraphChanged event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ParagraphChangedEventArgs {
+        /**
+         * Gets the IDs of the involved paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: string[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
+    }
+    /**
+     * Provides information about the paragraphs that raised the paragraphDeleted event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ParagraphDeletedEventArgs {
+        /**
+         * Gets the IDs of the involved paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: string[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
     }
     /**
      * Provides information about the comments that raised the comment event.
@@ -8538,7 +8916,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
     }
     /**
      * A structure for the ID and reply IDs of this comment.
@@ -9395,6 +9773,341 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         right = "Right",
+    }
+    /**
+     * Represents the line style for the specified border.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineStyle {
+        /**
+         * Represents the dash-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashDot = "DashDot",
+        /**
+         * Represents the dash-dot-dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * Represents the dash-dot-stroked line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashDotStroked = "DashDotStroked",
+        /**
+         * Represents the line style of dashes with large gaps.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashLargeGap = "DashLargeGap",
+        /**
+         * Represents the line style of dashes with small gaps.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashSmallGap = "DashSmallGap",
+        /**
+         * Represents the dot line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dot = "Dot",
+        /**
+         * Represents the double line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        double = "Double",
+        /**
+         * Represents the double-wavy line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doubleWavy = "DoubleWavy",
+        /**
+         * Represents the emboss-3D line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        emboss3D = "Emboss3D",
+        /**
+         * Represents the engrave-3D line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        engrave3D = "Engrave3D",
+        /**
+         * Represents the inset line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inset = "Inset",
+        /**
+         * Represents that there's no line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents the outset line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outset = "Outset",
+        /**
+         * Represents the single line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        single = "Single",
+        /**
+         * Represents the single-wavy line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        singleWavy = "SingleWavy",
+        /**
+         * Represents the internal single thick solid line surrounded by a single thin solid line with a large gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thickThinLargeGap = "ThickThinLargeGap",
+        /**
+         * Represents the internal single thick solid line surrounded by a single thin solid line with a medium gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thickThinMedGap = "ThickThinMedGap",
+        /**
+         * Represents the internal single thick solid line surrounded by a single thin solid line with a small gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thickThinSmallGap = "ThickThinSmallGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line with a large gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickLargeGap = "ThinThickLargeGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line with a medium gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickMedGap = "ThinThickMedGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line with a small gap between them.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickSmallGap = "ThinThickSmallGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line surrounded by a single thin solid line with a large gap between all lines.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickThinLargeGap = "ThinThickThinLargeGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line surrounded by a single thin solid line with a medium gap between all lines.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickThinMedGap = "ThinThickThinMedGap",
+        /**
+         * Represents the internal single thin solid line surrounded by a single thick solid line surrounded by a single thin solid line with a small gap between all lines.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        thinThickThinSmallGap = "ThinThickThinSmallGap",
+        /**
+         * Represents the triple line style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        triple = "Triple",
+    }
+    /**
+     * Represents the width of a style's border.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LineWidth {
+        /**
+         * None width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * 0.25 point.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt025 = "Pt025",
+        /**
+         * 0.50 point.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt050 = "Pt050",
+        /**
+         * 0.75 point.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt075 = "Pt075",
+        /**
+         * 1.00 point. This is the default.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt100 = "Pt100",
+        /**
+         * 1.50 points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt150 = "Pt150",
+        /**
+         * 2.25 points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt225 = "Pt225",
+        /**
+         * 3.00 points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt300 = "Pt300",
+        /**
+         * 4.50 points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt450 = "Pt450",
+        /**
+         * 6.00 points.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pt600 = "Pt600",
+        /**
+         * Mixed width.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+    }
+    /**
+     * Represents the position of a style's border.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum BorderPositionType {
+        /**
+         * Represents the top border.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top = "Top",
+        /**
+         * Represents the left border.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left = "Left",
+        /**
+         * Represents the bottom border.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottom = "Bottom",
+        /**
+         * Represents the right border.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        right = "Right",
+        /**
+         * Represents the horizontal borders.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontal = "Horizontal",
+        /**
+         * Represents the vertical borders.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        vertical = "Vertical",
+        /**
+         * Represents the diagonal borders starting in the upper-left corner.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalDown = "DiagonalDown",
+        /**
+         * Represents the diagonal borders starting in the lower-left corner.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalUp = "DiagonalUp",
     }
     /**
      * @remarks
@@ -11542,264 +12255,264 @@ export declare namespace Word {
      */
     enum ShadingTextureType {
         /**
-         * Represents 10 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture10Percent = "Texture10Percent",
-        /**
-         * Represents 12.5 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture12Pt5Percent = "Texture12Pt5Percent",
-        /**
-         * Represents 15 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture15Percent = "Texture15Percent",
-        /**
-         * Represents 20 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture20Percent = "Texture20Percent",
-        /**
-         * Represents 25 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture25Percent = "Texture25Percent",
-        /**
-         * Represents 30 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture30Percent = "Texture30Percent",
-        /**
-         * Represents 35 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture35Percent = "Texture35Percent",
-        /**
-         * Represents 37.5 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture37Pt5Percent = "Texture37Pt5Percent",
-        /**
-         * Represents 40 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture40Percent = "Texture40Percent",
-        /**
-         * Represents 45 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture45Percent = "Texture45Percent",
-        /**
-         * Represents 50 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture50Percent = "Texture50Percent",
-        /**
-         * Represents 55 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture55Percent = "Texture55Percent",
-        /**
-         * Represents 5 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture5Percent = "Texture5Percent",
-        /**
-         * Represents 60 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture60Percent = "Texture60Percent",
-        /**
-         * Represents 62.5 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture62Pt5Percent = "Texture62Pt5Percent",
-        /**
-         * Represents 65 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture65Percent = "Texture65Percent",
-        /**
-         * Represents 70 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture70Percent = "Texture70Percent",
-        /**
-         * Represents 75 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture75Percent = "Texture75Percent",
-        /**
-         * Represents 80 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture80Percent = "Texture80Percent",
-        /**
-         * Represents 85 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture85Percent = "Texture85Percent",
-        /**
-         * Represents 87.5 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture87Pt5Percent = "Texture87Pt5Percent",
-        /**
-         * Represents 90 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture90Percent = "Texture90Percent",
-        /**
-         * Represents 95 percent texture.
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        texture95Percent = "Texture95Percent",
-        /**
          * Represents dark diagonal-down texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkDiagonalDown = "TextureDarkDiagonalDown",
+        darkDiagonalDown = "DarkDiagonalDown",
         /**
          * Represents dark diagonal-up texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkDiagonalUp = "TextureDarkDiagonalUp",
+        darkDiagonalUp = "DarkDiagonalUp",
         /**
          * Represents dark horizontal-cross texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkGrid = "TextureDarkGrid",
+        darkGrid = "DarkGrid",
         /**
          * Represents dark horizontal texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkHorizontal = "TextureDarkHorizontal",
+        darkHorizontal = "DarkHorizontal",
         /**
          * Represents dark diagonal-cross texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkTrellis = "TextureDarkTrellis",
+        darkTrellis = "DarkTrellis",
         /**
          * Represents dark vertical texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureDarkVertical = "TextureDarkVertical",
+        darkVertical = "DarkVertical",
         /**
          * Represents light diagonal-down texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightDiagonalDown = "TextureLightDiagonalDown",
+        lightDiagonalDown = "LightDiagonalDown",
         /**
          * Represents light diagonal-up texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightDiagonalUp = "TextureLightDiagonalUp",
+        lightDiagonalUp = "LightDiagonalUp",
         /**
          * Represents light horizontal-cross texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightGrid = "TextureLightGrid",
+        lightGrid = "LightGrid",
         /**
          * Represents light horizontal texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightHorizontal = "TextureLightHorizontal",
+        lightHorizontal = "LightHorizontal",
         /**
          * Represents light diagonal-cross texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightTrellis = "TextureLightTrellis",
+        lightTrellis = "LightTrellis",
         /**
          * Represents light vertical texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureLightVertical = "TextureLightVertical",
+        lightVertical = "LightVertical",
         /**
          * Represents that there's no texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureNone = "TextureNone",
+        none = "None",
+        /**
+         * Represents 10 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent10 = "Percent10",
+        /**
+         * Represents 12.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent12Pt5 = "Percent12Pt5",
+        /**
+         * Represents 15 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent15 = "Percent15",
+        /**
+         * Represents 20 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent20 = "Percent20",
+        /**
+         * Represents 25 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent25 = "Percent25",
+        /**
+         * Represents 30 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent30 = "Percent30",
+        /**
+         * Represents 35 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent35 = "Percent35",
+        /**
+         * Represents 37.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent37Pt5 = "Percent37Pt5",
+        /**
+         * Represents 40 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent40 = "Percent40",
+        /**
+         * Represents 45 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent45 = "Percent45",
+        /**
+         * Represents 5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent5 = "Percent5",
+        /**
+         * Represents 50 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent50 = "Percent50",
+        /**
+         * Represents 55 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent55 = "Percent55",
+        /**
+         * Represents 60 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent60 = "Percent60",
+        /**
+         * Represents 62.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent62Pt5 = "Percent62Pt5",
+        /**
+         * Represents 65 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent65 = "Percent65",
+        /**
+         * Represents 70 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent70 = "Percent70",
+        /**
+         * Represents 75 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent75 = "Percent75",
+        /**
+         * Represents 80 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent80 = "Percent80",
+        /**
+         * Represents 85 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent85 = "Percent85",
+        /**
+         * Represents 87.5 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent87Pt5 = "Percent87Pt5",
+        /**
+         * Represents 90 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent90 = "Percent90",
+        /**
+         * Represents 95 percent texture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percent95 = "Percent95",
         /**
          * Represents solid texture.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        textureSolid = "TextureSolid",
+        solid = "Solid",
     }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
@@ -11847,6 +12560,41 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        }
+        /** An interface for updating data on the Border object, for use in `border.set({ ... })`. */
+        export interface BorderUpdateData {
+            /**
+             * Specifies the line color for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineColor?: string;
+            /**
+             * Specifies the line style for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple";
+            /**
+             * Specifies the line width for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
+            /**
+             * Specifies whether the border is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
         }
         /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
@@ -12803,35 +13551,43 @@ export declare namespace Word {
         /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
         export interface StyleUpdateData {
             /**
-            * Gets a font object that represents the character formatting of the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a font object that represents the character formatting of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
-            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateUpdateData;
             /**
-            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;
             /**
-            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingUpdateData;
+            /**
+             * Gets a TableStyle object representing Style properties that can be applied to a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tableStyle?: Word.Interfaces.TableStyleUpdateData;
             /**
              * Specifies the priority.
              *
@@ -12886,7 +13642,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            texture?: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
+            texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -12995,6 +13751,65 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             width?: number;
+        }
+        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        export interface TableStyleUpdateData {
+            /**
+             * Specifies the table's alignment against the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Specifies whether lines in tables formatted with a specified style break across pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowBreakAcrossPage?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the bottom borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomCellMargin?: number;
+            /**
+             * Specifies the spacing (in points) between the cells in a table style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cellSpacing?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the left borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftCellMargin?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the right borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightCellMargin?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the top borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topCellMargin?: number;
         }
         /** An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`. */
         export interface TableCollectionUpdateData {
@@ -13201,6 +14016,49 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+        }
+        /** An interface describing the data returned by calling `border.toJSON()`. */
+        export interface BorderData {
+            /**
+             * Specifies the line color for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineColor?: string;
+            /**
+             * Specifies the line style for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple";
+            /**
+             * Specifies the line width for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
+            /**
+             * Gets the position type of the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            positionType?: Word.BorderPositionType | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" | "Vertical" | "DiagonalDown" | "DiagonalUp";
+            /**
+             * Specifies whether the border is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
         }
         /** An interface describing the data returned by calling `comment.toJSON()`. */
         export interface CommentData {
@@ -14366,6 +15224,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: string;
+            /**
+             * Gets a string that represents the paragraph identifier in the current session.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            uniqueLocalId?: string;
         }
         /** An interface describing the data returned by calling `paragraphCollection.toJSON()`. */
         export interface ParagraphCollectionData {
@@ -14629,35 +15495,43 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             /**
-            * Gets a font object that represents the character formatting of the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a font object that represents the character formatting of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateData;
             /**
-            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatData;
             /**
-            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingData;
+            /**
+             * Gets a TableStyle object representing Style properties that can be applied to a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tableStyle?: Word.Interfaces.TableStyleData;
             /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
@@ -14769,7 +15643,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            texture?: Word.ShadingTextureType | "Texture10Percent" | "Texture12Pt5Percent" | "Texture15Percent" | "Texture20Percent" | "Texture25Percent" | "Texture30Percent" | "Texture35Percent" | "Texture37Pt5Percent" | "Texture40Percent" | "Texture45Percent" | "Texture50Percent" | "Texture55Percent" | "Texture5Percent" | "Texture60Percent" | "Texture62Pt5Percent" | "Texture65Percent" | "Texture70Percent" | "Texture75Percent" | "Texture80Percent" | "Texture85Percent" | "Texture87Pt5Percent" | "Texture90Percent" | "Texture95Percent" | "TextureDarkDiagonalDown" | "TextureDarkDiagonalUp" | "TextureDarkGrid" | "TextureDarkHorizontal" | "TextureDarkTrellis" | "TextureDarkVertical" | "TextureLightDiagonalDown" | "TextureLightDiagonalUp" | "TextureLightGrid" | "TextureLightHorizontal" | "TextureLightTrellis" | "TextureLightVertical" | "TextureNone" | "TextureSolid";
+            texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -14920,6 +15794,65 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             width?: number;
+        }
+        /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
+        export interface TableStyleData {
+            /**
+             * Specifies the table's alignment against the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Specifies whether lines in tables formatted with a specified style break across pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowBreakAcrossPage?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the bottom borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomCellMargin?: number;
+            /**
+             * Specifies the spacing (in points) between the cells in a table style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cellSpacing?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the left borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftCellMargin?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the right borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightCellMargin?: number;
+            /**
+             * Specifies the amount of space to add between the contents and the top borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topCellMargin?: number;
         }
         /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
         export interface TableCollectionData {
@@ -15191,6 +16124,59 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             type?: boolean;
+        }
+        /**
+         * Represents the Border object for text, a paragraph, or a table.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface BorderLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the line color for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineColor?: boolean;
+            /**
+             * Specifies the line style for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineStyle?: boolean;
+            /**
+             * Specifies the line width for the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineWidth?: boolean;
+            /**
+             * Gets the position type of the border.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            positionType?: boolean;
+            /**
+             * Specifies whether the border is visible.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
         }
         /**
          * Represents a comment in the document.
@@ -17307,6 +18293,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            /**
+             * Gets a string that represents the paragraph identifier in the current session.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            uniqueLocalId?: boolean;
         }
         /**
          * Contains a collection of {@link Word.Paragraph} objects.
@@ -17515,6 +18509,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a string that represents the paragraph identifier in the current session.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            uniqueLocalId?: boolean;
         }
         /**
          * Represents a style of paragraph in a document.
@@ -17996,35 +18998,43 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets a TableStyle object representing Style properties that can be applied to a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tableStyle?: Word.Interfaces.TableStyleLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the name of an existing style to use as the base formatting of another style.
              *
@@ -18123,35 +19133,43 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets a font object that represents the character formatting of the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a font object that represents the character formatting of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
-            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
-            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             shading?: Word.Interfaces.ShadingLoadOptions;
+            /**
+             * Gets a TableStyle object representing Style properties that can be applied to a table.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tableStyle?: Word.Interfaces.TableStyleLoadOptions;
             /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
@@ -18461,6 +19479,75 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             width?: boolean;
+        }
+        /**
+         * Represents the TableStyle object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface TableStyleLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the table's alignment against the page margin.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * Specifies whether lines in tables formatted with a specified style break across pages.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowBreakAcrossPage?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the bottom borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomCellMargin?: boolean;
+            /**
+             * Specifies the spacing (in points) between the cells in a table style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cellSpacing?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the left borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftCellMargin?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the right borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightCellMargin?: boolean;
+            /**
+             * Specifies the amount of space to add between the contents and the top borders of the cells.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topCellMargin?: boolean;
         }
         /**
          * Contains the collection of the document's Table objects.
