@@ -1,7 +1,7 @@
 ---
 title: WebApplicationInfo element in the manifest file
 description: Reference documentation of the WebApplicationInfo element for Office Add-ins manifest (XML) files.
-ms.date: 02/25/2022
+ms.date: 08/14/2023
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +28,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [IdentityAPI 1.3](../requirement-sets/common/identity-api-requirement-sets.md)
 
 > [!NOTE]
-> The single sign-on API is currently supported for Word, Excel, Outlook, and PowerPoint. For more information about where the single sign-on API is currently supported, see [IdentityAPI requirement sets](../requirement-sets/common/identity-api-requirement-sets.md). If you are working with an Outlook add-in, be sure to enable Modern Authentication for the Microsoft 365 tenancy. To learn how to do this, see [Exchange Online: How to enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx).
+> The single sign-on API is currently supported for Word, Excel, Outlook, and PowerPoint. For more information about where the single sign-on API is currently supported, see [IdentityAPI requirement sets](../requirement-sets/common/identity-api-requirement-sets.md). If you're working with an Outlook add-in, be sure to enable Modern Authentication for the Microsoft 365 tenancy. To learn how to do this, see [Enable or disable modern authentication for Outlook in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 **\<WebApplicationInfo\>** is a child element of the [VersionOverrides](versionoverrides.md) element in the manifest.  
 
