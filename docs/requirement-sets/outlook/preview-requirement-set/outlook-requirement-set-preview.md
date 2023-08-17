@@ -113,7 +113,7 @@ Added a new enum to specify the folder to which a reported message is moved once
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-To learn more about how to implement the integrated spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the integrated spam-reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
 <br>
 
