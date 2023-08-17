@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 07/20/2023
+ms.date: 08/17/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -104,6 +104,12 @@ Added a method to get the Base64 encoding of a message.
 #### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
 
 Added options to customize a post-processing dialog or configure a spam-reporting add-in to perform additional operations on a reported message, such as deleting it from the inbox.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.MailboxEnums.MoveSpamItemTo](/javascript/api/outlook/office.mailboxenums.movespamitemto?view=outlook-js-preview&preserve-view=true)
+
+Added a new enum to specify the folder to which a reported message is moved once it's processed by a spam-reporting add-in.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 

@@ -9505,7 +9505,7 @@
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: "moveToCustomFolder",
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
                 folderName: "Reported Messages",
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
@@ -9537,7 +9537,7 @@
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: "delete",
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder,
                 onErrorDeleteItem: true,
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
@@ -9597,7 +9597,7 @@
             */
             const event = asyncResult.asyncContext;
             event.completed({
-                postProcessingAction: "noMove",
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove,
                 showPostProcessingDialog: {
                     title: "Contoso Spam Reporting",
                     description: "Thank you for reporting this message.",
