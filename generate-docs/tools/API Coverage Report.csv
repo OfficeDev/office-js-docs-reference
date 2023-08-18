@@ -6573,6 +6573,7 @@ Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
 Office.AddinCommands.EventCompletedOptions,allowEvent,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,errorMessage,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,folderName,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,moveItemTo,Property,Good,false
 Office.AddinCommands.EventCompletedOptions,onErrorDeleteItem,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,postProcessingAction,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,showPostProcessingDialog,Property,Good,true
@@ -8688,6 +8689,11 @@ Office.MailboxEnums.Month,May,EnumField,Poor,false
 Office.MailboxEnums.Month,Nov,EnumField,Poor,false
 Office.MailboxEnums.Month,Oct,EnumField,Poor,false
 Office.MailboxEnums.Month,Sep,EnumField,Poor,false
+Office.MailboxEnums.MoveSpamItemTo,N/A,Enum,Good,false
+Office.MailboxEnums.MoveSpamItemTo,CustomFolder,EnumField,Fine,false
+Office.MailboxEnums.MoveSpamItemTo,DeletedItemsFolder,EnumField,Fine,false
+Office.MailboxEnums.MoveSpamItemTo,JunkFolder,EnumField,Fine,false
+Office.MailboxEnums.MoveSpamItemTo,NoMove,EnumField,Fine,false
 Office.MailboxEnums.OWAView,N/A,Enum,Fine,true
 Office.MailboxEnums.OWAView,OneColumn,EnumField,Good,false
 Office.MailboxEnums.OWAView,OneColumnNarrow,EnumField,Good,false

@@ -16898,6 +16898,106 @@
                 },
                 {
                   "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo:enum",
+                  "docComment": "/**\n * Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting add-in.\n *\n * To learn more about the integrated spam-reporting feature, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * **Important**: This enum can only be used to assign values to the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-moveitemto-member | moveItemTo} property of the `event.completed` method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property, you must assign it different string values. For a list of supported string values, see {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-postprocessingaction-member | Office.AddinCommands.EventCompletedOptions.postProcessingAction}.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum MoveSpamItemTo "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "MoveSpamItemTo",
+                  "preserveMemberOrder": false,
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo.CustomFolder:member",
+                      "docComment": "/**\n * Specifies that a reported message is moved to a custom folder in the mailbox.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "CustomFolder = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"customFolder\""
+                        }
+                      ],
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "releaseTag": "Beta",
+                      "name": "CustomFolder"
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder:member",
+                      "docComment": "/**\n * Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "DeletedItemsFolder = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"deletedItemsFolder\""
+                        }
+                      ],
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "releaseTag": "Beta",
+                      "name": "DeletedItemsFolder"
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo.JunkFolder:member",
+                      "docComment": "/**\n * Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "JunkFolder = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"junkFolder\""
+                        }
+                      ],
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "releaseTag": "Beta",
+                      "name": "JunkFolder"
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo.NoMove:member",
+                      "docComment": "/**\n * Specifies that a reported message remains in its current folder in the mailbox.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "NoMove = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"noMove\""
+                        }
+                      ],
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "releaseTag": "Beta",
+                      "name": "NoMove"
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.OWAView:enum",
                   "docComment": "/**\n * Represents the current view of Outlook on the web.\n */\n",
                   "excerptTokens": [
