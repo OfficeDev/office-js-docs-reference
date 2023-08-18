@@ -94,6 +94,7 @@ enums:
   - 'outlook!Office.MailboxEnums.ItemType:enum'
   - 'outlook!Office.MailboxEnums.LocationType:enum'
   - 'outlook!Office.MailboxEnums.Month:enum'
+  - 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
   - 'outlook!Office.MailboxEnums.OWAView:enum'
   - 'outlook!Office.MailboxEnums.RecipientType:enum'
   - 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'

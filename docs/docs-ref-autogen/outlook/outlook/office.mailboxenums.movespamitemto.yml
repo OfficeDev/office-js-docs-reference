@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.MoveSpamItemTo
+uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
+package: outlook!
+fullName: Office.MailboxEnums.MoveSpamItemTo
+summary: >-
+  Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting
+  add-in.
+
+
+  To learn more about the integrated spam-reporting feature, see [Implement an integrated spam-reporting add-in
+  (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Message Read
+
+
+  **Important**: This enum can only be used to assign values to the
+  [moveItemTo](https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-moveitemto-member)
+  property of the `event.completed` method. If you're on an Outlook on Windows version that only supports the
+  `postProcessingAction` property, you must assign it different string values. For a list of supported string values,
+  see
+  [Office.AddinCommands.EventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-postprocessingaction-member)<!--
+  -->.
+isPreview: true
+isDeprecated: false
+fields:
+  - name: CustomFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.CustomFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to a custom folder in the mailbox.
+    value: '"customFolder"'
+  - name: DeletedItemsFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.
+    value: '"deletedItemsFolder"'
+  - name: JunkFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.JunkFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.
+    value: '"junkFolder"'
+  - name: NoMove
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.NoMove:member'
+    package: outlook!
+    summary: Specifies that a reported message remains in its current folder in the mailbox.
+    value: '"noMove"'

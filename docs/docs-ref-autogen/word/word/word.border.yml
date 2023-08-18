@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Border#lineColor:member'
     package: word!
     fullName: lineColor
-    summary: Specifies the line color for the border.
+    summary: 'Specifies the line color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

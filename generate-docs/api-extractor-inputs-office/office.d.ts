@@ -1119,7 +1119,7 @@ export declare namespace Office {
              * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
              * to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to which the message will be moved.
              *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
              *
              * @remarks
              *
@@ -1141,12 +1141,39 @@ export declare namespace Office {
              */
             folderName?: string;
             /**
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox.
+             *
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
+             *
+             * @remarks
+             *
+             * [Api set: Mailbox preview]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+             *
+             * **Important**:
+             *
+             * In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build 16724.10000).
+             * If you're using an earlier build that supports the integrated spam-reporting feature, use the `postProcessingAction`
+             * property instead.
+             *
+             * If the property is set to `Outlook.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
+             * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
+             * `Outlook.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
+             *
+             * @beta
+             */
+            moveItemTo?: Outlook.MailboxEnums.MoveSpamItemTo;
+            /**
              * When set to `true`, deletes a reported message if an error occurs while the message is processed.
              * If this property is set to `false` or isn't specified in the
              * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method},
              * the reported message remains in its current mailbox folder.
              *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
              *
              * @remarks
              *
@@ -1161,17 +1188,18 @@ export declare namespace Office {
             onErrorDeleteItem?: boolean;
             /**
              * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal that a reported message has finished processing, this property specifies the next action to be performed on the message. The following post-processing actions are available:
+             * to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox.
+             * The following post-processing actions are available.
              *
-             * - `delete` - Deletes the reported message.
+             * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
              *
              * - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder in the `folderName` property.
              *
-             * - `moveToSpamFolder` - Moves the reported message to the Junk Email folder of the mailbox.
+             * - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
              *
              * - `noMove` - Leaves the reported message in its current folder.
              *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
              *
              * @remarks
              *
@@ -1181,9 +1209,14 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
              *
-             * **Important**: If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which the message will be moved in the `folderName`
-             * property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the
-             * Junk Email folder.
+             * **Important**:
+             *
+             * In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature.
+             * If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
+             *
+             * If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
+             * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to
+             * `moveToSpamFolder` and move the reported message to the **Junk Email** folder.
              *
              * @beta
              */
@@ -1193,7 +1226,7 @@ export declare namespace Office {
              * to signal that a reported message has finished processing, this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property
              * must contain a title and a description. If this property isn't specified, a dialog isn't shown to the user once their reported message is processed. 
              *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
              *
              * @remarks
              *
