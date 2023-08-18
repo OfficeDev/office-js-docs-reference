@@ -234,13 +234,13 @@ export declare namespace Word {
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the paragraph by its unique id. Throws an `ItemNotFound` error if the collection is empty.
+         * Gets the paragraph by its unique ID in GUID format. Throws an `ItemNotFound` error if the collection is empty.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param id - Required. Unique Paragraph Id.
+         * @param id - Required. Unique paragraph ID in GUID format.
          */
         getParagraphById(id: string): Word.Paragraph;
         /**
@@ -525,7 +525,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the line color for the border.
+         * Specifies the line color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -12564,7 +12564,7 @@ export declare namespace Word {
         /** An interface for updating data on the Border object, for use in `border.set({ ... })`. */
         export interface BorderUpdateData {
             /**
-             * Specifies the line color for the border.
+             * Specifies the line color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -14020,7 +14020,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `border.toJSON()`. */
         export interface BorderData {
             /**
-             * Specifies the line color for the border.
+             * Specifies the line color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16138,7 +16138,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies the line color for the border.
+             * Specifies the line color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]

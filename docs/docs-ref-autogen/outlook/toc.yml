@@ -45,6 +45,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.LocationType:enum'
               - name: Month
                 uid: 'outlook!Office.MailboxEnums.Month:enum'
+              - name: MoveSpamItemTo
+                uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType

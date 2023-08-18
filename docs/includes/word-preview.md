@@ -1,6 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[getParagraphById(id: string)](/javascript/api/word/word.body#word-word-body-getparagraphbyid-member(1))|Gets the paragraph by its unique id.|
+|[Body](/javascript/api/word/word.body)|[getParagraphById(id: string)](/javascript/api/word/word.body#word-word-body-getparagraphbyid-member(1))|Gets the paragraph by its unique ID in GUID format.|
 ||[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|

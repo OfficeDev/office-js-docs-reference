@@ -804,7 +804,7 @@ methods:
     uid: 'word!Word.Body#getParagraphById:member(1)'
     package: word!
     fullName: getParagraphById(id)
-    summary: Gets the paragraph by its unique id. Throws an `ItemNotFound` error if the collection is empty.
+    summary: Gets the paragraph by its unique ID in GUID format. Throws an `ItemNotFound` error if the collection is empty.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -812,7 +812,7 @@ methods:
       content: 'getParagraphById(id: string): Word.Paragraph;'
       parameters:
         - id: id
-          description: Required. Unique Paragraph Id.
+          description: Required. Unique paragraph ID in GUID format.
           type: string
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'

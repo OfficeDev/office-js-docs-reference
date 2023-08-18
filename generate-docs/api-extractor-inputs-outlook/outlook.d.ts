@@ -567,6 +567,44 @@ export declare namespace Office {
             Dec = "dec"
         }
         /**
+         * Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting add-in.
+         *
+         * To learn more about the integrated spam-reporting feature, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: This enum can only be used to assign values to the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-moveitemto-member |
+         * moveItemTo} property of the `event.completed` method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property,
+         * you must assign it different string values. For a list of supported string values, see
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-postprocessingaction-member |
+         * Office.AddinCommands.EventCompletedOptions.postProcessingAction}.
+         *
+         * @beta
+         */
+        enum MoveSpamItemTo {
+            /**
+             * Specifies that a reported message is moved to a custom folder in the mailbox.
+             */
+            CustomFolder = "customFolder",
+            /**
+             * Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.
+             */
+            DeletedItemsFolder = "deletedItemsFolder",
+            /**
+             * Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.
+             */
+            JunkFolder = "junkFolder",
+            /**
+             * Specifies that a reported message remains in its current folder in the mailbox.
+             */
+            NoMove = "noMove"
+        }
+        /**
          * Represents the current view of Outlook on the web.
          */
         enum OWAView {
