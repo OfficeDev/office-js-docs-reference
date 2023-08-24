@@ -1589,24 +1589,9 @@ export declare namespace Office {
         /**
          * Asynchronously saves an item.
          *
-         * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
-         * In Outlook on the web or Outlook in online mode, the item is saved to the server.
-         * In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
-         * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
-         * Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
-         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
-         *
-         * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
-         * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
-         * Until the item is synced, using the item ID will return an error.
-         *
-         * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
-         * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
-         * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
+         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item is saved as a normal
+         * appointment on the user's calendar. For new appointments that haven't been saved before, no invitation is sent.
+         * For existing appointments, an update is sent to added or removed attendees.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -1614,6 +1599,21 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
+         *
+         * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
+         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
+         * Until the item is synced, using the item ID will return an error.
+         *
+         * - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting.
+         * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
+         * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
          * **Errors**:
          *
@@ -1621,30 +1621,16 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                   type `Office.AsyncResult`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                   which is an `Office.AsyncResult` object. The appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously saves an item.
          *
-         * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
-         * In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
-         * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
-         * Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
-         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
-         *
-         * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
-         * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
-         * Until the item is synced, using the item ID will return an error.
-         *
-         * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
-         * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
-         * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
+         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item is saved as a normal
+         * appointment on the user's calendar. For new appointments that haven't been saved before, no invitation is sent.
+         * For existing appointments, an update is sent to added or removed attendees.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -1653,12 +1639,27 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
+         * **Important**:
+         *
+         * - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
+         *
+         * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
+         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
+         * Until the item is synced, using the item ID will return an error.
+         *
+         * - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting.
+         * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
+         * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
+         *
          * **Errors**:
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
-         *                   type `Office.AsyncResult`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                   which is an `Office.AsyncResult` object. The appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -4857,22 +4858,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
-         * In Outlook on the web or Outlook in online mode, the item is saved to the server.
-         * In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
-         * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
-         * Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
-         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
-         *
-         * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
-         * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
-         * Until the item is synced, using the itemId will return an error.
+         * Asynchronously saves the current message as a draft.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -4880,6 +4866,23 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
+         *
+         * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
+         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
+         * Until the item is synced, using the item ID will return an error.
+         *
+         * - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a message that will be sent
+         * from a shared mailbox account. If the sender creates a new message from their personal mailbox and selects the shared mailbox account
+         * in the **From** field, `saveAsync` saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the
+         * shared mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and creates a new message
+         * there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
          *
          * **Errors**:
          *
@@ -4887,27 +4890,12 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                   which is an `Office.AsyncResult` object. The message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
-         * In Outlook on the web or Outlook in online mode, the item is saved to the server.
-         * In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
-         * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
-         * Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
-         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
-         *
-         * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
-         * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
-         * Until the item is synced, using the `itemId` will return an error.
+         * Asynchronously saves the current message as a draft.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -4916,12 +4904,29 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
+         * **Important**:
+         *
+         * - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
+         *
+         * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
+         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
+         * Until the item is synced, using the item ID will return an error.
+         *
+         * - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a message that will be sent
+         * from a shared mailbox account. If the sender creates a new message from their personal mailbox and selects the shared mailbox account
+         * in the **From** field, `saveAsync` saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the
+         * shared mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and creates a new message
+         * there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+         *
          * **Errors**:
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                   which is an `Office.AsyncResult` object. The message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
