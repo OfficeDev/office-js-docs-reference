@@ -6592,15 +6592,15 @@ Office.AsyncResultStatus,Failed,EnumField,Fine,false
 Office.AsyncResultStatus,Succeeded,EnumField,Poor,false
 Office.Auth,N/A,Class,Good,false
 Office.Auth,getAccessToken(options),Method,Fine,true
-Office.Auth,getAccessTokenAsync(options,Method,Fine,true
-Office.Auth,getAccessTokenAsync(callback),Method,Poor,false
+Office.Auth,getAccessTokenAsync(options,Method,Deprecated,true
+Office.Auth,getAccessTokenAsync(callback),Method,Deprecated,false
 Office.AuthOptions,N/A,Class,Good,false
 Office.AuthOptions,allowConsentPrompt,Property,Good,false
 Office.AuthOptions,allowSignInPrompt,Property,Good,false
 Office.AuthOptions,asyncContext,Property,Fine,false
 Office.AuthOptions,authChallenge,Property,Good,false
-Office.AuthOptions,forceAddAccount,Property,Good,false
-Office.AuthOptions,forceConsent,Property,Good,false
+Office.AuthOptions,forceAddAccount,Property,Deprecated,false
+Office.AuthOptions,forceConsent,Property,Deprecated,false
 Office.AuthOptions,forMSGraphAccess,Property,Good,false
 Office.BeforeDocumentCloseNotification,N/A,Class,Good,true
 Office.BeforeDocumentCloseNotification,disable(),Method,Poor,false
@@ -7418,7 +7418,7 @@ Office.RemoveHandlerOptions,N/A,Class,Fine,false
 Office.RemoveHandlerOptions,asyncContext,Property,Fine,false
 Office.RemoveHandlerOptions,handler,Property,Good,false
 Office.RequirementSetSupport,N/A,Class,Fine,false
-Office.RequirementSetSupport,isSetSupported(name,Method,Poor,false
+Office.RequirementSetSupport,isSetSupported(name,Method,Deprecated,false
 Office.Ribbon,N/A,Class,Good,false
 Office.Ribbon,requestCreateControls(tabDefinition),Method,Poor,false
 Office.Ribbon,requestUpdate(input),Method,Poor,false
@@ -7426,7 +7426,7 @@ Office.RibbonUpdaterData,N/A,Class,Good,false
 Office.RibbonUpdaterData,tabs,Property,Fine,false
 Office.SaveSettingsOptions,N/A,Class,Poor,false
 Office.SaveSettingsOptions,asyncContext,Property,Fine,false
-Office.SaveSettingsOptions,overwriteIfStale,Property,Good,false
+Office.SaveSettingsOptions,overwriteIfStale,Property,Deprecated,false
 Office.SelectionMode,N/A,Enum,Fine,false
 Office.SelectionMode,Default,EnumField,Missing,false
 Office.SelectionMode,None,EnumField,Fine,false
@@ -7599,8 +7599,8 @@ OfficeRuntime.AuthOptions,allowConsentPrompt,Property,Good,false
 OfficeRuntime.AuthOptions,allowSignInPrompt,Property,Good,false
 OfficeRuntime.AuthOptions,asyncContext,Property,Fine,false
 OfficeRuntime.AuthOptions,authChallenge,Property,Good,false
-OfficeRuntime.AuthOptions,forceAddAccount,Property,Good,false
-OfficeRuntime.AuthOptions,forceConsent,Property,Good,false
+OfficeRuntime.AuthOptions,forceAddAccount,Property,Deprecated,false
+OfficeRuntime.AuthOptions,forceConsent,Property,Deprecated,false
 OfficeRuntime.AuthOptions,forMSGraphAccess,Property,Good,false
 OfficeRuntime.Dialog,N/A,Class,Good,false
 OfficeRuntime.Dialog,close(),Method,Poor,false
@@ -8426,7 +8426,7 @@ Office.AttachmentContent,content,Property,Fine,false
 Office.AttachmentContent,format,Property,Good,true
 Office.AttachmentDetails,N/A,Class,Good,true
 Office.AttachmentDetails,attachmentType,Property,Fine,false
-Office.AttachmentDetails,contentType,Property,Good,false
+Office.AttachmentDetails,contentType,Property,Deprecated,false
 Office.AttachmentDetails,id,Property,Good,false
 Office.AttachmentDetails,isInline,Property,Fine,false
 Office.AttachmentDetails,name,Property,Fine,false

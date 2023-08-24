@@ -32,6 +32,7 @@ class CoverageRating {
     type: ApiType;
     descriptionRating: DescriptionRating;
     hasExample: boolean;
+    isDeprecated: boolean;
 }
 
 /**
@@ -46,7 +47,8 @@ class ClassCoverageRating {
         this.classRating = {
             type: ApiType.Class,
             descriptionRating: DescriptionRating.Missing,
-            hasExample: false
+            hasExample: false,
+            isDeprecated: false
         };
     }
 }
@@ -168,7 +170,8 @@ function rateClass(classYml: ApiYaml) : ClassCoverageRating {
         ymlCoverage.apiRatings.set(field.name, {
             type: ApiType.EnumField,
             descriptionRating: rateDescriptionString(field.summary),
-            hasExample: false
+            hasExample: false,
+            isDeprecated: false
         });
     });
 
@@ -192,13 +195,15 @@ function rateClassDescription(classYml: ApiYaml) : CoverageRating {
         rating = {
             type: type,
             descriptionRating: rateDescriptionString((classYml.summary + " " + classYml.remarks.substring(0, indexOfExample)).trim()),
-            hasExample: true
+            hasExample: true,
+            isDeprecated: classYml.isDeprecated
         }
     } else {
         rating = {
             type: type,
             descriptionRating: rateDescriptionString((classYml.summary + " " + classYml.remarks).trim()),
-            hasExample: false
+            hasExample: false,
+            isDeprecated: classYml.isDeprecated
         }
     }
 
@@ -217,13 +222,15 @@ function rateFieldDescription(fieldYml: ApiPropertyYaml | ApiMethodYaml, isMetho
         rating = {
             type: isMethod ? ApiType.Method: ApiType.Property,
             descriptionRating: rateDescriptionString((fieldYml.summary + " " + fieldYml.remarks.substring(0, indexOfExample)).trim()),
-            hasExample: true
+            hasExample: true,
+            isDeprecated: fieldYml.isDeprecated
         }
     } else {
         rating = {
             type: isMethod ? ApiType.Method: ApiType.Property,
             descriptionRating: rateDescriptionString((fieldYml.summary + " " + fieldYml.remarks).trim()),
-            hasExample: false
+            hasExample: false,
+            isDeprecated: fieldYml.isDeprecated
         }
     }
 
@@ -293,9 +300,9 @@ function averageDescriptionRatings(ratings: DescriptionRating[]) : DescriptionRa
 function convertToCsv(apiCoverage: Map<string, ClassCoverageRating>) : string {
     let csvString = "Class,Field,Type,Description Rating,Has Example?\n";
     apiCoverage.forEach((coverage, className) => {
-        csvString += `${className},N/A,${coverage.classRating.type},${coverage.classRating.descriptionRating},${coverage.classRating.hasExample}\n`;
+        csvString += `${className},N/A,${coverage.classRating.type},${coverage.classRating.isDeprecated ? "Deprecated" : coverage.classRating.descriptionRating},${coverage.classRating.hasExample}\n`;
         coverage.apiRatings.forEach((fieldCoverage, fieldName) => {
-            csvString += `${className},${fieldName},${fieldCoverage.type},${fieldCoverage.descriptionRating},${fieldCoverage.hasExample}\n`;
+            csvString += `${className},${fieldName},${fieldCoverage.type},${fieldCoverage.isDeprecated ? "Deprecated" : fieldCoverage.descriptionRating},${fieldCoverage.hasExample}\n`;
         });
     });
 
