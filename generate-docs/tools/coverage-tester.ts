@@ -180,8 +180,7 @@ function rateClass(classYml: ApiYaml) : ClassCoverageRating {
     });
 
     classYml.methods?.forEach((field) => {
-        let name = field.name.indexOf(",") < 0 ? field.name : field.name.substring(0, field.name.indexOf(","));
-        ymlCoverage.apiRatings.set(name, rateFieldDescription(field, true));
+        ymlCoverage.apiRatings.set(field.name, rateFieldDescription(field, true));
     });
 
     return ymlCoverage;
