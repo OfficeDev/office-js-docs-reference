@@ -301,7 +301,7 @@ function convertToCsv(apiCoverage: Map<string, ClassCoverageRating>) : string {
     apiCoverage.forEach((coverage, className) => {
         csvString += `${className},N/A,${coverage.classRating.type},${coverage.classRating.isDeprecated ? "Deprecated" : coverage.classRating.descriptionRating},${coverage.classRating.hasExample}\n`;
         coverage.apiRatings.forEach((fieldCoverage, fieldName) => {
-            csvString += `${className},${fieldName},${fieldCoverage.type},${fieldCoverage.isDeprecated ? "Deprecated" : fieldCoverage.descriptionRating},${fieldCoverage.hasExample}\n`;
+            csvString += `${className},"${fieldName}",${fieldCoverage.type},${fieldCoverage.isDeprecated ? "Deprecated" : fieldCoverage.descriptionRating},${fieldCoverage.hasExample}\n`;
         });
     });
 
