@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.12
 description: Requirement set 1.12 for Outlook add-in API.
-ms.date: 05/19/2023
+ms.date: 08/28/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -31,7 +31,7 @@ Requirement set 1.12 includes all of the features of [requirement set 1.11](../r
   - `OnAppointmentOrganizer`
 
 - Modified the [LaunchEvent manifest element](/javascript/api/manifest/launchevent): Adds the `SendMode` attribute used by the `OnMessageSend` and `OnAppointmentSend` events. This attribute specifies options available to the user if an add-in stops an item from being sent or if the add-in is unavailable.
-- Modified [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-1.12&preserve-view=true): Adds the `errorMessage` property to display a message to the user if `allowEvent` is set to `false` when the add-in's event handler condition isn't met.
+- Created [Office.SmartAlertsEventCompletedOptions](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-1.12&preserve-view=true): Adds the `allowEvent` and `errorMessage` properties. The `allowEvent` property indicates if the handled event should continue execution or be canceled. If `allowEvent` is set to `false` when the add-in's condition isn't met, the `errorMessage` property can be used to display a message to the user.
 
 ## See also
 

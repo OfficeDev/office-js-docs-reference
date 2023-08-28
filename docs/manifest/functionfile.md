@@ -52,7 +52,7 @@ The following is an example of the **\<FunctionFile\>** element.
 </Resources>
 ```
 
-The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must [initialize Office.js](/office/dev/add-ins/develop/initialize-add-in) and define named functions that take a single parameter: `event`. It should also call `event.completed` when it has finished execution. Functions in Outlook add-ins should use the [notification APIs](/javascript/api/outlook/office.notificationmessages) to indicate progress, success, or failure to the user. The name of the functions are used in the [FunctionName](action.md#functionname) element for function command buttons.
+The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must [initialize Office.js](/office/dev/add-ins/develop/initialize-add-in) and define named functions that take a single parameter: [event](/javascript/api/office/office.addincommands.event). It should also call [event.completed](/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1)) when it has finished execution. Functions in Outlook add-ins should use the [notification APIs](/javascript/api/outlook/office.notificationmessages) to indicate progress, success, or failure to the user. The name of the functions are used in the [FunctionName](action.md#functionname) element for function command buttons.
 
 You can define and register the function specified by the **\<FunctionName\>** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
 

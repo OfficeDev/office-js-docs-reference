@@ -4,31 +4,23 @@ Office.AddinCommands.Event#completed:member(1):
     // defined in the FunctionFile referenced from the add-in manifest,
     // and maps to the FunctionName of the action in the associated button control.
     function processItem(event) {
-        // Do some processing
+        // Do some processing.
 
         event.completed();
     }
   - |-
-    // In this example, the function is registered as an event handler for the OnAppointmentSend event.
-    // It checks whether a location is specified in an appointment before it's sent.
-    function onAppointmentSendHandler(event) {
-        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
-            let event = asyncResult.asyncContext;
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(asyncResult.error.message);
-                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
-                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
-                return;
-            }
+    // In this example, the checkMessage function was registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent.
+        const outgoingMsg = Office.context.mailbox.item;
 
-            if (asyncResult.value === "") {
-                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
-                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
-                return;
-            } else {
-                // If a location is specified, the appointment is sent.
-                event.completed({ allowEvent: true });
-            }
+        // Check if subject contains "BLOCK".
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in `result.value`.
+            // If search term "BLOCK" is found, don't send the message.
+            const notFound = -1;
+            const allowEvent = (result.value.indexOf('BLOCK') === notFound);
+            event.completed({ allowEvent: allowEvent });
         });
     }
 Office.AddinCommands.Event#source:member:
@@ -149,163 +141,18 @@ Office.AddinCommands.Event#source:member:
     }
 Office.AddinCommands.EventCompletedOptions#allowEvent:member:
   - |-
-    // The following example checks whether a location is specified in an appointment before it's sent.
-    function onAppointmentSendHandler(event) {
-        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
-            let event = asyncResult.asyncContext;
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(asyncResult.error.message);
-                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
-                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
-                return;
-            }
+    // In this example, the checkMessage function was registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent.
+        const outgoingMsg = Office.context.mailbox.item;
 
-            if (asyncResult.value === "") {
-                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
-                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
-                return;
-            } else {
-                // If a location is specified, the appointment is sent.
-                event.completed({ allowEvent: true });
-            }
-        });
-    }
-Office.AddinCommands.EventCompletedOptions#errorMessage:member:
-  - |-
-    // The following example checks whether a message's subject is prefixed with "[For Review]" before it's sent.
-    function onMessageSendHandler(event) {
-        Office.context.mailbox.item.subject.getAsync({ asyncContext: event }, asyncResult => {
-            let event = asyncResult.asyncContext;
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(asyncResult.error.message);
-                // If the add-in is unable to retrieve the message's subject, the message isn't sent and the user is alerted.
-                event.completed({ allowEvent: false, errorMessage: "Failed to get item's subject." });
-                return;
-            }
-
-            if (asyncResult.value.startsWith("[For Review]")) {
-                // If the message's subject is prefixed with "[For Review]", the message is sent.
-                event.completed({ allowEvent: true });
-            } else {
-                // If the message's subject isn't prefixed with "[For Review]", the message isn't sent and the user is alerted to
-                // add the tag to the subject.
-                event.completed({ allowEvent: false, errorMessage: "Remember to add '[For Review]' before the subject." });
-                return;
-            }
-        });
-    }
-Office.AddinCommands.EventCompletedOptions#folderName:member:
-  - |-
-    // The following example handles a SpamReporting event to process a reported spam or phishing message.
-    function onSpamReport(event) {
-        // Gets the Base64-encoded EML format of a reported message.
-        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                return;
-            }
-
-            // Run additional processing operations here.
-
-            /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-            * and shows a post-processing dialog to the user.
-            */
-            const event = asyncResult.asyncContext;
-            event.completed({
-                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
-                folderName: "Reported Messages",
-                showPostProcessingDialog: {
-                    title: "Contoso Spam Reporting",
-                    description: "Thank you for reporting this message.",
-                },
-            });
-        });
-    }
-Office.AddinCommands.EventCompletedOptions#onErrorDeleteItem:member:
-  - |-
-    // The following example handles a SpamReporting event to process a reported spam or phishing message.
-    function onSpamReport(event) {
-        // Gets the Base64-encoded EML format of a reported message.
-        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                return;
-            }
-
-            // Run additional processing operations here.
-
-            /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then deletes the reported message from the mailbox and shows a post-processing dialog
-            * to the user. If an error occurs while the message is being processed, the `onErrorDeleteItem`
-            * property determines whether the message will be deleted.
-            */
-            const event = asyncResult.asyncContext;
-            event.completed({
-                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder,
-                onErrorDeleteItem: true,
-                showPostProcessingDialog: {
-                    title: "Contoso Spam Reporting",
-                    description: "Thank you for reporting this message.",
-                },
-            });
-        });
-    }
-Office.AddinCommands.EventCompletedOptions#postProcessingAction:member:
-  - |-
-    // The following example handles a SpamReporting event to process a reported spam or phishing message.
-    function onSpamReport(event) {
-        // Gets the Base64-encoded EML format of a reported message.
-        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                return;
-            }
-
-            // Run additional processing operations here.
-
-            /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-            * post-processing dialog to the user.
-            */
-            const event = asyncResult.asyncContext;
-            event.completed({
-                postProcessingAction: "moveToSpamFolder",
-                showPostProcessingDialog: {
-                    title: "Contoso Spam Reporting",
-                    description: "Thank you for reporting this message.",
-                },
-            });
-        });
-    }
-Office.AddinCommands.EventCompletedOptions#showPostProcessingDialog:member:
-  - |-
-    // The following example handles a SpamReporting event to process a reported spam or phishing message.
-    function onSpamReport(event) {
-        // Gets the Base64-encoded EML format of a reported message.
-        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                return;
-            }
-
-            // Run additional processing operations here.
-
-            /**
-            * Signals that the spam-reporting event has completed processing.
-            * The reported message is left in its current folder, then a post-processing dialog is shown to the user.
-            */
-            const event = asyncResult.asyncContext;
-            event.completed({
-                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove,
-                showPostProcessingDialog: {
-                    title: "Contoso Spam Reporting",
-                    description: "Thank you for reporting this message.",
-                },
-            });
+        // Check if subject contains "BLOCK".
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in `result.value`.
+            // If search term "BLOCK" is found, don't send the message.
+            const notFound = -1;
+            const allowEvent = (result.value.indexOf('BLOCK') === notFound);
+            event.completed({ allowEvent: allowEvent });
         });
     }
 Office.AddinCommands.Source#id:member:
