@@ -85,7 +85,7 @@ Added method to close a current message being composed with the option to discar
 
 #### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
 
-Added events to automatically activate an event-based add-in from a message in read mode.
+Added events to automatically activate an event-based add-in on a message in read mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
