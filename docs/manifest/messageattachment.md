@@ -42,7 +42,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 | Attribute | Required | Description |
 |:-----|:-----:|:-----|
-| **AttachmentExtension** | Yes | Specifies the file extension of the attachment included in the message on which an `OnMessageReadWithCustomAttachment` event occurs. The file extension value is limited to 50 characters and must not include a period. |
+| **AttachmentExtension** | Yes | Specifies the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs. The file extension value is limited to 50 characters and must not include a period. |
 
 ## Child elements
 
