@@ -81,6 +81,32 @@ Added method to close a current message being composed with the option to discar
 
 ---
 
+### Event-based activation on read
+
+#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+
+Added events to automatically activate an event-based add-in from a message in read mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [HeaderName attribute in the LaunchEvent element](/javascript/api/manifest/launchevent?view=outlook-js-preview&preserve-view=true#attributes)
+
+Added an attribute to the **\<LaunchEvent\>** element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [MessageAttachments element](/javascript/api/manifest/messageattachments?view=outlook-js-preview&preserve-view=true)
+
+Added an element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Integrated spam reporting
 
 #### [ReportPhishingCommandSurface extension point](/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview)
