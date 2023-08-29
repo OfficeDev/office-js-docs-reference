@@ -24,6 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
   <LaunchEvents>
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
+    <LaunchEvent Type="OnMessageReadWithCustomHeader" FunctionName="onMessageReadWithCustomHeaderHandler" HeaderName="contoso-spam-simulation"/>
   </LaunchEvents>
   <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
   <SourceLocation resid="WebViewRuntime.Url"/>
