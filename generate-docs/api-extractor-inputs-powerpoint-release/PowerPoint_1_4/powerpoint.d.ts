@@ -3087,7 +3087,7 @@ export declare namespace PowerPoint {
     enum ErrorCodes {
         generalException = "GeneralException",
     }
-    export module Interfaces {
+    export namespace Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */

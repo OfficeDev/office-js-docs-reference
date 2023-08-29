@@ -111,6 +111,8 @@ items:
             uid: 'outlook!Office.RoamingSettings:interface'
           - name: SeriesTime
             uid: 'outlook!Office.SeriesTime:interface'
+          - name: SmartAlertsEventCompletedOptions
+            uid: 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

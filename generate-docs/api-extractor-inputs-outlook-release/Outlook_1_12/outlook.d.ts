@@ -6300,6 +6300,34 @@ export declare namespace Office {
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts}.
+     * It allows the add-in to signify to the Outlook client that it has completed processing an event.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.10]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     */
+    export interface MailboxEvent {
+        /**
+         * Indicates that the event-based add-in has completed processing an event.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.10]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
+         */
+        completed(options?: SmartAlertsEventCompletedOptions): void;
+    }
+    /**
      * Represents the categories master list on the mailbox.
      *
      * In Outlook, a user can tag messages and appointments by using a category to color-code them.
@@ -10145,6 +10173,42 @@ export declare namespace Office {
          * The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
+    }
+    /**
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+     */
+    export interface SmartAlertsEventCompletedOptions {
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler,
+         * this value indicates if the handled event should continue execution or be canceled.
+         * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item.
+         * For a complete sample, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.12]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         */
+        allowEvent?: boolean;
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
+         * to `false`, this property sets the error message that will be displayed to the user. For an example, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+         *
+         * @remarks
+         * 
+         * [Api set: Mailbox 1.12]
+         * 
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         */
+        errorMessage?: string;
     }
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

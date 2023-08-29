@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.34.8",
+    "toolVersion": "7.36.4",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -19787,6 +19787,22 @@
                   "name": "setStartTime"
                 }
               ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SmartAlertsEventCompletedOptions:interface",
+              "docComment": "/**\n * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in} when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SmartAlertsEventCompletedOptions "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SmartAlertsEventCompletedOptions",
+              "preserveMemberOrder": false,
+              "members": [],
               "extendsTokenRanges": []
             },
             {
