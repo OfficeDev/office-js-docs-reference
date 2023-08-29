@@ -10122,7 +10122,7 @@ export declare namespace Word {
         searchDialogIsOpen = "SearchDialogIsOpen",
         searchStringInvalidOrTooLong = "SearchStringInvalidOrTooLong",
     }
-    export module Interfaces {
+    export namespace Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */

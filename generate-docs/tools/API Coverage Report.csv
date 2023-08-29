@@ -6586,15 +6586,9 @@ Office.Addin,"showAsTaskpane()",Method,Fine,false
 Office.AddinCommands.Event,N/A,Class,Good,false
 Office.AddinCommands.Event,"source",Property,Good,true
 Office.AddinCommands.Event,"completed(options)",Method,Poor,true
-Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
+Office.AddinCommands.EventCompletedOptions,N/A,Class,Good,false
 Office.AddinCommands.EventCompletedOptions,"allowEvent",Property,Good,true
-Office.AddinCommands.EventCompletedOptions,"errorMessage",Property,Good,true
-Office.AddinCommands.EventCompletedOptions,"folderName",Property,Good,true
-Office.AddinCommands.EventCompletedOptions,"moveItemTo",Property,Good,false
-Office.AddinCommands.EventCompletedOptions,"onErrorDeleteItem",Property,Good,true
-Office.AddinCommands.EventCompletedOptions,"postProcessingAction",Property,Good,true
-Office.AddinCommands.EventCompletedOptions,"showPostProcessingDialog",Property,Good,true
-Office.AddinCommands.Source,N/A,Class,Fine,false
+Office.AddinCommands.Source,N/A,Class,Good,false
 Office.AddinCommands.Source,"id",Property,Good,true
 Office.AsyncContextOptions,N/A,Class,Fine,false
 Office.AsyncContextOptions,"asyncContext",Property,Fine,false
@@ -8967,6 +8961,8 @@ Office.MailboxEnums.WeekNumber,"Fourth",EnumField,Poor,false
 Office.MailboxEnums.WeekNumber,"Last",EnumField,Poor,false
 Office.MailboxEnums.WeekNumber,"Second",EnumField,Poor,false
 Office.MailboxEnums.WeekNumber,"Third",EnumField,Poor,false
+Office.MailboxEvent,N/A,Class,Good,false
+Office.MailboxEvent,"completed(options)",Method,Poor,true
 Office.MasterCategories,N/A,Class,Good,false
 Office.MasterCategories,"addAsync(categories, options, callback)",Method,Poor,true
 Office.MasterCategories,"addAsync(categories, callback)",Method,Poor,false
@@ -9233,8 +9229,17 @@ Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
+Office.SmartAlertsEventCompletedOptions,N/A,Class,Fine,true
+Office.SmartAlertsEventCompletedOptions,"allowEvent",Property,Good,false
+Office.SmartAlertsEventCompletedOptions,"errorMessage",Property,Good,false
 Office.SpamReportingEventArgs,N/A,Class,Good,false
 Office.SpamReportingEventArgs,"type",Property,Good,false
+Office.SpamReportingEventCompletedOptions,N/A,Class,Good,true
+Office.SpamReportingEventCompletedOptions,"folderName",Property,Good,false
+Office.SpamReportingEventCompletedOptions,"moveItemTo",Property,Good,false
+Office.SpamReportingEventCompletedOptions,"onErrorDeleteItem",Property,Good,false
+Office.SpamReportingEventCompletedOptions,"postProcessingAction",Property,Good,true
+Office.SpamReportingEventCompletedOptions,"showPostProcessingDialog",Property,Good,false
 Office.Subject,N/A,Class,Good,false
 Office.Subject,"getAsync(options, callback)",Method,Poor,false
 Office.Subject,"getAsync(callback)",Method,Poor,true

@@ -2466,6 +2466,7 @@ export declare namespace Office {
         
     }
     
+    
     /**
      * Represents a suggested meeting found in an item. Read mode only.
      *
@@ -3907,6 +3908,14 @@ export declare namespace Office {
     
     
     
+    /**
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+     */
+    export interface SmartAlertsEventCompletedOptions {
+        
+        
+    }
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *

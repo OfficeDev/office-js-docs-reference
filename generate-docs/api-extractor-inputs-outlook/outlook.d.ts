@@ -6795,6 +6795,35 @@ export declare namespace Office {
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts},
+     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
+     * It allows the add-in to signify to the Outlook client that it has completed processing an event.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.10]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     */
+    export interface MailboxEvent {
+        /**
+         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.10]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
+         */
+        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions): void;
+    }
+    /**
      * Represents the categories master list on the mailbox.
      *
      * In Outlook, a user can tag messages and appointments by using a category to color-code them.
@@ -11311,6 +11340,42 @@ export declare namespace Office {
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
     /**
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+     */
+    export interface SmartAlertsEventCompletedOptions {
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler,
+         * this value indicates if the handled event should continue execution or be canceled.
+         * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item.
+         * For a complete sample, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.12]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         */
+        allowEvent?: boolean;
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
+         * to `false`, this property sets the error message that will be displayed to the user. For an example, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+         *
+         * @remarks
+         * 
+         * [Api set: Mailbox 1.12]
+         * 
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         */
+        errorMessage?: string;
+    }
+    /**
      * Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
      *
      * @remarks
@@ -11328,6 +11393,135 @@ export declare namespace Office {
          * @beta
          */
         type: "SpamReporting";
+    }
+    /**
+     * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting add-in}
+     * after it completes processing a
+     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true#fields | SpamReporting} event.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface SpamReportingEventCompletedOptions {
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * this property specifies the Outlook mailbox folder to which the message will be moved.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - If the specified folder doesn't exist yet, it will be created before the message is moved.
+         *
+         * - If the `postProcessingAction` property is set to `moveToCustomFolder`, the `folderName` property must be specified.
+         * Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`,
+         * the `folderName` property is ignored.
+         *
+         * @beta
+         */
+        folderName?: string;
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * this property specifies whether the message is moved to a different folder in the mailbox.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build 16724.10000).
+         * If you're using an earlier build that supports the integrated spam-reporting feature, use the `postProcessingAction`
+         * property instead.
+         *
+         * If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
+         * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
+         * `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
+         *
+         * @beta
+         */
+        moveItemTo?: CommonAPI.MailboxEnums.MoveSpamItemTo;
+        /**
+         * When set to `true`, deletes a reported message if an error occurs while the message is processed.
+         * If this property is set to `false` or isn't specified in the {@link Office.MailboxEvent.completed | completed method},
+         * the reported message remains in its current mailbox folder.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        onErrorDeleteItem?: boolean;
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * this property specifies whether the message is moved to a different folder in the mailbox. The following post-processing actions are available.
+         *
+         * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
+         *
+         * - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder in the `folderName` property.
+         *
+         * - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
+         *
+         * - `noMove` - Leaves the reported message in its current folder.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature.
+         * If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
+         *
+         * If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
+         * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to
+         * `moveToSpamFolder` and move the reported message to the **Junk Email** folder.
+         *
+         * @beta
+         */
+        postProcessingAction?: string;
+        /**
+         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property must contain a title and a description.
+         * If this property isn't specified, a dialog isn't shown to the user once their reported message is processed.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        showPostProcessingDialog?: object;
     }
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

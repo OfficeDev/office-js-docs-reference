@@ -3,8 +3,21 @@ name: Office.AddinCommands.EventCompletedOptions
 uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
 package: office!
 fullName: Office.AddinCommands.EventCompletedOptions
-summary: Specifies the behavior for when the event is completed.
-remarks: ''
+summary: >-
+  Specifies the behavior of an [on-send](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)
+  add-in in Outlook when it completes processing an `ItemSend` event.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **restricted**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +29,9 @@ properties:
     summary: >-
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal completion of an event handler, this property indicates if the handled event should continue execution
-      or be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set
-      `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
-      -->.
-
-
-      **Important**: Only applicable to add-ins that implement [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      to signal completion of an event handler, this value indicates if the handled event should continue execution or
+      be canceled. For example, an on-send add-in that handles the `ItemSend` event can set `allowEvent` to `false` to
+      cancel the sending of a message.
     remarks: >-
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
@@ -44,26 +51,19 @@ properties:
 
       ```TypeScript
 
-      // The following example checks whether a location is specified in an appointment before it's sent.
+      // In this example, the checkMessage function was registered as an event handler for ItemSend.
 
-      function onAppointmentSendHandler(event) {
-          Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
-              let event = asyncResult.asyncContext;
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(asyncResult.error.message);
-                  // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
-                  event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
-                  return;
-              }
+      function checkMessage(event) {
+          // Get the item being sent.
+          const outgoingMsg = Office.context.mailbox.item;
 
-              if (asyncResult.value === "") {
-                  // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
-                  event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
-                  return;
-              } else {
-                  // If a location is specified, the appointment is sent.
-                  event.completed({ allowEvent: true });
-              }
+          // Check if subject contains "BLOCK".
+          outgoingMsg.subject.getAsync(function (result) {
+              // Subject is in `result.value`.
+              // If search term "BLOCK" is found, don't send the message.
+              const notFound = -1;
+              const allowEvent = (result.value.indexOf('BLOCK') === notFound);
+              event.completed({ allowEvent: allowEvent });
           });
       }
 
@@ -74,422 +74,3 @@ properties:
       content: 'allowEvent?: boolean;'
       return:
         type: boolean
-  - name: errorMessage
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#errorMessage:member'
-    package: office!
-    fullName: errorMessage
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets
-      the error message that will be displayed to the user. For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
-      -->.
-
-
-      **Important**: Only applicable to add-ins that implement [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox 1.12](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example checks whether a message's subject is prefixed with "[For Review]" before it's sent.
-
-      function onMessageSendHandler(event) {
-          Office.context.mailbox.item.subject.getAsync({ asyncContext: event }, asyncResult => {
-              let event = asyncResult.asyncContext;
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(asyncResult.error.message);
-                  // If the add-in is unable to retrieve the message's subject, the message isn't sent and the user is alerted.
-                  event.completed({ allowEvent: false, errorMessage: "Failed to get item's subject." });
-                  return;
-              }
-
-              if (asyncResult.value.startsWith("[For Review]")) {
-                  // If the message's subject is prefixed with "[For Review]", the message is sent.
-                  event.completed({ allowEvent: true });
-              } else {
-                  // If the message's subject isn't prefixed with "[For Review]", the message isn't sent and the user is alerted to
-                  // add the tag to the subject.
-                  event.completed({ allowEvent: false, errorMessage: "Remember to add '[For Review]' before the subject." });
-                  return;
-              }
-          });
-      }
-
-      ```
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'errorMessage?: string;'
-      return:
-        type: string
-  - name: folderName
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#folderName:member'
-    package: office!
-    fullName: folderName
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to
-      which the message will be moved.
-
-
-      **Important**: Only applicable to add-ins that implement the [integrated spam-reporting
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      **Important**:
-
-
-      - If the specified folder doesn't exist yet, it will be created before the message is moved.
-
-
-      - If the `postProcessingAction` property is set to `moveToCustomFolder`<!-- -->, the `folderName` property must be
-      specified. Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If
-      `postProcessingAction` is set to another action other than `moveToCustomFolder`<!-- -->, the `folderName` property
-      is ignored.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example handles a SpamReporting event to process a reported spam or phishing message.
-
-      function onSpamReport(event) {
-          // Gets the Base64-encoded EML format of a reported message.
-          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              // Run additional processing operations here.
-
-              /**
-              * Signals that the spam-reporting event has completed processing.
-              * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-              * and shows a post-processing dialog to the user.
-              */
-              const event = asyncResult.asyncContext;
-              event.completed({
-                  moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
-                  folderName: "Reported Messages",
-                  showPostProcessingDialog: {
-                      title: "Contoso Spam Reporting",
-                      description: "Thank you for reporting this message.",
-                  },
-              });
-          });
-      }
-
-      ```
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'folderName?: string;'
-      return:
-        type: string
-  - name: moveItemTo
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#moveItemTo:member'
-    package: office!
-    fullName: moveItemTo
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal that a reported message has finished processing, this property specifies whether the message is moved to
-      a different folder in the mailbox.
-
-
-      **Important**: Only applicable to add-ins that implement the [integrated spam-reporting
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      **Important**:
-
-
-      In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build
-      16724.10000). If you're using an earlier build that supports the integrated spam-reporting feature, use the
-      `postProcessingAction` property instead.
-
-
-      If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`<!-- -->, you must specify the name of
-      the folder to which the message will be moved in the `folderName` property of the `event.completed` call.
-      Otherwise, the `moveItemTo` property will default to `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the
-      reported message to the **Junk Email** folder.
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'moveItemTo?: Office.MailboxEnums.MoveSpamItemTo;'
-      return:
-        type: '<xref uid="outlook!Office.MailboxEnums.MoveSpamItemTo:enum" />'
-  - name: onErrorDeleteItem
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#onErrorDeleteItem:member'
-    package: office!
-    fullName: onErrorDeleteItem
-    summary: >-
-      When set to `true`<!-- -->, deletes a reported message if an error occurs while the message is processed. If this
-      property is set to `false` or isn't specified in the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))<!--
-      -->, the reported message remains in its current mailbox folder.
-
-
-      **Important**: Only applicable to add-ins that implement the [integrated spam-reporting
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example handles a SpamReporting event to process a reported spam or phishing message.
-
-      function onSpamReport(event) {
-          // Gets the Base64-encoded EML format of a reported message.
-          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              // Run additional processing operations here.
-
-              /**
-              * Signals that the spam-reporting event has completed processing.
-              * It then deletes the reported message from the mailbox and shows a post-processing dialog
-              * to the user. If an error occurs while the message is being processed, the `onErrorDeleteItem`
-              * property determines whether the message will be deleted.
-              */
-              const event = asyncResult.asyncContext;
-              event.completed({
-                  moveItemTo: Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder,
-                  onErrorDeleteItem: true,
-                  showPostProcessingDialog: {
-                      title: "Contoso Spam Reporting",
-                      description: "Thank you for reporting this message.",
-                  },
-              });
-          });
-      }
-
-      ```
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'onErrorDeleteItem?: boolean;'
-      return:
-        type: boolean
-  - name: postProcessingAction
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#postProcessingAction:member'
-    package: office!
-    fullName: postProcessingAction
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal that a reported message has finished processing, this property specifies whether the message is moved to
-      a different folder in the mailbox. The following post-processing actions are available.
-
-
-      - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
-
-
-      - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder
-      in the `folderName` property.
-
-
-      - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
-
-
-      - `noMove` - Leaves the reported message in its current folder.
-
-
-      **Important**: Only applicable to add-ins that implement the [integrated spam-reporting
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      **Important**:
-
-
-      In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting
-      feature. If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
-
-
-      If the property is set to `moveToCustomFolder`<!-- -->, you must specify the name of the folder to which the
-      message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the
-      `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the **Junk
-      Email** folder.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example handles a SpamReporting event to process a reported spam or phishing message.
-
-      function onSpamReport(event) {
-          // Gets the Base64-encoded EML format of a reported message.
-          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              // Run additional processing operations here.
-
-              /**
-              * Signals that the spam-reporting event has completed processing.
-              * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-              * post-processing dialog to the user.
-              */
-              const event = asyncResult.asyncContext;
-              event.completed({
-                  postProcessingAction: "moveToSpamFolder",
-                  showPostProcessingDialog: {
-                      title: "Contoso Spam Reporting",
-                      description: "Thank you for reporting this message.",
-                  },
-              });
-          });
-      }
-
-      ```
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'postProcessingAction?: string;'
-      return:
-        type: string
-  - name: showPostProcessingDialog
-    uid: 'office!Office.AddinCommands.EventCompletedOptions#showPostProcessingDialog:member'
-    package: office!
-    fullName: showPostProcessingDialog
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      to signal that a reported message has finished processing, this property indicates if a post-processing dialog is
-      shown to the user. The JSON object assigned to this property must contain a title and a description. If this
-      property isn't specified, a dialog isn't shown to the user once their reported message is processed.
-
-
-      **Important**: Only applicable to add-ins that implement the [integrated spam-reporting
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
-    remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
-
-
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example handles a SpamReporting event to process a reported spam or phishing message.
-
-      function onSpamReport(event) {
-          // Gets the Base64-encoded EML format of a reported message.
-          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              // Run additional processing operations here.
-
-              /**
-              * Signals that the spam-reporting event has completed processing.
-              * The reported message is left in its current folder, then a post-processing dialog is shown to the user.
-              */
-              const event = asyncResult.asyncContext;
-              event.completed({
-                  moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove,
-                  showPostProcessingDialog: {
-                      title: "Contoso Spam Reporting",
-                      description: "Thank you for reporting this message.",
-                  },
-              });
-          });
-      }
-
-      ```
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'showPostProcessingDialog?: object;'
-      return:
-        type: object

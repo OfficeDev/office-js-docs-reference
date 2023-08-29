@@ -81,6 +81,8 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
+          - name: SmartAlertsEventCompletedOptions
+            uid: 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

@@ -117,6 +117,8 @@ items:
             uid: 'outlook!Office.LocationIdentifier:interface'
           - name: Mailbox
             uid: 'outlook!Office.Mailbox:interface'
+          - name: MailboxEvent
+            uid: 'outlook!Office.MailboxEvent:interface'
           - name: MasterCategories
             uid: 'outlook!Office.MasterCategories:interface'
           - name: MeetingSuggestion
@@ -161,6 +163,8 @@ items:
             uid: 'outlook!Office.SessionData:interface'
           - name: SharedProperties
             uid: 'outlook!Office.SharedProperties:interface'
+          - name: SmartAlertsEventCompletedOptions
+            uid: 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

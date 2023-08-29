@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.34.8",
+    "toolVersion": "7.36.4",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -18876,6 +18876,69 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "outlook!Office.MailboxEvent:interface",
+              "docComment": "/**\n * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts}. It allows the add-in to signify to the Outlook client that it has completed processing an event.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.10]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface MailboxEvent "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "MailboxEvent",
+              "preserveMemberOrder": false,
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MailboxEvent#completed:member(1)",
+                  "docComment": "/**\n * Indicates that the event-based add-in has completed processing an event.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.10]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "completed(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SmartAlertsEventCompletedOptions",
+                      "canonicalReference": "outlook!Office.SmartAlertsEventCompletedOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "completed"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "outlook!Office.MasterCategories:interface",
               "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add or remove categories.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
@@ -29858,6 +29921,22 @@
                   }
                 }
               ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SmartAlertsEventCompletedOptions:interface",
+              "docComment": "/**\n * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in} when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SmartAlertsEventCompletedOptions "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SmartAlertsEventCompletedOptions",
+              "preserveMemberOrder": false,
+              "members": [],
               "extendsTokenRanges": []
             },
             {

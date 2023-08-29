@@ -1031,6 +1031,13 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * For information on support in Excel, Word, and PowerPoint, see
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets}.
+         *
+         * The following outlines support information for Outlook.
+         *
+         * [Api set: Mailbox 1.3]
+         *
          * See {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
@@ -1043,7 +1050,13 @@ export declare namespace Office {
              *
              * @remarks
              *
-             * This property is supported in Outlook only in {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
+             * The following outlines support information for Outlook.
+             *
+             * [Api set: Mailbox 1.3]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              */
             source:Source;
             /**
@@ -1051,202 +1064,90 @@ export declare namespace Office {
              *
              * This method must be called at the end of a function which was invoked by the following:
              *
-             * - A function command button (that is, an add-in command defined with an `Action` element, where the `xsi:type` attribute is set to `ExecuteFunction`).
+             * - A function command button (that is, an add-in command defined with an **\<Action\>** element, where the `xsi:type` attribute is set to `ExecuteFunction`).
              *
-             * - An event defined in the {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#launchevent | LaunchEvent extension point}.
-             * For example, an `OnMessageSend` event.
-             * 
              * - An {@link https://learn.microsoft.com/javascript/api/manifest/event | event} defined in the
-             * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point}. For example, an `ItemSend` event.
-             * 
-             * - An event defined in the
-             * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview | ReportPhishingCommandSurface extension point (preview)}.
+             * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point} of an on-send add-in in Outlook.
+             * For example, an `ItemSend` event.
              *
              * @remarks
              *
+             * The following outlines support information for Outlook.
+             *
              * [Api set: Mailbox 1.3]
-             * 
+             *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
-             * **Note**: The `options` parameter was introduced in Mailbox 1.8.
+             * **Important**: The `options` parameter only applies to Outlook add-ins that implement the
+             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send feature}. It was introduced in Mailbox 1.8.
              *
-             * @param options - Optional. An object that specifies behavior options for when the event is completed.
+             * @param options - Optional. An object that specifies the behavior of an on-send add-in in Outlook when it completes processing an `ItemSend` event.
              */
             completed(options?: EventCompletedOptions): void;
         }
         /**
-         * Specifies the behavior for when the event is completed.
+         * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send} add-in in Outlook
+         * when it completes processing an `ItemSend` event.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          */
         export interface EventCompletedOptions {
             /**
              * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal completion of an event handler, this property indicates if the handled event should continue execution or be canceled.
-             * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the
-             * sending of an item. For a complete sample, see the
-             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
-             * 
-             * **Important**: Only applicable to add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+             * to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled.
+             * For example, an on-send add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel the sending of a message.
              *
              * @remarks
              *
              * [Api set: Mailbox 1.8]
-             * 
+             *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
             allowEvent?: boolean;
-            /**
-             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal completion of an event handler and set its `allowEvent` property to `false`, this property sets the error message
-             * that will be displayed to the user. For an example, see the
-             * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
-             *
-             * **Important**: Only applicable to add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
-             *
-             * @remarks
-             * 
-             * [Api set: Mailbox 1.12]
-             * 
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-             */
-            errorMessage?: string;
-            /**
-             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to which the message will be moved.
-             *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
-             *
-             * @remarks
-             *
-             * [Api set: Mailbox preview]
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-             *
-             * **Important**:
-             *
-             * - If the specified folder doesn't exist yet, it will be created before the message is moved.
-             *
-             * - If the `postProcessingAction` property is set to `moveToCustomFolder`, the `folderName` property must be specified.
-             * Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`,
-             * the `folderName` property is ignored.
-             *
-             * @beta
-             */
-            folderName?: string;
-            /**
-             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox.
-             *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
-             *
-             * @remarks
-             *
-             * [Api set: Mailbox preview]
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-             *
-             * **Important**:
-             *
-             * In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build 16724.10000).
-             * If you're using an earlier build that supports the integrated spam-reporting feature, use the `postProcessingAction`
-             * property instead.
-             *
-             * If the property is set to `Outlook.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
-             * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
-             * `Outlook.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
-             *
-             * @beta
-             */
-            moveItemTo?: Outlook.MailboxEnums.MoveSpamItemTo;
-            /**
-             * When set to `true`, deletes a reported message if an error occurs while the message is processed.
-             * If this property is set to `false` or isn't specified in the
-             * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method},
-             * the reported message remains in its current mailbox folder.
-             *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
-             *
-             * @remarks
-             *
-             * [Api set: Mailbox preview]
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-             *
-             * @beta
-             */
-            onErrorDeleteItem?: boolean;
-            /**
-             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox.
-             * The following post-processing actions are available.
-             *
-             * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
-             *
-             * - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder in the `folderName` property.
-             *
-             * - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
-             *
-             * - `noMove` - Leaves the reported message in its current folder.
-             *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
-             *
-             * @remarks
-             *
-             * [Api set: Mailbox preview]
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-             *
-             * **Important**:
-             *
-             * In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature.
-             * If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
-             *
-             * If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
-             * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to
-             * `moveToSpamFolder` and move the reported message to the **Junk Email** folder.
-             *
-             * @beta
-             */
-            postProcessingAction?: string;
-            /**
-             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * to signal that a reported message has finished processing, this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property
-             * must contain a title and a description. If this property isn't specified, a dialog isn't shown to the user once their reported message is processed. 
-             *
-             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
-             *
-             * @remarks
-             *
-             * [Api set: Mailbox preview]
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
-             *
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-             *
-             * @beta
-             */
-            showPostProcessingDialog?: object;
         }
         /**
          * Encapsulates source data for add-in events.
+         *
+         * @remarks
+         *
+         * For information on support in Excel, Word, and PowerPoint, see
+         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets}.
+         *
+         * The following outlines support information for Outlook.
+         *
+         * [Api set: Mailbox 1.3]
+         *
+         * See {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         export interface Source {
-
             /**
              * The ID of the control that triggered calling this function. The ID comes from the manifest.
+             *
+             * @remarks
+             *
+             * The following outlines support information for Outlook.
+             *
+             * [Api set: Mailbox 1.3]
+             *
+             * See {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              */
             id: string;
         }
