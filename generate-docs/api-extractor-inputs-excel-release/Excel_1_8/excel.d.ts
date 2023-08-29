@@ -21059,7 +21059,7 @@ export declare namespace Excel {
         unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
-    export module Interfaces {
+    export namespace Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */

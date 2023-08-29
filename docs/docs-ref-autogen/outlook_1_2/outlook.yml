@@ -32,6 +32,7 @@ interfaces:
   - 'outlook!Office.ReplyFormAttachment:interface'
   - 'outlook!Office.ReplyFormData:interface'
   - 'outlook!Office.RoamingSettings:interface'
+  - 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
   - 'outlook!Office.Subject:interface'
   - 'outlook!Office.TaskSuggestion:interface'
   - 'outlook!Office.Time:interface'

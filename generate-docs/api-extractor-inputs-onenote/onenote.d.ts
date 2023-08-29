@@ -4175,7 +4175,7 @@ export declare namespace OneNote {
         notSupported = "NotSupported",
         operationAborted = "OperationAborted",
     }
-    export module Interfaces {
+    export namespace Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */

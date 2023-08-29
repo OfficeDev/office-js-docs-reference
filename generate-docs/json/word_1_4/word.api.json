@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.34.8",
+    "toolVersion": "7.36.4",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -24263,7 +24263,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export module Interfaces "
+                  "text": "export namespace Interfaces "
                 }
               ],
               "releaseTag": "Public",
