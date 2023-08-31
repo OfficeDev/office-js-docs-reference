@@ -20,12 +20,53 @@ remarks: >-
 
 
   **Important**: This enum can only be used to assign values to the
-  [moveItemTo](https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-moveitemto-member)
-  property of the `event.completed` method. If you're on an Outlook on Windows version that only supports the
-  `postProcessingAction` property, you must assign it different string values. For a list of supported string values,
-  see
-  [Office.AddinCommands.EventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-postprocessingaction-member)<!--
+  [moveItemTo](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-moveitemto-member)
+  property of the
+  [event.completed](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+  method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property, you must
+  assign it different string values. For a list of supported string values, see
+  [Office.SpamReportingEventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+  function onSpamReport(event) {
+      // Get the Base64-encoded EML format of a reported message.
+      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+              return;
+          }
+
+          // Run additional processing operations here.
+
+          /**
+           * Signal that the spam-reporting event has completed processing.
+           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+           * and shows a post-processing dialog to the user.
+           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+           * property determines whether the message will be deleted.
+           */
+          const event = asyncResult.asyncContext;
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message.",
+              },
+          });
+      });
+  }
+
+  ```
 isPreview: true
 isDeprecated: false
 fields:

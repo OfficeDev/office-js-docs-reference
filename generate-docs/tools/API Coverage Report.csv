@@ -8784,7 +8784,7 @@ Office.MailboxEnums.Month,"May",EnumField,Poor,false
 Office.MailboxEnums.Month,"Nov",EnumField,Poor,false
 Office.MailboxEnums.Month,"Oct",EnumField,Poor,false
 Office.MailboxEnums.Month,"Sep",EnumField,Poor,false
-Office.MailboxEnums.MoveSpamItemTo,N/A,Enum,Good,false
+Office.MailboxEnums.MoveSpamItemTo,N/A,Enum,Good,true
 Office.MailboxEnums.MoveSpamItemTo,"CustomFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"DeletedItemsFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"JunkFolder",EnumField,Fine,false
@@ -8952,6 +8952,8 @@ Office.MailboxEnums.RestVersion,N/A,Enum,Good,true
 Office.MailboxEnums.RestVersion,"Beta",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v1_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v2_0",EnumField,Poor,false
+Office.MailboxEnums.SendModeOverride,N/A,Enum,Good,false
+Office.MailboxEnums.SendModeOverride,"PromptUser",EnumField,Good,false
 Office.MailboxEnums.SourceProperty,N/A,Enum,Good,true
 Office.MailboxEnums.SourceProperty,"Body",EnumField,Fine,false
 Office.MailboxEnums.SourceProperty,"Subject",EnumField,Fine,false
@@ -9231,7 +9233,11 @@ Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
 Office.SmartAlertsEventCompletedOptions,N/A,Class,Fine,true
 Office.SmartAlertsEventCompletedOptions,"allowEvent",Property,Good,false
+Office.SmartAlertsEventCompletedOptions,"cancelLabel",Property,Good,false
+Office.SmartAlertsEventCompletedOptions,"commandId",Property,Good,false
+Office.SmartAlertsEventCompletedOptions,"contextData",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"errorMessage",Property,Good,false
+Office.SmartAlertsEventCompletedOptions,"sendModeOverride",Property,Good,false
 Office.SpamReportingEventArgs,N/A,Class,Good,false
 Office.SpamReportingEventArgs,"type",Property,Good,false
 Office.SpamReportingEventCompletedOptions,N/A,Class,Good,true

@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 08/08/2023
+ms.date: 08/31/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,6 +26,10 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 
 | Class | Fields | Description |
 |:---|:---|:---|
+|[Body](/javascript/api/word/word.body)|[getParagraphById(id: string)](/javascript/api/word/word.body#word-word-body-getparagraphbyid-member(1))|Gets the paragraph by its unique ID in GUID format.|
+||[onParagraphAdded](/javascript/api/word/word.body#word-word-body-onparagraphadded-member)|Occurs when new paragraphs are added.|
+||[onParagraphChanged](/javascript/api/word/word.body#word-word-body-onparagraphchanged-member)|Occurs when paragraphs are changed.|
+||[onParagraphDeleted](/javascript/api/word/word.body#word-word-body-onparagraphdeleted-member)|Occurs when paragraphs are deleted.|
 |[Border](/javascript/api/word/word.border)|[lineColor](/javascript/api/word/word.border#word-word-border-linecolor-member)|Specifies the line color for the border.|
 ||[lineStyle](/javascript/api/word/word.border#word-word-border-linestyle-member)|Specifies the line style for the border.|
 ||[lineWidth](/javascript/api/word/word.border#word-word-border-linewidth-member)|Specifies the line width for the border.|
@@ -65,6 +69,16 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[items](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Specifies whether the specified ListTemplate object is outline numbered.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
+|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[ids](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
+||[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
+||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
+|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[ids](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
+||[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|The source of the event.|
+||[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
+|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[ids](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
+||[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
+||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 |[Shading](/javascript/api/word/word.shading)|[backgroundPatternColor](/javascript/api/word/word.shading#word-word-shading-backgroundpatterncolor-member)|Specifies the color for the background of the object.|
 ||[foregroundPatternColor](/javascript/api/word/word.shading#word-word-shading-foregroundpatterncolor-member)|Specifies the color for the foreground of the object.|
 ||[texture](/javascript/api/word/word.shading#word-word-shading-texture-member)|Specifies the shading texture of the object.|
@@ -87,15 +101,11 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[getParagraphById(id: string)](/javascript/api/word/word.body#word-word-body-getparagraphbyid-member(1))|Gets the paragraph by its unique ID in GUID format.|
-||[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
+|[Body](/javascript/api/word/word.body)|[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
 ||[onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)|Occurs when a comment is deselected.|
 ||[onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)|Occurs when a comment is selected.|
-||[onParagraphAdded](/javascript/api/word/word.body#word-word-body-onparagraphadded-member)|Occurs when new paragraphs are added.|
-||[onParagraphChanged](/javascript/api/word/word.body#word-word-body-onparagraphchanged-member)|Occurs when paragraphs are changed.|
-||[onParagraphDeleted](/javascript/api/word/word.body#word-word-body-onparagraphdeleted-member)|Occurs when paragraphs are deleted.|
 |[CommentDetail](/javascript/api/word/word.commentdetail)|[id](/javascript/api/word/word.commentdetail#word-word-commentdetail-id-member)|Represents the ID of this comment.|
 ||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
 |[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the comment changed event is triggered.|
@@ -111,16 +121,6 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 ||[onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)|Occurs when comments are deleted.|
 ||[onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member)|Occurs when a comment is deselected.|
 ||[onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)|Occurs when a comment is selected.|
-||[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
-|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[ids](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
-|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[ids](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
-|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[ids](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
 |[Range](/javascript/api/word/word.range)|[onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)|Occurs when a comment is deselected.|

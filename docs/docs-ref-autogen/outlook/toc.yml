@@ -59,6 +59,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
               - name: RestVersion
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SendModeOverride
+                uid: 'outlook!Office.MailboxEnums.SendModeOverride:enum'
               - name: SourceProperty
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
               - name: WeekNumber

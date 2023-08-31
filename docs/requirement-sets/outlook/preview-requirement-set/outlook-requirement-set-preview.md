@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/28/2023
+ms.date: 08/31/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -155,6 +155,28 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
+### Smart Alerts: Customize the Don't Send option and override the send mode option at runtime
+
+#### [Office.SmartAlertsEventCompletedOptions](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
+
+Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog and override the send mode option at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride?view=outlook-js-preview&preserve-view=true)
+
+Added an enum to specify the send mode option that overrides the option set in the manifest at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+To learn how to implement these features, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
+
+<br>
+
+---
+
+---
+
 ### Temporarily set the body or subject displayed in read mode
 
 #### [Office.context.mailbox.item.display](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member)
@@ -174,8 +196,6 @@ Added an object that provides properties to temporarily set the content displaye
 Added an object that provides a method to temporarily set the content displayed in the body of a message in read mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
 
 #### [Office.DisplayedSubject](/javascript/api/outlook/office.displayedsubject?view=outlook-js-preview&preserve-view=true)
 
