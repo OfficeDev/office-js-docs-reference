@@ -104,5 +104,6 @@ enums:
   - 'outlook!Office.MailboxEnums.RecurrenceType:enum'
   - 'outlook!Office.MailboxEnums.ResponseType:enum'
   - 'outlook!Office.MailboxEnums.RestVersion:enum'
+  - 'outlook!Office.MailboxEnums.SendModeOverride:enum'
   - 'outlook!Office.MailboxEnums.SourceProperty:enum'
   - 'outlook!Office.MailboxEnums.WeekNumber:enum'

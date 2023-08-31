@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.SendModeOverride
+uid: 'outlook!Office.MailboxEnums.SendModeOverride:enum'
+package: outlook!
+fullName: Office.MailboxEnums.SendModeOverride
+summary: >-
+  Specifies the [send mode
+  option](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options)
+  that overrides the option set in the manifest at runtime.
+
+
+  For information on how to implement a Smart Alerts add-in, see [Use Smart Alerts and the OnMessageSend and
+  OnAppointmentSend events in your Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+isPreview: true
+isDeprecated: false
+fields:
+  - name: PromptUser
+    uid: 'outlook!Office.MailboxEnums.SendModeOverride.PromptUser:member'
+    package: outlook!
+    summary: >-
+      Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of
+      the event-based add-in. To learn more, see the [**prompt user** send mode
+      option](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#prompt-user)<!--
+      -->.
+    value: '"promptUser"'
