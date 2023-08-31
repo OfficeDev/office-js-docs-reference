@@ -8784,7 +8784,7 @@ Office.MailboxEnums.Month,"May",EnumField,Poor,false
 Office.MailboxEnums.Month,"Nov",EnumField,Poor,false
 Office.MailboxEnums.Month,"Oct",EnumField,Poor,false
 Office.MailboxEnums.Month,"Sep",EnumField,Poor,false
-Office.MailboxEnums.MoveSpamItemTo,N/A,Enum,Good,false
+Office.MailboxEnums.MoveSpamItemTo,N/A,Enum,Good,true
 Office.MailboxEnums.MoveSpamItemTo,"CustomFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"DeletedItemsFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"JunkFolder",EnumField,Fine,false
