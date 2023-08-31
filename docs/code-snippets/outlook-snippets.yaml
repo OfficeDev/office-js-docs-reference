@@ -1008,7 +1008,7 @@ Office.MailboxEnums.MoveSpamItemTo:enum:
   - |-
     // The following example handles a SpamReporting event to process a reported spam or phishing message.
     function onSpamReport(event) {
-        // Gets the Base64-encoded EML format of a reported message.
+        // Get the Base64-encoded EML format of a reported message.
         Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
@@ -1018,12 +1018,12 @@ Office.MailboxEnums.MoveSpamItemTo:enum:
             // Run additional processing operations here.
 
             /**
-            * Signals that the spam-reporting event has completed processing.
-            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-            * and shows a post-processing dialog to the user.
-            * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-            * property determines whether the message will be deleted.
-            */
+             * Signal that the spam-reporting event has completed processing.
+             * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+             * and shows a post-processing dialog to the user.
+             * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+             * property determines whether the message will be deleted.
+             */
             const event = asyncResult.asyncContext;
             event.completed({
                 moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
