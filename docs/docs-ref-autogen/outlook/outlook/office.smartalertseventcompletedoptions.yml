@@ -68,6 +68,117 @@ properties:
       content: 'allowEvent?: boolean;'
       return:
         type: boolean
+  - name: cancelLabel
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#cancelLabel:member'
+    package: outlook!
+    fullName: cancelLabel
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property customizes the text of the
+      **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
+
+
+      For an example, see the [Smart Alerts
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional-preview)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cancelLabel?: string;'
+      return:
+        type: string
+  - name: commandId
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#commandId:member'
+    package: outlook!
+    fullName: commandId
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property specifies the ID of the
+      task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
+
+
+      For an example, see the [Smart Alerts
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional-preview)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      The `commandId` value must match the task pane ID specified in the manifest of your add-in. The markup depends on
+      the type of manifest your add-in uses.
+
+
+      - **XML manifest**: The `id` attribute of the
+      [Control](https://learn.microsoft.com/javascript/api/manifest/control) element representing the task pane.
+
+
+      - **Unified manifest for Microsoft 365 (preview)**: The "id" property of the task pane command in the
+      "controls" array.
+
+
+      If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the
+      `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'commandId?: string;'
+      return:
+        type: string
+  - name: contextData
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#contextData:member'
+    package: outlook!
+    fullName: contextData
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property specifies any JSON data
+      passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: If you specify the `contextData` option in your `event.completed` call, you must also assign a
+      task pane ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contextData?: object;'
+      return:
+        type: object
   - name: errorMessage
     uid: 'outlook!Office.SmartAlertsEventCompletedOptions#errorMessage:member'
     package: outlook!
@@ -75,7 +186,7 @@ properties:
     summary: >-
       When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
       of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message
-      that will be displayed to the user. For an example, see the [Smart Alerts
+      displayed to the user. For an example, see the [Smart Alerts
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
@@ -96,3 +207,40 @@ properties:
       content: 'errorMessage?: string;'
       return:
         type: string
+  - name: sendModeOverride
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#sendModeOverride:member'
+    package: outlook!
+    fullName: sendModeOverride
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property overrides the [send mode
+      option](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options)
+      specified in the manifest at runtime.
+
+
+      For an example, see the [Smart Alerts
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional-preview)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: Currently, `sendModeOverride` can only be set to the [prompt
+      user](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#prompt-user)
+      option.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sendModeOverride?: Office.MailboxEnums.SendModeOverride | string;'
+      return:
+        type: Office.MailboxEnums.SendModeOverride | string
