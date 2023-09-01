@@ -8952,7 +8952,7 @@ Office.MailboxEnums.RestVersion,N/A,Enum,Good,true
 Office.MailboxEnums.RestVersion,"Beta",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v1_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v2_0",EnumField,Poor,false
-Office.MailboxEnums.SendModeOverride,N/A,Enum,Good,false
+Office.MailboxEnums.SendModeOverride,N/A,Enum,Good,true
 Office.MailboxEnums.SendModeOverride,"PromptUser",EnumField,Good,false
 Office.MailboxEnums.SourceProperty,N/A,Enum,Good,true
 Office.MailboxEnums.SourceProperty,"Body",EnumField,Fine,false

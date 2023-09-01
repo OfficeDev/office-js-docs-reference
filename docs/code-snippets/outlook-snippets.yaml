@@ -1036,6 +1036,36 @@ Office.MailboxEnums.MoveSpamItemTo:enum:
             });
         });
     }
+Office.MailboxEnums.SendModeOverride:enum:
+  - |-
+    // The following example checks whether a location is specified in an appointment before it's sent.
+    function onAppointmentSendHandler(event) {
+        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, (asyncResult) => {
+            const event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                return;
+            }
+
+            if (asyncResult.value === "") {
+                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                event.completed(
+                    {
+                        allowEvent: false,
+                        cancelLabel: "Add a location",
+                        commandId: "msgComposeOpenPaneButton",
+                        errorMessage: "Don't forget to add a meeting location.",
+                        sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
+                    }
+                );
+            } else {
+                // If a location is specified, the appointment is sent.
+                event.completed({ allowEvent: true });
+            }
+        });
+    }
 Office.MailboxEvent#completed:member(1):
   - |-
     // The following example sets the subject when a new message is composed.
@@ -1874,8 +1904,16 @@ Office.SmartAlertsEventCompletedOptions:interface:
 
             if (asyncResult.value === "") {
                 // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
-                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
-                return;
+                event.completed(
+                    {
+                        allowEvent: false,
+                        cancelLabel: "Add a location",
+                        commandId: "msgComposeOpenPaneButton",
+                        contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+                        errorMessage: "Don't forget to add a meeting location.",
+                        sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
+                    }
+                );
             } else {
                 // If a location is specified, the appointment is sent.
                 event.completed({ allowEvent: true });
