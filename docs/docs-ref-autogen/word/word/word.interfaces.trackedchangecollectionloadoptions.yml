@@ -1,0 +1,73 @@
+### YamlMime:TSType
+name: Word.Interfaces.TrackedChangeCollectionLoadOptions
+uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.TrackedChangeCollectionLoadOptions
+summary: 'Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#author:member'
+    package: word!
+    fullName: author
+    summary: 'For EACH ITEM in the collection: Specifies the author of the tracked change.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: date
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#date:member'
+    package: word!
+    fullName: date
+    summary: 'For EACH ITEM in the collection: Specifies the date of the tracked change.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'date?: boolean;'
+      return:
+        type: boolean
+  - name: text
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#text:member'
+    package: word!
+    fullName: text
+    summary: 'For EACH ITEM in the collection: Specifies the text of the tracked change.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: 'For EACH ITEM in the collection: Specifies the type of the tracked change.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

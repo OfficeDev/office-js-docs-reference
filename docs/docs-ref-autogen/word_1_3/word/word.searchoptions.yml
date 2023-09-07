@@ -6,7 +6,7 @@ fullName: Word.SearchOptions
 summary: >-
   Specifies the options to be included in a search operation. To learn more about how to use search options in the Word
   JavaScript APIs, read [Use search options to find text in your Word
-  add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
+  add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

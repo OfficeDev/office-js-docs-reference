@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 08/31/2023
+ms.date: 09/07/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,15 +26,37 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Body](/javascript/api/word/word.body)|[getParagraphById(id: string)](/javascript/api/word/word.body#word-word-body-getparagraphbyid-member(1))|Gets the paragraph by its unique ID in GUID format.|
-||[onParagraphAdded](/javascript/api/word/word.body#word-word-body-onparagraphadded-member)|Occurs when new paragraphs are added.|
-||[onParagraphChanged](/javascript/api/word/word.body#word-word-body-onparagraphchanged-member)|Occurs when paragraphs are changed.|
-||[onParagraphDeleted](/javascript/api/word/word.body#word-word-body-onparagraphdeleted-member)|Occurs when paragraphs are deleted.|
+|[Annotation](/javascript/api/word/word.annotation)|[critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)|Gets the critique annotation object.|
+||[delete()](/javascript/api/word/word.annotation#word-word-annotation-delete-member(1))|Deletes the annotation.|
+||[id](/javascript/api/word/word.annotation#word-word-annotation-id-member)|Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.|
+||[state](/javascript/api/word/word.annotation#word-word-annotation-state-member)|Gets the state of the annotation.|
+|[AnnotationClickedEventArgs](/javascript/api/word/word.annotationclickedeventargs)|[id](/javascript/api/word/word.annotationclickedeventargs#word-word-annotationclickedeventargs-id-member)|Specifies the annotation ID for which the event was fired.|
+|[AnnotationCollection](/javascript/api/word/word.annotationcollection)|[getFirst()](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirst-member(1))|Gets the first annotation in this collection.|
+||[getFirstOrNullObject()](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirstornullobject-member(1))|Gets the first annotation in this collection.|
+||[items](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-items-member)|Gets the loaded child items in this collection.|
+|[AnnotationHoveredEventArgs](/javascript/api/word/word.annotationhoveredeventargs)|[id](/javascript/api/word/word.annotationhoveredeventargs#word-word-annotationhoveredeventargs-id-member)|Specifies the annotation ID for which the event was fired.|
+|[AnnotationInsertedEventArgs](/javascript/api/word/word.annotationinsertedeventargs)|[ids](/javascript/api/word/word.annotationinsertedeventargs#word-word-annotationinsertedeventargs-ids-member)|Specifies the annotation IDs for which the event was fired.|
+|[AnnotationRemovedEventArgs](/javascript/api/word/word.annotationremovedeventargs)|[ids](/javascript/api/word/word.annotationremovedeventargs#word-word-annotationremovedeventargs-ids-member)|Specifies the annotation IDs for which the event was fired.|
+|[AnnotationSet](/javascript/api/word/word.annotationset)|[critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)|Critiques.|
+|[Application](/javascript/api/word/word.application)|[openDocument(fileLocation: string)](/javascript/api/word/word.application#word-word-application-opendocument-member(1))|Opens a document and displays it in a new tab or window.|
+|[Body](/javascript/api/word/word.body)|[getTrackedChanges()](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the body.|
 |[Border](/javascript/api/word/word.border)|[lineColor](/javascript/api/word/word.border#word-word-border-linecolor-member)|Specifies the line color for the border.|
 ||[lineStyle](/javascript/api/word/word.border#word-word-border-linestyle-member)|Specifies the line style for the border.|
 ||[lineWidth](/javascript/api/word/word.border#word-word-border-linewidth-member)|Specifies the line width for the border.|
 ||[positionType](/javascript/api/word/word.border#word-word-border-positiontype-member)|Gets the position type of the border.|
 ||[visible](/javascript/api/word/word.border#word-word-border-visible-member)|Specifies whether the border is visible.|
+|[BorderCollection](/javascript/api/word/word.bordercollection)|[getByPositionType(positionType: Word.BorderPositionType)](/javascript/api/word/word.bordercollection#word-word-bordercollection-getbypositiontype-member(1))|Gets the border that has the specified position type.|
+||[getFirst()](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirst-member(1))|Gets the first border in this collection.|
+||[getFirstOrNullObject()](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirstornullobject-member(1))|Gets the first border in this collection.|
+||[getItem(index: number)](/javascript/api/word/word.bordercollection#word-word-bordercollection-getitem-member(1))|Gets a Border object by its index in the collection.|
+||[insideLineColor](/javascript/api/word/word.bordercollection#word-word-bordercollection-insidelinecolor-member)|Specifies the 24-bit color of the inside borders.|
+||[insideLineStyle](/javascript/api/word/word.bordercollection#word-word-bordercollection-insidelinestyle-member)|Specifies the line style of the inside borders.|
+||[insideLineWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insidelinewidth-member)|Specifies the line width of the inside borders.|
+||[items](/javascript/api/word/word.bordercollection#word-word-bordercollection-items-member)|Gets the loaded child items in this collection.|
+||[outsideLineColor](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidelinecolor-member)|Specifies the 24-bit color of the outside borders.|
+||[outsideLineStyle](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidelinestyle-member)|Specifies the line style of the outside borders.|
+||[outsideLineWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidelinewidth-member)|Specifies the line width of the outside borders.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[getTrackedChanges()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the content control.|
 |[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
 |[ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs)|[eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)|The event type.|
 |[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|The event type.|
@@ -45,7 +67,25 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[source](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-source-member)|The source of the event.|
 |[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
 |[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
+|[Critique](/javascript/api/word/word.critique)|[colorScheme](/javascript/api/word/word.critique#word-word-critique-colorscheme-member)|Gets the color scheme of the critique.|
+||[length](/javascript/api/word/word.critique#word-word-critique-length-member)|Gets the length of the critique inside paragraph.|
+||[start](/javascript/api/word/word.critique#word-word-critique-start-member)|Gets the start index of the critique inside paragraph.|
+|[CritiqueAnnotation](/javascript/api/word/word.critiqueannotation)|[accept()](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-accept-member(1))|Accepts the critique.|
+||[critique](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-critique-member)|Gets the critique that was passed when the annotation was inserted.|
+||[range](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-range-member)|Gets the range of text that is annotated.|
+||[reject()](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-reject-member(1))|Rejects the critique.|
+|[Document](/javascript/api/word/word.document)|[getAnnotationById(id: string)](/javascript/api/word/word.document#word-word-document-getannotationbyid-member(1))|Gets the annotation by ID.|
+||[getParagraphByUniqueLocalId(id: string)](/javascript/api/word/word.document#word-word-document-getparagraphbyuniquelocalid-member(1))|Gets the paragraph by its unique local ID.|
+||[importStylesFromJson(stylesJson: string)](/javascript/api/word/word.document#word-word-document-importstylesfromjson-member(1))|Import styles from a JSON-formatted string.|
+||[onAnnotationClicked](/javascript/api/word/word.document#word-word-document-onannotationclicked-member)|Occurs when the user clicks an annotation (or selects it using **Alt+Down**).|
+||[onAnnotationHovered](/javascript/api/word/word.document#word-word-document-onannotationhovered-member)|Occurs when the user hovers the cursor over an annotation.|
+||[onAnnotationInserted](/javascript/api/word/word.document#word-word-document-onannotationinserted-member)|Occurs when the user adds one or more annotations.|
+||[onAnnotationRemoved](/javascript/api/word/word.document#word-word-document-onannotationremoved-member)|Occurs when the user deletes one or more annotations.|
+||[onParagraphAdded](/javascript/api/word/word.document#word-word-document-onparagraphadded-member)|Occurs when the user adds new paragraphs.|
+||[onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member)|Occurs when the user changes paragraphs.|
+||[onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)|Occurs when the user deletes paragraphs.|
 |[Field](/javascript/api/word/word.field)|[showCodes](/javascript/api/word/word.field#word-word-field-showcodes-member)|Specifies whether the field codes are displayed for the specified field.|
+|[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies a value that indicates whether the font is tagged as hidden.|
 |[InlinePicture](/javascript/api/word/word.inlinepicture)|[imageFormat](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-imageformat-member)|Gets the format of the inline image.|
 |[InsertFileOptions](/javascript/api/word/word.insertfileoptions)|[importCustomProperties](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomproperties-member)|Represents whether the custom properties from the source document should be imported.|
 ||[importCustomXmlParts](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomxmlparts-member)|Represents whether the custom XML parts from the source document should be imported.|
@@ -69,20 +109,25 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[items](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Specifies whether the specified ListTemplate object is outline numbered.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
-|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[ids](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[getAnnotations()](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))|Gets annotations set on this Paragraph object.|
+||[getTrackedChanges()](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the paragraph.|
+||[insertAnnotations(annotations: Word.AnnotationSet)](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))|Inserts annotations on this Paragraph object.|
+||[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
+|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
-|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[ids](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|The source of the event.|
+||[uniqueLocalIds](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
+|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
-|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[ids](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-ids-member)|Gets the IDs of the involved paragraphs.|
-||[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
+||[uniqueLocalIds](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
+|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
+||[uniqueLocalIds](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
+|[Range](/javascript/api/word/word.range)|[getTrackedChanges()](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the range.|
 |[Shading](/javascript/api/word/word.shading)|[backgroundPatternColor](/javascript/api/word/word.shading#word-word-shading-backgroundpatterncolor-member)|Specifies the color for the background of the object.|
 ||[foregroundPatternColor](/javascript/api/word/word.shading#word-word-shading-foregroundpatterncolor-member)|Specifies the color for the foreground of the object.|
 ||[texture](/javascript/api/word/word.shading#word-word-shading-texture-member)|Specifies the shading texture of the object.|
-|[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
+|[Style](/javascript/api/word/word.style)|[borders](/javascript/api/word/word.style#word-word-style-borders-member)|Specifies a BorderCollection object that represents all the borders for the specified style.|
+||[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
 ||[listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)|Gets a ListTemplate object that represents the list formatting for the specified Style object.|
 ||[shading](/javascript/api/word/word.style#word-word-style-shading-member)|Gets a Shading object that represents the shading for the specified style.|
 ||[tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)|Gets a TableStyle object representing Style properties that can be applied to a table.|
@@ -94,6 +139,22 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[leftCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-leftcellmargin-member)|Specifies the amount of space to add between the contents and the left borders of the cells.|
 ||[rightCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-rightcellmargin-member)|Specifies the amount of space to add between the contents and the right borders of the cells.|
 ||[topCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-topcellmargin-member)|Specifies the amount of space to add between the contents and the top borders of the cells.|
+|[TrackedChange](/javascript/api/word/word.trackedchange)|[accept()](/javascript/api/word/word.trackedchange#word-word-trackedchange-accept-member(1))|Accepts the tracked change.|
+||[author](/javascript/api/word/word.trackedchange#word-word-trackedchange-author-member)|Specifies the author of the tracked change.|
+||[date](/javascript/api/word/word.trackedchange#word-word-trackedchange-date-member)|Specifies the date of the tracked change.|
+||[getNext()](/javascript/api/word/word.trackedchange#word-word-trackedchange-getnext-member(1))|Gets the next tracked change.|
+||[getNextOrNullObject()](/javascript/api/word/word.trackedchange#word-word-trackedchange-getnextornullobject-member(1))|Gets the next tracked change.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| "Whole" \| "Start" \| "End")](/javascript/api/word/word.trackedchange#word-word-trackedchange-getrange-member(1))|Gets the range of the tracked change.|
+||[reject()](/javascript/api/word/word.trackedchange#word-word-trackedchange-reject-member(1))|Rejects the tracked change.|
+||[text](/javascript/api/word/word.trackedchange#word-word-trackedchange-text-member)|Specifies the text of the tracked change.|
+||[type](/javascript/api/word/word.trackedchange#word-word-trackedchange-type-member)|Specifies the type of the tracked change.|
+|[TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection)|[acceptAll()](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-acceptall-member(1))|Accepts all the tracked changes in the collection.|
+||[getCount()](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-getcount-member(1))|Gets the number of TrackedChange objects in the collection.|
+||[getFirst()](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-getfirst-member(1))|Gets the first TrackedChange in this collection.|
+||[getFirstOrNullObject()](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-getfirstornullobject-member(1))|Gets the first TrackedChange in this collection.|
+||[getItem(index: number)](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-getitem-member(1))|Gets a TrackedChange object by its index in the collection.|
+||[items](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-items-member)|Gets the loaded child items in this collection.|
+||[rejectAll()](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-rejectall-member(1))|Rejects all the tracked changes in the collection.|
 
 ## Web-only API list
 

@@ -1,0 +1,42 @@
+### YamlMime:TSEnum
+name: Word.TrackedChangeType
+uid: 'word!Word.TrackedChangeType:enum'
+package: word!
+fullName: Word.TrackedChangeType
+summary: TrackedChange type.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: added
+    uid: 'word!Word.TrackedChangeType.added:member'
+    package: word!
+    summary: |-
+      Add change.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Added"'
+  - name: deleted
+    uid: 'word!Word.TrackedChangeType.deleted:member'
+    package: word!
+    summary: |-
+      Delete change.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Deleted"'
+  - name: formatted
+    uid: 'word!Word.TrackedChangeType.formatted:member'
+    package: word!
+    summary: |-
+      Format change.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Formatted"'
+  - name: none
+    uid: 'word!Word.TrackedChangeType.none:member'
+    package: word!
+    summary: |-
+      No revision.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'

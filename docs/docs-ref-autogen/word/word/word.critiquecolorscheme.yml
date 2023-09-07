@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: Word.CritiqueColorScheme
+uid: 'word!Word.CritiqueColorScheme:enum'
+package: word!
+fullName: Word.CritiqueColorScheme
+summary: 'Represents the color scheme of a critique in the document, affecting underline and highlight.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: berry
+    uid: 'word!Word.CritiqueColorScheme.berry:member'
+    package: word!
+    summary: |-
+      Berry color.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Berry"'
+  - name: blue
+    uid: 'word!Word.CritiqueColorScheme.blue:member'
+    package: word!
+    summary: |-
+      Blue color.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Blue"'
+  - name: green
+    uid: 'word!Word.CritiqueColorScheme.green:member'
+    package: word!
+    summary: |-
+      Green color.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Green"'
+  - name: lavender
+    uid: 'word!Word.CritiqueColorScheme.lavender:member'
+    package: word!
+    summary: |-
+      Lavender color.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Lavender"'
+  - name: red
+    uid: 'word!Word.CritiqueColorScheme.red:member'
+    package: word!
+    summary: |-
+      Red color.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Red"'

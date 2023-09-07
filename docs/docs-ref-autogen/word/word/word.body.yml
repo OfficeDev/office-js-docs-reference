@@ -325,7 +325,7 @@ properties:
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a
       parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
       further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -356,7 +356,7 @@ properties:
       Gets the content control that contains the body. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -384,7 +384,7 @@ properties:
     summary: >-
       Gets the parent section of the body. If there isn't a parent section, then this method will return an object with
       its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -800,23 +800,6 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
-  - name: getParagraphById(id)
-    uid: 'word!Word.Body#getParagraphById:member(1)'
-    package: word!
-    fullName: getParagraphById(id)
-    summary: Gets the paragraph by its unique ID in GUID format. Throws an `ItemNotFound` error if the collection is empty.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getParagraphById(id: string): Word.Paragraph;'
-      parameters:
-        - id: id
-          description: Required. Unique paragraph ID in GUID format.
-          type: string
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Body#getRange:member(1)'
     package: word!
@@ -873,6 +856,19 @@ methods:
           type: '"Original" | "Current"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getTrackedChanges()
+    uid: 'word!Word.Body#getTrackedChanges:member(1)'
+    package: word!
+    fullName: getTrackedChanges()
+    summary: Gets the collection of the TrackedChange objects in the body.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getTrackedChanges(): Word.TrackedChangeCollection;'
+      return:
+        type: '<xref uid="word!Word.TrackedChangeCollection:class" />'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.Body#insertBreak:member(1)'
@@ -1656,7 +1652,7 @@ methods:
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
-      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
@@ -1675,7 +1671,7 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
@@ -1757,46 +1753,4 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
-  - name: onParagraphAdded
-    uid: 'word!Word.Body#onParagraphAdded:member'
-    package: word!
-    fullName: onParagraphAdded
-    summary: Occurs when new paragraphs are added.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
-  - name: onParagraphChanged
-    uid: 'word!Word.Body#onParagraphChanged:member'
-    package: word!
-    fullName: onParagraphChanged
-    summary: Occurs when paragraphs are changed.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
-  - name: onParagraphDeleted
-    uid: 'word!Word.Body#onParagraphDeleted:member'
-    package: word!
-    fullName: onParagraphDeleted
-    summary: Occurs when paragraphs are deleted.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

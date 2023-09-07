@@ -57,7 +57,7 @@ properties:
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a
       parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
       further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -88,7 +88,7 @@ properties:
       Gets the content control that contains the body. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -116,7 +116,7 @@ properties:
     summary: >-
       Gets the parent section of the body. If there isn't a parent section, then this method will return an object with
       its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

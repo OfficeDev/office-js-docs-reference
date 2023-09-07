@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderCollectionLoadOptions
+uid: 'word!Word.Interfaces.BorderCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.BorderCollectionLoadOptions
+summary: Represents the collection of border styles.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: lineColor
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineColor:member'
+    package: word!
+    fullName: lineColor
+    summary: 'For EACH ITEM in the collection: Specifies the line color for the border.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineColor?: boolean;'
+      return:
+        type: boolean
+  - name: lineStyle
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineStyle:member'
+    package: word!
+    fullName: lineStyle
+    summary: 'For EACH ITEM in the collection: Specifies the line style for the border.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineStyle?: boolean;'
+      return:
+        type: boolean
+  - name: lineWidth
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineWidth:member'
+    package: word!
+    fullName: lineWidth
+    summary: 'For EACH ITEM in the collection: Specifies the line width for the border.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineWidth?: boolean;'
+      return:
+        type: boolean
+  - name: positionType
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#positionType:member'
+    package: word!
+    fullName: positionType
+    summary: 'For EACH ITEM in the collection: Gets the position type of the border.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'positionType?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#visible:member'
+    package: word!
+    fullName: visible
+    summary: 'For EACH ITEM in the collection: Specifies whether the border is visible.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
