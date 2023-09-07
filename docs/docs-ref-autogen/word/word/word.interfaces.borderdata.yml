@@ -32,17 +32,17 @@ properties:
     syntax:
       content: >-
         lineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" |
-        "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" | "Single" |
+        "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" | "Outset" | "Single" |
         "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" |
         "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
         "ThinThickThinSmallGap" | "Triple";
       return:
         type: >-
           <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "None" | "Outset" |
-          "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap"
-          | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
-          "ThinThickThinSmallGap" | "Triple"
+          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
+          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
+          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
+          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
   - name: lineWidth
     uid: 'word!Word.Interfaces.BorderData#lineWidth:member'
     package: word!

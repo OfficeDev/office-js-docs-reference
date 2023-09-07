@@ -21,6 +21,8 @@ items:
             items:
               - name: Alignment
                 uid: 'word!Word.Alignment:enum'
+              - name: AnnotationState
+                uid: 'word!Word.AnnotationState:enum'
               - name: BodyType
                 uid: 'word!Word.BodyType:enum'
               - name: BorderLocation
@@ -49,6 +51,8 @@ items:
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
                 uid: 'word!Word.ContentControlType:enum'
+              - name: CritiqueColorScheme
+                uid: 'word!Word.CritiqueColorScheme:enum'
               - name: DocumentPropertyType
                 uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
@@ -95,18 +99,36 @@ items:
                 uid: 'word!Word.ShadingTextureType:enum'
               - name: StyleType
                 uid: 'word!Word.StyleType:enum'
+              - name: TrackedChangeType
+                uid: 'word!Word.TrackedChangeType:enum'
               - name: TrailingCharacter
                 uid: 'word!Word.TrailingCharacter:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
                 uid: 'word!Word.VerticalAlignment:enum'
+          - name: Annotation
+            uid: 'word!Word.Annotation:class'
+          - name: AnnotationClickedEventArgs
+            uid: 'word!Word.AnnotationClickedEventArgs:interface'
+          - name: AnnotationCollection
+            uid: 'word!Word.AnnotationCollection:class'
+          - name: AnnotationHoveredEventArgs
+            uid: 'word!Word.AnnotationHoveredEventArgs:interface'
+          - name: AnnotationInsertedEventArgs
+            uid: 'word!Word.AnnotationInsertedEventArgs:interface'
+          - name: AnnotationRemovedEventArgs
+            uid: 'word!Word.AnnotationRemovedEventArgs:interface'
+          - name: AnnotationSet
+            uid: 'word!Word.AnnotationSet:interface'
           - name: Application
             uid: 'word!Word.Application:class'
           - name: Body
             uid: 'word!Word.Body:class'
           - name: Border
             uid: 'word!Word.Border:class'
+          - name: BorderCollection
+            uid: 'word!Word.BorderCollection:class'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection
@@ -141,6 +163,10 @@ items:
             uid: 'word!Word.ContentControlOptions:interface'
           - name: ContentControlSelectionChangedEventArgs
             uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
+          - name: Critique
+            uid: 'word!Word.Critique:interface'
+          - name: CritiqueAnnotation
+            uid: 'word!Word.CritiqueAnnotation:class'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection
@@ -235,6 +261,10 @@ items:
             uid: 'word!Word.TableRowCollection:class'
           - name: TableStyle
             uid: 'word!Word.TableStyle:class'
+          - name: TrackedChange
+            uid: 'word!Word.TrackedChange:class'
+          - name: TrackedChangeCollection
+            uid: 'word!Word.TrackedChangeCollection:class'
       - name: Common APIs
         uid: office!
         items:

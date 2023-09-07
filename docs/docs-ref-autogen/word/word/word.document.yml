@@ -335,6 +335,23 @@ methods:
       return:
         type: void
         description: ''
+  - name: getAnnotationById(id)
+    uid: 'word!Word.Document#getAnnotationById:member(1)'
+    package: word!
+    fullName: getAnnotationById(id)
+    summary: Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAnnotationById(id: string): Word.Annotation;'
+      parameters:
+        - id: id
+          description: The ID of the annotation to get.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Annotation:class" />'
+        description: ''
   - name: getBookmarkRange(name)
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
@@ -359,7 +376,7 @@ methods:
     summary: >-
       Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -420,6 +437,25 @@ methods:
       content: 'getFootnoteBody(): Word.Body;'
       return:
         type: '<xref uid="word!Word.Body:class" />'
+        description: ''
+  - name: getParagraphByUniqueLocalId(id)
+    uid: 'word!Word.Document#getParagraphByUniqueLocalId:member(1)'
+    package: word!
+    fullName: getParagraphByUniqueLocalId(id)
+    summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getParagraphByUniqueLocalId(id: string): Word.Paragraph;'
+      parameters:
+        - id: id
+          description: >-
+            Required. Unique local ID in standard 8-4-4-4-12 GUID format without curly braces. Note that the ID differs
+            across sessions and coauthors.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
   - name: getSelection()
     uid: 'word!Word.Document#getSelection:member(1)'
@@ -494,6 +530,23 @@ methods:
       content: 'getStyles(): Word.StyleCollection;'
       return:
         type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: importStylesFromJson(stylesJson)
+    uid: 'word!Word.Document#importStylesFromJson:member(1)'
+    package: word!
+    fullName: importStylesFromJson(stylesJson)
+    summary: Import styles from a JSON-formatted string.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;'
+      parameters:
+        - id: stylesJson
+          description: Required. A JSON-formatted string representing the styles.
+          type: string
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
     uid: 'word!Word.Document#insertFileFromBase64:member(1)'
@@ -802,7 +855,7 @@ methods:
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
-      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
@@ -821,7 +874,7 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
@@ -833,6 +886,62 @@ methods:
         type: '<xref uid="word!Word.Document:class" />'
         description: ''
 events:
+  - name: onAnnotationClicked
+    uid: 'word!Word.Document#onAnnotationClicked:member'
+    package: word!
+    fullName: onAnnotationClicked
+    summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
+  - name: onAnnotationHovered
+    uid: 'word!Word.Document#onAnnotationHovered:member'
+    package: word!
+    fullName: onAnnotationHovered
+    summary: Occurs when the user hovers the cursor over an annotation.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
+  - name: onAnnotationInserted
+    uid: 'word!Word.Document#onAnnotationInserted:member'
+    package: word!
+    fullName: onAnnotationInserted
+    summary: Occurs when the user adds one or more annotations.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
+  - name: onAnnotationRemoved
+    uid: 'word!Word.Document#onAnnotationRemoved:member'
+    package: word!
+    fullName: onAnnotationRemoved
+    summary: Occurs when the user deletes one or more annotations.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
   - name: onContentControlAdded
     uid: 'word!Word.Document#onContentControlAdded:member'
     package: word!
@@ -880,4 +989,46 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
+  - name: onParagraphAdded
+    uid: 'word!Word.Document#onParagraphAdded:member'
+    package: word!
+    fullName: onParagraphAdded
+    summary: Occurs when the user adds new paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
+  - name: onParagraphChanged
+    uid: 'word!Word.Document#onParagraphChanged:member'
+    package: word!
+    fullName: onParagraphChanged
+    summary: Occurs when the user changes paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
+  - name: onParagraphDeleted
+    uid: 'word!Word.Document#onParagraphDeleted:member'
+    package: word!
+    fullName: onParagraphDeleted
+    summary: Occurs when the user deletes paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

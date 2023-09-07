@@ -105,6 +105,20 @@ properties:
       content: 'doubleStrikeThrough: boolean;'
       return:
         type: boolean
+  - name: hidden
+    uid: 'word!Word.Font#hidden:member'
+    package: word!
+    fullName: hidden
+    summary: >-
+      Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden
+      text, otherwise, false.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hidden: boolean;'
+      return:
+        type: boolean
   - name: highlightColor
     uid: 'word!Word.Font#highlightColor:member'
     package: word!
@@ -459,7 +473,7 @@ methods:
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
-      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
@@ -478,7 +492,7 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''

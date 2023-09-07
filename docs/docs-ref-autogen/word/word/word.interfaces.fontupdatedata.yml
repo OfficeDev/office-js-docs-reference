@@ -49,6 +49,20 @@ properties:
       content: 'doubleStrikeThrough?: boolean;'
       return:
         type: boolean
+  - name: hidden
+    uid: 'word!Word.Interfaces.FontUpdateData#hidden:member'
+    package: word!
+    fullName: hidden
+    summary: >-
+      Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden
+      text, otherwise, false.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
   - name: highlightColor
     uid: 'word!Word.Interfaces.FontUpdateData#highlightColor:member'
     package: word!
