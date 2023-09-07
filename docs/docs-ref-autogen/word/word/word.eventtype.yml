@@ -27,6 +27,38 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
+  - name: annotationClicked
+    uid: 'word!Word.EventType.annotationClicked:member'
+    package: word!
+    summary: |-
+      Represents that an annotation was clicked (or selected with **Alt+Down**) in the document.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationClicked"'
+  - name: annotationHovered
+    uid: 'word!Word.EventType.annotationHovered:member'
+    package: word!
+    summary: |-
+      Represents that an annotation was hovered over in the document.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationHovered"'
+  - name: annotationInserted
+    uid: 'word!Word.EventType.annotationInserted:member'
+    package: word!
+    summary: |-
+      Represents that one or more annotations were added in the document.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationInserted"'
+  - name: annotationRemoved
+    uid: 'word!Word.EventType.annotationRemoved:member'
+    package: word!
+    summary: |-
+      Represents that one or more annotations were deleted from the document.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationRemoved"'
   - name: commentAdded
     uid: 'word!Word.EventType.commentAdded:member'
     package: word!

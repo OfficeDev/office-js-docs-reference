@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Critique
+uid: 'word!Word.Critique:interface'
+package: word!
+fullName: Word.Critique
+summary: Critique that will be rendered as underline for the specified part of paragraph in the document.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: colorScheme
+    uid: 'word!Word.Critique#colorScheme:member'
+    package: word!
+    fullName: colorScheme
+    summary: Gets the color scheme of the critique.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";'
+      return:
+        type: '<xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" | "Blue" | "Lavender" | "Berry"'
+  - name: length
+    uid: 'word!Word.Critique#length:member'
+    package: word!
+    fullName: length
+    summary: Gets the length of the critique inside paragraph.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'length: number;'
+      return:
+        type: number
+  - name: start
+    uid: 'word!Word.Critique#start:member'
+    package: word!
+    fullName: start
+    summary: Gets the start index of the critique inside paragraph.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start: number;'
+      return:
+        type: number

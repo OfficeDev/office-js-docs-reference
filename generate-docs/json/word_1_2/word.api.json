@@ -1823,7 +1823,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1855,7 +1855,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3853,7 +3853,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3920,7 +3920,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4514,7 +4514,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4546,7 +4546,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5592,7 +5592,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5624,7 +5624,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6476,7 +6476,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6543,7 +6543,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7985,7 +7985,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8017,7 +8017,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8366,7 +8366,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8398,7 +8398,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16667,7 +16667,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions:interface",
-                  "docComment": "/**\n * Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read {@link https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19927,7 +19927,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19959,7 +19959,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20278,7 +20278,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20310,7 +20310,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21790,7 +21790,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21822,7 +21822,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22141,7 +22141,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22173,7 +22173,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22642,7 +22642,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.SearchOptions:class",
-              "docComment": "/**\n * Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+              "docComment": "/**\n * Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read {@link https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -23838,7 +23838,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23870,7 +23870,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24189,7 +24189,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24221,7 +24221,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

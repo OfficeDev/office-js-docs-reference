@@ -35,6 +35,18 @@ properties:
       content: 'baseStyle?: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: 'word!Word.Interfaces.StyleLoadOptions#borders:member'
+    package: word!
+    fullName: borders
+    summary: Specifies a BorderCollection object that represents all the borders for the specified style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface" />'
   - name: builtIn
     uid: 'word!Word.Interfaces.StyleLoadOptions#builtIn:member'
     package: word!

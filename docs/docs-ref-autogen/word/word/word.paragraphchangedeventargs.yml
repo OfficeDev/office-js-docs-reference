@@ -9,18 +9,6 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: ids
-    uid: 'word!Word.ParagraphChangedEventArgs#ids:member'
-    package: word!
-    fullName: ids
-    summary: Gets the IDs of the involved paragraphs.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'ids: string[];'
-      return:
-        type: 'string[]'
   - name: source
     uid: 'word!Word.ParagraphChangedEventArgs#source:member'
     package: word!
@@ -46,10 +34,25 @@ properties:
         type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
         | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" |
         "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" |
-        "ParagraphDeleted";
+        "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
           "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved"
+  - name: uniqueLocalIds
+    uid: 'word!Word.ParagraphChangedEventArgs#uniqueLocalIds:member'
+    package: word!
+    fullName: uniqueLocalIds
+    summary: >-
+      Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces
+      and differ across sessions and coauthors.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalIds: string[];'
+      return:
+        type: 'string[]'

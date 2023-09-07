@@ -41,13 +41,15 @@ properties:
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
         | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-        "ParagraphChanged" | "ParagraphDeleted";
+        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
+        "AnnotationRemoved";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
           "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved"
   - name: ids
     uid: 'word!Word.ContentControlAddedEventArgs#ids:member'
     package: word!

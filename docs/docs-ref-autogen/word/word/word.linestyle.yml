@@ -96,6 +96,14 @@ fields:
 
       * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inset"'
+  - name: mixed
+    uid: 'word!Word.LineStyle.mixed:member'
+    package: word!
+    summary: |-
+      Mixed line style.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
   - name: none
     uid: 'word!Word.LineStyle.none:member'
     package: word!
