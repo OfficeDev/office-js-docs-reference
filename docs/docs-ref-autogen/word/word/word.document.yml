@@ -318,6 +318,26 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'compare(filePath, documentCompareOptions)'
+    uid: 'word!Word.Document#compare:member(1)'
+    package: word!
+    fullName: 'compare(filePath, documentCompareOptions)'
+    summary: Displays revision marks that indicate where the specified document differs from another document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
+      parameters:
+        - id: filePath
+          description: Required. The path of the document with which the specified document is compared.
+          type: string
+        - id: documentCompareOptions
+          description: Optional. The additional options that specifies the behavior of comparing document.
+          type: '<xref uid="word!Word.DocumentCompareOptions:interface" />'
+      return:
+        type: void
+        description: ''
   - name: deleteBookmark(name)
     uid: 'word!Word.Document#deleteBookmark:member(1)'
     package: word!

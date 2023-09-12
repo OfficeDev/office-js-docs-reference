@@ -1285,15 +1285,21 @@ methods:
     package: word!
     fullName: insertContentControl(contentControlType)
     summary: Wraps the Paragraph object with a content control.
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
+      1.5. `CheckBox` support is currently in preview.
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
@@ -1318,19 +1324,23 @@ methods:
           await context.sync();
           console.log('Wrapped the first paragraph in a content control.');
       });
+
       ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        "RichText" | "PlainText"): Word.ContentControl;
+        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. The content control type. The default is 'RichText'.
+          description: >-
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
+            'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
+            uid="word!Word.ContentControlType.plainText:member" /> | <xref
+            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''

@@ -711,11 +711,11 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support in currently in preview.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -1135,6 +1135,23 @@ export declare namespace Word {
         * Whereas the original `Word.BorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.BorderCollectionData;
+    }
+    /**
+     * The data specific to content controls of type CheckBox.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CheckboxContentControl {
+        /**
+         * Specifies the current state of the checkbox.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isChecked: boolean;
     }
     /**
      * Represents a comment in the document.
@@ -1741,6 +1758,14 @@ export declare namespace Word {
          */
         cannotEdit: boolean;
         /**
+         * Gets the checkbox-related data if the content control's type is 'CheckBox'. Returns null otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly checkboxContentControl: Word.CheckboxContentControl;
+        /**
          * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
          *
          * @remarks
@@ -2296,10 +2321,11 @@ export declare namespace Word {
      */
     export interface ContentControlOptions {
         /**
-         * An array of content control types, item must be 'RichText' or 'PlainText'.
+         * An array of content control types, item must be 'RichText', 'PlainText', or 'CheckBox'.
          *
          * @remarks
          * [Api set: WordApi 1.5]
+         * Note: `PlainText` support was added in WordApi 1.5. `CheckBox` support is currently in preview.
          */
         types: Word.ContentControlType[];
     }
@@ -3026,6 +3052,17 @@ export declare namespace Word {
          * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
         close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        /**
+         * Displays revision marks that indicate where the specified document differs from another document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param filePath - Required. The path of the document with which the specified document is compared.
+         * @param documentCompareOptions - Optional. The additional options that specifies the behavior of comparing document.
+         */
+        compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -5679,11 +5716,11 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support is currently in preview.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -6471,11 +6508,11 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support is currently in preview.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
         /**
          * Inserts an endnote. The endnote reference is placed after the range.
          *
@@ -6944,6 +6981,72 @@ export declare namespace Word {
         * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.SearchOptionsData;
+    }
+    /**
+     * Specifies the options to be included in a compare document operation.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentCompareOptions {
+        /**
+         * True adds the document to the list of recently used files on the File menu. The default value is True.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addToRecentFiles?: boolean;
+        /**
+         * The reviewer name associated with the differences generated by the comparison.
+                    If unspecified, the value defaults to the author name of the revised document or the string "Comparison" if no author information is present.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        authorName?: string;
+        /**
+         * The target document for the comparison. Default value is 'CompareTargetCurrent'.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compareTarget?: Word.CompareTarget | "CompareTargetCurrent" | "CompareTargetSelected" | "CompareTargetNew";
+        /**
+         * True (default) for the comparison to include detection of format changes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        detectFormatChanges?: boolean;
+        /**
+         * True compares the documents without notifying a user of problems. The default value is False.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ignoreAllComparisonWarnings?: boolean;
+        /**
+         * True removes date and time stamp information from tracked changes in the returned Document object. The default value is False.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removeDateAndTime?: boolean;
+        /**
+         * True removes all user information from comments, revisions, and the properties dialog box in the returned Document object. The default value is False.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removePersonalInformation?: boolean;
     }
     /**
      * Represents a section in a Word document.
@@ -13485,6 +13588,36 @@ export declare namespace Word {
          */
         solid = "Solid",
     }
+    /**
+     * Specifies the target document for displaying document comparison differences.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CompareTarget {
+        /**
+         * Places comparison differences in the current document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compareTargetCurrent = "CompareTargetCurrent",
+        /**
+         * Places comparison differences in the target document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compareTargetSelected = "CompareTargetSelected",
+        /**
+         * Places comparison differences in a new document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compareTargetNew = "CompareTargetNew",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -15388,6 +15521,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
+            /**
+             * Gets the checkbox-related data if the content control's type is 'CheckBox'. Returns null otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            checkboxContentControl?: Word.CheckboxContentControl;
             /**
              * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
@@ -17434,7 +17575,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the line color for the border.
+             * For EACH ITEM in the collection: Specifies the line color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17866,6 +18007,14 @@ export declare namespace Word {
              */
             cannotEdit?: boolean;
             /**
+             * Gets the checkbox-related data if the content control's type is 'CheckBox'. Returns null otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            checkboxContentControl?: boolean;
+            /**
              * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
              * @remarks
@@ -18031,6 +18180,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the checkbox-related data if the content control's type is 'CheckBox'. Returns null otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            checkboxContentControl?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *

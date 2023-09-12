@@ -1118,7 +1118,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the Body object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5.\n *\n * @param contentControlType - Optional. The content control type. The default is 'RichText'.\n */\n",
+                  "docComment": "/**\n * Wraps the Body object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.\n *\n * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -52854,7 +52854,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the Paragraph object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5.\n *\n * @param contentControlType - Optional. The content control type. The default is 'RichText'.\n */\n",
+                  "docComment": "/**\n * Wraps the Paragraph object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.\n *\n * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -56649,7 +56649,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the Range object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5.\n *\n * @param contentControlType - Optional. The content control type. The default is 'RichText'.\n */\n",
+                  "docComment": "/**\n * Wraps the Range object with a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.\n *\n * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
