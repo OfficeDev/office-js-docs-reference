@@ -14,7 +14,10 @@ properties:
     package: word!
     fullName: types
     summary: 'An array of content control types, item must be ''RichText'' or ''PlainText''.'
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: `PlainText` support was added in WordApi 1.5.
     isPreview: false
     isDeprecated: false
     syntax:
