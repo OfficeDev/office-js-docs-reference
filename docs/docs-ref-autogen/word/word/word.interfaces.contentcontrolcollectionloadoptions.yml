@@ -69,6 +69,20 @@ properties:
       content: 'cannotEdit?: boolean;'
       return:
         type: boolean
+  - name: checkboxContentControl
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#checkboxContentControl:member'
+    package: word!
+    fullName: checkboxContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the checkbox-related data if the content control's type is 'CheckBox'.
+      Returns null otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkboxContentControl?: boolean;'
+      return:
+        type: boolean
   - name: color
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member'
     package: word!

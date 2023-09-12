@@ -47,6 +47,8 @@ items:
                 uid: 'word!Word.CloseBehavior:enum'
               - name: CommentChangeType
                 uid: 'word!Word.CommentChangeType:enum'
+              - name: CompareTarget
+                uid: 'word!Word.CompareTarget:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
@@ -129,6 +131,8 @@ items:
             uid: 'word!Word.Border:class'
           - name: BorderCollection
             uid: 'word!Word.BorderCollection:class'
+          - name: CheckboxContentControl
+            uid: 'word!Word.CheckboxContentControl:interface'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection
@@ -179,6 +183,8 @@ items:
             uid: 'word!Word.CustomXmlPartScopedCollection:class'
           - name: Document
             uid: 'word!Word.Document:class'
+          - name: DocumentCompareOptions
+            uid: 'word!Word.DocumentCompareOptions:interface'
           - name: DocumentCreated
             uid: 'word!Word.DocumentCreated:class'
           - name: DocumentProperties

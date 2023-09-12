@@ -1123,15 +1123,21 @@ methods:
     package: word!
     fullName: insertContentControl(contentControlType)
     summary: Wraps the Paragraph object with a content control.
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
+      1.5.
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
@@ -1156,6 +1162,7 @@ methods:
           await context.sync();
           console.log('Wrapped the first paragraph in a content control.');
       });
+
       ```
     isPreview: false
     isDeprecated: false
@@ -1165,7 +1172,7 @@ methods:
         "RichText" | "PlainText"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. The content control type. The default is 'RichText'.
+          description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"

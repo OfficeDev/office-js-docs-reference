@@ -276,9 +276,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
@@ -1540,6 +1540,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.5]
+         *
+         * Note: `PlainText` support was added in WordApi 1.5.
          */
         types: Word.ContentControlType[];
     }
@@ -4448,9 +4450,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
@@ -5182,9 +5184,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5.
          *
-         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
