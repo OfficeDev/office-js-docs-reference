@@ -659,8 +659,6 @@ pushd scripts
 node postprocessor.js
 popd
 
-pushd tools
-node coverage-tester.js
-popd
+./node_modules/.bin/reference-coverage-tester reference-coverage-tester.json
 
 wait
