@@ -480,12 +480,12 @@ Excel.CalculationType,N/A,Enum,Fine,true
 Excel.CalculationType,"full",EnumField,Fine,false
 Excel.CalculationType,"fullRebuild",EnumField,Fine,false
 Excel.CalculationType,"recalculate",EnumField,Fine,false
-Excel.CardLayout,N/A,Enum,Good,false
+Excel.CardLayout,N/A,TypeAlias,Good,false
 Excel.CardLayoutListSection,N/A,Class,Good,false
 Excel.CardLayoutListSection,"layout",Property,Good,false
 Excel.CardLayoutPropertyReference,N/A,Class,Good,false
 Excel.CardLayoutPropertyReference,"property",Property,Good,false
-Excel.CardLayoutSection,N/A,Enum,Good,false
+Excel.CardLayoutSection,N/A,TypeAlias,Good,false
 Excel.CardLayoutSectionStandardProperties,N/A,Class,Good,false
 Excel.CardLayoutSectionStandardProperties,"collapsed",Property,Good,false
 Excel.CardLayoutSectionStandardProperties,"collapsible",Property,Good,false
@@ -595,8 +595,8 @@ Excel.CellPropertiesLoadOptions,"style",Property,Fine,false
 Excel.CellPropertiesProtection,N/A,Class,Good,false
 Excel.CellPropertiesProtection,"formulaHidden",Property,Good,false
 Excel.CellPropertiesProtection,"locked",Property,Good,false
-Excel.CellValue,N/A,Enum,Good,false
-Excel.CellValueAndPropertyMetadata,N/A,Enum,Good,false
+Excel.CellValue,N/A,TypeAlias,Good,false
+Excel.CellValueAndPropertyMetadata,N/A,TypeAlias,Good,false
 Excel.CellValueAttributionAttributes,N/A,Class,Good,false
 Excel.CellValueAttributionAttributes,"licenseAddress",Property,Good,false
 Excel.CellValueAttributionAttributes,"licenseText",Property,Good,false
@@ -1817,7 +1817,7 @@ Excel.CommentReplyCollection,"toJSON()",Method,Poor,false
 Excel.CommentRichContent,N/A,Class,Good,false
 Excel.CommentRichContent,"mentions",Property,Good,true
 Excel.CommentRichContent,"richContent",Property,Good,false
-Excel.CompactLayout,N/A,Enum,Good,false
+Excel.CompactLayout,N/A,TypeAlias,Good,false
 Excel.ConditionalCellValueOperator,N/A,Enum,Good,false
 Excel.ConditionalCellValueOperator,"between",EnumField,Fine,false
 Excel.ConditionalCellValueOperator,"equalTo",EnumField,Fine,false
@@ -3162,11 +3162,11 @@ Excel.EntityCompactLayoutIcons,"xray",EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,"yoga",EnumField,Fine,false
 Excel.EntityPropertyExtraProperties,N/A,Class,Good,false
 Excel.EntityPropertyExtraProperties,"propertyMetadata",Property,Good,false
-Excel.EntityPropertyType,N/A,Enum,Good,false
+Excel.EntityPropertyType,N/A,TypeAlias,Good,false
 Excel.EntityViewLayouts,N/A,Class,Good,false
 Excel.EntityViewLayouts,"card",Property,Good,false
 Excel.EntityViewLayouts,"compact",Property,Good,false
-Excel.ErrorCellValue,N/A,Enum,Good,true
+Excel.ErrorCellValue,N/A,TypeAlias,Good,true
 Excel.ErrorCellValueType,N/A,Enum,Good,true
 Excel.ErrorCellValueType,"blocked",EnumField,Fine,false
 Excel.ErrorCellValueType,"busy",EnumField,Fine,false
@@ -5234,7 +5234,7 @@ Excel.ReferenceCellValue,"basicType",Property,Good,false
 Excel.ReferenceCellValue,"basicValue",Property,Good,false
 Excel.ReferenceCellValue,"reference",Property,Good,false
 Excel.ReferenceCellValue,"type",Property,Good,false
-Excel.ReferencedValue,N/A,Enum,Good,false
+Excel.ReferencedValue,N/A,TypeAlias,Good,false
 Excel.ReferenceValueType,N/A,Enum,Good,false
 Excel.ReferenceValueType,"array",EnumField,Fine,false
 Excel.ReferenceValueType,"entity",EnumField,Fine,false
@@ -7625,7 +7625,7 @@ OfficeExtension.EventInfo,N/A,Class,Good,false
 OfficeExtension.EventInfo,"eventArgsTransformFunc",Property,Missing,false
 OfficeExtension.EventInfo,"registerFunc",Property,Missing,false
 OfficeExtension.EventInfo,"unregisterFunc",Property,Missing,false
-OfficeExtension.IPromise,N/A,Enum,Missing,false
+OfficeExtension.IPromise,N/A,TypeAlias,Missing,false
 OfficeExtension.LoadOption,N/A,Class,Good,true
 OfficeExtension.LoadOption,"expand",Property,Fine,false
 OfficeExtension.LoadOption,"select",Property,Fine,false
