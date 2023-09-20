@@ -8672,7 +8672,7 @@ Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,fa
 Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,true
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
-Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
+Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,false
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Poor,true
 Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
