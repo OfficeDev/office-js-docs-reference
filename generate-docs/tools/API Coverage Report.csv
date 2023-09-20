@@ -8672,7 +8672,7 @@ Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,fa
 Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,true
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
-Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
+Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,false
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Poor,true
 Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -10130,10 +10130,48 @@ Word.Alignment,"left",EnumField,Fine,false
 Word.Alignment,"mixed",EnumField,Fine,false
 Word.Alignment,"right",EnumField,Fine,false
 Word.Alignment,"unknown",EnumField,Fine,false
+Word.Annotation,N/A,Class,Good,false
+Word.Annotation,"context",Property,Good,false
+Word.Annotation,"critiqueAnnotation",Property,Good,false
+Word.Annotation,"id",Property,Good,false
+Word.Annotation,"state",Property,Good,false
+Word.Annotation,"delete()",Method,Poor,false
+Word.Annotation,"load(options)",Method,Poor,false
+Word.Annotation,"load(propertyNames)",Method,Poor,false
+Word.Annotation,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.Annotation,"toJSON()",Method,Poor,false
+Word.Annotation,"track()",Method,Poor,false
+Word.Annotation,"untrack()",Method,Poor,false
+Word.AnnotationClickedEventArgs,N/A,Class,Good,false
+Word.AnnotationClickedEventArgs,"id",Property,Good,false
+Word.AnnotationCollection,N/A,Class,Good,false
+Word.AnnotationCollection,"context",Property,Good,false
+Word.AnnotationCollection,"items",Property,Fine,false
+Word.AnnotationCollection,"getFirst()",Method,Poor,false
+Word.AnnotationCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.AnnotationCollection,"load(options)",Method,Poor,false
+Word.AnnotationCollection,"load(propertyNames)",Method,Poor,false
+Word.AnnotationCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.AnnotationCollection,"toJSON()",Method,Poor,false
+Word.AnnotationCollection,"track()",Method,Poor,false
+Word.AnnotationCollection,"untrack()",Method,Poor,false
+Word.AnnotationHoveredEventArgs,N/A,Class,Good,false
+Word.AnnotationHoveredEventArgs,"id",Property,Good,false
+Word.AnnotationInsertedEventArgs,N/A,Class,Good,false
+Word.AnnotationInsertedEventArgs,"ids",Property,Good,false
+Word.AnnotationRemovedEventArgs,N/A,Class,Good,false
+Word.AnnotationRemovedEventArgs,"ids",Property,Good,false
+Word.AnnotationSet,N/A,Class,Good,false
+Word.AnnotationSet,"critiques",Property,Good,false
+Word.AnnotationState,N/A,Enum,Good,false
+Word.AnnotationState,"accepted",EnumField,Fine,false
+Word.AnnotationState,"created",EnumField,Fine,false
+Word.AnnotationState,"rejected",EnumField,Fine,false
 Word.Application,N/A,Class,Good,false
 Word.Application,"context",Property,Good,false
 Word.Application,"createDocument(base64File)",Method,Poor,true
 Word.Application,"newObject(context)",Method,Poor,false
+Word.Application,"openDocument(fileLocation)",Method,Poor,false
 Word.Application,"retrieveStylesFromBase64(base64File)",Method,Poor,true
 Word.Application,"toJSON()",Method,Poor,false
 Word.Body,N/A,Class,Good,false
@@ -10162,10 +10200,10 @@ Word.Body,"getComments()",Method,Poor,true
 Word.Body,"getContentControls(options)",Method,Poor,false
 Word.Body,"getHtml()",Method,Poor,true
 Word.Body,"getOoxml()",Method,Poor,true
-Word.Body,"getParagraphById(id)",Method,Poor,false
 Word.Body,"getRange(rangeLocation)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersion)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
+Word.Body,"getTrackedChanges()",Method,Poor,false
 Word.Body,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Body,"insertContentControl(contentControlType)",Method,Poor,true
 Word.Body,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
@@ -10211,6 +10249,26 @@ Word.Border,"set(properties)",Method,Poor,false
 Word.Border,"toJSON()",Method,Poor,false
 Word.Border,"track()",Method,Poor,false
 Word.Border,"untrack()",Method,Poor,false
+Word.BorderCollection,N/A,Class,Good,false
+Word.BorderCollection,"context",Property,Good,false
+Word.BorderCollection,"insideLineColor",Property,Good,false
+Word.BorderCollection,"insideLineStyle",Property,Good,false
+Word.BorderCollection,"insideLineWidth",Property,Good,false
+Word.BorderCollection,"items",Property,Fine,false
+Word.BorderCollection,"outsideLineColor",Property,Good,false
+Word.BorderCollection,"outsideLineStyle",Property,Good,false
+Word.BorderCollection,"outsideLineWidth",Property,Good,false
+Word.BorderCollection,"getByPositionType(positionType)",Method,Poor,false
+Word.BorderCollection,"getByPositionType(positionTypeString)",Method,Poor,false
+Word.BorderCollection,"getFirst()",Method,Poor,false
+Word.BorderCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.BorderCollection,"getItem(index)",Method,Poor,false
+Word.BorderCollection,"load(options)",Method,Poor,false
+Word.BorderCollection,"load(propertyNames)",Method,Poor,false
+Word.BorderCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.BorderCollection,"toJSON()",Method,Poor,false
+Word.BorderCollection,"track()",Method,Poor,false
+Word.BorderCollection,"untrack()",Method,Poor,false
 Word.BorderLocation,N/A,Enum,Fine,true
 Word.BorderLocation,"all",EnumField,Fine,false
 Word.BorderLocation,"bottom",EnumField,Fine,false
@@ -10429,6 +10487,8 @@ Word.ChangeTrackingState,"unknown",EnumField,Fine,false
 Word.ChangeTrackingVersion,N/A,Enum,Good,true
 Word.ChangeTrackingVersion,"current",EnumField,Fine,false
 Word.ChangeTrackingVersion,"original",EnumField,Fine,false
+Word.CheckboxContentControl,N/A,Class,Good,false
+Word.CheckboxContentControl,"isChecked",Property,Good,false
 Word.CloseBehavior,N/A,Enum,Good,false
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Fine,false
@@ -10527,10 +10587,15 @@ Word.CommentReplyCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CommentReplyCollection,"toJSON()",Method,Poor,false
 Word.CommentReplyCollection,"track()",Method,Poor,false
 Word.CommentReplyCollection,"untrack()",Method,Poor,false
+Word.CompareTarget,N/A,Enum,Good,false
+Word.CompareTarget,"compareTargetCurrent",EnumField,Fine,false
+Word.CompareTarget,"compareTargetNew",EnumField,Fine,false
+Word.CompareTarget,"compareTargetSelected",EnumField,Fine,false
 Word.ContentControl,N/A,Class,Good,true
 Word.ContentControl,"appearance",Property,Good,false
 Word.ContentControl,"cannotDelete",Property,Good,false
 Word.ContentControl,"cannotEdit",Property,Good,false
+Word.ContentControl,"checkboxContentControl",Property,Good,false
 Word.ContentControl,"color",Property,Good,false
 Word.ContentControl,"contentControls",Property,Good,false
 Word.ContentControl,"context",Property,Good,false
@@ -10569,6 +10634,7 @@ Word.ContentControl,"getRange(rangeLocation)",Method,Poor,false
 Word.ContentControl,"getReviewedText(changeTrackingVersion)",Method,Poor,false
 Word.ContentControl,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.ContentControl,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
+Word.ContentControl,"getTrackedChanges()",Method,Poor,false
 Word.ContentControl,"insertBreak(breakType, insertLocation)",Method,Poor,true
 Word.ContentControl,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,false
 Word.ContentControl,"insertHtml(html, insertLocation)",Method,Fine,true
@@ -10660,6 +10726,28 @@ Word.ContentControlType,"richTextTable",EnumField,Fine,false
 Word.ContentControlType,"richTextTableCell",EnumField,Fine,false
 Word.ContentControlType,"richTextTableRow",EnumField,Fine,false
 Word.ContentControlType,"unknown",EnumField,Fine,false
+Word.Critique,N/A,Class,Good,false
+Word.Critique,"colorScheme",Property,Good,false
+Word.Critique,"length",Property,Good,false
+Word.Critique,"start",Property,Good,false
+Word.CritiqueAnnotation,N/A,Class,Good,false
+Word.CritiqueAnnotation,"context",Property,Good,false
+Word.CritiqueAnnotation,"critique",Property,Good,false
+Word.CritiqueAnnotation,"range",Property,Good,false
+Word.CritiqueAnnotation,"accept()",Method,Poor,false
+Word.CritiqueAnnotation,"load(options)",Method,Poor,false
+Word.CritiqueAnnotation,"load(propertyNames)",Method,Poor,false
+Word.CritiqueAnnotation,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.CritiqueAnnotation,"reject()",Method,Poor,false
+Word.CritiqueAnnotation,"toJSON()",Method,Poor,false
+Word.CritiqueAnnotation,"track()",Method,Poor,false
+Word.CritiqueAnnotation,"untrack()",Method,Poor,false
+Word.CritiqueColorScheme,N/A,Enum,Good,false
+Word.CritiqueColorScheme,"berry",EnumField,Fine,false
+Word.CritiqueColorScheme,"blue",EnumField,Fine,false
+Word.CritiqueColorScheme,"green",EnumField,Fine,false
+Word.CritiqueColorScheme,"lavender",EnumField,Fine,false
+Word.CritiqueColorScheme,"red",EnumField,Fine,false
 Word.CustomProperty,N/A,Class,Good,true
 Word.CustomProperty,"context",Property,Good,false
 Word.CustomProperty,"key",Property,Good,false
@@ -10750,14 +10838,18 @@ Word.Document,"addStyle(name, type)",Method,Fine,true
 Word.Document,"addStyle(name, typeString)",Method,Fine,false
 Word.Document,"close(closeBehavior)",Method,Poor,false
 Word.Document,"close(closeBehaviorString)",Method,Poor,false
+Word.Document,"compare(filePath, documentCompareOptions)",Method,Fine,false
 Word.Document,"deleteBookmark(name)",Method,Poor,false
+Word.Document,"getAnnotationById(id)",Method,Poor,false
 Word.Document,"getBookmarkRange(name)",Method,Poor,false
 Word.Document,"getBookmarkRangeOrNullObject(name)",Method,Poor,false
 Word.Document,"getContentControls(options)",Method,Poor,false
 Word.Document,"getEndnoteBody()",Method,Poor,false
 Word.Document,"getFootnoteBody()",Method,Poor,false
+Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,false
 Word.Document,"getSelection()",Method,Poor,true
 Word.Document,"getStyles()",Method,Poor,true
+Word.Document,"importStylesFromJson(stylesJson)",Method,Poor,false
 Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Fine,false
 Word.Document,"load(options)",Method,Fine,true
 Word.Document,"load(propertyNames)",Method,Poor,false
@@ -10770,6 +10862,14 @@ Word.Document,"set(properties)",Method,Poor,false
 Word.Document,"toJSON()",Method,Poor,false
 Word.Document,"track()",Method,Poor,false
 Word.Document,"untrack()",Method,Poor,false
+Word.DocumentCompareOptions,N/A,Class,Good,false
+Word.DocumentCompareOptions,"addToRecentFiles",Property,Good,false
+Word.DocumentCompareOptions,"authorName",Property,Good,false
+Word.DocumentCompareOptions,"compareTarget",Property,Good,false
+Word.DocumentCompareOptions,"detectFormatChanges",Property,Good,false
+Word.DocumentCompareOptions,"ignoreAllComparisonWarnings",Property,Good,false
+Word.DocumentCompareOptions,"removeDateAndTime",Property,Good,false
+Word.DocumentCompareOptions,"removePersonalInformation",Property,Good,false
 Word.DocumentCreated,N/A,Class,Good,true
 Word.DocumentCreated,"body",Property,Good,false
 Word.DocumentCreated,"contentControls",Property,Good,false
@@ -10843,6 +10943,10 @@ Word.EventSource,N/A,Enum,Good,false
 Word.EventSource,"local",EnumField,Fine,false
 Word.EventSource,"remote",EnumField,Fine,false
 Word.EventType,N/A,Enum,Good,true
+Word.EventType,"annotationClicked",EnumField,Fine,false
+Word.EventType,"annotationHovered",EnumField,Fine,false
+Word.EventType,"annotationInserted",EnumField,Fine,false
+Word.EventType,"annotationRemoved",EnumField,Fine,false
 Word.EventType,"commentAdded",EnumField,Fine,false
 Word.EventType,"commentChanged",EnumField,Fine,false
 Word.EventType,"commentDeleted",EnumField,Fine,false
@@ -11000,6 +11104,7 @@ Word.Font,"bold",Property,Good,true
 Word.Font,"color",Property,Good,true
 Word.Font,"context",Property,Good,false
 Word.Font,"doubleStrikeThrough",Property,Good,false
+Word.Font,"hidden",Property,Good,false
 Word.Font,"highlightColor",Property,Good,true
 Word.Font,"italic",Property,Good,false
 Word.Font,"name",Property,Good,true
@@ -11111,6 +11216,7 @@ Word.LineStyle,"doubleWavy",EnumField,Fine,false
 Word.LineStyle,"emboss3D",EnumField,Fine,false
 Word.LineStyle,"engrave3D",EnumField,Fine,false
 Word.LineStyle,"inset",EnumField,Fine,false
+Word.LineStyle,"mixed",EnumField,Fine,false
 Word.LineStyle,"none",EnumField,Fine,false
 Word.LineStyle,"outset",EnumField,Fine,false
 Word.LineStyle,"single",EnumField,Fine,false
@@ -11422,6 +11528,7 @@ Word.Paragraph,"attachToList(listId, level)",Method,Fine,false
 Word.Paragraph,"clear()",Method,Poor,true
 Word.Paragraph,"delete()",Method,Poor,true
 Word.Paragraph,"detachFromList()",Method,Poor,false
+Word.Paragraph,"getAnnotations()",Method,Poor,false
 Word.Paragraph,"getComments()",Method,Poor,false
 Word.Paragraph,"getContentControls(options)",Method,Poor,false
 Word.Paragraph,"getHtml()",Method,Poor,true
@@ -11434,6 +11541,8 @@ Word.Paragraph,"getRange(rangeLocation)",Method,Poor,true
 Word.Paragraph,"getReviewedText(changeTrackingVersion)",Method,Poor,false
 Word.Paragraph,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.Paragraph,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
+Word.Paragraph,"getTrackedChanges()",Method,Poor,false
+Word.Paragraph,"insertAnnotations(annotations)",Method,Poor,false
 Word.Paragraph,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Paragraph,"insertContentControl(contentControlType)",Method,Poor,true
 Word.Paragraph,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,false
@@ -11457,13 +11566,13 @@ Word.Paragraph,"toJSON()",Method,Poor,false
 Word.Paragraph,"track()",Method,Poor,false
 Word.Paragraph,"untrack()",Method,Poor,false
 Word.ParagraphAddedEventArgs,N/A,Class,Good,false
-Word.ParagraphAddedEventArgs,"ids",Property,Good,false
 Word.ParagraphAddedEventArgs,"source",Property,Good,false
 Word.ParagraphAddedEventArgs,"type",Property,Good,false
+Word.ParagraphAddedEventArgs,"uniqueLocalIds",Property,Good,false
 Word.ParagraphChangedEventArgs,N/A,Class,Good,false
-Word.ParagraphChangedEventArgs,"ids",Property,Good,false
 Word.ParagraphChangedEventArgs,"source",Property,Good,false
 Word.ParagraphChangedEventArgs,"type",Property,Good,false
+Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Good,false
 Word.ParagraphCollection,N/A,Class,Good,false
 Word.ParagraphCollection,"context",Property,Good,false
 Word.ParagraphCollection,"items",Property,Fine,true
@@ -11478,9 +11587,9 @@ Word.ParagraphCollection,"toJSON()",Method,Poor,false
 Word.ParagraphCollection,"track()",Method,Poor,false
 Word.ParagraphCollection,"untrack()",Method,Poor,false
 Word.ParagraphDeletedEventArgs,N/A,Class,Good,false
-Word.ParagraphDeletedEventArgs,"ids",Property,Good,false
 Word.ParagraphDeletedEventArgs,"source",Property,Good,false
 Word.ParagraphDeletedEventArgs,"type",Property,Good,false
+Word.ParagraphDeletedEventArgs,"uniqueLocalIds",Property,Good,false
 Word.ParagraphFormat,N/A,Class,Good,false
 Word.ParagraphFormat,"alignment",Property,Good,true
 Word.ParagraphFormat,"context",Property,Good,false
@@ -11545,6 +11654,7 @@ Word.Range,"getRange(rangeLocation)",Method,Poor,false
 Word.Range,"getReviewedText(changeTrackingVersion)",Method,Poor,true
 Word.Range,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
+Word.Range,"getTrackedChanges()",Method,Poor,false
 Word.Range,"insertBookmark(name)",Method,Poor,false
 Word.Range,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Range,"insertComment(commentText)",Method,Fine,true
@@ -11726,6 +11836,7 @@ Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
 Word.Style,N/A,Class,Good,false
 Word.Style,"baseStyle",Property,Good,false
+Word.Style,"borders",Property,Good,false
 Word.Style,"builtIn",Property,Good,false
 Word.Style,"context",Property,Good,false
 Word.Style,"description",Property,Good,false
@@ -11977,6 +12088,43 @@ Word.TableStyle,"set(properties)",Method,Poor,false
 Word.TableStyle,"toJSON()",Method,Poor,false
 Word.TableStyle,"track()",Method,Poor,false
 Word.TableStyle,"untrack()",Method,Poor,false
+Word.TrackedChange,N/A,Class,Good,false
+Word.TrackedChange,"author",Property,Good,false
+Word.TrackedChange,"context",Property,Good,false
+Word.TrackedChange,"date",Property,Good,false
+Word.TrackedChange,"text",Property,Good,false
+Word.TrackedChange,"type",Property,Good,false
+Word.TrackedChange,"accept()",Method,Poor,false
+Word.TrackedChange,"getNext()",Method,Poor,false
+Word.TrackedChange,"getNextOrNullObject()",Method,Poor,false
+Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,false
+Word.TrackedChange,"load(options)",Method,Poor,false
+Word.TrackedChange,"load(propertyNames)",Method,Poor,false
+Word.TrackedChange,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.TrackedChange,"reject()",Method,Poor,false
+Word.TrackedChange,"toJSON()",Method,Poor,false
+Word.TrackedChange,"track()",Method,Poor,false
+Word.TrackedChange,"untrack()",Method,Poor,false
+Word.TrackedChangeCollection,N/A,Class,Good,false
+Word.TrackedChangeCollection,"context",Property,Good,false
+Word.TrackedChangeCollection,"items",Property,Fine,false
+Word.TrackedChangeCollection,"acceptAll()",Method,Poor,false
+Word.TrackedChangeCollection,"getCount()",Method,Poor,false
+Word.TrackedChangeCollection,"getFirst()",Method,Poor,false
+Word.TrackedChangeCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.TrackedChangeCollection,"getItem(index)",Method,Poor,false
+Word.TrackedChangeCollection,"load(options)",Method,Poor,false
+Word.TrackedChangeCollection,"load(propertyNames)",Method,Poor,false
+Word.TrackedChangeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.TrackedChangeCollection,"rejectAll()",Method,Poor,false
+Word.TrackedChangeCollection,"toJSON()",Method,Poor,false
+Word.TrackedChangeCollection,"track()",Method,Poor,false
+Word.TrackedChangeCollection,"untrack()",Method,Poor,false
+Word.TrackedChangeType,N/A,Enum,Good,false
+Word.TrackedChangeType,"added",EnumField,Fine,false
+Word.TrackedChangeType,"deleted",EnumField,Fine,false
+Word.TrackedChangeType,"formatted",EnumField,Fine,false
+Word.TrackedChangeType,"none",EnumField,Fine,false
 Word.TrailingCharacter,N/A,Enum,Good,false
 Word.TrailingCharacter,"trailingNone",EnumField,Fine,false
 Word.TrailingCharacter,"trailingSpace",EnumField,Good,false
