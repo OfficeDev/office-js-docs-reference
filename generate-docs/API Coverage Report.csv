@@ -9173,7 +9173,7 @@ Office.RoamingSettings,"get(name)",Method,Fine,true
 Office.RoamingSettings,"remove(name)",Method,Poor,false
 Office.RoamingSettings,"saveAsync(callback)",Method,Poor,true
 Office.RoamingSettings,"set(name, value)",Method,Poor,true
-Office.SelectedItemDetails,N/A,Class,Good,false
+Office.SelectedItemDetails,N/A,Class,Good,true
 Office.SelectedItemDetails,"conversationId",Property,Fine,false
 Office.SelectedItemDetails,"hasAttachment",Property,Fine,false
 Office.SelectedItemDetails,"internetMessageId",Property,Fine,false
