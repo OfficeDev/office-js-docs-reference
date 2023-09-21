@@ -1,10 +1,9 @@
 ---
 title: Control element of type Menu in the manifest file
 description: Defines a menu whose items can execute actions or launch task panes.
-ms.date: 02/04/2022
+ms.date: 09/21/2023
 ms.localizationpriority: medium
 ---
-
 
 # Control element of type Menu
 
@@ -24,14 +23,14 @@ When used with the **ContextMenu** [extension point](extensionpoint.md), a root 
 
 ## Child elements
 
-|  Element |  Required  |  Description  |
+| Element | Required | Description |
 |:-----|:-----:|:-----|
-|  [Label](#label)     | Yes |  The text for the menu. |
-|  **\<ToolTip\>**    |No|The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element.|
-|  [Supertip](supertip.md)  | Yes |  The supertip for this menu.    |
-|  [Icon](icon.md)      | Yes |  An image for the menu.         |
-|  **\<Items\>**     | Yes |  A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
-|  [OverriddenByRibbonApi](overriddenbyribbonapi.md)      | No |  Specifies whether the menu should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
+| [Label](#label) | Yes | The text for the menu. |
+| **\<ToolTip\>** | No | The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element. |
+| [Supertip](supertip.md) | Yes | The supertip for this menu.<br><br>**Important**: Supertips aren't supported in Office on the web. |
+| [Icon](icon.md) | Yes | An image for the menu. |
+| **\<Items\>** | Yes | A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
+| [OverriddenByRibbonApi](overriddenbyribbonapi.md) | No | Specifies whether the menu should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
 
 ### Label
 
@@ -55,7 +54,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Examples
 
-In the following example, the menu has two items. The first displays a task pane. The second executes a function. The menu has been configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
+In the following example, the menu has two items. The first displays a task pane. The second executes a function. The menu has been configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, see [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
 ```xml
 <Control xsi:type="Menu" id="Contoso.TestMenu2">
@@ -108,7 +107,7 @@ In the following example, the menu has two items. The first displays a task pane
 
 ```
 
-In the following example, the menu's second item is configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
+In the following example, the menu's second item is configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, see [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
 ```xml
 <Control xsi:type="Menu" id="Contoso.msgReadMenuButton">

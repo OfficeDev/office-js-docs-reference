@@ -1,13 +1,16 @@
 ---
 title: Supertip element in the manifest file
 description: The Supertip element defines a rich tooltip (both title and description).
-ms.date: 02/04/2022
+ms.date: 09/21/2023
 ms.localizationpriority: medium
 ---
 
 # Supertip
 
 Defines a rich tooltip (both Title and Description). It is used by both [Button controls](control-button.md) and [Menu controls](control-menu.md).
+
+> [!NOTE]
+> Supertips aren't supported in Office on the web.
 
 **Add-in type:** Task pane, Mail
 
@@ -27,10 +30,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Child elements
 
-|  Element |  Required  |  Description  |
+| Element | Required | Description |
 |:-----|:-----:|:-----|
 | [Title](#title) | Yes | The text for the supertip. |
-| [Description](#description) | Yes | The description for the supertip.<br>**Note**: (Outlook) Only Windows and Mac clients are supported. |
+| [Description](#description) | Yes | The description for the supertip.<br><br>**Important**: (Outlook) Only Windows and Mac clients are supported. |
 
 ### Title
 
