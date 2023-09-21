@@ -91,13 +91,14 @@ export declare namespace Office {
         /**
          * Specifies the category color.
          *
-         * **Note**: The actual color depends on how the Outlook client renders it.
-         * In this case, the colors noted on each preset are for the Outlook desktop client.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The actual color depends on how the Outlook client renders it.
+         * In this case, the colors noted on each preset apply to Outlook on Windows, on the web,
+         * and on Mac (starting in Version 16.78).
          */
         enum CategoryColor {
             /**
