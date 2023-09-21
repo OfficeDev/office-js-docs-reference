@@ -2097,6 +2097,33 @@ methods:
 
 
       **Important**: This method only applies to messages.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-message-properties.yaml
+
+      // Retrieves the selected messages' properties and logs them to the console.
+
+      Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(asyncResult.error.message);
+          return;
+        }
+
+        asyncResult.value.forEach((message) => {
+          console.log(`Item ID: ${message.itemId}`);
+          console.log(`Subject: ${message.subject}`);
+          console.log(`Item type: ${message.itemType}`);
+          console.log(`Item mode: ${message.itemMode}`);
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
