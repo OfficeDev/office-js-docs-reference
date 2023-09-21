@@ -11934,7 +11934,7 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.CategoryColor:enum",
-                  "docComment": "/**\n * Specifies the category color.\n *\n * **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset are for the Outlook desktop client.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+                  "docComment": "/**\n * Specifies the category color.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Important**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset apply to Outlook on Windows, on the web, and on Mac (starting in Version 16.78).\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
