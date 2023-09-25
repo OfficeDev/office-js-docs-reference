@@ -1,7 +1,7 @@
 ---
 title: Control element of type Button in the manifest file
 description: Defines a button that executes an action or launches a task pane.
-ms.date: 09/21/2023
+ms.date: 09/25/2023
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +23,7 @@ A button performs a single action when the user selects it. It can either execut
 |:-----|:-----:|:-----|
 | [Label](#label) | Yes | The text for the button. |
 | **\<ToolTip\>** | No | The tooltip for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element. |
-| [Supertip](supertip.md) | Yes | The supertip for the button.<br><br>**Important**: Supertips aren't supported in Office on the web. |
+| [Supertip](supertip.md) | Yes | The supertip for the button.<br><br>**Important**: Supertips are only supported in Office desktop clients. |
 | [Icon](icon.md) | Yes | An image for the button. |
 | [Action](action.md) | Yes | Specifies the action to perform. There can be only one **\<Action\>** child of a **\<Control\>** element. |
 | [Enabled](enabled.md) | No | Specifies whether the control is enabled when the add-in launches. |

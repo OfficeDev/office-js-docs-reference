@@ -1,7 +1,7 @@
 ---
 title: Control element of type Menu in the manifest file
 description: Defines a menu whose items can execute actions or launch task panes.
-ms.date: 09/21/2023
+ms.date: 09/25/2023
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +27,7 @@ When used with the **ContextMenu** [extension point](extensionpoint.md), a root 
 |:-----|:-----:|:-----|
 | [Label](#label) | Yes | The text for the menu. |
 | **\<ToolTip\>** | No | The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element. |
-| [Supertip](supertip.md) | Yes | The supertip for this menu.<br><br>**Important**: Supertips aren't supported in Office on the web. |
+| [Supertip](supertip.md) | Yes | The supertip for this menu.<br><br>**Important**: Supertips are only supported in Office desktop clients. |
 | [Icon](icon.md) | Yes | An image for the menu. |
 | **\<Items\>** | Yes | A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
 | [OverriddenByRibbonApi](overriddenbyribbonapi.md) | No | Specifies whether the menu should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
