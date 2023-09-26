@@ -1699,7 +1699,7 @@ methods:
       <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
       <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
       </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
+      Windows, on Mac, and on the web</td> </tr> </table>
 
 
       #### Examples
@@ -1911,7 +1911,7 @@ methods:
       <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
       <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
       </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
+      Windows, on Mac, and on the web</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
