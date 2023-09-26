@@ -4208,7 +4208,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web</td>
          *   </tr>
          * </table>
          *
@@ -4300,7 +4300,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web</td>
          *   </tr>
          * </table>
          *

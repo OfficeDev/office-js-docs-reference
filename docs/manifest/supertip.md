@@ -1,13 +1,16 @@
 ---
 title: Supertip element in the manifest file
 description: The Supertip element defines a rich tooltip (both title and description).
-ms.date: 02/04/2022
+ms.date: 09/25/2023
 ms.localizationpriority: medium
 ---
 
 # Supertip
 
 Defines a rich tooltip (both Title and Description). It is used by both [Button controls](control-button.md) and [Menu controls](control-menu.md).
+
+> [!NOTE]
+> Supertips are only supported in Office desktop clients. In Outlook on the web, only the **\<Title\>** child element is supported.
 
 **Add-in type:** Task pane, Mail
 
@@ -27,10 +30,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Child elements
 
-|  Element |  Required  |  Description  |
+| Element | Required | Description |
 |:-----|:-----:|:-----|
 | [Title](#title) | Yes | The text for the supertip. |
-| [Description](#description) | Yes | The description for the supertip.<br>**Note**: (Outlook) Only Windows and Mac clients are supported. |
+| [Description](#description) | Yes | The description for the supertip.<br><br>**Important**: In Outlook, the **\<Description\>** child element is only supported in the Windows and Mac clients. |
 
 ### Title
 
@@ -41,7 +44,7 @@ Required. The text for the supertip. The **resid** attribute can be no more than
 Required. The description for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<LongStrings\>** element in the [Resources](resources.md) element.
 
 > [!NOTE]
-> For Outlook, only Windows and Mac clients support the **\<Description\>** element.
+> In Outlook, the **\<Description\>** child element is only supported in the Windows and Mac clients.
 
 ## Example
 
