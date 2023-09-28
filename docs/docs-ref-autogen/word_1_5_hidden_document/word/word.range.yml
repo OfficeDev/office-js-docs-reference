@@ -1246,13 +1246,21 @@ methods:
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocation)'
     summary: Inserts a document at the specified location.
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
+      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1268,6 +1276,7 @@ methods:
           await context.sync();
           console.log('Added base64 encoded text to the beginning of the range.');
       });
+
       ```
     isPreview: false
     isDeprecated: false
