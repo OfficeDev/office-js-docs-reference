@@ -287,6 +287,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
@@ -1213,6 +1215,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -2343,6 +2347,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
@@ -2554,6 +2560,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -3357,6 +3365,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.2]
+         *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
@@ -4447,6 +4457,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
@@ -5213,6 +5225,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
