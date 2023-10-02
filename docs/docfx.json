@@ -975,7 +975,7 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "OfficeDev/office-js-docs-reference",
-      "feedback_product_url": "/answers/products/m365"
+      "feedback_product_url": "/answers/tags/255/javascript-api"
     },
     "fileMetadata": {
       "feedback_system": {
@@ -985,7 +985,7 @@
         "docs-ref-conceptual/**/*": "OfficeDev/office-js-docs-reference"
       },
       "feedback_product_url": {
-        "docs-ref-conceptual/**/*": "/answers/products/m365"
+        "docs-ref-conceptual/**/*": "/answers/tags/255/javascript-api"
       },
       "product": {
         "docs-ref-autogen/excel/**": ["excel preview"],
