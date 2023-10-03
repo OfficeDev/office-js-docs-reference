@@ -470,9 +470,9 @@ methods:
       -->**: Compose
 
 
-      **Important**: In Outlook on Android and on iOS, this<!-- -->\` method isn't supported in the Message Compose
-      mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile,
-      see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
+      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
+      [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false

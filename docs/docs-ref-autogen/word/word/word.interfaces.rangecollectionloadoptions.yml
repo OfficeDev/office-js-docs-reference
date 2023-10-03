@@ -140,7 +140,7 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the range. If it is not contained in a table
+      For EACH ITEM in the collection: Gets the table cell that contains the range. If it isn't contained in a table
       cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -157,7 +157,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the range. If it is not contained in a table, then
+      For EACH ITEM in the collection: Gets the table that contains the range. If it isn't contained in a table, then
       this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information,
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
