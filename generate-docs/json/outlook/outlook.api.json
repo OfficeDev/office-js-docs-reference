@@ -7082,7 +7082,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#getTypeAsync:member(2)",
-                  "docComment": "/**\n * Gets a value that indicates whether the content is in HTML or text format.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: In Outlook on Android and on iOS, this` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.\n */\n",
+                  "docComment": "/**\n * Gets a value that indicates whether the content is in HTML or text format.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33568,8 +33568,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "CommonAPI.MailboxEnums.SendModeOverride",
-                      "canonicalReference": "!CommonAPI.MailboxEnums.SendModeOverride:type"
+                      "text": "MailboxEnums.SendModeOverride",
+                      "canonicalReference": "outlook!Office.MailboxEnums.SendModeOverride:enum"
                     },
                     {
                       "kind": "Content",
@@ -33688,8 +33688,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "CommonAPI.MailboxEnums.MoveSpamItemTo",
-                      "canonicalReference": "!CommonAPI.MailboxEnums.MoveSpamItemTo:type"
+                      "text": "MailboxEnums.MoveSpamItemTo",
+                      "canonicalReference": "outlook!Office.MailboxEnums.MoveSpamItemTo:enum"
                     },
                     {
                       "kind": "Content",

@@ -139,9 +139,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'moveItemTo?: Office.MailboxEnums.MoveSpamItemTo;'
+      content: 'moveItemTo?: MailboxEnums.MoveSpamItemTo;'
       return:
-        type: Office.MailboxEnums.MoveSpamItemTo
+        type: '<xref uid="outlook!Office.MailboxEnums.MoveSpamItemTo:enum" />'
   - name: onErrorDeleteItem
     uid: 'outlook!Office.SpamReportingEventCompletedOptions#onErrorDeleteItem:member'
     package: outlook!
