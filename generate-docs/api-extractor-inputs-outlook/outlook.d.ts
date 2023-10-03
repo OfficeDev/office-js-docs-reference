@@ -4048,7 +4048,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on Android and on iOS, this` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -11487,7 +11487,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        sendModeOverride?: CommonAPI.MailboxEnums.SendModeOverride | string;
+        sendModeOverride?: MailboxEnums.SendModeOverride | string;
     }
     /**
      * Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
@@ -11571,7 +11571,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        moveItemTo?: CommonAPI.MailboxEnums.MoveSpamItemTo;
+        moveItemTo?: MailboxEnums.MoveSpamItemTo;
         /**
          * When set to `true`, deletes a reported message if an error occurs while the message is processed.
          * If this property is set to `false` or isn't specified in the {@link Office.MailboxEvent.completed | completed method},

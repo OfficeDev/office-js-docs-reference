@@ -337,7 +337,7 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the content control. If it is not contained in a table cell, then this method
+      Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -354,7 +354,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the content control. If it is not contained in a table, then this method will return
+      Gets the table that contains the content control. If it isn't contained in a table, then this method will return
       an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -1718,7 +1718,7 @@ methods:
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.

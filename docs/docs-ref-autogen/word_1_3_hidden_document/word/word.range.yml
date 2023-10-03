@@ -187,7 +187,7 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return
+      Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return
       an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -204,7 +204,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the range. If it is not contained in a table, then this method will return an object
+      Gets the table that contains the range. If it isn't contained in a table, then this method will return an object
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -490,8 +490,8 @@ methods:
     package: word!
     fullName: expandToOrNullObject(range)
     summary: >-
-      Returns a new range that extends from this range in either direction to cover another range. This range is not
-      changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject`
+      Returns a new range that extends from this range in either direction to cover another range. This range isn't
+      changed. If the two ranges don't have a union, then this method will return an object with its `isNullObject`
       property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -1148,8 +1148,8 @@ methods:
     package: word!
     fullName: intersectWithOrNullObject(range)
     summary: >-
-      Returns a new range as the intersection of this range with another range. This range is not changed. If the two
-      ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set
+      Returns a new range as the intersection of this range with another range. This range isn't changed. If the two
+      ranges aren't overlapped or adjacent, then this method will return an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -1432,7 +1432,7 @@ methods:
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.

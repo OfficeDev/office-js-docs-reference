@@ -2468,7 +2468,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9287,7 +9287,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10115,7 +10115,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10970,7 +10970,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CustomProperty#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11616,7 +11616,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CustomPropertyCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12352,7 +12352,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13087,7 +13087,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14052,7 +14052,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentProperties#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15036,7 +15036,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16530,7 +16530,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#parentTableCellOrNullObject:member",
-                  "docComment": "/**\n * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the inline image. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16561,7 +16561,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#parentTableOrNullObject:member",
-                  "docComment": "/**\n * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the inline image. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16836,7 +16836,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17281,7 +17281,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25126,7 +25126,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the inline image. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25154,7 +25154,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the inline image. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25756,7 +25756,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the inline image. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25784,7 +25784,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the inline image. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27291,7 +27291,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27319,7 +27319,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27514,7 +27514,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27542,7 +27542,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28134,7 +28134,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#listItemOrNullObject:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28759,7 +28759,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#listItemOrNullObject:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28787,7 +28787,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member",
-                      "docComment": "/**\n * Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28982,7 +28982,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29010,7 +29010,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29467,7 +29467,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29977,7 +29977,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30005,7 +30005,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30646,7 +30646,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30674,7 +30674,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34169,7 +34169,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains this table. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34197,7 +34197,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableCollectionLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains this table. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35533,7 +35533,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member",
-                      "docComment": "/**\n * Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains this table. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35561,7 +35561,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member",
-                      "docComment": "/**\n * Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains this table. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -38781,7 +38781,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39506,7 +39506,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40164,7 +40164,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListItem#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42510,7 +42510,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#listItemOrNullObject:member",
-                  "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42905,7 +42905,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#parentTableCellOrNullObject:member",
-                  "docComment": "/**\n * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42936,7 +42936,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#parentTableOrNullObject:member",
-                  "docComment": "/**\n * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43609,7 +43609,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -44088,7 +44088,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -44420,7 +44420,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#expandToOrNullObject:member(1)",
-                  "docComment": "/**\n * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
+                  "docComment": "/**\n * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. If the two ranges don't have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45687,7 +45687,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#intersectWithOrNullObject:member(1)",
-                  "docComment": "/**\n * Returns a new range as the intersection of this range with another range. This range is not changed. If the two ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
+                  "docComment": "/**\n * Returns a new range as the intersection of this range with another range. This range isn't changed. If the two ranges aren't overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46132,7 +46132,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#parentTableCellOrNullObject:member",
-                  "docComment": "/**\n * Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46163,7 +46163,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#parentTableOrNullObject:member",
-                  "docComment": "/**\n * Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46731,7 +46731,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -47146,7 +47146,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49080,7 +49080,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49495,7 +49495,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49995,7 +49995,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Style#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -52729,7 +52729,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -53275,7 +53275,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableBorder#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54659,7 +54659,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -55169,7 +55169,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCellCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -55584,7 +55584,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -57006,7 +57006,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -57486,7 +57486,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRowCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

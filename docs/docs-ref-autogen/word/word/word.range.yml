@@ -245,7 +245,7 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return
+      Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return
       an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -262,7 +262,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the range. If it is not contained in a table, then this method will return an object
+      Gets the table that contains the range. If it isn't contained in a table, then this method will return an object
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -950,7 +950,13 @@ methods:
     package: word!
     fullName: insertBookmark(name)
     summary: 'Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: The conditions of inserting a bookmark are similar to doing so in the Word UI. To learn more about managing
+      bookmarks in the Word UI, see [Add or delete bookmarks in a Word document or Outlook
+      message](https://support.microsoft.com/office/f68d781f-0150-4583-a90e-a4009d99c2a0)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -958,8 +964,9 @@ methods:
       parameters:
         - id: name
           description: >-
-            Required. The bookmark name, which is case-insensitive. If the name starts with an underscore character, the
-            bookmark is an hidden one.
+            Required. The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It
+            must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an
+            underscore character. Names can't be longer than 40 characters.
           type: string
       return:
         type: void
@@ -1604,7 +1611,7 @@ methods:
     package: word!
     fullName: intersectWithOrNullObject(range)
     summary: >-
-      Returns a new range as the intersection of this range with another range. This range is not changed. If the two
+      Returns a new range as the intersection of this range with another range. This range isn't changed. If the two
       ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -1888,7 +1895,7 @@ methods:
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
