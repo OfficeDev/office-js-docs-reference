@@ -10615,17 +10615,29 @@ export declare namespace Office {
         /**
          * The identifier of the message conversation that contains the message that's currently selected.
          *
+         * @remarks
+         * This property is currently in preview in Outlook on Windows. To test it,
+         * you must install Version 2305 (Build 16501.20210) or later.
+         *
          * @beta
          */
         conversationId: string;
         /**
          * Returns `true` if the message that's currently selected contains an attachment.
          *
+         * @remarks
+         * This property is currently in preview in Outlook on Windows. To test it,
+         * you must install Version 2305 (Build 16501.20210) or later.
+         *
          * @beta
          */
         hasAttachment: boolean;
         /**
          * The internet message identifier of the message that's currently selected.
+         *
+         * @remarks
+         * This property is currently in preview in Outlook on Windows. To test it,
+         * you must install Version 2305 (Build 16501.20210) or later.
          *
          * @beta
          */
