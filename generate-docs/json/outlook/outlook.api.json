@@ -30802,7 +30802,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SelectedItemDetails#conversationId:member",
-                  "docComment": "/**\n * The identifier of the message conversation that contains the message that's currently selected.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The identifier of the message conversation that contains the message that's currently selected.\n *\n * @remarks\n *\n * This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build 16501.20210) or later.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30829,7 +30829,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SelectedItemDetails#hasAttachment:member",
-                  "docComment": "/**\n * Returns `true` if the message that's currently selected contains an attachment.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Returns `true` if the message that's currently selected contains an attachment.\n *\n * @remarks\n *\n * This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build 16501.20210) or later.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30856,7 +30856,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SelectedItemDetails#internetMessageId:member",
-                  "docComment": "/**\n * The internet message identifier of the message that's currently selected.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The internet message identifier of the message that's currently selected.\n *\n * @remarks\n *\n * This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build 16501.20210) or later.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
