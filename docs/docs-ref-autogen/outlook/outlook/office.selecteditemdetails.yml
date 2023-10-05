@@ -52,7 +52,9 @@ properties:
     package: outlook!
     fullName: conversationId
     summary: The identifier of the message conversation that contains the message that's currently selected.
-    remarks: ''
+    remarks: >-
+      This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build
+      16501.20210) or later.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,7 +66,9 @@ properties:
     package: outlook!
     fullName: hasAttachment
     summary: Returns `true` if the message that's currently selected contains an attachment.
-    remarks: ''
+    remarks: >-
+      This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build
+      16501.20210) or later.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -76,7 +80,9 @@ properties:
     package: outlook!
     fullName: internetMessageId
     summary: The internet message identifier of the message that's currently selected.
-    remarks: ''
+    remarks: >-
+      This property is currently in preview in Outlook on Windows. To test it, you must install Version 2305 (Build
+      16501.20210) or later.
     isPreview: true
     isDeprecated: false
     syntax:
