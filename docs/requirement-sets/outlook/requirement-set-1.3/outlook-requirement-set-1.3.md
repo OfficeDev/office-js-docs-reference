@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.3
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.3.
-ms.date: 03/15/2023
+ms.date: 10/12/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -31,8 +31,8 @@ Requirement set 1.3 includes all of the features of [requirement set 1.2](../req
 - Added [Office.context.mailbox.item.close](office.context.mailbox.item.md#methods): Closes the current item that is being composed.
 - Added [Office.context.mailbox.item.saveAsync](office.context.mailbox.item.md#methods): Asynchronously saves an item.
 - Added [Office.context.mailbox.item.notificationMessages](office.context.mailbox.item.md#properties): Gets the notification messages for an item.
-- Added [Office.context.mailbox.convertToEwsId](office.context.mailbox.md#methods): Converts an item ID formatted for REST into EWS format.
-- Added [Office.context.mailbox.convertToRestId](office.context.mailbox.md#methods): Converts an item ID formatted for EWS into REST format.
+- Added [Office.context.mailbox.convertToEwsId](office.context.mailbox.md#methods): Converts a supported ID into EWS format.
+- Added [Office.context.mailbox.convertToRestId](office.context.mailbox.md#methods): Converts a supported ID into REST format.
 - Added [Office.MailboxEnums.ItemNotificationMessageType](/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype?view=outlook-js-1.3&preserve-view=true): Specifies the notification message type for an appointment or message.
 - Added [Office.MailboxEnums.RestVersion](/javascript/api/outlook/office.mailboxenums.restversion?view=outlook-js-1.3&preserve-view=true): Specifies the version of the REST API that corresponds to a REST-formatted item ID.
 - Added [NotificationMessages](/javascript/api/outlook/office.notificationmessages?view=outlook-js-1.3&preserve-view=true) object: Provides methods for accessing notification messages in an Outlook add-in.
