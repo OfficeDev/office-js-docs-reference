@@ -3046,9 +3046,12 @@ export declare namespace Office {
          * To determine the Outlook client in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
          *
          * @param data - The EWS request.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter
-         *                   of type `Office.AsyncResult`. The `value` property of the result is the XML of the EWS request provided as a string.
-         *                   If the result exceeds 1 MB in size, an error message is returned in the `error` property.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                   `asyncResult`, which is an `Office.AsyncResult` object. The XML response of the EWS request is provided as a string
+         *                   in the `asyncResult.value` property. In Outlook on the web, on Windows (starting in Version 2303 (Build 16225.10000)),
+         *                   and on Mac (starting in Version 16.73 (23042601)), if the response exceeds 5 MB in size, an error message is returned
+         *                   in the `asyncResult.error` property. In earlier versions of the Outlook desktop client, an error message is returned if
+         *                   the response exceeds 1 MB in size.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
