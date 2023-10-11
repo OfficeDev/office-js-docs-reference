@@ -3743,20 +3743,6 @@
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
-'Office.MailboxEnums.ActionType:enum':
-  - |-
-    // Define an insight notification message.
-    const insightMessage = {
-        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-        message: "This is an insight notification",
-        icon: "Icon.80x80",
-        actions: [{
-            actionText: "Open insight",
-            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-            commandId: "msgComposeOpenPaneButton",
-            contextData: JSON.stringify({a: "aValue", b: "bValue"})
-        }]
-    };
 'Office.MailboxEnums.AppointmentSensitivityType:enum':
   - >-
     // Link to full sample:
@@ -6713,44 +6699,6 @@
         console.log("Other Recipients:");
         otherRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
     }
-'Office.NotificationMessageAction:interface':
-  - >-
-    // Define notification.
-
-    const insightMessage = {
-        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-        message: "This is an insight notification",
-        icon: "Icon.80x80",
-        actions: [{
-            actionText: "Open insight",
-            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-            commandId: "msgComposeOpenPaneButton",
-            contextData: JSON.stringify({a: "aValue", b: "bValue"})
-        }]
-    };
-
-
-    // Show notification.
-
-    Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey",
-    insightMessage, (result) => {
-        console.log("Added notification:");
-        console.log(result);
-    });
-
-
-    // Retrieve contextData.
-
-    Office.context.mailbox.item.getInitializationContextAsync(function
-    (asyncResult) {
-        console.log("Initialization context:");
-        console.log(asyncResult);
-
-        // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
-        const contextData = JSON.parse(asyncResult.value);
-        console.log("a:");
-        console.log(contextData.a);
-    });
 'Office.NotificationMessages#addAsync:member(1)':
   - >-
     // Link to full sample:
