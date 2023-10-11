@@ -21,49 +21,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Define notification.
-
-  const insightMessage = {
-      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-      message: "This is an insight notification",
-      icon: "Icon.80x80",
-      actions: [{
-          actionText: "Open insight",
-          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-          commandId: "msgComposeOpenPaneButton",
-          contextData: JSON.stringify({a: "aValue", b: "bValue"})
-      }]
-  };
-
-
-  // Show notification.
-
-  Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey", insightMessage, (result) => {
-      console.log("Added notification:");
-      console.log(result);
-  });
-
-
-  // Retrieve contextData.
-
-  Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
-      console.log("Initialization context:");
-      console.log(asyncResult);
-
-      // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
-      const contextData = JSON.parse(asyncResult.value);
-      console.log("a:");
-      console.log(contextData.a);
-  });
-
-  ```
 isPreview: false
 isDeprecated: false
 type: interface

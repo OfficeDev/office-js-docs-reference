@@ -7494,20 +7494,6 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
-Office.MailboxEnums.ActionType:enum:
-  - |-
-    // Define an insight notification message.
-    const insightMessage = {
-        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-        message: "This is an insight notification",
-        icon: "Icon.80x80",
-        actions: [{
-            actionText: "Open insight",
-            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-            commandId: "msgComposeOpenPaneButton",
-            contextData: JSON.stringify({a: "aValue", b: "bValue"})
-        }]
-    };
 Office.MailboxEnums.AttachmentStatus:enum:
   - |-
     // Get the attachment that was just added to a message or appointment.
@@ -8180,37 +8166,6 @@ Office.MessageRead#loadCustomPropertiesAsync:member(1):
 
     function saveCallback(asyncResult) {
     }
-Office.NotificationMessageAction:interface:
-  - |-
-    // Define notification.
-    const insightMessage = {
-        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-        message: "This is an insight notification",
-        icon: "Icon.80x80",
-        actions: [{
-            actionText: "Open insight",
-            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-            commandId: "msgComposeOpenPaneButton",
-            contextData: JSON.stringify({a: "aValue", b: "bValue"})
-        }]
-    };
-
-    // Show notification.
-    Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey", insightMessage, (result) => {
-        console.log("Added notification:");
-        console.log(result);
-    });
-
-    // Retrieve contextData.
-    Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
-        console.log("Initialization context:");
-        console.log(asyncResult);
-
-        // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
-        const contextData = JSON.parse(asyncResult.value);
-        console.log("a:");
-        console.log(contextData.a);
-    });
 Office.NotificationMessages#getAllAsync:member(1):
   - |-
     // Get all notifications.
