@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - requirement set 1.6
 description: Outlook Mailbox API requirement set 1.6 version of the Mailbox object model.
-ms.date: 04/01/2022
+ms.date: 10/12/2023
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +34,9 @@ Provides access to the Outlook add-in object model for Microsoft Outlook.
 | Method | Minimum<br>permission level | Modes | Minimum<br>requirement set |
 |---|---|---|:---:|
 | [addHandlerAsync(eventType, handler, [options], [callback])](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-addhandlerasync-member(1)) | **read item** | Compose<br>Read | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
-| [convertToEwsId(itemId, restVersion)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttoewsid-member(1)) | **restricted** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
+| [convertToEwsId(id, restVersion)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttoewsid-member(1)) | **restricted** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
 | [convertToLocalClientTime(timeValue)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttolocalclienttime-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| [convertToRestId(itemId, restVersion)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttorestid-member(1)) | **restricted** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
+| [convertToRestId(id, restVersion)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttorestid-member(1)) | **restricted** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md) |
 | [convertToUtcClientTime(input)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-converttoutcclienttime-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [displayAppointmentForm(itemId)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-displayappointmentform-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [displayMessageForm(itemId)](/javascript/api/outlook/office.mailbox?view=outlook-js-1.6&preserve-view=true#outlook-office-mailbox-displaymessageform-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
