@@ -10333,7 +10333,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds a progress indicator to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -10346,7 +10348,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an informational notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -10361,7 +10365,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds a persistent information notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -10376,12 +10382,25 @@
 
     ...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 
 
     ...
 
-    const id = $("#notificationId").val();
+    // Replaces a notification message of a given key with another message.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
@@ -10395,7 +10414,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Removes a notification message from the current mail item.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -11650,7 +11671,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds a progress indicator to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -11663,7 +11686,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an informational notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -11678,7 +11703,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds a persistent information notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -11693,12 +11720,25 @@
 
     ...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 
 
     ...
 
-    const id = $("#notificationId").val();
+    // Replaces a notification message of a given key with another message.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
@@ -11712,7 +11752,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Removes a notification message from the current mail item.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -16868,6 +16910,31 @@
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
+'Office.MailboxEnums.ActionType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    // Adds an informational message with actions to the mail item.
+
+    const id = $("#notificationId").val().toString();
+
+    const details = 
+      {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "icon1",
+        actions: [
+          {
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: { a: "aValue", b: "bValue" }
+          }
+        ]
+      };
+    Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+    handleResult);
 'Office.MailboxEnums.AppointmentSensitivityType:enum':
   - >-
     // Link to full sample:
@@ -17186,7 +17253,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds an error notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -18499,7 +18568,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds a progress indicator to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -18512,7 +18583,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an informational notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -18527,7 +18600,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds a persistent information notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -18542,12 +18617,25 @@
 
     ...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 
 
     ...
 
-    const id = $("#notificationId").val();
+    // Replaces a notification message of a given key with another message.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
@@ -18561,7 +18649,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Removes a notification message from the current mail item.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -19675,7 +19765,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds a progress indicator to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19688,7 +19780,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an informational notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19703,7 +19797,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds a persistent information notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19718,12 +19814,25 @@
 
     ...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 
 
     ...
 
-    const id = $("#notificationId").val();
+    // Replaces a notification message of a given key with another message.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
@@ -19737,7 +19846,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Removes a notification message from the current mail item.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -19846,12 +19957,56 @@
         console.log("Other Recipients:");
         otherRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
     }
+'Office.NotificationMessageAction:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    // Adds an informational message with actions to the mail item.
+
+    const id = $("#notificationId").val().toString();
+
+    const details = 
+      {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "icon1",
+        actions: [
+          {
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: { a: "aValue", b: "bValue" }
+          }
+        ]
+      };
+    Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+    handleResult);
+'Office.NotificationMessageDetails:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 'Office.NotificationMessages#addAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Adds a progress indicator to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19864,7 +20019,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an informational notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19879,7 +20036,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds a persistent information notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19894,7 +20053,9 @@
 
     ...
 
-    const id = $("#notificationId").val();
+    // Adds an error notification to the mail item.
+
+    const id = $("#notificationId").val().toString();
 
     const details =
       {
@@ -19922,13 +20083,26 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+    // Gets all the notification messages and their keys for the current mail
+    item.
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+    => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      console.log(asyncResult.value);
+    });
 'Office.NotificationMessages#removeAsync:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Removes a notification message from the current mail item.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -19945,7 +20119,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-    const id = $("#notificationId").val();
+    // Replaces a notification message of a given key with another message.
+
+    const id = $("#notificationId").val().toString();
 
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
