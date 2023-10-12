@@ -4,7 +4,39 @@ uid: 'outlook!Office.MailboxEnums.ActionType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ActionType
 summary: Specifies the type of custom action in a notification message.
-remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+  // Adds an informational message with actions to the mail item.
+
+  const id = $("#notificationId").val().toString();
+
+  const details = 
+    {
+      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+      message: "This is an insight notification",
+      icon: "icon1",
+      actions: [
+        {
+          actionText: "Open insight",
+          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+          commandId: "msgComposeOpenPaneButton",
+          contextData: { a: "aValue", b: "bValue" }
+        }
+      ]
+    };
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

@@ -8677,7 +8677,7 @@ Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,tr
 Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Poor,true
 Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
 Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Poor,false
-Office.MailboxEnums.ActionType,N/A,Enum,Good,false
+Office.MailboxEnums.ActionType,N/A,Enum,Good,true
 Office.MailboxEnums.ActionType,"ShowTaskPane",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,"Confidential",EnumField,Fine,false
@@ -9086,12 +9086,12 @@ Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
 Office.MessageRead,"removeHandlerAsync(eventType, callback)",Method,Poor,false
-Office.NotificationMessageAction,N/A,Class,Good,false
+Office.NotificationMessageAction,N/A,Class,Good,true
 Office.NotificationMessageAction,"actionText",Property,Fine,false
 Office.NotificationMessageAction,"actionType",Property,Good,false
 Office.NotificationMessageAction,"commandId",Property,Fine,false
 Office.NotificationMessageAction,"contextData",Property,Good,false
-Office.NotificationMessageDetails,N/A,Class,Good,false
+Office.NotificationMessageDetails,N/A,Class,Good,true
 Office.NotificationMessageDetails,"actions",Property,Good,false
 Office.NotificationMessageDetails,"icon",Property,Good,false
 Office.NotificationMessageDetails,"key",Property,Fine,false
