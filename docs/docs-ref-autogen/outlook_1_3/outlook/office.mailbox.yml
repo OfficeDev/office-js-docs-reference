@@ -200,17 +200,11 @@ properties:
       return:
         type: '<xref uid="outlook!Office.UserProfile:interface" />'
 methods:
-  - name: 'convertToEwsId(itemId, restVersion)'
+  - name: 'convertToEwsId(id, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToEwsId:member(1)'
     package: outlook!
-    fullName: 'convertToEwsId(itemId, restVersion)'
-    summary: >-
-      Converts an item ID formatted for REST into EWS format.
-
-
-      Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format
-      than the format used by Exchange Web Services (EWS). The `convertToEwsId` method converts a REST-formatted ID into
-      the proper format for EWS.
+    fullName: 'convertToEwsId(id, restVersion)'
+    summary: Converts a supported ID into the Exchange Web Services (EWS) format.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -225,9 +219,17 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**:
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format
+      than the format used by EWS. The `convertToEwsId` method converts a REST-formatted ID into the proper format for
+      EWS.
 
 
       #### Examples
@@ -260,10 +262,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;'
+      content: 'convertToEwsId(id: string, restVersion: MailboxEnums.RestVersion | string): string;'
       parameters:
-        - id: itemId
-          description: An item ID formatted for the Outlook REST APIs.
+        - id: id
+          description: >-
+            The ID to be converted into EWS format. This string can be an item ID formatted for the Outlook REST APIs or
+            a conversation ID retrieved from `Office.context.mailbox.item.conversationId`<!-- -->.
           type: string
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
@@ -309,11 +313,11 @@ methods:
       return:
         type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
         description: ''
-  - name: 'convertToRestId(itemId, restVersion)'
+  - name: 'convertToRestId(id, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToRestId:member(1)'
     package: outlook!
-    fullName: 'convertToRestId(itemId, restVersion)'
-    summary: Converts an item ID formatted for EWS into REST format.
+    fullName: 'convertToRestId(id, restVersion)'
+    summary: Converts a supported ID into REST format.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -336,11 +340,11 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      - Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs
-      (such as the [Outlook Mail
+      - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the
+      format used by REST APIs (such as the [Outlook Mail
       API](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The `convertToRestId` method converts an EWS-formatted
-      ID into the proper format for REST.
+      the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->). The `convertToRestId` method converts an
+      EWS-formatted ID into the proper format for REST.
 
 
       #### Examples
@@ -391,13 +395,17 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;'
+      content: 'convertToRestId(id: string, restVersion: MailboxEnums.RestVersion | string): string;'
       parameters:
-        - id: itemId
-          description: An item ID formatted for Exchange Web Services (EWS)
+        - id: id
+          description: >-
+            The ID to be converted into REST format. This string can be an item ID formatted for EWS that's usually
+            retrieved from `Office.context.mailbox.item.itemId`<!-- -->, a conversation ID retrieved from
+            `Office.context.mailbox.item.conversationId`<!-- -->, or a series ID retrieved from
+            `Office.context.mailbox.item.seriesId`<!-- -->.
           type: string
         - id: restVersion
-          description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
+          description: A value indicating the version of the Outlook REST API used with the converted ID.
           type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string

@@ -2674,10 +2674,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Converts an item ID formatted for REST into EWS format.
-         *
-         * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by
-         * Exchange Web Services (EWS). The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
+         * Converts a supported ID into the Exchange Web Services (EWS) format.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -2686,13 +2683,19 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**:
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * @param itemId - An item ID formatted for the Outlook REST APIs.
+         * - Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by EWS.
+         * The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
+         *
+         * @param id - The ID to be converted into EWS format. This string can be an item ID formatted for the Outlook REST APIs or a conversation ID retrieved from
+         *             `Office.context.mailbox.item.conversationId`.
          * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID.
          */
-        convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;
+        convertToEwsId(id: string, restVersion: MailboxEnums.RestVersion | string): string;
         /**
          * Gets a dictionary containing time information in local client time.
          *
@@ -2716,7 +2719,7 @@ export declare namespace Office {
          */
         convertToLocalClientTime(timeValue: Date): LocalClientTime;
         /**
-         * Converts an item ID formatted for EWS into REST format.
+         * Converts a supported ID into REST format.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -2730,15 +2733,17 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * - Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs (such as the
+         * - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the format used by REST APIs (such as the
          * {@link https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API}
-         * or the {@link https://graph.microsoft.io/ | Microsoft Graph}.
+         * or the {@link https://graph.microsoft.io/ | Microsoft Graph}).
          * The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
          *
-         * @param itemId - An item ID formatted for Exchange Web Services (EWS)
-         * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
+         * @param id - The ID to be converted into REST format. This string can be an item ID formatted for EWS that's usually retrieved from
+         *             `Office.context.mailbox.item.itemId`, a conversation ID retrieved from `Office.context.mailbox.item.conversationId`, or a
+         *             series ID retrieved from `Office.context.mailbox.item.seriesId`.
+         * @param restVersion - A value indicating the version of the Outlook REST API used with the converted ID.
          */
-        convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;
+        convertToRestId(id: string, restVersion: MailboxEnums.RestVersion | string): string;
         /**
          * Gets a `Date` object from a dictionary containing time information.
          *

@@ -8653,9 +8653,9 @@ Office.Mailbox,"restUrl",Property,Good,true
 Office.Mailbox,"userProfile",Property,Good,false
 Office.Mailbox,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
 Office.Mailbox,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
-Office.Mailbox,"convertToEwsId(itemId, restVersion)",Method,Poor,true
+Office.Mailbox,"convertToEwsId(id, restVersion)",Method,Poor,true
 Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Poor,false
-Office.Mailbox,"convertToRestId(itemId, restVersion)",Method,Poor,true
+Office.Mailbox,"convertToRestId(id, restVersion)",Method,Poor,true
 Office.Mailbox,"convertToUtcClientTime(input)",Method,Fine,true
 Office.Mailbox,"displayAppointmentForm(itemId)",Method,Poor,true
 Office.Mailbox,"displayAppointmentFormAsync(itemId, options, callback)",Method,Poor,true
