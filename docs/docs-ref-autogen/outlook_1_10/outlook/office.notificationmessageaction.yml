@@ -28,40 +28,28 @@ remarks: >-
 
   ```TypeScript
 
-  // Define notification.
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-  const insightMessage = {
+  // Adds an informational message with actions to the mail item.
+
+  const id = $("#notificationId").val().toString();
+
+  const details = 
+    {
       type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
       message: "This is an insight notification",
-      icon: "Icon.80x80",
-      actions: [{
+      icon: "icon1",
+      actions: [
+        {
           actionText: "Open insight",
           actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
           commandId: "msgComposeOpenPaneButton",
-          contextData: JSON.stringify({a: "aValue", b: "bValue"})
-      }]
-  };
-
-
-  // Show notification.
-
-  Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey", insightMessage, (result) => {
-      console.log("Added notification:");
-      console.log(result);
-  });
-
-
-  // Retrieve contextData.
-
-  Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
-      console.log("Initialization context:");
-      console.log(asyncResult);
-
-      // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
-      const contextData = JSON.parse(asyncResult.value);
-      console.log("a:");
-      console.log(contextData.a);
-  });
+          contextData: { a: "aValue", b: "bValue" }
+        }
+      ]
+    };
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
   ```
 isPreview: false
