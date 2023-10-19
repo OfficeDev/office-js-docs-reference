@@ -437,7 +437,7 @@ This extension point adds an event handler for a specified event. For more infor
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 > [!NOTE]
-> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), which is a newer version of the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature). We invite you to [try out Smart Alerts by completing the walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
+> [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events), which is a newer version of the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#differences-between-smart-alerts-and-the-on-send-feature). We invite you to [try out Smart Alerts by completing the walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 | Element | Description  |
 |:-----|:-----|
