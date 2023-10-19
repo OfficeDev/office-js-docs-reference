@@ -6,7 +6,7 @@ fullName: Office.MailboxEvent
 summary: >-
   The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, including [Smart
-  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->. It
+  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->. It
   allows the add-in to signify to the Outlook client that it has completed processing an event.
 remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]

@@ -1142,6 +1142,28 @@ methods:
       \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+      Important:
+
+
+      In Word on Windows and on Mac, the API supports inserting and managing all types listed in
+      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+
+
+      In Word on the web, the API supports inserting and managing the following field types.
+
+
+      - Word.FieldType.addin
+
+
+      - Word.FieldType.date
+
+
+      - Word.FieldType.hyperlink
+
+
+      - Word.FieldType.toc
+
+
       #### Examples
 
 
@@ -1200,7 +1222,30 @@ methods:
     package: word!
     fullName: 'insertField(insertLocation, fieldTypeString, text, removeFormatting)'
     summary: Inserts a field at the specified location.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important:
+
+
+      In Word on Windows and on Mac, the API supports inserting and managing all types listed in
+      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+
+
+      In Word on the web, the API supports inserting and managing the following field types.
+
+
+      - Word.FieldType.addin
+
+
+      - Word.FieldType.date
+
+
+      - Word.FieldType.hyperlink
+
+
+      - Word.FieldType.toc
     isPreview: false
     isDeprecated: false
     syntax:

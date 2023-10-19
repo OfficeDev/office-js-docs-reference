@@ -83,6 +83,20 @@ properties:
       content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
       return:
         type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />[]'
+  - name: externalCodeServiceTimeout
+    uid: 'excel!Excel.Interfaces.WorkbookData#externalCodeServiceTimeout:member'
+    package: excel!
+    fullName: externalCodeServiceTimeout
+    summary: >-
+      Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service
+      to complete. The valid range is 1 to 86400, inclusive.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'externalCodeServiceTimeout?: number;'
+      return:
+        type: number
   - name: isDirty
     uid: 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
     package: excel!

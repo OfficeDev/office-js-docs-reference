@@ -88,6 +88,20 @@ properties:
       content: 'chartDataPointTrack?: boolean;'
       return:
         type: boolean
+  - name: externalCodeServiceTimeout
+    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#externalCodeServiceTimeout:member'
+    package: excel!
+    fullName: externalCodeServiceTimeout
+    summary: >-
+      Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service
+      to complete. The valid range is 1 to 86400, inclusive.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'externalCodeServiceTimeout?: boolean;'
+      return:
+        type: boolean
   - name: isDirty
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
     package: excel!

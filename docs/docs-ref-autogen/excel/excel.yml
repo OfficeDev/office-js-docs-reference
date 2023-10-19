@@ -431,7 +431,6 @@ interfaces:
   - 'excel!Excel.DataValidationRule:interface'
   - 'excel!Excel.DateTimeDataValidation:interface'
   - 'excel!Excel.Div0ErrorCellValue:interface'
-  - 'excel!Excel.DocumentTaskChangeProperties:interface'
   - 'excel!Excel.DocumentTaskSchedule:interface'
   - 'excel!Excel.DoubleCellValue:interface'
   - 'excel!Excel.EmailIdentity:interface'
