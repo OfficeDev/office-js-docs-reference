@@ -41,18 +41,6 @@
 |[DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection)|[getCount()](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getcount-member(1))|Gets the number of change records in the collection for the task.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1))|Gets a task change record by using its index in the collection.|
 ||[items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)|Gets the loaded child items in this collection.|
-|[DocumentTaskChangeProperties](/javascript/api/excel/excel.documenttaskchangeproperties)|[assignee](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-assignee-member)|Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.|
-||[changedBy](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-changedby-member)|Represents the identity of the user who made the task change.|
-||[commentId](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-commentid-member)|Represents the ID of the `comment` or `commentReply` to which the task change is anchored.|
-||[createdDateTime](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-createddatetime-member)|Represents the creation date and time of the task change record.|
-||[dueDateTime](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-duedatetime-member)|Represents the task's due date and time.|
-||[id](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-id-member)|The unique GUID of the task change.|
-||[percentComplete](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-percentcomplete-member)|Represents the task's completion percentage.|
-||[priority](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-priority-member)|Represents the task's priority.|
-||[startDateTime](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-startdatetime-member)|Represents the task's start date and time.|
-||[title](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-title-member)|Represents the task's title.|
-||[type](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-type-member)|Represents the action type of the task change record.|
-||[undoChangeId](/javascript/api/excel/excel.documenttaskchangeproperties#excel-excel-documenttaskchangeproperties-undochangeid-member)|Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.|
 |[DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection)|[getCount()](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getcount-member(1))|Gets the number of tasks in the collection.|
 ||[getItem(key: string)](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1))|Gets a task using its ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1))|Gets a task by its index in the collection.|
@@ -123,7 +111,8 @@
 |[TableFilteredEventArgs](/javascript/api/excel/excel.tablefilteredeventargs)|[tableId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-tableid-member)|Gets the ID of the table in which the filter is applied.|
 ||[type](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-type-member)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-worksheetid-member)|Gets the ID of the worksheet which contains the table.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
+||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|

@@ -5114,7 +5114,7 @@ export declare namespace Office {
     
     
     /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
      * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
      */
     export interface SmartAlertsEventCompletedOptions {

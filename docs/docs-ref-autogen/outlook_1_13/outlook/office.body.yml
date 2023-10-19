@@ -715,7 +715,7 @@ methods:
 
 
       - In a [Smart Alerts
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->,
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->,
       the prepend-on-send feature runs first.
 
 
@@ -837,7 +837,7 @@ methods:
 
 
       - In a [Smart Alerts
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->,
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->,
       the prepend-on-send feature runs first.
 
 

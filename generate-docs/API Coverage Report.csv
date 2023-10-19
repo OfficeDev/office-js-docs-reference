@@ -2511,19 +2511,6 @@ Excel.DocumentTaskChangeCollection,"load(options)",Method,Poor,false
 Excel.DocumentTaskChangeCollection,"load(propertyNames)",Method,Poor,false
 Excel.DocumentTaskChangeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.DocumentTaskChangeCollection,"toJSON()",Method,Poor,false
-Excel.DocumentTaskChangeProperties,N/A,Class,Good,false
-Excel.DocumentTaskChangeProperties,"assignee",Property,Good,false
-Excel.DocumentTaskChangeProperties,"changedBy",Property,Good,false
-Excel.DocumentTaskChangeProperties,"commentId",Property,Good,false
-Excel.DocumentTaskChangeProperties,"createdDateTime",Property,Good,false
-Excel.DocumentTaskChangeProperties,"dueDateTime",Property,Good,false
-Excel.DocumentTaskChangeProperties,"id",Property,Good,false
-Excel.DocumentTaskChangeProperties,"percentComplete",Property,Good,false
-Excel.DocumentTaskChangeProperties,"priority",Property,Good,false
-Excel.DocumentTaskChangeProperties,"startDateTime",Property,Good,false
-Excel.DocumentTaskChangeProperties,"title",Property,Good,false
-Excel.DocumentTaskChangeProperties,"type",Property,Good,false
-Excel.DocumentTaskChangeProperties,"undoChangeId",Property,Good,false
 Excel.DocumentTaskCollection,N/A,Class,Good,false
 Excel.DocumentTaskCollection,"context",Property,Good,false
 Excel.DocumentTaskCollection,"items",Property,Fine,false
@@ -3208,6 +3195,7 @@ Excel.ErrorCodes,"notImplemented",EnumField,Missing,false
 Excel.ErrorCodes,"openWorkbookLinksBlocked",EnumField,Missing,false
 Excel.ErrorCodes,"operationCellsExceedLimit",EnumField,Missing,false
 Excel.ErrorCodes,"pivotTableRangeConflict",EnumField,Missing,false
+Excel.ErrorCodes,"powerQueryRefreshResourceChallenge",EnumField,Missing,false
 Excel.ErrorCodes,"rangeExceedsLimit",EnumField,Missing,false
 Excel.ErrorCodes,"refreshWorkbookLinksBlocked",EnumField,Missing,false
 Excel.ErrorCodes,"requestAborted",EnumField,Missing,false
@@ -6236,6 +6224,7 @@ Excel.Workbook,"comments",Property,Good,false
 Excel.Workbook,"context",Property,Good,false
 Excel.Workbook,"customXmlParts",Property,Good,false
 Excel.Workbook,"dataConnections",Property,Good,false
+Excel.Workbook,"externalCodeServiceTimeout",Property,Good,false
 Excel.Workbook,"functions",Property,Good,false
 Excel.Workbook,"isDirty",Property,Good,false
 Excel.Workbook,"linkedDataTypes",Property,Good,false

@@ -225,7 +225,7 @@ methods:
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
-      Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
+      Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

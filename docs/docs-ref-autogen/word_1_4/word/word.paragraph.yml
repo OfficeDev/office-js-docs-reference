@@ -271,7 +271,7 @@ properties:
     package: word!
     fullName: listOrNullObject
     summary: >-
-      Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an
+      Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an
       object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
