@@ -3437,7 +3437,7 @@ export declare namespace Word {
          */
         getBookmarkRange(name: string): Word.Range;
         /**
-         * Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.4]
@@ -3726,6 +3726,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi 1.4]
+     *
+     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3925,6 +3927,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi 1.4]
+     *
+     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -6362,7 +6366,7 @@ export declare namespace Word {
          */
         expandTo(range: Word.Range): Word.Range;
         /**
-         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. If the two ranges don't have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -6542,6 +6546,20 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
+         * Important:
+         *
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         *
+         * In Word on the web, the API supports inserting and managing the following field types.
+         *
+         * - Word.FieldType.addin
+         *
+         * - Word.FieldType.date
+         *
+         * - Word.FieldType.hyperlink
+         *
+         * - Word.FieldType.toc
+         *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
          * @param text - Optional. Additional properties or options if needed for specified field type.
@@ -6553,6 +6571,20 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.5]
+         *
+         * Important:
+         *
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         *
+         * In Word on the web, the API supports inserting and managing the following field types.
+         *
+         * - Word.FieldType.addin
+         *
+         * - Word.FieldType.date
+         *
+         * - Word.FieldType.hyperlink
+         *
+         * - Word.FieldType.toc
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -6653,7 +6685,7 @@ export declare namespace Word {
          */
         intersectWith(range: Word.Range): Word.Range;
         /**
-         * Returns a new range as the intersection of this range with another range. This range isn't changed. If the two ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * Returns a new range as the intersection of this range with another range. This range isn't changed. If the two ranges aren't overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -18677,14 +18709,14 @@ export declare namespace Word {
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains the field. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            * Gets the table cell that contains the field. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.4]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains the field. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            * Gets the table that contains the field. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.4]

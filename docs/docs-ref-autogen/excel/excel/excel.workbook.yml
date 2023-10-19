@@ -124,6 +124,20 @@ properties:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type: '<xref uid="excel!Excel.DataConnectionCollection:class" />'
+  - name: externalCodeServiceTimeout
+    uid: 'excel!Excel.Workbook#externalCodeServiceTimeout:member'
+    package: excel!
+    fullName: externalCodeServiceTimeout
+    summary: >-
+      Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service
+      to complete. The valid range is 1 to 86400, inclusive.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'externalCodeServiceTimeout: number;'
+      return:
+        type: number
   - name: functions
     uid: 'excel!Excel.Workbook#functions:member'
     package: excel!

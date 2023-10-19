@@ -8140,115 +8140,6 @@ export declare namespace Excel {
         undo = "undo"
     }
     /**
-     * Represents a recorded change to the task, to be used as an input parameter.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface DocumentTaskChangeProperties {
-        /**
-         * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        assignee?: Excel.EmailIdentity;
-        /**
-         * Represents the identity of the user who made the task change.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        changedBy: Excel.EmailIdentity;
-        /**
-         * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        commentId?: string;
-        /**
-         * Represents the creation date and time of the task change record. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        createdDateTime?: Date;
-        /**
-         * Represents the task's due date and time. It is used for the `setSchedule` change action.
-                    It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dueDateTime?: Date;
-        /**
-         * The unique GUID of the task change.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-        /**
-         * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
-                    This is a value betwen 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        percentComplete?: number;
-        /**
-         * Represents the task's priority. It is used for the `setPriority` change action.
-                    This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        priority?: number;
-        /**
-         * Represents the task's start date and time. It is used for the `setSchedule` change action.
-                    It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        startDateTime?: Date;
-        /**
-         * Represents the task's title. It is used for the `setTitle` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        title?: string;
-        /**
-         * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
-        /**
-         * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        undoChangeId?: string;
-    }
-    /**
      * Represents a recorded change to the task.
      *
      * @remarks
@@ -12502,6 +12393,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         chartDataPointTrack: boolean;
+        /**
+         * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
+                    The valid range is 1 to 86400, inclusive.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        externalCodeServiceTimeout: number;
         /**
          * Specifies if changes have been made since the workbook was last saved.
                     You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -44090,6 +43990,7 @@ export declare namespace Excel {
         openWorkbookLinksBlocked = "OpenWorkbookLinksBlocked",
         operationCellsExceedLimit = "OperationCellsExceedLimit",
         pivotTableRangeConflict = "PivotTableRangeConflict",
+        powerQueryRefreshResourceChallenge = "PowerQueryRefreshResourceChallenge",
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
@@ -44277,6 +44178,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             chartDataPointTrack?: boolean;
+            /**
+             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
+                        The valid range is 1 to 86400, inclusive.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            externalCodeServiceTimeout?: number;
             /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -49623,6 +49533,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             chartDataPointTrack?: boolean;
+            /**
+             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
+                        The valid range is 1 to 86400, inclusive.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            externalCodeServiceTimeout?: number;
             /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -56907,6 +56826,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             chartDataPointTrack?: boolean;
+            /**
+             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
+                        The valid range is 1 to 86400, inclusive.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            externalCodeServiceTimeout?: boolean;
             /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.

@@ -3982,7 +3982,7 @@ export declare namespace Office {
          * 
          * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
          * 
-         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in},
          * the prepend-on-send feature runs first.
          * 
          * - A new line is added after the prepended content.
@@ -4023,7 +4023,7 @@ export declare namespace Office {
          * 
          * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
          * 
-         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in},
          * the prepend-on-send feature runs first.
          * 
          * - A new line is added after the prepended content.
@@ -6513,7 +6513,7 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -10713,7 +10713,7 @@ export declare namespace Office {
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
     /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
      * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
      */
     export interface SmartAlertsEventCompletedOptions {

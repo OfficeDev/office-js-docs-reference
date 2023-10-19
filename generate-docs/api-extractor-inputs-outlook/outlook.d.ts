@@ -1307,11 +1307,11 @@ export declare namespace Office {
             Beta = "beta"
         }
         /**
-         * Specifies the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options | send mode option}
+         * Specifies the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
          * that overrides the option set in the manifest at runtime.
          *
          * For information on how to implement a Smart Alerts add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Use Smart Alerts and the OnMessageSend and OnAppointmentSend events in your Outlook add-in}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Handle OnMessageSend and OnAppointmentSend events in your Outlook add-in with Smart Alerts}.
          *
          * @remarks
          * [Api set: Mailbox preview]
@@ -1323,7 +1323,7 @@ export declare namespace Office {
         enum SendModeOverride {
             /**
              * Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of the event-based add-in.
-             * To learn more, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#prompt-user | **prompt user** send mode option}.
+             * To learn more, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user | **prompt user** send mode option}.
              *
              * @beta
              */
@@ -4155,7 +4155,7 @@ export declare namespace Office {
          * 
          * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
          * 
-         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in},
          * the prepend-on-send feature runs first.
          * 
          * - A new line is added after the prepended content.
@@ -4196,7 +4196,7 @@ export declare namespace Office {
          * 
          * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
          * 
-         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+         * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in},
          * the prepend-on-send feature runs first.
          * 
          * - A new line is added after the prepended content.
@@ -6830,7 +6830,7 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts},
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
      * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
@@ -11385,7 +11385,7 @@ export declare namespace Office {
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
     /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}
+     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
      * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
      */
     export interface SmartAlertsEventCompletedOptions {
@@ -11488,7 +11488,7 @@ export declare namespace Office {
         /**
          * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler
          * and set its `allowEvent` property to `false`, this property overrides the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options | send mode option}
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
          * specified in the manifest at runtime.
          *
          * For an example, see the
@@ -11503,7 +11503,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * **Important**: Currently, `sendModeOverride` can only be set to the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#prompt-user | prompt user} option.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user | prompt user} option.
          *
          * @beta
          */

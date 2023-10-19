@@ -729,8 +729,6 @@ items:
             uid: 'excel!Excel.DocumentTaskChange:class'
           - name: DocumentTaskChangeCollection
             uid: 'excel!Excel.DocumentTaskChangeCollection:class'
-          - name: DocumentTaskChangeProperties
-            uid: 'excel!Excel.DocumentTaskChangeProperties:interface'
           - name: DocumentTaskCollection
             uid: 'excel!Excel.DocumentTaskCollection:class'
           - name: DocumentTaskSchedule
