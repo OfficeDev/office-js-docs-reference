@@ -551,6 +551,10 @@
         {
             "source_path": "docs/docs-ref-conceptual/requirement-sets/word-api-requirement-sets.md",
             "redirect_url": "/javascript/api/requirement-sets/word/word-api-requirement-sets"
+        },
+        {
+            "source_path": "/javascript/api/excel/excel.documenttaskchangeproperties",
+            "redirect_url": "/javascript/api/excel/excel.documenttaskchange"
         }
     ]
 }
