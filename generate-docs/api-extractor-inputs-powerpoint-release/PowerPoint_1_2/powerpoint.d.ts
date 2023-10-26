@@ -263,7 +263,7 @@ export declare namespace PowerPoint {
         getItemAt(index: number): PowerPoint.Slide;
         /**
          * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
+                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
                     and properties}.
          *
          * @remarks

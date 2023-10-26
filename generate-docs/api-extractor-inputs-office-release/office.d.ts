@@ -1997,14 +1997,49 @@ export declare namespace Office {
      *
      * @remarks
      *
-     *  *Supported applications, by platform*
-     *  <table>
-     *   <tr><th>                             </th><th> Office on Windows </th><th> Office on the web </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td>                   </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Preview           </td><td>                   </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td>                   </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td>  Supported        </td></tr>
-     *  </table>
+     * *Supported applications, by platform*
+     * <table>
+     *  <tr>
+     *    <th></th>
+     *    <th>Office on Windows</th>
+     *    <th>Office on the web</th>
+     *    <th>Office on Mac</th>
+     *    <th>Office on iOS</th>
+     *    <th>Office on Android</th>
+     *  </tr>
+     *  <tr>
+     *    <td><strong>Excel</strong></td>
+     *    <td>Supported</td>
+     *    <td>Not available</td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
+     *    <td>Not available</td>
+     *  </tr>
+     *  <tr>
+     *    <td><strong>Outlook</strong></td>
+     *    <td>Preview</td>
+     *    <td>Not available</td>
+     *    <td>Not available</td>
+     *    <td>Not available</td>
+     *    <td>Not available</td>
+     *  </tr>
+     *  <tr>
+     *    <td><strong>PowerPoint</strong></td>
+     *    <td>Supported</td>
+     *    <td>Not available</td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
+     *    <td>Not available</td>
+     *  </tr>
+     *  <tr>
+     *    <td><strong>Word</strong></td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
+     *    <td>Not available</td>
+     *  </tr>
+     * </table>
      */
     export interface OfficeTheme {
         /**
