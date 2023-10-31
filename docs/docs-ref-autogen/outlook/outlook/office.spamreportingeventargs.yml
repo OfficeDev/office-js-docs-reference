@@ -11,6 +11,52 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: freeText
+    uid: 'outlook!Office.SpamReportingEventArgs#freeText:member'
+    package: outlook!
+    fullName: freeText
+    summary: The text provided by the user in the preprocessing dialog of a spam-reporting add-in.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      To add an optional text box to the preprocessing dialog of your spam-reporting add-in, you must configure the
+      [FreeTextLabel](https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog?view=outlook-js-preview&preserve-view=true#child-elements)
+      element in the manifest of your add-in.
+
+
+      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting add-in
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'freeText: string;'
+      return:
+        type: string
+  - name: options
+    uid: 'outlook!Office.SpamReportingEventArgs#options:member'
+    package: outlook!
+    fullName: options
+    summary: >-
+      Returns `true` for each reporting option selected by the user in the preprocessing dialog of a spam-reporting
+      add-in.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      The order of the booleans in the array corresponds to the order of the reporting options specified in the
+      [ReportingOptions](https://learn.microsoft.com/javascript/api/manifest/reportingoptions?view=outlook-js-preview&preserve-view=true)
+      element of your add-in's manifest.
+
+
+      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting add-in
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'options: boolean[];'
+      return:
+        type: 'boolean[]'
   - name: type
     uid: 'outlook!Office.SpamReportingEventArgs#type:member'
     package: outlook!

@@ -4882,6 +4882,8 @@ export declare namespace Office {
      *
      * @remarks
      *
+     * [Api set: Mailbox 1.1]
+     *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -4892,26 +4894,32 @@ export declare namespace Office {
      */
     export interface Diagnostics {
         /**
-         * Gets a string that represents the name of the Office application.
+         * Gets a string that represents the type of Outlook client.
          *
-         * A string that can be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
-         *
-         * **Note**: The `Outlook` value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+         * The string can be one of the following values: `Outlook`, `newOutlookWindows`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The `Outlook` value is returned for Outlook desktop clients on Windows and on Mac. `newOutlookWindows` is returned for the
+         * {@link https://insider.microsoft365.com/blog/new-outlook-for-windows-available-to-all-office-insiders | new Outlook on Windows desktop client}
+         * currently in preview.
          */
         hostName: string;
         /**
-         * Gets a string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
+         * Gets a string that represents the version of either the Outlook client or the Exchange Server (for example, "15.0.468.0").
          *
          * If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the version of the
-         * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
+         * Outlook client. In Outlook on the web, the property returns the version of the Exchange Server.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
@@ -4936,6 +4944,8 @@ export declare namespace Office {
          * desktop computer.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
@@ -11518,6 +11528,38 @@ export declare namespace Office {
      * @beta
      */
     export interface SpamReportingEventArgs {
+        /**
+         * The text provided by the user in the preprocessing dialog of a spam-reporting add-in.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * To add an optional text box to the preprocessing dialog of your spam-reporting add-in, you must configure the
+         * {@link https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog?view=outlook-js-preview&preserve-view=true#child-elements | FreeTextLabel}
+         * element in the manifest of your add-in.
+         *
+         * To learn more about how to develop a spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         *
+         * @beta
+         */
+        freeText: string;
+        /**
+         * Returns `true` for each reporting option selected by the user in the preprocessing dialog of a spam-reporting add-in.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * The order of the booleans in the array corresponds to the order of the reporting options specified in the
+         * {@link https://learn.microsoft.com/javascript/api/manifest/reportingoptions?view=outlook-js-preview&preserve-view=true | ReportingOptions}
+         * element of your add-in's manifest.
+         *
+         * To learn more about how to develop a spam-reporting add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         *
+         * @beta
+         */
+        options: boolean[];
         /**
          * The type of event that was raised. For details, see {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          *
