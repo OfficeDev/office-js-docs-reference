@@ -9228,6 +9228,8 @@ Office.SmartAlertsEventCompletedOptions,"contextData",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"errorMessage",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"sendModeOverride",Property,Good,false
 Office.SpamReportingEventArgs,N/A,Class,Good,false
+Office.SpamReportingEventArgs,"freeText",Property,Good,false
+Office.SpamReportingEventArgs,"options",Property,Good,false
 Office.SpamReportingEventArgs,"type",Property,Good,false
 Office.SpamReportingEventCompletedOptions,N/A,Class,Good,true
 Office.SpamReportingEventCompletedOptions,"folderName",Property,Good,false
