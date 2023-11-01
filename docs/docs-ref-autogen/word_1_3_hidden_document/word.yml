@@ -188,11 +188,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        export function run<T>(
-                objects: OfficeExtension.ClientObject[],
-                batch: (context: Word.RequestContext) => Promise<T>,
-            ): Promise<T>;
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
@@ -221,11 +219,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        export function run<T>(
-                object: OfficeExtension.ClientObject,
-                batch: (context: Word.RequestContext) => Promise<T>,
-            ): Promise<T>;
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-

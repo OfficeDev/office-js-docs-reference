@@ -68,28 +68,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        horizontalAlignment:
-                    | Excel.HorizontalAlignment
-                    | "General"
-                    | "Left"
-                    | "Center"
-                    | "Right"
-                    | "Fill"
-                    | "Justify"
-                    | "CenterAcrossSelection"
-                    | "Distributed";
+      content: >-
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.HorizontalAlignment:enum" />
-                      | "General"
-                      | "Left"
-                      | "Center"
-                      | "Right"
-                      | "Fill"
-                      | "Justify"
-                      | "CenterAcrossSelection"
-                      | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" | "Left" | "Center" | "Right" | "Fill" |
+          "Justify" | "CenterAcrossSelection" | "Distributed"
   - name: verticalAlignment
     uid: 'excel!Excel.RangeFormat#verticalAlignment:member'
     package: excel!

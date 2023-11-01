@@ -85,13 +85,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        addFromBase64(
-                    base64File: string,
-                    sheetNamesToInsert?: string[],
-                    positionType?: Excel.WorksheetPositionType,
-                    relativeTo?: Worksheet | string,
-                ): OfficeExtension.ClientResult<string[]>;
+      content: >-
+        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType,
+        relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
           description: Required. The base64-encoded string representing the source workbook file.
@@ -129,13 +125,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        addFromBase64(
-                    base64File: string,
-                    sheetNamesToInsert?: string[],
-                    positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End",
-                    relativeTo?: Worksheet | string,
-                ): OfficeExtension.ClientResult<string[]>;
+      content: >-
+        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionTypeString?: "None" | "Before" |
+        "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
           description: Required. The base64-encoded string representing the source workbook file.
@@ -358,10 +350,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.WorksheetCollection;
+      content: >-
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

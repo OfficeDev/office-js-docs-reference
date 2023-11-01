@@ -1470,10 +1470,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getEntitiesByType(
-                    entityType: MailboxEnums.EntityType | string,
-                ): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+      content: >-
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)[];
       parameters:
         - id: entityType
           description: >-
@@ -1550,10 +1549,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getFilteredEntitiesByName(
-                    name: string,
-                ): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+      content: >-
+        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)[];
       parameters:
         - id: name
           description: The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
@@ -2104,11 +2102,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        loadCustomPropertiesAsync(
-                    callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
-                    userContext?: any,
-                ): void;
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       parameters:
         - id: callback
           description: >-

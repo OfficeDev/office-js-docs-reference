@@ -90,10 +90,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.ChartPointsCollection;
+      content: >-
+        load(options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartPointsCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

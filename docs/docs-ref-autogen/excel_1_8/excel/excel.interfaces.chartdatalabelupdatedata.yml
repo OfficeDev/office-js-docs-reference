@@ -56,22 +56,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        horizontalAlignment?:
-                        | Excel.ChartTextHorizontalAlignment
-                        | "Center"
-                        | "Left"
-                        | "Right"
-                        | "Justify"
-                        | "Distributed";
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" />
-                          | "Center"
-                          | "Left"
-                          | "Right"
-                          | "Justify"
-                          | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" |
+          "Distributed"
   - name: left
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#left:member'
     package: excel!
@@ -107,36 +98,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        position?:
-                        | Excel.ChartDataLabelPosition
-                        | "Invalid"
-                        | "None"
-                        | "Center"
-                        | "InsideEnd"
-                        | "InsideBase"
-                        | "OutsideEnd"
-                        | "Left"
-                        | "Right"
-                        | "Top"
-                        | "Bottom"
-                        | "BestFit"
-                        | "Callout";
+      content: >-
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartDataLabelPosition:enum" />
-                          | "Invalid"
-                          | "None"
-                          | "Center"
-                          | "InsideEnd"
-                          | "InsideBase"
-                          | "OutsideEnd"
-                          | "Left"
-                          | "Right"
-                          | "Top"
-                          | "Bottom"
-                          | "BestFit"
-                          | "Callout"
+        type: >-
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" | "None" | "Center" | "InsideEnd" |
+          "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#separator:member'
     package: excel!
@@ -272,19 +240,8 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        verticalAlignment?:
-                        | Excel.ChartTextVerticalAlignment
-                        | "Center"
-                        | "Bottom"
-                        | "Top"
-                        | "Justify"
-                        | "Distributed";
+      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" />
-                          | "Center"
-                          | "Bottom"
-                          | "Top"
-                          | "Justify"
-                          | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center" | "Bottom" | "Top" | "Justify" |
+          "Distributed"

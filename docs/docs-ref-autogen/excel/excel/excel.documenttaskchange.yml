@@ -167,36 +167,14 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        readonly type:
-                    | Excel.DocumentTaskChangeAction
-                    | "unknown"
-                    | "create"
-                    | "assign"
-                    | "unassign"
-                    | "unassignAll"
-                    | "setSchedule"
-                    | "setPercentComplete"
-                    | "setPriority"
-                    | "remove"
-                    | "restore"
-                    | "setTitle"
-                    | "undo";
+      content: >-
+        readonly type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" |
+        "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
       return:
-        type: |-
-          | <xref uid="excel!Excel.DocumentTaskChangeAction:enum" />
-                      | "unknown"
-                      | "create"
-                      | "assign"
-                      | "unassign"
-                      | "unassignAll"
-                      | "setSchedule"
-                      | "setPercentComplete"
-                      | "setPriority"
-                      | "remove"
-                      | "restore"
-                      | "setTitle"
-                      | "undo"
+        type: >-
+          <xref uid="excel!Excel.DocumentTaskChangeAction:enum" /> | "unknown" | "create" | "assign" | "unassign" |
+          "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" |
+          "undo"
   - name: undoChangeId
     uid: 'excel!Excel.DocumentTaskChange#undoChangeId:member'
     package: excel!

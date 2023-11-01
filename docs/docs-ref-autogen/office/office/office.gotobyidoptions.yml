@@ -36,7 +36,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: selectionMode
@@ -51,6 +51,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'selectionMode?: Office.SelectionMode | string;'
+      content: 'selectionMode?: Office.SelectionMode | string'
       return:
         type: '<xref uid="office!Office.SelectionMode:enum" /> | string'

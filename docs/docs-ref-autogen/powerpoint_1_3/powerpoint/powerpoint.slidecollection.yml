@@ -193,10 +193,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: PowerPoint.Interfaces.SlideCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions,
-                ): PowerPoint.SlideCollection;
+      content: >-
+        load(options?: PowerPoint.Interfaces.SlideCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.SlideCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

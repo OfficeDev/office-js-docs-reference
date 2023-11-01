@@ -94,10 +94,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.GroupShapeCollection;
+      content: >-
+        load(options?: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.GroupShapeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

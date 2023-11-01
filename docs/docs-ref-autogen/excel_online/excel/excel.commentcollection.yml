@@ -67,12 +67,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        add(
-                    cellAddress: Range | string,
-                    content: CommentRichContent | string,
-                    contentType?: Excel.ContentType,
-                ): Excel.Comment;
+      content: >-
+        add(cellAddress: Range | string, content: CommentRichContent | string, contentType?: Excel.ContentType):
+        Excel.Comment;
       parameters:
         - id: cellAddress
           description: >-
@@ -106,12 +103,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        add(
-                    cellAddress: Range | string,
-                    content: CommentRichContent | string,
-                    contentTypeString?: "Plain" | "Mention",
-                ): Excel.Comment;
+      content: >-
+        add(cellAddress: Range | string, content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"):
+        Excel.Comment;
       parameters:
         - id: cellAddress
           description: >-
@@ -251,10 +245,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.CommentCollection;
+      content: >-
+        load(options?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CommentCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

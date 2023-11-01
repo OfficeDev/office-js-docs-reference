@@ -42,13 +42,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'areShortcutsInUse(shortcuts: string[]): Promise<{ shortcut: string; inUse: boolean }[]>;'
+      content: 'areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;'
       parameters:
         - id: shortcuts
           description: 'An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`<!-- -->.'
           type: 'string[]'
       return:
-        type: 'Promise&lt;{ shortcut: string; inUse: boolean }[]&gt;'
+        type: 'Promise&lt;{shortcut: string, inUse: boolean}[]&gt;'
         description: >-
           A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean
           value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a
@@ -79,9 +79,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getShortcuts(): Promise<{ [actionId: string]: string | null }>;'
+      content: 'getShortcuts(): Promise<{[actionId: string]: string|null}>;'
       return:
-        type: 'Promise&lt;{ [actionId: string]: string | null }&gt;'
+        type: 'Promise&lt;{[actionId: string]: string|null}&gt;'
         description: >-
           A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an
           extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1",
@@ -104,7 +104,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'replaceShortcuts(shortcuts: { [actionId: string]: string }): Promise<void>;'
+      content: 'replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;'
       parameters:
         - id: shortcuts
           description: >-
@@ -114,7 +114,7 @@ methods:
             your Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts)<!-- -->.
             (Note that a key combination can be `null`<!-- -->, in which case, the action keeps the key combination
             specified in the JSON file.)
-          type: '{ [actionId: string]: string }'
+          type: '{[actionId: string]: string}'
       return:
         type: Promise&lt;void&gt;
         description: >-

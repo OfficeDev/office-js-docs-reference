@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: handler
@@ -34,7 +34,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;'
+      content: 'handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any'
       return:
         type: >-
           (eventArgs?: <xref uid="office!Office.BindingDataChangedEventArgs:interface" /> | <xref

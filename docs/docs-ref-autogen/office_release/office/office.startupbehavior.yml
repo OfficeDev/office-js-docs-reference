@@ -12,9 +12,9 @@ fields:
     uid: 'office!Office.StartupBehavior.load:member'
     package: office!
     summary: Load the add-in but do not show UI.
-    value: '"Load"'
+    value: '''Load'''
   - name: none
     uid: 'office!Office.StartupBehavior.none:member'
     package: office!
     summary: The add-in does not load until opened by the user.
-    value: '"None"'
+    value: '''None'''

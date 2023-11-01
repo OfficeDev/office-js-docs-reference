@@ -115,18 +115,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?:
-                        & PowerPoint.Interfaces.SlideMasterCollectionLoadOptions
-                        & PowerPoint.Interfaces.CollectionLoadOptions,
-                ): PowerPoint.SlideMasterCollection;
+      content: >-
+        load(options?: PowerPoint.Interfaces.SlideMasterCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.SlideMasterCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: |-
-            & <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface" />
-                            & <xref uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface" /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideMasterCollection:class" />'
         description: ''

@@ -115,10 +115,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.LinkedDataTypeCollection;
+      content: >-
+        load(options?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.LinkedDataTypeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

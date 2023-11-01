@@ -142,10 +142,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: PowerPoint.Interfaces.ShapeCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions,
-                ): PowerPoint.ShapeCollection;
+      content: >-
+        load(options?: PowerPoint.Interfaces.ShapeCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.ShapeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

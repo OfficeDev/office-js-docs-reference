@@ -41,63 +41,17 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        criterion:
-                    | Excel.ConditionalFormatPresetCriterion
-                    | "Invalid"
-                    | "Blanks"
-                    | "NonBlanks"
-                    | "Errors"
-                    | "NonErrors"
-                    | "Yesterday"
-                    | "Today"
-                    | "Tomorrow"
-                    | "LastSevenDays"
-                    | "LastWeek"
-                    | "ThisWeek"
-                    | "NextWeek"
-                    | "LastMonth"
-                    | "ThisMonth"
-                    | "NextMonth"
-                    | "AboveAverage"
-                    | "BelowAverage"
-                    | "EqualOrAboveAverage"
-                    | "EqualOrBelowAverage"
-                    | "OneStdDevAboveAverage"
-                    | "OneStdDevBelowAverage"
-                    | "TwoStdDevAboveAverage"
-                    | "TwoStdDevBelowAverage"
-                    | "ThreeStdDevAboveAverage"
-                    | "ThreeStdDevBelowAverage"
-                    | "UniqueValues"
-                    | "DuplicateValues";
+      content: >-
+        criterion: Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors"
+        | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" |
+        "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" |
+        "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
+        "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ConditionalFormatPresetCriterion:enum" />
-                      | "Invalid"
-                      | "Blanks"
-                      | "NonBlanks"
-                      | "Errors"
-                      | "NonErrors"
-                      | "Yesterday"
-                      | "Today"
-                      | "Tomorrow"
-                      | "LastSevenDays"
-                      | "LastWeek"
-                      | "ThisWeek"
-                      | "NextWeek"
-                      | "LastMonth"
-                      | "ThisMonth"
-                      | "NextMonth"
-                      | "AboveAverage"
-                      | "BelowAverage"
-                      | "EqualOrAboveAverage"
-                      | "EqualOrBelowAverage"
-                      | "OneStdDevAboveAverage"
-                      | "OneStdDevBelowAverage"
-                      | "TwoStdDevAboveAverage"
-                      | "TwoStdDevBelowAverage"
-                      | "ThreeStdDevAboveAverage"
-                      | "ThreeStdDevBelowAverage"
-                      | "UniqueValues"
-                      | "DuplicateValues"
+        type: >-
+          <xref uid="excel!Excel.ConditionalFormatPresetCriterion:enum" /> | "Invalid" | "Blanks" | "NonBlanks" |
+          "Errors" | "NonErrors" | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" |
+          "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage"
+          | "EqualOrBelowAverage" | "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" |
+          "TwoStdDevBelowAverage" | "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" |
+          "DuplicateValues"

@@ -20,20 +20,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        autoSizeSetting?:
-                        | Excel.ShapeAutoSize
-                        | "AutoSizeNone"
-                        | "AutoSizeTextToFitShape"
-                        | "AutoSizeShapeToFitText"
-                        | "AutoSizeMixed";
+      content: >-
+        autoSizeSetting?: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
+        "AutoSizeMixed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ShapeAutoSize:enum" />
-                          | "AutoSizeNone"
-                          | "AutoSizeTextToFitShape"
-                          | "AutoSizeShapeToFitText"
-                          | "AutoSizeMixed"
+        type: >-
+          <xref uid="excel!Excel.ShapeAutoSize:enum" /> | "AutoSizeNone" | "AutoSizeTextToFitShape" |
+          "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - name: bottomMargin
     uid: 'excel!Excel.Interfaces.TextFrameUpdateData#bottomMargin:member'
     package: excel!
@@ -55,26 +48,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        horizontalAlignment?:
-                        | Excel.ShapeTextHorizontalAlignment
-                        | "Left"
-                        | "Center"
-                        | "Right"
-                        | "Justify"
-                        | "JustifyLow"
-                        | "Distributed"
-                        | "ThaiDistributed";
+      content: >-
+        horizontalAlignment?: Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" |
+        "JustifyLow" | "Distributed" | "ThaiDistributed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" />
-                          | "Left"
-                          | "Center"
-                          | "Right"
-                          | "Justify"
-                          | "JustifyLow"
-                          | "Distributed"
-                          | "ThaiDistributed"
+        type: >-
+          <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" /> | "Left" | "Center" | "Right" | "Justify" |
+          "JustifyLow" | "Distributed" | "ThaiDistributed"
   - name: horizontalOverflow
     uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member'
     package: excel!
@@ -112,26 +92,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        orientation?:
-                        | Excel.ShapeTextOrientation
-                        | "Horizontal"
-                        | "Vertical"
-                        | "Vertical270"
-                        | "WordArtVertical"
-                        | "EastAsianVertical"
-                        | "MongolianVertical"
-                        | "WordArtVerticalRTL";
+      content: >-
+        orientation?: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ShapeTextOrientation:enum" />
-                          | "Horizontal"
-                          | "Vertical"
-                          | "Vertical270"
-                          | "WordArtVertical"
-                          | "EastAsianVertical"
-                          | "MongolianVertical"
-                          | "WordArtVerticalRTL"
+        type: >-
+          <xref uid="excel!Excel.ShapeTextOrientation:enum" /> | "Horizontal" | "Vertical" | "Vertical270" |
+          "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
   - name: readingOrder
     uid: 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member'
     package: excel!
@@ -179,22 +146,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        verticalAlignment?:
-                        | Excel.ShapeTextVerticalAlignment
-                        | "Top"
-                        | "Middle"
-                        | "Bottom"
-                        | "Justified"
-                        | "Distributed";
+      content: >-
+        verticalAlignment?: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" |
+        "Distributed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" />
-                          | "Top"
-                          | "Middle"
-                          | "Bottom"
-                          | "Justified"
-                          | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" /> | "Top" | "Middle" | "Bottom" | "Justified" |
+          "Distributed"
   - name: verticalOverflow
     uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member'
     package: excel!

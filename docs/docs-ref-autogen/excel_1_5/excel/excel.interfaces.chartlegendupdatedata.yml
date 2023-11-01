@@ -42,26 +42,11 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        position?:
-                        | Excel.ChartLegendPosition
-                        | "Invalid"
-                        | "Top"
-                        | "Bottom"
-                        | "Left"
-                        | "Right"
-                        | "Corner"
-                        | "Custom";
+      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartLegendPosition:enum" />
-                          | "Invalid"
-                          | "Top"
-                          | "Bottom"
-                          | "Left"
-                          | "Right"
-                          | "Corner"
-                          | "Custom"
+        type: >-
+          <xref uid="excel!Excel.ChartLegendPosition:enum" /> | "Invalid" | "Top" | "Bottom" | "Left" | "Right" |
+          "Corner" | "Custom"
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
     package: excel!

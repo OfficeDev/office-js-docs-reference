@@ -77,10 +77,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Word.Interfaces.ListLevelCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
-                ): Word.ListLevelCollection;
+      content: >-
+        load(options?: Word.Interfaces.ListLevelCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ListLevelCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

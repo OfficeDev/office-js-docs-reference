@@ -45,20 +45,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        errorSubType?:
-                    | FieldErrorCellValueSubType
-                    | "Unknown"
-                    | "WebImageMissingFilePart"
-                    | "DataProviderError"
-                    | "RichValueRelMissingFilePart";
+      content: >-
+        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError" |
+        "RichValueRelMissingFilePart";
       return:
-        type: |-
-          | <xref uid="excel!Excel.FieldErrorCellValueSubType:enum" />
-                      | "Unknown"
-                      | "WebImageMissingFilePart"
-                      | "DataProviderError"
-                      | "RichValueRelMissingFilePart"
+        type: >-
+          <xref uid="excel!Excel.FieldErrorCellValueSubType:enum" /> | "Unknown" | "WebImageMissingFilePart" |
+          "DataProviderError" | "RichValueRelMissingFilePart"
   - name: errorType
     uid: 'excel!Excel.FieldErrorCellValue#errorType:member'
     package: excel!

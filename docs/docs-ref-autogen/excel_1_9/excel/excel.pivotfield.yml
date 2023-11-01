@@ -222,12 +222,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        sortByValues(
-                    sortBy: Excel.SortBy,
-                    valuesHierarchy: Excel.DataPivotHierarchy,
-                    pivotItemScope?: Array<PivotItem | string>,
-                ): void;
+      content: >-
+        sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
+        string>): void;
       parameters:
         - id: sortBy
           description: Specifies if the sorting is done in ascending or descending order.
@@ -256,12 +253,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        sortByValues(
-                    sortByString: "Ascending" | "Descending",
-                    valuesHierarchy: Excel.DataPivotHierarchy,
-                    pivotItemScope?: Array<PivotItem | string>,
-                ): void;
+      content: >-
+        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
+        pivotItemScope?: Array<PivotItem | string>): void;
       parameters:
         - id: sortByString
           description: Specifies if the sorting is done in ascending or descending order.

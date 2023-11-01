@@ -68,34 +68,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        displayUnit?:
-                        | Excel.ChartAxisDisplayUnit
-                        | "None"
-                        | "Hundreds"
-                        | "Thousands"
-                        | "TenThousands"
-                        | "HundredThousands"
-                        | "Millions"
-                        | "TenMillions"
-                        | "HundredMillions"
-                        | "Billions"
-                        | "Trillions"
-                        | "Custom";
+      content: >-
+        displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" />
-                          | "None"
-                          | "Hundreds"
-                          | "Thousands"
-                          | "TenThousands"
-                          | "HundredThousands"
-                          | "Millions"
-                          | "TenMillions"
-                          | "HundredMillions"
-                          | "Billions"
-                          | "Trillions"
-                          | "Custom"
+        type: >-
+          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+          "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
   - name: format
     uid: 'excel!Excel.Interfaces.ChartAxisData#format:member'
     package: excel!

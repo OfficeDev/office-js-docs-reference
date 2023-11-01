@@ -22,7 +22,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'container?: HTMLElement;'
+      content: 'container?: HTMLElement,'
       return:
         type: HTMLElement
   - name: height
@@ -58,7 +58,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sessionKey?: string;'
+      content: 'sessionKey?: string,'
       return:
         type: string
   - name: timeoutInMilliseconds

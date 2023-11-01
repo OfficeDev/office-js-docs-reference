@@ -154,94 +154,21 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        paperSize?:
-                        | Excel.PaperType
-                        | "Letter"
-                        | "LetterSmall"
-                        | "Tabloid"
-                        | "Ledger"
-                        | "Legal"
-                        | "Statement"
-                        | "Executive"
-                        | "A3"
-                        | "A4"
-                        | "A4Small"
-                        | "A5"
-                        | "B4"
-                        | "B5"
-                        | "Folio"
-                        | "Quatro"
-                        | "Paper10x14"
-                        | "Paper11x17"
-                        | "Note"
-                        | "Envelope9"
-                        | "Envelope10"
-                        | "Envelope11"
-                        | "Envelope12"
-                        | "Envelope14"
-                        | "Csheet"
-                        | "Dsheet"
-                        | "Esheet"
-                        | "EnvelopeDL"
-                        | "EnvelopeC5"
-                        | "EnvelopeC3"
-                        | "EnvelopeC4"
-                        | "EnvelopeC6"
-                        | "EnvelopeC65"
-                        | "EnvelopeB4"
-                        | "EnvelopeB5"
-                        | "EnvelopeB6"
-                        | "EnvelopeItaly"
-                        | "EnvelopeMonarch"
-                        | "EnvelopePersonal"
-                        | "FanfoldUS"
-                        | "FanfoldStdGerman"
-                        | "FanfoldLegalGerman";
+      content: >-
+        paperSize?: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" |
+        "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" |
+        "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
+        "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" |
+        "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" |
+        "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
       return:
-        type: |-
-          | <xref uid="excel!Excel.PaperType:enum" />
-                          | "Letter"
-                          | "LetterSmall"
-                          | "Tabloid"
-                          | "Ledger"
-                          | "Legal"
-                          | "Statement"
-                          | "Executive"
-                          | "A3"
-                          | "A4"
-                          | "A4Small"
-                          | "A5"
-                          | "B4"
-                          | "B5"
-                          | "Folio"
-                          | "Quatro"
-                          | "Paper10x14"
-                          | "Paper11x17"
-                          | "Note"
-                          | "Envelope9"
-                          | "Envelope10"
-                          | "Envelope11"
-                          | "Envelope12"
-                          | "Envelope14"
-                          | "Csheet"
-                          | "Dsheet"
-                          | "Esheet"
-                          | "EnvelopeDL"
-                          | "EnvelopeC5"
-                          | "EnvelopeC3"
-                          | "EnvelopeC4"
-                          | "EnvelopeC6"
-                          | "EnvelopeC65"
-                          | "EnvelopeB4"
-                          | "EnvelopeB5"
-                          | "EnvelopeB6"
-                          | "EnvelopeItaly"
-                          | "EnvelopeMonarch"
-                          | "EnvelopePersonal"
-                          | "FanfoldUS"
-                          | "FanfoldStdGerman"
-                          | "FanfoldLegalGerman"
+        type: >-
+          <xref uid="excel!Excel.PaperType:enum" /> | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" |
+          "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" |
+          "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" |
+          "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65"
+          | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" |
+          "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"
   - name: printComments
     uid: 'excel!Excel.Interfaces.PageLayoutData#printComments:member'
     package: excel!

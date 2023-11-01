@@ -20,6 +20,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'throwOnReadOnly?: boolean;'
+      content: 'throwOnReadOnly?: boolean'
       return:
         type: boolean

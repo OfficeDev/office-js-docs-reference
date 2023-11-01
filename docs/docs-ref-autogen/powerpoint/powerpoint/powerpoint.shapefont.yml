@@ -125,46 +125,15 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        underline:
-                    | PowerPoint.ShapeFontUnderlineStyle
-                    | "None"
-                    | "Single"
-                    | "Double"
-                    | "Heavy"
-                    | "Dotted"
-                    | "DottedHeavy"
-                    | "Dash"
-                    | "DashHeavy"
-                    | "DashLong"
-                    | "DashLongHeavy"
-                    | "DotDash"
-                    | "DotDashHeavy"
-                    | "DotDotDash"
-                    | "DotDotDashHeavy"
-                    | "Wavy"
-                    | "WavyHeavy"
-                    | "WavyDouble";
+      content: >-
+        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
+        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
+        | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
       return:
-        type: |-
-          | <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" />
-                      | "None"
-                      | "Single"
-                      | "Double"
-                      | "Heavy"
-                      | "Dotted"
-                      | "DottedHeavy"
-                      | "Dash"
-                      | "DashHeavy"
-                      | "DashLong"
-                      | "DashLongHeavy"
-                      | "DotDash"
-                      | "DotDashHeavy"
-                      | "DotDotDash"
-                      | "DotDotDashHeavy"
-                      | "Wavy"
-                      | "WavyHeavy"
-                      | "WavyDouble"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
+          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
+          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"
 methods:
   - name: load(options)
     uid: 'powerpoint!PowerPoint.ShapeFont#load:member(1)'

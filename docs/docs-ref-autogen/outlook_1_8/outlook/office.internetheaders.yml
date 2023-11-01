@@ -103,12 +103,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAsync(
-                    names: string[],
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<Record<string, string>>) => void,
-                ): void;
+      content: >-
+        getAsync(names: string[], options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<Record<string, string>>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
@@ -220,12 +217,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeAsync(
-                    names: string[],
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeAsync(names: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
@@ -344,12 +338,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    headers: Record<string, string>,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(headers: Record<string, string>, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
           description: >-

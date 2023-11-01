@@ -72,15 +72,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addOverlay(
-                    OverlayType: Visio.OverlayType,
-                    Content: string,
-                    OverlayHorizontalAlignment: Visio.OverlayHorizontalAlignment,
-                    OverlayVerticalAlignment: Visio.OverlayVerticalAlignment,
-                    Width: number,
-                    Height: number,
-                ): OfficeExtension.ClientResult<number>;
+      content: >-
+        addOverlay(OverlayType: Visio.OverlayType, Content: string, OverlayHorizontalAlignment:
+        Visio.OverlayHorizontalAlignment, OverlayVerticalAlignment: Visio.OverlayVerticalAlignment, Width: number,
+        Height: number): OfficeExtension.ClientResult<number>;
       parameters:
         - id: OverlayType
           description: 'An Overlay Type. Can be ''Text'', ''Image'' or ''Html''.'
@@ -136,15 +131,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addOverlay(
-                    OverlayTypeString: "Text" | "Image" | "Html",
-                    Content: string,
-                    OverlayHorizontalAlignmentString: "Left" | "Center" | "Right",
-                    OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom",
-                    Width: number,
-                    Height: number,
-                ): OfficeExtension.ClientResult<number>;
+      content: >-
+        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignmentString:
+        "Left" | "Center" | "Right", OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom", Width: number, Height:
+        number): OfficeExtension.ClientResult<number>;
       parameters:
         - id: OverlayTypeString
           description: 'An Overlay Type. Can be ''Text'', ''Image'' or ''Html''.'

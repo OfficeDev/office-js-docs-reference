@@ -18,24 +18,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        error?:
-                        | Excel.QueryError
-                        | "Unknown"
-                        | "None"
-                        | "FailedLoadToWorksheet"
-                        | "FailedLoadToDataModel"
-                        | "FailedDownload"
-                        | "FailedToCompleteDownload";
+      content: >-
+        error?: Excel.QueryError | "Unknown" | "None" | "FailedLoadToWorksheet" | "FailedLoadToDataModel" |
+        "FailedDownload" | "FailedToCompleteDownload";
       return:
-        type: |-
-          | <xref uid="excel!Excel.QueryError:enum" />
-                          | "Unknown"
-                          | "None"
-                          | "FailedLoadToWorksheet"
-                          | "FailedLoadToDataModel"
-                          | "FailedDownload"
-                          | "FailedToCompleteDownload"
+        type: >-
+          <xref uid="excel!Excel.QueryError:enum" /> | "Unknown" | "None" | "FailedLoadToWorksheet" |
+          "FailedLoadToDataModel" | "FailedDownload" | "FailedToCompleteDownload"
   - name: loadedTo
     uid: 'excel!Excel.Interfaces.QueryData#loadedTo:member'
     package: excel!

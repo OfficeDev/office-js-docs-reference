@@ -150,13 +150,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFromNamedItemAsync(
-                    itemName: string,
-                    bindingType: BindingType,
-                    options?: AddBindingFromNamedItemOptions,
-                    callback?: (result: AsyncResult<Binding>) => void,
-                ): void;
+      content: >-
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions,
+        callback?: (result: AsyncResult<Binding>) => void): void;
       parameters:
         - id: itemName
           description: Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
@@ -221,12 +217,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFromNamedItemAsync(
-                    itemName: string,
-                    bindingType: BindingType,
-                    callback?: (result: AsyncResult<Binding>) => void,
-                ): void;
+      content: >-
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
       parameters:
         - id: itemName
           description: Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
@@ -285,12 +278,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFromPromptAsync(
-                    bindingType: BindingType,
-                    options?: AddBindingFromPromptOptions,
-                    callback?: (result: AsyncResult<Binding>) => void,
-                ): void;
+      content: >-
+        addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result:
+        AsyncResult<Binding>) => void): void;
       parameters:
         - id: bindingType
           description: >-
@@ -399,12 +389,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFromSelectionAsync(
-                    bindingType: BindingType,
-                    options?: AddBindingFromSelectionOptions,
-                    callback?: (result: AsyncResult<Binding>) => void,
-                ): void;
+      content: >-
+        addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result:
+        AsyncResult<Binding>) => void): void;
       parameters:
         - id: bindingType
           description: >-
@@ -598,12 +585,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getByIdAsync(
-                    id: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<Binding>) => void,
-                ): void;
+      content: >-
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
       parameters:
         - id: id
           description: Specifies the unique name of the binding object. Required.
@@ -708,12 +692,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        releaseByIdAsync(
-                    id: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
       parameters:
         - id: id
           description: Specifies the unique name to be used to identify the binding object. Required.

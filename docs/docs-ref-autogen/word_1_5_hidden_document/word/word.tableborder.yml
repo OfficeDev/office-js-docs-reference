@@ -98,60 +98,18 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        type:
-                    | Word.BorderType
-                    | "Mixed"
-                    | "None"
-                    | "Single"
-                    | "Double"
-                    | "Dotted"
-                    | "Dashed"
-                    | "DotDashed"
-                    | "Dot2Dashed"
-                    | "Triple"
-                    | "ThinThickSmall"
-                    | "ThickThinSmall"
-                    | "ThinThickThinSmall"
-                    | "ThinThickMed"
-                    | "ThickThinMed"
-                    | "ThinThickThinMed"
-                    | "ThinThickLarge"
-                    | "ThickThinLarge"
-                    | "ThinThickThinLarge"
-                    | "Wave"
-                    | "DoubleWave"
-                    | "DashedSmall"
-                    | "DashDotStroked"
-                    | "ThreeDEmboss"
-                    | "ThreeDEngrave";
+      content: >-
+        type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
+        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
-        type: |-
-          | <xref uid="word!Word.BorderType:enum" />
-                      | "Mixed"
-                      | "None"
-                      | "Single"
-                      | "Double"
-                      | "Dotted"
-                      | "Dashed"
-                      | "DotDashed"
-                      | "Dot2Dashed"
-                      | "Triple"
-                      | "ThinThickSmall"
-                      | "ThickThinSmall"
-                      | "ThinThickThinSmall"
-                      | "ThinThickMed"
-                      | "ThickThinMed"
-                      | "ThinThickThinMed"
-                      | "ThinThickLarge"
-                      | "ThickThinLarge"
-                      | "ThinThickThinLarge"
-                      | "Wave"
-                      | "DoubleWave"
-                      | "DashedSmall"
-                      | "DashDotStroked"
-                      | "ThreeDEmboss"
-                      | "ThreeDEngrave"
+        type: >-
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
   - name: width
     uid: 'word!Word.TableBorder#width:member'
     package: word!

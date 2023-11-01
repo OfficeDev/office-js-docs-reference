@@ -90,43 +90,12 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        underline?:
-                        | Excel.ShapeFontUnderlineStyle
-                        | "None"
-                        | "Single"
-                        | "Double"
-                        | "Heavy"
-                        | "Dotted"
-                        | "DottedHeavy"
-                        | "Dash"
-                        | "DashHeavy"
-                        | "DashLong"
-                        | "DashLongHeavy"
-                        | "DotDash"
-                        | "DotDashHeavy"
-                        | "DotDotDash"
-                        | "DotDotDashHeavy"
-                        | "Wavy"
-                        | "WavyHeavy"
-                        | "WavyDouble";
+      content: >-
+        underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" |
+        "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" |
+        "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" />
-                          | "None"
-                          | "Single"
-                          | "Double"
-                          | "Heavy"
-                          | "Dotted"
-                          | "DottedHeavy"
-                          | "Dash"
-                          | "DashHeavy"
-                          | "DashLong"
-                          | "DashLongHeavy"
-                          | "DotDash"
-                          | "DotDashHeavy"
-                          | "DotDotDash"
-                          | "DotDotDashHeavy"
-                          | "Wavy"
-                          | "WavyHeavy"
-                          | "WavyDouble"
+        type: >-
+          <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
+          "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
+          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"

@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: id
@@ -32,7 +32,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'id?: string;'
+      content: 'id?: string'
       return:
         type: string
   - name: promptText
@@ -46,7 +46,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'promptText?: string;'
+      content: 'promptText?: string'
       return:
         type: string
   - name: sampleData
@@ -70,6 +70,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sampleData?: Office.TableData;'
+      content: 'sampleData?: Office.TableData'
       return:
         type: '<xref uid="office!Office.TableData:class" />'

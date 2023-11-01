@@ -34,90 +34,25 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        condition:
-                    | Excel.DateFilterCondition
-                    | "Unknown"
-                    | "Equals"
-                    | "Before"
-                    | "BeforeOrEqualTo"
-                    | "After"
-                    | "AfterOrEqualTo"
-                    | "Between"
-                    | "Tomorrow"
-                    | "Today"
-                    | "Yesterday"
-                    | "NextWeek"
-                    | "ThisWeek"
-                    | "LastWeek"
-                    | "NextMonth"
-                    | "ThisMonth"
-                    | "LastMonth"
-                    | "NextQuarter"
-                    | "ThisQuarter"
-                    | "LastQuarter"
-                    | "NextYear"
-                    | "ThisYear"
-                    | "LastYear"
-                    | "YearToDate"
-                    | "AllDatesInPeriodQuarter1"
-                    | "AllDatesInPeriodQuarter2"
-                    | "AllDatesInPeriodQuarter3"
-                    | "AllDatesInPeriodQuarter4"
-                    | "AllDatesInPeriodJanuary"
-                    | "AllDatesInPeriodFebruary"
-                    | "AllDatesInPeriodMarch"
-                    | "AllDatesInPeriodApril"
-                    | "AllDatesInPeriodMay"
-                    | "AllDatesInPeriodJune"
-                    | "AllDatesInPeriodJuly"
-                    | "AllDatesInPeriodAugust"
-                    | "AllDatesInPeriodSeptember"
-                    | "AllDatesInPeriodOctober"
-                    | "AllDatesInPeriodNovember"
-                    | "AllDatesInPeriodDecember";
+      content: >-
+        condition: Excel.DateFilterCondition | "Unknown" | "Equals" | "Before" | "BeforeOrEqualTo" | "After" |
+        "AfterOrEqualTo" | "Between" | "Tomorrow" | "Today" | "Yesterday" | "NextWeek" | "ThisWeek" | "LastWeek" |
+        "NextMonth" | "ThisMonth" | "LastMonth" | "NextQuarter" | "ThisQuarter" | "LastQuarter" | "NextYear" |
+        "ThisYear" | "LastYear" | "YearToDate" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
+        "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodFebruary"
+        | "AllDatesInPeriodMarch" | "AllDatesInPeriodApril" | "AllDatesInPeriodMay" | "AllDatesInPeriodJune" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodAugust" | "AllDatesInPeriodSeptember" | "AllDatesInPeriodOctober" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodDecember";
       return:
-        type: |-
-          | <xref uid="excel!Excel.DateFilterCondition:enum" />
-                      | "Unknown"
-                      | "Equals"
-                      | "Before"
-                      | "BeforeOrEqualTo"
-                      | "After"
-                      | "AfterOrEqualTo"
-                      | "Between"
-                      | "Tomorrow"
-                      | "Today"
-                      | "Yesterday"
-                      | "NextWeek"
-                      | "ThisWeek"
-                      | "LastWeek"
-                      | "NextMonth"
-                      | "ThisMonth"
-                      | "LastMonth"
-                      | "NextQuarter"
-                      | "ThisQuarter"
-                      | "LastQuarter"
-                      | "NextYear"
-                      | "ThisYear"
-                      | "LastYear"
-                      | "YearToDate"
-                      | "AllDatesInPeriodQuarter1"
-                      | "AllDatesInPeriodQuarter2"
-                      | "AllDatesInPeriodQuarter3"
-                      | "AllDatesInPeriodQuarter4"
-                      | "AllDatesInPeriodJanuary"
-                      | "AllDatesInPeriodFebruary"
-                      | "AllDatesInPeriodMarch"
-                      | "AllDatesInPeriodApril"
-                      | "AllDatesInPeriodMay"
-                      | "AllDatesInPeriodJune"
-                      | "AllDatesInPeriodJuly"
-                      | "AllDatesInPeriodAugust"
-                      | "AllDatesInPeriodSeptember"
-                      | "AllDatesInPeriodOctober"
-                      | "AllDatesInPeriodNovember"
-                      | "AllDatesInPeriodDecember"
+        type: >-
+          <xref uid="excel!Excel.DateFilterCondition:enum" /> | "Unknown" | "Equals" | "Before" | "BeforeOrEqualTo" |
+          "After" | "AfterOrEqualTo" | "Between" | "Tomorrow" | "Today" | "Yesterday" | "NextWeek" | "ThisWeek" |
+          "LastWeek" | "NextMonth" | "ThisMonth" | "LastMonth" | "NextQuarter" | "ThisQuarter" | "LastQuarter" |
+          "NextYear" | "ThisYear" | "LastYear" | "YearToDate" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+          | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodJanuary" |
+          "AllDatesInPeriodFebruary" | "AllDatesInPeriodMarch" | "AllDatesInPeriodApril" | "AllDatesInPeriodMay" |
+          "AllDatesInPeriodJune" | "AllDatesInPeriodJuly" | "AllDatesInPeriodAugust" | "AllDatesInPeriodSeptember" |
+          "AllDatesInPeriodOctober" | "AllDatesInPeriodNovember" | "AllDatesInPeriodDecember"
   - name: exclusive
     uid: 'excel!Excel.PivotDateFilter#exclusive:member'
     package: excel!

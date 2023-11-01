@@ -169,10 +169,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.SettingCollection;
+      content: >-
+        load(options?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SettingCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

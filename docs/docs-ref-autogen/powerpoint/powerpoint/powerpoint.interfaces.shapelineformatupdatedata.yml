@@ -34,36 +34,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        dashStyle?:
-                        | PowerPoint.ShapeLineDashStyle
-                        | "Dash"
-                        | "DashDot"
-                        | "DashDotDot"
-                        | "LongDash"
-                        | "LongDashDot"
-                        | "RoundDot"
-                        | "Solid"
-                        | "SquareDot"
-                        | "LongDashDotDot"
-                        | "SystemDash"
-                        | "SystemDot"
-                        | "SystemDashDot";
+      content: >-
+        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
+        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
       return:
-        type: |-
-          | <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" />
-                          | "Dash"
-                          | "DashDot"
-                          | "DashDotDot"
-                          | "LongDash"
-                          | "LongDashDot"
-                          | "RoundDot"
-                          | "Solid"
-                          | "SquareDot"
-                          | "LongDashDotDot"
-                          | "SystemDash"
-                          | "SystemDot"
-                          | "SystemDashDot"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" /> | "Dash" | "DashDot" | "DashDotDot" | "LongDash"
+          | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
+          "SystemDashDot"
   - name: style
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member'
     package: powerpoint!

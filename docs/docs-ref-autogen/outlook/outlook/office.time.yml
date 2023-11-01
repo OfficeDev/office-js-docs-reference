@@ -219,12 +219,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    dateTime: Date,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(dateTime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).

@@ -20,12 +20,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addAsync(
-                    xml: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<CustomXmlPart>) => void,
-                ): void;
+      content: >-
+        addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) =>
+        void): void;
       parameters:
         - id: xml
           description: The XML to add to the newly created custom XML part.
@@ -139,12 +136,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getByIdAsync(
-                    id: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<CustomXmlPart>) => void,
-                ): void;
+      content: >-
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>)
+        => void): void;
       parameters:
         - id: id
           description: 'The GUID of the custom XML part, including opening and closing braces.'
@@ -203,12 +197,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getByNamespaceAsync(
-                    ns: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<CustomXmlPart[]>) => void,
-                ): void;
+      content: >-
+        getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<CustomXmlPart[]>) => void): void;
       parameters:
         - id: ns
           description: The namespace URI.

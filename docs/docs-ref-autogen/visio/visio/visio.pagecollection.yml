@@ -103,10 +103,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions,
-                ): Visio.PageCollection;
+      content: >-
+        load(options?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.PageCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

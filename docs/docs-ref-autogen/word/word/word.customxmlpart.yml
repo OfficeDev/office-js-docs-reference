@@ -388,14 +388,9 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        insertAttribute(
-                    xpath: string,
-                    namespaceMappings: {
-                        [key: string]: string;
-                    },
-                    name: string,
-                    value: string,
-                ): void;
+        insertAttribute(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }, name: string, value: string): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -408,8 +403,8 @@ methods:
             the forward slash "/".
           type: |-
             {
-                            [key: string]: string;
-                        }
+                        [key: string]: string;
+                    }
         - id: name
           description: Required. Name of the attribute.
           type: string
@@ -818,14 +813,9 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        updateAttribute(
-                    xpath: string,
-                    namespaceMappings: {
-                        [key: string]: string;
-                    },
-                    name: string,
-                    value: string,
-                ): void;
+        updateAttribute(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }, name: string, value: string): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -838,8 +828,8 @@ methods:
             the forward slash "/".
           type: |-
             {
-                            [key: string]: string;
-                        }
+                        [key: string]: string;
+                    }
         - id: name
           description: Required. Name of the attribute.
           type: string

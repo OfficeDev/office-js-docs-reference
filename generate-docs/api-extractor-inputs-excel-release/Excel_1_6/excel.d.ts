@@ -4,6 +4,8 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
+
+
 export declare namespace Excel {
     
     
@@ -28,7 +30,6 @@ export declare namespace Excel {
     
     
     
-        
     
     
     
@@ -46,7 +47,10 @@ export declare namespace Excel {
     
     
     
-        
+    
+    
+    
+    
     
     
     
@@ -270,8 +274,8 @@ export declare namespace Excel {
         readonly workbook: Workbook;
         readonly application: Application;
         /**
-         * [Api set: ExcelApi 1.5]
-         */
+        * [Api set: ExcelApi 1.5]
+        */
         readonly runtime: Runtime;
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
@@ -293,24 +297,18 @@ export declare namespace Excel {
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(
-        object: OfficeExtension.ClientObject,
-        batch: (context: Excel.RequestContext) => Promise<T>,
-    ): Promise<T>;
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(
-        objects: OfficeExtension.ClientObject[],
-        batch: (context: Excel.RequestContext) => Promise<T>,
-    ): Promise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
-     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
-     */
+    * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
+    * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+    */
     export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -318,10 +316,7 @@ export declare namespace Excel {
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(
-        context: OfficeExtension.ClientRequestContext,
-        batch: (context: Excel.RequestContext) => Promise<T>,
-    ): Promise<T>;
+    export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     
@@ -351,7 +346,7 @@ export declare namespace Excel {
     
     /**
      * Provides information about the selection that raised the selection changed event.
-
+                
                  **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
@@ -512,9 +507,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Runtime;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Runtime object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RuntimeData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Runtime object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RuntimeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RuntimeData;
     }
     /**
@@ -596,9 +591,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Application;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ApplicationData;
     }
     
@@ -711,7 +706,8 @@ export declare namespace Excel {
         
         
         
-                /**
+        
+        /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
          * @remarks
@@ -719,7 +715,8 @@ export declare namespace Excel {
          */
         getSelectedRange(): Excel.Range;
         
-                
+        
+        
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -754,9 +751,9 @@ export declare namespace Excel {
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.WorkbookData;
     }
     
@@ -876,7 +873,8 @@ export declare namespace Excel {
          */
         calculate(markAllDirty: boolean): void;
         
-                /**
+        
+        /**
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
          * @remarks
@@ -962,7 +960,9 @@ export declare namespace Excel {
          * @param valuesOnly - Optional. Considers only cells with values as used cells.
          */
         getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;
-                /**
+        
+        
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -998,9 +998,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
     /**
@@ -1081,9 +1081,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.WorksheetCollection;
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1114,9 +1112,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
     }
     /**
@@ -1185,9 +1183,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorksheetProtection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.WorksheetProtectionData;
     }
     /**
@@ -1463,7 +1461,8 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Range): void;
         
-                /**
+        
+        /**
          * Calculates a range of cells on a worksheet.
          *
          * @remarks
@@ -1490,7 +1489,9 @@ export declare namespace Excel {
         clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
         
         
-                        /**
+        
+        
+        /**
          * Deletes the cells associated with the range.
          *
          * @remarks
@@ -1531,7 +1532,8 @@ export declare namespace Excel {
          * @param column - Column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
-                /**
+        
+        /**
          * Gets a column contained in the range.
          *
          * @remarks
@@ -1540,7 +1542,8 @@ export declare namespace Excel {
          * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
-                /**
+        
+        /**
          * Gets a certain number of columns to the right of the current `Range` object.
          *
          * @remarks
@@ -1652,7 +1655,8 @@ export declare namespace Excel {
          * @param row - Row number of the range to be retrieved. Zero-indexed.
          */
         getRow(row: number): Excel.Range;
-                /**
+        
+        /**
          * Gets a certain number of rows above the current `Range` object.
          *
          * @remarks
@@ -1671,7 +1675,14 @@ export declare namespace Excel {
          */
         getRowsBelow(count?: number): Excel.Range;
         
-                                
+        
+        
+        
+        
+        
+        
+        
+        
         
         /**
          * Returns the used range of the given range object. If there are no used cells within the range, this function will throw an `ItemNotFound` error.
@@ -1732,7 +1743,8 @@ export declare namespace Excel {
         merge(across?: boolean): void;
         
         
-                /**
+        
+        /**
          * Selects the specified range in the Excel UI.
          *
          * @remarks
@@ -1785,9 +1797,9 @@ export declare namespace Excel {
          */
         untrack(): Excel.Range;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeData;
     }
     /**
@@ -1951,9 +1963,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeView;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeViewData;
     }
     /**
@@ -1988,9 +2000,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.RangeViewCollection;
+        load(options?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2004,9 +2014,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.RangeViewCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.RangeViewCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.RangeViewCollectionData;
     }
     /**
@@ -2061,9 +2071,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.SettingCollection;
+        load(options?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2086,9 +2094,9 @@ export declare namespace Excel {
          */
         readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.SettingCollectionData;
     }
     /**
@@ -2151,9 +2159,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Setting;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.SettingData;
     }
     /**
@@ -2222,9 +2230,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.NamedItemCollection;
+        load(options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2238,9 +2244,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.NamedItemCollectionData;
     }
     /**
@@ -2366,9 +2372,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NamedItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.NamedItemData;
     }
     
@@ -2455,7 +2461,7 @@ export declare namespace Excel {
         readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
         /**
          * Occurs when the selected content in the binding is changed.
-
+                    
                      **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
@@ -2465,9 +2471,9 @@ export declare namespace Excel {
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.BindingData;
     }
     /**
@@ -2596,9 +2602,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.BindingCollection;
+        load(options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2612,9 +2616,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.BindingCollectionData;
     }
     /**
@@ -2685,9 +2689,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.TableCollection;
+        load(options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2704,9 +2706,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.TableCollectionData;
     }
     
@@ -2773,7 +2775,7 @@ export declare namespace Excel {
         
         /**
          * Name of the table.
-
+                    
                      The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
@@ -2911,9 +2913,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TableData;
     }
     /**
@@ -2944,11 +2946,7 @@ export declare namespace Excel {
          * @param values - Optional. A 2D array of unformatted values of the table column.
          * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.
          */
-        add(
-            index?: number,
-            values?: Array<Array<boolean | string | number>> | boolean | string | number,
-            name?: string,
-        ): Excel.TableColumn;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         
         /**
          * Gets the number of columns in the table.
@@ -2990,9 +2988,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.TableColumnCollection;
+        load(options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3006,9 +3002,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.TableColumnCollectionData;
     }
     /**
@@ -3123,14 +3119,14 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableColumn;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TableColumnData;
     }
     /**
      * Represents a collection of all the rows that are part of the table.
-
+                
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3153,7 +3149,7 @@ export declare namespace Excel {
         readonly count: number;
         /**
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3166,11 +3162,7 @@ export declare namespace Excel {
          * @param values - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
-        add(
-            index?: number,
-            values?: Array<Array<boolean | string | number>> | boolean | string | number,
-            alwaysInsert?: boolean,
-        ): Excel.TableRow;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
         
         
@@ -3183,7 +3175,7 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a row based on its position in the collection.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3200,9 +3192,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.TableRowCollection;
+        load(options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3216,14 +3206,14 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.TableRowCollectionData;
     }
     /**
      * Represents a row in a table.
-
+                
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3296,9 +3286,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableRow;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TableRowData;
     }
     
@@ -3361,16 +3351,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        horizontalAlignment:
-            | Excel.HorizontalAlignment
-            | "General"
-            | "Left"
-            | "Center"
-            | "Right"
-            | "Fill"
-            | "Justify"
-            | "CenterAcrossSelection"
-            | "Distributed";
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
         
         
         /**
@@ -3443,9 +3424,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeFormatData;
     }
     /**
@@ -3501,9 +3482,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.FormatProtection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.FormatProtectionData;
     }
     /**
@@ -3522,7 +3503,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         color: string;
-                
+        
+        
         
         
         /**
@@ -3562,9 +3544,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFill;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeFillData;
     }
     /**
@@ -3589,32 +3571,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        readonly sideIndex:
-            | Excel.BorderIndex
-            | "EdgeTop"
-            | "EdgeBottom"
-            | "EdgeLeft"
-            | "EdgeRight"
-            | "InsideVertical"
-            | "InsideHorizontal"
-            | "DiagonalDown"
-            | "DiagonalUp";
+        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
         /**
          * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        style:
-            | Excel.BorderLineStyle
-            | "None"
-            | "Continuous"
-            | "Dash"
-            | "DashDot"
-            | "DashDotDot"
-            | "Dot"
-            | "Double"
-            | "SlantDashDot";
+        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
         
         /**
          * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -3653,9 +3617,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeBorder;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeBorderData;
     }
     /**
@@ -3694,17 +3658,7 @@ export declare namespace Excel {
          *
          * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
          */
-        getItem(
-            indexString:
-                | "EdgeTop"
-                | "EdgeBottom"
-                | "EdgeLeft"
-                | "EdgeRight"
-                | "InsideVertical"
-                | "InsideHorizontal"
-                | "DiagonalDown"
-                | "DiagonalUp",
-        ): Excel.RangeBorder;
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -3719,9 +3673,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.RangeBorderCollection;
+        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3735,9 +3687,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.RangeBorderCollectionData;
     }
     /**
@@ -3825,9 +3777,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFont;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.RangeFontData;
     }
     /**
@@ -3869,93 +3821,7 @@ export declare namespace Excel {
          * @param sourceData - The `Range` object corresponding to the source data.
          * @param seriesByString - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(
-            typeString:
-                | "Invalid"
-                | "ColumnClustered"
-                | "ColumnStacked"
-                | "ColumnStacked100"
-                | "3DColumnClustered"
-                | "3DColumnStacked"
-                | "3DColumnStacked100"
-                | "BarClustered"
-                | "BarStacked"
-                | "BarStacked100"
-                | "3DBarClustered"
-                | "3DBarStacked"
-                | "3DBarStacked100"
-                | "LineStacked"
-                | "LineStacked100"
-                | "LineMarkers"
-                | "LineMarkersStacked"
-                | "LineMarkersStacked100"
-                | "PieOfPie"
-                | "PieExploded"
-                | "3DPieExploded"
-                | "BarOfPie"
-                | "XYScatterSmooth"
-                | "XYScatterSmoothNoMarkers"
-                | "XYScatterLines"
-                | "XYScatterLinesNoMarkers"
-                | "AreaStacked"
-                | "AreaStacked100"
-                | "3DAreaStacked"
-                | "3DAreaStacked100"
-                | "DoughnutExploded"
-                | "RadarMarkers"
-                | "RadarFilled"
-                | "Surface"
-                | "SurfaceWireframe"
-                | "SurfaceTopView"
-                | "SurfaceTopViewWireframe"
-                | "Bubble"
-                | "Bubble3DEffect"
-                | "StockHLC"
-                | "StockOHLC"
-                | "StockVHLC"
-                | "StockVOHLC"
-                | "CylinderColClustered"
-                | "CylinderColStacked"
-                | "CylinderColStacked100"
-                | "CylinderBarClustered"
-                | "CylinderBarStacked"
-                | "CylinderBarStacked100"
-                | "CylinderCol"
-                | "ConeColClustered"
-                | "ConeColStacked"
-                | "ConeColStacked100"
-                | "ConeBarClustered"
-                | "ConeBarStacked"
-                | "ConeBarStacked100"
-                | "ConeCol"
-                | "PyramidColClustered"
-                | "PyramidColStacked"
-                | "PyramidColStacked100"
-                | "PyramidBarClustered"
-                | "PyramidBarStacked"
-                | "PyramidBarStacked100"
-                | "PyramidCol"
-                | "3DColumn"
-                | "Line"
-                | "3DLine"
-                | "3DPie"
-                | "Pie"
-                | "XYScatter"
-                | "3DArea"
-                | "Area"
-                | "Doughnut"
-                | "Radar"
-                | "Histogram"
-                | "Boxwhisker"
-                | "Pareto"
-                | "RegionMap"
-                | "Treemap"
-                | "Waterfall"
-                | "Sunburst"
-                | "Funnel",
-            sourceData: Range,
-            seriesByString?: "Auto" | "Columns" | "Rows",
-        ): Excel.Chart;
+        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          * Returns the number of charts in the worksheet.
          *
@@ -3996,9 +3862,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.ChartCollection;
+        load(options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4016,9 +3880,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.ChartCollectionData;
     }
     /**
@@ -4083,7 +3947,9 @@ export declare namespace Excel {
          */
         readonly worksheet: Excel.Worksheet;
         
-                /**
+        
+        
+        /**
          * Specifies the height, in points, of the chart object.
          *
          * @remarks
@@ -4154,11 +4020,7 @@ export declare namespace Excel {
          * @param width - Optional. The desired width of the resulting image.
          * @param fittingMode - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
-        getImage(
-            width?: number,
-            height?: number,
-            fittingMode?: Excel.ImageFittingMode,
-        ): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
          * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
@@ -4170,11 +4032,7 @@ export declare namespace Excel {
          * @param width - Optional. The desired width of the resulting image.
          * @param fittingModeString - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
-        getImage(
-            width?: number,
-            height?: number,
-            fittingModeString?: "Fit" | "FitAndCenter" | "Fill",
-        ): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
          * Resets the source data for the chart.
          *
@@ -4229,9 +4087,9 @@ export declare namespace Excel {
         
         
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartData;
     }
     
@@ -4259,7 +4117,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-                
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -4290,9 +4149,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAreaFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAreaFormatData;
     }
     /**
@@ -4335,9 +4194,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.ChartSeriesCollection;
+        load(options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4351,9 +4208,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.ChartSeriesCollectionData;
     }
     /**
@@ -4388,7 +4245,6 @@ export declare namespace Excel {
         
         
         
-                
         
         
         
@@ -4409,7 +4265,10 @@ export declare namespace Excel {
         
         
         
-                /**
+        
+        
+        
+        /**
          * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
          *
          * @remarks
@@ -4424,7 +4283,9 @@ export declare namespace Excel {
         
         
         
-                
+        
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -4435,8 +4296,12 @@ export declare namespace Excel {
         set(properties: Excel.ChartSeries): void;
         
         
-                                
-                
+        
+        
+        
+        
+        
+        
         
         
         /**
@@ -4461,9 +4326,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeries;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartSeriesData;
     }
     /**
@@ -4519,9 +4384,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeriesFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartSeriesFormatData;
     }
     /**
@@ -4563,9 +4428,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.ChartPointsCollection;
+        load(options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4579,9 +4442,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.ChartPointsCollectionData;
     }
     /**
@@ -4605,7 +4468,8 @@ export declare namespace Excel {
         
         
         
-                /**
+        
+        /**
          * Returns the value of a chart point.
          *
          * @remarks
@@ -4642,9 +4506,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPoint;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartPointData;
     }
     /**
@@ -4694,9 +4558,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPointFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartPointFormatData;
     }
     /**
@@ -4761,9 +4625,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxes;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAxesData;
     }
     /**
@@ -4808,7 +4672,8 @@ export declare namespace Excel {
         
         
         
-                
+        
+        
         
         
         
@@ -4894,9 +4759,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxis;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAxisData;
     }
     /**
@@ -4953,9 +4818,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAxisFormatData;
     }
     /**
@@ -5020,9 +4885,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitle;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAxisTitleData;
     }
     /**
@@ -5073,9 +4938,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitleFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;
     }
     /**
@@ -5095,27 +4960,16 @@ export declare namespace Excel {
          */
         readonly format: Excel.ChartDataLabelFormat;
         
-                
+        
+        
+        
         /**
          * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        position:
-            | Excel.ChartDataLabelPosition
-            | "Invalid"
-            | "None"
-            | "Center"
-            | "InsideEnd"
-            | "InsideBase"
-            | "OutsideEnd"
-            | "Left"
-            | "Right"
-            | "Top"
-            | "Bottom"
-            | "BestFit"
-            | "Callout";
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
         /**
          * String representing the separator used for the data labels on a chart.
          *
@@ -5197,9 +5051,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabels;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartDataLabelsData;
     }
     
@@ -5257,9 +5111,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabelFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
     }
     
@@ -5319,9 +5173,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlines;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartGridlinesData;
     }
     /**
@@ -5370,9 +5224,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlinesFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartGridlinesFormatData;
     }
     /**
@@ -5448,9 +5302,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegend;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartLegendData;
     }
     
@@ -5509,9 +5363,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegendFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartLegendFormatData;
     }
     
@@ -5532,7 +5386,8 @@ export declare namespace Excel {
          */
         readonly format: Excel.ChartTitleFormat;
         
-                
+        
+        
         /**
          * Specifies if the chart title will overlay the chart.
          *
@@ -5592,9 +5447,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitle;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartTitleData;
     }
     
@@ -5652,9 +5507,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitleFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartTitleFormatData;
     }
     /**
@@ -5684,9 +5539,9 @@ export declare namespace Excel {
          */
         setSolidColor(color: string): void;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): {
             [key: string]: string;
         };
@@ -5710,7 +5565,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         color: string;
-                
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -5748,9 +5604,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLineFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartLineFormatData;
     }
     /**
@@ -5834,9 +5690,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartFont;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ChartFontData;
     }
     
@@ -5867,13 +5723,7 @@ export declare namespace Excel {
          * @param orientation - Optional. Whether the operation is sorting rows or columns.
          * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(
-            fields: Excel.SortField[],
-            matchCase?: boolean,
-            hasHeaders?: boolean,
-            orientation?: Excel.SortOrientation,
-            method?: Excel.SortMethod,
-        ): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation, method?: Excel.SortMethod): void;
         /**
          * Perform a sort operation.
          *
@@ -5886,17 +5736,11 @@ export declare namespace Excel {
          * @param orientationString - Optional. Whether the operation is sorting rows or columns.
          * @param methodString - Optional. The ordering method used for Chinese characters.
          */
-        apply(
-            fields: Excel.SortField[],
-            matchCase?: boolean,
-            hasHeaders?: boolean,
-            orientationString?: "Rows" | "Columns",
-            methodString?: "PinYin" | "StrokeCount",
-        ): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", methodString?: "PinYin" | "StrokeCount"): void;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): {
             [key: string]: string;
         };
@@ -5989,9 +5833,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableSort;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TableSortData;
     }
     /**
@@ -6136,44 +5980,7 @@ export declare namespace Excel {
          *
          * @param criteriaString - The dynamic criteria to apply.
          */
-        applyDynamicFilter(
-            criteriaString:
-                | "Unknown"
-                | "AboveAverage"
-                | "AllDatesInPeriodApril"
-                | "AllDatesInPeriodAugust"
-                | "AllDatesInPeriodDecember"
-                | "AllDatesInPeriodFebruray"
-                | "AllDatesInPeriodJanuary"
-                | "AllDatesInPeriodJuly"
-                | "AllDatesInPeriodJune"
-                | "AllDatesInPeriodMarch"
-                | "AllDatesInPeriodMay"
-                | "AllDatesInPeriodNovember"
-                | "AllDatesInPeriodOctober"
-                | "AllDatesInPeriodQuarter1"
-                | "AllDatesInPeriodQuarter2"
-                | "AllDatesInPeriodQuarter3"
-                | "AllDatesInPeriodQuarter4"
-                | "AllDatesInPeriodSeptember"
-                | "BelowAverage"
-                | "LastMonth"
-                | "LastQuarter"
-                | "LastWeek"
-                | "LastYear"
-                | "NextMonth"
-                | "NextQuarter"
-                | "NextWeek"
-                | "NextYear"
-                | "ThisMonth"
-                | "ThisQuarter"
-                | "ThisWeek"
-                | "ThisYear"
-                | "Today"
-                | "Tomorrow"
-                | "YearToDate"
-                | "Yesterday",
-        ): void;
+        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
         /**
          * Apply a "Font Color" filter to the column for the given color.
          *
@@ -6248,9 +6055,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Filter;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.FilterData;
     }
     /**
@@ -6270,7 +6077,7 @@ export declare namespace Excel {
         /**
          * The first criterion used to filter data. Used as an operator in the case of `custom` filtering.
                      For example ">50" for numbers greater than 50, or "=*s" for values ending in "s".
-
+                    
                      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to `topItems`).
          *
          * @remarks
@@ -6290,61 +6097,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        dynamicCriteria?:
-            | Excel.DynamicFilterCriteria
-            | "Unknown"
-            | "AboveAverage"
-            | "AllDatesInPeriodApril"
-            | "AllDatesInPeriodAugust"
-            | "AllDatesInPeriodDecember"
-            | "AllDatesInPeriodFebruray"
-            | "AllDatesInPeriodJanuary"
-            | "AllDatesInPeriodJuly"
-            | "AllDatesInPeriodJune"
-            | "AllDatesInPeriodMarch"
-            | "AllDatesInPeriodMay"
-            | "AllDatesInPeriodNovember"
-            | "AllDatesInPeriodOctober"
-            | "AllDatesInPeriodQuarter1"
-            | "AllDatesInPeriodQuarter2"
-            | "AllDatesInPeriodQuarter3"
-            | "AllDatesInPeriodQuarter4"
-            | "AllDatesInPeriodSeptember"
-            | "BelowAverage"
-            | "LastMonth"
-            | "LastQuarter"
-            | "LastWeek"
-            | "LastYear"
-            | "NextMonth"
-            | "NextQuarter"
-            | "NextWeek"
-            | "NextYear"
-            | "ThisMonth"
-            | "ThisQuarter"
-            | "ThisWeek"
-            | "ThisYear"
-            | "Today"
-            | "Tomorrow"
-            | "YearToDate"
-            | "Yesterday";
+        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
         /**
          * The property used by the filter to determine whether the values should stay visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        filterOn:
-            | Excel.FilterOn
-            | "BottomItems"
-            | "BottomPercent"
-            | "CellColor"
-            | "Dynamic"
-            | "FontColor"
-            | "Values"
-            | "TopItems"
-            | "TopPercent"
-            | "Icon"
-            | "Custom";
+        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom";
         /**
          * The icon used to filter cells. Used with `icon` filtering.
          *
@@ -6414,29 +6174,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        set:
-            | Excel.IconSet
-            | "Invalid"
-            | "ThreeArrows"
-            | "ThreeArrowsGray"
-            | "ThreeFlags"
-            | "ThreeTrafficLights1"
-            | "ThreeTrafficLights2"
-            | "ThreeSigns"
-            | "ThreeSymbols"
-            | "ThreeSymbols2"
-            | "FourArrows"
-            | "FourArrowsGray"
-            | "FourRedToBlack"
-            | "FourRating"
-            | "FourTrafficLights"
-            | "FiveArrows"
-            | "FiveArrowsGray"
-            | "FiveRating"
-            | "FiveQuarters"
-            | "ThreeStars"
-            | "ThreeTriangles"
-            | "FiveBoxes";
+        set: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
     }
     /**
      * A scoped collection of custom XML parts.
@@ -6499,11 +6237,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?:
-                & Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-                & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.CustomXmlPartScopedCollection;
+        load(options?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6517,9 +6251,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;
     }
     /**
@@ -6583,9 +6317,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.CustomXmlPartCollection;
+        load(options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6599,9 +6331,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;
     }
     /**
@@ -6672,9 +6404,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CustomXmlPart;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.CustomXmlPartData;
     }
     
@@ -6728,9 +6460,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.PivotTableCollection;
+        load(options?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6744,9 +6474,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.PivotTableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.PivotTableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.PivotTableCollectionData;
     }
     /**
@@ -6830,9 +6560,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotTable;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.PivotTable object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.PivotTable object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.PivotTableData;
     }
     
@@ -6888,17 +6618,7 @@ export declare namespace Excel {
          *
          * @param typeString - The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
          */
-        add(
-            typeString:
-                | "Custom"
-                | "DataBar"
-                | "ColorScale"
-                | "IconSet"
-                | "TopBottom"
-                | "PresetCriteria"
-                | "ContainsText"
-                | "CellValue",
-        ): Excel.ConditionalFormat;
+        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
         /**
          * Clears all conditional formats active on the current specified range.
          *
@@ -6938,9 +6658,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.ConditionalFormatCollection;
+        load(options?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6954,9 +6672,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.ConditionalFormatCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ConditionalFormatCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;
     }
     /**
@@ -7117,16 +6835,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        readonly type:
-            | Excel.ConditionalFormatType
-            | "Custom"
-            | "DataBar"
-            | "ColorScale"
-            | "IconSet"
-            | "TopBottom"
-            | "PresetCriteria"
-            | "ContainsText"
-            | "CellValue";
+        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -7189,9 +6898,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalFormatData;
     }
     /**
@@ -7292,9 +7001,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DataBarConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.DataBarConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.DataBarConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.DataBarConditionalFormatData;
     }
     /**
@@ -7333,10 +7042,7 @@ export declare namespace Excel {
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
-        set(
-            properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData,
-            options?: OfficeExtension.UpdateOptions,
-        ): void;
+        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalDataBarPositiveFormat): void;
         /**
@@ -7344,9 +7050,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions,
-        ): Excel.ConditionalDataBarPositiveFormat;
+        load(options?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7363,9 +7067,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalDataBarPositiveFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalDataBarPositiveFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalDataBarPositiveFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;
     }
     /**
@@ -7411,10 +7115,7 @@ export declare namespace Excel {
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
-        set(
-            properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData,
-            options?: OfficeExtension.UpdateOptions,
-        ): void;
+        set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalDataBarNegativeFormat): void;
         /**
@@ -7422,9 +7123,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions,
-        ): Excel.ConditionalDataBarNegativeFormat;
+        load(options?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7441,9 +7140,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalDataBarNegativeFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalDataBarNegativeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarNegativeFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalDataBarNegativeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarNegativeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;
     }
     /**
@@ -7466,16 +7165,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        type:
-            | Excel.ConditionalFormatRuleType
-            | "Invalid"
-            | "Automatic"
-            | "LowestValue"
-            | "HighestValue"
-            | "Number"
-            | "Percent"
-            | "Formula"
-            | "Percentile";
+        type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile";
     }
     /**
      * Represents a custom conditional format type.
@@ -7530,9 +7220,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CustomConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.CustomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.CustomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.CustomConditionalFormatData;
     }
     /**
@@ -7595,9 +7285,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalFormatRule;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalFormatRuleData;
     }
     /**
@@ -7636,29 +7326,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        style:
-            | Excel.IconSet
-            | "Invalid"
-            | "ThreeArrows"
-            | "ThreeArrowsGray"
-            | "ThreeFlags"
-            | "ThreeTrafficLights1"
-            | "ThreeTrafficLights2"
-            | "ThreeSigns"
-            | "ThreeSymbols"
-            | "ThreeSymbols2"
-            | "FourArrows"
-            | "FourArrowsGray"
-            | "FourRedToBlack"
-            | "FourRating"
-            | "FourTrafficLights"
-            | "FiveArrows"
-            | "FiveArrowsGray"
-            | "FiveRating"
-            | "FiveQuarters"
-            | "ThreeStars"
-            | "ThreeTriangles"
-            | "FiveBoxes";
+        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -7689,9 +7357,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.IconSetConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.IconSetConditionalFormatData;
     }
     /**
@@ -7758,10 +7426,7 @@ export declare namespace Excel {
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
-        set(
-            properties: Interfaces.ColorScaleConditionalFormatUpdateData,
-            options?: OfficeExtension.UpdateOptions,
-        ): void;
+        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ColorScaleConditionalFormat): void;
         /**
@@ -7786,9 +7451,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ColorScaleConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ColorScaleConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ColorScaleConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;
     }
     /**
@@ -7847,15 +7512,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        type:
-            | Excel.ConditionalFormatColorCriterionType
-            | "Invalid"
-            | "LowestValue"
-            | "HighestValue"
-            | "Number"
-            | "Percent"
-            | "Formula"
-            | "Percentile";
+        type: Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile";
     }
     /**
      * Represents a top/bottom conditional format.
@@ -7910,9 +7567,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TopBottomConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.TopBottomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.TopBottomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TopBottomConditionalFormatData;
     }
     /**
@@ -7935,13 +7592,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        type:
-            | Excel.ConditionalTopBottomCriterionType
-            | "Invalid"
-            | "TopItems"
-            | "TopPercent"
-            | "BottomItems"
-            | "BottomPercent";
+        type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent";
     }
     /**
      * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
@@ -7971,10 +7622,7 @@ export declare namespace Excel {
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
-        set(
-            properties: Interfaces.PresetCriteriaConditionalFormatUpdateData,
-            options?: OfficeExtension.UpdateOptions,
-        ): void;
+        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.PresetCriteriaConditionalFormat): void;
         /**
@@ -7982,9 +7630,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions,
-        ): Excel.PresetCriteriaConditionalFormat;
+        load(options?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8001,9 +7647,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PresetCriteriaConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;
     }
     /**
@@ -8019,35 +7665,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        criterion:
-            | Excel.ConditionalFormatPresetCriterion
-            | "Invalid"
-            | "Blanks"
-            | "NonBlanks"
-            | "Errors"
-            | "NonErrors"
-            | "Yesterday"
-            | "Today"
-            | "Tomorrow"
-            | "LastSevenDays"
-            | "LastWeek"
-            | "ThisWeek"
-            | "NextWeek"
-            | "LastMonth"
-            | "ThisMonth"
-            | "NextMonth"
-            | "AboveAverage"
-            | "BelowAverage"
-            | "EqualOrAboveAverage"
-            | "EqualOrBelowAverage"
-            | "OneStdDevAboveAverage"
-            | "OneStdDevBelowAverage"
-            | "TwoStdDevAboveAverage"
-            | "TwoStdDevBelowAverage"
-            | "ThreeStdDevAboveAverage"
-            | "ThreeStdDevBelowAverage"
-            | "UniqueValues"
-            | "DuplicateValues";
+        criterion: Excel.ConditionalFormatPresetCriterion | "Invalid" | "Blanks" | "NonBlanks" | "Errors" | "NonErrors" | "Yesterday" | "Today" | "Tomorrow" | "LastSevenDays" | "LastWeek" | "ThisWeek" | "NextWeek" | "LastMonth" | "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage" | "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" | "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues";
     }
     /**
      * Represents a specific text conditional format.
@@ -8102,9 +7720,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TextConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.TextConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.TextConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.TextConditionalFormatData;
     }
     /**
@@ -8182,9 +7800,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CellValueConditionalFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.CellValueConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CellValueConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.CellValueConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CellValueConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.CellValueConditionalFormatData;
     }
     /**
@@ -8214,17 +7832,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        operator:
-            | Excel.ConditionalCellValueOperator
-            | "Invalid"
-            | "Between"
-            | "NotBetween"
-            | "EqualTo"
-            | "NotEqualTo"
-            | "GreaterThan"
-            | "LessThan"
-            | "GreaterThanOrEqual"
-            | "LessThanOrEqual";
+        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual";
     }
     /**
      * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
@@ -8295,9 +7903,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalRangeFormatData;
     }
     /**
@@ -8381,9 +7989,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFont;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalRangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalRangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalRangeFontData;
     }
     /**
@@ -8439,9 +8047,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFill;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalRangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFillData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalRangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFillData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalRangeFillData;
     }
     /**
@@ -8473,14 +8081,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        style:
-            | Excel.ConditionalRangeBorderLineStyle
-            | "None"
-            | "Continuous"
-            | "Dash"
-            | "DashDot"
-            | "DashDotDot"
-            | "Dot";
+        style: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -8511,9 +8112,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeBorder;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.ConditionalRangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ConditionalRangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderData;
     }
     /**
@@ -8594,11 +8195,7 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(
-            options?:
-                & Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
-                & Excel.Interfaces.CollectionLoadOptions,
-        ): Excel.ConditionalRangeBorderCollection;
+        load(options?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8612,9 +8209,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
     
@@ -8736,7 +8333,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        callout = "Callout",
+        callout = "Callout"
     }
     
     
@@ -8783,7 +8380,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        custom = "Custom",
+        custom = "Custom"
     }
     
     
@@ -8812,7 +8409,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        rows = "Rows",
+        rows = "Rows"
     }
     
     
@@ -9213,7 +8810,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        single = "Single",
+        single = "Single"
     }
     
     
@@ -9251,7 +8848,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        text = "Text",
+        text = "Text"
     }
     /**
      * @remarks
@@ -9297,7 +8894,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        diagonalUp = "DiagonalUp",
+        diagonalUp = "DiagonalUp"
     }
     /**
      * @remarks
@@ -9343,7 +8940,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        slantDashDot = "SlantDashDot",
+        slantDashDot = "SlantDashDot"
     }
     /**
      * @remarks
@@ -9369,7 +8966,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        thick = "Thick",
+        thick = "Thick"
     }
     /**
      * @remarks
@@ -9393,7 +8990,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        manual = "Manual",
+        manual = "Manual"
     }
     /**
      * @remarks
@@ -9417,7 +9014,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        fullRebuild = "FullRebuild",
+        fullRebuild = "FullRebuild"
     }
     /**
      * @remarks
@@ -9463,7 +9060,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        cellMidPoint = "CellMidPoint",
+        cellMidPoint = "CellMidPoint"
     }
     /**
      * Represents the data bar direction within a cell.
@@ -9486,7 +9083,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        rightToLeft = "RightToLeft",
+        rightToLeft = "RightToLeft"
     }
     /**
      * Represents the direction for a selection.
@@ -9504,7 +9101,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        bottom = "Bottom",
+        bottom = "Bottom"
     }
     /**
      * @remarks
@@ -9550,7 +9147,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        cellValue = "CellValue",
+        cellValue = "CellValue"
     }
     /**
      * Represents the types of conditional format values.
@@ -9598,7 +9195,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      * Represents the types of icon conditional format.
@@ -9631,7 +9228,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      * Represents the types of color criterion for conditional formatting.
@@ -9674,7 +9271,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      * Represents the criteria for the above/below average conditional format type.
@@ -9707,7 +9304,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        bottomPercent = "BottomPercent",
+        bottomPercent = "BottomPercent"
     }
     /**
      * Represents the criteria of the preset criteria conditional format type.
@@ -9850,7 +9447,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        duplicateValues = "DuplicateValues",
+        duplicateValues = "DuplicateValues"
     }
     /**
      * Represents the operator of the text conditional format type.
@@ -9883,7 +9480,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        endsWith = "EndsWith",
+        endsWith = "EndsWith"
     }
     /**
      * Represents the operator of the text conditional format type.
@@ -9936,7 +9533,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        lessThanOrEqual = "LessThanOrEqual",
+        lessThanOrEqual = "LessThanOrEqual"
     }
     /**
      * Represents the operator for each icon criteria.
@@ -9959,7 +9556,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        greaterThanOrEqual = "GreaterThanOrEqual",
+        greaterThanOrEqual = "GreaterThanOrEqual"
     }
     /**
      * @remarks
@@ -9985,7 +9582,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        edgeRight = "EdgeRight",
+        edgeRight = "EdgeRight"
     }
     /**
      * @remarks
@@ -10021,7 +9618,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        dot = "Dot",
+        dot = "Dot"
     }
     /**
      * @remarks
@@ -10042,7 +9639,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
-        double = "Double",
+        double = "Double"
     }
     
     
@@ -10061,7 +9658,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        left = "Left",
+        left = "Left"
     }
     /**
      * @remarks
@@ -10242,7 +9839,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        yesterday = "Yesterday",
+        yesterday = "Yesterday"
     }
     /**
      * @remarks
@@ -10278,7 +9875,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        second = "Second",
+        second = "Second"
     }
     /**
      * @remarks
@@ -10334,7 +9931,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        custom = "Custom",
+        custom = "Custom"
     }
     /**
      * @remarks
@@ -10350,7 +9947,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        or = "Or",
+        or = "Or"
     }
     /**
      * @remarks
@@ -10396,7 +9993,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     /**
      * @remarks
@@ -10507,7 +10104,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        fiveBoxes = "FiveBoxes",
+        fiveBoxes = "FiveBoxes"
     }
     /**
      * @remarks
@@ -10528,7 +10125,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        fill = "Fill",
+        fill = "Fill"
     }
     /**
      * @remarks
@@ -10544,7 +10141,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        right = "Right",
+        right = "Right"
     }
     /**
      * @remarks
@@ -10560,7 +10157,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.4]
          */
-        workbook = "Workbook",
+        workbook = "Workbook"
     }
     /**
      * @remarks
@@ -10627,7 +10224,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        doubleAccountant = "DoubleAccountant",
+        doubleAccountant = "DoubleAccountant"
     }
     /**
      * @remarks
@@ -10648,7 +10245,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        veryHidden = "VeryHidden",
+        veryHidden = "VeryHidden"
     }
     
     /**
@@ -10708,7 +10305,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        columns = "Columns",
+        columns = "Columns"
     }
     /**
      * @remarks
@@ -10734,7 +10331,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        icon = "Icon",
+        icon = "Icon"
     }
     /**
      * @remarks
@@ -10750,7 +10347,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        textAsNumber = "TextAsNumber",
+        textAsNumber = "TextAsNumber"
     }
     /**
      * @remarks
@@ -10766,7 +10363,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
-        strokeCount = "StrokeCount",
+        strokeCount = "StrokeCount"
     }
     /**
      * @remarks
@@ -10797,7 +10394,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     
     
@@ -10889,9 +10486,9 @@ export declare namespace Excel {
             expand?: string;
         }): FunctionResult<T>;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `FunctionResult<T>` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `FunctionResult<T>` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Interfaces.FunctionResultData<T>;
     }
     /**
@@ -10927,16 +10524,7 @@ export declare namespace Excel {
          * @param basis - Is the type of day count basis to use.
          * @param calcMethod - Is a logical value: to accrued interest from issue date = TRUE or omitted; to calculate from last coupon payment date = FALSE.
          */
-        accrInt(
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            firstInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            calcMethod?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        accrInt(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, calcMethod?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the accrued interest for a security that pays interest at maturity.
          *
@@ -10949,13 +10537,7 @@ export declare namespace Excel {
          * @param par - Is the security's par value.
          * @param basis - Is the type of day count basis to use.
          */
-        accrIntM(
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        accrIntM(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is Number.
          *
@@ -11006,15 +10588,7 @@ export declare namespace Excel {
          * @param rate - Is the rate of depreciation.
          * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
-        amorDegrc(
-            cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        amorDegrc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the prorated linear depreciation of an asset for each accounting period.
          *
@@ -11029,15 +10603,7 @@ export declare namespace Excel {
          * @param rate - Is the rate of depreciation.
          * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
-        amorLinc(
-            cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        amorLinc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
          *
@@ -11046,9 +10612,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
-        and(
-            ...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<boolean>;
+        and(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
          * Converts a Roman numeral to Arabic.
          *
@@ -11112,10 +10676,7 @@ export declare namespace Excel {
          * @param xNum - Is the x-coordinate of the point.
          * @param yNum - Is the y-coordinate of the point.
          */
-        atan2(
-            xNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        atan2(xNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse hyperbolic tangent of a number.
          *
@@ -11133,9 +10694,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
          */
-        aveDev(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        aveDev(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers.
          *
@@ -11144,9 +10703,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
          */
-        average(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        average(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE evaluates as 1. Arguments can be numbers, names, arrays, or references.
          *
@@ -11155,9 +10712,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average.
          */
-        averageA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        averageA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
          *
@@ -11168,11 +10723,7 @@ export declare namespace Excel {
          * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
          * @param averageRange - Are the actual cells to be used to find the average. If omitted, the cells in range are used.
          */
-        averageIf(
-            range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            averageRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        averageIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, averageRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
          *
@@ -11182,10 +10733,7 @@ export declare namespace Excel {
          * @param averageRange - Are the actual cells to be used to find the average.
          * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
          */
-        averageIfs(
-            averageRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-        ): FunctionResult<number>;
+        averageIfs(averageRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
          * Converts a number to text (baht).
          *
@@ -11194,9 +10742,7 @@ export declare namespace Excel {
          *
          * @param number - Is a number that you want to convert.
          */
-        bahtText(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        bahtText(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Converts a number into a text representation with the given radix (base).
          *
@@ -11207,11 +10753,7 @@ export declare namespace Excel {
          * @param radix - Is the base Radix that you want to convert the number into.
          * @param minLength - Is the minimum length of the returned string.  If omitted leading zeros are not added.
          */
-        base(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            minLength?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        base(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minLength?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the modified Bessel function In(x).
          *
@@ -11221,10 +10763,7 @@ export declare namespace Excel {
          * @param x - Is the value at which to evaluate the function.
          * @param n - Is the order of the Bessel function.
          */
-        besselI(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        besselI(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Bessel function Jn(x).
          *
@@ -11234,10 +10773,7 @@ export declare namespace Excel {
          * @param x - Is the value at which to evaluate the function.
          * @param n - Is the order of the Bessel function.
          */
-        besselJ(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        besselJ(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the modified Bessel function Kn(x).
          *
@@ -11247,10 +10783,7 @@ export declare namespace Excel {
          * @param x - Is the value at which to evaluate the function.
          * @param n - Is the order of the function.
          */
-        besselK(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        besselK(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Bessel function Yn(x).
          *
@@ -11260,10 +10793,7 @@ export declare namespace Excel {
          * @param x - Is the value at which to evaluate the function.
          * @param n - Is the order of the function.
          */
-        besselY(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        besselY(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the beta probability distribution function.
          *
@@ -11277,14 +10807,7 @@ export declare namespace Excel {
          * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
          * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
-        beta_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        beta_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the cumulative beta probability density function (BETA.DIST).
          *
@@ -11297,13 +10820,7 @@ export declare namespace Excel {
          * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
          * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
-        beta_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        beta_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a binary number to decimal.
          *
@@ -11312,9 +10829,7 @@ export declare namespace Excel {
          *
          * @param number - Is the binary number you want to convert.
          */
-        bin2Dec(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bin2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a binary number to hexadecimal.
          *
@@ -11324,10 +10839,7 @@ export declare namespace Excel {
          * @param number - Is the binary number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        bin2Hex(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bin2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a binary number to octal.
          *
@@ -11337,10 +10849,7 @@ export declare namespace Excel {
          * @param number - Is the binary number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        bin2Oct(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bin2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the individual term binomial distribution probability.
          *
@@ -11352,12 +10861,7 @@ export declare namespace Excel {
          * @param probabilityS - Is the probability of success on each trial.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
-        binom_Dist(
-            numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        binom_Dist(numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the probability of a trial result using a binomial distribution.
          *
@@ -11369,12 +10873,7 @@ export declare namespace Excel {
          * @param numberS - Is the number of successes in trials.
          * @param numberS2 - If provided this function returns the probability that the number of successful trials shall lie between numberS and numberS2.
          */
-        binom_Dist_Range(
-            trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberS2?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        binom_Dist_Range(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS2?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
          *
@@ -11385,11 +10884,7 @@ export declare namespace Excel {
          * @param probabilityS - Is the probability of success on each trial, a number between 0 and 1 inclusive.
          * @param alpha - Is the criterion value, a number between 0 and 1 inclusive.
          */
-        binom_Inv(
-            trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        binom_Inv(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a bitwise 'And' of two numbers.
          *
@@ -11399,10 +10894,7 @@ export declare namespace Excel {
          * @param number1 - Is the decimal representation of the binary number you want to evaluate.
          * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
-        bitand(
-            number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bitand(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a number shifted left by shift_amount bits.
          *
@@ -11412,10 +10904,7 @@ export declare namespace Excel {
          * @param number - Is the decimal representation of the binary number you want to evaluate.
          * @param shiftAmount - Is the number of bits that you want to shift Number left by.
          */
-        bitlshift(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bitlshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a bitwise 'Or' of two numbers.
          *
@@ -11425,10 +10914,7 @@ export declare namespace Excel {
          * @param number1 - Is the decimal representation of the binary number you want to evaluate.
          * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
-        bitor(
-            number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bitor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a number shifted right by shift_amount bits.
          *
@@ -11438,10 +10924,7 @@ export declare namespace Excel {
          * @param number - Is the decimal representation of the binary number you want to evaluate.
          * @param shiftAmount - Is the number of bits that you want to shift Number right by.
          */
-        bitrshift(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bitrshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a bitwise 'Exclusive Or' of two numbers.
          *
@@ -11451,10 +10934,7 @@ export declare namespace Excel {
          * @param number1 - Is the decimal representation of the binary number you want to evaluate.
          * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
-        bitxor(
-            number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        bitxor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
          *
@@ -11465,11 +10945,7 @@ export declare namespace Excel {
          * @param significance - Is the multiple to which you want to round.
          * @param mode - When given and nonzero this function will round away from zero.
          */
-        ceiling_Math(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ceiling_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
          *
@@ -11479,10 +10955,7 @@ export declare namespace Excel {
          * @param number - Is the value you want to round.
          * @param significance - Is the multiple to which you want to round.
          */
-        ceiling_Precise(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ceiling_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the character specified by the code number from the character set for your computer.
          *
@@ -11502,11 +10975,7 @@ export declare namespace Excel {
          * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
-        chiSq_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        chiSq_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the right-tailed probability of the chi-squared distribution.
          *
@@ -11516,10 +10985,7 @@ export declare namespace Excel {
          * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
          * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        chiSq_Dist_RT(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the left-tailed probability of the chi-squared distribution.
          *
@@ -11529,10 +10995,7 @@ export declare namespace Excel {
          * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
          * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        chiSq_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        chiSq_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the right-tailed probability of the chi-squared distribution.
          *
@@ -11542,10 +11005,7 @@ export declare namespace Excel {
          * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
          * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        chiSq_Inv_RT(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        chiSq_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Chooses a value or action to perform from a list of values, based on an index number.
          *
@@ -11555,10 +11015,7 @@ export declare namespace Excel {
          * @param indexNum - Specifies which value argument is selected. indexNum must be between 1 and 254, or a formula or a reference to a number between 1 and 254.
          * @param values - List of parameters, whose elements are 1 to 254 numbers, cell references, defined names, formulas, functions, or text arguments from which CHOOSE selects.
          */
-        choose(
-            indexNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number | string | boolean>;
+        choose(indexNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number | string | boolean>;
         /**
          * Removes all nonprintable characters from text.
          *
@@ -11595,10 +11052,7 @@ export declare namespace Excel {
          * @param number - Is the total number of items.
          * @param numberChosen - Is the number of items in each combination.
          */
-        combin(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        combin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of combinations with repetitions for a given number of items.
          *
@@ -11608,10 +11062,7 @@ export declare namespace Excel {
          * @param number - Is the total number of items.
          * @param numberChosen - Is the number of items in each combination.
          */
-        combina(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        combina(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts real and imaginary coefficients into a complex number.
          *
@@ -11622,11 +11073,7 @@ export declare namespace Excel {
          * @param iNum - Is the imaginary coefficient of the complex number.
          * @param suffix - Is the suffix for the imaginary component of the complex number.
          */
-        complex(
-            realNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            iNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            suffix?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        complex(realNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, iNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, suffix?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Joins several text strings into one text string.
          *
@@ -11635,9 +11082,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
          */
-        concatenate(
-            ...values: Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<string>;
+        concatenate(...values: Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<string>;
         /**
          * Returns the confidence interval for a population mean, using a normal distribution.
          *
@@ -11648,11 +11093,7 @@ export declare namespace Excel {
          * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
          * @param size - Is the sample size.
          */
-        confidence_Norm(
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        confidence_Norm(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the confidence interval for a population mean, using a Student's T distribution.
          *
@@ -11663,11 +11104,7 @@ export declare namespace Excel {
          * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
          * @param size - Is the sample size.
          */
-        confidence_T(
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        confidence_T(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a number from one measurement system to another.
          *
@@ -11678,11 +11115,7 @@ export declare namespace Excel {
          * @param fromUnit - Is the units for number.
          * @param toUnit - Is the units for the result.
          */
-        convert(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fromUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            toUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        convert(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fromUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, toUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cosine of an angle.
          *
@@ -11727,9 +11160,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
          */
-        count(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        count(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Counts the number of cells in a range that are not empty.
          *
@@ -11738,9 +11169,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
          */
-        countA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        countA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Counts the number of empty cells in a specified range of cells.
          *
@@ -11759,10 +11188,7 @@ export declare namespace Excel {
          * @param range - Is the range of cells from which you want to count nonblank cells.
          * @param criteria - Is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
-        countIf(
-            range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        countIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Counts the number of cells specified by a given set of conditions or criteria.
          *
@@ -11771,9 +11197,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
-        countIfs(
-            ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-        ): FunctionResult<number>;
+        countIfs(...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
          * Returns the number of days from the beginning of the coupon period to the settlement date.
          *
@@ -11785,12 +11209,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupDayBs(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupDayBs(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of days in the coupon period that contains the settlement date.
          *
@@ -11802,12 +11221,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupDays(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupDays(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of days from the settlement date to the next coupon date.
          *
@@ -11819,12 +11233,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupDaysNc(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupDaysNc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the next coupon date after the settlement date.
          *
@@ -11836,12 +11245,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupNcd(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupNcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of coupons payable between the settlement date and maturity date.
          *
@@ -11853,12 +11257,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupNum(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupNum(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the previous coupon date before the settlement date.
          *
@@ -11870,12 +11269,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        coupPcd(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        coupPcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cosecant of an angle.
          *
@@ -11907,14 +11301,7 @@ export declare namespace Excel {
          * @param endPeriod - Is the last period in the calculation.
          * @param type - Is the timing of the payment.
          */
-        cumIPmt(
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        cumIPmt(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cumulative principal paid on a loan between two periods.
          *
@@ -11928,14 +11315,7 @@ export declare namespace Excel {
          * @param endPeriod - Is the last period in the calculation.
          * @param type - Is the timing of the payment.
          */
-        cumPrinc(
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        cumPrinc(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Averages the values in a column in a list or database that match conditions you specify.
          *
@@ -11946,11 +11326,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        daverage(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        daverage(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Counts the cells containing numbers in the field (column) of records in the database that match the conditions you specify.
          *
@@ -11961,11 +11337,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dcount(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dcount(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
          *
@@ -11976,11 +11348,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dcountA(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dcountA(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Extracts from a database a single record that matches the conditions you specify.
          *
@@ -11991,11 +11359,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dget(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | boolean | string>;
+        dget(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | boolean | string>;
         /**
          * Returns the largest number in the field (column) of records in the database that match the conditions you specify.
          *
@@ -12006,11 +11370,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dmax(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dmax(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the smallest number in the field (column) of records in the database that match the conditions you specify.
          *
@@ -12021,11 +11381,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dmin(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dmin(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Multiplies the values in the field (column) of records in the database that match the conditions you specify.
          *
@@ -12036,11 +11392,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dproduct(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dproduct(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Estimates the standard deviation based on a sample from selected database entries.
          *
@@ -12051,11 +11403,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dstDev(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dstDev(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Calculates the standard deviation based on the entire population of selected database entries.
          *
@@ -12066,11 +11414,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dstDevP(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dstDevP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Adds the numbers in the field (column) of records in the database that match the conditions you specify.
          *
@@ -12081,11 +11425,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dsum(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dsum(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Estimates variance based on a sample from selected database entries.
          *
@@ -12096,11 +11436,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dvar(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dvar(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Calculates variance based on the entire population of selected database entries.
          *
@@ -12111,11 +11447,7 @@ export declare namespace Excel {
          * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
          * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
-        dvarP(
-            database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dvarP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number that represents the date in Microsoft Excel date-time code.
          *
@@ -12126,11 +11458,7 @@ export declare namespace Excel {
          * @param month - Is a number from 1 to 12 representing the month of the year.
          * @param day - Is a number from 1 to 31 representing the day of the month.
          */
-        date(
-            year: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            month: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            day: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        date(year: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, day: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
          *
@@ -12139,9 +11467,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(
-            dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -12150,9 +11476,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
-        day(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        day(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of days between the two dates.
          *
@@ -12162,10 +11486,7 @@ export declare namespace Excel {
          * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
          * @param startDate - startDate and endDate are the two dates between which you want to know the number of days.
          */
-        days(
-            endDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        days(endDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
          *
@@ -12176,11 +11497,7 @@ export declare namespace Excel {
          * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
          * @param method - Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.
          */
-        days360(
-            startDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            method?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        days360(startDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, method?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
          *
@@ -12193,13 +11510,7 @@ export declare namespace Excel {
          * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
          * @param month - Is the number of months in the first year. If month is omitted, it is assumed to be 12.
          */
-        db(
-            cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            month?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        db(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use with double-byte character sets (DBCS).
          *
@@ -12221,13 +11532,7 @@ export declare namespace Excel {
          * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
          * @param factor - Is the rate at which the balance declines. If Factor is omitted, it is assumed to be 2 (the double-declining balance method).
          */
-        ddb(
-            cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ddb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a decimal number to binary.
          *
@@ -12237,10 +11542,7 @@ export declare namespace Excel {
          * @param number - Is the decimal integer you want to convert.
          * @param places - Is the number of characters to use.
          */
-        dec2Bin(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dec2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a decimal number to hexadecimal.
          *
@@ -12250,10 +11552,7 @@ export declare namespace Excel {
          * @param number - Is the decimal integer you want to convert.
          * @param places - Is the number of characters to use.
          */
-        dec2Hex(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dec2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a decimal number to octal.
          *
@@ -12263,10 +11562,7 @@ export declare namespace Excel {
          * @param number - Is the decimal integer you want to convert.
          * @param places - Is the number of characters to use.
          */
-        dec2Oct(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dec2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a text representation of a number in a given base into a decimal number.
          *
@@ -12276,10 +11572,7 @@ export declare namespace Excel {
          * @param number - Is the number that you want to convert.
          * @param radix - Is the base Radix of the number you are converting.
          */
-        decimal(
-            number: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        decimal(number: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts radians to degrees.
          *
@@ -12298,10 +11591,7 @@ export declare namespace Excel {
          * @param number1 - Is the first number.
          * @param number2 - Is the second number.
          */
-        delta(
-            number1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            number2?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        delta(number1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the sum of squares of deviations of data points from their sample mean.
          *
@@ -12310,9 +11600,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
          */
-        devSq(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        devSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the discount rate for a security.
          *
@@ -12325,13 +11613,7 @@ export declare namespace Excel {
          * @param redemption - Is the security's redemption value per $100 face value.
          * @param basis - Is the type of day count basis to use.
          */
-        disc(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        disc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a number to text, using currency format.
          *
@@ -12341,10 +11623,7 @@ export declare namespace Excel {
          * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
          * @param decimals - Is the number of digits to the right of the decimal point. The number is rounded as necessary; if omitted, Decimals = 2.
          */
-        dollar(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        dollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.
          *
@@ -12354,16 +11633,7 @@ export declare namespace Excel {
          * @param fractionalDollar - Is a number expressed as a fraction.
          * @param fraction - Is the integer to use in the denominator of the fraction.
          */
-        dollarDe(
-            fractionalDollar:
-                | number
-                | string
-                | boolean
-                | Excel.Range
-                | Excel.RangeReference
-                | Excel.FunctionResult<any>,
-            fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dollarDe(fractionalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.
          *
@@ -12373,10 +11643,7 @@ export declare namespace Excel {
          * @param decimalDollar - Is a decimal number.
          * @param fraction - Is the integer to use in the denominator of a fraction.
          */
-        dollarFr(
-            decimalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        dollarFr(decimalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the annual duration of a security with periodic interest payments.
          *
@@ -12390,14 +11657,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        duration(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        duration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
          *
@@ -12407,10 +11667,7 @@ export declare namespace Excel {
          * @param number - Is the value you want to round.
          * @param significance - Is the multiple to which you want to round.
          */
-        ecma_Ceiling(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ecma_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the serial number of the date that is the indicated number of months before or after the start date.
          *
@@ -12420,10 +11677,7 @@ export declare namespace Excel {
          * @param startDate - Is a serial date number that represents the start date.
          * @param months - Is the number of months before or after startDate.
          */
-        edate(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        edate(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the effective annual interest rate.
          *
@@ -12433,10 +11687,7 @@ export declare namespace Excel {
          * @param nominalRate - Is the nominal interest rate.
          * @param npery - Is the number of compounding periods per year.
          */
-        effect(
-            nominalRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        effect(nominalRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the serial number of the last day of the month before or after a specified number of months.
          *
@@ -12446,10 +11697,7 @@ export declare namespace Excel {
          * @param startDate - Is a serial date number that represents the start date.
          * @param months - Is the number of months before or after the startDate.
          */
-        eoMonth(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        eoMonth(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the error function.
          *
@@ -12459,10 +11707,7 @@ export declare namespace Excel {
          * @param lowerLimit - Is the lower bound for integrating ERF.
          * @param upperLimit - Is the upper bound for integrating ERF.
          */
-        erf(
-            lowerLimit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            upperLimit?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        erf(lowerLimit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, upperLimit?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the complementary error function.
          *
@@ -12471,9 +11716,7 @@ export declare namespace Excel {
          *
          * @param x - Is the lower bound for integrating ERF.
          */
-        erfC(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        erfC(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the complementary error function.
          *
@@ -12482,9 +11725,7 @@ export declare namespace Excel {
          *
          * @param X - Is the lower bound for integrating ERFC.PRECISE.
          */
-        erfC_Precise(
-            X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        erfC_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the error function.
          *
@@ -12493,9 +11734,7 @@ export declare namespace Excel {
          *
          * @param X - Is the lower bound for integrating ERF.PRECISE.
          */
-        erf_Precise(
-            X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        erf_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a number matching an error value.
          *
@@ -12504,9 +11743,7 @@ export declare namespace Excel {
          *
          * @param errorVal - Is the error value for which you want the identifying number, and can be an actual error value or a reference to a cell containing an error value.
          */
-        error_Type(
-            errorVal: string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        error_Type(errorVal: string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a positive number up and negative number down to the nearest even integer.
          *
@@ -12525,10 +11762,7 @@ export declare namespace Excel {
          * @param text1 - Is the first text string.
          * @param text2 - Is the second text string.
          */
-        exact(
-            text1: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            text2: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        exact(text1: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, text2: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Returns e raised to the power of a given number.
          *
@@ -12548,11 +11782,7 @@ export declare namespace Excel {
          * @param lambda - Is the parameter value, a positive number.
          * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
-        expon_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            lambda: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        expon_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lambda: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the future value of an initial principal after applying a series of compound interest rates.
          *
@@ -12562,10 +11792,7 @@ export declare namespace Excel {
          * @param principal - Is the present value.
          * @param schedule - Is an array of interest rates to apply.
          */
-        fvschedule(
-            principal: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            schedule: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        fvschedule(principal: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, schedule: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
          *
@@ -12577,12 +11804,7 @@ export declare namespace Excel {
          * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
-        f_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        f_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
          *
@@ -12593,11 +11815,7 @@ export declare namespace Excel {
          * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        f_Dist_RT(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        f_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
          *
@@ -12608,11 +11826,7 @@ export declare namespace Excel {
          * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        f_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        f_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then F.INV.RT(p,...) = x.
          *
@@ -12623,11 +11837,7 @@ export declare namespace Excel {
          * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
-        f_Inv_RT(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        f_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the factorial of a number, equal to 1*2*3*...* Number.
          *
@@ -12645,9 +11855,7 @@ export declare namespace Excel {
          *
          * @param number - Is the value for which to return the double factorial.
          */
-        factDouble(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        factDouble(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the logical value FALSE.
          *
@@ -12665,11 +11873,7 @@ export declare namespace Excel {
          * @param withinText - Is the text containing the text you want to find.
          * @param startNum - Specifies the character at which to start the search. The first character in withinText is character number 1. If omitted, startNum = 1.
          */
-        find(
-            findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        find(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with double-byte character sets (DBCS).
          *
@@ -12680,11 +11884,7 @@ export declare namespace Excel {
          * @param withinText - Is the text containing the text you want to find.
          * @param startNum - Specifies the character at which to start the search.
          */
-        findB(
-            findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        findB(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Fisher transformation.
          *
@@ -12713,11 +11913,7 @@ export declare namespace Excel {
          * @param decimals - Is the number of digits to the right of the decimal point. If omitted, Decimals = 2.
          * @param noCommas - Is a logical value: do not display commas in the returned text = TRUE; do display commas in the returned text = FALSE or omitted.
          */
-        fixed(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            noCommas?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        fixed(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noCommas?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
          *
@@ -12728,11 +11924,7 @@ export declare namespace Excel {
          * @param significance - Is the multiple to which you want to round.
          * @param mode - When given and nonzero this function will round towards zero.
          */
-        floor_Math(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        floor_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
          *
@@ -12742,10 +11934,7 @@ export declare namespace Excel {
          * @param number - Is the numeric value you want to round.
          * @param significance - Is the multiple to which you want to round.
          */
-        floor_Precise(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        floor_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
          *
@@ -12758,13 +11947,7 @@ export declare namespace Excel {
          * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now. If omitted, Pv = 0.
          * @param type - Is a value representing the timing of payment: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
-        fv(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        fv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Gamma function value.
          *
@@ -12791,9 +11974,7 @@ export declare namespace Excel {
          *
          * @param x - Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.
          */
-        gammaLn_Precise(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        gammaLn_Precise(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the gamma distribution.
          *
@@ -12805,12 +11986,7 @@ export declare namespace Excel {
          * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
          * @param cumulative - Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
          */
-        gamma_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        gamma_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
          *
@@ -12821,11 +11997,7 @@ export declare namespace Excel {
          * @param alpha - Is a parameter to the distribution, a positive number.
          * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.INV returns the inverse of the standard gamma distribution.
          */
-        gamma_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        gamma_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns 0.5 less than the standard normal cumulative distribution.
          *
@@ -12843,9 +12015,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 values.
          */
-        gcd(
-            ...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        gcd(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Tests whether a number is greater than a threshold value.
          *
@@ -12855,10 +12025,7 @@ export declare namespace Excel {
          * @param number - Is the value to test against step.
          * @param step - Is the threshold value.
          */
-        geStep(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            step?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        geStep(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, step?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the geometric mean of an array or range of positive numeric data.
          *
@@ -12867,9 +12034,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
          */
-        geoMean(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        geoMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Looks for a value in the top row of a table or array of values and returns the value in the same column from a row you specify.
          *
@@ -12881,12 +12046,7 @@ export declare namespace Excel {
          * @param rowIndexNum - Is the row number in tableArray from which the matching value should be returned. The first row of values in the table is row 1.
          * @param rangeLookup - Is a logical value: to find the closest match in the top row (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
-        hlookup(
-            lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>,
-            rowIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>,
-            rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | string | boolean>;
+        hlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rowIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
          * Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
          *
@@ -12895,9 +12055,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
          */
-        harMean(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        harMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Converts a Hexadecimal number to binary.
          *
@@ -12907,10 +12065,7 @@ export declare namespace Excel {
          * @param number - Is the hexadecimal number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        hex2Bin(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        hex2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a hexadecimal number to decimal.
          *
@@ -12919,9 +12074,7 @@ export declare namespace Excel {
          *
          * @param number - Is the hexadecimal number you want to convert.
          */
-        hex2Dec(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        hex2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a hexadecimal number to octal.
          *
@@ -12931,10 +12084,7 @@ export declare namespace Excel {
          * @param number - Is the hexadecimal number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        hex2Oct(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        hex2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
          *
@@ -12943,9 +12093,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel, or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
-        hour(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        hour(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hypergeometric distribution.
          *
@@ -12958,13 +12106,7 @@ export declare namespace Excel {
          * @param numberPop - Is the population size.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
-        hypGeom_Dist(
-            sampleS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberSample: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            populationS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberPop: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        hypGeom_Dist(sampleS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberSample: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, populationS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberPop: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
          *
@@ -12974,10 +12116,7 @@ export declare namespace Excel {
          * @param linkLocation - Is the text giving the path and file name to the document to be opened, a hard drive location, UNC address, or URL path.
          * @param friendlyName - Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.
          */
-        hyperlink(
-            linkLocation: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            friendlyName?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | string | boolean>;
+        hyperlink(linkLocation: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, friendlyName?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
          * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
          *
@@ -12987,10 +12126,7 @@ export declare namespace Excel {
          * @param number - Is the value you want to round.
          * @param significance - Is the optional multiple to which you want to round.
          */
-        iso_Ceiling(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        iso_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
          *
@@ -13001,11 +12137,7 @@ export declare namespace Excel {
          * @param valueIfTrue - Is the value that is returned if logicalTest is TRUE. If omitted, TRUE is returned. You can nest up to seven IF functions.
          * @param valueIfFalse - Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.
          */
-        if(
-            logicalTest: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            valueIfTrue?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-            valueIfFalse?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | string | boolean>;
+        if(logicalTest: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, valueIfTrue?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>, valueIfFalse?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
          * Returns the absolute value (modulus) of a complex number.
          *
@@ -13014,9 +12146,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the absolute value.
          */
-        imAbs(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imAbs(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the argument q, an angle expressed in radians.
          *
@@ -13025,9 +12155,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the argument.
          */
-        imArgument(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imArgument(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the complex conjugate of a complex number.
          *
@@ -13036,9 +12164,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the conjugate.
          */
-        imConjugate(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imConjugate(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cosine of a complex number.
          *
@@ -13047,9 +12173,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the cosine.
          */
-        imCos(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imCos(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hyperbolic cosine of a complex number.
          *
@@ -13058,9 +12182,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the hyperbolic cosine.
          */
-        imCosh(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imCosh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cotangent of a complex number.
          *
@@ -13069,9 +12191,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the cotangent.
          */
-        imCot(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imCot(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the cosecant of a complex number.
          *
@@ -13080,9 +12200,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the cosecant.
          */
-        imCsc(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imCsc(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hyperbolic cosecant of a complex number.
          *
@@ -13091,9 +12209,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the hyperbolic cosecant.
          */
-        imCsch(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imCsch(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the quotient of two complex numbers.
          *
@@ -13103,10 +12219,7 @@ export declare namespace Excel {
          * @param inumber1 - Is the complex numerator or dividend.
          * @param inumber2 - Is the complex denominator or divisor.
          */
-        imDiv(
-            inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imDiv(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the exponential of a complex number.
          *
@@ -13115,9 +12228,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the exponential.
          */
-        imExp(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imExp(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the natural logarithm of a complex number.
          *
@@ -13126,9 +12237,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the natural logarithm.
          */
-        imLn(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imLn(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the base-10 logarithm of a complex number.
          *
@@ -13137,9 +12246,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the common logarithm.
          */
-        imLog10(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imLog10(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the base-2 logarithm of a complex number.
          *
@@ -13148,9 +12255,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the base-2 logarithm.
          */
-        imLog2(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imLog2(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a complex number raised to an integer power.
          *
@@ -13160,10 +12265,7 @@ export declare namespace Excel {
          * @param inumber - Is a complex number you want to raise to a power.
          * @param number - Is the power to which you want to raise the complex number.
          */
-        imPower(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imPower(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the product of 1 to 255 complex numbers.
          *
@@ -13172,9 +12274,7 @@ export declare namespace Excel {
          *
          * @param values - Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
          */
-        imProduct(
-            ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        imProduct(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the real coefficient of a complex number.
          *
@@ -13183,9 +12283,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the real coefficient.
          */
-        imReal(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imReal(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the secant of a complex number.
          *
@@ -13194,9 +12292,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the secant.
          */
-        imSec(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSec(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hyperbolic secant of a complex number.
          *
@@ -13205,9 +12301,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the hyperbolic secant.
          */
-        imSech(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSech(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the sine of a complex number.
          *
@@ -13216,9 +12310,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the sine.
          */
-        imSin(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSin(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the hyperbolic sine of a complex number.
          *
@@ -13227,9 +12319,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the hyperbolic sine.
          */
-        imSinh(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSinh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the square root of a complex number.
          *
@@ -13238,9 +12328,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the square root.
          */
-        imSqrt(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSqrt(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the difference of two complex numbers.
          *
@@ -13250,10 +12338,7 @@ export declare namespace Excel {
          * @param inumber1 - Is the complex number from which to subtract inumber2.
          * @param inumber2 - Is the complex number to subtract from inumber1.
          */
-        imSub(
-            inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imSub(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the sum of complex numbers.
          *
@@ -13262,9 +12347,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are from 1 to 255 complex numbers to add.
          */
-        imSum(
-            ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        imSum(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the tangent of a complex number.
          *
@@ -13273,9 +12356,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the tangent.
          */
-        imTan(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imTan(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the imaginary coefficient of a complex number.
          *
@@ -13284,9 +12365,7 @@ export declare namespace Excel {
          *
          * @param inumber - Is a complex number for which you want the imaginary coefficient.
          */
-        imaginary(
-            inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        imaginary(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number down to the nearest integer.
          *
@@ -13308,13 +12387,7 @@ export declare namespace Excel {
          * @param redemption - Is the amount to be received at maturity.
          * @param basis - Is the type of day count basis to use.
          */
-        intRate(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        intRate(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the interest payment for a given period for an investment, based on periodic, constant payments and a constant interest rate.
          *
@@ -13328,14 +12401,7 @@ export declare namespace Excel {
          * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, Fv = 0.
          * @param type - Is a logical value representing the timing of payment: at the end of the period = 0 or omitted, at the beginning of the period = 1.
          */
-        ipmt(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ipmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the internal rate of return for a series of cash flows.
          *
@@ -13345,10 +12411,7 @@ export declare namespace Excel {
          * @param values - Is an array or a reference to cells that contain numbers for which you want to calculate the internal rate of return.
          * @param guess - Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
          */
-        irr(
-            values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        irr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a value is an error (#VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!) excluding #N/A, and returns TRUE or FALSE.
          *
@@ -13357,9 +12420,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isErr(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isErr(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Checks whether a value is an error (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!), and returns TRUE or FALSE.
          *
@@ -13368,9 +12429,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isError(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isError(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Returns TRUE if the number is even.
          *
@@ -13379,9 +12438,7 @@ export declare namespace Excel {
          *
          * @param number - Is the value to test.
          */
-        isEven(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        isEven(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
          *
@@ -13399,9 +12456,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isLogical(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isLogical(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Checks whether a value is #N/A, and returns TRUE or FALSE.
          *
@@ -13410,9 +12465,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isNA(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isNA(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
          *
@@ -13421,9 +12474,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.
          */
-        isNonText(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isNonText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Checks whether a value is a number, and returns TRUE or FALSE.
          *
@@ -13432,9 +12483,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isNumber(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isNumber(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Returns TRUE if the number is odd.
          *
@@ -13443,9 +12492,7 @@ export declare namespace Excel {
          *
          * @param number - Is the value to test.
          */
-        isOdd(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        isOdd(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a value is text, and returns TRUE or FALSE.
          *
@@ -13454,9 +12501,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isText(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Returns the ISO week number in the year for a given date.
          *
@@ -13465,9 +12510,7 @@ export declare namespace Excel {
          *
          * @param date - Is the date-time code used by Microsoft Excel for date and time calculation.
          */
-        isoWeekNum(
-            date: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        isoWeekNum(date: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the interest paid during a specific period of an investment.
          *
@@ -13479,12 +12522,7 @@ export declare namespace Excel {
          * @param nper - Number of payment periods in an investment.
          * @param pv - Lump sum amount that a series of future payments is right now.
          */
-        ispmt(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ispmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a value is a reference, and returns TRUE or FALSE.
          *
@@ -13493,9 +12531,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
-        isref(
-            value: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<boolean>;
+        isref(value: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
          * Returns the kurtosis of a data set.
          *
@@ -13504,9 +12540,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
          */
-        kurt(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        kurt(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the k-th largest value in a data set. For example, the fifth largest number.
          *
@@ -13516,10 +12550,7 @@ export declare namespace Excel {
          * @param array - Is the array or range of data for which you want to determine the k-th largest value.
          * @param k - Is the position (from the largest) in the array or cell range of the value to return.
          */
-        large(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        large(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the least common multiple.
          *
@@ -13528,9 +12559,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
          */
-        lcm(
-            ...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        lcm(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the specified number of characters from the start of a text string.
          *
@@ -13540,10 +12569,7 @@ export declare namespace Excel {
          * @param text - Is the text string containing the characters you want to extract.
          * @param numChars - Specifies how many characters you want LEFT to extract; 1 if omitted.
          */
-        left(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        left(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the specified number of characters from the start of a text string. Use with double-byte character sets (DBCS).
          *
@@ -13553,10 +12579,7 @@ export declare namespace Excel {
          * @param text - Is the text string containing the characters you want to extract.
          * @param numBytes - Specifies how many characters you want LEFT to return.
          */
-        leftb(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        leftb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the number of characters in a text string.
          *
@@ -13593,10 +12616,7 @@ export declare namespace Excel {
          * @param number - Is the positive real number for which you want the logarithm.
          * @param base - Is the base of the logarithm; 10 if omitted.
          */
-        log(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            base?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        log(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, base?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the base-10 logarithm of a number.
          *
@@ -13617,12 +12637,7 @@ export declare namespace Excel {
          * @param standardDev - Is the standard deviation of ln(x), a positive number.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
-        logNorm_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        logNorm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.
          *
@@ -13633,11 +12648,7 @@ export declare namespace Excel {
          * @param mean - Is the mean of ln(x).
          * @param standardDev - Is the standard deviation of ln(x), a positive number.
          */
-        logNorm_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        logNorm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
          *
@@ -13648,11 +12659,7 @@ export declare namespace Excel {
          * @param lookupVector - Is a range that contains only one row or one column of text, numbers, or logical values, placed in ascending order.
          * @param resultVector - Is a range that contains only one row or column, the same size as lookupVector.
          */
-        lookup(
-            lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            lookupVector: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            resultVector?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | string | boolean>;
+        lookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupVector: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, resultVector?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
          * Converts all letters in a text string to lowercase.
          *
@@ -13675,14 +12682,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        mduration(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        mduration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and interest on reinvestment of cash.
          *
@@ -13693,11 +12693,7 @@ export declare namespace Excel {
          * @param financeRate - Is the interest rate you pay on the money used in the cash flows.
          * @param reinvestRate - Is the interest rate you receive on the cash flows as you reinvest them.
          */
-        mirr(
-            values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            financeRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            reinvestRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        mirr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, financeRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, reinvestRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a number rounded to the desired multiple.
          *
@@ -13707,10 +12703,7 @@ export declare namespace Excel {
          * @param number - Is the value to round.
          * @param multiple - Is the multiple to which you want to round number.
          */
-        mround(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            multiple: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        mround(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, multiple: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the relative position of an item in an array that matches a specified value in a specified order.
          *
@@ -13721,11 +12714,7 @@ export declare namespace Excel {
          * @param lookupArray - Is a contiguous range of cells containing possible lookup values, an array of values, or a reference to an array.
          * @param matchType - Is a number 1, 0, or -1 indicating which value to return.
          */
-        match(
-            lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            lookupArray: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            matchType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        match(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupArray: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, matchType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the largest value in a set of values. Ignores logical values and text.
          *
@@ -13734,9 +12723,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
-        max(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        max(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the largest value in a set of values. Does not ignore logical values and text.
          *
@@ -13745,9 +12732,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
-        maxA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        maxA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the median, or the number in the middle of the set of given numbers.
          *
@@ -13756,9 +12741,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
          */
-        median(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        median(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the characters from the middle of a text string, given a starting position and length.
          *
@@ -13769,11 +12752,7 @@ export declare namespace Excel {
          * @param startNum - Is the position of the first character you want to extract. The first character in Text is 1.
          * @param numChars - Specifies how many characters to return from Text.
          */
-        mid(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        mid(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns characters from the middle of a text string, given a starting position and length. Use with double-byte character sets (DBCS).
          *
@@ -13784,11 +12763,7 @@ export declare namespace Excel {
          * @param startNum - Is the position of the first character you want to extract in text.
          * @param numBytes - Specifies how many characters to return from text.
          */
-        midb(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        midb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the smallest number in a set of values. Ignores logical values and text.
          *
@@ -13797,9 +12772,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
-        min(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        min(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the smallest value in a set of values. Does not ignore logical values and text.
          *
@@ -13808,9 +12781,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
-        minA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        minA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the minute, a number from 0 to 59.
          *
@@ -13819,9 +12790,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
-        minute(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        minute(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the remainder after a number is divided by a divisor.
          *
@@ -13831,10 +12800,7 @@ export declare namespace Excel {
          * @param number - Is the number for which you want to find the remainder after the division is performed.
          * @param divisor - Is the number by which you want to divide Number.
          */
-        mod(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            divisor: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        mod(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, divisor: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the month, a number from 1 (January) to 12 (December).
          *
@@ -13843,9 +12809,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
-        month(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        month(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the multinomial of a set of numbers.
          *
@@ -13854,9 +12818,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
          */
-        multiNomial(
-            ...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        multiNomial(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).
          *
@@ -13865,9 +12827,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value you want converted.
          */
-        n(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        n(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
          *
@@ -13880,13 +12840,7 @@ export declare namespace Excel {
          * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, zero is used.
          * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
-        nper(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        nper(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the error value #N/A (value not available).
          *
@@ -13905,12 +12859,7 @@ export declare namespace Excel {
          * @param probabilityS - Is the probability of a success; a number between 0 and 1.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
-        negBinom_Dist(
-            numberF: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        negBinom_Dist(numberF: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of whole workdays between two dates.
          *
@@ -13921,11 +12870,7 @@ export declare namespace Excel {
          * @param endDate - Is a serial date number that represents the end date.
          * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
-        networkDays(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        networkDays(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of whole workdays between two dates with custom weekend parameters.
          *
@@ -13937,12 +12882,7 @@ export declare namespace Excel {
          * @param weekend - Is a number or string specifying when weekends occur.
          * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
-        networkDays_Intl(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        networkDays_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the annual nominal interest rate.
          *
@@ -13952,10 +12892,7 @@ export declare namespace Excel {
          * @param effectRate - Is the effective interest rate.
          * @param npery - Is the number of compounding periods per year.
          */
-        nominal(
-            effectRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        nominal(effectRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the normal distribution for the specified mean and standard deviation.
          *
@@ -13967,12 +12904,7 @@ export declare namespace Excel {
          * @param standardDev - Is the standard deviation of the distribution, a positive number.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
-        norm_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        norm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
          *
@@ -13983,11 +12915,7 @@ export declare namespace Excel {
          * @param mean - Is the arithmetic mean of the distribution.
          * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
-        norm_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        norm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
          *
@@ -13997,10 +12925,7 @@ export declare namespace Excel {
          * @param z - Is the value for which you want the distribution.
          * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
-        norm_S_Dist(
-            z: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        norm_S_Dist(z: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).
          *
@@ -14009,9 +12934,7 @@ export declare namespace Excel {
          *
          * @param probability - Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
          */
-        norm_S_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        norm_S_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Changes FALSE to TRUE, or TRUE to FALSE.
          *
@@ -14037,10 +12960,7 @@ export declare namespace Excel {
          * @param rate - Is the rate of discount over the length of one period.
          * @param values - List of parameters, whose elements are 1 to 254 payments and income, equally spaced in time and occurring at the end of each period.
          */
-        npv(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        npv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Converts text to number in a locale-independent manner.
          *
@@ -14051,11 +12971,7 @@ export declare namespace Excel {
          * @param decimalSeparator - Is the character used as the decimal separator in the string.
          * @param groupSeparator - Is the character used as the group separator in the string.
          */
-        numberValue(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            decimalSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            groupSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        numberValue(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimalSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, groupSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts an octal number to binary.
          *
@@ -14065,10 +12981,7 @@ export declare namespace Excel {
          * @param number - Is the octal number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        oct2Bin(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oct2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts an octal number to decimal.
          *
@@ -14077,9 +12990,7 @@ export declare namespace Excel {
          *
          * @param number - Is the octal number you want to convert.
          */
-        oct2Dec(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oct2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts an octal number to hexadecimal.
          *
@@ -14089,10 +13000,7 @@ export declare namespace Excel {
          * @param number - Is the octal number you want to convert.
          * @param places - Is the number of characters to use.
          */
-        oct2Hex(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oct2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a positive number up and negative number down to the nearest odd integer.
          *
@@ -14118,17 +13026,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        oddFPrice(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oddFPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the yield of a security with an odd first period.
          *
@@ -14145,17 +13043,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        oddFYield(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oddFYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the price per $100 face value of a security with an odd last period.
          *
@@ -14171,16 +13059,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        oddLPrice(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oddLPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the yield of a security with an odd last period.
          *
@@ -14196,16 +13075,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        oddLYield(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        oddLYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE.
          *
@@ -14214,9 +13084,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
          */
-        or(
-            ...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<boolean>;
+        or(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
          * Returns the number of periods required by an investment to reach a specified value.
          *
@@ -14227,11 +13095,7 @@ export declare namespace Excel {
          * @param pv - Is the present value of the investment.
          * @param fv - Is the desired future value of the investment.
          */
-        pduration(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        pduration(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the data set.
          *
@@ -14242,11 +13106,7 @@ export declare namespace Excel {
          * @param x - Is the value for which you want to know the rank.
          * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
-        percentRank_Exc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        percentRank_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the data set.
          *
@@ -14257,11 +13117,7 @@ export declare namespace Excel {
          * @param x - Is the value for which you want to know the rank.
          * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
-        percentRank_Inc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        percentRank_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
          *
@@ -14271,10 +13127,7 @@ export declare namespace Excel {
          * @param array - Is the array or range of data that defines relative standing.
          * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
-        percentile_Exc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        percentile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
          *
@@ -14284,10 +13137,7 @@ export declare namespace Excel {
          * @param array - Is the array or range of data that defines relative standing.
          * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
-        percentile_Inc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        percentile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of permutations for a given number of objects that can be selected from the total objects.
          *
@@ -14297,10 +13147,7 @@ export declare namespace Excel {
          * @param number - Is the total number of objects.
          * @param numberChosen - Is the number of objects in each permutation.
          */
-        permut(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        permut(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total objects.
          *
@@ -14310,10 +13157,7 @@ export declare namespace Excel {
          * @param number - Is the total number of objects.
          * @param numberChosen - Is the number of objects in each permutation.
          */
-        permutationa(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        permutationa(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the value of the density function for a standard normal distribution.
          *
@@ -14342,13 +13186,7 @@ export declare namespace Excel {
          * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made, 0 (zero) if omitted.
          * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
-        pmt(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        pmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Poisson distribution.
          *
@@ -14359,11 +13197,7 @@ export declare namespace Excel {
          * @param mean - Is the expected numeric value, a positive number.
          * @param cumulative - Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
          */
-        poisson_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        poisson_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the result of a number raised to a power.
          *
@@ -14373,10 +13207,7 @@ export declare namespace Excel {
          * @param number - Is the base number, any real number.
          * @param power - Is the exponent, to which the base number is raised.
          */
-        power(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            power: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        power(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, power: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the payment on the principal for a given investment based on periodic, constant payments and a constant interest rate.
          *
@@ -14390,14 +13221,7 @@ export declare namespace Excel {
          * @param fv - Is the future value, or cash balance you want to attain after the last payment is made.
          * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
-        ppmt(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        ppmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the price per $100 face value of a security that pays periodic interest.
          *
@@ -14412,15 +13236,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        price(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        price(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the price per $100 face value of a discounted security.
          *
@@ -14433,13 +13249,7 @@ export declare namespace Excel {
          * @param redemption - Is the security's redemption value per $100 face value.
          * @param basis - Is the type of day count basis to use.
          */
-        priceDisc(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        priceDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the price per $100 face value of a security that pays interest at maturity.
          *
@@ -14453,14 +13263,7 @@ export declare namespace Excel {
          * @param yld - Is the security's annual yield.
          * @param basis - Is the type of day count basis to use.
          */
-        priceMat(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        priceMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Multiplies all the numbers given as arguments.
          *
@@ -14469,9 +13272,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
          */
-        product(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        product(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to lowercase.
          *
@@ -14493,13 +13294,7 @@ export declare namespace Excel {
          * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made.
          * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
-        pv(
-            rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        pv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
          *
@@ -14509,10 +13304,7 @@ export declare namespace Excel {
          * @param array - Is the array or cell range of numeric values for which you want the quartile value.
          * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
-        quartile_Exc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        quartile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
          *
@@ -14522,10 +13314,7 @@ export declare namespace Excel {
          * @param array - Is the array or cell range of numeric values for which you want the quartile value.
          * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
-        quartile_Inc(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        quartile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the integer portion of a division.
          *
@@ -14535,10 +13324,7 @@ export declare namespace Excel {
          * @param numerator - Is the dividend.
          * @param denominator - Is the divisor.
          */
-        quotient(
-            numerator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            denominator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        quotient(numerator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, denominator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts degrees to radians.
          *
@@ -14564,10 +13350,7 @@ export declare namespace Excel {
          * @param bottom - Is the smallest integer RANDBETWEEN will return.
          * @param top - Is the largest integer RANDBETWEEN will return.
          */
-        randBetween(
-            bottom: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            top: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        randBetween(bottom: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, top: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the average rank is returned.
          *
@@ -14578,11 +13361,7 @@ export declare namespace Excel {
          * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
          * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
-        rank_Avg(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        rank_Avg(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the top rank of that set of values is returned.
          *
@@ -14593,11 +13372,7 @@ export declare namespace Excel {
          * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
          * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
-        rank_Eq(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        rank_Eq(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at 6% APR.
          *
@@ -14611,14 +13386,7 @@ export declare namespace Excel {
          * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          * @param guess - Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).
          */
-        rate(
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        rate(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the amount received at maturity for a fully invested security.
          *
@@ -14631,13 +13399,7 @@ export declare namespace Excel {
          * @param discount - Is the security's discount rate.
          * @param basis - Is the type of day count basis to use.
          */
-        received(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        received(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Replaces part of a text string with a different text string.
          *
@@ -14649,12 +13411,7 @@ export declare namespace Excel {
          * @param numChars - Is the number of characters in oldText that you want to replace.
          * @param newText - Is the text that will replace characters in oldText.
          */
-        replace(
-            oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        replace(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
          *
@@ -14666,12 +13423,7 @@ export declare namespace Excel {
          * @param numBytes - Is the number of characters in oldText that you want to replace with newText.
          * @param newText - Is the text that will replace characters in oldText.
          */
-        replaceB(
-            oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        replaceB(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
          *
@@ -14681,10 +13433,7 @@ export declare namespace Excel {
          * @param text - Is the text you want to repeat.
          * @param numberTimes - Is a positive number specifying the number of times to repeat text.
          */
-        rept(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numberTimes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        rept(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberTimes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the specified number of characters from the end of a text string.
          *
@@ -14694,10 +13443,7 @@ export declare namespace Excel {
          * @param text - Is the text string that contains the characters you want to extract.
          * @param numChars - Specifies how many characters you want to extract, 1 if omitted.
          */
-        right(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        right(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the specified number of characters from the end of a text string. Use with double-byte character sets (DBCS).
          *
@@ -14707,10 +13453,7 @@ export declare namespace Excel {
          * @param text - Is the text string containing the characters you want to extract.
          * @param numBytes - Specifies how many characters you want to extract.
          */
-        rightb(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        rightb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Converts an Arabic numeral to Roman, as text.
          *
@@ -14720,10 +13463,7 @@ export declare namespace Excel {
          * @param number - Is the Arabic numeral you want to convert.
          * @param form - Is the number specifying the type of Roman numeral you want.
          */
-        roman(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            form?: boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        roman(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, form?: boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Rounds a number to a specified number of digits.
          *
@@ -14733,10 +13473,7 @@ export declare namespace Excel {
          * @param number - Is the number you want to round.
          * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.
          */
-        round(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        round(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number down, toward zero.
          *
@@ -14746,10 +13483,7 @@ export declare namespace Excel {
          * @param number - Is any real number that you want rounded down.
          * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
-        roundDown(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        roundDown(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Rounds a number up, away from zero.
          *
@@ -14759,10 +13493,7 @@ export declare namespace Excel {
          * @param number - Is any real number that you want rounded up.
          * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
-        roundUp(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        roundUp(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the number of rows in a reference or array.
          *
@@ -14782,11 +13513,7 @@ export declare namespace Excel {
          * @param pv - Is the present value of the investment.
          * @param fv - Is the future value of the investment.
          */
-        rri(
-            nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        rri(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the secant of an angle.
          *
@@ -14813,9 +13540,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:23 or 4:48:47 PM.
          */
-        second(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        second(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the sum of a power series based on the formula.
          *
@@ -14827,12 +13552,7 @@ export declare namespace Excel {
          * @param m - Is the step by which to increase n for each term in the series.
          * @param coefficients - Is a set of coefficients by which each successive power of x is multiplied.
          */
-        seriesSum(
-            x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            m: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            coefficients: Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        seriesSum(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, m: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coefficients: Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the sheet number of the referenced sheet.
          *
@@ -14886,9 +13606,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
          */
-        skew(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        skew(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.
          *
@@ -14897,9 +13615,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
          */
-        skew_p(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        skew_p(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the straight-line depreciation of an asset for one period.
          *
@@ -14910,11 +13626,7 @@ export declare namespace Excel {
          * @param salvage - Is the salvage value at the end of the life of the asset.
          * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
          */
-        sln(
-            cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        sln(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the k-th smallest value in a data set. For example, the fifth smallest number.
          *
@@ -14924,10 +13636,7 @@ export declare namespace Excel {
          * @param array - Is an array or range of numerical data for which you want to determine the k-th smallest value.
          * @param k - Is the position (from the smallest) in the array or range of the value to return.
          */
-        small(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        small(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the square root of a number.
          *
@@ -14945,9 +13654,7 @@ export declare namespace Excel {
          *
          * @param number - Is the number by which p is multiplied.
          */
-        sqrtPi(
-            number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        sqrtPi(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Estimates standard deviation based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
          *
@@ -14956,9 +13663,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
          */
-        stDevA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        stDevA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Calculates standard deviation based on an entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
          *
@@ -14967,9 +13672,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
          */
-        stDevPA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        stDevPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
          *
@@ -14978,9 +13681,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
          */
-        stDev_P(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        stDev_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Estimates standard deviation based on a sample (ignores logical values and text in the sample).
          *
@@ -14989,9 +13690,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
          */
-        stDev_S(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        stDev_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns a normalized value from a distribution characterized by a mean and standard deviation.
          *
@@ -15002,11 +13701,7 @@ export declare namespace Excel {
          * @param mean - Is the arithmetic mean of the distribution.
          * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
-        standardize(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        standardize(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Replaces existing text with new text in a text string.
          *
@@ -15018,12 +13713,7 @@ export declare namespace Excel {
          * @param newText - Is the text you want to replace oldText with.
          * @param instanceNum - Specifies which occurrence of oldText you want to replace. If omitted, every instance of oldText is replaced.
          */
-        substitute(
-            text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            instanceNum?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        substitute(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, instanceNum?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns a subtotal in a list or database.
          *
@@ -15033,10 +13723,7 @@ export declare namespace Excel {
          * @param functionNum - Is the number 1 to 11 that specifies the summary function for the subtotal.
          * @param values - List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.
          */
-        subtotal(
-            functionNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        subtotal(functionNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Adds all the numbers in a range of cells.
          *
@@ -15045,9 +13732,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
          */
-        sum(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        sum(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Adds the cells specified by a given condition or criteria.
          *
@@ -15058,11 +13743,7 @@ export declare namespace Excel {
          * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
          * @param sumRange - Are the actual cells to sum. If omitted, the cells in range are used.
          */
-        sumIf(
-            range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            sumRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        sumIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sumRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Adds the cells specified by a given set of conditions or criteria.
          *
@@ -15072,10 +13753,7 @@ export declare namespace Excel {
          * @param sumRange - Are the actual cells to sum.
          * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
          */
-        sumIfs(
-            sumRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-        ): FunctionResult<number>;
+        sumIfs(sumRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
          * Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to cells that contain numbers.
          *
@@ -15084,9 +13762,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
          */
-        sumSq(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        sumSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the sum-of-years' digits depreciation of an asset for a specified period.
          *
@@ -15098,12 +13774,7 @@ export declare namespace Excel {
          * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
          * @param per - Is the period and must use the same units as Life.
          */
-        syd(
-            cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        syd(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
          *
@@ -15112,9 +13783,7 @@ export declare namespace Excel {
          *
          * @param value - Is the value to test.
          */
-        t(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        t(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the bond-equivalent yield for a treasury bill.
          *
@@ -15125,11 +13794,7 @@ export declare namespace Excel {
          * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
          * @param discount - Is the Treasury bill's discount rate.
          */
-        tbillEq(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        tbillEq(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the price per $100 face value for a treasury bill.
          *
@@ -15140,11 +13805,7 @@ export declare namespace Excel {
          * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
          * @param discount - Is the Treasury bill's discount rate.
          */
-        tbillPrice(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        tbillPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the yield for a treasury bill.
          *
@@ -15155,11 +13816,7 @@ export declare namespace Excel {
          * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
          * @param pr - Is the Treasury Bill's price per $100 face value.
          */
-        tbillYield(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        tbillYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the left-tailed Student's t-distribution.
          *
@@ -15170,11 +13827,7 @@ export declare namespace Excel {
          * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
-        t_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        t_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the two-tailed Student's t-distribution.
          *
@@ -15184,10 +13837,7 @@ export declare namespace Excel {
          * @param x - Is the numeric value at which to evaluate the distribution.
          * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
-        t_Dist_2T(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the right-tailed Student's t-distribution.
          *
@@ -15197,10 +13847,7 @@ export declare namespace Excel {
          * @param x - Is the numeric value at which to evaluate the distribution.
          * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
-        t_Dist_RT(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the left-tailed inverse of the Student's t-distribution.
          *
@@ -15210,10 +13857,7 @@ export declare namespace Excel {
          * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
          * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
-        t_Inv(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        t_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the two-tailed inverse of the Student's t-distribution.
          *
@@ -15223,10 +13867,7 @@ export declare namespace Excel {
          * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
          * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
-        t_Inv_2T(
-            probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        t_Inv_2T(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the tangent of an angle.
          *
@@ -15254,10 +13895,7 @@ export declare namespace Excel {
          * @param value - Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
          * @param formatText - Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
          */
-        text(
-            value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            formatText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        text(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, formatText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
          *
@@ -15268,11 +13906,7 @@ export declare namespace Excel {
          * @param minute - Is a number from 0 to 59 representing the minute.
          * @param second - Is a number from 0 to 59 representing the second.
          */
-        time(
-            hour: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            minute: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            second: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        time(hour: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minute: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, second: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59 PM). Format the number with a time format after entering the formula.
          *
@@ -15281,9 +13915,7 @@ export declare namespace Excel {
          *
          * @param timeText - Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
          */
-        timevalue(
-            timeText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        timevalue(timeText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the current date formatted as a date.
          *
@@ -15309,10 +13941,7 @@ export declare namespace Excel {
          * @param array - Is the range or array of values to trim and average.
          * @param percent - Is the fractional number of data points to exclude from the top and bottom of the data set.
          */
-        trimMean(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            percent: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        trimMean(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, percent: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the logical value TRUE.
          *
@@ -15329,10 +13958,7 @@ export declare namespace Excel {
          * @param number - Is the number you want to truncate.
          * @param numDigits - Is a number specifying the precision of the truncation, 0 (zero) if omitted.
          */
-        trunc(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            numDigits?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        trunc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64.
          *
@@ -15341,9 +13967,7 @@ export declare namespace Excel {
          *
          * @param value - Can be any value.
          */
-        type(
-            value: boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        type(value: boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Converts a number to text, using currency format.
          *
@@ -15353,10 +13977,7 @@ export declare namespace Excel {
          * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
          * @param decimals - Is the number of digits to the right of the decimal point.
          */
-        usdollar(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        usdollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the Unicode character referenced by the given numeric value.
          *
@@ -15365,9 +13986,7 @@ export declare namespace Excel {
          *
          * @param number - Is the Unicode number representing a character.
          */
-        unichar(
-            number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<string>;
+        unichar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
          * Returns the number (code point) corresponding to the first character of the text.
          *
@@ -15397,12 +14016,7 @@ export declare namespace Excel {
          * @param colIndexNum - Is the column number in tableArray from which the matching value should be returned. The first column of values in the table is column 1.
          * @param rangeLookup - Is a logical value: to find the closest match in the first column (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
-        vlookup(
-            lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>,
-            colIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>,
-            rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number | string | boolean>;
+        vlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, colIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
          * Converts a text string that represents a number to a number.
          *
@@ -15411,9 +14025,7 @@ export declare namespace Excel {
          *
          * @param text - Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
          */
-        value(
-            text: string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        value(text: string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
          *
@@ -15422,9 +14034,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
          */
-        varA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        varA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Calculates variance based on the entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
          *
@@ -15433,9 +14043,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
          */
-        varPA(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        varPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Calculates variance based on the entire population (ignores logical values and text in the population).
          *
@@ -15444,9 +14052,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
          */
-        var_P(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        var_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Estimates variance based on a sample (ignores logical values and text in the sample).
          *
@@ -15455,9 +14061,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
          */
-        var_S(
-            ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<number>;
+        var_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
          * Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify.
          *
@@ -15472,15 +14076,7 @@ export declare namespace Excel {
          * @param factor - Is the rate at which the balance declines, 2 (double-declining balance) if omitted.
          * @param noSwitch - Switch to straight-line depreciation when depreciation is greater than the declining balance = FALSE or omitted; do not switch = TRUE.
          */
-        vdb(
-            cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            startPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            noSwitch?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        vdb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noSwitch?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the week number in the year.
          *
@@ -15490,10 +14086,7 @@ export declare namespace Excel {
          * @param serialNumber - Is the date-time code used by Microsoft Excel for date and time calculation.
          * @param returnType - Is a number (1 or 2) that determines the type of the return value.
          */
-        weekNum(
-            serialNumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            returnType?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        weekNum(serialNumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a number from 1 to 7 identifying the day of the week of a date.
          *
@@ -15503,10 +14096,7 @@ export declare namespace Excel {
          * @param serialNumber - Is a number that represents a date.
          * @param returnType - Is a number: for Sunday=1 through Saturday=7, use 1; for Monday=1 through Sunday=7, use 2; for Monday=0 through Sunday=6, use 3.
          */
-        weekday(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            returnType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        weekday(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the Weibull distribution.
          *
@@ -15518,12 +14108,7 @@ export declare namespace Excel {
          * @param beta - Is a parameter to the distribution, a positive number.
          * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
-        weibull_Dist(
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        weibull_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the serial number of the date before or after a specified number of workdays.
          *
@@ -15534,11 +14119,7 @@ export declare namespace Excel {
          * @param days - Is the number of nonweekend and non-holiday days before or after startDate.
          * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
-        workDay(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        workDay(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the serial number of the date before or after a specified number of workdays with custom weekend parameters.
          *
@@ -15550,12 +14131,7 @@ export declare namespace Excel {
          * @param weekend - Is a number or string specifying when weekends occur.
          * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
-        workDay_Intl(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        workDay_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the internal rate of return for a schedule of cash flows.
          *
@@ -15566,11 +14142,7 @@ export declare namespace Excel {
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          * @param guess - Is a number that you guess is close to the result of XIRR.
          */
-        xirr(
-            values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-            dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-            guess?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        xirr(values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the net present value for a schedule of cash flows.
          *
@@ -15581,11 +14153,7 @@ export declare namespace Excel {
          * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
          * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          */
-        xnpv(
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-            dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        xnpv(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns a logical 'Exclusive Or' of all arguments.
          *
@@ -15594,9 +14162,7 @@ export declare namespace Excel {
          *
          * @param values - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
-        xor(
-            ...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-        ): FunctionResult<boolean>;
+        xor(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
          * Returns the year of a date, an integer in the range 1900 - 9999.
          *
@@ -15605,9 +14171,7 @@ export declare namespace Excel {
          *
          * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
-        year(
-            serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        year(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the year fraction representing the number of whole days between start_date and end_date.
          *
@@ -15618,11 +14182,7 @@ export declare namespace Excel {
          * @param endDate - Is a serial date number that represents the end date.
          * @param basis - Is the type of day count basis to use.
          */
-        yearFrac(
-            startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        yearFrac(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the yield on a security that pays periodic interest.
          *
@@ -15637,15 +14197,7 @@ export declare namespace Excel {
          * @param frequency - Is the number of coupon payments per year.
          * @param basis - Is the type of day count basis to use.
          */
-        yield(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        yield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the annual yield for a discounted security. For example, a treasury bill.
          *
@@ -15658,13 +14210,7 @@ export declare namespace Excel {
          * @param redemption - Is the security's redemption value per $100 face value.
          * @param basis - Is the type of day count basis to use.
          */
-        yieldDisc(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        yieldDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the annual yield of a security that pays interest at maturity.
          *
@@ -15678,14 +14224,7 @@ export declare namespace Excel {
          * @param pr - Is the security's price per $100 face value.
          * @param basis - Is the type of day count basis to use.
          */
-        yieldMat(
-            settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        yieldMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the one-tailed P-value of a z-test.
          *
@@ -15696,15 +14235,11 @@ export declare namespace Excel {
          * @param x - Is the value to test.
          * @param sigma - Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
          */
-        z_Test(
-            array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-            sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        ): FunctionResult<number>;
+        z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): {
             [key: string]: string;
         };
@@ -15740,20 +14275,20 @@ export declare namespace Excel {
         unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
-        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode",
+        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
     export namespace Interfaces {
         /**
-         * Provides ways to load properties of only a subset of members of a collection.
-         */
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
         export interface CollectionLoadOptions {
             /**
-             * Specify the number of items in the queried collection to be included in the result.
-             */
+            * Specify the number of items in the queried collection to be included in the result.
+            */
             $top?: number;
             /**
-             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-             */
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
             $skip?: number;
         }
         /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
@@ -15840,11 +14375,11 @@ export declare namespace Excel {
         export interface RangeUpdateData {
             
             /**
-             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.RangeFormatUpdateData;
             /**
              * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
@@ -16018,7 +14553,7 @@ export declare namespace Excel {
             highlightLastColumn?: boolean;
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -16119,32 +14654,32 @@ export declare namespace Excel {
         /** An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`. */
         export interface RangeFormatUpdateData {
             /**
-             * Collection of border objects that apply to the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Collection of border objects that apply to the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;
             /**
-             * Returns the fill object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the fill object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             fill?: Excel.Interfaces.RangeFillUpdateData;
             /**
-             * Returns the font object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the font object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.RangeFontUpdateData;
             /**
-             * Returns the format protection object for a range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Returns the format protection object for a range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.FormatProtectionUpdateData;
             
             /**
@@ -16160,16 +14695,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            horizontalAlignment?:
-                | Excel.HorizontalAlignment
-                | "General"
-                | "Left"
-                | "Center"
-                | "Right"
-                | "Fill"
-                | "Justify"
-                | "CenterAcrossSelection"
-                | "Distributed";
+            horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
             
             
             /**
@@ -16224,7 +14750,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-                        
+            
+            
             
             
         }
@@ -16243,16 +14770,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            style?:
-                | Excel.BorderLineStyle
-                | "None"
-                | "Continuous"
-                | "Dash"
-                | "DashDot"
-                | "DashDotDot"
-                | "Dot"
-                | "Double"
-                | "SlantDashDot";
+            style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
             
             /**
              * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -16314,13 +14832,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            underline?:
-                | Excel.RangeUnderlineStyle
-                | "None"
-                | "Single"
-                | "Double"
-                | "SingleAccountant"
-                | "DoubleAccountant";
+            underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
         /** An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`. */
         export interface ChartCollectionUpdateData {
@@ -16329,44 +14841,46 @@ export declare namespace Excel {
         /** An interface for updating data on the Chart object, for use in `chart.set({ ... })`. */
         export interface ChartUpdateData {
             /**
-             * Represents chart axes.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart axes.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             axes?: Excel.Interfaces.ChartAxesUpdateData;
             /**
-             * Represents the data labels on the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the data labels on the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;
             /**
-             * Encapsulates the format properties for the chart area.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties for the chart area.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAreaFormatUpdateData;
             /**
-             * Represents the legend for the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the legend for the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             legend?: Excel.Interfaces.ChartLegendUpdateData;
             
             
             /**
-             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartTitleUpdateData;
             
-                        /**
+            
+            
+            /**
              * Specifies the height, in points, of the chart object.
              *
              * @remarks
@@ -16419,13 +14933,14 @@ export declare namespace Excel {
         export interface ChartAreaFormatUpdateData {
             
             /**
-             * Represents the font attributes (font name, font size, color, etc.) for the current object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (font name, font size, color, etc.) for the current object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
-                        
+            
+            
         }
         /** An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ... })`. */
         export interface ChartSeriesCollectionUpdateData {
@@ -16437,18 +14952,17 @@ export declare namespace Excel {
             
             
             /**
-             * Represents the formatting of a chart series, which includes fill and line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartSeriesFormatUpdateData;
             
             
             
             
             
-                        
             
             
             
@@ -16469,7 +14983,10 @@ export declare namespace Excel {
             
             
             
-                        /**
+            
+            
+            
+            /**
              * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * @remarks
@@ -16484,16 +15001,18 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
+            
         }
         /** An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`. */
         export interface ChartSeriesFormatUpdateData {
             /**
-             * Represents line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ... })`. */
@@ -16504,17 +15023,18 @@ export declare namespace Excel {
         export interface ChartPointUpdateData {
             
             /**
-             * Encapsulates the format properties chart point.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties chart point.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartPointFormatUpdateData;
             
             
             
             
-                    }
+            
+        }
         /** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
         export interface ChartPointFormatUpdateData {
             
@@ -16522,61 +15042,64 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`. */
         export interface ChartAxesUpdateData {
             /**
-             * Represents the category axis in a chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the category axis in a chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;
             /**
-             * Represents the series axis of a 3-D chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the series axis of a 3-D chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;
             /**
-             * Represents the value axis in an axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the value axis in an axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
         /** An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`. */
         export interface ChartAxisUpdateData {
             /**
-             * Represents the formatting of a chart object, which includes line and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart object, which includes line and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisFormatUpdateData;
             /**
-             * Returns an object that represents the major gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the major gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;
             /**
-             * Returns an object that represents the minor gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the minor gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;
             /**
-             * Represents the axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartAxisTitleUpdateData;
             
             
             
-                        
+            
+            
+            
+            
             
             
             /**
@@ -16625,28 +15148,28 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
         export interface ChartAxisFormatUpdateData {
             /**
-             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
             /**
-             * Specifies chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`. */
         export interface ChartAxisTitleUpdateData {
             /**
-             * Specifies the formatting of the chart axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the formatting of the chart axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;
             /**
              * Specifies the axis title.
@@ -16668,44 +15191,33 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatUpdateData {
             
             /**
-             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`. */
         export interface ChartDataLabelsUpdateData {
             /**
-             * Specifies the format of chart data labels, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the format of chart data labels, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             
-                        
+            
+            
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?:
-                | Excel.ChartDataLabelPosition
-                | "Invalid"
-                | "None"
-                | "Center"
-                | "InsideEnd"
-                | "InsideBase"
-                | "OutsideEnd"
-                | "Left"
-                | "Right"
-                | "Top"
-                | "Bottom"
-                | "BestFit"
-                | "Callout";
+            position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
             /**
              * String representing the separator used for the data labels on a chart.
              *
@@ -16756,16 +15268,13 @@ export declare namespace Excel {
              */
             showValue?: boolean;
             
-                    }
+            
+        }
         /** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
             
             
             
-                        
-            
-            
-                        
             
             
             
@@ -16775,16 +15284,23 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ... })`. */
         export interface ChartDataLabelFormatUpdateData {
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the `ChartDataTable` object, for use in `chartDataTable.set({ ... })`. */
@@ -16816,11 +15332,11 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`. */
         export interface ChartGridlinesUpdateData {
             /**
-             * Represents the formatting of chart gridlines.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of chart gridlines.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;
             /**
              * Specifies if the axis gridlines are visible.
@@ -16833,21 +15349,21 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`. */
         export interface ChartGridlinesFormatUpdateData {
             /**
-             * Represents chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`. */
         export interface ChartLegendUpdateData {
             /**
-             * Represents the formatting of a chart legend, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart legend, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartLegendFormatUpdateData;
             
             
@@ -16864,15 +15380,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?:
-                | Excel.ChartLegendPosition
-                | "Invalid"
-                | "Top"
-                | "Bottom"
-                | "Left"
-                | "Right"
-                | "Corner"
-                | "Custom";
+            position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
             
             
             /**
@@ -16896,28 +15404,30 @@ export declare namespace Excel {
         export interface ChartLegendFormatUpdateData {
             
             /**
-             * Represents the font attributes such as font name, font size, and color of a chart legend.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes such as font name, font size, and color of a chart legend.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
         export interface ChartMapOptionsUpdateData {
             
-                        
+            
+            
         }
         /** An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`. */
         export interface ChartTitleUpdateData {
             /**
-             * Represents the formatting of a chart title, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart title, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartTitleFormatUpdateData;
-                        
+            
+            
             /**
              * Specifies if the chart title will overlay the chart.
              *
@@ -16936,7 +15446,8 @@ export declare namespace Excel {
             text?: string;
             
             
-                        /**
+            
+            /**
              * Specifies if the chart title is visibile.
              *
              * @remarks
@@ -16952,17 +15463,18 @@ export declare namespace Excel {
         export interface ChartTitleFormatUpdateData {
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for an object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for an object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
             
-                        
+            
+            
         }
         /** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
         export interface ChartBinOptionsUpdateData {
@@ -16991,7 +15503,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-                        
+            
+            
         }
         /** An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`. */
         export interface ChartFontUpdateData {
@@ -17050,7 +15563,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ... })`. */
         export interface ChartTrendlineCollectionUpdateData {
             items?: Excel.Interfaces.ChartTrendlineData[];
@@ -17064,13 +15578,15 @@ export declare namespace Excel {
             
             
             
-                        
             
             
             
             
             
-                    }
+            
+            
+            
+        }
         /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in `chartTrendlineLabelFormat.set({ ... })`. */
         export interface ChartTrendlineLabelFormatUpdateData {
             
@@ -17176,7 +15692,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`. */
         export interface PivotFieldCollectionUpdateData {
             items?: Excel.Interfaces.PivotFieldData[];
@@ -17232,88 +15749,88 @@ export declare namespace Excel {
         /** An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`. */
         export interface ConditionalFormatUpdateData {
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValue?: Excel.Interfaces.CellValueConditionalFormatUpdateData;
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatUpdateData;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             custom?: Excel.Interfaces.CustomConditionalFormatUpdateData;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatUpdateData;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatUpdateData;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatUpdateData;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatUpdateData;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatUpdateData;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             preset?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;
             /**
             * Returns the specific text conditional format properties if the current conditional format is a text type.
@@ -17370,18 +15887,18 @@ export declare namespace Excel {
         /** An interface for updating data on the DataBarConditionalFormat object, for use in `dataBarConditionalFormat.set({ ... })`. */
         export interface DataBarConditionalFormatUpdateData {
             /**
-             * Representation of all values to the left of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the left of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData;
             /**
-             * Representation of all values to the right of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the right of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData;
             /**
              * HTML color code representing the color of the Axis line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
@@ -17489,18 +16006,18 @@ export declare namespace Excel {
         /** An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ... })`. */
         export interface CustomConditionalFormatUpdateData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
-             * Specifies the `Rule` object on this conditional format.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Specifies the `Rule` object on this conditional format.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;
         }
         /** An interface for updating data on the ConditionalFormatRule object, for use in `conditionalFormatRule.set({ ... })`. */
@@ -17556,29 +16073,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.6]
              */
-            style?:
-                | Excel.IconSet
-                | "Invalid"
-                | "ThreeArrows"
-                | "ThreeArrowsGray"
-                | "ThreeFlags"
-                | "ThreeTrafficLights1"
-                | "ThreeTrafficLights2"
-                | "ThreeSigns"
-                | "ThreeSymbols"
-                | "ThreeSymbols2"
-                | "FourArrows"
-                | "FourArrowsGray"
-                | "FourRedToBlack"
-                | "FourRating"
-                | "FourTrafficLights"
-                | "FiveArrows"
-                | "FiveArrowsGray"
-                | "FiveRating"
-                | "FiveQuarters"
-                | "ThreeStars"
-                | "ThreeTriangles"
-                | "FiveBoxes";
+            style?: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
         }
         /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
         export interface ColorScaleConditionalFormatUpdateData {
@@ -17593,11 +16088,11 @@ export declare namespace Excel {
         /** An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({ ... })`. */
         export interface TopBottomConditionalFormatUpdateData {
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              * The criteria of the top/bottom conditional format.
@@ -17610,11 +16105,11 @@ export declare namespace Excel {
         /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in `presetCriteriaConditionalFormat.set({ ... })`. */
         export interface PresetCriteriaConditionalFormatUpdateData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              * The rule of the conditional format.
@@ -17627,11 +16122,11 @@ export declare namespace Excel {
         /** An interface for updating data on the TextConditionalFormat object, for use in `textConditionalFormat.set({ ... })`. */
         export interface TextConditionalFormatUpdateData {
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              * The rule of the conditional format.
@@ -17644,11 +16139,11 @@ export declare namespace Excel {
         /** An interface for updating data on the CellValueConditionalFormat object, for use in `cellValueConditionalFormat.set({ ... })`. */
         export interface CellValueConditionalFormatUpdateData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              * Specifies the rule object on this conditional format.
@@ -17661,25 +16156,25 @@ export declare namespace Excel {
         /** An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ... })`. */
         export interface ConditionalRangeFormatUpdateData {
             /**
-             * Collection of border objects that apply to the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Collection of border objects that apply to the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             borders?: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData;
             /**
-             * Returns the fill object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the fill object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             fill?: Excel.Interfaces.ConditionalRangeFillUpdateData;
             /**
-             * Returns the font object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the font object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             font?: Excel.Interfaces.ConditionalRangeFontUpdateData;
             /**
              * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
@@ -17753,44 +16248,37 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.6]
              */
-            style?:
-                | Excel.ConditionalRangeBorderLineStyle
-                | "None"
-                | "Continuous"
-                | "Dash"
-                | "DashDot"
-                | "DashDotDot"
-                | "Dot";
+            style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
         }
         /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
         export interface ConditionalRangeBorderCollectionUpdateData {
             /**
-             * Gets the bottom border.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Gets the bottom border.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
             /**
-             * Gets the left border.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Gets the left border.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
             /**
-             * Gets the right border.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Gets the right border.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
             /**
-             * Gets the top border.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Gets the top border.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
@@ -17801,7 +16289,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -17866,7 +16355,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -17933,7 +16423,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -17965,20 +16456,25 @@ export declare namespace Excel {
         /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             
-                        
+            
+            
             
             
             
         }
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
-                        
-                        
-            
-                        
             
             
-                        
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
@@ -17992,7 +16488,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
             
@@ -18037,7 +16534,8 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
-                        
+            
+            
             
             
             
@@ -18085,62 +16583,62 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `workbook.toJSON()`. */
         export interface WorkbookData {
             /**
-             * Represents a collection of bindings that are part of the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of bindings that are part of the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             bindings?: Excel.Interfaces.BindingData[];
             
             /**
-             * Represents the collection of custom XML parts contained by this workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.5]
-             */
+            * Represents the collection of custom XML parts contained by this workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.5]
+            */
             customXmlParts?: Excel.Interfaces.CustomXmlPartData[];
             /**
-             * Represents a collection of workbook-scoped named items (named ranges and constants).
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of workbook-scoped named items (named ranges and constants).
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             names?: Excel.Interfaces.NamedItemData[];
             
             /**
-             * Represents a collection of PivotTables associated with the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.3]
-             */
+            * Represents a collection of PivotTables associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.3]
+            */
             pivotTables?: Excel.Interfaces.PivotTableData[];
             
             
             /**
-             * Represents a collection of settings associated with the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.4]
-             */
+            * Represents a collection of settings associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.4]
+            */
             settings?: Excel.Interfaces.SettingData[];
             
             
             
             
             /**
-             * Represents a collection of tables associated with the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of tables associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             tables?: Excel.Interfaces.TableData[];
             
             /**
-             * Represents a collection of worksheets associated with the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of worksheets associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             worksheets?: Excel.Interfaces.WorksheetData[];
             
             
@@ -18162,45 +16660,45 @@ export declare namespace Excel {
         export interface WorksheetData {
             
             /**
-             * Returns a collection of charts that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a collection of charts that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             charts?: Excel.Interfaces.ChartData[];
             
             
             
             /**
-             * Collection of names scoped to the current worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.4]
-             */
+            * Collection of names scoped to the current worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.4]
+            */
             names?: Excel.Interfaces.NamedItemData[];
             
             /**
-             * Collection of PivotTables that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.3]
-             */
+            * Collection of PivotTables that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.3]
+            */
             pivotTables?: Excel.Interfaces.PivotTableData[];
             /**
-             * Returns the sheet protection object for a worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Returns the sheet protection object for a worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.WorksheetProtectionData;
             
             
             /**
-             * Collection of tables that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Collection of tables that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             tables?: Excel.Interfaces.TableData[];
             
             
@@ -18268,19 +16766,19 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             /**
-             * The collection of `ConditionalFormats` that intersect the range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * The collection of `ConditionalFormats` that intersect the range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];
             
             /**
-             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.RangeFormatData;
             /**
              * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
@@ -18441,11 +16939,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `rangeView.toJSON()`. */
         export interface RangeViewData {
             /**
-             * Represents a collection of range views associated with the range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.3]
-             */
+            * Represents a collection of range views associated with the range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.3]
+            */
             rows?: Excel.Interfaces.RangeViewData[];
             /**
              * Represents the cell addresses of the `RangeView`.
@@ -18646,25 +17144,25 @@ export declare namespace Excel {
         export interface TableData {
             
             /**
-             * Represents a collection of all the columns in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of all the columns in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             columns?: Excel.Interfaces.TableColumnData[];
             /**
-             * Represents a collection of all the rows in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of all the rows in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             rows?: Excel.Interfaces.TableRowData[];
             /**
-             * Represents the sorting for the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Represents the sorting for the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             sort?: Excel.Interfaces.TableSortData;
             /**
              * Specifies if the first column contains special formatting.
@@ -18690,7 +17188,7 @@ export declare namespace Excel {
             
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -18747,11 +17245,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
         export interface TableColumnData {
             /**
-             * Retrieves the filter applied to the column.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Retrieves the filter applied to the column.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             filter?: Excel.Interfaces.FilterData;
             /**
              * Returns a unique key that identifies the column within the table.
@@ -18815,7 +17313,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
         }
         /** An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`. */
         export interface RemoveDuplicatesResultData {
@@ -18825,32 +17324,32 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `rangeFormat.toJSON()`. */
         export interface RangeFormatData {
             /**
-             * Collection of border objects that apply to the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Collection of border objects that apply to the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             borders?: Excel.Interfaces.RangeBorderData[];
             /**
-             * Returns the fill object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the fill object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             fill?: Excel.Interfaces.RangeFillData;
             /**
-             * Returns the font object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the font object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.RangeFontData;
             /**
-             * Returns the format protection object for a range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Returns the format protection object for a range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.FormatProtectionData;
             
             /**
@@ -18866,16 +17365,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            horizontalAlignment?:
-                | Excel.HorizontalAlignment
-                | "General"
-                | "Left"
-                | "Center"
-                | "Right"
-                | "Fill"
-                | "Justify"
-                | "CenterAcrossSelection"
-                | "Distributed";
+            horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
             
             
             /**
@@ -18930,7 +17420,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-                        
+            
+            
             
             
         }
@@ -18949,32 +17440,14 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            sideIndex?:
-                | Excel.BorderIndex
-                | "EdgeTop"
-                | "EdgeBottom"
-                | "EdgeLeft"
-                | "EdgeRight"
-                | "InsideVertical"
-                | "InsideHorizontal"
-                | "DiagonalDown"
-                | "DiagonalUp";
+            sideIndex?: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
             /**
              * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            style?:
-                | Excel.BorderLineStyle
-                | "None"
-                | "Continuous"
-                | "Dash"
-                | "DashDot"
-                | "DashDotDot"
-                | "Dot"
-                | "Double"
-                | "SlantDashDot";
+            style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
             
             /**
              * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -19035,13 +17508,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            underline?:
-                | Excel.RangeUnderlineStyle
-                | "None"
-                | "Single"
-                | "Double"
-                | "SingleAccountant"
-                | "DoubleAccountant";
+            underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
         /** An interface describing the data returned by calling `chartCollection.toJSON()`. */
         export interface ChartCollectionData {
@@ -19050,51 +17517,53 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chart.toJSON()`. */
         export interface ChartData {
             /**
-             * Represents chart axes.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart axes.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             axes?: Excel.Interfaces.ChartAxesData;
             /**
-             * Represents the data labels on the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the data labels on the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             dataLabels?: Excel.Interfaces.ChartDataLabelsData;
             /**
-             * Encapsulates the format properties for the chart area.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties for the chart area.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAreaFormatData;
             /**
-             * Represents the legend for the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the legend for the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             legend?: Excel.Interfaces.ChartLegendData;
             
             
             /**
-             * Represents either a single series or collection of series in the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents either a single series or collection of series in the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             series?: Excel.Interfaces.ChartSeriesData[];
             /**
-             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartTitleData;
             
-                        /**
+            
+            
+            /**
              * Specifies the height, in points, of the chart object.
              *
              * @remarks
@@ -19148,13 +17617,14 @@ export declare namespace Excel {
         export interface ChartAreaFormatData {
             
             /**
-             * Represents the font attributes (font name, font size, color, etc.) for the current object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (font name, font size, color, etc.) for the current object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
-                        
+            
+            
         }
         /** An interface describing the data returned by calling `chartSeriesCollection.toJSON()`. */
         export interface ChartSeriesCollectionData {
@@ -19166,26 +17636,25 @@ export declare namespace Excel {
             
             
             /**
-             * Represents the formatting of a chart series, which includes fill and line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartSeriesFormatData;
             
             /**
-             * Returns a collection of all points in the series.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a collection of all points in the series.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             points?: Excel.Interfaces.ChartPointData[];
             
             
             
             
             
-                        
             
             
             
@@ -19206,7 +17675,10 @@ export declare namespace Excel {
             
             
             
-                        /**
+            
+            
+            
+            /**
              * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * @remarks
@@ -19221,16 +17693,18 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
+            
         }
         /** An interface describing the data returned by calling `chartSeriesFormat.toJSON()`. */
         export interface ChartSeriesFormatData {
             /**
-             * Represents line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartPointsCollection.toJSON()`. */
@@ -19241,17 +17715,18 @@ export declare namespace Excel {
         export interface ChartPointData {
             
             /**
-             * Encapsulates the format properties chart point.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties chart point.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartPointFormatData;
             
             
             
             
-                        /**
+            
+            /**
              * Returns the value of a chart point.
              *
              * @remarks
@@ -19266,63 +17741,64 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartAxes.toJSON()`. */
         export interface ChartAxesData {
             /**
-             * Represents the category axis in a chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the category axis in a chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             categoryAxis?: Excel.Interfaces.ChartAxisData;
             /**
-             * Represents the series axis of a 3-D chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the series axis of a 3-D chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             seriesAxis?: Excel.Interfaces.ChartAxisData;
             /**
-             * Represents the value axis in an axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the value axis in an axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             valueAxis?: Excel.Interfaces.ChartAxisData;
         }
         /** An interface describing the data returned by calling `chartAxis.toJSON()`. */
         export interface ChartAxisData {
             /**
-             * Represents the formatting of a chart object, which includes line and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart object, which includes line and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisFormatData;
             /**
-             * Returns an object that represents the major gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the major gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             majorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
-             * Returns an object that represents the minor gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the minor gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             minorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
-             * Represents the axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartAxisTitleData;
             
             
             
             
             
-                        
+            
+            
             
             
             
@@ -19379,28 +17855,28 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartAxisFormat.toJSON()`. */
         export interface ChartAxisFormatData {
             /**
-             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
             /**
-             * Specifies chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartAxisTitle.toJSON()`. */
         export interface ChartAxisTitleData {
             /**
-             * Specifies the formatting of the chart axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the formatting of the chart axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisTitleFormatData;
             /**
              * Specifies the axis title.
@@ -19422,44 +17898,33 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatData {
             
             /**
-             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
         export interface ChartDataLabelsData {
             /**
-             * Specifies the format of chart data labels, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the format of chart data labels, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             
-                        
+            
+            
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?:
-                | Excel.ChartDataLabelPosition
-                | "Invalid"
-                | "None"
-                | "Center"
-                | "InsideEnd"
-                | "InsideBase"
-                | "OutsideEnd"
-                | "Left"
-                | "Right"
-                | "Top"
-                | "Bottom"
-                | "BestFit"
-                | "Callout";
+            position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
             /**
              * String representing the separator used for the data labels on a chart.
              *
@@ -19510,17 +17975,14 @@ export declare namespace Excel {
              */
             showValue?: boolean;
             
-                    }
+            
+        }
         /** An interface describing the data returned by calling `chartDataLabel.toJSON()`. */
         export interface ChartDataLabelData {
             
             
             
             
-                        
-            
-            
-                        
             
             
             
@@ -19530,17 +17992,24 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`. */
         export interface ChartDataLabelFormatData {
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartDataTable.toJSON()`. */
@@ -19572,11 +18041,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartGridlines.toJSON()`. */
         export interface ChartGridlinesData {
             /**
-             * Represents the formatting of chart gridlines.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of chart gridlines.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartGridlinesFormatData;
             /**
              * Specifies if the axis gridlines are visible.
@@ -19589,21 +18058,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartGridlinesFormat.toJSON()`. */
         export interface ChartGridlinesFormatData {
             /**
-             * Represents chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartLegend.toJSON()`. */
         export interface ChartLegendData {
             /**
-             * Represents the formatting of a chart legend, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart legend, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartLegendFormatData;
             
             
@@ -19621,15 +18090,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?:
-                | Excel.ChartLegendPosition
-                | "Invalid"
-                | "Top"
-                | "Bottom"
-                | "Left"
-                | "Right"
-                | "Corner"
-                | "Custom";
+            position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
             
             
             /**
@@ -19658,29 +18119,31 @@ export declare namespace Excel {
         export interface ChartLegendFormatData {
             
             /**
-             * Represents the font attributes such as font name, font size, and color of a chart legend.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes such as font name, font size, and color of a chart legend.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartMapOptions.toJSON()`. */
         export interface ChartMapOptionsData {
             
-                        
+            
+            
         }
         /** An interface describing the data returned by calling `chartTitle.toJSON()`. */
         export interface ChartTitleData {
             /**
-             * Represents the formatting of a chart title, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart title, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartTitleFormatData;
             
-                        
+            
+            
             /**
              * Specifies if the chart title will overlay the chart.
              *
@@ -19699,7 +18162,8 @@ export declare namespace Excel {
             text?: string;
             
             
-                        /**
+            
+            /**
              * Specifies if the chart title is visibile.
              *
              * @remarks
@@ -19716,17 +18180,18 @@ export declare namespace Excel {
         export interface ChartTitleFormatData {
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for an object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for an object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartBorder.toJSON()`. */
         export interface ChartBorderData {
             
-                        
+            
+            
         }
         /** An interface describing the data returned by calling `chartBinOptions.toJSON()`. */
         export interface ChartBinOptionsData {
@@ -19755,7 +18220,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-                        
+            
+            
         }
         /** An interface describing the data returned by calling `chartFont.toJSON()`. */
         export interface ChartFontData {
@@ -19814,7 +18280,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface describing the data returned by calling `chartTrendlineCollection.toJSON()`. */
         export interface ChartTrendlineCollectionData {
             items?: Excel.Interfaces.ChartTrendlineData[];
@@ -19829,13 +18296,15 @@ export declare namespace Excel {
             
             
             
-                        
             
             
             
             
             
-                        
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `chartTrendlineLabelFormat.toJSON()`. */
         export interface ChartTrendlineLabelFormatData {
@@ -20038,7 +18507,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface describing the data returned by calling `pivotFieldCollection.toJSON()`. */
         export interface PivotFieldCollectionData {
             items?: Excel.Interfaces.PivotFieldData[];
@@ -20103,88 +18573,88 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `conditionalFormat.toJSON()`. */
         export interface ConditionalFormatData {
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValue?: Excel.Interfaces.CellValueConditionalFormatData;
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatData;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatData;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatData;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             custom?: Excel.Interfaces.CustomConditionalFormatData;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatData;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatData;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatData;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatData;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatData;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             preset?: Excel.Interfaces.PresetCriteriaConditionalFormatData;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatData;
             /**
             * Returns the specific text conditional format properties if the current conditional format is a text type.
@@ -20250,32 +18720,23 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.6]
              */
-            type?:
-                | Excel.ConditionalFormatType
-                | "Custom"
-                | "DataBar"
-                | "ColorScale"
-                | "IconSet"
-                | "TopBottom"
-                | "PresetCriteria"
-                | "ContainsText"
-                | "CellValue";
+            type?: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue";
         }
         /** An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`. */
         export interface DataBarConditionalFormatData {
             /**
-             * Representation of all values to the left of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the left of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatData;
             /**
-             * Representation of all values to the right of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the right of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatData;
             /**
              * HTML color code representing the color of the Axis line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
@@ -20383,18 +18844,18 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `customConditionalFormat.toJSON()`. */
         export interface CustomConditionalFormatData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
-             * Specifies the `Rule` object on this conditional format.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Specifies the `Rule` object on this conditional format.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             rule?: Excel.Interfaces.ConditionalFormatRuleData;
         }
         /** An interface describing the data returned by calling `conditionalFormatRule.toJSON()`. */
@@ -20450,29 +18911,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.6]
              */
-            style?:
-                | Excel.IconSet
-                | "Invalid"
-                | "ThreeArrows"
-                | "ThreeArrowsGray"
-                | "ThreeFlags"
-                | "ThreeTrafficLights1"
-                | "ThreeTrafficLights2"
-                | "ThreeSigns"
-                | "ThreeSymbols"
-                | "ThreeSymbols2"
-                | "FourArrows"
-                | "FourArrowsGray"
-                | "FourRedToBlack"
-                | "FourRating"
-                | "FourTrafficLights"
-                | "FiveArrows"
-                | "FiveArrowsGray"
-                | "FiveRating"
-                | "FiveQuarters"
-                | "ThreeStars"
-                | "ThreeTriangles"
-                | "FiveBoxes";
+            style?: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
         }
         /** An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`. */
         export interface ColorScaleConditionalFormatData {
@@ -20494,11 +18933,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `topBottomConditionalFormat.toJSON()`. */
         export interface TopBottomConditionalFormatData {
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
              * The criteria of the top/bottom conditional format.
@@ -20511,11 +18950,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `presetCriteriaConditionalFormat.toJSON()`. */
         export interface PresetCriteriaConditionalFormatData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
              * The rule of the conditional format.
@@ -20528,11 +18967,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `textConditionalFormat.toJSON()`. */
         export interface TextConditionalFormatData {
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
              * The rule of the conditional format.
@@ -20545,11 +18984,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`. */
         export interface CellValueConditionalFormatData {
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
              * Specifies the rule object on this conditional format.
@@ -20562,25 +19001,25 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `conditionalRangeFormat.toJSON()`. */
         export interface ConditionalRangeFormatData {
             /**
-             * Collection of border objects that apply to the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Collection of border objects that apply to the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             borders?: Excel.Interfaces.ConditionalRangeBorderData[];
             /**
-             * Returns the fill object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the fill object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             fill?: Excel.Interfaces.ConditionalRangeFillData;
             /**
-             * Returns the font object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the font object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             font?: Excel.Interfaces.ConditionalRangeFontData;
             /**
              * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
@@ -20661,14 +19100,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.6]
              */
-            style?:
-                | Excel.ConditionalRangeBorderLineStyle
-                | "None"
-                | "Continuous"
-                | "Dash"
-                | "DashDot"
-                | "DashDotDot"
-                | "Dot";
+            style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
         }
         /** An interface describing the data returned by calling `conditionalRangeBorderCollection.toJSON()`. */
         export interface ConditionalRangeBorderCollectionData {
@@ -20682,7 +19114,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -20752,7 +19185,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -20842,7 +19276,8 @@ export declare namespace Excel {
             
             
             
-                        
+            
+            
             
             
             
@@ -20898,21 +19333,26 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
             
-                        
+            
+            
             
             
             
         }
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
-                        
-            
-                        
-            
-                        
             
             
-                        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
@@ -20926,7 +19366,8 @@ export declare namespace Excel {
             
             
             
-                    }
+            
+        }
         /** An interface describing the data returned by calling `slicer.toJSON()`. */
         export interface SlicerData {
             
@@ -21041,28 +19482,28 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the Excel application instance that contains this workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the Excel application instance that contains this workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             application?: Excel.Interfaces.ApplicationLoadOptions;
             /**
-             * Represents a collection of bindings that are part of the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of bindings that are part of the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
             
             
             
             /**
-             * Represents a collection of tables associated with the workbook.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of tables associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             
@@ -21088,26 +19529,26 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Returns a collection of charts that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a collection of charts that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             charts?: Excel.Interfaces.ChartCollectionLoadOptions;
             
             /**
-             * Returns the sheet protection object for a worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Returns the sheet protection object for a worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
             /**
-             * Collection of tables that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Collection of tables that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             /**
@@ -21158,26 +19599,26 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             charts?: Excel.Interfaces.ChartCollectionLoadOptions;
             
             /**
-             * For EACH ITEM in the collection: Returns the sheet protection object for a worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * For EACH ITEM in the collection: Returns the sheet protection object for a worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             /**
@@ -21259,18 +19700,18 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.RangeFormatLoadOptions;
             /**
-             * The worksheet containing the current range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * The worksheet containing the current range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
@@ -21657,11 +20098,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.4]
-             */
+            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.4]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
@@ -21731,11 +20172,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.4]
-             */
+            * Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.4]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
             * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
@@ -21858,32 +20299,32 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represents the sorting for the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * For EACH ITEM in the collection: Represents the sorting for the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             sort?: Excel.Interfaces.TableSortLoadOptions;
             /**
-             * For EACH ITEM in the collection: The worksheet containing the current table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * For EACH ITEM in the collection: The worksheet containing the current table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
@@ -21909,7 +20350,7 @@ export declare namespace Excel {
             
             /**
              * For EACH ITEM in the collection: Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -21974,32 +20415,32 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Represents a collection of all the columns in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of all the columns in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
             /**
-             * Represents a collection of all the rows in the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents a collection of all the rows in the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
             /**
-             * Represents the sorting for the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Represents the sorting for the table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             sort?: Excel.Interfaces.TableSortLoadOptions;
             /**
-             * The worksheet containing the current table.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * The worksheet containing the current table.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              * Specifies if the first column contains special formatting.
@@ -22025,7 +20466,7 @@ export declare namespace Excel {
             
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -22087,11 +20528,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Retrieves the filter applied to the column.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * For EACH ITEM in the collection: Retrieves the filter applied to the column.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             filter?: Excel.Interfaces.FilterLoadOptions;
             /**
              * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
@@ -22137,11 +20578,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Retrieves the filter applied to the column.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Retrieves the filter applied to the column.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             filter?: Excel.Interfaces.FilterLoadOptions;
             /**
              * Returns a unique key that identifies the column within the table.
@@ -22177,7 +20618,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a collection of all the rows that are part of the table.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -22211,7 +20652,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a row in a table.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -22257,32 +20698,32 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Collection of border objects that apply to the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Collection of border objects that apply to the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
             /**
-             * Returns the fill object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the fill object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             fill?: Excel.Interfaces.RangeFillLoadOptions;
             /**
-             * Returns the font object defined on the overall range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns the font object defined on the overall range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.RangeFontLoadOptions;
             /**
-             * Returns the format protection object for a range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * Returns the format protection object for a range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             protection?: Excel.Interfaces.FormatProtectionLoadOptions;
             
             /**
@@ -22528,55 +20969,55 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents chart axes.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents chart axes.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             axes?: Excel.Interfaces.ChartAxesLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represents the data labels on the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents the data labels on the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
             /**
-             * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represents the legend for the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents the legend for the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             legend?: Excel.Interfaces.ChartLegendLoadOptions;
             
             
             /**
-             * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartTitleLoadOptions;
             /**
-             * For EACH ITEM in the collection: The worksheet containing the current chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * For EACH ITEM in the collection: The worksheet containing the current chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
             
@@ -22637,55 +21078,55 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents chart axes.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart axes.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             axes?: Excel.Interfaces.ChartAxesLoadOptions;
             /**
-             * Represents the data labels on the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the data labels on the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
             /**
-             * Encapsulates the format properties for the chart area.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties for the chart area.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
             /**
-             * Represents the legend for the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the legend for the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             legend?: Excel.Interfaces.ChartLegendLoadOptions;
             
             
             /**
-             * Represents either a single series or collection of series in the chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents either a single series or collection of series in the chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
-             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartTitleLoadOptions;
             /**
-             * The worksheet containing the current chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.2]
-             */
+            * The worksheet containing the current chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.2]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
             
@@ -22747,11 +21188,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Represents the font attributes (font name, font size, color, etc.) for the current object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (font name, font size, color, etc.) for the current object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
             
             
@@ -22771,19 +21212,19 @@ export declare namespace Excel {
             
             
             /**
-             * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
             
             /**
-             * For EACH ITEM in the collection: Returns a collection of all points in the series.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Returns a collection of all points in the series.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
             
             
@@ -22846,19 +21287,19 @@ export declare namespace Excel {
             
             
             /**
-             * Represents the formatting of a chart series, which includes fill and line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
             
             /**
-             * Returns a collection of all points in the series.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns a collection of all points in the series.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
             
             
@@ -22918,11 +21359,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -22938,11 +21379,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * For EACH ITEM in the collection: Encapsulates the format properties chart point.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * For EACH ITEM in the collection: Encapsulates the format properties chart point.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartPointFormatLoadOptions;
             
             
@@ -22970,11 +21411,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Encapsulates the format properties chart point.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Encapsulates the format properties chart point.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartPointFormatLoadOptions;
             
             
@@ -23014,25 +21455,25 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the category axis in a chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the category axis in a chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;
             /**
-             * Represents the series axis of a 3-D chart.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the series axis of a 3-D chart.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;
             /**
-             * Represents the value axis in an axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the value axis in an axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;
         }
         /**
@@ -23047,32 +21488,32 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the formatting of a chart object, which includes line and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart object, which includes line and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisFormatLoadOptions;
             /**
-             * Returns an object that represents the major gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the major gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
             /**
-             * Returns an object that represents the minor gridlines for the specified axis.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Returns an object that represents the minor gridlines for the specified axis.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
             /**
-             * Represents the axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
             
             
@@ -23146,18 +21587,18 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
             /**
-             * Specifies chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -23172,11 +21613,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Specifies the formatting of the chart axis title.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the formatting of the chart axis title.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
             /**
              * Specifies the axis title.
@@ -23207,11 +21648,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         /**
@@ -23226,11 +21667,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Specifies the format of chart data labels, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Specifies the format of chart data labels, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
             
             
@@ -23309,11 +21750,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -23332,11 +21773,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the formatting of chart gridlines.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of chart gridlines.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
             /**
              * Specifies if the axis gridlines are visible.
@@ -23358,11 +21799,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents chart line formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents chart line formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -23377,11 +21818,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the formatting of a chart legend, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart legend, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
             
             
@@ -23425,11 +21866,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Represents the font attributes such as font name, font size, and color of a chart legend.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes such as font name, font size, and color of a chart legend.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -23445,11 +21886,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the formatting of a chart title, which includes fill and font formatting.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the formatting of a chart title, which includes fill and font formatting.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
             
             
@@ -23496,11 +21937,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * Represents the font attributes (such as font name, font size, and color) for an object.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.1]
-             */
+            * Represents the font attributes (such as font name, font size, and color) for an object.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -23738,11 +22179,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * For EACH ITEM in the collection: The worksheet containing the current PivotTable.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.3]
-             */
+            * For EACH ITEM in the collection: The worksheet containing the current PivotTable.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.3]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
             
@@ -23777,11 +22218,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-             * The worksheet containing the current PivotTable.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.3]
-             */
+            * The worksheet containing the current PivotTable.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.3]
+            */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             
             
@@ -23832,88 +22273,88 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
@@ -23994,88 +22435,88 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
             /**
-             * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
             /**
-             * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
             /**
-             * Returns the custom conditional format properties if the current conditional format is a custom type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
             /**
-             * Returns the data bar properties if the current conditional format is a data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
             /**
-             * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
             /**
-             * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
             /**
             * Returns the specific text conditional format properties if the current conditional format is a text type.
@@ -24155,18 +22596,18 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Representation of all values to the left of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the left of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;
             /**
-             * Representation of all values to the right of the axis in an Excel data bar.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Representation of all values to the right of the axis in an Excel data bar.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
             /**
              * HTML color code representing the color of the Axis line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
@@ -24301,18 +22742,18 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
-             * Specifies the `Rule` object on this conditional format.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Specifies the `Rule` object on this conditional format.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;
         }
         /**
@@ -24426,11 +22867,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
              * The criteria of the top/bottom conditional format.
@@ -24452,11 +22893,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
              * The rule of the conditional format.
@@ -24478,11 +22919,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
              * The rule of the conditional format.
@@ -24504,11 +22945,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
              * Specifies the rule object on this conditional format.
@@ -24530,25 +22971,25 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Collection of border objects that apply to the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Collection of border objects that apply to the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;
             /**
-             * Returns the fill object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the fill object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;
             /**
-             * Returns the font object defined on the overall conditional format range.
-             *
-             * @remarks
-             * [Api set: ExcelApi 1.6]
-             */
+            * Returns the font object defined on the overall conditional format range.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.6]
+            */
             font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
             /**
              * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
@@ -24758,6 +23199,7 @@ export declare namespace Excel {
         }
     }
 }
+
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////

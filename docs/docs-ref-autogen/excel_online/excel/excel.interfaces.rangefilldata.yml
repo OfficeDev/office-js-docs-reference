@@ -34,54 +34,15 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        pattern?:
-                        | Excel.FillPattern
-                        | "None"
-                        | "Solid"
-                        | "Gray50"
-                        | "Gray75"
-                        | "Gray25"
-                        | "Horizontal"
-                        | "Vertical"
-                        | "Down"
-                        | "Up"
-                        | "Checker"
-                        | "SemiGray75"
-                        | "LightHorizontal"
-                        | "LightVertical"
-                        | "LightDown"
-                        | "LightUp"
-                        | "Grid"
-                        | "CrissCross"
-                        | "Gray16"
-                        | "Gray8"
-                        | "LinearGradient"
-                        | "RectangularGradient";
+      content: >-
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
+        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
+        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
       return:
-        type: |-
-          | <xref uid="excel!Excel.FillPattern:enum" />
-                          | "None"
-                          | "Solid"
-                          | "Gray50"
-                          | "Gray75"
-                          | "Gray25"
-                          | "Horizontal"
-                          | "Vertical"
-                          | "Down"
-                          | "Up"
-                          | "Checker"
-                          | "SemiGray75"
-                          | "LightHorizontal"
-                          | "LightVertical"
-                          | "LightDown"
-                          | "LightUp"
-                          | "Grid"
-                          | "CrissCross"
-                          | "Gray16"
-                          | "Gray8"
-                          | "LinearGradient"
-                          | "RectangularGradient"
+        type: >-
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal"
+          | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+          "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
   - name: patternColor
     uid: 'excel!Excel.Interfaces.RangeFillData#patternColor:member'
     package: excel!

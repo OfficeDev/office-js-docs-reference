@@ -33,14 +33,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        apply(
-                    fields: Excel.SortField[],
-                    matchCase?: boolean,
-                    hasHeaders?: boolean,
-                    orientation?: Excel.SortOrientation,
-                    method?: Excel.SortMethod,
-                ): void;
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation,
+        method?: Excel.SortMethod): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -69,14 +64,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        apply(
-                    fields: Excel.SortField[],
-                    matchCase?: boolean,
-                    hasHeaders?: boolean,
-                    orientationString?: "Rows" | "Columns",
-                    methodString?: "PinYin" | "StrokeCount",
-                ): void;
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" |
+        "Columns", methodString?: "PinYin" | "StrokeCount"): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.

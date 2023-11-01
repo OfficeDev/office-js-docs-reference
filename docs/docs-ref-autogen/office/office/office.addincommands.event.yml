@@ -274,7 +274,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'source: Source;'
+      content: 'source:Source;'
       return:
         type: '<xref uid="office!Office.AddinCommands.Source:interface" />'
 methods:

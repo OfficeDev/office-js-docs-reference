@@ -300,13 +300,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?: Excel.RangeCopyType,
-                    skipBlanks?: boolean,
-                    transpose?: boolean,
-                ): void;
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean,
+        transpose?: boolean): void;
       parameters:
         - id: sourceRange
           description: >-
@@ -337,13 +333,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
-                    skipBlanks?: boolean,
-                    transpose?: boolean,
-                ): void;
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
+        skipBlanks?: boolean, transpose?: boolean): void;
       parameters:
         - id: sourceRange
           description: >-
@@ -496,67 +488,27 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSpecialCells(
-                    cellTypeString:
-                        | "ConditionalFormats"
-                        | "DataValidations"
-                        | "Blanks"
-                        | "Constants"
-                        | "Formulas"
-                        | "SameConditionalFormat"
-                        | "SameDataValidation"
-                        | "Visible",
-                    cellValueTypeString?:
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text",
-                ): Excel.RangeAreas;
+      content: >-
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
+        "NumbersText" | "Text"): Excel.RangeAreas;
       parameters:
         - id: cellTypeString
           description: The type of cells to include.
-          type: |-
-            | "ConditionalFormats"
-                            | "DataValidations"
-                            | "Blanks"
-                            | "Constants"
-                            | "Formulas"
-                            | "SameConditionalFormat"
-                            | "SameDataValidation"
-                            | "Visible"
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+            "SameDataValidation" | "Visible"
         - id: cellValueTypeString
           description: >-
             If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
             cells to include in the result. These values can be combined together to return more than one type. The
             default is to select all constants or formulas, no matter what the type.
-          type: |-
-            | "All"
-                            | "Errors"
-                            | "ErrorsLogical"
-                            | "ErrorsNumbers"
-                            | "ErrorsText"
-                            | "ErrorsLogicalNumber"
-                            | "ErrorsLogicalText"
-                            | "ErrorsNumberText"
-                            | "Logical"
-                            | "LogicalNumbers"
-                            | "LogicalText"
-                            | "LogicalNumbersText"
-                            | "Numbers"
-                            | "NumbersText"
-                            | "Text"
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
+            "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
+            "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''
@@ -574,11 +526,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSpecialCellsOrNullObject(
-                    cellType: Excel.SpecialCellType,
-                    cellValueType?: Excel.SpecialCellValueType,
-                ): Excel.RangeAreas;
+      content: >-
+        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType):
+        Excel.RangeAreas;
       parameters:
         - id: cellType
           description: The type of cells to include.
@@ -606,67 +556,27 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSpecialCellsOrNullObject(
-                    cellTypeString:
-                        | "ConditionalFormats"
-                        | "DataValidations"
-                        | "Blanks"
-                        | "Constants"
-                        | "Formulas"
-                        | "SameConditionalFormat"
-                        | "SameDataValidation"
-                        | "Visible",
-                    cellValueTypeString?:
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text",
-                ): Excel.RangeAreas;
+      content: >-
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueTypeString?: "All" | "Errors"
+        | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
+        "NumbersText" | "Text"): Excel.RangeAreas;
       parameters:
         - id: cellTypeString
           description: The type of cells to include.
-          type: |-
-            | "ConditionalFormats"
-                            | "DataValidations"
-                            | "Blanks"
-                            | "Constants"
-                            | "Formulas"
-                            | "SameConditionalFormat"
-                            | "SameDataValidation"
-                            | "Visible"
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+            "SameDataValidation" | "Visible"
         - id: cellValueTypeString
           description: >-
             If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
             cells to include in the result. These values can be combined together to return more than one type. The
             default is to select all constants or formulas, no matter what the type.
-          type: |-
-            | "All"
-                            | "Errors"
-                            | "ErrorsLogical"
-                            | "ErrorsNumbers"
-                            | "ErrorsText"
-                            | "ErrorsLogicalNumber"
-                            | "ErrorsLogicalText"
-                            | "ErrorsNumberText"
-                            | "Logical"
-                            | "LogicalNumbers"
-                            | "LogicalText"
-                            | "LogicalNumbersText"
-                            | "Numbers"
-                            | "NumbersText"
-                            | "Text"
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
+            "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
+            "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
         description: ''

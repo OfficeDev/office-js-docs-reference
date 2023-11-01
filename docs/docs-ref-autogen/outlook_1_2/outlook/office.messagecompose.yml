@@ -577,13 +577,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentAsync(
-                    uri: string,
-                    attachmentName: string,
-                    options: Office.AsyncContextOptions & { isInline: boolean },
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions & { isInline:
+        boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -658,12 +654,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentAsync(
-                    uri: string,
-                    attachmentName: string,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -771,13 +764,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addItemAttachmentAsync(
-                    itemId: any,
-                    attachmentName: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -843,12 +832,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addItemAttachmentAsync(
-                    itemId: any,
-                    attachmentName: string,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -921,12 +907,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSelectedDataAsync(
-                    coercionType: Office.CoercionType | string,
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<any>) => void,
-                ): void;
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -999,11 +982,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSelectedDataAsync(
-                    coercionType: Office.CoercionType | string,
-                    callback: (asyncResult: Office.AsyncResult<any>) => void,
-                ): void;
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult:
+        Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -1123,11 +1104,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        loadCustomPropertiesAsync(
-                    callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
-                    userContext?: any,
-                ): void;
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       parameters:
         - id: callback
           description: >-
@@ -1217,12 +1196,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeAttachmentAsync(
-                    attachmentId: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: attachmentId
           description: >-
@@ -1358,12 +1334,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setSelectedDataAsync(
-                    data: string,
-                    options: Office.AsyncContextOptions & CoercionTypeOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-

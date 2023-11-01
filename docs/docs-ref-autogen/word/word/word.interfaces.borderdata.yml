@@ -30,64 +30,19 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        lineStyle?:
-                        | Word.LineStyle
-                        | "DashDot"
-                        | "DashDotDot"
-                        | "DashDotStroked"
-                        | "DashLargeGap"
-                        | "DashSmallGap"
-                        | "Dot"
-                        | "Double"
-                        | "DoubleWavy"
-                        | "Emboss3D"
-                        | "Engrave3D"
-                        | "Inset"
-                        | "Mixed"
-                        | "None"
-                        | "Outset"
-                        | "Single"
-                        | "SingleWavy"
-                        | "ThickThinLargeGap"
-                        | "ThickThinMedGap"
-                        | "ThickThinSmallGap"
-                        | "ThinThickLargeGap"
-                        | "ThinThickMedGap"
-                        | "ThinThickSmallGap"
-                        | "ThinThickThinLargeGap"
-                        | "ThinThickThinMedGap"
-                        | "ThinThickThinSmallGap"
-                        | "Triple";
+      content: >-
+        lineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap" |
+        "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" | "Outset" | "Single" |
+        "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" |
+        "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
+        "ThinThickThinSmallGap" | "Triple";
       return:
-        type: |-
-          | <xref uid="word!Word.LineStyle:enum" />
-                          | "DashDot"
-                          | "DashDotDot"
-                          | "DashDotStroked"
-                          | "DashLargeGap"
-                          | "DashSmallGap"
-                          | "Dot"
-                          | "Double"
-                          | "DoubleWavy"
-                          | "Emboss3D"
-                          | "Engrave3D"
-                          | "Inset"
-                          | "Mixed"
-                          | "None"
-                          | "Outset"
-                          | "Single"
-                          | "SingleWavy"
-                          | "ThickThinLargeGap"
-                          | "ThickThinMedGap"
-                          | "ThickThinSmallGap"
-                          | "ThinThickLargeGap"
-                          | "ThinThickMedGap"
-                          | "ThinThickSmallGap"
-                          | "ThinThickThinLargeGap"
-                          | "ThinThickThinMedGap"
-                          | "ThinThickThinSmallGap"
-                          | "Triple"
+        type: >-
+          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
+          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
+          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
+          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
+          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
   - name: lineWidth
     uid: 'word!Word.Interfaces.BorderData#lineWidth:member'
     package: word!
@@ -97,34 +52,13 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        lineWidth?:
-                        | Word.LineWidth
-                        | "None"
-                        | "Pt025"
-                        | "Pt050"
-                        | "Pt075"
-                        | "Pt100"
-                        | "Pt150"
-                        | "Pt225"
-                        | "Pt300"
-                        | "Pt450"
-                        | "Pt600"
-                        | "Mixed";
+      content: >-
+        lineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" |
+        "Pt450" | "Pt600" | "Mixed";
       return:
-        type: |-
-          | <xref uid="word!Word.LineWidth:enum" />
-                          | "None"
-                          | "Pt025"
-                          | "Pt050"
-                          | "Pt075"
-                          | "Pt100"
-                          | "Pt150"
-                          | "Pt225"
-                          | "Pt300"
-                          | "Pt450"
-                          | "Pt600"
-                          | "Mixed"
+        type: >-
+          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
+          "Pt300" | "Pt450" | "Pt600" | "Mixed"
   - name: positionType
     uid: 'word!Word.Interfaces.BorderData#positionType:member'
     package: word!
@@ -134,28 +68,13 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        positionType?:
-                        | Word.BorderPositionType
-                        | "Top"
-                        | "Left"
-                        | "Bottom"
-                        | "Right"
-                        | "Horizontal"
-                        | "Vertical"
-                        | "DiagonalDown"
-                        | "DiagonalUp";
+      content: >-
+        positionType?: Word.BorderPositionType | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" | "Vertical" |
+        "DiagonalDown" | "DiagonalUp";
       return:
-        type: |-
-          | <xref uid="word!Word.BorderPositionType:enum" />
-                          | "Top"
-                          | "Left"
-                          | "Bottom"
-                          | "Right"
-                          | "Horizontal"
-                          | "Vertical"
-                          | "DiagonalDown"
-                          | "DiagonalUp"
+        type: >-
+          <xref uid="word!Word.BorderPositionType:enum" /> | "Top" | "Left" | "Bottom" | "Right" | "Horizontal" |
+          "Vertical" | "DiagonalDown" | "DiagonalUp"
   - name: visible
     uid: 'word!Word.Interfaces.BorderData#visible:member'
     package: word!

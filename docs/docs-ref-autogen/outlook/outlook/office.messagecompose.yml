@@ -1101,13 +1101,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentAsync(
-                    uri: string,
-                    attachmentName: string,
-                    options: Office.AsyncContextOptions & { isInline: boolean },
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions & { isInline:
+        boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -1182,12 +1178,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentAsync(
-                    uri: string,
-                    attachmentName: string,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -1320,13 +1313,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentFromBase64Async(
-                    base64File: string,
-                    attachmentName: string,
-                    options: Office.AsyncContextOptions & { isInline: boolean },
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options:
+        Office.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>)
+        => void): void;
       parameters:
         - id: base64File
           description: >-
@@ -1418,12 +1408,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addFileAttachmentFromBase64Async(
-                    base64File: string,
-                    attachmentName: string,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: base64File
           description: >-
@@ -1491,13 +1478,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addHandlerAsync(
-                    eventType: Office.EventType | string,
-                    handler: any,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -1548,12 +1531,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addHandlerAsync(
-                    eventType: Office.EventType | string,
-                    handler: any,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -1658,13 +1638,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addItemAttachmentAsync(
-                    itemId: any,
-                    attachmentName: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -1730,12 +1706,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addItemAttachmentAsync(
-                    itemId: any,
-                    attachmentName: string,
-                    callback?: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -1855,11 +1828,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        closeAsync(
-                    options: Office.AsyncContextOptions & { discardItem: boolean },
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        closeAsync(options: Office.AsyncContextOptions & { discardItem: boolean }, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2018,11 +1989,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        disableClientSignatureAsync(
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        disableClientSignatureAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2163,12 +2132,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAttachmentContentAsync(
-                    attachmentId: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<AttachmentContent>) => void,
-                ): void;
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
@@ -2228,11 +2194,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAttachmentContentAsync(
-                    attachmentId: string,
-                    callback?: (asyncResult: Office.AsyncResult<AttachmentContent>) => void,
-                ): void;
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
@@ -2309,11 +2273,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAttachmentsAsync(
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<AttachmentDetailsCompose[]>) => void,
-                ): void;
+      content: >-
+        getAttachmentsAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2391,11 +2353,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getComposeTypeAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<any>) => void,
-                ): void;
+      content: >-
+        getComposeTypeAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<any>)
+        => void): void;
       parameters:
         - id: options
           description: >-
@@ -2521,11 +2481,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getInitializationContextAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        getInitializationContextAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2609,11 +2567,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getItemIdAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        getItemIdAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
@@ -2745,12 +2701,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSelectedDataAsync(
-                    coercionType: Office.CoercionType | string,
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<any>) => void,
-                ): void;
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -2823,11 +2776,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSelectedDataAsync(
-                    coercionType: Office.CoercionType | string,
-                    callback: (asyncResult: Office.AsyncResult<any>) => void,
-                ): void;
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult:
+        Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
@@ -2956,11 +2907,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getSharedPropertiesAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void,
-                ): void;
+      content: >-
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -3122,11 +3071,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        isClientSignatureEnabledAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<boolean>) => void,
-                ): void;
+      content: >-
+        isClientSignatureEnabledAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<boolean>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -3283,11 +3230,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        loadCustomPropertiesAsync(
-                    callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
-                    userContext?: any,
-                ): void;
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       parameters:
         - id: callback
           description: >-
@@ -3377,12 +3322,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeAttachmentAsync(
-                    attachmentId: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: attachmentId
           description: >-
@@ -3482,12 +3424,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeHandlerAsync(
-                    eventType: Office.EventType | string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType | string, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -3532,11 +3471,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeHandlerAsync(
-                    eventType: Office.EventType | string,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -3600,11 +3537,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        saveAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
@@ -3773,12 +3708,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setSelectedDataAsync(
-                    data: string,
-                    options: Office.AsyncContextOptions & CoercionTypeOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-

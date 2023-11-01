@@ -117,13 +117,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addHandlerAsync(
-                    eventType: Office.EventType,
-                    handler: (result: any) => void,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: >-
@@ -234,12 +230,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addHandlerAsync(
-                    eventType: Office.EventType,
-                    handler: (result: any) => void,
-                    callback?: (result: AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, callback?: (result:
+        AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: >-
@@ -342,12 +335,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getNodesAsync(
-                    xPath: string,
-                    options?: Office.AsyncContextOptions,
-                    callback?: (result: AsyncResult<CustomXmlNode[]>) => void,
-                ): void;
+      content: >-
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<CustomXmlNode[]>) => void): void;
       parameters:
         - id: xPath
           description: An XPath expression that specifies the nodes you want returned. Required.
@@ -504,13 +494,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeHandlerAsync(
-                    eventType: Office.EventType,
-                    handler?: (result: any) => void,
-                    options?: RemoveHandlerOptions,
-                    callback?: (result: AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
+        callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: >-
@@ -560,12 +546,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        removeHandlerAsync(
-                    eventType: Office.EventType,
-                    handler?: (result: any) => void,
-                    callback?: (result: AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, callback?: (result:
+        AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: >-

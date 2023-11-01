@@ -317,34 +317,19 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertParagraph(
-                    paragraphText: string,
-                    insertLocation:
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | Word.InsertLocation.before
-                        | Word.InsertLocation.after
-                        | "Start"
-                        | "End"
-                        | "Before"
-                        | "After",
-                ): Word.Paragraph;
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | <xref uid="word!Word.InsertLocation.before:member" />
-                            | <xref uid="word!Word.InsertLocation.after:member" />
-                            | "Start"
-                            | "End"
-                            | "Before"
-                            | "After"
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -466,11 +451,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setLevelAlignment(
-                    level: number,
-                    alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified",
-                ): void;
+      content: >-
+        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" |
+        "Justified"): void;
       parameters:
         - id: level
           description: Required. The level in the list.
@@ -560,13 +543,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setLevelBullet(
-                    level: number,
-                    listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark",
-                    charCode?: number,
-                    fontName?: string,
-                ): void;
+      content: >-
+        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow"
+        | "Checkmark", charCode?: number, fontName?: string): void;
       parameters:
         - id: level
           description: Required. The level in the list.
@@ -661,12 +640,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setLevelNumbering(
-                    level: number,
-                    listNumbering: Word.ListNumbering,
-                    formatString?: Array<string | number>,
-                ): void;
+      content: >-
+        setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array<string | number>):
+        void;
       parameters:
         - id: level
           description: Required. The level in the list.
@@ -693,12 +669,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setLevelNumbering(
-                    level: number,
-                    listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter",
-                    formatString?: Array<string | number>,
-                ): void;
+      content: >-
+        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
+        "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
       parameters:
         - id: level
           description: Required. The level in the list.

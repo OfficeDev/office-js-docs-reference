@@ -42,12 +42,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    data: string,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(data: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.

@@ -18,24 +18,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        changeType:
-                    | Excel.CommentChangeType
-                    | "CommentEdited"
-                    | "CommentResolved"
-                    | "CommentReopened"
-                    | "ReplyAdded"
-                    | "ReplyDeleted"
-                    | "ReplyEdited";
+      content: >-
+        changeType: Excel.CommentChangeType | "CommentEdited" | "CommentResolved" | "CommentReopened" | "ReplyAdded" |
+        "ReplyDeleted" | "ReplyEdited";
       return:
-        type: |-
-          | <xref uid="excel!Excel.CommentChangeType:enum" />
-                      | "CommentEdited"
-                      | "CommentResolved"
-                      | "CommentReopened"
-                      | "ReplyAdded"
-                      | "ReplyDeleted"
-                      | "ReplyEdited"
+        type: >-
+          <xref uid="excel!Excel.CommentChangeType:enum" /> | "CommentEdited" | "CommentResolved" | "CommentReopened" |
+          "ReplyAdded" | "ReplyDeleted" | "ReplyEdited"
   - name: commentDetails
     uid: 'excel!Excel.CommentChangedEventArgs#commentDetails:member'
     package: excel!

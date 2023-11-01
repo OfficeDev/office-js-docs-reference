@@ -63,24 +63,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly type:
-                    | PowerPoint.ShapeFillType
-                    | "NoFill"
-                    | "Solid"
-                    | "Gradient"
-                    | "Pattern"
-                    | "PictureAndTexture"
-                    | "SlideBackground";
+      content: >-
+        readonly type: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" |
+        "SlideBackground";
       return:
-        type: |-
-          | <xref uid="powerpoint!PowerPoint.ShapeFillType:enum" />
-                      | "NoFill"
-                      | "Solid"
-                      | "Gradient"
-                      | "Pattern"
-                      | "PictureAndTexture"
-                      | "SlideBackground"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" |
+          "PictureAndTexture" | "SlideBackground"
 methods:
   - name: clear()
     uid: 'powerpoint!PowerPoint.ShapeFill#clear:member(1)'

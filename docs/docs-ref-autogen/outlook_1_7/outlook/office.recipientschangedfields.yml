@@ -18,7 +18,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'bcc: boolean;'
+      content: 'bcc: boolean'
       return:
         type: boolean
   - name: cc

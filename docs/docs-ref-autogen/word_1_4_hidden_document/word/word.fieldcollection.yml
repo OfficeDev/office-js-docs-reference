@@ -150,10 +150,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Word.Interfaces.FieldCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
-                ): Word.FieldCollection;
+      content: >-
+        load(options?: Word.Interfaces.FieldCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.FieldCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

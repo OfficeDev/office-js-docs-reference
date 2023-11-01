@@ -93,18 +93,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?:
-                        & OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-                        & OneNote.Interfaces.CollectionLoadOptions,
-                ): OneNote.InkAnalysisWordCollection;
+      content: >-
+        load(options?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions &
+        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: |-
-            & <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface" />
-                            & <xref uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface" /> & <xref
+            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="onenote!OneNote.InkAnalysisWordCollection:class" />'
         description: ''

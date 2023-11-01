@@ -1143,11 +1143,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        export function run<T>(
-                object: OfficeExtension.ClientObject,
-                batch: (context: Excel.RequestContext) => Promise<T>,
-            ): Promise<T>;
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-
@@ -1174,11 +1172,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        export function run<T>(
-                objects: OfficeExtension.ClientObject[],
-                batch: (context: Excel.RequestContext) => Promise<T>,
-            ): Promise<T>;
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
@@ -1237,11 +1233,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        export function run<T>(
-                context: OfficeExtension.ClientRequestContext,
-                batch: (context: Excel.RequestContext) => Promise<T>,
-            ): Promise<T>;
+      content: >-
+        export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: context
           description: >-

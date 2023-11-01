@@ -30,36 +30,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        position?:
-                        | Excel.ChartDataLabelPosition
-                        | "Invalid"
-                        | "None"
-                        | "Center"
-                        | "InsideEnd"
-                        | "InsideBase"
-                        | "OutsideEnd"
-                        | "Left"
-                        | "Right"
-                        | "Top"
-                        | "Bottom"
-                        | "BestFit"
-                        | "Callout";
+      content: >-
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartDataLabelPosition:enum" />
-                          | "Invalid"
-                          | "None"
-                          | "Center"
-                          | "InsideEnd"
-                          | "InsideBase"
-                          | "OutsideEnd"
-                          | "Left"
-                          | "Right"
-                          | "Top"
-                          | "Bottom"
-                          | "BestFit"
-                          | "Callout"
+        type: >-
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" | "None" | "Center" | "InsideEnd" |
+          "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
     uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member'
     package: excel!

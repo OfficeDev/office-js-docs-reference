@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: overwriteIfStale
@@ -35,6 +35,6 @@ properties:
     isDeprecated: true
     customDeprecatedMessage: '`overwriteIfStale` is no longer supported.'
     syntax:
-      content: 'overwriteIfStale?: boolean;'
+      content: 'overwriteIfStale?: boolean'
       return:
         type: boolean

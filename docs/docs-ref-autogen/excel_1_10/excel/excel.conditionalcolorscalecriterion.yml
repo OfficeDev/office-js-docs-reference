@@ -42,23 +42,10 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        type:
-                    | Excel.ConditionalFormatColorCriterionType
-                    | "Invalid"
-                    | "LowestValue"
-                    | "HighestValue"
-                    | "Number"
-                    | "Percent"
-                    | "Formula"
-                    | "Percentile";
+      content: >-
+        type: Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ConditionalFormatColorCriterionType:enum" />
-                      | "Invalid"
-                      | "LowestValue"
-                      | "HighestValue"
-                      | "Number"
-                      | "Percent"
-                      | "Formula"
-                      | "Percentile"
+        type: >-
+          <xref uid="excel!Excel.ConditionalFormatColorCriterionType:enum" /> | "Invalid" | "LowestValue" |
+          "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"

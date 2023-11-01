@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: cellFormat
@@ -39,7 +39,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'cellFormat?: RangeFormatConfiguration[];'
+      content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
         type: '<xref uid="office!Office.RangeFormatConfiguration:interface" />[]'
   - name: coercionType
@@ -51,7 +51,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'coercionType?: Office.CoercionType | string;'
+      content: 'coercionType?: Office.CoercionType | string'
       return:
         type: '<xref uid="office!Office.CoercionType:enum" /> | string'
   - name: columns
@@ -69,7 +69,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'columns?: string[];'
+      content: 'columns?: string[]'
       return:
         type: 'string[]'
   - name: rows
@@ -88,7 +88,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'rows?: string;'
+      content: 'rows?: string'
       return:
         type: string
   - name: startColumn
@@ -102,7 +102,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'startColumn?: number;'
+      content: 'startColumn?: number'
       return:
         type: number
   - name: startRow
@@ -116,7 +116,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'startRow?: number;'
+      content: 'startRow?: number'
       return:
         type: number
   - name: tableOptions
@@ -130,6 +130,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'tableOptions?: object;'
+      content: 'tableOptions?: object'
       return:
         type: object

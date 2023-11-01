@@ -30,25 +30,10 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        type:
-                    | Excel.ConditionalFormatRuleType
-                    | "Invalid"
-                    | "Automatic"
-                    | "LowestValue"
-                    | "HighestValue"
-                    | "Number"
-                    | "Percent"
-                    | "Formula"
-                    | "Percentile";
+      content: >-
+        type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ConditionalFormatRuleType:enum" />
-                      | "Invalid"
-                      | "Automatic"
-                      | "LowestValue"
-                      | "HighestValue"
-                      | "Number"
-                      | "Percent"
-                      | "Formula"
-                      | "Percentile"
+        type: >-
+          <xref uid="excel!Excel.ConditionalFormatRuleType:enum" /> | "Invalid" | "Automatic" | "LowestValue" |
+          "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"

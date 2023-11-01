@@ -93,10 +93,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
-                ): OneNote.TableCellCollection;
+      content: >-
+        load(options?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.TableCellCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

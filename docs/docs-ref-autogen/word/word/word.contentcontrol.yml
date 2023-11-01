@@ -419,308 +419,72 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        styleBuiltIn:
-                    | Word.BuiltInStyleName
-                    | "Other"
-                    | "Normal"
-                    | "Heading1"
-                    | "Heading2"
-                    | "Heading3"
-                    | "Heading4"
-                    | "Heading5"
-                    | "Heading6"
-                    | "Heading7"
-                    | "Heading8"
-                    | "Heading9"
-                    | "Toc1"
-                    | "Toc2"
-                    | "Toc3"
-                    | "Toc4"
-                    | "Toc5"
-                    | "Toc6"
-                    | "Toc7"
-                    | "Toc8"
-                    | "Toc9"
-                    | "FootnoteText"
-                    | "Header"
-                    | "Footer"
-                    | "Caption"
-                    | "FootnoteReference"
-                    | "EndnoteReference"
-                    | "EndnoteText"
-                    | "Title"
-                    | "Subtitle"
-                    | "Hyperlink"
-                    | "Strong"
-                    | "Emphasis"
-                    | "NoSpacing"
-                    | "ListParagraph"
-                    | "Quote"
-                    | "IntenseQuote"
-                    | "SubtleEmphasis"
-                    | "IntenseEmphasis"
-                    | "SubtleReference"
-                    | "IntenseReference"
-                    | "BookTitle"
-                    | "Bibliography"
-                    | "TocHeading"
-                    | "TableGrid"
-                    | "PlainTable1"
-                    | "PlainTable2"
-                    | "PlainTable3"
-                    | "PlainTable4"
-                    | "PlainTable5"
-                    | "TableGridLight"
-                    | "GridTable1Light"
-                    | "GridTable1Light_Accent1"
-                    | "GridTable1Light_Accent2"
-                    | "GridTable1Light_Accent3"
-                    | "GridTable1Light_Accent4"
-                    | "GridTable1Light_Accent5"
-                    | "GridTable1Light_Accent6"
-                    | "GridTable2"
-                    | "GridTable2_Accent1"
-                    | "GridTable2_Accent2"
-                    | "GridTable2_Accent3"
-                    | "GridTable2_Accent4"
-                    | "GridTable2_Accent5"
-                    | "GridTable2_Accent6"
-                    | "GridTable3"
-                    | "GridTable3_Accent1"
-                    | "GridTable3_Accent2"
-                    | "GridTable3_Accent3"
-                    | "GridTable3_Accent4"
-                    | "GridTable3_Accent5"
-                    | "GridTable3_Accent6"
-                    | "GridTable4"
-                    | "GridTable4_Accent1"
-                    | "GridTable4_Accent2"
-                    | "GridTable4_Accent3"
-                    | "GridTable4_Accent4"
-                    | "GridTable4_Accent5"
-                    | "GridTable4_Accent6"
-                    | "GridTable5Dark"
-                    | "GridTable5Dark_Accent1"
-                    | "GridTable5Dark_Accent2"
-                    | "GridTable5Dark_Accent3"
-                    | "GridTable5Dark_Accent4"
-                    | "GridTable5Dark_Accent5"
-                    | "GridTable5Dark_Accent6"
-                    | "GridTable6Colorful"
-                    | "GridTable6Colorful_Accent1"
-                    | "GridTable6Colorful_Accent2"
-                    | "GridTable6Colorful_Accent3"
-                    | "GridTable6Colorful_Accent4"
-                    | "GridTable6Colorful_Accent5"
-                    | "GridTable6Colorful_Accent6"
-                    | "GridTable7Colorful"
-                    | "GridTable7Colorful_Accent1"
-                    | "GridTable7Colorful_Accent2"
-                    | "GridTable7Colorful_Accent3"
-                    | "GridTable7Colorful_Accent4"
-                    | "GridTable7Colorful_Accent5"
-                    | "GridTable7Colorful_Accent6"
-                    | "ListTable1Light"
-                    | "ListTable1Light_Accent1"
-                    | "ListTable1Light_Accent2"
-                    | "ListTable1Light_Accent3"
-                    | "ListTable1Light_Accent4"
-                    | "ListTable1Light_Accent5"
-                    | "ListTable1Light_Accent6"
-                    | "ListTable2"
-                    | "ListTable2_Accent1"
-                    | "ListTable2_Accent2"
-                    | "ListTable2_Accent3"
-                    | "ListTable2_Accent4"
-                    | "ListTable2_Accent5"
-                    | "ListTable2_Accent6"
-                    | "ListTable3"
-                    | "ListTable3_Accent1"
-                    | "ListTable3_Accent2"
-                    | "ListTable3_Accent3"
-                    | "ListTable3_Accent4"
-                    | "ListTable3_Accent5"
-                    | "ListTable3_Accent6"
-                    | "ListTable4"
-                    | "ListTable4_Accent1"
-                    | "ListTable4_Accent2"
-                    | "ListTable4_Accent3"
-                    | "ListTable4_Accent4"
-                    | "ListTable4_Accent5"
-                    | "ListTable4_Accent6"
-                    | "ListTable5Dark"
-                    | "ListTable5Dark_Accent1"
-                    | "ListTable5Dark_Accent2"
-                    | "ListTable5Dark_Accent3"
-                    | "ListTable5Dark_Accent4"
-                    | "ListTable5Dark_Accent5"
-                    | "ListTable5Dark_Accent6"
-                    | "ListTable6Colorful"
-                    | "ListTable6Colorful_Accent1"
-                    | "ListTable6Colorful_Accent2"
-                    | "ListTable6Colorful_Accent3"
-                    | "ListTable6Colorful_Accent4"
-                    | "ListTable6Colorful_Accent5"
-                    | "ListTable6Colorful_Accent6"
-                    | "ListTable7Colorful"
-                    | "ListTable7Colorful_Accent1"
-                    | "ListTable7Colorful_Accent2"
-                    | "ListTable7Colorful_Accent3"
-                    | "ListTable7Colorful_Accent4"
-                    | "ListTable7Colorful_Accent5"
-                    | "ListTable7Colorful_Accent6";
+      content: >-
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" |
+        "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" |
+        "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+        "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" |
+        "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" |
+        "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" |
+        "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1"
+        | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5"
+        | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3"
+        | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
-        type: |-
-          | <xref uid="word!Word.BuiltInStyleName:enum" />
-                      | "Other"
-                      | "Normal"
-                      | "Heading1"
-                      | "Heading2"
-                      | "Heading3"
-                      | "Heading4"
-                      | "Heading5"
-                      | "Heading6"
-                      | "Heading7"
-                      | "Heading8"
-                      | "Heading9"
-                      | "Toc1"
-                      | "Toc2"
-                      | "Toc3"
-                      | "Toc4"
-                      | "Toc5"
-                      | "Toc6"
-                      | "Toc7"
-                      | "Toc8"
-                      | "Toc9"
-                      | "FootnoteText"
-                      | "Header"
-                      | "Footer"
-                      | "Caption"
-                      | "FootnoteReference"
-                      | "EndnoteReference"
-                      | "EndnoteText"
-                      | "Title"
-                      | "Subtitle"
-                      | "Hyperlink"
-                      | "Strong"
-                      | "Emphasis"
-                      | "NoSpacing"
-                      | "ListParagraph"
-                      | "Quote"
-                      | "IntenseQuote"
-                      | "SubtleEmphasis"
-                      | "IntenseEmphasis"
-                      | "SubtleReference"
-                      | "IntenseReference"
-                      | "BookTitle"
-                      | "Bibliography"
-                      | "TocHeading"
-                      | "TableGrid"
-                      | "PlainTable1"
-                      | "PlainTable2"
-                      | "PlainTable3"
-                      | "PlainTable4"
-                      | "PlainTable5"
-                      | "TableGridLight"
-                      | "GridTable1Light"
-                      | "GridTable1Light_Accent1"
-                      | "GridTable1Light_Accent2"
-                      | "GridTable1Light_Accent3"
-                      | "GridTable1Light_Accent4"
-                      | "GridTable1Light_Accent5"
-                      | "GridTable1Light_Accent6"
-                      | "GridTable2"
-                      | "GridTable2_Accent1"
-                      | "GridTable2_Accent2"
-                      | "GridTable2_Accent3"
-                      | "GridTable2_Accent4"
-                      | "GridTable2_Accent5"
-                      | "GridTable2_Accent6"
-                      | "GridTable3"
-                      | "GridTable3_Accent1"
-                      | "GridTable3_Accent2"
-                      | "GridTable3_Accent3"
-                      | "GridTable3_Accent4"
-                      | "GridTable3_Accent5"
-                      | "GridTable3_Accent6"
-                      | "GridTable4"
-                      | "GridTable4_Accent1"
-                      | "GridTable4_Accent2"
-                      | "GridTable4_Accent3"
-                      | "GridTable4_Accent4"
-                      | "GridTable4_Accent5"
-                      | "GridTable4_Accent6"
-                      | "GridTable5Dark"
-                      | "GridTable5Dark_Accent1"
-                      | "GridTable5Dark_Accent2"
-                      | "GridTable5Dark_Accent3"
-                      | "GridTable5Dark_Accent4"
-                      | "GridTable5Dark_Accent5"
-                      | "GridTable5Dark_Accent6"
-                      | "GridTable6Colorful"
-                      | "GridTable6Colorful_Accent1"
-                      | "GridTable6Colorful_Accent2"
-                      | "GridTable6Colorful_Accent3"
-                      | "GridTable6Colorful_Accent4"
-                      | "GridTable6Colorful_Accent5"
-                      | "GridTable6Colorful_Accent6"
-                      | "GridTable7Colorful"
-                      | "GridTable7Colorful_Accent1"
-                      | "GridTable7Colorful_Accent2"
-                      | "GridTable7Colorful_Accent3"
-                      | "GridTable7Colorful_Accent4"
-                      | "GridTable7Colorful_Accent5"
-                      | "GridTable7Colorful_Accent6"
-                      | "ListTable1Light"
-                      | "ListTable1Light_Accent1"
-                      | "ListTable1Light_Accent2"
-                      | "ListTable1Light_Accent3"
-                      | "ListTable1Light_Accent4"
-                      | "ListTable1Light_Accent5"
-                      | "ListTable1Light_Accent6"
-                      | "ListTable2"
-                      | "ListTable2_Accent1"
-                      | "ListTable2_Accent2"
-                      | "ListTable2_Accent3"
-                      | "ListTable2_Accent4"
-                      | "ListTable2_Accent5"
-                      | "ListTable2_Accent6"
-                      | "ListTable3"
-                      | "ListTable3_Accent1"
-                      | "ListTable3_Accent2"
-                      | "ListTable3_Accent3"
-                      | "ListTable3_Accent4"
-                      | "ListTable3_Accent5"
-                      | "ListTable3_Accent6"
-                      | "ListTable4"
-                      | "ListTable4_Accent1"
-                      | "ListTable4_Accent2"
-                      | "ListTable4_Accent3"
-                      | "ListTable4_Accent4"
-                      | "ListTable4_Accent5"
-                      | "ListTable4_Accent6"
-                      | "ListTable5Dark"
-                      | "ListTable5Dark_Accent1"
-                      | "ListTable5Dark_Accent2"
-                      | "ListTable5Dark_Accent3"
-                      | "ListTable5Dark_Accent4"
-                      | "ListTable5Dark_Accent5"
-                      | "ListTable5Dark_Accent6"
-                      | "ListTable6Colorful"
-                      | "ListTable6Colorful_Accent1"
-                      | "ListTable6Colorful_Accent2"
-                      | "ListTable6Colorful_Accent3"
-                      | "ListTable6Colorful_Accent4"
-                      | "ListTable6Colorful_Accent5"
-                      | "ListTable6Colorful_Accent6"
-                      | "ListTable7Colorful"
-                      | "ListTable7Colorful_Accent1"
-                      | "ListTable7Colorful_Accent2"
-                      | "ListTable7Colorful_Accent3"
-                      | "ListTable7Colorful_Accent4"
-                      | "ListTable7Colorful_Accent5"
-                      | "ListTable7Colorful_Accent6"
+        type: >-
+          <xref uid="word!Word.BuiltInStyleName:enum" /> | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" |
+          "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
+          "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" |
+          "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" |
+          "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+          "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+          "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+          "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+          "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+          "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+          "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+          "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+          "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+          "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+          "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+          "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2"
+          | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+          "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+          "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+          "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+          "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5"
+          | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" |
+          "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" |
+          "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" |
+          "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" |
+          "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" |
+          "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" |
+          "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+          "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+          "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+          "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+          "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
   - name: subtype
     uid: 'word!Word.ContentControl#subtype:member'
     package: word!
@@ -733,46 +497,17 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly subtype:
-                    | Word.ContentControlType
-                    | "Unknown"
-                    | "RichTextInline"
-                    | "RichTextParagraphs"
-                    | "RichTextTableCell"
-                    | "RichTextTableRow"
-                    | "RichTextTable"
-                    | "PlainTextInline"
-                    | "PlainTextParagraph"
-                    | "Picture"
-                    | "BuildingBlockGallery"
-                    | "CheckBox"
-                    | "ComboBox"
-                    | "DropDownList"
-                    | "DatePicker"
-                    | "RepeatingSection"
-                    | "RichText"
-                    | "PlainText";
+      content: >-
+        readonly subtype: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+        "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+        "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+        "RepeatingSection" | "RichText" | "PlainText";
       return:
-        type: |-
-          | <xref uid="word!Word.ContentControlType:enum" />
-                      | "Unknown"
-                      | "RichTextInline"
-                      | "RichTextParagraphs"
-                      | "RichTextTableCell"
-                      | "RichTextTableRow"
-                      | "RichTextTable"
-                      | "PlainTextInline"
-                      | "PlainTextParagraph"
-                      | "Picture"
-                      | "BuildingBlockGallery"
-                      | "CheckBox"
-                      | "ComboBox"
-                      | "DropDownList"
-                      | "DatePicker"
-                      | "RepeatingSection"
-                      | "RichText"
-                      | "PlainText"
+        type: >-
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+          "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+          "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+          "RepeatingSection" | "RichText" | "PlainText"
   - name: tables
     uid: 'word!Word.ContentControl#tables:member'
     package: word!
@@ -864,46 +599,17 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly type:
-                    | Word.ContentControlType
-                    | "Unknown"
-                    | "RichTextInline"
-                    | "RichTextParagraphs"
-                    | "RichTextTableCell"
-                    | "RichTextTableRow"
-                    | "RichTextTable"
-                    | "PlainTextInline"
-                    | "PlainTextParagraph"
-                    | "Picture"
-                    | "BuildingBlockGallery"
-                    | "CheckBox"
-                    | "ComboBox"
-                    | "DropDownList"
-                    | "DatePicker"
-                    | "RepeatingSection"
-                    | "RichText"
-                    | "PlainText";
+      content: >-
+        readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+        "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+        "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+        "RepeatingSection" | "RichText" | "PlainText";
       return:
-        type: |-
-          | <xref uid="word!Word.ContentControlType:enum" />
-                      | "Unknown"
-                      | "RichTextInline"
-                      | "RichTextParagraphs"
-                      | "RichTextTableCell"
-                      | "RichTextTableRow"
-                      | "RichTextTable"
-                      | "PlainTextInline"
-                      | "PlainTextParagraph"
-                      | "Picture"
-                      | "BuildingBlockGallery"
-                      | "CheckBox"
-                      | "ComboBox"
-                      | "DropDownList"
-                      | "DatePicker"
-                      | "RepeatingSection"
-                      | "RichText"
-                      | "PlainText"
+        type: >-
+          <xref uid="word!Word.ContentControlType:enum" /> | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+          "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+          "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+          "RepeatingSection" | "RichText" | "PlainText"
 methods:
   - name: clear()
     uid: 'word!Word.ContentControl#clear:member(1)'
@@ -1164,10 +870,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getRange(
-                    rangeLocation?: Word.RangeLocation | "Whole" | "Start" | "End" | "Before" | "After" | "Content",
-                ): Word.Range;
+      content: >-
+        getRange(rangeLocation?: Word.RangeLocation | "Whole" | "Start" | "End" | "Before" | "After" | "Content"):
+        Word.Range;
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location must be ''Whole'', ''Start'', ''End'', ''Before'', ''After'', or ''Content''.'
@@ -1288,50 +993,22 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertBreak(
-                    breakType:
-                        | Word.BreakType
-                        | "Page"
-                        | "Next"
-                        | "SectionNext"
-                        | "SectionContinuous"
-                        | "SectionEven"
-                        | "SectionOdd"
-                        | "Line",
-                    insertLocation:
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | Word.InsertLocation.before
-                        | Word.InsertLocation.after
-                        | "Start"
-                        | "End"
-                        | "Before"
-                        | "After",
-                ): void;
+      content: >-
+        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): void;
       parameters:
         - id: breakType
           description: Required. Type of break.
-          type: |-
-            | <xref uid="word!Word.BreakType:enum" />
-                            | "Page"
-                            | "Next"
-                            | "SectionNext"
-                            | "SectionContinuous"
-                            | "SectionEven"
-                            | "SectionOdd"
-                            | "Line"
+          type: >-
+            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
+            "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | <xref uid="word!Word.InsertLocation.before:member" />
-                            | <xref uid="word!Word.InsertLocation.after:member" />
-                            | "Start"
-                            | "End"
-                            | "Before"
-                            | "After"
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: void
         description: ''
@@ -1349,17 +1026,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertFileFromBase64(
-                    base64File: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
+        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The Base64-encoded content of a .docx file.
@@ -1368,13 +1037,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1420,17 +1085,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertHtml(
-                    html: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted in to the content control.
@@ -1439,13 +1096,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1458,17 +1111,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertInlinePictureFromBase64(
-                    base64EncodedImage: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.InlinePicture;
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace |
+        Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
           description: Required. The Base64-encoded image to be inserted in the content control.
@@ -1477,13 +1122,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
@@ -1530,17 +1171,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertOoxml(
-                    ooxml: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted in to the content control.
@@ -1549,13 +1182,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1599,19 +1228,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertParagraph(
-                    paragraphText: string,
-                    insertLocation:
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | Word.InsertLocation.before
-                        | Word.InsertLocation.after
-                        | "Start"
-                        | "End"
-                        | "Before"
-                        | "After",
-                ): Word.Paragraph;
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -1620,15 +1239,10 @@ methods:
           description: >-
             Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | <xref uid="word!Word.InsertLocation.before:member" />
-                            | <xref uid="word!Word.InsertLocation.after:member" />
-                            | "Start"
-                            | "End"
-                            | "Before"
-                            | "After"
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -1641,21 +1255,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertTable(
-                    rowCount: number,
-                    columnCount: number,
-                    insertLocation:
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | Word.InsertLocation.before
-                        | Word.InsertLocation.after
-                        | "Start"
-                        | "End"
-                        | "Before"
-                        | "After",
-                    values?: string[][],
-                ): Word.Table;
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start |
+        Word.InsertLocation.end | Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" |
+        "After", values?: string[][]): Word.Table;
       parameters:
         - id: rowCount
           description: Required. The number of rows in the table.
@@ -1667,15 +1270,10 @@ methods:
           description: >-
             Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | <xref uid="word!Word.InsertLocation.before:member" />
-                            | <xref uid="word!Word.InsertLocation.after:member" />
-                            | "Start"
-                            | "End"
-                            | "Before"
-                            | "After"
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type: 'string[][]'
@@ -1725,17 +1323,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertText(
-                    text: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: text
           description: Required. The text to be inserted in to the content control.
@@ -1744,13 +1334,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1923,18 +1509,15 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        search(
-                    searchText: string,
-                    searchOptions?: Word.SearchOptions | {
-                        ignorePunct?: boolean;
-                        ignoreSpace?: boolean;
-                        matchCase?: boolean;
-                        matchPrefix?: boolean;
-                        matchSuffix?: boolean;
-                        matchWholeWord?: boolean;
-                        matchWildcards?: boolean;
-                    },
-                ): Word.RangeCollection;
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       parameters:
         - id: searchText
           description: Required. The search text.
@@ -1943,14 +1526,14 @@ methods:
           description: Optional. Options for the search.
           type: |-
             <xref uid="word!Word.SearchOptions:class" /> | {
-                            ignorePunct?: boolean;
-                            ignoreSpace?: boolean;
-                            matchCase?: boolean;
-                            matchPrefix?: boolean;
-                            matchSuffix?: boolean;
-                            matchWholeWord?: boolean;
-                            matchWildcards?: boolean;
-                        }
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    }
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
@@ -2083,13 +1666,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        split(
-                    delimiters: string[],
-                    multiParagraphs?: boolean,
-                    trimDelimiters?: boolean,
-                    trimSpacing?: boolean,
-                ): Word.RangeCollection;
+      content: >-
+        split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean):
+        Word.RangeCollection;
       parameters:
         - id: delimiters
           description: Required. The delimiters as an array of strings.

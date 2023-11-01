@@ -50,21 +50,10 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        style?:
-                        | Excel.ConditionalRangeBorderLineStyle
-                        | "None"
-                        | "Continuous"
-                        | "Dash"
-                        | "DashDot"
-                        | "DashDotDot"
-                        | "Dot";
+      content: >-
+        style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+        "Dot";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" />
-                          | "None"
-                          | "Continuous"
-                          | "Dash"
-                          | "DashDot"
-                          | "DashDotDot"
-                          | "Dot"
+        type: >-
+          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" |
+          "DashDotDot" | "Dot"

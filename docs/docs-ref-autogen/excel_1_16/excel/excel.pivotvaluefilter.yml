@@ -35,30 +35,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        condition:
-                    | Excel.ValueFilterCondition
-                    | "Unknown"
-                    | "Equals"
-                    | "GreaterThan"
-                    | "GreaterThanOrEqualTo"
-                    | "LessThan"
-                    | "LessThanOrEqualTo"
-                    | "Between"
-                    | "TopN"
-                    | "BottomN";
+      content: >-
+        condition: Excel.ValueFilterCondition | "Unknown" | "Equals" | "GreaterThan" | "GreaterThanOrEqualTo" |
+        "LessThan" | "LessThanOrEqualTo" | "Between" | "TopN" | "BottomN";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ValueFilterCondition:enum" />
-                      | "Unknown"
-                      | "Equals"
-                      | "GreaterThan"
-                      | "GreaterThanOrEqualTo"
-                      | "LessThan"
-                      | "LessThanOrEqualTo"
-                      | "Between"
-                      | "TopN"
-                      | "BottomN"
+        type: >-
+          <xref uid="excel!Excel.ValueFilterCondition:enum" /> | "Unknown" | "Equals" | "GreaterThan" |
+          "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between" | "TopN" | "BottomN"
   - name: exclusive
     uid: 'excel!Excel.PivotValueFilter#exclusive:member'
     package: excel!

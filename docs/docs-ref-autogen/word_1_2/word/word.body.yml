@@ -441,31 +441,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertBreak(
-                    breakType:
-                        | Word.BreakType
-                        | "Page"
-                        | "Next"
-                        | "SectionNext"
-                        | "SectionContinuous"
-                        | "SectionEven"
-                        | "SectionOdd"
-                        | "Line",
-                    insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
-                ): void;
+      content: >-
+        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"):
+        void;
       parameters:
         - id: breakType
           description: Required. The break type to add to the body.
-          type: |-
-            | <xref uid="word!Word.BreakType:enum" />
-                            | "Page"
-                            | "Next"
-                            | "SectionNext"
-                            | "SectionContinuous"
-                            | "SectionEven"
-                            | "SectionOdd"
-                            | "Line"
+          type: >-
+            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
+            "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: Required. The value must be 'Start' or 'End'.
           type: >-
@@ -516,22 +501,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertContentControl(
-                    contentControlType?:
-                        | Word.ContentControlType.richText
-                        | Word.ContentControlType.plainText
-                        | "RichText"
-                        | "PlainText",
-                ): Word.ContentControl;
+      content: >-
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
+        "RichText" | "PlainText"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
-          type: |-
-            | <xref uid="word!Word.ContentControlType.richText:member" />
-                            | <xref uid="word!Word.ContentControlType.plainText:member" />
-                            | "RichText"
-                            | "PlainText"
+          type: >-
+            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
+            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -577,30 +555,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertFileFromBase64(
-                    base64File: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
+        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -642,30 +608,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertHtml(
-                    html: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted in the document.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -711,11 +665,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertInlinePictureFromBase64(
-                    base64EncodedImage: string,
-                    insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
-                ): Word.InlinePicture;
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.start |
+        Word.InsertLocation.end | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
           description: Required. The Base64-encoded image to be inserted in the body.
@@ -779,30 +731,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertOoxml(
-                    ooxml: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -844,11 +784,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertParagraph(
-                    paragraphText: string,
-                    insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
-                ): Word.Paragraph;
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        "Start" | "End"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -899,30 +837,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertText(
-                    text: string,
-                    insertLocation:
-                        | Word.InsertLocation.replace
-                        | Word.InsertLocation.start
-                        | Word.InsertLocation.end
-                        | "Replace"
-                        | "Start"
-                        | "End",
-                ): Word.Range;
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: text
           description: Required. Text to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: |-
-            | <xref uid="word!Word.InsertLocation.replace:member" />
-                            | <xref uid="word!Word.InsertLocation.start:member" />
-                            | <xref uid="word!Word.InsertLocation.end:member" />
-                            | "Replace"
-                            | "Start"
-                            | "End"
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1054,18 +980,15 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        search(
-                    searchText: string,
-                    searchOptions?: Word.SearchOptions | {
-                        ignorePunct?: boolean;
-                        ignoreSpace?: boolean;
-                        matchCase?: boolean;
-                        matchPrefix?: boolean;
-                        matchSuffix?: boolean;
-                        matchWholeWord?: boolean;
-                        matchWildcards?: boolean;
-                    },
-                ): Word.RangeCollection;
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       parameters:
         - id: searchText
           description: Required. The search text. Can be a maximum of 255 characters.
@@ -1074,14 +997,14 @@ methods:
           description: Optional. Options for the search.
           type: |-
             <xref uid="word!Word.SearchOptions:class" /> | {
-                            ignorePunct?: boolean;
-                            ignoreSpace?: boolean;
-                            matchCase?: boolean;
-                            matchPrefix?: boolean;
-                            matchSuffix?: boolean;
-                            matchWholeWord?: boolean;
-                            matchWildcards?: boolean;
-                        }
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    }
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''

@@ -26,9 +26,7 @@ export declare namespace Office {
          * a resolve callback used resolve the promise with a value or the result of another promise,
          * and a reject callback used to reject the promise with a provided reason or error.
          */
-        new<T>(
-            executor: (resolve: (value?: T | PromiseLike<T>) => void, reject: (reason?: any) => void) => void,
-        ): Promise<T>;
+        new <T>(executor: (resolve: (value?: T | PromiseLike<T>) => void, reject: (reason?: any) => void) => void): Promise<T>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -36,20 +34,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-                T9 | PromiseLike<T9>,
-                T10 | PromiseLike<T10>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]>;
+        all<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>, T10 | PromiseLike<T10>]): Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -57,19 +42,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-                T9 | PromiseLike<T9>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9]>;
+        all<T1, T2, T3, T4, T5, T6, T7, T8, T9>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>]): Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -77,18 +50,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5, T6, T7, T8>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5, T6, T7, T8]>;
+        all<T1, T2, T3, T4, T5, T6, T7, T8>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>]): Promise<[T1, T2, T3, T4, T5, T6, T7, T8]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -96,17 +58,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5, T6, T7>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5, T6, T7]>;
+        all<T1, T2, T3, T4, T5, T6, T7>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>]): Promise<[T1, T2, T3, T4, T5, T6, T7]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -114,16 +66,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5, T6>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5, T6]>;
+        all<T1, T2, T3, T4, T5, T6>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>]): Promise<[T1, T2, T3, T4, T5, T6]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -131,15 +74,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4, T5>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-            ],
-        ): Promise<[T1, T2, T3, T4, T5]>;
+        all<T1, T2, T3, T4, T5>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>]): Promise<[T1, T2, T3, T4, T5]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -147,9 +82,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3, T4>(
-            values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>],
-        ): Promise<[T1, T2, T3, T4]>;
+        all<T1, T2, T3, T4>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>]): Promise<[T1, T2, T3, T4]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -157,9 +90,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T1, T2, T3>(
-            values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>],
-        ): Promise<[T1, T2, T3]>;
+        all<T1, T2, T3>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>]): Promise<[T1, T2, T3]>;
 
         /**
          * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -183,20 +114,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-                T9 | PromiseLike<T9>,
-                T10 | PromiseLike<T10>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10>;
+        race<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>, T10 | PromiseLike<T10>]): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -204,19 +122,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-                T9 | PromiseLike<T9>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9>;
+        race<T1, T2, T3, T4, T5, T6, T7, T8, T9>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>]): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -224,18 +130,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5, T6, T7, T8>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-                T8 | PromiseLike<T8>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8>;
+        race<T1, T2, T3, T4, T5, T6, T7, T8>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>]): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -243,17 +138,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5, T6, T7>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-                T7 | PromiseLike<T7>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7>;
+        race<T1, T2, T3, T4, T5, T6, T7>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>]): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -261,16 +146,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5, T6>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-                T6 | PromiseLike<T6>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5 | T6>;
+        race<T1, T2, T3, T4, T5, T6>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>]): Promise<T1 | T2 | T3 | T4 | T5 | T6>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -278,15 +154,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4, T5>(
-            values: [
-                T1 | PromiseLike<T1>,
-                T2 | PromiseLike<T2>,
-                T3 | PromiseLike<T3>,
-                T4 | PromiseLike<T4>,
-                T5 | PromiseLike<T5>,
-            ],
-        ): Promise<T1 | T2 | T3 | T4 | T5>;
+        race<T1, T2, T3, T4, T5>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>]): Promise<T1 | T2 | T3 | T4 | T5>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -294,9 +162,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3, T4>(
-            values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>],
-        ): Promise<T1 | T2 | T3 | T4>;
+        race<T1, T2, T3, T4>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>]): Promise<T1 | T2 | T3 | T4>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -304,9 +170,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T1, T2, T3>(
-            values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>],
-        ): Promise<T1 | T2 | T3>;
+        race<T1, T2, T3>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>]): Promise<T1 | T2 | T3>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -417,9 +281,7 @@ export declare namespace Office {
      *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
      * @returns A Promise that contains the application and platform info, once initialization is completed.
      */
-    export function onReady(
-        callback?: (info: { host: HostType; platform: PlatformType }) => any,
-    ): Promise<{ host: HostType; platform: PlatformType }>;
+    export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
      * Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
      *
@@ -473,11 +335,11 @@ export declare namespace Office {
         /**
          * The add-in does not load until opened by the user.
          */
-        none = "None",
+        none = 'None',
         /**
          * Load the add-in but do not show UI.
          */
-        load = "Load",
+        load = 'Load',
     }
     /**
      * Visibility mode of the add-in.
@@ -486,11 +348,11 @@ export declare namespace Office {
         /**
          * UI is Hidden
          */
-        hidden = "Hidden",
+        hidden = 'Hidden',
         /**
          * Displayed as taskpane
          */
-        taskpane = "Taskpane",
+        taskpane = 'Taskpane',
     }
     /**
      * Specifies the result of an asynchronous call.
@@ -507,7 +369,7 @@ export declare namespace Office {
         /**
          * The call failed, check the error object.
          */
-        Failed,
+        Failed
     }
     /**
      * Specifies whether the add-in was just inserted or was already contained in the document.
@@ -520,11 +382,11 @@ export declare namespace Office {
         /**
          * The add-in is already part of the document that was opened.
          */
-        DocumentOpened,
+        DocumentOpened
     }
     /**
      * Specifies the Office application in which the add-in is running.
-     *
+     * 
      * @remarks
      * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
      */
@@ -560,11 +422,11 @@ export declare namespace Office {
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
          * to build no-code business solutions for web and mobile devices.
          */
-        Access,
+        Access
     }
     /**
      * Specifies the OS or other platform on which the Office application is running.
-     *
+     * 
      * @remarks
      * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
      */
@@ -592,16 +454,16 @@ export declare namespace Office {
         /**
          * The platform is WinRT.
          */
-        Universal,
+        Universal
     }
     // Objects
-    /**
-     * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
-     *
-     * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
-     * from the `callback` function's only parameter.
-     */
-    export interface AsyncResult<T> {
+        /**
+         * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
+         *
+         * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
+         * from the `callback` function's only parameter.
+         */
+        export interface AsyncResult<T> {
         /**
          * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in.
          * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
@@ -654,9 +516,9 @@ export declare namespace Office {
     export interface Actions {
         /**
          * Associates the ID or name of an action with a function.
-         *
+         * 
          * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
-         * @param actionFunction - The function that is run when the action is invoked.
+         * @param actionFunction - The function that is run when the action is invoked. 
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
         /**
@@ -665,17 +527,17 @@ export declare namespace Office {
          * @remarks
          *
          * **Requirement sets**:
-         *
+         * 
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         *
+         * 
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
-         *
+         * 
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
          * To learn how to specify a valid action ID and a key combination, see {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
          * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
          * Otherwise, the promise will be rejected with error code and error message. An "InvalidOperation" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.
          */
-        replaceShortcuts(shortcuts: { [actionId: string]: string }): Promise<void>;
+        replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;
         /**
          * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist.
          * The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.
@@ -690,7 +552,7 @@ export declare namespace Office {
          *
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
-        getShortcuts(): Promise<{ [actionId: string]: string | null }>;
+        getShortcuts(): Promise<{[actionId: string]: string|null}>;
         /**
          * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the Office application.
          *
@@ -705,7 +567,7 @@ export declare namespace Office {
          * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
          * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
          */
-        areShortcutsInUse(shortcuts: string[]): Promise<{ shortcut: string; inUse: boolean }[]>;
+        areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;
     }
     /**
      * Message used in the `onVisibilityModeChanged` invocation.
@@ -718,7 +580,7 @@ export declare namespace Office {
     }
     /**
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
-     *
+     * 
      * @remarks
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
@@ -727,14 +589,14 @@ export declare namespace Office {
         /**
          * Sets the startup behavior for the add-in for when the document is opened next time.
          * @param behavior - Specifies startup behavior of the add-in.
-         *
+         * 
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
         /**
          * Gets the current startup behavior for the add-in.
-         *
+         * 
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
@@ -742,7 +604,7 @@ export declare namespace Office {
         /**
          * Shows the task pane associated with the add-in.
          * @returns A promise that is resolved when the UI is shown.
-         *
+         * 
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
@@ -750,7 +612,7 @@ export declare namespace Office {
         /**
          * Hides the task pane.
          * @returns A promise that is resolved when the UI is hidden.
-         *
+         * 
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
@@ -759,7 +621,7 @@ export declare namespace Office {
          * Adds a handler for the `onVisibilityModeChanged` event.
          * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.
          * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.
-         *
+         * 
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
@@ -772,7 +634,7 @@ export declare namespace Office {
          *
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
-         */
+        */
         beforeDocumentCloseNotification: BeforeDocumentCloseNotification;
     }
     /**
@@ -804,11 +666,11 @@ export declare namespace Office {
         disable(): Promise<void>;
 
         /**
-         * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled.
+         * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. 
          * This event handler will be triggered if both of the following conditions are met.
          *
          * 1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
-         *
+         * 
          * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
          *
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
@@ -817,9 +679,9 @@ export declare namespace Office {
          *
          * @remarks
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
-         */
+        */
         onCloseActionCancelled(
-            handler: () => void,
+            handler: () => void
         ): Promise<() => Promise<void>>;
     }
     /**
@@ -836,10 +698,10 @@ export declare namespace Office {
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.2}
-         *
+         * 
          * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved.
          * For more information and code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
-         *
+         * 
          * @param tabDefinition - Specifies the tab's properties and child controls and their properties. This parameter isn't strongly typed because its shape is defined by a JSON schema that can be versioned. To create the parameter object, pass a JSON string that conforms to the Office {@link https://developer.microsoft.com/json-schemas/office-js/dynamic-ribbon.schema.json | dynamic-ribbon JSON schema} to `JSON.parse`, and then pass the returned object to this method. To get IntelliSense for the JSON in Visual Studio Code, see {@link https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings | Editing JSON with Visual Studio Code - JSON schemas and settings }.
          */
         requestCreateControls(tabDefinition: Object): Promise<void>;
@@ -851,7 +713,7 @@ export declare namespace Office {
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
          *
          * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
-         *
+         * 
          * For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
          *
          * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
@@ -885,15 +747,15 @@ export declare namespace Office {
         id: string;
         /**
          * Specifies one or more of the controls in the tab, such as menu items, buttons, etc.
-         *
+         * 
          * @remarks
-         *
+         * 
          * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, this property specifies the IDs of the controls whose enabled status is to be changed. However, if there is a `groups` property on the tab, then this property is ignored and the `controls` properties of the specified groups must be used to change enabled status.
          */
         controls?: Control[];
         /**
          * Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
-         *
+         * 
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.2}
@@ -901,10 +763,10 @@ export declare namespace Office {
         visible?: boolean;
         /**
          * Specifies one or more of the control groups on the tab.
-         *
+         * 
          * @remarks
-         *
-         * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.
+         * 
+         * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored. 
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
          */
@@ -918,16 +780,17 @@ export declare namespace Office {
     export interface Group {
         /**
          * Identifier of the group as specified in the manifest.
+         * 
          */
-        id: string;
-        /**
-         * Specifies one or more of the controls in the group, such as menu items, buttons, etc.
-         *
-         * @remarks
-         *
-         * When the `Group` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is ignored.
-         */
-        controls?: Control[];
+         id: string;
+         /**
+          * Specifies one or more of the controls in the group, such as menu items, buttons, etc.
+          * 
+          * @remarks
+          * 
+          * When the `Group` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is ignored. 
+          */
+         controls?: Control[];
     }
     /**
      * Represents an individual control or command and the state it should have.
@@ -997,11 +860,11 @@ export declare namespace Office {
         contentLanguage: string;
         /**
          * Gets information about the environment in which the add-in is running.
-         *
+         * 
          * @remarks
          * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
-         * For all Mailbox requirement sets, you can use the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
+         * For all Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
          */
         diagnostics: ContextInformation;
@@ -1043,8 +906,8 @@ export declare namespace Office {
          * @remarks
          * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
-         * Mailbox requirement sets, you can use the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
+         * Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
          */
         host: HostType;
@@ -1080,8 +943,8 @@ export declare namespace Office {
          * @remarks
          * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
-         * Mailbox requirement sets, you can use the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
+         * Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
          */
         platform: PlatformType;
@@ -1109,7 +972,7 @@ export declare namespace Office {
          * @remarks
          *
          * [Api set: Mailbox 1.13]
-         *
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
@@ -1188,7 +1051,7 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              */
-            source: Source;
+            source:Source;
             /**
              * Indicates that the add-in has completed processing and will automatically be closed.
              *
@@ -1301,12 +1164,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: (result: DialogParentMessageReceivedEventArgs) => void,
-            options: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, options: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds an event handler to the object using the specified event type.
          *
@@ -1320,11 +1178,7 @@ export declare namespace Office {
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
          * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: (result: DialogParentMessageReceivedEventArgs) => void,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
          *
@@ -1425,11 +1279,7 @@ export declare namespace Office {
          * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
          * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
          */
-        displayDialogAsync(
-            startAddress: string,
-            options?: DialogOptions,
-            callback?: (result: AsyncResult<Dialog>) => void,
-        ): void;
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
          * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
          *
@@ -1531,20 +1381,20 @@ export declare namespace Office {
          */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
-         * Delivers a message from the dialog box to its parent/opener page.
-         *
+         * Delivers a message from the dialog box to its parent/opener page. 
+         * 
          * @remarks
-         *
-         * **Requirement sets**:
-         *
+         * 
+         * **Requirement sets**: 
+         * 
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-         *
+         * 
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
-         *
-         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent.
-         * @param messageOptions - Optional. Provides options for how to send the message.
+         * 
+         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
+         * @param messageOptions - Optional. Provides options for how to send the message. 
          */
-        messageParent(message: string, messageOptions?: DialogMessageOptions): void;
+         messageParent(message: string, messageOptions?: DialogMessageOptions): void;
         /**
          * Closes the UI container where the JavaScript is executing.
          *
@@ -1569,12 +1419,12 @@ export declare namespace Office {
          */
         closeContainer(): void;
         /**
-         * Opens a browser window and loads the specified URL.
-         *
+         * Opens a browser window and loads the specified URL. 
+         * 
          * @remarks
-         *
+         * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
-         *
+         *  
          * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
          */
         openBrowserWindow(url: string): void;
@@ -1583,23 +1433,23 @@ export declare namespace Office {
      * Provides information about which Requirement Sets are supported in the current environment.
      */
     export interface RequirementSetSupport {
-        /**
-         * Check if the specified requirement set is supported by the Office application.
-         * @param name - The requirement set name (e.g., "ExcelApi").
-         * @param minVersion - The minimum required version (e.g., "1.4").
-         */
-        isSetSupported(name: string, minVersion?: string): boolean;
+       /**
+        * Check if the specified requirement set is supported by the Office application.
+        * @param name - The requirement set name (e.g., "ExcelApi").
+        * @param minVersion - The minimum required version (e.g., "1.4").
+        */
+       isSetSupported(name: string, minVersion?: string): boolean;
 
-        /**
-         * Check if the specified requirement set is supported by the Office application.
-         *
-         * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the string overload of `isSetSupported` instead.
-         *
-         * @deprecated Use the string overload of `isSetSupported` instead.
-         * @param name - The requirement set name (e.g., "ExcelApi").
-         * @param minVersionNumber - The minimum required version (e.g., 1.4).
-         */
-        isSetSupported(name: string, minVersionNumber?: number): boolean;
+       /**
+        * Check if the specified requirement set is supported by the Office application.
+        *
+        * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the string overload of `isSetSupported` instead.
+        *
+        * @deprecated Use the string overload of `isSetSupported` instead.
+        * @param name - The requirement set name (e.g., "ExcelApi").
+        * @param minVersionNumber - The minimum required version (e.g., 1.4).
+        */
+       isSetSupported(name: string, minVersionNumber?: number): boolean;
     }
     /**
      * Provides options for how a dialog is displayed.
@@ -1608,18 +1458,18 @@ export declare namespace Office {
         /**
          * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
          */
-        height?: number;
+        height?: number,
         /**
          * Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
          */
-        width?: number;
+        width?: number,
         /**
          * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office on the web, and is
          * ignored by other platforms. If false (default), the dialog will be displayed as a new browser window (pop-up). Recommended for
          * authentication pages that cannot be displayed in an IFrame. If true, the dialog will be displayed as a floating overlay with an IFrame.
          * This is best for user experience and performance.
          */
-        displayInIframe?: boolean;
+        displayInIframe?: boolean
         /**
          * Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
          *
@@ -1630,7 +1480,7 @@ export declare namespace Office {
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * The Office Auth namespace, `Office.auth`, provides a method that allows the Office client application to obtain an access token to the add-in's web application.
@@ -1689,7 +1539,7 @@ export declare namespace Office {
         /**
          * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users.
          * Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the
-         * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
+         * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}. 
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
          *
@@ -1710,10 +1560,10 @@ export declare namespace Office {
          * method to open a dialog, you must close the dialog before you can call `getAccessToken`.
          *
          * - In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
-         * To retrieve an access token in older builds, use
+         * To retrieve an access token in older builds, use 
          * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
-         * OfficeRuntime.auth.getAccessToken} instead. For more information, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
+        * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
+        * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
          *
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
          * @returns Promise to the access token.
@@ -1787,29 +1637,29 @@ export declare namespace Office {
          * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
          * that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides information about the environment in which the add-in is running.
-     *
+     * 
      * @remarks
-     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5.
-     * For all Mailbox requirement sets, you can use the
+     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+     * For all Mailbox requirement sets, you can use the 
      * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
      * property to get similar information.
      */
     export interface ContextInformation {
         /**
-         * Gets the Office application in which the add-in is running.
-         */
+        * Gets the Office application in which the add-in is running.
+        */
         host: Office.HostType;
         /**
-         * Gets the platform on which the add-in is running.
-         */
+        * Gets the platform on which the add-in is running.
+        */
         platform: Office.PlatformType;
         /**
-         * Gets the version of Office on which the add-in is running.
-         */
+        * Gets the version of Office on which the add-in is running.
+        */
         version: string;
     }
     /**
@@ -1823,33 +1673,33 @@ export declare namespace Office {
         /**
          * The expected shape of the selection. Use {@link Office.CoercionType} or text value. Default: The original, uncoerced type of the binding.
          */
-        coercionType?: Office.CoercionType | string;
+        coercionType?: Office.CoercionType | string
         /**
          * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value.
          * Default: Unformatted data.
          */
-        valueFormat?: Office.ValueFormat | string;
+        valueFormat?: Office.ValueFormat | string
         /**
          * For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding. Default is first row.
          */
-        startRow?: number;
+        startRow?: number
         /**
          * For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding. Default is first column.
          */
-        startColumn?: number;
+        startColumn?: number
         /**
          * For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent rows.
          */
-        rowCount?: number;
+        rowCount?: number
         /**
          * For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all subsequent columns.
          */
-        columnCount?: number;
+        columnCount?: number
         /**
          * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data.
          * Use Office.FilterType or text value.
          */
-        filterType?: Office.FilterType | string;
+        filterType?: Office.FilterType | string
         /**
          * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
          *
@@ -1857,11 +1707,11 @@ export declare namespace Office {
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
          * to build no-code business solutions for web and mobile devices.
          */
-        rows?: string;
+        rows?: string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for how to set the data in a binding.
@@ -1877,11 +1727,11 @@ export declare namespace Office {
          *
          * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
          */
-        cellFormat?: RangeFormatConfiguration[];
+        cellFormat?: RangeFormatConfiguration[]
         /**
          * Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
          */
-        coercionType?: Office.CoercionType | string;
+        coercionType?: Office.CoercionType | string
         /**
          * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
          *
@@ -1889,7 +1739,7 @@ export declare namespace Office {
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
          * to build no-code business solutions for web and mobile devices.
          */
-        columns?: string[];
+        columns?: string[]
         /**
          * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
          *
@@ -1897,26 +1747,26 @@ export declare namespace Office {
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
          * to build no-code business solutions for web and mobile devices.
          */
-        rows?: string;
+        rows?: string
         /**
          * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set
          * starting in the first row.
          */
-        startRow?: number;
+        startRow?: number
         /**
          * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in
          * the first column.
          */
-        startColumn?: number;
+        startColumn?: number
         /**
          * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows.
          * Example: `{bandedRows: true,  filterButton: false}`
          */
-        tableOptions?: object;
+        tableOptions?: object
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Specifies a range and its formatting.
@@ -1926,11 +1776,11 @@ export declare namespace Office {
          * Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: `{row: 3, column: 4}` specifies
          * the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
          */
-        cells: Office.Table | RangeCoordinates;
+         cells: Office.Table | RangeCoordinates
         /**
          * Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`
          */
-        format: object;
+         format: object
     }
     /**
      * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
@@ -1940,11 +1790,11 @@ export declare namespace Office {
         /**
          * The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.
          */
-        row?: number;
+         row?: number
         /**
          * The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.
          */
-        column?: number;
+         column?: number
     }
     /**
      * Provides options to determine which event handler or handlers are removed.
@@ -1953,11 +1803,11 @@ export declare namespace Office {
         /**
          * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed.
          */
-        handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
+        handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for configuring the binding that is created.
@@ -1966,11 +1816,11 @@ export declare namespace Office {
         /**
          * The unique ID of the binding. Autogenerated if not supplied.
          */
-        id?: string;
+        id?: string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for configuring the prompt and identifying the binding that is created.
@@ -1979,12 +1829,12 @@ export declare namespace Office {
         /**
          * The unique ID of the binding. Autogenerated if not supplied.
          */
-        id?: string;
+        id?: string
         /**
          * Specifies the string to display in the prompt UI that tells the user what to select. Limited to 200 characters.
          * If no promptText argument is passed, "Please make a selection" is displayed.
          */
-        promptText?: string;
+        promptText?: string
         /**
          * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in.
          * The headers provided in the TableData object specify the labels used in the field selection UI.
@@ -1995,11 +1845,11 @@ export declare namespace Office {
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
          * to build no-code business solutions for web and mobile devices.
          */
-        sampleData?: Office.TableData;
+        sampleData?: Office.TableData
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for identifying the binding that is created.
@@ -2008,15 +1858,15 @@ export declare namespace Office {
         /**
          * The unique ID of the binding. Autogenerated if not supplied.
          */
-        id?: string;
+        id?: string
         /**
          * The names of the columns involved in the binding.
          */
-        columns?: string[];
+        columns?: string[]
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for setting the size of slices that the document will be divided into.
@@ -2025,11 +1875,11 @@ export declare namespace Office {
         /**
          * The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
          */
-        sliceSize?: number;
+        sliceSize?: number
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for customizing what data is returned and how it is formatted.
@@ -2038,16 +1888,16 @@ export declare namespace Office {
         /**
          * Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
          */
-        valueFormat?: Office.ValueFormat | string;
+        valueFormat?: Office.ValueFormat | string
         /**
          * Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data.
          * Use {@link Office.FilterType} or string equivalent. This parameter is ignored in Word documents.
          */
-        filterType?: Office.FilterType | string;
+        filterType?: Office.FilterType | string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for whether to select the location that is navigated to.
@@ -2070,11 +1920,11 @@ export declare namespace Office {
          * Specifies whether the location specified by the `id` parameter is selected (highlighted).
          * Use {@link Office.SelectionMode} or string equivalent. See the Remarks for more information.
          */
-        selectionMode?: Office.SelectionMode | string;
+        selectionMode?: Office.SelectionMode | string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for how to insert data to the selection.
@@ -2086,42 +1936,42 @@ export declare namespace Office {
          *
          * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
          */
-        cellFormat?: RangeFormatConfiguration[];
+        cellFormat?: RangeFormatConfiguration[]
         /**
          * Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
          */
-        coercionType?: Office.CoercionType | string;
+        coercionType?: Office.CoercionType | string
         /**
          * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows.
          * Example: `{bandedRows: true,  filterButton: false}`
          */
-        tableOptions?: object;
+        tableOptions?: object
         /**
-         * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its
-         * relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
-         */
-        imageTop?: number;
+        * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its
+        * relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+        */
+        imageTop?: number
         /**
-         * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image
-         * will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly.
-         * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
-         */
-        imageWidth?: number;
+        * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image
+        * will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly.
+        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+        */
+        imageWidth?: number
         /**
-         * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and
-         * its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
-         */
-        imageLeft?: number;
+        * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and
+        * its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+        */
+        imageLeft?: number
         /**
-         * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image
-         * will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly.
-         * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
-         */
-        imageHeight?: number;
+        * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image
+        * will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly.
+        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+        */
+        imageHeight?: number
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides options for saving settings.
@@ -2129,14 +1979,14 @@ export declare namespace Office {
     export interface SaveSettingsOptions {
         /**
          * **Warning**: This setting has been deprecated and should not be used. It has no effect on most platforms and will cause errors if set to `false` in Excel on the web.
-         *
+         * 
          * @deprecated `overwriteIfStale` is no longer supported.
          */
-        overwriteIfStale?: boolean;
+        overwriteIfStale?: boolean
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
-        asyncContext?: any;
+        asyncContext?: any
     }
     /**
      * Provides access to the properties for Office theme colors.
@@ -2218,8 +2068,8 @@ export declare namespace Office {
      */
     export interface Dialog {
         /**
-         * Called from a parent page to close the corresponding dialog box.
-         *
+         * Called from a parent page to close the corresponding dialog box. 
+         * 
          * This method is asynchronous. It does not take a callback parameter and it does not return a Promise object, so it cannot be awaited with either the `await` keyword or the `then` function. See this best practice for more information: {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one | Opening another dialog immediately after closing one}
          */
         close(): void;
@@ -2229,14 +2079,11 @@ export declare namespace Office {
          * - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.
          *
          * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
-         *
+         * 
          * @param eventType - Must be either DialogMessageReceived or DialogEventReceived.
-         * @param handler - A function which accepts either an object with a `message` and `origin` property, if `eventType` is `DialogMessageReceived`, or an object with an `error` property, if `eventType` is `DialogEventReceived`. Note that the `origin` property is `undefined` on clients that don’t support {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}.
+         * @param handler - A function which accepts either an object with a `message` and `origin` property, if `eventType` is `DialogMessageReceived`, or an object with an `error` property, if `eventType` is `DialogEventReceived`. Note that the `origin` property is `undefined` on clients that don’t support {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}. 
          */
-        addEventHandler(
-            eventType: Office.EventType,
-            handler: (args: { message: string; origin: string | undefined } | { error: number }) => void,
-        ): void;
+        addEventHandler(eventType: Office.EventType, handler: (args: {message: string, origin: string | undefined} | {error: number}) => void): void;
         /**
          * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.
          *
@@ -2253,9 +2100,9 @@ export declare namespace Office {
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
          *
          * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
-         * @param messageOptions - Optional. Provides options for how to send the message.
+         * @param messageOptions - Optional. Provides options for how to send the message. 
          */
-        messageChild(message: string, messageOptions?: DialogMessageOptions): void;
+         messageChild(message: string, messageOptions?: DialogMessageOptions): void;
         /**
          * FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
          */
@@ -2297,7 +2144,7 @@ export declare namespace Office {
         /**
          * The active view of the Office application lets the user edit the content in the document.
          */
-        Edit,
+        Edit
     }
     /**
      * Specifies the type of the binding object that should be returned.
@@ -2315,30 +2162,31 @@ export declare namespace Office {
         /**
          * Tabular data with a header row. Data is returned as a {@link Office.TableData | TableData} object.
          */
-        Table,
+        Table
     }
     /**
      * Specifies how to coerce data returned or set by the invoked method.
      *
      * @remarks
-     *
+     * 
      * Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
-     *
+     * 
      * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+     * 
      */
     enum CoercionType {
         /**
@@ -2387,7 +2235,7 @@ export declare namespace Office {
          * Data is returned or set as XML data containing an SVG image.
          * **Note**: Only applies to data in Excel, Word, and PowerPoint.
          */
-        XmlSvg,
+        XmlSvg
     }
     /**
      * Specifies whether the document in the associated application is read-only or read-write.
@@ -2404,7 +2252,7 @@ export declare namespace Office {
         /**
          * The document can be read and written to.
          */
-        ReadWrite,
+        ReadWrite
     }
     /**
      * Specifies the type of the XML node.
@@ -2450,6 +2298,7 @@ export declare namespace Office {
      * @remarks
      *
      * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
+     *
      */
     enum EventType {
         /**
@@ -2594,20 +2443,20 @@ export declare namespace Office {
         /**
          * Occurs in Outlook when one or more messages are selected or deselected.
          * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
-         *
+         * 
          * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
-         *
+         * 
          * [Api set: Mailbox 1.13]
          */
         SelectedItemsChanged,
         /**
          * Occurs in Outlook when the sensitivity label of a message or appointment changes.
          * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
-         *
+         * 
          * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs | Office.SensitivityLabelChangedEventArgs}.
-         *
+         * 
          * [Api set: Mailbox 1.13]
          */
         SensitivityLabelChanged,
@@ -2626,7 +2475,7 @@ export declare namespace Office {
         /**
          * Triggers when a View selection happens in Project.
          */
-        ViewSelectionChanged,
+        ViewSelectionChanged
     }
     /**
      * Specifies the format in which to return the document.
@@ -2638,16 +2487,16 @@ export declare namespace Office {
         Text,
         /**
          * Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open XML (OOXML) format as a byte array.
-         *
+         * 
          * Note: The .xslm file type is supported in Excel on Windows and Mac. It's not supported in Excel on the web.
-         * In Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin.
+         * In Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. 
          * In Excel on Mac, the file slices from the `getFileAsync` method don't include the VBA signature files, because this platform doesn't support the VBA signature feature.
          */
         Compressed,
         /**
          * Returns the entire document in PDF format as a byte array.
          */
-        Pdf,
+        Pdf
     }
     /**
      * Specifies whether filtering from the Office application is applied when the data is retrieved.
@@ -2660,7 +2509,7 @@ export declare namespace Office {
         /**
          * Return only the visible data (as filtered by the Office application).
          */
-        OnlyVisible,
+        OnlyVisible
     }
     /**
      * Specifies the type of place or object to navigate to.
@@ -2690,7 +2539,7 @@ export declare namespace Office {
          *
          * Supported applications: PowerPoint
          */
-        Index,
+        Index
     }
     /**
      * Specifies the relative PowerPoint slide.
@@ -2711,7 +2560,7 @@ export declare namespace Office {
         /**
          * Represents the previous PowerPoint slide
          */
-        Previous,
+        Previous
     }
     /**
      * Specifies whether to select (highlight) the location to navigate to (when using the {@link Office.Document | Document}.goToByIdAsync method).
@@ -2725,7 +2574,7 @@ export declare namespace Office {
         /**
          * The cursor is moved to the beginning of the location.
          */
-        None,
+        None
     }
     /**
      * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
@@ -2744,7 +2593,7 @@ export declare namespace Office {
         /**
          * Return formatted data.
          */
-        Formatted,
+        Formatted
     }
     // Objects
     /**
@@ -2798,12 +2647,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: Office.AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler to the object for the specified {@link Office.EventType}. Supported EventTypes are
          * `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
@@ -2818,11 +2662,7 @@ export declare namespace Office {
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.BindingDataChangedEventArgs} or {@link Office.BindingSelectionChangedEventArgs}.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            callback?: (result: Office.AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;
         /**
          * Returns the data contained within the binding.
          *
@@ -2897,11 +2737,7 @@ export declare namespace Office {
          * @param options - Provides options to determine which event handler or handlers are removed.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        removeHandlerAsync(
-            eventType: Office.EventType,
-            options?: RemoveHandlerOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes the specified handler from the binding for the specified event type.
          *
@@ -3059,11 +2895,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        setDataAsync(
-            data: TableData | any,
-            options?: SetBindingDataOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Writes data to the bound section of the document represented by the specified binding object.
          *
@@ -3325,12 +3157,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the Binding object that represents the specified named item.
          */
-        addFromNamedItemAsync(
-            itemName: string,
-            bindingType: BindingType,
-            options?: AddBindingFromNamedItemOptions,
-            callback?: (result: AsyncResult<Binding>) => void,
-        ): void;
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
          * Creates a binding against a named object in the document.
          *
@@ -3363,11 +3190,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the Binding object that represents the specified named item.
          */
-        addFromNamedItemAsync(
-            itemName: string,
-            bindingType: BindingType,
-            callback?: (result: AsyncResult<Binding>) => void,
-        ): void;
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
          * Create a binding by prompting the user to make a selection on the document.
          *
@@ -3384,11 +3207,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the Binding object that represents the selection specified by the user.
          */
-        addFromPromptAsync(
-            bindingType: BindingType,
-            options?: AddBindingFromPromptOptions,
-            callback?: (result: AsyncResult<Binding>) => void,
-        ): void;
+        addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
          * Create a binding by prompting the user to make a selection on the document.
          *
@@ -3431,11 +3250,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the Binding object that represents the selection specified by the user.
          */
-        addFromSelectionAsync(
-            bindingType: BindingType,
-            options?: AddBindingFromSelectionOptions,
-            callback?: (result: AsyncResult<Binding>) => void,
-        ): void;
+        addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
          * Create a binding based on the user's current selection.
          *
@@ -3517,11 +3332,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the Binding object specified by the ID in the call.
          */
-        getByIdAsync(
-            id: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<Binding>) => void,
-        ): void;
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
          * Retrieves a binding based on its Name
          *
@@ -3561,11 +3372,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        releaseByIdAsync(
-            id: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes the binding from the document
          *
@@ -3618,11 +3425,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the `xPath` parameter.
          */
-        getNodesAsync(
-            xPath: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<CustomXmlNode[]>) => void,
-        ): void;
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;
         /**
          * Gets the nodes associated with the XPath expression.
          *
@@ -3715,11 +3518,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        setNodeValueAsync(
-            value: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Sets the node value.
          *
@@ -3742,11 +3541,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        setTextAsync(
-            text: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Asynchronously sets the text of an XML node in a custom XML part.
          *
@@ -3769,11 +3564,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        setXmlAsync(
-            xml: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Sets the node XML.
          *
@@ -3822,12 +3613,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: (result: any) => void,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds an event handler to the object using the specified event type.
          *
@@ -3843,11 +3629,7 @@ export declare namespace Office {
          *                {@link Office.NodeInsertedEventArgs}, or {@link Office.NodeReplacedEventArgs}
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: (result: any) => void,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Deletes the Custom XML Part.
          *
@@ -3881,11 +3663,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath parameter.
          */
-        getNodesAsync(
-            xPath: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<CustomXmlNode[]>) => void,
-        ): void;
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;
         /**
          * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
      /    *
@@ -3934,12 +3712,7 @@ export declare namespace Office {
          * @param options - Provides options to determine which event handler or handlers are removed.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        removeHandlerAsync(
-            eventType: Office.EventType,
-            handler?: (result: any) => void,
-            options?: RemoveHandlerOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an event handler for the specified event type.
          *
@@ -3952,11 +3725,7 @@ export declare namespace Office {
          * @param handler - The name of the handler to remove.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        removeHandlerAsync(
-            eventType: Office.EventType,
-            handler?: (result: any) => void,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, callback?: (result: AsyncResult<void>) => void): void;
     }
 
     /**
@@ -3983,7 +3752,7 @@ export declare namespace Office {
     /**
      * Provides information about the inserted node that raised the nodeInserted event.
      */
-    export interface NodeInsertedEventArgs {
+    export interface NodeInsertedEventArgs  {
         /**
          * Gets whether the node was inserted as part of an Undo/Redo action by the user.
          */
@@ -3999,7 +3768,7 @@ export declare namespace Office {
     /**
      * Provides information about the replaced node that raised the nodeReplaced event.
      */
-    export interface NodeReplacedEventArgs {
+    export interface NodeReplacedEventArgs  {
         /**
          * Gets whether the replaced node was inserted as part of an undo or redo operation by the user.
          */
@@ -4039,11 +3808,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the newly created CustomXmlPart object.
          */
-        addAsync(
-            xml: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<CustomXmlPart>) => void,
-        ): void;
+        addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;
         /**
          * Asynchronously adds a new custom XML part to a file.
          *
@@ -4069,11 +3834,7 @@ export declare namespace Office {
          *                  The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part.
          *                  If there is no custom XML part with the specified ID, the method returns null.
          */
-        getByIdAsync(
-            id: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<CustomXmlPart>) => void,
-        ): void;
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;
         /**
          * Asynchronously gets the specified custom XML part by its ID.
          *
@@ -4098,12 +3859,8 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of CustomXmlPart objects that match the specified namespace.
-         */
-        getByNamespaceAsync(
-            ns: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<CustomXmlPart[]>) => void,
-        ): void;
+        */
+        getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart[]>) => void): void;
         /**
          * Asynchronously gets the specified custom XML parts by its namespace.
          *
@@ -4114,7 +3871,7 @@ export declare namespace Office {
          * @param ns - The namespace URI.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of CustomXmlPart objects that match the specified namespace.
-         */
+        */
         getByNamespaceAsync(ns: string, callback?: (result: AsyncResult<CustomXmlPart[]>) => void): void;
     }
     /**
@@ -4139,12 +3896,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addNamespaceAsync(
-            prefix: string,
-            ns: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Asynchronously adds a prefix to namespace mapping to use when querying an item.
          *
@@ -4174,11 +3926,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the namespace mapped to the specified prefix.
          */
-        getNamespaceAsync(
-            prefix: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the namespace mapped to the specified prefix.
          *
@@ -4209,11 +3957,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the prefix of the specified namespace.
          */
-        getPrefixAsync(
-            ns: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the prefix for the specified namespace.
          *
@@ -4278,12 +4022,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a Document object event.
          *
@@ -4298,11 +4037,7 @@ export declare namespace Office {
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DocumentSelectionChangedEventArgs}. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Returns the state of the current view of the presentation (edit or read).
          *
@@ -4318,10 +4053,7 @@ export declare namespace Office {
          *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides:
          *                  Normal, Slide Sorter, or Outline View. "read" corresponds to either Slide Show or Reading View.
          */
-        getActiveViewAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<"edit" | "read">) => void,
-        ): void;
+        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) => void): void;
         /**
          * Returns the state of the current view of the presentation (edit or read).
          *
@@ -4371,11 +4103,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the File object.
          */
-        getFileAsync(
-            fileType: FileType,
-            options?: GetFileOptions,
-            callback?: (result: AsyncResult<Office.File>) => void,
-        ): void;
+        getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) => void): void;
         /**
          * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is supported up to 65536 (64 KB).
          * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
@@ -4423,10 +4151,7 @@ export declare namespace Office {
          * @param callback - A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the file's properties (with the URL found at `asyncResult.value.url`).
          */
-        getFilePropertiesAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<Office.FileProperties>) => void,
-        ): void;
+        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.FileProperties>) => void): void;
         /**
          * Gets file properties of the current document.
          *
@@ -4531,11 +4256,7 @@ export declare namespace Office {
          *                  This is returned in the data structure or format you specified with the coercionType parameter.
          *                  (See Remarks for more information about data coercion.)
          */
-        getSelectedDataAsync<T>(
-            coercionType: Office.CoercionType,
-            options?: GetSelectedDataOptions,
-            callback?: (result: AsyncResult<T>) => void,
-        ): void;
+        getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void): void;
         /**
          * Reads the data contained in the current selection in the document.
          *
@@ -4651,12 +4372,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the current view.
          */
-        goToByIdAsync(
-            id: string | number,
-            goToType: GoToType,
-            options?: GoToByIdOptions,
-            callback?: (result: AsyncResult<any>) => void,
-        ): void;
+        goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
          * Goes to the specified object or location in the document.
          *
@@ -4694,11 +4410,7 @@ export declare namespace Office {
          * @param options - Provides options to determine which event handler or handlers are removed.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        removeHandlerAsync(
-            eventType: Office.EventType,
-            options?: RemoveHandlerOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an event handler for the specified event type.
          *
@@ -4898,11 +4610,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The AsyncResult.value property always returns `undefined` because there is no object or data to retrieve.
          */
-        setSelectedDataAsync(
-            data: string | TableData | any[][],
-            options?: SetSelectedDataOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Writes the specified data into the current selection.
          *
@@ -5098,16 +4806,13 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
          */
-        getProjectFieldAsync(
-            fieldId: number,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<any>) => void,
-        ): void;
+        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
          * Project documents only. Get Project field (Ex. ProjectWebAccessURL).
          * @param fieldId - Project level fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
+         *
          */
         getProjectFieldAsync(fieldId: number, callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5117,39 +4822,31 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
-        getResourceFieldAsync(
-            resourceId: string,
-            fieldId: number,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
          * @param resourceId - Either a string or value of the Resource Id.
          * @param fieldId - Resource Fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
-        getResourceFieldAsync(
-            resourceId: string,
-            fieldId: number,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get the current selected Resource's Id.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
-        getSelectedResourceAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get the current selected Resource's Id.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
         getSelectedResourceAsync(callback?: (result: AsyncResult<string>) => void): void;
         /**
@@ -5157,15 +4854,14 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
-        getSelectedTaskAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get the current selected Task's Id.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
         getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void): void;
         /**
@@ -5175,6 +4871,7 @@ export declare namespace Office {
          *                  The `value` property of the result contains the following properties:
          *                  `viewName` - The name of the view, as a ProjectViewTypes constant.
          *                  `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
+         *
          */
         getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5183,6 +4880,7 @@ export declare namespace Office {
          *                  The `value` property of the result contains the following properties:
          *                  `viewName` - The name of the view, as a ProjectViewTypes constant.
          *                  `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
+         *
          */
         getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5194,12 +4892,9 @@ export declare namespace Office {
          *                  `taskName` - The name of the task.
          *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0.
          *                  `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+         *
          */
-        getTaskAsync(
-            taskId: string,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<any>) => void,
-        ): void;
+        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
          * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
          * @param taskId - Either a string or value of the Task Id.
@@ -5208,6 +4903,7 @@ export declare namespace Office {
          *                  `taskName` - The name of the task.
          *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0.
          *                  `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+         *
          */
         getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5217,19 +4913,16 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
+         *
          */
-        getTaskFieldAsync(
-            taskId: string,
-            fieldId: number,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<any>) => void,
-        ): void;
+        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
          * Project documents only. Get task field for provided task Id. (Ex. StartDate).
          * @param taskId - Either a string or value of the Task Id.
          * @param fieldId - Task Fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
+         *
          */
         getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5239,6 +4932,7 @@ export declare namespace Office {
          *                  The `value` property of the result contains the following properties:
          *                  `listName` - the name of the synchronized SharePoint task list.
          *                  `serverUrl` - the URL of the synchronized SharePoint task list.
+         *
          */
         getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5247,6 +4941,7 @@ export declare namespace Office {
          *                  The `value` property of the result contains the following properties:
          *                  `listName` - the name of the synchronized SharePoint task list.
          *                  `serverUrl` - the URL of the synchronized SharePoint task list.
+         *
          */
         getWSSUrlAsync(callback?: (result: AsyncResult<any>) => void): void;
         /**
@@ -5257,11 +4952,9 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's resource collection.
+         *
          */
-        getMaxResourceIndexAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<number>) => void,
-        ): void;
+        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void): void;
         /**
          * Project documents only. Get the maximum index of the collection of resources in the current project.
          *
@@ -5269,6 +4962,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's resource collection.
+         *
          */
         getMaxResourceIndexAsync(callback?: (result: AsyncResult<number>) => void): void;
         /**
@@ -5279,11 +4973,9 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's task collection.
+         *
          */
-        getMaxTaskIndexAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<number>) => void,
-        ): void;
+        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void): void;
         /**
          * Project documents only. Get the maximum index of the collection of tasks in the current project.
          *
@@ -5291,6 +4983,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's task collection.
+         *
          */
         getMaxTaskIndexAsync(callback?: (result: AsyncResult<number>) => void): void;
         /**
@@ -5302,12 +4995,9 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
-        getResourceByIndexAsync(
-            resourceIndex: number,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
          *
@@ -5316,6 +5006,7 @@ export declare namespace Office {
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
+         *
          */
         getResourceByIndexAsync(resourceIndex: number, callback?: (result: AsyncResult<string>) => void): void;
         /**
@@ -5327,12 +5018,9 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the task as a string.
+         *
          */
-        getTaskByIndexAsync(
-            taskIndex: number,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<string>) => void,
-        ): void;
+        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get the GUID of the task that has the specified index in the task collection.
          *
@@ -5341,6 +5029,7 @@ export declare namespace Office {
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the task as a string.
+         *
          */
         getTaskByIndexAsync(taskIndex: number, callback?: (result: AsyncResult<string>) => void): void;
         /**
@@ -5353,14 +5042,9 @@ export declare namespace Office {
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
-        setResourceFieldAsync(
-            resourceId: string,
-            fieldId: number,
-            fieldValue: string | number | boolean | object,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Project documents only. Set resource field for specified resource Id.
          *
@@ -5370,13 +5054,9 @@ export declare namespace Office {
          * @param fieldId - Resource Fields.
          * @param fieldValue - Value of the target field.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
-        setResourceFieldAsync(
-            resourceId: string,
-            fieldId: number,
-            fieldValue: string | number | boolean | object,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Project documents only. Set task field for specified task Id.
          *
@@ -5387,14 +5067,9 @@ export declare namespace Office {
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
-        setTaskFieldAsync(
-            taskId: string,
-            fieldId: number,
-            fieldValue: string | number | boolean | object,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Project documents only. Set task field for specified task Id.
          *
@@ -5404,13 +5079,9 @@ export declare namespace Office {
          * @param fieldId - Task Fields.
          * @param fieldValue - Value of the target field.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
-        setTaskFieldAsync(
-            taskId: string,
-            fieldId: number,
-            fieldValue: string | number | boolean | object,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?: (result: AsyncResult<void>) => void): void;
     }
     /**
      * Provides information about the document that raised the SelectionChanged event.
@@ -5431,6 +5102,7 @@ export declare namespace Office {
      * @remarks
      *
      * Access the File object with the AsyncResult.value property in the callback function passed to the Document.getFileAsync method.
+     *
      */
     export interface File {
         /**
@@ -5523,7 +5195,7 @@ export declare namespace Office {
         /**
          * File's URL
          */
-        url: string;
+        url: string
     }
     /**
      * Represents a binding in two dimensions of rows and columns.
@@ -5601,12 +5273,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for the settingsChanged event.
          *
@@ -5647,11 +5314,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        addHandlerAsync(
-            eventType: Office.EventType,
-            handler: any,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Retrieves the specified setting.
          *
@@ -5765,11 +5428,7 @@ export declare namespace Office {
          * @param options - Provides options to determine which event handler or handlers are removed.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        removeHandlerAsync(
-            eventType: Office.EventType,
-            options?: RemoveHandlerOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an event handler for the settingsChanged event.
          *
@@ -5949,9 +5608,9 @@ export declare namespace Office {
     }
     /**
      * Provides options for how to send messages, in either direction, between a dialog and its parent.
-     *
+     * 
      * @remarks
-     *
+     * 
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}
      */
     export interface DialogMessageOptions {
@@ -5965,6 +5624,7 @@ export declare namespace Office {
      *
      * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
      * {@link Office.UI} object.
+     *
      */
     export interface DialogParentMessageReceivedEventArgs {
         /**
@@ -5972,10 +5632,10 @@ export declare namespace Office {
          */
         message: string;
         /**
-         * Gets the domain of the parent page that called `Dialog.messageChild`.
-         *
+         * Gets the domain of the parent page that called `Dialog.messageChild`. 
+         * 
          * @remarks
-         *
+         * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}.
          * The property is `undefined` on clients that do not support this requirement set.
          */
@@ -6027,7 +5687,7 @@ export declare namespace Office {
          * True, if the table has headers; otherwise false.
          */
         hasHeaders: boolean;
-        /**
+         /**
          * Gets the number of rows in the TableBinding, as an integer value.
          *
          * @remarks
@@ -6071,11 +5731,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addColumnsAsync(
-            tableData: TableData | any[][],
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds the specified data to the table as additional columns.
          *
@@ -6125,11 +5781,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addRowsAsync(
-            rows: TableData | any[][],
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Adds the specified data to the table as additional rows.
          *
@@ -6163,10 +5815,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        deleteAllDataValuesAsync(
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Deletes all non-header rows and their values in the table, shifting appropriately for the Office application.
          *
@@ -6251,12 +5900,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
          */
-        getFormatsAsync(
-            cellReference?: any,
-            formats?: any[],
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<({ cells: any; format: any })[]>) => void,
-        ): void;
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult< ({ cells: any, format: any})[]>) => void): void;
         /**
          * Gets the formatting on specified items in the table.
          *
@@ -6309,11 +5953,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
          */
-        getFormatsAsync(
-            cellReference?: any,
-            formats?: any[],
-            callback?: (result: AsyncResult<({ cells: any; format: any })[]>) => void,
-        ): void;
+        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< ({ cells: any, format: any})[]>) => void): void;
         /**
          * Sets formatting on specified items and data in the table.
          *
@@ -6383,6 +6023,7 @@ export declare namespace Office {
          *
          * `format: {backgroundColor: "red", alignHorizontal: "center"}`
          *
+         *
          * You can specify number formats by specifying the number formatting "code" string in the `numberFormat:` property.
          * The number format strings you can specify correspond to those you can set in Excel using the Custom category on the Number tab of the Format Cells dialog box.
          * This example shows how to format a number as a percentage with two decimal places:
@@ -6411,11 +6052,7 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        setFormatsAsync(
-            cellFormat: any[],
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setFormatsAsync(cellFormat: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Sets formatting on specified items and data in the table.
          *
@@ -6485,6 +6122,7 @@ export declare namespace Office {
          *
          * `format: {backgroundColor: "red", alignHorizontal: "center"}`
          *
+         *
          * You can specify number formats by specifying the number formatting "code" string in the `numberFormat:` property.
          * The number format strings you can specify correspond to those you can set in Excel using the Custom category on the Number tab of the Format Cells dialog box.
          * This example shows how to format a number as a percentage with two decimal places:
@@ -6548,12 +6186,9 @@ export declare namespace Office {
          * @param tableOptions - An object literal containing a list of property name-value pairs that define the table options to apply.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
-        setTableOptionsAsync(
-            tableOptions: any,
-            options?: Office.AsyncContextOptions,
-            callback?: (result: AsyncResult<void>) => void,
-        ): void;
+        setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Updates table formatting options on the bound table.
          *
@@ -6588,6 +6223,7 @@ export declare namespace Office {
          *
          * @param tableOptions - An object literal containing a list of property name-value pairs that define the table options to apply.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         *
          */
         setTableOptionsAsync(tableOptions: any, callback?: (result: AsyncResult<void>) => void): void;
     }
@@ -6647,7 +6283,7 @@ export declare namespace Office {
         /**
          * Only the header row.
          */
-        Headers,
+        Headers
     }
     /**
      * Represents a bound text selection in the document.
@@ -6655,7 +6291,7 @@ export declare namespace Office {
      * The TextBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding}
      * object. It does not implement any additional properties or methods of its own.
      */
-    export interface TextBinding extends Binding {}
+    export interface TextBinding extends Binding { }
     /**
      * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
      *
@@ -6713,7 +6349,7 @@ export declare namespace Office {
         /**
          * The name of the SharePoint list, for projects that are synchronized with a tasks list.
          */
-        WSSList,
+        WSSList
     }
     /**
      * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
@@ -7527,7 +7163,7 @@ export declare namespace Office {
         /**
          * A text field for the resource.
          */
-        Text9,
+        Text9
     }
     /**
      * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
@@ -8183,8 +7819,8 @@ export declare namespace Office {
         BudgetFixedCost,
         BudgetFixedWork,
         /**
-         * The budget work for the task, in hours.
-         */
+        * The budget work for the task, in hours.
+        */
         BudgetWork,
         /**
          * The GUID of the task calendar.
@@ -8679,7 +8315,7 @@ export declare namespace Office {
         /**
          * The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.
          */
-        WSSID,
+        WSSID
     }
     /**
      * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
@@ -8753,9 +8389,10 @@ export declare namespace Office {
         /**
          * The Timeline view.
          */
-        Timeline,
+        Timeline
     }
 }
+
 
 ////////////////////////////////////////////////////////////////
 ///////////////////// End Office namespace /////////////////////
@@ -8829,7 +8466,7 @@ export declare namespace OfficeExtension {
         /**
          * Throw an error if the passed-in property list includes read-only properties (default = true).
          */
-        throwOnReadOnly?: boolean;
+        throwOnReadOnly?: boolean
     }
 
     /**
@@ -8882,20 +8519,16 @@ export declare namespace OfficeExtension {
         load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
         /**
-         * Queues up a command to recursively load the specified properties of the object and its navigation properties.
-         *
-         * You must call `context.sync()` before reading the properties.
-         *
-         * @param object - The object to be loaded.
-         * @param options - The key-value pairing of load options for the types, such as
-         *                `{ "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }`
-         * @param maxDepth - The maximum recursive depth.
-         */
-        loadRecursive(
-            object: ClientObject,
-            options: { [typeName: string]: string | string[] | LoadOption },
-            maxDepth?: number,
-        ): void;
+        * Queues up a command to recursively load the specified properties of the object and its navigation properties.
+        *
+        * You must call `context.sync()` before reading the properties.
+        *
+        * @param object - The object to be loaded.
+        * @param options - The key-value pairing of load options for the types, such as
+        *                `{ "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }`
+        * @param maxDepth - The maximum recursive depth.
+        */
+        loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
         /**
          * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages"
@@ -8917,14 +8550,14 @@ export declare namespace OfficeExtension {
 
     /**
      * Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of `EmbeddedSession`.
-     * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
      */
     export interface EmbeddedOptions {
-        sessionKey?: string;
-        /*
-         * The iframe element that hosts the Visio diagram.
-         */
-        container?: HTMLElement;
+        sessionKey?: string,
+		/*
+		* The iframe element that hosts the Visio diagram.
+		*/
+        container?: HTMLElement,
         id?: string;
         timeoutInMilliseconds?: number;
         height?: string;
@@ -8932,14 +8565,14 @@ export declare namespace OfficeExtension {
     }
 
     /**
-     * Represents a session of a Visio diagram embedded in a SharePoint page.
-     * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+     * Represents a session of a Visio diagram embedded in a SharePoint page. 
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
      */
     export class EmbeddedSession {
         constructor(url: string, options?: EmbeddedOptions);
-        /**
-         * Initializes the session.
-         */
+		/**
+		* Initializes the session.
+		*/
         public init(): Promise<any>;
     }
 
@@ -9022,7 +8655,7 @@ export declare namespace OfficeExtension {
 
     /**
      * Represents the error code that can be returned by {@link OfficeExtension.Error | OfficeExtension.Error.code}.
-     *
+     * 
      * To learn more about the error codes, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | Office Common API error codes}.
      */
@@ -9106,24 +8739,24 @@ export declare namespace OfficeExtension {
     }
 
     /**
-     * Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
-     *
-     * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
-     * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
-     */
+    * Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+	*
+	* **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+    * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+    */
     export class EventHandlerResult<T> {
         constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);
         /** The request context associated with the object */
         context: ClientRequestContext;
-        /*
-         * Removes the handler from the event.
-         */
+		/*
+		* Removes the handler from the event.
+		*/
         remove(): void;
     }
 
     /**
-     * Used by Office to construct event handlers. Do not call in your code.
-     */
+	* Used by Office to construct event handlers. Do not call in your code.
+	*/
     export interface EventInfo<T> {
         registerFunc: (callback: (args: any) => void) => Promise<any>;
         unregisterFunc: (callback: (args: any) => void) => Promise<any>;
@@ -9131,8 +8764,8 @@ export declare namespace OfficeExtension {
     }
 
     /**
-     * Request URL and headers
-     */
+    * Request URL and headers
+    */
     export interface RequestUrlAndHeaderInfo {
         /** Request URL */
         url: string;
@@ -9142,6 +8775,7 @@ export declare namespace OfficeExtension {
         };
     }
 }
+
 
 ////////////////////////////////////////////////////////////////
 ///////////////// End OfficeExtension runtime //////////////////

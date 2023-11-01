@@ -45,52 +45,23 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        errorSubType?:
-                    | ValueErrorCellValueSubType
-                    | "Unknown"
-                    | "VlookupColumnIndexLessThanOne"
-                    | "VlookupResultNotFound"
-                    | "HlookupRowIndexLessThanOne"
-                    | "HlookupResultNotFound"
-                    | "CoerceStringToNumberInvalid"
-                    | "CoerceStringToBoolInvalid"
-                    | "CoerceStringToInvalidType"
-                    | "SubArrayStartRowMissingEndRowNot"
-                    | "SubArrayStartColumnMissingEndColumnNot"
-                    | "InvalidImageUrl"
-                    | "StockHistoryNonTradingDays"
-                    | "StockHistoryNotAStock"
-                    | "StockHistoryInvalidDate"
-                    | "StockHistoryEndBeforeStart"
-                    | "StockHistoryStartInFuture"
-                    | "StockHistoryInvalidEnum"
-                    | "StockHistoryOnlyDateRequested"
-                    | "StockHistoryNotFound"
-                    | "LambdaWrongParamCount";
+      content: >-
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" |
+        "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid"
+        | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" |
+        "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" |
+        "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture"
+        | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" |
+        "LambdaWrongParamCount";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" />
-                      | "Unknown"
-                      | "VlookupColumnIndexLessThanOne"
-                      | "VlookupResultNotFound"
-                      | "HlookupRowIndexLessThanOne"
-                      | "HlookupResultNotFound"
-                      | "CoerceStringToNumberInvalid"
-                      | "CoerceStringToBoolInvalid"
-                      | "CoerceStringToInvalidType"
-                      | "SubArrayStartRowMissingEndRowNot"
-                      | "SubArrayStartColumnMissingEndColumnNot"
-                      | "InvalidImageUrl"
-                      | "StockHistoryNonTradingDays"
-                      | "StockHistoryNotAStock"
-                      | "StockHistoryInvalidDate"
-                      | "StockHistoryEndBeforeStart"
-                      | "StockHistoryStartInFuture"
-                      | "StockHistoryInvalidEnum"
-                      | "StockHistoryOnlyDateRequested"
-                      | "StockHistoryNotFound"
-                      | "LambdaWrongParamCount"
+        type: >-
+          <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColumnIndexLessThanOne" |
+          "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" |
+          "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" |
+          "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" |
+          "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" |
+          "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" |
+          "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount"
   - name: errorType
     uid: 'excel!Excel.ValueErrorCellValue#errorType:member'
     package: excel!

@@ -78,148 +78,31 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        numberStyle?:
-                        | Word.ListBuiltInNumberStyle
-                        | "None"
-                        | "Arabic"
-                        | "UpperRoman"
-                        | "LowerRoman"
-                        | "UpperLetter"
-                        | "LowerLetter"
-                        | "Ordinal"
-                        | "CardinalText"
-                        | "OrdinalText"
-                        | "Kanji"
-                        | "KanjiDigit"
-                        | "AiueoHalfWidth"
-                        | "IrohaHalfWidth"
-                        | "ArabicFullWidth"
-                        | "KanjiTraditional"
-                        | "KanjiTraditional2"
-                        | "NumberInCircle"
-                        | "Aiueo"
-                        | "Iroha"
-                        | "ArabicLZ"
-                        | "Bullet"
-                        | "Ganada"
-                        | "Chosung"
-                        | "GBNum1"
-                        | "GBNum2"
-                        | "GBNum3"
-                        | "GBNum4"
-                        | "Zodiac1"
-                        | "Zodiac2"
-                        | "Zodiac3"
-                        | "TradChinNum1"
-                        | "TradChinNum2"
-                        | "TradChinNum3"
-                        | "TradChinNum4"
-                        | "SimpChinNum1"
-                        | "SimpChinNum2"
-                        | "SimpChinNum3"
-                        | "SimpChinNum4"
-                        | "HanjaRead"
-                        | "HanjaReadDigit"
-                        | "Hangul"
-                        | "Hanja"
-                        | "Hebrew1"
-                        | "Arabic1"
-                        | "Hebrew2"
-                        | "Arabic2"
-                        | "HindiLetter1"
-                        | "HindiLetter2"
-                        | "HindiArabic"
-                        | "HindiCardinalText"
-                        | "ThaiLetter"
-                        | "ThaiArabic"
-                        | "ThaiCardinalText"
-                        | "VietCardinalText"
-                        | "LowercaseRussian"
-                        | "UppercaseRussian"
-                        | "LowercaseGreek"
-                        | "UppercaseGreek"
-                        | "ArabicLZ2"
-                        | "ArabicLZ3"
-                        | "ArabicLZ4"
-                        | "LowercaseTurkish"
-                        | "UppercaseTurkish"
-                        | "LowercaseBulgarian"
-                        | "UppercaseBulgarian"
-                        | "PictureBullet"
-                        | "Legal"
-                        | "LegalLZ";
+      content: >-
+        numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" |
+        "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" |
+        "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" |
+        "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" |
+        "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" |
+        "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" |
+        "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" |
+        "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian"
+        | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" |
+        "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" |
+        "Legal" | "LegalLZ";
       return:
-        type: |-
-          | <xref uid="word!Word.ListBuiltInNumberStyle:enum" />
-                          | "None"
-                          | "Arabic"
-                          | "UpperRoman"
-                          | "LowerRoman"
-                          | "UpperLetter"
-                          | "LowerLetter"
-                          | "Ordinal"
-                          | "CardinalText"
-                          | "OrdinalText"
-                          | "Kanji"
-                          | "KanjiDigit"
-                          | "AiueoHalfWidth"
-                          | "IrohaHalfWidth"
-                          | "ArabicFullWidth"
-                          | "KanjiTraditional"
-                          | "KanjiTraditional2"
-                          | "NumberInCircle"
-                          | "Aiueo"
-                          | "Iroha"
-                          | "ArabicLZ"
-                          | "Bullet"
-                          | "Ganada"
-                          | "Chosung"
-                          | "GBNum1"
-                          | "GBNum2"
-                          | "GBNum3"
-                          | "GBNum4"
-                          | "Zodiac1"
-                          | "Zodiac2"
-                          | "Zodiac3"
-                          | "TradChinNum1"
-                          | "TradChinNum2"
-                          | "TradChinNum3"
-                          | "TradChinNum4"
-                          | "SimpChinNum1"
-                          | "SimpChinNum2"
-                          | "SimpChinNum3"
-                          | "SimpChinNum4"
-                          | "HanjaRead"
-                          | "HanjaReadDigit"
-                          | "Hangul"
-                          | "Hanja"
-                          | "Hebrew1"
-                          | "Arabic1"
-                          | "Hebrew2"
-                          | "Arabic2"
-                          | "HindiLetter1"
-                          | "HindiLetter2"
-                          | "HindiArabic"
-                          | "HindiCardinalText"
-                          | "ThaiLetter"
-                          | "ThaiArabic"
-                          | "ThaiCardinalText"
-                          | "VietCardinalText"
-                          | "LowercaseRussian"
-                          | "UppercaseRussian"
-                          | "LowercaseGreek"
-                          | "UppercaseGreek"
-                          | "ArabicLZ2"
-                          | "ArabicLZ3"
-                          | "ArabicLZ4"
-                          | "LowercaseTurkish"
-                          | "UppercaseTurkish"
-                          | "LowercaseBulgarian"
-                          | "UppercaseBulgarian"
-                          | "PictureBullet"
-                          | "Legal"
-                          | "LegalLZ"
+        type: >-
+          <xref uid="word!Word.ListBuiltInNumberStyle:enum" /> | "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
+          "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" |
+          "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" |
+          "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" |
+          "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" |
+          "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" |
+          "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" |
+          "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" |
+          "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" |
+          "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" |
+          "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ"
   - name: resetOnHigher
     uid: 'word!Word.Interfaces.ListLevelUpdateData#resetOnHigher:member'
     package: word!

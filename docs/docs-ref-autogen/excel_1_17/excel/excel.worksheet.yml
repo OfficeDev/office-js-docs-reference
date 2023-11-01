@@ -614,11 +614,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        copy(
-                    positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End",
-                    relativeTo?: Excel.Worksheet,
-                ): Excel.Worksheet;
+      content: >-
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
+        Excel.Worksheet;
       parameters:
         - id: positionTypeString
           description: >-
@@ -1188,12 +1186,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: Excel.ReplaceCriteria,
-                ): OfficeExtension.ClientResult<number>;
+      content: >-
+        replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria):
+        OfficeExtension.ClientResult<number>;
       parameters:
         - id: text
           description: String to find.

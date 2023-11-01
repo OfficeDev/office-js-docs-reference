@@ -40,11 +40,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAsync(
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<Date | 0>) => void,
-                ): void;
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Date | 0>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
@@ -147,12 +145,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    datetime: Date,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(datetime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: datetime
           description: The future date and time when the message should be sent.

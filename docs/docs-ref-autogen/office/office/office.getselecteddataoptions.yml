@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: filterType
@@ -35,7 +35,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'filterType?: Office.FilterType | string;'
+      content: 'filterType?: Office.FilterType | string'
       return:
         type: '<xref uid="office!Office.FilterType:enum" /> | string'
   - name: valueFormat
@@ -47,6 +47,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'valueFormat?: Office.ValueFormat | string;'
+      content: 'valueFormat?: Office.ValueFormat | string'
       return:
         type: '<xref uid="office!Office.ValueFormat:enum" /> | string'

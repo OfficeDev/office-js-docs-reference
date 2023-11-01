@@ -201,32 +201,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly type:
-                    | Excel.DataValidationType
-                    | "None"
-                    | "WholeNumber"
-                    | "Decimal"
-                    | "List"
-                    | "Date"
-                    | "Time"
-                    | "TextLength"
-                    | "Custom"
-                    | "Inconsistent"
-                    | "MixedCriteria";
+      content: >-
+        readonly type: Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" |
+        "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria";
       return:
-        type: |-
-          | <xref uid="excel!Excel.DataValidationType:enum" />
-                      | "None"
-                      | "WholeNumber"
-                      | "Decimal"
-                      | "List"
-                      | "Date"
-                      | "Time"
-                      | "TextLength"
-                      | "Custom"
-                      | "Inconsistent"
-                      | "MixedCriteria"
+        type: >-
+          <xref uid="excel!Excel.DataValidationType:enum" /> | "None" | "WholeNumber" | "Decimal" | "List" | "Date" |
+          "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"
   - name: valid
     uid: 'excel!Excel.DataValidation#valid:member'
     package: excel!

@@ -47,12 +47,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    data: string,
-                    options: Office.AsyncContextOptions & CoercionTypeOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-

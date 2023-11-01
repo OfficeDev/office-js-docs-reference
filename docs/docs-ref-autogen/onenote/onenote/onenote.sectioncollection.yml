@@ -140,10 +140,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
-                ): OneNote.SectionCollection;
+      content: >-
+        load(options?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.SectionCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

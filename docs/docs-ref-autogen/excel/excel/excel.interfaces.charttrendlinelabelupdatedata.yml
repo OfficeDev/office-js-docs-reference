@@ -58,22 +58,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        horizontalAlignment?:
-                        | Excel.ChartTextHorizontalAlignment
-                        | "Center"
-                        | "Left"
-                        | "Right"
-                        | "Justify"
-                        | "Distributed";
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" />
-                          | "Center"
-                          | "Left"
-                          | "Right"
-                          | "Justify"
-                          | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" |
+          "Distributed"
   - name: left
     uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#left:member'
     package: excel!
@@ -165,19 +156,8 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        verticalAlignment?:
-                        | Excel.ChartTextVerticalAlignment
-                        | "Center"
-                        | "Bottom"
-                        | "Top"
-                        | "Justify"
-                        | "Distributed";
+      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" />
-                          | "Center"
-                          | "Bottom"
-                          | "Top"
-                          | "Justify"
-                          | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center" | "Bottom" | "Top" | "Justify" |
+          "Distributed"

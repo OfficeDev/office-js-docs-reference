@@ -115,10 +115,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
-                ): Excel.DocumentTaskCollection;
+      content: >-
+        load(options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.DocumentTaskCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

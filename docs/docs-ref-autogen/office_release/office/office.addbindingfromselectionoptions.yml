@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: columns
@@ -32,7 +32,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'columns?: string[];'
+      content: 'columns?: string[]'
       return:
         type: 'string[]'
   - name: id
@@ -44,6 +44,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'id?: string;'
+      content: 'id?: string'
       return:
         type: string

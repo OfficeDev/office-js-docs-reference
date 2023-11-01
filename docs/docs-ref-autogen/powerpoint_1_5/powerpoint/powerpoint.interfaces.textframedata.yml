@@ -20,20 +20,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        autoSizeSetting?:
-                        | PowerPoint.ShapeAutoSize
-                        | "AutoSizeNone"
-                        | "AutoSizeTextToFitShape"
-                        | "AutoSizeShapeToFitText"
-                        | "AutoSizeMixed";
+      content: >-
+        autoSizeSetting?: PowerPoint.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" |
+        "AutoSizeShapeToFitText" | "AutoSizeMixed";
       return:
-        type: |-
-          | <xref uid="powerpoint!PowerPoint.ShapeAutoSize:enum" />
-                          | "AutoSizeNone"
-                          | "AutoSizeTextToFitShape"
-                          | "AutoSizeShapeToFitText"
-                          | "AutoSizeMixed"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeAutoSize:enum" /> | "AutoSizeNone" | "AutoSizeTextToFitShape" |
+          "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - name: bottomMargin
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameData#bottomMargin:member'
     package: powerpoint!
@@ -105,24 +98,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        verticalAlignment?:
-                        | PowerPoint.TextVerticalAlignment
-                        | "Top"
-                        | "Middle"
-                        | "Bottom"
-                        | "TopCentered"
-                        | "MiddleCentered"
-                        | "BottomCentered";
+      content: >-
+        verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" |
+        "MiddleCentered" | "BottomCentered";
       return:
-        type: |-
-          | <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" />
-                          | "Top"
-                          | "Middle"
-                          | "Bottom"
-                          | "TopCentered"
-                          | "MiddleCentered"
-                          | "BottomCentered"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" /> | "Top" | "Middle" | "Bottom" | "TopCentered"
+          | "MiddleCentered" | "BottomCentered"
   - name: wordWrap
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameData#wordWrap:member'
     package: powerpoint!

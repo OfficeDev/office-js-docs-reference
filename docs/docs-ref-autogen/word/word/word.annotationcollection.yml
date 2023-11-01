@@ -77,10 +77,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: Word.Interfaces.AnnotationCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
-                ): Word.AnnotationCollection;
+      content: >-
+        load(options?: Word.Interfaces.AnnotationCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.AnnotationCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

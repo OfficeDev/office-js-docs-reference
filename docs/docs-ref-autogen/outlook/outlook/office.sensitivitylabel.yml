@@ -59,11 +59,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<string>) => void,
-                ): void;
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
@@ -179,12 +177,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    sensitivityLabel: string | SensitivityLabelDetails,
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(sensitivityLabel: string | SensitivityLabelDetails, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: sensitivityLabel
           description: >-
@@ -278,11 +273,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    sensitivityLabel: string | SensitivityLabelDetails,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(sensitivityLabel: string | SensitivityLabelDetails, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: sensitivityLabel
           description: >-

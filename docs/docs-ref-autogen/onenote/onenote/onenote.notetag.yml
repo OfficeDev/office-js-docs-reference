@@ -44,26 +44,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly status:
-                    | OneNote.NoteTagStatus
-                    | "Unknown"
-                    | "Normal"
-                    | "Completed"
-                    | "Disabled"
-                    | "OutlookTask"
-                    | "TaskNotSyncedYet"
-                    | "TaskRemoved";
+      content: >-
+        readonly status: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
+        "TaskNotSyncedYet" | "TaskRemoved";
       return:
-        type: |-
-          | <xref uid="onenote!OneNote.NoteTagStatus:enum" />
-                      | "Unknown"
-                      | "Normal"
-                      | "Completed"
-                      | "Disabled"
-                      | "OutlookTask"
-                      | "TaskNotSyncedYet"
-                      | "TaskRemoved"
+        type: >-
+          <xref uid="onenote!OneNote.NoteTagStatus:enum" /> | "Unknown" | "Normal" | "Completed" | "Disabled" |
+          "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"
   - name: type
     uid: 'onenote!OneNote.NoteTag#type:member'
     package: onenote!
@@ -73,36 +60,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly type:
-                    | OneNote.NoteTagType
-                    | "Unknown"
-                    | "ToDo"
-                    | "Important"
-                    | "Question"
-                    | "Contact"
-                    | "Address"
-                    | "PhoneNumber"
-                    | "Website"
-                    | "Idea"
-                    | "Critical"
-                    | "ToDoPriority1"
-                    | "ToDoPriority2";
+      content: >-
+        readonly type: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" |
+        "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
       return:
-        type: |-
-          | <xref uid="onenote!OneNote.NoteTagType:enum" />
-                      | "Unknown"
-                      | "ToDo"
-                      | "Important"
-                      | "Question"
-                      | "Contact"
-                      | "Address"
-                      | "PhoneNumber"
-                      | "Website"
-                      | "Idea"
-                      | "Critical"
-                      | "ToDoPriority1"
-                      | "ToDoPriority2"
+        type: >-
+          <xref uid="onenote!OneNote.NoteTagType:enum" /> | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" |
+          "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
 methods:
   - name: load(options)
     uid: 'onenote!OneNote.NoteTag#load:member(1)'

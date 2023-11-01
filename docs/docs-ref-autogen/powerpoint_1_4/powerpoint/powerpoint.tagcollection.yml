@@ -240,10 +240,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        load(
-                    options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions,
-                ): PowerPoint.TagCollection;
+      content: >-
+        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.TagCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

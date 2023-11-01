@@ -96,12 +96,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addAsync(
-                    recipients: (string | EmailUser | EmailAddressDetails)[],
-                    options: Office.AsyncContextOptions,
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: >-
@@ -169,11 +166,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        addAsync(
-                    recipients: (string | EmailUser | EmailAddressDetails)[],
-                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: >-
@@ -255,11 +250,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        getAsync(
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void,
-                ): void;
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -495,12 +488,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    recipients: (string | EmailUser | EmailAddressDetails)[],
-                    options: Office.AsyncContextOptions,
-                    callback: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: >-
@@ -687,11 +677,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        setAsync(
-                    recipients: (string | EmailUser | EmailAddressDetails)[],
-                    callback: (asyncResult: Office.AsyncResult<void>) => void,
-                ): void;
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: >-

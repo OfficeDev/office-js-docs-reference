@@ -106,54 +106,16 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        underline:
-                    | Word.UnderlineType
-                    | "Mixed"
-                    | "None"
-                    | "Hidden"
-                    | "DotLine"
-                    | "Single"
-                    | "Word"
-                    | "Double"
-                    | "Thick"
-                    | "Dotted"
-                    | "DottedHeavy"
-                    | "DashLine"
-                    | "DashLineHeavy"
-                    | "DashLineLong"
-                    | "DashLineLongHeavy"
-                    | "DotDashLine"
-                    | "DotDashLineHeavy"
-                    | "TwoDotDashLine"
-                    | "TwoDotDashLineHeavy"
-                    | "Wave"
-                    | "WaveHeavy"
-                    | "WaveDouble";
+      content: >-
+        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick"
+        | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine"
+        | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
-        type: |-
-          | <xref uid="word!Word.UnderlineType:enum" />
-                      | "Mixed"
-                      | "None"
-                      | "Hidden"
-                      | "DotLine"
-                      | "Single"
-                      | "Word"
-                      | "Double"
-                      | "Thick"
-                      | "Dotted"
-                      | "DottedHeavy"
-                      | "DashLine"
-                      | "DashLineHeavy"
-                      | "DashLineLong"
-                      | "DashLineLongHeavy"
-                      | "DotDashLine"
-                      | "DotDashLineHeavy"
-                      | "TwoDotDashLine"
-                      | "TwoDotDashLineHeavy"
-                      | "Wave"
-                      | "WaveHeavy"
-                      | "WaveDouble"
+        type: >-
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
+          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
+          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
+          "WaveHeavy" | "WaveDouble"
 methods:
   - name: 'insertText(text, insertLocation)'
     uid: 'word!Word.CommentContentRange#insertText:member(1)'
@@ -166,11 +128,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        insertText(
-                    text: string,
-                    insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
-                ): Word.CommentContentRange;
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" |
+        "After"): Word.CommentContentRange;
       parameters:
         - id: text
           description: Required. The text to be inserted in to the CommentContentRange.

@@ -46,28 +46,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        readonly sideIndex:
-                    | Excel.BorderIndex
-                    | "EdgeTop"
-                    | "EdgeBottom"
-                    | "EdgeLeft"
-                    | "EdgeRight"
-                    | "InsideVertical"
-                    | "InsideHorizontal"
-                    | "DiagonalDown"
-                    | "DiagonalUp";
+      content: >-
+        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
+        "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
       return:
-        type: |-
-          | <xref uid="excel!Excel.BorderIndex:enum" />
-                      | "EdgeTop"
-                      | "EdgeBottom"
-                      | "EdgeLeft"
-                      | "EdgeRight"
-                      | "InsideVertical"
-                      | "InsideHorizontal"
-                      | "DiagonalDown"
-                      | "DiagonalUp"
+        type: >-
+          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
+          "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
   - name: style
     uid: 'excel!Excel.RangeBorder#style:member'
     package: excel!
@@ -98,28 +83,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        style:
-                    | Excel.BorderLineStyle
-                    | "None"
-                    | "Continuous"
-                    | "Dash"
-                    | "DashDot"
-                    | "DashDotDot"
-                    | "Dot"
-                    | "Double"
-                    | "SlantDashDot";
+      content: >-
+        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
       return:
-        type: |-
-          | <xref uid="excel!Excel.BorderLineStyle:enum" />
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Double"
-                      | "SlantDashDot"
+        type: >-
+          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+          "Dot" | "Double" | "SlantDashDot"
   - name: tintAndShade
     uid: 'excel!Excel.RangeBorder#tintAndShade:member'
     package: excel!

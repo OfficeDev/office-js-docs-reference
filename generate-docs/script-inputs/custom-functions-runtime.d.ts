@@ -24,19 +24,19 @@ declare namespace CustomFunctions {
      */
     class Error {
         constructor(code: ErrorCode, message?: string);
-        /**
-         * The error code returned by your custom function.
-         *
-         * @remarks
-         * [Api set: CustomFunctionsRuntime 1.2]
-         */
+         /**
+          * The error code returned by your custom function.
+          *
+          * @remarks
+          * [Api set: CustomFunctionsRuntime 1.2]
+          */
         code: ErrorCode;
-        /**
-         * Your custom error message, such as "This stock price is unavailable". Custom messages are only available with certain error codes.
-         *
-         * @remarks
-         * [Api set: CustomFunctionsRuntime 1.2]
-         */
+         /**
+          * Your custom error message, such as "This stock price is unavailable". Custom messages are only available with certain error codes.
+          *
+          * @remarks
+          * [Api set: CustomFunctionsRuntime 1.2]
+          */
         message?: string;
     }
 
@@ -123,6 +123,7 @@ declare namespace CustomFunctions {
      */
     enum ErrorCode {
         /**
+         *
          * This error code indicates that a value in the function is of the wrong data type.
          * A custom error message can be used in addition to the error code, if desired.
          *
@@ -131,6 +132,7 @@ declare namespace CustomFunctions {
          */
         invalidValue = "#VALUE!",
         /**
+         *
          * This error code indicates that the function or service isn't available.
          * A custom error message can be used in addition to the error code, if desired.
          *
@@ -139,6 +141,7 @@ declare namespace CustomFunctions {
          */
         notAvailable = "#N/A",
         /**
+         *
          * This error code indicates that the function used is dividing by zero or empty cells.
          * A custom error message can't be used.
          *
@@ -147,6 +150,7 @@ declare namespace CustomFunctions {
          */
         divisionByZero = "#DIV/0!",
         /**
+         *
          * This error code indicates that there is a problem with a number in the function.
          * A custom error message can't be used.
          *
@@ -155,6 +159,7 @@ declare namespace CustomFunctions {
          */
         invalidNumber = "#NUM!",
         /**
+         *
          * This error code indicates that the ranges in the function don't intersect.
          * A custom error message can't be used.
          *
@@ -163,6 +168,7 @@ declare namespace CustomFunctions {
          */
         nullReference = "#NULL!",
         /**
+         *
          * This error code indicates that there is a typo in the function name.
          * Note that this error code is supported as a custom function input error, but not as a custom function output error.
          * A custom error message can't be used.
@@ -172,6 +178,7 @@ declare namespace CustomFunctions {
          */
         invalidName = "#NAME?",
         /**
+         *
          * This error code indicates that the function refers to an invalid cell.
          * Note that this error code is supported as a custom function input error, but not as a custom function output error.
          * A custom error message can't be used.
@@ -179,6 +186,6 @@ declare namespace CustomFunctions {
          * @remarks
          * [Api set: CustomFunctionsRuntime 1.3]
          */
-        invalidReference = "#REF!",
+        invalidReference = "#REF!"
     }
 }

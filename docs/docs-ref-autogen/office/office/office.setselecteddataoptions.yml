@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type: any
   - name: cellFormat
@@ -39,7 +39,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'cellFormat?: RangeFormatConfiguration[];'
+      content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
         type: '<xref uid="office!Office.RangeFormatConfiguration:interface" />[]'
   - name: coercionType
@@ -51,7 +51,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'coercionType?: Office.CoercionType | string;'
+      content: 'coercionType?: Office.CoercionType | string'
       return:
         type: '<xref uid="office!Office.CoercionType:enum" /> | string'
   - name: imageHeight
@@ -67,7 +67,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'imageHeight?: number;'
+      content: 'imageHeight?: number'
       return:
         type: number
   - name: imageLeft
@@ -82,7 +82,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'imageLeft?: number;'
+      content: 'imageLeft?: number'
       return:
         type: number
   - name: imageTop
@@ -97,7 +97,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'imageTop?: number;'
+      content: 'imageTop?: number'
       return:
         type: number
   - name: imageWidth
@@ -113,7 +113,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'imageWidth?: number;'
+      content: 'imageWidth?: number'
       return:
         type: number
   - name: tableOptions
@@ -127,6 +127,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'tableOptions?: object;'
+      content: 'tableOptions?: object'
       return:
         type: object

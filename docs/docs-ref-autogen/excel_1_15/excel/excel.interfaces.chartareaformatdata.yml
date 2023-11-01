@@ -30,46 +30,19 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        colorScheme?:
-                        | Excel.ChartColorScheme
-                        | "ColorfulPalette1"
-                        | "ColorfulPalette2"
-                        | "ColorfulPalette3"
-                        | "ColorfulPalette4"
-                        | "MonochromaticPalette1"
-                        | "MonochromaticPalette2"
-                        | "MonochromaticPalette3"
-                        | "MonochromaticPalette4"
-                        | "MonochromaticPalette5"
-                        | "MonochromaticPalette6"
-                        | "MonochromaticPalette7"
-                        | "MonochromaticPalette8"
-                        | "MonochromaticPalette9"
-                        | "MonochromaticPalette10"
-                        | "MonochromaticPalette11"
-                        | "MonochromaticPalette12"
-                        | "MonochromaticPalette13";
+      content: >-
+        colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" |
+        "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" |
+        "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" |
+        "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" |
+        "MonochromaticPalette12" | "MonochromaticPalette13";
       return:
-        type: |-
-          | <xref uid="excel!Excel.ChartColorScheme:enum" />
-                          | "ColorfulPalette1"
-                          | "ColorfulPalette2"
-                          | "ColorfulPalette3"
-                          | "ColorfulPalette4"
-                          | "MonochromaticPalette1"
-                          | "MonochromaticPalette2"
-                          | "MonochromaticPalette3"
-                          | "MonochromaticPalette4"
-                          | "MonochromaticPalette5"
-                          | "MonochromaticPalette6"
-                          | "MonochromaticPalette7"
-                          | "MonochromaticPalette8"
-                          | "MonochromaticPalette9"
-                          | "MonochromaticPalette10"
-                          | "MonochromaticPalette11"
-                          | "MonochromaticPalette12"
-                          | "MonochromaticPalette13"
+        type: >-
+          <xref uid="excel!Excel.ChartColorScheme:enum" /> | "ColorfulPalette1" | "ColorfulPalette2" |
+          "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" |
+          "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" |
+          "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" |
+          "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13"
   - name: font
     uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
     package: excel!

@@ -37,24 +37,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        eventType:
-                    | Word.EventType
-                    | "ContentControlDeleted"
-                    | "ContentControlSelectionChanged"
-                    | "ContentControlDataChanged"
-                    | "ContentControlAdded"
-                    | "ContentControlEntered"
-                    | "ContentControlExited";
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited";
       return:
-        type: |-
-          | <xref uid="word!Word.EventType:enum" />
-                      | "ContentControlDeleted"
-                      | "ContentControlSelectionChanged"
-                      | "ContentControlDataChanged"
-                      | "ContentControlAdded"
-                      | "ContentControlEntered"
-                      | "ContentControlExited"
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited"
   - name: ids
     uid: 'word!Word.ContentControlSelectionChangedEventArgs#ids:member'
     package: word!
