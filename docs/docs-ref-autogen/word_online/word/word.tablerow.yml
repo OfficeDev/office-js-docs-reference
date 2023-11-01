@@ -276,13 +276,32 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
-        "Inside" | "Outside" | "All"): Word.TableBorder;
+      content: |-
+        getBorder(
+                    borderLocationString:
+                        | "Top"
+                        | "Left"
+                        | "Bottom"
+                        | "Right"
+                        | "InsideHorizontal"
+                        | "InsideVertical"
+                        | "Inside"
+                        | "Outside"
+                        | "All",
+                ): Word.TableBorder;
       parameters:
         - id: borderLocationString
           description: Required. The border location.
-          type: '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
+          type: |-
+            | "Top"
+                            | "Left"
+                            | "Bottom"
+                            | "Right"
+                            | "InsideHorizontal"
+                            | "InsideVertical"
+                            | "Inside"
+                            | "Outside"
+                            | "All"
       return:
         type: '<xref uid="word!Word.TableBorder:class" />'
         description: ''
@@ -387,9 +406,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertRows(insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
-        rowCount: number, values?: string[][]): Word.TableRowCollection;
+      content: |-
+        insertRows(
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                    rowCount: number,
+                    values?: string[][],
+                ): Word.TableRowCollection;
       parameters:
         - id: insertLocation
           description: >-
@@ -501,15 +523,18 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-                    ignorePunct?: boolean;
-                    ignoreSpace?: boolean;
-                    matchCase?: boolean;
-                    matchPrefix?: boolean;
-                    matchSuffix?: boolean;
-                    matchWholeWord?: boolean;
-                    matchWildcards?: boolean;
-                }): Word.RangeCollection;
+        search(
+                    searchText: string,
+                    searchOptions?: Word.SearchOptions | {
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    },
+                ): Word.RangeCollection;
       parameters:
         - id: searchText
           description: Required. The search text.
@@ -518,14 +543,14 @@ methods:
           description: Optional. Options for the search.
           type: |-
             <xref uid="word!Word.SearchOptions:class" /> | {
-                        ignorePunct?: boolean;
-                        ignoreSpace?: boolean;
-                        matchCase?: boolean;
-                        matchPrefix?: boolean;
-                        matchSuffix?: boolean;
-                        matchWholeWord?: boolean;
-                        matchWildcards?: boolean;
-                    }
+                            ignorePunct?: boolean;
+                            ignoreSpace?: boolean;
+                            matchCase?: boolean;
+                            matchPrefix?: boolean;
+                            matchSuffix?: boolean;
+                            matchWholeWord?: boolean;
+                            matchWildcards?: boolean;
+                        }
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''

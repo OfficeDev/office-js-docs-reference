@@ -4,8 +4,6 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-
-
 export declare namespace Excel {
     
     
@@ -30,6 +28,7 @@ export declare namespace Excel {
     
     
     
+        
     
     
     
@@ -47,10 +46,7 @@ export declare namespace Excel {
     
     
     
-    
-    
-    
-    
+        
     
     
     
@@ -136,18 +132,24 @@ export declare namespace Excel {
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        object: OfficeExtension.ClientObject,
+        batch: (context: Excel.RequestContext) => Promise<T>,
+    ): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        objects: OfficeExtension.ClientObject[],
+        batch: (context: Excel.RequestContext) => Promise<T>,
+    ): Promise<T>;
     /**
-    * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
-    * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
-    */
+     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+     */
     export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -155,7 +157,10 @@ export declare namespace Excel {
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        context: OfficeExtension.ClientRequestContext,
+        batch: (context: Excel.RequestContext) => Promise<T>,
+    ): Promise<T>;
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     
@@ -294,9 +299,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ApplicationData;
     }
     
@@ -385,8 +390,7 @@ export declare namespace Excel {
         
         
         
-        
-        /**
+                /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
          * @remarks
@@ -394,8 +398,7 @@ export declare namespace Excel {
          */
         getSelectedRange(): Excel.Range;
         
-        
-        
+                
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -422,9 +425,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.WorkbookData;
     }
     
@@ -518,8 +521,7 @@ export declare namespace Excel {
         activate(): void;
         
         
-        
-        /**
+                /**
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
          * @remarks
@@ -555,9 +557,7 @@ export declare namespace Excel {
         
         
         
-        
-        
-        /**
+                /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -593,9 +593,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
     /**
@@ -643,7 +643,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
+        load(
+            options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.WorksheetCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -674,9 +676,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
     }
     
@@ -830,8 +832,7 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Range): void;
         
-        
-        
+                
         /**
          * Clear range values, format, fill, border, etc.
          *
@@ -852,9 +853,7 @@ export declare namespace Excel {
         clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
         
         
-        
-        
-        /**
+                        /**
          * Deletes the cells associated with the range.
          *
          * @remarks
@@ -895,8 +894,7 @@ export declare namespace Excel {
          * @param column - Column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
-        
-        /**
+                /**
          * Gets a column contained in the range.
          *
          * @remarks
@@ -905,8 +903,7 @@ export declare namespace Excel {
          * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
-        
-        
+                
         
         
         
@@ -984,18 +981,10 @@ export declare namespace Excel {
          * @param row - Row number of the range to be retrieved. Zero-indexed.
          */
         getRow(row: number): Excel.Range;
+                
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                                
         
         
         
@@ -1025,8 +1014,7 @@ export declare namespace Excel {
         
         
         
-        
-        /**
+                /**
          * Selects the specified range in the Excel UI.
          *
          * @remarks
@@ -1073,9 +1061,9 @@ export declare namespace Excel {
          */
         untrack(): Excel.Range;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.RangeData;
     }
     
@@ -1126,7 +1114,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
+        load(
+            options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.NamedItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1140,9 +1130,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.NamedItemCollectionData;
     }
     /**
@@ -1230,9 +1220,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NamedItem;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.NamedItemData;
     }
     
@@ -1305,9 +1295,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.BindingData;
     }
     /**
@@ -1359,7 +1349,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
+        load(
+            options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.BindingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1373,9 +1365,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.BindingCollectionData;
     }
     /**
@@ -1431,7 +1423,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
+        load(
+            options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.TableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1448,9 +1442,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.TableCollectionData;
     }
     
@@ -1493,7 +1487,7 @@ export declare namespace Excel {
         
         /**
          * Name of the table.
-                    
+
                      The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
@@ -1595,9 +1589,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.TableData;
     }
     /**
@@ -1628,7 +1622,11 @@ export declare namespace Excel {
          * @param values - Optional. A 2D array of unformatted values of the table column.
          * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.
          */
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
+        add(
+            index?: number,
+            values?: Array<Array<boolean | string | number>> | boolean | string | number,
+            name?: string,
+        ): Excel.TableColumn;
         
         
         /**
@@ -1655,7 +1653,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
+        load(
+            options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.TableColumnCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1669,9 +1669,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.TableColumnCollectionData;
     }
     /**
@@ -1780,14 +1780,14 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableColumn;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.TableColumnData;
     }
     /**
      * Represents a collection of all the rows that are part of the table.
-                
+
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -1810,7 +1810,7 @@ export declare namespace Excel {
         readonly count: number;
         /**
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -1823,14 +1823,18 @@ export declare namespace Excel {
          * @param values - Optional. A 2D array of unformatted values of the table row.
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
+        add(
+            index?: number,
+            values?: Array<Array<boolean | string | number>> | boolean | string | number,
+            alwaysInsert?: boolean,
+        ): Excel.TableRow;
         
         
         
         
         /**
          * Gets a row based on its position in the collection.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -1847,7 +1851,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
+        load(
+            options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1861,14 +1867,14 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.TableRowCollectionData;
     }
     /**
      * Represents a row in a table.
-                
+
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -1941,9 +1947,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableRow;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.TableRowData;
     }
     
@@ -1994,7 +2000,16 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
+        horizontalAlignment:
+            | Excel.HorizontalAlignment
+            | "General"
+            | "Left"
+            | "Center"
+            | "Right"
+            | "Fill"
+            | "Justify"
+            | "CenterAcrossSelection"
+            | "Distributed";
         
         
         
@@ -2049,9 +2064,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.RangeFormatData;
     }
     
@@ -2071,8 +2086,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         color: string;
-        
-        
+                
         
         
         /**
@@ -2112,9 +2126,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFill;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.RangeFillData;
     }
     /**
@@ -2139,14 +2153,32 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
+        readonly sideIndex:
+            | Excel.BorderIndex
+            | "EdgeTop"
+            | "EdgeBottom"
+            | "EdgeLeft"
+            | "EdgeRight"
+            | "InsideVertical"
+            | "InsideHorizontal"
+            | "DiagonalDown"
+            | "DiagonalUp";
         /**
          * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+        style:
+            | Excel.BorderLineStyle
+            | "None"
+            | "Continuous"
+            | "Dash"
+            | "DashDot"
+            | "DashDotDot"
+            | "Dot"
+            | "Double"
+            | "SlantDashDot";
         
         /**
          * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -2185,9 +2217,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeBorder;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.RangeBorderData;
     }
     /**
@@ -2226,7 +2258,17 @@ export declare namespace Excel {
          *
          * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
          */
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(
+            indexString:
+                | "EdgeTop"
+                | "EdgeBottom"
+                | "EdgeLeft"
+                | "EdgeRight"
+                | "InsideVertical"
+                | "InsideHorizontal"
+                | "DiagonalDown"
+                | "DiagonalUp",
+        ): Excel.RangeBorder;
         /**
          * Gets a border object using its index.
          *
@@ -2241,7 +2283,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
+        load(
+            options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.RangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2255,9 +2299,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.RangeBorderCollectionData;
     }
     /**
@@ -2345,9 +2389,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.RangeFontData;
     }
     /**
@@ -2387,9 +2431,95 @@ export declare namespace Excel {
          *
          * @param typeString - Represents the type of a chart. See `Excel.ChartType` for details.
          * @param sourceData - The `Range` object corresponding to the source data.
-         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
+         * @param seriesByString - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(
+            typeString:
+                | "Invalid"
+                | "ColumnClustered"
+                | "ColumnStacked"
+                | "ColumnStacked100"
+                | "3DColumnClustered"
+                | "3DColumnStacked"
+                | "3DColumnStacked100"
+                | "BarClustered"
+                | "BarStacked"
+                | "BarStacked100"
+                | "3DBarClustered"
+                | "3DBarStacked"
+                | "3DBarStacked100"
+                | "LineStacked"
+                | "LineStacked100"
+                | "LineMarkers"
+                | "LineMarkersStacked"
+                | "LineMarkersStacked100"
+                | "PieOfPie"
+                | "PieExploded"
+                | "3DPieExploded"
+                | "BarOfPie"
+                | "XYScatterSmooth"
+                | "XYScatterSmoothNoMarkers"
+                | "XYScatterLines"
+                | "XYScatterLinesNoMarkers"
+                | "AreaStacked"
+                | "AreaStacked100"
+                | "3DAreaStacked"
+                | "3DAreaStacked100"
+                | "DoughnutExploded"
+                | "RadarMarkers"
+                | "RadarFilled"
+                | "Surface"
+                | "SurfaceWireframe"
+                | "SurfaceTopView"
+                | "SurfaceTopViewWireframe"
+                | "Bubble"
+                | "Bubble3DEffect"
+                | "StockHLC"
+                | "StockOHLC"
+                | "StockVHLC"
+                | "StockVOHLC"
+                | "CylinderColClustered"
+                | "CylinderColStacked"
+                | "CylinderColStacked100"
+                | "CylinderBarClustered"
+                | "CylinderBarStacked"
+                | "CylinderBarStacked100"
+                | "CylinderCol"
+                | "ConeColClustered"
+                | "ConeColStacked"
+                | "ConeColStacked100"
+                | "ConeBarClustered"
+                | "ConeBarStacked"
+                | "ConeBarStacked100"
+                | "ConeCol"
+                | "PyramidColClustered"
+                | "PyramidColStacked"
+                | "PyramidColStacked100"
+                | "PyramidBarClustered"
+                | "PyramidBarStacked"
+                | "PyramidBarStacked100"
+                | "PyramidCol"
+                | "3DColumn"
+                | "Line"
+                | "3DLine"
+                | "3DPie"
+                | "Pie"
+                | "XYScatter"
+                | "3DArea"
+                | "Area"
+                | "Doughnut"
+                | "Radar"
+                | "Histogram"
+                | "Boxwhisker"
+                | "Pareto"
+                | "RegionMap"
+                | "Treemap"
+                | "Waterfall"
+                | "Sunburst"
+                | "Funnel",
+            sourceData: Range,
+            seriesByString?: "Auto" | "Columns" | "Rows",
+        ): Excel.Chart;
         
         /**
          * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
@@ -2415,7 +2545,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
+        load(
+            options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.ChartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2433,9 +2565,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.ChartCollectionData;
     }
     /**
@@ -2494,9 +2626,7 @@ export declare namespace Excel {
         readonly title: Excel.ChartTitle;
         
         
-        
-        
-        /**
+                /**
          * Specifies the height, in points, of the chart object.
          *
          * @remarks
@@ -2556,9 +2686,7 @@ export declare namespace Excel {
         delete(): void;
         
         
-        
-        
-        /**
+                        /**
          * Resets the source data for the chart.
          *
          * @remarks
@@ -2612,9 +2740,9 @@ export declare namespace Excel {
         
         
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartData;
     }
     
@@ -2642,8 +2770,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-        
-        
+                
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -2674,9 +2801,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAreaFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAreaFormatData;
     }
     /**
@@ -2713,7 +2840,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
+        load(
+            options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.ChartSeriesCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2727,9 +2856,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.ChartSeriesCollectionData;
     }
     /**
@@ -2764,6 +2893,7 @@ export declare namespace Excel {
         
         
         
+                
         
         
         
@@ -2784,10 +2914,7 @@ export declare namespace Excel {
         
         
         
-        
-        
-        
-        /**
+                /**
          * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
          *
          * @remarks
@@ -2802,9 +2929,7 @@ export declare namespace Excel {
         
         
         
-        
-        
-        
+                
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -2815,12 +2940,8 @@ export declare namespace Excel {
         set(properties: Excel.ChartSeries): void;
         
         
-        
-        
-        
-        
-        
-        
+                                
+                
         
         
         /**
@@ -2845,9 +2966,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeries;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartSeriesData;
     }
     /**
@@ -2903,9 +3024,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeriesFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartSeriesFormatData;
     }
     /**
@@ -2941,7 +3062,9 @@ export declare namespace Excel {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
+        load(
+            options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+        ): Excel.ChartPointsCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2955,9 +3078,9 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Excel.Interfaces.ChartPointsCollectionData;
     }
     /**
@@ -2981,8 +3104,7 @@ export declare namespace Excel {
         
         
         
-        
-        /**
+                /**
          * Returns the value of a chart point.
          *
          * @remarks
@@ -3019,9 +3141,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPoint;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartPointData;
     }
     /**
@@ -3071,9 +3193,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPointFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartPointFormatData;
     }
     /**
@@ -3138,9 +3260,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxes;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAxesData;
     }
     /**
@@ -3185,8 +3307,7 @@ export declare namespace Excel {
         
         
         
-        
-        
+                
         
         
         
@@ -3272,9 +3393,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxis;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAxisData;
     }
     /**
@@ -3331,9 +3452,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAxisFormatData;
     }
     /**
@@ -3398,9 +3519,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAxisTitleData;
     }
     /**
@@ -3451,9 +3572,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitleFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;
     }
     /**
@@ -3473,16 +3594,27 @@ export declare namespace Excel {
          */
         readonly format: Excel.ChartDataLabelFormat;
         
-        
-        
-        
+                
         /**
          * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+        position:
+            | Excel.ChartDataLabelPosition
+            | "Invalid"
+            | "None"
+            | "Center"
+            | "InsideEnd"
+            | "InsideBase"
+            | "OutsideEnd"
+            | "Left"
+            | "Right"
+            | "Top"
+            | "Bottom"
+            | "BestFit"
+            | "Callout";
         /**
          * String representing the separator used for the data labels on a chart.
          *
@@ -3564,9 +3696,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabels;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartDataLabelsData;
     }
     
@@ -3624,9 +3756,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabelFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
     }
     
@@ -3686,9 +3818,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlines;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartGridlinesData;
     }
     /**
@@ -3737,9 +3869,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlinesFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartGridlinesFormatData;
     }
     /**
@@ -3815,9 +3947,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegend;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartLegendData;
     }
     
@@ -3876,9 +4008,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegendFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartLegendFormatData;
     }
     
@@ -3899,8 +4031,7 @@ export declare namespace Excel {
          */
         readonly format: Excel.ChartTitleFormat;
         
-        
-        
+                
         /**
          * Specifies if the chart title will overlay the chart.
          *
@@ -3960,9 +4091,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartTitleData;
     }
     
@@ -4020,9 +4151,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitleFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartTitleFormatData;
     }
     /**
@@ -4052,9 +4183,9 @@ export declare namespace Excel {
          */
         setSolidColor(color: string): void;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): {
             [key: string]: string;
         };
@@ -4078,8 +4209,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         color: string;
-        
-        
+                
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -4117,9 +4247,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartLineFormatData;
     }
     /**
@@ -4203,9 +4333,9 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Excel.Interfaces.ChartFontData;
     }
     
@@ -4402,7 +4532,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        callout = "Callout"
+        callout = "Callout",
     }
     
     
@@ -4449,7 +4579,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        custom = "Custom"
+        custom = "Custom",
     }
     
     
@@ -4478,7 +4608,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        rows = "Rows"
+        rows = "Rows",
     }
     
     
@@ -4879,7 +5009,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        single = "Single"
+        single = "Single",
     }
     
     
@@ -4917,7 +5047,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        text = "Text"
+        text = "Text",
     }
     /**
      * @remarks
@@ -4963,7 +5093,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        diagonalUp = "DiagonalUp"
+        diagonalUp = "DiagonalUp",
     }
     /**
      * @remarks
@@ -5009,7 +5139,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        slantDashDot = "SlantDashDot"
+        slantDashDot = "SlantDashDot",
     }
     /**
      * @remarks
@@ -5035,7 +5165,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        thick = "Thick"
+        thick = "Thick",
     }
     /**
      * @remarks
@@ -5059,7 +5189,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        manual = "Manual"
+        manual = "Manual",
     }
     /**
      * @remarks
@@ -5083,7 +5213,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        fullRebuild = "FullRebuild"
+        fullRebuild = "FullRebuild",
     }
     /**
      * @remarks
@@ -5140,7 +5270,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        left = "Left"
+        left = "Left",
     }
     
     
@@ -5190,7 +5320,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        distributed = "Distributed"
+        distributed = "Distributed",
     }
     
     
@@ -5208,7 +5338,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        right = "Right"
+        right = "Right",
     }
     
     /**
@@ -5276,7 +5406,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        doubleAccountant = "DoubleAccountant"
+        doubleAccountant = "DoubleAccountant",
     }
     /**
      * @remarks
@@ -5297,7 +5427,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        veryHidden = "VeryHidden"
+        veryHidden = "VeryHidden",
     }
     
     /**
@@ -5376,7 +5506,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
-        distributed = "Distributed"
+        distributed = "Distributed",
     }
     
     
@@ -5456,20 +5586,20 @@ export declare namespace Excel {
         unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
-        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
+        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode",
     }
     export namespace Interfaces {
         /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
+         * Provides ways to load properties of only a subset of members of a collection.
+         */
         export interface CollectionLoadOptions {
             /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
+             * Specify the number of items in the queried collection to be included in the result.
+             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
+             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+             */
             $skip?: number;
         }
         /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
@@ -5556,11 +5686,11 @@ export declare namespace Excel {
         export interface RangeUpdateData {
             
             /**
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.RangeFormatUpdateData;
             
             /**
@@ -5662,7 +5792,7 @@ export declare namespace Excel {
             
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -5745,25 +5875,25 @@ export declare namespace Excel {
         /** An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`. */
         export interface RangeFormatUpdateData {
             /**
-            * Collection of border objects that apply to the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Collection of border objects that apply to the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;
             /**
-            * Returns the fill object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the fill object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             fill?: Excel.Interfaces.RangeFillUpdateData;
             /**
-            * Returns the font object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the font object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.RangeFontUpdateData;
             
             
@@ -5774,7 +5904,16 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
+            horizontalAlignment?:
+                | Excel.HorizontalAlignment
+                | "General"
+                | "Left"
+                | "Center"
+                | "Right"
+                | "Fill"
+                | "Justify"
+                | "CenterAcrossSelection"
+                | "Distributed";
             
             
             
@@ -5811,8 +5950,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-            
-            
+                        
             
             
         }
@@ -5831,7 +5969,16 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+            style?:
+                | Excel.BorderLineStyle
+                | "None"
+                | "Continuous"
+                | "Dash"
+                | "DashDot"
+                | "DashDotDot"
+                | "Dot"
+                | "Double"
+                | "SlantDashDot";
             
             /**
              * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -5893,7 +6040,13 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
+            underline?:
+                | Excel.RangeUnderlineStyle
+                | "None"
+                | "Single"
+                | "Double"
+                | "SingleAccountant"
+                | "DoubleAccountant";
         }
         /** An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`. */
         export interface ChartCollectionUpdateData {
@@ -5902,46 +6055,44 @@ export declare namespace Excel {
         /** An interface for updating data on the Chart object, for use in `chart.set({ ... })`. */
         export interface ChartUpdateData {
             /**
-            * Represents chart axes.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart axes.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             axes?: Excel.Interfaces.ChartAxesUpdateData;
             /**
-            * Represents the data labels on the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the data labels on the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;
             /**
-            * Encapsulates the format properties for the chart area.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties for the chart area.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAreaFormatUpdateData;
             /**
-            * Represents the legend for the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the legend for the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             legend?: Excel.Interfaces.ChartLegendUpdateData;
             
             
             /**
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartTitleUpdateData;
             
-            
-            
-            /**
+                        /**
              * Specifies the height, in points, of the chart object.
              *
              * @remarks
@@ -5994,14 +6145,13 @@ export declare namespace Excel {
         export interface ChartAreaFormatUpdateData {
             
             /**
-            * Represents the font attributes (font name, font size, color, etc.) for the current object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (font name, font size, color, etc.) for the current object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
-            
-            
+                        
         }
         /** An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ... })`. */
         export interface ChartSeriesCollectionUpdateData {
@@ -6013,17 +6163,18 @@ export declare namespace Excel {
             
             
             /**
-            * Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart series, which includes fill and line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartSeriesFormatUpdateData;
             
             
             
             
             
+                        
             
             
             
@@ -6044,10 +6195,7 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
-            /**
+                        /**
              * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * @remarks
@@ -6062,18 +6210,16 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
+                        
         }
         /** An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`. */
         export interface ChartSeriesFormatUpdateData {
             /**
-            * Represents line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ... })`. */
@@ -6084,18 +6230,17 @@ export declare namespace Excel {
         export interface ChartPointUpdateData {
             
             /**
-            * Encapsulates the format properties chart point.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties chart point.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartPointFormatUpdateData;
             
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
         export interface ChartPointFormatUpdateData {
             
@@ -6103,64 +6248,61 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`. */
         export interface ChartAxesUpdateData {
             /**
-            * Represents the category axis in a chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the category axis in a chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;
             /**
-            * Represents the series axis of a 3-D chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the series axis of a 3-D chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;
             /**
-            * Represents the value axis in an axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the value axis in an axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
         /** An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`. */
         export interface ChartAxisUpdateData {
             /**
-            * Represents the formatting of a chart object, which includes line and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart object, which includes line and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisFormatUpdateData;
             /**
-            * Returns an object that represents the major gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the major gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;
             /**
-            * Returns an object that represents the minor gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the minor gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;
             /**
-            * Represents the axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartAxisTitleUpdateData;
             
             
             
-            
-            
-            
-            
+                        
             
             
             /**
@@ -6209,28 +6351,28 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
         export interface ChartAxisFormatUpdateData {
             /**
-            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
             /**
-            * Specifies chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`. */
         export interface ChartAxisTitleUpdateData {
             /**
-            * Specifies the formatting of the chart axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the formatting of the chart axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;
             /**
              * Specifies the axis title.
@@ -6252,33 +6394,44 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatUpdateData {
             
             /**
-            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`. */
         export interface ChartDataLabelsUpdateData {
             /**
-            * Specifies the format of chart data labels, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the format of chart data labels, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             
-            
-            
-            
+                        
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+            position?:
+                | Excel.ChartDataLabelPosition
+                | "Invalid"
+                | "None"
+                | "Center"
+                | "InsideEnd"
+                | "InsideBase"
+                | "OutsideEnd"
+                | "Left"
+                | "Right"
+                | "Top"
+                | "Bottom"
+                | "BestFit"
+                | "Callout";
             /**
              * String representing the separator used for the data labels on a chart.
              *
@@ -6329,13 +6482,16 @@ export declare namespace Excel {
              */
             showValue?: boolean;
             
-            
-        }
+                    }
         /** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
             
             
             
+                        
+            
+            
+                        
             
             
             
@@ -6345,23 +6501,16 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
-            
-            
-            
-            
-        }
+                    }
         /** An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ... })`. */
         export interface ChartDataLabelFormatUpdateData {
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the `ChartDataTable` object, for use in `chartDataTable.set({ ... })`. */
@@ -6393,11 +6542,11 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`. */
         export interface ChartGridlinesUpdateData {
             /**
-            * Represents the formatting of chart gridlines.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of chart gridlines.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;
             /**
              * Specifies if the axis gridlines are visible.
@@ -6410,21 +6559,21 @@ export declare namespace Excel {
         /** An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`. */
         export interface ChartGridlinesFormatUpdateData {
             /**
-            * Represents chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`. */
         export interface ChartLegendUpdateData {
             /**
-            * Represents the formatting of a chart legend, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart legend, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartLegendFormatUpdateData;
             
             
@@ -6441,7 +6590,15 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
+            position?:
+                | Excel.ChartLegendPosition
+                | "Invalid"
+                | "Top"
+                | "Bottom"
+                | "Left"
+                | "Right"
+                | "Corner"
+                | "Custom";
             
             
             /**
@@ -6465,30 +6622,28 @@ export declare namespace Excel {
         export interface ChartLegendFormatUpdateData {
             
             /**
-            * Represents the font attributes such as font name, font size, and color of a chart legend.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes such as font name, font size, and color of a chart legend.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
         export interface ChartMapOptionsUpdateData {
             
-            
-            
+                        
         }
         /** An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`. */
         export interface ChartTitleUpdateData {
             /**
-            * Represents the formatting of a chart title, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart title, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartTitleFormatUpdateData;
-            
-            
+                        
             /**
              * Specifies if the chart title will overlay the chart.
              *
@@ -6507,8 +6662,7 @@ export declare namespace Excel {
             text?: string;
             
             
-            
-            /**
+                        /**
              * Specifies if the chart title is visibile.
              *
              * @remarks
@@ -6524,18 +6678,17 @@ export declare namespace Excel {
         export interface ChartTitleFormatUpdateData {
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for an object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for an object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
             
-            
-            
+                        
         }
         /** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
         export interface ChartBinOptionsUpdateData {
@@ -6564,8 +6717,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-            
-            
+                        
         }
         /** An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`. */
         export interface ChartFontUpdateData {
@@ -6624,8 +6776,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ... })`. */
         export interface ChartTrendlineCollectionUpdateData {
             items?: Excel.Interfaces.ChartTrendlineData[];
@@ -6639,15 +6790,13 @@ export declare namespace Excel {
             
             
             
+                        
             
             
             
             
             
-            
-            
-            
-        }
+                    }
         /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in `chartTrendlineLabelFormat.set({ ... })`. */
         export interface ChartTrendlineLabelFormatUpdateData {
             
@@ -6747,8 +6896,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`. */
         export interface PivotFieldCollectionUpdateData {
             items?: Excel.Interfaces.PivotFieldData[];
@@ -6862,8 +7010,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
         export interface ColorScaleConditionalFormatUpdateData {
             
@@ -6910,8 +7057,7 @@ export declare namespace Excel {
         /** An interface for updating data on the ConditionalRangeBorder object, for use in `conditionalRangeBorder.set({ ... })`. */
         export interface ConditionalRangeBorderUpdateData {
             
-            
-        }
+                    }
         /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
         export interface ConditionalRangeBorderCollectionUpdateData {
             
@@ -6927,8 +7073,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -6993,8 +7138,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -7061,8 +7205,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -7094,25 +7237,20 @@ export declare namespace Excel {
         /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             
-            
-            
+                        
             
             
             
         }
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
+                        
+                        
+            
+                        
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                        
         }
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
@@ -7126,8 +7264,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
             
@@ -7172,8 +7309,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
-            
-            
+                        
             
             
             
@@ -7221,20 +7357,20 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `workbook.toJSON()`. */
         export interface WorkbookData {
             /**
-            * Represents a collection of bindings that are part of the workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of bindings that are part of the workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             bindings?: Excel.Interfaces.BindingData[];
             
             
             /**
-            * Represents a collection of workbook-scoped named items (named ranges and constants).
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of workbook-scoped named items (named ranges and constants).
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             names?: Excel.Interfaces.NamedItemData[];
             
             
@@ -7246,19 +7382,19 @@ export declare namespace Excel {
             
             
             /**
-            * Represents a collection of tables associated with the workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of tables associated with the workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             tables?: Excel.Interfaces.TableData[];
             
             /**
-            * Represents a collection of worksheets associated with the workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of worksheets associated with the workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             worksheets?: Excel.Interfaces.WorksheetData[];
             
             
@@ -7280,11 +7416,11 @@ export declare namespace Excel {
         export interface WorksheetData {
             
             /**
-            * Returns a collection of charts that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a collection of charts that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             charts?: Excel.Interfaces.ChartData[];
             
             
@@ -7296,11 +7432,11 @@ export declare namespace Excel {
             
             
             /**
-            * Collection of tables that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Collection of tables that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             tables?: Excel.Interfaces.TableData[];
             
             
@@ -7358,11 +7494,11 @@ export declare namespace Excel {
             
             
             /**
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.RangeFormatData;
             /**
              * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
@@ -7608,18 +7744,18 @@ export declare namespace Excel {
         export interface TableData {
             
             /**
-            * Represents a collection of all the columns in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of all the columns in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             columns?: Excel.Interfaces.TableColumnData[];
             /**
-            * Represents a collection of all the rows in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of all the rows in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             rows?: Excel.Interfaces.TableRowData[];
             
             
@@ -7634,7 +7770,7 @@ export declare namespace Excel {
             
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -7735,8 +7871,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`. */
         export interface RemoveDuplicatesResultData {
@@ -7746,25 +7881,25 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `rangeFormat.toJSON()`. */
         export interface RangeFormatData {
             /**
-            * Collection of border objects that apply to the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Collection of border objects that apply to the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             borders?: Excel.Interfaces.RangeBorderData[];
             /**
-            * Returns the fill object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the fill object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             fill?: Excel.Interfaces.RangeFillData;
             /**
-            * Returns the font object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the font object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.RangeFontData;
             
             
@@ -7775,7 +7910,16 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
+            horizontalAlignment?:
+                | Excel.HorizontalAlignment
+                | "General"
+                | "Left"
+                | "Center"
+                | "Right"
+                | "Fill"
+                | "Justify"
+                | "CenterAcrossSelection"
+                | "Distributed";
             
             
             
@@ -7812,8 +7956,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-            
-            
+                        
             
             
         }
@@ -7832,14 +7975,32 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            sideIndex?: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
+            sideIndex?:
+                | Excel.BorderIndex
+                | "EdgeTop"
+                | "EdgeBottom"
+                | "EdgeLeft"
+                | "EdgeRight"
+                | "InsideVertical"
+                | "InsideHorizontal"
+                | "DiagonalDown"
+                | "DiagonalUp";
             /**
              * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+            style?:
+                | Excel.BorderLineStyle
+                | "None"
+                | "Continuous"
+                | "Dash"
+                | "DashDot"
+                | "DashDotDot"
+                | "Dot"
+                | "Double"
+                | "SlantDashDot";
             
             /**
              * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
@@ -7900,7 +8061,13 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
+            underline?:
+                | Excel.RangeUnderlineStyle
+                | "None"
+                | "Single"
+                | "Double"
+                | "SingleAccountant"
+                | "DoubleAccountant";
         }
         /** An interface describing the data returned by calling `chartCollection.toJSON()`. */
         export interface ChartCollectionData {
@@ -7909,53 +8076,51 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chart.toJSON()`. */
         export interface ChartData {
             /**
-            * Represents chart axes.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart axes.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             axes?: Excel.Interfaces.ChartAxesData;
             /**
-            * Represents the data labels on the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the data labels on the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             dataLabels?: Excel.Interfaces.ChartDataLabelsData;
             /**
-            * Encapsulates the format properties for the chart area.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties for the chart area.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAreaFormatData;
             /**
-            * Represents the legend for the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the legend for the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             legend?: Excel.Interfaces.ChartLegendData;
             
             
             /**
-            * Represents either a single series or collection of series in the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents either a single series or collection of series in the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             series?: Excel.Interfaces.ChartSeriesData[];
             /**
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartTitleData;
             
-            
-            
-            /**
+                        /**
              * Specifies the height, in points, of the chart object.
              *
              * @remarks
@@ -8009,14 +8174,13 @@ export declare namespace Excel {
         export interface ChartAreaFormatData {
             
             /**
-            * Represents the font attributes (font name, font size, color, etc.) for the current object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (font name, font size, color, etc.) for the current object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartSeriesCollection.toJSON()`. */
         export interface ChartSeriesCollectionData {
@@ -8028,25 +8192,26 @@ export declare namespace Excel {
             
             
             /**
-            * Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart series, which includes fill and line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartSeriesFormatData;
             
             /**
-            * Returns a collection of all points in the series.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a collection of all points in the series.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             points?: Excel.Interfaces.ChartPointData[];
             
             
             
             
             
+                        
             
             
             
@@ -8067,10 +8232,7 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
-            /**
+                        /**
              * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
              *
              * @remarks
@@ -8085,18 +8247,16 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartSeriesFormat.toJSON()`. */
         export interface ChartSeriesFormatData {
             /**
-            * Represents line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartPointsCollection.toJSON()`. */
@@ -8107,18 +8267,17 @@ export declare namespace Excel {
         export interface ChartPointData {
             
             /**
-            * Encapsulates the format properties chart point.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties chart point.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartPointFormatData;
             
             
             
             
-            
-            /**
+                        /**
              * Returns the value of a chart point.
              *
              * @remarks
@@ -8133,64 +8292,63 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartAxes.toJSON()`. */
         export interface ChartAxesData {
             /**
-            * Represents the category axis in a chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the category axis in a chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             categoryAxis?: Excel.Interfaces.ChartAxisData;
             /**
-            * Represents the series axis of a 3-D chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the series axis of a 3-D chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             seriesAxis?: Excel.Interfaces.ChartAxisData;
             /**
-            * Represents the value axis in an axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the value axis in an axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             valueAxis?: Excel.Interfaces.ChartAxisData;
         }
         /** An interface describing the data returned by calling `chartAxis.toJSON()`. */
         export interface ChartAxisData {
             /**
-            * Represents the formatting of a chart object, which includes line and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart object, which includes line and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisFormatData;
             /**
-            * Returns an object that represents the major gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the major gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             majorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
-            * Returns an object that represents the minor gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the minor gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             minorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
-            * Represents the axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartAxisTitleData;
             
             
             
             
             
-            
-            
+                        
             
             
             
@@ -8247,28 +8405,28 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartAxisFormat.toJSON()`. */
         export interface ChartAxisFormatData {
             /**
-            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
             /**
-            * Specifies chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartAxisTitle.toJSON()`. */
         export interface ChartAxisTitleData {
             /**
-            * Specifies the formatting of the chart axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the formatting of the chart axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisTitleFormatData;
             /**
              * Specifies the axis title.
@@ -8290,33 +8448,44 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatData {
             
             /**
-            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
         export interface ChartDataLabelsData {
             /**
-            * Specifies the format of chart data labels, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the format of chart data labels, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             
-            
-            
-            
+                        
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+            position?:
+                | Excel.ChartDataLabelPosition
+                | "Invalid"
+                | "None"
+                | "Center"
+                | "InsideEnd"
+                | "InsideBase"
+                | "OutsideEnd"
+                | "Left"
+                | "Right"
+                | "Top"
+                | "Bottom"
+                | "BestFit"
+                | "Callout";
             /**
              * String representing the separator used for the data labels on a chart.
              *
@@ -8367,14 +8536,17 @@ export declare namespace Excel {
              */
             showValue?: boolean;
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `chartDataLabel.toJSON()`. */
         export interface ChartDataLabelData {
             
             
             
             
+                        
+            
+            
+                        
             
             
             
@@ -8384,24 +8556,17 @@ export declare namespace Excel {
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`. */
         export interface ChartDataLabelFormatData {
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartDataTable.toJSON()`. */
@@ -8433,11 +8598,11 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartGridlines.toJSON()`. */
         export interface ChartGridlinesData {
             /**
-            * Represents the formatting of chart gridlines.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of chart gridlines.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartGridlinesFormatData;
             /**
              * Specifies if the axis gridlines are visible.
@@ -8450,21 +8615,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `chartGridlinesFormat.toJSON()`. */
         export interface ChartGridlinesFormatData {
             /**
-            * Represents chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling `chartLegend.toJSON()`. */
         export interface ChartLegendData {
             /**
-            * Represents the formatting of a chart legend, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart legend, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartLegendFormatData;
             
             
@@ -8482,7 +8647,15 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.1]
              */
-            position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
+            position?:
+                | Excel.ChartLegendPosition
+                | "Invalid"
+                | "Top"
+                | "Bottom"
+                | "Left"
+                | "Right"
+                | "Corner"
+                | "Custom";
             
             
             /**
@@ -8511,31 +8684,29 @@ export declare namespace Excel {
         export interface ChartLegendFormatData {
             
             /**
-            * Represents the font attributes such as font name, font size, and color of a chart legend.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes such as font name, font size, and color of a chart legend.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartMapOptions.toJSON()`. */
         export interface ChartMapOptionsData {
             
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartTitle.toJSON()`. */
         export interface ChartTitleData {
             /**
-            * Represents the formatting of a chart title, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart title, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartTitleFormatData;
             
-            
-            
+                        
             /**
              * Specifies if the chart title will overlay the chart.
              *
@@ -8554,8 +8725,7 @@ export declare namespace Excel {
             text?: string;
             
             
-            
-            /**
+                        /**
              * Specifies if the chart title is visibile.
              *
              * @remarks
@@ -8572,18 +8742,17 @@ export declare namespace Excel {
         export interface ChartTitleFormatData {
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for an object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for an object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling `chartBorder.toJSON()`. */
         export interface ChartBorderData {
             
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartBinOptions.toJSON()`. */
         export interface ChartBinOptionsData {
@@ -8612,8 +8781,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartFont.toJSON()`. */
         export interface ChartFontData {
@@ -8672,8 +8840,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `chartTrendlineCollection.toJSON()`. */
         export interface ChartTrendlineCollectionData {
             items?: Excel.Interfaces.ChartTrendlineData[];
@@ -8688,15 +8855,13 @@ export declare namespace Excel {
             
             
             
+                        
             
             
             
             
             
-            
-            
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `chartTrendlineLabelFormat.toJSON()`. */
         export interface ChartTrendlineLabelFormatData {
@@ -8851,8 +9016,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `pivotFieldCollection.toJSON()`. */
         export interface PivotFieldCollectionData {
             items?: Excel.Interfaces.PivotFieldData[];
@@ -8935,8 +9099,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`. */
         export interface DataBarConditionalFormatData {
             
@@ -8977,8 +9140,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`. */
         export interface ColorScaleConditionalFormatData {
             
@@ -9027,8 +9189,7 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderData {
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `conditionalRangeBorderCollection.toJSON()`. */
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
@@ -9041,8 +9202,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -9112,8 +9272,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -9203,8 +9362,7 @@ export declare namespace Excel {
             
             
             
-            
-            
+                        
             
             
             
@@ -9260,26 +9418,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
             
-            
-            
+                        
             
             
             
         }
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
+                        
+            
+                        
+            
+                        
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
@@ -9293,8 +9446,7 @@ export declare namespace Excel {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `slicer.toJSON()`. */
         export interface SlicerData {
             
@@ -9385,28 +9537,28 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the Excel application instance that contains this workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the Excel application instance that contains this workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             application?: Excel.Interfaces.ApplicationLoadOptions;
             /**
-            * Represents a collection of bindings that are part of the workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of bindings that are part of the workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
             
             
             
             /**
-            * Represents a collection of tables associated with the workbook.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of tables associated with the workbook.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             
@@ -9432,20 +9584,20 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Returns a collection of charts that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a collection of charts that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             charts?: Excel.Interfaces.ChartCollectionLoadOptions;
             
             
             /**
-            * Collection of tables that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Collection of tables that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             /**
@@ -9496,20 +9648,20 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             charts?: Excel.Interfaces.ChartCollectionLoadOptions;
             
             
             /**
-            * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             
             /**
@@ -9562,18 +9714,18 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.RangeFormatLoadOptions;
             /**
-            * The worksheet containing the current range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * The worksheet containing the current range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
@@ -9857,18 +10009,18 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
             
             
@@ -9884,7 +10036,7 @@ export declare namespace Excel {
             
             /**
              * For EACH ITEM in the collection: Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -9931,18 +10083,18 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Represents a collection of all the columns in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of all the columns in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
             /**
-            * Represents a collection of all the rows in the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents a collection of all the rows in the table.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
             
             
@@ -9958,7 +10110,7 @@ export declare namespace Excel {
             
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -10080,7 +10232,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a collection of all the rows that are part of the table.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -10114,7 +10266,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a row in a table.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -10160,25 +10312,25 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Collection of border objects that apply to the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Collection of border objects that apply to the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
             /**
-            * Returns the fill object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the fill object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             fill?: Excel.Interfaces.RangeFillLoadOptions;
             /**
-            * Returns the font object defined on the overall range.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns the font object defined on the overall range.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.RangeFontLoadOptions;
             
             
@@ -10388,48 +10540,48 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents chart axes.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents chart axes.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             axes?: Excel.Interfaces.ChartAxesLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents the data labels on the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents the data labels on the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
             /**
-            * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents the legend for the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents the legend for the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             legend?: Excel.Interfaces.ChartLegendLoadOptions;
             
             
             /**
-            * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartTitleLoadOptions;
             
             
@@ -10491,48 +10643,48 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents chart axes.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart axes.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             axes?: Excel.Interfaces.ChartAxesLoadOptions;
             /**
-            * Represents the data labels on the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the data labels on the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
             /**
-            * Encapsulates the format properties for the chart area.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties for the chart area.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
             /**
-            * Represents the legend for the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the legend for the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             legend?: Excel.Interfaces.ChartLegendLoadOptions;
             
             
             /**
-            * Represents either a single series or collection of series in the chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents either a single series or collection of series in the chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartTitleLoadOptions;
             
             
@@ -10595,11 +10747,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Represents the font attributes (font name, font size, color, etc.) for the current object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (font name, font size, color, etc.) for the current object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
             
             
@@ -10619,19 +10771,19 @@ export declare namespace Excel {
             
             
             /**
-            * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
             
             /**
-            * For EACH ITEM in the collection: Returns a collection of all points in the series.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Returns a collection of all points in the series.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
             
             
@@ -10694,19 +10846,19 @@ export declare namespace Excel {
             
             
             /**
-            * Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart series, which includes fill and line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
             
             /**
-            * Returns a collection of all points in the series.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns a collection of all points in the series.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
             
             
@@ -10766,11 +10918,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -10786,11 +10938,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * For EACH ITEM in the collection: Encapsulates the format properties chart point.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * For EACH ITEM in the collection: Encapsulates the format properties chart point.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartPointFormatLoadOptions;
             
             
@@ -10818,11 +10970,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Encapsulates the format properties chart point.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Encapsulates the format properties chart point.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartPointFormatLoadOptions;
             
             
@@ -10862,25 +11014,25 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the category axis in a chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the category axis in a chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;
             /**
-            * Represents the series axis of a 3-D chart.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the series axis of a 3-D chart.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;
             /**
-            * Represents the value axis in an axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the value axis in an axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;
         }
         /**
@@ -10895,32 +11047,32 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the formatting of a chart object, which includes line and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart object, which includes line and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisFormatLoadOptions;
             /**
-            * Returns an object that represents the major gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the major gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
             /**
-            * Returns an object that represents the minor gridlines for the specified axis.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Returns an object that represents the minor gridlines for the specified axis.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
             /**
-            * Represents the axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
             
             
@@ -10994,18 +11146,18 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
             /**
-            * Specifies chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -11020,11 +11172,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Specifies the formatting of the chart axis title.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the formatting of the chart axis title.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
             /**
              * Specifies the axis title.
@@ -11055,11 +11207,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         /**
@@ -11074,11 +11226,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Specifies the format of chart data labels, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Specifies the format of chart data labels, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
             
             
@@ -11157,11 +11309,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for a chart data label.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for a chart data label.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -11180,11 +11332,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the formatting of chart gridlines.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of chart gridlines.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
             /**
              * Specifies if the axis gridlines are visible.
@@ -11206,11 +11358,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents chart line formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents chart line formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             line?: Excel.Interfaces.ChartLineFormatLoadOptions;
         }
         /**
@@ -11225,11 +11377,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the formatting of a chart legend, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart legend, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
             
             
@@ -11273,11 +11425,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Represents the font attributes such as font name, font size, and color of a chart legend.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes such as font name, font size, and color of a chart legend.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -11293,11 +11445,11 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Represents the formatting of a chart title, which includes fill and font formatting.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the formatting of a chart title, which includes fill and font formatting.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
             
             
@@ -11344,11 +11496,11 @@ export declare namespace Excel {
             $all?: boolean;
             
             /**
-            * Represents the font attributes (such as font name, font size, and color) for an object.
-            *
-            * @remarks
-            * [Api set: ExcelApi 1.1]
-            */
+             * Represents the font attributes (such as font name, font size, and color) for an object.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1]
+             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         
@@ -11526,7 +11678,6 @@ export declare namespace Excel {
         
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////

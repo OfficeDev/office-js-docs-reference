@@ -151,15 +151,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCustomPropertyCollection;
+      content: |-
+        load(
+                    options?:
+                        & Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions
+                        & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.WorksheetCustomPropertyCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interface" /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: |-
+            & <xref uid="excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interface" />
+                            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.WorksheetCustomPropertyCollection:class" />'
         description: ''

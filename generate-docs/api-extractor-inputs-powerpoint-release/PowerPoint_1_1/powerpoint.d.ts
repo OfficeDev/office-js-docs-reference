@@ -17,9 +17,9 @@ export declare namespace PowerPoint {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): PowerPoint.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original PowerPoint.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): {
             [key: string]: string;
         };
@@ -63,9 +63,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Presentation;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.Presentation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original PowerPoint.Presentation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
     
@@ -106,16 +106,16 @@ export declare namespace PowerPoint {
     }
     export namespace Interfaces {
         /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
+         * Provides ways to load properties of only a subset of members of a collection.
+         */
         export interface CollectionLoadOptions {
             /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
+             * Specify the number of items in the queried collection to be included in the result.
+             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
+             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+             */
             $skip?: number;
         }
         /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
@@ -124,8 +124,7 @@ export declare namespace PowerPoint {
         }
         /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
-            
-        }
+                    }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -150,8 +149,7 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             
-            
-            
+                        
             
             
             
@@ -163,8 +161,7 @@ export declare namespace PowerPoint {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             
@@ -173,13 +170,11 @@ export declare namespace PowerPoint {
         }
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
+                        
             
             
             
-            
-            
-            
-            
+                        
         }
         /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
@@ -215,8 +210,7 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
         export interface ParagraphFormatData {
-            
-        }
+                    }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -252,13 +246,11 @@ export declare namespace PowerPoint {
         export interface ShapeFillData {
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
             
-            
-            
+                        
             
             
             
@@ -270,8 +262,7 @@ export declare namespace PowerPoint {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
             
@@ -280,14 +271,12 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
+                        
             
             
             
             
-            
-            
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
@@ -360,19 +349,27 @@ export declare namespace PowerPoint {
      * Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the RequestContext is required to get access to the PowerPoint object model from the add-in.
      */
-    export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(
+        batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+    ): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the RequestContext is required to get access to the PowerPoint object model from the add-in.
      */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(
+        object: OfficeExtension.ClientObject,
+        batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+    ): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the RequestContext is required to get access to the PowerPoint object model from the add-in.
      */
-    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(
+        objects: OfficeExtension.ClientObject[],
+        batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+    ): OfficeExtension.IPromise<T>;
 }
 export declare namespace PowerPoint {
     /**
@@ -384,7 +381,6 @@ export declare namespace PowerPoint {
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }
-
 
 ////////////////////////////////////////////////////////////////
 ///////////////////// End PowerPoint APIs //////////////////////

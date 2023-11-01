@@ -124,15 +124,26 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole"
-        | "Start" | "End"): Word.Range;
+      content: |-
+        getRange(
+                    rangeLocation?:
+                        | Word.RangeLocation.whole
+                        | Word.RangeLocation.start
+                        | Word.RangeLocation.end
+                        | "Whole"
+                        | "Start"
+                        | "End",
+                ): Word.Range;
       parameters:
         - id: rangeLocation
           description: ''
-          type: >-
-            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> |
-            <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
+          type: |-
+            | <xref uid="word!Word.RangeLocation.whole:member" />
+                            | <xref uid="word!Word.RangeLocation.start:member" />
+                            | <xref uid="word!Word.RangeLocation.end:member" />
+                            | "Whole"
+                            | "Start"
+                            | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''

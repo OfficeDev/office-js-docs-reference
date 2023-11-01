@@ -47,9 +47,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to add. Required.
@@ -126,9 +130,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to add. Required.
@@ -330,9 +337,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        removeHandlerAsync(
+                    eventType: Office.EventType,
+                    options?: RemoveHandlerOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to remove. Required.

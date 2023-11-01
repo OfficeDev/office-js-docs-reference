@@ -133,9 +133,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CommentCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.CommentCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.CommentCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.CommentCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

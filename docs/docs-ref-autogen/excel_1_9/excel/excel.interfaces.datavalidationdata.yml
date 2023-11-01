@@ -66,13 +66,32 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
-        "Custom" | "Inconsistent" | "MixedCriteria";
+      content: |-
+        type?:
+                        | Excel.DataValidationType
+                        | "None"
+                        | "WholeNumber"
+                        | "Decimal"
+                        | "List"
+                        | "Date"
+                        | "Time"
+                        | "TextLength"
+                        | "Custom"
+                        | "Inconsistent"
+                        | "MixedCriteria";
       return:
-        type: >-
-          <xref uid="excel!Excel.DataValidationType:enum" /> | "None" | "WholeNumber" | "Decimal" | "List" | "Date" |
-          "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"
+        type: |-
+          | <xref uid="excel!Excel.DataValidationType:enum" />
+                          | "None"
+                          | "WholeNumber"
+                          | "Decimal"
+                          | "List"
+                          | "Date"
+                          | "Time"
+                          | "TextLength"
+                          | "Custom"
+                          | "Inconsistent"
+                          | "MixedCriteria"
   - name: valid
     uid: 'excel!Excel.Interfaces.DataValidationData#valid:member'
     package: excel!

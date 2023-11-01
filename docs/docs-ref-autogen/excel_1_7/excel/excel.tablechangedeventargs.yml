@@ -30,13 +30,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
-        "ColumnDeleted" | "CellInserted" | "CellDeleted";
+      content: |-
+        changeType:
+                    | Excel.DataChangeType
+                    | "Unknown"
+                    | "RangeEdited"
+                    | "RowInserted"
+                    | "RowDeleted"
+                    | "ColumnInserted"
+                    | "ColumnDeleted"
+                    | "CellInserted"
+                    | "CellDeleted";
       return:
-        type: >-
-          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" |
-          "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"
+        type: |-
+          | <xref uid="excel!Excel.DataChangeType:enum" />
+                      | "Unknown"
+                      | "RangeEdited"
+                      | "RowInserted"
+                      | "RowDeleted"
+                      | "ColumnInserted"
+                      | "ColumnDeleted"
+                      | "CellInserted"
+                      | "CellDeleted"
   - name: source
     uid: 'excel!Excel.TableChangedEventArgs#source:member'
     package: excel!

@@ -227,20 +227,21 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host:
-        HostType, platform: PlatformType }>;
+      content: |-
+        export function onReady(
+                callback?: (info: { host: HostType; platform: PlatformType }) => any,
+            ): Promise<{ host: HostType; platform: PlatformType }>;
       parameters:
         - id: callback
           description: >-
             An optional callback function, that will receive the application and platform info. Alternatively, rather
             than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
           type: >-
-            (info: { host: <xref uid="office!Office.HostType:enum" />, platform: <xref
+            (info: { host: <xref uid="office!Office.HostType:enum" />; platform: <xref
             uid="office!Office.PlatformType:enum" /> }) =&gt; any
       return:
         type: >-
-          Promise&lt;{ host: <xref uid="office!Office.HostType:enum" />, platform: <xref
+          Promise&lt;{ host: <xref uid="office!Office.HostType:enum" />; platform: <xref
           uid="office!Office.PlatformType:enum" /> }&gt;
         description: 'A Promise that contains the application and platform info, once initialization is completed.'
   - name: 'Office.select(expression, callback)'

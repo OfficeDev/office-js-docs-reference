@@ -137,8 +137,19 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
+      content: |-
+        underline?:
+                        | Excel.RangeUnderlineStyle
+                        | "None"
+                        | "Single"
+                        | "Double"
+                        | "SingleAccountant"
+                        | "DoubleAccountant";
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" |
-          "DoubleAccountant"
+        type: |-
+          | <xref uid="excel!Excel.RangeUnderlineStyle:enum" />
+                          | "None"
+                          | "Single"
+                          | "Double"
+                          | "SingleAccountant"
+                          | "DoubleAccountant"

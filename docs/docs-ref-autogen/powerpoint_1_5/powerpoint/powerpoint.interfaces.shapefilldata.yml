@@ -49,10 +49,21 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" |
-        "SlideBackground";
+      content: |-
+        type?:
+                        | PowerPoint.ShapeFillType
+                        | "NoFill"
+                        | "Solid"
+                        | "Gradient"
+                        | "Pattern"
+                        | "PictureAndTexture"
+                        | "SlideBackground";
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" |
-          "PictureAndTexture" | "SlideBackground"
+        type: |-
+          | <xref uid="powerpoint!PowerPoint.ShapeFillType:enum" />
+                          | "NoFill"
+                          | "Solid"
+                          | "Gradient"
+                          | "Pattern"
+                          | "PictureAndTexture"
+                          | "SlideBackground"

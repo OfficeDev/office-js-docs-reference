@@ -101,7 +101,7 @@ methods:
     syntax:
       content: |-
         onCloseActionCancelled(
-                    handler: () => void
+                    handler: () => void,
                 ): Promise<() => Promise<void>>;
       parameters:
         - id: handler

@@ -34,13 +34,32 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        condition: Excel.LabelFilterCondition | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" | "Contains" |
-        "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between";
+      content: |-
+        condition:
+                    | Excel.LabelFilterCondition
+                    | "Unknown"
+                    | "Equals"
+                    | "BeginsWith"
+                    | "EndsWith"
+                    | "Contains"
+                    | "GreaterThan"
+                    | "GreaterThanOrEqualTo"
+                    | "LessThan"
+                    | "LessThanOrEqualTo"
+                    | "Between";
       return:
-        type: >-
-          <xref uid="excel!Excel.LabelFilterCondition:enum" /> | "Unknown" | "Equals" | "BeginsWith" | "EndsWith" |
-          "Contains" | "GreaterThan" | "GreaterThanOrEqualTo" | "LessThan" | "LessThanOrEqualTo" | "Between"
+        type: |-
+          | <xref uid="excel!Excel.LabelFilterCondition:enum" />
+                      | "Unknown"
+                      | "Equals"
+                      | "BeginsWith"
+                      | "EndsWith"
+                      | "Contains"
+                      | "GreaterThan"
+                      | "GreaterThanOrEqualTo"
+                      | "LessThan"
+                      | "LessThanOrEqualTo"
+                      | "Between"
   - name: exclusive
     uid: 'excel!Excel.PivotLabelFilter#exclusive:member'
     package: excel!

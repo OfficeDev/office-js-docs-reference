@@ -79,9 +79,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CommentReplyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.CommentReplyCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.CommentReplyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.CommentReplyCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

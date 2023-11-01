@@ -90,13 +90,38 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" |
-        "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
+      content: |-
+        markerStyle?:
+                        | Excel.ChartMarkerStyle
+                        | "Invalid"
+                        | "Automatic"
+                        | "None"
+                        | "Square"
+                        | "Diamond"
+                        | "Triangle"
+                        | "X"
+                        | "Star"
+                        | "Dot"
+                        | "Dash"
+                        | "Circle"
+                        | "Plus"
+                        | "Picture";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" |
-          "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+        type: |-
+          | <xref uid="excel!Excel.ChartMarkerStyle:enum" />
+                          | "Invalid"
+                          | "Automatic"
+                          | "None"
+                          | "Square"
+                          | "Diamond"
+                          | "Triangle"
+                          | "X"
+                          | "Star"
+                          | "Dot"
+                          | "Dash"
+                          | "Circle"
+                          | "Plus"
+                          | "Picture"
   - name: value
     uid: 'excel!Excel.Interfaces.ChartPointData#value:member'
     package: excel!

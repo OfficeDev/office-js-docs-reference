@@ -122,72 +122,366 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
-        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
-        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
-        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
-        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
-        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
-        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
-        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
-        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
-        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
-        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
-        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
-        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
-        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
-        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
-        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
+      content: |-
+        geometricShapeType:
+                    | Excel.GeometricShapeType
+                    | "LineInverse"
+                    | "Triangle"
+                    | "RightTriangle"
+                    | "Rectangle"
+                    | "Diamond"
+                    | "Parallelogram"
+                    | "Trapezoid"
+                    | "NonIsoscelesTrapezoid"
+                    | "Pentagon"
+                    | "Hexagon"
+                    | "Heptagon"
+                    | "Octagon"
+                    | "Decagon"
+                    | "Dodecagon"
+                    | "Star4"
+                    | "Star5"
+                    | "Star6"
+                    | "Star7"
+                    | "Star8"
+                    | "Star10"
+                    | "Star12"
+                    | "Star16"
+                    | "Star24"
+                    | "Star32"
+                    | "RoundRectangle"
+                    | "Round1Rectangle"
+                    | "Round2SameRectangle"
+                    | "Round2DiagonalRectangle"
+                    | "SnipRoundRectangle"
+                    | "Snip1Rectangle"
+                    | "Snip2SameRectangle"
+                    | "Snip2DiagonalRectangle"
+                    | "Plaque"
+                    | "Ellipse"
+                    | "Teardrop"
+                    | "HomePlate"
+                    | "Chevron"
+                    | "PieWedge"
+                    | "Pie"
+                    | "BlockArc"
+                    | "Donut"
+                    | "NoSmoking"
+                    | "RightArrow"
+                    | "LeftArrow"
+                    | "UpArrow"
+                    | "DownArrow"
+                    | "StripedRightArrow"
+                    | "NotchedRightArrow"
+                    | "BentUpArrow"
+                    | "LeftRightArrow"
+                    | "UpDownArrow"
+                    | "LeftUpArrow"
+                    | "LeftRightUpArrow"
+                    | "QuadArrow"
+                    | "LeftArrowCallout"
+                    | "RightArrowCallout"
+                    | "UpArrowCallout"
+                    | "DownArrowCallout"
+                    | "LeftRightArrowCallout"
+                    | "UpDownArrowCallout"
+                    | "QuadArrowCallout"
+                    | "BentArrow"
+                    | "UturnArrow"
+                    | "CircularArrow"
+                    | "LeftCircularArrow"
+                    | "LeftRightCircularArrow"
+                    | "CurvedRightArrow"
+                    | "CurvedLeftArrow"
+                    | "CurvedUpArrow"
+                    | "CurvedDownArrow"
+                    | "SwooshArrow"
+                    | "Cube"
+                    | "Can"
+                    | "LightningBolt"
+                    | "Heart"
+                    | "Sun"
+                    | "Moon"
+                    | "SmileyFace"
+                    | "IrregularSeal1"
+                    | "IrregularSeal2"
+                    | "FoldedCorner"
+                    | "Bevel"
+                    | "Frame"
+                    | "HalfFrame"
+                    | "Corner"
+                    | "DiagonalStripe"
+                    | "Chord"
+                    | "Arc"
+                    | "LeftBracket"
+                    | "RightBracket"
+                    | "LeftBrace"
+                    | "RightBrace"
+                    | "BracketPair"
+                    | "BracePair"
+                    | "Callout1"
+                    | "Callout2"
+                    | "Callout3"
+                    | "AccentCallout1"
+                    | "AccentCallout2"
+                    | "AccentCallout3"
+                    | "BorderCallout1"
+                    | "BorderCallout2"
+                    | "BorderCallout3"
+                    | "AccentBorderCallout1"
+                    | "AccentBorderCallout2"
+                    | "AccentBorderCallout3"
+                    | "WedgeRectCallout"
+                    | "WedgeRRectCallout"
+                    | "WedgeEllipseCallout"
+                    | "CloudCallout"
+                    | "Cloud"
+                    | "Ribbon"
+                    | "Ribbon2"
+                    | "EllipseRibbon"
+                    | "EllipseRibbon2"
+                    | "LeftRightRibbon"
+                    | "VerticalScroll"
+                    | "HorizontalScroll"
+                    | "Wave"
+                    | "DoubleWave"
+                    | "Plus"
+                    | "FlowChartProcess"
+                    | "FlowChartDecision"
+                    | "FlowChartInputOutput"
+                    | "FlowChartPredefinedProcess"
+                    | "FlowChartInternalStorage"
+                    | "FlowChartDocument"
+                    | "FlowChartMultidocument"
+                    | "FlowChartTerminator"
+                    | "FlowChartPreparation"
+                    | "FlowChartManualInput"
+                    | "FlowChartManualOperation"
+                    | "FlowChartConnector"
+                    | "FlowChartPunchedCard"
+                    | "FlowChartPunchedTape"
+                    | "FlowChartSummingJunction"
+                    | "FlowChartOr"
+                    | "FlowChartCollate"
+                    | "FlowChartSort"
+                    | "FlowChartExtract"
+                    | "FlowChartMerge"
+                    | "FlowChartOfflineStorage"
+                    | "FlowChartOnlineStorage"
+                    | "FlowChartMagneticTape"
+                    | "FlowChartMagneticDisk"
+                    | "FlowChartMagneticDrum"
+                    | "FlowChartDisplay"
+                    | "FlowChartDelay"
+                    | "FlowChartAlternateProcess"
+                    | "FlowChartOffpageConnector"
+                    | "ActionButtonBlank"
+                    | "ActionButtonHome"
+                    | "ActionButtonHelp"
+                    | "ActionButtonInformation"
+                    | "ActionButtonForwardNext"
+                    | "ActionButtonBackPrevious"
+                    | "ActionButtonEnd"
+                    | "ActionButtonBeginning"
+                    | "ActionButtonReturn"
+                    | "ActionButtonDocument"
+                    | "ActionButtonSound"
+                    | "ActionButtonMovie"
+                    | "Gear6"
+                    | "Gear9"
+                    | "Funnel"
+                    | "MathPlus"
+                    | "MathMinus"
+                    | "MathMultiply"
+                    | "MathDivide"
+                    | "MathEqual"
+                    | "MathNotEqual"
+                    | "CornerTabs"
+                    | "SquareTabs"
+                    | "PlaqueTabs"
+                    | "ChartX"
+                    | "ChartStar"
+                    | "ChartPlus";
       return:
-        type: >-
-          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" |
-          "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
-          "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10"
-          | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
-          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
-          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
-          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
-          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
-          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
-          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
-          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
-          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
-          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
-          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
-          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
-          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
-          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
-          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
-          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
-          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
-          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
-          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
-          "ChartPlus"
+        type: |-
+          | <xref uid="excel!Excel.GeometricShapeType:enum" />
+                      | "LineInverse"
+                      | "Triangle"
+                      | "RightTriangle"
+                      | "Rectangle"
+                      | "Diamond"
+                      | "Parallelogram"
+                      | "Trapezoid"
+                      | "NonIsoscelesTrapezoid"
+                      | "Pentagon"
+                      | "Hexagon"
+                      | "Heptagon"
+                      | "Octagon"
+                      | "Decagon"
+                      | "Dodecagon"
+                      | "Star4"
+                      | "Star5"
+                      | "Star6"
+                      | "Star7"
+                      | "Star8"
+                      | "Star10"
+                      | "Star12"
+                      | "Star16"
+                      | "Star24"
+                      | "Star32"
+                      | "RoundRectangle"
+                      | "Round1Rectangle"
+                      | "Round2SameRectangle"
+                      | "Round2DiagonalRectangle"
+                      | "SnipRoundRectangle"
+                      | "Snip1Rectangle"
+                      | "Snip2SameRectangle"
+                      | "Snip2DiagonalRectangle"
+                      | "Plaque"
+                      | "Ellipse"
+                      | "Teardrop"
+                      | "HomePlate"
+                      | "Chevron"
+                      | "PieWedge"
+                      | "Pie"
+                      | "BlockArc"
+                      | "Donut"
+                      | "NoSmoking"
+                      | "RightArrow"
+                      | "LeftArrow"
+                      | "UpArrow"
+                      | "DownArrow"
+                      | "StripedRightArrow"
+                      | "NotchedRightArrow"
+                      | "BentUpArrow"
+                      | "LeftRightArrow"
+                      | "UpDownArrow"
+                      | "LeftUpArrow"
+                      | "LeftRightUpArrow"
+                      | "QuadArrow"
+                      | "LeftArrowCallout"
+                      | "RightArrowCallout"
+                      | "UpArrowCallout"
+                      | "DownArrowCallout"
+                      | "LeftRightArrowCallout"
+                      | "UpDownArrowCallout"
+                      | "QuadArrowCallout"
+                      | "BentArrow"
+                      | "UturnArrow"
+                      | "CircularArrow"
+                      | "LeftCircularArrow"
+                      | "LeftRightCircularArrow"
+                      | "CurvedRightArrow"
+                      | "CurvedLeftArrow"
+                      | "CurvedUpArrow"
+                      | "CurvedDownArrow"
+                      | "SwooshArrow"
+                      | "Cube"
+                      | "Can"
+                      | "LightningBolt"
+                      | "Heart"
+                      | "Sun"
+                      | "Moon"
+                      | "SmileyFace"
+                      | "IrregularSeal1"
+                      | "IrregularSeal2"
+                      | "FoldedCorner"
+                      | "Bevel"
+                      | "Frame"
+                      | "HalfFrame"
+                      | "Corner"
+                      | "DiagonalStripe"
+                      | "Chord"
+                      | "Arc"
+                      | "LeftBracket"
+                      | "RightBracket"
+                      | "LeftBrace"
+                      | "RightBrace"
+                      | "BracketPair"
+                      | "BracePair"
+                      | "Callout1"
+                      | "Callout2"
+                      | "Callout3"
+                      | "AccentCallout1"
+                      | "AccentCallout2"
+                      | "AccentCallout3"
+                      | "BorderCallout1"
+                      | "BorderCallout2"
+                      | "BorderCallout3"
+                      | "AccentBorderCallout1"
+                      | "AccentBorderCallout2"
+                      | "AccentBorderCallout3"
+                      | "WedgeRectCallout"
+                      | "WedgeRRectCallout"
+                      | "WedgeEllipseCallout"
+                      | "CloudCallout"
+                      | "Cloud"
+                      | "Ribbon"
+                      | "Ribbon2"
+                      | "EllipseRibbon"
+                      | "EllipseRibbon2"
+                      | "LeftRightRibbon"
+                      | "VerticalScroll"
+                      | "HorizontalScroll"
+                      | "Wave"
+                      | "DoubleWave"
+                      | "Plus"
+                      | "FlowChartProcess"
+                      | "FlowChartDecision"
+                      | "FlowChartInputOutput"
+                      | "FlowChartPredefinedProcess"
+                      | "FlowChartInternalStorage"
+                      | "FlowChartDocument"
+                      | "FlowChartMultidocument"
+                      | "FlowChartTerminator"
+                      | "FlowChartPreparation"
+                      | "FlowChartManualInput"
+                      | "FlowChartManualOperation"
+                      | "FlowChartConnector"
+                      | "FlowChartPunchedCard"
+                      | "FlowChartPunchedTape"
+                      | "FlowChartSummingJunction"
+                      | "FlowChartOr"
+                      | "FlowChartCollate"
+                      | "FlowChartSort"
+                      | "FlowChartExtract"
+                      | "FlowChartMerge"
+                      | "FlowChartOfflineStorage"
+                      | "FlowChartOnlineStorage"
+                      | "FlowChartMagneticTape"
+                      | "FlowChartMagneticDisk"
+                      | "FlowChartMagneticDrum"
+                      | "FlowChartDisplay"
+                      | "FlowChartDelay"
+                      | "FlowChartAlternateProcess"
+                      | "FlowChartOffpageConnector"
+                      | "ActionButtonBlank"
+                      | "ActionButtonHome"
+                      | "ActionButtonHelp"
+                      | "ActionButtonInformation"
+                      | "ActionButtonForwardNext"
+                      | "ActionButtonBackPrevious"
+                      | "ActionButtonEnd"
+                      | "ActionButtonBeginning"
+                      | "ActionButtonReturn"
+                      | "ActionButtonDocument"
+                      | "ActionButtonSound"
+                      | "ActionButtonMovie"
+                      | "Gear6"
+                      | "Gear9"
+                      | "Funnel"
+                      | "MathPlus"
+                      | "MathMinus"
+                      | "MathMultiply"
+                      | "MathDivide"
+                      | "MathEqual"
+                      | "MathNotEqual"
+                      | "CornerTabs"
+                      | "SquareTabs"
+                      | "PlaqueTabs"
+                      | "ChartX"
+                      | "ChartStar"
+                      | "ChartPlus"
   - name: group
     uid: 'excel!Excel.Shape#group:member'
     package: excel!
@@ -846,10 +1140,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
     uid: 'excel!Excel.Shape#scaleHeight:member(2)'
     package: excel!
-    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -858,9 +1152,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      content: |-
+        scaleHeight(
+                    scaleFactor: number,
+                    scaleTypeString: "CurrentSize" | "OriginalSize",
+                    scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight",
+                ): void;
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
@@ -870,7 +1167,7 @@ methods:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFrom
+        - id: scaleFromString
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.
@@ -908,10 +1205,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
     uid: 'excel!Excel.Shape#scaleWidth:member(2)'
     package: excel!
-    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -920,9 +1217,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      content: |-
+        scaleWidth(
+                    scaleFactor: number,
+                    scaleTypeString: "CurrentSize" | "OriginalSize",
+                    scaleFromString?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight",
+                ): void;
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
@@ -932,7 +1232,7 @@ methods:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFrom
+        - id: scaleFromString
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.

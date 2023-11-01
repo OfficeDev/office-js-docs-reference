@@ -30,10 +30,19 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
-        "BottomPercent";
+      content: |-
+        type:
+                    | Excel.ConditionalTopBottomCriterionType
+                    | "Invalid"
+                    | "TopItems"
+                    | "TopPercent"
+                    | "BottomItems"
+                    | "BottomPercent";
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalTopBottomCriterionType:enum" /> | "Invalid" | "TopItems" | "TopPercent" |
-          "BottomItems" | "BottomPercent"
+        type: |-
+          | <xref uid="excel!Excel.ConditionalTopBottomCriterionType:enum" />
+                      | "Invalid"
+                      | "TopItems"
+                      | "TopPercent"
+                      | "BottomItems"
+                      | "BottomPercent"

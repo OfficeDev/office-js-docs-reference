@@ -52,13 +52,26 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" |
-        "JustifyLow" | "Distributed" | "ThaiDistributed";
+      content: |-
+        horizontalAlignment:
+                    | PowerPoint.ParagraphHorizontalAlignment
+                    | "Left"
+                    | "Center"
+                    | "Right"
+                    | "Justify"
+                    | "JustifyLow"
+                    | "Distributed"
+                    | "ThaiDistributed";
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" /> | "Left" | "Center" | "Right" |
-          "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed"
+        type: |-
+          | <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
+                      | "Left"
+                      | "Center"
+                      | "Right"
+                      | "Justify"
+                      | "JustifyLow"
+                      | "Distributed"
+                      | "ThaiDistributed"
 methods:
   - name: load(options)
     uid: 'powerpoint!PowerPoint.ParagraphFormat#load:member(1)'

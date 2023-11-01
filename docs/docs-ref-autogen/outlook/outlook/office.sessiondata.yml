@@ -62,9 +62,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        clearAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+      content: |-
+        clearAsync(
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: options
           description: >-
@@ -254,9 +256,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeAsync(name: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        removeAsync(
+                    name: string,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: name
           description: The session data key.
@@ -352,9 +357,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(name: string, value: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        setAsync(
+                    name: string,
+                    value: string,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: name
           description: The session data key.

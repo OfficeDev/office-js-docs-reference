@@ -364,15 +364,26 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole"
-        | "Start" | "End"): Word.Range;
+      content: |-
+        getRange(
+                    rangeLocation?:
+                        | Word.RangeLocation.whole
+                        | Word.RangeLocation.start
+                        | Word.RangeLocation.end
+                        | "Whole"
+                        | "Start"
+                        | "End",
+                ): Word.Range;
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location must be ''Whole'', ''Start'', or ''End''.'
-          type: >-
-            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> |
-            <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
+          type: |-
+            | <xref uid="word!Word.RangeLocation.whole:member" />
+                            | <xref uid="word!Word.RangeLocation.start:member" />
+                            | <xref uid="word!Word.RangeLocation.end:member" />
+                            | "Whole"
+                            | "Start"
+                            | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -385,16 +396,31 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
-        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): void;
+      content: |-
+        insertBreak(
+                    breakType:
+                        | Word.BreakType
+                        | "Page"
+                        | "Next"
+                        | "SectionNext"
+                        | "SectionContinuous"
+                        | "SectionEven"
+                        | "SectionOdd"
+                        | "Line",
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): void;
       parameters:
         - id: breakType
           description: Required. The break type to add.
-          type: >-
-            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
-            "SectionEven" | "SectionOdd" | "Line"
+          type: |-
+            | <xref uid="word!Word.BreakType:enum" />
+                            | "Page"
+                            | "Next"
+                            | "SectionNext"
+                            | "SectionContinuous"
+                            | "SectionEven"
+                            | "SectionOdd"
+                            | "Line"
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
           type: >-
@@ -430,9 +456,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after
-        | "Before" | "After"): Word.Range;
+      content: |-
+        insertFileFromBase64(
+                    base64File: string,
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): Word.Range;
       parameters:
         - id: base64File
           description: Required. The Base64-encoded content of a .docx file.
@@ -454,9 +482,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertHtml(html: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Range;
+      content: |-
+        insertHtml(
+                    html: string,
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted.
@@ -478,18 +508,30 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace |
-        Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
+      content: |-
+        insertInlinePictureFromBase64(
+                    base64EncodedImage: string,
+                    insertLocation:
+                        | Word.InsertLocation.replace
+                        | Word.InsertLocation.before
+                        | Word.InsertLocation.after
+                        | "Replace"
+                        | "Before"
+                        | "After",
+                ): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
           description: Required. The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Before'', or ''After''.'
-          type: >-
-            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.before:member"
-            /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Replace" | "Before" | "After"
+          type: |-
+            | <xref uid="word!Word.InsertLocation.replace:member" />
+                            | <xref uid="word!Word.InsertLocation.before:member" />
+                            | <xref uid="word!Word.InsertLocation.after:member" />
+                            | "Replace"
+                            | "Before"
+                            | "After"
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
@@ -502,9 +544,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Range;
+      content: |-
+        insertOoxml(
+                    ooxml: string,
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
@@ -526,9 +570,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after |
-        "Before" | "After"): Word.Paragraph;
+      content: |-
+        insertParagraph(
+                    paragraphText: string,
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -550,9 +596,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertText(text: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Range;
+      content: |-
+        insertText(
+                    text: string,
+                    insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+                ): Word.Range;
       parameters:
         - id: text
           description: Required. Text to be inserted.

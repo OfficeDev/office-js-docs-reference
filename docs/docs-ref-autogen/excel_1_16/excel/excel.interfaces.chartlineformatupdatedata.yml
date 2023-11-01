@@ -30,13 +30,34 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
-        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      content: |-
+        lineStyle?:
+                        | Excel.ChartLineStyle
+                        | "None"
+                        | "Continuous"
+                        | "Dash"
+                        | "DashDot"
+                        | "DashDotDot"
+                        | "Dot"
+                        | "Grey25"
+                        | "Grey50"
+                        | "Grey75"
+                        | "Automatic"
+                        | "RoundDot";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
-          "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+        type: |-
+          | <xref uid="excel!Excel.ChartLineStyle:enum" />
+                          | "None"
+                          | "Continuous"
+                          | "Dash"
+                          | "DashDot"
+                          | "DashDotDot"
+                          | "Dot"
+                          | "Grey25"
+                          | "Grey50"
+                          | "Grey75"
+                          | "Automatic"
+                          | "RoundDot"
   - name: weight
     uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#weight:member'
     package: excel!

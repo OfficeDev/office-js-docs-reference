@@ -176,26 +176,84 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
-        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
-        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
-        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
-        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"):
-        void;
+      content: |-
+        applyDynamicFilter(
+                    criteriaString:
+                        | "Unknown"
+                        | "AboveAverage"
+                        | "AllDatesInPeriodApril"
+                        | "AllDatesInPeriodAugust"
+                        | "AllDatesInPeriodDecember"
+                        | "AllDatesInPeriodFebruray"
+                        | "AllDatesInPeriodJanuary"
+                        | "AllDatesInPeriodJuly"
+                        | "AllDatesInPeriodJune"
+                        | "AllDatesInPeriodMarch"
+                        | "AllDatesInPeriodMay"
+                        | "AllDatesInPeriodNovember"
+                        | "AllDatesInPeriodOctober"
+                        | "AllDatesInPeriodQuarter1"
+                        | "AllDatesInPeriodQuarter2"
+                        | "AllDatesInPeriodQuarter3"
+                        | "AllDatesInPeriodQuarter4"
+                        | "AllDatesInPeriodSeptember"
+                        | "BelowAverage"
+                        | "LastMonth"
+                        | "LastQuarter"
+                        | "LastWeek"
+                        | "LastYear"
+                        | "NextMonth"
+                        | "NextQuarter"
+                        | "NextWeek"
+                        | "NextYear"
+                        | "ThisMonth"
+                        | "ThisQuarter"
+                        | "ThisWeek"
+                        | "ThisYear"
+                        | "Today"
+                        | "Tomorrow"
+                        | "YearToDate"
+                        | "Yesterday",
+                ): void;
       parameters:
         - id: criteriaString
           description: The dynamic criteria to apply.
-          type: >-
-            "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember"
-            | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" |
-            "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-            "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" |
-            "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" |
-            "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" |
-            "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+          type: |-
+            | "Unknown"
+                            | "AboveAverage"
+                            | "AllDatesInPeriodApril"
+                            | "AllDatesInPeriodAugust"
+                            | "AllDatesInPeriodDecember"
+                            | "AllDatesInPeriodFebruray"
+                            | "AllDatesInPeriodJanuary"
+                            | "AllDatesInPeriodJuly"
+                            | "AllDatesInPeriodJune"
+                            | "AllDatesInPeriodMarch"
+                            | "AllDatesInPeriodMay"
+                            | "AllDatesInPeriodNovember"
+                            | "AllDatesInPeriodOctober"
+                            | "AllDatesInPeriodQuarter1"
+                            | "AllDatesInPeriodQuarter2"
+                            | "AllDatesInPeriodQuarter3"
+                            | "AllDatesInPeriodQuarter4"
+                            | "AllDatesInPeriodSeptember"
+                            | "BelowAverage"
+                            | "LastMonth"
+                            | "LastQuarter"
+                            | "LastWeek"
+                            | "LastYear"
+                            | "NextMonth"
+                            | "NextQuarter"
+                            | "NextWeek"
+                            | "NextYear"
+                            | "ThisMonth"
+                            | "ThisQuarter"
+                            | "ThisWeek"
+                            | "ThisYear"
+                            | "Today"
+                            | "Tomorrow"
+                            | "YearToDate"
+                            | "Yesterday"
       return:
         type: void
         description: ''

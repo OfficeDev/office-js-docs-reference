@@ -45,13 +45,18 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" |
-        "ExternalLinksCalculatedRef";
+      content: |-
+        errorSubType?:
+                    | RefErrorCellValueSubType
+                    | "Unknown"
+                    | "ExternalLinksStructuredRef"
+                    | "ExternalLinksCalculatedRef";
       return:
-        type: >-
-          <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" | "ExternalLinksStructuredRef" |
-          "ExternalLinksCalculatedRef"
+        type: |-
+          | <xref uid="excel!Excel.RefErrorCellValueSubType:enum" />
+                      | "Unknown"
+                      | "ExternalLinksStructuredRef"
+                      | "ExternalLinksCalculatedRef"
   - name: errorType
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!

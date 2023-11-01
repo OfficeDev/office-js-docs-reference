@@ -431,7 +431,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setStartDate(year:number, month:number, day:number): void;'
+      content: 'setStartDate(year: number, month: number, day: number): void;'
       parameters:
         - id: year
           description: The year value of the start date.
@@ -485,7 +485,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setStartDate(date:string): void;'
+      content: 'setStartDate(date: string): void;'
       parameters:
         - id: date
           description: >-

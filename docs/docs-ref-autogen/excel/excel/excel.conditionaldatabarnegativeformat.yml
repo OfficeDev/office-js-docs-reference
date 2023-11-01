@@ -87,9 +87,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions):
-        Excel.ConditionalDataBarNegativeFormat;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions,
+                ): Excel.ConditionalDataBarNegativeFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
@@ -156,9 +157,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: OfficeExtension.UpdateOptions):
-        void;
+      content: |-
+        set(
+                    properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData,
+                    options?: OfficeExtension.UpdateOptions,
+                ): void;
       parameters:
         - id: properties
           description: >-

@@ -584,19 +584,31 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
-        | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions):
-        Word.SectionCollection;
+      content: |-
+        insertFileFromBase64(
+                    base64File: string,
+                    insertLocation:
+                        | Word.InsertLocation.replace
+                        | Word.InsertLocation.start
+                        | Word.InsertLocation.end
+                        | "Replace"
+                        | "Start"
+                        | "End",
+                    insertFileOptions?: Word.InsertFileOptions,
+                ): Word.SectionCollection;
       parameters:
         - id: base64File
           description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: >-
-            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
-            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+          type: |-
+            | <xref uid="word!Word.InsertLocation.replace:member" />
+                            | <xref uid="word!Word.InsertLocation.start:member" />
+                            | <xref uid="word!Word.InsertLocation.end:member" />
+                            | "Replace"
+                            | "Start"
+                            | "End"
         - id: insertFileOptions
           description: Optional. The additional properties that should be imported to the destination document.
           type: '<xref uid="word!Word.InsertFileOptions:interface" />'
@@ -786,15 +798,18 @@ methods:
     isDeprecated: false
     syntax:
       content: |-
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-                    ignorePunct?: boolean;
-                    ignoreSpace?: boolean;
-                    matchCase?: boolean;
-                    matchPrefix?: boolean;
-                    matchSuffix?: boolean;
-                    matchWholeWord?: boolean;
-                    matchWildcards?: boolean;
-                }): Word.RangeCollection;
+        search(
+                    searchText: string,
+                    searchOptions?: Word.SearchOptions | {
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    },
+                ): Word.RangeCollection;
       parameters:
         - id: searchText
           description: ''
@@ -803,14 +818,14 @@ methods:
           description: ''
           type: |-
             <xref uid="word!Word.SearchOptions:class" /> | {
-                        ignorePunct?: boolean;
-                        ignoreSpace?: boolean;
-                        matchCase?: boolean;
-                        matchPrefix?: boolean;
-                        matchSuffix?: boolean;
-                        matchWholeWord?: boolean;
-                        matchWildcards?: boolean;
-                    }
+                            ignorePunct?: boolean;
+                            ignoreSpace?: boolean;
+                            matchCase?: boolean;
+                            matchPrefix?: boolean;
+                            matchSuffix?: boolean;
+                            matchWholeWord?: boolean;
+                            matchWildcards?: boolean;
+                        }
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''

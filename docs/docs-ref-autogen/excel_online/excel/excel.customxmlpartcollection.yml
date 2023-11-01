@@ -236,9 +236,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.CustomXmlPartCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.CustomXmlPartCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any'
+      content: 'asyncContext?: any;'
       return:
         type: any
   - name: displayInIframe
@@ -36,7 +36,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayInIframe?: boolean'
+      content: 'displayInIframe?: boolean;'
       return:
         type: boolean
   - name: height
@@ -48,7 +48,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'height?: number,'
+      content: 'height?: number;'
       return:
         type: number
   - name: promptBeforeOpen
@@ -78,6 +78,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'width?: number,'
+      content: 'width?: number;'
       return:
         type: number

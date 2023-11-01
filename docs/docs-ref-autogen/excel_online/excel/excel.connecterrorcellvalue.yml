@@ -45,19 +45,46 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" |
-        "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" |
-        "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" |
-        "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" |
-        "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
+      content: |-
+        errorSubType?:
+                    | ConnectErrorCellValueSubType
+                    | "Unknown"
+                    | "ServiceError"
+                    | "ExternalLinks"
+                    | "ExternalLinksNonCloudLocation"
+                    | "DataTypeNoConnection"
+                    | "DataTypeServiceError"
+                    | "MissingContent"
+                    | "RequestThrottle"
+                    | "ExternalLinksFailedToRefresh"
+                    | "ExternalLinksAccessFailed"
+                    | "ExternalLinksServerError"
+                    | "ExternalLinksInvalidRequest"
+                    | "ExternalLinksUnAuthenticated"
+                    | "ExternalLinksThrottledByHost"
+                    | "ExternalLinksFileTooLarge"
+                    | "OutdatedLinkedEntity"
+                    | "GenericServerError";
       return:
-        type: >-
-          <xref uid="excel!Excel.ConnectErrorCellValueSubType:enum" /> | "Unknown" | "ServiceError" | "ExternalLinks" |
-          "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" |
-          "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError"
-          | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" |
-          "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError"
+        type: |-
+          | <xref uid="excel!Excel.ConnectErrorCellValueSubType:enum" />
+                      | "Unknown"
+                      | "ServiceError"
+                      | "ExternalLinks"
+                      | "ExternalLinksNonCloudLocation"
+                      | "DataTypeNoConnection"
+                      | "DataTypeServiceError"
+                      | "MissingContent"
+                      | "RequestThrottle"
+                      | "ExternalLinksFailedToRefresh"
+                      | "ExternalLinksAccessFailed"
+                      | "ExternalLinksServerError"
+                      | "ExternalLinksInvalidRequest"
+                      | "ExternalLinksUnAuthenticated"
+                      | "ExternalLinksThrottledByHost"
+                      | "ExternalLinksFileTooLarge"
+                      | "OutdatedLinkedEntity"
+                      | "GenericServerError"
   - name: errorType
     uid: 'excel!Excel.ConnectErrorCellValue#errorType:member'
     package: excel!

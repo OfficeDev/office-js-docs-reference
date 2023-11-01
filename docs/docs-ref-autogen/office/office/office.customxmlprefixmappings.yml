@@ -23,9 +23,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        addNamespaceAsync(
+                    prefix: string,
+                    ns: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: prefix
           description: Specifies the prefix to add to the prefix mapping list. Required.
@@ -89,9 +93,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>)
-        => void): void;
+      content: |-
+        getNamespaceAsync(
+                    prefix: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: prefix
           description: TSpecifies the prefix to get the namespace for. Required.
@@ -153,9 +160,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+      content: |-
+        getPrefixAsync(
+                    ns: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: ns
           description: Specifies the namespace to get the prefix for. Required.

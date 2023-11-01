@@ -184,9 +184,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.CustomPropertyCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.CustomPropertyCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

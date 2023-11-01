@@ -43,9 +43,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void): void;
+      content: |-
+        getAsync(
+                    options: Office.AsyncContextOptions,
+                    callback: (asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void,
+                ): void;
       parameters:
         - id: options
           description: >-
@@ -157,9 +159,12 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string, options: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+      content: |-
+        setAsync(
+                    sensitivity: MailboxEnums.AppointmentSensitivityType | string,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: sensitivity
           description: The sensitivity level as an enum or string.
@@ -197,9 +202,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        setAsync(
+                    sensitivity: MailboxEnums.AppointmentSensitivityType | string,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: sensitivity
           description: The sensitivity level as an enum or string.

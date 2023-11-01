@@ -46,13 +46,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
-        "Error" | "RichValue";
+      content: |-
+        valueTypeAfter:
+                    | Excel.RangeValueType
+                    | "Unknown"
+                    | "Empty"
+                    | "String"
+                    | "Integer"
+                    | "Double"
+                    | "Boolean"
+                    | "Error"
+                    | "RichValue";
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
-          "Boolean" | "Error" | "RichValue"
+        type: |-
+          | <xref uid="excel!Excel.RangeValueType:enum" />
+                      | "Unknown"
+                      | "Empty"
+                      | "String"
+                      | "Integer"
+                      | "Double"
+                      | "Boolean"
+                      | "Error"
+                      | "RichValue"
   - name: valueTypeBefore
     uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
     package: excel!
@@ -62,10 +77,25 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
-        "Error" | "RichValue";
+      content: |-
+        valueTypeBefore:
+                    | Excel.RangeValueType
+                    | "Unknown"
+                    | "Empty"
+                    | "String"
+                    | "Integer"
+                    | "Double"
+                    | "Boolean"
+                    | "Error"
+                    | "RichValue";
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
-          "Boolean" | "Error" | "RichValue"
+        type: |-
+          | <xref uid="excel!Excel.RangeValueType:enum" />
+                      | "Unknown"
+                      | "Empty"
+                      | "String"
+                      | "Integer"
+                      | "Double"
+                      | "Boolean"
+                      | "Error"
+                      | "RichValue"

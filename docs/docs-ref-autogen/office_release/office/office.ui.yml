@@ -31,9 +31,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void,
-        options: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: (result: DialogParentMessageReceivedEventArgs) => void,
+                    options: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`<!-- -->.
@@ -70,9 +74,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void,
-        callback?: (result: AsyncResult<void>) => void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: (result: DialogParentMessageReceivedEventArgs) => void,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`<!-- -->.
@@ -220,9 +227,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) =>
-        void): void;
+      content: |-
+        displayDialogAsync(
+                    startAddress: string,
+                    options?: DialogOptions,
+                    callback?: (result: AsyncResult<Dialog>) => void,
+                ): void;
       parameters:
         - id: startAddress
           description: Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.

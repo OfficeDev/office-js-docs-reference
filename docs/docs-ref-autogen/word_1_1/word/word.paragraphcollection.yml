@@ -86,9 +86,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ParagraphCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.ParagraphCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

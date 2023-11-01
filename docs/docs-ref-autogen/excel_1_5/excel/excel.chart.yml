@@ -253,9 +253,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode):
-        OfficeExtension.ClientResult<string>;
+      content: |-
+        getImage(
+                    width?: number,
+                    height?: number,
+                    fittingMode?: Excel.ImageFittingMode,
+                ): OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
           description: Optional. The desired width of the resulting image.
@@ -280,9 +283,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"):
-        OfficeExtension.ClientResult<string>;
+      content: |-
+        getImage(
+                    width?: number,
+                    height?: number,
+                    fittingModeString?: "Fit" | "FitAndCenter" | "Fill",
+                ): OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
           description: Optional. The desired width of the resulting image.

@@ -67,16 +67,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         style: string;
-        
-        /**
+                /**
          * Gets the text of the body. Use the insertText method to insert text.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
-        
-        /**
+                /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
@@ -107,10 +105,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        /**
+                /**
          * Inserts a break at the specified location in the main document.
          *
          * @remarks
@@ -119,7 +114,18 @@ export declare namespace Word {
          * @param breakType - Required. The break type to add to the body.
          * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): void;
+        insertBreak(
+            breakType:
+                | Word.BreakType
+                | "Page"
+                | "Next"
+                | "SectionNext"
+                | "SectionContinuous"
+                | "SectionEven"
+                | "SectionOdd"
+                | "Line",
+            insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
+        ): void;
         /**
          * Wraps the Body object with a content control.
          *
@@ -130,7 +136,13 @@ export declare namespace Word {
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(
+            contentControlType?:
+                | Word.ContentControlType.richText
+                | Word.ContentControlType.plainText
+                | "RichText"
+                | "PlainText",
+        ): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -142,7 +154,16 @@ export declare namespace Word {
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(
+            base64File: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -152,7 +173,16 @@ export declare namespace Word {
          * @param html - Required. The HTML to be inserted in the document.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertHtml(
+            html: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts a picture into the body at the specified location.
          *
@@ -162,7 +192,10 @@ export declare namespace Word {
          * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the body.
          * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): Word.InlinePicture;
+        insertInlinePictureFromBase64(
+            base64EncodedImage: string,
+            insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
+        ): Word.InlinePicture;
         /**
          * Inserts OOXML at the specified location.
          *
@@ -172,7 +205,16 @@ export declare namespace Word {
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(
+            ooxml: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -182,9 +224,11 @@ export declare namespace Word {
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): Word.Paragraph;
-        
-        /**
+        insertParagraph(
+            paragraphText: string,
+            insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End",
+        ): Word.Paragraph;
+                /**
          * Inserts text into the body at the specified location.
          *
          * @remarks
@@ -193,7 +237,16 @@ export declare namespace Word {
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertText(
+            text: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
          *
@@ -203,15 +256,18 @@ export declare namespace Word {
          * @param searchText - Required. The search text. Can be a maximum of 255 characters.
          * @param searchOptions - Optional. Options for the search.
          */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
+        search(
+            searchText: string,
+            searchOptions?: Word.SearchOptions | {
+                ignorePunct?: boolean;
+                ignoreSpace?: boolean;
+                matchCase?: boolean;
+                matchPrefix?: boolean;
+                matchSuffix?: boolean;
+                matchWholeWord?: boolean;
+                matchWildcards?: boolean;
+            },
+        ): Word.RangeCollection;
         /**
          * Selects the body and navigates the Word UI to it.
          *
@@ -260,9 +316,9 @@ export declare namespace Word {
          */
         untrack(): Word.Body;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.BodyData;
     }
     
@@ -381,9 +437,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         style: string;
-        
-        
-        /**
+                        /**
          * Specifies a tag to identify a content control.
          *
          * @remarks
@@ -410,7 +464,25 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          */
-        readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+        readonly type:
+            | Word.ContentControlType
+            | "Unknown"
+            | "RichTextInline"
+            | "RichTextParagraphs"
+            | "RichTextTableCell"
+            | "RichTextTableRow"
+            | "RichTextTable"
+            | "PlainTextInline"
+            | "PlainTextParagraph"
+            | "Picture"
+            | "BuildingBlockGallery"
+            | "CheckBox"
+            | "ComboBox"
+            | "DropDownList"
+            | "DatePicker"
+            | "RepeatingSection"
+            | "RichText"
+            | "PlainText";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -451,10 +523,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        
+                
         /**
          * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          *
@@ -464,7 +533,26 @@ export declare namespace Word {
          * @param breakType - Required. Type of break.
          * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): void;
+        insertBreak(
+            breakType:
+                | Word.BreakType
+                | "Page"
+                | "Next"
+                | "SectionNext"
+                | "SectionContinuous"
+                | "SectionEven"
+                | "SectionOdd"
+                | "Line",
+            insertLocation:
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | Word.InsertLocation.before
+                | Word.InsertLocation.after
+                | "Start"
+                | "End"
+                | "Before"
+                | "After",
+        ): void;
         /**
          * Inserts a document into the content control at the specified location.
          *
@@ -476,7 +564,16 @@ export declare namespace Word {
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(
+            base64File: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts HTML into the content control at the specified location.
          *
@@ -486,7 +583,16 @@ export declare namespace Word {
          * @param html - Required. The HTML to be inserted in to the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertHtml(
+            html: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts an inline picture into the content control at the specified location.
          *
@@ -496,7 +602,16 @@ export declare namespace Word {
          * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
+        insertInlinePictureFromBase64(
+            base64EncodedImage: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.InlinePicture;
         /**
          * Inserts OOXML into the content control at the specified location.
          *
@@ -506,7 +621,16 @@ export declare namespace Word {
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(
+            ooxml: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -516,9 +640,19 @@ export declare namespace Word {
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
-        
-        /**
+        insertParagraph(
+            paragraphText: string,
+            insertLocation:
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | Word.InsertLocation.before
+                | Word.InsertLocation.after
+                | "Start"
+                | "End"
+                | "Before"
+                | "After",
+        ): Word.Paragraph;
+                /**
          * Inserts text into the content control at the specified location.
          *
          * @remarks
@@ -527,7 +661,16 @@ export declare namespace Word {
          * @param text - Required. The text to be inserted in to the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertText(
+            text: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
          *
@@ -537,15 +680,18 @@ export declare namespace Word {
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
          */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
+        search(
+            searchText: string,
+            searchOptions?: Word.SearchOptions | {
+                ignorePunct?: boolean;
+                ignoreSpace?: boolean;
+                matchCase?: boolean;
+                matchPrefix?: boolean;
+                matchSuffix?: boolean;
+                matchWholeWord?: boolean;
+                matchWildcards?: boolean;
+            },
+        ): Word.RangeCollection;
         /**
          * Selects the content control. This causes Word to scroll to the selection.
          *
@@ -564,8 +710,7 @@ export declare namespace Word {
          * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
-        
-        /**
+                /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -600,9 +745,9 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControl;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
@@ -662,7 +807,9 @@ export declare namespace Word {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
+        load(
+            options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+        ): Word.ContentControlCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -684,9 +831,9 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControlCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     
@@ -762,8 +909,7 @@ export declare namespace Word {
          */
         getSelection(): Word.Range;
         
-        
-        /**
+                /**
          * Saves the document.
          *
          * @remarks
@@ -787,8 +933,7 @@ export declare namespace Word {
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
-        
-        /**
+                /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -819,9 +964,9 @@ export declare namespace Word {
          */
         untrack(): Word.Document;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.DocumentData;
     }
     
@@ -913,7 +1058,29 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          */
-        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+        underline:
+            | Word.UnderlineType
+            | "Mixed"
+            | "None"
+            | "Hidden"
+            | "DotLine"
+            | "Single"
+            | "Word"
+            | "Double"
+            | "Thick"
+            | "Dotted"
+            | "DottedHeavy"
+            | "DashLine"
+            | "DashLineHeavy"
+            | "DashLineLong"
+            | "DashLineLongHeavy"
+            | "DotDashLine"
+            | "DotDashLineHeavy"
+            | "TwoDotDashLine"
+            | "TwoDotDashLineHeavy"
+            | "Wave"
+            | "WaveHeavy"
+            | "WaveDouble";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -952,9 +1119,9 @@ export declare namespace Word {
          */
         untrack(): Word.Font;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.FontData;
     }
     /**
@@ -1051,8 +1218,7 @@ export declare namespace Word {
         getBase64ImageSrc(): OfficeExtension.ClientResult<string>;
         
         
-        
-        /**
+                /**
          * Inserts a break at the specified location in the main document.
          *
          * @remarks
@@ -1061,7 +1227,18 @@ export declare namespace Word {
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
+        insertBreak(
+            breakType:
+                | Word.BreakType
+                | "Page"
+                | "Next"
+                | "SectionNext"
+                | "SectionContinuous"
+                | "SectionEven"
+                | "SectionOdd"
+                | "Line",
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): void;
         /**
          * Wraps the inline picture with a rich text content control.
          *
@@ -1080,7 +1257,10 @@ export declare namespace Word {
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertFileFromBase64(
+            base64File: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -1090,7 +1270,10 @@ export declare namespace Word {
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertHtml(html: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertHtml(
+            html: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Range;
         /**
          * Inserts an inline picture at the specified location.
          *
@@ -1100,7 +1283,16 @@ export declare namespace Word {
          * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
+        insertInlinePictureFromBase64(
+            base64EncodedImage: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.before
+                | Word.InsertLocation.after
+                | "Replace"
+                | "Before"
+                | "After",
+        ): Word.InlinePicture;
         /**
          * Inserts OOXML at the specified location.
          *
@@ -1110,7 +1302,10 @@ export declare namespace Word {
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertOoxml(
+            ooxml: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1120,7 +1315,10 @@ export declare namespace Word {
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
+        insertParagraph(
+            paragraphText: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Paragraph;
         /**
          * Inserts text at the specified location.
          *
@@ -1130,7 +1328,10 @@ export declare namespace Word {
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertText(text: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertText(
+            text: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Range;
         /**
          * Selects the inline picture. This causes Word to scroll to the selection.
          *
@@ -1179,9 +1380,9 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePicture;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.InlinePictureData;
     }
     /**
@@ -1202,7 +1403,9 @@ export declare namespace Word {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
+        load(
+            options?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+        ): Word.InlinePictureCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1224,9 +1427,9 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePictureCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.InlinePictureCollectionData;
     }
     
@@ -1363,8 +1566,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         style: string;
-        
-        
+                
         /**
          * Gets the text of the paragraph.
          *
@@ -1416,10 +1618,7 @@ export declare namespace Word {
         getOoxml(): OfficeExtension.ClientResult<string>;
         
         
-        
-        
-        
-        
+                
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -1429,7 +1628,18 @@ export declare namespace Word {
          * @param breakType - Required. The break type to add to the document.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
+        insertBreak(
+            breakType:
+                | Word.BreakType
+                | "Page"
+                | "Next"
+                | "SectionNext"
+                | "SectionContinuous"
+                | "SectionEven"
+                | "SectionOdd"
+                | "Line",
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): void;
         /**
          * Wraps the Paragraph object with a content control.
          *
@@ -1440,7 +1650,13 @@ export declare namespace Word {
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(
+            contentControlType?:
+                | Word.ContentControlType.richText
+                | Word.ContentControlType.plainText
+                | "RichText"
+                | "PlainText",
+        ): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -1452,7 +1668,16 @@ export declare namespace Word {
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(
+            base64File: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -1462,7 +1687,16 @@ export declare namespace Word {
          * @param html - Required. The HTML to be inserted in the paragraph.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertHtml(
+            html: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts a picture into the paragraph at the specified location.
          *
@@ -1472,7 +1706,16 @@ export declare namespace Word {
          * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
+        insertInlinePictureFromBase64(
+            base64EncodedImage: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.InlinePicture;
         /**
          * Inserts OOXML into the paragraph at the specified location.
          *
@@ -1482,7 +1725,16 @@ export declare namespace Word {
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(
+            ooxml: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1492,9 +1744,11 @@ export declare namespace Word {
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
-        
-        /**
+        insertParagraph(
+            paragraphText: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Paragraph;
+                /**
          * Inserts text into the paragraph at the specified location.
          *
          * @remarks
@@ -1503,7 +1757,16 @@ export declare namespace Word {
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
-        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertText(
+            text: string,
+            insertLocation:
+                | Word.InsertLocation.replace
+                | Word.InsertLocation.start
+                | Word.InsertLocation.end
+                | "Replace"
+                | "Start"
+                | "End",
+        ): Word.Range;
         /**
          * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
          *
@@ -1513,15 +1776,18 @@ export declare namespace Word {
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
          */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
+        search(
+            searchText: string,
+            searchOptions?: Word.SearchOptions | {
+                ignorePunct?: boolean;
+                ignoreSpace?: boolean;
+                matchCase?: boolean;
+                matchPrefix?: boolean;
+                matchSuffix?: boolean;
+                matchWholeWord?: boolean;
+                matchWildcards?: boolean;
+            },
+        ): Word.RangeCollection;
         /**
          * Selects and navigates the Word UI to the paragraph.
          *
@@ -1572,9 +1838,9 @@ export declare namespace Word {
          */
         untrack(): Word.Paragraph;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.ParagraphData;
     }
     /**
@@ -1597,7 +1863,9 @@ export declare namespace Word {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
+        load(
+            options?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+        ): Word.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1619,9 +1887,9 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
     
@@ -1689,8 +1957,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         style: string;
-        
-        /**
+                /**
          * Gets the text of the range.
          *
          * @remarks
@@ -1742,10 +2009,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        
+                
         
         /**
          * Inserts a break at the specified location in the main document.
@@ -1756,7 +2020,18 @@ export declare namespace Word {
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
+        insertBreak(
+            breakType:
+                | Word.BreakType
+                | "Page"
+                | "Next"
+                | "SectionNext"
+                | "SectionContinuous"
+                | "SectionEven"
+                | "SectionOdd"
+                | "Line",
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): void;
         
         /**
          * Wraps the Range object with a content control.
@@ -1768,11 +2043,15 @@ export declare namespace Word {
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        insertContentControl(
+            contentControlType?:
+                | Word.ContentControlType.richText
+                | Word.ContentControlType.plainText
+                | "RichText"
+                | "PlainText",
+        ): Word.ContentControl;
         
-        
-        
-        /**
+                        /**
          * Inserts a document at the specified location.
          *
          * @remarks
@@ -1783,7 +2062,10 @@ export declare namespace Word {
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertFileFromBase64(
+            base64File: string,
+            insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
+        ): Word.Range;
         
         /**
          * Inserts HTML at the specified location.
@@ -1794,7 +2076,10 @@ export declare namespace Word {
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertHtml(html: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertHtml(
+            html: string,
+            insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
+        ): Word.Range;
         /**
          * Inserts a picture at the specified location.
          *
@@ -1804,7 +2089,10 @@ export declare namespace Word {
          * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.InlinePicture;
+        insertInlinePictureFromBase64(
+            base64EncodedImage: string,
+            insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
+        ): Word.InlinePicture;
         /**
          * Inserts OOXML at the specified location.
          *
@@ -1814,7 +2102,10 @@ export declare namespace Word {
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertOoxml(
+            ooxml: string,
+            insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
+        ): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1824,9 +2115,11 @@ export declare namespace Word {
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;
-        
-        /**
+        insertParagraph(
+            paragraphText: string,
+            insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        ): Word.Paragraph;
+                /**
          * Inserts text at the specified location.
          *
          * @remarks
@@ -1835,7 +2128,10 @@ export declare namespace Word {
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertText(
+            text: string,
+            insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After",
+        ): Word.Range;
         
         
         /**
@@ -1847,15 +2143,18 @@ export declare namespace Word {
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
          */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
+        search(
+            searchText: string,
+            searchOptions?: Word.SearchOptions | {
+                ignorePunct?: boolean;
+                ignoreSpace?: boolean;
+                matchCase?: boolean;
+                matchPrefix?: boolean;
+                matchSuffix?: boolean;
+                matchWholeWord?: boolean;
+                matchWildcards?: boolean;
+            },
+        ): Word.RangeCollection;
         /**
          * Selects and navigates the Word UI to the range.
          *
@@ -1874,8 +2173,7 @@ export declare namespace Word {
          * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
-        
-        /**
+                /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -1905,9 +2203,9 @@ export declare namespace Word {
          */
         untrack(): Word.Range;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.RangeData;
     }
     /**
@@ -1928,7 +2226,9 @@ export declare namespace Word {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
+        load(
+            options?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+        ): Word.RangeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1950,9 +2250,9 @@ export declare namespace Word {
          */
         untrack(): Word.RangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
     
@@ -2049,9 +2349,9 @@ export declare namespace Word {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
     /**
@@ -2146,9 +2446,9 @@ export declare namespace Word {
          */
         untrack(): Word.Section;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): Word.Interfaces.SectionData;
     }
     /**
@@ -2169,7 +2469,9 @@ export declare namespace Word {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
+        load(
+            options?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+        ): Word.SectionCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2191,9 +2493,9 @@ export declare namespace Word {
          */
         untrack(): Word.SectionCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     
@@ -2705,26 +3007,26 @@ export declare namespace Word {
     }
     export namespace Interfaces {
         /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
+         * Provides ways to load properties of only a subset of members of a collection.
+         */
         export interface CollectionLoadOptions {
             /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
+             * Specify the number of items in the queried collection to be included in the result.
+             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
+             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+             */
             $skip?: number;
         }
         /** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -2733,8 +3035,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-        }
+                    }
         /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
             
@@ -2751,8 +3052,7 @@ export declare namespace Word {
             
             
             
-            
-        }
+                    }
         /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
         export interface CommentReplyUpdateData {
             
@@ -2766,11 +3066,11 @@ export declare namespace Word {
         /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -2821,8 +3121,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-            /**
+                        /**
              * Specifies a tag to identify a content control.
              *
              * @remarks
@@ -2860,11 +3159,11 @@ export declare namespace Word {
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyUpdateData;
             
             
@@ -2975,7 +3274,29 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.1]
              */
-            underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            underline?:
+                | Word.UnderlineType
+                | "Mixed"
+                | "None"
+                | "Hidden"
+                | "DotLine"
+                | "Single"
+                | "Word"
+                | "Double"
+                | "Thick"
+                | "Dotted"
+                | "DottedHeavy"
+                | "DashLine"
+                | "DashLineHeavy"
+                | "DashLineLong"
+                | "DashLineLongHeavy"
+                | "DotDashLine"
+                | "DotDashLineHeavy"
+                | "TwoDotDashLine"
+                | "TwoDotDashLineHeavy"
+                | "Wave"
+                | "WaveHeavy"
+                | "WaveDouble";
         }
         /** An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
@@ -3046,11 +3367,11 @@ export declare namespace Word {
         /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             
             
@@ -3131,8 +3452,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-        }
+                    }
         /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
         export interface ParagraphCollectionUpdateData {
             items?: Word.Interfaces.ParagraphData[];
@@ -3148,8 +3468,7 @@ export declare namespace Word {
             
             
             
-            
-            
+                        
             
             
             
@@ -3157,11 +3476,11 @@ export declare namespace Word {
         /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             
             /**
@@ -3171,8 +3490,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-        }
+                    }
         /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
             items?: Word.Interfaces.RangeData[];
@@ -3232,11 +3550,11 @@ export declare namespace Word {
         /** An interface for updating data on the Section object, for use in `section.set({ ... })`. */
         export interface SectionUpdateData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This does not include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyUpdateData;
         }
         /** An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`. */
@@ -3274,8 +3592,7 @@ export declare namespace Word {
             
             
             
-            
-            
+                        
             
             
             
@@ -3315,40 +3632,39 @@ export declare namespace Word {
         /** An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`. */
         export interface TableBorderUpdateData {
             
-            
-            
+                        
         }
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-            * Gets the collection of rich text content control objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of rich text content control objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             
             /**
@@ -3358,16 +3674,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-            /**
+                        /**
              * Gets the text of the body. Use the insertText method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             text?: string;
-            
-        }
+                    }
         /** An interface describing the data returned by calling `comment.toJSON()`. */
         export interface CommentData {
             
@@ -3391,8 +3705,7 @@ export declare namespace Word {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `commentReply.toJSON()`. */
         export interface CommentReplyData {
             
@@ -3410,34 +3723,34 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
-            * Gets the collection of content control objects in the content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of content control objects in the content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
             /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             
             /**
@@ -3496,9 +3809,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-            
-            /**
+                                    /**
              * Specifies a tag to identify a content control.
              *
              * @remarks
@@ -3525,7 +3836,25 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.1]
              */
-            type?: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
+            type?:
+                | Word.ContentControlType
+                | "Unknown"
+                | "RichTextInline"
+                | "RichTextParagraphs"
+                | "RichTextTableCell"
+                | "RichTextTableRow"
+                | "RichTextTable"
+                | "PlainTextInline"
+                | "PlainTextParagraph"
+                | "Picture"
+                | "BuildingBlockGallery"
+                | "CheckBox"
+                | "ComboBox"
+                | "DropDownList"
+                | "DatePicker"
+                | "RepeatingSection"
+                | "RichText"
+                | "PlainText";
         }
         /** An interface describing the data returned by calling `contentControlCollection.toJSON()`. */
         export interface ContentControlCollectionData {
@@ -3557,27 +3886,27 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
             
             /**
-            * Gets the collection of section objects in the document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of section objects in the document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             sections?: Word.Interfaces.SectionData[];
             
             
@@ -3627,8 +3956,7 @@ export declare namespace Word {
             
             
             
-            
-        }
+                    }
         /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
         export interface FieldCollectionData {
             items?: Word.Interfaces.FieldData[];
@@ -3711,7 +4039,29 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.1]
              */
-            underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+            underline?:
+                | Word.UnderlineType
+                | "Mixed"
+                | "None"
+                | "Hidden"
+                | "DotLine"
+                | "Single"
+                | "Word"
+                | "Double"
+                | "Thick"
+                | "Dotted"
+                | "DottedHeavy"
+                | "DashLine"
+                | "DashLineHeavy"
+                | "DashLineLong"
+                | "DashLineLongHeavy"
+                | "DotDashLine"
+                | "DotDashLineHeavy"
+                | "TwoDotDashLine"
+                | "TwoDotDashLineHeavy"
+                | "Wave"
+                | "WaveHeavy"
+                | "WaveDouble";
         }
         /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
         export interface InlinePictureData {
@@ -3793,18 +4143,18 @@ export declare namespace Word {
         export interface ParagraphData {
             
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             
@@ -3887,8 +4237,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-            
+                        
             /**
              * Gets the text of the paragraph.
              *
@@ -3912,8 +4261,7 @@ export declare namespace Word {
             
             
             
-            
-            
+                        
             
             
             
@@ -3922,18 +4270,18 @@ export declare namespace Word {
         export interface RangeData {
             
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * Gets the collection of inline picture objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             
@@ -3944,8 +4292,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             style?: string;
-            
-            /**
+                        /**
              * Gets the text of the range.
              *
              * @remarks
@@ -4012,11 +4359,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This does not include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
         }
         /** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
@@ -4068,8 +4415,7 @@ export declare namespace Word {
             
             
             
-            
-            
+                        
             
             
             
@@ -4117,8 +4463,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableBorder.toJSON()`. */
         export interface TableBorderData {
             
-            
-            
+                        
         }
         /**
          * Represents the body of a document or a section.
@@ -4132,20 +4477,20 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             
             /**
-            * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4184,19 +4529,19 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4302,19 +4647,19 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4425,11 +4770,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
             
             
@@ -4546,18 +4891,18 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the parent paragraph that contains the inline image.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * Gets the parent paragraph that contains the inline image.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4619,18 +4964,18 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4697,11 +5042,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             
@@ -4709,11 +5054,11 @@ export declare namespace Word {
             
             
             /**
-            * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4821,11 +5166,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             
@@ -4833,11 +5178,11 @@ export declare namespace Word {
             
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4946,19 +5291,19 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4995,19 +5340,19 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -5106,11 +5451,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This does not include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
@@ -5125,11 +5470,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         
@@ -5159,20 +5504,25 @@ export declare namespace Word {
      * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        objects: OfficeExtension.ClientObject[],
+        batch: (context: Word.RequestContext) => Promise<T>,
+    ): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        object: OfficeExtension.ClientObject,
+        batch: (context: Word.RequestContext) => Promise<T>,
+    ): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }
-
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Word APIs /////////////////////////

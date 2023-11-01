@@ -50,14 +50,36 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        dashStyle: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
-        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+      content: |-
+        dashStyle:
+                    | Excel.ShapeLineDashStyle
+                    | "Dash"
+                    | "DashDot"
+                    | "DashDotDot"
+                    | "LongDash"
+                    | "LongDashDot"
+                    | "RoundDot"
+                    | "Solid"
+                    | "SquareDot"
+                    | "LongDashDotDot"
+                    | "SystemDash"
+                    | "SystemDot"
+                    | "SystemDashDot";
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeLineDashStyle:enum" /> | "Dash" | "DashDot" | "DashDotDot" | "LongDash" |
-          "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
-          "SystemDashDot"
+        type: |-
+          | <xref uid="excel!Excel.ShapeLineDashStyle:enum" />
+                      | "Dash"
+                      | "DashDot"
+                      | "DashDotDot"
+                      | "LongDash"
+                      | "LongDashDot"
+                      | "RoundDot"
+                      | "Solid"
+                      | "SquareDot"
+                      | "LongDashDotDot"
+                      | "SystemDash"
+                      | "SystemDot"
+                      | "SystemDashDot"
   - name: style
     uid: 'excel!Excel.ShapeLineFormat#style:member'
     package: excel!

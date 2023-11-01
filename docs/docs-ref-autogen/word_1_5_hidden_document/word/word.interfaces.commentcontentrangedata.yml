@@ -92,14 +92,51 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" |
-        "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
-        "WaveDouble";
+      content: |-
+        underline?:
+                        | Word.UnderlineType
+                        | "Mixed"
+                        | "None"
+                        | "Hidden"
+                        | "DotLine"
+                        | "Single"
+                        | "Word"
+                        | "Double"
+                        | "Thick"
+                        | "Dotted"
+                        | "DottedHeavy"
+                        | "DashLine"
+                        | "DashLineHeavy"
+                        | "DashLineLong"
+                        | "DashLineLongHeavy"
+                        | "DotDashLine"
+                        | "DotDashLineHeavy"
+                        | "TwoDotDashLine"
+                        | "TwoDotDashLineHeavy"
+                        | "Wave"
+                        | "WaveHeavy"
+                        | "WaveDouble";
       return:
-        type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
-          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
-          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
-          "WaveHeavy" | "WaveDouble"
+        type: |-
+          | <xref uid="word!Word.UnderlineType:enum" />
+                          | "Mixed"
+                          | "None"
+                          | "Hidden"
+                          | "DotLine"
+                          | "Single"
+                          | "Word"
+                          | "Double"
+                          | "Thick"
+                          | "Dotted"
+                          | "DottedHeavy"
+                          | "DashLine"
+                          | "DashLineHeavy"
+                          | "DashLineLong"
+                          | "DashLineLongHeavy"
+                          | "DotDashLine"
+                          | "DotDashLineHeavy"
+                          | "TwoDotDashLine"
+                          | "TwoDotDashLineHeavy"
+                          | "Wave"
+                          | "WaveHeavy"
+                          | "WaveDouble"

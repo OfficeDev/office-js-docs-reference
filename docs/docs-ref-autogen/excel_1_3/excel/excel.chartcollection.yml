@@ -93,54 +93,193 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
-  - name: 'add(typeString, sourceData, seriesBy)'
+  - name: 'add(typeString, sourceData, seriesByString)'
     uid: 'excel!Excel.ChartCollection#add:member(2)'
     package: excel!
-    fullName: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesByString)'
     summary: Creates a new chart.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
-        "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
-        "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
-        "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
-        "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-        "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
-        "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" |
-        "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
-        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
-        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
-        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
-        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
-        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
-        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel",
-        sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+      content: |-
+        add(
+                    typeString:
+                        | "Invalid"
+                        | "ColumnClustered"
+                        | "ColumnStacked"
+                        | "ColumnStacked100"
+                        | "3DColumnClustered"
+                        | "3DColumnStacked"
+                        | "3DColumnStacked100"
+                        | "BarClustered"
+                        | "BarStacked"
+                        | "BarStacked100"
+                        | "3DBarClustered"
+                        | "3DBarStacked"
+                        | "3DBarStacked100"
+                        | "LineStacked"
+                        | "LineStacked100"
+                        | "LineMarkers"
+                        | "LineMarkersStacked"
+                        | "LineMarkersStacked100"
+                        | "PieOfPie"
+                        | "PieExploded"
+                        | "3DPieExploded"
+                        | "BarOfPie"
+                        | "XYScatterSmooth"
+                        | "XYScatterSmoothNoMarkers"
+                        | "XYScatterLines"
+                        | "XYScatterLinesNoMarkers"
+                        | "AreaStacked"
+                        | "AreaStacked100"
+                        | "3DAreaStacked"
+                        | "3DAreaStacked100"
+                        | "DoughnutExploded"
+                        | "RadarMarkers"
+                        | "RadarFilled"
+                        | "Surface"
+                        | "SurfaceWireframe"
+                        | "SurfaceTopView"
+                        | "SurfaceTopViewWireframe"
+                        | "Bubble"
+                        | "Bubble3DEffect"
+                        | "StockHLC"
+                        | "StockOHLC"
+                        | "StockVHLC"
+                        | "StockVOHLC"
+                        | "CylinderColClustered"
+                        | "CylinderColStacked"
+                        | "CylinderColStacked100"
+                        | "CylinderBarClustered"
+                        | "CylinderBarStacked"
+                        | "CylinderBarStacked100"
+                        | "CylinderCol"
+                        | "ConeColClustered"
+                        | "ConeColStacked"
+                        | "ConeColStacked100"
+                        | "ConeBarClustered"
+                        | "ConeBarStacked"
+                        | "ConeBarStacked100"
+                        | "ConeCol"
+                        | "PyramidColClustered"
+                        | "PyramidColStacked"
+                        | "PyramidColStacked100"
+                        | "PyramidBarClustered"
+                        | "PyramidBarStacked"
+                        | "PyramidBarStacked100"
+                        | "PyramidCol"
+                        | "3DColumn"
+                        | "Line"
+                        | "3DLine"
+                        | "3DPie"
+                        | "Pie"
+                        | "XYScatter"
+                        | "3DArea"
+                        | "Area"
+                        | "Doughnut"
+                        | "Radar"
+                        | "Histogram"
+                        | "Boxwhisker"
+                        | "Pareto"
+                        | "RegionMap"
+                        | "Treemap"
+                        | "Waterfall"
+                        | "Sunburst"
+                        | "Funnel",
+                    sourceData: Range,
+                    seriesByString?: "Auto" | "Columns" | "Rows",
+                ): Excel.Chart;
       parameters:
         - id: typeString
           description: Represents the type of a chart. See `Excel.ChartType` for details.
-          type: >-
-            "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
-            "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
-            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
-            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
-            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
-            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
-            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
-            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
-            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
-            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
-            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
-            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
-            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+          type: |-
+            | "Invalid"
+                            | "ColumnClustered"
+                            | "ColumnStacked"
+                            | "ColumnStacked100"
+                            | "3DColumnClustered"
+                            | "3DColumnStacked"
+                            | "3DColumnStacked100"
+                            | "BarClustered"
+                            | "BarStacked"
+                            | "BarStacked100"
+                            | "3DBarClustered"
+                            | "3DBarStacked"
+                            | "3DBarStacked100"
+                            | "LineStacked"
+                            | "LineStacked100"
+                            | "LineMarkers"
+                            | "LineMarkersStacked"
+                            | "LineMarkersStacked100"
+                            | "PieOfPie"
+                            | "PieExploded"
+                            | "3DPieExploded"
+                            | "BarOfPie"
+                            | "XYScatterSmooth"
+                            | "XYScatterSmoothNoMarkers"
+                            | "XYScatterLines"
+                            | "XYScatterLinesNoMarkers"
+                            | "AreaStacked"
+                            | "AreaStacked100"
+                            | "3DAreaStacked"
+                            | "3DAreaStacked100"
+                            | "DoughnutExploded"
+                            | "RadarMarkers"
+                            | "RadarFilled"
+                            | "Surface"
+                            | "SurfaceWireframe"
+                            | "SurfaceTopView"
+                            | "SurfaceTopViewWireframe"
+                            | "Bubble"
+                            | "Bubble3DEffect"
+                            | "StockHLC"
+                            | "StockOHLC"
+                            | "StockVHLC"
+                            | "StockVOHLC"
+                            | "CylinderColClustered"
+                            | "CylinderColStacked"
+                            | "CylinderColStacked100"
+                            | "CylinderBarClustered"
+                            | "CylinderBarStacked"
+                            | "CylinderBarStacked100"
+                            | "CylinderCol"
+                            | "ConeColClustered"
+                            | "ConeColStacked"
+                            | "ConeColStacked100"
+                            | "ConeBarClustered"
+                            | "ConeBarStacked"
+                            | "ConeBarStacked100"
+                            | "ConeCol"
+                            | "PyramidColClustered"
+                            | "PyramidColStacked"
+                            | "PyramidColStacked100"
+                            | "PyramidBarClustered"
+                            | "PyramidBarStacked"
+                            | "PyramidBarStacked100"
+                            | "PyramidCol"
+                            | "3DColumn"
+                            | "Line"
+                            | "3DLine"
+                            | "3DPie"
+                            | "Pie"
+                            | "XYScatter"
+                            | "3DArea"
+                            | "Area"
+                            | "Doughnut"
+                            | "Radar"
+                            | "Histogram"
+                            | "Boxwhisker"
+                            | "Pareto"
+                            | "RegionMap"
+                            | "Treemap"
+                            | "Waterfall"
+                            | "Sunburst"
+                            | "Funnel"
         - id: sourceData
           description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
-        - id: seriesBy
+        - id: seriesByString
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy`
             for details.
@@ -220,9 +359,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.ChartCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.ChartCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

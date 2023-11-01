@@ -192,28 +192,65 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
-  - name: 'addNoteTag(typeString, status)'
+  - name: 'addNoteTag(typeString, statusString)'
     uid: 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
     package: onenote!
-    fullName: 'addNoteTag(typeString, status)'
+    fullName: 'addNoteTag(typeString, statusString)'
     summary: Add NoteTag to the paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
-        "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed"
-        | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+      content: |-
+        addNoteTag(
+                    typeString:
+                        | "Unknown"
+                        | "ToDo"
+                        | "Important"
+                        | "Question"
+                        | "Contact"
+                        | "Address"
+                        | "PhoneNumber"
+                        | "Website"
+                        | "Idea"
+                        | "Critical"
+                        | "ToDoPriority1"
+                        | "ToDoPriority2",
+                    statusString:
+                        | "Unknown"
+                        | "Normal"
+                        | "Completed"
+                        | "Disabled"
+                        | "OutlookTask"
+                        | "TaskNotSyncedYet"
+                        | "TaskRemoved",
+                ): OneNote.NoteTag;
       parameters:
         - id: typeString
           description: The type of the NoteTag.
-          type: >-
-            "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" |
-            "Critical" | "ToDoPriority1" | "ToDoPriority2"
-        - id: status
+          type: |-
+            | "Unknown"
+                            | "ToDo"
+                            | "Important"
+                            | "Question"
+                            | "Contact"
+                            | "Address"
+                            | "PhoneNumber"
+                            | "Website"
+                            | "Idea"
+                            | "Critical"
+                            | "ToDoPriority1"
+                            | "ToDoPriority2"
+        - id: statusString
           description: The status of the NoteTag.
-          type: '"Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
+          type: |-
+            | "Unknown"
+                            | "Normal"
+                            | "Completed"
+                            | "Disabled"
+                            | "OutlookTask"
+                            | "TaskNotSyncedYet"
+                            | "TaskRemoved"
       return:
         type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
@@ -390,9 +427,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height:
-        number): OneNote.Image;
+      content: |-
+        insertImageAsSibling(
+                    insertLocation: OneNote.InsertLocation,
+                    base64EncodedImage: string,
+                    width: number,
+                    height: number,
+                ): OneNote.Image;
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
@@ -418,9 +459,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number,
-        height: number): OneNote.Image;
+      content: |-
+        insertImageAsSibling(
+                    insertLocationString: "Before" | "After",
+                    base64EncodedImage: string,
+                    width: number,
+                    height: number,
+                ): OneNote.Image;
       parameters:
         - id: insertLocationString
           description: The location of the table relative to the current Paragraph.
@@ -515,9 +560,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount: number, columnCount: number, values?:
-        string[][]): OneNote.Table;
+      content: |-
+        insertTableAsSibling(
+                    insertLocation: OneNote.InsertLocation,
+                    rowCount: number,
+                    columnCount: number,
+                    values?: string[][],
+                ): OneNote.Table;
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
@@ -543,9 +592,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?:
-        string[][]): OneNote.Table;
+      content: |-
+        insertTableAsSibling(
+                    insertLocationString: "Before" | "After",
+                    rowCount: number,
+                    columnCount: number,
+                    values?: string[][],
+                ): OneNote.Table;
       parameters:
         - id: insertLocationString
           description: The location of the table relative to the current Paragraph.

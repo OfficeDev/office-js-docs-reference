@@ -412,9 +412,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
-        Excel.Worksheet;
+      content: |-
+        copy(
+                    positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End",
+                    relativeTo?: Excel.Worksheet,
+                ): Excel.Worksheet;
       parameters:
         - id: positionTypeString
           description: >-

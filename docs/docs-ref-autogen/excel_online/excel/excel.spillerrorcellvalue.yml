@@ -57,13 +57,26 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        errorSubType?: SpillErrorCellValueSubType | "Unknown" | "Collision" | "IndeterminateSize" | "WorksheetEdge" |
-        "OutOfMemoryWhileCalc" | "Table" | "MergedCell";
+      content: |-
+        errorSubType?:
+                    | SpillErrorCellValueSubType
+                    | "Unknown"
+                    | "Collision"
+                    | "IndeterminateSize"
+                    | "WorksheetEdge"
+                    | "OutOfMemoryWhileCalc"
+                    | "Table"
+                    | "MergedCell";
       return:
-        type: >-
-          <xref uid="excel!Excel.SpillErrorCellValueSubType:enum" /> | "Unknown" | "Collision" | "IndeterminateSize" |
-          "WorksheetEdge" | "OutOfMemoryWhileCalc" | "Table" | "MergedCell"
+        type: |-
+          | <xref uid="excel!Excel.SpillErrorCellValueSubType:enum" />
+                      | "Unknown"
+                      | "Collision"
+                      | "IndeterminateSize"
+                      | "WorksheetEdge"
+                      | "OutOfMemoryWhileCalc"
+                      | "Table"
+                      | "MergedCell"
   - name: errorType
     uid: 'excel!Excel.SpillErrorCellValue#errorType:member'
     package: excel!

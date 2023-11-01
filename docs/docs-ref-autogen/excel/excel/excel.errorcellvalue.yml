@@ -37,8 +37,21 @@ remarks: >-
   ```
 isPreview: false
 isDeprecated: false
-syntax: >-
-  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue |
-  Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
-  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue |
-  RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+syntax: |-
+  export type ErrorCellValue =
+          | BlockedErrorCellValue
+          | BusyErrorCellValue
+          | CalcErrorCellValue
+          | ConnectErrorCellValue
+          | Div0ErrorCellValue
+          | ExternalErrorCellValue
+          | FieldErrorCellValue
+          | GettingDataErrorCellValue
+          | NotAvailableErrorCellValue
+          | NameErrorCellValue
+          | NullErrorCellValue
+          | NumErrorCellValue
+          | PlaceholderErrorCellValue
+          | RefErrorCellValue
+          | SpillErrorCellValue
+          | ValueErrorCellValue;

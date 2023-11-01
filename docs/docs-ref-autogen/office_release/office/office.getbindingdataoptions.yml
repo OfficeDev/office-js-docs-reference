@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any'
+      content: 'asyncContext?: any;'
       return:
         type: any
   - name: coercionType
@@ -34,7 +34,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'coercionType?: Office.CoercionType | string'
+      content: 'coercionType?: Office.CoercionType | string;'
       return:
         type: '<xref uid="office!Office.CoercionType:enum" /> | string'
   - name: columnCount
@@ -48,7 +48,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'columnCount?: number'
+      content: 'columnCount?: number;'
       return:
         type: number
   - name: filterType
@@ -62,7 +62,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'filterType?: Office.FilterType | string'
+      content: 'filterType?: Office.FilterType | string;'
       return:
         type: '<xref uid="office!Office.FilterType:enum" /> | string'
   - name: rowCount
@@ -76,7 +76,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'rowCount?: number'
+      content: 'rowCount?: number;'
       return:
         type: number
   - name: rows
@@ -95,7 +95,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'rows?: string'
+      content: 'rows?: string;'
       return:
         type: string
   - name: startColumn
@@ -109,7 +109,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'startColumn?: number'
+      content: 'startColumn?: number;'
       return:
         type: number
   - name: startRow
@@ -123,7 +123,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'startRow?: number'
+      content: 'startRow?: number;'
       return:
         type: number
   - name: valueFormat
@@ -137,6 +137,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'valueFormat?: Office.ValueFormat | string'
+      content: 'valueFormat?: Office.ValueFormat | string;'
       return:
         type: '<xref uid="office!Office.ValueFormat:enum" /> | string'

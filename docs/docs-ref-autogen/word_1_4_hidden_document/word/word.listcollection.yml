@@ -135,9 +135,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ListCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.ListCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

@@ -195,9 +195,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: >-
@@ -527,9 +531,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: >-
@@ -565,9 +572,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) =>
-        void): void;
+      content: |-
+        getActiveViewAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<"edit" | "read">) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -779,9 +788,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) =>
-        void): void;
+      content: |-
+        getFileAsync(
+                    fileType: FileType,
+                    options?: GetFileOptions,
+                    callback?: (result: AsyncResult<Office.File>) => void,
+                ): void;
       parameters:
         - id: fileType
           description: The format in which the file will be returned
@@ -877,9 +889,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.FileProperties>) => void): void;
+      content: |-
+        getFilePropertiesAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<Office.FileProperties>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -965,9 +979,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) =>
-        void): void;
+      content: |-
+        getMaxResourceIndexAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<number>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -1097,9 +1113,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void):
-        void;
+      content: |-
+        getMaxTaskIndexAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<number>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -1226,9 +1244,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: |-
+        getProjectFieldAsync(
+                    fieldId: number,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<any>) => void,
+                ): void;
       parameters:
         - id: fieldId
           description: Project level fields.
@@ -1348,9 +1369,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: |-
+        getResourceByIndexAsync(
+                    resourceIndex: number,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: resourceIndex
           description: The index of the resource in the collection of resources for the project.
@@ -1493,9 +1517,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+      content: |-
+        getResourceFieldAsync(
+                    resourceId: string,
+                    fieldId: number,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -1524,9 +1552,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void):
-        void;
+      content: |-
+        getResourceFieldAsync(
+                    resourceId: string,
+                    fieldId: number,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -1827,9 +1858,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
-        AsyncResult<T>) => void): void;
+      content: |-
+        getSelectedDataAsync<T>(
+                    coercionType: Office.CoercionType,
+                    options?: GetSelectedDataOptions,
+                    callback?: (result: AsyncResult<T>) => void,
+                ): void;
       parameters:
         - id: coercionType
           description: >-
@@ -1941,9 +1975,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+      content: |-
+        getSelectedResourceAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -2091,9 +2127,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void):
-        void;
+      content: |-
+        getSelectedTaskAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -2302,9 +2340,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
-        void): void;
+      content: |-
+        getTaskAsync(
+                    taskId: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<any>) => void,
+                ): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -2436,9 +2477,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: |-
+        getTaskByIndexAsync(
+                    taskIndex: number,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<string>) => void,
+                ): void;
       parameters:
         - id: taskIndex
           description: The index of the task in the collection of tasks for the project.
@@ -2572,9 +2616,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: |-
+        getTaskFieldAsync(
+                    taskId: string,
+                    fieldId: number,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<any>) => void,
+                ): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -2786,9 +2834,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: |-
+        goToByIdAsync(
+                    id: string | number,
+                    goToType: GoToType,
+                    options?: GoToByIdOptions,
+                    callback?: (result: AsyncResult<any>) => void,
+                ): void;
       parameters:
         - id: id
           description: The identifier of the object or location to go to.
@@ -3005,9 +3057,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        removeHandlerAsync(
+                    eventType: Office.EventType,
+                    options?: RemoveHandlerOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -3151,9 +3206,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
-        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      content: |-
+        setResourceFieldAsync(
+                    resourceId: string,
+                    fieldId: number,
+                    fieldValue: string | number | boolean | object,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -3187,9 +3247,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
-        callback?: (result: AsyncResult<void>) => void): void;
+      content: |-
+        setResourceFieldAsync(
+                    resourceId: string,
+                    fieldId: number,
+                    fieldValue: string | number | boolean | object,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -3561,9 +3625,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        setSelectedDataAsync(
+                    data: string | TableData | any[][],
+                    options?: SetSelectedDataOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: data
           description: >-
@@ -3798,9 +3865,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      content: |-
+        setTaskFieldAsync(
+                    taskId: string,
+                    fieldId: number,
+                    fieldValue: string | number | boolean | object,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -3834,9 +3906,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?:
-        (result: AsyncResult<void>) => void): void;
+      content: |-
+        setTaskFieldAsync(
+                    taskId: string,
+                    fieldId: number,
+                    fieldValue: string | number | boolean | object,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.

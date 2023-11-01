@@ -62,24 +62,82 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
-        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
-        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
-        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
-        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
+      content: |-
+        dynamicCriteria?:
+                    | Excel.DynamicFilterCriteria
+                    | "Unknown"
+                    | "AboveAverage"
+                    | "AllDatesInPeriodApril"
+                    | "AllDatesInPeriodAugust"
+                    | "AllDatesInPeriodDecember"
+                    | "AllDatesInPeriodFebruray"
+                    | "AllDatesInPeriodJanuary"
+                    | "AllDatesInPeriodJuly"
+                    | "AllDatesInPeriodJune"
+                    | "AllDatesInPeriodMarch"
+                    | "AllDatesInPeriodMay"
+                    | "AllDatesInPeriodNovember"
+                    | "AllDatesInPeriodOctober"
+                    | "AllDatesInPeriodQuarter1"
+                    | "AllDatesInPeriodQuarter2"
+                    | "AllDatesInPeriodQuarter3"
+                    | "AllDatesInPeriodQuarter4"
+                    | "AllDatesInPeriodSeptember"
+                    | "BelowAverage"
+                    | "LastMonth"
+                    | "LastQuarter"
+                    | "LastWeek"
+                    | "LastYear"
+                    | "NextMonth"
+                    | "NextQuarter"
+                    | "NextWeek"
+                    | "NextYear"
+                    | "ThisMonth"
+                    | "ThisQuarter"
+                    | "ThisWeek"
+                    | "ThisYear"
+                    | "Today"
+                    | "Tomorrow"
+                    | "YearToDate"
+                    | "Yesterday";
       return:
-        type: >-
-          <xref uid="excel!Excel.DynamicFilterCriteria:enum" /> | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-          "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary"
-          | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-          "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" |
-          "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-          "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
-          "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear"
-          | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+        type: |-
+          | <xref uid="excel!Excel.DynamicFilterCriteria:enum" />
+                      | "Unknown"
+                      | "AboveAverage"
+                      | "AllDatesInPeriodApril"
+                      | "AllDatesInPeriodAugust"
+                      | "AllDatesInPeriodDecember"
+                      | "AllDatesInPeriodFebruray"
+                      | "AllDatesInPeriodJanuary"
+                      | "AllDatesInPeriodJuly"
+                      | "AllDatesInPeriodJune"
+                      | "AllDatesInPeriodMarch"
+                      | "AllDatesInPeriodMay"
+                      | "AllDatesInPeriodNovember"
+                      | "AllDatesInPeriodOctober"
+                      | "AllDatesInPeriodQuarter1"
+                      | "AllDatesInPeriodQuarter2"
+                      | "AllDatesInPeriodQuarter3"
+                      | "AllDatesInPeriodQuarter4"
+                      | "AllDatesInPeriodSeptember"
+                      | "BelowAverage"
+                      | "LastMonth"
+                      | "LastQuarter"
+                      | "LastWeek"
+                      | "LastYear"
+                      | "NextMonth"
+                      | "NextQuarter"
+                      | "NextWeek"
+                      | "NextYear"
+                      | "ThisMonth"
+                      | "ThisQuarter"
+                      | "ThisWeek"
+                      | "ThisYear"
+                      | "Today"
+                      | "Tomorrow"
+                      | "YearToDate"
+                      | "Yesterday"
   - name: filterOn
     uid: 'excel!Excel.FilterCriteria#filterOn:member'
     package: excel!
@@ -119,13 +177,32 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
-        "TopItems" | "TopPercent" | "Icon" | "Custom";
+      content: |-
+        filterOn:
+                    | Excel.FilterOn
+                    | "BottomItems"
+                    | "BottomPercent"
+                    | "CellColor"
+                    | "Dynamic"
+                    | "FontColor"
+                    | "Values"
+                    | "TopItems"
+                    | "TopPercent"
+                    | "Icon"
+                    | "Custom";
       return:
-        type: >-
-          <xref uid="excel!Excel.FilterOn:enum" /> | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" |
-          "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"
+        type: |-
+          | <xref uid="excel!Excel.FilterOn:enum" />
+                      | "BottomItems"
+                      | "BottomPercent"
+                      | "CellColor"
+                      | "Dynamic"
+                      | "FontColor"
+                      | "Values"
+                      | "TopItems"
+                      | "TopPercent"
+                      | "Icon"
+                      | "Custom"
   - name: icon
     uid: 'excel!Excel.FilterCriteria#icon:member'
     package: excel!

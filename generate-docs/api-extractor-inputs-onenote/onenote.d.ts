@@ -150,9 +150,9 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ApplicationData;
     }
     /**
@@ -216,9 +216,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysis;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkAnalysis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisData;
     }
     /**
@@ -289,9 +289,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisParagraph;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisParagraphData;
     }
     /**
@@ -335,7 +335,11 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
+        load(
+            options?:
+                & OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+                & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.InkAnalysisParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -357,9 +361,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.InkAnalysisParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisParagraphCollectionData;
     }
     /**
@@ -430,9 +434,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisLine;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisLine object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkAnalysisLine object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisLineData;
     }
     /**
@@ -476,7 +480,11 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
+        load(
+            options?:
+                & OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+                & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.InkAnalysisLineCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -498,9 +506,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisLineCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisLineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.InkAnalysisLineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisLineCollectionData;
     }
     /**
@@ -585,9 +593,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisWord;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkAnalysisWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisWordData;
     }
     /**
@@ -631,7 +639,11 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
+        load(
+            options?:
+                & OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+                & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.InkAnalysisWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -653,9 +665,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkAnalysisWordCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisWordCollectionData;
     }
     /**
@@ -718,9 +730,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.FloatingInk;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.FloatingInk object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.FloatingInk object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.FloatingInkData;
     }
     /**
@@ -776,9 +788,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkStroke;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkStroke object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkStroke object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkStrokeData;
     }
     /**
@@ -822,7 +834,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
+        load(
+            options?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.InkStrokeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -844,9 +858,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkStrokeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkStrokeCollectionData;
     }
     /**
@@ -897,9 +911,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Point;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Point object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Point object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PointData;
     }
     /**
@@ -943,7 +957,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.PointCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PointCollection;
+        load(
+            options?: OneNote.Interfaces.PointCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.PointCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -965,9 +981,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.PointCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PointCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.PointCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PointCollectionData;
     }
     /**
@@ -1037,9 +1053,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkWord;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkWordData;
     }
     /**
@@ -1083,7 +1099,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
+        load(
+            options?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.InkWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1105,9 +1123,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.InkWordCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.InkWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkWordCollectionData;
     }
     /**
@@ -1223,9 +1241,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Notebook;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.NotebookData;
     }
     /**
@@ -1278,7 +1296,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.NotebookCollection;
+        load(
+            options?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.NotebookCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1300,9 +1320,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.NotebookCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.NotebookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.NotebookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.NotebookCollectionData;
     }
     /**
@@ -1425,9 +1445,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.SectionGroup;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.SectionGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.SectionGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.SectionGroupData;
     }
     /**
@@ -1480,7 +1500,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionGroupCollection;
+        load(
+            options?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.SectionGroupCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1502,9 +1524,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.SectionGroupCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.SectionGroupCollectionData;
     }
     /**
@@ -1670,9 +1692,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Section;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.SectionData;
     }
     /**
@@ -1725,7 +1747,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionCollection;
+        load(
+            options?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.SectionCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1747,9 +1771,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.SectionCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.SectionCollectionData;
     }
     /**
@@ -1939,9 +1963,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Page;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Page object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Page object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PageData;
     }
     /**
@@ -1994,7 +2018,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageCollection;
+        load(
+            options?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.PageCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2016,9 +2042,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.PageCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PageCollectionData;
     }
     /**
@@ -2131,9 +2157,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.PageContent;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.PageContent object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.PageContent object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PageContentData;
     }
     /**
@@ -2177,7 +2203,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageContentCollection;
+        load(
+            options?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.PageContentCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2199,9 +2227,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.PageContentCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PageContentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.PageContentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PageContentCollectionData;
     }
     /**
@@ -2311,9 +2339,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Outline;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Outline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.OutlineData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Outline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.OutlineData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.OutlineData;
     }
     /**
@@ -2434,9 +2462,31 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param typeString - The type of the NoteTag.
-         * @param status - The status of the NoteTag.
+         * @param statusString - The status of the NoteTag.
          */
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+        addNoteTag(
+            typeString:
+                | "Unknown"
+                | "ToDo"
+                | "Important"
+                | "Question"
+                | "Contact"
+                | "Address"
+                | "PhoneNumber"
+                | "Website"
+                | "Idea"
+                | "Critical"
+                | "ToDoPriority1"
+                | "ToDoPriority2",
+            statusString:
+                | "Unknown"
+                | "Normal"
+                | "Completed"
+                | "Disabled"
+                | "OutlookTask"
+                | "TaskNotSyncedYet"
+                | "TaskRemoved",
+        ): OneNote.NoteTag;
         /**
          * Deletes the paragraph
          *
@@ -2482,7 +2532,12 @@ export declare namespace OneNote {
          * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
          * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          */
-        insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        insertImageAsSibling(
+            insertLocation: OneNote.InsertLocation,
+            base64EncodedImage: string,
+            width: number,
+            height: number,
+        ): OneNote.Image;
         /**
          * Inserts the image at the specified insert location..
          *
@@ -2494,7 +2549,12 @@ export declare namespace OneNote {
          * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
          * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          */
-        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        insertImageAsSibling(
+            insertLocationString: "Before" | "After",
+            base64EncodedImage: string,
+            width: number,
+            height: number,
+        ): OneNote.Image;
         /**
          * Inserts the paragraph text at the specifiec insert location.
          *
@@ -2526,7 +2586,12 @@ export declare namespace OneNote {
          * @param columnCount - The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(
+            insertLocation: OneNote.InsertLocation,
+            rowCount: number,
+            columnCount: number,
+            values?: string[][],
+        ): OneNote.Table;
         /**
          * Adds a table with the specified number of rows and columns before or after the current paragraph.
          *
@@ -2538,7 +2603,12 @@ export declare namespace OneNote {
          * @param columnCount - The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(
+            insertLocationString: "Before" | "After",
+            rowCount: number,
+            columnCount: number,
+            values?: string[][],
+        ): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2569,9 +2639,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Paragraph;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ParagraphData;
     }
     /**
@@ -2615,7 +2685,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.ParagraphCollection;
+        load(
+            options?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2637,9 +2709,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.ParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.ParagraphCollectionData;
     }
     /**
@@ -2664,14 +2736,35 @@ export declare namespace OneNote {
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
-        readonly status: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
+        readonly status:
+            | OneNote.NoteTagStatus
+            | "Unknown"
+            | "Normal"
+            | "Completed"
+            | "Disabled"
+            | "OutlookTask"
+            | "TaskNotSyncedYet"
+            | "TaskRemoved";
         /**
          * Gets the type of the NoteTag object. Read-only.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
-        readonly type: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
+        readonly type:
+            | OneNote.NoteTagType
+            | "Unknown"
+            | "ToDo"
+            | "Important"
+            | "Question"
+            | "Contact"
+            | "Address"
+            | "PhoneNumber"
+            | "Website"
+            | "Idea"
+            | "Critical"
+            | "ToDoPriority1"
+            | "ToDoPriority2";
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2702,9 +2795,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.NoteTag;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.NoteTag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NoteTagData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.NoteTag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NoteTagData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.NoteTagData;
     }
     /**
@@ -2789,9 +2882,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.RichText;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.RichText object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.RichTextData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.RichText object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.RichTextData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.RichTextData;
     }
     /**
@@ -2905,9 +2998,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Image;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ImageData;
     }
     /**
@@ -3062,9 +3155,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.Table;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableData;
     }
     /**
@@ -3176,9 +3269,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.TableRow;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableRowData;
     }
     /**
@@ -3222,7 +3315,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableRowCollection;
+        load(
+            options?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3244,9 +3339,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.TableRowCollectionData;
     }
     /**
@@ -3385,9 +3480,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.TableCell;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original OneNote.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableCellData;
     }
     /**
@@ -3431,7 +3526,9 @@ export declare namespace OneNote {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(options?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
+        load(
+            options?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+        ): OneNote.TableCellCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3453,9 +3550,9 @@ export declare namespace OneNote {
          */
         untrack(): OneNote.TableCellCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `OneNote.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.TableCellCollectionData;
     }
     /**
@@ -3548,7 +3645,70 @@ export declare namespace OneNote {
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
-        numberType: OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom";
+        numberType:
+            | OneNote.NumberType
+            | "None"
+            | "Arabic"
+            | "UCRoman"
+            | "LCRoman"
+            | "UCLetter"
+            | "LCLetter"
+            | "Ordinal"
+            | "Cardtext"
+            | "Ordtext"
+            | "Hex"
+            | "ChiManSty"
+            | "DbNum1"
+            | "DbNum2"
+            | "Aiueo"
+            | "Iroha"
+            | "DbChar"
+            | "SbChar"
+            | "DbNum3"
+            | "DbNum4"
+            | "Circlenum"
+            | "DArabic"
+            | "DAiueo"
+            | "DIroha"
+            | "ArabicLZ"
+            | "Bullet"
+            | "Ganada"
+            | "Chosung"
+            | "GB1"
+            | "GB2"
+            | "GB3"
+            | "GB4"
+            | "Zodiac1"
+            | "Zodiac2"
+            | "Zodiac3"
+            | "TpeDbNum1"
+            | "TpeDbNum2"
+            | "TpeDbNum3"
+            | "TpeDbNum4"
+            | "ChnDbNum1"
+            | "ChnDbNum2"
+            | "ChnDbNum3"
+            | "ChnDbNum4"
+            | "KorDbNum1"
+            | "KorDbNum2"
+            | "KorDbNum3"
+            | "KorDbNum4"
+            | "Hebrew1"
+            | "Arabic1"
+            | "Hebrew2"
+            | "Arabic2"
+            | "Hindi1"
+            | "Hindi2"
+            | "Hindi3"
+            | "Thai1"
+            | "Thai2"
+            | "NumInDash"
+            | "LCRus"
+            | "UCRus"
+            | "LCGreek"
+            | "UCGreek"
+            | "Lim"
+            | "Custom";
     }
     /**
      * @remarks
@@ -4177,16 +4337,16 @@ export declare namespace OneNote {
     }
     export namespace Interfaces {
         /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
+         * Provides ways to load properties of only a subset of members of a collection.
+         */
         export interface CollectionLoadOptions {
             /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
+             * Specify the number of items in the queried collection to be included in the result.
+             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
+             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+             */
             $skip?: number;
         }
         /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
@@ -4195,21 +4355,21 @@ export declare namespace OneNote {
         /** An interface for updating data on the InkAnalysis object, for use in `inkAnalysis.set({ ... })`. */
         export interface InkAnalysisUpdateData {
             /**
-            * Gets the parent page object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent page object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             page?: OneNote.Interfaces.PageUpdateData;
         }
         /** An interface for updating data on the InkAnalysisParagraph object, for use in `inkAnalysisParagraph.set({ ... })`. */
         export interface InkAnalysisParagraphUpdateData {
             /**
-            * Reference to the parent InkAnalysisPage.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisPage.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysis?: OneNote.Interfaces.InkAnalysisUpdateData;
         }
         /** An interface for updating data on the InkAnalysisParagraphCollection object, for use in `inkAnalysisParagraphCollection.set({ ... })`. */
@@ -4219,11 +4379,11 @@ export declare namespace OneNote {
         /** An interface for updating data on the InkAnalysisLine object, for use in `inkAnalysisLine.set({ ... })`. */
         export interface InkAnalysisLineUpdateData {
             /**
-            * Reference to the parent InkAnalysisParagraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisParagraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;
         }
         /** An interface for updating data on the InkAnalysisLineCollection object, for use in `inkAnalysisLineCollection.set({ ... })`. */
@@ -4233,11 +4393,11 @@ export declare namespace OneNote {
         /** An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`. */
         export interface InkAnalysisWordUpdateData {
             /**
-            * Reference to the parent InkAnalysisLine.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisLine.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             line?: OneNote.Interfaces.InkAnalysisLineUpdateData;
         }
         /** An interface for updating data on the InkAnalysisWordCollection object, for use in `inkAnalysisWordCollection.set({ ... })`. */
@@ -4271,11 +4431,11 @@ export declare namespace OneNote {
         /** An interface for updating data on the Page object, for use in `page.set({ ... })`. */
         export interface PageUpdateData {
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisUpdateData;
             /**
              * Gets or sets the indentation level of the page.
@@ -4299,11 +4459,11 @@ export declare namespace OneNote {
         /** An interface for updating data on the PageContent object, for use in `pageContent.set({ ... })`. */
         export interface PageContentUpdateData {
             /**
-            * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageUpdateData;
             /**
              * Gets or sets the left (X-axis) position of the PageContent object.
@@ -4327,18 +4487,18 @@ export declare namespace OneNote {
         /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
             /**
-            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageUpdateData;
             /**
-            * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             table?: OneNote.Interfaces.TableUpdateData;
         }
         /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
@@ -4407,21 +4567,21 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
             /**
-            * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebooks?: OneNote.Interfaces.NotebookData[];
         }
         /** An interface describing the data returned by calling `inkAnalysis.toJSON()`. */
         export interface InkAnalysisData {
             /**
-            * Gets the parent page object. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent page object. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             page?: OneNote.Interfaces.PageData;
             /**
              * Gets the ID of the InkAnalysis object. Read-only.
@@ -4434,18 +4594,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `inkAnalysisParagraph.toJSON()`. */
         export interface InkAnalysisParagraphData {
             /**
-            * Reference to the parent InkAnalysisPage. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisPage. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysis?: OneNote.Interfaces.InkAnalysisData;
             /**
-            * Gets the ink analysis lines in this ink analysis paragraph. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             lines?: OneNote.Interfaces.InkAnalysisLineData[];
             /**
              * Gets the ID of the InkAnalysisParagraph object. Read-only.
@@ -4462,18 +4622,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `inkAnalysisLine.toJSON()`. */
         export interface InkAnalysisLineData {
             /**
-            * Reference to the parent InkAnalysisParagraph. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisParagraph. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.InkAnalysisParagraphData;
             /**
-            * Gets the ink analysis words in this ink analysis line. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink analysis words in this ink analysis line. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             words?: OneNote.Interfaces.InkAnalysisWordData[];
             /**
              * Gets the ID of the InkAnalysisLine object. Read-only.
@@ -4490,11 +4650,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `inkAnalysisWord.toJSON()`. */
         export interface InkAnalysisWordData {
             /**
-            * Reference to the parent InkAnalysisLine. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisLine. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             line?: OneNote.Interfaces.InkAnalysisLineData;
             /**
              * Gets the ID of the InkAnalysisWord object. Read-only.
@@ -4532,11 +4692,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `floatingInk.toJSON()`. */
         export interface FloatingInkData {
             /**
-            * Gets the strokes of the FloatingInk object. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the strokes of the FloatingInk object. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkStrokes?: OneNote.Interfaces.InkStrokeData[];
             /**
              * Gets the ID of the FloatingInk object. Read-only.
@@ -4549,11 +4709,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `inkStroke.toJSON()`. */
         export interface InkStrokeData {
             /**
-            * Gets the ID of the InkStroke object. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ID of the InkStroke object. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             floatingInk?: OneNote.Interfaces.FloatingInkData;
             /**
              * Gets the ID of the InkStroke object. Read-only.
@@ -4614,18 +4774,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `notebook.toJSON()`. */
         export interface NotebookData {
             /**
-            * The section groups in the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The section groups in the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupData[];
             /**
-            * The sections of the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The sections of the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionData[];
             /**
              * The url of the site where this notebook is located. Read only
@@ -4670,18 +4830,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `sectionGroup.toJSON()`. */
         export interface SectionGroupData {
             /**
-            * The collection of section groups in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of section groups in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupData[];
             /**
-            * The collection of sections in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of sections in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionData[];
             /**
              * The client url of the section group. Read only
@@ -4712,11 +4872,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * The collection of pages in the section. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of pages in the section. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pages?: OneNote.Interfaces.PageData[];
             /**
              * The client url of the section. Read only
@@ -4768,18 +4928,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `page.toJSON()`. */
         export interface PageData {
             /**
-            * The collection of PageContent objects on the page. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of PageContent objects on the page. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             contents?: OneNote.Interfaces.PageContentData[];
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisData;
             /**
              * Gets the ClassNotebookPageSource to the page.
@@ -4831,25 +4991,25 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `pageContent.toJSON()`. */
         export interface PageContentData {
             /**
-            * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageData;
             /**
-            * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             ink?: OneNote.Interfaces.FloatingInkData;
             /**
-            * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             outline?: OneNote.Interfaces.OutlineData;
             /**
              * Gets the ID of the PageContent object. Read-only.
@@ -4887,11 +5047,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `outline.toJSON()`. */
         export interface OutlineData {
             /**
-            * Gets the collection of Paragraph objects in the Outline. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of Paragraph objects in the Outline. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphData[];
             /**
              * Gets the ID of the Outline object. Read-only.
@@ -4904,39 +5064,39 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
-            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageData;
             /**
-            * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkWords?: OneNote.Interfaces.InkWordData[];
             /**
-            * The collection of paragraphs under this paragraph. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of paragraphs under this paragraph. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphData[];
             /**
-            * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             richText?: OneNote.Interfaces.RichTextData;
             /**
-            * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             table?: OneNote.Interfaces.TableData;
             /**
              * Gets the ID of the Paragraph object. Read-only.
@@ -4972,14 +5132,35 @@ export declare namespace OneNote {
              * @remarks
              * [Api set: OneNoteApi 1.1]
              */
-            status?: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
+            status?:
+                | OneNote.NoteTagStatus
+                | "Unknown"
+                | "Normal"
+                | "Completed"
+                | "Disabled"
+                | "OutlookTask"
+                | "TaskNotSyncedYet"
+                | "TaskRemoved";
             /**
              * Gets the type of the NoteTag object. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
              */
-            type?: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
+            type?:
+                | OneNote.NoteTagType
+                | "Unknown"
+                | "ToDo"
+                | "Important"
+                | "Question"
+                | "Contact"
+                | "Address"
+                | "PhoneNumber"
+                | "Website"
+                | "Idea"
+                | "Critical"
+                | "ToDoPriority1"
+                | "ToDoPriority2";
         }
         /** An interface describing the data returned by calling `richText.toJSON()`. */
         export interface RichTextData {
@@ -5060,11 +5241,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
             /**
-            * Gets all of the table rows. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets all of the table rows. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             rows?: OneNote.Interfaces.TableRowData[];
             /**
              * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
@@ -5098,11 +5279,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             /**
-            * Gets the cells in the row. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the cells in the row. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             cells?: OneNote.Interfaces.TableCellData[];
             /**
              * Gets the number of cells in the row. Read-only.
@@ -5133,11 +5314,11 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `tableCell.toJSON()`. */
         export interface TableCellData {
             /**
-            * Gets the collection of Paragraph objects in the TableCell. Read-only.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of Paragraph objects in the TableCell. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphData[];
             /**
              * Gets the index of the cell in its row. Read-only.
@@ -5184,11 +5365,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebooks?: OneNote.Interfaces.NotebookCollectionLoadOptions;
         }
         /**
@@ -5203,11 +5384,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the parent page object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent page object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             page?: OneNote.Interfaces.PageLoadOptions;
             /**
              * Gets the ID of the InkAnalysis object. Read-only.
@@ -5229,18 +5410,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Reference to the parent InkAnalysisPage.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisPage.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysis?: OneNote.Interfaces.InkAnalysisLoadOptions;
             /**
-            * Gets the ink analysis lines in this ink analysis paragraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink analysis lines in this ink analysis paragraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             lines?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions;
             /**
              * Gets the ID of the InkAnalysisParagraph object. Read-only.
@@ -5262,18 +5443,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Reference to the parent InkAnalysisPage.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Reference to the parent InkAnalysisPage.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysis?: OneNote.Interfaces.InkAnalysisLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ink analysis lines in this ink analysis paragraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the ink analysis lines in this ink analysis paragraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             lines?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the InkAnalysisParagraph object. Read-only.
@@ -5295,18 +5476,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Reference to the parent InkAnalysisParagraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisParagraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;
             /**
-            * Gets the ink analysis words in this ink analysis line.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink analysis words in this ink analysis line.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;
             /**
              * Gets the ID of the InkAnalysisLine object. Read-only.
@@ -5328,18 +5509,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Reference to the parent InkAnalysisParagraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Reference to the parent InkAnalysisParagraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ink analysis words in this ink analysis line.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the ink analysis words in this ink analysis line.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine object. Read-only.
@@ -5361,11 +5542,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Reference to the parent InkAnalysisLine.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Reference to the parent InkAnalysisLine.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;
             /**
              * Gets the ID of the InkAnalysisWord object. Read-only.
@@ -5408,11 +5589,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.
@@ -5455,18 +5636,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the strokes of the FloatingInk object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the strokes of the FloatingInk object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkStrokes?: OneNote.Interfaces.InkStrokeCollectionLoadOptions;
             /**
-            * Gets the PageContent parent of the FloatingInk object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the PageContent parent of the FloatingInk object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pageContent?: OneNote.Interfaces.PageContentLoadOptions;
             /**
              * Gets the ID of the FloatingInk object. Read-only.
@@ -5488,11 +5669,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the ID of the InkStroke object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ID of the InkStroke object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;
             /**
              * Gets the ID of the InkStroke object. Read-only.
@@ -5514,11 +5695,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the ID of the InkStroke object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the ID of the InkStroke object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the InkStroke object. Read-only.
@@ -5588,11 +5769,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * The parent paragraph containing the ink word.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The parent paragraph containing the ink word.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
              * Gets the ID of the InkWord object. Read-only.
@@ -5628,11 +5809,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: The parent paragraph containing the ink word.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The parent paragraph containing the ink word.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only.
@@ -5668,18 +5849,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * The section groups in the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The section groups in the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * The sections of the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The sections of the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
              * The url of the site where this notebook is located. Read only
@@ -5729,18 +5910,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: The section groups in the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The section groups in the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: The sections of the notebook. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The sections of the notebook. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
              * For EACH ITEM in the collection: The url of the site where this notebook is located. Read only
@@ -5790,39 +5971,39 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the notebook that contains the section group.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the notebook that contains the section group.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebook?: OneNote.Interfaces.NotebookLoadOptions;
             /**
-            * Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * The collection of section groups in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of section groups in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * The collection of sections in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of sections in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
              * The client url of the section group. Read only
@@ -5858,39 +6039,39 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the notebook that contains the section group.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the notebook that contains the section group.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebook?: OneNote.Interfaces.NotebookLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of section groups in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The collection of section groups in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of sections in the section group. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The collection of sections in the section group. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
              * For EACH ITEM in the collection: The client url of the section group. Read only
@@ -5926,32 +6107,32 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the notebook that contains the section.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the notebook that contains the section.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebook?: OneNote.Interfaces.NotebookLoadOptions;
             /**
-            * The collection of pages in the section. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of pages in the section. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pages?: OneNote.Interfaces.PageCollectionLoadOptions;
             /**
-            * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
              * The client url of the section. Read only
@@ -6008,32 +6189,32 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the notebook that contains the section.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the notebook that contains the section.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebook?: OneNote.Interfaces.NotebookLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of pages in the section. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The collection of pages in the section. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pages?: OneNote.Interfaces.PageCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
              * For EACH ITEM in the collection: The client url of the section. Read only
@@ -6090,25 +6271,25 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * The collection of PageContent objects on the page. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of PageContent objects on the page. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;
             /**
-            * Gets the section that contains the page.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the section that contains the page.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSection?: OneNote.Interfaces.SectionLoadOptions;
             /**
              * Gets the ClassNotebookPageSource to the page.
@@ -6165,25 +6346,25 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the section that contains the page.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the section that contains the page.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentSection?: OneNote.Interfaces.SectionLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page.
@@ -6240,32 +6421,32 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             ink?: OneNote.Interfaces.FloatingInkLoadOptions;
             /**
-            * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * Gets the page that contains the PageContent object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the page that contains the PageContent object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentPage?: OneNote.Interfaces.PageLoadOptions;
             /**
              * Gets the ID of the PageContent object. Read-only.
@@ -6308,32 +6489,32 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             ink?: OneNote.Interfaces.FloatingInkLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the page that contains the PageContent object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the page that contains the PageContent object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentPage?: OneNote.Interfaces.PageLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the PageContent object. Read-only.
@@ -6376,18 +6557,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pageContent?: OneNote.Interfaces.PageContentLoadOptions;
             /**
-            * Gets the collection of Paragraph objects in the Outline.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of Paragraph objects in the Outline.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
              * Gets the ID of the Outline object. Read-only.
@@ -6409,74 +6590,74 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;
             /**
-            * Gets the Outline object that contains the Paragraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Outline object that contains the Paragraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * The collection of paragraphs under this paragraph. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of paragraphs under this paragraph. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * Gets the parent paragraph object. Throws if a parent paragraph does not exist.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             richText?: OneNote.Interfaces.RichTextLoadOptions;
             /**
-            * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             table?: OneNote.Interfaces.TableLoadOptions;
             /**
              * Gets the ID of the Paragraph object. Read-only.
@@ -6505,74 +6686,74 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Outline object that contains the Paragraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Outline object that contains the Paragraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             richText?: OneNote.Interfaces.RichTextLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             table?: OneNote.Interfaces.TableLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the ID of the Paragraph object. Read-only.
@@ -6634,11 +6815,11 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the Paragraph object that contains the RichText object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Paragraph object that contains the RichText object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
              * Gets the ID of the RichText object. Read-only.
@@ -6681,18 +6862,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             pageContent?: OneNote.Interfaces.PageContentLoadOptions;
             /**
-            * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
              * Gets or sets the description of the Image.
@@ -6749,18 +6930,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the Paragraph object that contains the Table object.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Paragraph object that contains the Table object.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets all of the table rows.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets all of the table rows.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             rows?: OneNote.Interfaces.TableRowCollectionLoadOptions;
             /**
              * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
@@ -6803,18 +6984,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the cells in the row.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the cells in the row.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;
             /**
-            * Gets the parent table.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent table.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTable?: OneNote.Interfaces.TableLoadOptions;
             /**
              * Gets the number of cells in the row. Read-only.
@@ -6850,18 +7031,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the cells in the row.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the cells in the row.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent table.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the parent table.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentTable?: OneNote.Interfaces.TableLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
@@ -6897,18 +7078,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * Gets the collection of Paragraph objects in the TableCell.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of Paragraph objects in the TableCell.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * Gets the parent row of the cell.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the parent row of the cell.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentRow?: OneNote.Interfaces.TableRowLoadOptions;
             /**
              * Gets the index of the cell in its row. Read-only.
@@ -6951,18 +7132,18 @@ export declare namespace OneNote {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent row of the cell.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the parent row of the cell.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             parentRow?: OneNote.Interfaces.TableRowLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
@@ -7010,15 +7191,20 @@ export declare namespace OneNote {
      * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        object: OfficeExtension.ClientObject,
+        batch: (context: OneNote.RequestContext) => Promise<T>,
+    ): Promise<T>;
     /**
      * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
      * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(
+        objects: OfficeExtension.ClientObject[],
+        batch: (context: OneNote.RequestContext) => Promise<T>,
+    ): Promise<T>;
 }
-
 
 ////////////////////////////////////////////////////////////////
 /////////////////////// End OneNote APIs ///////////////////////

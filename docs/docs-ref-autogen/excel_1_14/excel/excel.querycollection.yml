@@ -110,9 +110,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.QueryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.QueryCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.QueryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.QueryCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

@@ -174,9 +174,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.StyleCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.StyleCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.StyleCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.StyleCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

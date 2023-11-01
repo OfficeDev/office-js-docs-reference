@@ -45,14 +45,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting"
-        | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
+      content: |-
+        errorSubType?:
+                    | BlockedErrorCellValueSubType
+                    | "Unknown"
+                    | "DataTypeRestrictedDomain"
+                    | "DataTypePrivacySetting"
+                    | "DataTypeUnsupportedApp"
+                    | "ExternalLinksGeneric"
+                    | "RichDataLinkDisabled"
+                    | "SignInError"
+                    | "NoLicense";
       return:
-        type: >-
-          <xref uid="excel!Excel.BlockedErrorCellValueSubType:enum" /> | "Unknown" | "DataTypeRestrictedDomain" |
-          "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" |
-          "SignInError" | "NoLicense"
+        type: |-
+          | <xref uid="excel!Excel.BlockedErrorCellValueSubType:enum" />
+                      | "Unknown"
+                      | "DataTypeRestrictedDomain"
+                      | "DataTypePrivacySetting"
+                      | "DataTypeUnsupportedApp"
+                      | "ExternalLinksGeneric"
+                      | "RichDataLinkDisabled"
+                      | "SignInError"
+                      | "NoLicense"
   - name: errorType
     uid: 'excel!Excel.BlockedErrorCellValue#errorType:member'
     package: excel!

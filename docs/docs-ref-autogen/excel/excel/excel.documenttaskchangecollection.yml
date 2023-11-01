@@ -79,9 +79,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskChangeCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.DocumentTaskChangeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

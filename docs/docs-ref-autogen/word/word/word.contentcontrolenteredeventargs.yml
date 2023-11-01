@@ -36,19 +36,48 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
-        | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
-        "AnnotationRemoved";
+      content: |-
+        eventType:
+                    | Word.EventType
+                    | "ContentControlDeleted"
+                    | "ContentControlSelectionChanged"
+                    | "ContentControlDataChanged"
+                    | "ContentControlAdded"
+                    | "CommentDeleted"
+                    | "CommentSelected"
+                    | "CommentDeselected"
+                    | "CommentChanged"
+                    | "CommentAdded"
+                    | "ContentControlEntered"
+                    | "ContentControlExited"
+                    | "ParagraphAdded"
+                    | "ParagraphChanged"
+                    | "ParagraphDeleted"
+                    | "AnnotationClicked"
+                    | "AnnotationHovered"
+                    | "AnnotationInserted"
+                    | "AnnotationRemoved";
       return:
-        type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
-          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved"
+        type: |-
+          | <xref uid="word!Word.EventType:enum" />
+                      | "ContentControlDeleted"
+                      | "ContentControlSelectionChanged"
+                      | "ContentControlDataChanged"
+                      | "ContentControlAdded"
+                      | "CommentDeleted"
+                      | "CommentSelected"
+                      | "CommentDeselected"
+                      | "CommentChanged"
+                      | "CommentAdded"
+                      | "ContentControlEntered"
+                      | "ContentControlExited"
+                      | "ParagraphAdded"
+                      | "ParagraphChanged"
+                      | "ParagraphDeleted"
+                      | "AnnotationClicked"
+                      | "AnnotationHovered"
+                      | "AnnotationInserted"
+                      | "AnnotationRemoved"
   - name: ids
     uid: 'word!Word.ContentControlEnteredEventArgs#ids:member'
     package: word!

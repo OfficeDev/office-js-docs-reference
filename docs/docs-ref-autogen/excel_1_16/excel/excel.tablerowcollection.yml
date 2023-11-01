@@ -89,9 +89,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?:
-        boolean): Excel.TableRow;
+      content: |-
+        add(
+                    index?: number,
+                    values?: Array<Array<boolean | string | number>> | boolean | string | number,
+                    alwaysInsert?: boolean,
+                ): Excel.TableRow;
       parameters:
         - id: index
           description: >-
@@ -204,9 +207,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.TableRowCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.TableRowCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

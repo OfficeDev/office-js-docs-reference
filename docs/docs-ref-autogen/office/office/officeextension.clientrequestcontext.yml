@@ -99,9 +99,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?:
-        number): void;
+      content: |-
+        loadRecursive(
+                    object: ClientObject,
+                    options: { [typeName: string]: string | string[] | LoadOption },
+                    maxDepth?: number,
+                ): void;
       parameters:
         - id: object
           description: The object to be loaded.

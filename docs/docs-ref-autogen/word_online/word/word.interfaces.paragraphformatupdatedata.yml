@@ -132,15 +132,32 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" |
-        "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
-        "OutlineLevelBodyText";
+      content: |-
+        outlineLevel?:
+                        | Word.OutlineLevel
+                        | "OutlineLevel1"
+                        | "OutlineLevel2"
+                        | "OutlineLevel3"
+                        | "OutlineLevel4"
+                        | "OutlineLevel5"
+                        | "OutlineLevel6"
+                        | "OutlineLevel7"
+                        | "OutlineLevel8"
+                        | "OutlineLevel9"
+                        | "OutlineLevelBodyText";
       return:
-        type: >-
-          <xref uid="word!Word.OutlineLevel:enum" /> | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" |
-          "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
-          "OutlineLevelBodyText"
+        type: |-
+          | <xref uid="word!Word.OutlineLevel:enum" />
+                          | "OutlineLevel1"
+                          | "OutlineLevel2"
+                          | "OutlineLevel3"
+                          | "OutlineLevel4"
+                          | "OutlineLevel5"
+                          | "OutlineLevel6"
+                          | "OutlineLevel7"
+                          | "OutlineLevel8"
+                          | "OutlineLevel9"
+                          | "OutlineLevelBodyText"
   - name: rightIndent
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#rightIndent:member'
     package: word!

@@ -104,9 +104,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.ShapeCollection;
+      content: |-
+        load(
+                    options?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions,
+                ): Visio.ShapeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

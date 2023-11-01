@@ -723,7 +723,7 @@ Excel.ChartAxes,"context",Property,Good,false
 Excel.ChartAxes,"seriesAxis",Property,Good,false
 Excel.ChartAxes,"valueAxis",Property,Good,true
 Excel.ChartAxes,"getItem(type, group)",Method,Fine,false
-Excel.ChartAxes,"getItem(typeString, group)",Method,Fine,false
+Excel.ChartAxes,"getItem(typeString, groupString)",Method,Fine,false
 Excel.ChartAxes,"load(options)",Method,Poor,false
 Excel.ChartAxes,"load(propertyNames)",Method,Poor,false
 Excel.ChartAxes,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -914,7 +914,7 @@ Excel.ChartCollection,"context",Property,Good,false
 Excel.ChartCollection,"count",Property,Good,false
 Excel.ChartCollection,"items",Property,Fine,false
 Excel.ChartCollection,"add(type, sourceData, seriesBy)",Method,Fine,true
-Excel.ChartCollection,"add(typeString, sourceData, seriesBy)",Method,Fine,false
+Excel.ChartCollection,"add(typeString, sourceData, seriesByString)",Method,Fine,false
 Excel.ChartCollection,"getCount()",Method,Poor,false
 Excel.ChartCollection,"getItem(name)",Method,Poor,true
 Excel.ChartCollection,"getItemAt(index)",Method,Poor,true
@@ -4964,9 +4964,9 @@ Excel.Range,"getRowProperties(rowPropertiesLoadOptions)",Method,Fine,false
 Excel.Range,"getRowsAbove(count)",Method,Poor,false
 Excel.Range,"getRowsBelow(count)",Method,Poor,false
 Excel.Range,"getSpecialCells(cellType, cellValueType)",Method,Poor,true
-Excel.Range,"getSpecialCells(cellTypeString, cellValueType)",Method,Poor,false
+Excel.Range,"getSpecialCells(cellTypeString, cellValueTypeString)",Method,Poor,false
 Excel.Range,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Poor,false
-Excel.Range,"getSpecialCellsOrNullObject(cellTypeString, cellValueType)",Method,Poor,false
+Excel.Range,"getSpecialCellsOrNullObject(cellTypeString, cellValueTypeString)",Method,Poor,false
 Excel.Range,"getSpillingToRange()",Method,Poor,true
 Excel.Range,"getSpillingToRangeOrNullObject()",Method,Poor,false
 Excel.Range,"getSpillParent()",Method,Poor,false
@@ -5032,9 +5032,9 @@ Excel.RangeAreas,"getIntersection(anotherRange)",Method,Poor,false
 Excel.RangeAreas,"getIntersectionOrNullObject(anotherRange)",Method,Poor,false
 Excel.RangeAreas,"getOffsetRangeAreas(rowOffset, columnOffset)",Method,Fine,false
 Excel.RangeAreas,"getSpecialCells(cellType, cellValueType)",Method,Poor,false
-Excel.RangeAreas,"getSpecialCells(cellTypeString, cellValueType)",Method,Poor,false
+Excel.RangeAreas,"getSpecialCells(cellTypeString, cellValueTypeString)",Method,Poor,false
 Excel.RangeAreas,"getSpecialCellsOrNullObject(cellType, cellValueType)",Method,Poor,false
-Excel.RangeAreas,"getSpecialCellsOrNullObject(cellTypeString, cellValueType)",Method,Poor,false
+Excel.RangeAreas,"getSpecialCellsOrNullObject(cellTypeString, cellValueTypeString)",Method,Poor,false
 Excel.RangeAreas,"getTables(fullyContained)",Method,Poor,false
 Excel.RangeAreas,"getUsedRangeAreas(valuesOnly)",Method,Poor,false
 Excel.RangeAreas,"getUsedRangeAreasOrNullObject(valuesOnly)",Method,Poor,false
@@ -5164,7 +5164,7 @@ Excel.RangeReference,"address",Property,Good,false
 Excel.RangeSort,N/A,Class,Good,false
 Excel.RangeSort,"context",Property,Good,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Fine,false
-Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, method)",Method,Fine,false
+Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, methodString)",Method,Fine,false
 Excel.RangeSort,"toJSON()",Method,Poor,false
 Excel.RangeUnderlineStyle,N/A,Enum,Fine,true
 Excel.RangeUnderlineStyle,"double",EnumField,Fine,false
@@ -5413,9 +5413,9 @@ Excel.Shape,"load(options)",Method,Poor,false
 Excel.Shape,"load(propertyNames)",Method,Poor,false
 Excel.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Fine,true
-Excel.Shape,"scaleHeight(scaleFactor, scaleTypeString, scaleFrom)",Method,Fine,false
+Excel.Shape,"scaleHeight(scaleFactor, scaleTypeString, scaleFromString)",Method,Fine,false
 Excel.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Fine,false
-Excel.Shape,"scaleWidth(scaleFactor, scaleTypeString, scaleFrom)",Method,Fine,false
+Excel.Shape,"scaleWidth(scaleFactor, scaleTypeString, scaleFromString)",Method,Fine,false
 Excel.Shape,"set(properties, options)",Method,Poor,false
 Excel.Shape,"set(properties)",Method,Poor,false
 Excel.Shape,"setZOrder(position)",Method,Poor,true
@@ -8116,7 +8116,7 @@ OneNote.Paragraph,"richText",Property,Good,false
 OneNote.Paragraph,"table",Property,Good,false
 OneNote.Paragraph,"type",Property,Good,false
 OneNote.Paragraph,"addNoteTag(type, status)",Method,Poor,false
-OneNote.Paragraph,"addNoteTag(typeString, status)",Method,Poor,false
+OneNote.Paragraph,"addNoteTag(typeString, statusString)",Method,Poor,false
 OneNote.Paragraph,"delete()",Method,Poor,true
 OneNote.Paragraph,"getParagraphInfo()",Method,Poor,false
 OneNote.Paragraph,"insertHtmlAsSibling(insertLocation, html)",Method,Poor,true
@@ -10091,7 +10091,7 @@ Visio.ShapeView,N/A,Class,Fine,false
 Visio.ShapeView,"context",Property,Good,false
 Visio.ShapeView,"highlight",Property,Fine,true
 Visio.ShapeView,"addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)",Method,Poor,true
-Visio.ShapeView,"addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)",Method,Poor,false
+Visio.ShapeView,"addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString, OverlayVerticalAlignmentString, Width, Height)",Method,Poor,false
 Visio.ShapeView,"load(options)",Method,Poor,false
 Visio.ShapeView,"load(propertyNames)",Method,Poor,false
 Visio.ShapeView,"load(propertyNamesAndPaths)",Method,Poor,false

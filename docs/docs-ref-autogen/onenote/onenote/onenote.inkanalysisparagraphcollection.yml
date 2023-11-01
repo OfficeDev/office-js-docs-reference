@@ -95,15 +95,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions &
-        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
+      content: |-
+        load(
+                    options?:
+                        & OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+                        & OneNote.Interfaces.CollectionLoadOptions,
+                ): OneNote.InkAnalysisParagraphCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface" /> & <xref
-            uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
+          type: |-
+            & <xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface" />
+                            & <xref uid="onenote!OneNote.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="onenote!OneNote.InkAnalysisParagraphCollection:class" />'
         description: ''

@@ -126,9 +126,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<CustomXmlNode[]>) => void): void;
+      content: |-
+        getNodesAsync(
+                    xPath: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<CustomXmlNode[]>) => void,
+                ): void;
       parameters:
         - id: xPath
           description: The XPath expression that specifies the nodes to get. Required.
@@ -458,9 +461,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: |-
+        setNodeValueAsync(
+                    value: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: value
           description: The value to be set on the node
@@ -590,9 +596,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: |-
+        setTextAsync(
+                    text: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: text
           description: Required. The text value of the XML node.
@@ -664,9 +673,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: |-
+        setXmlAsync(
+                    xml: string,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: xml
           description: The XML to be set on the node

@@ -160,14 +160,38 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        summarizeBy: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" |
-        "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
+      content: |-
+        summarizeBy:
+                    | Excel.AggregationFunction
+                    | "Unknown"
+                    | "Automatic"
+                    | "Sum"
+                    | "Count"
+                    | "Average"
+                    | "Max"
+                    | "Min"
+                    | "Product"
+                    | "CountNumbers"
+                    | "StandardDeviation"
+                    | "StandardDeviationP"
+                    | "Variance"
+                    | "VarianceP";
       return:
-        type: >-
-          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" |
-          "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" |
-          "VarianceP"
+        type: |-
+          | <xref uid="excel!Excel.AggregationFunction:enum" />
+                      | "Unknown"
+                      | "Automatic"
+                      | "Sum"
+                      | "Count"
+                      | "Average"
+                      | "Max"
+                      | "Min"
+                      | "Product"
+                      | "CountNumbers"
+                      | "StandardDeviation"
+                      | "StandardDeviationP"
+                      | "Variance"
+                      | "VarianceP"
 methods:
   - name: load(options)
     uid: 'excel!Excel.DataPivotHierarchy#load:member(1)'

@@ -30,13 +30,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" |
-        "Continent" | "World";
+      content: |-
+        level?:
+                        | Excel.ChartMapAreaLevel
+                        | "Automatic"
+                        | "DataOnly"
+                        | "City"
+                        | "County"
+                        | "State"
+                        | "Country"
+                        | "Continent"
+                        | "World";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartMapAreaLevel:enum" /> | "Automatic" | "DataOnly" | "City" | "County" | "State" |
-          "Country" | "Continent" | "World"
+        type: |-
+          | <xref uid="excel!Excel.ChartMapAreaLevel:enum" />
+                          | "Automatic"
+                          | "DataOnly"
+                          | "City"
+                          | "County"
+                          | "State"
+                          | "Country"
+                          | "Continent"
+                          | "World"
   - name: projectionType
     uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType:member'
     package: excel!

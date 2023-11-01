@@ -149,9 +149,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+      content: |-
+        export function run<T>(
+                batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+            ): OfficeExtension.IPromise<T>;
       parameters:
         - id: batch
           description: >-
@@ -176,9 +177,11 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      content: |-
+        export function run<T>(
+                object: OfficeExtension.ClientObject,
+                batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+            ): OfficeExtension.IPromise<T>;
       parameters:
         - id: object
           description: >-
@@ -207,9 +210,11 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      content: |-
+        export function run<T>(
+                objects: OfficeExtension.ClientObject[],
+                batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>,
+            ): OfficeExtension.IPromise<T>;
       parameters:
         - id: objects
           description: >-

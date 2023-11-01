@@ -54,10 +54,25 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        operator: Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" |
-        "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
+      content: |-
+        operator:
+                    | Excel.DataValidationOperator
+                    | "Between"
+                    | "NotBetween"
+                    | "EqualTo"
+                    | "NotEqualTo"
+                    | "GreaterThan"
+                    | "LessThan"
+                    | "GreaterThanOrEqualTo"
+                    | "LessThanOrEqualTo";
       return:
-        type: >-
-          <xref uid="excel!Excel.DataValidationOperator:enum" /> | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-          "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+        type: |-
+          | <xref uid="excel!Excel.DataValidationOperator:enum" />
+                      | "Between"
+                      | "NotBetween"
+                      | "EqualTo"
+                      | "NotEqualTo"
+                      | "GreaterThan"
+                      | "LessThan"
+                      | "GreaterThanOrEqualTo"
+                      | "LessThanOrEqualTo"

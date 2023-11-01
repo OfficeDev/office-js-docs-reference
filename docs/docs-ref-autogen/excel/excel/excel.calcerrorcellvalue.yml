@@ -45,15 +45,32 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" |
-        "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested"
-        | "TextOverflow";
+      content: |-
+        errorSubType?:
+                    | CalcErrorCellValueSubType
+                    | "Unknown"
+                    | "ArrayOfArrays"
+                    | "ArrayOfRanges"
+                    | "EmptyArray"
+                    | "UnsupportedLifting"
+                    | "DataTableReferencedPendingFormula"
+                    | "TooManyCells"
+                    | "LambdaInCell"
+                    | "TooDeeplyNested"
+                    | "TextOverflow";
       return:
-        type: >-
-          <xref uid="excel!Excel.CalcErrorCellValueSubType:enum" /> | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" |
-          "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" |
-          "TooDeeplyNested" | "TextOverflow"
+        type: |-
+          | <xref uid="excel!Excel.CalcErrorCellValueSubType:enum" />
+                      | "Unknown"
+                      | "ArrayOfArrays"
+                      | "ArrayOfRanges"
+                      | "EmptyArray"
+                      | "UnsupportedLifting"
+                      | "DataTableReferencedPendingFormula"
+                      | "TooManyCells"
+                      | "LambdaInCell"
+                      | "TooDeeplyNested"
+                      | "TextOverflow"
   - name: errorType
     uid: 'excel!Excel.CalcErrorCellValue#errorType:member'
     package: excel!

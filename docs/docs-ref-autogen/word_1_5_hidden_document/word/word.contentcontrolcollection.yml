@@ -331,9 +331,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ContentControlCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.ContentControlCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

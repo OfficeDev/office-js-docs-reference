@@ -84,13 +84,22 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
-        "Distributed";
+      content: |-
+        horizontalAlignment:
+                    | Excel.ChartTextHorizontalAlignment
+                    | "Center"
+                    | "Left"
+                    | "Right"
+                    | "Justify"
+                    | "Distributed";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" |
-          "Distributed"
+        type: |-
+          | <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" />
+                      | "Center"
+                      | "Left"
+                      | "Right"
+                      | "Justify"
+                      | "Distributed"
   - name: left
     uid: 'excel!Excel.ChartTrendlineLabel#left:member'
     package: excel!

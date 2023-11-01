@@ -182,13 +182,24 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
-        "Power";
+      content: |-
+        type:
+                    | Excel.ChartTrendlineType
+                    | "Linear"
+                    | "Exponential"
+                    | "Logarithmic"
+                    | "MovingAverage"
+                    | "Polynomial"
+                    | "Power";
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartTrendlineType:enum" /> | "Linear" | "Exponential" | "Logarithmic" |
-          "MovingAverage" | "Polynomial" | "Power"
+        type: |-
+          | <xref uid="excel!Excel.ChartTrendlineType:enum" />
+                      | "Linear"
+                      | "Exponential"
+                      | "Logarithmic"
+                      | "MovingAverage"
+                      | "Polynomial"
+                      | "Power"
 methods:
   - name: delete()
     uid: 'excel!Excel.ChartTrendline#delete:member(1)'

@@ -77,9 +77,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.TableCellCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.TableCellCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

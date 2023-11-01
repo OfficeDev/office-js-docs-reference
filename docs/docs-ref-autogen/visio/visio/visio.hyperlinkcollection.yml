@@ -86,9 +86,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.HyperlinkCollection;
+      content: |-
+        load(
+                    options?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions,
+                ): Visio.HyperlinkCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

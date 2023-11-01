@@ -30,19 +30,64 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        insideLineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap"
-        | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" | "Outset" | "Single"
-        | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" |
-        "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
-        "ThinThickThinSmallGap" | "Triple";
+      content: |-
+        insideLineStyle?:
+                        | Word.LineStyle
+                        | "DashDot"
+                        | "DashDotDot"
+                        | "DashDotStroked"
+                        | "DashLargeGap"
+                        | "DashSmallGap"
+                        | "Dot"
+                        | "Double"
+                        | "DoubleWavy"
+                        | "Emboss3D"
+                        | "Engrave3D"
+                        | "Inset"
+                        | "Mixed"
+                        | "None"
+                        | "Outset"
+                        | "Single"
+                        | "SingleWavy"
+                        | "ThickThinLargeGap"
+                        | "ThickThinMedGap"
+                        | "ThickThinSmallGap"
+                        | "ThinThickLargeGap"
+                        | "ThinThickMedGap"
+                        | "ThinThickSmallGap"
+                        | "ThinThickThinLargeGap"
+                        | "ThinThickThinMedGap"
+                        | "ThinThickThinSmallGap"
+                        | "Triple";
       return:
-        type: >-
-          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
-          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
+        type: |-
+          | <xref uid="word!Word.LineStyle:enum" />
+                          | "DashDot"
+                          | "DashDotDot"
+                          | "DashDotStroked"
+                          | "DashLargeGap"
+                          | "DashSmallGap"
+                          | "Dot"
+                          | "Double"
+                          | "DoubleWavy"
+                          | "Emboss3D"
+                          | "Engrave3D"
+                          | "Inset"
+                          | "Mixed"
+                          | "None"
+                          | "Outset"
+                          | "Single"
+                          | "SingleWavy"
+                          | "ThickThinLargeGap"
+                          | "ThickThinMedGap"
+                          | "ThickThinSmallGap"
+                          | "ThinThickLargeGap"
+                          | "ThinThickMedGap"
+                          | "ThinThickSmallGap"
+                          | "ThinThickThinLargeGap"
+                          | "ThinThickThinMedGap"
+                          | "ThinThickThinSmallGap"
+                          | "Triple"
   - name: insideLineWidth
     uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideLineWidth:member'
     package: word!
@@ -52,13 +97,34 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        insideLineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300"
-        | "Pt450" | "Pt600" | "Mixed";
+      content: |-
+        insideLineWidth?:
+                        | Word.LineWidth
+                        | "None"
+                        | "Pt025"
+                        | "Pt050"
+                        | "Pt075"
+                        | "Pt100"
+                        | "Pt150"
+                        | "Pt225"
+                        | "Pt300"
+                        | "Pt450"
+                        | "Pt600"
+                        | "Mixed";
       return:
-        type: >-
-          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
-          "Pt300" | "Pt450" | "Pt600" | "Mixed"
+        type: |-
+          | <xref uid="word!Word.LineWidth:enum" />
+                          | "None"
+                          | "Pt025"
+                          | "Pt050"
+                          | "Pt075"
+                          | "Pt100"
+                          | "Pt150"
+                          | "Pt225"
+                          | "Pt300"
+                          | "Pt450"
+                          | "Pt600"
+                          | "Mixed"
   - name: items
     uid: 'word!Word.Interfaces.BorderCollectionUpdateData#items:member'
     package: word!
@@ -92,19 +158,64 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        outsideLineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-        "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-        "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-        "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap"
-        | "ThinThickThinSmallGap" | "Triple";
+      content: |-
+        outsideLineStyle?:
+                        | Word.LineStyle
+                        | "DashDot"
+                        | "DashDotDot"
+                        | "DashDotStroked"
+                        | "DashLargeGap"
+                        | "DashSmallGap"
+                        | "Dot"
+                        | "Double"
+                        | "DoubleWavy"
+                        | "Emboss3D"
+                        | "Engrave3D"
+                        | "Inset"
+                        | "Mixed"
+                        | "None"
+                        | "Outset"
+                        | "Single"
+                        | "SingleWavy"
+                        | "ThickThinLargeGap"
+                        | "ThickThinMedGap"
+                        | "ThickThinSmallGap"
+                        | "ThinThickLargeGap"
+                        | "ThinThickMedGap"
+                        | "ThinThickSmallGap"
+                        | "ThinThickThinLargeGap"
+                        | "ThinThickThinMedGap"
+                        | "ThinThickThinSmallGap"
+                        | "Triple";
       return:
-        type: >-
-          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
-          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
+        type: |-
+          | <xref uid="word!Word.LineStyle:enum" />
+                          | "DashDot"
+                          | "DashDotDot"
+                          | "DashDotStroked"
+                          | "DashLargeGap"
+                          | "DashSmallGap"
+                          | "Dot"
+                          | "Double"
+                          | "DoubleWavy"
+                          | "Emboss3D"
+                          | "Engrave3D"
+                          | "Inset"
+                          | "Mixed"
+                          | "None"
+                          | "Outset"
+                          | "Single"
+                          | "SingleWavy"
+                          | "ThickThinLargeGap"
+                          | "ThickThinMedGap"
+                          | "ThickThinSmallGap"
+                          | "ThinThickLargeGap"
+                          | "ThinThickMedGap"
+                          | "ThinThickSmallGap"
+                          | "ThinThickThinLargeGap"
+                          | "ThinThickThinMedGap"
+                          | "ThinThickThinSmallGap"
+                          | "Triple"
   - name: outsideLineWidth
     uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideLineWidth:member'
     package: word!
@@ -114,10 +225,31 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        outsideLineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300"
-        | "Pt450" | "Pt600" | "Mixed";
+      content: |-
+        outsideLineWidth?:
+                        | Word.LineWidth
+                        | "None"
+                        | "Pt025"
+                        | "Pt050"
+                        | "Pt075"
+                        | "Pt100"
+                        | "Pt150"
+                        | "Pt225"
+                        | "Pt300"
+                        | "Pt450"
+                        | "Pt600"
+                        | "Mixed";
       return:
-        type: >-
-          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
-          "Pt300" | "Pt450" | "Pt600" | "Mixed"
+        type: |-
+          | <xref uid="word!Word.LineWidth:enum" />
+                          | "None"
+                          | "Pt025"
+                          | "Pt050"
+                          | "Pt075"
+                          | "Pt100"
+                          | "Pt150"
+                          | "Pt225"
+                          | "Pt300"
+                          | "Pt450"
+                          | "Pt600"
+                          | "Mixed"

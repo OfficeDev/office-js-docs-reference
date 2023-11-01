@@ -115,15 +115,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions &
-        PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.ShapeScopedCollection;
+      content: |-
+        load(
+                    options?:
+                        & PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions
+                        & PowerPoint.Interfaces.CollectionLoadOptions,
+                ): PowerPoint.ShapeScopedCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface" /> & <xref
-            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+          type: |-
+            & <xref uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface" />
+                            & <xref uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeScopedCollection:class" />'
         description: ''

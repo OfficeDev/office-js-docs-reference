@@ -127,9 +127,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+      content: |-
+        addAsync(
+                    key: string,
+                    JSONmessage: NotificationMessageDetails,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: key
           description: >-
@@ -193,9 +197,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        addAsync(
+                    key: string,
+                    JSONmessage: NotificationMessageDetails,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: key
           description: >-
@@ -274,9 +281,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAllAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<NotificationMessageDetails[]>) => void): void;
+      content: |-
+        getAllAsync(
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void,
+                ): void;
       parameters:
         - id: options
           description: >-
@@ -364,9 +373,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeAsync(key: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        removeAsync(
+                    key: string,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: key
           description: The key for the notification message to remove.
@@ -477,9 +489,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+      content: |-
+        replaceAsync(
+                    key: string,
+                    JSONmessage: NotificationMessageDetails,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: key
           description: The key for the notification message to replace. It can't be longer than 32 characters.
@@ -525,9 +541,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        replaceAsync(
+                    key: string,
+                    JSONmessage: NotificationMessageDetails,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: key
           description: The key for the notification message to replace. It can't be longer than 32 characters.

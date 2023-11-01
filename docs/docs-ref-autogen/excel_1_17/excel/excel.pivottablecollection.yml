@@ -167,9 +167,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.PivotTableCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.PivotTableCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

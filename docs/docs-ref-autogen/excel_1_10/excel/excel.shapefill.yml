@@ -61,13 +61,24 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" |
-        "Mixed";
+      content: |-
+        readonly type:
+                    | Excel.ShapeFillType
+                    | "NoFill"
+                    | "Solid"
+                    | "Gradient"
+                    | "Pattern"
+                    | "PictureAndTexture"
+                    | "Mixed";
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" |
-          "PictureAndTexture" | "Mixed"
+        type: |-
+          | <xref uid="excel!Excel.ShapeFillType:enum" />
+                      | "NoFill"
+                      | "Solid"
+                      | "Gradient"
+                      | "Pattern"
+                      | "PictureAndTexture"
+                      | "Mixed"
 methods:
   - name: clear()
     uid: 'excel!Excel.ShapeFill#clear:member(1)'

@@ -99,9 +99,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addAsync(categories: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        addAsync(
+                    categories: string[],
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: categories
           description: The categories to be added to the item.
@@ -195,9 +198,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<CategoryDetails[]>) => void): void;
+      content: |-
+        getAsync(
+                    options: Office.AsyncContextOptions,
+                    callback: (asyncResult: Office.AsyncResult<CategoryDetails[]>) => void,
+                ): void;
       parameters:
         - id: options
           description: >-
@@ -341,9 +346,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeAsync(categories: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        removeAsync(
+                    categories: string[],
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: categories
           description: The categories to be removed from the item.

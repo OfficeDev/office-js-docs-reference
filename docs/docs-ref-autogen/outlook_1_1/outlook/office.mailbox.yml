@@ -172,16 +172,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        item?: Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose
-        & AppointmentRead;
+      content: |-
+        item?:
+                    & Item
+                    & ItemCompose
+                    & ItemRead
+                    & Message
+                    & MessageCompose
+                    & MessageRead
+                    & Appointment
+                    & AppointmentCompose
+                    & AppointmentRead;
       return:
-        type: >-
-          <xref uid="outlook!Office.Item:interface" /> & <xref uid="outlook!Office.ItemCompose:interface" /> & <xref
-          uid="outlook!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
-          uid="outlook!Office.MessageCompose:interface" /> & <xref uid="outlook!Office.MessageRead:interface" /> & <xref
-          uid="outlook!Office.Appointment:interface" /> & <xref uid="outlook!Office.AppointmentCompose:interface" /> &
-          <xref uid="outlook!Office.AppointmentRead:interface" />
+        type: |-
+          & <xref uid="outlook!Office.Item:interface" />
+                      & <xref uid="outlook!Office.ItemCompose:interface" />
+                      & <xref uid="outlook!Office.ItemRead:interface" />
+                      & <xref uid="outlook!Office.Message:interface" />
+                      & <xref uid="outlook!Office.MessageCompose:interface" />
+                      & <xref uid="outlook!Office.MessageRead:interface" />
+                      & <xref uid="outlook!Office.Appointment:interface" />
+                      & <xref uid="outlook!Office.AppointmentCompose:interface" />
+                      & <xref uid="outlook!Office.AppointmentRead:interface" />
   - name: userProfile
     uid: 'outlook!Office.Mailbox#userProfile:member'
     package: outlook!
@@ -876,9 +888,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        makeEwsRequestAsync(data: any, callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?:
-        any): void;
+      content: |-
+        makeEwsRequestAsync(
+                    data: any,
+                    callback: (asyncResult: Office.AsyncResult<string>) => void,
+                    userContext?: any,
+                ): void;
       parameters:
         - id: data
           description: The EWS request.

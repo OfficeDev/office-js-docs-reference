@@ -33,9 +33,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation,
-        method?: Excel.SortMethod): void;
+      content: |-
+        apply(
+                    fields: Excel.SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: Excel.SortOrientation,
+                    method?: Excel.SortMethod,
+                ): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -55,18 +60,23 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+  - name: 'apply(fields, matchCase, hasHeaders, orientationString, methodString)'
     uid: 'excel!Excel.RangeSort#apply:member(2)'
     package: excel!
-    fullName: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientationString, methodString)'
     summary: Perform a sort operation.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" |
-        "Columns", method?: "PinYin" | "StrokeCount"): void;
+      content: |-
+        apply(
+                    fields: Excel.SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientationString?: "Rows" | "Columns",
+                    methodString?: "PinYin" | "StrokeCount",
+                ): void;
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -80,7 +90,7 @@ methods:
         - id: orientationString
           description: Optional. Whether the operation is sorting rows or columns.
           type: '"Rows" | "Columns"'
-        - id: method
+        - id: methodString
           description: Optional. The ordering method used for Chinese characters.
           type: '"PinYin" | "StrokeCount"'
       return:

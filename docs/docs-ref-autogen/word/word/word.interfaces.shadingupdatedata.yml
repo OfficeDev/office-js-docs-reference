@@ -49,18 +49,83 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" |
-        "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" |
-        "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" |
-        "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50"
-        | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" |
-        "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
+      content: |-
+        texture?:
+                        | Word.ShadingTextureType
+                        | "DarkDiagonalDown"
+                        | "DarkDiagonalUp"
+                        | "DarkGrid"
+                        | "DarkHorizontal"
+                        | "DarkTrellis"
+                        | "DarkVertical"
+                        | "LightDiagonalDown"
+                        | "LightDiagonalUp"
+                        | "LightGrid"
+                        | "LightHorizontal"
+                        | "LightTrellis"
+                        | "LightVertical"
+                        | "None"
+                        | "Percent10"
+                        | "Percent12Pt5"
+                        | "Percent15"
+                        | "Percent20"
+                        | "Percent25"
+                        | "Percent30"
+                        | "Percent35"
+                        | "Percent37Pt5"
+                        | "Percent40"
+                        | "Percent45"
+                        | "Percent5"
+                        | "Percent50"
+                        | "Percent55"
+                        | "Percent60"
+                        | "Percent62Pt5"
+                        | "Percent65"
+                        | "Percent70"
+                        | "Percent75"
+                        | "Percent80"
+                        | "Percent85"
+                        | "Percent87Pt5"
+                        | "Percent90"
+                        | "Percent95"
+                        | "Solid";
       return:
-        type: >-
-          <xref uid="word!Word.ShadingTextureType:enum" /> | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" |
-          "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" |
-          "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" |
-          "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" |
-          "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" |
-          "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid"
+        type: |-
+          | <xref uid="word!Word.ShadingTextureType:enum" />
+                          | "DarkDiagonalDown"
+                          | "DarkDiagonalUp"
+                          | "DarkGrid"
+                          | "DarkHorizontal"
+                          | "DarkTrellis"
+                          | "DarkVertical"
+                          | "LightDiagonalDown"
+                          | "LightDiagonalUp"
+                          | "LightGrid"
+                          | "LightHorizontal"
+                          | "LightTrellis"
+                          | "LightVertical"
+                          | "None"
+                          | "Percent10"
+                          | "Percent12Pt5"
+                          | "Percent15"
+                          | "Percent20"
+                          | "Percent25"
+                          | "Percent30"
+                          | "Percent35"
+                          | "Percent37Pt5"
+                          | "Percent40"
+                          | "Percent45"
+                          | "Percent5"
+                          | "Percent50"
+                          | "Percent55"
+                          | "Percent60"
+                          | "Percent62Pt5"
+                          | "Percent65"
+                          | "Percent70"
+                          | "Percent75"
+                          | "Percent80"
+                          | "Percent85"
+                          | "Percent87Pt5"
+                          | "Percent90"
+                          | "Percent95"
+                          | "Solid"

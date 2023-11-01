@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'asyncContext?: any'
+      content: 'asyncContext?: any;'
       return:
         type: any
   - name: sliceSize
@@ -32,6 +32,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sliceSize?: number'
+      content: 'sliceSize?: number;'
       return:
         type: number

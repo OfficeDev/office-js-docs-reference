@@ -34,13 +34,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
-        "SlantDashDot";
+      content: |-
+        style?:
+                        | Excel.BorderLineStyle
+                        | "None"
+                        | "Continuous"
+                        | "Dash"
+                        | "DashDot"
+                        | "DashDotDot"
+                        | "Dot"
+                        | "Double"
+                        | "SlantDashDot";
       return:
-        type: >-
-          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
-          "Dot" | "Double" | "SlantDashDot"
+        type: |-
+          | <xref uid="excel!Excel.BorderLineStyle:enum" />
+                          | "None"
+                          | "Continuous"
+                          | "Dash"
+                          | "DashDot"
+                          | "DashDotDot"
+                          | "Dot"
+                          | "Double"
+                          | "SlantDashDot"
   - name: weight
     uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#weight:member'
     package: excel!

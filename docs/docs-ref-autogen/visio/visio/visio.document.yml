@@ -335,9 +335,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        showTaskPane(taskPaneTypeString: "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings",
-        initialProps?: any, show?: boolean): void;
+      content: |-
+        showTaskPane(
+                    taskPaneTypeString: "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings",
+                    initialProps?: any,
+                    show?: boolean,
+                ): void;
       parameters:
         - id: taskPaneTypeString
           description: Type of the 1st Party TaskPane. It can take values from enum TaskPaneType

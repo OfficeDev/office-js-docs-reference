@@ -86,9 +86,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.CommentCollection;
+      content: |-
+        load(
+                    options?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions,
+                ): Visio.CommentCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

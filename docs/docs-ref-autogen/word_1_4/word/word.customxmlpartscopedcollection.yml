@@ -129,9 +129,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartScopedCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.CustomXmlPartScopedCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

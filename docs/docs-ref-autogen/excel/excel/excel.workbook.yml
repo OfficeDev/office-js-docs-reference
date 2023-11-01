@@ -715,9 +715,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId):
-        OfficeExtension.ClientResult<LinkedEntityCellValue>;
+      content: |-
+        getLinkedEntityCellValue(
+                    linkedEntityCellValueId: LinkedEntityId,
+                ): OfficeExtension.ClientResult<LinkedEntityCellValue>;
       parameters:
         - id: linkedEntityCellValueId
           description: An identifier that specifies an individual `LinkedEntityCellValue`<!-- -->.
@@ -850,9 +851,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertWorksheetsFromBase64(base64File: string, options?: Excel.InsertWorksheetOptions):
-        OfficeExtension.ClientResult<string[]>;
+      content: |-
+        insertWorksheetsFromBase64(
+                    base64File: string,
+                    options?: Excel.InsertWorksheetOptions,
+                ): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
           description: Required. The base64-encoded string representing the source workbook file.

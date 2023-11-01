@@ -20,7 +20,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'column?: number'
+      content: 'column?: number;'
       return:
         type: number
   - name: row
@@ -32,6 +32,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'row?: number'
+      content: 'row?: number;'
       return:
         type: number

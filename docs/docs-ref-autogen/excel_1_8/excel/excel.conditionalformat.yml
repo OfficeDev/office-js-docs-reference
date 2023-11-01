@@ -507,13 +507,28 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
-        "PresetCriteria" | "ContainsText" | "CellValue";
+      content: |-
+        readonly type:
+                    | Excel.ConditionalFormatType
+                    | "Custom"
+                    | "DataBar"
+                    | "ColorScale"
+                    | "IconSet"
+                    | "TopBottom"
+                    | "PresetCriteria"
+                    | "ContainsText"
+                    | "CellValue";
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" | "DataBar" | "ColorScale" | "IconSet" |
-          "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"
+        type: |-
+          | <xref uid="excel!Excel.ConditionalFormatType:enum" />
+                      | "Custom"
+                      | "DataBar"
+                      | "ColorScale"
+                      | "IconSet"
+                      | "TopBottom"
+                      | "PresetCriteria"
+                      | "ContainsText"
+                      | "CellValue"
 methods:
   - name: delete()
     uid: 'excel!Excel.ConditionalFormat#delete:member(1)'

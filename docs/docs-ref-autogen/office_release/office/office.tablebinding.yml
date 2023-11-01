@@ -198,9 +198,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        addColumnsAsync(
+                    tableData: TableData | any[][],
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: tableData
           description: >-
@@ -309,9 +312,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        addRowsAsync(
+                    rows: TableData | any[][],
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: rows
           description: >-
@@ -452,9 +458,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: |-
+        deleteAllDataValuesAsync(
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -522,9 +530,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult< ({ cells: any, format: any})[]>) => void): void;
+      content: |-
+        getFormatsAsync(
+                    cellReference?: any,
+                    formats?: any[],
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<({ cells: any; format: any })[]>) => void,
+                ): void;
       parameters:
         - id: cellReference
           description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
@@ -542,7 +554,7 @@ methods:
             is an array containing one or more JavaScript objects specifying the formatting of their corresponding
             cells.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; ({ cells: any, format: any})[]&gt;) =&gt;
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;({ cells: any; format: any })[]&gt;) =&gt;
             void
       return:
         type: void
@@ -583,9 +595,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< ({ cells: any, format:
-        any})[]>) => void): void;
+      content: |-
+        getFormatsAsync(
+                    cellReference?: any,
+                    formats?: any[],
+                    callback?: (result: AsyncResult<({ cells: any; format: any })[]>) => void,
+                ): void;
       parameters:
         - id: cellReference
           description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
@@ -600,7 +615,7 @@ methods:
             is an array containing one or more JavaScript objects specifying the formatting of their corresponding
             cells.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; ({ cells: any, format: any})[]&gt;) =&gt;
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;({ cells: any; format: any })[]&gt;) =&gt;
             void
       return:
         type: void
@@ -755,9 +770,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setFormatsAsync(cellFormat: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>)
-        => void): void;
+      content: |-
+        setFormatsAsync(
+                    cellFormat: any[],
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: cellFormat
           description: >-
@@ -940,9 +958,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        setTableOptionsAsync(
+                    tableOptions: any,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: tableOptions
           description: An object literal containing a list of property name-value pairs that define the table options to apply.

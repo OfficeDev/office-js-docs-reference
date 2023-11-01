@@ -115,9 +115,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.SlicerItemCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.SlicerItemCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

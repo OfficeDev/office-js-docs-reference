@@ -84,9 +84,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions):
-        Excel.PresetCriteriaConditionalFormat;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions,
+                ): Excel.PresetCriteriaConditionalFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
@@ -153,9 +154,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
-        void;
+      content: |-
+        set(
+                    properties: Interfaces.PresetCriteriaConditionalFormatUpdateData,
+                    options?: OfficeExtension.UpdateOptions,
+                ): void;
       parameters:
         - id: properties
           description: >-

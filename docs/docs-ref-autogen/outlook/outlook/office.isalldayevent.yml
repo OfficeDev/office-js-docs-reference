@@ -40,9 +40,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) =>
-        void): void;
+      content: |-
+        getAsync(
+                    options: Office.AsyncContextOptions,
+                    callback: (asyncResult: Office.AsyncResult<boolean>) => void,
+                ): void;
       parameters:
         - id: options
           description: >-
@@ -149,9 +151,12 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(isAllDayEvent: boolean, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: |-
+        setAsync(
+                    isAllDayEvent: boolean,
+                    options: Office.AsyncContextOptions,
+                    callback?: (asyncResult: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: isAllDayEvent
           description: boolean value to set the all day event status.

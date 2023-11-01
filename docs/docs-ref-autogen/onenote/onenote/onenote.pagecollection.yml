@@ -143,9 +143,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
-        OneNote.PageCollection;
+      content: |-
+        load(
+                    options?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions,
+                ): OneNote.PageCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

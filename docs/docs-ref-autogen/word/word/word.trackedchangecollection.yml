@@ -121,9 +121,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TrackedChangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.TrackedChangeCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.TrackedChangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.TrackedChangeCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

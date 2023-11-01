@@ -481,9 +481,12 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        getCell(dataHierarchy: DataPivotHierarchy | string, rowItems: Array<PivotItem | string>, columnItems:
-        Array<PivotItem | string>): Excel.Range;
+      content: |-
+        getCell(
+                    dataHierarchy: DataPivotHierarchy | string,
+                    rowItems: Array<PivotItem | string>,
+                    columnItems: Array<PivotItem | string>,
+                ): Excel.Range;
       parameters:
         - id: dataHierarchy
           description: The `dataHierarchy` that provides the data item to find.
@@ -611,9 +614,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string):
-        Excel.PivotItemCollection;
+      content: |-
+        getPivotItems(
+                    axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter",
+                    cell: Range | string,
+                ): Excel.PivotItemCollection;
       parameters:
         - id: axisString
           description: The axis from which to get the PivotItems. Must be either "row" or "column."

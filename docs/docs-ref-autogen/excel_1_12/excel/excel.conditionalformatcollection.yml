@@ -89,15 +89,30 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" |
-        "ContainsText" | "CellValue"): Excel.ConditionalFormat;
+      content: |-
+        add(
+                    typeString:
+                        | "Custom"
+                        | "DataBar"
+                        | "ColorScale"
+                        | "IconSet"
+                        | "TopBottom"
+                        | "PresetCriteria"
+                        | "ContainsText"
+                        | "CellValue",
+                ): Excel.ConditionalFormat;
       parameters:
         - id: typeString
           description: The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
-          type: >-
-            "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" |
-            "CellValue"
+          type: |-
+            | "Custom"
+                            | "DataBar"
+                            | "ColorScale"
+                            | "IconSet"
+                            | "TopBottom"
+                            | "PresetCriteria"
+                            | "ContainsText"
+                            | "CellValue"
       return:
         type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: ''
@@ -265,9 +280,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.ConditionalFormatCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

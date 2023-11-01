@@ -175,17 +175,54 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
-        "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
-        "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
-        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
+      content: |-
+        style:
+                    | Excel.IconSet
+                    | "Invalid"
+                    | "ThreeArrows"
+                    | "ThreeArrowsGray"
+                    | "ThreeFlags"
+                    | "ThreeTrafficLights1"
+                    | "ThreeTrafficLights2"
+                    | "ThreeSigns"
+                    | "ThreeSymbols"
+                    | "ThreeSymbols2"
+                    | "FourArrows"
+                    | "FourArrowsGray"
+                    | "FourRedToBlack"
+                    | "FourRating"
+                    | "FourTrafficLights"
+                    | "FiveArrows"
+                    | "FiveArrowsGray"
+                    | "FiveRating"
+                    | "FiveQuarters"
+                    | "ThreeStars"
+                    | "ThreeTriangles"
+                    | "FiveBoxes";
       return:
-        type: >-
-          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" |
-          "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows"
-          | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" |
-          "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes"
+        type: |-
+          | <xref uid="excel!Excel.IconSet:enum" />
+                      | "Invalid"
+                      | "ThreeArrows"
+                      | "ThreeArrowsGray"
+                      | "ThreeFlags"
+                      | "ThreeTrafficLights1"
+                      | "ThreeTrafficLights2"
+                      | "ThreeSigns"
+                      | "ThreeSymbols"
+                      | "ThreeSymbols2"
+                      | "FourArrows"
+                      | "FourArrowsGray"
+                      | "FourRedToBlack"
+                      | "FourRating"
+                      | "FourTrafficLights"
+                      | "FiveArrows"
+                      | "FiveArrowsGray"
+                      | "FiveRating"
+                      | "FiveQuarters"
+                      | "ThreeStars"
+                      | "ThreeTriangles"
+                      | "FiveBoxes"
 methods:
   - name: load(options)
     uid: 'excel!Excel.IconSetConditionalFormat#load:member(1)'

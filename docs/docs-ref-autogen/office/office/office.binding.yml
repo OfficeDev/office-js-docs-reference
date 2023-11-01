@@ -142,9 +142,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    options?: Office.AsyncContextOptions,
+                    callback?: (result: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: >-
@@ -244,9 +248,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
-        void): void;
+      content: |-
+        addHandlerAsync(
+                    eventType: Office.EventType,
+                    handler: any,
+                    callback?: (result: Office.AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: >-
@@ -496,9 +503,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: |-
+        removeHandlerAsync(
+                    eventType: Office.EventType,
+                    options?: RemoveHandlerOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: eventType
           description: >-
@@ -681,9 +691,12 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: |-
+        setDataAsync(
+                    data: TableData | any,
+                    options?: SetBindingDataOptions,
+                    callback?: (result: AsyncResult<void>) => void,
+                ): void;
       parameters:
         - id: data
           description: |-

@@ -77,9 +77,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.RangeAreasCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.RangeAreasCollection;
+      content: |-
+        load(
+                    options?: Excel.Interfaces.RangeAreasCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions,
+                ): Excel.RangeAreasCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.

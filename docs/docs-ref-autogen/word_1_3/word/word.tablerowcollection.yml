@@ -130,9 +130,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.TableRowCollection;
+      content: |-
+        load(
+                    options?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions,
+                ): Word.TableRowCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
