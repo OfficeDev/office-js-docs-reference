@@ -9227,7 +9227,7 @@ Office.SmartAlertsEventCompletedOptions,"commandId",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"contextData",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"errorMessage",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"sendModeOverride",Property,Good,false
-Office.SpamReportingEventArgs,N/A,Class,Good,false
+Office.SpamReportingEventArgs,N/A,Class,Good,true
 Office.SpamReportingEventArgs,"freeText",Property,Good,false
 Office.SpamReportingEventArgs,"options",Property,Good,false
 Office.SpamReportingEventArgs,"type",Property,Good,false
