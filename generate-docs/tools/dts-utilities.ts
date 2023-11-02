@@ -163,7 +163,9 @@ export class APISet {
                 // - The `context` property.
                 // - Static fields.
                 let filteredFields = clas.fields.filter((field) => {
-                    return (field.declarationString.search(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g) < 0 &&
+                    let isLiteral = field.declarationString.search(/([a-zA-Z]+)(\??:)([\n]?([ |]*\"[\w]*\"[|,\n]*)+?)([ ]*[\),])/g) >= 0;
+                    return (
+                        !isLiteral &&
                         field.name !== "load" &&
                         field.name !== "set" &&
                         field.name !== "toJSON" &&
@@ -194,7 +196,8 @@ export class APISet {
                         }
 
                         newItemText = newItemText.replace("readonly ", "");
-                        newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
+                        newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "")
+                        newItemText = newItemText.replace(/[\s][\s]+/g, " ").replace(/\( /g, "(").replace(/ \)/g, ")").replace(/,\)/g, ")").replace(/([\w]\??: )\\\| /g, "$1"); // dprint formatting quirks
                         newItemText = newItemText.replace(/\<any\>/g, "");
 
                         let tableLine = "[" + newItemText + "]("

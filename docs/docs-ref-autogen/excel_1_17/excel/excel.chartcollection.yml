@@ -93,10 +93,10 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
         description: ''
-  - name: 'add(typeString, sourceData, seriesBy)'
+  - name: 'add(typeString, sourceData, seriesByString)'
     uid: 'excel!Excel.ChartCollection#add:member(2)'
     package: excel!
-    fullName: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesByString)'
     summary: Creates a new chart.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -117,7 +117,7 @@ methods:
         "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
         "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
         "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel",
-        sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       parameters:
         - id: typeString
           description: Represents the type of a chart. See `Excel.ChartType` for details.
@@ -140,7 +140,7 @@ methods:
         - id: sourceData
           description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
-        - id: seriesBy
+        - id: seriesByString
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy`
             for details.

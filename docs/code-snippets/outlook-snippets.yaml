@@ -1845,6 +1845,28 @@ Office.SmartAlertsEventCompletedOptions:interface:
             }
         });
     }
+Office.SpamReportingEventArgs:interface:
+  - |-
+    // This example handles a SpamReporting event to process a reported spam or phishing message.
+    function onSpamReport(event) {
+        if (event.type === "SpamReporting") {
+            const reportedOptions = event.options;
+            const additionalInfo = event.freeText;
+
+            // Run additional processing operations here.
+
+            // Signal that the event has completed processing.
+            event.completed({
+                moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+                folderName: "Reported Messages",
+                onErrorDeleteItem: true,
+                showPostProcessingDialog: {
+                    title: "Contoso Spam Reporting",
+                    description: "Thank you for reporting this message."
+                }
+            });
+        }
+    }
 Office.SpamReportingEventCompletedOptions:interface:
   - |-
     // The following example handles a SpamReporting event to process a reported spam or phishing message.

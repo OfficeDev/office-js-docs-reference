@@ -6,7 +6,33 @@ fullName: Office.SpamReportingEventArgs
 summary: >-
   Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is
   reported.
-remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // This example handles a SpamReporting event to process a reported spam or phishing message.
+  function onSpamReport(event) {
+      if (event.type === "SpamReporting") {
+          const reportedOptions = event.options;
+          const additionalInfo = event.freeText;
+
+          // Run additional processing operations here.
+
+          // Signal that the event has completed processing.
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message."
+              }
+          });
+      }
+  }
+  ```
 isPreview: true
 isDeprecated: false
 type: interface

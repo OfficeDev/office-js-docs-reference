@@ -279,27 +279,29 @@ function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook"
 
 function handleLiteralParameterOverloads(dtsString: string): string {
     // rename parameters for string literal overloads
-    const matches = dtsString.match(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g);
+    const matches = dtsString.match(/([a-zA-Z]+)(\??:)([\n]?([ |]*\"[\w]*\"[|,\n]*)+?)([ ]*[\),])/g);
     let matchIndex = 0;
     if (matches) {
         matches.forEach((match) => {
-            let parameterName = match.substring(0, match.indexOf(": "));
+            let parameterName = match.substring(0, match.indexOf(":"));
             matchIndex = dtsString.indexOf(match, matchIndex);
             parameterName = parameterName.indexOf("?") >= 0 ? parameterName.substring(0, parameterName.length - 1) : parameterName;
-            const parameterString = "@param " + parameterName + " ";
+            const parameterString = `@param ${parameterName} `;
             const index = dtsString.lastIndexOf(parameterString, matchIndex);
             if (index < 0) {
-                console.warn("Missing @param for literal parameter: " + match);
+                // Only warn if this wasn't found in a comment.
+                if (dtsString.substring(dtsString.lastIndexOf("*", matchIndex), matchIndex + match.length).match(/([\*]+)/g).length == 0) {
+                    console.warn("Missing @param for literal parameter: " + match);
+                }
             } else {
-            dtsString = dtsString.substring(0, index)
-            + "@param " + parameterName + "String "
-            + dtsString.substring(index + parameterString.length);
-            matchIndex += match.length;
+                dtsString = dtsString.substring(0, index)
+                + "@param " + parameterName + "String "
+                + dtsString.substring(index + parameterString.length);
+                matchIndex += match.length;
             }
         });
     }
-
-    return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
+    return dtsString.replace(/([a-zA-Z]+)(\??:)([\n]?([ |]*\"[\w]*\"[|,\n]*)+?)([ ]*[\),])/g, "$1String$2$3$5").replace(/([\*]+.+ .+)String:/g, "$1:");
 }
 
 function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keyword: string, forceNew: boolean) {

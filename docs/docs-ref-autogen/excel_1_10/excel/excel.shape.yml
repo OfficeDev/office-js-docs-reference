@@ -875,10 +875,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+  - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
     uid: 'excel!Excel.Shape#scaleHeight:member(2)'
     package: excel!
-    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFromString)'
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -888,8 +888,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
@@ -899,7 +899,7 @@ methods:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFrom
+        - id: scaleFromString
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.
@@ -937,10 +937,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+  - name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
     uid: 'excel!Excel.Shape#scaleWidth:member(2)'
     package: excel!
-    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFromString)'
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -950,8 +950,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFromString?:
+        "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
@@ -961,7 +961,7 @@ methods:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
-        - id: scaleFrom
+        - id: scaleFromString
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.
