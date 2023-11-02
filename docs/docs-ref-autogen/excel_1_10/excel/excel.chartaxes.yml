@@ -97,23 +97,23 @@ methods:
       return:
         type: '<xref uid="excel!Excel.ChartAxis:class" />'
         description: ''
-  - name: 'getItem(typeString, group)'
+  - name: 'getItem(typeString, groupString)'
     uid: 'excel!Excel.ChartAxes#getItem:member(2)'
     package: excel!
-    fullName: 'getItem(typeString, group)'
+    fullName: 'getItem(typeString, groupString)'
     summary: Returns the specific axis identified by type and group.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"):
+        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", groupString?: "Primary" | "Secondary"):
         Excel.ChartAxis;
       parameters:
         - id: typeString
           description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '"Invalid" | "Category" | "Value" | "Series"'
-        - id: group
+        - id: groupString
           description: Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
           type: '"Primary" | "Secondary"'
       return:

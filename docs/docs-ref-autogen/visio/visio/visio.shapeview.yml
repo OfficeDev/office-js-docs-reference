@@ -115,10 +115,14 @@ methods:
               }
           });
           ```
-  - name: 'addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+  - name: >-
+      addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString, OverlayVerticalAlignmentString, Width,
+      Height)
     uid: 'visio!Visio.ShapeView#addOverlay:member(2)'
     package: visio!
-    fullName: 'addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+    fullName: >-
+      addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignmentString, OverlayVerticalAlignmentString, Width,
+      Height)
     summary: |-
       Adds an overlay on top of the shape.
 
@@ -128,9 +132,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" |
-        "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number):
-        OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignmentString:
+        "Left" | "Center" | "Right", OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom", Width: number, Height:
+        number): OfficeExtension.ClientResult<number>;
       parameters:
         - id: OverlayTypeString
           description: 'An Overlay Type. Can be ''Text'', ''Image'' or ''Html''.'
@@ -138,10 +142,10 @@ methods:
         - id: Content
           description: Content of Overlay.
           type: string
-        - id: OverlayHorizontalAlignment
+        - id: OverlayHorizontalAlignmentString
           description: 'Horizontal Alignment of Overlay. Can be ''Left'', ''Center'', or ''Right''.'
           type: '"Left" | "Center" | "Right"'
-        - id: OverlayVerticalAlignment
+        - id: OverlayVerticalAlignmentString
           description: 'Vertical Alignment of Overlay. Can be ''Top'', ''Middle'', ''Bottom''.'
           type: '"Top" | "Middle" | "Bottom"'
         - id: Width

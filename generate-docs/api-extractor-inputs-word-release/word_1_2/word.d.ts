@@ -787,8 +787,7 @@ export declare namespace Word {
          * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
-        
-        /**
+                /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.

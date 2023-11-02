@@ -192,10 +192,10 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
-  - name: 'addNoteTag(typeString, status)'
+  - name: 'addNoteTag(typeString, statusString)'
     uid: 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
     package: onenote!
-    fullName: 'addNoteTag(typeString, status)'
+    fullName: 'addNoteTag(typeString, statusString)'
     summary: Add NoteTag to the paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
@@ -203,15 +203,15 @@ methods:
     syntax:
       content: >-
         addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
-        "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed"
-        | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+        "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", statusString: "Unknown" | "Normal" |
+        "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
       parameters:
         - id: typeString
           description: The type of the NoteTag.
           type: >-
             "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" |
             "Critical" | "ToDoPriority1" | "ToDoPriority2"
-        - id: status
+        - id: statusString
           description: The status of the NoteTag.
           type: '"Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
       return:

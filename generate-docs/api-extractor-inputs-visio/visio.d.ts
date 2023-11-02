@@ -1093,12 +1093,12 @@ export declare namespace Visio {
          *
          * @param OverlayTypeString - An Overlay Type. Can be 'Text', 'Image' or 'Html'.
          * @param Content - Content of Overlay.
-         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
-         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
+         * @param OverlayHorizontalAlignmentString - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
+         * @param OverlayVerticalAlignmentString - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignmentString: "Left" | "Center" | "Right", OverlayVerticalAlignmentString: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          *
          * Removes particular overlay or all overlays on the Shape.
