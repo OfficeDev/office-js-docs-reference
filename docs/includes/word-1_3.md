@@ -88,8 +88,8 @@
 ||[getFirstOrNullObject()](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1))|Gets the first list in this collection.|
 ||[getItem(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))|Gets a list object by its ID.|
 ||[items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)|Gets the loaded child items in this collection.|
-|[ListItem](/javascript/api/word/word.listitem)|[getAncestor(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1))|Gets the list item parent, or the closest ancestor if the parent does not exist.|
-||[getAncestorOrNullObject(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))|Gets the list item parent, or the closest ancestor if the parent does not exist.|
+|[ListItem](/javascript/api/word/word.listitem)|[getAncestor(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1))|Gets the list item parent, or the closest ancestor if the parent doesn't exist.|
+||[getAncestorOrNullObject(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))|Gets the list item parent, or the closest ancestor if the parent doesn't exist.|
 ||[getDescendants(directChildrenOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getdescendants-member(1))|Gets all descendant list items of the list item.|
 ||[level](/javascript/api/word/word.listitem#word-word-listitem-level-member)|Specifies the level of the item in the list.|
 ||[listString](/javascript/api/word/word.listitem#word-word-listitem-liststring-member)|Gets the list item bullet, number, or picture as a string.|

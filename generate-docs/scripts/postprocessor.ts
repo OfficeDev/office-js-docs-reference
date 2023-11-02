@@ -89,7 +89,7 @@ tryCatch(async () => {
         );
     });
 
-    // fix all the individual TOC files
+    // fix al.l the individual TOC files
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
@@ -98,7 +98,7 @@ tryCatch(async () => {
                             {host: "outlook", versions: 14},
                             {host: "powerpoint", versions: 6},
                             {host: "visio", versions: 1},
-                            {host: "word", versions: 6}]; /* not including online or desktop*/
+                            {host: "word", versions: 7}]; /* not including online or desktop*/
 
     hostVersionMap.forEach(category => {
         if (category.versions > 1) {
