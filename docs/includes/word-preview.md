@@ -102,7 +102,7 @@
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Specifies whether the specified ListTemplate object is outline numbered.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[getAnnotations()](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))|Gets annotations set on this Paragraph object.|
-||[getText(options?: Word.GetTextOptions \| {            IncludeHiddenText?: boolean            IncludeTextMarkedAsDeleted?: boolean        })](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))|Returns the text of the paragraph.|
+||[getText(options?: Word.GetTextOptions \| { IncludeHiddenText?: boolean IncludeTextMarkedAsDeleted?: boolean })](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))|Returns the text of the paragraph.|
 ||[insertAnnotations(annotations: Word.AnnotationSet)](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))|Inserts annotations on this Paragraph object.|
 ||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| "RichText" \| "PlainText" \| "CheckBox")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 ||[onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)|Occurs when new comments are added.|
