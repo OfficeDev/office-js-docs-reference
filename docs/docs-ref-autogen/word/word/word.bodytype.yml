@@ -1,0 +1,85 @@
+### YamlMime:TSEnum
+name: Word.BodyType
+uid: 'word!Word.BodyType:enum'
+package: word!
+fullName: Word.BodyType
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+  // Gets the referenced note's item type and body type, which are both "Footnote".
+
+  await Word.run(async (context) => {
+    const footnotes = context.document.body.footnotes;
+    footnotes.load("items");
+    await context.sync();
+
+    const referenceNumber = $("#input-reference").val();
+    const mark = (referenceNumber as number) - 1;
+    const item = footnotes.items[mark];
+    console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
+
+    item.body.load("type");
+    await context.sync();
+
+    console.log(`Body type of note: ${item.body.type}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: endnote
+    uid: 'word!Word.BodyType.endnote:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Endnote"'
+  - name: footer
+    uid: 'word!Word.BodyType.footer:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Footer"'
+  - name: footnote
+    uid: 'word!Word.BodyType.footnote:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Footnote"'
+  - name: header
+    uid: 'word!Word.BodyType.header:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Header"'
+  - name: mainDoc
+    uid: 'word!Word.BodyType.mainDoc:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"MainDoc"'
+  - name: noteItem
+    uid: 'word!Word.BodyType.noteItem:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"NoteItem"'
+  - name: section
+    uid: 'word!Word.BodyType.section:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Section"'
+  - name: tableCell
+    uid: 'word!Word.BodyType.tableCell:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"TableCell"'
+  - name: unknown
+    uid: 'word!Word.BodyType.unknown:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Unknown"'

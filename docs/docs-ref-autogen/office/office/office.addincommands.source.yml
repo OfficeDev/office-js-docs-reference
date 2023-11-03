@@ -1,0 +1,280 @@
+### YamlMime:TSType
+name: Office.AddinCommands.Source
+uid: 'office!Office.AddinCommands.Source:interface'
+package: office!
+fullName: Office.AddinCommands.Source
+summary: Encapsulates source data for add-in events.
+remarks: >-
+  For information on support in Excel, Word, and PowerPoint, see [Add-in commands requirement
+  sets](https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets)<!-- -->.
+
+
+  The following outlines support information for Outlook.
+
+
+  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  See [Add-in commands requirement
+  sets](https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets) for more
+  support information.
+
+
+  **[Minimum permission level
+  (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **restricted**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!Office.AddinCommands.Source#id:member'
+    package: office!
+    fullName: id
+    summary: The ID of the control that triggered calling this function. The ID comes from the manifest.
+    remarks: >-
+      The following outlines support information for Outlook.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      See [Add-in commands requirement
+      sets](https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets) for
+      more support information.
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // In this example, consider a button defined in an add-in manifest.
+
+      // The following is the XML manifest definition. Below it is the Teams 
+
+      // manifest (preview) definition.
+
+      //
+
+      //<Control xsi:type="Button" id="eventTestButton">
+
+      //    <Label resid="eventButtonLabel" />
+
+      //    <Tooltip resid="eventButtonTooltip" />
+
+      //    <Supertip>
+
+      //        <Title resid="eventSuperTipTitle" />
+
+      //        <Description resid="eventSuperTipDescription" />
+
+      //    </Supertip>
+
+      //    <Icon>
+
+      //        <bt:Image size="16" resid="blue-icon-16" />
+
+      //        <bt:Image size="32" resid="blue-icon-32" />
+
+      //        <bt:Image size="80" resid="blue-icon-80" />
+
+      //    </Icon>
+
+      //    <Action xsi:type="ExecuteFunction">
+
+      //        <FunctionName>testEventObject</FunctionName>
+
+      //    </Action>
+
+      //</Control>
+
+      //
+
+      // The Teams manifest (preview) definition is the following.
+
+      // Ellipses("...") indicate omitted properties.
+
+      //
+
+      //     "extensions": [
+
+      //         {
+
+      //             ...
+
+      //             "runtimes": [
+
+      //                 {
+
+      //                  "id": "CommandsRuntime",
+
+      //                  "type": "general",
+
+      //                  "code": {
+
+      //                      "page": "https://localhost:3000/commands.html",
+
+      //                      "script": "https://localhost:3000/commands.js"
+
+      //                  },
+
+      //                  "lifetime": "short",
+
+      //                  "actions": [
+
+      //                      {
+
+      //                          "id": "testEventObject",
+
+      //                          "type": "executeFunction",
+
+      //                          "displayName": "testEventObject"
+
+      //                      }
+
+      //                  ]
+
+      //              }
+
+      //             ],
+
+      //             "ribbons": [
+
+      //                 {
+
+      //                     ...
+
+      //                     "tabs": [
+
+      //                         ...
+
+      //                         "groups": [
+
+      //                             ...
+
+      //                             "controls": [
+
+      //                                 {
+
+      //                                      "id": "eventTestButton",
+
+      //                                      "type": "button",
+
+      //                                      "label": "Perform an action",
+
+      //                                      "icons": [
+
+      //                                          {
+
+      //                                              "size": 16,
+
+      //                                              "file": "https://localhost:3000/assets/blue-icon-16.png"
+
+      //                                          },
+
+      //                                          {
+
+      //                                              "size": 32,
+
+      //                                              "file": "https://localhost:3000/assets/blue-icon-32.png"
+
+      //                                          },
+
+      //                                          {
+
+      //                                              "size": 80,
+
+      //                                              "file": "https://localhost:3000/assets/blue-icon-80.png"
+
+      //                                          }
+
+      //                                      ],
+
+      //                                      "supertip": {
+
+      //                                          "title": "Perform an action",
+
+      //                                          "description": "Perform an action when clicked."
+
+      //                                      },
+
+      //                                      "actionId": "testEventObject"
+
+      //                                  }
+
+      //                             ]
+
+      //                         ]
+
+      //                     ]                           
+
+      //                 }
+
+      //             ]
+
+      //         }
+
+      //     ]
+
+
+
+      // The button has an id set to "eventTestButton", and will invoke
+
+      // the testEventObject function defined in the add-in.
+
+      // That function looks like this:
+
+      function testEventObject(event) {
+          // The event object implements the Event interface.
+
+          // This value will be "eventTestButton".
+          const buttonId = event.source.id;
+
+          // Signal to the host app that processing is complete.
+          event.completed();
+      }
+
+      ```
+
+      ```TypeScript
+
+      // Function is used by two buttons:
+
+      // button1 and button2
+
+      function multiButton (event) {
+          // Check which button was clicked.
+          const buttonId = event.source.id;
+
+          if (buttonId === 'button1') {
+              doButton1Action();
+          } else {
+              doButton2Action();
+          }
+
+          event.completed();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string

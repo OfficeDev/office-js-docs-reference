@@ -260,7 +260,7 @@ function cleanUpJson(host: string) {
         // Handle WordApiHiddenDocument 1.4 case.
         console.log(`\nStarting ${host}_1_4_hidden_document...`);
         json = fsx.readFileSync(`${jsonPath}_1_4_hidden_document/${fileName}`).toString();
-        fsx.writeFileSync(`${j.sonPath}_1_4_hidden_document/${fileName}`, cleanUpRichApiJson(json));
+        fsx.writeFileSync(`${jsonPath}_1_4_hidden_document/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_1_4_hidden_document`);
         // Handle WordApiHiddenDocument 1.3 case.
         console.log(`\nStarting ${host}_1_3_hidden_document...`);

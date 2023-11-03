@@ -1,0 +1,193 @@
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphFormatData
+uid: 'word!Word.Interfaces.ParagraphFormatData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphFormatData
+summary: An interface describing the data returned by calling `paragraphFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: 'word!Word.Interfaces.ParagraphFormatData#alignment:member'
+    package: word!
+    fullName: alignment
+    summary: Specifies the alignment for the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - name: firstLineIndent
+    uid: 'word!Word.Interfaces.ParagraphFormatData#firstLineIndent:member'
+    package: word!
+    fullName: firstLineIndent
+    summary: >-
+      Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstLineIndent?: number;'
+      return:
+        type: number
+  - name: keepTogether
+    uid: 'word!Word.Interfaces.ParagraphFormatData#keepTogether:member'
+    package: word!
+    fullName: keepTogether
+    summary: >-
+      Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates
+      the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keepTogether?: boolean;'
+      return:
+        type: boolean
+  - name: keepWithNext
+    uid: 'word!Word.Interfaces.ParagraphFormatData#keepWithNext:member'
+    package: word!
+    fullName: keepWithNext
+    summary: >-
+      Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft
+      Word repaginates the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keepWithNext?: boolean;'
+      return:
+        type: boolean
+  - name: leftIndent
+    uid: 'word!Word.Interfaces.ParagraphFormatData#leftIndent:member'
+    package: word!
+    fullName: leftIndent
+    summary: Specifies the left indent.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: number;'
+      return:
+        type: number
+  - name: lineSpacing
+    uid: 'word!Word.Interfaces.ParagraphFormatData#lineSpacing:member'
+    package: word!
+    fullName: lineSpacing
+    summary: Specifies the line spacing (in points) for the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineSpacing?: number;'
+      return:
+        type: number
+  - name: lineUnitAfter
+    uid: 'word!Word.Interfaces.ParagraphFormatData#lineUnitAfter:member'
+    package: word!
+    fullName: lineUnitAfter
+    summary: Specifies the amount of spacing (in gridlines) after the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitAfter?: number;'
+      return:
+        type: number
+  - name: lineUnitBefore
+    uid: 'word!Word.Interfaces.ParagraphFormatData#lineUnitBefore:member'
+    package: word!
+    fullName: lineUnitBefore
+    summary: Specifies the amount of spacing (in gridlines) before the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitBefore?: number;'
+      return:
+        type: number
+  - name: mirrorIndents
+    uid: 'word!Word.Interfaces.ParagraphFormatData#mirrorIndents:member'
+    package: word!
+    fullName: mirrorIndents
+    summary: Specifies whether left and right indents are the same width.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mirrorIndents?: boolean;'
+      return:
+        type: boolean
+  - name: outlineLevel
+    uid: 'word!Word.Interfaces.ParagraphFormatData#outlineLevel:member'
+    package: word!
+    fullName: outlineLevel
+    summary: Specifies the outline level for the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" |
+        "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
+        "OutlineLevelBodyText";
+      return:
+        type: >-
+          <xref uid="word!Word.OutlineLevel:enum" /> | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" |
+          "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
+          "OutlineLevelBodyText"
+  - name: rightIndent
+    uid: 'word!Word.Interfaces.ParagraphFormatData#rightIndent:member'
+    package: word!
+    fullName: rightIndent
+    summary: Specifies the right indent (in points) for the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent?: number;'
+      return:
+        type: number
+  - name: spaceAfter
+    uid: 'word!Word.Interfaces.ParagraphFormatData#spaceAfter:member'
+    package: word!
+    fullName: spaceAfter
+    summary: Specifies the amount of spacing (in points) after the specified paragraph or text column.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: number;'
+      return:
+        type: number
+  - name: spaceBefore
+    uid: 'word!Word.Interfaces.ParagraphFormatData#spaceBefore:member'
+    package: word!
+    fullName: spaceBefore
+    summary: Specifies the spacing (in points) before the specified paragraphs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore?: number;'
+      return:
+        type: number
+  - name: widowControl
+    uid: 'word!Word.Interfaces.ParagraphFormatData#widowControl:member'
+    package: word!
+    fullName: widowControl
+    summary: >-
+      Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the
+      paragraph when Microsoft Word repaginates the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'widowControl?: boolean;'
+      return:
+        type: boolean

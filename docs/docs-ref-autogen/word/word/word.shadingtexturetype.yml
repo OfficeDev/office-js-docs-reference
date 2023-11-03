@@ -1,0 +1,309 @@
+### YamlMime:TSEnum
+name: Word.ShadingTextureType
+uid: 'word!Word.ShadingTextureType:enum'
+package: word!
+fullName: Word.ShadingTextureType
+summary: >-
+  Represents the shading texture. To learn more about how to apply backgrounds like textures, see [Add, change, or
+  delete the background color in Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
+  -->.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: darkDiagonalDown
+    uid: 'word!Word.ShadingTextureType.darkDiagonalDown:member'
+    package: word!
+    summary: |-
+      Represents dark diagonal-down texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkDiagonalDown"'
+  - name: darkDiagonalUp
+    uid: 'word!Word.ShadingTextureType.darkDiagonalUp:member'
+    package: word!
+    summary: |-
+      Represents dark diagonal-up texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkDiagonalUp"'
+  - name: darkGrid
+    uid: 'word!Word.ShadingTextureType.darkGrid:member'
+    package: word!
+    summary: |-
+      Represents dark horizontal-cross texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkGrid"'
+  - name: darkHorizontal
+    uid: 'word!Word.ShadingTextureType.darkHorizontal:member'
+    package: word!
+    summary: |-
+      Represents dark horizontal texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkHorizontal"'
+  - name: darkTrellis
+    uid: 'word!Word.ShadingTextureType.darkTrellis:member'
+    package: word!
+    summary: |-
+      Represents dark diagonal-cross texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkTrellis"'
+  - name: darkVertical
+    uid: 'word!Word.ShadingTextureType.darkVertical:member'
+    package: word!
+    summary: |-
+      Represents dark vertical texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DarkVertical"'
+  - name: lightDiagonalDown
+    uid: 'word!Word.ShadingTextureType.lightDiagonalDown:member'
+    package: word!
+    summary: |-
+      Represents light diagonal-down texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightDiagonalDown"'
+  - name: lightDiagonalUp
+    uid: 'word!Word.ShadingTextureType.lightDiagonalUp:member'
+    package: word!
+    summary: |-
+      Represents light diagonal-up texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightDiagonalUp"'
+  - name: lightGrid
+    uid: 'word!Word.ShadingTextureType.lightGrid:member'
+    package: word!
+    summary: |-
+      Represents light horizontal-cross texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightGrid"'
+  - name: lightHorizontal
+    uid: 'word!Word.ShadingTextureType.lightHorizontal:member'
+    package: word!
+    summary: |-
+      Represents light horizontal texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightHorizontal"'
+  - name: lightTrellis
+    uid: 'word!Word.ShadingTextureType.lightTrellis:member'
+    package: word!
+    summary: |-
+      Represents light diagonal-cross texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightTrellis"'
+  - name: lightVertical
+    uid: 'word!Word.ShadingTextureType.lightVertical:member'
+    package: word!
+    summary: |-
+      Represents light vertical texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LightVertical"'
+  - name: none
+    uid: 'word!Word.ShadingTextureType.none:member'
+    package: word!
+    summary: |-
+      Represents that there's no texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: percent10
+    uid: 'word!Word.ShadingTextureType.percent10:member'
+    package: word!
+    summary: |-
+      Represents 10 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent10"'
+  - name: percent12Pt5
+    uid: 'word!Word.ShadingTextureType.percent12Pt5:member'
+    package: word!
+    summary: |-
+      Represents 12.5 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent12Pt5"'
+  - name: percent15
+    uid: 'word!Word.ShadingTextureType.percent15:member'
+    package: word!
+    summary: |-
+      Represents 15 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent15"'
+  - name: percent20
+    uid: 'word!Word.ShadingTextureType.percent20:member'
+    package: word!
+    summary: |-
+      Represents 20 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent20"'
+  - name: percent25
+    uid: 'word!Word.ShadingTextureType.percent25:member'
+    package: word!
+    summary: |-
+      Represents 25 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent25"'
+  - name: percent30
+    uid: 'word!Word.ShadingTextureType.percent30:member'
+    package: word!
+    summary: |-
+      Represents 30 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent30"'
+  - name: percent35
+    uid: 'word!Word.ShadingTextureType.percent35:member'
+    package: word!
+    summary: |-
+      Represents 35 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent35"'
+  - name: percent37Pt5
+    uid: 'word!Word.ShadingTextureType.percent37Pt5:member'
+    package: word!
+    summary: |-
+      Represents 37.5 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent37Pt5"'
+  - name: percent40
+    uid: 'word!Word.ShadingTextureType.percent40:member'
+    package: word!
+    summary: |-
+      Represents 40 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent40"'
+  - name: percent45
+    uid: 'word!Word.ShadingTextureType.percent45:member'
+    package: word!
+    summary: |-
+      Represents 45 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent45"'
+  - name: percent5
+    uid: 'word!Word.ShadingTextureType.percent5:member'
+    package: word!
+    summary: |-
+      Represents 5 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent5"'
+  - name: percent50
+    uid: 'word!Word.ShadingTextureType.percent50:member'
+    package: word!
+    summary: |-
+      Represents 50 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent50"'
+  - name: percent55
+    uid: 'word!Word.ShadingTextureType.percent55:member'
+    package: word!
+    summary: |-
+      Represents 55 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent55"'
+  - name: percent60
+    uid: 'word!Word.ShadingTextureType.percent60:member'
+    package: word!
+    summary: |-
+      Represents 60 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent60"'
+  - name: percent62Pt5
+    uid: 'word!Word.ShadingTextureType.percent62Pt5:member'
+    package: word!
+    summary: |-
+      Represents 62.5 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent62Pt5"'
+  - name: percent65
+    uid: 'word!Word.ShadingTextureType.percent65:member'
+    package: word!
+    summary: |-
+      Represents 65 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent65"'
+  - name: percent70
+    uid: 'word!Word.ShadingTextureType.percent70:member'
+    package: word!
+    summary: |-
+      Represents 70 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent70"'
+  - name: percent75
+    uid: 'word!Word.ShadingTextureType.percent75:member'
+    package: word!
+    summary: |-
+      Represents 75 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent75"'
+  - name: percent80
+    uid: 'word!Word.ShadingTextureType.percent80:member'
+    package: word!
+    summary: |-
+      Represents 80 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent80"'
+  - name: percent85
+    uid: 'word!Word.ShadingTextureType.percent85:member'
+    package: word!
+    summary: |-
+      Represents 85 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent85"'
+  - name: percent87Pt5
+    uid: 'word!Word.ShadingTextureType.percent87Pt5:member'
+    package: word!
+    summary: |-
+      Represents 87.5 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent87Pt5"'
+  - name: percent90
+    uid: 'word!Word.ShadingTextureType.percent90:member'
+    package: word!
+    summary: |-
+      Represents 90 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent90"'
+  - name: percent95
+    uid: 'word!Word.ShadingTextureType.percent95:member'
+    package: word!
+    summary: |-
+      Represents 95 percent texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent95"'
+  - name: solid
+    uid: 'word!Word.ShadingTextureType.solid:member'
+    package: word!
+    summary: |-
+      Represents solid texture.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Solid"'

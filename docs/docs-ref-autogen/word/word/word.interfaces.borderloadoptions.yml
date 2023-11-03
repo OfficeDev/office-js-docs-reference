@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderLoadOptions
+uid: 'word!Word.Interfaces.BorderLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.BorderLoadOptions
+summary: 'Represents the Border object for text, a paragraph, or a table.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.BorderLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'word!Word.Interfaces.BorderLoadOptions#color:member'
+    package: word!
+    fullName: color
+    summary: 'Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: location
+    uid: 'word!Word.Interfaces.BorderLoadOptions#location:member'
+    package: word!
+    fullName: location
+    summary: Gets the location of the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'location?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.BorderLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: Specifies the border type for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'word!Word.Interfaces.BorderLoadOptions#visible:member'
+    package: word!
+    fullName: visible
+    summary: Specifies whether the border is visible.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.BorderLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: Specifies the width for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

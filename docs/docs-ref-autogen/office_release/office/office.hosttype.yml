@@ -1,0 +1,52 @@
+### YamlMime:TSEnum
+name: Office.HostType
+uid: 'office!Office.HostType:enum'
+package: office!
+fullName: Office.HostType
+summary: Specifies the Office application in which the add-in is running.
+remarks: |-
+  **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+
+  #### Examples
+
+  ```TypeScript
+  const contextInfo = Office.context.diagnostics;
+  console.log("Office application: " + contextInfo.host);
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Access
+    uid: 'office!Office.HostType.Access:member'
+    package: office!
+    summary: >-
+      The Office application is Microsoft Access.
+
+
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As
+      an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
+  - name: Excel
+    uid: 'office!Office.HostType.Excel:member'
+    package: office!
+    summary: The Office application is Microsoft Excel.
+  - name: OneNote
+    uid: 'office!Office.HostType.OneNote:member'
+    package: office!
+    summary: The Office application is Microsoft OneNote.
+  - name: Outlook
+    uid: 'office!Office.HostType.Outlook:member'
+    package: office!
+    summary: The Office application is Microsoft Outlook.
+  - name: PowerPoint
+    uid: 'office!Office.HostType.PowerPoint:member'
+    package: office!
+    summary: The Office application is Microsoft PowerPoint.
+  - name: Project
+    uid: 'office!Office.HostType.Project:member'
+    package: office!
+    summary: The Office application is Microsoft Project.
+  - name: Word
+    uid: 'office!Office.HostType.Word:member'
+    package: office!
+    summary: The Office application is Microsoft Word.

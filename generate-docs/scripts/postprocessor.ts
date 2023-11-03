@@ -89,7 +89,7 @@ tryCatch(async () => {
         );
     });
 
-    // fix al.l the individual TOC files
+    // fix all the individual TOC files
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);

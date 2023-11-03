@@ -1,0 +1,58 @@
+### YamlMime:TSEnum
+name: Excel.ContentType
+uid: 'excel!Excel.ContentType:enum'
+package: excel!
+fullName: Excel.ContentType
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-mentions.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Comments");
+      const mention = {
+          email: "kakri@contoso.com",
+          id: 0,
+          name: "Kate Kristensen"
+      };
+
+      // This will tag the mention's name using the '@' syntax.
+      // They will be notified via email.
+      const commentBody = {
+          mentions: [mention],
+          richContent: '<at id="0">' + mention.name + "</at> -  Can you take a look?"
+      };
+
+      // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+      sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
+      await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: mention
+    uid: 'excel!Excel.ContentType.mention:member'
+    package: excel!
+    summary: |-
+      Comment content containing mentions.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Mention"'
+  - name: plain
+    uid: 'excel!Excel.ContentType.plain:member'
+    package: excel!
+    summary: |-
+      Indicates a plain format type for the comment content.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Plain"'

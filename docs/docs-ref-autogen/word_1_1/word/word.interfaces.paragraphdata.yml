@@ -1,0 +1,183 @@
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphData
+uid: 'word!Word.Interfaces.ParagraphData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphData
+summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
+    package: word!
+    fullName: alignment
+    summary: 'Specifies the alignment for a paragraph. The value can be ''left'', ''centered'', ''right'', or ''justified''.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - name: firstLineIndent
+    uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
+    package: word!
+    fullName: firstLineIndent
+    summary: >-
+      Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstLineIndent?: number;'
+      return:
+        type: number
+  - name: font
+    uid: 'word!Word.Interfaces.ParagraphData#font:member'
+    package: word!
+    fullName: font
+    summary: 'Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+  - name: inlinePictures
+    uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
+    package: word!
+    fullName: inlinePictures
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
+  - name: leftIndent
+    uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
+    package: word!
+    fullName: leftIndent
+    summary: 'Specifies the left indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: number;'
+      return:
+        type: number
+  - name: lineSpacing
+    uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
+    package: word!
+    fullName: lineSpacing
+    summary: 'Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineSpacing?: number;'
+      return:
+        type: number
+  - name: lineUnitAfter
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
+    package: word!
+    fullName: lineUnitAfter
+    summary: 'Specifies the amount of spacing, in grid lines, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitAfter?: number;'
+      return:
+        type: number
+  - name: lineUnitBefore
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
+    package: word!
+    fullName: lineUnitBefore
+    summary: 'Specifies the amount of spacing, in grid lines, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitBefore?: number;'
+      return:
+        type: number
+  - name: outlineLevel
+    uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
+    package: word!
+    fullName: outlineLevel
+    summary: Specifies the outline level for the paragraph.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outlineLevel?: number;'
+      return:
+        type: number
+  - name: rightIndent
+    uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
+    package: word!
+    fullName: rightIndent
+    summary: 'Specifies the right indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent?: number;'
+      return:
+        type: number
+  - name: spaceAfter
+    uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
+    package: word!
+    fullName: spaceAfter
+    summary: 'Specifies the spacing, in points, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: number;'
+      return:
+        type: number
+  - name: spaceBefore
+    uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
+    package: word!
+    fullName: spaceBefore
+    summary: 'Specifies the spacing, in points, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore?: number;'
+      return:
+        type: number
+  - name: style
+    uid: 'word!Word.Interfaces.ParagraphData#style:member'
+    package: word!
+    fullName: style
+    summary: >-
+      Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: string;'
+      return:
+        type: string
+  - name: text
+    uid: 'word!Word.Interfaces.ParagraphData#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the paragraph.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string

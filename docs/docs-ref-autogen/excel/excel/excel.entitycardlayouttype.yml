@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.EntityCardLayoutType
+uid: 'excel!Excel.EntityCardLayoutType:enum'
+package: excel!
+fullName: Excel.EntityCardLayoutType
+summary: Types of entity card layouts.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: array
+    uid: 'excel!Excel.EntityCardLayoutType.array:member'
+    package: excel!
+    summary: >-
+      Array layout of the entity card.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Array"'
+  - name: entity
+    uid: 'excel!Excel.EntityCardLayoutType.entity:member'
+    package: excel!
+    summary: >-
+      Entity layout of the entity card.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Entity"'

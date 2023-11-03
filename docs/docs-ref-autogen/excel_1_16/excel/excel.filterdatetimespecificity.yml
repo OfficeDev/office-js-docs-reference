@@ -1,0 +1,80 @@
+### YamlMime:TSEnum
+name: Excel.FilterDatetimeSpecificity
+uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+package: excel!
+fullName: Excel.FilterDatetimeSpecificity
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+  await Excel.run(async (context) => {
+    // Add a date-based PivotFilter.
+
+    // Get the PivotTable.
+    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+    // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
+    // If it's not already there, add "Date Updated" to the hierarchies.
+    let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
+    await context.sync();
+    if (dateHierarchy.isNullObject) {
+      dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
+    }
+
+    // Apply a date filter to filter out anything logged before August.
+    const filterField = dateHierarchy.fields.getItem("Date Updated");
+    const dateFilter = {
+      condition: Excel.DateFilterCondition.afterOrEqualTo,
+      comparator: {
+        date: "2020-08-01",
+        specificity: Excel.FilterDatetimeSpecificity.month
+      }
+    };
+    filterField.applyFilter({ dateFilter: dateFilter });
+
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: day
+    uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Day"'
+  - name: hour
+    uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Hour"'
+  - name: minute
+    uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Minute"'
+  - name: month
+    uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Month"'
+  - name: second
+    uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Second"'
+  - name: year
+    uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Year"'

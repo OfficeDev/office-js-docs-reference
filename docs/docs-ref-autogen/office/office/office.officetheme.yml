@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: Office.OfficeTheme
+uid: 'office!Office.OfficeTheme:interface'
+package: office!
+fullName: Office.OfficeTheme
+summary: >-
+  Provides access to the properties for Office theme colors.
+
+
+  Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected
+  by the user with **File** &gt; **Office Account** &gt; **Office Theme UI**, which is applied across all
+  Office applications. Using Office theme colors is appropriate for mail and task pane add-ins.
+remarks: >-
+  *Supported applications, by platform* <table> <tr> <th></th> <th>Office on Windows</th> <th>Office on the web</th>
+  <th>Office on Mac</th> <th>Office on iOS</th> <th>Office on Android</th> </tr> <tr> <td><strong>Excel</strong></td>
+  <td>Supported</td> <td>Not available</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
+  <td><strong>Outlook</strong></td> <td>Preview</td> <td>Not available</td> <td>Not available</td> <td>Not
+  available</td> <td>Not available</td> </tr> <tr> <td><strong>PowerPoint</strong></td> <td>Supported</td> <td>Not
+  available</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr> <td><strong>Word</strong></td>
+  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> </table>
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  function applyOfficeTheme(){
+      // Get office theme colors.
+      const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+      const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+      const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+      const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+      // Apply body background color to a CSS class.
+      $('.body').css('background-color', bodyBackgroundColor);
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bodyBackgroundColor
+    uid: 'office!Office.OfficeTheme#bodyBackgroundColor:member'
+    package: office!
+    fullName: bodyBackgroundColor
+    summary: 'Gets the Office theme body background color as a hexadecimal color triplet (e.g., "\#FFA500").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bodyBackgroundColor: string;'
+      return:
+        type: string
+  - name: bodyForegroundColor
+    uid: 'office!Office.OfficeTheme#bodyForegroundColor:member'
+    package: office!
+    fullName: bodyForegroundColor
+    summary: 'Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "\#FFA500").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bodyForegroundColor: string;'
+      return:
+        type: string
+  - name: controlBackgroundColor
+    uid: 'office!Office.OfficeTheme#controlBackgroundColor:member'
+    package: office!
+    fullName: controlBackgroundColor
+    summary: 'Gets the Office theme control background color as a hexadecimal color triplet (e.g., "\#FFA500").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'controlBackgroundColor: string;'
+      return:
+        type: string
+  - name: controlForegroundColor
+    uid: 'office!Office.OfficeTheme#controlForegroundColor:member'
+    package: office!
+    fullName: controlForegroundColor
+    summary: 'Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "\#FFA500").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'controlForegroundColor: string;'
+      return:
+        type: string

@@ -1,0 +1,80 @@
+### YamlMime:TSEnum
+name: Excel.ChartSeriesBy
+uid: 'excel!Excel.ChartSeriesBy:enum'
+package: excel!
+fullName: Excel.ChartSeriesBy
+summary: >-
+  Specifies whether the series are by rows or by columns. In Excel on desktop, the "auto" option will inspect the source
+  data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply
+  default to "columns".
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
+
+  await Excel.run(async (context) => {
+    // Create a new worksheet called "Sample" and activate it.
+    context.workbook.worksheets.getItemOrNullObject("Sample").delete();
+    const sheet = context.workbook.worksheets.add("Sample");
+    
+    // Create an a table named SalesTable on the Sample worksheet.
+    let expensesTable = sheet.tables.add("A1:E1", true);
+    expensesTable.name = "SalesTable";
+
+    expensesTable.getHeaderRowRange().values = [["Product", "Qtr1", "Qtr2", "Qtr3", "Qtr4"]];        
+    expensesTable.rows.add(null, [
+      ["Frames", 5000, 7000, 6544, 4377],
+      ["Saddles", 400, 323, 276, 651],
+      ["Brake levers", 12000, 8766, 8456, 9812],
+      ["Chains", 1550, 1088, 692, 853],
+      ["Mirrors", 225, 600, 923, 544],
+      ["Spokes", 6005, 7634, 4589, 8765]
+    ]);
+    
+    sheet.getUsedRange().format.autofitColumns();
+    sheet.getUsedRange().format.autofitRows();
+    sheet.activate();
+
+    // Create a line chart based on data from SalesTable.
+    let dataRange = sheet.getRange("A1:E7");
+    let chart = sheet.charts.add("Line", dataRange, Excel.ChartSeriesBy.rows);
+
+    // Position and style the chart.
+    chart.setPosition("A15", "E30");
+    chart.legend.position = "Right";
+    chart.legend.format.fill.setSolidColor("white");
+
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: auto
+    uid: 'excel!Excel.ChartSeriesBy.auto:member'
+    package: excel!
+    summary: >-
+      In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data
+      is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
+
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Auto"'
+  - name: columns
+    uid: 'excel!Excel.ChartSeriesBy.columns:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Columns"'
+  - name: rows
+    uid: 'excel!Excel.ChartSeriesBy.rows:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Rows"'

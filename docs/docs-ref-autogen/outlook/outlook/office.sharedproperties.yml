@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: Office.SharedProperties
+uid: 'outlook!Office.SharedProperties:interface'
+package: outlook!
+fullName: Office.SharedProperties
+summary: >-
+  Represents the properties of an appointment or message in a shared folder or shared mailbox.
+
+
+  For more information on how this object is used, see [Enable shared folders and shared mailbox scenarios in an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox
+  support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: delegatePermissions
+    uid: 'outlook!Office.SharedProperties#delegatePermissions:member'
+    package: outlook!
+    fullName: delegatePermissions
+    summary: 'The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.DelegatePermissions:enum" />'
+  - name: owner
+    uid: 'outlook!Office.SharedProperties#owner:member'
+    package: outlook!
+    fullName: owner
+    summary: The email address of the owner of a shared item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'owner: string;'
+      return:
+        type: string
+  - name: targetMailbox
+    uid: 'outlook!Office.SharedProperties#targetMailbox:member'
+    package: outlook!
+    fullName: targetMailbox
+    summary: >-
+      The location of the owner's mailbox for the delegate's access. This location may differ based on the Outlook
+      client.
+
+
+      Use with `targetRestUrl` to construct the REST operation's URL.
+
+
+      Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetMailbox: string;'
+      return:
+        type: string
+  - name: targetRestUrl
+    uid: 'outlook!Office.SharedProperties#targetRestUrl:member'
+    package: outlook!
+    fullName: targetRestUrl
+    summary: |-
+      The REST API's base URL (currently https://outlook.office.com/api).
+
+      Use with `targetMailbox` to construct the REST operation's URL.
+
+      Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetRestUrl: string;'
+      return:
+        type: string

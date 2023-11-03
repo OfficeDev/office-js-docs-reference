@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: Office.TaskSuggestion
+uid: 'outlook!Office.TaskSuggestion:interface'
+package: outlook!
+fullName: Office.TaskSuggestion
+summary: >-
+  Represents a suggested task identified in an item. Read mode only.
+
+
+  The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the
+  [Entities](xref:outlook!Office.Entities:interface) object that is returned when the `getEntities` or
+  `getEntitiesByType` method is called on the active item.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const item = Office.context.mailbox.item;
+
+  // Get an array of strings that represent task suggestions in the current item's body.
+
+  const taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+
+  console.log("There are " + taskSuggestions.length + " task suggestions.")
+
+  taskSuggestions.forEach(function (taskSuggestion) {
+      console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
+      console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: assignees
+    uid: 'outlook!Office.TaskSuggestion#assignees:member'
+    package: outlook!
+    fullName: assignees
+    summary: Gets the users that should be assigned a suggested task.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'assignees: EmailUser[];'
+      return:
+        type: '<xref uid="outlook!Office.EmailUser:interface" />[]'
+  - name: taskString
+    uid: 'outlook!Office.TaskSuggestion#taskString:member'
+    package: outlook!
+    fullName: taskString
+    summary: Gets the text of an item that was identified as a task suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'taskString: string;'
+      return:
+        type: string

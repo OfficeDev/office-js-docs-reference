@@ -1,0 +1,181 @@
+### YamlMime:TSType
+name: Word.Interfaces.FontUpdateData
+uid: 'word!Word.Interfaces.FontUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.FontUpdateData
+summary: 'An interface for updating data on the Font object, for use in `font.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bold
+    uid: 'word!Word.Interfaces.FontUpdateData#bold:member'
+    package: word!
+    fullName: bold
+    summary: >-
+      Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'word!Word.Interfaces.FontUpdateData#color:member'
+    package: word!
+    fullName: color
+    summary: 'Specifies the color for the specified font. You can provide the value in the ''\#RRGGBB'' format or the color name.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: doubleStrikeThrough
+    uid: 'word!Word.Interfaces.FontUpdateData#doubleStrikeThrough:member'
+    package: word!
+    fullName: doubleStrikeThrough
+    summary: >-
+      Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as
+      double strikethrough text, otherwise, false.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'doubleStrikeThrough?: boolean;'
+      return:
+        type: boolean
+  - name: hidden
+    uid: 'word!Word.Interfaces.FontUpdateData#hidden:member'
+    package: word!
+    fullName: hidden
+    summary: >-
+      Specifies a value that indicates whether the font is tagged as hidden. True if the font is formatted as hidden
+      text, otherwise, false.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
+  - name: highlightColor
+    uid: 'word!Word.Interfaces.FontUpdateData#highlightColor:member'
+    package: word!
+    fullName: highlightColor
+    summary: >-
+      Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
+      highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty string for
+      mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal",
+      "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for
+      Windows Desktop, any other color is converted to the closest color when applied to the font.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightColor?: string;'
+      return:
+        type: string
+  - name: italic
+    uid: 'word!Word.Interfaces.FontUpdateData#italic:member'
+    package: word!
+    fullName: italic
+    summary: 'Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'word!Word.Interfaces.FontUpdateData#name:member'
+    package: word!
+    fullName: name
+    summary: Specifies a value that represents the name of the font.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: size
+    uid: 'word!Word.Interfaces.FontUpdateData#size:member'
+    package: word!
+    fullName: size
+    summary: Specifies a value that represents the font size in points.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: number;'
+      return:
+        type: number
+  - name: strikeThrough
+    uid: 'word!Word.Interfaces.FontUpdateData#strikeThrough:member'
+    package: word!
+    fullName: strikeThrough
+    summary: >-
+      Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as
+      strikethrough text, otherwise, false.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strikeThrough?: boolean;'
+      return:
+        type: boolean
+  - name: subscript
+    uid: 'word!Word.Interfaces.FontUpdateData#subscript:member'
+    package: word!
+    fullName: subscript
+    summary: >-
+      Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type: boolean
+  - name: superscript
+    uid: 'word!Word.Interfaces.FontUpdateData#superscript:member'
+    package: word!
+    fullName: superscript
+    summary: >-
+      Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript,
+      otherwise, false.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type: boolean
+  - name: underline
+    uid: 'word!Word.Interfaces.FontUpdateData#underline:member'
+    package: word!
+    fullName: underline
+    summary: Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" |
+        "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
+        "WaveDouble";
+      return:
+        type: >-
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
+          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
+          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
+          "WaveHeavy" | "WaveDouble"

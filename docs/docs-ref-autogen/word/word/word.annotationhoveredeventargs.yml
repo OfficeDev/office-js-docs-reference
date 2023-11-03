@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.AnnotationHoveredEventArgs
+uid: 'word!Word.AnnotationHoveredEventArgs:interface'
+package: word!
+fullName: Word.AnnotationHoveredEventArgs
+summary: Holds annotation information that is passed back on annotation hovered event.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'word!Word.AnnotationHoveredEventArgs#id:member'
+    package: word!
+    fullName: id
+    summary: Specifies the annotation ID for which the event was fired.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string

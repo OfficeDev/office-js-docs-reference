@@ -1,0 +1,216 @@
+### YamlMime:TSType
+name: PowerPoint.ShapeFill
+uid: 'powerpoint!PowerPoint.ShapeFill:class'
+package: powerpoint!
+fullName: PowerPoint.ShapeFill
+summary: Represents the fill formatting of a shape object.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.ShapeFill#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: foregroundColor
+    uid: 'powerpoint!PowerPoint.ShapeFill#foregroundColor:member'
+    package: powerpoint!
+    fullName: foregroundColor
+    summary: >-
+      Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
+      named HTML color (e.g., "orange").
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'foregroundColor: string;'
+      return:
+        type: string
+  - name: transparency
+    uid: 'powerpoint!PowerPoint.ShapeFill#transparency:member'
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'powerpoint!PowerPoint.ShapeFill#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      Returns the fill type of the shape. See [PowerPoint.ShapeFillType](xref:powerpoint!PowerPoint.ShapeFillType:enum)
+      for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" |
+        "SlideBackground";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeFillType:enum" /> | "NoFill" | "Solid" | "Gradient" | "Pattern" |
+          "PictureAndTexture" | "SlideBackground"
+methods:
+  - name: clear()
+    uid: 'powerpoint!PowerPoint.ShapeFill#clear:member(1)'
+    package: powerpoint!
+    fullName: clear()
+    summary: Clears the fill formatting of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.ShapeFill#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.ShapeFillLoadOptions): PowerPoint.ShapeFill;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.ShapeFill#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.ShapeFill;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.ShapeFill#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.ShapeFill;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'powerpoint!PowerPoint.ShapeFill#setSolidColor:member(1)'
+    package: powerpoint!
+    fullName: setSolidColor(color)
+    summary: Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Changes the selected shapes fill color to red.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.fill.setSolidColor("red");
+        });
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: >-
+            A string that specifies the fill color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
+            named HTML color (e.g., "orange").
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.ShapeFill#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original PowerPoint.ShapeFill object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.ShapeFillData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

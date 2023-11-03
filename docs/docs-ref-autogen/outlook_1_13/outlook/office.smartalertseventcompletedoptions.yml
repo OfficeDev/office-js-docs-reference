@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: Office.SmartAlertsEventCompletedOptions
+uid: 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
+package: outlook!
+fullName: Office.SmartAlertsEventCompletedOptions
+summary: >-
+  Specifies the behavior of a [Smart Alerts
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) when it
+  completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // The following example checks whether a location is specified in an appointment before it's sent.
+  function onAppointmentSendHandler(event) {
+      Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+          const event = asyncResult.asyncContext;
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+              event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+              return;
+          }
+
+          if (asyncResult.value === "") {
+              // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+              event.completed(
+                  {
+                      allowEvent: false,
+                      cancelLabel: "Add a location",
+                      commandId: "msgComposeOpenPaneButton",
+                      contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+                      errorMessage: "Don't forget to add a meeting location.",
+                      sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
+                  }
+              );
+          } else {
+              // If a location is specified, the appointment is sent.
+              event.completed({ allowEvent: true });
+          }
+      });
+  }
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowEvent
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#allowEvent:member'
+    package: outlook!
+    fullName: allowEvent
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler, this value indicates if the handled event should continue execution or be canceled. For
+      example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false`
+      to cancel the sending of an item. For a complete sample, see the [Smart Alerts
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEvent?: boolean;'
+      return:
+        type: boolean
+  - name: errorMessage
+    uid: 'outlook!Office.SmartAlertsEventCompletedOptions#errorMessage:member'
+    package: outlook!
+    fullName: errorMessage
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
+      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message
+      that will be displayed to the user. For an example, see the [Smart Alerts
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorMessage?: string;'
+      return:
+        type: string

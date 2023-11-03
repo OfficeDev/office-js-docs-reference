@@ -1,0 +1,286 @@
+### YamlMime:TSType
+name: Office.SpamReportingEventCompletedOptions
+uid: 'outlook!Office.SpamReportingEventCompletedOptions:interface'
+package: outlook!
+fullName: Office.SpamReportingEventCompletedOptions
+summary: >-
+  Specifies the behavior of an [integrated spam-reporting
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) after it completes processing a
+  [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true#fields)
+  event.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Message Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+  function onSpamReport(event) {
+      // Gets the Base64-encoded EML format of a reported message.
+      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+              return;
+          }
+
+          // Run additional processing operations here.
+
+          /**
+          * Signals that the spam-reporting event has completed processing.
+          * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+          * and shows a post-processing dialog to the user.
+          * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+          * property determines whether the message will be deleted.
+          */
+          const event = asyncResult.asyncContext;
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message.",
+              },
+          });
+      });
+  }
+
+  ```
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: folderName
+    uid: 'outlook!Office.SpamReportingEventCompletedOptions#folderName:member'
+    package: outlook!
+    fullName: folderName
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal that a
+      reported message has finished processing, this property specifies the Outlook mailbox folder to which the message
+      will be moved.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
+
+      - If the specified folder doesn't exist yet, it will be created before the message is moved.
+
+
+      - If the `postProcessingAction` property is set to `moveToCustomFolder`<!-- -->, the `folderName` property must be
+      specified. Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If
+      `postProcessingAction` is set to another action other than `moveToCustomFolder`<!-- -->, the `folderName` property
+      is ignored.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'folderName?: string;'
+      return:
+        type: string
+  - name: moveItemTo
+    uid: 'outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member'
+    package: outlook!
+    fullName: moveItemTo
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal that a
+      reported message has finished processing, this property specifies whether the message is moved to a different
+      folder in the mailbox.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
+
+      In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build
+      16724.10000). If you're using an earlier build that supports the integrated spam-reporting feature, use the
+      `postProcessingAction` property instead.
+
+
+      If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`<!-- -->, you must specify the name of
+      the folder to which the message will be moved in the `folderName` property of the `event.completed` call.
+      Otherwise, the `moveItemTo` property will default to `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the
+      reported message to the **Junk Email** folder.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'moveItemTo?: MailboxEnums.MoveSpamItemTo;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.MoveSpamItemTo:enum" />'
+  - name: onErrorDeleteItem
+    uid: 'outlook!Office.SpamReportingEventCompletedOptions#onErrorDeleteItem:member'
+    package: outlook!
+    fullName: onErrorDeleteItem
+    summary: >-
+      When set to `true`<!-- -->, deletes a reported message if an error occurs while the message is processed. If this
+      property is set to `false` or isn't specified in the [completed
+      method](xref:outlook!Office.MailboxEvent%23completed:member(1))<!-- -->, the reported message remains in its
+      current mailbox folder.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'onErrorDeleteItem?: boolean;'
+      return:
+        type: boolean
+  - name: postProcessingAction
+    uid: 'outlook!Office.SpamReportingEventCompletedOptions#postProcessingAction:member'
+    package: outlook!
+    fullName: postProcessingAction
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal that a
+      reported message has finished processing, this property specifies whether the message is moved to a different
+      folder in the mailbox. The following post-processing actions are available.
+
+
+      - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
+
+
+      - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder
+      in the `folderName` property.
+
+
+      - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
+
+
+      - `noMove` - Leaves the reported message in its current folder.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
+
+      In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting
+      feature. If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
+
+
+      If the property is set to `moveToCustomFolder`<!-- -->, you must specify the name of the folder to which the
+      message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the
+      `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the **Junk
+      Email** folder.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+      function onSpamReport(event) {
+          // Gets the Base64-encoded EML format of a reported message.
+          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              // Run additional processing operations here.
+
+              /**
+              * Signals that the spam-reporting event has completed processing.
+              * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+              * post-processing dialog to the user.
+              */
+              const event = asyncResult.asyncContext;
+              event.completed({
+                  postProcessingAction: "moveToSpamFolder",
+                  showPostProcessingDialog: {
+                      title: "Contoso Spam Reporting",
+                      description: "Thank you for reporting this message.",
+                  },
+              });
+          });
+      }
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'postProcessingAction?: string;'
+      return:
+        type: string
+  - name: showPostProcessingDialog
+    uid: 'outlook!Office.SpamReportingEventCompletedOptions#showPostProcessingDialog:member'
+    package: outlook!
+    fullName: showPostProcessingDialog
+    summary: >-
+      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal that a
+      reported message has finished processing, this property indicates if a post-processing dialog is shown to the
+      user. The JSON object assigned to this property must contain a title and a description. If this property isn't
+      specified, a dialog isn't shown to the user once their reported message is processed.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showPostProcessingDialog?: object;'
+      return:
+        type: object

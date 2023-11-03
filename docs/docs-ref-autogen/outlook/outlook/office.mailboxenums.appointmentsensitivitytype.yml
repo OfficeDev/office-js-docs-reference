@@ -1,0 +1,70 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.AppointmentSensitivityType
+uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.AppointmentSensitivityType
+summary: 'Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface) of an appointment.'
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
+  Office.context.mailbox.item.sensitivity.setAsync(
+    Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+    function callback(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Successfully set appointment sensitivity.");
+      }
+    }
+  );
+
+  ```
+isPreview: true
+isDeprecated: false
+fields:
+  - name: Confidential
+    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
+    package: outlook!
+    summary: |-
+      Treat the item as confidential.
+
+      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"confidential"'
+  - name: Normal
+    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
+    package: outlook!
+    summary: |-
+      The item needs no special treatment.
+
+      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"normal"'
+  - name: Personal
+    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
+    package: outlook!
+    summary: |-
+      Treat the item as personal.
+
+      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"personal"'
+  - name: Private
+    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
+    package: outlook!
+    summary: |-
+      Treat the item as private.
+
+      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"private"'

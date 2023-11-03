@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: Office.MatrixBinding
+uid: 'office!Office.MatrixBinding:interface'
+package: office!
+fullName: Office.MatrixBinding
+summary: Represents a binding in two dimensions of rows and columns.
+remarks: >-
+  The MatrixBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from
+  the Binding object.
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: columnCount
+    uid: 'office!Office.MatrixBinding#columnCount:member'
+    package: office!
+    fullName: columnCount
+    summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type: number
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          function showBindingColumnCount() {
+              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+                  write("Column: " + asyncResult.value.columnCount);
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - name: rowCount
+    uid: 'office!Office.MatrixBinding#rowCount:member'
+    package: office!
+    fullName: rowCount
+    summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type: number
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          function showBindingRowCount() {
+              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+                  write("Rows: " + asyncResult.value.rowCount);
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+extends: '<xref uid="office!Office.Binding:interface" />'

@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: Word.Interfaces.InlinePictureData
+uid: 'word!Word.Interfaces.InlinePictureData:interface'
+package: word!
+fullName: Word.Interfaces.InlinePictureData
+summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: altTextDescription
+    uid: 'word!Word.Interfaces.InlinePictureData#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: Specifies a string that represents the alternative text associated with the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: 'word!Word.Interfaces.InlinePictureData#altTextTitle:member'
+    package: word!
+    fullName: altTextTitle
+    summary: Specifies a string that contains the title for the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type: string
+  - name: height
+    uid: 'word!Word.Interfaces.InlinePictureData#height:member'
+    package: word!
+    fullName: height
+    summary: Specifies a number that describes the height of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: hyperlink
+    uid: 'word!Word.Interfaces.InlinePictureData#hyperlink:member'
+    package: word!
+    fullName: hyperlink
+    summary: 'Specifies a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type: string
+  - name: lockAspectRatio
+    uid: 'word!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.InlinePictureData#width:member'
+    package: word!
+    fullName: width
+    summary: Specifies a number that describes the width of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

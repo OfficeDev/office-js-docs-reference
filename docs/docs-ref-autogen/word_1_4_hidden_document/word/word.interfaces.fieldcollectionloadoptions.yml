@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: Word.Interfaces.FieldCollectionLoadOptions
+uid: 'word!Word.Interfaces.FieldCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.FieldCollectionLoadOptions
+summary: 'Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.'
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: code
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#code:member'
+    package: word!
+    fullName: code
+    summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: boolean;'
+      return:
+        type: boolean
+  - name: parentBody
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member'
+    package: word!
+    fullName: parentBody
+    summary: 'For EACH ITEM in the collection: Gets the parent body of the field.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: parentContentControl
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControl:member'
+    package: word!
+    fullName: parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the field. Throws an `ItemNotFound` error
+      if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
+  - name: parentContentControlOrNullObject
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControlOrNullObject:member'
+    package: word!
+    fullName: parentContentControlOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the field. If there isn't a parent content
+      control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
+      further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
+  - name: parentTable
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentTable:member'
+    package: word!
+    fullName: parentTable
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the field. Throws an `ItemNotFound` error if it
+      isn't contained in a table.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
+  - name: parentTableCell
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCell:member'
+    package: word!
+    fullName: parentTableCell
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it
+      isn't contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
+  - name: parentTableCellOrNullObject
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCellOrNullObject:member'
+    package: word!
+    fullName: parentTableCellOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the field. If it isn't contained in a table
+      cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
+  - name: parentTableOrNullObject
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#parentTableOrNullObject:member'
+    package: word!
+    fullName: parentTableOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the field. If it isn't contained in a table, then
+      this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
+  - name: result
+    uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#result:member'
+    package: word!
+    fullName: result
+    summary: 'For EACH ITEM in the collection: Gets the field''s result data.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />'

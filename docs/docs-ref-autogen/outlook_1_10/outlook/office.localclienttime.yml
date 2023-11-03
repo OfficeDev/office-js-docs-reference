@@ -1,0 +1,115 @@
+### YamlMime:TSType
+name: Office.LocalClientTime
+uid: 'outlook!Office.LocalClientTime:interface'
+package: outlook!
+fullName: Office.LocalClientTime
+summary: Represents a date and time in the local client's time zone. Read mode only.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: date
+    uid: 'outlook!Office.LocalClientTime#date:member'
+    package: outlook!
+    fullName: date
+    summary: Integer value representing the day of the month.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date: number;'
+      return:
+        type: number
+  - name: hours
+    uid: 'outlook!Office.LocalClientTime#hours:member'
+    package: outlook!
+    fullName: hours
+    summary: Integer value representing the hour on a 24-hour clock.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hours: number;'
+      return:
+        type: number
+  - name: milliseconds
+    uid: 'outlook!Office.LocalClientTime#milliseconds:member'
+    package: outlook!
+    fullName: milliseconds
+    summary: Integer value representing the milliseconds.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'milliseconds: number;'
+      return:
+        type: number
+  - name: minutes
+    uid: 'outlook!Office.LocalClientTime#minutes:member'
+    package: outlook!
+    fullName: minutes
+    summary: Integer value representing the minutes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minutes: number;'
+      return:
+        type: number
+  - name: month
+    uid: 'outlook!Office.LocalClientTime#month:member'
+    package: outlook!
+    fullName: month
+    summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'month: number;'
+      return:
+        type: number
+  - name: seconds
+    uid: 'outlook!Office.LocalClientTime#seconds:member'
+    package: outlook!
+    fullName: seconds
+    summary: Integer value representing the seconds.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'seconds: number;'
+      return:
+        type: number
+  - name: timezoneOffset
+    uid: 'outlook!Office.LocalClientTime#timezoneOffset:member'
+    package: outlook!
+    fullName: timezoneOffset
+    summary: Integer value representing the number of minutes difference between the local time zone and UTC.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timezoneOffset: number;'
+      return:
+        type: number
+  - name: year
+    uid: 'outlook!Office.LocalClientTime#year:member'
+    package: outlook!
+    fullName: year
+    summary: Integer value representing the year.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'year: number;'
+      return:
+        type: number

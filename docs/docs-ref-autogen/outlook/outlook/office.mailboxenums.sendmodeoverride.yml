@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.SendModeOverride
+uid: 'outlook!Office.MailboxEnums.SendModeOverride:enum'
+package: outlook!
+fullName: Office.MailboxEnums.SendModeOverride
+summary: >-
+  Specifies the [send mode
+  option](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options)
+  that overrides the option set in the manifest at runtime.
+
+
+  For information on how to implement a Smart Alerts add-in, see [Handle OnMessageSend and OnAppointmentSend events in
+  your Outlook add-in with Smart
+  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example checks whether a location is specified in an appointment before it's sent.
+
+  function onAppointmentSendHandler(event) {
+      Office.context.mailbox.item.location.getAsync({ asyncContext: event }, (asyncResult) => {
+          const event = asyncResult.asyncContext;
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+              event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+              return;
+          }
+
+          if (asyncResult.value === "") {
+              // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+              event.completed(
+                  {
+                      allowEvent: false,
+                      cancelLabel: "Add a location",
+                      commandId: "msgComposeOpenPaneButton",
+                      errorMessage: "Don't forget to add a meeting location.",
+                      sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
+                  }
+              );
+          } else {
+              // If a location is specified, the appointment is sent.
+              event.completed({ allowEvent: true });
+          }
+      });
+  }
+
+  ```
+isPreview: true
+isDeprecated: false
+fields:
+  - name: PromptUser
+    uid: 'outlook!Office.MailboxEnums.SendModeOverride.PromptUser:member'
+    package: outlook!
+    summary: >-
+      Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of
+      the event-based add-in. To learn more, see the [**prompt user** send mode
+      option](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user)<!--
+      -->.
+    value: '"promptUser"'

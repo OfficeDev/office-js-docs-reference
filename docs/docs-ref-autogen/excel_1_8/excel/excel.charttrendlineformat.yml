@@ -1,0 +1,192 @@
+### YamlMime:TSType
+name: Excel.ChartTrendlineFormat
+uid: 'excel!Excel.ChartTrendlineFormat:class'
+package: excel!
+fullName: Excel.ChartTrendlineFormat
+summary: Represents the format properties for the chart trendline.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartTrendlineFormat#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: line
+    uid: 'excel!Excel.ChartTrendlineFormat#line:member'
+    package: excel!
+    fullName: line
+    summary: Represents chart line formatting.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series; 
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+
+          // Set format of the trendline to a solid, red line.
+          let line = trendline.format.line;
+          line.color = '#FF0000';
+
+          await context.sync();
+
+          console.log("The trendline color has been set to:" + line.color);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly line: Excel.ChartLineFormat;'
+      return:
+        type: '<xref uid="excel!Excel.ChartLineFormat:class" />'
+methods:
+  - name: load(options)
+    uid: 'excel!Excel.ChartTrendlineFormat#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineFormat:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartTrendlineFormat#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineFormat;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineFormat:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartTrendlineFormat#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartTrendlineFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineFormat:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartTrendlineFormat#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ChartTrendlineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartTrendlineFormat#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.ChartTrendlineFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.ChartTrendlineFormat:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartTrendlineFormat#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTrendlineFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineFormatData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1,0 +1,61 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.EntityType
+uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.EntityType
+summary: Specifies an entity's type.
+remarks: >-
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
+  console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Address
+    uid: 'outlook!Office.MailboxEnums.EntityType.Address:member'
+    package: outlook!
+    summary: Specifies that the entity is a postal address.
+    value: '"address"'
+  - name: Contact
+    uid: 'outlook!Office.MailboxEnums.EntityType.Contact:member'
+    package: outlook!
+    summary: Specifies that the entity is a contact.
+    value: '"contact"'
+  - name: EmailAddress
+    uid: 'outlook!Office.MailboxEnums.EntityType.EmailAddress:member'
+    package: outlook!
+    summary: Specifies that the entity is an SMTP email address.
+    value: '"emailAddress"'
+  - name: MeetingSuggestion
+    uid: 'outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member'
+    package: outlook!
+    summary: Specifies that the entity is a meeting suggestion.
+    value: '"meetingSuggestion"'
+  - name: PhoneNumber
+    uid: 'outlook!Office.MailboxEnums.EntityType.PhoneNumber:member'
+    package: outlook!
+    summary: Specifies that the entity is a US phone number.
+    value: '"phoneNumber"'
+  - name: TaskSuggestion
+    uid: 'outlook!Office.MailboxEnums.EntityType.TaskSuggestion:member'
+    package: outlook!
+    summary: Specifies that the entity is a task suggestion.
+    value: '"taskSuggestion"'
+  - name: Url
+    uid: 'outlook!Office.MailboxEnums.EntityType.Url:member'
+    package: outlook!
+    summary: Specifies that the entity is an Internet URL.
+    value: '"url"'

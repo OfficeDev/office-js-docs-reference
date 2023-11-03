@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: Word.Interfaces.CheckboxContentControlLoadOptions
+uid: 'word!Word.Interfaces.CheckboxContentControlLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.CheckboxContentControlLoadOptions
+summary: The data specific to content controls of type CheckBox.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.CheckboxContentControlLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: isChecked
+    uid: 'word!Word.Interfaces.CheckboxContentControlLoadOptions#isChecked:member'
+    package: word!
+    fullName: isChecked
+    summary: Specifies the current state of the checkbox.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isChecked?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: CustomFunctions.StreamingInvocation
+uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
+package: custom-functions-runtime!
+fullName: CustomFunctions.StreamingInvocation
+summary: >-
+  Provides information about the invocation of a streaming custom function. A streaming custom function can provide
+  results which can change over time.
+
+
+  Call `setResult()` one or more times to provide the result instead of returning a result from the function.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: setResult
+    uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
+    package: custom-functions-runtime!
+    fullName: setResult
+    summary: Set the result for the custom function. May be called more than once.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/16-custom-functions/streaming-function.yaml
+
+      /** @CustomFunction 
+       * @description Increments the cell with a given amount at a specified interval in milliseconds.
+       * @param {number} amount - The amount to add to the cell value on each increment.
+       * @param {number} interval - The time in milliseconds to wait before the next increment on the cell.
+       * @param {CustomFunctions.StreamingInvocation<number>} invocation - Parameter to send results to Excel
+       *     or respond to the user canceling the function.
+       * @returns An incrementing value.
+       */
+      function increment(amount: number, interval: number, invocation: CustomFunctions.StreamingInvocation<number>):
+      void {
+        let result = 0;
+        const timer = setInterval(() => {
+          result += amount;
+          invocation.setResult(result);
+        }, interval);
+
+        invocation.onCanceled = () => {
+          clearInterval(timer);
+        }
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setResult: (value: ResultType | Error) => void;'
+      return:
+        type: '(value: ResultType | <xref uid="custom-functions-runtime!CustomFunctions.Error:class" />) =&gt; void'
+extends: '<xref uid="custom-functions-runtime!CustomFunctions.CancelableInvocation:interface" />'
