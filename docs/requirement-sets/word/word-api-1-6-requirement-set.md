@@ -39,7 +39,9 @@ The following table lists the APIs in Word JavaScript API requirement set 1.6. T
 ||[uniqueLocalIds](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
 |[Range](/javascript/api/word/word.range)|[getTrackedChanges()](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))|Gets the collection of the TrackedChange objects in the range.|
 |[Shading](/javascript/api/word/word.shading)|[backgroundPatternColor](/javascript/api/word/word.shading#word-word-shading-backgroundpatterncolor-member)|Specifies the color for the background of the object.|
-|[Style](/javascript/api/word/word.style)|[shading](/javascript/api/word/word.style#word-word-style-shading-member)|Gets a Shading object that represents the shading for the specified style.|
+|[Style](/javascript/api/word/word.style)|[baseStyle](/javascript/api/word/word.style#word-word-style-basestyle-member)|Specifies the name of an existing style to use as the base formatting of another style.|
+||[nextParagraphStyle](/javascript/api/word/word.style#word-word-style-nextparagraphstyle-member)|Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.|
+||[shading](/javascript/api/word/word.style#word-word-style-shading-member)|Gets a Shading object that represents the shading for the specified style.|
 ||[tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)|Gets a TableStyle object representing Style properties that can be applied to a table.|
 |[TableStyle](/javascript/api/word/word.tablestyle)|[bottomCellMargin](/javascript/api/word/word.tablestyle#word-word-tablestyle-bottomcellmargin-member)|Specifies the amount of space to add between the contents and the bottom borders of the cells.|
 ||[cellSpacing](/javascript/api/word/word.tablestyle#word-word-tablestyle-cellspacing-member)|Specifies the spacing (in points) between the cells in a table style.|

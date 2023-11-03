@@ -134,11 +134,7 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Annotation](/javascript/api/word/word.annotation)|[critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)|Gets the critique annotation object.|
-||[delete()](/javascript/api/word/word.annotation#word-word-annotation-delete-member(1))|Deletes the annotation.|
-||[id](/javascript/api/word/word.annotation#word-word-annotation-id-member)|Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.|
-||[state](/javascript/api/word/word.annotation#word-word-annotation-state-member)|Gets the state of the annotation.|
-|[AnnotationClickedEventArgs](/javascript/api/word/word.annotationclickedeventargs)|[id](/javascript/api/word/word.annotationclickedeventargs#word-word-annotationclickedeventargs-id-member)|Specifies the annotation ID |[Body](/javascript/api/word/word.body)|[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
+|[Body](/javascript/api/word/word.body)|[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
 ||[onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)|Occurs when a comment is deselected.|

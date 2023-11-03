@@ -49,7 +49,7 @@ The following table lists the APIs in Word JavaScript API requirement set 1.5. T
 ||[ids](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)|The source of the event.|
 |[Document](/javascript/api/word/word.document)|[addStyle(name: string, type: Word.StyleType)](/javascript/api/word/word.document#word-word-document-addstyle-member(1))|Adds a style into the document by name and type.|
-||[close(closeBehavior?: Word.CloseBehavior)](/javascript/api/word/word.document#word-word-document-close-member(1))|Close current document.|
+||[close(closeBehavior?: Word.CloseBehavior)](/javascript/api/word/word.document#word-word-document-close-member(1))|Closes the current document.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))|Gets the currently supported content controls in the document.|
 ||[getEndnoteBody()](/javascript/api/word/word.document#word-word-document-getendnotebody-member(1))|Gets the document's endnotes in a single body.|
 ||[getFootnoteBody()](/javascript/api/word/word.document#word-word-document-getfootnotebody-member(1))|Gets the document's footnotes in a single body.|
