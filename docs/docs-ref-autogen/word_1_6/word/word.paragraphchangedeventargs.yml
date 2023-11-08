@@ -9,24 +9,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: eventType
-    uid: 'word!Word.ParagraphChangedEventArgs#eventType:member'
-    package: word!
-    fullName: eventType
-    summary: The event type. See Word.EventType for details.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
-      return:
-        type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
   - name: source
     uid: 'word!Word.ParagraphChangedEventArgs#source:member'
     package: word!
@@ -39,6 +21,24 @@ properties:
       content: 'source: Word.EventSource | "Local" | "Remote";'
       return:
         type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'word!Word.ParagraphChangedEventArgs#type:member'
+    package: word!
+    fullName: type
+    summary: The event type. See Word.EventType for details.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
+        | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+        "ParagraphChanged" | "ParagraphDeleted";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
   - name: uniqueLocalIds
     uid: 'word!Word.ParagraphChangedEventArgs#uniqueLocalIds:member'
     package: word!
