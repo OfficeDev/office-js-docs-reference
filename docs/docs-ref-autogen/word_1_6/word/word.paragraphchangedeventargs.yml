@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Word.ParagraphChangedEventArgs
+uid: 'word!Word.ParagraphChangedEventArgs:interface'
+package: word!
+fullName: Word.ParagraphChangedEventArgs
+summary: Provides information about the paragraphs that raised the paragraphChanged event.
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: source
+    uid: 'word!Word.ParagraphChangedEventArgs#source:member'
+    package: word!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'word!Word.ParagraphChangedEventArgs#type:member'
+    package: word!
+    fullName: type
+    summary: The event type. See Word.EventType for details.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
+        | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
+        "ParagraphChanged" | "ParagraphDeleted";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+  - name: uniqueLocalIds
+    uid: 'word!Word.ParagraphChangedEventArgs#uniqueLocalIds:member'
+    package: word!
+    fullName: uniqueLocalIds
+    summary: >-
+      Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces
+      and differ across sessions and coauthors.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalIds: string[];'
+      return:
+        type: 'string[]'

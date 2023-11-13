@@ -39,11 +39,13 @@ properties:
     syntax:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited";
+        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited"
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
   - name: ids
     uid: 'word!Word.ContentControlSelectionChangedEventArgs#ids:member'
     package: word!

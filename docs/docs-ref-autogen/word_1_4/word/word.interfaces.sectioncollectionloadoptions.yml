@@ -28,7 +28,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
+      For EACH ITEM in the collection: Gets the body object of the section. This doesn't include the header/footer and
       other section metadata.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

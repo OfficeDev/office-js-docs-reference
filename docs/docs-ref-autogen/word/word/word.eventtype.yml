@@ -153,7 +153,7 @@ fields:
     summary: |-
       Represents that one or more new paragraphs were added.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphAdded"'
   - name: paragraphChanged
     uid: 'word!Word.EventType.paragraphChanged:member'
@@ -161,7 +161,7 @@ fields:
     summary: |-
       Represents that one or more paragraphs were changed.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphChanged"'
   - name: paragraphDeleted
     uid: 'word!Word.EventType.paragraphDeleted:member'
@@ -169,5 +169,5 @@ fields:
     summary: |-
       Represents that one or more paragraphs were deleted.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphDeleted"'

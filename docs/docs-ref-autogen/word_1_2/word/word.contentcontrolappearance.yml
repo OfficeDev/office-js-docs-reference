@@ -69,7 +69,7 @@ fields:
     uid: 'word!Word.ContentControlAppearance.hidden:member'
     package: word!
     summary: |-
-      Represents a content control that is not shown.
+      Represents a content control that isn't shown.
 
       * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'

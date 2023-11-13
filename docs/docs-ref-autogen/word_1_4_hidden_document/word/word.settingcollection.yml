@@ -240,7 +240,7 @@ methods:
     package: word!
     fullName: getItem(key)
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. Throws an `ItemNotFound` error if the setting does not
+      Gets a setting object by its key, which is case-sensitive. Throws an `ItemNotFound` error if the setting doesn't
       exist.
     remarks: |-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

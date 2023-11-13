@@ -14,7 +14,10 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
     isPreview: false
     isDeprecated: false
     syntax:

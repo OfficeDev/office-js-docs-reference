@@ -89,6 +89,37 @@ methods:
       return:
         type: '<xref uid="word!Word.Application:class" />'
         description: ''
+  - name: openDocument(filePath)
+    uid: 'word!Word.Application#openDocument:member(1)'
+    package: word!
+    fullName: openDocument(filePath)
+    summary: >-
+      Opens a document and displays it in a new tab or window. The following are examples for the various supported
+      clients and platforms.
+
+
+      - Remote or cloud location example: `https://microsoft.sharepoint.com/some/path/Document.docx`
+
+
+      - Local location examples for Windows: `C:\\Users\\Someone\\Documents\\Document.docx` (includes required escaped
+      backslashes), `file://mycomputer/myfolder/Document.docx`
+
+
+      - Local location example for Mac and iOS: `/User/someone/document.docx`
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'openDocument(filePath: string): void;'
+      parameters:
+        - id: filePath
+          description: >-
+            Required. The absolute path of the .docx file. Word on the web only supports remote (cloud) locations, while
+            Word on Windows, on Mac, and on iOS support local and remote locations.
+          type: string
+      return:
+        type: void
+        description: ''
   - name: retrieveStylesFromBase64(base64File)
     uid: 'word!Word.Application#retrieveStylesFromBase64:member(1)'
     package: word!

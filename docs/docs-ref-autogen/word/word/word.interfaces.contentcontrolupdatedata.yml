@@ -47,6 +47,18 @@ properties:
       content: 'cannotEdit?: boolean;'
       return:
         type: boolean
+  - name: checkboxContentControl
+    uid: 'word!Word.Interfaces.ContentControlUpdateData#checkboxContentControl:member'
+    package: word!
+    fullName: checkboxContentControl
+    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkboxContentControl?: Word.Interfaces.CheckboxContentControlUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CheckboxContentControlUpdateData:interface" />'
   - name: color
     uid: 'word!Word.Interfaces.ContentControlUpdateData#color:member'
     package: word!
@@ -77,7 +89,10 @@ properties:
     fullName: placeholderText
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
-      empty. **Note**: The set operation for this property is not supported in Word on the web.
+      empty.
+
+
+      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

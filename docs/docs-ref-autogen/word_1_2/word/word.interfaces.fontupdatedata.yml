@@ -149,7 +149,7 @@ properties:
     uid: 'word!Word.Interfaces.FontUpdateData#underline:member'
     package: word!
     fullName: underline
-    summary: Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
+    summary: Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

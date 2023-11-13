@@ -213,7 +213,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -267,7 +267,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -399,7 +399,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -498,7 +498,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -658,7 +658,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -824,7 +824,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {
@@ -884,7 +884,7 @@ methods:
           description: >-
             Required. An object whose property values are namespace names and whose property names are aliases for the
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
-            The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
+            The property names (such as "greg") can be any string that doesn't used reserved XPath characters, such as
             the forward slash "/".
           type: |-
             {

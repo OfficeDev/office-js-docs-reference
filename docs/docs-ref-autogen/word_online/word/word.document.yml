@@ -288,7 +288,7 @@ methods:
     uid: 'word!Word.Document#close:member(1)'
     package: word!
     fullName: close(closeBehavior)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -305,7 +305,7 @@ methods:
     uid: 'word!Word.Document#close:member(2)'
     package: word!
     fullName: close(closeBehaviorString)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -339,7 +339,7 @@ methods:
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -357,7 +357,7 @@ methods:
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
-      Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
+      Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -377,13 +377,16 @@ methods:
     uid: 'word!Word.Document#getContentControls:member(1)'
     package: word!
     fullName: getContentControls(options)
-    summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided
-      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
-      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
-      add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the currently supported content controls in the document.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: If specific types are provided in the options parameter, only content controls of supported types are
+      returned. Be aware that an exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
+      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
+      types of content controls.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -421,11 +424,30 @@ methods:
       return:
         type: '<xref uid="word!Word.Body:class" />'
         description: ''
+  - name: getParagraphByUniqueLocalId(id)
+    uid: 'word!Word.Document#getParagraphByUniqueLocalId:member(1)'
+    package: word!
+    fullName: getParagraphByUniqueLocalId(id)
+    summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParagraphByUniqueLocalId(id: string): Word.Paragraph;'
+      parameters:
+        - id: id
+          description: >-
+            Required. Unique local ID in standard 8-4-4-4-12 GUID format without curly braces. Note that the ID differs
+            across sessions and coauthors.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Paragraph:class" />'
+        description: ''
   - name: getSelection()
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections are not supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -494,6 +516,23 @@ methods:
       content: 'getStyles(): Word.StyleCollection;'
       return:
         type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: importStylesFromJson(stylesJson)
+    uid: 'word!Word.Document#importStylesFromJson:member(1)'
+    package: word!
+    fullName: importStylesFromJson(stylesJson)
+    summary: Import styles from a JSON-formatted string.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;'
+      parameters:
+        - id: stylesJson
+          description: Required. A JSON-formatted string representing the styles.
+          type: string
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
     uid: 'word!Word.Document#insertFileFromBase64:member(1)'
@@ -885,4 +924,46 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
+  - name: onParagraphAdded
+    uid: 'word!Word.Document#onParagraphAdded:member'
+    package: word!
+    fullName: onParagraphAdded
+    summary: Occurs when the user adds new paragraphs.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
+  - name: onParagraphChanged
+    uid: 'word!Word.Document#onParagraphChanged:member'
+    package: word!
+    fullName: onParagraphChanged
+    summary: Occurs when the user changes paragraphs.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
+  - name: onParagraphDeleted
+    uid: 'word!Word.Document#onParagraphDeleted:member'
+    package: word!
+    fullName: onParagraphDeleted
+    summary: Occurs when the user deletes paragraphs.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

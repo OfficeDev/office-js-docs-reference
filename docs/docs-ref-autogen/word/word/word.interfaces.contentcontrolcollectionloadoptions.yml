@@ -74,15 +74,15 @@ properties:
     package: word!
     fullName: checkboxContentControl
     summary: >-
-      For EACH ITEM in the collection: Gets the checkbox-related data if the content control's type is 'CheckBox'.
-      Returns null otherwise.
+      For EACH ITEM in the collection: Specifies the checkbox-related data if the content control's type is 'CheckBox'.
+      It's null otherwise.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'checkboxContentControl?: boolean;'
+      content: 'checkboxContentControl?: Word.Interfaces.CheckboxContentControlLoadOptions;'
       return:
-        type: boolean
+        type: '<xref uid="word!Word.Interfaces.CheckboxContentControlLoadOptions:interface" />'
   - name: color
     uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member'
     package: word!
@@ -172,7 +172,7 @@ properties:
     fullName: parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the content control. Throws an `ItemNotFound` error
-      if it is not contained in a table.
+      if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -186,7 +186,7 @@ properties:
     fullName: parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an `ItemNotFound`
-      error if it is not contained in a table cell.
+      error if it isn't contained in a table cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -234,8 +234,10 @@ properties:
     fullName: placeholderText
     summary: >-
       For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be
-      displayed when the content control is empty. **Note**: The set operation for this property is not supported in
-      Word on the web.
+      displayed when the content control is empty.
+
+
+      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

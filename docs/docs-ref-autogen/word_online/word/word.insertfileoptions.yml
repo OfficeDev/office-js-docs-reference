@@ -21,6 +21,32 @@ properties:
       content: 'importChangeTrackingMode?: boolean;'
       return:
         type: boolean
+  - name: importCustomProperties
+    uid: 'word!Word.InsertFileOptions#importCustomProperties:member'
+    package: word!
+    fullName: importCustomProperties
+    summary: >-
+      Represents whether the custom properties from the source document should be imported. Overwrites existing
+      properties with the same name.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importCustomProperties?: boolean;'
+      return:
+        type: boolean
+  - name: importCustomXmlParts
+    uid: 'word!Word.InsertFileOptions#importCustomXmlParts:member'
+    package: word!
+    fullName: importCustomXmlParts
+    summary: Represents whether the custom XML parts from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importCustomXmlParts?: boolean;'
+      return:
+        type: boolean
   - name: importPageColor
     uid: 'word!Word.InsertFileOptions#importPageColor:member'
     package: word!

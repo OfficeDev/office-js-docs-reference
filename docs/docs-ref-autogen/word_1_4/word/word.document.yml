@@ -226,7 +226,7 @@ methods:
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -244,7 +244,7 @@ methods:
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
-      Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
+      Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -264,7 +264,7 @@ methods:
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections are not supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

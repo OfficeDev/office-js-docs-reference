@@ -27,8 +27,11 @@ properties:
     uid: 'word!Word.Interfaces.StyleLoadOptions#baseStyle:member'
     package: word!
     fullName: baseStyle
-    summary: Gets the name of an existing style to use as the base formatting of another style.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,9 +105,12 @@ properties:
     package: word!
     fullName: nextParagraphStyle
     summary: >-
-      Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
+      Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
       formatted with the specified style.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
     isPreview: false
     isDeprecated: false
     syntax:

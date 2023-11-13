@@ -177,7 +177,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the content control. The collection does not include floating
+      Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating
       images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -202,11 +202,13 @@ properties:
     uid: 'word!Word.ContentControl#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: >-
-      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and
-      1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
-      paragraphs in such tables are also returned.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the collection of paragraph objects in the content control.
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control
+      aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,9 +262,7 @@ properties:
     uid: 'word!Word.ContentControl#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: >-
-      Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a
-      table.
+    summary: Gets the table that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -275,7 +275,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: >-
-      Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a
+      Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a
       table cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -289,7 +289,7 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the content control. If it is not contained in a table cell, then this method
+      Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -306,7 +306,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the content control. If it is not contained in a table, then this method will return
+      Gets the table that contains the content control. If it isn't contained in a table, then this method will return
       an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -324,7 +324,10 @@ properties:
     fullName: placeholderText
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
-      empty. **Note**: The set operation for this property is not supported in Word on the web.
+      empty.
+
+
+      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -611,7 +614,7 @@ methods:
     uid: 'word!Word.ContentControl#delete:member(1)'
     package: word!
     fullName: delete(keepContent)
-    summary: 'Deletes the content control and its content. If keepContent is set to true, the content is not deleted.'
+    summary: 'Deletes the content control and its content. If `keepContent` is set to true, the content isn''t deleted.'
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -679,8 +682,8 @@ methods:
       parameters:
         - id: keepContent
           description: >-
-            Required. Indicates whether the content should be deleted with the content control. If keepContent is set to
-            true, the content is not deleted.
+            Required. Indicates whether the content should be deleted with the content control. If `keepContent` is set
+            to true, the content isn't deleted.
           type: boolean
       return:
         type: void
@@ -691,10 +694,10 @@ methods:
     fullName: getHtml()
     summary: >-
       Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
-      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
-      return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If
-      you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned
-      XML to HTML.
+      formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return
+      the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you
+      need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML
+      to HTML.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

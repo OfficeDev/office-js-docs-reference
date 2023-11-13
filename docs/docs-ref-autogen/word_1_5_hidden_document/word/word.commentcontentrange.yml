@@ -101,7 +101,7 @@ properties:
     uid: 'word!Word.CommentContentRange#underline:member'
     package: word!
     fullName: underline
-    summary: Specifies a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
+    summary: Specifies a value that indicates the comment text's underline type. 'None' if the comment text isn't underlined.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

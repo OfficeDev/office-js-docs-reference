@@ -9,6 +9,21 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: baseStyle
+    uid: 'word!Word.Interfaces.StyleUpdateData#baseStyle:member'
+    package: word!
+    fullName: baseStyle
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseStyle?: string;'
+      return:
+        type: string
   - name: font
     uid: 'word!Word.Interfaces.StyleUpdateData#font:member'
     package: word!
@@ -21,6 +36,23 @@ properties:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
+  - name: nextParagraphStyle
+    uid: 'word!Word.Interfaces.StyleUpdateData#nextParagraphStyle:member'
+    package: word!
+    fullName: nextParagraphStyle
+    summary: >-
+      Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
+      formatted with the specified style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextParagraphStyle?: string;'
+      return:
+        type: string
   - name: paragraphFormat
     uid: 'word!Word.Interfaces.StyleUpdateData#paragraphFormat:member'
     package: word!

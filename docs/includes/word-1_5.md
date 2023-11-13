@@ -33,7 +33,7 @@
 ||[ids](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)|The source of the event.|
 |[Document](/javascript/api/word/word.document)|[addStyle(name: string, type: Word.StyleType)](/javascript/api/word/word.document#word-word-document-addstyle-member(1))|Adds a style into the document by name and type.|
-||[close(closeBehavior?: Word.CloseBehavior)](/javascript/api/word/word.document#word-word-document-close-member(1))|Close current document.|
+||[close(closeBehavior?: Word.CloseBehavior)](/javascript/api/word/word.document#word-word-document-close-member(1))|Closes the current document.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))|Gets the currently supported content controls in the document.|
 ||[getEndnoteBody()](/javascript/api/word/word.document#word-word-document-getendnotebody-member(1))|Gets the document's endnotes in a single body.|
 ||[getFootnoteBody()](/javascript/api/word/word.document#word-word-document-getfootnotebody-member(1))|Gets the document's footnotes in a single body.|
@@ -85,14 +85,14 @@
 ||[insertEndnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertendnote-member(1))|Inserts an endnote.|
 ||[insertField(insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean)](/javascript/api/word/word.range#word-word-range-insertfield-member(1))|Inserts a field at the specified location.|
 ||[insertFootnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertfootnote-member(1))|Inserts a footnote.|
-|[Style](/javascript/api/word/word.style)|[baseStyle](/javascript/api/word/word.style#word-word-style-basestyle-member)|Gets the name of an existing style to use as the base formatting of another style.|
+|[Style](/javascript/api/word/word.style)|[baseStyle](/javascript/api/word/word.style#word-word-style-basestyle-member)|Specifies the name of an existing style to use as the base formatting of another style.|
 ||[builtIn](/javascript/api/word/word.style#word-word-style-builtin-member)|Gets whether the specified style is a built-in style.|
 ||[delete()](/javascript/api/word/word.style#word-word-style-delete-member(1))|Deletes the style.|
 ||[font](/javascript/api/word/word.style#word-word-style-font-member)|Gets a font object that represents the character formatting of the specified style.|
 ||[inUse](/javascript/api/word/word.style#word-word-style-inuse-member)|Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.|
 ||[linked](/javascript/api/word/word.style#word-word-style-linked-member)|Gets whether a style is a linked style that can be used for both paragraph and character formatting.|
 ||[nameLocal](/javascript/api/word/word.style#word-word-style-namelocal-member)|Gets the name of a style in the language of the user.|
-||[nextParagraphStyle](/javascript/api/word/word.style#word-word-style-nextparagraphstyle-member)|Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.|
+||[nextParagraphStyle](/javascript/api/word/word.style#word-word-style-nextparagraphstyle-member)|Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.|
 ||[paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)|Gets a ParagraphFormat object that represents the paragraph settings for the specified style.|
 ||[priority](/javascript/api/word/word.style#word-word-style-priority-member)|Specifies the priority.|
 ||[quickStyle](/javascript/api/word/word.style#word-word-style-quickstyle-member)|Specifies whether the style corresponds to an available quick style.|
