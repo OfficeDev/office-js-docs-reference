@@ -160,11 +160,13 @@ properties:
     uid: 'word!Word.Range#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: >-
-      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2,
-      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
-      such tables are also returned.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the collection of paragraph objects in the range.
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range aren't
+      returned. From requirement set 1.3, paragraphs in such tables are also returned.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,7 +220,7 @@ properties:
     uid: 'word!Word.Range#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
+    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -230,9 +232,7 @@ properties:
     uid: 'word!Word.Range#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table
-      cell.
+    summary: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -529,7 +529,7 @@ methods:
     package: word!
     fullName: expandTo(range)
     summary: >-
-      Returns a new range that extends from this range in either direction to cover another range. This range is not
+      Returns a new range that extends from this range in either direction to cover another range. This range isn't
       changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -633,13 +633,16 @@ methods:
     uid: 'word!Word.Range#getContentControls:member(1)'
     package: word!
     fullName: getContentControls(options)
-    summary: >-
-      Gets the currently supported content controls in the range. **Important**: If specific types are provided in
-      the options parameter, only content controls of supported types are returned. Be aware that an exception will be
-      thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
-      add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the currently supported content controls in the range.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      **Important**: If specific types are provided in the options parameter, only content controls of supported
+      types are returned. Be aware that an exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
+      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
+      types of content controls.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -657,7 +660,7 @@ methods:
     fullName: getHtml()
     summary: >-
       Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will
-      be a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same
       HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     remarks: |-
@@ -1621,8 +1624,8 @@ methods:
     package: word!
     fullName: intersectWith(range)
     summary: >-
-      Returns a new range as the intersection of this range with another range. This range is not changed. Throws an
-      `ItemNotFound` error if the two ranges are not overlapped or adjacent.
+      Returns a new range as the intersection of this range with another range. This range isn't changed. Throws an
+      `ItemNotFound` error if the two ranges aren't overlapped or adjacent.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -33,7 +33,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+         * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -41,10 +41,12 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+         * Gets the collection of paragraph objects in the body.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
          */
         readonly paragraphs: Word.ParagraphCollection;
         
@@ -94,7 +96,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -107,6 +109,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
+        
         
         
         
@@ -288,7 +291,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
+         * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -296,10 +299,12 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
          */
         readonly paragraphs: Word.ParagraphCollection;
         
@@ -352,7 +357,9 @@ export declare namespace Word {
          */
         readonly id: number;
         /**
-         * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+         * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+                    
+                    Note: The set operation for this property isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -418,18 +425,18 @@ export declare namespace Word {
          */
         clear(): void;
         /**
-         * Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
+         * Deletes the content control and its content. If `keepContent` is set to true, the content isn't deleted.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
+         * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If `keepContent` is set to true, the content isn't deleted.
          */
         delete(keepContent: boolean): void;
         
         
         /**
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -442,6 +449,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
+        
         
         
         
@@ -736,13 +744,15 @@ export declare namespace Word {
         
         
         
+        
         /**
-         * Gets the current selection of the document. Multiple selections are not supported.
+         * Gets the current selection of the document. Multiple selections aren't supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
+        
         
         
         /**
@@ -790,6 +800,9 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        
+        
+        
         
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
@@ -889,7 +902,7 @@ export declare namespace Word {
          */
         superscript: boolean;
         /**
-         * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
+         * Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1149,7 +1162,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+         * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1260,6 +1273,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -1287,7 +1301,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1302,6 +1316,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
+        
         
         
         
@@ -1542,10 +1557,12 @@ export declare namespace Word {
         
         
         /**
-         * Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
          */
         readonly paragraphs: Word.ParagraphCollection;
         
@@ -1608,7 +1625,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1624,6 +1641,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
+        
         
         
         
@@ -1937,7 +1955,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the section. This does not include the header/footer and other section metadata.
+         * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2092,6 +2110,14 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Specifies supported content control types and subtypes.
      *
@@ -2211,7 +2237,7 @@ export declare namespace Word {
          */
         tags = "Tags",
         /**
-         * Represents a content control that is not shown.
+         * Represents a content control that isn't shown.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -2674,7 +2700,9 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+                        
+                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2843,7 +2871,7 @@ export declare namespace Word {
              */
             superscript?: boolean;
             /**
-             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3105,7 +3133,7 @@ export declare namespace Word {
         /** An interface for updating data on the Section object, for use in `section.set({ ... })`. */
         export interface SectionUpdateData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3136,6 +3164,14 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the Shading object, for use in `shading.set({ ... })`. */
+        export interface ShadingUpdateData {
+            
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -3149,6 +3185,14 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        export interface TableStyleUpdateData {
             
             
             
@@ -3191,6 +3235,10 @@ export declare namespace Word {
             
             
         }
+        /** An interface for updating data on the TrackedChangeCollection object, for use in `trackedChangeCollection.set({ ... })`. */
+        export interface TrackedChangeCollectionUpdateData {
+            items?: Word.Interfaces.TrackedChangeData[];
+        }
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
@@ -3209,7 +3257,7 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+            * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3217,10 +3265,12 @@ export declare namespace Word {
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+            * Gets the collection of paragraph objects in the body.
             *
             * @remarks
             * [Api set: WordApi 1.1]
+            *
+            * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             
@@ -3298,7 +3348,7 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
+            * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3306,10 +3356,12 @@ export declare namespace Word {
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+            * Gets the collection of paragraph objects in the content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
+            *
+            * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             
@@ -3349,7 +3401,9 @@ export declare namespace Word {
              */
             id?: number;
             /**
-             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+                        
+                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3579,7 +3633,7 @@ export declare namespace Word {
              */
             superscript?: boolean;
             /**
-             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3673,7 +3727,7 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+            * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3769,6 +3823,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: string;
+            
         }
         /** An interface describing the data returned by calling `paragraphCollection.toJSON()`. */
         export interface ParagraphCollectionData {
@@ -3879,7 +3934,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3918,6 +3973,12 @@ export declare namespace Word {
             
             
             
+            
+            
+        }
+        /** An interface describing the data returned by calling `shading.toJSON()`. */
+        export interface ShadingData {
+            
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -3937,6 +3998,14 @@ export declare namespace Word {
             
             
             
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
+        export interface TableStyleData {
             
             
             
@@ -3986,6 +4055,17 @@ export declare namespace Word {
             
             
             
+        }
+        /** An interface describing the data returned by calling `trackedChange.toJSON()`. */
+        export interface TrackedChangeData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `trackedChangeCollection.toJSON()`. */
+        export interface TrackedChangeCollectionData {
+            items?: Word.Interfaces.TrackedChangeData[];
         }
         /**
          * Represents the body of a document or a section.
@@ -4106,7 +4186,9 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+                        
+                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4224,7 +4306,9 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+                        
+                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4394,7 +4478,7 @@ export declare namespace Word {
              */
             superscript?: boolean;
             /**
-             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4414,11 +4498,11 @@ export declare namespace Word {
             $all?: boolean;
             
             /**
-            * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4481,11 +4565,11 @@ export declare namespace Word {
             $all?: boolean;
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4552,11 +4636,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontLoadOptions;
             
             
@@ -4564,11 +4648,11 @@ export declare namespace Word {
             
             
             /**
-            * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
@@ -4663,6 +4747,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            
         }
         /**
          * Contains a collection of {@link Word.Paragraph} objects.
@@ -4787,6 +4872,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
+            
         }
         
         /**
@@ -4961,7 +5047,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4980,13 +5066,17 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
+            * For EACH ITEM in the collection: Gets the body object of the section. This doesn't include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
+        
+        
+        
+        
         
         
         

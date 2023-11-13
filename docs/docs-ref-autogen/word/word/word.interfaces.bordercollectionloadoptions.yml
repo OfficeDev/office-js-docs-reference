@@ -23,54 +23,42 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: lineColor
-    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineColor:member'
+  - name: color
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#color:member'
     package: word!
-    fullName: lineColor
+    fullName: color
     summary: >-
-      For EACH ITEM in the collection: Specifies the line color for the border. Color is specified in ‘\#RRGGBB’ format
-      or by using the color name.
+      For EACH ITEM in the collection: Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by
+      using the color name.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineColor?: boolean;'
+      content: 'color?: boolean;'
       return:
         type: boolean
-  - name: lineStyle
-    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineStyle:member'
+  - name: location
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#location:member'
     package: word!
-    fullName: lineStyle
-    summary: 'For EACH ITEM in the collection: Specifies the line style for the border.'
+    fullName: location
+    summary: 'For EACH ITEM in the collection: Gets the location of the border.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineStyle?: boolean;'
+      content: 'location?: boolean;'
       return:
         type: boolean
-  - name: lineWidth
-    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#lineWidth:member'
+  - name: type
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#type:member'
     package: word!
-    fullName: lineWidth
-    summary: 'For EACH ITEM in the collection: Specifies the line width for the border.'
+    fullName: type
+    summary: 'For EACH ITEM in the collection: Specifies the border type for the border.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineWidth?: boolean;'
-      return:
-        type: boolean
-  - name: positionType
-    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#positionType:member'
-    package: word!
-    fullName: positionType
-    summary: 'For EACH ITEM in the collection: Gets the position type of the border.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'positionType?: boolean;'
+      content: 'type?: boolean;'
       return:
         type: boolean
   - name: visible
@@ -83,5 +71,17 @@ properties:
     isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.BorderCollectionLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: 'For EACH ITEM in the collection: Specifies the width for the border.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
       return:
         type: boolean

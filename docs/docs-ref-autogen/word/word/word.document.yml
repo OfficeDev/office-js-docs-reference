@@ -288,7 +288,7 @@ methods:
     uid: 'word!Word.Document#close:member(1)'
     package: word!
     fullName: close(closeBehavior)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -305,7 +305,7 @@ methods:
     uid: 'word!Word.Document#close:member(2)'
     package: word!
     fullName: close(closeBehaviorString)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -350,7 +350,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: Required. The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -376,7 +376,7 @@ methods:
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -384,7 +384,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: Required. The case-insensitive bookmark name.
           type: string
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -405,7 +405,7 @@ methods:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: Required. The case-insensitive bookmark name.
           type: string
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -414,13 +414,16 @@ methods:
     uid: 'word!Word.Document#getContentControls:member(1)'
     package: word!
     fullName: getContentControls(options)
-    summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided
-      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
-      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
-      add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the currently supported content controls in the document.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: If specific types are provided in the options parameter, only content controls of supported types are
+      returned. Be aware that an exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
+      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
+      types of content controls.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,8 +466,8 @@ methods:
     package: word!
     fullName: getParagraphByUniqueLocalId(id)
     summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getParagraphByUniqueLocalId(id: string): Word.Paragraph;'
@@ -481,7 +484,7 @@ methods:
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections are not supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -556,8 +559,8 @@ methods:
     package: word!
     fullName: importStylesFromJson(stylesJson)
     summary: Import styles from a JSON-formatted string.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;'
@@ -1019,8 +1022,8 @@ events:
     package: word!
     fullName: onParagraphAdded
     summary: Occurs when the user adds new paragraphs.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
@@ -1033,8 +1036,8 @@ events:
     package: word!
     fullName: onParagraphChanged
     summary: Occurs when the user changes paragraphs.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
@@ -1047,8 +1050,8 @@ events:
     package: word!
     fullName: onParagraphDeleted
     summary: Occurs when the user deletes paragraphs.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'

@@ -12,7 +12,7 @@ fields:
     uid: 'word!Word.CloseBehavior.save:member'
     package: word!
     summary: |-
-      Save the changes before closing the document.
+      Saves the changes before closing the document.
 
       * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Save"'

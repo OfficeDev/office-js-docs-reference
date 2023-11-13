@@ -86,8 +86,8 @@ properties:
     package: word!
     fullName: parentTable
     summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the field. Throws an `ItemNotFound` error if it is
-      not contained in a table.
+      For EACH ITEM in the collection: Gets the table that contains the field. Throws an `ItemNotFound` error if it
+      isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     fullName: parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it
-      is not contained in a table cell.
+      isn't contained in a table cell.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

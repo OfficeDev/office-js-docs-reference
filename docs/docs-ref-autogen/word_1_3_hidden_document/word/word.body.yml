@@ -91,7 +91,7 @@ properties:
     uid: 'word!Word.Body#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+    summary: Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -142,11 +142,13 @@ properties:
     uid: 'word!Word.Body#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: >-
-      Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for
-      requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+    summary: Gets the collection of paragraph objects in the body.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3,
+      paragraphs in tables are also returned.
 
 
       #### Examples
@@ -568,7 +570,7 @@ methods:
     fullName: getHtml()
     summary: >-
       Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
-      a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same
       HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
     remarks: >-

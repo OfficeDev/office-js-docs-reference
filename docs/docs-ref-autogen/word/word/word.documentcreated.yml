@@ -198,7 +198,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: Required. The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -207,7 +207,7 @@ methods:
     uid: 'word!Word.DocumentCreated#getBookmarkRange:member(1)'
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[ [API set: WordApiHiddenDocument 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -215,7 +215,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: Required. The case-insensitive bookmark name.
           type: string
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -236,7 +236,10 @@ methods:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       parameters:
         - id: name
-          description: 'Required. The bookmark name, which is case-insensitive.'
+          description: >-
+            Required. The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It
+            must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an
+            underscore character. Names can't be longer than 40 characters.
           type: string
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -245,13 +248,16 @@ methods:
     uid: 'word!Word.DocumentCreated#getContentControls:member(1)'
     package: word!
     fullName: getContentControls(options)
-    summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided
-      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
-      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
-      add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApiHiddenDocument 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the currently supported content controls in the document.
+    remarks: >-
+      \[ [API set: WordApiHiddenDocument 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: If specific types are provided in the options parameter, only content controls of supported types are
+      returned. Be aware that an exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
+      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
+      types of content controls.
     isPreview: false
     isDeprecated: false
     syntax:

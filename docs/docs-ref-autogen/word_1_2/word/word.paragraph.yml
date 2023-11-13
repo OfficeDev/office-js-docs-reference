@@ -96,7 +96,7 @@ properties:
     uid: 'word!Word.Paragraph#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -447,7 +447,7 @@ methods:
     fullName: getHtml()
     summary: >-
       Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting
-      will be a close, but not exact, match for of the formatting of the document. This method does not return the exact
+      will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact
       same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     remarks: |-

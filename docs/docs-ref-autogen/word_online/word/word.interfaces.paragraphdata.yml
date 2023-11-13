@@ -63,7 +63,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -147,7 +147,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#listItem:member'
     package: word!
     fullName: listItem
-    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
+    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -314,7 +314,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#tableNestingLevel:member'
     package: word!
     fullName: tableNestingLevel
-    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
+    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph isn't in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -332,5 +332,19 @@ properties:
     isDeprecated: false
     syntax:
       content: 'text?: string;'
+      return:
+        type: string
+  - name: uniqueLocalId
+    uid: 'word!Word.Interfaces.ParagraphData#uniqueLocalId:member'
+    package: word!
+    fullName: uniqueLocalId
+    summary: >-
+      Gets a string that represents the paragraph identifier in the current session. ID is in standard 8-4-4-4-12 GUID
+      format without curly braces and differs across sessions and coauthors.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalId?: string;'
       return:
         type: string

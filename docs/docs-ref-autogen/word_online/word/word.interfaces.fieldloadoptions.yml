@@ -123,7 +123,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldLoadOptions#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the field. Throws an `ItemNotFound` error if it is not contained in a table.
+    summary: Gets the table that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -135,9 +135,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldLoadOptions#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the field. Throws an `ItemNotFound` error if it is not contained in a table
-      cell.
+    summary: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table cell.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

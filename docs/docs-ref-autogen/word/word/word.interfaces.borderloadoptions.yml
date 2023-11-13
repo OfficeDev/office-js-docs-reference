@@ -23,52 +23,40 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: lineColor
-    uid: 'word!Word.Interfaces.BorderLoadOptions#lineColor:member'
+  - name: color
+    uid: 'word!Word.Interfaces.BorderLoadOptions#color:member'
     package: word!
-    fullName: lineColor
-    summary: 'Specifies the line color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.'
+    fullName: color
+    summary: 'Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineColor?: boolean;'
+      content: 'color?: boolean;'
       return:
         type: boolean
-  - name: lineStyle
-    uid: 'word!Word.Interfaces.BorderLoadOptions#lineStyle:member'
+  - name: location
+    uid: 'word!Word.Interfaces.BorderLoadOptions#location:member'
     package: word!
-    fullName: lineStyle
-    summary: Specifies the line style for the border.
+    fullName: location
+    summary: Gets the location of the border.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineStyle?: boolean;'
+      content: 'location?: boolean;'
       return:
         type: boolean
-  - name: lineWidth
-    uid: 'word!Word.Interfaces.BorderLoadOptions#lineWidth:member'
+  - name: type
+    uid: 'word!Word.Interfaces.BorderLoadOptions#type:member'
     package: word!
-    fullName: lineWidth
-    summary: Specifies the line width for the border.
+    fullName: type
+    summary: Specifies the border type for the border.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'lineWidth?: boolean;'
-      return:
-        type: boolean
-  - name: positionType
-    uid: 'word!Word.Interfaces.BorderLoadOptions#positionType:member'
-    package: word!
-    fullName: positionType
-    summary: Gets the position type of the border.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'positionType?: boolean;'
+      content: 'type?: boolean;'
       return:
         type: boolean
   - name: visible
@@ -81,5 +69,17 @@ properties:
     isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.BorderLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: Specifies the width for the border.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
       return:
         type: boolean

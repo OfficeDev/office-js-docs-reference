@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.SectionLoadOptions#body:member'
     package: word!
     fullName: body
-    summary: Gets the body object of the section. This does not include the header/footer and other section metadata.
+    summary: Gets the body object of the section. This doesn't include the header/footer and other section metadata.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

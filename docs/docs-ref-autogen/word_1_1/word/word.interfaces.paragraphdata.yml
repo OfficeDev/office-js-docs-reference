@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -4,8 +4,8 @@ uid: 'word!Word.TableStyle:class'
 package: word!
 fullName: Word.TableStyle
 summary: Represents the TableStyle object.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -38,8 +38,8 @@ properties:
     package: word!
     fullName: bottomCellMargin
     summary: Specifies the amount of space to add between the contents and the bottom borders of the cells.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bottomCellMargin: number;'
@@ -50,8 +50,8 @@ properties:
     package: word!
     fullName: cellSpacing
     summary: Specifies the spacing (in points) between the cells in a table style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'cellSpacing: number;'
@@ -65,7 +65,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -76,8 +76,8 @@ properties:
     package: word!
     fullName: leftCellMargin
     summary: Specifies the amount of space to add between the contents and the left borders of the cells.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'leftCellMargin: number;'
@@ -88,8 +88,8 @@ properties:
     package: word!
     fullName: rightCellMargin
     summary: Specifies the amount of space to add between the contents and the right borders of the cells.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rightCellMargin: number;'
@@ -100,8 +100,8 @@ properties:
     package: word!
     fullName: topCellMargin
     summary: Specifies the amount of space to add between the contents and the top borders of the cells.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'topCellMargin: number;'
@@ -116,7 +116,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.TableStyleLoadOptions): Word.TableStyle;'
@@ -135,7 +135,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.TableStyle;'
@@ -154,7 +154,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -183,7 +183,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Interfaces.TableStyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
@@ -205,7 +205,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Word.TableStyle): void;'
@@ -227,7 +227,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.TableStyleData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.TableStyleData;'
@@ -247,7 +247,7 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.TableStyle;'
@@ -264,7 +264,7 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.TableStyle;'

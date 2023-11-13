@@ -96,7 +96,7 @@ properties:
     uid: 'word!Word.Paragraph#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -218,7 +218,7 @@ properties:
     uid: 'word!Word.Paragraph#list:member'
     package: word!
     fullName: list
-    summary: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
+    summary: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph isn't in a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -230,7 +230,7 @@ properties:
     uid: 'word!Word.Paragraph#listItem:member'
     package: word!
     fullName: listItem
-    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
+    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -330,7 +330,7 @@ properties:
     uid: 'word!Word.Paragraph#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
+    summary: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -343,7 +343,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: >-
-      Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table
+      Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -620,7 +620,7 @@ properties:
     uid: 'word!Word.Paragraph#tableNestingLevel:member'
     package: word!
     fullName: tableNestingLevel
-    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
+    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph isn't in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -783,7 +783,7 @@ methods:
     fullName: getHtml()
     summary: >-
       Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting
-      will be a close, but not exact, match for of the formatting of the document. This method does not return the exact
+      will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact
       same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     remarks: |-

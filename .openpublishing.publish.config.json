@@ -57,6 +57,7 @@
         "word-js-1.4-hidden-document",
         "word-js-1.5",
         "word-js-1.5-hidden-document",
+        "word-js-1.6",
         "word-js-online"
       ],
       "open_to_public_contributors": true,
@@ -317,6 +318,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/word_1_5_hidden_document/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/word_1_6/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

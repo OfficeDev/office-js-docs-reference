@@ -3,12 +3,12 @@ name: Word.BuiltInStyleName
 uid: 'word!Word.BuiltInStyleName:enum'
 package: word!
 fullName: Word.BuiltInStyleName
-summary: |-
-  Represents the built-in style in a Word document.
-
-  Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordAPI 1.5.
+summary: Represents the built-in style in a Word document.
 remarks: >-
   \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
 
 
   #### Examples

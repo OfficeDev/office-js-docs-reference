@@ -137,7 +137,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#list:member'
     package: word!
     fullName: list
-    summary: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
+    summary: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph isn't in a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -149,7 +149,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#listItem:member'
     package: word!
     fullName: listItem
-    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
+    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -249,7 +249,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
+    summary: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -262,7 +262,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: >-
-      Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table
+      Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -373,7 +373,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#tableNestingLevel:member'
     package: word!
     fullName: tableNestingLevel
-    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
+    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph isn't in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -84,7 +84,7 @@ methods:
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections are not supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

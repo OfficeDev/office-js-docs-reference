@@ -4,8 +4,8 @@ uid: 'word!Word.ParagraphChangedEventArgs:interface'
 package: word!
 fullName: Word.ParagraphChangedEventArgs
 summary: Provides information about the paragraphs that raised the paragraphChanged event.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Word.EventSource | "Local" | "Remote";'
@@ -26,8 +26,8 @@ properties:
     package: word!
     fullName: type
     summary: The event type. See Word.EventType for details.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -49,8 +49,8 @@ properties:
     summary: >-
       Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces
       and differ across sessions and coauthors.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'uniqueLocalIds: string[];'

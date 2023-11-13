@@ -9,56 +9,57 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: insideLineColor
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideLineColor:member'
+  - name: insideBorderColor
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideBorderColor:member'
     package: word!
-    fullName: insideLineColor
-    summary: Specifies the 24-bit color of the inside borders.
+    fullName: insideBorderColor
+    summary: >-
+      Specifies the 24-bit color of the inside borders. Color is specified in ‘\#RRGGBB’ format or by using the color
+      name.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'insideLineColor?: string;'
+      content: 'insideBorderColor?: string;'
       return:
         type: string
-  - name: insideLineStyle
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideLineStyle:member'
+  - name: insideBorderType
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member'
     package: word!
-    fullName: insideLineStyle
-    summary: Specifies the line style of the inside borders.
+    fullName: insideBorderType
+    summary: Specifies the border type of the inside borders.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        insideLineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" | "DashSmallGap"
-        | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" | "Outset" | "Single"
-        | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" | "ThinThickLargeGap" |
-        "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap" |
-        "ThinThickThinSmallGap" | "Triple";
+        insideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed"
+        | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type: >-
-          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
-          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
-  - name: insideLineWidth
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideLineWidth:member'
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: insideBorderWidth
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#insideBorderWidth:member'
     package: word!
-    fullName: insideLineWidth
-    summary: Specifies the line width of the inside borders.
+    fullName: insideBorderWidth
+    summary: Specifies the width of the inside borders.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        insideLineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300"
-        | "Pt450" | "Pt600" | "Mixed";
+        insideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
+        "Pt300" | "Pt450" | "Pt600" | "Mixed";
       return:
         type: >-
-          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
-          "Pt300" | "Pt450" | "Pt600" | "Mixed"
+          <xref uid="word!Word.BorderWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225"
+          | "Pt300" | "Pt450" | "Pt600" | "Mixed"
   - name: items
     uid: 'word!Word.Interfaces.BorderCollectionUpdateData#items:member'
     package: word!
@@ -71,53 +72,54 @@ properties:
       content: 'items?: Word.Interfaces.BorderData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.BorderData:interface" />[]'
-  - name: outsideLineColor
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideLineColor:member'
+  - name: outsideBorderColor
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderColor:member'
     package: word!
-    fullName: outsideLineColor
-    summary: Specifies the 24-bit color of the outside borders.
+    fullName: outsideBorderColor
+    summary: >-
+      Specifies the 24-bit color of the outside borders. Color is specified in ‘\#RRGGBB’ format or by using the color
+      name.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'outsideLineColor?: string;'
+      content: 'outsideBorderColor?: string;'
       return:
         type: string
-  - name: outsideLineStyle
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideLineStyle:member'
+  - name: outsideBorderType
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member'
     package: word!
-    fullName: outsideLineStyle
-    summary: Specifies the line style of the outside borders.
+    fullName: outsideBorderType
+    summary: Specifies the border type of the outside borders.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        outsideLineStyle?: Word.LineStyle | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-        "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-        "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-        "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" | "ThinThickThinMedGap"
-        | "ThinThickThinSmallGap" | "Triple";
+        outsideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed"
+        | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type: >-
-          <xref uid="word!Word.LineStyle:enum" /> | "DashDot" | "DashDotDot" | "DashDotStroked" | "DashLargeGap" |
-          "DashSmallGap" | "Dot" | "Double" | "DoubleWavy" | "Emboss3D" | "Engrave3D" | "Inset" | "Mixed" | "None" |
-          "Outset" | "Single" | "SingleWavy" | "ThickThinLargeGap" | "ThickThinMedGap" | "ThickThinSmallGap" |
-          "ThinThickLargeGap" | "ThinThickMedGap" | "ThinThickSmallGap" | "ThinThickThinLargeGap" |
-          "ThinThickThinMedGap" | "ThinThickThinSmallGap" | "Triple"
-  - name: outsideLineWidth
-    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideLineWidth:member'
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: outsideBorderWidth
+    uid: 'word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderWidth:member'
     package: word!
-    fullName: outsideLineWidth
-    summary: Specifies the line width of the outside borders.
+    fullName: outsideBorderWidth
+    summary: Specifies the width of the outside borders.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
-        outsideLineWidth?: Word.LineWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300"
-        | "Pt450" | "Pt600" | "Mixed";
+        outsideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
+        "Pt300" | "Pt450" | "Pt600" | "Mixed";
       return:
         type: >-
-          <xref uid="word!Word.LineWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" |
-          "Pt300" | "Pt450" | "Pt600" | "Mixed"
+          <xref uid="word!Word.BorderWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225"
+          | "Pt300" | "Pt450" | "Pt600" | "Mixed"

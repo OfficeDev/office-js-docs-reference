@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.ShadingLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.ShadingLoadOptions
 summary: Represents the shading object.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -30,8 +30,8 @@ properties:
     summary: >-
       Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the
       color name.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'backgroundPatternColor?: boolean;'
@@ -55,7 +55,10 @@ properties:
     uid: 'word!Word.Interfaces.ShadingLoadOptions#texture:member'
     package: word!
     fullName: texture
-    summary: Specifies the shading texture of the object.
+    summary: >-
+      Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see [Add,
+      change, or delete the background color in
+      Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

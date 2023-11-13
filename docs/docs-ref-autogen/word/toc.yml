@@ -27,10 +27,10 @@ items:
                 uid: 'word!Word.BodyType:enum'
               - name: BorderLocation
                 uid: 'word!Word.BorderLocation:enum'
-              - name: BorderPositionType
-                uid: 'word!Word.BorderPositionType:enum'
               - name: BorderType
                 uid: 'word!Word.BorderType:enum'
+              - name: BorderWidth
+                uid: 'word!Word.BorderWidth:enum'
               - name: BreakType
                 uid: 'word!Word.BreakType:enum'
               - name: BuiltInStyleName
@@ -73,10 +73,6 @@ items:
                 uid: 'word!Word.ImageFormat:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
-              - name: LineStyle
-                uid: 'word!Word.LineStyle:enum'
-              - name: LineWidth
-                uid: 'word!Word.LineWidth:enum'
               - name: ListBuiltInNumberStyle
                 uid: 'word!Word.ListBuiltInNumberStyle:enum'
               - name: ListBullet
@@ -132,7 +128,7 @@ items:
           - name: BorderCollection
             uid: 'word!Word.BorderCollection:class'
           - name: CheckboxContentControl
-            uid: 'word!Word.CheckboxContentControl:interface'
+            uid: 'word!Word.CheckboxContentControl:class'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection
@@ -195,6 +191,8 @@ items:
             uid: 'word!Word.FieldCollection:class'
           - name: Font
             uid: 'word!Word.Font:class'
+          - name: GetTextOptions
+            uid: 'word!Word.GetTextOptions:interface'
           - name: InlinePicture
             uid: 'word!Word.InlinePicture:class'
           - name: InlinePictureCollection
@@ -1065,6 +1063,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.6 requirement set
+            href: ../../requirement-sets/word/word-api-1-6-requirement-set.md
             displayName: Word
           - name: WordApi 1.5 requirement set
             href: ../../requirement-sets/word/word-api-1-5-requirement-set.md

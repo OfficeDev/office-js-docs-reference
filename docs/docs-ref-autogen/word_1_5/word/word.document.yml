@@ -288,7 +288,7 @@ methods:
     uid: 'word!Word.Document#close:member(1)'
     package: word!
     fullName: close(closeBehavior)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -305,7 +305,7 @@ methods:
     uid: 'word!Word.Document#close:member(2)'
     package: word!
     fullName: close(closeBehaviorString)
-    summary: Close current document.
+    summary: Closes the current document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -339,7 +339,7 @@ methods:
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
     fullName: getBookmarkRange(name)
-    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -357,7 +357,7 @@ methods:
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
-      Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
+      Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -377,13 +377,16 @@ methods:
     uid: 'word!Word.Document#getContentControls:member(1)'
     package: word!
     fullName: getContentControls(options)
-    summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided
-      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
-      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
-      add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the currently supported content controls in the document.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Important: If specific types are provided in the options parameter, only content controls of supported types are
+      returned. Be aware that an exception will be thrown on using methods of a generic
+      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
+      additional types of content controls may be supported. Therefore, your add-in should request and handle specific
+      types of content controls.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -425,7 +428,7 @@ methods:
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
     fullName: getSelection()
-    summary: Gets the current selection of the document. Multiple selections are not supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

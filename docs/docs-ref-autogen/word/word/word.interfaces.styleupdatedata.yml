@@ -9,6 +9,21 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: baseStyle
+    uid: 'word!Word.Interfaces.StyleUpdateData#baseStyle:member'
+    package: word!
+    fullName: baseStyle
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseStyle?: string;'
+      return:
+        type: string
   - name: borders
     uid: 'word!Word.Interfaces.StyleUpdateData#borders:member'
     package: word!
@@ -45,6 +60,23 @@ properties:
       content: 'listTemplate?: Word.Interfaces.ListTemplateUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.ListTemplateUpdateData:interface" />'
+  - name: nextParagraphStyle
+    uid: 'word!Word.Interfaces.StyleUpdateData#nextParagraphStyle:member'
+    package: word!
+    fullName: nextParagraphStyle
+    summary: >-
+      Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
+      formatted with the specified style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextParagraphStyle?: string;'
+      return:
+        type: string
   - name: paragraphFormat
     uid: 'word!Word.Interfaces.StyleUpdateData#paragraphFormat:member'
     package: word!
@@ -86,8 +118,8 @@ properties:
     package: word!
     fullName: shading
     summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUpdateData;'
@@ -98,8 +130,8 @@ properties:
     package: word!
     fullName: tableStyle
     summary: Gets a TableStyle object representing Style properties that can be applied to a table.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tableStyle?: Word.Interfaces.TableStyleUpdateData;'
