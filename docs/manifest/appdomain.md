@@ -28,6 +28,7 @@ Specifies an additional domain that Office should trust, in addition to the one 
 > 1. Listing the same domain as the one specified in the [SourceLocation element](sourcelocation.md) has no effect and may be misleading. In particular, when you are developing on `localhost`, you don't need to create an **\<AppDomain\>** element for `localhost`.
 > 1. Don't include any segments of a URL past the domain. For example, don't include the full URL of a page.
 > 1. Do *not* put a closing slash, "/", on the value.
+> 1. Wildcards, such as `*`, aren't allowed in **\<AppDomain\>** values; however, *for add-ins running only in Office on Windows*, there's a way to designate additional trusted domains with wildcards. See [Wildcard trusted domains](/office/dev/add-ins/develop/trusted-domain).
 
 ## Contained in
 
