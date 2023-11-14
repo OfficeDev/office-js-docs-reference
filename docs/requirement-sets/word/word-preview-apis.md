@@ -52,7 +52,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member)|Specifies the width of the inside borders.|
 ||[items](/javascript/api/word/word.bordercollection#word-word-bordercollection-items-member)|Gets the loaded child items in this collection.|
 ||[outsideBorderColor](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidebordercolor-member)|Specifies the 24-bit color of the outside borders.|
-||[outsideBorderType](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidebordertype-member)|Specifies the .border type of the outside borders.|
+||[outsideBorderType](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidebordertype-member)|Specifies the border type of the outside borders.|
 ||[outsideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsideborderwidth-member)|Specifies the width of the outside borders.|
 |[CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol)|[isChecked](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-ischecked-member)|Specifies the current state of the checkbox.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[checkboxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-checkboxcontentcontrol-member)|Specifies the checkbox-related data if the content control's type is 'CheckBox'.|
