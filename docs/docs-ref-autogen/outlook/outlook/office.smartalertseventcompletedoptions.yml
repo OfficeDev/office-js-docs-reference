@@ -179,14 +179,21 @@ properties:
       -->**: Compose
 
 
-      **Important**: If you specify the `contextData` option in your `event.completed` call, you must also assign a
-      task pane ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+      **Important**:
+
+
+      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to
+      the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+
+
+      - To retrieve the value of the `contextData` property, you must call
+      `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane.
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'contextData?: object;'
+      content: 'contextData?: any;'
       return:
-        type: object
+        type: any
   - name: errorMessage
     uid: 'outlook!Office.SmartAlertsEventCompletedOptions#errorMessage:member'
     package: outlook!

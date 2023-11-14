@@ -9523,7 +9523,7 @@ export declare namespace Office {
          */
         owner: string;
         /**
-         * The REST API's base URL (currently https://outlook.office.com/api).
+         * The REST API's base URL (currently `https://outlook.office.com/api`).
          *
          * Use with `targetMailbox` to construct the REST operation's URL.
          *
