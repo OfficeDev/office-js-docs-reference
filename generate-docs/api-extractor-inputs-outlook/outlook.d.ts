@@ -11374,7 +11374,7 @@ export declare namespace Office {
          */
         owner: string;
         /**
-         * The REST API's base URL (currently https://outlook.office.com/api).
+         * The REST API's base URL (currently `https://outlook.office.com/api`).
          *
          * Use with `targetMailbox` to construct the REST operation's URL.
          *
@@ -11475,12 +11475,17 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * **Important**:
+         *
+         * - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
+         *
+         * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
+         * of your task pane.
          *
          * @beta
          */
-        contextData?: object;
+        contextData?: any;
         /**
          * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
          * to `false`, this property sets the error message displayed to the user. For an example, see the

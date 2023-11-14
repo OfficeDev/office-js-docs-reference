@@ -93,4 +93,4 @@
 |[SharedProperties](/javascript/api/outlook/office.sharedproperties)|[delegatePermissions](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-delegatepermissions-member)|The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.|
 ||[owner](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-owner-member)|The email address of the owner of a shared item.|
 ||[targetMailbox](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetmailbox-member)|The location of the owner's mailbox for the delegate's access.|
-||[targetRestUrl](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetresturl-member)|The REST API's base URL (currently https://outlook.office.com/api).|
+||[targetRestUrl](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetresturl-member)|The REST API's base URL (currently `https://outlook.office.com/api`).|
