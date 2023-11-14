@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # What's new in Word JavaScript API 1.6
 
-WordApi 1.6 added support for management of styles and tracked changes.
+WordApi 1.6 mainly added enhanced support for management of styles and tracked changes.
 
 ## API list
 
