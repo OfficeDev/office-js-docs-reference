@@ -484,7 +484,7 @@
 ||[unmerge()](/javascript/api/excel/excel.range#excel-excel-range-unmerge-member(1))|Unmerge the range cells into separate cells.|
 |[RangeFormat](/javascript/api/excel/excel.rangeformat)|[autofitColumns()](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-autofitcolumns-member(1))|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 ||[autofitRows()](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-autofitrows-member(1))|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
-||[columnWidth](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-columnwidth-member)|Specifies the width of all colums within the range.|
+||[columnWidth](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-columnwidth-member)|Specifies the width of all columns within the range.|
 ||[protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)|Returns the format protection object for a range.|
 ||[rowHeight](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-rowheight-member)|The height of all rows in the range.|
 |[RangeReference](/javascript/api/excel/excel.rangereference)|[address](/javascript/api/excel/excel.rangereference#excel-excel-rangereference-address-member)|The address of the range, for example "SheetName!A1:B5".|

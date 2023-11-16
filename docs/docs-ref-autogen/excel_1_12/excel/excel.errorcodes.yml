@@ -123,6 +123,11 @@ fields:
     package: excel!
     summary: ''
     value: '"PivotTableRangeConflict"'
+  - name: powerQueryRefreshResourceChallenge
+    uid: 'excel!Excel.ErrorCodes.powerQueryRefreshResourceChallenge:member'
+    package: excel!
+    summary: ''
+    value: '"PowerQueryRefreshResourceChallenge"'
   - name: rangeExceedsLimit
     uid: 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
     package: excel!

@@ -6,7 +6,7 @@ fullName: Excel.Workbook
 summary: >-
   Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -560,7 +560,7 @@ methods:
     summary: >-
       Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -592,7 +592,7 @@ methods:
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -775,7 +775,7 @@ methods:
       content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
       parameters:
         - id: saveBehavior
-          description: Workbook save behavior.
+          description: The save behavior must be "Save" or "Prompt". Default value is "Save".
           type: '<xref uid="excel!Excel.SaveBehavior:enum" />'
       return:
         type: void
@@ -792,7 +792,7 @@ methods:
       content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
       parameters:
         - id: saveBehaviorString
-          description: Workbook save behavior.
+          description: The save behavior must be "Save" or "Prompt". Default value is "Save".
           type: '"Save" | "Prompt"'
       return:
         type: void

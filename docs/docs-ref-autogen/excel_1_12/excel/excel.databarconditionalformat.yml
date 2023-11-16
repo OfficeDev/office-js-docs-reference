@@ -88,7 +88,7 @@ properties:
     package: excel!
     fullName: lowerBoundRule
     summary: >-
-      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. The
+      The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar. The
       `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of
       `x.lowerBoundRule.formula = ...`<!-- -->).
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

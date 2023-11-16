@@ -6,7 +6,7 @@ fullName: Excel.RangeAreas
 summary: >-
   `RangeAreas` represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
   discontiguous ranges, read [Work with multiple ranges simultaneously in Excel
-  add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -334,8 +334,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
-        skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" |
+        "Link", skipBlanks?: boolean, transpose?: boolean): void;
       parameters:
         - id: sourceRange
           description: >-
@@ -344,7 +344,7 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
-          type: '"All" | "Formulas" | "Values" | "Formats"'
+          type: '"All" | "Formulas" | "Values" | "Formats" | "Link"'
         - id: skipBlanks
           description: True if to skip blank cells in the source range or `RangeAreas`<!-- -->. Default is false.
           type: boolean
@@ -411,7 +411,7 @@ methods:
       Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`<!-- -->. If
       no intersection is found, then this method returns an object with its `isNullObject` property set to `true`<!--
       -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -520,7 +520,7 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
       cells are found that match the criteria, then this method returns an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -550,7 +550,7 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
       cells are found that match the criteria, then this method returns an object with its `isNullObject` property set
       to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -628,7 +628,7 @@ methods:
       `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, then this method returns an
       object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

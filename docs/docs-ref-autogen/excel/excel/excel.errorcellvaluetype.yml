@@ -142,6 +142,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Placeholder"'
+  - name: python
+    uid: 'excel!Excel.ErrorCellValueType.python:member'
+    package: excel!
+    summary: >-
+      Represents a `PythonErrorCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Python"'
   - name: ref
     uid: 'excel!Excel.ErrorCellValueType.ref:member'
     package: excel!
@@ -158,6 +168,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Spill"'
+  - name: timeout
+    uid: 'excel!Excel.ErrorCellValueType.timeout:member'
+    package: excel!
+    summary: >-
+      Represents a `TimeoutErrorCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Timeout"'
   - name: value
     uid: 'excel!Excel.ErrorCellValueType.value:member'
     package: excel!

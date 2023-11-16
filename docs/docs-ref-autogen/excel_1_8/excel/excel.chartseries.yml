@@ -818,7 +818,7 @@ methods:
     uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
     package: excel!
     fullName: setXAxisValues(sourceData)
-    summary: Sets the values of the x-axis for a chart series. Only works for scatter charts.
+    summary: Sets the values of the x-axis for a chart series.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

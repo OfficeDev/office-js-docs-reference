@@ -60,7 +60,7 @@ fields:
     uid: 'excel!Excel.AutoFillType.fillFormats:member'
     package: excel!
     summary: |-
-      Populates the adjacent cells with the selected formulas.
+      Populates the adjacent cells with the selected formats.
 
       * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillFormats"'

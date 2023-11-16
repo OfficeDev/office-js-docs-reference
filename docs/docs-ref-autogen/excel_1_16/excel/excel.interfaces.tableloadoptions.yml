@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.TableLoadOptions
 summary: >-
   Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
-  JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
+  JavaScript API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

@@ -302,7 +302,7 @@ export declare namespace Excel {
     
     /**
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
-                To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -431,7 +431,7 @@ export declare namespace Excel {
     
     /**
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-                To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                To learn more about the worksheet object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -685,7 +685,7 @@ export declare namespace Excel {
     
     /**
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
-                To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+                To learn more about how ranges are used throughout the API, start with {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -1175,8 +1175,8 @@ export declare namespace Excel {
          */
         readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
         /**
-         * Represents the value computed by the name's formula. For a named range it will return the range address.
-         * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+         * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                    This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1456,7 +1456,7 @@ export declare namespace Excel {
     
     /**
      * Represents an Excel table.
-                To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                To learn more about the table object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -2440,7 +2440,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a chart object in a workbook.
-                To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                To learn more about the chart object model, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -3361,7 +3361,7 @@ export declare namespace Excel {
         text: string;
         
         /**
-         * Specifies if the axis title is visibile.
+         * Specifies if the axis title is visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -3921,7 +3921,7 @@ export declare namespace Excel {
         
         
         /**
-         * Specifies if the chart title is visibile.
+         * Specifies if the chart title is visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -5195,6 +5195,8 @@ export declare namespace Excel {
     
     
     /**
+     * Determines the direction in which existing cells will be shifted to accommodate what is being inserted.
+     *
      * @remarks
      * [Api set: ExcelApi 1.1]
      */
@@ -5448,6 +5450,7 @@ export declare namespace Excel {
         openWorkbookLinksBlocked = "OpenWorkbookLinksBlocked",
         operationCellsExceedLimit = "OperationCellsExceedLimit",
         pivotTableRangeConflict = "PivotTableRangeConflict",
+        powerQueryRefreshResourceChallenge = "PowerQueryRefreshResourceChallenge",
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
@@ -6241,7 +6244,7 @@ export declare namespace Excel {
             text?: string;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -6509,7 +6512,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -7551,8 +7554,8 @@ export declare namespace Excel {
              */
             type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
             /**
-             * Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -8279,7 +8282,7 @@ export declare namespace Excel {
             text?: string;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -8556,7 +8559,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -9374,7 +9377,7 @@ export declare namespace Excel {
         
         /**
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
-                    To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                    To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -9420,7 +9423,7 @@ export declare namespace Excel {
         
         /**
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-                    To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                    To learn more about the worksheet object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -9550,7 +9553,7 @@ export declare namespace Excel {
         
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
-                    To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+                    To learn more about how ranges are used throughout the API, start with {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -9725,8 +9728,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -9774,8 +9777,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -9919,7 +9922,7 @@ export declare namespace Excel {
         
         /**
          * Represents an Excel table.
-                    To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                    To learn more about the table object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -10480,7 +10483,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a chart object in a workbook.
-                    To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                    To learn more about the chart object model, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -11035,7 +11038,7 @@ export declare namespace Excel {
             text?: boolean;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -11322,7 +11325,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

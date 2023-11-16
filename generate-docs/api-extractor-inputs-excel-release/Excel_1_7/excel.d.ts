@@ -866,7 +866,7 @@ export declare namespace Excel {
     
     /**
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
-                To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -1123,7 +1123,7 @@ export declare namespace Excel {
     
     /**
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-                To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                To learn more about the worksheet object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -1314,7 +1314,7 @@ export declare namespace Excel {
         getNext(visibleOnly?: boolean): Excel.Worksheet;
         /**
          * Gets the worksheet that follows this one. If there are no worksheets following this one, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.5]
@@ -1333,7 +1333,7 @@ export declare namespace Excel {
         getPrevious(visibleOnly?: boolean): Excel.Worksheet;
         /**
          * Gets the worksheet that precedes this one. If there are no previous worksheets, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.5]
@@ -1373,7 +1373,7 @@ export declare namespace Excel {
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
-         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -1512,7 +1512,7 @@ export declare namespace Excel {
         getItem(key: string): Excel.Worksheet;
         /**
          * Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -1834,7 +1834,7 @@ export declare namespace Excel {
          * Gets a range that describes the frozen cells in the active worksheet view.
                     The frozen range corresponds to cells that are frozen in the top- and left-most pane.
                     If there is no frozen pane, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -1858,7 +1858,7 @@ export declare namespace Excel {
     
     /**
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
-                To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+                To learn more about how ranges are used throughout the API, start with {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -2220,7 +2220,7 @@ export declare namespace Excel {
         getIntersection(anotherRange: Range | string): Excel.Range;
         /**
          * Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -2329,7 +2329,7 @@ export declare namespace Excel {
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
          * Returns the used range of the given range object. If there are no used cells within the range, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -2733,7 +2733,7 @@ export declare namespace Excel {
         getItem(key: string): Excel.Setting;
         /**
          * Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -2892,7 +2892,7 @@ export declare namespace Excel {
         getItem(name: string): Excel.NamedItem;
         /**
          * Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -2949,7 +2949,7 @@ export declare namespace Excel {
         readonly worksheet: Excel.Worksheet;
         /**
          * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -2991,8 +2991,8 @@ export declare namespace Excel {
          */
         readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
         /**
-         * Represents the value computed by the name's formula. For a named range it will return the range address.
-         * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+         * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                    This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -3031,7 +3031,7 @@ export declare namespace Excel {
         getRange(): Excel.Range;
         /**
          * Returns the range object that is associated with the name. If the named item's type is not a range, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -3327,7 +3327,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Binding;
         /**
          * Gets a binding object by ID. If the binding object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -3414,7 +3414,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Table;
         /**
          * Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -3460,7 +3460,7 @@ export declare namespace Excel {
     
     /**
      * Represents an Excel table.
-                To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                To learn more about the table object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -3737,7 +3737,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.TableColumn;
         /**
          * Gets a column object by name or ID. If the column doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -4101,7 +4101,7 @@ export declare namespace Excel {
         readonly protection: Excel.FormatProtection;
         
         /**
-         * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
+         * Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -4639,7 +4639,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Chart;
         /**
          * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If the chart doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -4677,7 +4677,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a chart object in a workbook.
-                To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                To learn more about the chart object model, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -5229,7 +5229,7 @@ export declare namespace Excel {
          */
         setValues(sourceData: Range): void;
         /**
-         * Sets the values of the x-axis for a chart series. Only works for scatter charts.
+         * Sets the values of the x-axis for a chart series.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -5989,7 +5989,7 @@ export declare namespace Excel {
         text: string;
         
         /**
-         * Specifies if the axis title is visibile.
+         * Specifies if the axis title is visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -6850,7 +6850,7 @@ export declare namespace Excel {
          */
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         /**
-         * Specifies if the chart title is visibile.
+         * Specifies if the chart title is visible.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -8021,7 +8021,7 @@ export declare namespace Excel {
         /**
          * Gets a custom XML part based on its ID.
                     If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.5]
@@ -8117,7 +8117,7 @@ export declare namespace Excel {
         /**
          * Gets a custom XML part based on its ID.
                     If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.5]
@@ -8253,7 +8253,7 @@ export declare namespace Excel {
         getItem(name: string): Excel.PivotTable;
         /**
          * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -8294,7 +8294,7 @@ export declare namespace Excel {
     }
     /**
      * Represents an Excel PivotTable.
-                To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
+                To learn more about the PivotTable object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.3]
@@ -8646,7 +8646,7 @@ export declare namespace Excel {
         getItem(key: string): Excel.CustomProperty;
         /**
          * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -8767,7 +8767,7 @@ export declare namespace Excel {
     }
     /**
      * An object encapsulating a conditional format's range, format, rule, and other properties.
-                To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
+                To learn more about the conditional formatting object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
      *
      * @remarks
      * [Api set: ExcelApi 1.6]
@@ -8956,7 +8956,7 @@ export declare namespace Excel {
         getRange(): Excel.Range;
         /**
          * Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -9037,7 +9037,7 @@ export declare namespace Excel {
          */
         barDirection: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";
         /**
-         * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+         * The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar.
                     The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
          *
          * @remarks
@@ -13018,6 +13018,8 @@ export declare namespace Excel {
         fill = "Fill"
     }
     /**
+     * Determines the direction in which existing cells will be shifted to accommodate what is being inserted.
+     *
      * @remarks
      * [Api set: ExcelApi 1.1]
      */
@@ -13208,6 +13210,8 @@ export declare namespace Excel {
         columns = "Columns"
     }
     /**
+     * Represents the part of the cell used as the sorting criteria.
+     *
      * @remarks
      * [Api set: ExcelApi 1.2]
      */
@@ -14088,6 +14092,8 @@ export declare namespace Excel {
     }
     
     /**
+     * The position of a worksheet relative to another worksheet or the entire worksheet collection.
+     *
      * @remarks
      * [Api set: ExcelApi 1.7]
      */
@@ -17973,6 +17979,7 @@ export declare namespace Excel {
         openWorkbookLinksBlocked = "OpenWorkbookLinksBlocked",
         operationCellsExceedLimit = "OperationCellsExceedLimit",
         pivotTableRangeConflict = "PivotTableRangeConflict",
+        powerQueryRefreshResourceChallenge = "PowerQueryRefreshResourceChallenge",
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
@@ -18438,7 +18445,7 @@ export declare namespace Excel {
             protection?: Excel.Interfaces.FormatProtectionUpdateData;
             
             /**
-             * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
+             * Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
              *
              * @remarks
              * [Api set: ExcelApi 1.2]
@@ -19187,7 +19194,7 @@ export declare namespace Excel {
             text?: string;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -19581,7 +19588,7 @@ export declare namespace Excel {
              */
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -20200,7 +20207,7 @@ export declare namespace Excel {
              */
             barDirection?: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";
             /**
-             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+             * The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar.
                         The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * @remarks
@@ -21575,8 +21582,8 @@ export declare namespace Excel {
              */
             type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
             /**
-             * Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -21853,7 +21860,7 @@ export declare namespace Excel {
             protection?: Excel.Interfaces.FormatProtectionData;
             
             /**
-             * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
+             * Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
              *
              * @remarks
              * [Api set: ExcelApi 1.2]
@@ -22693,7 +22700,7 @@ export declare namespace Excel {
             text?: string;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -23108,7 +23115,7 @@ export declare namespace Excel {
              */
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -23885,7 +23892,7 @@ export declare namespace Excel {
              */
             barDirection?: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";
             /**
-             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+             * The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar.
                         The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * @remarks
@@ -24721,7 +24728,7 @@ export declare namespace Excel {
         
         /**
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
-                    To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                    To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -24803,7 +24810,7 @@ export declare namespace Excel {
         }
         /**
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-                    To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                    To learn more about the worksheet object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -25016,7 +25023,7 @@ export declare namespace Excel {
         }
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
-                    To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+                    To learn more about how ranges are used throughout the API, start with {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -25474,7 +25481,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
-            For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: ExcelApi 1.4]
@@ -25516,8 +25523,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -25560,7 +25567,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
             * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
-            For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: ExcelApi 1.4]
@@ -25602,8 +25609,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * Represents the value computed by the name's formula. For a named range it will return the range address.
-             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
+             * Represents the value computed by the name's formula. For a named range, it will return the range address.
+                        This API returns the #VALUE! error in the Excel UI if it refers to a user-defined function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -25816,7 +25823,7 @@ export declare namespace Excel {
         
         /**
          * Represents an Excel table.
-                    To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                    To learn more about the table object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -26140,7 +26147,7 @@ export declare namespace Excel {
             protection?: Excel.Interfaces.FormatProtectionLoadOptions;
             
             /**
-             * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
+             * Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
              *
              * @remarks
              * [Api set: ExcelApi 1.2]
@@ -26526,7 +26533,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a chart object in a workbook.
-                    To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                    To learn more about the chart object model, see {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -27469,7 +27476,7 @@ export declare namespace Excel {
             text?: boolean;
             
             /**
-             * Specifies if the axis title is visibile.
+             * Specifies if the axis title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -27960,7 +27967,7 @@ export declare namespace Excel {
              */
             verticalAlignment?: boolean;
             /**
-             * Specifies if the chart title is visibile.
+             * Specifies if the chart title is visible.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -28459,7 +28466,7 @@ export declare namespace Excel {
         }
         /**
          * Represents an Excel PivotTable.
-                    To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
+                    To learn more about the PivotTable object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.3]
@@ -28829,7 +28836,7 @@ export declare namespace Excel {
         }
         /**
          * An object encapsulating a conditional format's range, format, rule, and other properties.
-                    To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
+                    To learn more about the conditional formatting object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -29037,7 +29044,7 @@ export declare namespace Excel {
              */
             barDirection?: boolean;
             /**
-             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+             * The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar.
                         The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * @remarks
