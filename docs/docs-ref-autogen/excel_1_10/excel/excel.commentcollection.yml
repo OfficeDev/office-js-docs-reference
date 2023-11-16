@@ -175,7 +175,7 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     package: excel!
     fullName: getItemByCell(cellAddress)
-    summary: Gets the comment from the specified cell.
+    summary: 'Gets the comment from the specified cell. If there is no comment in the cell, an error is thrown.'
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

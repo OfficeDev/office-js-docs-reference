@@ -6,7 +6,7 @@ fullName: Excel.DataValidation
 summary: >-
   Represents the data validation applied to the current range. To learn more about the data validation object model,
   read [Add data validation to Excel
-  ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
+  ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

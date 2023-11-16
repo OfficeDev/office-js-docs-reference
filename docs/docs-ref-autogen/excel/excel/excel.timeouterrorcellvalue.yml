@@ -1,0 +1,74 @@
+### YamlMime:TSType
+name: Excel.TimeoutErrorCellValue
+uid: 'excel!Excel.TimeoutErrorCellValue:interface'
+package: excel!
+fullName: Excel.TimeoutErrorCellValue
+summary: 'Represents the value of a cell containing a \#TIMEOUT! error.'
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: basicType
+    uid: 'excel!Excel.TimeoutErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.TimeoutErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#TIMEOUT!" | string;'
+      return:
+        type: '"#TIMEOUT!" | string'
+  - name: errorSubType
+    uid: 'excel!Excel.TimeoutErrorCellValue#errorSubType:member'
+    package: excel!
+    fullName: errorSubType
+    summary: Represents the type of `TimeoutErrorCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'errorSubType?: TimeoutErrorCellValueSubType | "Unknown" | "PythonTimeoutLimitReached";'
+      return:
+        type: '<xref uid="excel!Excel.TimeoutErrorCellValueSubType:enum" /> | "Unknown" | "PythonTimeoutLimitReached"'
+  - name: errorType
+    uid: 'excel!Excel.TimeoutErrorCellValue#errorType:member'
+    package: excel!
+    fullName: errorType
+    summary: Represents the type of `ErrorCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'errorType?: ErrorCellValueType.timeout | "Timeout";'
+      return:
+        type: '<xref uid="excel!Excel.ErrorCellValueType.timeout:member" /> | "Timeout"'
+  - name: type
+    uid: 'excel!Excel.TimeoutErrorCellValue#type:member'
+    package: excel!
+    fullName: type
+    summary: Represents the type of this cell value.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.CellValueType.error:member" /> | "Error"'

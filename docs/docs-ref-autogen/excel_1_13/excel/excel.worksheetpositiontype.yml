@@ -3,7 +3,7 @@ name: Excel.WorksheetPositionType
 uid: 'excel!Excel.WorksheetPositionType:enum'
 package: excel!
 fullName: Excel.WorksheetPositionType
-summary: ''
+summary: The position of a worksheet relative to another worksheet or the entire worksheet collection.
 remarks: >-
   \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

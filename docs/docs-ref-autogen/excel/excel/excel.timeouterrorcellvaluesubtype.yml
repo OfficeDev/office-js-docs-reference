@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.TimeoutErrorCellValueSubType
+uid: 'excel!Excel.TimeoutErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.TimeoutErrorCellValueSubType
+summary: 'Represents types of \#TIMEOUT! errors.'
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: pythonTimeoutLimitReached
+    uid: 'excel!Excel.TimeoutErrorCellValueSubType.pythonTimeoutLimitReached:member'
+    package: excel!
+    summary: >-
+      Python function timed out. Displays as error type \#TIMEOUT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonTimeoutLimitReached"'
+  - name: unknown
+    uid: 'excel!Excel.TimeoutErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: >-
+      An unknown type of error. Displays as error type \#TIMEOUT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Unknown"'

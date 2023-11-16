@@ -86,6 +86,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Error"'
+  - name: externalCodeServiceObject
+    uid: 'excel!Excel.CellValueType.externalCodeServiceObject:member'
+    package: excel!
+    summary: >-
+      Represents an `ExternalCodeServiceObjectCellValue`<!-- -->.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceObject"'
   - name: formattedNumber
     uid: 'excel!Excel.CellValueType.formattedNumber:member'
     package: excel!
@@ -105,10 +115,12 @@ fields:
   - name: localImage
     uid: 'excel!Excel.CellValueType.localImage:member'
     package: excel!
-    summary: |-
+    summary: >-
       Represents a `LocalImageCellValue`<!-- -->.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"LocalImage"'
   - name: notAvailable
     uid: 'excel!Excel.CellValueType.notAvailable:member'

@@ -6,7 +6,7 @@ fullName: Excel.Range
 summary: >-
   Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
   more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -712,7 +712,7 @@ methods:
         - id: destinationRange
           description: >-
             The destination range to AutoFill. If the destination range is `null`<!-- -->, data is filled out based on
-            the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
+            the surrounding cells (which is the behavior when double-clicking the UI's range fill handle).
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: autoFillType
           description: >-
@@ -748,7 +748,7 @@ methods:
         - id: destinationRange
           description: >-
             The destination range to AutoFill. If the destination range is `null`<!-- -->, data is filled out based on
-            the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
+            the surrounding cells (which is the behavior when double-clicking the UI's range fill handle).
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: autoFillTypeString
           description: >-
@@ -927,8 +927,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
-        skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" |
+        "Link", skipBlanks?: boolean, transpose?: boolean): void;
       parameters:
         - id: sourceRange
           description: >-
@@ -937,7 +937,7 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
-          type: '"All" | "Formulas" | "Values" | "Formats"'
+          type: '"All" | "Formulas" | "Values" | "Formats" | "Link"'
         - id: skipBlanks
           description: True if to skip blank cells in the source range. Default is false.
           type: boolean
@@ -1059,7 +1059,7 @@ methods:
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
       there are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->.
       For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -1723,7 +1723,7 @@ methods:
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -1897,7 +1897,7 @@ methods:
       in this range is more than 512, then this method will fail to return the result. If the `RangeAreas` object
       doesn't exist, then this function will return an object with its `isNullObject` property set to `true`<!-- -->.
       For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -2379,7 +2379,7 @@ methods:
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -2409,7 +2409,7 @@ methods:
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -2492,7 +2492,7 @@ methods:
       Gets the range object containing the spill range when called on an anchor cell. If the range isn't an anchor cell
       or the spill range can't be found, then this method returns an object with its `isNullObject` property set to
       `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -2525,7 +2525,7 @@ methods:
       Gets the range object containing the anchor cell for the cell getting spilled into. If it's not a spilled cell, or
       more than one cell is given, then this method returns an object with its `isNullObject` property set to `true`<!--
       -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -2663,7 +2663,7 @@ methods:
       Returns the used range of the given range object. If there are no used cells within the range, then this method
       returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
