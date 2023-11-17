@@ -46,6 +46,13 @@ fields:
     package: excel!
     summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Formulas"'
+  - name: link
+    uid: 'excel!Excel.RangeCopyType.link:member'
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Link"'
   - name: values
     uid: 'excel!Excel.RangeCopyType.values:member'
     package: excel!

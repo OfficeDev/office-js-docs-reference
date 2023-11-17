@@ -63,7 +63,7 @@ properties:
     uid: 'excel!Excel.ChartTitle#visible:member'
     package: excel!
     fullName: visible
-    summary: Specifies if the chart title is visibile.
+    summary: Specifies if the chart title is visible.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

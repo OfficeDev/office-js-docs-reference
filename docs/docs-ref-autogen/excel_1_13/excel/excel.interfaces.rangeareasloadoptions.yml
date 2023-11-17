@@ -6,7 +6,7 @@ fullName: Excel.Interfaces.RangeAreasLoadOptions
 summary: >-
   `RangeAreas` represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
   discontiguous ranges, read [Work with multiple ranges simultaneously in Excel
-  add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

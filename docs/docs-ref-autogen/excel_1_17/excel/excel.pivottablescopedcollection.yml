@@ -75,7 +75,7 @@ methods:
       left-to-right, such that the top-left table is the first PivotTable in the collection. If the collection is empty,
       then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -109,7 +109,7 @@ methods:
     summary: >-
       Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

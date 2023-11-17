@@ -42,7 +42,7 @@
 ||[line](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-line-member)|Specifies chart line formatting.|
 |[ChartAxisTitle](/javascript/api/excel/excel.chartaxistitle)|[format](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-format-member)|Specifies the formatting of the chart axis title.|
 ||[text](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-text-member)|Specifies the axis title.|
-||[visible](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-visible-member)|Specifies if the axis title is visibile.|
+||[visible](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-visible-member)|Specifies if the axis title is visible.|
 |[ChartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat)|[font](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-font-member)|Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.|
 |[ChartCollection](/javascript/api/excel/excel.chartcollection)|[add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy)](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))|Creates a new chart.|
 ||[count](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-count-member)|Returns the number of charts in the worksheet.|
@@ -96,7 +96,7 @@
 |[ChartTitle](/javascript/api/excel/excel.charttitle)|[format](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-format-member)|Represents the formatting of a chart title, which includes fill and font formatting.|
 ||[overlay](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-overlay-member)|Specifies if the chart title will overlay the chart.|
 ||[text](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-text-member)|Specifies the chart's title text.|
-||[visible](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-visible-member)|Specifies if the chart title is visibile.|
+||[visible](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-visible-member)|Specifies if the chart title is visible.|
 |[ChartTitleFormat](/javascript/api/excel/excel.charttitleformat)|[fill](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-fill-member)|Represents the fill format of an object, which includes background formatting information.|
 ||[font](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-font-member)|Represents the font attributes (such as font name, font size, and color) for an object.|
 |[NamedItem](/javascript/api/excel/excel.nameditem)|[getRange()](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-getrange-member(1))|Returns the range object that is associated with the name.|

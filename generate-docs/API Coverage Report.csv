@@ -635,6 +635,7 @@ Excel.CellValueType,"double",EnumField,Fine,false
 Excel.CellValueType,"empty",EnumField,Fine,false
 Excel.CellValueType,"entity",EnumField,Fine,false
 Excel.CellValueType,"error",EnumField,Fine,false
+Excel.CellValueType,"externalCodeServiceObject",EnumField,Fine,false
 Excel.CellValueType,"formattedNumber",EnumField,Fine,false
 Excel.CellValueType,"linkedEntity",EnumField,Fine,false
 Excel.CellValueType,"localImage",EnumField,Fine,false
@@ -3168,8 +3169,10 @@ Excel.ErrorCellValueType,"notAvailable",EnumField,Fine,false
 Excel.ErrorCellValueType,"null",EnumField,Fine,false
 Excel.ErrorCellValueType,"num",EnumField,Fine,false
 Excel.ErrorCellValueType,"placeholder",EnumField,Fine,false
+Excel.ErrorCellValueType,"python",EnumField,Fine,false
 Excel.ErrorCellValueType,"ref",EnumField,Fine,false
 Excel.ErrorCellValueType,"spill",EnumField,Fine,false
+Excel.ErrorCellValueType,"timeout",EnumField,Fine,false
 Excel.ErrorCellValueType,"value",EnumField,Fine,false
 Excel.ErrorCodes,N/A,Enum,Missing,false
 Excel.ErrorCodes,"accessDenied",EnumField,Missing,false
@@ -3236,7 +3239,6 @@ Excel.EventType,"tableFiltered",EnumField,Fine,false
 Excel.EventType,"tableSelectionChanged",EnumField,Fine,false
 Excel.EventType,"visualChange",EnumField,Fine,false
 Excel.EventType,"visualSelectionChanged",EnumField,Fine,false
-Excel.EventType,"workbookActionRecorded",EnumField,Fine,false
 Excel.EventType,"workbookActivated",EnumField,Fine,false
 Excel.EventType,"workbookAutoSaveSettingChanged",EnumField,Fine,false
 Excel.EventType,"workbookNavigationObjectChanged",EnumField,Fine,false
@@ -3259,6 +3261,15 @@ Excel.EventType,"worksheetRowSorted",EnumField,Fine,false
 Excel.EventType,"worksheetSelectionChanged",EnumField,Fine,false
 Excel.EventType,"worksheetSingleClicked",EnumField,Fine,false
 Excel.EventType,"worksheetVisibilityChanged",EnumField,Fine,false
+Excel.ExternalCodeServiceObjectCellValue,N/A,Class,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"basicType",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"basicValue",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"language",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"preview",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"Python_str",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"Python_type",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"Python_typeName",Property,Good,false
+Excel.ExternalCodeServiceObjectCellValue,"type",Property,Good,false
 Excel.ExternalErrorCellValue,N/A,Class,Good,false
 Excel.ExternalErrorCellValue,"basicType",Property,Good,false
 Excel.ExternalErrorCellValue,"basicValue",Property,Good,false
@@ -4154,7 +4165,7 @@ Excel.ImageFittingMode,N/A,Enum,Fine,false
 Excel.ImageFittingMode,"fill",EnumField,Fine,false
 Excel.ImageFittingMode,"fit",EnumField,Fine,false
 Excel.ImageFittingMode,"fitAndCenter",EnumField,Fine,false
-Excel.InsertShiftDirection,N/A,Enum,Fine,true
+Excel.InsertShiftDirection,N/A,Enum,Good,true
 Excel.InsertShiftDirection,"down",EnumField,Fine,false
 Excel.InsertShiftDirection,"right",EnumField,Fine,false
 Excel.InsertWorksheetOptions,N/A,Class,Good,false
@@ -4850,6 +4861,11 @@ Excel.ProtectionSelectionMode,N/A,Enum,Fine,false
 Excel.ProtectionSelectionMode,"none",EnumField,Fine,false
 Excel.ProtectionSelectionMode,"normal",EnumField,Fine,false
 Excel.ProtectionSelectionMode,"unlocked",EnumField,Fine,false
+Excel.PythonErrorCellValue,N/A,Class,Good,false
+Excel.PythonErrorCellValue,"basicType",Property,Good,false
+Excel.PythonErrorCellValue,"basicValue",Property,Good,false
+Excel.PythonErrorCellValue,"errorType",Property,Good,false
+Excel.PythonErrorCellValue,"type",Property,Good,false
 Excel.Query,N/A,Class,Good,false
 Excel.Query,"context",Property,Good,false
 Excel.Query,"error",Property,Good,false
@@ -5094,6 +5110,7 @@ Excel.RangeCopyType,N/A,Enum,Fine,true
 Excel.RangeCopyType,"all",EnumField,Fine,false
 Excel.RangeCopyType,"formats",EnumField,Fine,false
 Excel.RangeCopyType,"formulas",EnumField,Fine,false
+Excel.RangeCopyType,"link",EnumField,Fine,false
 Excel.RangeCopyType,"values",EnumField,Fine,false
 Excel.RangeFill,N/A,Class,Good,false
 Excel.RangeFill,"color",Property,Fine,false
@@ -5731,7 +5748,7 @@ Excel.SortField,"subField",Property,Good,false
 Excel.SortMethod,N/A,Enum,Fine,false
 Excel.SortMethod,"pinYin",EnumField,Fine,false
 Excel.SortMethod,"strokeCount",EnumField,Fine,false
-Excel.SortOn,N/A,Enum,Fine,true
+Excel.SortOn,N/A,Enum,Good,true
 Excel.SortOn,"cellColor",EnumField,Fine,false
 Excel.SortOn,"fontColor",EnumField,Fine,false
 Excel.SortOn,"icon",EnumField,Fine,false
@@ -6144,6 +6161,15 @@ Excel.TimelineStyleCollection,"load(propertyNames)",Method,Poor,false
 Excel.TimelineStyleCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.TimelineStyleCollection,"setDefault(newDefaultStyle)",Method,Poor,false
 Excel.TimelineStyleCollection,"toJSON()",Method,Poor,false
+Excel.TimeoutErrorCellValue,N/A,Class,Good,false
+Excel.TimeoutErrorCellValue,"basicType",Property,Good,false
+Excel.TimeoutErrorCellValue,"basicValue",Property,Good,false
+Excel.TimeoutErrorCellValue,"errorSubType",Property,Good,false
+Excel.TimeoutErrorCellValue,"errorType",Property,Good,false
+Excel.TimeoutErrorCellValue,"type",Property,Good,false
+Excel.TimeoutErrorCellValueSubType,N/A,Enum,Good,false
+Excel.TimeoutErrorCellValueSubType,"pythonTimeoutLimitReached",EnumField,Good,false
+Excel.TimeoutErrorCellValueSubType,"unknown",EnumField,Good,false
 Excel.TopBottomConditionalFormat,N/A,Class,Good,false
 Excel.TopBottomConditionalFormat,"context",Property,Good,false
 Excel.TopBottomConditionalFormat,"format",Property,Good,false
@@ -6466,7 +6492,7 @@ Excel.WorksheetNameChangedEventArgs,"nameBefore",Property,Good,false
 Excel.WorksheetNameChangedEventArgs,"source",Property,Good,false
 Excel.WorksheetNameChangedEventArgs,"type",Property,Good,false
 Excel.WorksheetNameChangedEventArgs,"worksheetId",Property,Good,false
-Excel.WorksheetPositionType,N/A,Enum,Fine,true
+Excel.WorksheetPositionType,N/A,Enum,Good,true
 Excel.WorksheetPositionType,"after",EnumField,Fine,false
 Excel.WorksheetPositionType,"before",EnumField,Fine,false
 Excel.WorksheetPositionType,"beginning",EnumField,Fine,false

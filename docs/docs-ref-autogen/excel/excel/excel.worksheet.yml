@@ -6,7 +6,7 @@ fullName: Excel.Worksheet
 summary: >-
   An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
   object model, read [Work with worksheets using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -764,7 +764,7 @@ methods:
           A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there
           are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For
           further information, see [*OrNullObject methods and
-          properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
           -->.
   - name: 'getCell(row, column)'
     uid: 'excel!Excel.Worksheet#getCell:member(1)'
@@ -868,7 +868,7 @@ methods:
       Gets the worksheet that follows this one. If there are no worksheets following this one, then this method returns
       an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -939,7 +939,7 @@ methods:
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, then this method returns an object
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -1105,7 +1105,7 @@ methods:
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to
       `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

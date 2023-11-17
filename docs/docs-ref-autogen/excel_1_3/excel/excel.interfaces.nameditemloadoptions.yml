@@ -56,8 +56,8 @@ properties:
     package: excel!
     fullName: value
     summary: >-
-      Represents the value computed by the name's formula. For a named range it will return the range address. Note:
-      This API returns the \#VALUE! error in the Excel UI if it refers to a custom function.
+      Represents the value computed by the name's formula. For a named range, it will return the range address. This API
+      returns the \#VALUE! error in the Excel UI if it refers to a user-defined function.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

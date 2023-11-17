@@ -6,7 +6,7 @@ fullName: Excel.Range
 summary: >-
   Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
   more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -698,7 +698,7 @@ methods:
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -1098,7 +1098,7 @@ methods:
       Returns the used range of the given range object. If there are no used cells within the range, then this method
       returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

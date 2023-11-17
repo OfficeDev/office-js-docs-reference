@@ -6,7 +6,7 @@ fullName: Excel.ConditionalFormat
 summary: >-
   An object encapsulating a conditional format's range, format, rule, and other properties. To learn more about the
   conditional formatting object model, read [Apply conditional formatting to Excel
-  ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.
+  ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -713,7 +713,7 @@ methods:
       Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple
       ranges, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
-      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

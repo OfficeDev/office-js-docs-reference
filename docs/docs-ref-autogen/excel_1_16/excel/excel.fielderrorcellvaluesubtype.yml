@@ -24,7 +24,7 @@ fields:
       Displays as error type \#FIELD! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RichValueRelMissingFilePart"'
   - name: unknown
     uid: 'excel!Excel.FieldErrorCellValueSubType.unknown:member'

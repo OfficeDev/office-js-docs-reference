@@ -372,6 +372,8 @@ items:
                 uid: 'excel!Excel.SpillErrorCellValueSubType:enum'
               - name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
+              - name: TimeoutErrorCellValueSubType
+                uid: 'excel!Excel.TimeoutErrorCellValueSubType:enum'
               - name: TopBottomSelectionType
                 uid: 'excel!Excel.TopBottomSelectionType:enum'
               - name: ValueErrorCellValueSubType
@@ -755,6 +757,8 @@ items:
             uid: 'excel!Excel.EntityViewLayouts:interface'
           - name: ErrorCellValue
             uid: 'excel!Excel.ErrorCellValue:type'
+          - name: ExternalCodeServiceObjectCellValue
+            uid: 'excel!Excel.ExternalCodeServiceObjectCellValue:interface'
           - name: ExternalErrorCellValue
             uid: 'excel!Excel.ExternalErrorCellValue:interface'
           - name: FieldErrorCellValue
@@ -891,6 +895,8 @@ items:
             uid: 'excel!Excel.PlaceholderErrorCellValue:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
+          - name: PythonErrorCellValue
+            uid: 'excel!Excel.PythonErrorCellValue:interface'
           - name: Query
             uid: 'excel!Excel.Query:class'
           - name: QueryCollection
@@ -1053,6 +1059,8 @@ items:
             uid: 'excel!Excel.TimelineStyle:class'
           - name: TimelineStyleCollection
             uid: 'excel!Excel.TimelineStyleCollection:class'
+          - name: TimeoutErrorCellValue
+            uid: 'excel!Excel.TimeoutErrorCellValue:interface'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
           - name: ValueErrorCellValue

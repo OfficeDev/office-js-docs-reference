@@ -6,7 +6,7 @@ fullName: Excel.Interfaces.WorkbookLoadOptions
 summary: >-
   Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
