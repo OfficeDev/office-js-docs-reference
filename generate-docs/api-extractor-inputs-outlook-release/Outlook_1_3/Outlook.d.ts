@@ -1449,7 +1449,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
          *
@@ -1476,7 +1476,7 @@ export declare namespace Office {
          *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
-        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         
         
         /**
@@ -4030,7 +4030,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
          *
@@ -4057,7 +4057,7 @@ export declare namespace Office {
          *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
-        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         
         
         /**
@@ -4448,7 +4448,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
          */
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds a recipient list to the existing recipients for an appointment or message.
          *
@@ -4480,7 +4480,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
          */
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Gets a recipient list for an appointment or message.
          *
@@ -4605,7 +4605,7 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
          *                 indicates any error that occurred while adding the data.
          */
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Sets a recipient list for an appointment or message.
          *
@@ -4640,7 +4640,7 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
          *                 indicates any error that occurred while adding the data.
          */
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     
     

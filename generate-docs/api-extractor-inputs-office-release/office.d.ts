@@ -106,7 +106,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        all<T>(values: (T | PromiseLike<T>)[]): Promise<T[]>;
+        all<T>(values: Array<T | PromiseLike<T>>): Promise<T[]>;
 
         /**
          * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
@@ -186,7 +186,7 @@ export declare namespace Office {
          * @param values - An array of Promises.
          * @returns A new Promise.
          */
-        race<T>(values: (T | PromiseLike<T>)[]): Promise<T>;
+        race<T>(values: Array<T | PromiseLike<T>>): Promise<T>;
 
         /**
          * Creates a new rejected promise for the provided reason.
@@ -567,7 +567,7 @@ export declare namespace Office {
          * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
          * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
          */
-        areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;
+        areShortcutsInUse(shortcuts: string[]): Promise<Array<{shortcut: string, inUse: boolean}>>;
     }
     /**
      * Message used in the `onVisibilityModeChanged` invocation.
@@ -5900,7 +5900,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
          */
-        getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult< ({ cells: any, format: any})[]>) => void): void;
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult< Array<{ cells: any, format: any}>>) => void): void;
         /**
          * Gets the formatting on specified items in the table.
          *
@@ -5953,7 +5953,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
          */
-        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< ({ cells: any, format: any})[]>) => void): void;
+        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< Array<{ cells: any, format: any}>>) => void): void;
         /**
          * Sets formatting on specified items and data in the table.
          *

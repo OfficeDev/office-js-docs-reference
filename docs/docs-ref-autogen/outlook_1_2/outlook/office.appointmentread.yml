@@ -1188,8 +1188,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion |
-        PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion>;
       parameters:
         - id: entityType
           description: >-
@@ -1209,9 +1209,9 @@ methods:
           type: '<xref uid="outlook!Office.MailboxEnums.EntityType:enum" /> | string'
       return:
         type: >-
-          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> | <xref
           uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> |
-          <xref uid="outlook!Office.TaskSuggestion:interface" />)[]
+          <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
         description: >-
           If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns
           null. If no entities of the specified type are present in the item's body, the method returns an empty array.
@@ -1267,17 +1267,17 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber |
-        TaskSuggestion)[];
+        getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion>;
       parameters:
         - id: name
           description: The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
           type: string
       return:
         type: >-
-          (string | <xref uid="outlook!Office.Contact:interface" /> | <xref
+          Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> | <xref
           uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> |
-          <xref uid="outlook!Office.TaskSuggestion:interface" />)[]
+          <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
         description: >-
           The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
           manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in

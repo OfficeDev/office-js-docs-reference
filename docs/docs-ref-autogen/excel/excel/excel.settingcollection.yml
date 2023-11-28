@@ -67,14 +67,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
+      content: 'add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;'
       parameters:
         - id: key
           description: The key of the new setting.
           type: string
         - id: value
           description: The value for the new setting.
-          type: string | number | boolean | Date | Array&lt;any&gt; | any
+          type: 'string | number | boolean | Date | any[] | any'
       return:
         type: '<xref uid="excel!Excel.Setting:class" />'
         description: ''

@@ -20,6 +20,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'selectedItems?: (string | PivotItem)[];'
+      content: 'selectedItems?: Array<string | PivotItem>;'
       return:
-        type: '(string | <xref uid="excel!Excel.PivotItem:class" />)[]'
+        type: 'Array&lt;string | <xref uid="excel!Excel.PivotItem:class" />&gt;'

@@ -24,7 +24,7 @@
 |[Setting](/javascript/api/excel/excel.setting)|[delete()](/javascript/api/excel/excel.setting#excel-excel-setting-delete-member(1))|Deletes the setting.|
 ||[key](/javascript/api/excel/excel.setting#excel-excel-setting-key-member)|The key that represents the ID of the setting.|
 ||[value](/javascript/api/excel/excel.setting#excel-excel-setting-value-member)|Represents the value stored for this setting.|
-|[SettingCollection](/javascript/api/excel/excel.settingcollection)|[add(key: string, value: string \| number \| boolean \| Date \| Array \| any)](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1))|Sets or adds the specified setting to the workbook.|
+|[SettingCollection](/javascript/api/excel/excel.settingcollection)|[add(key: string, value: string \| number \| boolean \| Date \| any[] \| any)](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1))|Sets or adds the specified setting to the workbook.|
 ||[getCount()](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getcount-member(1))|Gets the number of settings in the collection.|
 ||[getItem(key: string)](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitem-member(1))|Gets a setting entry via the key.|
 ||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitemornullobject-member(1))|Gets a setting entry via the key.|
