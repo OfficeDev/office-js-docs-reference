@@ -239,23 +239,6 @@ methods:
 
       ```TypeScript
 
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
-          if (asyncResult.status != "failed") {
-              Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
-                  type: "informationalMessage",
-                  message : "Found " + asyncResult.value.length + " notifications.",
-                  icon : "iconid",
-                  persistent: false
-              });
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
@@ -441,19 +424,6 @@ methods:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // Replace a notification with an informational notification.
-
-      Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
-          type: "informationalMessage",
-          message : "The message was processed successfully.",
-          icon : "iconid",
-          persistent: false
-      });
-
-      ```
 
       ```TypeScript
 
