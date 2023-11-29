@@ -59,11 +59,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'all<T>(values: (T | PromiseLike<T>)[]): Promise<T[]>;'
+      content: 'all<T>(values: Array<T | PromiseLike<T>>): Promise<T[]>;'
       parameters:
         - id: values
           description: An array of Promises.
-          type: '(T | PromiseLike&lt;T&gt;)[]'
+          type: Array&lt;T | PromiseLike&lt;T&gt;&gt;
       return:
         type: 'Promise&lt;T[]&gt;'
         description: A new Promise.
@@ -283,11 +283,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'race<T>(values: (T | PromiseLike<T>)[]): Promise<T>;'
+      content: 'race<T>(values: Array<T | PromiseLike<T>>): Promise<T>;'
       parameters:
         - id: values
           description: An array of Promises.
-          type: '(T | PromiseLike&lt;T&gt;)[]'
+          type: Array&lt;T | PromiseLike&lt;T&gt;&gt;
       return:
         type: Promise&lt;T&gt;
         description: A new Promise.

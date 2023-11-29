@@ -5456,7 +5456,7 @@ export declare namespace Excel {
          * @param key - The key of the new setting.
          * @param value - The value for the new setting.
          */
-        add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;
+        add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;
         /**
          * Gets the number of settings in the collection.
          *

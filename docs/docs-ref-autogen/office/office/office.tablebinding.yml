@@ -524,7 +524,7 @@ methods:
     syntax:
       content: >-
         getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult< ({ cells: any, format: any})[]>) => void): void;
+        AsyncResult< Array<{ cells: any, format: any}>>) => void): void;
       parameters:
         - id: cellReference
           description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
@@ -542,8 +542,8 @@ methods:
             is an array containing one or more JavaScript objects specifying the formatting of their corresponding
             cells.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; ({ cells: any, format: any})[]&gt;) =&gt;
-            void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; Array&lt;{ cells: any, format: any}&gt;&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -584,8 +584,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< ({ cells: any, format:
-        any})[]>) => void): void;
+        getFormatsAsync(cellReference?: any, formats?: any[], callback?: (result: AsyncResult< Array<{ cells: any,
+        format: any}>>) => void): void;
       parameters:
         - id: cellReference
           description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
@@ -600,8 +600,8 @@ methods:
             is an array containing one or more JavaScript objects specifying the formatting of their corresponding
             cells.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; ({ cells: any, format: any})[]&gt;) =&gt;
-            void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt; Array&lt;{ cells: any, format: any}&gt;&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
