@@ -97,7 +97,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: Office.AsyncContextOptions,
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
@@ -106,8 +106,8 @@ methods:
             addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            Array&lt;string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;
         - id: options
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
@@ -167,7 +167,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult:
+        addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
@@ -176,8 +176,8 @@ methods:
             addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            Array&lt;string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -489,7 +489,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: Office.AsyncContextOptions,
         callback: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
@@ -498,8 +498,8 @@ methods:
             addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            Array&lt;string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;
         - id: options
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
@@ -678,7 +678,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult:
+        setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
@@ -687,8 +687,8 @@ methods:
             addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            Array&lt;string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter

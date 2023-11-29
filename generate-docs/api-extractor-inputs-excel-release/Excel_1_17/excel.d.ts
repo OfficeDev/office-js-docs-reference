@@ -8031,7 +8031,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
-        selectedItems?: (string | PivotItem)[];
+        selectedItems?: Array<string | PivotItem>;
     }
     /**
      * Configurable template for a value filter to apply to a PivotField.
@@ -13550,7 +13550,7 @@ export declare namespace Excel {
          * @param key - The key of the new setting.
          * @param value - The value for the new setting.
          */
-        add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;
+        add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;
         /**
          * Gets the number of settings in the collection.
          *
