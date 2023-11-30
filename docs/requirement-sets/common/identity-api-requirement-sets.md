@@ -20,7 +20,6 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 > [!IMPORTANT]
 >
-> - Regardless of the platform, the Identity API requirement set isn't supported if the Office document is opened from the **Files** tab of a Teams channel using the **Edit in Teams** option on the **Open** dropdown menu.
 > - In Outlook, the Identity API requirement set isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 ## Outlook and Identity API requirement sets
