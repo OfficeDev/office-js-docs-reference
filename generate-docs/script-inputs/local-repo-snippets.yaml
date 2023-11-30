@@ -8166,28 +8166,6 @@ Office.MessageRead#loadCustomPropertiesAsync:member(1):
 
     function saveCallback(asyncResult) {
     }
-Office.NotificationMessages#getAllAsync:member(1):
-  - |-
-    // Get all notifications.
-    Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
-        if (asyncResult.status != "failed") {
-            Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
-                type: "informationalMessage",
-                message : "Found " + asyncResult.value.length + " notifications.",
-                icon : "iconid",
-                persistent: false
-            });
-        }
-    });
-Office.NotificationMessages#replaceAsync:member(1):
-  - |-
-    // Replace a notification with an informational notification.
-    Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
-        type: "informationalMessage",
-        message : "The message was processed successfully.",
-        icon : "iconid",
-        persistent: false
-    });
 Office.PhoneNumber:interface:
   - |-
     const item = Office.context.mailbox.item;
