@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Specifies the source file locations for your Office Add-in as a URL between 1 and 2018 characters long. The source location must be an HTTPS address, not a file path. 
 
-The source location can be any website, and you can use any directory structure you want. Typically, all the files in the add-in, except the manifest, are deployed to the source location. In the case of a single-page application, there is usually just one file. You can host some files on a CDN, or other domain, provided that you register the domain with an [AppDomain](appdomain.md) element. You would include a copy of the manifest at your source location only if your add-in needs to read a manifest value at runtime. 
+The source location can be any website, and you can organize the files at that domain in any directory structure you want. Typically, all the files in the add-in, except the manifest, are deployed to the source location. For a single-page application, there is usually one file. You can host image or other supplementary files on a CDN, or other domain, provided that you register the domain with an [AppDomain](appdomain.md) element.
 
 **Add-in type:** Content, Task pane, Mail
 
