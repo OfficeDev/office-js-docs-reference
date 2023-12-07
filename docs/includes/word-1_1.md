@@ -125,7 +125,7 @@
 ||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
 ||[insertText(text: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-inserttext-member(1))|Inserts text at the specified location.|
 ||[paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)|Gets the collection of paragraph objects in the range.|
-||[parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)|Gets the content control that contains the range.|
+||[parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)|Gets the currently supported content control that contains the range.|
 ||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.range#word-word-range-search-member(1))|Performs a search with the specified SearchOptions on the scope of the range object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.range#word-word-range-select-member(1))|Selects and navigates the Word UI to the range.|
 ||[style](/javascript/api/word/word.range#word-word-range-style-member)|Specifies the style name for the range.|

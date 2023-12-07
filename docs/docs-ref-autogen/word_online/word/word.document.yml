@@ -335,6 +335,23 @@ methods:
       return:
         type: void
         description: ''
+  - name: getAnnotationById(id)
+    uid: 'word!Word.Document#getAnnotationById:member(1)'
+    package: word!
+    fullName: getAnnotationById(id)
+    summary: Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAnnotationById(id: string): Word.Annotation;'
+      parameters:
+        - id: id
+          description: The ID of the annotation to get.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Annotation:class" />'
+        description: ''
   - name: getBookmarkRange(name)
     uid: 'word!Word.Document#getBookmarkRange:member(1)'
     package: word!
@@ -402,7 +419,7 @@ methods:
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's endnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -415,7 +432,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's footnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -867,7 +884,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -877,6 +894,62 @@ methods:
         type: '<xref uid="word!Word.Document:class" />'
         description: ''
 events:
+  - name: onAnnotationClicked
+    uid: 'word!Word.Document#onAnnotationClicked:member'
+    package: word!
+    fullName: onAnnotationClicked
+    summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
+  - name: onAnnotationHovered
+    uid: 'word!Word.Document#onAnnotationHovered:member'
+    package: word!
+    fullName: onAnnotationHovered
+    summary: Occurs when the user hovers the cursor over an annotation.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
+  - name: onAnnotationInserted
+    uid: 'word!Word.Document#onAnnotationInserted:member'
+    package: word!
+    fullName: onAnnotationInserted
+    summary: Occurs when the user adds one or more annotations.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
+  - name: onAnnotationRemoved
+    uid: 'word!Word.Document#onAnnotationRemoved:member'
+    package: word!
+    fullName: onAnnotationRemoved
+    summary: Occurs when the user deletes one or more annotations.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
   - name: onContentControlAdded
     uid: 'word!Word.Document#onContentControlAdded:member'
     package: word!

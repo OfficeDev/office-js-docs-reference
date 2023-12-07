@@ -59,6 +59,9 @@ classes:
   - 'word!Word.TableRow:class'
   - 'word!Word.TableRowCollection:class'
 interfaces:
+  - 'word!Word.Interfaces.AnnotationCollectionData:interface'
+  - 'word!Word.Interfaces.AnnotationCollectionUpdateData:interface'
+  - 'word!Word.Interfaces.AnnotationData:interface'
   - 'word!Word.Interfaces.BodyData:interface'
   - 'word!Word.Interfaces.BodyLoadOptions:interface'
   - 'word!Word.Interfaces.BodyUpdateData:interface'
@@ -79,6 +82,7 @@ interfaces:
   - 'word!Word.Interfaces.ContentControlData:interface'
   - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
   - 'word!Word.Interfaces.ContentControlUpdateData:interface'
+  - 'word!Word.Interfaces.CritiqueAnnotationData:interface'
   - 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
   - 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface'
   - 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'

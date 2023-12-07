@@ -27,21 +27,45 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
+  - name: annotationAdded
+    uid: 'word!Word.EventType.annotationAdded:member'
+    package: word!
+    summary: |-
+      AnnotationAdded represents the event an annotation has been added to the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationAdded"'
+  - name: annotationChanged
+    uid: 'word!Word.EventType.annotationChanged:member'
+    package: word!
+    summary: |-
+      AnnotationChanged represents the event an annotation has been updated in the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationChanged"'
   - name: annotationClicked
     uid: 'word!Word.EventType.annotationClicked:member'
     package: word!
     summary: |-
       Represents that an annotation was clicked (or selected with **Alt+Down**) in the document.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationClicked"'
+  - name: annotationDeleted
+    uid: 'word!Word.EventType.annotationDeleted:member'
+    package: word!
+    summary: |-
+      AnnotationDeleted represents the event an annotation has been deleted from the document.
+
+      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationDeleted"'
   - name: annotationHovered
     uid: 'word!Word.EventType.annotationHovered:member'
     package: word!
     summary: |-
       Represents that an annotation was hovered over in the document.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationHovered"'
   - name: annotationInserted
     uid: 'word!Word.EventType.annotationInserted:member'
@@ -49,7 +73,7 @@ fields:
     summary: |-
       Represents that one or more annotations were added in the document.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationInserted"'
   - name: annotationRemoved
     uid: 'word!Word.EventType.annotationRemoved:member'
@@ -57,7 +81,7 @@ fields:
     summary: |-
       Represents that one or more annotations were deleted from the document.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationRemoved"'
   - name: commentAdded
     uid: 'word!Word.EventType.commentAdded:member'

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShadingData
+uid: 'word!Word.Interfaces.ShadingData:interface'
+package: word!
+fullName: Word.Interfaces.ShadingData
+summary: An interface describing the data returned by calling `shading.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backgroundPatternColor
+    uid: 'word!Word.Interfaces.ShadingData#backgroundPatternColor:member'
+    package: word!
+    fullName: backgroundPatternColor
+    summary: >-
+      Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backgroundPatternColor?: string;'
+      return:
+        type: string
