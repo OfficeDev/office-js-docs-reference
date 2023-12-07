@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 11/15/2023
+ms.date: 01/25/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,18 +26,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Annotation](/javascript/api/word/word.annotation)|[critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)|Gets the critique annotation object.|
-||[delete()](/javascript/api/word/word.annotation#word-word-annotation-delete-member(1))|Deletes the annotation.|
-||[id](/javascript/api/word/word.annotation#word-word-annotation-id-member)|Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.|
-||[state](/javascript/api/word/word.annotation#word-word-annotation-state-member)|Gets the state of the annotation.|
-|[AnnotationClickedEventArgs](/javascript/api/word/word.annotationclickedeventargs)|[id](/javascript/api/word/word.annotationclickedeventargs#word-word-annotationclickedeventargs-id-member)|Specifies the annotation ID for which the event was fired.|
-|[AnnotationCollection](/javascript/api/word/word.annotationcollection)|[getFirst()](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirst-member(1))|Gets the first annotation in this collection.|
-||[getFirstOrNullObject()](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirstornullobject-member(1))|Gets the first annotation in this collection.|
-||[items](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-items-member)|Gets the loaded child items in this collection.|
-|[AnnotationHoveredEventArgs](/javascript/api/word/word.annotationhoveredeventargs)|[id](/javascript/api/word/word.annotationhoveredeventargs#word-word-annotationhoveredeventargs-id-member)|Specifies the annotation ID for which the event was fired.|
-|[AnnotationInsertedEventArgs](/javascript/api/word/word.annotationinsertedeventargs)|[ids](/javascript/api/word/word.annotationinsertedeventargs#word-word-annotationinsertedeventargs-ids-member)|Specifies the annotation IDs for which the event was fired.|
-|[AnnotationRemovedEventArgs](/javascript/api/word/word.annotationremovedeventargs)|[ids](/javascript/api/word/word.annotationremovedeventargs#word-word-annotationremovedeventargs-ids-member)|Specifies the annotation IDs for which the event was fired.|
-|[AnnotationSet](/javascript/api/word/word.annotationset)|[critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)|Critiques.|
+|[Body](/javascript/api/word/word.body)|[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| "RichText" \| "PlainText" \| "CheckBox")](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the Body object with a content control.|
 |[Border](/javascript/api/word/word.border)|[color](/javascript/api/word/word.border#word-word-border-color-member)|Specifies the color for the border.|
 ||[location](/javascript/api/word/word.border#word-word-border-location-member)|Gets the location of the border.|
 ||[type](/javascript/api/word/word.border#word-word-border-type-member)|Specifies the border type for the border.|
@@ -60,19 +49,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[eventType](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-eventtype-member)|The event type.|
 ||[ids](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-source-member)|The source of the event.|
-|[Critique](/javascript/api/word/word.critique)|[colorScheme](/javascript/api/word/word.critique#word-word-critique-colorscheme-member)|Gets the color scheme of the critique.|
-||[length](/javascript/api/word/word.critique#word-word-critique-length-member)|Gets the length of the critique inside paragraph.|
-||[start](/javascript/api/word/word.critique#word-word-critique-start-member)|Gets the start index of the critique inside paragraph.|
-|[CritiqueAnnotation](/javascript/api/word/word.critiqueannotation)|[accept()](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-accept-member(1))|Accepts the critique.|
-||[critique](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-critique-member)|Gets the critique that was passed when the annotation was inserted.|
-||[range](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-range-member)|Gets the range of text that is annotated.|
-||[reject()](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-reject-member(1))|Rejects the critique.|
 |[Document](/javascript/api/word/word.document)|[compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions)](/javascript/api/word/word.document#word-word-document-compare-member(1))|Displays revision marks that indicate where the specified document differs from another document.|
-||[getAnnotationById(id: string)](/javascript/api/word/word.document#word-word-document-getannotationbyid-member(1))|Gets the annotation by ID.|
-||[onAnnotationClicked](/javascript/api/word/word.document#word-word-document-onannotationclicked-member)|Occurs when the user clicks an annotation (or selects it using **Alt+Down**).|
-||[onAnnotationHovered](/javascript/api/word/word.document#word-word-document-onannotationhovered-member)|Occurs when the user hovers the cursor over an annotation.|
-||[onAnnotationInserted](/javascript/api/word/word.document#word-word-document-onannotationinserted-member)|Occurs when the user adds one or more annotations.|
-||[onAnnotationRemoved](/javascript/api/word/word.document#word-word-document-onannotationremoved-member)|Occurs when the user deletes one or more annotations.|
 |[DocumentCompareOptions](/javascript/api/word/word.documentcompareoptions)|[addToRecentFiles](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-addtorecentfiles-member)|True adds the document to the list of recently used files on the File menu.|
 ||[authorName](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-authorname-member)|The reviewer name associated with the differences generated by the comparison.|
 ||[compareTarget](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-comparetarget-member)|The target document for the comparison.|
@@ -82,9 +59,8 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[removePersonalInformation](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-removepersonalinformation-member)|True removes all user information from comments, revisions, and the properties dialog box in the returned Document object.|
 |[Field](/javascript/api/word/word.field)|[showCodes](/javascript/api/word/word.field#word-word-field-showcodes-member)|Specifies whether the field codes are displayed for the specified field.|
 |[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies a value that indicates whether the font is tagged as hidden.|
-|[GetTextOptions](/javascript/api/word/word.gettextoptions)|[includeHiddenText](/javascript/api/word/word.gettextoptions#word-word-gettextoptions-includehiddentext-member)|Specifies a value that indicates whether to include hidden text in the result of the GetText method.|
-||[includeTextMarkedAsDeleted](/javascript/api/word/word.gettextoptions#word-word-gettextoptions-includetextmarkedasdeleted-member)|Specifies a value that indicates whether to include text marked as deleted in the result of the GetText method.|
 |[InlinePicture](/javascript/api/word/word.inlinepicture)|[imageFormat](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-imageformat-member)|Gets the format of the inline image.|
+|[InsertFileOptions](/javascript/api/word/word.insertfileoptions)|[importDifferentOddEvenPages](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importdifferentoddevenpages-member)|Represents whether to import the Different Odd and Even Pages setting for the header and footer from the source document.|
 |[List](/javascript/api/word/word.list)|[getLevelFont(level: number)](/javascript/api/word/word.list#word-word-list-getlevelfont-member(1))|Gets the font of the bullet, number, or picture at the specified level in the list.|
 ||[getLevelPicture(level: number)](/javascript/api/word/word.list#word-word-list-getlevelpicture-member(1))|Gets the Base64-encoded string representation of the picture at the specified level in the list.|
 ||[resetLevelFont(level: number, resetFontName?: boolean)](/javascript/api/word/word.list#word-word-list-resetlevelfont-member(1))|Resets the font of the bullet, number, or picture at the specified level in the list.|
@@ -105,10 +81,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[items](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Specifies whether the specified ListTemplate object is outline numbered.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[getAnnotations()](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))|Gets annotations set on this Paragraph object.|
-||[getText(options?: Word.GetTextOptions \| { IncludeHiddenText?: boolean IncludeTextMarkedAsDeleted?: boolean })](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))|Returns the text of the paragraph.|
-||[insertAnnotations(annotations: Word.AnnotationSet)](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))|Inserts annotations on this Paragraph object.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| "RichText" \| "PlainText" \| "CheckBox")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| "RichText" \| "PlainText" \| "CheckBox")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 |[Range](/javascript/api/word/word.range)|[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| "RichText" \| "PlainText" \| "CheckBox")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 |[Shading](/javascript/api/word/word.shading)|[foregroundPatternColor](/javascript/api/word/word.shading#word-word-shading-foregroundpatterncolor-member)|Specifies the color for the foreground of the object.|
 ||[texture](/javascript/api/word/word.shading#word-word-shading-texture-member)|Specifies the shading texture of the object.|
