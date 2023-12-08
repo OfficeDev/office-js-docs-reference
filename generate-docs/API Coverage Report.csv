@@ -10971,10 +10971,7 @@ Word.EventSource,N/A,Enum,Good,false
 Word.EventSource,"local",EnumField,Fine,false
 Word.EventSource,"remote",EnumField,Fine,false
 Word.EventType,N/A,Enum,Good,true
-Word.EventType,"annotationAdded",EnumField,Fine,false
-Word.EventType,"annotationChanged",EnumField,Fine,false
 Word.EventType,"annotationClicked",EnumField,Fine,false
-Word.EventType,"annotationDeleted",EnumField,Fine,false
 Word.EventType,"annotationHovered",EnumField,Fine,false
 Word.EventType,"annotationInserted",EnumField,Fine,false
 Word.EventType,"annotationRemoved",EnumField,Fine,false
