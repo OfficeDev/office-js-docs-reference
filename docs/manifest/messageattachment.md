@@ -1,7 +1,7 @@
 ---
 title: MessageAttachment in the manifest file (preview)
 description: The MessageAttachment element configures your event-based add-in to activate on the OnMessageReadWithCustomAttachment event.
-ms.date: 08/31/2023
+ms.date: 12/14/2023
 ms.localizationpriority: medium
 ---
 

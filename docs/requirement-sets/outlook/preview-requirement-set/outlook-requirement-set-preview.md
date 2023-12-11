@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/31/2023
+ms.date: 12/14/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -81,7 +81,7 @@ Added method to close a current message being composed with the option to discar
 
 ---
 
-### Event-based activation on read
+### Activate an event-based add-in on a message in read mode
 
 #### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
 
