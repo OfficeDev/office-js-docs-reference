@@ -941,7 +941,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support is currently in preview.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples

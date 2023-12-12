@@ -51,6 +51,14 @@ fields:
 
       * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationInserted"'
+  - name: annotationPopupAction
+    uid: 'word!Word.EventType.annotationPopupAction:member'
+    package: word!
+    summary: |-
+      Represents an action in the annotation pop-up.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationPopupAction"'
   - name: annotationRemoved
     uid: 'word!Word.EventType.annotationRemoved:member'
     package: word!

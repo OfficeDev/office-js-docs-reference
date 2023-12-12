@@ -115,6 +115,8 @@ items:
             uid: 'word!Word.AnnotationHoveredEventArgs:interface'
           - name: AnnotationInsertedEventArgs
             uid: 'word!Word.AnnotationInsertedEventArgs:interface'
+          - name: AnnotationPopupActionEventArgs
+            uid: 'word!Word.AnnotationPopupActionEventArgs:interface'
           - name: AnnotationRemovedEventArgs
             uid: 'word!Word.AnnotationRemovedEventArgs:interface'
           - name: AnnotationSet
@@ -167,6 +169,8 @@ items:
             uid: 'word!Word.Critique:interface'
           - name: CritiqueAnnotation
             uid: 'word!Word.CritiqueAnnotation:class'
+          - name: CritiquePopupOptions
+            uid: 'word!Word.CritiquePopupOptions:interface'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection

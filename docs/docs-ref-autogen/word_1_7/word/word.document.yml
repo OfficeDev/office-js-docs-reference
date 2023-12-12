@@ -757,6 +757,46 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'search(searchText, searchOptions)'
+    uid: 'word!Word.Document#search:member(1)'
+    package: word!
+    fullName: 'search(searchText, searchOptions)'
+    summary: >-
+      Performs a search with the specified search options on the scope of the whole document. The search results are a
+      collection of range objects.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      parameters:
+        - id: searchText
+          description: ''
+          type: string
+        - id: searchOptions
+          description: ''
+          type: |-
+            <xref uid="word!Word.SearchOptions:class" /> | {
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    }
+      return:
+        type: '<xref uid="word!Word.RangeCollection:class" />'
+        description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Document#set:member(1)'
     package: word!

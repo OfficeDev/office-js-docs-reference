@@ -54,8 +54,8 @@ properties:
     summary: >-
       Represents whether to import the Different Odd and Even Pages setting for the header and footer from the source
       document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'importDifferentOddEvenPages?: boolean;'

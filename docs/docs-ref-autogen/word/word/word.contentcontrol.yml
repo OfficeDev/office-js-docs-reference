@@ -6,8 +6,7 @@ fullName: Word.ContentControl
 summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
-  paragraphs of formatted text. Currently, only rich text and plain text content controls are supported. Checkbox
-  content controls are only supported in preview.
+  paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
 remarks: |-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -116,8 +115,8 @@ properties:
     package: word!
     fullName: checkboxContentControl
     summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly checkboxContentControl: Word.CheckboxContentControl;'
@@ -496,8 +495,7 @@ properties:
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
       'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and
-      'PlainTextParagraph' for plain text content controls. 'CheckBox' for checkbox content controls is available only
-      in preview.
+      'PlainTextParagraph' for plain text content controls, or 'CheckBox' for checkbox content controls.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -599,9 +597,7 @@ properties:
     uid: 'word!Word.ContentControl#type:member'
     package: word!
     fullName: type
-    summary: >-
-      Gets the content control type. Only rich text and plain text content controls are supported currently. Checkbox
-      content controls are supported only in preview.
+    summary: 'Gets the content control type. Only rich text, plain text, and checkbox content controls are supported currently.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

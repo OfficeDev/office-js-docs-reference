@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API online-only requirement set
 description: Details about the WordApiOnline requirement set.
-ms.date: 05/23/2023
+ms.date: 01/25/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---

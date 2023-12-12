@@ -79,6 +79,8 @@ interfaces:
   - 'word!Word.Interfaces.BodyData:interface'
   - 'word!Word.Interfaces.BodyLoadOptions:interface'
   - 'word!Word.Interfaces.BodyUpdateData:interface'
+  - 'word!Word.Interfaces.CheckboxContentControlData:interface'
+  - 'word!Word.Interfaces.CheckboxContentControlUpdateData:interface'
   - 'word!Word.Interfaces.CollectionLoadOptions:interface'
   - 'word!Word.Interfaces.CommentCollectionData:interface'
   - 'word!Word.Interfaces.CommentCollectionLoadOptions:interface'

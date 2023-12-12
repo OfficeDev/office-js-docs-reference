@@ -109,6 +109,8 @@ items:
             uid: 'word!Word.Application:class'
           - name: Body
             uid: 'word!Word.Body:class'
+          - name: CheckboxContentControl
+            uid: 'word!Word.CheckboxContentControl:class'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection

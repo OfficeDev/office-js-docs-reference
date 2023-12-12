@@ -612,7 +612,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -653,13 +653,16 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        "RichText" | "PlainText"): Word.ContentControl;
+        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
+          description: >-
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
+            'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
+            uid="word!Word.ContentControlType.plainText:member" /> | <xref
+            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
