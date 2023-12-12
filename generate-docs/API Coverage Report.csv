@@ -10176,6 +10176,10 @@ Word.AnnotationHoveredEventArgs,N/A,Class,Good,false
 Word.AnnotationHoveredEventArgs,"id",Property,Good,false
 Word.AnnotationInsertedEventArgs,N/A,Class,Good,false
 Word.AnnotationInsertedEventArgs,"ids",Property,Good,false
+Word.AnnotationPopupActionEventArgs,N/A,Class,Good,false
+Word.AnnotationPopupActionEventArgs,"action",Property,Good,false
+Word.AnnotationPopupActionEventArgs,"critiqueSuggestion",Property,Good,false
+Word.AnnotationPopupActionEventArgs,"id",Property,Good,false
 Word.AnnotationRemovedEventArgs,N/A,Class,Good,false
 Word.AnnotationRemovedEventArgs,"ids",Property,Good,false
 Word.AnnotationSet,N/A,Class,Good,false
@@ -10755,6 +10759,7 @@ Word.ContentControlType,"unknown",EnumField,Fine,false
 Word.Critique,N/A,Class,Good,false
 Word.Critique,"colorScheme",Property,Good,false
 Word.Critique,"length",Property,Good,false
+Word.Critique,"popupOptions",Property,Good,false
 Word.Critique,"start",Property,Good,false
 Word.CritiqueAnnotation,N/A,Class,Good,false
 Word.CritiqueAnnotation,"context",Property,Good,false
@@ -10774,6 +10779,11 @@ Word.CritiqueColorScheme,"blue",EnumField,Fine,false
 Word.CritiqueColorScheme,"green",EnumField,Fine,false
 Word.CritiqueColorScheme,"lavender",EnumField,Fine,false
 Word.CritiqueColorScheme,"red",EnumField,Fine,false
+Word.CritiquePopupOptions,N/A,Class,Good,false
+Word.CritiquePopupOptions,"brandingTextResourceId",Property,Good,false
+Word.CritiquePopupOptions,"subtitleResourceId",Property,Good,false
+Word.CritiquePopupOptions,"suggestions",Property,Good,false
+Word.CritiquePopupOptions,"titleResourceId",Property,Good,false
 Word.CustomProperty,N/A,Class,Good,true
 Word.CustomProperty,"context",Property,Good,false
 Word.CustomProperty,"key",Property,Good,false
@@ -10962,6 +10972,7 @@ Word.ErrorCodes,"accessDenied",EnumField,Missing,false
 Word.ErrorCodes,"generalException",EnumField,Missing,false
 Word.ErrorCodes,"invalidArgument",EnumField,Missing,false
 Word.ErrorCodes,"itemNotFound",EnumField,Missing,false
+Word.ErrorCodes,"notAllowed",EnumField,Missing,false
 Word.ErrorCodes,"notImplemented",EnumField,Missing,false
 Word.ErrorCodes,"searchDialogIsOpen",EnumField,Missing,false
 Word.ErrorCodes,"searchStringInvalidOrTooLong",EnumField,Missing,false
@@ -10972,6 +10983,7 @@ Word.EventType,N/A,Enum,Good,true
 Word.EventType,"annotationClicked",EnumField,Fine,false
 Word.EventType,"annotationHovered",EnumField,Fine,false
 Word.EventType,"annotationInserted",EnumField,Fine,false
+Word.EventType,"annotationPopupAction",EnumField,Fine,false
 Word.EventType,"annotationRemoved",EnumField,Fine,false
 Word.EventType,"commentAdded",EnumField,Fine,false
 Word.EventType,"commentChanged",EnumField,Fine,false
@@ -11223,6 +11235,7 @@ Word.InsertFileOptions,N/A,Class,Good,false
 Word.InsertFileOptions,"importChangeTrackingMode",Property,Good,false
 Word.InsertFileOptions,"importCustomProperties",Property,Good,false
 Word.InsertFileOptions,"importCustomXmlParts",Property,Good,false
+Word.InsertFileOptions,"importDifferentOddEvenPages",Property,Good,false
 Word.InsertFileOptions,"importPageColor",Property,Good,false
 Word.InsertFileOptions,"importParagraphSpacing",Property,Good,false
 Word.InsertFileOptions,"importStyles",Property,Good,false
