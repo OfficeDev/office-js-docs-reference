@@ -1720,8 +1720,9 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: This method is supported in Message Compose in Outlook on Android and on iOS. For more
-      information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in
+      Message Compose on Outlook on iOS is currently being rolled out. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
@@ -1798,8 +1799,9 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: This method is supported in Message Compose on Outlook on Android and on iOS. For more
-      information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in
+      Message Compose on Outlook on iOS is currently being rolled out. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -2105,8 +2107,9 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: This method is supported in Outlook on Android and on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is
+      currently being rolled out. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -2150,8 +2153,9 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: This method is supported in Outlook on Android and on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is
+      currently being rolled out. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 

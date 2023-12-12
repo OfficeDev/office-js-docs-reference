@@ -1106,10 +1106,10 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
-      [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
-      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
+      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
+      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
+      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
@@ -1236,10 +1236,10 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
-      [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
-      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
+      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
+      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
+      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 

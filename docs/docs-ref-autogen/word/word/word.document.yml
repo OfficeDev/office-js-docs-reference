@@ -439,7 +439,7 @@ methods:
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's endnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -452,7 +452,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's footnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -956,6 +956,20 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
+  - name: onAnnotationPopupAction
+    uid: 'word!Word.Document#onAnnotationPopupAction:member'
+    package: word!
+    fullName: onAnnotationPopupAction
+    summary: Occurs when the user performs an action in an annotation pop-up.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
   - name: onAnnotationRemoved
     uid: 'word!Word.Document#onAnnotationRemoved:member'
     package: word!
