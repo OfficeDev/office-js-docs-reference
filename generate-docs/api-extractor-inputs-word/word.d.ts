@@ -85,6 +85,47 @@ export declare namespace Word {
         titleResourceId: string;
     }
     /**
+     * Properties defining the behavior of the pop-up for a given critique.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CritiquePopupOptions {
+        /**
+         * Gets the manifest resource id of the string to use for branding.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        brandingTextResourceId: string;
+        /**
+         * Gets the manifest resource id of the string to use as subtitle.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subtitleResourceId: string;
+        /**
+         * Gets the suggestions to display in the critique pop-up.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        suggestions: string[];
+        /**
+         * Gets the manifest resource id of the string to use as title.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        titleResourceId: string;
+    }
+    /**
      * Critique that will be rendered as underline for the specified part of paragraph in the document.
      *
      * @remarks
@@ -363,6 +404,39 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.7]
+         */
+        id: string;
+    }
+    /**
+     * Holds action information that is passed back on annotation pop-up action event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface AnnotationPopupActionEventArgs {
+        /**
+         * Specifies the chosen action in the pop-up.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        action: string;
+        /**
+         * Specifies the suggestion accepted (only populated when accepting a critique suggestion).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        critiqueSuggestion: string;
+        /**
+         * Specifies the annotation ID for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         id: string;
     }

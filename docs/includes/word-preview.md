@@ -3,6 +3,9 @@
 |[AnnotationPopupActionEventArgs](/javascript/api/word/word.annotationpopupactioneventargs)|[action](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-action-member)|Specifies the chosen action in the pop-up.|
 ||[critiqueSuggestion](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-critiquesuggestion-member)|Specifies the suggestion accepted (only populated when accepting a critique suggestion).|
 ||[id](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-id-member)|Specifies the annotation ID for which the event was fired.|
+|[AnnotationPopupActionEventArgs](/javascript/api/word/word.annotationpopupactioneventargs)|[action](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-action-member)|Specifies the chosen action in the pop-up.|
+||[critiqueSuggestion](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-critiquesuggestion-member)|Specifies the suggestion accepted (only populated when accepting a critique suggestion).|
+||[id](/javascript/api/word/word.annotationpopupactioneventargs#word-word-annotationpopupactioneventargs-id-member)|Specifies the annotation ID for which the event was fired.|
 |[Body](/javascript/api/word/word.body)|[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
@@ -45,6 +48,10 @@
 |[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
 |[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
 |[Critique](/javascript/api/word/word.critique)|[popupOptions](/javascript/api/word/word.critique#word-word-critique-popupoptions-member)|Specifies the behavior of the pop-up for the critique.|
+|[CritiquePopupOptions](/javascript/api/word/word.critiquepopupoptions)|[brandingTextResourceId](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-brandingtextresourceid-member)|Gets the manifest resource id of the string to use for branding.|
+||[subtitleResourceId](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-subtitleresourceid-member)|Gets the manifest resource id of the string to use as subtitle.|
+||[suggestions](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-suggestions-member)|Gets the suggestions to display in the critique pop-up.|
+||[titleResourceId](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-titleresourceid-member)|Gets the manifest resource id of the string to use as title.|
 |[CritiquePopupOptions](/javascript/api/word/word.critiquepopupoptions)|[brandingTextResourceId](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-brandingtextresourceid-member)|Gets the manifest resource id of the string to use for branding.|
 ||[subtitleResourceId](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-subtitleresourceid-member)|Gets the manifest resource id of the string to use as subtitle.|
 ||[suggestions](/javascript/api/word/word.critiquepopupoptions#word-word-critiquepopupoptions-suggestions-member)|Gets the suggestions to display in the critique pop-up.|
