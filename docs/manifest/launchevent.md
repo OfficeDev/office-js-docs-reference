@@ -1,7 +1,7 @@
 ---
 title: LaunchEvent in the manifest file
 description: The LaunchEvent element configures your add-in to activate based on supported events.
-ms.date: 06/30/2023
+ms.date: 12/12/2023
 ms.localizationpriority: medium
 ---
 
@@ -48,3 +48,4 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events)
 - [Handle OnMessageSend and OnAppointmentSend events in your Outlook add-in with Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
 - [Automatically check for an attachment before a message is sent](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)
+- [Implement event-based activation in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-event-based)

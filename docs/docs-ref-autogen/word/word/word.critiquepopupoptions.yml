@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: Word.CritiquePopupOptions
+uid: 'word!Word.CritiquePopupOptions:interface'
+package: word!
+fullName: Word.CritiquePopupOptions
+summary: Properties defining the behavior of the pop-up for a given critique.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: brandingTextResourceId
+    uid: 'word!Word.CritiquePopupOptions#brandingTextResourceId:member'
+    package: word!
+    fullName: brandingTextResourceId
+    summary: Gets the manifest resource id of the string to use for branding.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'brandingTextResourceId: string;'
+      return:
+        type: string
+  - name: subtitleResourceId
+    uid: 'word!Word.CritiquePopupOptions#subtitleResourceId:member'
+    package: word!
+    fullName: subtitleResourceId
+    summary: Gets the manifest resource id of the string to use as subtitle.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subtitleResourceId: string;'
+      return:
+        type: string
+  - name: suggestions
+    uid: 'word!Word.CritiquePopupOptions#suggestions:member'
+    package: word!
+    fullName: suggestions
+    summary: Gets the suggestions to display in the critique pop-up.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'suggestions: string[];'
+      return:
+        type: 'string[]'
+  - name: titleResourceId
+    uid: 'word!Word.CritiquePopupOptions#titleResourceId:member'
+    package: word!
+    fullName: titleResourceId
+    summary: Gets the manifest resource id of the string to use as title.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'titleResourceId: string;'
+      return:
+        type: string
