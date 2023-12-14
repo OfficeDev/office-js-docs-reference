@@ -1341,6 +1341,114 @@ Office.CustomXmlParts#getByNamespaceAsync:member(2):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Dialog#addEventHandler:member(1):
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage() function is omitted.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+Office.Dialog#close:member(1):
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage() function is omitted.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+Office.DialogOptions#height:member:
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage() function is omitted.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+Office.DialogOptions#width:member:
+  - |-
+    // The following example shows how to open a dialog with a specified size. It also shows
+    // how to register a function to handle the message when Office.UI.messageParent() is called
+    // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage() function is omitted.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Document#addHandlerAsync:member(2):
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
@@ -3279,6 +3387,52 @@ Office.PlatformType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
     console.log("Platform: " + contextInfo.platform);
+Office.Ribbon#requestUpdate:member(1):
+  - |-
+    // Office.Tab objects are properties of ribbon updater objects that are passed to the 
+    // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+    // a custom contextual tab.
+
+    async function showDataTab() {
+        await Office.ribbon.requestUpdate({
+            tabs: [
+                {
+                    id: "CtxTab1",
+                    visible: true
+                }
+            ]});
+    }
+
+    // The following does the same thing in TypeScript.
+
+    const showDataTab = async () => {
+        const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
+        const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
+        await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
+Office.RibbonUpdaterData#tabs:member:
+  - |-
+    // Office.Tab objects are properties of ribbon updater objects that are passed to the 
+    // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+    // a custom contextual tab.
+
+    async function showDataTab() {
+        await Office.ribbon.requestUpdate({
+            tabs: [
+                {
+                    id: "CtxTab1",
+                    visible: true
+                }
+            ]});
+    }
+
+    // The following does the same thing in TypeScript.
+
+    const showDataTab = async () => {
+        const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
+        const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
+        await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.select:function(1):
   - |-
     // The following code example uses the select function to retrieve a binding with the id "cities" from
