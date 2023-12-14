@@ -1362,7 +1362,7 @@ Office.Dialog#addEventHandler:member(1):
     Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
         (asyncResult: Office.AsyncResult) => {
             const dialog: Office.Dialog = asyncResult.value;
-            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
                 dialog.close();
                 processMessage(arg);
             });
@@ -1389,7 +1389,7 @@ Office.Dialog#close:member(1):
     Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
         (asyncResult: Office.AsyncResult) => {
             const dialog: Office.Dialog = asyncResult.value;
-            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
                 dialog.close();
                 processMessage(arg);
             });
@@ -1416,7 +1416,7 @@ Office.DialogOptions#height:member:
     Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
         (asyncResult: Office.AsyncResult) => {
             const dialog: Office.Dialog = asyncResult.value;
-            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
                 dialog.close();
                 processMessage(arg);
             });
@@ -1443,7 +1443,7 @@ Office.DialogOptions#width:member:
     Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
         (asyncResult: Office.AsyncResult) => {
             const dialog: Office.Dialog = asyncResult.value;
-            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: any) => {
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
                 dialog.close();
                 processMessage(arg);
             });
@@ -3709,6 +3709,18 @@ Office.UI#displayDialogAsync:member(1):
         (asyncResult) => {
             const dialog = asyncResult.value;
             dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
+
+    // The following example does the same thing in TypeScript.
+
+    Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+        (asyncResult: Office.AsyncResult) => {
+            const dialog: Office.Dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
                 dialog.close();
                 processMessage(arg);
             });
