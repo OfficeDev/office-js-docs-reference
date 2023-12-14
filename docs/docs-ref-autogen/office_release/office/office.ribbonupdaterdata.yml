@@ -23,3 +23,31 @@ properties:
       content: 'tabs: Tab[];'
       return:
         type: '<xref uid="office!Office.Tab:interface" />[]'
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Office.Tab objects are properties of ribbon updater objects that are passed to the 
+          // Office.ribbon.requestUpdate method. The following shows how to set the visibility of 
+          // a custom contextual tab.
+
+          async function showDataTab() {
+              await Office.ribbon.requestUpdate({
+                  tabs: [
+                      {
+                          id: "CtxTab1",
+                          visible: true
+                      }
+                  ]});
+          }
+
+          // The following does the same thing in TypeScript.
+
+          const showDataTab = async () => {
+              const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
+              const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
+              await Office.ribbon.requestUpdate(ribbonUpdater);
+          }
+          ```

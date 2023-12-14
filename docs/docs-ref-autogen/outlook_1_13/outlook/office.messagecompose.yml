@@ -739,6 +739,33 @@ properties:
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
       message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
+
+      // This snippet gets the current mail item's sensitivity label.
+
+      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+          Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+              console.log(asyncResult.value);
+            } else {
+              console.log("Action failed with error: " + asyncResult.error.message);
+            }
+          });
+        } else {
+          console.log("Action failed with error: " + asyncResult.error.message);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

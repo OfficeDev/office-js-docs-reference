@@ -217,6 +217,45 @@ methods:
       operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
       information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Access your
       user-defined object or value, if you passed one as the asyncContext parameter</td> </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to open a dialog with a specified size. It also shows
+
+      // how to register a function to handle the message when Office.UI.messageParent() is called
+
+      // in the dialog. The implementation of the processMessage() function is omitted.
+
+
+      Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          (asyncResult) => {
+              const dialog = asyncResult.value;
+              dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                  dialog.close();
+                  processMessage(arg);
+              });
+          }
+      );
+
+
+      // The following example does the same thing in TypeScript.
+
+
+      Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+          (asyncResult: Office.AsyncResult) => {
+              const dialog: Office.Dialog = asyncResult.value;
+              dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+                  dialog.close();
+                  processMessage(arg);
+              });
+          }
+      );
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -365,6 +404,26 @@ methods:
       - If the `messageOptions` parameter is used, [DialogOrigin
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets) is also
       required.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to send a JSON string to the parent. The profile object
+
+      // is returned from some website when a user signs into it.
+
+      function userProfileSignedIn(profile) {
+          const profileMessage = {
+              "name": profile.name,
+              "email": profile.email,
+          };
+          Office.context.ui.messageParent(JSON.stringify(profileMessage));
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
