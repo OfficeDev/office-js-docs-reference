@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Item object model.
-ms.date: 07/20/2023
+ms.date: 12/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -41,6 +41,7 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-cc-member) | Array.<[EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails?view=outlook-js-preview&preserve-view=true)> | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | conversationId | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-conversationid-member) | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-conversationid-member) | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| conversationIndex | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-conversationindex-member) | String | [Preview](outlook-requirement-set-preview.md) |
 | dateTimeCreated | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-datetimecreated-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-datetimecreated-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | dateTimeModified | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-datetimemodified-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
@@ -54,6 +55,7 @@ ms.localizationpriority: medium
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-enhancedlocation-member) | [EnhancedLocation](/javascript/api/outlook/office.enhancedlocation?view=outlook-js-preview&preserve-view=true) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | from | **read/write item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-from-member) | [From](/javascript/api/outlook/office.from?view=outlook-js-preview&preserve-view=true) | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 | | **read item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-from-member) | [EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| inReplyTo | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-inreplyto-member) | String | [Preview](outlook-requirement-set-preview.md) |
 | internetHeaders | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-internetheaders-member) | [InternetHeaders](/javascript/api/outlook/office.internetheaders?view=outlook-js-preview&preserve-view=true) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | internetMessageId | **read item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-internetmessageid-member) | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | isAllDayEvent | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-isalldayevent-member) | [IsAllDayEvent](/javascript/api/outlook/office.isalldayevent?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
@@ -151,6 +153,8 @@ ms.localizationpriority: medium
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+| getItemClassAsync([options], callback) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-getitemclassasync-member(1)) | [Preview](outlook-requirement-set-preview.md) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getitemclassasync-member(1)) | [Preview](outlook-requirement-set-preview.md) |
 | getItemIdAsync([options], callback) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-getitemidasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getitemidasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | getRegExMatches() | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-getregexmatches-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
