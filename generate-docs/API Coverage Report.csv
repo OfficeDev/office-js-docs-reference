@@ -6760,8 +6760,8 @@ Office.CustomXmlPrefixMappings,"getNamespaceAsync(prefix, callback)",Method,Fine
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, options, callback)",Method,Fine,false
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, callback)",Method,Fine,false
 Office.Dialog,N/A,Class,Good,false
-Office.Dialog,"addEventHandler(eventType, handler)",Method,Poor,false
-Office.Dialog,"close()",Method,Poor,false
+Office.Dialog,"addEventHandler(eventType, handler)",Method,Fine,true
+Office.Dialog,"close()",Method,Good,true
 Office.Dialog,"messageChild(message, messageOptions)",Method,Fine,false
 Office.Dialog,"sendMessage(name)",Method,Poor,false
 Office.DialogMessageOptions,N/A,Class,Good,false
@@ -6769,9 +6769,9 @@ Office.DialogMessageOptions,"targetOrigin",Property,Good,false
 Office.DialogOptions,N/A,Class,Fine,false
 Office.DialogOptions,"asyncContext",Property,Fine,false
 Office.DialogOptions,"displayInIframe",Property,Good,false
-Office.DialogOptions,"height",Property,Good,false
+Office.DialogOptions,"height",Property,Good,true
 Office.DialogOptions,"promptBeforeOpen",Property,Good,false
-Office.DialogOptions,"width",Property,Good,false
+Office.DialogOptions,"width",Property,Good,true
 Office.DialogParentMessageReceivedEventArgs,N/A,Class,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"message",Property,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"origin",Property,Good,false
@@ -7483,9 +7483,9 @@ Office.RequirementSetSupport,"isSetSupported(name, minVersion)",Method,Poor,fals
 Office.RequirementSetSupport,"isSetSupported(name, minVersionNumber)",Method,Deprecated,false
 Office.Ribbon,N/A,Class,Good,false
 Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Poor,false
-Office.Ribbon,"requestUpdate(input)",Method,Poor,false
+Office.Ribbon,"requestUpdate(input)",Method,Poor,true
 Office.RibbonUpdaterData,N/A,Class,Good,false
-Office.RibbonUpdaterData,"tabs",Property,Fine,false
+Office.RibbonUpdaterData,"tabs",Property,Fine,true
 Office.SaveSettingsOptions,N/A,Class,Poor,false
 Office.SaveSettingsOptions,"asyncContext",Property,Fine,false
 Office.SaveSettingsOptions,"overwriteIfStale",Property,Deprecated,false
@@ -7535,8 +7535,8 @@ Office.StartupBehavior,"none",EnumField,Fine,false
 Office.Tab,N/A,Class,Good,false
 Office.Tab,"controls",Property,Good,false
 Office.Tab,"groups",Property,Good,false
-Office.Tab,"id",Property,Fine,false
-Office.Tab,"visible",Property,Good,false
+Office.Tab,"id",Property,Fine,true
+Office.Tab,"visible",Property,Good,true
 Office.Table,N/A,Enum,Fine,false
 Office.Table,"All",EnumField,Fine,false
 Office.Table,"Data",EnumField,Fine,false
@@ -7567,9 +7567,9 @@ Office.UI,N/A,Class,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 Office.UI,"closeContainer()",Method,Poor,false
-Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,false
+Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
-Office.UI,"messageParent(message, messageOptions)",Method,Fine,false
+Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
 Office.UI,"openBrowserWindow(url)",Method,Poor,false
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
@@ -8407,7 +8407,7 @@ Office.AppointmentCompose,"organizer",Property,Good,true
 Office.AppointmentCompose,"recurrence",Property,Good,true
 Office.AppointmentCompose,"requiredAttendees",Property,Good,true
 Office.AppointmentCompose,"sensitivity",Property,Good,true
-Office.AppointmentCompose,"sensitivityLabel",Property,Good,false
+Office.AppointmentCompose,"sensitivityLabel",Property,Good,true
 Office.AppointmentCompose,"seriesId",Property,Good,true
 Office.AppointmentCompose,"sessionData",Property,Good,true
 Office.AppointmentCompose,"start",Property,Good,true
@@ -8635,7 +8635,7 @@ Office.IsAllDayEvent,"getAsync(options, callback)",Method,Poor,false
 Office.IsAllDayEvent,"getAsync(callback)",Method,Poor,true
 Office.IsAllDayEvent,"setAsync(isAllDayEvent, options, callback)",Method,Poor,true
 Office.IsAllDayEvent,"setAsync(isAllDayEvent, callback)",Method,Poor,false
-Office.Item,N/A,Class,Good,false
+Office.Item,N/A,Class,Good,true
 Office.ItemCompose,N/A,Class,Good,false
 Office.ItemRead,N/A,Class,Good,false
 Office.LocalClientTime,N/A,Class,Good,false
@@ -9006,7 +9006,7 @@ Office.MessageCompose,"from",Property,Good,true
 Office.MessageCompose,"internetHeaders",Property,Good,true
 Office.MessageCompose,"itemType",Property,Good,true
 Office.MessageCompose,"notificationMessages",Property,Good,true
-Office.MessageCompose,"sensitivityLabel",Property,Good,false
+Office.MessageCompose,"sensitivityLabel",Property,Good,true
 Office.MessageCompose,"seriesId",Property,Good,true
 Office.MessageCompose,"sessionData",Property,Good,true
 Office.MessageCompose,"subject",Property,Good,true

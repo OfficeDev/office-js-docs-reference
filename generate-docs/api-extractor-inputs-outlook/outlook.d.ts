@@ -138,6 +138,11 @@ export declare namespace Office {
          * **Important**: The actual color depends on how the Outlook client renders it.
          * In this case, the colors noted on each preset apply to Outlook on Windows, on the web,
          * and on Mac (starting in Version 16.78).
+         *
+         * Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors.
+         * This has now been fixed starting in Version 16.78. If you've recently updated your
+         * Outlook client, you need to adjust the category colors in your add-in to match the
+         * updated preset values.
          */
         enum CategoryColor {
             /**
