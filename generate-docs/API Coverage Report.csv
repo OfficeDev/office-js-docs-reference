@@ -10224,7 +10224,7 @@ Word.Body,"getOoxml()",Method,Poor,true
 Word.Body,"getRange(rangeLocation)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersion)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
-Word.Body,"getTrackedChanges()",Method,Poor,false
+Word.Body,"getTrackedChanges()",Method,Poor,true
 Word.Body,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Body,"insertContentControl(contentControlType)",Method,Poor,true
 Word.Body,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
@@ -10882,7 +10882,7 @@ Word.Document,"getBookmarkRangeOrNullObject(name)",Method,Poor,false
 Word.Document,"getContentControls(options)",Method,Poor,false
 Word.Document,"getEndnoteBody()",Method,Poor,false
 Word.Document,"getFootnoteBody()",Method,Poor,false
-Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,false
+Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,true
 Word.Document,"getSelection()",Method,Poor,true
 Word.Document,"getStyles()",Method,Poor,true
 Word.Document,"importStylesFromJson(stylesJson)",Method,Poor,false
@@ -12098,27 +12098,27 @@ Word.TrackedChange,"context",Property,Good,false
 Word.TrackedChange,"date",Property,Good,false
 Word.TrackedChange,"text",Property,Good,false
 Word.TrackedChange,"type",Property,Good,false
-Word.TrackedChange,"accept()",Method,Poor,false
+Word.TrackedChange,"accept()",Method,Poor,true
 Word.TrackedChange,"getNext()",Method,Poor,false
 Word.TrackedChange,"getNextOrNullObject()",Method,Poor,false
-Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,false
+Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,true
 Word.TrackedChange,"load(options)",Method,Poor,false
 Word.TrackedChange,"load(propertyNames)",Method,Poor,false
 Word.TrackedChange,"load(propertyNamesAndPaths)",Method,Poor,false
-Word.TrackedChange,"reject()",Method,Poor,false
+Word.TrackedChange,"reject()",Method,Poor,true
 Word.TrackedChange,"toJSON()",Method,Poor,false
 Word.TrackedChange,"track()",Method,Poor,false
 Word.TrackedChange,"untrack()",Method,Poor,false
 Word.TrackedChangeCollection,N/A,Class,Good,false
 Word.TrackedChangeCollection,"context",Property,Good,false
 Word.TrackedChangeCollection,"items",Property,Fine,false
-Word.TrackedChangeCollection,"acceptAll()",Method,Poor,false
-Word.TrackedChangeCollection,"getFirst()",Method,Poor,false
+Word.TrackedChangeCollection,"acceptAll()",Method,Poor,true
+Word.TrackedChangeCollection,"getFirst()",Method,Poor,true
 Word.TrackedChangeCollection,"getFirstOrNullObject()",Method,Poor,false
 Word.TrackedChangeCollection,"load(options)",Method,Poor,false
 Word.TrackedChangeCollection,"load(propertyNames)",Method,Poor,false
 Word.TrackedChangeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Word.TrackedChangeCollection,"rejectAll()",Method,Poor,false
+Word.TrackedChangeCollection,"rejectAll()",Method,Poor,true
 Word.TrackedChangeCollection,"toJSON()",Method,Poor,false
 Word.TrackedChangeCollection,"track()",Method,Poor,false
 Word.TrackedChangeCollection,"untrack()",Method,Poor,false
