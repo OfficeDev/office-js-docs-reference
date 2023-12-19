@@ -41,7 +41,28 @@ methods:
     package: word!
     fullName: acceptAll()
     summary: Accepts all the tracked changes in the collection.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Accepts all tracked changes.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        trackedChanges.acceptAll();
+        console.log("Accepted all tracked changes");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +75,34 @@ methods:
     package: word!
     fullName: getFirst()
     summary: Gets the first TrackedChange in this collection. Throws an `ItemNotFound` error if this collection is empty.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets the range of the first tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        const trackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const range = trackedChange.getRange();
+        range.load();
+        await context.sync();
+
+        console.log("range.text: " + range.text);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +196,28 @@ methods:
     package: word!
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the collection.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Rejects all tracked changes.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        trackedChanges.rejectAll();
+        console.log("Rejected all tracked changes");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
