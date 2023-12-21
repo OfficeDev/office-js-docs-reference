@@ -6760,8 +6760,8 @@ Office.CustomXmlPrefixMappings,"getNamespaceAsync(prefix, callback)",Method,Fine
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, options, callback)",Method,Fine,false
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, callback)",Method,Fine,false
 Office.Dialog,N/A,Class,Good,false
-Office.Dialog,"addEventHandler(eventType, handler)",Method,Poor,false
-Office.Dialog,"close()",Method,Poor,false
+Office.Dialog,"addEventHandler(eventType, handler)",Method,Fine,true
+Office.Dialog,"close()",Method,Good,true
 Office.Dialog,"messageChild(message, messageOptions)",Method,Fine,false
 Office.Dialog,"sendMessage(name)",Method,Poor,false
 Office.DialogMessageOptions,N/A,Class,Good,false
@@ -6769,9 +6769,9 @@ Office.DialogMessageOptions,"targetOrigin",Property,Good,false
 Office.DialogOptions,N/A,Class,Fine,false
 Office.DialogOptions,"asyncContext",Property,Fine,false
 Office.DialogOptions,"displayInIframe",Property,Good,false
-Office.DialogOptions,"height",Property,Good,false
+Office.DialogOptions,"height",Property,Good,true
 Office.DialogOptions,"promptBeforeOpen",Property,Good,false
-Office.DialogOptions,"width",Property,Good,false
+Office.DialogOptions,"width",Property,Good,true
 Office.DialogParentMessageReceivedEventArgs,N/A,Class,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"message",Property,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"origin",Property,Good,false
@@ -7483,9 +7483,9 @@ Office.RequirementSetSupport,"isSetSupported(name, minVersion)",Method,Poor,fals
 Office.RequirementSetSupport,"isSetSupported(name, minVersionNumber)",Method,Deprecated,false
 Office.Ribbon,N/A,Class,Good,false
 Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Poor,false
-Office.Ribbon,"requestUpdate(input)",Method,Poor,false
+Office.Ribbon,"requestUpdate(input)",Method,Poor,true
 Office.RibbonUpdaterData,N/A,Class,Good,false
-Office.RibbonUpdaterData,"tabs",Property,Fine,false
+Office.RibbonUpdaterData,"tabs",Property,Fine,true
 Office.SaveSettingsOptions,N/A,Class,Poor,false
 Office.SaveSettingsOptions,"asyncContext",Property,Fine,false
 Office.SaveSettingsOptions,"overwriteIfStale",Property,Deprecated,false
@@ -7535,8 +7535,8 @@ Office.StartupBehavior,"none",EnumField,Fine,false
 Office.Tab,N/A,Class,Good,false
 Office.Tab,"controls",Property,Good,false
 Office.Tab,"groups",Property,Good,false
-Office.Tab,"id",Property,Fine,false
-Office.Tab,"visible",Property,Good,false
+Office.Tab,"id",Property,Fine,true
+Office.Tab,"visible",Property,Good,true
 Office.Table,N/A,Enum,Fine,false
 Office.Table,"All",EnumField,Fine,false
 Office.Table,"Data",EnumField,Fine,false
@@ -7567,9 +7567,9 @@ Office.UI,N/A,Class,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 Office.UI,"closeContainer()",Method,Poor,false
-Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,false
+Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
-Office.UI,"messageParent(message, messageOptions)",Method,Fine,false
+Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
 Office.UI,"openBrowserWindow(url)",Method,Poor,false
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
@@ -8407,7 +8407,7 @@ Office.AppointmentCompose,"organizer",Property,Good,true
 Office.AppointmentCompose,"recurrence",Property,Good,true
 Office.AppointmentCompose,"requiredAttendees",Property,Good,true
 Office.AppointmentCompose,"sensitivity",Property,Good,true
-Office.AppointmentCompose,"sensitivityLabel",Property,Good,false
+Office.AppointmentCompose,"sensitivityLabel",Property,Good,true
 Office.AppointmentCompose,"seriesId",Property,Good,true
 Office.AppointmentCompose,"sessionData",Property,Good,true
 Office.AppointmentCompose,"start",Property,Good,true
@@ -8635,7 +8635,7 @@ Office.IsAllDayEvent,"getAsync(options, callback)",Method,Poor,false
 Office.IsAllDayEvent,"getAsync(callback)",Method,Poor,true
 Office.IsAllDayEvent,"setAsync(isAllDayEvent, options, callback)",Method,Poor,true
 Office.IsAllDayEvent,"setAsync(isAllDayEvent, callback)",Method,Poor,false
-Office.Item,N/A,Class,Good,false
+Office.Item,N/A,Class,Good,true
 Office.ItemCompose,N/A,Class,Good,false
 Office.ItemRead,N/A,Class,Good,false
 Office.LocalClientTime,N/A,Class,Good,false
@@ -9006,7 +9006,7 @@ Office.MessageCompose,"from",Property,Good,true
 Office.MessageCompose,"internetHeaders",Property,Good,true
 Office.MessageCompose,"itemType",Property,Good,true
 Office.MessageCompose,"notificationMessages",Property,Good,true
-Office.MessageCompose,"sensitivityLabel",Property,Good,false
+Office.MessageCompose,"sensitivityLabel",Property,Good,true
 Office.MessageCompose,"seriesId",Property,Good,true
 Office.MessageCompose,"sessionData",Property,Good,true
 Office.MessageCompose,"subject",Property,Good,true
@@ -10176,6 +10176,10 @@ Word.AnnotationHoveredEventArgs,N/A,Class,Good,false
 Word.AnnotationHoveredEventArgs,"id",Property,Good,false
 Word.AnnotationInsertedEventArgs,N/A,Class,Good,false
 Word.AnnotationInsertedEventArgs,"ids",Property,Good,false
+Word.AnnotationPopupActionEventArgs,N/A,Class,Good,false
+Word.AnnotationPopupActionEventArgs,"action",Property,Good,false
+Word.AnnotationPopupActionEventArgs,"critiqueSuggestion",Property,Good,false
+Word.AnnotationPopupActionEventArgs,"id",Property,Good,false
 Word.AnnotationRemovedEventArgs,N/A,Class,Good,false
 Word.AnnotationRemovedEventArgs,"ids",Property,Good,false
 Word.AnnotationSet,N/A,Class,Good,false
@@ -10220,7 +10224,7 @@ Word.Body,"getOoxml()",Method,Poor,true
 Word.Body,"getRange(rangeLocation)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersion)",Method,Poor,false
 Word.Body,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
-Word.Body,"getTrackedChanges()",Method,Poor,false
+Word.Body,"getTrackedChanges()",Method,Poor,true
 Word.Body,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Body,"insertContentControl(contentControlType)",Method,Poor,true
 Word.Body,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
@@ -10755,6 +10759,7 @@ Word.ContentControlType,"unknown",EnumField,Fine,false
 Word.Critique,N/A,Class,Good,false
 Word.Critique,"colorScheme",Property,Good,false
 Word.Critique,"length",Property,Good,false
+Word.Critique,"popupOptions",Property,Good,false
 Word.Critique,"start",Property,Good,false
 Word.CritiqueAnnotation,N/A,Class,Good,false
 Word.CritiqueAnnotation,"context",Property,Good,false
@@ -10774,6 +10779,11 @@ Word.CritiqueColorScheme,"blue",EnumField,Fine,false
 Word.CritiqueColorScheme,"green",EnumField,Fine,false
 Word.CritiqueColorScheme,"lavender",EnumField,Fine,false
 Word.CritiqueColorScheme,"red",EnumField,Fine,false
+Word.CritiquePopupOptions,N/A,Class,Good,false
+Word.CritiquePopupOptions,"brandingTextResourceId",Property,Good,false
+Word.CritiquePopupOptions,"subtitleResourceId",Property,Good,false
+Word.CritiquePopupOptions,"suggestions",Property,Good,false
+Word.CritiquePopupOptions,"titleResourceId",Property,Good,false
 Word.CustomProperty,N/A,Class,Good,true
 Word.CustomProperty,"context",Property,Good,false
 Word.CustomProperty,"key",Property,Good,false
@@ -10872,7 +10882,7 @@ Word.Document,"getBookmarkRangeOrNullObject(name)",Method,Poor,false
 Word.Document,"getContentControls(options)",Method,Poor,false
 Word.Document,"getEndnoteBody()",Method,Poor,false
 Word.Document,"getFootnoteBody()",Method,Poor,false
-Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,false
+Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,true
 Word.Document,"getSelection()",Method,Poor,true
 Word.Document,"getStyles()",Method,Poor,true
 Word.Document,"importStylesFromJson(stylesJson)",Method,Poor,false
@@ -10962,6 +10972,7 @@ Word.ErrorCodes,"accessDenied",EnumField,Missing,false
 Word.ErrorCodes,"generalException",EnumField,Missing,false
 Word.ErrorCodes,"invalidArgument",EnumField,Missing,false
 Word.ErrorCodes,"itemNotFound",EnumField,Missing,false
+Word.ErrorCodes,"notAllowed",EnumField,Missing,false
 Word.ErrorCodes,"notImplemented",EnumField,Missing,false
 Word.ErrorCodes,"searchDialogIsOpen",EnumField,Missing,false
 Word.ErrorCodes,"searchStringInvalidOrTooLong",EnumField,Missing,false
@@ -10972,6 +10983,7 @@ Word.EventType,N/A,Enum,Good,true
 Word.EventType,"annotationClicked",EnumField,Fine,false
 Word.EventType,"annotationHovered",EnumField,Fine,false
 Word.EventType,"annotationInserted",EnumField,Fine,false
+Word.EventType,"annotationPopupAction",EnumField,Fine,false
 Word.EventType,"annotationRemoved",EnumField,Fine,false
 Word.EventType,"commentAdded",EnumField,Fine,false
 Word.EventType,"commentChanged",EnumField,Fine,false
@@ -11223,6 +11235,7 @@ Word.InsertFileOptions,N/A,Class,Good,false
 Word.InsertFileOptions,"importChangeTrackingMode",Property,Good,false
 Word.InsertFileOptions,"importCustomProperties",Property,Good,false
 Word.InsertFileOptions,"importCustomXmlParts",Property,Good,false
+Word.InsertFileOptions,"importDifferentOddEvenPages",Property,Good,false
 Word.InsertFileOptions,"importPageColor",Property,Good,false
 Word.InsertFileOptions,"importParagraphSpacing",Property,Good,false
 Word.InsertFileOptions,"importStyles",Property,Good,false
@@ -11556,11 +11569,11 @@ Word.Paragraph,"startNewList()",Method,Poor,true
 Word.Paragraph,"toJSON()",Method,Poor,false
 Word.Paragraph,"track()",Method,Poor,false
 Word.Paragraph,"untrack()",Method,Poor,false
-Word.ParagraphAddedEventArgs,N/A,Class,Good,false
+Word.ParagraphAddedEventArgs,N/A,Class,Good,true
 Word.ParagraphAddedEventArgs,"source",Property,Good,false
 Word.ParagraphAddedEventArgs,"type",Property,Good,false
 Word.ParagraphAddedEventArgs,"uniqueLocalIds",Property,Good,false
-Word.ParagraphChangedEventArgs,N/A,Class,Good,false
+Word.ParagraphChangedEventArgs,N/A,Class,Good,true
 Word.ParagraphChangedEventArgs,"source",Property,Good,false
 Word.ParagraphChangedEventArgs,"type",Property,Good,false
 Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Good,false
@@ -11577,7 +11590,7 @@ Word.ParagraphCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.ParagraphCollection,"toJSON()",Method,Poor,false
 Word.ParagraphCollection,"track()",Method,Poor,false
 Word.ParagraphCollection,"untrack()",Method,Poor,false
-Word.ParagraphDeletedEventArgs,N/A,Class,Good,false
+Word.ParagraphDeletedEventArgs,N/A,Class,Good,true
 Word.ParagraphDeletedEventArgs,"source",Property,Good,false
 Word.ParagraphDeletedEventArgs,"type",Property,Good,false
 Word.ParagraphDeletedEventArgs,"uniqueLocalIds",Property,Good,false
@@ -12085,27 +12098,27 @@ Word.TrackedChange,"context",Property,Good,false
 Word.TrackedChange,"date",Property,Good,false
 Word.TrackedChange,"text",Property,Good,false
 Word.TrackedChange,"type",Property,Good,false
-Word.TrackedChange,"accept()",Method,Poor,false
-Word.TrackedChange,"getNext()",Method,Poor,false
+Word.TrackedChange,"accept()",Method,Poor,true
+Word.TrackedChange,"getNext()",Method,Poor,true
 Word.TrackedChange,"getNextOrNullObject()",Method,Poor,false
-Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,false
+Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,true
 Word.TrackedChange,"load(options)",Method,Poor,false
 Word.TrackedChange,"load(propertyNames)",Method,Poor,false
 Word.TrackedChange,"load(propertyNamesAndPaths)",Method,Poor,false
-Word.TrackedChange,"reject()",Method,Poor,false
+Word.TrackedChange,"reject()",Method,Poor,true
 Word.TrackedChange,"toJSON()",Method,Poor,false
 Word.TrackedChange,"track()",Method,Poor,false
 Word.TrackedChange,"untrack()",Method,Poor,false
 Word.TrackedChangeCollection,N/A,Class,Good,false
 Word.TrackedChangeCollection,"context",Property,Good,false
 Word.TrackedChangeCollection,"items",Property,Fine,false
-Word.TrackedChangeCollection,"acceptAll()",Method,Poor,false
-Word.TrackedChangeCollection,"getFirst()",Method,Poor,false
+Word.TrackedChangeCollection,"acceptAll()",Method,Poor,true
+Word.TrackedChangeCollection,"getFirst()",Method,Poor,true
 Word.TrackedChangeCollection,"getFirstOrNullObject()",Method,Poor,false
 Word.TrackedChangeCollection,"load(options)",Method,Poor,false
 Word.TrackedChangeCollection,"load(propertyNames)",Method,Poor,false
 Word.TrackedChangeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Word.TrackedChangeCollection,"rejectAll()",Method,Poor,false
+Word.TrackedChangeCollection,"rejectAll()",Method,Poor,true
 Word.TrackedChangeCollection,"toJSON()",Method,Poor,false
 Word.TrackedChangeCollection,"track()",Method,Poor,false
 Word.TrackedChangeCollection,"untrack()",Method,Poor,false

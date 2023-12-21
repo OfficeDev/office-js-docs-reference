@@ -35,6 +35,28 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Appointment Organizer, Appointment Attendee, Message Compose, Message Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+  const itemType = Office.context.mailbox.item.itemType;
+
+  switch (itemType) {
+      case Office.MailboxEnums.ItemType.Appointment:
+          console.log(`Current item is an ${itemType}.`);
+          break;
+      case Office.MailboxEnums.ItemType.Message:
+          console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+          break;
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

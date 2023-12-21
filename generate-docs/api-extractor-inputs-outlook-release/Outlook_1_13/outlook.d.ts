@@ -99,6 +99,11 @@ export declare namespace Office {
          * **Important**: The actual color depends on how the Outlook client renders it.
          * In this case, the colors noted on each preset apply to Outlook on Windows, on the web,
          * and on Mac (starting in Version 16.78).
+         *
+         * Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors.
+         * This has now been fixed starting in Version 16.78. If you've recently updated your
+         * Outlook client, you need to adjust the category colors in your add-in to match the
+         * updated preset values.
          */
         enum CategoryColor {
             /**
@@ -4210,7 +4215,8 @@ export declare namespace Office {
          *
          * - In Outlook on the web, `setSignatureAsync` only works on messages.
          *
-         * - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+         * - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently being
+         * rolled out. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          * To learn more about APIs supported in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -4249,7 +4255,8 @@ export declare namespace Office {
          *
          * - In Outlook on the web, `setSignatureAsync` only works on messages.
          *
-         * - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+         * - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently being
+         * rolled out. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          * To learn more about APIs supported in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -7277,8 +7284,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Message Compose in Outlook on Android and on iOS. For more information on supported APIs in
-         * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently
+         * being rolled out. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7306,8 +7314,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Message Compose on Outlook on Android and on iOS. For more information on supported APIs in
-         * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently
+         * being rolled out. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -7416,8 +7425,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Outlook on Android and on iOS. For more information on supported APIs in
-         * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is currently being rolled out.
+         * For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7440,8 +7450,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Outlook on Android and on iOS. For more information on supported APIs in
-         * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is currently being rolled out.
+         * For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
