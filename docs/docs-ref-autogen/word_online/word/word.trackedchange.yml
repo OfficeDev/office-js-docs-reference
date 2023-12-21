@@ -117,7 +117,38 @@ methods:
     package: word!
     fullName: getNext()
     summary: Gets the next tracked change. Throws an `ItemNotFound` error if this tracked change is the last one.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets the next (second) tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        await context.sync();
+
+        const trackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const nextTrackedChange = trackedChange.getNext();
+        await context.sync();
+
+        nextTrackedChange.load();
+        await context.sync();
+
+        console.log(nextTrackedChange);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -11569,11 +11569,11 @@ Word.Paragraph,"startNewList()",Method,Poor,true
 Word.Paragraph,"toJSON()",Method,Poor,false
 Word.Paragraph,"track()",Method,Poor,false
 Word.Paragraph,"untrack()",Method,Poor,false
-Word.ParagraphAddedEventArgs,N/A,Class,Good,false
+Word.ParagraphAddedEventArgs,N/A,Class,Good,true
 Word.ParagraphAddedEventArgs,"source",Property,Good,false
 Word.ParagraphAddedEventArgs,"type",Property,Good,false
 Word.ParagraphAddedEventArgs,"uniqueLocalIds",Property,Good,false
-Word.ParagraphChangedEventArgs,N/A,Class,Good,false
+Word.ParagraphChangedEventArgs,N/A,Class,Good,true
 Word.ParagraphChangedEventArgs,"source",Property,Good,false
 Word.ParagraphChangedEventArgs,"type",Property,Good,false
 Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Good,false
@@ -11590,7 +11590,7 @@ Word.ParagraphCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.ParagraphCollection,"toJSON()",Method,Poor,false
 Word.ParagraphCollection,"track()",Method,Poor,false
 Word.ParagraphCollection,"untrack()",Method,Poor,false
-Word.ParagraphDeletedEventArgs,N/A,Class,Good,false
+Word.ParagraphDeletedEventArgs,N/A,Class,Good,true
 Word.ParagraphDeletedEventArgs,"source",Property,Good,false
 Word.ParagraphDeletedEventArgs,"type",Property,Good,false
 Word.ParagraphDeletedEventArgs,"uniqueLocalIds",Property,Good,false
@@ -12099,7 +12099,7 @@ Word.TrackedChange,"date",Property,Good,false
 Word.TrackedChange,"text",Property,Good,false
 Word.TrackedChange,"type",Property,Good,false
 Word.TrackedChange,"accept()",Method,Poor,true
-Word.TrackedChange,"getNext()",Method,Poor,false
+Word.TrackedChange,"getNext()",Method,Poor,true
 Word.TrackedChange,"getNextOrNullObject()",Method,Poor,false
 Word.TrackedChange,"getRange(rangeLocation)",Method,Poor,true
 Word.TrackedChange,"load(options)",Method,Poor,false
