@@ -4,7 +4,38 @@ uid: 'word!Word.ParagraphAddedEventArgs:interface'
 package: word!
 fullName: Word.ParagraphAddedEventArgs
 summary: Provides information about the paragraphs that raised the paragraphAdded event.
-remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
+  // Registers the onParagraphAdded event handler on the document.
+
+  await Word.run(async (context) => {
+    eventContext = context.document.onParagraphAdded.add(paragraphAdded);
+    await context.sync();
+
+    console.log("Added event handler for when paragraphs are added.");
+  });
+
+
+  ...
+
+  async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
+    await Word.run(async (context) => {
+      console.log(`${event.type} event detected. IDs of paragraphs that were added:`);
+      console.log(event.uniqueLocalIds);
+    });
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
