@@ -6380,7 +6380,7 @@ Excel.Worksheet,"load(options)",Method,Poor,false
 Excel.Worksheet,"load(propertyNames)",Method,Fine,true
 Excel.Worksheet,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.Worksheet,"replaceAll(text, replacement, criteria)",Method,Poor,false
-Excel.Worksheet,"set(properties, options)",Method,Poor,false
+Excel.Worksheet,"set(properties, options)",Method,Fine,true
 Excel.Worksheet,"set(properties)",Method,Poor,false
 Excel.Worksheet,"showOutlineLevels(rowLevels, columnLevels)",Method,Poor,true
 Excel.Worksheet,"toJSON()",Method,Poor,false

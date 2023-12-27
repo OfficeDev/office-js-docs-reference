@@ -829,7 +829,23 @@ methods:
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Set the color and name of the current worksheet.
+          await Excel.run(async (context) => {
+            const activeSheet = context.workbook.worksheets.getActiveWorksheet();
+            activeSheet.set({
+              tabColor: "yellow",
+              name: "MySheet"
+            });
+
+            await context.sync();
+          });
+          ```
   - name: set(properties)
     uid: 'excel!Excel.Worksheet#set:member(2)'
     package: excel!
