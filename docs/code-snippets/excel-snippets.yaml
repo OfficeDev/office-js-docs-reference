@@ -1379,6 +1379,18 @@ Excel.Worksheet#position:member:
         worksheet.position = 2;
         await context.sync(); 
     });
+Excel.Worksheet#set:member(1):
+  - |-
+    // Set the color and name of the current worksheet.
+    await Excel.run(async (context) => {
+      const activeSheet = context.workbook.worksheets.getActiveWorksheet();
+      activeSheet.set({
+        tabColor: "yellow",
+        name: "MySheet"
+      });
+
+      await context.sync();
+    });
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
