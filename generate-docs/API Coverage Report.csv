@@ -9295,13 +9295,13 @@ PowerPoint.BulletFormat,"load(options)",Method,Poor,false
 PowerPoint.BulletFormat,"load(propertyNames)",Method,Poor,false
 PowerPoint.BulletFormat,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.BulletFormat,"toJSON()",Method,Poor,false
-PowerPoint.ConnectorType,N/A,Enum,Good,false
+PowerPoint.ConnectorType,N/A,Enum,Good,true
 PowerPoint.ConnectorType,"curve",EnumField,Fine,false
 PowerPoint.ConnectorType,"elbow",EnumField,Fine,false
 PowerPoint.ConnectorType,"straight",EnumField,Fine,false
 PowerPoint.ErrorCodes,N/A,Enum,Missing,false
 PowerPoint.ErrorCodes,"generalException",EnumField,Missing,false
-PowerPoint.GeometricShapeType,N/A,Enum,Good,false
+PowerPoint.GeometricShapeType,N/A,Enum,Good,true
 PowerPoint.GeometricShapeType,"accentBorderCallout1",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"accentBorderCallout2",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"accentBorderCallout3",EnumField,Fine,false
