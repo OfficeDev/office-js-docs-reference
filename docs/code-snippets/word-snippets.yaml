@@ -1137,6 +1137,22 @@ Word.Range#getHtml:member(1):
         await context.sync();
         console.log('The HTML read from the document was: ' + html.value);
     });
+Word.Range#getHyperlinkRanges:member(1):
+  - |-
+    await Word.run(async (context) => {
+        // Get the entire document body.
+        const bodyRange = context.document.body.getRange(Word.RangeLocation.whole);
+
+        // Get all the ranges that only consist of hyperlinks.
+        const hyperLinks = bodyRange.getHyperlinkRanges();
+        hyperLinks.load("hyperlink");
+        await context.sync();
+
+        // Log each hyperlink.
+        hyperLinks.items.forEach((linkRange) => {
+            console.log(linkRange.hyperlink);
+        });
+    });
 Word.Range#getOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
