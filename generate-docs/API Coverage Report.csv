@@ -11650,7 +11650,7 @@ Word.Range,"getBookmarks(includeHidden, includeAdjacent)",Method,Fine,false
 Word.Range,"getComments()",Method,Poor,true
 Word.Range,"getContentControls(options)",Method,Poor,false
 Word.Range,"getHtml()",Method,Poor,true
-Word.Range,"getHyperlinkRanges()",Method,Poor,false
+Word.Range,"getHyperlinkRanges()",Method,Poor,true
 Word.Range,"getNextTextRange(endingMarks, trimSpacing)",Method,Fine,false
 Word.Range,"getNextTextRangeOrNullObject(endingMarks, trimSpacing)",Method,Fine,false
 Word.Range,"getOoxml()",Method,Poor,true
