@@ -4680,6 +4680,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
+         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
+         * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
+         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
+         *
          * **Errors**:
          *
          * - `InvalidFormatError` - The format of the specified data object is not valid.
@@ -4700,6 +4706,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
+         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
+         * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
+         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
          *
          * **Errors**:
          *
