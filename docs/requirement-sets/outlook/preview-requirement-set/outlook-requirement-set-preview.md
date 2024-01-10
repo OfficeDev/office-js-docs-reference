@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/31/2023
+ms.date: 01/11/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -72,6 +72,20 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 #### [Office.context.mailbox.item.closeAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
 
 Added method to close a current message being composed with the option to discard unsaved changes.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Get the URL of the JavaScript runtime of an add-in
+
+#### [Office.context.urls.javaScriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
+
+Added property to get the URL of the JavaScript runtime of an add-in.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
