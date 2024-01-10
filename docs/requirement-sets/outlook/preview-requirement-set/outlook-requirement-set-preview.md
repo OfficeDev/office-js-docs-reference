@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/31/2023
+ms.date: 01/11/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -41,7 +41,7 @@ Added a new object that represents the all-day event property of an appointment 
 
 Added a new object that represents the sensitivity level of an appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
@@ -53,13 +53,13 @@ Added a new property that represents if an appointment is an all-day event.
 
 Added a new property that represents the sensitivity of an appointment.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true)
 
 Added a new enum `AppointmentSensitivityType` that represents the sensitivity options available on an appointment.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 <br>
 
