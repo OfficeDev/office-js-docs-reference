@@ -1,7 +1,7 @@
 ---
 title: LaunchEvent in the manifest file
 description: The LaunchEvent element configures your add-in to activate based on supported events.
-ms.date: 12/12/2023
+ms.date: 01/18/2024
 ms.localizationpriority: medium
 ---
 
@@ -24,6 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
   <LaunchEvents>
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
+    <LaunchEvent Type="OnMessageReadWithCustomHeader" FunctionName="onMessageReadWithCustomHeaderHandler" HeaderName="contoso-spam-simulation"/>
   </LaunchEvents>
   <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
   <SourceLocation resid="WebViewRuntime.Url"/>
@@ -38,9 +39,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  **\<Type\>**  |  Yes  | Specifies a supported event type. For the set of supported types, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events). |
-|  **\<FunctionName\>**  |  Yes  | Specifies the name of the JavaScript function to handle the event specified in the `Type` attribute. |
-|  **SendMode** |  No  | Used by `OnMessageSend` and `OnAppointmentSend` events. Specifies the options available to the user if your add-in stops an item from being sent or if the add-in is unavailable. If the **SendMode** property isn't included, the `SoftBlock` option is set by default. For a list of available send mode options, see [Available send mode options](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options). |
+|  **Type**  |  Yes  | Specifies a supported event type. For the set of supported types, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events). |
+|  **FunctionName**  |  Yes  | Specifies the name of the JavaScript function to handle the event specified in the `Type` attribute. |
+|  **SendMode** |  No  | Used by the `OnMessageSend` and `OnAppointmentSend` events. Specifies the options available to the user if your add-in stops an item from being sent or if the add-in is unavailable. If the **SendMode** property isn't included, the `SoftBlock` option is set by default. For a list of available send mode options, see [Available send mode options](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options). |
+| **HeaderName** (preview) | No | Specifies the internet header name used to identify a message on which the `OnMessageReadWithCustomHeader` event occurs. The `Type` attribute must be set to `OnMessageReadWithCustomHeader`. |
 
 ## See also
 
@@ -48,4 +50,5 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events)
 - [Handle OnMessageSend and OnAppointmentSend events in your Outlook add-in with Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
 - [Automatically check for an attachment before a message is sent](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)
+- [Automatically update your signature when switching between Exchange accounts](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events)
 - [Implement event-based activation in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-event-based)

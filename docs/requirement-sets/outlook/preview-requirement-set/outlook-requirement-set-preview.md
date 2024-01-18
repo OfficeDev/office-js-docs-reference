@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 01/16/2024
+ms.date: 01/18/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -81,9 +81,35 @@ Added method to close a current message being composed with the option to discar
 
 ---
 
+### Activate an event-based add-in on a message in read mode
+
+#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+
+Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [HeaderName attribute in the LaunchEvent element](../../../manifest/launchevent.md#attributes)
+
+Added an attribute to the **\<LaunchEvent\>** XML element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [MessageAttachments element](../../../manifest/messageattachments.md)
+
+Added an XML element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Integrated spam reporting
 
-#### [ReportPhishingCommandSurface extension point](/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview)
+#### [ReportPhishingCommandSurface extension point](../../../manifest/extensionpoint.md#reportphishingcommandsurface-preview)
 
 Added an extension point to activate your spam-reporting add-in in the Outlook ribbon and prevent it from appearing at the end of the ribbon or in the overflow section.
 
