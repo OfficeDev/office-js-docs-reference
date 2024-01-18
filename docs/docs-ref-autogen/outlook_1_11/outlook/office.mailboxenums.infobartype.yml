@@ -44,14 +44,6 @@ remarks: |-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: Error
-    uid: 'outlook!Office.MailboxEnums.InfobarType.Error:member'
-    package: outlook!
-    summary: |-
-      Notification displays an error message.
-
-      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-    value: '2'
   - name: Informational
     uid: 'outlook!Office.MailboxEnums.InfobarType.Informational:member'
     package: outlook!
@@ -60,14 +52,6 @@ fields:
 
       * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '0'
-  - name: Insight
-    uid: 'outlook!Office.MailboxEnums.InfobarType.Insight:member'
-    package: outlook!
-    summary: |-
-      Notification displays an informational message with actions.
-
-      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-    value: '3'
   - name: ProgressIndicator
     uid: 'outlook!Office.MailboxEnums.InfobarType.ProgressIndicator:member'
     package: outlook!
@@ -76,3 +60,19 @@ fields:
 
       * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '1'
+  - name: Error
+    uid: 'outlook!Office.MailboxEnums.InfobarType.Error:member'
+    package: outlook!
+    summary: |-
+      Notification displays an error message.
+
+      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '2'
+  - name: Insight
+    uid: 'outlook!Office.MailboxEnums.InfobarType.Insight:member'
+    package: outlook!
+    summary: |-
+      Notification displays an informational message with actions.
+
+      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '3'

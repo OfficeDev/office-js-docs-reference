@@ -1431,6 +1431,18 @@ Excel.Worksheet#position:member:
         worksheet.position = 2;
         await context.sync(); 
     });
+Excel.Worksheet#set:member(1):
+  - |-
+    // Set the color and name of the current worksheet.
+    await Excel.run(async (context) => {
+      const activeSheet = context.workbook.worksheets.getActiveWorksheet();
+      activeSheet.set({
+        tabColor: "yellow",
+        name: "MySheet"
+      });
+
+      await context.sync();
+    });
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
@@ -10428,6 +10440,22 @@ Word.Range#getHtml:member(1):
         // and return a promise to indicate task completion.
         await context.sync();
         console.log('The HTML read from the document was: ' + html.value);
+    });
+Word.Range#getHyperlinkRanges:member(1):
+  - |-
+    await Word.run(async (context) => {
+        // Get the entire document body.
+        const bodyRange = context.document.body.getRange(Word.RangeLocation.whole);
+
+        // Get all the ranges that only consist of hyperlinks.
+        const hyperLinks = bodyRange.getHyperlinkRanges();
+        hyperLinks.load("hyperlink");
+        await context.sync();
+
+        // Log each hyperlink.
+        hyperLinks.items.forEach((linkRange) => {
+            console.log(linkRange.hyperlink);
+        });
     });
 Word.Range#getOoxml:member(1):
   - |-

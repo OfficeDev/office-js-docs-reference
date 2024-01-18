@@ -40,11 +40,6 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: Beta
-    uid: 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
-    package: outlook!
-    summary: Beta.
-    value: '"beta"'
   - name: v1_0
     uid: 'outlook!Office.MailboxEnums.RestVersion.v1_0:member'
     package: outlook!
@@ -55,3 +50,8 @@ fields:
     package: outlook!
     summary: Version 2.0.
     value: '"v2.0"'
+  - name: Beta
+    uid: 'outlook!Office.MailboxEnums.RestVersion.Beta:member'
+    package: outlook!
+    summary: Beta.
+    value: '"beta"'

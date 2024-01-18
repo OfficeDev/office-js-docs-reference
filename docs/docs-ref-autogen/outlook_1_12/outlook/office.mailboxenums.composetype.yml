@@ -40,18 +40,18 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: Forward
-    uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
-    package: outlook!
-    summary: Forward.
-    value: '"forward"'
-  - name: NewMail
-    uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
-    package: outlook!
-    summary: New mail.
-    value: '"newMail"'
   - name: Reply
     uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
     package: outlook!
     summary: Reply.
     value: '"reply"'
+  - name: NewMail
+    uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
+    package: outlook!
+    summary: New mail.
+    value: '"newMail"'
+  - name: Forward
+    uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
+    package: outlook!
+    summary: Forward.
+    value: '"forward"'
