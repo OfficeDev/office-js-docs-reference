@@ -1,13 +1,13 @@
 ---
 title: FormSettings element in the manifest file
 description: Specifies source location and control settings for your mail add-in.
-ms.date: 10/09/2018
+ms.date: 01/18/2024
 ms.localizationpriority: medium
 ---
 
 # FormSettings element
 
-Specifies source location and control settings for your mail add-in.
+Specifies source location and control settings for your mail add-in in older Outlook clients.
 
 **Add-in type:** Mail
 
@@ -15,7 +15,9 @@ Specifies source location and control settings for your mail add-in.
 
 ```XML
 <FormSettings>
-   ...
+    <Form xsi:type="ItemRead">
+        ...
+    </Form>
 </FormSettings>
 ```
 
