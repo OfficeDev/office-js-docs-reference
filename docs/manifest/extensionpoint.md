@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 07/20/2023
+ms.date: 01/16/2024
 ms.localizationpriority: medium
 ---
 
@@ -455,13 +455,14 @@ This extension point adds an event handler for a specified event. For more infor
 
 This extension point adds a contextual add-in activation on a specified entity type. For more information about using this extension point, see [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins).
 
-> [!IMPORTANT]
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+[!INCLUDE [outlook-contextual-add-ins-retirement](../includes/outlook-contextual-add-ins-retirement.md)]
 
 The containing [VersionOverrides](versionoverrides.md) element must have an **xsi:type** attribute value of `VersionOverridesV1_1`.
 
 > [!NOTE]
-> This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
+>
+> - This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
+> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 |  Element |  Description  |
 |:-----|:-----|
