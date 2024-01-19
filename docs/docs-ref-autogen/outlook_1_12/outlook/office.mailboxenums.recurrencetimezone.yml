@@ -90,11 +90,6 @@ fields:
     package: outlook!
     summary: Altai Standard Time
     value: '"Altai Standard Time"'
-  - name: ArabStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime:member'
-    package: outlook!
-    summary: Arab Standard Time
-    value: '"Arab Standard Time"'
   - name: ArabianStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabianStandardTime:member'
     package: outlook!
@@ -105,6 +100,11 @@ fields:
     package: outlook!
     summary: Arabic Standard Time
     value: '"Arabic Standard Time"'
+  - name: ArabStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime:member'
+    package: outlook!
+    summary: Arab Standard Time
+    value: '"Arab Standard Time"'
   - name: ArgentinaStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.ArgentinaStandardTime:member'
     package: outlook!
@@ -200,16 +200,16 @@ fields:
     package: outlook!
     summary: Central Brazilian Standard Time
     value: '"Central Brazilian Standard Time"'
-  - name: CentralEuropeStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime:member'
-    package: outlook!
-    summary: Central Europe Standard Time
-    value: '"Central Europe Standard Time"'
   - name: CentralEuropeanStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeanStandardTime:member'
     package: outlook!
     summary: Central European Standard Time
     value: '"Central European Standard Time"'
+  - name: CentralEuropeStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime:member'
+    package: outlook!
+    summary: Central Europe Standard Time
+    value: '"Central Europe Standard Time"'
   - name: CentralPacificStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.CentralPacificStandardTime:member'
     package: outlook!
@@ -455,16 +455,16 @@ fields:
     package: outlook!
     summary: Nepal Standard Time
     value: '"Nepal Standard Time"'
-  - name: NewZealandStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime:member'
-    package: outlook!
-    summary: New Zealand Standard Time
-    value: '"New Zealand Standard Time"'
   - name: NewfoundlandStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NewfoundlandStandardTime:member'
     package: outlook!
     summary: Newfoundland Standard Time
     value: '"Newfoundland Standard Time"'
+  - name: NewZealandStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime:member'
+    package: outlook!
+    summary: New Zealand Standard Time
+    value: '"New Zealand Standard Time"'
   - name: NorfolkStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.NorfolkStandardTime:member'
     package: outlook!
@@ -520,6 +520,11 @@ fields:
     package: outlook!
     summary: Romance Standard Time
     value: '"Romance Standard Time"'
+  - name: RussianStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime:member'
+    package: outlook!
+    summary: Russian Standard Time
+    value: '"Russian Standard Time"'
   - name: RussiaTimeZone10
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone10:member'
     package: outlook!
@@ -535,26 +540,11 @@ fields:
     package: outlook!
     summary: Russia Time Zone 3
     value: '"Russia Time Zone 3"'
-  - name: RussianStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime:member'
-    package: outlook!
-    summary: Russian Standard Time
-    value: '"Russian Standard Time"'
   - name: SAEasternStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAEasternStandardTime:member'
     package: outlook!
     summary: SA Eastern Standard Time
     value: '"SA Eastern Standard Time"'
-  - name: SAPacificStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime:member'
-    package: outlook!
-    summary: SA Pacific Standard Time
-    value: '"SA Pacific Standard Time"'
-  - name: SAWesternStandardTime
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime:member'
-    package: outlook!
-    summary: SA Western Standard Time
-    value: '"SA Western Standard Time"'
   - name: SaintPierreStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SaintPierreStandardTime:member'
     package: outlook!
@@ -570,11 +560,21 @@ fields:
     package: outlook!
     summary: Samoa Standard Time
     value: '"Samoa Standard Time"'
+  - name: SAPacificStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime:member'
+    package: outlook!
+    summary: SA Pacific Standard Time
+    value: '"SA Pacific Standard Time"'
   - name: SaratovStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SaratovStandardTime:member'
     package: outlook!
     summary: Saratov Standard Time
     value: '"Saratov Standard Time"'
+  - name: SAWesternStandardTime
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime:member'
+    package: outlook!
+    summary: SA Western Standard Time
+    value: '"SA Western Standard Time"'
   - name: SEAsiaStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.SEAsiaStandardTime:member'
     package: outlook!
@@ -670,16 +670,6 @@ fields:
     package: outlook!
     summary: Coordinated Universal Time (UTC)
     value: '"UTC"'
-  - name: UTCPLUS12
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12:member'
-    package: outlook!
-    summary: Coordinated Universal Time (UTC) + 12 hours
-    value: '"UTC+12"'
-  - name: UTCPLUS13
-    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13:member'
-    package: outlook!
-    summary: Coordinated Universal Time (UTC) + 13 hours
-    value: '"UTC+13"'
   - name: UTCMINUS02
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS02:member'
     package: outlook!
@@ -700,6 +690,16 @@ fields:
     package: outlook!
     summary: Coordinated Universal Time (UTC) - 11 hours
     value: '"UTC-11"'
+  - name: UTCPLUS12
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) + 12 hours
+    value: '"UTC+12"'
+  - name: UTCPLUS13
+    uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13:member'
+    package: outlook!
+    summary: Coordinated Universal Time (UTC) + 13 hours
+    value: '"UTC+13"'
   - name: VenezuelaStandardTime
     uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone.VenezuelaStandardTime:member'
     package: outlook!

@@ -40,6 +40,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or
+      Personal sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
+      property.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -80,6 +86,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or
+      Personal sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
+      property.
 
 
       #### Examples
@@ -132,6 +144,16 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      Normal and Private sensitivity levels.
+
+
+      **Errors**:
+
+
+      - `Unsupported API parameter`<!-- -->: Setting the sensitivity level of an appointment isn't supported.
 
 
       #### Examples
@@ -194,6 +216,16 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      Normal and Private sensitivity levels.
+
+
+      **Errors**:
+
+
+      - `Unsupported API parameter`<!-- -->: Setting the sensitivity level of an appointment isn't supported.
     isPreview: true
     isDeprecated: false
     syntax:

@@ -36,16 +36,6 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: ProgressIndicator
-    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
-    package: outlook!
-    summary: The notification message is a progress indicator.
-    value: '"progressIndicator"'
-  - name: InformationalMessage
-    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
-    package: outlook!
-    summary: The notification message is an informational message.
-    value: '"informationalMessage"'
   - name: ErrorMessage
     uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
     package: outlook!
@@ -54,3 +44,13 @@ fields:
 
       **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
     value: '"errorMessage"'
+  - name: InformationalMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
+    package: outlook!
+    summary: The notification message is an informational message.
+    value: '"informationalMessage"'
+  - name: ProgressIndicator
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
+    package: outlook!
+    summary: The notification message is a progress indicator.
+    value: '"progressIndicator"'

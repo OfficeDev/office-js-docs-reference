@@ -66,6 +66,26 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
+  - name: DeleteAll
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
+    package: outlook!
+    summary: Delegate has permission to delete any items.
+    value: '8'
+  - name: DeleteOwn
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
+    package: outlook!
+    summary: Delegate has permission to delete only the items they created.
+    value: '4'
+  - name: EditAll
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
+    package: outlook!
+    summary: Delegate has permission to edit any items.
+    value: '32'
+  - name: EditOwn
+    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
+    package: outlook!
+    summary: Delegate has permission to edit only they items they created.
+    value: '16'
   - name: Read
     uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
     package: outlook!
@@ -76,23 +96,3 @@ fields:
     package: outlook!
     summary: Delegate has permission to create and write items.
     value: '2'
-  - name: DeleteOwn
-    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
-    package: outlook!
-    summary: Delegate has permission to delete only the items they created.
-    value: '4'
-  - name: DeleteAll
-    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
-    package: outlook!
-    summary: Delegate has permission to delete any items.
-    value: '8'
-  - name: EditOwn
-    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
-    package: outlook!
-    summary: Delegate has permission to edit only they items they created.
-    value: '16'
-  - name: EditAll
-    uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
-    package: outlook!
-    summary: Delegate has permission to edit any items.
-    value: '32'

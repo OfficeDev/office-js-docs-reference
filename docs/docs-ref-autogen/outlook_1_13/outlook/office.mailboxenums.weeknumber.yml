@@ -75,16 +75,6 @@ fields:
     package: outlook!
     summary: First week of the month.
     value: '"first"'
-  - name: Second
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
-    package: outlook!
-    summary: Second week of the month.
-    value: '"second"'
-  - name: Third
-    uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
-    package: outlook!
-    summary: Third week of the month.
-    value: '"third"'
   - name: Fourth
     uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
     package: outlook!
@@ -95,3 +85,13 @@ fields:
     package: outlook!
     summary: Last week of the month.
     value: '"last"'
+  - name: Second
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+    package: outlook!
+    summary: Second week of the month.
+    value: '"second"'
+  - name: Third
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+    package: outlook!
+    summary: Third week of the month.
+    value: '"third"'

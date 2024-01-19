@@ -33,13 +33,13 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: Message
-    uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
-    package: outlook!
-    summary: 'An email, meeting request, meeting response, or meeting cancellation.'
-    value: '"message"'
   - name: Appointment
     uid: 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
     package: outlook!
     summary: An appointment item.
     value: '"appointment"'
+  - name: Message
+    uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
+    package: outlook!
+    summary: 'An email, meeting request, meeting response, or meeting cancellation.'
+    value: '"message"'
