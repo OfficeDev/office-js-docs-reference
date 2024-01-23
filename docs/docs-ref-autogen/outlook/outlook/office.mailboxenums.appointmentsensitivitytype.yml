@@ -36,16 +36,6 @@ remarks: >-
 isPreview: true
 isDeprecated: false
 fields:
-  - name: Confidential
-    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
-    package: outlook!
-    summary: |-
-      Treat the item as confidential.
-
-      **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
-
-      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-    value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
     package: outlook!
@@ -72,3 +62,13 @@ fields:
 
       * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"private"'
+  - name: Confidential
+    uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
+    package: outlook!
+    summary: |-
+      Treat the item as confidential.
+
+      **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
+
+      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"confidential"'
