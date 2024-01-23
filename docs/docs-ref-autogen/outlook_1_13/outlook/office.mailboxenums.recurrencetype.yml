@@ -75,11 +75,6 @@ fields:
     package: outlook!
     summary: Daily.
     value: '"daily"'
-  - name: Monthly
-    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
-    package: outlook!
-    summary: Monthly.
-    value: '"monthly"'
   - name: Weekday
     uid: 'outlook!Office.MailboxEnums.RecurrenceType.Weekday:member'
     package: outlook!
@@ -90,6 +85,11 @@ fields:
     package: outlook!
     summary: Weekly.
     value: '"weekly"'
+  - name: Monthly
+    uid: 'outlook!Office.MailboxEnums.RecurrenceType.Monthly:member'
+    package: outlook!
+    summary: Monthly.
+    value: '"monthly"'
   - name: Yearly
     uid: 'outlook!Office.MailboxEnums.RecurrenceType.Yearly:member'
     package: outlook!

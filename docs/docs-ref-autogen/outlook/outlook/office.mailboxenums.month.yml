@@ -70,63 +70,63 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: Apr
-    uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
-    package: outlook!
-    summary: April
-    value: '"apr"'
-  - name: Aug
-    uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
-    package: outlook!
-    summary: August
-    value: '"aug"'
-  - name: Dec
-    uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
-    package: outlook!
-    summary: December
-    value: '"dec"'
-  - name: Feb
-    uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
-    package: outlook!
-    summary: February
-    value: '"feb"'
   - name: Jan
     uid: 'outlook!Office.MailboxEnums.Month.Jan:member'
     package: outlook!
     summary: January
     value: '"jan"'
-  - name: Jul
-    uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
+  - name: Feb
+    uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
     package: outlook!
-    summary: July
-    value: '"jul"'
-  - name: Jun
-    uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
-    package: outlook!
-    summary: June
-    value: '"jun"'
+    summary: February
+    value: '"feb"'
   - name: Mar
     uid: 'outlook!Office.MailboxEnums.Month.Mar:member'
     package: outlook!
     summary: March
     value: '"mar"'
+  - name: Apr
+    uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
+    package: outlook!
+    summary: April
+    value: '"apr"'
   - name: May
     uid: 'outlook!Office.MailboxEnums.Month.May:member'
     package: outlook!
     summary: May
     value: '"may"'
-  - name: Nov
-    uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
+  - name: Jun
+    uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
     package: outlook!
-    summary: November
-    value: '"nov"'
-  - name: Oct
-    uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
+    summary: June
+    value: '"jun"'
+  - name: Jul
+    uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
     package: outlook!
-    summary: October
-    value: '"oct"'
+    summary: July
+    value: '"jul"'
+  - name: Aug
+    uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
+    package: outlook!
+    summary: August
+    value: '"aug"'
   - name: Sep
     uid: 'outlook!Office.MailboxEnums.Month.Sep:member'
     package: outlook!
     summary: September
     value: '"sep"'
+  - name: Oct
+    uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
+    package: outlook!
+    summary: October
+    value: '"oct"'
+  - name: Nov
+    uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
+    package: outlook!
+    summary: November
+    value: '"nov"'
+  - name: Dec
+    uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
+    package: outlook!
+    summary: December
+    value: '"dec"'
