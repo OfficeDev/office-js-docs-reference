@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 12/19/2023
+ms.date: 01/18/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -41,7 +41,7 @@ Added a new object that represents the all-day event property of an appointment 
 
 Added a new object that represents the sensitivity level of an appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
@@ -53,13 +53,13 @@ Added a new property that represents if an appointment is an all-day event.
 
 Added a new property that represents the sensitivity of an appointment.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true)
 
 Added a new enum `AppointmentSensitivityType` that represents the sensitivity options available on an appointment.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 <br>
 
@@ -107,9 +107,35 @@ Added method to close a current message being composed with the option to discar
 
 ---
 
+### Activate an event-based add-in on a message in read mode
+
+#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+
+Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [HeaderName attribute in the LaunchEvent element](../../../manifest/launchevent.md#attributes)
+
+Added an attribute to the **\<LaunchEvent\>** XML element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [MessageAttachments element](../../../manifest/messageattachments.md)
+
+Added an XML element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Integrated spam reporting
 
-#### [ReportPhishingCommandSurface extension point](/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview)
+#### [ReportPhishingCommandSurface extension point](../../../manifest/extensionpoint.md#reportphishingcommandsurface-preview)
 
 Added an extension point to activate your spam-reporting add-in in the Outlook ribbon and prevent it from appearing at the end of the ribbon or in the overflow section.
 

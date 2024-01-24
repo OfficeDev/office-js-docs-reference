@@ -77,7 +77,34 @@ methods:
     package: word!
     fullName: accept()
     summary: Accepts the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Accepts the first tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        const trackedChange = trackedChanges.getFirst();
+        trackedChange.load();
+        await context.sync();
+
+        console.log("First tracked change:");
+        console.log(trackedChange);
+        trackedChange.accept();
+        console.log("Accepted the first tracked change");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +117,38 @@ methods:
     package: word!
     fullName: getNext()
     summary: Gets the next tracked change. Throws an `ItemNotFound` error if this tracked change is the last one.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets the next (second) tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        await context.sync();
+
+        const trackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const nextTrackedChange = trackedChange.getNext();
+        await context.sync();
+
+        nextTrackedChange.load();
+        await context.sync();
+
+        console.log(nextTrackedChange);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +178,34 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: Gets the range of the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets the range of the first tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        const trackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const range = trackedChange.getRange();
+        range.load();
+        await context.sync();
+
+        console.log("range.text: " + range.text);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,7 +293,34 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Rejects the first tracked change.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        const trackedChange = trackedChanges.getFirst();
+        trackedChange.load();
+        await context.sync();
+
+        console.log("First tracked change:");
+        console.log(trackedChange);
+        trackedChange.reject();
+        console.log("Rejected the first tracked change");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

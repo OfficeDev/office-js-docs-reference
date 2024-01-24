@@ -4,7 +4,39 @@ uid: 'powerpoint!PowerPoint.GeometricShapeType:enum'
 package: powerpoint!
 fullName: PowerPoint.GeometricShapeType
 summary: Specifies the shape type for a `GeometricShape` object.
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+  // This function gets the collection of shapes on the first slide,
+
+  // and adds a hexagon shape to the collection, while specifying its
+
+  // location and size. Then it names the shape.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
+        {
+          left: 100,
+          top: 100,
+          height: 150,
+          width: 150
+        });
+    hexagon.name = "Hexagon";
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

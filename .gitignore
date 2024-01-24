@@ -8,3 +8,5 @@ _dependentPackages/
 .openpublishing.buildcore.ps1
 .vscode/
 *.DS_Store
+build-errors.txt
+build-log.txt

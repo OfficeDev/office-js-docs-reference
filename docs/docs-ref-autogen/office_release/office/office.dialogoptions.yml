@@ -51,6 +51,47 @@ properties:
       content: 'height?: number,'
       return:
         type: number
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // The following example shows how to open a dialog with a specified size. It also shows
+
+          // how to register a function to handle the message when Office.UI.messageParent() is called
+
+          // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage()
+          function is omitted.
+
+
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+              (asyncResult) => {
+                  const dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+
+
+          // The following example does the same thing in TypeScript.
+
+
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+              (asyncResult: Office.AsyncResult) => {
+                  const dialog: Office.Dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+
+          ```
   - name: promptBeforeOpen
     uid: 'office!Office.DialogOptions#promptBeforeOpen:member'
     package: office!
@@ -81,3 +122,44 @@ properties:
       content: 'width?: number,'
       return:
         type: number
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // The following example shows how to open a dialog with a specified size. It also shows
+
+          // how to register a function to handle the message when Office.UI.messageParent() is called
+
+          // in the dialog and how to use that handler to close the dialog. The implementation of the processMessage()
+          function is omitted.
+
+
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+              (asyncResult) => {
+                  const dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+
+
+          // The following example does the same thing in TypeScript.
+
+
+          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 },
+              (asyncResult: Office.AsyncResult) => {
+                  const dialog: Office.Dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+
+          ```
