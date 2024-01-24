@@ -38,8 +38,6 @@ export declare namespace Office {
             /**
              * Treat the item as personal.
              *
-             * **Important**: The Personal sensitivity level is only supported in Outlook on Windows.
-             *
              * @remarks
              * [Api set: Mailbox preview]
              */
@@ -53,8 +51,6 @@ export declare namespace Office {
             Private = "private",
             /**
              * Treat the item as confidential.
-             *
-             * **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
              *
              * @remarks
              * [Api set: Mailbox preview]
@@ -142,11 +138,6 @@ export declare namespace Office {
          * **Important**: The actual color depends on how the Outlook client renders it.
          * In this case, the colors noted on each preset apply to Outlook on Windows, on the web,
          * and on Mac (starting in Version 16.78).
-         *
-         * Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors.
-         * This has now been fixed starting in Version 16.78. If you've recently updated your
-         * Outlook client, you need to adjust the category colors in your add-in to match the
-         * updated preset values.
          */
         enum CategoryColor {
             /**
@@ -366,21 +357,6 @@ export declare namespace Office {
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
-         * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-         * contextual add-ins are retired.
-         *
-         * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-         * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-         * **Join Meeting** button.
-         *
-         * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          */
         enum EntityType {
             /**
@@ -1611,8 +1587,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         *
          * @beta
          */
         sensitivity: Sensitivity;
@@ -2155,6 +2129,56 @@ export declare namespace Office {
          *                 in the `asyncResult.value` property.
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the Exchange Web Services (EWS) item class of the current appointment.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * - You can create custom classes that extend a default item class. For example, `IPM.Appointment.Contoso`.
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                   `Office.AsyncResult` object. The item class of the current appointment is returned in the `asyncResult.value` property. `IPM.Appointment` is
+         *                   returned for non-recurring appointments, while `IPM.Appointment.Occurrence` is returned for recurring appointments.
+         *
+         * @beta
+         */
+        getItemClassAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the Exchange Web Services (EWS) item class of the current appointment.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * - You can create custom classes that extend a default item class. For example, `IPM.Appointment.Contoso`.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                   `Office.AsyncResult` object. The item class of the current appointment is returned in the `asyncResult.value` property. `IPM.Appointment` is
+         *                   returned for non-recurring appointments, while `IPM.Appointment.Occurrence` is returned for recurring appointments.
+         *
+         * @beta
+         */
+        getItemClassAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -2881,9 +2905,9 @@ export declare namespace Office {
          */
         isAllDayEvent: boolean;
         /**
-         * Gets the Exchange Web Services item class of the selected item.
+         * Gets the Exchange Web Services item class of the selected appointment.
          *
-         * You can create custom message classes that extends a default message class, for example, a custom appointment message class `IPM.Appointment.Contoso`.
+         * Returns `IPM.Appointment` for non-recurring appointments and `IPM.Appointment.Occurrence` for recurring appointments.
          *
          * @remarks
          *
@@ -2891,26 +2915,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * The `itemClass` property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
-         *
-         * <table>
-         *   <tr>
-         *     <th>Type</th>
-         *     <th>Description</th>
-         *     <th>Item Class</th>
-         *   </tr>
-         *   <tr>
-         *     <td>Appointment items</td>
-         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
-         *   </tr>
-         *   <tr>
-         *     <td>Message items</td>
-         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
-         *   </tr>
-         * </table>
-         *
+         * **Important**: You can create custom classes that extend a default item class. For example, `IPM.Appointment.Contoso`.
          */
         itemClass: string;
         /**
@@ -3107,8 +3112,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
-         *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
          *
          * @beta
          */
@@ -3385,23 +3388,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
@@ -3420,23 +3407,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          * 
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param entityType - One of the `EntityType` enumeration values.
@@ -3505,22 +3476,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3580,22 +3537,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3621,22 +3564,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3650,6 +3579,10 @@ export declare namespace Office {
         getRegExMatchesByName(name: string): string[];
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @remarks
          * [Api set: Mailbox 1.6]
@@ -3657,27 +3590,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
-         *
-         * - This method isn't supported in Outlook on iOS or Android.
          *
          * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
          */
@@ -3685,12 +3597,25 @@ export declare namespace Office {
         /**
          * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
          * Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
+         * `ItemHasKnownEntity` rule element in the manifest XML file.
+         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule.
+         * The `PropertyName` simple type defines the supported properties.
+         *
+         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and should not attempt to return the entire body of the item.
+         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-         * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or
-         * the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur
-         * in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
+         * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule
+         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
          *
          * @remarks
          * [Api set: Mailbox 1.6]
@@ -3698,31 +3623,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
-         *
-         * - This method isn't supported in Outlook on iOS or Android.
-         *
-         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
-         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item doesn't always return the
-         * expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
          */
         getSelectedRegExMatches(): any;
         /**
@@ -4752,21 +4652,6 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-     * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-     * contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface Contact {
         /**
@@ -4994,12 +4879,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
-         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
-         * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
-         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
-         *
          * **Errors**:
          *
          * - `InvalidFormatError` - The format of the specified data object is not valid.
@@ -5020,12 +4899,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
-         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
-         * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
-         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
          *
          * **Errors**:
          *
@@ -5490,21 +5363,6 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-     * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-     * contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface Entities {
         /**
@@ -7186,21 +7044,6 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-     * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-     * contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface MeetingSuggestion {
         /**
@@ -7328,6 +7171,25 @@ export declare namespace Office {
          */
         conversationId: string;
         /**
+         * Gets the Base64-encoded position of the current message in a conversation thread.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: To preview the `conversationIndex` property, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * **Tip**: You can use the `conversationIndex` property value to locate a message in a conversation thread and use its contents
+         * to provide context for the current message being composed.
+         *
+         * @beta
+         */
+        conversationIndex: string;
+        /**
          * Gets or sets the delayed delivery date and time of a message.
          *
          * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.
@@ -7356,6 +7218,26 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          */
         from: From;
+        /**
+         * Gets the message ID of the original message being replied to by the current message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - To preview the `inReplyTo` property, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the user, such as changing the subject in a reply.
+         *
+         * @beta
+         */
+        inReplyTo: string;
         /**
          * Gets or sets the custom internet headers of a message.
          *
@@ -8070,6 +7952,120 @@ export declare namespace Office {
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
+         * Gets the Exchange Web Services item class of the selected message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * The following table lists the default message classes.
+         *
+         * <table>
+         *   <tr>
+         *     <th>Item class</th>
+         *     <th>Description</th>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Note</td>
+         *     <td>New messages and message replies</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Request</td>
+         *     <td>Meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Canceled</td>
+         *     <td>Meeting cancellations</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Neg</td>
+         *     <td>Responses to decline meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Pos</td>
+         *     <td>Responses to accept meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Tent</td>
+         *     <td>Responses to tentatively accept meeting requests</td>
+         *   </tr>
+         * </table>
+         *
+         * You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`.
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                   `Office.AsyncResult` object. The message class is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getItemClassAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the Exchange Web Services item class of the selected message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
+         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * The following table lists the default message classes.
+         *
+         * <table>
+         *   <tr>
+         *     <th>Item class</th>
+         *     <th>Description</th>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Note</td>
+         *     <td>New messages and message replies</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Request</td>
+         *     <td>Meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Canceled</td>
+         *     <td>Meeting cancellations</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Neg</td>
+         *     <td>Responses to decline meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Pos</td>
+         *     <td>Responses to accept meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Tent</td>
+         *     <td>Responses to tentatively accept meeting requests</td>
+         *   </tr>
+         * </table>
+         *
+         * You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                   `Office.AsyncResult` object. The message class is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getItemClassAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
          * Asynchronously gets the ID of a saved item.
          *
          * When invoked, this method returns the item ID via the callback function.
@@ -8717,10 +8713,7 @@ export declare namespace Office {
          */
         internetMessageId: string;
         /**
-         * Gets the Exchange Web Services item class of the selected item.
-         *
-         * You can create custom message classes that extends a default message class, for example, a custom appointment message class
-         * `IPM.Appointment.Contoso`.
+         * Gets the Exchange Web Services item class of the selected message.
          *
          * @remarks
          *
@@ -8728,27 +8721,42 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * The `itemClass` property specifies the message class of the selected item.
-         * The following are the default message classes for the message or appointment item.
+         * **Important**:
+         *
+         * The following table lists the default item classes for messages.
          *
          * <table>
          *   <tr>
-         *     <th>Type</th>
+         *     <th>Item class</th>
          *     <th>Description</th>
-         *     <th>Item Class</th>
          *   </tr>
          *   <tr>
-         *     <td>Appointment items</td>
-         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
+         *     <td>IPM.Note</td>
+         *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>Message items</td>
-         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
+         *     <td>IPM.Schedule.Meeting.Request</td>
+         *     <td>Meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Canceled</td>
+         *     <td>Meeting cancellations</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Neg</td>
+         *     <td>Responses to decline meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Pos</td>
+         *     <td>Responses to accept meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Tent</td>
+         *     <td>Responses to tentatively accept meeting requests</td>
          *   </tr>
          * </table>
          *
+         * You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`.
          */
         itemClass: string;
         /**
@@ -9278,23 +9286,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
@@ -9313,23 +9305,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param entityType - One of the `EntityType` enumeration values.
@@ -9399,22 +9375,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -9474,22 +9436,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -9515,22 +9463,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -9556,33 +9490,31 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-         * contextual add-ins are retired.
-         *
-         * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-         * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-         * **Join Meeting** button.
-         *
-         * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
          * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
          */
         getSelectedEntities(): Entities;
         /**
          * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
          * Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in
+         * each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file.
+         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule.
+         * The `PropertyName` simple type defines the supported properties.
+         *
+         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and should not attempt to return the entire body of the item.
+         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
          * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or
-         * the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur
-         * in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
+         * the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
          *
          * @remarks
          * [Api set: Mailbox 1.6]
@@ -9590,31 +9522,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-         *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them.
-         *
-         * An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed.
-         * Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation
-         * to activate the **Join Meeting** button.
-         *
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
-         *
-         * - This method isn't supported in Outlook on iOS or Android.
-         *
-         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
-         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item doesn't always return the
-         * expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
          */
         getSelectedRegExMatches(): any;
         /**
@@ -10172,21 +10079,6 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-     * entities in mail items to perform tasks on them. To help minimize potential disruptions, the following will still be supported after entity-based
-     * contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface PhoneNumber {
         /**
@@ -11011,10 +10903,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         * If you call `getAsync` on an appointment that has a Confidential or Personal sensitivity level from these clients, the Normal sensitivity level
-         * is returned in the `asyncResult.value` property.
-         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -11026,19 +10914,15 @@ export declare namespace Office {
         /**
          * Gets the sensitivity level of an appointment.
          *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                 which is an `Office.AsyncResult` object. The sensitivity level of the appointment is returned in the `asyncResult.value` property.
+         *
          * @remarks
          * [Api set: Mailbox preview]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         * If you call `getAsync` on an appointment that has a Confidential or Personal sensitivity level from these clients, the Normal sensitivity level
-         * is returned in the `asyncResult.value` property.
-         *
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
-         *                 which is an `Office.AsyncResult` object. The sensitivity level of the appointment is returned in the `asyncResult.value` property.
          *
          * @beta
          */
@@ -11052,12 +10936,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         *
-         * **Errors**:
-         *
-         * - `Unsupported API parameter`: Setting the sensitivity level of an appointment isn't supported.
          *
          * @param sensitivity - The sensitivity level as an enum or string.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -11077,12 +10955,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         *
-         * **Errors**:
-         *
-         * - `Unsupported API parameter`: Setting the sensitivity level of an appointment isn't supported.
          *
          * @param sensitivity - The sensitivity level as an enum or string.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,

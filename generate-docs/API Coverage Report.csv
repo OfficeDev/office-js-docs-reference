@@ -8429,6 +8429,8 @@ Office.AppointmentCompose,"getAttachmentsAsync(options, callback)",Method,Poor,t
 Office.AppointmentCompose,"getAttachmentsAsync(callback)",Method,Poor,false
 Office.AppointmentCompose,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"getInitializationContextAsync(callback)",Method,Poor,false
+Office.AppointmentCompose,"getItemClassAsync(options, callback)",Method,Poor,false
+Office.AppointmentCompose,"getItemClassAsync(callback)",Method,Poor,false
 Office.AppointmentCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
@@ -9001,8 +9003,10 @@ Office.MessageCompose,"body",Property,Good,true
 Office.MessageCompose,"categories",Property,Good,true
 Office.MessageCompose,"cc",Property,Good,true
 Office.MessageCompose,"conversationId",Property,Good,true
+Office.MessageCompose,"conversationIndex",Property,Good,false
 Office.MessageCompose,"delayDeliveryTime",Property,Good,true
 Office.MessageCompose,"from",Property,Good,true
+Office.MessageCompose,"inReplyTo",Property,Good,false
 Office.MessageCompose,"internetHeaders",Property,Good,true
 Office.MessageCompose,"itemType",Property,Good,true
 Office.MessageCompose,"notificationMessages",Property,Good,true
@@ -9032,6 +9036,8 @@ Office.MessageCompose,"getComposeTypeAsync(options, callback)",Method,Fine,false
 Office.MessageCompose,"getComposeTypeAsync(callback)",Method,Fine,true
 Office.MessageCompose,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"getInitializationContextAsync(callback)",Method,Poor,false
+Office.MessageCompose,"getItemClassAsync(options, callback)",Method,Poor,false
+Office.MessageCompose,"getItemClassAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
