@@ -764,6 +764,10 @@ items:
             href: ../../manifest/launchevents.md
           - name: LongStrings
             href: ../../manifest/longstrings.md
+          - name: MessageAttachment
+            href: ../../manifest/messageattachment.md
+          - name: MessageAttachments
+            href: ../../manifest/messageattachments.md
           - name: MobileFormFactor
             href: ../../manifest/mobileformfactor.md
           - name: MoreInfo

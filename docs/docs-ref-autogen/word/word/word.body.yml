@@ -867,7 +867,30 @@ methods:
     package: word!
     fullName: getTrackedChanges()
     summary: Gets the collection of the TrackedChange objects in the body.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets all tracked changes.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        const trackedChanges = body.getTrackedChanges();
+        trackedChanges.load();
+        await context.sync();
+
+        console.log(trackedChanges);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

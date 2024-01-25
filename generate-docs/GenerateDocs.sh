@@ -1,3 +1,11 @@
+if [ -e "build-log.txt" ]; then
+    rm build-log.txt
+fi
+
+if [ -e "build-errors.txt" ]; then
+    rm build-errors.txt
+fi
+
 if [ -d "node_modules" ]; then
     rm -rf "node_modules"
 fi
@@ -683,5 +691,3 @@ node postprocessor.js
 popd
 
 ./node_modules/.bin/reference-coverage-tester reference-coverage-tester.json
-
-wait

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "tsc -p tsconfig.json --watch",
-    "lint": "tslint --project tsconfig.json"
+    "lint": "eslint -c .eslintrc.js --ext .ts"
   },
   "author": "",
   "license": "MIT",
@@ -15,8 +15,12 @@
     "@types/js-yaml": "3.5.29",
     "@types/lodash": "4.14.64",
     "@types/node": "7.0.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
     "del": "2.2.2",
-    "tslint": "6.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "typescript": "2.3.2"
   },
   "dependencies": {

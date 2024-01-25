@@ -429,7 +429,28 @@ methods:
     package: word!
     fullName: getParagraphByUniqueLocalId(id)
     summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
+      await Word.run(async (context) => {
+        const paragraphId = $("#paragraph-id").val() as string;
+        const paragraph = context.document.getParagraphByUniqueLocalId(paragraphId);
+        paragraph.load();
+        await paragraph.context.sync();
+
+        console.log(paragraph);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -889,7 +910,38 @@ events:
     package: word!
     fullName: onParagraphAdded
     summary: Occurs when the user adds new paragraphs.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
+      // Registers the onParagraphAdded event handler on the document.
+
+      await Word.run(async (context) => {
+        eventContext = context.document.onParagraphAdded.add(paragraphAdded);
+        await context.sync();
+
+        console.log("Added event handler for when paragraphs are added.");
+      });
+
+
+      ...
+
+      async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. IDs of paragraphs that were added:`);
+          console.log(event.uniqueLocalIds);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -903,7 +955,38 @@ events:
     package: word!
     fullName: onParagraphChanged
     summary: Occurs when the user changes paragraphs.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
+
+      // Registers the onParagraphChanged event handler on the document.
+
+      await Word.run(async (context) => {
+        eventContext = context.document.onParagraphChanged.add(paragraphChanged);
+        await context.sync();
+
+        console.log("Added event handler for when content is changed in paragraphs.");
+      });
+
+
+      ...
+
+      async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`);
+          console.log(event.uniqueLocalIds);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -917,7 +1000,38 @@ events:
     package: word!
     fullName: onParagraphDeleted
     summary: Occurs when the user deletes paragraphs.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
+
+      // Registers the onParagraphDeleted event handler on the document.
+
+      await Word.run(async (context) => {
+        eventContext = context.document.onParagraphDeleted.add(paragraphDeleted);
+        await context.sync();
+
+        console.log("Added event handlers for when paragraphs are deleted.");
+      });
+
+
+      ...
+
+      async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`);
+          console.log(event.uniqueLocalIds);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

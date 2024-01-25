@@ -1,7 +1,7 @@
 ---
 title: Rule element in the manifest file
 description: The Rule element specifies the activation rules that should be evaluated for this contextual mail add-in.
-ms.date: 08/19/2022
+ms.date: 01/16/2024
 ms.localizationpriority: medium
 ---
 
@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 Specifies the activation rules that should be evaluated for this contextual mail add-in.
 
 **Add-in type:** Mail (contextual)
+
+[!INCLUDE [outlook-contextual-add-ins-retirement](../includes/outlook-contextual-add-ins-retirement.md)]
 
 ## Contained in
 
