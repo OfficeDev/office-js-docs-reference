@@ -985,7 +985,7 @@
       "ms.topic": "reference",
       "open_source_feedback_contributorGuideUrl": "https://github.com/OfficeDev/office-js-docs-reference/blob/main/Contributing.md",
       "open_source_feedback_issueTitle": "",
-      "open_source_feedback_issueUrl": "https://github.com/OfficeDev/office-js-docs-reference/issues/new?template=-customer-feedback.yml",
+      "open_source_feedback_issueUrl": "https://github.com/OfficeDev/office-js-docs-reference/issues/new?template=3-customer-feedback.yml",
       "open_source_feedback_productName": "Office Add-ins",
       "titleSuffix": "Office Add-ins",
       "ms.devlang": "javascript",
