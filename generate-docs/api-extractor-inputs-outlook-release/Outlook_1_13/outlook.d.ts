@@ -4320,7 +4320,7 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds or replaces the signature of the item body.
+         * Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the body, replaces that signature.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -4360,7 +4360,7 @@ export declare namespace Office {
          */
         setSignatureAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds or replaces the signature of the item body.
+         * Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the body, replaces that signature.
          *
          * @remarks
          * [Api set: Mailbox 1.10]

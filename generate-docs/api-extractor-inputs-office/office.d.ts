@@ -1001,6 +1001,20 @@ export declare namespace Office {
          * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
          */
         ui: UI;
+        /**
+         * Gets the object to retrieve the runtime URLs of an add-in.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * @beta
+         */
+        urls: Urls;
     }
     /**
      * Provides specific information about an error that occurred during an asynchronous data operation.
@@ -1437,6 +1451,51 @@ export declare namespace Office {
          * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
          */
         openBrowserWindow(url: string): void;
+    }
+    /**
+     * Provides the URLs of the runtime environments used by an add-in.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * @beta
+     */
+    export interface Urls {
+        /**
+         * Gets the URL of the JavaScript runtime of an add-in.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - This property is currently in preview in Outlook on Windows. To test it in your add-in, you must install Version 2401 (Build 17228.20000) or later.
+         * Then, join the {@link | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         *
+         * - The URL returned points to the location of the JavaScript file that Outlook on Windows uses to handle event-based activation
+         * and integrated spam reporting. To learn more about these features, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         *
+         * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
+         * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
+         *
+         * - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the value of the `script` property in the
+         * "code" object.
+         *
+         * @beta
+         */
+        javaScriptRuntimeUrl: string;
     }
     /**
      * Provides information about which Requirement Sets are supported in the current environment.

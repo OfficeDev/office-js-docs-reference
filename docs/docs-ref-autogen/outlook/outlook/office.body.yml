@@ -1283,7 +1283,9 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
     package: outlook!
     fullName: 'setSignatureAsync(data, options, callback)'
-    summary: Adds or replaces the signature of the item body.
+    summary: >-
+      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
+      body, replaces that signature.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1413,7 +1415,9 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
     package: outlook!
     fullName: 'setSignatureAsync(data, callback)'
-    summary: Adds or replaces the signature of the item body.
+    summary: >-
+      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
+      body, replaces that signature.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

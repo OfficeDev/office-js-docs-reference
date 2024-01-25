@@ -6698,6 +6698,7 @@ Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
 Office.Context,"touchEnabled",Property,Good,false
 Office.Context,"ui",Property,Fine,false
+Office.Context,"urls",Property,Good,false
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
 Office.ContextInformation,"platform",Property,Fine,true
@@ -7571,6 +7572,8 @@ Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
 Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
 Office.UI,"openBrowserWindow(url)",Method,Poor,false
+Office.Urls,N/A,Class,Good,false
+Office.Urls,"javaScriptRuntimeUrl",Property,Good,false
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
 Office.ValueFormat,"Unformatted",EnumField,Poor,false
@@ -10519,6 +10522,8 @@ Word.CheckboxContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CheckboxContentControl,"set(properties, options)",Method,Poor,false
 Word.CheckboxContentControl,"set(properties)",Method,Poor,false
 Word.CheckboxContentControl,"toJSON()",Method,Poor,false
+Word.CheckboxContentControl,"track()",Method,Poor,false
+Word.CheckboxContentControl,"untrack()",Method,Poor,false
 Word.CloseBehavior,N/A,Enum,Good,false
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Fine,false
@@ -11659,6 +11664,7 @@ Word.Range,"getReviewedText(changeTrackingVersion)",Method,Poor,true
 Word.Range,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
 Word.Range,"getTrackedChanges()",Method,Poor,false
+Word.Range,"highlight()",Method,Poor,false
 Word.Range,"insertBookmark(name)",Method,Poor,false
 Word.Range,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Range,"insertComment(commentText)",Method,Fine,true
@@ -11679,6 +11685,7 @@ Word.Range,"intersectWithOrNullObject(range)",Method,Poor,false
 Word.Range,"load(options)",Method,Poor,false
 Word.Range,"load(propertyNames)",Method,Poor,false
 Word.Range,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.Range,"removeHighlight()",Method,Poor,false
 Word.Range,"search(searchText, searchOptions)",Method,Poor,false
 Word.Range,"select(selectionMode)",Method,Poor,true
 Word.Range,"select(selectionModeString)",Method,Poor,false

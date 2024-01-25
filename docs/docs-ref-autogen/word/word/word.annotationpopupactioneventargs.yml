@@ -3,7 +3,7 @@ name: Word.AnnotationPopupActionEventArgs
 uid: 'word!Word.AnnotationPopupActionEventArgs:interface'
 package: word!
 fullName: Word.AnnotationPopupActionEventArgs
-summary: Holds action information that is passed back on annotation pop-up action event.
+summary: Represents action information that's passed back on annotation pop-up action event.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.AnnotationPopupActionEventArgs#action:member'
     package: word!
     fullName: action
-    summary: Specifies the chosen action in the pop-up.
+    summary: Specifies the chosen action in the pop-up menu.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

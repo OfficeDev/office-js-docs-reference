@@ -968,6 +968,21 @@ methods:
       return:
         type: '<xref uid="word!Word.TrackedChangeCollection:class" />'
         description: ''
+  - name: highlight()
+    uid: 'word!Word.Range#highlight:member(1)'
+    package: word!
+    fullName: highlight()
+    summary: >-
+      Highlights the range temporarily without changing document content. To highlight the text permanently, set the
+      range's Font.HighlightColor.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'highlight(): void;'
+      return:
+        type: void
+        description: ''
   - name: insertBookmark(name)
     uid: 'word!Word.Range#insertBookmark:member(1)'
     package: word!
@@ -1762,6 +1777,19 @@ methods:
                     }
       return:
         type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: removeHighlight()
+    uid: 'word!Word.Range#removeHighlight:member(1)'
+    package: word!
+    fullName: removeHighlight()
+    summary: Removes the highlight added by the Highlight function if any.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeHighlight(): void;'
+      return:
+        type: void
         description: ''
   - name: 'search(searchText, searchOptions)'
     uid: 'word!Word.Range#search:member(1)'
