@@ -817,6 +817,19 @@ Office.Bindings#releaseByIdAsync:member(2):
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
+Office.CoercionType:enum:
+  - |-
+    // This function displays the currently selected text in the console.
+    // It uses the Common (Office 2013) APIs.
+    function run() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(asyncResult.error.message);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+        });
+    }
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
