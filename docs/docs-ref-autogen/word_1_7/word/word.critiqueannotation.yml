@@ -1,0 +1,199 @@
+### YamlMime:TSType
+name: Word.CritiqueAnnotation
+uid: 'word!Word.CritiqueAnnotation:class'
+package: word!
+fullName: Word.CritiqueAnnotation
+summary: Represents an annotation wrapper around critique displayed in the document.
+remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.CritiqueAnnotation#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: critique
+    uid: 'word!Word.CritiqueAnnotation#critique:member'
+    package: word!
+    fullName: critique
+    summary: Gets the critique that was passed when the annotation was inserted.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly critique: Word.Critique;'
+      return:
+        type: '<xref uid="word!Word.Critique:interface" />'
+  - name: range
+    uid: 'word!Word.CritiqueAnnotation#range:member'
+    package: word!
+    fullName: range
+    summary: Gets the range of text that is annotated.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+methods:
+  - name: accept()
+    uid: 'word!Word.CritiqueAnnotation#accept:member(1)'
+    package: word!
+    fullName: accept()
+    summary: Accepts the critique. This will change the annotation state to `accepted`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accept(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.CritiqueAnnotation#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.CritiqueAnnotationLoadOptions): Word.CritiqueAnnotation;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.CritiqueAnnotation:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.CritiqueAnnotation#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.CritiqueAnnotation;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.CritiqueAnnotation:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.CritiqueAnnotation#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.CritiqueAnnotation;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.CritiqueAnnotation:class" />'
+        description: ''
+  - name: reject()
+    uid: 'word!Word.CritiqueAnnotation#reject:member(1)'
+    package: word!
+    fullName: reject()
+    summary: Rejects the critique. This will change the annotation state to `rejected`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reject(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.CritiqueAnnotation#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.CritiqueAnnotation object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.CritiqueAnnotationData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CritiqueAnnotationData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CritiqueAnnotationData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.CritiqueAnnotation#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.CritiqueAnnotation;'
+      return:
+        type: '<xref uid="word!Word.CritiqueAnnotation:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.CritiqueAnnotation#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.CritiqueAnnotation;'
+      return:
+        type: '<xref uid="word!Word.CritiqueAnnotation:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.AnnotationPopupActionEventArgs#critiqueSuggestion:member'
     package: word!
     fullName: critiqueSuggestion
-    summary: Specifies the suggestion accepted (only populated when accepting a critique suggestion).
+    summary: Specifies the accepted suggestion (only populated when accepting a critique suggestion).
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
