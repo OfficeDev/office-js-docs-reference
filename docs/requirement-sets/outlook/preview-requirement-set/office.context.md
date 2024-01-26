@@ -1,7 +1,7 @@
 ---
 title: Office.context - preview requirement set
 description: Office.Context object members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 01/11/2024
+ms.date: 01/26/2024
 ms.localizationpriority: medium
 ---
 
@@ -388,7 +388,7 @@ Provides objects and methods that you can use to create and manipulate UI compon
 
 #### urls: [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true)
 
-Gets the object to retrieve the runtime URL of an add-in.
+Gets the object to retrieve the runtime URLs of an add-in.
 
 ##### Type
 
