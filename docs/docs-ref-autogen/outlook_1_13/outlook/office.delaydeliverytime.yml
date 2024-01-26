@@ -138,6 +138,14 @@ methods:
       -->**: Compose
 
 
+      **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay
+      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. However,
+      because of this, the message doesn't appear in the **Outbox** folder, so you won't be able to edit the message
+      or cancel its delivery after selecting **Send**. You'll only be able to review the mesasge from the **Sent
+      Items** folder once the message is sent. To learn more, see [Manage the delivery date and time of a
+      message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
+
+
       **Errors**:
 
 
@@ -183,6 +191,14 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay
+      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. However,
+      because of this, the message doesn't appear in the **Outbox** folder, so you won't be able to edit the message
+      or cancel its delivery after selecting **Send**. You'll only be able to review the mesasge from the **Sent
+      Items** folder once the message is sent. To learn more, see [Manage the delivery date and time of a
+      message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
 
 
       **Errors**:

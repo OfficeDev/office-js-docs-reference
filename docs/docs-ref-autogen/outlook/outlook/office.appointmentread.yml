@@ -1045,6 +1045,10 @@ properties:
       -->**: Appointment Attendee
 
 
+      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      Normal and Private sensitivity levels.
+
+
       #### Examples
 
 
@@ -2094,8 +2098,32 @@ methods:
       -->**: Appointment Attendee
 
 
-      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
@@ -2186,8 +2214,32 @@ methods:
       -->**: Appointment Attendee
 
 
-      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
@@ -2257,9 +2309,30 @@ methods:
       **Important**:
 
 
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
+      by the [unified manifest for Microsoft 365
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
@@ -2421,9 +2494,30 @@ methods:
       **Important**:
 
 
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
+      by the [unified manifest for Microsoft 365
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
@@ -2533,9 +2627,30 @@ methods:
       **Important**:
 
 
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
+      by the [unified manifest for Microsoft 365
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
@@ -2622,15 +2737,6 @@ methods:
     summary: >-
       Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
       add-ins.
-
-
-      **Note**: This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2643,6 +2749,39 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+
+
+      - This method isn't supported in Outlook on iOS or Android.
 
 
       #### Examples
@@ -2720,27 +2859,6 @@ methods:
     summary: >-
       Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
       Highlighted matches apply to contextual add-ins.
-
-
-      **Note**: This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in each
-      `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an
-      `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified
-      by that rule. The `PropertyName` simple type defines the supported properties.
-
-
-      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
-      should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the `Body.getAsync` method to retrieve the entire body.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2753,6 +2871,45 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
+      longer be able to detect entities in mail items to perform tasks on them.
+
+
+      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+      transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
+      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+      -->.
+
+
+      For more information, see [Retirement of entity-based contextual Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+
+
+      - This method isn't supported in Outlook on iOS or Android.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
+      should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
+      expression such as .* to obtain the entire body of an item doesn't always return the expected results. Instead,
+      use the `Body.getAsync` method to retrieve the entire body.
 
 
       #### Examples
@@ -2830,6 +2987,8 @@ methods:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
           `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
+          For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that
+          is specified by that rule. The `PropertyName` simple type defines the supported properties.
   - name: 'getSharedPropertiesAsync(options, callback)'
     uid: 'outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)'
     package: outlook!

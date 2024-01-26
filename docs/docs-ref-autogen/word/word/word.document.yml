@@ -981,7 +981,7 @@ events:
     uid: 'word!Word.Document#onAnnotationPopupAction:member'
     package: word!
     fullName: onAnnotationPopupAction
-    summary: Occurs when the user performs an action in an annotation pop-up.
+    summary: Occurs when the user performs an action in an annotation pop-up menu.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

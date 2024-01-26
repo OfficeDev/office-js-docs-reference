@@ -44,7 +44,7 @@ export declare namespace Word {
         berry = "Berry",
     }
     /**
-     * Properties defining the behavior of the pop-up for a given critique.
+     * Properties defining the behavior of the pop-up menu for a given critique.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -52,7 +52,7 @@ export declare namespace Word {
      */
     export interface CritiquePopupOptions {
         /**
-         * Gets the manifest resource id of the string to use for branding.
+         * Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -60,7 +60,7 @@ export declare namespace Word {
          */
         brandingTextResourceId: string;
         /**
-         * Gets the manifest resource id of the string to use as subtitle.
+         * Gets the manifest resource ID of the string to use as the subtitle.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -68,7 +68,7 @@ export declare namespace Word {
          */
         subtitleResourceId: string;
         /**
-         * Gets the suggestions to display in the critique pop-up.
+         * Gets the suggestions to display in the critique pop-up menu.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -76,48 +76,7 @@ export declare namespace Word {
          */
         suggestions: string[];
         /**
-         * Gets the manifest resource id of the string to use as title.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        titleResourceId: string;
-    }
-    /**
-     * Properties defining the behavior of the pop-up for a given critique.
-     *
-     * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface CritiquePopupOptions {
-        /**
-         * Gets the manifest resource id of the string to use for branding.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        brandingTextResourceId: string;
-        /**
-         * Gets the manifest resource id of the string to use as subtitle.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        subtitleResourceId: string;
-        /**
-         * Gets the suggestions to display in the critique pop-up.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        suggestions: string[];
-        /**
-         * Gets the manifest resource id of the string to use as title.
+         * Gets the manifest resource ID of the string to use as the title.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -147,7 +106,7 @@ export declare namespace Word {
          */
         length: number;
         /**
-         * Specifies the behavior of the pop-up for the critique.
+         * Specifies the behavior of the pop-up menu for the critique.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -408,7 +367,7 @@ export declare namespace Word {
         id: string;
     }
     /**
-     * Holds action information that is passed back on annotation pop-up action event.
+     * Represents action information that's passed back on annotation pop-up action event.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -416,7 +375,7 @@ export declare namespace Word {
      */
     export interface AnnotationPopupActionEventArgs {
         /**
-         * Specifies the chosen action in the pop-up.
+         * Specifies the chosen action in the pop-up menu.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -424,40 +383,7 @@ export declare namespace Word {
          */
         action: string;
         /**
-         * Specifies the suggestion accepted (only populated when accepting a critique suggestion).
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        critiqueSuggestion: string;
-        /**
-         * Specifies the annotation ID for which the event was fired.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-    }
-    /**
-     * Holds action information that is passed back on annotation pop-up action event.
-     *
-     * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface AnnotationPopupActionEventArgs {
-        /**
-         * Specifies the chosen action in the pop-up.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        action: string;
-        /**
-         * Specifies the suggestion accepted (only populated when accepting a critique suggestion).
+         * Specifies the accepted suggestion (only populated when accepting a critique suggestion).
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -3422,7 +3348,7 @@ export declare namespace Word {
          */
         readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;
         /**
-         * Occurs when the user performs an action in an annotation pop-up.
+         * Occurs when the user performs an action in an annotation pop-up menu.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6664,6 +6590,15 @@ export declare namespace Word {
          */
         getTrackedChanges(): Word.TrackedChangeCollection;
         /**
+         * Highlights the range temporarily without changing document content.
+                    To highlight the text permanently, set the range's Font.HighlightColor.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        highlight(): void;
+        /**
          * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
          *
          * @remarks
@@ -6867,6 +6802,14 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
+        /**
+         * Removes the highlight added by the Highlight function if any.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removeHighlight(): void;
         /**
          * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
          *
