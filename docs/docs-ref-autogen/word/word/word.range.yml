@@ -968,6 +968,21 @@ methods:
       return:
         type: '<xref uid="word!Word.TrackedChangeCollection:class" />'
         description: ''
+  - name: highlight()
+    uid: 'word!Word.Range#highlight:member(1)'
+    package: word!
+    fullName: highlight()
+    summary: >-
+      Highlights the range temporarily without changing document content. To highlight the text permanently, set the
+      range's Font.HighlightColor.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'highlight(): void;'
+      return:
+        type: void
+        description: ''
   - name: insertBookmark(name)
     uid: 'word!Word.Range#insertBookmark:member(1)'
     package: word!
@@ -1097,7 +1112,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support is currently in preview.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -1763,6 +1778,19 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: removeHighlight()
+    uid: 'word!Word.Range#removeHighlight:member(1)'
+    package: word!
+    fullName: removeHighlight()
+    summary: Removes the highlight added by the Highlight function if any.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'removeHighlight(): void;'
+      return:
+        type: void
+        description: ''
   - name: 'search(searchText, searchOptions)'
     uid: 'word!Word.Range#search:member(1)'
     package: word!
@@ -1983,7 +2011,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

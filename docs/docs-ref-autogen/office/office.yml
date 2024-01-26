@@ -64,6 +64,7 @@ interfaces:
   - 'office!Office.TableBinding:interface'
   - 'office!Office.TextBinding:interface'
   - 'office!Office.UI:interface'
+  - 'office!Office.Urls:interface'
   - 'office!Office.VisibilityModeChangedMessage:interface'
   - 'office!OfficeExtension.DebugInfo:interface'
   - 'office!OfficeExtension.EmbeddedOptions:interface'

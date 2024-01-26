@@ -721,6 +721,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "word-js-1.7",
+        "src": "docs-ref-autogen/word_1_7",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-1.7",
+        "src": "docs-ref-autogen/word_1_7",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "word-js-online",
         "src": "docs-ref-autogen/word_online",
         "dest": "api/office-js-docs-reference"
@@ -945,6 +957,10 @@
         "dest": "word-js-1.6",
         "moniker_range": "word-js-1.6"
       },
+      "word-js-1.7": {
+        "dest": "word-js-1.7",
+        "moniker_range": "word-js-1.7"
+      },
       "word-js-online": {
         "dest": "word-js-online",
         "moniker_range": "word-js-online"
@@ -1115,6 +1131,8 @@
         "docs-ref-autogen/word_1_5_hidden_document/word/**": ["word hiddendocument 1.5"],
         "docs-ref-autogen/word_1_6/**": ["word 1.6"],
         "docs-ref-autogen/word_1_6/word/**": ["word 1.6"],
+        "docs-ref-autogen/word_1_7/**": ["word 1.7"],
+        "docs-ref-autogen/word_1_7/word/**": ["word 1.7"],
         "docs-ref-autogen/word_online/**": ["word online"],
         "docs-ref-autogen/word_online/word/**": ["word online"]
       },
@@ -1222,6 +1240,8 @@
         "docs-ref-autogen/word_1_5/word/**": "word",
         "docs-ref-autogen/word_1_6/**": "word",
         "docs-ref-autogen/word_1_6/word/**": "word",
+        "docs-ref-autogen/word_1_7/**": "word",
+        "docs-ref-autogen/word_1_7/word/**": "word",
         "docs-ref-autogen/word_online/**": "word",
         "docs-ref-autogen/word_online/word/**": "word",
         "docs-ref-autogen/word_1_3_hidden_document/**": "word",

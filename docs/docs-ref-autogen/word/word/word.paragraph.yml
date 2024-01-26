@@ -832,8 +832,8 @@ methods:
     package: word!
     fullName: getAnnotations()
     summary: Gets annotations set on this Paragraph object.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getAnnotations(): Word.AnnotationCollection;'
@@ -1160,8 +1160,8 @@ methods:
       Returns the text of the paragraph. This excludes equations, graphics (e.g., images, videos, drawings), and special
       characters that mark various content (e.g., for content controls, fields, comments, footnotes, endnotes). By
       default, hidden text and text marked as deleted are excluded.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -1223,8 +1223,8 @@ methods:
     package: word!
     fullName: insertAnnotations(annotations)
     summary: Inserts annotations on this Paragraph object.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'insertAnnotations(annotations: Word.AnnotationSet): OfficeExtension.ClientResult<string[]>;'
@@ -1322,7 +1322,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support is currently in preview.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -2045,7 +2045,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

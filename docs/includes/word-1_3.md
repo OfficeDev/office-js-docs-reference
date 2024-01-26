@@ -138,7 +138,7 @@
 ||[isEmpty](/javascript/api/word/word.range#word-word-range-isempty-member)|Checks whether the range length is zero.|
 ||[lists](/javascript/api/word/word.range#word-word-range-lists-member)|Gets the collection of list objects in the range.|
 ||[parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)|Gets the parent body of the range.|
-||[parentContentControlOrNullObject](/javascript/api/word/word.range#word-word-range-parentcontentcontrolornullobject-member)|Gets the content control that contains the range.|
+||[parentContentControlOrNullObject](/javascript/api/word/word.range#word-word-range-parentcontentcontrolornullobject-member)|Gets the currently supported content control that contains the range.|
 ||[parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member)|Gets the table that contains the range.|
 ||[parentTableCell](/javascript/api/word/word.range#word-word-range-parenttablecell-member)|Gets the table cell that contains the range.|
 ||[parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)|Gets the table cell that contains the range.|

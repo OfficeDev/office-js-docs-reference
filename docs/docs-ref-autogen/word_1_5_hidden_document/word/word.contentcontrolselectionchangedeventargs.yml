@@ -40,12 +40,14 @@ properties:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
+        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+        "AnnotationInserted" | "AnnotationRemoved";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved"
   - name: ids
     uid: 'word!Word.ContentControlSelectionChangedEventArgs#ids:member'
     package: word!

@@ -4,8 +4,8 @@ uid: 'word!Word.Critique:interface'
 package: word!
 fullName: Word.Critique
 summary: Critique that will be rendered as underline for the specified part of paragraph in the document.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: colorScheme
     summary: Gets the color scheme of the critique.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";'
@@ -26,8 +26,8 @@ properties:
     package: word!
     fullName: length
     summary: Gets the length of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number;'
@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Critique#popupOptions:member'
     package: word!
     fullName: popupOptions
-    summary: Specifies the behavior of the pop-up for the critique.
+    summary: Specifies the behavior of the pop-up menu for the critique.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -50,8 +50,8 @@ properties:
     package: word!
     fullName: start
     summary: Gets the start index of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'start: number;'

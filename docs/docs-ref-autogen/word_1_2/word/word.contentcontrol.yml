@@ -6,7 +6,7 @@ fullName: Word.ContentControl
 summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
-  paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+  paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
 remarks: |-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -336,7 +336,7 @@ properties:
     uid: 'word!Word.ContentControl#type:member'
     package: word!
     fullName: type
-    summary: Gets the content control type. Only rich text and plain text content controls are supported currently.
+    summary: 'Gets the content control type. Only rich text, plain text, and checkbox content controls are supported currently.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -1287,7 +1287,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

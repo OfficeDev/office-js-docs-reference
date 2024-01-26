@@ -3,7 +3,7 @@ name: Word.CritiquePopupOptions
 uid: 'word!Word.CritiquePopupOptions:interface'
 package: word!
 fullName: Word.CritiquePopupOptions
-summary: Properties defining the behavior of the pop-up for a given critique.
+summary: Properties defining the behavior of the pop-up menu for a given critique.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -13,7 +13,9 @@ properties:
     uid: 'word!Word.CritiquePopupOptions#brandingTextResourceId:member'
     package: word!
     fullName: brandingTextResourceId
-    summary: Gets the manifest resource id of the string to use for branding.
+    summary: >-
+      Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in
+      icon in the pop-up menu.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -25,7 +27,7 @@ properties:
     uid: 'word!Word.CritiquePopupOptions#subtitleResourceId:member'
     package: word!
     fullName: subtitleResourceId
-    summary: Gets the manifest resource id of the string to use as subtitle.
+    summary: Gets the manifest resource ID of the string to use as the subtitle.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -37,7 +39,7 @@ properties:
     uid: 'word!Word.CritiquePopupOptions#suggestions:member'
     package: word!
     fullName: suggestions
-    summary: Gets the suggestions to display in the critique pop-up.
+    summary: Gets the suggestions to display in the critique pop-up menu.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -49,7 +51,7 @@ properties:
     uid: 'word!Word.CritiquePopupOptions#titleResourceId:member'
     package: word!
     fullName: titleResourceId
-    summary: Gets the manifest resource id of the string to use as title.
+    summary: Gets the manifest resource ID of the string to use as the title.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

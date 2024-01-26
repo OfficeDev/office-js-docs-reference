@@ -4501,7 +4501,7 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds or replaces the signature of the item body.
+         * Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the body, replaces that signature.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -4541,7 +4541,7 @@ export declare namespace Office {
          */
         setSignatureAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds or replaces the signature of the item body.
+         * Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the body, replaces that signature.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -5167,7 +5167,7 @@ export declare namespace Office {
      */
     export interface DisplayedBody {
         /**
-         * Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * Temporarily sets the content displayed in the body of a message in read mode. The set content remains visible until the user switches to a different messsage or
          * closes the window of the current message.
          *
          * @remarks
@@ -5180,6 +5180,17 @@ export declare namespace Office {
          * **Recommended**: Call
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1) | Office.context.mailbox.item.body.getTypeAsync},
          * then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important**:
+         *
+         * - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the body.
+         *
+         * - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached in Outlook and doesn't sync with other
+         * Outlook clients.
+         *
+         * - If you save a message after calling `setAsync`, the original contents of the message body appear in the saved item.
+         *
+         * - The `setAsync` method isn't supported on multiple selected messages.
          *
          * @param data - The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000 characters.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5201,6 +5212,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the body.
+         *
+         * - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached in Outlook and doesn't sync with other
+         * Outlook clients.
+         *
+         * - If you save a message after calling `setAsync`, the original contents of the message body appear in the saved item.
+         *
+         * - The `setAsync` method isn't supported on multiple selected messages.
          *
          * @param data - The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -5234,11 +5256,25 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
+         * **Important**:
+         *
+         * - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the
+         * subject field.
+         *
+         * - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached in Outlook and doesn't sync with other
+         * Outlook clients.
+         *
+         * - If you save a message after calling `setAsync`, the original subject appears in the saved item.
+         *
+         * - The `setAsync` method isn't supported on multiple selected messages.
+         *
          * @param data - The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
          */
         setAsync(data: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -5252,9 +5288,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
+         * **Important**:
+         *
+         * - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the
+         * subject field.
+         *
+         * - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached in Outlook and doesn't sync with other
+         * Outlook clients.
+         *
+         * - If you save a message after calling `setAsync`, the original subject appears in the saved item.
+         *
+         * - The `setAsync` method isn't supported on multiple selected messages.
+         *
          * @param data - The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
          */
         setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
