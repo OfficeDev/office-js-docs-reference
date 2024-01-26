@@ -6672,7 +6672,7 @@ Office.BindingType,N/A,Enum,Fine,false
 Office.BindingType,"Matrix",EnumField,Good,false
 Office.BindingType,"Table",EnumField,Good,false
 Office.BindingType,"Text",EnumField,Good,false
-Office.CoercionType,N/A,Enum,Good,false
+Office.CoercionType,N/A,Enum,Good,true
 Office.CoercionType,"Html",EnumField,Fine,false
 Office.CoercionType,"Image",EnumField,Good,false
 Office.CoercionType,"Matrix",EnumField,Good,false
