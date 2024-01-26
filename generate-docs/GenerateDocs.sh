@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -e "build-log.txt" ]; then
     rm build-log.txt
 fi
@@ -5,6 +7,8 @@ fi
 if [ -e "build-errors.txt" ]; then
     rm build-errors.txt
 fi
+
+exec > >(tee -a build-log.txt) 2> >(tee -a build-errors.txt >&2)
 
 if [ -d "node_modules" ]; then
     rm -rf "node_modules"
