@@ -5167,7 +5167,7 @@ export declare namespace Office {
      */
     export interface DisplayedBody {
         /**
-         * Temporarily sets the content displayed in the body of a message in read mode. The set content remains visible until the user switches to a different messsage or
+         * Temporarily sets the content displayed in the body of a message in read mode. The set content remains visible until the user switches to a different message or
          * closes the window of the current message.
          *
          * @remarks
@@ -5203,7 +5203,7 @@ export declare namespace Office {
          */
         setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible until the user switches to a different message or
          * closes the window of the current message.
          *
          * @remarks
@@ -5246,7 +5246,7 @@ export declare namespace Office {
      */
     export interface DisplayedSubject {
         /**
-         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different message or
          * closes the window of the current message.
          *
          * @remarks
@@ -5278,7 +5278,7 @@ export declare namespace Office {
          */
         setAsync(data: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different message or
          * closes the window of the current message.
          *
          * @remarks
@@ -7616,7 +7616,7 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
+         * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
@@ -7662,7 +7662,7 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
+         * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
