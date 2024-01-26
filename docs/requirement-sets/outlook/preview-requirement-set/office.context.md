@@ -1,7 +1,7 @@
 ---
 title: Office.context - preview requirement set
 description: Office.Context object members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 05/19/2023
+ms.date: 01/26/2024
 ms.localizationpriority: medium
 ---
 
@@ -34,6 +34,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 | [roamingSettings](#roamingsettings-roamingsettings) | Compose<br>Read | [RoamingSettings](/javascript/api/outlook/office.roamingsettings?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [sensitivityLabelsCatalog](#sensitivitylabelscatalog-sensitivitylabelscatalog) | Compose | [SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true) | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 | [ui](#ui-ui) | Compose<br>Read | [UI](/javascript/api/office/office.ui?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| [urls](#urls-urls) | Compose<br>Read | [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true) | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
 
 ## Property details
 
@@ -378,4 +379,24 @@ Provides objects and methods that you can use to create and manipulate UI compon
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
+
+<br>
+
+---
+---
+
+#### urls: [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true)
+
+Gets the object to retrieve the runtime URLs of an add-in.
+
+##### Type
+
+*   [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true)
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| Preview|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
