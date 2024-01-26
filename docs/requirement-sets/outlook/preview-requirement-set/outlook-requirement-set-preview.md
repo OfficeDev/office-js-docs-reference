@@ -107,6 +107,20 @@ Added an XML element to specify the file extension of the attachment included in
 
 ---
 
+### Get the URL of the JavaScript runtime of an add-in
+
+#### [Office.context.urls.javaScriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
+
+Added property to get the URL of the JavaScript runtime of an add-in.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Integrated spam reporting
 
 #### [ReportPhishingCommandSurface extension point](../../../manifest/extensionpoint.md#reportphishingcommandsurface-preview)
