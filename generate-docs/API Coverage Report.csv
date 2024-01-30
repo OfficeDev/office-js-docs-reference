@@ -6692,6 +6692,7 @@ Office.Context,"host",Property,Good,false
 Office.Context,"license",Property,Fine,false
 Office.Context,"mailbox",Property,Good,true
 Office.Context,"officeTheme",Property,Fine,true
+Office.Context,"partitionKey",Property,Good,false
 Office.Context,"platform",Property,Good,false
 Office.Context,"requirements",Property,Fine,false
 Office.Context,"roamingSettings",Property,Good,true
@@ -10891,7 +10892,7 @@ Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,true
 Word.Document,"getSelection()",Method,Poor,true
 Word.Document,"getStyles()",Method,Poor,true
 Word.Document,"importStylesFromJson(stylesJson)",Method,Poor,false
-Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Fine,false
+Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Fine,true
 Word.Document,"load(options)",Method,Fine,true
 Word.Document,"load(propertyNames)",Method,Poor,false
 Word.Document,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -11236,7 +11237,7 @@ Word.InlinePictureCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.InlinePictureCollection,"toJSON()",Method,Poor,false
 Word.InlinePictureCollection,"track()",Method,Poor,false
 Word.InlinePictureCollection,"untrack()",Method,Poor,false
-Word.InsertFileOptions,N/A,Class,Good,false
+Word.InsertFileOptions,N/A,Class,Good,true
 Word.InsertFileOptions,"importChangeTrackingMode",Property,Good,false
 Word.InsertFileOptions,"importCustomProperties",Property,Good,false
 Word.InsertFileOptions,"importCustomXmlParts",Property,Good,false
