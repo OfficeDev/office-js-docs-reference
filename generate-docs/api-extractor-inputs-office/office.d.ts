@@ -943,6 +943,14 @@ export declare namespace Office {
          */
         officeTheme: OfficeTheme;
         /**
+         * Gets a partition key for local storage. Add-ins should use this key as the location to securely store data.
+         *
+         * @remarks
+         *
+         * The hashed value of the UserPrincipalName (UPN) for the add-in's current partition.
+         */
+        partitionKey: string;
+        /**
          * Provides the platform on which the add-in is running.
          *
          * @remarks

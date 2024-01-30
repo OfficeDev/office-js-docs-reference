@@ -511,6 +511,33 @@ methods:
 
       Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
       field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+      // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
+
+      await Word.run(async (context) => {
+        // Use the Base64-encoded string representation of the selected .docx file.
+        context.document.insertFileFromBase64(externalDocument, "Replace", {
+          importTheme: true,
+          importStyles: true,
+          importParagraphSpacing: true,
+          importPageColor: true,
+          importChangeTrackingMode: true,
+          importCustomProperties: true,
+          importCustomXmlParts: true
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
