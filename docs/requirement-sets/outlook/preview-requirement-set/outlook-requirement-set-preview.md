@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 01/26/2024
+ms.date: 01/31/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -109,7 +109,7 @@ Added method to close a current message being composed with the option to discar
 
 ### Get the URL of the JavaScript runtime of an add-in
 
-#### [Office.context.urls.javaScriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
+#### [Office.context.urls.javascriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
 
 Added property to get the URL of the JavaScript runtime of an add-in.
 

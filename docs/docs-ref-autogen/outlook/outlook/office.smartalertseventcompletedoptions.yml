@@ -182,12 +182,18 @@ properties:
       **Important**:
 
 
+      - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier
+      versions of Outlook on Windows, only the `string` type is supported.
+
+
       - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to
       the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
 
 
       - To retrieve the value of the `contextData` property, you must call
-      `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane.
+      `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If
+      you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
+      string using `JSON.parse()` once you retrieve it.
     isPreview: true
     isDeprecated: false
     syntax:
