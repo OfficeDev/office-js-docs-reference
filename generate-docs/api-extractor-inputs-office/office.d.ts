@@ -1488,7 +1488,8 @@ export declare namespace Office {
          * **Important**:
          *
          * - This property is currently in preview in Outlook on Windows. To test it in your add-in, you must install Version 2401 (Build 17228.20000) or later.
-         * Then, join the {@link | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
+         * Then, join the {@link https://insider.microsoft365.com/join/windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access
+         * Office beta builds.
          *
          * - The URL returned points to the location of the JavaScript file that Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
@@ -1503,7 +1504,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        javaScriptRuntimeUrl: string;
+        javascriptRuntimeUrl: string;
     }
     /**
      * Provides information about which Requirement Sets are supported in the current environment.
