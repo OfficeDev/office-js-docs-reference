@@ -9013,14 +9013,14 @@ export declare namespace Office {
     /**
      * The definition of the action for a notification message.
      *
-     * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
-     *
      * @remarks
      * [Api set: Mailbox 1.10]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
      */
     export interface NotificationMessageAction {
         /**
@@ -9037,8 +9037,17 @@ export declare namespace Office {
          */
         commandId: string;
         /**
-         * Any JSON data the action button needs to pass on.
-         * This data can be retrieved by calling `item.getInitializationContextAsync`.
+         * Any JSON data the action button needs to pass on to the add-in.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only the `string`
+         * type is supported.
+         *
+         * - To retrieve the JSON data, call `Office.context.mailboxitem.getInitializationContextAsync`. If you create a JSON string using
+         * `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
          */
         contextData: any;
     }

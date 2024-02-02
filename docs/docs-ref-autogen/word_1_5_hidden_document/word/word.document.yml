@@ -532,7 +532,8 @@ methods:
           importPageColor: true,
           importChangeTrackingMode: true,
           importCustomProperties: true,
-          importCustomXmlParts: true
+          importCustomXmlParts: true,
+          importDifferentOddEvenPages: true
         });
         await context.sync();
       });
