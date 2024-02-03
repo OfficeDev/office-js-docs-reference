@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.6
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.6.
-ms.date: 05/17/2021
+ms.date: 02/02/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -18,6 +18,9 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 Requirement set 1.6 includes all of the features of [requirement set 1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md). It added the following features.
 
 - Added new APIs for contextual add-ins to get the entity or RegEx match that the user selected to activate the add-in.
+
+    [!INCLUDE [outlook-contextual-add-ins-retirement](../../../includes/outlook-contextual-add-ins-retirement.md)]
+
 - Added a new API to open a new message form.
 - Added the ability for the add-in to determine the account type of the user's mailbox.
 
