@@ -4,7 +4,46 @@ uid: 'word!Word.BorderCollection:class'
 package: word!
 fullName: Word.BorderCollection
 summary: Represents the collection of border styles.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+  // Updates border properties (e.g., type, width, color) of the specified style.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to update border properties.");
+      return;
+    }
+
+    const style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      const borders = style.borders;
+      borders.load("items");
+      await context.sync();
+
+      borders.outsideBorderType = Word.BorderType.dashed;
+      borders.outsideBorderWidth = Word.BorderWidth.pt025;
+      borders.outsideBorderColor = "green";
+      console.log("Updated outside borders");
+    }
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 type: class
@@ -93,7 +132,46 @@ properties:
     summary: >-
       Specifies the 24-bit color of the outside borders. Color is specified in ‘\#RRGGBB’ format or by using the color
       name.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+      // Updates border properties (e.g., type, width, color) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders");
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -105,7 +183,46 @@ properties:
     package: word!
     fullName: outsideBorderType
     summary: Specifies the border type of the outside borders.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+      // Updates border properties (e.g., type, width, color) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders");
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -126,7 +243,46 @@ properties:
     package: word!
     fullName: outsideBorderWidth
     summary: Specifies the width of the outside borders.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+      // Updates border properties (e.g., type, width, color) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders");
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
