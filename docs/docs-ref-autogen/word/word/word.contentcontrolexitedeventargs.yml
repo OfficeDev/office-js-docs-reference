@@ -4,7 +4,25 @@ uid: 'word!Word.ContentControlExitedEventArgs:interface'
 package: word!
 fullName: Word.ContentControlExitedEventArgs
 summary: Provides information about the content control that raised contentControlExited event.
-remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+  async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
+    await Word.run(async (context) => {
+      console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
+    });
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,25 +32,7 @@ properties:
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
-
-      async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,25 +54,7 @@ properties:
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
-
-      async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

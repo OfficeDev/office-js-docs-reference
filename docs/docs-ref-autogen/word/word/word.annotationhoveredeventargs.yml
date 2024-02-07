@@ -4,7 +4,49 @@ uid: 'word!Word.AnnotationHoveredEventArgs:interface'
 package: word!
 fullName: Word.AnnotationHoveredEventArgs
 summary: Holds annotation information that is passed back on annotation hovered event.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+  // Registers event handlers.
+
+  await Word.run(async (context) => {
+    eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+    eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+    eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+    eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+    eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+    eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+
+    await context.sync();
+
+    console.log("Event handlers registered.");
+  });
+
+
+  ...
+
+  async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
+    await Word.run(async (context) => {
+      const annotation = context.document.getAnnotationById(args.id);
+      annotation.load("critiqueAnnotation");
+
+      await context.sync();
+
+      console.log(`AnnotationHovered: ${args.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+    });
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
