@@ -2429,6 +2429,12 @@ Office.Context#roamingSettings:member:
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
+Office.Context#urls:member:
+  - |-
+    // Get the value of the first parameter of the JavaScript runtime URL.
+    const url = Office.context.urls.javascriptRuntimeUrl;
+    const regex = /=([^&]+)/;
+    console.log(`First parameter value: ${url.match(regex)[1]}`);
 Office.ContextInformation#host:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -5252,6 +5258,12 @@ Office.UI#messageParent:member(1):
         };
         Office.context.ui.messageParent(JSON.stringify(profileMessage));
     }
+Office.Urls#javascriptRuntimeUrl:member:
+  - |-
+    // Get the value of the first parameter of the JavaScript runtime URL.
+    const url = Office.context.urls.javascriptRuntimeUrl;
+    const regex = /=([^&]+)/;
+    console.log(`First parameter value: ${url.match(regex)[1]}`);
 Office.useShortNamespace:function(1):
   - |-
     function startUsingShortNamespace() {
