@@ -28,7 +28,37 @@ properties:
     package: word!
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+      // Gets annotations found in the selected paragraph.
+
+      await Word.run(async (context) => {
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations = paragraph.getAnnotations();
+        annotations.load("id,state,critiqueAnnotation");
+
+        await context.sync();
+
+        console.log("Annotations found:");
+
+        for (var i = 0; i < annotations.items.length; i++) {
+          const annotation = annotations.items[i];
+
+          console.log(`${annotation.id} - ${annotation.state} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +83,41 @@ methods:
     package: word!
     fullName: accept()
     summary: Accepts the critique. This will change the annotation state to `accepted`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+      // Accepts the first annotation found in the selected paragraph.
+
+      await Word.run(async (context) => {
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations = paragraph.getAnnotations();
+        annotations.load("id,state,critiqueAnnotation");
+
+        await context.sync();
+
+        for (var i = 0; i < annotations.items.length; i++) {
+          const annotation = annotations.items[i];
+
+          if (annotation.state === Word.AnnotationState.created) {
+            console.log(`Accepting ${annotation.id}`);
+            annotation.critiqueAnnotation.accept();
+
+            await context.sync();
+            break;
+          }
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +197,41 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the critique. This will change the annotation state to `rejected`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+      // Rejects the last annotation found in the selected paragraph.
+
+      await Word.run(async (context) => {
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations = paragraph.getAnnotations();
+        annotations.load("id,state,critiqueAnnotation");
+
+        await context.sync();
+
+        for (var i = annotations.items.length - 1; i >= 0; i--) {
+          const annotation = annotations.items[i];
+
+          if (annotation.state === Word.AnnotationState.created) {
+            console.log(`Rejecting ${annotation.id}`);
+            annotation.critiqueAnnotation.reject();
+
+            await context.sync();
+            break;
+          }
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,37 @@ uid: 'word!Word.AnnotationCollection:class'
 package: word!
 fullName: Word.AnnotationCollection
 summary: 'Contains a collection of [Word.Annotation](xref:word!Word.Annotation:class) objects.'
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+  // Gets annotations found in the selected paragraph.
+
+  await Word.run(async (context) => {
+    const paragraph = context.document.getSelection().paragraphs.getFirst();
+    const annotations = paragraph.getAnnotations();
+    annotations.load("id,state,critiqueAnnotation");
+
+    await context.sync();
+
+    console.log("Annotations found:");
+
+    for (var i = 0; i < annotations.items.length; i++) {
+      const annotation = annotations.items[i];
+
+      console.log(`${annotation.id} - ${annotation.state} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

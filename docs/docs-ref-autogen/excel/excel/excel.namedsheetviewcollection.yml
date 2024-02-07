@@ -62,7 +62,7 @@ methods:
     summary: >-
       Creates and activates a new temporary sheet view. Temporary views are removed when closing the application,
       exiting the temporary view with the exit method, or switching to another sheet view. The temporary sheet view can
-      also be acccessed with the empty string (""), if the temporary view exists.
+      also be accessed with the empty string (""), if the temporary view exists.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

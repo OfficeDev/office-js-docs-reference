@@ -171,7 +171,26 @@ properties:
     package: word!
     fullName: lineUnitAfter
     summary: 'Specifies the amount of spacing, in grid lines, after the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+      await Word.run(async (context) => {
+        // Set the space (in line units) after the first paragraph.
+        context.document.body.paragraphs.getFirst().lineUnitAfter = 1;
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +202,26 @@ properties:
     package: word!
     fullName: lineUnitBefore
     summary: 'Specifies the amount of spacing, in grid lines, before the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+      await Word.run(async (context) => {
+        // Set the space (in line units) before the first paragraph.
+        context.document.body.paragraphs.getFirst().lineUnitBefore = 1;
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +284,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Adjust space between paragraphs.
+        // Set the space (in points) after the first paragraph.
         context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
         await context.sync();

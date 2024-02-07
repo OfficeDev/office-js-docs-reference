@@ -335,7 +335,7 @@ methods:
     syntax:
       content: >-
         copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" |
-        "Link", skipBlanks?: boolean, transpose?: boolean): void;
+        "Link" | "ColumnWidths", skipBlanks?: boolean, transpose?: boolean): void;
       parameters:
         - id: sourceRange
           description: >-
@@ -344,7 +344,7 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
-          type: '"All" | "Formulas" | "Values" | "Formats" | "Link"'
+          type: '"All" | "Formulas" | "Values" | "Formats" | "Link" | "ColumnWidths"'
         - id: skipBlanks
           description: True if to skip blank cells in the source range or `RangeAreas`<!-- -->. Default is false.
           type: boolean
