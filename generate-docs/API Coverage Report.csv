@@ -6701,7 +6701,7 @@ Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
 Office.Context,"touchEnabled",Property,Good,false
 Office.Context,"ui",Property,Fine,false
-Office.Context,"urls",Property,Good,false
+Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
 Office.ContextInformation,"platform",Property,Fine,true
@@ -7576,7 +7576,7 @@ Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
 Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
 Office.UI,"openBrowserWindow(url)",Method,Poor,false
 Office.Urls,N/A,Class,Good,false
-Office.Urls,"javascriptRuntimeUrl",Property,Good,false
+Office.Urls,"javascriptRuntimeUrl",Property,Good,true
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
 Office.ValueFormat,"Unformatted",EnumField,Poor,false

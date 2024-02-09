@@ -1306,15 +1306,15 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
-      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
-      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
-      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
+      sample scenario, see [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using \`LaunchEvent\` in the
+      [event-based activation feature using LaunchEvent in the
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.
@@ -1438,15 +1438,15 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
-      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
-      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
-      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
+      sample scenario, see [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using \`LaunchEvent\` in the
+      [event-based activation feature using LaunchEvent in the
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.

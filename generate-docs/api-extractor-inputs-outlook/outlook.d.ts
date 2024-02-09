@@ -4514,14 +4514,13 @@ export declare namespace Office {
          *
          * - In Outlook on the web, `setSignatureAsync` only works on messages.
          *
-         * - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently being
-         * rolled out. For a sample scenario, see
+         * - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          * To learn more about APIs supported in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -4554,14 +4553,13 @@ export declare namespace Office {
          *
          * - In Outlook on the web, `setSignatureAsync` only works on messages.
          *
-         * - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently being
-         * rolled out. For a sample scenario, see
+         * - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          * To learn more about APIs supported in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using LaunchEvent in the manifest}.
          * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
@@ -7907,8 +7905,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently
-         * being rolled out. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0.
+         * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param options - An object literal that contains one or more of the following properties:-
@@ -7937,8 +7935,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Message Compose in Outlook on Android. Support for this method in Message Compose on Outlook on iOS is currently
-         * being rolled out. For more information on supported APIs in Outlook mobile, see
+         * **Important**: This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0.
+         * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
@@ -8048,7 +8046,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is currently being rolled out.
+         * **Important**: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0.
          * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -8073,7 +8071,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This method is supported in Outlook on Android. Support for this method in Outlook on iOS is currently being rolled out.
+         * **Important**: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0.
          * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *

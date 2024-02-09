@@ -62,6 +62,26 @@ properties:
 
       - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the
       value of the `script` property in the "code" object.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Get the value of the first parameter of the JavaScript runtime URL.
+
+      // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+
+      // the following function logs "First parameter value: value1" to the console.
+
+      const url = Office.context.urls.javascriptRuntimeUrl;
+
+      const regex = /=([^&]+)/;
+
+      console.log(`First parameter value: ${url.match(regex)[1]}`);
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
