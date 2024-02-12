@@ -3522,29 +3522,33 @@ export declare namespace Office {
         size: number;
     }
     /**
-     * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+     * Provides information about an attachment on a mail item that raised the
+     * `Office.EventType.AttachmentsChanged` event.
      *
      * @remarks
      * [Api set: Mailbox 1.8]
      */
     export interface AttachmentsChangedEventArgs {
         /**
-         * Represents the set of attachments that were added or removed.
-         * For each such attachment, gets `id`, `name`, `size`, and `attachmentType` properties.
+         * Gets the object that represents the attachment that was added or removed from
+         * a mail item. The object contains the `id`, `name`, `size`, and `attachmentType` properties
+         * of the attachment.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
          */
-        attachmentDetails: object[];
+        attachmentDetails: object;
         /**
-         * Gets whether the attachments were added or removed. For details, refer to {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus}.
+         * Specifies whether the attachment was added or removed from a mail item. For details, see
+         * {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
          */
         attachmentStatus: MailboxEnums.AttachmentStatus | string;
         /**
-         * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         * Gets the type of event that was raised. For details, see
+         * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]

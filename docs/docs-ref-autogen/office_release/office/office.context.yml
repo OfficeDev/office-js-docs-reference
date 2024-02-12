@@ -323,7 +323,46 @@ properties:
     package: office!
     fullName: partitionKey
     summary: Gets a partition key for local storage. Add-ins should use this key as the location to securely store data.
-    remarks: The hashed value of the UserPrincipalName (UPN) for the add-in's current partition.
+    remarks: |-
+      The hashed value of the UserPrincipalName (UPN) for the add-in's current partition.
+
+      #### Examples
+
+      ```TypeScript
+      // Store the value "Hello" in local storage with the key "myKey1".
+      setInLocalStorage("myKey1", "Hello");
+
+      // ... 
+
+      // Retrieve the value stored in local storage under the key "myKey1".
+      const message = getFromLocalStorage("myKey1");
+      console.log(message);
+
+      // ...
+
+      function setInLocalStorage(key: string, value: string) {
+          const myPartitionKey = Office.context.partitionKey;
+
+          // Check if local storage is partitioned. 
+          // If so, use the partition to ensure the data is only accessible by your add-in.
+          if (myPartitionKey) {
+              localStorage.setItem(myPartitionKey + key, value);
+          } else {
+              localStorage.setItem(key, value);
+          }
+      }
+
+      function getFromLocalStorage(key: string) {
+          const myPartitionKey = Office.context.partitionKey;
+
+          // Check if local storage is partitioned.
+          if (myPartitionKey) {
+              return localStorage.getItem(myPartitionKey + key);
+          } else {
+              return localStorage.getItem(key);
+          }
+      }
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
