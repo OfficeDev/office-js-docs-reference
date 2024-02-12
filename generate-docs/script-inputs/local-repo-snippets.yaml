@@ -2402,6 +2402,41 @@ Office.Context#officeTheme:member:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+Office.Context#partitionKey:member:
+  - |-
+    // Store the value "Hello" in local storage with the key "myKey1".
+    setInLocalStorage("myKey1", "Hello");
+
+    // ... 
+
+    // Retrieve the value stored in local storage under the key "myKey1".
+    const message = getFromLocalStorage("myKey1");
+    console.log(message);
+
+    // ...
+
+    function setInLocalStorage(key: string, value: string) {
+        const myPartitionKey = Office.context.partitionKey;
+
+        // Check if local storage is partitioned. 
+        // If so, use the partition to ensure the data is only accessible by your add-in.
+        if (myPartitionKey) {
+            localStorage.setItem(myPartitionKey + key, value);
+        } else {
+            localStorage.setItem(key, value);
+        }
+    }
+
+    function getFromLocalStorage(key: string) {
+        const myPartitionKey = Office.context.partitionKey;
+
+        // Check if local storage is partitioned.
+        if (myPartitionKey) {
+            return localStorage.getItem(myPartitionKey + key);
+        } else {
+            return localStorage.getItem(key);
+        }
+    }
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -4856,6 +4891,37 @@ Office.Document#setTaskFieldAsync:member(2):
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
+Office.EventType:enum:
+  - |-
+    // This sample shows how to register an event handler in Outlook.
+    Office.onReady(() => {
+        // Registers an event handler to identify when messages are selected.
+        Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, getMessageProperties, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                return;
+            }
+
+            console.log("Event handler added for the SelectedItemsChanged event.");
+        });
+    });
+
+    function getMessageProperties() {
+        // Retrieves the selected messages' properties and logs them to the console.
+        Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                return;
+            }
+
+            asyncResult.value.forEach((message) => {
+                console.log(`Item ID: ${message.itemId}`);
+                console.log(`Subject: ${message.subject}`);
+                console.log(`Item type: ${message.itemType}`);
+                console.log(`Item mode: ${message.itemMode}`);
+            });
+        });
+    }
 Office.File#getSliceAsync:member(1):
   - |-
     // This sample shows how to get all the slices of a file. 

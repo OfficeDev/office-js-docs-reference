@@ -12,7 +12,42 @@ summary: >-
 
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
-remarks: '**`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.'
+remarks: |-
+  **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
+
+  #### Examples
+
+  ```TypeScript
+  // This sample shows how to register an event handler in Outlook.
+  Office.onReady(() => {
+      // Registers an event handler to identify when messages are selected.
+      Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, getMessageProperties, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              return;
+          }
+
+          console.log("Event handler added for the SelectedItemsChanged event.");
+      });
+  });
+
+  function getMessageProperties() {
+      // Retrieves the selected messages' properties and logs them to the console.
+      Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              return;
+          }
+
+          asyncResult.value.forEach((message) => {
+              console.log(`Item ID: ${message.itemId}`);
+              console.log(`Subject: ${message.subject}`);
+              console.log(`Item type: ${message.itemType}`);
+              console.log(`Item mode: ${message.itemMode}`);
+          });
+      });
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:

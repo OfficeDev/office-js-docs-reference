@@ -3,7 +3,7 @@ name: Office.AttachmentsChangedEventArgs
 uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.AttachmentsChangedEventArgs
-summary: Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+summary: Provides information about an attachment on a mail item that raised the `Office.EventType.AttachmentsChanged` event.
 remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -14,21 +14,21 @@ properties:
     package: outlook!
     fullName: attachmentDetails
     summary: >-
-      Represents the set of attachments that were added or removed. For each such attachment, gets `id`<!-- -->,
-      `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties.
+      Gets the object that represents the attachment that was added or removed from a mail item. The object contains the
+      `id`<!-- -->, `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties of the attachment.
     remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'attachmentDetails: object[];'
+      content: 'attachmentDetails: object;'
       return:
-        type: 'object[]'
+        type: object
   - name: attachmentStatus
     uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
     package: outlook!
     fullName: attachmentStatus
     summary: >-
-      Gets whether the attachments were added or removed. For details, refer to
+      Specifies whether the attachment was added or removed from a mail item. For details, see
       [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!-- -->.
     remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
     isPreview: false
@@ -42,7 +42,7 @@ properties:
     package: outlook!
     fullName: type
     summary: >-
-      Gets the type of the event. For details, refer to
+      Gets the type of event that was raised. For details, see
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
     isPreview: false
