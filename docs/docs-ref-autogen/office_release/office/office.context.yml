@@ -322,23 +322,38 @@ properties:
     uid: 'office!Office.Context#partitionKey:member'
     package: office!
     fullName: partitionKey
-    summary: Gets a partition key for local storage. Add-ins should use this key as the location to securely store data.
-    remarks: |-
-      The hashed value of the UserPrincipalName (UPN) for the add-in's current partition.
+    summary: >-
+      Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to
+      securely store data. The partition key is `undefined` in environments without partitioning, such as the browser
+      controls for Windows applications.
+    remarks: >-
+      See the article [Persist add-in state and
+      settings](https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings) for more
+      information.
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Store the value "Hello" in local storage with the key "myKey1".
+
       setInLocalStorage("myKey1", "Hello");
+
 
       // ... 
 
+
       // Retrieve the value stored in local storage under the key "myKey1".
+
       const message = getFromLocalStorage("myKey1");
+
       console.log(message);
 
+
       // ...
+
 
       function setInLocalStorage(key: string, value: string) {
           const myPartitionKey = Office.context.partitionKey;
@@ -352,6 +367,7 @@ properties:
           }
       }
 
+
       function getFromLocalStorage(key: string) {
           const myPartitionKey = Office.context.partitionKey;
 
@@ -362,6 +378,7 @@ properties:
               return localStorage.getItem(key);
           }
       }
+
       ```
     isPreview: false
     isDeprecated: false
