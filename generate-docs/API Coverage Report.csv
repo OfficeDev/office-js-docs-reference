@@ -6694,7 +6694,7 @@ Office.Context,"host",Property,Good,false
 Office.Context,"license",Property,Fine,false
 Office.Context,"mailbox",Property,Good,true
 Office.Context,"officeTheme",Property,Fine,true
-Office.Context,"partitionKey",Property,Good,false
+Office.Context,"partitionKey",Property,Good,true
 Office.Context,"platform",Property,Good,false
 Office.Context,"requirements",Property,Fine,false
 Office.Context,"roamingSettings",Property,Good,true
@@ -6840,7 +6840,7 @@ Office.Error,N/A,Class,Good,false
 Office.Error,"code",Property,Good,true
 Office.Error,"message",Property,Fine,true
 Office.Error,"name",Property,Fine,true
-Office.EventType,N/A,Enum,Good,false
+Office.EventType,N/A,Enum,Good,true
 Office.EventType,"ActiveViewChanged",EnumField,Fine,false
 Office.EventType,"AppointmentTimeChanged",EnumField,Good,false
 Office.EventType,"AttachmentsChanged",EnumField,Good,false
@@ -6862,7 +6862,7 @@ Office.EventType,"RecurrenceChanged",EnumField,Good,false
 Office.EventType,"ResourceSelectionChanged",EnumField,Fine,false
 Office.EventType,"SelectedItemsChanged",EnumField,Good,false
 Office.EventType,"SensitivityLabelChanged",EnumField,Good,false
-Office.EventType,"SettingsChanged",EnumField,Poor,false
+Office.EventType,"SettingsChanged",EnumField,Fine,false
 Office.EventType,"SpamReporting",EnumField,Good,false
 Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
