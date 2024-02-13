@@ -4,7 +4,85 @@ uid: 'office!Office.FileType:enum'
 package: office!
 fullName: Office.FileType
 summary: Specifies the format in which to return the document.
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
+
+  // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office
+  Add-ins.
+
+  function getDocumentAsCompressed() {
+      Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
+          function (result) {
+              if (result.status == "succeeded") {
+                  // If the getFileAsync call succeeded, then
+                  // result.value will return a valid File Object.
+                  const myFile = result.value;
+                  const sliceCount = myFile.sliceCount;
+                  const docDataSlices = [];
+                  let slicesReceived = 0, gotAllSlices = true;
+                  app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+                  // Get the file slices.
+                  getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+              } else {
+                  app.showNotification("Error:", result.error.message);
+              }
+      });
+  }
+
+
+  function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
+      file.getSliceAsync(nextSlice, function (sliceResult) {
+          if (sliceResult.status == "succeeded") {
+              if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
+                  return;
+              }
+
+              // Got one slice, store it in a temporary array.
+              // (Or you can do something else, such as
+              // send it to a third-party server.)
+              docDataSlices[sliceResult.value.index] = sliceResult.value.data;
+              if (++slicesReceived == sliceCount) {
+                // All slices have been received.
+                file.closeAsync();
+                onGotAllSlices(docDataSlices);
+              }
+              else {
+                  getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+              }
+          }
+              else {
+                  gotAllSlices = false;
+                  file.closeAsync();
+                  app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+              }
+      });
+  }
+
+
+  function onGotAllSlices(docDataSlices) {
+      let docData = [];
+      for (let i = 0; i < docDataSlices.length; i++) {
+          docData = docData.concat(docDataSlices[i]);
+      }
+
+      let fileContent = new String();
+      for (let j = 0; j < docData.length; j++) {
+          fileContent += String.fromCharCode(docData[j]);
+      }
+
+      // Now all the file content is stored in 'fileContent' variable,
+      // you can do something with it, such as print, fax...
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

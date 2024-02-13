@@ -11,7 +11,8 @@ remarks: |-
 
   ```TypeScript
   const contextInfo = Office.context.diagnostics;
-  console.log("Office application: " + contextInfo.host);
+  const hostType: Office.HostType = contextInfo.host;
+  console.log("Office application: " + hostType);
   ```
 isPreview: false
 isDeprecated: false

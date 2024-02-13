@@ -938,11 +938,11 @@ export declare namespace Office {
          */
         officeTheme: OfficeTheme;
         /**
-         * Gets a partition key for local storage. Add-ins should use this key as the location to securely store data.
+         * Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to securely store data. The partition key is `undefined` in environments without partitioning, such as the browser controls for Windows applications.
          *
          * @remarks
          *
-         * The hashed value of the UserPrincipalName (UPN) for the add-in's current partition.
+         * See the article {@link https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings | Persist add-in state and settings} for more information.
          */
         partitionKey: string;
         /**
@@ -2303,18 +2303,10 @@ export declare namespace Office {
      *
      * Only task pane add-ins for Outlook support Mailbox API set event types.
      *
-     * @remarks
-     *
-     * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
-     *
      */
     enum EventType {
         /**
-         * A Document.ActiveViewChanged event was raised in PowerPoint.
-         *
-         * @remarks
-         *
-         * **Applications**: PowerPoint
+         * A `Document.ActiveViewChanged` event was raised in PowerPoint.
          */
         ActiveViewChanged,
         /**
@@ -2339,22 +2331,17 @@ export declare namespace Office {
          */
         AttachmentsChanged,
         /**
-         * Occurs when data within the binding is changed.
-         * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object.
+         * Occurs when data within the binding is changed in Excel or Word.
+         * 
+         * To add an event handler for the `BindingDataChanged` event of a binding, use the `addHandlerAsync` method of the Binding object.
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
          */
         BindingDataChanged,
         /**
-         * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use
-         * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Occurs when the selection is changed within the binding in Excel or Word. 
+         * 
+         * To add an event handler for the `BindingSelectionChanged` event of a binding, use
+         * the `addHandlerAsync` method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          */
         BindingSelectionChanged,
         /**
@@ -2370,11 +2357,7 @@ export declare namespace Office {
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Triggers when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -2411,15 +2394,15 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
-         * Triggers when a customXmlPart node is deleted.
+         * Triggers when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a customXmlPart node is inserted.
+         * Triggers when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a customXmlPart node is replaced.
+         * Triggers when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -2469,11 +2452,7 @@ export declare namespace Office {
          */
         SensitivityLabelChanged,
         /**
-         * A Settings.settingsChanged event was raised.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, PowerPoint, Word
+         * A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or Word.
          */
         SettingsChanged,
         /**

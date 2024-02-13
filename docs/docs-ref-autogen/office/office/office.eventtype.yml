@@ -13,7 +13,7 @@ summary: >-
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
 remarks: |-
-  **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
+
 
   #### Examples
 
@@ -54,7 +54,7 @@ fields:
   - name: ActiveViewChanged
     uid: 'office!Office.EventType.ActiveViewChanged:member'
     package: office!
-    summary: A Document.ActiveViewChanged event was raised in PowerPoint.
+    summary: A `Document.ActiveViewChanged` event was raised in PowerPoint.
   - name: AppointmentTimeChanged
     uid: 'office!Office.EventType.AppointmentTimeChanged:member'
     package: office!
@@ -89,16 +89,21 @@ fields:
     uid: 'office!Office.EventType.BindingDataChanged:member'
     package: office!
     summary: >-
-      Occurs when data within the binding is changed. To add an event handler for the BindingDataChanged event of a
-      binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument of type
+      Occurs when data within the binding is changed in Excel or Word.
+
+
+      To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the
+      Binding object. The event handler receives an argument of type
       [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)<!-- -->.
   - name: BindingSelectionChanged
     uid: 'office!Office.EventType.BindingSelectionChanged:member'
     package: office!
     summary: >-
-      Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged
-      event of a binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument
-      of type
+      Occurs when the selection is changed within the binding in Excel or Word.
+
+
+      To add an event handler for the `BindingSelectionChanged` event of a binding, use the `addHandlerAsync` method of
+      the `Binding` object. The event handler receives an argument of type
       [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!-- -->.
   - name: DialogEventReceived
     uid: 'office!Office.EventType.DialogEventReceived:member'
@@ -115,7 +120,7 @@ fields:
   - name: DocumentSelectionChanged
     uid: 'office!Office.EventType.DocumentSelectionChanged:member'
     package: office!
-    summary: Triggers when a document-level selection happens.
+    summary: Triggers when a document-level selection happens in Excel or Word.
   - name: EnhancedLocationsChanged
     uid: 'office!Office.EventType.EnhancedLocationsChanged:member'
     package: office!
@@ -165,15 +170,15 @@ fields:
   - name: NodeDeleted
     uid: 'office!Office.EventType.NodeDeleted:member'
     package: office!
-    summary: Triggers when a customXmlPart node is deleted.
+    summary: Triggers when a `customXmlPart` node is deleted.
   - name: NodeInserted
     uid: 'office!Office.EventType.NodeInserted:member'
     package: office!
-    summary: Triggers when a customXmlPart node is inserted.
+    summary: Triggers when a `customXmlPart` node is inserted.
   - name: NodeReplaced
     uid: 'office!Office.EventType.NodeReplaced:member'
     package: office!
-    summary: Triggers when a customXmlPart node is replaced.
+    summary: Triggers when a `customXmlPart` node is replaced.
   - name: OfficeThemeChanged
     uid: 'office!Office.EventType.OfficeThemeChanged:member'
     package: office!
@@ -194,7 +199,7 @@ fields:
     package: office!
     summary: >-
       Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
-      **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+      **Important**: Only available with task pane implementation.
 
 
       To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -208,8 +213,8 @@ fields:
     uid: 'office!Office.EventType.RecurrenceChanged:member'
     package: office!
     summary: >-
-      Occurs when the recurrence pattern of the selected series is changed in Outlook. **Important**: This event can
-      only be handled in a task pane. It isn't supported by function commands.
+      Occurs when the recurrence pattern of the selected series is changed in Outlook. **Important**: Only available
+      with task pane implementation.
 
 
       To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -254,7 +259,7 @@ fields:
   - name: SettingsChanged
     uid: 'office!Office.EventType.SettingsChanged:member'
     package: office!
-    summary: A Settings.settingsChanged event was raised.
+    summary: 'A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or Word.'
   - name: SpamReporting
     uid: 'office!Office.EventType.SpamReporting:member'
     package: office!
