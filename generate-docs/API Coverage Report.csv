@@ -6862,7 +6862,7 @@ Office.EventType,"RecurrenceChanged",EnumField,Good,false
 Office.EventType,"ResourceSelectionChanged",EnumField,Fine,false
 Office.EventType,"SelectedItemsChanged",EnumField,Good,false
 Office.EventType,"SensitivityLabelChanged",EnumField,Good,false
-Office.EventType,"SettingsChanged",EnumField,Poor,false
+Office.EventType,"SettingsChanged",EnumField,Fine,false
 Office.EventType,"SpamReporting",EnumField,Good,false
 Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
