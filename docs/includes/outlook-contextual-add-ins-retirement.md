@@ -1,10 +1,10 @@
 > [!IMPORTANT]
 > Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this feature will start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them. The following APIs will also be retired.
 >
-> - [Office.context.mailbox.item.getEntities()](/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#methods)
-> - [Office.context.mailbox.item.getEntitiesByType(entityType)](/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#methods)
-> - [Office.context.mailbox.item.getFilteredEntitiesByName(name)](/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#methods)
-> - [Office.context.mailbox.item.getSelectedEntities()](/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#methods)
+> - [Office.context.mailbox.item.getEntities()](../requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item.md)
+> - [Office.context.mailbox.item.getEntitiesByType(entityType)](../requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item.md)
+> - [Office.context.mailbox.item.getFilteredEntitiesByName(name)](../requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item.md)
+> - [Office.context.mailbox.item.getSelectedEntities()](../requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item.md)
 >
 > To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins are retired.
 >
