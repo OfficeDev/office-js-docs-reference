@@ -66,6 +66,24 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.onReady(() => {
+          Office.addin.onVisibilityModeChanged((args) => {
+              if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                  // Do something when the task pane is visible.
+              }
+          });
+
+          // Other startup tasks.
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,6 +108,18 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Configure your add-in to load and start running when the document is opened.
+
+      Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

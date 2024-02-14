@@ -11,7 +11,8 @@ remarks: |-
 
   ```TypeScript
   const contextInfo = Office.context.diagnostics;
-  console.log("Platform: " + contextInfo.platform);
+  const platformType: Office.PlatformType = contextInfo.platform;
+  console.log("Platform: " + platformType);
   ```
 isPreview: false
 isDeprecated: false

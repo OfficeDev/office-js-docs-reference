@@ -6578,7 +6578,7 @@ Office.Actions,"associate",Property,Fine,false
 Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,false
 Office.Actions,"getShortcuts()",Method,Good,false
 Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,false
-Office.ActiveView,N/A,Enum,Fine,false
+Office.ActiveView,N/A,Enum,Fine,true
 Office.ActiveView,"Edit",EnumField,Fine,false
 Office.ActiveView,"Read",EnumField,Fine,false
 Office.AddBindingFromNamedItemOptions,N/A,Class,Fine,false
@@ -6597,8 +6597,8 @@ Office.Addin,N/A,Class,Good,false
 Office.Addin,"beforeDocumentCloseNotification",Property,Good,false
 Office.Addin,"getStartupBehavior()",Method,Poor,false
 Office.Addin,"hide()",Method,Fine,false
-Office.Addin,"onVisibilityModeChanged(handler)",Method,Good,false
-Office.Addin,"setStartupBehavior(behavior)",Method,Poor,false
+Office.Addin,"onVisibilityModeChanged(handler)",Method,Good,true
+Office.Addin,"setStartupBehavior(behavior)",Method,Poor,true
 Office.Addin,"showAsTaskpane()",Method,Fine,false
 Office.AddinCommands.Event,N/A,Class,Good,false
 Office.AddinCommands.Event,"source",Property,Good,true
@@ -6830,7 +6830,7 @@ Office.Document,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
 Office.Document,"setSelectedDataAsync(data, callback)",Method,Fine,false
 Office.Document,"setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)",Method,Poor,false
 Office.Document,"setTaskFieldAsync(taskId, fieldId, fieldValue, callback)",Method,Fine,true
-Office.DocumentMode,N/A,Enum,Good,false
+Office.DocumentMode,N/A,Enum,Good,true
 Office.DocumentMode,"ReadOnly",EnumField,Poor,false
 Office.DocumentMode,"ReadWrite",EnumField,Fine,false
 Office.DocumentSelectionChangedEventArgs,N/A,Class,Fine,false
@@ -6873,7 +6873,7 @@ Office.File,"closeAsync(callback)",Method,Poor,false
 Office.File,"getSliceAsync(sliceIndex, callback)",Method,Fine,true
 Office.FileProperties,N/A,Class,Missing,false
 Office.FileProperties,"url",Property,Poor,false
-Office.FileType,N/A,Enum,Fine,false
+Office.FileType,N/A,Enum,Fine,true
 Office.FileType,"Compressed",EnumField,Good,false
 Office.FileType,"Pdf",EnumField,Fine,false
 Office.FileType,"Text",EnumField,Fine,false
@@ -7533,7 +7533,7 @@ Office.Slice,N/A,Class,Good,false
 Office.Slice,"data",Property,Good,false
 Office.Slice,"index",Property,Fine,false
 Office.Slice,"size",Property,Fine,false
-Office.StartupBehavior,N/A,Enum,Fine,false
+Office.StartupBehavior,N/A,Enum,Fine,true
 Office.StartupBehavior,"load",EnumField,Fine,false
 Office.StartupBehavior,"none",EnumField,Fine,false
 Office.Tab,N/A,Class,Good,false
@@ -7580,7 +7580,7 @@ Office.Urls,"javascriptRuntimeUrl",Property,Good,true
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
 Office.ValueFormat,"Unformatted",EnumField,Poor,false
-Office.VisibilityMode,N/A,Enum,Poor,false
+Office.VisibilityMode,N/A,Enum,Poor,true
 Office.VisibilityMode,"hidden",EnumField,Poor,false
 Office.VisibilityMode,"taskpane",EnumField,Poor,false
 Office.VisibilityModeChangedMessage,N/A,Class,Fine,false
