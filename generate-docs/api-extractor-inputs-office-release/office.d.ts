@@ -346,11 +346,11 @@ export declare namespace Office {
      */
     enum VisibilityMode {
         /**
-         * UI is Hidden
+         * UI is hidden.
          */
         hidden = 'Hidden',
         /**
-         * Displayed as taskpane
+         * Displayed as a task pane.
          */
         taskpane = 'Taskpane',
     }

@@ -4,7 +4,15 @@ uid: 'office!Office.StartupBehavior:enum'
 package: office!
 fullName: Office.StartupBehavior
 summary: Provides options to determine the startup behavior of the add-in upon next start-up.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Configure your add-in to load and start running when the document is opened.
+  Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+  ```
 isPreview: false
 isDeprecated: false
 fields:

@@ -39,6 +39,8 @@ items:
                 uid: 'visio!Visio.EventType:enum'
               - name: LayoutVariant
                 uid: 'visio!Visio.LayoutVariant:enum'
+              - name: MessageType
+                uid: 'visio!Visio.MessageType:enum'
               - name: OverlayHorizontalAlignment
                 uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
               - name: OverlayType
@@ -57,8 +59,6 @@ items:
             uid: 'visio!Visio.Comment:class'
           - name: CommentCollection
             uid: 'visio!Visio.CommentCollection:class'
-          - name: ConnectorBinding
-            uid: 'visio!Visio.ConnectorBinding:interface'
           - name: DataRefreshCompleteEventArgs
             uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
           - name: Document
@@ -95,8 +95,6 @@ items:
             uid: 'visio!Visio.SelectionChangedEventArgs:interface'
           - name: Shape
             uid: 'visio!Visio.Shape:class'
-          - name: ShapeBinding
-            uid: 'visio!Visio.ShapeBinding:interface'
           - name: ShapeCollection
             uid: 'visio!Visio.ShapeCollection:class'
           - name: ShapeDataItem

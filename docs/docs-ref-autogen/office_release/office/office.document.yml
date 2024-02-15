@@ -460,7 +460,7 @@ methods:
                   Office.context.document.addHandlerAsync(
                       Office.EventType.ViewSelectionChanged,
                       getActiveView);
-                  $('#get-info').click(getResourceGuid);
+                  $('#get-info').on("click", getResourceGuid);
 
                   // This example calls the handler on page load to get the active view
                   // of the default page.
@@ -694,38 +694,37 @@ methods:
                       // result.value will return a valid File Object.
                       const myFile = result.value;
                       const sliceCount = myFile.sliceCount;
-                      const docdataSlices = [];
+                      const docDataSlices = [];
                       let slicesReceived = 0, gotAllSlices = true;
                       app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                       // Get the file slices.
-                      getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
-                  }
-                  else {
+                      getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                  } else {
                       app.showNotification("Error:", result.error.message);
                   }
           });
       }
 
 
-      function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived) {
+      function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
           file.getSliceAsync(nextSlice, function (sliceResult) {
               if (sliceResult.status == "succeeded") {
-                  if (!gotAllSlices) { // Failed to get all slices, no need to continue.
+                  if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                       return;
                   }
 
                   // Got one slice, store it in a temporary array.
                   // (Or you can do something else, such as
                   // send it to a third-party server.)
-                  docdataSlices[sliceResult.value.index] = sliceResult.value.data;
+                  docDataSlices[sliceResult.value.index] = sliceResult.value.data;
                   if (++slicesReceived == sliceCount) {
                     // All slices have been received.
                     file.closeAsync();
-                    onGotAllSlices(docdataSlices);
+                    onGotAllSlices(docDataSlices);
                   }
                   else {
-                      getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                      getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                   }
               }
                   else {
@@ -737,15 +736,15 @@ methods:
       }
 
 
-      function onGotAllSlices(docdataSlices) {
-          let docdata = [];
-          for (let i = 0; i < docdataSlices.length; i++) {
-              docdata = docdata.concat(docdataSlices[i]);
+      function onGotAllSlices(docDataSlices) {
+          let docData = [];
+          for (let i = 0; i < docDataSlices.length; i++) {
+              docData = docData.concat(docDataSlices[i]);
           }
 
           let fileContent = new String();
-          for (let j = 0; j < docdata.length; j++) {
-              fileContent += String.fromCharCode(docdata[j]);
+          for (let j = 0; j < docData.length; j++) {
+              fileContent += String.fromCharCode(docData[j]);
           }
 
           // Now all the file content is stored in 'fileContent' variable,
@@ -761,18 +760,18 @@ methods:
                   const myFile = result.value;
                   const sliceCount = myFile.sliceCount;
                   app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
                   // Get the file slices.
-                  const docdataSlices = [];
+                  const docDataSlices = [];
                   let slicesReceived = 0, gotAllSlices = true;
-                  getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                  getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                   
                   myFile.closeAsync();
               }
               else {
                   app.showNotification("Error:", result.error.message);
               }
-      }
-
+          }
       );
 
       ```
@@ -1026,7 +1025,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1159,7 +1158,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -1424,7 +1423,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1564,7 +1563,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1795,7 +1794,7 @@ methods:
               $(document).ready(function () {
 
                   // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getSelectedText);
+                  $('#get-info').on("click", getSelectedText);
               });
           };
 
@@ -2008,7 +2007,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -2147,7 +2146,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2371,7 +2370,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2505,7 +2504,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2640,7 +2639,7 @@ methods:
                   $(document).ready(function () {
                       
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -3081,7 +3080,7 @@ methods:
                   Office.context.document.addHandlerAsync(
                       Office.EventType.ResourceSelectionChanged,
                       getResourceGuid);
-                  $('#remove-handler').click(removeEventHandler);
+                  $('#remove-handler').on("click", removeEventHandler);
               });
           };
 
@@ -3233,7 +3232,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#set-info').click(setResourceInfo);
+                      $('#set-info').on("click", setResourceInfo);
                   });
               };
 
@@ -3880,7 +3879,7 @@ methods:
                       
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#set-info').click(setTaskInfo);
+                      $('#set-info').on("click", setTaskInfo);
                   });
               };
 

@@ -1500,6 +1500,32 @@ Excel.Worksheet#protection:member:
       });
     });
 
+Office.ActiveView:enum:
+  - |-
+    // Get whether the current view is edit or read.
+    Office.context.document.getActiveViewAsync(function (asyncResult) {
+        if (asyncResult.status == "failed") {
+            showMessage("Action failed with error: " + asyncResult.error.message);
+        } else {
+            const activeView : Office.ActiveView = asyncResult.value;
+            showMessage("The current view is " + activeView);
+        }
+    });
+Office.Addin#onVisibilityModeChanged:member(1):
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
+
+        // Other startup tasks.
+    });
+Office.Addin#setStartupBehavior:member(1):
+  - |-
+    // Configure your add-in to load and start running when the document is opened.
+    Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 Office.AddinCommands.Event#completed:member(1):
   - |-
     // For the following example, the processItem function is
@@ -3176,7 +3202,7 @@ Office.Document#addHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ViewSelectionChanged,
                     getActiveView);
-                $('#get-info').click(getResourceGuid);
+                $('#get-info').on("click", getResourceGuid);
 
                 // This example calls the handler on page load to get the active view
                 // of the default page.
@@ -3287,37 +3313,36 @@ Office.Document#getFileAsync:member(1):
                     // result.value will return a valid File Object.
                     const myFile = result.value;
                     const sliceCount = myFile.sliceCount;
-                    const docdataSlices = [];
+                    const docDataSlices = [];
                     let slicesReceived = 0, gotAllSlices = true;
                     app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                     // Get the file slices.
-                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
-                }
-                else {
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                } else {
                     app.showNotification("Error:", result.error.message);
                 }
         });
     }
 
-    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived) {
+    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
         file.getSliceAsync(nextSlice, function (sliceResult) {
             if (sliceResult.status == "succeeded") {
-                if (!gotAllSlices) { // Failed to get all slices, no need to continue.
+                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                     return;
                 }
 
                 // Got one slice, store it in a temporary array.
                 // (Or you can do something else, such as
                 // send it to a third-party server.)
-                docdataSlices[sliceResult.value.index] = sliceResult.value.data;
+                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
                 if (++slicesReceived == sliceCount) {
                   // All slices have been received.
                   file.closeAsync();
-                  onGotAllSlices(docdataSlices);
+                  onGotAllSlices(docDataSlices);
                 }
                 else {
-                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 }
             }
                 else {
@@ -3328,15 +3353,15 @@ Office.Document#getFileAsync:member(1):
         });
     }
 
-    function onGotAllSlices(docdataSlices) {
-        let docdata = [];
-        for (let i = 0; i < docdataSlices.length; i++) {
-            docdata = docdata.concat(docdataSlices[i]);
+    function onGotAllSlices(docDataSlices) {
+        let docData = [];
+        for (let i = 0; i < docDataSlices.length; i++) {
+            docData = docData.concat(docDataSlices[i]);
         }
 
         let fileContent = new String();
-        for (let j = 0; j < docdata.length; j++) {
-            fileContent += String.fromCharCode(docdata[j]);
+        for (let j = 0; j < docData.length; j++) {
+            fileContent += String.fromCharCode(docData[j]);
         }
 
         // Now all the file content is stored in 'fileContent' variable,
@@ -3350,17 +3375,18 @@ Office.Document#getFileAsync:member(1):
                 const myFile = result.value;
                 const sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
                 // Get the file slices.
-                const docdataSlices = [];
+                const docDataSlices = [];
                 let slicesReceived = 0, gotAllSlices = true;
-                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 
                 myFile.closeAsync();
             }
             else {
                 app.showNotification("Error:", result.error.message);
             }
-    }
+        }
     );
 Office.Document#getFilePropertiesAsync:member(2):
   - |-
@@ -3444,7 +3470,7 @@ Office.Document#getSelectedDataAsync:member(1):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getSelectedText);
+                $('#get-info').on("click", getSelectedText);
             });
         };
 
@@ -3643,7 +3669,7 @@ Office.Document#removeHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ResourceSelectionChanged,
                     getResourceGuid);
-                $('#remove-handler').click(removeEventHandler);
+                $('#remove-handler').on("click", removeEventHandler);
             });
         };
 
@@ -3854,6 +3880,72 @@ Office.Error#name:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.FileType:enum:
+  - |-
+    // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
+    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
+    function getDocumentAsCompressed() {
+        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
+            function (result) {
+                if (result.status == "succeeded") {
+                    // If the getFileAsync call succeeded, then
+                    // result.value will return a valid File Object.
+                    const myFile = result.value;
+                    const sliceCount = myFile.sliceCount;
+                    const docDataSlices = [];
+                    let slicesReceived = 0, gotAllSlices = true;
+                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+                    // Get the file slices.
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                } else {
+                    app.showNotification("Error:", result.error.message);
+                }
+        });
+    }
+
+    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
+        file.getSliceAsync(nextSlice, function (sliceResult) {
+            if (sliceResult.status == "succeeded") {
+                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
+                    return;
+                }
+
+                // Got one slice, store it in a temporary array.
+                // (Or you can do something else, such as
+                // send it to a third-party server.)
+                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
+                if (++slicesReceived == sliceCount) {
+                  // All slices have been received.
+                  file.closeAsync();
+                  onGotAllSlices(docDataSlices);
+                }
+                else {
+                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                }
+            }
+                else {
+                    gotAllSlices = false;
+                    file.closeAsync();
+                    app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                }
+        });
+    }
+
+    function onGotAllSlices(docDataSlices) {
+        let docData = [];
+        for (let i = 0; i < docDataSlices.length; i++) {
+            docData = docData.concat(docDataSlices[i]);
+        }
+
+        let fileContent = new String();
+        for (let j = 0; j < docData.length; j++) {
+            fileContent += String.fromCharCode(docData[j]);
+        }
+
+        // Now all the file content is stored in 'fileContent' variable,
+        // you can do something with it, such as print, fax...
+    }
 Office.initialize:function(1):
   - |-
     // You can use the value of the InitializationEnumeration to implement different logic for
@@ -3930,7 +4022,7 @@ Office.Document#getMaxResourceIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4008,7 +4100,7 @@ Office.Document#getMaxTaskIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4148,7 +4240,7 @@ Office.Document#getResourceByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4224,7 +4316,7 @@ Office.Document#getResourceFieldAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4314,7 +4406,7 @@ Office.Document#getSelectedResourceAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4403,7 +4495,7 @@ Office.Document#getSelectedTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4517,7 +4609,7 @@ Office.Document#getTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4590,7 +4682,7 @@ Office.Document#getTaskByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4664,7 +4756,7 @@ Office.Document#getTaskFieldAsync:member(2):
             $(document).ready(function () {
                 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4755,7 +4847,7 @@ Office.Document#setResourceFieldAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setResourceInfo);
+                $('#set-info').on("click", setResourceInfo);
             });
         };
 
@@ -4834,7 +4926,7 @@ Office.Document#setTaskFieldAsync:member(2):
                 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setTaskInfo);
+                $('#set-info').on("click", setTaskInfo);
             });
         };
 
@@ -4891,6 +4983,10 @@ Office.Document#setTaskFieldAsync:member(2):
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
+Office.DocumentMode:enum:
+  - |-
+    const mode : Office.DocumentMode = Office.context.document.mode;
+    console.log("Document mode: " + mode);
 Office.EventType:enum:
   - |-
     // This sample shows how to register an event handler in Outlook.
@@ -4971,11 +5067,13 @@ Office.File#getSliceAsync:member(1):
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
-    console.log("Office application: " + contextInfo.host);
+    const hostType: Office.HostType = contextInfo.host;
+    console.log("Office application: " + hostType);
 Office.PlatformType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
-    console.log("Platform: " + contextInfo.platform);
+    const platformType: Office.PlatformType = contextInfo.platform;
+    console.log("Platform: " + platformType);
 Office.Ribbon#requestUpdate:member(1):
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -5099,6 +5197,10 @@ Office.Settings#saveAsync:member(2):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.StartupBehavior:enum:
+  - |-
+    // Configure your add-in to load and start running when the document is opened.
+    Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 Office.Tab#id:member:
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -5360,7 +5462,17 @@ Office.useShortNamespace:function(1):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.VisibilityMode:enum:
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
 
+        // Other startup tasks.
+    });
 OfficeExtension.Error#traceMessages:member:
   - |-
     // The following example shows how you can instrument a batch of commands

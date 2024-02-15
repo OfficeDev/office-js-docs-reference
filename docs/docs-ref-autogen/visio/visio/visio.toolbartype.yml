@@ -3,26 +3,32 @@ name: Visio.ToolBarType
 uid: 'visio!Visio.ToolBarType:enum'
 package: visio!
 fullName: Visio.ToolBarType
-summary: |-
-  Toolbar IDs of the app
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Toolbar IDs of the app.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 fields:
   - name: commandBar
     uid: 'visio!Visio.ToolBarType.commandBar:member'
     package: visio!
-    summary: CommandBar
+    summary: |-
+      The command toolbar type.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"CommandBar"'
   - name: pageNavigationBar
     uid: 'visio!Visio.ToolBarType.pageNavigationBar:member'
     package: visio!
-    summary: PageNavigationBar
+    summary: |-
+      The page navigation toolbar type.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"PageNavigationBar"'
   - name: statusBar
     uid: 'visio!Visio.ToolBarType.statusBar:member'
     package: visio!
-    summary: StatusBar
+    summary: |-
+      The status toolbar type.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"StatusBar"'

@@ -23,7 +23,6 @@ classes:
   - 'visio!Visio.ShapeView:class'
 interfaces:
   - 'visio!Visio.BoundingBox:interface'
-  - 'visio!Visio.ConnectorBinding:interface'
   - 'visio!Visio.DataRefreshCompleteEventArgs:interface'
   - 'visio!Visio.DocumentErrorEventArgs:interface'
   - 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
@@ -77,7 +76,6 @@ interfaces:
   - 'visio!Visio.PageRenderCompleteEventArgs:interface'
   - 'visio!Visio.Position:interface'
   - 'visio!Visio.SelectionChangedEventArgs:interface'
-  - 'visio!Visio.ShapeBinding:interface'
   - 'visio!Visio.ShapeMouseEnterEventArgs:interface'
   - 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
   - 'visio!Visio.TaskPaneStateChangedEventArgs:interface'
@@ -93,6 +91,7 @@ enums:
   - 'visio!Visio.ErrorCodes:enum'
   - 'visio!Visio.EventType:enum'
   - 'visio!Visio.LayoutVariant:enum'
+  - 'visio!Visio.MessageType:enum'
   - 'visio!Visio.OverlayHorizontalAlignment:enum'
   - 'visio!Visio.OverlayType:enum'
   - 'visio!Visio.OverlayVerticalAlignment:enum'
@@ -187,19 +186,7 @@ functions:
       Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
       previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
-    remarks: >-
-      In addition to this signature, the method also has the following signatures:
-
-
-      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
-      Visio.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
-      Promise<T>;`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

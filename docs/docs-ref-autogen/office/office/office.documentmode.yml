@@ -4,7 +4,15 @@ uid: 'office!Office.DocumentMode:enum'
 package: office!
 fullName: Office.DocumentMode
 summary: Specifies whether the document in the associated application is read-only or read-write.
-remarks: 'Returned by the mode property of the [Document](xref:office!Office.Document:interface) object.'
+remarks: |-
+  Returned by the mode property of the [Document](xref:office!Office.Document:interface) object.
+
+  #### Examples
+
+  ```TypeScript
+  const mode : Office.DocumentMode = Office.context.document.mode;
+  console.log("Document mode: " + mode);
+  ```
 isPreview: false
 isDeprecated: false
 fields:

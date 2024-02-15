@@ -1435,23 +1435,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getEntities` method, will be retired in Q2 of 2024. The
+      work to retire this method will start in May and continue until the end of June. After June, contextual add-ins
+      will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will
+      continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual
+      add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules,
+      see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1551,23 +1543,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getEntitiesByType` method, will be retired in Q2 of
+      2024. The work to retire this method will start in May and continue until the end of June. After June, contextual
+      add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules
+      will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement
+      these rules, see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1643,23 +1627,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getFilteredEntitiesByName` method, will be retired in Q2
+      of 2024. The work to retire this method will start in May and continue until the end of June. After June,
+      contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular
+      expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend
+      updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to
+      implement these rules, see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1732,22 +1708,13 @@ methods:
 
 
       - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
+      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
+      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
+      regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
+      contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1865,22 +1832,13 @@ methods:
 
 
       - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
+      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
+      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
+      regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
+      contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1991,23 +1949,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getSelectedEntities` method, will be retired in Q2 of
+      2024. The work to retire this method will start in May and continue until the end of June. After June, contextual
+      add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules
+      will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement
+      these rules, see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -2018,7 +1968,9 @@ methods:
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
-      - This method isn't supported in Outlook on iOS or Android.
+      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2114,22 +2066,13 @@ methods:
 
 
       - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
+      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
+      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
+      regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
+      contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -2140,7 +2083,9 @@ methods:
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
-      - This method isn't supported in Outlook on iOS or Android.
+      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
