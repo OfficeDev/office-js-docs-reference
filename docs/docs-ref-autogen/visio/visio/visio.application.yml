@@ -3,11 +3,8 @@ name: Visio.Application
 uid: 'visio!Visio.Application:class'
 package: visio!
 fullName: Visio.Application
-summary: |-
-  Represents the Application.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Application.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,44 +27,37 @@ properties:
     uid: 'visio!Visio.Application#showBorders:member'
     package: visio!
     fullName: showBorders
-    summary: |-
-      Show or hide the iFrame application borders.
-
+    summary: Shows or hides the iframe application borders.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const application = ctx.document.application;
+          application.showToolbars = false;
+          application.showBorders = false;
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'showBorders: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const application = ctx.document.application;
-              application.showToolbars = false;
-              application.showBorders = false;
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: showToolbars
     uid: 'visio!Visio.Application#showToolbars:member'
     package: visio!
     fullName: showToolbars
-    summary: |-
-      Show or hide the standard toolbars.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Shows or hides the standard toolbars.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,10 +139,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Application): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,21 +194,18 @@ methods:
     uid: 'visio!Visio.Application#showToolbar:member(1)'
     package: visio!
     fullName: 'showToolbar(id, show)'
-    summary: |-
-      Sets the visibility of a specific toolbar in the application.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Sets the visibility of a specific toolbar in the application.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'showToolbar(id: Visio.ToolBarType, show: boolean): void;'
       parameters:
         - id: id
-          description: The type of the Toolbar
+          description: The type of the Toolbar.
           type: '<xref uid="visio!Visio.ToolBarType:enum" />'
         - id: show
-          description: Whether the toolbar is visibile or not.
+          description: Whether the toolbar is visible or not.
           type: boolean
       return:
         type: void
@@ -230,21 +214,18 @@ methods:
     uid: 'visio!Visio.Application#showToolbar:member(2)'
     package: visio!
     fullName: 'showToolbar(idString, show)'
-    summary: |-
-      Sets the visibility of a specific toolbar in the application.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Sets the visibility of a specific toolbar in the application.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
       parameters:
         - id: idString
-          description: The type of the Toolbar
+          description: The type of the Toolbar.
           type: '"CommandBar" | "PageNavigationBar" | "StatusBar"'
         - id: show
-          description: Whether the toolbar is visibile or not.
+          description: Whether the toolbar is visible or not.
           type: boolean
       return:
         type: void

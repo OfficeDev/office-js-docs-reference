@@ -3202,7 +3202,7 @@ Office.Document#addHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ViewSelectionChanged,
                     getActiveView);
-                $('#get-info').click(getResourceGuid);
+                $('#get-info').on("click", getResourceGuid);
 
                 // This example calls the handler on page load to get the active view
                 // of the default page.
@@ -3470,7 +3470,7 @@ Office.Document#getSelectedDataAsync:member(1):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getSelectedText);
+                $('#get-info').on("click", getSelectedText);
             });
         };
 
@@ -3669,7 +3669,7 @@ Office.Document#removeHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ResourceSelectionChanged,
                     getResourceGuid);
-                $('#remove-handler').click(removeEventHandler);
+                $('#remove-handler').on("click", removeEventHandler);
             });
         };
 
@@ -4022,7 +4022,7 @@ Office.Document#getMaxResourceIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4100,7 +4100,7 @@ Office.Document#getMaxTaskIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4240,7 +4240,7 @@ Office.Document#getResourceByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4316,7 +4316,7 @@ Office.Document#getResourceFieldAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4406,7 +4406,7 @@ Office.Document#getSelectedResourceAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4495,7 +4495,7 @@ Office.Document#getSelectedTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4609,7 +4609,7 @@ Office.Document#getTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4682,7 +4682,7 @@ Office.Document#getTaskByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4756,7 +4756,7 @@ Office.Document#getTaskFieldAsync:member(2):
             $(document).ready(function () {
                 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4847,7 +4847,7 @@ Office.Document#setResourceFieldAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setResourceInfo);
+                $('#set-info').on("click", setResourceInfo);
             });
         };
 
@@ -4926,7 +4926,7 @@ Office.Document#setTaskFieldAsync:member(2):
                 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setTaskInfo);
+                $('#set-info').on("click", setTaskInfo);
             });
         };
 

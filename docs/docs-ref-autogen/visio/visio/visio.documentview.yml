@@ -3,11 +3,8 @@ name: Visio.DocumentView
 uid: 'visio!Visio.DocumentView:class'
 package: visio!
 fullName: Visio.DocumentView
-summary: |-
-  Represents the DocumentView class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the DocumentView class.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,43 +27,36 @@ properties:
     uid: 'visio!Visio.DocumentView#disableHyperlinks:member'
     package: visio!
     fullName: disableHyperlinks
-    summary: |-
-      Disable Hyperlinks.
-
+    summary: Disable Hyperlinks.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const documentView = ctx.document.view;
+          documentView.disableHyperlinks();
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'disableHyperlinks: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const documentView = ctx.document.view;
-              documentView.disableHyperlinks();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: disablePan
     uid: 'visio!Visio.DocumentView#disablePan:member'
     package: visio!
     fullName: disablePan
-    summary: |-
-      Disable Pan.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable Pan.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +67,8 @@ properties:
     uid: 'visio!Visio.DocumentView#disablePanZoomWindow:member'
     package: visio!
     fullName: disablePanZoomWindow
-    summary: |-
-      Disable PanZoomWindow.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable PanZoomWindow.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,11 +79,8 @@ properties:
     uid: 'visio!Visio.DocumentView#disableZoom:member'
     package: visio!
     fullName: disableZoom
-    summary: |-
-      Disable Zoom.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable Zoom.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +91,8 @@ properties:
     uid: 'visio!Visio.DocumentView#hideDiagramBoundary:member'
     package: visio!
     fullName: hideDiagramBoundary
-    summary: |-
-      Hide Diagram Boundary.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Hide Diagram Boundary.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,10 +174,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.DocumentView): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

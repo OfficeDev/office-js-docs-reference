@@ -3,11 +3,8 @@ name: Visio.Comment
 uid: 'visio!Visio.Comment:class'
 package: visio!
 fullName: Visio.Comment
-summary: |-
-  Represents the Comment.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Comment.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'visio!Visio.Comment#author:member'
     package: visio!
     fullName: author
-    summary: |-
-      A string that specifies the name of the author of the comment.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the name of the author of the comment.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'visio!Visio.Comment#date:member'
     package: visio!
     fullName: date
-    summary: |-
-      A string that specifies the date when the comment was created.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the date when the comment was created.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'visio!Visio.Comment#text:member'
     package: visio!
     fullName: text
-    summary: |-
-      A string that contains the comment text.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that contains the comment text.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,10 +161,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Comment): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

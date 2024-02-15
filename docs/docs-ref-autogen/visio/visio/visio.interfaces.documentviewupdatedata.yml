@@ -13,11 +13,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disableHyperlinks:member'
     package: visio!
     fullName: disableHyperlinks
-    summary: |-
-      Disable Hyperlinks.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable Hyperlinks.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disablePan:member'
     package: visio!
     fullName: disablePan
-    summary: |-
-      Disable Pan.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable Pan.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disablePanZoomWindow:member'
     package: visio!
     fullName: disablePanZoomWindow
-    summary: |-
-      Disable PanZoomWindow.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable PanZoomWindow.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#disableZoom:member'
     package: visio!
     fullName: disableZoom
-    summary: |-
-      Disable Zoom.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Disable Zoom.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentViewUpdateData#hideDiagramBoundary:member'
     package: visio!
     fullName: hideDiagramBoundary
-    summary: |-
-      Hide Diagram Boundary.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Hide Diagram Boundary.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
