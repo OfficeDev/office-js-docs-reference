@@ -3,11 +3,8 @@ name: Visio.PageView
 uid: 'visio!Visio.PageView:class'
 package: visio!
 fullName: Visio.PageView
-summary: |-
-  Represents the PageView class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the PageView class.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,44 +27,54 @@ properties:
     uid: 'visio!Visio.PageView#zoom:member'
     package: visio!
     fullName: zoom
-    summary: |-
-      Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
-
+    summary: Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          activePage.view.zoom = 300;
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'zoom: number;'
       return:
         type: number
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              activePage.view.zoom = 300;
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
 methods:
   - name: centerViewportOnShape(ShapeId)
     uid: 'visio!Visio.PageView#centerViewportOnShape:member(1)'
     package: visio!
     fullName: centerViewportOnShape(ShapeId)
-    summary: |-
-      Pans the Visio drawing to place the specified shape in the center of the view.
-
+    summary: Pans the Visio drawing to place the specified shape in the center of the view.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const shape = activePage.shapes.getItem(0);
+          activePage.view.centerViewportOnShape(shape.Id);
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,33 +85,13 @@ methods:
           type: number
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              activePage.view.centerViewportOnShape(shape.Id);
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: fitToWindow()
     uid: 'visio!Visio.PageView#fitToWindow:member(1)'
     package: visio!
     fullName: fitToWindow()
-    summary: |-
-      Fit Page to current window.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Fit Page to current window.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,11 +103,8 @@ methods:
     uid: 'visio!Visio.PageView#getPosition:member(1)'
     package: visio!
     fullName: getPosition()
-    summary: |-
-      Returns the position object that specifies the position of the page in the view.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Returns the position object that specifies the position of the page in the view.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,11 +116,8 @@ methods:
     uid: 'visio!Visio.PageView#getSelection:member(1)'
     package: visio!
     fullName: getSelection()
-    summary: |-
-      Represents the Selection in the page.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Represents the Selection in the page.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,11 +129,8 @@ methods:
     uid: 'visio!Visio.PageView#isShapeInViewport:member(1)'
     package: visio!
     fullName: isShapeInViewport(Shape)
-    summary: |-
-      To check if the shape is in view of the page or not.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: To check if the shape is in view of the page or not.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,10 +216,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.PageView): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -296,11 +271,8 @@ methods:
     uid: 'visio!Visio.PageView#setPosition:member(1)'
     package: visio!
     fullName: setPosition(Position)
-    summary: |-
-      Sets the position of the page in the view.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Sets the position of the page in the view.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

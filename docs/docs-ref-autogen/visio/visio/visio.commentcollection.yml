@@ -3,11 +3,8 @@ name: Visio.CommentCollection
 uid: 'visio!Visio.CommentCollection:class'
 package: visio!
 fullName: Visio.CommentCollection
-summary: |-
-  Represents the CommentCollection for a given Shape.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the CommentCollection for a given Shape.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'visio!Visio.CommentCollection#getCount:member(1)'
     package: visio!
     fullName: getCount()
-    summary: |-
-      Gets the number of Comments.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets the number of Comments.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +53,8 @@ methods:
     uid: 'visio!Visio.CommentCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: |-
-      Gets the Comment using its name.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets the Comment using its name.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

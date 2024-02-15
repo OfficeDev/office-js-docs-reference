@@ -460,7 +460,7 @@ methods:
                   Office.context.document.addHandlerAsync(
                       Office.EventType.ViewSelectionChanged,
                       getActiveView);
-                  $('#get-info').click(getResourceGuid);
+                  $('#get-info').on("click", getResourceGuid);
 
                   // This example calls the handler on page load to get the active view
                   // of the default page.
@@ -1025,7 +1025,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1158,7 +1158,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -1423,7 +1423,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1563,7 +1563,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -1794,7 +1794,7 @@ methods:
               $(document).ready(function () {
 
                   // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getSelectedText);
+                  $('#get-info').on("click", getSelectedText);
               });
           };
 
@@ -2007,7 +2007,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getResourceInfo);
+                      $('#get-info').on("click", getResourceInfo);
                   });
               };
 
@@ -2146,7 +2146,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2370,7 +2370,7 @@ methods:
                   $(document).ready(function () {
 
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2504,7 +2504,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -2639,7 +2639,7 @@ methods:
                   $(document).ready(function () {
                       
                       // After the DOM is loaded, add-in-specific code can run.
-                      $('#get-info').click(getTaskInfo);
+                      $('#get-info').on("click", getTaskInfo);
                   });
               };
 
@@ -3080,7 +3080,7 @@ methods:
                   Office.context.document.addHandlerAsync(
                       Office.EventType.ResourceSelectionChanged,
                       getResourceGuid);
-                  $('#remove-handler').click(removeEventHandler);
+                  $('#remove-handler').on("click", removeEventHandler);
               });
           };
 
@@ -3232,7 +3232,7 @@ methods:
 
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#set-info').click(setResourceInfo);
+                      $('#set-info').on("click", setResourceInfo);
                   });
               };
 
@@ -3879,7 +3879,7 @@ methods:
                       
                       // After the DOM is loaded, add-in-specific code can run.
                       app.initialize();
-                      $('#set-info').click(setTaskInfo);
+                      $('#set-info').on("click", setTaskInfo);
                   });
               };
 

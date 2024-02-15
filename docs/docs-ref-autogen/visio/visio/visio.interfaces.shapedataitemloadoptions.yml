@@ -3,11 +3,8 @@ name: Visio.Interfaces.ShapeDataItemLoadOptions
 uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemLoadOptions
-summary: |-
-  Represents the ShapeDataItem.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the ShapeDataItem.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions#format:member'
     package: visio!
     fullName: format
-    summary: |-
-      A string that specifies the format of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the format of the shape data item.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions#formattedValue:member'
     package: visio!
     fullName: formattedValue
-    summary: |-
-      A string that specifies the formatted value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the formatted value of the shape data item.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions#label:member'
     package: visio!
     fullName: label
-    summary: |-
-      A string that specifies the label of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the label of the shape data item.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions#value:member'
     package: visio!
     fullName: value
-    summary: |-
-      A string that specifies the value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: A string that specifies the value of the shape data item.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

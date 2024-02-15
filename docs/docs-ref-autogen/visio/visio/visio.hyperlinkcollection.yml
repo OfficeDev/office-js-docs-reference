@@ -3,11 +3,8 @@ name: Visio.HyperlinkCollection
 uid: 'visio!Visio.HyperlinkCollection:class'
 package: visio!
 fullName: Visio.HyperlinkCollection
-summary: |-
-  Represents the Hyperlink Collection.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Hyperlink Collection.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'visio!Visio.HyperlinkCollection#getCount:member(1)'
     package: visio!
     fullName: getCount()
-    summary: |-
-      Gets the number of hyperlinks.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets the number of hyperlinks.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +53,8 @@ methods:
     uid: 'visio!Visio.HyperlinkCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(Key)
-    summary: |-
-      Gets a Hyperlink using its key (name or Id).
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets a Hyperlink using its key (name or Id).
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
