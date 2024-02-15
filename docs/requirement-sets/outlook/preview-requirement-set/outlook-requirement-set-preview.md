@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 01/31/2024
+ms.date: 02/16/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -195,11 +195,11 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
-### Smart Alerts: Customize the Don't Send option and override the send mode option at runtime
+### Smart Alerts: Customize the Don't Send option, override the send mode option at runtime, and format the dialog message using Markdown
 
 #### [Office.SmartAlertsEventCompletedOptions](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
 
-Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog and override the send mode option at runtime.
+Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog, override the send mode option at runtime, and format the dialog message using Markdown.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
