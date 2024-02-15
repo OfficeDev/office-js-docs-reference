@@ -21,9 +21,9 @@ The initial release of add-in commands doesn't have a corresponding requirement 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Add-in commands (initial release, no requirement set) | Version 1603 (Build 6769.0000) | Office 2021: Version 1809 (Build 10827.20150) | 15.33 | Not supported | Supported |
 
-The add-in commands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](/office/dev/add-ins/develop/automatically-open-a-task-pane-with-a-document).
+The AddinCommands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](/office/dev/add-ins/develop/automatically-open-a-task-pane-with-a-document).
 
-The add-in commands **1.3** requirement set introduces manifest markup that enables an add-in to customize the placement of a custom tab on the Office ribbon and to insert built-in Office ribbon controls into custom control groups. At present, PowerPoint is the only Office client that supports this requirement set.
+The AddinCommands **1.3** requirement set introduces manifest markup that enables an add-in to customize the placement of a custom tab on the Office ribbon and to insert built-in Office ribbon controls into custom control groups. At present, PowerPoint is the only Office client that supports this requirement set.
 
 The following table lists the add-in commands requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
