@@ -4323,7 +4323,7 @@ Excel.LocalImageCellValue,"provider",Property,Good,false
 Excel.LocalImageCellValue,"type",Property,Good,false
 Excel.LocalImageCellValueCacheId,N/A,Class,Good,false
 Excel.LocalImageCellValueCacheId,"cacheUid",Property,Good,false
-Excel.NamedItem,N/A,Class,Good,false
+Excel.NamedItem,N/A,Class,Good,true
 Excel.NamedItem,"arrayValues",Property,Good,false
 Excel.NamedItem,"comment",Property,Good,false
 Excel.NamedItem,"context",Property,Good,false
