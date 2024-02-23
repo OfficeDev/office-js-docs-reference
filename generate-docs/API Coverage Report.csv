@@ -6780,7 +6780,7 @@ Office.DialogParentMessageReceivedEventArgs,N/A,Class,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"message",Property,Fine,false
 Office.DialogParentMessageReceivedEventArgs,"origin",Property,Good,false
 Office.DialogParentMessageReceivedEventArgs,"type",Property,Fine,false
-Office.Document,N/A,Class,Good,false
+Office.Document,N/A,Class,Good,true
 Office.Document,"bindings",Property,Good,true
 Office.Document,"customXmlParts",Property,Fine,true
 Office.Document,"mode",Property,Fine,true

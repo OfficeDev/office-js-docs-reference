@@ -4,7 +4,15 @@ uid: 'office!Office.Document:interface'
 package: office!
 fullName: Office.Document
 summary: An abstract class that represents the document the add-in is interacting with.
-remarks: '**Applications**: Excel, PowerPoint, Project, Word'
+remarks: |-
+  **Applications**: Excel, PowerPoint, Project, Word
+
+  #### Examples
+
+  ```TypeScript
+  // Get the Document object with the Common APIs.
+  const document : Office.Document = Office.context.document;
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

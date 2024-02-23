@@ -3033,6 +3033,10 @@ Office.DialogOptions#width:member:
             });
         }
     );
+Office.Document:interface:
+  - |-
+    // Get the Document object with the Common APIs.
+    const document : Office.Document = Office.context.document;
 Office.Document#addHandlerAsync:member(2):
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
