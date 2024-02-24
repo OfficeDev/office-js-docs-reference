@@ -8,23 +8,9 @@ ms.localizationpriority: high
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365 (preview)](/office/dev/add-ins/develop/unified-manifest-overview).
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365](/office/dev/add-ins/develop/unified-manifest-overview).
 
-# [XML Manifest](#tab/xmlmanifest)
-
-The API version is specified by the [Requirements](/javascript/api/manifest/requirements) element. Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
-
-For example, the following manifest snippet indicates a minimum requirement set of 1.1.
-
-```xml
-<Requirements>
-  <Sets>
-    <Set Name="Mailbox" MinVersion="1.1" />
-  </Sets>
-</Requirements>
-```
-
-# [Unified manifest for Microsoft 365 (developer preview)](#tab/jsonmanifest)
+# [Unified manifest for Microsoft 365](#tab/jsonmanifest)
 
 The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios.
 
@@ -42,6 +28,20 @@ For example, the following manifest snippet indicates a minimum requirement set 
   },
   ...
 }
+```
+
+# [XML Manifest](#tab/xmlmanifest)
+
+The API version is specified by the [Requirements](/javascript/api/manifest/requirements) element. Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
+
+For example, the following manifest snippet indicates a minimum requirement set of 1.1.
+
+```xml
+<Requirements>
+  <Sets>
+    <Set Name="Mailbox" MinVersion="1.1" />
+  </Sets>
+</Requirements>
 ```
 
 ---
