@@ -1058,7 +1058,6 @@
         "docs-ref-autogen/outlook_1_11/**": ["office-outlook"],
         "docs-ref-autogen/outlook_1_12/**": ["office-outlook"],
         "docs-ref-autogen/outlook_1_13/**": ["office-outlook"],
-        "docs-ref-autogen/overview/**": ["office", "office-add-ins"],
         "docs-ref-autogen/powerpoint/**": ["office-powerpoint"],
         "docs-ref-autogen/powerpoint_1_1/**": ["office-powerpoint"],
         "docs-ref-autogen/powerpoint_1_2/**": ["office-powerpoint"],
