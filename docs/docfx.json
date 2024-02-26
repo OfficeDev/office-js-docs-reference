@@ -1005,7 +1005,7 @@
       "open_source_feedback_productName": "Office Add-ins",
       "titleSuffix": "Office Add-ins",
       "ms.devlang": "javascript",
-      "product": ["office"],
+      "product": ["m365"],
       "products": [
         "https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d"
       ],
