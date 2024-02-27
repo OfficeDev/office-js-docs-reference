@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 localization_priority: Priority
-ms.date: 03/27/2024
+ms.date: 02/27/2024
 ---
 
 # Office Add-ins JavaScript API reference -- test test
@@ -21,7 +21,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -53,7 +53,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -80,7 +80,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -105,7 +105,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -124,7 +124,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -138,7 +138,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
@@ -151,7 +151,7 @@ The following is a list of APIs for the [supported Office host applications](/of
     <li>
         <div class="cardImageOuter">
             <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-project.svg" alt="Project add-ins" height="140" />
+                <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-project.svg" alt="Project add-ins" height="100" width="100" />
             </div>
         </div>
         <div class="cardText">
