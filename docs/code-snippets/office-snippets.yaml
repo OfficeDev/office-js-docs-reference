@@ -296,6 +296,39 @@ Office.AddinCommands.Source#id:member:
 
         event.completed();
     }
+Office.AsyncContextOptions:interface:
+  - |-
+    // The following example gets the attachment contents of the
+    // current mail item being composed in Outlook.
+    function getAttachmentContentCompose() {
+        const item = Office.context.mailbox.item;
+        const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
+        item.getAttachmentsAsync(options, callback);
+
+        function callback(result) {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            if (result.value.length <= 0) {
+                console.log("Mail item has no attachments.");
+                return;
+            }
+
+            const currentItem = result.asyncContext.currentItem;
+            for (let i = 0; i < result.value.length; i++) {
+                currentItem.getAttachmentContentAsync(result.value[i].id, (asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    console.log(asyncResult.value.content);
+                });
+            }
+        }
+    }
 Office.AsyncResult:interface:
   - |-
     // The following is an example applicable to content and task pane add-ins.
@@ -3891,6 +3924,28 @@ Office.TableData#rows:member:
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
+    }
+Office.UI#addHandlerAsync:member(2):
+  - |-
+    // The following example shows how to add an event handler for the DialogParentMessageReceived event.
+    Office.onReady(() => {
+        Office.context.ui.addHandlerAsync(
+            Office.EventType.DialogParentMessageReceived,
+            onMessageFromParent,
+            onRegisterMessageComplete
+        );
+    });
+
+    function onMessageFromParent(arg) {
+        const messageFromParent = JSON.parse(arg.message);
+        document.querySelector('h1').textContent = messageFromParent.name;
+    }
+
+    function onRegisterMessageComplete(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log(asyncResult.error.message);
+            return;
+        }
     }
 Office.UI#displayDialogAsync:member(1):
   - |-

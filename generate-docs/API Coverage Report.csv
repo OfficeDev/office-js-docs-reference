@@ -6607,7 +6607,7 @@ Office.AddinCommands.EventCompletedOptions,N/A,Class,Good,false
 Office.AddinCommands.EventCompletedOptions,"allowEvent",Property,Good,true
 Office.AddinCommands.Source,N/A,Class,Good,false
 Office.AddinCommands.Source,"id",Property,Good,true
-Office.AsyncContextOptions,N/A,Class,Fine,false
+Office.AsyncContextOptions,N/A,Class,Fine,true
 Office.AsyncContextOptions,"asyncContext",Property,Fine,false
 Office.AsyncResult,N/A,Class,Fine,true
 Office.AsyncResult,"asyncContext",Property,Good,true
@@ -7569,7 +7569,7 @@ Office.TableData,"rows",Property,Good,true
 Office.TextBinding,N/A,Class,Good,false
 Office.UI,N/A,Class,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
-Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
+Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,true
 Office.UI,"closeContainer()",Method,Poor,false
 Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
