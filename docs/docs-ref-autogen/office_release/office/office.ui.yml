@@ -67,6 +67,38 @@ methods:
 
       You can add multiple event handlers for the specified event type as long as the name of each event handler
       function is unique.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to add an event handler for the DialogParentMessageReceived event.
+
+      Office.onReady(() => {
+          Office.context.ui.addHandlerAsync(
+              Office.EventType.DialogParentMessageReceived,
+              onMessageFromParent,
+              onRegisterMessageComplete
+          );
+      });
+
+
+      function onMessageFromParent(arg) {
+          const messageFromParent = JSON.parse(arg.message);
+          document.querySelector('h1').textContent = messageFromParent.name;
+      }
+
+
+      function onRegisterMessageComplete(asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              return;
+          }
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
