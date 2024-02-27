@@ -10620,7 +10620,7 @@ Word.CommentReplyCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CommentReplyCollection,"toJSON()",Method,Poor,false
 Word.CommentReplyCollection,"track()",Method,Poor,false
 Word.CommentReplyCollection,"untrack()",Method,Poor,false
-Word.CompareTarget,N/A,Enum,Good,false
+Word.CompareTarget,N/A,Enum,Good,true
 Word.CompareTarget,"compareTargetCurrent",EnumField,Fine,false
 Word.CompareTarget,"compareTargetNew",EnumField,Fine,false
 Word.CompareTarget,"compareTargetSelected",EnumField,Fine,false
@@ -10877,7 +10877,7 @@ Word.Document,"addStyle(name, type)",Method,Fine,true
 Word.Document,"addStyle(name, typeString)",Method,Fine,false
 Word.Document,"close(closeBehavior)",Method,Poor,false
 Word.Document,"close(closeBehaviorString)",Method,Poor,false
-Word.Document,"compare(filePath, documentCompareOptions)",Method,Fine,false
+Word.Document,"compare(filePath, documentCompareOptions)",Method,Fine,true
 Word.Document,"deleteBookmark(name)",Method,Poor,false
 Word.Document,"getAnnotationById(id)",Method,Poor,false
 Word.Document,"getBookmarkRange(name)",Method,Poor,false
@@ -10901,7 +10901,7 @@ Word.Document,"set(properties)",Method,Poor,false
 Word.Document,"toJSON()",Method,Poor,false
 Word.Document,"track()",Method,Poor,false
 Word.Document,"untrack()",Method,Poor,false
-Word.DocumentCompareOptions,N/A,Class,Good,false
+Word.DocumentCompareOptions,N/A,Class,Good,true
 Word.DocumentCompareOptions,"addToRecentFiles",Property,Good,false
 Word.DocumentCompareOptions,"authorName",Property,Good,false
 Word.DocumentCompareOptions,"compareTarget",Property,Good,false
