@@ -4,7 +4,39 @@ uid: 'word!Word.DocumentCompareOptions:interface'
 package: word!
 fullName: Word.DocumentCompareOptions
 summary: Specifies the options to be included in a compare document operation.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/compare-documents.yaml
+
+  // Compares the current document with a specified external document.
+
+  await Word.run(async (context) => {
+    // Absolute path of an online or local document.
+    const filePath = $("#filePath")
+      .val()
+      .toString();
+    // Options that configure the compare operation.
+    const options = {
+      compareTarget: Word.CompareTarget.compareTargetCurrent,
+      detectFormatChanges: false
+      // Other options you choose...
+      };
+    context.document.compare(filePath, options);
+
+    await context.sync();
+
+    console.log("Differences shown in the current document.");
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 type: interface
