@@ -1804,7 +1804,7 @@ Office.AsyncContextOptions:interface:
     // current mail item being composed in Outlook.
     function getAttachmentContentCompose() {
         const item = Office.context.mailbox.item;
-        const options = { asyncContext: { currentItem: item } };
+        const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
         item.getAttachmentsAsync(options, callback);
 
         function callback(result) {
