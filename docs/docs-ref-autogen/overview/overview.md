@@ -1,9 +1,9 @@
 ---
-ms.topic: overview
+ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 localization_priority: Priority
-ms.date: 01/25/2024
+ms.date: 03/27/2024
 ---
 
 # Office Add-ins JavaScript API reference -- test test
