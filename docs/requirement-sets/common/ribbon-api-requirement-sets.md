@@ -23,7 +23,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 >
 > - The RibbonApi requirement sets are supported only on task pane add-ins.
 > - The RibbonApi requirement sets are supported for production add-ins only in Excel.
-> - RibbonApi 1.1 (not 1.2) is available as a preview in PowerPoint and Word, but only in Office on Windows (Microsoft 365 subscription) and Office on Mac. It's also available for preview in PowerPoint on the web.
+> - RibbonApi 1.1 (not 1.2) is available as a preview in PowerPoint and Word, but only in Office on Windows (Microsoft 365 subscription) and Office on Mac. It's also available for preview in PowerPoint on the web. To understand how to access Office.js preview APIs, see [Accessing the Office JavaScript API library](/office/dev/add-ins/develop/understanding-the-javascript-api-for-office?branch=main#accessing-the-office-javascript-api-library).
 
 ## Support for version 1.1 in Office on Windows (Microsoft 365 subscription)
 
