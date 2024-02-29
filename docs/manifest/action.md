@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 10/19/2023
+ms.date: 02/29/2024
 ms.localizationpriority: medium
 ---
 
@@ -200,6 +200,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > - Outlook 2016 or later on Windows (build 7628.1000 or later)
 > - Outlook 2016 or later on Mac (build 16.13.503 or later)
 > - Modern Outlook on the web
+> - [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -248,7 +249,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [Mailbox 1.13](../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md)
 
 > [!NOTE]
-> Although Outlook on the web supports Mailbox requirement set 1.13, an add-in won't activate if the Reading Pane is hidden or a message isn't first selected. To learn more, see [Feature support in Outlook on the web](/office/dev/add-ins/outlook/contextless#feature-support-in-outlook-on-the-web).
+> Although Outlook on the web and new Outlook on Windows (preview) support Mailbox requirement set 1.13, an add-in won't activate if the Reading Pane is hidden or a message isn't first selected. To learn more, see [Feature support in Outlook on the web and new Outlook on Windows (preview)](/office/dev/add-ins/outlook/contextless#feature-support-in-outlook-on-the-web-and-new-outlook-on-windows-preview).
 
 ```xml
 <Action xsi:type="ShowTaskpane">
