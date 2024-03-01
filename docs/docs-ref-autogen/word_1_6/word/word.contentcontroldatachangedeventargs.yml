@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
 
+
   async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`);

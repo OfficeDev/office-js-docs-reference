@@ -97,6 +97,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
+
       // This function adds a percentage AutoFilter to the active worksheet 
 
       // and applies the filter to a column of the used range.

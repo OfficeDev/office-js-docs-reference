@@ -279,6 +279,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
+
       // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags.
 
       await Word.run(async (context) => {
@@ -445,6 +446,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
 
       await Word.run(async (context) => {
         const contentControls = context.document.contentControls.getByTag("forTesting");
@@ -1188,6 +1190,7 @@ methods:
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
 
           // Adds title and colors to odd and even content controls and changes their appearance.
 

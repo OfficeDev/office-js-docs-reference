@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
+
       // Changes the selected shapes fill color to red.
 
       await PowerPoint.run(async (context) => {
@@ -78,6 +79,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
 
       // Arranges the selected shapes in a line from left to right.
 
@@ -137,6 +139,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
 
       // Arranges the selected shapes in a line from left to right.
 
@@ -233,6 +236,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
+
       // Arranges the selected shapes in a line from left to right.
 
       await PowerPoint.run(async (context) => {
@@ -295,6 +299,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
 
       // Arranges the selected shapes in a line from left to right.
 

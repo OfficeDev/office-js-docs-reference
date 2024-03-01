@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
+
   await Excel.run(async (context) => {
       const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
       const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);

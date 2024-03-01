@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
+
   await Excel.run(async (context) => {
       let worksheet = context.workbook.worksheets.getItem("Sample");
       let range = worksheet.getRange("A1:E1");

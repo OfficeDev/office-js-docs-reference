@@ -28,6 +28,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
+
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
           // and information about the changed worksheet.
@@ -64,6 +65,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
@@ -113,6 +115,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet

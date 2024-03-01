@@ -88,6 +88,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+
       // Gets the footnotes in the selected document range.
 
       await Word.run(async (context) => {
@@ -306,6 +307,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
+
       await Word.run(async (context) => {
           const header = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
               "Start" /*this means at the beginning of the body */);
@@ -460,6 +462,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
+
       // Compares the location of one paragraph in relation to another paragraph.
 
       await Word.run(async (context) => {
@@ -607,6 +610,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
 
       // Gets the comments in the selected content.
 
@@ -852,6 +856,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+
       // Gets the reviewed text.
 
       await Word.run(async (context) => {
@@ -910,6 +915,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
@@ -1074,6 +1080,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+
       // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
@@ -1122,6 +1129,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
 
       // Simulates creation of a template. First searches the document for instances of the string "Contractor",
 
@@ -1225,6 +1233,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
 
       // Inserts a Date field before selection.
 
@@ -1416,6 +1425,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
 
       // Sets a footnote on the selected content.
 

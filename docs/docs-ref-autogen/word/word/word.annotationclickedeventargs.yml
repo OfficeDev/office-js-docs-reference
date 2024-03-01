@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
+
   // Registers event handlers.
 
   await Word.run(async (context) => {
@@ -34,6 +35,7 @@ remarks: >-
 
 
   ...
+
 
   async function onClickedHandler(args: Word.AnnotationClickedEventArgs) {
     await Word.run(async (context) => {

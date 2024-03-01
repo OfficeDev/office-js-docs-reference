@@ -67,6 +67,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
+
       const masterCategoriesToAdd = [
         {
           displayName: "TestCategory",
@@ -218,6 +219,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
+
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const categories = asyncResult.value;
@@ -280,6 +282,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
+
 
       const masterCategoriesToRemove = ["TestCategory"];
 

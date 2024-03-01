@@ -73,6 +73,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
+
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgBcc = asyncResult.value;
@@ -87,6 +88,7 @@ properties:
 
 
       ...
+
 
       const email = $("#emailBcc")
         .val()
@@ -203,6 +205,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
+
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgCc = asyncResult.value;
@@ -217,6 +220,7 @@ properties:
 
 
       ...
+
 
       const email = $("#emailCc")
         .val()
@@ -272,6 +276,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
+
       console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
@@ -315,6 +320,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
+
 
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -361,6 +367,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
+
       const itemType = Office.context.mailbox.item.itemType;
 
       switch (itemType) {
@@ -406,6 +413,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Adds a progress indicator to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -419,6 +427,7 @@ properties:
 
 
       ...
+
 
       // Adds an informational notification to the mail item.
 
@@ -436,6 +445,7 @@ properties:
 
       ...
 
+
       // Adds a persistent information notification to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -452,6 +462,7 @@ properties:
 
       ...
 
+
       // Gets all the notification messages and their keys for the current mail item.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
@@ -465,6 +476,7 @@ properties:
 
 
       ...
+
 
       // Replaces a notification message of a given key with another message.
 
@@ -481,6 +493,7 @@ properties:
         handleResult);
 
       ...
+
 
       // Removes a notification message from the current mail item.
 
@@ -539,6 +552,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
 
+
       const seriesId = Office.context.mailbox.item.seriesId;
 
 
@@ -586,6 +600,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
+
       Office.context.mailbox.item.subject.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
           console.error(`Action failed with message ${result.error.message}`);
@@ -596,6 +611,7 @@ properties:
 
 
       ...
+
 
       let subject = "Hello World!";
 
@@ -661,6 +677,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
+
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgTo = asyncResult.value;
@@ -675,6 +692,7 @@ properties:
 
 
       ...
+
 
       const email = $("#emailTo")
         .val()
@@ -794,6 +812,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
 
       const attachmentUrl = $("#attachmentUrl").val();
 
@@ -1102,6 +1121,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
+
       const attachmentItemId = $("#attachmentItemId").val();
 
       Office.context.mailbox.item.addItemAttachmentAsync(
@@ -1243,6 +1263,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/25-item-save-and-close/close.yaml
 
+
       Office.context.mailbox.item.close();
 
       ```
@@ -1367,6 +1388,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
 
+
       Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const text = asyncResult.value.data;
@@ -1482,6 +1504,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
+
       Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Loaded following custom properties:");
@@ -1577,6 +1600,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
 
       Office.context.mailbox.item.removeAttachmentAsync(
           $("#attachmentId").val(),
@@ -1968,6 +1992,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
+
 
       Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {

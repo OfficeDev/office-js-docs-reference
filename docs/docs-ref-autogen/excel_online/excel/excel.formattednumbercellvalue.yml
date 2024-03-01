@@ -61,6 +61,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
 
+
       // This function creates a formatted number data type,
 
       // and sets the format of this data type as a currency.
@@ -107,6 +108,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
 
       // This function creates a formatted number data type,
 

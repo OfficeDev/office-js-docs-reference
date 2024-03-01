@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
+
       // Sets the color of the selected text range to green.
 
       await PowerPoint.run(async (context) => {
@@ -233,6 +234,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
+
       // Selects the first 10 characters of the selected shape.
 
       await PowerPoint.run(async (context) => {
@@ -264,6 +266,7 @@ methods:
 
 
       ...
+
 
       // Sets the range selection to the range that was saved previously.
 

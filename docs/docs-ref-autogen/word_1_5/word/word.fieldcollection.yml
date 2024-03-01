@@ -56,6 +56,7 @@ properties:
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
+
           // Gets all fields in the document body.
 
           await Word.run(async (context) => {
@@ -128,6 +129,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
 
       // Gets the first field in the document.
 

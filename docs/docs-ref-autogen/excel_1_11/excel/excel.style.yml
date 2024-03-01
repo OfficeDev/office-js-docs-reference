@@ -88,6 +88,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
+
       await Excel.run(async (context) => {
           let style = context.workbook.styles.getItem("Normal");
           style.font.load("bold, color, italic, name, size");
@@ -138,6 +139,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
 
       await Excel.run(async (context) => {
           let worksheet = context.workbook.worksheets.getItem("Sample");
@@ -378,6 +380,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
+
       await Excel.run(async (context) => {
           let style = context.workbook.styles.getItem("Diagonal Orientation Style");
 
@@ -426,6 +429,7 @@ methods:
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
 
           await Excel.run(async (context) => {
               let style = context.workbook.styles.getItem("Diagonal Orientation Style");            

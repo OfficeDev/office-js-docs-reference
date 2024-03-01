@@ -51,7 +51,36 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+
+      // Adds a custom XML part.
+
+      // If you want to populate the CustomXml.namespaceUri property, you must include the xmlns attribute.
+
+      await Word.run(async (context) => {
+        const originalXml =
+          "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+        const customXmlPart = context.document.customXmlParts.add(originalXml);
+        customXmlPart.load(["id", "namespaceUri"]);
+        const xmlBlob = customXmlPart.getXml();
+
+        await context.sync();
+
+        const readableXml = addLineBreaksToXML(xmlBlob.value);
+        console.log(`Added custom XML part with namespace URI ${customXmlPart.namespaceUri}:`);
+        console.log(readableXml);
+
+        // Store the XML part's ID in a setting so the ID is available to other functions.
+        const settings = context.document.settings;
+        settings.add("ContosoReviewXmlPartIdNS", customXmlPart.id);
+
+        await context.sync();
+      });
+
+
+      ...
+
 
       // Adds a custom XML part.
 
@@ -132,7 +161,46 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+
+      // Original XML: <Reviewers
+      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
+
+
+      // Queries a custom XML part for elements matching the search terms.
+
+      await Word.run(async (context) => {
+        const settings = context.document.settings;
+        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+
+        await context.sync();
+
+        if (xmlPartIDSetting.value) {
+          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const xpathToQueryFor = "/contoso:Reviewers";
+          const clientResult = customXmlPart.query(xpathToQueryFor, {
+            contoso: "http://schemas.contoso.com/review/1.0"
+          });
+
+          await context.sync();
+
+          console.log(`Queried custom XML part for ${xpathToQueryFor} and found ${clientResult.value.length} matches:`);
+          for (let i = 0; i < clientResult.value.length; i++) {
+            console.log(clientResult.value[i]);
+          }
+        } else {
+          console.warn("Didn't find custom XML part to query");
+        }
+      });
+
+
+      ...
+
+
+      // Original XML:
+      <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
+
 
       // Queries a custom XML part for elements matching the search terms.
 

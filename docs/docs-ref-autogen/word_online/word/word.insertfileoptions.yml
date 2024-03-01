@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
+
   // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
 
   await Word.run(async (context) => {

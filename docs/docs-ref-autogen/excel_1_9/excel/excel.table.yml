@@ -599,6 +599,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
 
+
       await Excel.run(async (context) => {
           let table = context.workbook.tables.getItemAt(0);
           table.onChanged.add(onChange);
@@ -632,6 +633,7 @@ events:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
 
       await Excel.run(async (context) => {
           let table = context.workbook.tables.getItemAt(0);

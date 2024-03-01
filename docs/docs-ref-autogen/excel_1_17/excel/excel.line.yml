@@ -225,6 +225,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
+
       await Excel.run(async (context) => {
           const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
           const line = shapes.getItem("StraightLine").line;
@@ -266,6 +267,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
 
       await Excel.run(async (context) => {
           const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -309,6 +311,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
+
       await Excel.run(async (context) => {
           const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
           const line = shapes.getItem("StraightLine").line;
@@ -341,6 +344,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
 
       await Excel.run(async (context) => {
           const shapes = context.workbook.worksheets.getItem("Shapes").shapes;

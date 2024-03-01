@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
 
+
   async function genericFunctionSwitch(functionType: Excel.AggregationFunction) {
       await Excel.run(async (context) => {
           const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");

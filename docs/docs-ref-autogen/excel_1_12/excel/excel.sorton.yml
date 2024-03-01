@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
+
   async function sortTopToBottom(criteria: string) {
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();

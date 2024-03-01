@@ -21,6 +21,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
+
   // Get the compose type of the current message.
 
   Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {

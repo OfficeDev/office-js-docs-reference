@@ -63,6 +63,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-body-format.yaml
 
+
       // Get the mail item's body format (plain text or HTML) and log it to the console.
 
       Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
@@ -200,6 +201,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-to-item-body.yaml
+
 
       /* This snippet adds text to the beginning of the message or appointment's body. 
         
@@ -378,6 +380,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/replace-selected-text.yaml
+
 
       /* This snippet replaces selected text in a message or appointment's body with specified text.
         
