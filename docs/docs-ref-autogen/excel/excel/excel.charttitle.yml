@@ -144,6 +144,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           const title = sheet.charts.getItemAt(0).title;
@@ -228,6 +229,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
+
 
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");

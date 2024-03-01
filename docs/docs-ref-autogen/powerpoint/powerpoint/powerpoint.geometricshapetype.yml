@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
+
   // This function gets the collection of shapes on the first slide,
 
   // and adds a hexagon shape to the collection, while specifying its

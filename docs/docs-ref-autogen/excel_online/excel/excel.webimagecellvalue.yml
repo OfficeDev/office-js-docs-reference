@@ -28,6 +28,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
 
+
       // This function retrieves the image URL from the selected cell and opens that image in a new browser tab.
 
       await Excel.run(async (context) => {
@@ -150,6 +151,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
+
 
       // This function inserts a web image into the currently selected cell.
 

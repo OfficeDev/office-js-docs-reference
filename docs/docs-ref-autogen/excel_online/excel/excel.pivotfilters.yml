@@ -26,6 +26,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
+
       await Excel.run(async (context) => {
         // Add a date-based PivotFilter.
 
@@ -78,6 +79,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
+
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter based on the strings of item labels.
 
@@ -124,6 +126,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
+
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter on manually-selected items.
 
@@ -169,6 +172,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
 
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter on the values correlated with a row.

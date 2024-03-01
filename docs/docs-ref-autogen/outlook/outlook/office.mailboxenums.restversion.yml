@@ -21,6 +21,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
+
   Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
       const ewsId = Office.context.mailbox.item.itemId;
       const token = result.value;

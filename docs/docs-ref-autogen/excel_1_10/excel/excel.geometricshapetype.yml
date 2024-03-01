@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
 
+
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Shapes");
       const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
 
+
   async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);

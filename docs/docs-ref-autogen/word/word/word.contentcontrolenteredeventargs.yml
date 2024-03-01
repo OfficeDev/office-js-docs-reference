@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
 
+
   async function contentControlEntered(event: Word.ContentControlEnteredEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. ID of content control that was entered: ${event.ids[0]}`);

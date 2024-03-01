@@ -21,6 +21,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
+
   if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
     console.error("Try this sample on an appointment from a shared folder.");
     return;

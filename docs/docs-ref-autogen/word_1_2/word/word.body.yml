@@ -52,6 +52,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the style and the font size, font name, and font color properties on the body object.
 
       // Run a batch operation against the Word object model.
@@ -104,6 +105,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
+
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
@@ -146,6 +148,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
+
 
       // Counts how many times each term appears in the document.
 
@@ -248,6 +251,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the text content of the body.
 
       // Run a batch operation against the Word object model.
@@ -289,6 +293,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Clears out the content from the document body.
 
@@ -338,6 +343,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the HTML that represents the content of the body.
 
       // Run a batch operation against the Word object model.
@@ -380,6 +386,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the OOXML that represents the content of the body.
 
       // Run a batch operation against the Word object model.
@@ -421,6 +428,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts a page break at the beginning of the document.
 
@@ -482,6 +490,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Creates a content control using the document body.
 
       // Run a batch operation against the Word object model.
@@ -539,6 +548,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Inserts the body from the external document at the beginning of this document.
 
       // Run a batch operation against the Word object model.
@@ -592,6 +602,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Inserts the HTML at the beginning of this document.
 
       // Run a batch operation against the Word object model.
@@ -644,6 +655,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts an image inline at the beginning of this document.
 
@@ -701,6 +713,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts OOXML at the beginning of this document.
 
@@ -768,6 +781,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
+
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
         const secondSentence = context.document.body.insertParagraph(
@@ -820,6 +834,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts text at the beginning of this document.
 
@@ -943,6 +958,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
+
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
@@ -961,6 +977,7 @@ methods:
 
 
       ...
+
 
       // Does a wildcard search and highlights matches in the document.
 
@@ -1029,6 +1046,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Selects the entire body.
 

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
+
   // Inserts a list starting with the first paragraph then set numbering and bullet types of the list items.
 
   await Word.run(async (context) => {

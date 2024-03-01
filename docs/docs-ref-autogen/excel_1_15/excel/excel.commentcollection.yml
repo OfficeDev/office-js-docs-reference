@@ -55,6 +55,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Comments");
 
@@ -333,6 +334,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
+
       await Excel.run(async (context) => {
           const comments = context.workbook.worksheets.getActiveWorksheet().comments;
 
@@ -348,6 +350,7 @@ events:
 
 
       ...
+
 
       async function commentAdded(event: Excel.CommentAddedEventArgs) {
           // Retrieve the added comment using the comment ID.
@@ -395,6 +398,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
+
       await Excel.run(async (context) => {
           const comments = context.workbook.worksheets.getActiveWorksheet().comments;
 
@@ -410,6 +414,7 @@ events:
 
 
       ...
+
 
       async function commentChanged(event: Excel.CommentChangedEventArgs) {
           // Retrieve the changed comment using the comment ID.
@@ -457,6 +462,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
+
       await Excel.run(async (context) => {
           const comments = context.workbook.worksheets.getActiveWorksheet().comments;
 
@@ -472,6 +478,7 @@ events:
 
 
       ...
+
 
       async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
           // Print out the deleted comment's ID.

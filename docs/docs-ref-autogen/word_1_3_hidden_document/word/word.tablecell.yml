@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
+
   // Gets the content of the first cell in the first table.
 
   await Word.run(async (context) => {
@@ -97,6 +98,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets content alignment details about the first cell of the first table in the document.
 
@@ -195,6 +197,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
+
       // Gets content alignment details about the first cell of the first table in the document.
 
       await Word.run(async (context) => {
@@ -288,6 +291,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
+
       // Gets border details about the first of the first table in the document.
 
       await Word.run(async (context) => {
@@ -351,6 +355,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets cell padding details about the first cell of the first table in the document.
 

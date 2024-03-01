@@ -55,6 +55,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
+
       await PowerPoint.run(async function(context) {
         const slide = context.presentation.slides.getItemAt(0);
         slide.tags.add("OCEAN", "Indian");
@@ -105,6 +106,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
 
       await PowerPoint.run(async function (context) {
         let presentationTags = context.presentation.tags;
@@ -159,6 +161,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
 
       await PowerPoint.run(async function(context) {
         let selectedSlideIndex = await getSelectedSlideIndex();

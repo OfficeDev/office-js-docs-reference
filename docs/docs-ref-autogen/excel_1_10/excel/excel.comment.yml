@@ -50,6 +50,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Comments");
           const comment = sheet.comments.getItemAt(0);
@@ -134,6 +135,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
 
+
       await Excel.run(async (context) => {
           context.workbook.comments.getItemByCell("Comments!A2").delete();
           await context.sync();
@@ -207,6 +209,7 @@ methods:
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
+
 
           await Excel.run(async (context) => {
               const comment = context.workbook.comments.getItemByCell("Comments!A2");

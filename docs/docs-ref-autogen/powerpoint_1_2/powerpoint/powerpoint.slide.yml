@@ -53,6 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
+
       // Deletes the selected slides.
 
       await PowerPoint.run(async (context) => {

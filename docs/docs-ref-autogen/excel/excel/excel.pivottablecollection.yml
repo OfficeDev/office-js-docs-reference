@@ -53,6 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
+
       await Excel.run(async (context) => {
           const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
           const rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
@@ -112,6 +113,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
+
 
       // This function refreshes the "Farm Sales" PivotTable,
 

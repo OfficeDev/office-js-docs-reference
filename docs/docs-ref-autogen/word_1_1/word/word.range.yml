@@ -314,6 +314,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
+
       // Simulates creation of a template. First searches the document for instances of the string "Contractor",
 
       // then changes the format  of each search result,

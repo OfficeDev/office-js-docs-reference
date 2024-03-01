@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
 
+
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
       const sumRange = sheet.getRange("B20:P20");
