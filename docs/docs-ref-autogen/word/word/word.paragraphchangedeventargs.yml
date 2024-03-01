@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
 
+
   // Registers the onParagraphChanged event handler on the document.
 
   await Word.run(async (context) => {
@@ -27,6 +28,7 @@ remarks: >-
 
 
   ...
+
 
   async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
     await Word.run(async (context) => {

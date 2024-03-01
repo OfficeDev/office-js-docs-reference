@@ -21,6 +21,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
+
   Office.context.mailbox.item.sensitivity.setAsync(
     Office.MailboxEnums.AppointmentSensitivityType.Confidential,
     function callback(asyncResult) {

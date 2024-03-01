@@ -42,6 +42,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
 
+
       async function onChange(event: Excel.WorksheetChangedEventArgs) {
           // This function is an event handler that returns the address, trigger source, 
           // and insert or delete shift directions of the change.
@@ -70,6 +71,7 @@ properties:
 
 
       ...
+
 
       // This function deletes data from a range and sets the delete shift direction to "up".
 
@@ -163,6 +165,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
 
       async function onChange(event: Excel.WorksheetChangedEventArgs) {
           // This function is an event handler that returns the address, trigger source, 

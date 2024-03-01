@@ -59,6 +59,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
 
+
       await Excel.run(async (context) => {
         context.application.calculate(Excel.CalculationType.full);
       });

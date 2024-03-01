@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
 
+
   // Registers the onParagraphDeleted event handler on the document.
 
   await Word.run(async (context) => {
@@ -27,6 +28,7 @@ remarks: >-
 
 
   ...
+
 
   async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
     await Word.run(async (context) => {

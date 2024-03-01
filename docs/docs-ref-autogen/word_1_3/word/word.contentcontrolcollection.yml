@@ -142,6 +142,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
+
       await Word.run(async (context) => {
           const contentControls = context.document.contentControls.getByTag("customer");
           contentControls.load("text");

@@ -72,6 +72,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
+
       // Adds a new style.
 
       await Word.run(async (context) => {
@@ -127,6 +128,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Gets the number of styles.
 

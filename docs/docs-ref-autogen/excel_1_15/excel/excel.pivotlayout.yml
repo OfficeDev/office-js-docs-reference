@@ -33,6 +33,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Set the alt text for the displayed PivotTable.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -117,6 +118,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Set a default value for an empty cell in the PivotTable. This doesn't include cells left blank by the layout.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -167,6 +169,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Toggle whether empty cells are filled with a default value.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -207,6 +210,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Change the PivotLayout.type to a new type.
@@ -253,6 +257,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -291,6 +296,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -335,6 +341,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Turn the field headers on and off for the row and column hierarchies.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -371,6 +378,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -433,6 +441,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Add a blank row after each PivotItem in the row hierarchy.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -485,6 +494,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
 
       await Excel.run(async (context) => {
           const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -692,6 +702,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Repeat the PivotItem labels for each row used by another level of the row hierarchy.

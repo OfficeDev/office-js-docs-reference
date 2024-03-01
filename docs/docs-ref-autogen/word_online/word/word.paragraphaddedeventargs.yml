@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
 
+
   // Registers the onParagraphAdded event handler on the document.
 
   await Word.run(async (context) => {
@@ -27,6 +28,7 @@ remarks: >-
 
 
   ...
+
 
   async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
     await Word.run(async (context) => {

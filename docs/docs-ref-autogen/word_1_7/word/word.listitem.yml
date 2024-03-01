@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
 
+
       // This example starts a new list with the second paragraph.
 
       await Word.run(async (context) => {

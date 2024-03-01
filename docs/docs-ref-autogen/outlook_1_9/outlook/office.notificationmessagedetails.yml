@@ -26,6 +26,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
   // Gets all the notification messages and their keys for the current mail item.
 
   Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {

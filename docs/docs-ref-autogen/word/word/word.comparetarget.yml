@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/compare-documents.yaml
 
+
   // Compares the current document with a specified external document.
 
   await Word.run(async (context) => {

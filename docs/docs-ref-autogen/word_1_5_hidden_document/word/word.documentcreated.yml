@@ -18,6 +18,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
+
   // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
 
   await Word.run(async (context) => {

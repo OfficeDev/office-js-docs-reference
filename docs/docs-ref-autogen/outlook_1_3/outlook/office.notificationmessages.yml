@@ -66,6 +66,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Adds a progress indicator to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -79,6 +80,7 @@ methods:
 
 
       ...
+
 
       // Adds an informational notification to the mail item.
 
@@ -96,6 +98,7 @@ methods:
 
       ...
 
+
       // Adds a persistent information notification to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -111,6 +114,7 @@ methods:
 
 
       ...
+
 
       // Adds an error notification to the mail item.
 
@@ -242,6 +246,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Gets all the notification messages and their keys for the current mail item.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
@@ -337,6 +342,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Removes a notification message from the current mail item.
 
       const id = $("#notificationId").val().toString();
@@ -429,6 +435,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
 
       // Replaces a notification message of a given key with another message.
 

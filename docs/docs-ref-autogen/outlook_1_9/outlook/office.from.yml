@@ -74,6 +74,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
 
+
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgFrom = asyncResult.value;

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
+
   await Word.run(async (context) => {
     // Use a two-dimensional array to hold the initial table values.
     const data = [
@@ -50,6 +51,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets alignment details about the first table in the document.
 
@@ -139,6 +141,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets alignment details about the first table in the document.
 
@@ -314,6 +317,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets content alignment details about the first row of the first table in the document.
 
@@ -539,6 +543,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
+
       // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
@@ -739,6 +744,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
+
       // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
@@ -803,6 +809,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
 
       // Gets the content of the first cell in the first table.
 
@@ -870,6 +877,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
 
       // Gets cell padding details about the first table in the document.
 

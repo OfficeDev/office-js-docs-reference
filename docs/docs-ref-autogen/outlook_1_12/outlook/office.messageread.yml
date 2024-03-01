@@ -81,6 +81,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
 
+
       const attachments = Office.context.mailbox.item.attachments;
 
       console.log(attachments);
@@ -167,6 +168,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
 
+
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const categories = asyncResult.value;
@@ -183,6 +185,7 @@ properties:
 
 
       ...
+
 
       // Note: In order for you to successfully add a category,
 
@@ -212,6 +215,7 @@ properties:
 
 
       ...
+
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -284,6 +288,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
 
+
       const msgCc = Office.context.mailbox.item.cc;
 
       console.log("Message copied to:");
@@ -333,6 +338,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
+
       console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
@@ -365,6 +371,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
 
       console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
 
@@ -407,6 +414,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
+
       console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
 
       ```
@@ -448,6 +456,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
+
 
       console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 
@@ -494,6 +503,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
 
+
       const msgFrom = Office.context.mailbox.item.from;
 
       console.log("Message received from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
@@ -535,6 +545,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
+
 
       console.log(`Internet message ID: ${Office.context.mailbox.item.internetMessageId}`);
 
@@ -586,6 +597,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
 
       console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 
@@ -689,6 +701,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
+
       const itemType = Office.context.mailbox.item.itemType;
 
       switch (itemType) {
@@ -734,6 +747,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-location-read.yaml
 
+
       console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
 
       ```
@@ -773,6 +787,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
+
       console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
 
       ```
@@ -809,6 +824,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Adds a progress indicator to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -822,6 +838,7 @@ properties:
 
 
       ...
+
 
       // Adds an informational notification to the mail item.
 
@@ -839,6 +856,7 @@ properties:
 
       ...
 
+
       // Adds a persistent information notification to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -855,6 +873,7 @@ properties:
 
       ...
 
+
       // Gets all the notification messages and their keys for the current mail item.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
@@ -868,6 +887,7 @@ properties:
 
 
       ...
+
 
       // Replaces a notification message of a given key with another message.
 
@@ -884,6 +904,7 @@ properties:
         handleResult);
 
       ...
+
 
       // Removes a notification message from the current mail item.
 
@@ -939,6 +960,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-recurrence-read.yaml
 
+
       const recurrence = Office.context.mailbox.item.recurrence;
 
 
@@ -989,6 +1011,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
+
 
       const msgSender = Office.context.mailbox.item.sender;
 
@@ -1045,6 +1068,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
 
+
       const seriesId = Office.context.mailbox.item.seriesId;
 
 
@@ -1092,6 +1116,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
 
+
       console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 
       ```
@@ -1132,6 +1157,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
 
       console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 
@@ -1184,6 +1210,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
+
 
       const msgTo = Office.context.mailbox.item.to;
 
@@ -1498,6 +1525,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
+
       Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
       ```
@@ -1558,6 +1586,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
 
       Office.context.mailbox.item.displayReplyAllFormAsync("This is a reply ALL with <b>some bold text</b>.", function(
         asyncResult
@@ -1780,10 +1809,12 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
+
       Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
 
       ...
+
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1858,6 +1889,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
+
       Office.context.mailbox.item.displayReplyFormAsync("This is a reply with <i>some text in italics</i>.", function(
         asyncResult
       ) {
@@ -1866,6 +1898,7 @@ methods:
 
 
       ...
+
 
       // The async version is only available starting with requirement set 1.9,
 
@@ -1998,6 +2031,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/get-internet-headers-message-read.yaml
 
+
       Office.context.mailbox.item.getAllInternetHeadersAsync(function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Internet headers received successfully");
@@ -2126,6 +2160,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
+
 
       // Gets the attachments of the current message or appointment in read mode.
 
@@ -2277,6 +2312,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
+
       const entities = Office.context.mailbox.item.getEntities();
 
       let entityTypesFound = 0;
@@ -2385,6 +2421,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
+
       console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 
       ```
@@ -2474,6 +2511,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
 
       // This API would only work when you click on highlighted physical address that has the word "Way" in it.
 
@@ -2703,6 +2741,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
+
       // This API would only work when you click on highlighted word "ScriptLab".
 
       console.log(Office.context.mailbox.item.getRegExMatches());
@@ -2819,6 +2858,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
+
       // This API would only work when you click on highlighted word "ScriptLab".
 
       console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
@@ -2902,6 +2942,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
+
 
       const entities = Office.context.mailbox.item.getSelectedEntities();
 
@@ -3070,6 +3111,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
+
       const matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
       if (matches) {
@@ -3128,6 +3170,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
 
       if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
         console.error("Try this sample on a message from a shared folder.");
@@ -3229,6 +3272,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
 
       if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
         console.error("Try this sample on an item from a shared folder.");
@@ -3339,6 +3383,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
 
       Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+
   await Word.run(async (context) => {
     // Get the complete sentence (as range) associated with the insertion point.
     const sentences = context.document

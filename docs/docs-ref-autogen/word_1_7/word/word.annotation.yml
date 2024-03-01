@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
+
       // Gets annotations found in the selected paragraph.
 
       await Word.run(async (context) => {
@@ -81,6 +82,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
 
       // Accepts the first annotation found in the selected paragraph.
 
@@ -128,6 +130,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
+
       // Rejects the last annotation found in the selected paragraph.
 
       await Word.run(async (context) => {
@@ -174,6 +177,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
 
       // Deletes all annotations found in the selected paragraph.
 

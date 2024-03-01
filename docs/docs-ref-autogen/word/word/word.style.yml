@@ -91,6 +91,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
+
       // Updates font properties (e.g., color, size) of the specified style.
 
       await Word.run(async (context) => {
@@ -176,6 +177,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
+
       // Applies the specified style to a paragraph.
 
       await Word.run(async (context) => {
@@ -246,6 +248,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
 
@@ -381,6 +384,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Deletes the custom style.
 

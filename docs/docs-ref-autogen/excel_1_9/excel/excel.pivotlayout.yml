@@ -54,6 +54,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Change the PivotLayout.type to a new type.
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -99,6 +100,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
+
       await Excel.run(async (context) => {
         // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
@@ -137,6 +139,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -180,6 +183,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -251,6 +255,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
 
       await Excel.run(async (context) => {
           const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");

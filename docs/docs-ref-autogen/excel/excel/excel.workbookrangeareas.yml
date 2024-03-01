@@ -42,6 +42,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
 
+
       await Excel.run(async (context) => {
         // Precedents are cells referenced by the formula in a cell.
         // A "direct precedent" is a cell directly referenced by the selected formula.
