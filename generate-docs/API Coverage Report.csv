@@ -6704,7 +6704,7 @@ Office.Context,"ui",Property,Fine,false
 Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
-Office.ContextInformation,"platform",Property,Fine,true
+Office.ContextInformation,"platform",Property,Good,true
 Office.ContextInformation,"version",Property,Fine,true
 Office.Control,N/A,Class,Good,false
 Office.Control,"enabled",Property,Good,false
