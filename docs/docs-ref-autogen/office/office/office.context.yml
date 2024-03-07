@@ -404,11 +404,18 @@ properties:
     fullName: platform
     summary: Provides the platform on which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      **Important**:
+
+
+      - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
+
+
+      - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on
+      Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
