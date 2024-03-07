@@ -1000,6 +1000,8 @@
       "ms.service": "microsoft-365",
       "ms.subservice": "add-ins",
       "ms.topic": "reference",
+      "feedback_system": "OpenSource",
+      "feedback_product_url": "/answers/tags/321/office-development",
       "open_source_feedback_contributorGuideUrl": "https://github.com/OfficeDev/office-js-docs-reference/blob/main/Contributing.md",
       "open_source_feedback_issueTitle": "",
       "open_source_feedback_issueUrl": "https://github.com/OfficeDev/office-js-docs-reference/issues/new?template=3-customer-feedback.yml",
@@ -1009,21 +1011,9 @@
       "product": ["office", "office-add-ins"],
       "products": [
         "https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d"
-      ],
-      "feedback_system": "OpenSource",
-      "feedback_github_repo": "OfficeDev/office-js-docs-reference",
-      "feedback_product_url": "/answers/tags/321/office-development"
+      ]
     },
     "fileMetadata": {
-      "feedback_system": {
-        "docs-ref-conceptual/**/*": "OpenSource"
-      },
-      "feedback_github_repo": {
-        "docs-ref-conceptual/**/*": "OfficeDev/office-js-docs-reference"
-      },
-      "feedback_product_url": {
-        "docs-ref-conceptual/**/*": "/answers/tags/321/office-development"
-      },
       "product": {
         "docs-ref-autogen/excel/**": ["office", "office-add-ins", "office-excel"],
         "docs-ref-autogen/excel_1_1/**": ["office", "office-add-ins", "office-excel"],
