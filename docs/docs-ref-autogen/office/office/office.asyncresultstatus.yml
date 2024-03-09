@@ -4,7 +4,29 @@ uid: 'office!Office.AsyncResultStatus:enum'
 package: office!
 fullName: Office.AsyncResultStatus
 summary: Specifies the result of an asynchronous call.
-remarks: 'Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.'
+remarks: |-
+  Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.
+
+  #### Examples
+
+  ```TypeScript
+  // The following example logs selected text in a document to the console.
+  Office.context.document.getSelectedDataAsync(
+      Office.CoercionType.Text,
+      {
+          valueFormat: "unformatted",
+          filterType: "all"
+      },
+      (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.log(result.error.message);
+              return;
+          }
+
+          console.log(`Selected data: ${result.value}`);
+      }
+  );
+  ```
 isPreview: false
 isDeprecated: false
 fields:
