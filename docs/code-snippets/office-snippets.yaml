@@ -419,6 +419,24 @@ Office.AsyncResult#value:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.AsyncResultStatus:enum:
+  - |-
+    // The following example logs selected text in a document to the console.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        {
+            valueFormat: "unformatted",
+            filterType: "all"
+        },
+        (result) => {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            console.log(`Selected data: ${result.value}`);
+        }
+    );
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
