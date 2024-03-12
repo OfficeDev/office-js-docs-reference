@@ -6615,7 +6615,7 @@ Office.AsyncResult,"diagnostics",Property,Good,false
 Office.AsyncResult,"error",Property,Fine,true
 Office.AsyncResult,"status",Property,Fine,true
 Office.AsyncResult,"value",Property,Good,true
-Office.AsyncResultStatus,N/A,Enum,Good,false
+Office.AsyncResultStatus,N/A,Enum,Good,true
 Office.AsyncResultStatus,"Failed",EnumField,Fine,false
 Office.AsyncResultStatus,"Succeeded",EnumField,Poor,false
 Office.Auth,N/A,Class,Good,false
