@@ -979,6 +979,14 @@ Excel.RangeFont#load:member(2):
         await context.sync();
         console.log(rangeFont.name);
     });
+Excel.RangeFont#name:member:
+  - |-
+    // Change the font of the selected range to "Impact".
+    await Excel.run(async (context) => {
+      const selection = context.workbook.getSelectedRange();
+      selection.format.font.name = "Impact";
+      await context.sync();
+    });
 Excel.RangeFormat#load:member(2):
   - |-
     // Select all of the range's format properties.
