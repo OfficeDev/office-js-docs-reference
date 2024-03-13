@@ -17,7 +17,7 @@ The following is a list of APIs for the [supported Office host applications](/of
 
 ## Office hosts
 
-<ul class="cardsK panelContent cols cols3">
+<ul class="cols cols3">
     <li>
         <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" height="140" width="140" />
         <h3>Excel APIs</h3>
