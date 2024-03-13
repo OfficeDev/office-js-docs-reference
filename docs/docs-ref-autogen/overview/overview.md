@@ -19,7 +19,7 @@ The following is a list of APIs for the [supported Office host applications](/of
 
 <ul class="cols cols3">
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" height="140" width="140" />
         <h3>Excel APIs</h3>
         <ul>
             <li><a href="/javascript/api/excel?view=excel-js-preview&preserve-view=true">ExcelApi Preview</a></li>
@@ -45,7 +45,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" height="140" width="140" />
         <h3>Outlook APIs</h3>
         <ul>
             <li><a href="/javascript/api/outlook?view=outlook-js-preview&preserve-view=true">Mailbox Preview</a></li>
@@ -66,7 +66,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" height="140" width="140" />
         <h3>Word APIs</h3>
         <ul>
             <li><a href="/javascript/api/word?view=word-js-preview&preserve-view=true">WordApi Preview</a></li>
@@ -85,7 +85,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" height="140" width="140" />
         <h3>PowerPoint APIs</h3>
         <ul>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true">PowerPointApi Preview</a></li>
@@ -98,7 +98,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" height="140" width="140" />
         <h3>OneNote APIs</h3>
         <ul>
             <li><a href="/javascript/api/onenote?view=onenote-js-1.1&preserve-view=true">OneNoteApi 1.1</a></li>
@@ -106,14 +106,14 @@ The following is a list of APIs for the [supported Office host applications](/of
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" height="140" width="140" />
         <h3>Visio APIs</h3>
         <ul>
             <li><a href="/javascript/api/visio?view=visio-js-1.1&preserve-view=true">VisioApi 1.1</a></li>
         </ul>
     </li>
     <li>
-        <img src="https://learn.microsoft.com/javascript/api/overview/images/logo-project.svg" alt="Project add-ins" height="140" width="140" />
+        <img src="/javascript/api/overview/images/logo-project.svg" alt="Project add-ins" height="140" width="140" />
         <h3>Project APIs</h3>
         <ul>
             <li><a href="/javascript/api/office?view=common-js&preserve-view=true">Common APIs only</a></li>
