@@ -1723,13 +1723,16 @@ methods:
 
       function showSelection() {
           Office.context.document.getSelectedDataAsync(
-              "text",                        // coercionType
-              {valueFormat: "unformatted",   // valueFormat
-              filterType: "all"},            // filterType
-              function (result) {            // callback
+              Office.CoercionType.Text,
+              {
+                  valueFormat: Office.ValueFormat.Unformatted,
+                  filterType: Office.FilterType.All
+              },
+              (result) => {
                   const dataValue = result.value;
                   write('Selected data is: ' + dataValue);
-              });
+              }
+          );
       }
 
       // Function that writes to a div with id='message' on the page.
@@ -1755,9 +1758,13 @@ methods:
       // 3. Display the value on the add-in's page.
 
       function getText() {
-          Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
-              { valueFormat: "unformatted", filterType: "all" },
-              function (asyncResult) {
+          Office.context.document.getSelectedDataAsync(
+              Office.CoercionType.Text,
+              {
+                  valueFormat: Office.ValueFormat.Unformatted,
+                  filterType: Office.FilterType.All
+              },
+              (asyncResult) => {
                   const error = asyncResult.error;
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(error.name + ": " + error.message);
@@ -1766,8 +1773,9 @@ methods:
                       // Get selected data.
                       const dataValue = asyncResult.value; 
                       write('Selected data is ' + dataValue);
-                  }            
-              });
+                  }
+              }
+          );
       }
 
 
@@ -1794,41 +1802,40 @@ methods:
       // <span id="message"></span>
 
 
-      (function () {
-          "use strict";
+      // The initialize function must be run each time a new page is loaded.
 
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
+      Office.onReady(() => {
+          $(document).ready(() => {
+              // After the DOM is loaded, add-in-specific code can run.
+              $('#get-info').on("click", getSelectedText);
+          });
+      });
 
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').on("click", getSelectedText);
-              });
-          };
 
-          // Get the text from the selected cells in the document, and display it in the add-in.
-          function getSelectedText() {
-              Office.context.document.getSelectedDataAsync(
-                  Office.CoercionType.Text,
-                  {asyncContext: 'Some related info'},
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          const output = String.format(
-                              'Selected text: {0}<br/>Passed info: {1}',
-                              result.value, result.asyncContext);
-                          $('#message').html(output);
-                      }
+      // Get the text from the selected cells in the document, and display it in the add-in.
+
+      function getSelectedText() {
+          Office.context.document.getSelectedDataAsync(
+              Office.CoercionType.Text,
+              { asyncContext: "Some related info" },
+              (result) => {
+                  if (result.status === Office.AsyncResultStatus.Failed) {
+                      onError(result.error);
                   }
-              );
-          }
+                  else {
+                      const output = String.format(
+                          'Selected text: {0}<br/>Passed info: {1}',
+                          result.value, result.asyncContext);
+                      $('#message').html(output);
+                  }
+              }
+          );
+      }
 
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
+
+      function onError(error) {
+          $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+      }
 
       ```
     isPreview: false
