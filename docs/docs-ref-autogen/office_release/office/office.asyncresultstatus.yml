@@ -14,8 +14,8 @@ remarks: |-
   Office.context.document.getSelectedDataAsync(
       Office.CoercionType.Text,
       {
-          valueFormat: "unformatted",
-          filterType: "all"
+          valueFormat: Office.ValueFormat.Unformatted,
+          filterType: Office.FilterType.All
       },
       (result) => {
           if (result.status === Office.AsyncResultStatus.Failed) {
