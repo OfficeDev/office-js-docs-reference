@@ -3470,7 +3470,7 @@ Office.Document#getSelectedDataAsync:member(1):
     // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
     // user's current selection as text, and then display it in the add-in's page.
 
-    // Display the user's current selection.
+    // Displays the user's current selection.
     function showSelection() {
         Office.context.document.getSelectedDataAsync(
             Office.CoercionType.Text,
@@ -3528,7 +3528,7 @@ Office.Document#getSelectedDataAsync:member(1):
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
-    // The initialize function must be run each time a new page is loaded.
+    // The onReady function must be run each time a new page is loaded.
     Office.onReady(() => {
         $(document).ready(() => {
             // After the DOM is loaded, add-in-specific code can run.
@@ -3536,7 +3536,7 @@ Office.Document#getSelectedDataAsync:member(1):
         });
     });
 
-    // Get the text from the selected cells in the document, and display it in the add-in.
+    // Gets the text from the selected cells in the document, and displays it in the add-in.
     function getSelectedText() {
         Office.context.document.getSelectedDataAsync(
             Office.CoercionType.Text,
