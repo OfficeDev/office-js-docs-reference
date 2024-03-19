@@ -5133,7 +5133,7 @@ Excel.RangeFont,"bold",Property,Good,false
 Excel.RangeFont,"color",Property,Good,false
 Excel.RangeFont,"context",Property,Good,false
 Excel.RangeFont,"italic",Property,Good,false
-Excel.RangeFont,"name",Property,Good,false
+Excel.RangeFont,"name",Property,Good,true
 Excel.RangeFont,"size",Property,Good,false
 Excel.RangeFont,"strikethrough",Property,Good,false
 Excel.RangeFont,"subscript",Property,Good,false
