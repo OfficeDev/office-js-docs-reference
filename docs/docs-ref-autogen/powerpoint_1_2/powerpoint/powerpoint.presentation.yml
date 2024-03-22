@@ -65,6 +65,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
 
+
       await PowerPoint.run(async function(context) {
           const selectedSlideID = await getSelectedSlideID();
 

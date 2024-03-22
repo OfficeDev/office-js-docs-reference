@@ -3,11 +3,8 @@ name: Visio.Document
 uid: 'visio!Visio.Document:class'
 package: visio!
 fullName: Visio.Document
-summary: |-
-  Represents the Document class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Document class.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'visio!Visio.Document#application:member'
     package: visio!
     fullName: application
-    summary: |-
-      Represents a Visio application instance that contains this document. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Represents a Visio application instance that contains this document.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,45 +39,38 @@ properties:
     uid: 'visio!Visio.Document#pages:member'
     package: visio!
     fullName: pages
-    summary: |-
-      Represents a collection of pages associated with the document. Read-only.
-
+    summary: Represents a collection of pages associated with the document.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const pages = ctx.document.pages;
+          const pageCount = pages.getCount();
+          return ctx.sync().then(function () {
+              console.log("Pages Count: " +pageCount.value);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly pages: Visio.PageCollection;'
       return:
         type: '<xref uid="visio!Visio.PageCollection:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const pages = ctx.document.pages;
-              const pageCount = pages.getCount();
-              return ctx.sync().then(function () {
-                  console.log("Pages Count: " +pageCount.value);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: view
     uid: 'visio!Visio.Document#view:member'
     package: visio!
     fullName: view
-    summary: |-
-      Returns the DocumentView object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Returns the DocumentView object.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,37 +82,34 @@ methods:
     uid: 'visio!Visio.Document#getActivePage:member(1)'
     package: visio!
     fullName: getActivePage()
-    summary: |-
-      Returns the Active Page of the document.
-
+    summary: Returns the Active Page of the document.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const document = ctx.document;
+          const activePage = document.getActivePage();
+          activePage.load("name");
+          return ctx.sync().then(function () {
+              console.log("pageName: " +activePage.name);
+          });   
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getActivePage(): Visio.Page;'
       return:
         type: '<xref uid="visio!Visio.Page:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const document = ctx.document;
-              const activePage = document.getActivePage();
-              activePage.load("name");
-              return ctx.sync().then(function () {
-                  console.log("pageName: " +activePage.name);
-              });   
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'visio!Visio.Document#load:member(1)'
     package: visio!
@@ -200,10 +184,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Document): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,11 +222,25 @@ methods:
     uid: 'visio!Visio.Document#setActivePage:member(1)'
     package: visio!
     fullName: setActivePage(PageName)
-    summary: |-
-      Set the Active Page of the document.
-
+    summary: Set the Active Page of the document.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const document = ctx.document;
+          const pageName = "Page-1";
+          document.setActivePage(pageName);
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,24 +251,7 @@ methods:
           type: string
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const document = ctx.document;
-              const pageName = "Page-1";
-              document.setActivePage(pageName);
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: setMockData(data)
     uid: 'visio!Visio.Document#setMockData:member(1)'
     package: visio!
@@ -296,12 +274,9 @@ methods:
     package: visio!
     fullName: 'showTaskPane(taskPaneType, initialProps, show)'
     summary: >-
-      Show or Hide a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio
+      Shows or hides a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the Visio
       drawing to show/hide the task pane.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,10 +288,10 @@ methods:
         - id: initialProps
           description: >-
             Optional Parameter. This is a generic data structure which would be filled with initial data required to
-            initialize the content of the Taskpane
+            initialize the content of the task pane.
           type: any
         - id: show
-          description: 'Optional Parameter. If it is set to false, it will hide the specified taskpane'
+          description: 'Optional Parameter. If it is set to false, it will hide the specified task pane.'
           type: boolean
       return:
         type: void
@@ -326,12 +301,9 @@ methods:
     package: visio!
     fullName: 'showTaskPane(taskPaneTypeString, initialProps, show)'
     summary: >-
-      Show or Hide a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio
+      Shows or hides a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the Visio
       drawing to show/hide the task pane.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,10 +317,10 @@ methods:
         - id: initialProps
           description: >-
             Optional Parameter. This is a generic data structure which would be filled with initial data required to
-            initialize the content of the Taskpane
+            initialize the content of the task pane.
           type: any
         - id: show
-          description: 'Optional Parameter. If it is set to false, it will hide the specified taskpane'
+          description: 'Optional Parameter. If it is set to false, it will hide the specified task pane.'
           type: boolean
       return:
         type: void
@@ -357,34 +329,31 @@ methods:
     uid: 'visio!Visio.Document#startDataRefresh:member(1)'
     package: visio!
     fullName: startDataRefresh()
-    summary: |-
-      Triggers the refresh of the data in the Diagram, for all pages.
-
+    summary: 'Triggers the refresh of the data in the Diagram, for all pages.'
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const document = ctx.document;
+          document.startDataRefresh();
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'startDataRefresh(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const document = ctx.document;
-              document.startDataRefresh();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: toJSON()
     uid: 'visio!Visio.Document#toJSON:member(1)'
     package: visio!
@@ -408,11 +377,8 @@ events:
     uid: 'visio!Visio.Document#onDataRefreshComplete:member'
     package: visio!
     fullName: onDataRefreshComplete
-    summary: |-
-      Occurs when the data is refreshed in the diagram.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when the data is refreshed in the diagram.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -425,11 +391,8 @@ events:
     uid: 'visio!Visio.Document#onDocumentError:member'
     package: visio!
     fullName: onDocumentError
-    summary: |-
-      Occurs when there is an expected or unexpected error occured in the session.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when there is an expected or unexpected error occurred in the session.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,11 +405,8 @@ events:
     uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
     package: visio!
     fullName: onDocumentLoadComplete
-    summary: |-
-      Occurs when the Document is loaded, refreshed, or changed.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'Occurs when the Document is loaded, refreshed, or changed.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -459,11 +419,8 @@ events:
     uid: 'visio!Visio.Document#onPageLoadComplete:member'
     package: visio!
     fullName: onPageLoadComplete
-    summary: |-
-      Occurs when the page is finished loading.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when the page is finished loading.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -476,11 +433,8 @@ events:
     uid: 'visio!Visio.Document#onSelectionChanged:member'
     package: visio!
     fullName: onSelectionChanged
-    summary: |-
-      Occurs when the current selection of shapes changes.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when the current selection of shapes changes.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -493,11 +447,8 @@ events:
     uid: 'visio!Visio.Document#onShapeMouseEnter:member'
     package: visio!
     fullName: onShapeMouseEnter
-    summary: |-
-      Occurs when the user moves the mouse pointer into the bounding box of a shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when the user moves the mouse pointer into the bounding box of a shape.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -510,11 +461,8 @@ events:
     uid: 'visio!Visio.Document#onShapeMouseLeave:member'
     package: visio!
     fullName: onShapeMouseLeave
-    summary: |-
-      Occurs when the user moves the mouse out of the bounding box of a shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs when the user moves the mouse out of the bounding box of a shape.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -527,11 +475,8 @@ events:
     uid: 'visio!Visio.Document#onTaskPaneStateChanged:member'
     package: visio!
     fullName: onTaskPaneStateChanged
-    summary: |-
-      Occurs whenever a task pane state is changed
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Occurs whenever a task pane state is changed.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

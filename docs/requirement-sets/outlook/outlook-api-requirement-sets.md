@@ -1,30 +1,16 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 12/05/2023
+ms.date: 02/29/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365 (preview)](/office/dev/add-ins/develop/unified-manifest-overview).
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365](/office/dev/add-ins/develop/unified-manifest-overview).
 
-# [XML Manifest](#tab/xmlmanifest)
-
-The API version is specified by the [Requirements](/javascript/api/manifest/requirements) element. Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
-
-For example, the following manifest snippet indicates a minimum requirement set of 1.1.
-
-```xml
-<Requirements>
-  <Sets>
-    <Set Name="Mailbox" MinVersion="1.1" />
-  </Sets>
-</Requirements>
-```
-
-# [Unified manifest for Microsoft 365 (developer preview)](#tab/jsonmanifest)
+# [Unified manifest for Microsoft 365](#tab/jsonmanifest)
 
 The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios.
 
@@ -42,6 +28,20 @@ For example, the following manifest snippet indicates a minimum requirement set 
   },
   ...
 }
+```
+
+# [XML Manifest](#tab/xmlmanifest)
+
+The API version is specified by the [Requirements](/javascript/api/manifest/requirements) element. Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
+
+For example, the following manifest snippet indicates a minimum requirement set of 1.1.
+
+```xml
+<Requirements>
+  <Sets>
+    <Set Name="Mailbox" MinVersion="1.1" />
+  </Sets>
+</Requirements>
 ```
 
 ---
@@ -113,6 +113,7 @@ Add-ins are supported in Outlook on the following platforms.
 | Platform | Major Office/Outlook version | Supported API requirement sets |
 |---|---|---|
 | Windows | - Microsoft 365 subscription<br>- retail perpetual Outlook 2016 and later | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup>, [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md)<sup>1</sup>, [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md)<sup>1</sup>, [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md)<sup>1</sup>, [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md)<sup>1</sup>, [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md)<sup>1</sup><br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup><br>[OpenBrowserWindowApi 1.1](../common/open-browser-window-api-requirement-sets.md) |
+|| [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md), [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || volume-licensed perpetual Outlook 2021 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup>, [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md)<sup>1</sup><br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup><br>[OpenBrowserWindowApi 1.1](../common/open-browser-window-api-requirement-sets.md) |
 || volume-licensed perpetual Outlook 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md) |
 || volume-licensed perpetual Outlook 2016 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md)<sup>3</sup> |

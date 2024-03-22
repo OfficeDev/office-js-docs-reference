@@ -1,0 +1,12 @@
+### YamlMime:TSType
+name: Word.Interfaces.CheckboxContentControlUpdateData
+uid: 'word!Word.Interfaces.CheckboxContentControlUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.CheckboxContentControlUpdateData
+summary: >-
+  An interface for updating data on the CheckboxContentControl object, for use in `checkboxContentControl.set({ ...
+  })`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

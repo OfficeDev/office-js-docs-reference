@@ -391,6 +391,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
 
+
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");
           let salesTable = sheet.tables.getItem("SalesTable");
@@ -442,6 +443,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
 
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");
@@ -495,6 +497,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
 
+
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");
           let salesTable = sheet.tables.getItem("SalesTable");
@@ -546,6 +549,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
 
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");
@@ -804,6 +808,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
 
+
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const seriesCollection = sheet.charts.getItemAt(0).series;
@@ -846,6 +851,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
+
 
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1040,6 +1046,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
 
+
       await Excel.run(async (context) => {
         /*
           The table is expected to look like this:
@@ -1113,6 +1120,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
+
 
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");

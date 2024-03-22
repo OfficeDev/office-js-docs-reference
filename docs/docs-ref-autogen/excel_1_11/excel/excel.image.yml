@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Shapes");
           const image = sheet.shapes.getItem("Image").image;

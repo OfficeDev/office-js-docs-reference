@@ -3,11 +3,8 @@ name: Visio.ShapeCollection
 uid: 'visio!Visio.ShapeCollection:class'
 package: visio!
 fullName: Visio.ShapeCollection
-summary: |-
-  Represents the Shape Collection.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Shape Collection.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,45 +40,39 @@ methods:
     uid: 'visio!Visio.ShapeCollection#getCount:member(1)'
     package: visio!
     fullName: getCount()
-    summary: |-
-      Gets the number of Shapes in the collection.
-
+    summary: Gets the number of Shapes in the collection.
+    remarks: |-
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const numShapesActivePage = activePage.shapes.getCount();
+          return ctx.sync().then(function () {
+              console.log("Shapes Count: " + numShapesActivePage.value);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const numShapesActivePage = activePage.shapes.getCount();
-              return ctx.sync().then(function () {
-                  console.log("Shapes Count: " + numShapesActivePage.value);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItem(key)
     uid: 'visio!Visio.ShapeCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: |-
-      Gets a Shape using its key (name or Index).
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets a Shape using its key (name or Index).
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

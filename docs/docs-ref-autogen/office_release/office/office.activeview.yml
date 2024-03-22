@@ -4,7 +4,22 @@ uid: 'office!Office.ActiveView:enum'
 package: office!
 fullName: Office.ActiveView
 summary: 'Specifies the state of the active view of the document, for example, whether the user can edit the document.'
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Get whether the current view is edit or read.
+  Office.context.document.getActiveViewAsync(function (asyncResult) {
+      if (asyncResult.status == "failed") {
+          showMessage("Action failed with error: " + asyncResult.error.message);
+      } else {
+          const activeView : Office.ActiveView = asyncResult.value;
+          showMessage("The current view is " + activeView);
+      }
+  });
+  ```
 isPreview: false
 isDeprecated: false
 fields:

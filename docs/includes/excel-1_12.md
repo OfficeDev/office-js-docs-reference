@@ -47,7 +47,7 @@
 ||[condition](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-condition-member)|Specifies the condition for the filter, which defines the necessary filtering criteria.|
 ||[exclusive](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-exclusive-member)|If `true`, filter *excludes* items that meet criteria.|
 ||[lowerBound](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-lowerbound-member)|The lower-bound of the range for the `between` filter condition.|
-||[substring](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-substring-member)|The substring used for `beginsWith`, `endsWith`, and `contains` filter conditions.|
+||[substring](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-substring-member)|The substring used for the `beginsWith`, `endsWith`, and `contains` filter conditions.|
 ||[upperBound](/javascript/api/excel/excel.pivotlabelfilter#excel-excel-pivotlabelfilter-upperbound-member)|The upper-bound of the range for the `between` filter condition.|
 |[PivotManualFilter](/javascript/api/excel/excel.pivotmanualfilter)|[selectedItems](/javascript/api/excel/excel.pivotmanualfilter#excel-excel-pivotmanualfilter-selecteditems-member)|A list of selected items to manually filter.|
 |[PivotTable](/javascript/api/excel/excel.pivottable)|[allowMultipleFiltersPerField](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-allowmultiplefiltersperfield-member)|Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.|

@@ -13254,6 +13254,8 @@ export declare namespace Excel {
         textAsNumber = "TextAsNumber"
     }
     /**
+     * Represents the ordering method to be used when sorting Chinese characters.
+     *
      * @remarks
      * [Api set: ExcelApi 1.2]
      */

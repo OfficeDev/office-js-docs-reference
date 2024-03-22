@@ -1,3 +1,29 @@
+Office.ActiveView:enum:
+  - |-
+    // Get whether the current view is edit or read.
+    Office.context.document.getActiveViewAsync(function (asyncResult) {
+        if (asyncResult.status == "failed") {
+            showMessage("Action failed with error: " + asyncResult.error.message);
+        } else {
+            const activeView : Office.ActiveView = asyncResult.value;
+            showMessage("The current view is " + activeView);
+        }
+    });
+Office.Addin#onVisibilityModeChanged:member(1):
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
+
+        // Other startup tasks.
+    });
+Office.Addin#setStartupBehavior:member(1):
+  - |-
+    // Configure your add-in to load and start running when the document is opened.
+    Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 Office.AddinCommands.Event#completed:member(1):
   - |-
     // For the following example, the processItem function is
@@ -270,15 +296,50 @@ Office.AddinCommands.Source#id:member:
 
         event.completed();
     }
+Office.AsyncContextOptions:interface:
+  - |-
+    // The following example gets the attachment contents of the
+    // current mail item being composed in Outlook.
+    function getAttachmentContentCompose() {
+        const item = Office.context.mailbox.item;
+        const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
+        item.getAttachmentsAsync(options, callback);
+
+        function callback(result) {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            if (result.value.length <= 0) {
+                console.log("Mail item has no attachments.");
+                return;
+            }
+
+            const currentItem = result.asyncContext.currentItem;
+            for (let i = 0; i < result.value.length; i++) {
+                currentItem.getAttachmentContentAsync(result.value[i].id, (asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    console.log(asyncResult.value.content);
+                });
+            }
+        }
+    }
 Office.AsyncResult:interface:
   - |-
     // The following is an example applicable to content and task pane add-ins.
     // The example shows a call to the getSelectedDataAsync method of the Document object.
-    Office.context.document.getSelectedDataAsync("text", {
-            valueFormat: "unformatted",
-            filterType: "all"
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        {
+            valueFormat: Office.ValueFormat.Unformatted,
+            filterType: Office.FilterType.All
         },
-        function (result) {
+        (result) => {
             if (result.status === Office.AsyncResultStatus.Succeeded) {
                 const dataValue = result.value; // Get selected data.
                 console.log('Selected data is ' + dataValue);
@@ -286,8 +347,9 @@ Office.AsyncResult:interface:
                 const err = result.error;
                 console.log(err.name + ": " + err.message);
             }
-        });
-    // The anonymous function passed as the callback argument ( function (result){...}) has a single 
+        }
+    );
+    // The anonymous function passed as the callback argument ((result) => {...}) has a single 
     // parameter named result that provides access to an AsyncResult object when the function executes.
     // When the call to the getSelectedDataAsync method completes, the callback function executes, 
     // and the following line of code accesses the value property of the AsyncResult object to 
@@ -360,6 +422,24 @@ Office.AsyncResult#value:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.AsyncResultStatus:enum:
+  - |-
+    // The following example logs selected text in a document to the console.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        {
+            valueFormat: Office.ValueFormat.Unformatted,
+            filterType: Office.FilterType.All
+        },
+        (result) => {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            console.log(`Selected data: ${result.value}`);
+        }
+    );
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -817,6 +897,19 @@ Office.Bindings#releaseByIdAsync:member(2):
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
+Office.CoercionType:enum:
+  - |-
+    // This function displays the currently selected text in the console.
+    // It uses the Common (Office 2013) APIs.
+    function run() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(asyncResult.error.message);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+        });
+    }
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -887,6 +980,41 @@ Office.Context#officeTheme:member:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+Office.Context#partitionKey:member:
+  - |-
+    // Store the value "Hello" in local storage with the key "myKey1".
+    setInLocalStorage("myKey1", "Hello");
+
+    // ... 
+
+    // Retrieve the value stored in local storage under the key "myKey1".
+    const message = getFromLocalStorage("myKey1");
+    console.log(message);
+
+    // ...
+
+    function setInLocalStorage(key: string, value: string) {
+        const myPartitionKey = Office.context.partitionKey;
+
+        // Check if local storage is partitioned. 
+        // If so, use the partition to ensure the data is only accessible by your add-in.
+        if (myPartitionKey) {
+            localStorage.setItem(myPartitionKey + key, value);
+        } else {
+            localStorage.setItem(key, value);
+        }
+    }
+
+    function getFromLocalStorage(key: string) {
+        const myPartitionKey = Office.context.partitionKey;
+
+        // Check if local storage is partitioned.
+        if (myPartitionKey) {
+            return localStorage.getItem(myPartitionKey + key);
+        } else {
+            return localStorage.getItem(key);
+        }
+    }
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -914,6 +1042,14 @@ Office.Context#roamingSettings:member:
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
+Office.Context#urls:member:
+  - |-
+    // Get the value of the first parameter of the JavaScript runtime URL.
+    // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+    // the following function logs "First parameter value: value1" to the console.
+    const url = Office.context.urls.javascriptRuntimeUrl;
+    const regex = /=([^&]+)/;
+    console.log(`First parameter value: ${url.match(regex)[1]}`);
 Office.ContextInformation#host:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -1449,6 +1585,10 @@ Office.DialogOptions#width:member:
             });
         }
     );
+Office.Document:interface:
+  - |-
+    // Get the Document object with the Common APIs.
+    const document : Office.Document = Office.context.document;
 Office.Document#addHandlerAsync:member(2):
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
@@ -1618,7 +1758,7 @@ Office.Document#addHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ViewSelectionChanged,
                     getActiveView);
-                $('#get-info').click(getResourceGuid);
+                $('#get-info').on("click", getResourceGuid);
 
                 // This example calls the handler on page load to get the active view
                 // of the default page.
@@ -1729,37 +1869,36 @@ Office.Document#getFileAsync:member(1):
                     // result.value will return a valid File Object.
                     const myFile = result.value;
                     const sliceCount = myFile.sliceCount;
-                    const docdataSlices = [];
+                    const docDataSlices = [];
                     let slicesReceived = 0, gotAllSlices = true;
                     app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                     // Get the file slices.
-                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
-                }
-                else {
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                } else {
                     app.showNotification("Error:", result.error.message);
                 }
         });
     }
 
-    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived) {
+    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
         file.getSliceAsync(nextSlice, function (sliceResult) {
             if (sliceResult.status == "succeeded") {
-                if (!gotAllSlices) { // Failed to get all slices, no need to continue.
+                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                     return;
                 }
 
                 // Got one slice, store it in a temporary array.
                 // (Or you can do something else, such as
                 // send it to a third-party server.)
-                docdataSlices[sliceResult.value.index] = sliceResult.value.data;
+                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
                 if (++slicesReceived == sliceCount) {
                   // All slices have been received.
                   file.closeAsync();
-                  onGotAllSlices(docdataSlices);
+                  onGotAllSlices(docDataSlices);
                 }
                 else {
-                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 }
             }
                 else {
@@ -1770,15 +1909,15 @@ Office.Document#getFileAsync:member(1):
         });
     }
 
-    function onGotAllSlices(docdataSlices) {
-        let docdata = [];
-        for (let i = 0; i < docdataSlices.length; i++) {
-            docdata = docdata.concat(docdataSlices[i]);
+    function onGotAllSlices(docDataSlices) {
+        let docData = [];
+        for (let i = 0; i < docDataSlices.length; i++) {
+            docData = docData.concat(docDataSlices[i]);
         }
 
         let fileContent = new String();
-        for (let j = 0; j < docdata.length; j++) {
-            fileContent += String.fromCharCode(docdata[j]);
+        for (let j = 0; j < docData.length; j++) {
+            fileContent += String.fromCharCode(docData[j]);
         }
 
         // Now all the file content is stored in 'fileContent' variable,
@@ -1792,17 +1931,18 @@ Office.Document#getFileAsync:member(1):
                 const myFile = result.value;
                 const sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
                 // Get the file slices.
-                const docdataSlices = [];
+                const docDataSlices = [];
                 let slicesReceived = 0, gotAllSlices = true;
-                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 
                 myFile.closeAsync();
             }
             else {
                 app.showNotification("Error:", result.error.message);
             }
-    }
+        }
     );
 Office.Document#getFilePropertiesAsync:member(2):
   - |-
@@ -1828,16 +1968,19 @@ Office.Document#getSelectedDataAsync:member(1):
     // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
     // user's current selection as text, and then display it in the add-in's page.
 
-    // Display the user's current selection.
+    // Displays the user's current selection.
     function showSelection() {
         Office.context.document.getSelectedDataAsync(
-            "text",                        // coercionType
-            {valueFormat: "unformatted",   // valueFormat
-            filterType: "all"},            // filterType
-            function (result) {            // callback
+            Office.CoercionType.Text,
+            {
+                valueFormat: Office.ValueFormat.Unformatted,
+                filterType: Office.FilterType.All
+            },
+            (result) => {
                 const dataValue = result.value;
                 write('Selected data is: ' + dataValue);
-            });
+            }
+        );
     }
     // Function that writes to a div with id='message' on the page.
     function write(message){
@@ -1851,9 +1994,13 @@ Office.Document#getSelectedDataAsync:member(1):
     // 2. Read the selection as text, unformatted, and not filtered.
     // 3. Display the value on the add-in's page.
     function getText() {
-        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
-            { valueFormat: "unformatted", filterType: "all" },
-            function (asyncResult) {
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text,
+            {
+                valueFormat: Office.ValueFormat.Unformatted,
+                filterType: Office.FilterType.All
+            },
+            (asyncResult) => {
                 const error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     write(error.name + ": " + error.message);
@@ -1862,8 +2009,9 @@ Office.Document#getSelectedDataAsync:member(1):
                     // Get selected data.
                     const dataValue = asyncResult.value; 
                     write('Selected data is ' + dataValue);
-                }            
-            });
+                }
+            }
+        );
     }
 
     // Function that writes to a div with id='message' on the page.
@@ -1878,41 +2026,36 @@ Office.Document#getSelectedDataAsync:member(1):
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
-    (function () {
-        "use strict";
+    // The onReady function must be run each time a new page is loaded.
+    Office.onReady(() => {
+        $(document).ready(() => {
+            // After the DOM is loaded, add-in-specific code can run.
+            $('#get-info').on("click", getSelectedText);
+        });
+    });
 
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getSelectedText);
-            });
-        };
-
-        // Get the text from the selected cells in the document, and display it in the add-in.
-        function getSelectedText() {
-            Office.context.document.getSelectedDataAsync(
-                Office.CoercionType.Text,
-                {asyncContext: 'Some related info'},
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        onError(result.error);
-                    }
-                    else {
-                        const output = String.format(
-                            'Selected text: {0}<br/>Passed info: {1}',
-                            result.value, result.asyncContext);
-                        $('#message').html(output);
-                    }
+    // Gets the text from the selected cells in the document, and displays it in the add-in.
+    function getSelectedText() {
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text,
+            { asyncContext: "Some related info" },
+            (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    onError(result.error);
                 }
-            );
-        }
+                else {
+                    const output = String.format(
+                        'Selected text: {0}<br/>Passed info: {1}',
+                        result.value, result.asyncContext);
+                    $('#message').html(output);
+                }
+            }
+        );
+    }
 
-        function onError(error) {
-            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-        }
-    })();
+    function onError(error) {
+        $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+    }
 Office.Document#goToByIdAsync:member(2):
   - |-
     // Go to a binding by id (Word and Excel)
@@ -2085,7 +2228,7 @@ Office.Document#removeHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ResourceSelectionChanged,
                     getResourceGuid);
-                $('#remove-handler').click(removeEventHandler);
+                $('#remove-handler').on("click", removeEventHandler);
             });
         };
 
@@ -2296,6 +2439,72 @@ Office.Error#name:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.FileType:enum:
+  - |-
+    // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
+    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
+    function getDocumentAsCompressed() {
+        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
+            function (result) {
+                if (result.status == "succeeded") {
+                    // If the getFileAsync call succeeded, then
+                    // result.value will return a valid File Object.
+                    const myFile = result.value;
+                    const sliceCount = myFile.sliceCount;
+                    const docDataSlices = [];
+                    let slicesReceived = 0, gotAllSlices = true;
+                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+                    // Get the file slices.
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                } else {
+                    app.showNotification("Error:", result.error.message);
+                }
+        });
+    }
+
+    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
+        file.getSliceAsync(nextSlice, function (sliceResult) {
+            if (sliceResult.status == "succeeded") {
+                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
+                    return;
+                }
+
+                // Got one slice, store it in a temporary array.
+                // (Or you can do something else, such as
+                // send it to a third-party server.)
+                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
+                if (++slicesReceived == sliceCount) {
+                  // All slices have been received.
+                  file.closeAsync();
+                  onGotAllSlices(docDataSlices);
+                }
+                else {
+                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+                }
+            }
+                else {
+                    gotAllSlices = false;
+                    file.closeAsync();
+                    app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                }
+        });
+    }
+
+    function onGotAllSlices(docDataSlices) {
+        let docData = [];
+        for (let i = 0; i < docDataSlices.length; i++) {
+            docData = docData.concat(docDataSlices[i]);
+        }
+
+        let fileContent = new String();
+        for (let j = 0; j < docData.length; j++) {
+            fileContent += String.fromCharCode(docData[j]);
+        }
+
+        // Now all the file content is stored in 'fileContent' variable,
+        // you can do something with it, such as print, fax...
+    }
 Office.initialize:function(1):
   - |-
     // You can use the value of the InitializationEnumeration to implement different logic for
@@ -2372,7 +2581,7 @@ Office.Document#getMaxResourceIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -2450,7 +2659,7 @@ Office.Document#getMaxTaskIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -2590,7 +2799,7 @@ Office.Document#getResourceByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -2666,7 +2875,7 @@ Office.Document#getResourceFieldAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -2756,7 +2965,7 @@ Office.Document#getSelectedResourceAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -2845,7 +3054,7 @@ Office.Document#getSelectedTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -2959,7 +3168,7 @@ Office.Document#getTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -3032,7 +3241,7 @@ Office.Document#getTaskByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -3106,7 +3315,7 @@ Office.Document#getTaskFieldAsync:member(2):
             $(document).ready(function () {
                 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -3197,7 +3406,7 @@ Office.Document#setResourceFieldAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setResourceInfo);
+                $('#set-info').on("click", setResourceInfo);
             });
         };
 
@@ -3276,7 +3485,7 @@ Office.Document#setTaskFieldAsync:member(2):
                 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setTaskInfo);
+                $('#set-info').on("click", setTaskInfo);
             });
         };
 
@@ -3333,6 +3542,41 @@ Office.Document#setTaskFieldAsync:member(2):
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
+Office.DocumentMode:enum:
+  - |-
+    const mode : Office.DocumentMode = Office.context.document.mode;
+    console.log("Document mode: " + mode);
+Office.EventType:enum:
+  - |-
+    // This sample shows how to register an event handler in Outlook.
+    Office.onReady(() => {
+        // Registers an event handler to identify when messages are selected.
+        Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, getMessageProperties, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                return;
+            }
+
+            console.log("Event handler added for the SelectedItemsChanged event.");
+        });
+    });
+
+    function getMessageProperties() {
+        // Retrieves the selected messages' properties and logs them to the console.
+        Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                return;
+            }
+
+            asyncResult.value.forEach((message) => {
+                console.log(`Item ID: ${message.itemId}`);
+                console.log(`Subject: ${message.subject}`);
+                console.log(`Item type: ${message.itemType}`);
+                console.log(`Item mode: ${message.itemMode}`);
+            });
+        });
+    }
 Office.File#getSliceAsync:member(1):
   - |-
     // This sample shows how to get all the slices of a file. 
@@ -3382,11 +3626,13 @@ Office.File#getSliceAsync:member(1):
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
-    console.log("Office application: " + contextInfo.host);
+    const hostType: Office.HostType = contextInfo.host;
+    console.log("Office application: " + hostType);
 Office.PlatformType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
-    console.log("Platform: " + contextInfo.platform);
+    const platformType: Office.PlatformType = contextInfo.platform;
+    console.log("Platform: " + platformType);
 Office.Ribbon#requestUpdate:member(1):
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -3510,6 +3756,10 @@ Office.Settings#saveAsync:member(2):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.StartupBehavior:enum:
+  - |-
+    // Configure your add-in to load and start running when the document is opened.
+    Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 Office.Tab#id:member:
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -3699,6 +3949,28 @@ Office.TableData#rows:member:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
+Office.UI#addHandlerAsync:member(2):
+  - |-
+    // The following example shows how to add an event handler for the DialogParentMessageReceived event.
+    Office.onReady(() => {
+        Office.context.ui.addHandlerAsync(
+            Office.EventType.DialogParentMessageReceived,
+            onMessageFromParent,
+            onRegisterMessageComplete
+        );
+    });
+
+    function onMessageFromParent(arg) {
+        const messageFromParent = JSON.parse(arg.message);
+        document.querySelector('h1').textContent = messageFromParent.name;
+    }
+
+    function onRegisterMessageComplete(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log(asyncResult.error.message);
+            return;
+        }
+    }
 Office.UI#displayDialogAsync:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -3737,6 +4009,14 @@ Office.UI#messageParent:member(1):
         };
         Office.context.ui.messageParent(JSON.stringify(profileMessage));
     }
+Office.Urls#javascriptRuntimeUrl:member:
+  - |-
+    // Get the value of the first parameter of the JavaScript runtime URL.
+    // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+    // the following function logs "First parameter value: value1" to the console.
+    const url = Office.context.urls.javascriptRuntimeUrl;
+    const regex = /=([^&]+)/;
+    console.log(`First parameter value: ${url.match(regex)[1]}`);
 Office.useShortNamespace:function(1):
   - |-
     function startUsingShortNamespace() {
@@ -3763,7 +4043,17 @@ Office.useShortNamespace:function(1):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.VisibilityMode:enum:
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
 
+        // Other startup tasks.
+    });
 OfficeExtension.Error#traceMessages:member:
   - |-
     // The following example shows how you can instrument a batch of commands

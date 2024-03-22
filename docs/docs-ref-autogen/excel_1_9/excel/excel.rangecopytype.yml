@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
 
+
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
       // Place a label in front of the copied data.

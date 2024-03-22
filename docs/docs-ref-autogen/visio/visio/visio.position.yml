@@ -3,11 +3,8 @@ name: Visio.Position
 uid: 'visio!Visio.Position:interface'
 package: visio!
 fullName: Visio.Position
-summary: |-
-  Represents the Position of the object in the view.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Position of the object in the view.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
       the viewport's center to the left boundary of the page.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +30,7 @@ properties:
     summary: >-
       An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
       the viewport's center to the top boundary of the page.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

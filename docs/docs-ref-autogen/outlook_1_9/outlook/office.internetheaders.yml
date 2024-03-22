@@ -88,6 +88,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
+
       Office.context.mailbox.item.internetHeaders.getAsync(
         ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
         function (asyncResult) {
@@ -201,6 +202,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
 
       Office.context.mailbox.item.internetHeaders.removeAsync(
         ["best-vegetable", "nonexistent-header"],
@@ -321,6 +323,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
 
       Office.context.mailbox.item.internetHeaders.setAsync(
         { "preferred-fruit": "orange", "preferred-vegetable": "broccoli", "best-vegetable": "spinach" },

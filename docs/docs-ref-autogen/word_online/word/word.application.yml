@@ -41,6 +41,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
+
       // Updates the text of the current document with the text from another document passed in as a Base64-encoded
       string.
 
@@ -135,7 +136,8 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
+
 
       // Gets style info from another document passed in as a Base64-encoded string.
 
@@ -143,8 +145,7 @@ methods:
         const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
         await context.sync();
 
-        console.log("Styles from the other document:");
-        console.log(retrievedStyles.value);
+        console.log("Styles from the other document:", retrievedStyles.value);
       });
 
       ```

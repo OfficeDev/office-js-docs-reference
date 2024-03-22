@@ -3,11 +3,8 @@ name: Visio.Interfaces.ShapeLoadOptions
 uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeLoadOptions
-summary: |-
-  Represents the Shape class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Shape class.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,41 +27,20 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
     package: visio!
     fullName: id
-    summary: |-
-      Shape's identifier. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Shape's identifier.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
         type: boolean
-  - name: isBoundToData
-    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#isBoundToData:member'
-    package: visio!
-    fullName: isBoundToData
-    summary: |-
-      Returns true if the shape is bound to data and is part of Data Visualizer diagram. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isBoundToData?: boolean;'
-      return:
-        type: boolean
   - name: name
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
     package: visio!
     fullName: name
-    summary: |-
-      Shape's name. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Shape's name.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +51,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
     package: visio!
     fullName: select
-    summary: |-
-      Returns true, if shape is selected. User can set true to select the shape explicitly.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'Returns true, if shape is selected. User can set true to select the shape explicitly.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +63,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
     package: visio!
     fullName: text
-    summary: |-
-      Shape's text. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Shape's text.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,11 +75,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
     package: visio!
     fullName: view
-    summary: |-
-      Returns the view of the shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Returns the view of the shape.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

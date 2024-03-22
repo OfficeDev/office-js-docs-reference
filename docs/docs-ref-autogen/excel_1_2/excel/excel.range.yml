@@ -262,6 +262,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
+
       async function sortTopToBottom(criteria: string) {
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -934,6 +935,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           const salesTable = sheet.tables.getItem("SalesTable");
@@ -1165,6 +1167,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
 
+
       await Excel.run(async (context) => {
         // Retrieve the worksheet and the table in that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1270,6 +1273,7 @@ methods:
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
+
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");

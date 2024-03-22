@@ -52,6 +52,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the style and the font size, font name, and font color properties on the body object.
 
       // Run a batch operation against the Word object model.
@@ -103,6 +104,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
 
       // Gets the first image in the document.
 
@@ -158,6 +160,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
+
 
       // Counts how many times each term appears in the document.
 
@@ -413,6 +416,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
+
       // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
@@ -446,6 +450,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Gets the text content of the body.
 
@@ -489,6 +494,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
 
       // Gets the referenced note's item type and body type, which are both "Footnote".
 
@@ -536,6 +542,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Clears out the content from the document body.
 
@@ -585,6 +592,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Gets the HTML that represents the content of the body.
 
       // Run a batch operation against the Word object model.
@@ -626,6 +634,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Gets the OOXML that represents the content of the body.
 
@@ -692,6 +701,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Inserts a page break at the beginning of the document.
 
       // Run a batch operation against the Word object model.
@@ -741,7 +751,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -751,6 +761,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Creates a content control using the document body.
 
@@ -775,13 +786,16 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        "RichText" | "PlainText"): Word.ContentControl;
+        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
+          description: >-
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
+            'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
+            uid="word!Word.ContentControlType.plainText:member" /> | <xref
+            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -805,6 +819,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts the body from the external document at the beginning of this document.
 
@@ -859,6 +874,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
 
+
       // Inserts the HTML at the beginning of this document.
 
       // Run a batch operation against the Word object model.
@@ -911,6 +927,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts an image inline at the beginning of this document.
 
@@ -968,6 +985,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts OOXML at the beginning of this document.
 
@@ -1035,6 +1053,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
+
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
         const secondSentence = context.document.body.insertParagraph(
@@ -1087,6 +1106,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
 
       await Word.run(async (context) => {
         // Use a two-dimensional array to hold the initial table values.
@@ -1142,6 +1162,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Inserts text at the beginning of this document.
 
@@ -1265,6 +1286,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
+
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
@@ -1283,6 +1305,7 @@ methods:
 
 
       ...
+
 
       // Does a wildcard search and highlights matches in the document.
 
@@ -1351,6 +1374,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
 
       // Selects the entire body.
 
@@ -1483,7 +1507,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

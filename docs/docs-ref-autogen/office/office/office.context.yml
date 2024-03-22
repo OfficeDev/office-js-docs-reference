@@ -330,17 +330,92 @@ properties:
               $('.body').css('background-color', bodyBackgroundColor);
           }
           ```
+  - name: partitionKey
+    uid: 'office!Office.Context#partitionKey:member'
+    package: office!
+    fullName: partitionKey
+    summary: >-
+      Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to
+      securely store data. The partition key is `undefined` in environments without partitioning, such as the browser
+      controls for Windows applications.
+    remarks: >-
+      See the article [Persist add-in state and
+      settings](https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings) for more
+      information.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Store the value "Hello" in local storage with the key "myKey1".
+
+      setInLocalStorage("myKey1", "Hello");
+
+
+      // ... 
+
+
+      // Retrieve the value stored in local storage under the key "myKey1".
+
+      const message = getFromLocalStorage("myKey1");
+
+      console.log(message);
+
+
+      // ...
+
+
+      function setInLocalStorage(key: string, value: string) {
+          const myPartitionKey = Office.context.partitionKey;
+
+          // Check if local storage is partitioned. 
+          // If so, use the partition to ensure the data is only accessible by your add-in.
+          if (myPartitionKey) {
+              localStorage.setItem(myPartitionKey + key, value);
+          } else {
+              localStorage.setItem(key, value);
+          }
+      }
+
+
+      function getFromLocalStorage(key: string) {
+          const myPartitionKey = Office.context.partitionKey;
+
+          // Check if local storage is partitioned.
+          if (myPartitionKey) {
+              return localStorage.getItem(myPartitionKey + key);
+          } else {
+              return localStorage.getItem(key);
+          }
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partitionKey: string;'
+      return:
+        type: string
   - name: platform
     uid: 'office!Office.Context#platform:member'
     package: office!
     fullName: platform
     summary: Provides the platform on which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      **Important**:
+
+
+      - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
+
+
+      - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on
+      Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -492,3 +567,46 @@ properties:
       content: 'ui: UI;'
       return:
         type: '<xref uid="office!Office.UI:interface" />'
+  - name: urls
+    uid: 'office!Office.Context#urls:member'
+    package: office!
+    fullName: urls
+    summary: Gets the object to retrieve the runtime URLs of an add-in.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Get the value of the first parameter of the JavaScript runtime URL.
+
+      // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+
+      // the following function logs "First parameter value: value1" to the console.
+
+      const url = Office.context.urls.javascriptRuntimeUrl;
+
+      const regex = /=([^&]+)/;
+
+      console.log(`First parameter value: ${url.match(regex)[1]}`);
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'urls: Urls;'
+      return:
+        type: '<xref uid="office!Office.Urls:interface" />'

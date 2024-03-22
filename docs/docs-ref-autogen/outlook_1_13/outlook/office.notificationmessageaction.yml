@@ -3,12 +3,7 @@ name: Office.NotificationMessageAction
 uid: 'outlook!Office.NotificationMessageAction:interface'
 package: outlook!
 fullName: Office.NotificationMessageAction
-summary: >-
-  The definition of the action for a notification message.
-
-
-  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode
-  only.
+summary: The definition of the action for a notification message.
 remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -23,6 +18,10 @@ remarks: >-
   Compose or Read
 
 
+  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode
+  only.
+
+
   #### Examples
 
 
@@ -31,24 +30,30 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
   // Adds an informational message with actions to the mail item.
 
   const id = $("#notificationId").val().toString();
 
-  const details = 
-    {
-      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
-      message: "This is an insight notification",
-      icon: "icon1",
-      actions: [
-        {
-          actionText: "Open insight",
-          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
-          commandId: "msgComposeOpenPaneButton",
-          contextData: { a: "aValue", b: "bValue" }
-        }
-      ]
-    };
+
+  const itemId = Office.context.mailbox.item.itemId;
+
+  const details = {
+    type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+    message: "This is an insight notification with id = " + id,
+    icon: "icon1",
+    actions: [
+      {
+        actionText: "Open insight",
+        actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+        // Identify whether the current mail item is in read or compose mode to set the appropriate commandId value.
+        commandId: (itemId == undefined ? "PG.HelpCommand.Compose" : "PG.HelpCommand.Read"),
+        contextData: { a: "aValue", b: "bValue" }
+      }
+    ]
+  };
+
+
   Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
   ```
@@ -96,10 +101,18 @@ properties:
     uid: 'outlook!Office.NotificationMessageAction#contextData:member'
     package: outlook!
     fullName: contextData
-    summary: >-
-      Any JSON data the action button needs to pass on. This data can be retrieved by calling
-      `item.getInitializationContextAsync`<!-- -->.
-    remarks: ''
+    summary: Any JSON data the action button needs to pass on to the add-in.
+    remarks: >-
+      **Important**:
+
+
+      - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier
+      versions of Outlook on Windows, only the `string` type is supported.
+
+
+      - To retrieve the JSON data, call `Office.context.mailboxitem.getInitializationContextAsync`<!-- -->. If you
+      create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
+      string using `JSON.parse()` once you retrieve it.
     isPreview: false
     isDeprecated: false
     syntax:

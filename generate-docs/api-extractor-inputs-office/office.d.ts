@@ -345,11 +345,11 @@ export declare namespace Office {
      */
     enum VisibilityMode {
         /**
-         * UI is Hidden
+         * UI is hidden.
          */
         hidden = 'Hidden',
         /**
-         * Displayed as taskpane
+         * Displayed as a task pane.
          */
         taskpane = 'Taskpane',
     }
@@ -436,6 +436,9 @@ export declare namespace Office {
         PC,
         /**
          * The platform is Office on the web (in a browser).
+         *
+         * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         OfficeOnline,
         /**
@@ -943,14 +946,27 @@ export declare namespace Office {
          */
         officeTheme: OfficeTheme;
         /**
+         * Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to securely store data. The partition key is `undefined` in environments without partitioning, such as the browser controls for Windows applications.
+         *
+         * @remarks
+         *
+         * See the article {@link https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings | Persist add-in state and settings} for more information.
+         */
+        partitionKey: string;
+        /**
          * Provides the platform on which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**:
+         *
+         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
+         *
+         * - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         platform: PlatformType;
         /**
@@ -1001,6 +1017,20 @@ export declare namespace Office {
          * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
          */
         ui: UI;
+        /**
+         * Gets the object to retrieve the runtime URLs of an add-in.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * @beta
+         */
+        urls: Urls;
     }
     /**
      * Provides specific information about an error that occurred during an asynchronous data operation.
@@ -1439,6 +1469,52 @@ export declare namespace Office {
         openBrowserWindow(url: string): void;
     }
     /**
+     * Provides the URLs of the runtime environments used by an add-in.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * @beta
+     */
+    export interface Urls {
+        /**
+         * Gets the URL of the JavaScript runtime of an add-in.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - This property is currently in preview in Outlook on Windows. To test it in your add-in, you must install Version 2401 (Build 17228.20000) or later.
+         * Then, join the {@link https://insider.microsoft365.com/join/windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access
+         * Office beta builds.
+         *
+         * - The URL returned points to the location of the JavaScript file that Outlook on Windows uses to handle event-based activation
+         * and integrated spam reporting. To learn more about these features, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         *
+         * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
+         * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
+         *
+         * - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the value of the `script` property in the
+         * "code" object.
+         *
+         * @beta
+         */
+        javascriptRuntimeUrl: string;
+    }
+    /**
      * Provides information about which Requirement Sets are supported in the current environment.
      */
     export interface RequirementSetSupport {
@@ -1664,6 +1740,10 @@ export declare namespace Office {
         host: Office.HostType;
         /**
          * Gets the platform on which the add-in is running.
+         *
+         * @remarks
+         * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         platform: Office.PlatformType;
         /**
@@ -2303,18 +2383,10 @@ export declare namespace Office {
      *
      * Only task pane add-ins for Outlook support Mailbox API set event types.
      *
-     * @remarks
-     *
-     * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
-     *
      */
     enum EventType {
         /**
-         * A Document.ActiveViewChanged event was raised in PowerPoint.
-         *
-         * @remarks
-         *
-         * **Applications**: PowerPoint
+         * A `Document.ActiveViewChanged` event was raised in PowerPoint.
          */
         ActiveViewChanged,
         /**
@@ -2339,22 +2411,17 @@ export declare namespace Office {
          */
         AttachmentsChanged,
         /**
-         * Occurs when data within the binding is changed.
+         * Occurs when data within the binding is changed in Excel or Word.
+         * 
          * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object.
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
          */
         BindingDataChanged,
         /**
-         * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use
-         * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Occurs when the selection is changed within the binding in Excel or Word. 
+         * 
+         * To add an event handler for the `BindingSelectionChanged` event of a binding, use
+         * the `addHandlerAsync` method of the `Binding` object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          */
         BindingSelectionChanged,
         /**
@@ -2370,11 +2437,7 @@ export declare namespace Office {
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Triggers when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -2411,15 +2474,15 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
-         * Triggers when a customXmlPart node is deleted.
+         * Triggers when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a customXmlPart node is inserted.
+         * Triggers when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a customXmlPart node is replaced.
+         * Triggers when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -2436,7 +2499,7 @@ export declare namespace Office {
         OfficeThemeChanged,
         /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
-         * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * **Important**: Only available with task pane implementation.
          *
          * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2447,7 +2510,7 @@ export declare namespace Office {
         RecipientsChanged,
         /**
          * Occurs when the recurrence pattern of the selected series is changed in Outlook.
-         * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * **Important**: Only available with task pane implementation.
          *
          * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2481,11 +2544,7 @@ export declare namespace Office {
          */
         SensitivityLabelChanged,
         /**
-         * A Settings.settingsChanged event was raised.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, PowerPoint, Word
+         * A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or Word.
          */
         SettingsChanged,
         /**

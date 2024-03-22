@@ -73,7 +73,7 @@ properties:
     uid: 'excel!Excel.PivotLabelFilter#substring:member'
     package: excel!
     fullName: substring
-    summary: 'The substring used for `beginsWith`<!-- -->, `endsWith`<!-- -->, and `contains` filter conditions.'
+    summary: 'The substring used for the `beginsWith`<!-- -->, `endsWith`<!-- -->, and `contains` filter conditions.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

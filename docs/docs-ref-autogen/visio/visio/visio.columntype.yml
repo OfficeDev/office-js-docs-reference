@@ -3,36 +3,33 @@ name: Visio.ColumnType
 uid: 'visio!Visio.ColumnType:enum'
 package: visio!
 fullName: Visio.ColumnType
-summary: |-
-  Represents the type of column values.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the type of column values.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 fields:
   - name: currency
     uid: 'visio!Visio.ColumnType.currency:member'
     package: visio!
-    summary: Currency
+    summary: '* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Currency"'
   - name: date
     uid: 'visio!Visio.ColumnType.date:member'
     package: visio!
-    summary: Date
+    summary: '* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Date"'
   - name: number
     uid: 'visio!Visio.ColumnType.number:member'
     package: visio!
-    summary: Numerical values
+    summary: '* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Number"'
   - name: string
     uid: 'visio!Visio.ColumnType.string:member'
     package: visio!
-    summary: String values
+    summary: '* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"String"'
   - name: unknown
     uid: 'visio!Visio.ColumnType.unknown:member'
     package: visio!
-    summary: Other
+    summary: '* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Unknown"'

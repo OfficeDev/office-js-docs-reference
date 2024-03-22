@@ -1,7 +1,7 @@
 ---
 title: OfficeMenu element in the manifest file
 description: The OfficeMenu element defines a collection of controls to be added to the Office context menu.
-ms.date: 02/11/2022
+ms.date: 03/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +43,7 @@ Specifies a built-in menu of the Office client application on which to add this 
 ## Example
 
 ```xml
-<OfficeMenu id="ContextMenuCell">
+<OfficeMenu xsi:type="ContextMenuCell">
     <Control xsi:type="Menu" id="Contoso.myMenu">
       <Label resid="residLabel3" />
       <Supertip>

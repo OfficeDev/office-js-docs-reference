@@ -25,8 +25,8 @@ methods:
     package: outlook!
     fullName: 'setAsync(data, options, callback)'
     summary: >-
-      Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible
-      until the user switches to a different messsage or closes the window of the current message.
+      Temporarily sets the content displayed in the body of a message in read mode. The set content remains visible
+      until the user switches to a different message or closes the window of the current message.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -44,6 +44,24 @@ methods:
       **Recommended**: Call
       [Office.context.mailbox.item.body.getTypeAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1))<!--
       -->, then pass the returned value to the `options.coercionType` parameter.
+
+
+      **Important**:
+
+
+      - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that
+      completes the `setAsync` operation is displayed in the body.
+
+
+      - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached
+      in Outlook and doesn't sync with other Outlook clients.
+
+
+      - If you save a message after calling `setAsync`<!-- -->, the original contents of the message body appear in the
+      saved item.
+
+
+      - The `setAsync` method isn't supported on multiple selected messages.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,7 +97,7 @@ methods:
     fullName: 'setAsync(data, callback)'
     summary: >-
       Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible
-      until the user switches to a different messsage or closes the window of the current message.
+      until the user switches to a different message or closes the window of the current message.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -94,6 +112,24 @@ methods:
       -->**: Message Read
 
 
+      **Important**:
+
+
+      - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that
+      completes the `setAsync` operation is displayed in the body.
+
+
+      - The content set by the `setAsync` method is only displayed while the user is viewing the item. It isn't cached
+      in Outlook and doesn't sync with other Outlook clients.
+
+
+      - If you save a message after calling `setAsync`<!-- -->, the original contents of the message body appear in the
+      saved item.
+
+
+      - The `setAsync` method isn't supported on multiple selected messages.
+
+
       #### Examples
 
 
@@ -101,6 +137,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
 
       // This snippet temporarily sets the content displayed in the body of a message in read mode.
 

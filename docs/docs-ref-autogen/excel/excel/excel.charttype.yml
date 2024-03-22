@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-create-several-charts.yaml
 
+
   await Excel.run(async (context) => {
     let sheet = context.workbook.worksheets.getItem("Sample");
     let salesTable = sheet.tables.getItem("SalesTable");

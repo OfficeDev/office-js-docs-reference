@@ -3,7 +3,7 @@ name: Excel.SortMethod
 uid: 'excel!Excel.SortMethod:enum'
 package: excel!
 fullName: Excel.SortMethod
-summary: ''
+summary: Represents the ordering method to be used when sorting Chinese characters.
 remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

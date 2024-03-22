@@ -3,11 +3,8 @@ name: Visio.Interfaces.ShapeCollectionLoadOptions
 uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeCollectionLoadOptions
-summary: |-
-  Represents the Shape Collection.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the Shape Collection.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,43 +27,20 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions#id:member'
     package: visio!
     fullName: id
-    summary: |-
-      For EACH ITEM in the collection: Shape's identifier. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Shape''s identifier.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
       return:
         type: boolean
-  - name: isBoundToData
-    uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions#isBoundToData:member'
-    package: visio!
-    fullName: isBoundToData
-    summary: >-
-      For EACH ITEM in the collection: Returns true if the shape is bound to data and is part of Data Visualizer
-      diagram. Read-only.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isBoundToData?: boolean;'
-      return:
-        type: boolean
   - name: name
     uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions#name:member'
     package: visio!
     fullName: name
-    summary: |-
-      For EACH ITEM in the collection: Shape's name. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Shape''s name.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,10 +54,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape
       explicitly.
-
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +65,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions#text:member'
     package: visio!
     fullName: text
-    summary: |-
-      For EACH ITEM in the collection: Shape's text. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Shape''s text.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +77,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions#view:member'
     package: visio!
     fullName: view
-    summary: |-
-      For EACH ITEM in the collection: Returns the view of the shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Returns the view of the shape.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

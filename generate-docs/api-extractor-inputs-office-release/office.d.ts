@@ -346,11 +346,11 @@ export declare namespace Office {
      */
     enum VisibilityMode {
         /**
-         * UI is Hidden
+         * UI is hidden.
          */
         hidden = 'Hidden',
         /**
-         * Displayed as taskpane
+         * Displayed as a task pane.
          */
         taskpane = 'Taskpane',
     }
@@ -437,6 +437,9 @@ export declare namespace Office {
         PC,
         /**
          * The platform is Office on the web (in a browser).
+         *
+         * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         OfficeOnline,
         /**
@@ -938,14 +941,27 @@ export declare namespace Office {
          */
         officeTheme: OfficeTheme;
         /**
+         * Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to securely store data. The partition key is `undefined` in environments without partitioning, such as the browser controls for Windows applications.
+         *
+         * @remarks
+         *
+         * See the article {@link https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings | Persist add-in state and settings} for more information.
+         */
+        partitionKey: string;
+        /**
          * Provides the platform on which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**:
+         *
+         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
+         *
+         * - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         platform: PlatformType;
         /**
@@ -1655,6 +1671,10 @@ export declare namespace Office {
         host: Office.HostType;
         /**
         * Gets the platform on which the add-in is running.
+        *
+        * @remarks
+        * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+        * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
         */
         platform: Office.PlatformType;
         /**
@@ -2295,18 +2315,10 @@ export declare namespace Office {
      *
      * Only task pane add-ins for Outlook support Mailbox API set event types.
      *
-     * @remarks
-     *
-     * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
-     *
      */
     enum EventType {
         /**
-         * A Document.ActiveViewChanged event was raised in PowerPoint.
-         *
-         * @remarks
-         *
-         * **Applications**: PowerPoint
+         * A `Document.ActiveViewChanged` event was raised in PowerPoint.
          */
         ActiveViewChanged,
         /**
@@ -2331,22 +2343,17 @@ export declare namespace Office {
          */
         AttachmentsChanged,
         /**
-         * Occurs when data within the binding is changed.
-         * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object.
+         * Occurs when data within the binding is changed in Excel or Word.
+         * 
+         * To add an event handler for the `BindingDataChanged` event of a binding, use the `addHandlerAsync` method of the Binding object.
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
          */
         BindingDataChanged,
         /**
-         * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use
-         * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Occurs when the selection is changed within the binding in Excel or Word. 
+         * 
+         * To add an event handler for the `BindingSelectionChanged` event of a binding, use
+         * the `addHandlerAsync` method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          */
         BindingSelectionChanged,
         /**
@@ -2362,11 +2369,7 @@ export declare namespace Office {
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, Word
+         * Triggers when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -2403,15 +2406,15 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
-         * Triggers when a customXmlPart node is deleted.
+         * Triggers when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a customXmlPart node is inserted.
+         * Triggers when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a customXmlPart node is replaced.
+         * Triggers when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -2461,11 +2464,7 @@ export declare namespace Office {
          */
         SensitivityLabelChanged,
         /**
-         * A Settings.settingsChanged event was raised.
-         *
-         * @remarks
-         *
-         * **Applications**: Excel, PowerPoint, Word
+         * A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or Word.
          */
         SettingsChanged,
         /**

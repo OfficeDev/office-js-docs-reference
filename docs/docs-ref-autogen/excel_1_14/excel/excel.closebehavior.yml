@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
+
   await Excel.run(async (context) => {
       context.workbook.close(Excel.CloseBehavior.skipSave);
   });

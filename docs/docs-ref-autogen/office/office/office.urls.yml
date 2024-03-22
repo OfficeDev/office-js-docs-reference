@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: Office.Urls
+uid: 'office!Office.Urls:interface'
+package: office!
+fullName: Office.Urls
+summary: Provides the URLs of the runtime environments used by an add-in.
+remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **restricted**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: javascriptRuntimeUrl
+    uid: 'office!Office.Urls#javascriptRuntimeUrl:member'
+    package: office!
+    fullName: javascriptRuntimeUrl
+    summary: Gets the URL of the JavaScript runtime of an add-in.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - This property is currently in preview in Outlook on Windows. To test it in your add-in, you must install Version
+      2401 (Build 17228.20000) or later. Then, join the [Microsoft 365 Insider
+      program](https://insider.microsoft365.com/join/windows) and select the **Beta Channel** option to access
+      Office beta builds.
+
+
+      - The URL returned points to the location of the JavaScript file that Outlook on Windows uses to handle
+      event-based activation and integrated spam reporting. To learn more about these features, see [Configure your
+      Outlook add-in for event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) and
+      [Implement an integrated spam-reporting add-in
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+
+
+      - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride**
+      element of type `javascript`<!-- -->. To learn more, see [Override element for
+      Runtime](https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime)<!-- -->.
+
+
+      - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the
+      value of the `script` property in the "code" object.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Get the value of the first parameter of the JavaScript runtime URL.
+
+      // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+
+      // the following function logs "First parameter value: value1" to the console.
+
+      const url = Office.context.urls.javascriptRuntimeUrl;
+
+      const regex = /=([^&]+)/;
+
+      console.log(`First parameter value: ${url.match(regex)[1]}`);
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'javascriptRuntimeUrl: string;'
+      return:
+        type: string

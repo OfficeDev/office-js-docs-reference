@@ -13,11 +13,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentData#application:member'
     package: visio!
     fullName: application
-    summary: |-
-      Represents a Visio application instance that contains this document. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Represents a Visio application instance that contains this document.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentData#pages:member'
     package: visio!
     fullName: pages
-    summary: |-
-      Represents a collection of pages associated with the document. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Represents a collection of pages associated with the document.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentData#view:member'
     package: visio!
     fullName: view
-    summary: |-
-      Returns the DocumentView object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Returns the DocumentView object.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

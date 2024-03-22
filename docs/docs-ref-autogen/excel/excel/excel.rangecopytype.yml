@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
 
+
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
       // Place a label in front of the copied data.
@@ -36,6 +37,13 @@ fields:
     package: excel!
     summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"All"'
+  - name: columnWidths
+    uid: 'excel!Excel.RangeCopyType.columnWidths:member'
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ColumnWidths"'
   - name: formats
     uid: 'excel!Excel.RangeCopyType.formats:member'
     package: excel!
@@ -49,9 +57,7 @@ fields:
   - name: link
     uid: 'excel!Excel.RangeCopyType.link:member'
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Link"'
   - name: values
     uid: 'excel!Excel.RangeCopyType.values:member'

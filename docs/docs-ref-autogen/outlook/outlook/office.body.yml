@@ -95,6 +95,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/append-text-on-send.yaml
 
+
       // This snippet appends text to the end of the message or appointment's body once it's sent.
 
       const text = $("#text-field").val();
@@ -331,6 +332,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
 
+
       const mailItem = Office.context.mailbox.item;
 
       const base64String =
@@ -415,6 +417,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-body-format.yaml
+
 
       // Get the mail item's body format (plain text or HTML) and log it to the console.
 
@@ -553,6 +556,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-to-item-body.yaml
+
 
       /* This snippet adds text to the beginning of the message or appointment's body. 
         
@@ -747,6 +751,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-on-send.yaml
+
 
       // This snippet prepends text to the beginning of the message or appointment's body once it's sent.
 
@@ -977,6 +982,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
 
+
       const mailItem = Office.context.mailbox.item;
 
       const base64String =
@@ -1165,6 +1171,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/replace-selected-text.yaml
 
+
       /* This snippet replaces selected text in a message or appointment's body with specified text.
         
         If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
@@ -1283,7 +1290,9 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
     package: outlook!
     fullName: 'setSignatureAsync(data, options, callback)'
-    summary: Adds or replaces the signature of the item body.
+    summary: >-
+      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
+      body, replaces that signature.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1304,15 +1313,15 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
-      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
-      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
-      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
+      sample scenario, see [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using \`LaunchEvent\` in the
+      [event-based activation feature using LaunchEvent in the
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.
@@ -1335,6 +1344,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
+
 
       // Set the signature for the current item with inline image.
 
@@ -1364,6 +1374,7 @@ methods:
 
 
       ...
+
 
       // Set the signature for the current item.
 
@@ -1413,7 +1424,9 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
     package: outlook!
     fullName: 'setSignatureAsync(data, callback)'
-    summary: Adds or replaces the signature of the item body.
+    summary: >-
+      Adds a signature to the item body if it doesn't have an existing signature. If there's already a signature in the
+      body, replaces that signature.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1434,15 +1447,15 @@ methods:
       - In Outlook on the web, `setSignatureAsync` only works on messages.
 
 
-      - This method is supported in Message Compose on Outlook on Android. Support for this method in Message Compose on
-      Outlook on iOS is currently being rolled out. For a sample scenario, see [Implement event-based activation in
-      Outlook mobile add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To
-      learn more about APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
+      sample scenario, see [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
-      [event-based activation feature using \`LaunchEvent\` in the
+      [event-based activation feature using LaunchEvent in the
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.

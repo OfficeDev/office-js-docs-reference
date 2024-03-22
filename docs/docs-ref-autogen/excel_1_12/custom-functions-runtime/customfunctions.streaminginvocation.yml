@@ -31,6 +31,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/16-custom-functions/streaming-function.yaml
 
+
       /** @CustomFunction 
        * @description Increments the cell with a given amount at a specified interval in milliseconds.
        * @param {number} amount - The amount to add to the cell value on each increment.

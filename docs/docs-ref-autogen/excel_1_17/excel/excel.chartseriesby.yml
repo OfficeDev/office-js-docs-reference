@@ -19,6 +19,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
+
   await Excel.run(async (context) => {
     // Create a new worksheet called "Sample" and activate it.
     context.workbook.worksheets.getItemOrNullObject("Sample").delete();

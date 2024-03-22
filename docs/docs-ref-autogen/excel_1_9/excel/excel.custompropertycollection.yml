@@ -53,6 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
 
+
       await Excel.run(async (context) => {
         // Get the key/value pair from the task pane.
         const userKey = $("#key").text();

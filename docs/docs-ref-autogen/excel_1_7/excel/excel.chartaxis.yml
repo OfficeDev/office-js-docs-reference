@@ -90,6 +90,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -338,6 +339,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");

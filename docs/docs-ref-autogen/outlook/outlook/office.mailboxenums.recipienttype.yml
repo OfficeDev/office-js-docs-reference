@@ -28,6 +28,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
 
+
   const msgTo = Office.context.mailbox.item.to;
 
   const distributionLists = [];

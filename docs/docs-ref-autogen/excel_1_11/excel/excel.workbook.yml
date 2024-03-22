@@ -191,6 +191,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
+
       await Excel.run(async (context) => {
         // Get the names of all the PivotTables in the workbook.
         const pivotTables = context.workbook.pivotTables;
@@ -251,6 +252,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
+
 
       await Excel.run(async (context) => {
           let titleValue = "Excel document properties API";
@@ -361,6 +363,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
+
       await Excel.run(async (context) => {
           let styles = context.workbook.styles;
 
@@ -469,6 +472,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
+
       await Excel.run(async (context) => {
           context.workbook.close(Excel.CloseBehavior.save);
       });
@@ -518,6 +522,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
 
       await Excel.run(async (context) => {
 
@@ -664,6 +669,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
 
+
       await Excel.run(async (context) => {
 
           const selectedRanges = context.workbook.getSelectedRanges();
@@ -763,6 +769,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
 
       await Excel.run(async (context) => {
           context.workbook.save(Excel.SaveBehavior.save);
