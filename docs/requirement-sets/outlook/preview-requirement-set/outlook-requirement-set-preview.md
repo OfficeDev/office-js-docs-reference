@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 01/18/2024
+ms.date: 03/22/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -69,21 +69,21 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 ### Additional mail item properties
 
-#### [Office.context.mailbox.item.conversationIndex](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-conversationIndex-member)
-
-Added a property to get the Base64-encoded position of the current message in a conversation thread.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
 #### [Office.context.mailbox.item.inReplyTo](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-inreplyto-member)
 
 Added a property to get the message ID of the original message being replied to by the current message.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
+#### [Office.context.mailbox.item.getConversationIndexAsync](office.context.mailbox.item.md#methods)
+
+Added a method to get the Base64-encoded position of the current message in a conversation thread.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
 #### [Office.context.mailbox.item.getItemClassAsync](office.context.mailbox.item.md#methods)
 
-Added a method to get the Exchange Web Services (EWS) item class of a message or appointment in compose mode.
+Added a method to get the Exchange Web Services (EWS) item class of a message in compose mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
