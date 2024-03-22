@@ -26,10 +26,10 @@ fields:
   - name: hidden
     uid: 'office!Office.VisibilityMode.hidden:member'
     package: office!
-    summary: UI is Hidden
+    summary: UI is hidden.
     value: '''Hidden'''
   - name: taskpane
     uid: 'office!Office.VisibilityMode.taskpane:member'
     package: office!
-    summary: Displayed as taskpane
+    summary: Displayed as a task pane.
     value: '''Taskpane'''

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
+
   await Word.run(async (context) => {
       const properties = context.document.properties.customProperties;
       properties.load("key,type,value");

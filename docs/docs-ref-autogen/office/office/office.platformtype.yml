@@ -32,7 +32,12 @@ fields:
   - name: OfficeOnline
     uid: 'office!Office.PlatformType.OfficeOnline:member'
     package: office!
-    summary: The platform is Office on the web (in a browser).
+    summary: >-
+      The platform is Office on the web (in a browser).
+
+
+      **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new
+      Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
   - name: PC
     uid: 'office!Office.PlatformType.PC:member'
     package: office!

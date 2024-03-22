@@ -18,6 +18,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
+
   Office.context.mailbox.item.getAttachmentsAsync(function (result) {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
           console.error(result.error.message);

@@ -3,11 +3,8 @@ name: Visio.DocumentErrorEventArgs
 uid: 'visio!Visio.DocumentErrorEventArgs:interface'
 package: visio!
 fullName: Visio.DocumentErrorEventArgs
-summary: |-
-  Provides information about DocumentError event
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Provides information about DocumentError event.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'visio!Visio.DocumentErrorEventArgs#errorCode:member'
     package: visio!
     fullName: errorCode
-    summary: |-
-      Visio Error code
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Visio Error code.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'visio!Visio.DocumentErrorEventArgs#errorMessage:member'
     package: visio!
     fullName: errorMessage
-    summary: |-
-      Message about error that occured
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Message about error that occurred.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +37,8 @@ properties:
     uid: 'visio!Visio.DocumentErrorEventArgs#isCritical:member'
     package: visio!
     fullName: isCritical
-    summary: |-
-      Tells if the error is critical or not. If critical the session cannot continue.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Tells if the error is critical or not. If critical the session cannot continue.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
+
       // This function adjusts the display and format of a chart data table that already exists on the worksheet.
 
       await Excel.run(async (context) => {
@@ -87,6 +88,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
 
       // This function adjusts the display and format of a chart data table that already exists on the worksheet.
 
@@ -136,6 +138,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
+
       // This function adjusts the display and format of a chart data table that already exists on the worksheet.
 
       await Excel.run(async (context) => {
@@ -183,6 +186,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
 
       // This function adjusts the display and format of a chart data table that already exists on the worksheet.
 
@@ -232,6 +236,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
+
       // This function adjusts the display and format of a chart data table that already exists on the worksheet.
 
       await Excel.run(async (context) => {
@@ -279,6 +284,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
 
       // This function adds a data table to a chart that already exists on the worksheet. 
 

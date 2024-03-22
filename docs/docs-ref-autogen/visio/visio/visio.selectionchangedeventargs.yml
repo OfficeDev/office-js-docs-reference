@@ -3,12 +3,9 @@ name: Visio.SelectionChangedEventArgs
 uid: 'visio!Visio.SelectionChangedEventArgs:interface'
 package: visio!
 fullName: Visio.SelectionChangedEventArgs
-summary: |-
-  Provides information about the shape collection that raised the SelectionChanged event.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+summary: Provides information about the shape collection that raised the SelectionChanged event.
 remarks: |-
-
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 
   #### Examples
 
@@ -65,11 +62,8 @@ properties:
     uid: 'visio!Visio.SelectionChangedEventArgs#pageName:member'
     package: visio!
     fullName: pageName
-    summary: |-
-      Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +74,8 @@ properties:
     uid: 'visio!Visio.SelectionChangedEventArgs#shapeNames:member'
     package: visio!
     fullName: shapeNames
-    summary: |-
-      Gets the array of shape names that raised the SelectionChanged event.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: Gets the array of shape names that raised the SelectionChanged event.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

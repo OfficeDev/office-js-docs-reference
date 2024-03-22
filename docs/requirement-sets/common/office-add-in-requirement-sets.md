@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 12/09/2022
+ms.date: 02/29/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -135,7 +135,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Outlook on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Outlook on the web<br>- Outlook on Android<br>- Outlook on Mac<br>- Outlook on iOS | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
+| - Outlook on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<br>- Outlook on the web<br>- Outlook on Android<br>- Outlook on Mac<br>- Outlook on iOS | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
 
 ---
 

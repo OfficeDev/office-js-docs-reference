@@ -541,6 +541,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/resize-table.yaml
 
+
       await Excel.run(async (context) => {
         // Retrieve the worksheet and a table on that worksheet.
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -641,6 +642,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
 
+
       await Excel.run(async (context) => {
           let table = context.workbook.tables.getItemAt(0);
           table.onChanged.add(onChange);
@@ -674,6 +676,7 @@ events:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
 
       await Excel.run(async (context) => {
           let table = context.workbook.tables.getItemAt(0);

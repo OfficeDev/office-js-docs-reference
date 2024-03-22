@@ -96,6 +96,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info.yaml
 
+
       await Excel.run(async (context) => {
         context.application.load("decimalSeparator,thousandsSeparator");
         context.application.cultureInfo.numberFormat.load("numberDecimalSeparator,numberGroupSeparator");
@@ -200,6 +201,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
+
 
       await Excel.run(async (context) => {
         context.application.calculate(Excel.CalculationType.full);
@@ -401,6 +403,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
+
 
       await Excel.run(async (context) => {
         // Recreate the data in the worksheet with random data.

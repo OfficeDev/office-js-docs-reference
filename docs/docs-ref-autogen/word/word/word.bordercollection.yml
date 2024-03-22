@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
 
+
   // Updates border properties (e.g., type, width, color) of the specified style.
 
   await Word.run(async (context) => {
@@ -144,6 +145,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
 
+
       // Updates border properties (e.g., type, width, color) of the specified style.
 
       await Word.run(async (context) => {
@@ -194,6 +196,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
 
       // Updates border properties (e.g., type, width, color) of the specified style.
 
@@ -254,6 +257,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
 
       // Updates border properties (e.g., type, width, color) of the specified style.
 

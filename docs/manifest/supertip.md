@@ -1,7 +1,7 @@
 ---
 title: Supertip element in the manifest file
 description: The Supertip element defines a rich tooltip (both title and description).
-ms.date: 09/25/2023
+ms.date: 02/29/2024
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Defines a rich tooltip (both Title and Description). It is used by both [Button controls](control-button.md) and [Menu controls](control-menu.md).
 
 > [!NOTE]
-> Supertips are only supported in Office desktop clients. In Outlook on the web, only the **\<Title\>** child element is supported.
+> Supertips are only supported in Office desktop clients. In Outlook on the web and on [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627), only the **\<Title\>** child element is supported.
 
 **Add-in type:** Task pane, Mail
 

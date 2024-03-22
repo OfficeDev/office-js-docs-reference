@@ -346,11 +346,11 @@ export declare namespace Office {
      */
     enum VisibilityMode {
         /**
-         * UI is Hidden
+         * UI is hidden.
          */
         hidden = 'Hidden',
         /**
-         * Displayed as taskpane
+         * Displayed as a task pane.
          */
         taskpane = 'Taskpane',
     }
@@ -437,6 +437,9 @@ export declare namespace Office {
         PC,
         /**
          * The platform is Office on the web (in a browser).
+         *
+         * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         OfficeOnline,
         /**
@@ -949,11 +952,16 @@ export declare namespace Office {
          * Provides the platform on which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**:
+         *
+         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
+         *
+         * - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
          */
         platform: PlatformType;
         /**
@@ -1663,6 +1671,10 @@ export declare namespace Office {
         host: Office.HostType;
         /**
         * Gets the platform on which the add-in is running.
+        *
+        * @remarks
+        * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
+        * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
         */
         platform: Office.PlatformType;
         /**

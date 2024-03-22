@@ -979,6 +979,14 @@ Excel.RangeFont#load:member(2):
         await context.sync();
         console.log(rangeFont.name);
     });
+Excel.RangeFont#name:member:
+  - |-
+    // Change the font of the selected range to "Impact".
+    await Excel.run(async (context) => {
+      const selection = context.workbook.getSelectedRange();
+      selection.format.font.name = "Impact";
+      await context.sync();
+    });
 Excel.RangeFormat#load:member(2):
   - |-
     // Select all of the range's format properties.
@@ -1798,15 +1806,50 @@ Office.AddinCommands.Source#id:member:
 
         event.completed();
     }
+Office.AsyncContextOptions:interface:
+  - |-
+    // The following example gets the attachment contents of the
+    // current mail item being composed in Outlook.
+    function getAttachmentContentCompose() {
+        const item = Office.context.mailbox.item;
+        const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
+        item.getAttachmentsAsync(options, callback);
+
+        function callback(result) {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            if (result.value.length <= 0) {
+                console.log("Mail item has no attachments.");
+                return;
+            }
+
+            const currentItem = result.asyncContext.currentItem;
+            for (let i = 0; i < result.value.length; i++) {
+                currentItem.getAttachmentContentAsync(result.value[i].id, (asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    console.log(asyncResult.value.content);
+                });
+            }
+        }
+    }
 Office.AsyncResult:interface:
   - |-
     // The following is an example applicable to content and task pane add-ins.
     // The example shows a call to the getSelectedDataAsync method of the Document object.
-    Office.context.document.getSelectedDataAsync("text", {
-            valueFormat: "unformatted",
-            filterType: "all"
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        {
+            valueFormat: Office.ValueFormat.Unformatted,
+            filterType: Office.FilterType.All
         },
-        function (result) {
+        (result) => {
             if (result.status === Office.AsyncResultStatus.Succeeded) {
                 const dataValue = result.value; // Get selected data.
                 console.log('Selected data is ' + dataValue);
@@ -1814,8 +1857,9 @@ Office.AsyncResult:interface:
                 const err = result.error;
                 console.log(err.name + ": " + err.message);
             }
-        });
-    // The anonymous function passed as the callback argument ( function (result){...}) has a single 
+        }
+    );
+    // The anonymous function passed as the callback argument ((result) => {...}) has a single 
     // parameter named result that provides access to an AsyncResult object when the function executes.
     // When the call to the getSelectedDataAsync method completes, the callback function executes, 
     // and the following line of code accesses the value property of the AsyncResult object to 
@@ -1888,6 +1932,24 @@ Office.AsyncResult#value:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.AsyncResultStatus:enum:
+  - |-
+    // The following example logs selected text in a document to the console.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        {
+            valueFormat: Office.ValueFormat.Unformatted,
+            filterType: Office.FilterType.All
+        },
+        (result) => {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.log(result.error.message);
+                return;
+            }
+
+            console.log(`Selected data: ${result.value}`);
+        }
+    );
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -3033,6 +3095,10 @@ Office.DialogOptions#width:member:
             });
         }
     );
+Office.Document:interface:
+  - |-
+    // Get the Document object with the Common APIs.
+    const document : Office.Document = Office.context.document;
 Office.Document#addHandlerAsync:member(2):
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
@@ -3202,7 +3268,7 @@ Office.Document#addHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ViewSelectionChanged,
                     getActiveView);
-                $('#get-info').click(getResourceGuid);
+                $('#get-info').on("click", getResourceGuid);
 
                 // This example calls the handler on page load to get the active view
                 // of the default page.
@@ -3412,16 +3478,19 @@ Office.Document#getSelectedDataAsync:member(1):
     // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
     // user's current selection as text, and then display it in the add-in's page.
 
-    // Display the user's current selection.
+    // Displays the user's current selection.
     function showSelection() {
         Office.context.document.getSelectedDataAsync(
-            "text",                        // coercionType
-            {valueFormat: "unformatted",   // valueFormat
-            filterType: "all"},            // filterType
-            function (result) {            // callback
+            Office.CoercionType.Text,
+            {
+                valueFormat: Office.ValueFormat.Unformatted,
+                filterType: Office.FilterType.All
+            },
+            (result) => {
                 const dataValue = result.value;
                 write('Selected data is: ' + dataValue);
-            });
+            }
+        );
     }
     // Function that writes to a div with id='message' on the page.
     function write(message){
@@ -3435,9 +3504,13 @@ Office.Document#getSelectedDataAsync:member(1):
     // 2. Read the selection as text, unformatted, and not filtered.
     // 3. Display the value on the add-in's page.
     function getText() {
-        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
-            { valueFormat: "unformatted", filterType: "all" },
-            function (asyncResult) {
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text,
+            {
+                valueFormat: Office.ValueFormat.Unformatted,
+                filterType: Office.FilterType.All
+            },
+            (asyncResult) => {
                 const error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     write(error.name + ": " + error.message);
@@ -3446,8 +3519,9 @@ Office.Document#getSelectedDataAsync:member(1):
                     // Get selected data.
                     const dataValue = asyncResult.value; 
                     write('Selected data is ' + dataValue);
-                }            
-            });
+                }
+            }
+        );
     }
 
     // Function that writes to a div with id='message' on the page.
@@ -3462,41 +3536,36 @@ Office.Document#getSelectedDataAsync:member(1):
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
-    (function () {
-        "use strict";
+    // The onReady function must be run each time a new page is loaded.
+    Office.onReady(() => {
+        $(document).ready(() => {
+            // After the DOM is loaded, add-in-specific code can run.
+            $('#get-info').on("click", getSelectedText);
+        });
+    });
 
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getSelectedText);
-            });
-        };
-
-        // Get the text from the selected cells in the document, and display it in the add-in.
-        function getSelectedText() {
-            Office.context.document.getSelectedDataAsync(
-                Office.CoercionType.Text,
-                {asyncContext: 'Some related info'},
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        onError(result.error);
-                    }
-                    else {
-                        const output = String.format(
-                            'Selected text: {0}<br/>Passed info: {1}',
-                            result.value, result.asyncContext);
-                        $('#message').html(output);
-                    }
+    // Gets the text from the selected cells in the document, and displays it in the add-in.
+    function getSelectedText() {
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text,
+            { asyncContext: "Some related info" },
+            (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    onError(result.error);
                 }
-            );
-        }
+                else {
+                    const output = String.format(
+                        'Selected text: {0}<br/>Passed info: {1}',
+                        result.value, result.asyncContext);
+                    $('#message').html(output);
+                }
+            }
+        );
+    }
 
-        function onError(error) {
-            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-        }
-    })();
+    function onError(error) {
+        $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+    }
 Office.Document#goToByIdAsync:member(2):
   - |-
     // Go to a binding by id (Word and Excel)
@@ -3669,7 +3738,7 @@ Office.Document#removeHandlerAsync:member(2):
                 Office.context.document.addHandlerAsync(
                     Office.EventType.ResourceSelectionChanged,
                     getResourceGuid);
-                $('#remove-handler').click(removeEventHandler);
+                $('#remove-handler').on("click", removeEventHandler);
             });
         };
 
@@ -4022,7 +4091,7 @@ Office.Document#getMaxResourceIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4100,7 +4169,7 @@ Office.Document#getMaxTaskIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4240,7 +4309,7 @@ Office.Document#getResourceByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4316,7 +4385,7 @@ Office.Document#getResourceFieldAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4406,7 +4475,7 @@ Office.Document#getSelectedResourceAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getResourceInfo);
+                $('#get-info').on("click", getResourceInfo);
             });
         };
 
@@ -4495,7 +4564,7 @@ Office.Document#getSelectedTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4609,7 +4678,7 @@ Office.Document#getTaskAsync:member(2):
             $(document).ready(function () {
 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4682,7 +4751,7 @@ Office.Document#getTaskByIndexAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4756,7 +4825,7 @@ Office.Document#getTaskFieldAsync:member(2):
             $(document).ready(function () {
                 
                 // After the DOM is loaded, add-in-specific code can run.
-                $('#get-info').click(getTaskInfo);
+                $('#get-info').on("click", getTaskInfo);
             });
         };
 
@@ -4847,7 +4916,7 @@ Office.Document#setResourceFieldAsync:member(2):
 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setResourceInfo);
+                $('#set-info').on("click", setResourceInfo);
             });
         };
 
@@ -4926,7 +4995,7 @@ Office.Document#setTaskFieldAsync:member(2):
                 
                 // After the DOM is loaded, add-in-specific code can run.
                 app.initialize();
-                $('#set-info').click(setTaskInfo);
+                $('#set-info').on("click", setTaskInfo);
             });
         };
 
@@ -5389,6 +5458,28 @@ Office.TableData#rows:member:
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
+    }
+Office.UI#addHandlerAsync:member(2):
+  - |-
+    // The following example shows how to add an event handler for the DialogParentMessageReceived event.
+    Office.onReady(() => {
+        Office.context.ui.addHandlerAsync(
+            Office.EventType.DialogParentMessageReceived,
+            onMessageFromParent,
+            onRegisterMessageComplete
+        );
+    });
+
+    function onMessageFromParent(arg) {
+        const messageFromParent = JSON.parse(arg.message);
+        document.querySelector('h1').textContent = messageFromParent.name;
+    }
+
+    function onRegisterMessageComplete(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log(asyncResult.error.message);
+            return;
+        }
     }
 Office.UI#displayDialogAsync:member(1):
   - |-

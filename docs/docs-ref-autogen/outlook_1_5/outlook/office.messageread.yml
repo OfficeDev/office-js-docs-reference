@@ -81,6 +81,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
 
+
       const attachments = Office.context.mailbox.item.attachments;
 
       console.log(attachments);
@@ -183,6 +184,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
 
+
       const msgCc = Office.context.mailbox.item.cc;
 
       console.log("Message copied to:");
@@ -232,6 +234,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
+
       console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
@@ -264,6 +267,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
 
       console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
 
@@ -306,6 +310,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
+
       console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
 
       ```
@@ -347,6 +352,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
+
 
       console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 
@@ -393,6 +399,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
 
+
       const msgFrom = Office.context.mailbox.item.from;
 
       console.log("Message received from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
@@ -434,6 +441,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
+
 
       console.log(`Internet message ID: ${Office.context.mailbox.item.internetMessageId}`);
 
@@ -485,6 +493,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
 
       console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 
@@ -588,6 +597,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
+
       const itemType = Office.context.mailbox.item.itemType;
 
       switch (itemType) {
@@ -633,6 +643,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-location-read.yaml
 
+
       console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
 
       ```
@@ -672,6 +683,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
+
       console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
 
       ```
@@ -708,6 +720,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
       // Adds a progress indicator to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -721,6 +734,7 @@ properties:
 
 
       ...
+
 
       // Adds an informational notification to the mail item.
 
@@ -738,6 +752,7 @@ properties:
 
       ...
 
+
       // Adds a persistent information notification to the mail item.
 
       const id = $("#notificationId").val().toString();
@@ -754,6 +769,7 @@ properties:
 
       ...
 
+
       // Gets all the notification messages and their keys for the current mail item.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
@@ -767,6 +783,7 @@ properties:
 
 
       ...
+
 
       // Replaces a notification message of a given key with another message.
 
@@ -783,6 +800,7 @@ properties:
         handleResult);
 
       ...
+
 
       // Removes a notification message from the current mail item.
 
@@ -830,6 +848,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
 
+
       const msgSender = Office.context.mailbox.item.sender;
 
       console.log("Sender: " + msgSender.displayName + " (" + msgSender.emailAddress + ")");
@@ -869,6 +888,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
 
       console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 
@@ -910,6 +930,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
 
       console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 
@@ -962,6 +983,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
+
 
       const msgTo = Office.context.mailbox.item.to;
 
@@ -1156,6 +1178,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
+
       Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
       ```
@@ -1306,10 +1329,12 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
+
       Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
 
       ...
+
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1362,23 +1387,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getEntities` method, will be retired in Q2 of 2024. The
+      work to retire this method will start in May and continue until the end of June. After June, contextual add-ins
+      will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will
+      continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual
+      add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules,
+      see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1395,6 +1412,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
 
       const entities = Office.context.mailbox.item.getEntities();
 
@@ -1478,23 +1496,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getEntitiesByType` method, will be retired in Q2 of
+      2024. The work to retire this method will start in May and continue until the end of June. After June, contextual
+      add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules
+      will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement
+      these rules, see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1511,6 +1521,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
 
       console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 
@@ -1570,23 +1581,15 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      - Entity-based contextual Outlook add-ins, including the `getFilteredEntitiesByName` method, will be retired in Q2
+      of 2024. The work to retire this method will start in May and continue until the end of June. After June,
+      contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular
+      expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend
+      updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to
+      implement these rules, see [Use regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
+      entity-based contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1609,6 +1612,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
 
       // This API would only work when you click on highlighted physical address that has the word "Way" in it.
 
@@ -1659,22 +1663,13 @@ methods:
 
 
       - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
+      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
+      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
+      regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
+      contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1750,6 +1745,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
+
       // This API would only work when you click on highlighted word "ScriptLab".
 
       console.log(Office.context.mailbox.item.getRegExMatches());
@@ -1792,22 +1788,13 @@ methods:
 
 
       - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them.
-
-
-      An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-      being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-      transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-      Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-      recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance
-      on how to implement these rules, see [Use regular expression activation rules to show an Outlook
+      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
+      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
+      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
+      regular expression activation rules to show an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->.
-
-
-      For more information, see [Retirement of entity-based contextual Outlook
+      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
+      contextual Outlook
       add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
       -->.
 
@@ -1874,6 +1861,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
 
       // This API would only work when you click on highlighted word "ScriptLab".
 
@@ -1976,6 +1964,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
 
       Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {

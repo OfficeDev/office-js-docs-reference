@@ -30,6 +30,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
+
   // Adds an informational message with actions to the mail item.
 
   const id = $("#notificationId").val().toString();

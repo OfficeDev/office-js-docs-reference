@@ -3,61 +3,88 @@ name: Visio.LayoutVariant
 uid: 'visio!Visio.LayoutVariant:enum'
 package: visio!
 fullName: Visio.LayoutVariant
-summary: |-
-  Represents the type of layout.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the type of layout.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 fields:
   - name: flowchart_BottomToTop
     uid: 'visio!Visio.LayoutVariant.flowchart_BottomToTop:member'
     package: visio!
-    summary: Use Flowchart with BottomToTop orientation
+    summary: |-
+      Use Flowchart with BottomToTop orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_BottomToTop"'
   - name: flowchart_LeftToRight
     uid: 'visio!Visio.LayoutVariant.flowchart_LeftToRight:member'
     package: visio!
-    summary: Use Flowchart with LeftToRight orientation
+    summary: |-
+      Use Flowchart with LeftToRight orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_LeftToRight"'
   - name: flowchart_RightToLeft
     uid: 'visio!Visio.LayoutVariant.flowchart_RightToLeft:member'
     package: visio!
-    summary: Use Flowchart with RightToLeft orientation
+    summary: |-
+      Use Flowchart with RightToLeft orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_RightToLeft"'
   - name: flowchart_TopToBottom
     uid: 'visio!Visio.LayoutVariant.flowchart_TopToBottom:member'
     package: visio!
-    summary: Use Flowchart with TopToBottom orientation
+    summary: |-
+      Use Flowchart with TopToBottom orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_TopToBottom"'
   - name: pageDefault
     uid: 'visio!Visio.LayoutVariant.pageDefault:member'
     package: visio!
-    summary: Use the Page default layout
+    summary: |-
+      Use the Page default layout.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"PageDefault"'
   - name: unknown
     uid: 'visio!Visio.LayoutVariant.unknown:member'
     package: visio!
-    summary: Invalid layout
+    summary: |-
+      Invalid layout.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Unknown"'
   - name: wideTree_DownThenLeft
     uid: 'visio!Visio.LayoutVariant.wideTree_DownThenLeft:member'
     package: visio!
-    summary: Use WideTree with DownThenLeft orientation
+    summary: |-
+      Use WideTree with DownThenLeft orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_DownThenLeft"'
   - name: wideTree_DownThenRight
     uid: 'visio!Visio.LayoutVariant.wideTree_DownThenRight:member'
     package: visio!
-    summary: Use WideTree with DownThenRight orientation
+    summary: |-
+      Use WideTree with DownThenRight orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_DownThenRight"'
   - name: wideTree_LeftThenDown
     uid: 'visio!Visio.LayoutVariant.wideTree_LeftThenDown:member'
     package: visio!
-    summary: Use WideTree with LeftThenDown orientation
+    summary: |-
+      Use WideTree with LeftThenDown orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_LeftThenDown"'
   - name: wideTree_RightThenDown
     uid: 'visio!Visio.LayoutVariant.wideTree_RightThenDown:member'
     package: visio!
-    summary: Use WideTree with RightThenDown orientation
+    summary: |-
+      Use WideTree with RightThenDown orientation.
+
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_RightThenDown"'

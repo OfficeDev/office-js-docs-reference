@@ -26,6 +26,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-message-properties.yaml
 
+
   // Retrieves the selected messages' properties and logs them to the console.
 
   Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
