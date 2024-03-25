@@ -195,11 +195,11 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
-### Smart Alerts: Customize the Don't Send option, override the send mode option at runtime, and format the dialog message using Markdown
+### Smart Alerts: Additional event.completed options
 
 #### [Office.SmartAlertsEventCompletedOptions](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
 
-Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog, override the send mode option at runtime, and format the dialog message using Markdown.
+Added more `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog, override the send mode option at runtime, and format the dialog message using Markdown.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
