@@ -3241,7 +3241,6 @@ Excel.EventType,"visualChange",EnumField,Fine,false
 Excel.EventType,"visualSelectionChanged",EnumField,Fine,false
 Excel.EventType,"workbookActivated",EnumField,Fine,false
 Excel.EventType,"workbookAutoSaveSettingChanged",EnumField,Fine,false
-Excel.EventType,"workbookFormulaReferenceStyleChanged",EnumField,Fine,false
 Excel.EventType,"workbookNavigationObjectChanged",EnumField,Fine,false
 Excel.EventType,"worksheetActivated",EnumField,Fine,false
 Excel.EventType,"worksheetAdded",EnumField,Fine,false
@@ -5109,7 +5108,6 @@ Excel.RangeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.RangeCollection,"toJSON()",Method,Poor,false
 Excel.RangeCopyType,N/A,Enum,Fine,true
 Excel.RangeCopyType,"all",EnumField,Fine,false
-Excel.RangeCopyType,"columnWidths",EnumField,Fine,false
 Excel.RangeCopyType,"formats",EnumField,Fine,false
 Excel.RangeCopyType,"formulas",EnumField,Fine,false
 Excel.RangeCopyType,"link",EnumField,Fine,false
@@ -5747,7 +5745,7 @@ Excel.SortField,"icon",Property,Good,false
 Excel.SortField,"key",Property,Good,false
 Excel.SortField,"sortOn",Property,Good,false
 Excel.SortField,"subField",Property,Good,false
-Excel.SortMethod,N/A,Enum,Good,false
+Excel.SortMethod,N/A,Enum,Fine,false
 Excel.SortMethod,"pinYin",EnumField,Fine,false
 Excel.SortMethod,"strokeCount",EnumField,Fine,false
 Excel.SortOn,N/A,Enum,Good,true
@@ -6694,17 +6692,15 @@ Office.Context,"host",Property,Good,false
 Office.Context,"license",Property,Fine,false
 Office.Context,"mailbox",Property,Good,true
 Office.Context,"officeTheme",Property,Fine,true
-Office.Context,"partitionKey",Property,Good,true
 Office.Context,"platform",Property,Good,false
 Office.Context,"requirements",Property,Fine,false
 Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
 Office.Context,"touchEnabled",Property,Good,false
 Office.Context,"ui",Property,Fine,false
-Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
-Office.ContextInformation,"platform",Property,Good,true
+Office.ContextInformation,"platform",Property,Fine,true
 Office.ContextInformation,"version",Property,Fine,true
 Office.Control,N/A,Class,Good,false
 Office.Control,"enabled",Property,Good,false
@@ -6862,7 +6858,7 @@ Office.EventType,"RecurrenceChanged",EnumField,Good,false
 Office.EventType,"ResourceSelectionChanged",EnumField,Fine,false
 Office.EventType,"SelectedItemsChanged",EnumField,Good,false
 Office.EventType,"SensitivityLabelChanged",EnumField,Good,false
-Office.EventType,"SettingsChanged",EnumField,Fine,false
+Office.EventType,"SettingsChanged",EnumField,Poor,false
 Office.EventType,"SpamReporting",EnumField,Good,false
 Office.EventType,"TaskSelectionChanged",EnumField,Fine,false
 Office.EventType,"ViewSelectionChanged",EnumField,Fine,false
@@ -7575,8 +7571,6 @@ Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
 Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
 Office.UI,"openBrowserWindow(url)",Method,Poor,false
-Office.Urls,N/A,Class,Good,false
-Office.Urls,"javascriptRuntimeUrl",Property,Good,true
 Office.ValueFormat,N/A,Enum,Good,false
 Office.ValueFormat,"Formatted",EnumField,Poor,false
 Office.ValueFormat,"Unformatted",EnumField,Poor,false
@@ -9009,6 +9003,7 @@ Office.MessageCompose,"cc",Property,Good,true
 Office.MessageCompose,"conversationId",Property,Good,true
 Office.MessageCompose,"delayDeliveryTime",Property,Good,true
 Office.MessageCompose,"from",Property,Good,true
+Office.MessageCompose,"inReplyTo",Property,Good,false
 Office.MessageCompose,"internetHeaders",Property,Good,true
 Office.MessageCompose,"itemType",Property,Good,true
 Office.MessageCompose,"notificationMessages",Property,Good,true
@@ -9036,8 +9031,12 @@ Office.MessageCompose,"getAttachmentsAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"getAttachmentsAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getComposeTypeAsync(options, callback)",Method,Fine,false
 Office.MessageCompose,"getComposeTypeAsync(callback)",Method,Fine,true
+Office.MessageCompose,"getConversationIndexAsync(options, callback)",Method,Poor,false
+Office.MessageCompose,"getConversationIndexAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"getInitializationContextAsync(callback)",Method,Poor,false
+Office.MessageCompose,"getItemClassAsync(options, callback)",Method,Poor,false
+Office.MessageCompose,"getItemClassAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
@@ -10520,8 +10519,6 @@ Word.CheckboxContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CheckboxContentControl,"set(properties, options)",Method,Poor,false
 Word.CheckboxContentControl,"set(properties)",Method,Poor,false
 Word.CheckboxContentControl,"toJSON()",Method,Poor,false
-Word.CheckboxContentControl,"track()",Method,Poor,false
-Word.CheckboxContentControl,"untrack()",Method,Poor,false
 Word.CloseBehavior,N/A,Enum,Good,false
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Fine,false
@@ -11662,7 +11659,6 @@ Word.Range,"getReviewedText(changeTrackingVersion)",Method,Poor,true
 Word.Range,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
 Word.Range,"getTrackedChanges()",Method,Poor,false
-Word.Range,"highlight()",Method,Poor,false
 Word.Range,"insertBookmark(name)",Method,Poor,false
 Word.Range,"insertBreak(breakType, insertLocation)",Method,Fine,true
 Word.Range,"insertComment(commentText)",Method,Fine,true
@@ -11683,7 +11679,6 @@ Word.Range,"intersectWithOrNullObject(range)",Method,Poor,false
 Word.Range,"load(options)",Method,Poor,false
 Word.Range,"load(propertyNames)",Method,Poor,false
 Word.Range,"load(propertyNamesAndPaths)",Method,Poor,false
-Word.Range,"removeHighlight()",Method,Poor,false
 Word.Range,"search(searchText, searchOptions)",Method,Poor,false
 Word.Range,"select(selectionMode)",Method,Poor,true
 Word.Range,"select(selectionModeString)",Method,Poor,false

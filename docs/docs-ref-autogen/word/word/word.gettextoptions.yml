@@ -4,8 +4,8 @@ uid: 'word!Word.GetTextOptions:interface'
 package: word!
 fullName: Word.GetTextOptions
 summary: Specifies the options to be included in a getText operation.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: false
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -16,8 +16,8 @@ properties:
     summary: >-
       Specifies a value that indicates whether to include hidden text in the result of the GetText method. The default
       value is False.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'includeHiddenText?: boolean;'
@@ -30,8 +30,8 @@ properties:
     summary: >-
       Specifies a value that indicates whether to include text marked as deleted in the result of the GetText method.
       The default value is False.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'includeTextMarkedAsDeleted?: boolean;'

@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.AnnotationCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.AnnotationCollectionLoadOptions
 summary: 'Contains a collection of [Word.Annotation](xref:word!Word.Annotation:class) objects.'
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: false
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -28,8 +28,8 @@ properties:
     package: word!
     fullName: critiqueAnnotation
     summary: 'For EACH ITEM in the collection: Gets the critique annotation object.'
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;'
@@ -42,8 +42,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the unique identifier, which is meant to be used for easier tracking of
       Annotation objects.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
@@ -54,8 +54,8 @@ properties:
     package: word!
     fullName: state
     summary: 'For EACH ITEM in the collection: Gets the state of the annotation.'
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'state?: boolean;'

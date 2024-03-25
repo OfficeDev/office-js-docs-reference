@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.CheckboxContentControlLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CheckboxContentControlLoadOptions
 summary: The data specific to content controls of type CheckBox.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: false
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -28,8 +28,8 @@ properties:
     package: word!
     fullName: isChecked
     summary: Specifies the current state of the checkbox.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'isChecked?: boolean;'

@@ -330,56 +330,6 @@ properties:
       See the article [Persist add-in state and
       settings](https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings) for more
       information.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Store the value "Hello" in local storage with the key "myKey1".
-
-      setInLocalStorage("myKey1", "Hello");
-
-
-      // ... 
-
-
-      // Retrieve the value stored in local storage under the key "myKey1".
-
-      const message = getFromLocalStorage("myKey1");
-
-      console.log(message);
-
-
-      // ...
-
-
-      function setInLocalStorage(key: string, value: string) {
-          const myPartitionKey = Office.context.partitionKey;
-
-          // Check if local storage is partitioned. 
-          // If so, use the partition to ensure the data is only accessible by your add-in.
-          if (myPartitionKey) {
-              localStorage.setItem(myPartitionKey + key, value);
-          } else {
-              localStorage.setItem(key, value);
-          }
-      }
-
-
-      function getFromLocalStorage(key: string) {
-          const myPartitionKey = Office.context.partitionKey;
-
-          // Check if local storage is partitioned.
-          if (myPartitionKey) {
-              return localStorage.getItem(myPartitionKey + key);
-          } else {
-              return localStorage.getItem(key);
-          }
-      }
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -102,8 +102,6 @@
 ||[basicValue](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorType](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-type-member)|Represents the type of this cell value.|
-|[Range](/javascript/api/excel/excel.range)|||
-|[RangeAreas](/javascript/api/excel/excel.rangeareas)|||
 |[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
 ||[source](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-source-member)|Gets the source of the event.|

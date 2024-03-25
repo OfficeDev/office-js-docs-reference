@@ -5,7 +5,7 @@ package: word!
 fullName: Word.AnnotationInsertedEventArgs
 summary: Holds annotation information that is passed back on annotation added event.
 remarks: >-
-  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -56,7 +56,7 @@ remarks: >-
   }
 
   ```
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -65,8 +65,8 @@ properties:
     package: word!
     fullName: ids
     summary: Specifies the annotation IDs for which the event was fired.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'ids: string[];'

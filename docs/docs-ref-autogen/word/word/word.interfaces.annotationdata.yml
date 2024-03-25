@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: id
     summary: 'Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.'
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'id?: string;'
@@ -26,8 +26,8 @@ properties:
     package: word!
     fullName: state
     summary: Gets the state of the annotation.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'state?: Word.AnnotationState | "Created" | "Accepted" | "Rejected";'
