@@ -1,0 +1,18 @@
+### YamlMime:TSEnum
+name: Word.ContentControlState
+uid: 'word!Word.ContentControlState:enum'
+package: word!
+fullName: Word.ContentControlState
+summary: Represents the state of the content control.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: error
+    uid: 'word!Word.ContentControlState.error:member'
+    package: word!
+    summary: |-
+      Error state.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Error"'

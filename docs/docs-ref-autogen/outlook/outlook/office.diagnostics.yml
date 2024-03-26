@@ -21,6 +21,46 @@ remarks: >-
   Starting with Mailbox requirement set 1.5, you can also use the
   [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
   property to get similar information.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+
+  // This function gets a mailbox's diagnostic information, such as Outlook client and version, and logs it to the
+  console.
+
+  const diagnostics = Office.context.mailbox.diagnostics;
+
+  console.log(`Client application: ${diagnostics.hostName}`);
+
+  console.log(`Client version: ${diagnostics.hostVersion}`);
+
+
+  switch (diagnostics.OWAView) {
+    case undefined:
+      console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumnNarrow:
+      console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumn:
+      console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.TwoColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a tablet");
+      break;
+    case Office.MailboxEnums.OWAView.ThreeColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+      break;
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
