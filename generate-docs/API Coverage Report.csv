@@ -8581,7 +8581,7 @@ Office.DelayDeliveryTime,"getAsync(options, callback)",Method,Poor,false
 Office.DelayDeliveryTime,"getAsync(callback)",Method,Poor,true
 Office.DelayDeliveryTime,"setAsync(datetime, options, callback)",Method,Poor,false
 Office.DelayDeliveryTime,"setAsync(datetime, callback)",Method,Poor,true
-Office.Diagnostics,N/A,Class,Good,false
+Office.Diagnostics,N/A,Class,Good,true
 Office.Diagnostics,"hostName",Property,Good,false
 Office.Diagnostics,"hostVersion",Property,Good,false
 Office.Diagnostics,"OWAView",Property,Good,false
@@ -8666,7 +8666,7 @@ Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,"id",Property,Fine,false
 Office.LocationIdentifier,"type",Property,Poor,false
 Office.Mailbox,N/A,Class,Good,false
-Office.Mailbox,"diagnostics",Property,Good,false
+Office.Mailbox,"diagnostics",Property,Good,true
 Office.Mailbox,"ewsUrl",Property,Good,true
 Office.Mailbox,"item",Property,Good,false
 Office.Mailbox,"masterCategories",Property,Good,true
@@ -10679,11 +10679,14 @@ Word.ContentControl,"insertText(text, insertLocation)",Method,Fine,true
 Word.ContentControl,"load(options)",Method,Fine,true
 Word.ContentControl,"load(propertyNames)",Method,Poor,false
 Word.ContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ContentControl,"resetState()",Method,Poor,false
 Word.ContentControl,"search(searchText, searchOptions)",Method,Poor,true
 Word.ContentControl,"select(selectionMode)",Method,Poor,false
 Word.ContentControl,"select(selectionModeString)",Method,Poor,false
 Word.ContentControl,"set(properties, options)",Method,Fine,true
 Word.ContentControl,"set(properties)",Method,Poor,false
+Word.ContentControl,"setState(contentControlState)",Method,Poor,false
+Word.ContentControl,"setState(contentControlStateString)",Method,Poor,false
 Word.ContentControl,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Method,Fine,false
 Word.ContentControl,"toJSON()",Method,Poor,false
 Word.ContentControl,"track()",Method,Poor,false
@@ -10741,6 +10744,8 @@ Word.ContentControlSelectionChangedEventArgs,N/A,Class,Good,true
 Word.ContentControlSelectionChangedEventArgs,"eventType",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,"ids",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,"source",Property,Good,false
+Word.ContentControlState,N/A,Enum,Good,false
+Word.ContentControlState,"error",EnumField,Fine,false
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,"buildingBlockGallery",EnumField,Fine,false
 Word.ContentControlType,"checkBox",EnumField,Fine,false
