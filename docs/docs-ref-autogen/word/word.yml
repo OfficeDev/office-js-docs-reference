@@ -20,6 +20,7 @@ enums:
   - 'word!Word.CommentChangeType:enum'
   - 'word!Word.CompareTarget:enum'
   - 'word!Word.ContentControlAppearance:enum'
+  - 'word!Word.ContentControlState:enum'
   - 'word!Word.ContentControlType:enum'
   - 'word!Word.CritiqueColorScheme:enum'
   - 'word!Word.DocumentPropertyType:enum'

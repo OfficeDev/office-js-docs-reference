@@ -1474,6 +1474,19 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
+  - name: resetState()
+    uid: 'word!Word.ContentControl#resetState:member(1)'
+    package: word!
+    fullName: resetState()
+    summary: Resets the state of the content control.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetState(): void;'
+      return:
+        type: void
+        description: ''
   - name: 'search(searchText, searchOptions)'
     uid: 'word!Word.ContentControl#search:member(1)'
     package: word!
@@ -1663,6 +1676,40 @@ methods:
         - id: properties
           description: ''
           type: '<xref uid="word!Word.ContentControl:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setState(contentControlState)
+    uid: 'word!Word.ContentControl#setState:member(1)'
+    package: word!
+    fullName: setState(contentControlState)
+    summary: Sets the state of the content control.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setState(contentControlState: Word.ContentControlState): void;'
+      parameters:
+        - id: contentControlState
+          description: State to be set.
+          type: '<xref uid="word!Word.ContentControlState:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setState(contentControlStateString)
+    uid: 'word!Word.ContentControl#setState:member(2)'
+    package: word!
+    fullName: setState(contentControlStateString)
+    summary: Sets the state of the content control.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setState(contentControlStateString: "Error"): void;'
+      parameters:
+        - id: contentControlStateString
+          description: State to be set.
+          type: '"Error"'
       return:
         type: void
         description: ''

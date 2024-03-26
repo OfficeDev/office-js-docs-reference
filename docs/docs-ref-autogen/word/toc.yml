@@ -51,6 +51,8 @@ items:
                 uid: 'word!Word.CompareTarget:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
+              - name: ContentControlState
+                uid: 'word!Word.ContentControlState:enum'
               - name: ContentControlType
                 uid: 'word!Word.ContentControlType:enum'
               - name: CritiqueColorScheme
