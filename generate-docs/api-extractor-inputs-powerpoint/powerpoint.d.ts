@@ -52,6 +52,13 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
+        /**
+         * Gets the ID of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         */
+        readonly id: string;
         readonly title: string;
         /**
          * Returns the selected shapes in the current slide of the presentation.
@@ -158,49 +165,6 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         slideMasterId?: string;
-    }
-    /**
-     * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    export class BulletFormat extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        visible: boolean;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.BulletFormatLoadOptions): PowerPoint.BulletFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.BulletFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.BulletFormat;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.BulletFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BulletFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.BulletFormatData;
     }
     /**
      * Specifies the connector type for line shapes.
@@ -1299,59 +1263,236 @@ export declare namespace PowerPoint {
         chartPlus = "ChartPlus",
     }
     /**
-     * Specifies the formatting options for when slides are inserted.
+     * Represents the available options when adding shapes.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.2]
+     * [Api set: PowerPointApi 1.4]
      */
-    enum InsertSlideFormatting {
+    export interface ShapeAddOptions {
         /**
-         * Copy the source theme into the target presentation and use that theme.
+         * Specifies the height, in points, of the shape.
+                    When not provided, a default value will be used.
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
          * @remarks
-         * [Api set: PowerPointApi 1.2]
+         * [Api set: PowerPointApi 1.4]
          */
-        keepSourceFormatting = "KeepSourceFormatting",
+        height?: number;
         /**
-         * Use the existing theme in the target presentation.
+         * Specifies the distance, in points, from the left side of the shape to the left side of the slide.
+                    When not provided, a default value will be used.
+         *
          * @remarks
-         * [Api set: PowerPointApi 1.2]
+         * [Api set: PowerPointApi 1.4]
          */
-        useDestinationTheme = "UseDestinationTheme",
+        left?: number;
+        /**
+         * Specifies the distance, in points, from the top edge of the shape to the top edge of the slide.
+                    When not provided, a default value will be used.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        top?: number;
+        /**
+         * Specifies the width, in points, of the shape.
+                    When not provided, a default value will be used.
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        width?: number;
     }
     /**
-     * Represents the available options when inserting slides.
+     * Specifies the dash style for a line.
      *
      * @remarks
-     * [Api set: PowerPointApi 1.2]
+     * [Api set: PowerPointApi 1.4]
      */
-    export interface InsertSlideOptions {
+    enum ShapeLineDashStyle {
         /**
-         * Specifies which formatting to use during slide insertion.
-                    The default option is to use "KeepSourceFormatting".
-         *
+         * The dash line pattern
          * @remarks
-         * [Api set: PowerPointApi 1.2]
+         * [Api set: PowerPointApi 1.4]
          */
-        formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
+        dash = "Dash",
         /**
-         * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
-                    The order of these slides is preserved during the insertion.
-                    If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
-                    All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
-         *
+         * The dash-dot line pattern
          * @remarks
-         * [Api set: PowerPointApi 1.2]
+         * [Api set: PowerPointApi 1.4]
          */
-        sourceSlideIds?: string[];
+        dashDot = "DashDot",
         /**
-         * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
-                    If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
-                    If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
-         *
+         * The dash-dot-dot line pattern
          * @remarks
-         * [Api set: PowerPointApi 1.2]
+         * [Api set: PowerPointApi 1.4]
          */
-        targetSlideId?: string;
+        dashDotDot = "DashDotDot",
+        /**
+         * The long dash line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDash = "LongDash",
+        /**
+         * The long dash-dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDot = "LongDashDot",
+        /**
+         * The round dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        roundDot = "RoundDot",
+        /**
+         * The solid line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        solid = "Solid",
+        /**
+         * The square dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        squareDot = "SquareDot",
+        /**
+         * The long dash-dot-dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDotDot = "LongDashDotDot",
+        /**
+         * The system dash line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDash = "SystemDash",
+        /**
+         * The system dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDot = "SystemDot",
+        /**
+         * The system dash-dot line pattern
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDashDot = "SystemDashDot",
+    }
+    /**
+     * The type of underline applied to a font.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeFontUnderlineStyle {
+        /**
+         * No underlining.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        none = "None",
+        /**
+         * Regular single line underlining.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        single = "Single",
+        /**
+         * Underlining of text with double lines.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        double = "Double",
+        /**
+         * Underlining of text with a thick line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        heavy = "Heavy",
+        /**
+         * Underlining of text with a dotted line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dotted = "Dotted",
+        /**
+         * Underlining of text with a thick, dotted line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dottedHeavy = "DottedHeavy",
+        /**
+         * Underlining of text with a line containing dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dash = "Dash",
+        /**
+         * Underlining of text with a thick line containing dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashHeavy = "DashHeavy",
+        /**
+         * Underlining of text with a line containing long dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashLong = "DashLong",
+        /**
+         * Underlining of text with a thick line containing long dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashLongHeavy = "DashLongHeavy",
+        /**
+         * Underlining of text with a line containing dots and dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dotDash = "DotDash",
+        /**
+         * Underlining of text with a thick line containing dots and dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dotDashHeavy = "DotDashHeavy",
+        /**
+         * Underlining of text with a line containing double dots and dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dotDotDash = "DotDotDash",
+        /**
+         * Underlining of text with a thick line containing double dots and dashes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dotDotDashHeavy = "DotDotDashHeavy",
+        /**
+         * Underlining of text with a wavy line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        wavy = "Wavy",
+        /**
+         * Underlining of text with a thick, wavy line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        wavyHeavy = "WavyHeavy",
+        /**
+         * Underlining of text with double wavy lines.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        wavyDouble = "WavyDouble",
     }
     /**
      * Represents the horizontal alignment of the {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
@@ -1404,96 +1545,50 @@ export declare namespace PowerPoint {
         thaiDistributed = "ThaiDistributed",
     }
     /**
-     * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
+     * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
+                If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
+                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment }.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
      */
-    export class ParagraphFormat extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
+    enum TextVerticalAlignment {
         /**
-         * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
-         *
+         * Specifies that the `TextFrame` should be top aligned to the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        readonly bulletFormat: PowerPoint.BulletFormat;
+        top = "Top",
         /**
-         * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
-         *
+         * Specifies that the `TextFrame` should be center aligned to the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
+        middle = "Middle",
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.ParagraphFormatLoadOptions): PowerPoint.ParagraphFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.ParagraphFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.ParagraphFormat;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.ParagraphFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.ParagraphFormatData;
-    }
-    /**
-     * Represents the available options when adding shapes.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    export interface ShapeAddOptions {
-        /**
-         * Specifies the height, in points, of the shape.
-                    When not provided, a default value will be used.
-                    Throws an `InvalidArgument` exception when set with a negative value.
-         *
+         * Specifies that the `TextFrame` should be bottom aligned to the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        height?: number;
+        bottom = "Bottom",
         /**
-         * Specifies the distance, in points, from the left side of the shape to the left side of the slide.
-                    When not provided, a default value will be used.
-         *
+         * Specifies that the `TextFrame` should be top aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        left?: number;
+        topCentered = "TopCentered",
         /**
-         * Specifies the distance, in points, from the top edge of the shape to the top edge of the slide.
-                    When not provided, a default value will be used.
-         *
+         * Specifies that the `TextFrame` should be center aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        top?: number;
+        middleCentered = "MiddleCentered",
         /**
-         * Specifies the width, in points, of the shape.
-                    When not provided, a default value will be used.
-                    Throws an `InvalidArgument` exception when set with a negative value.
-         *
+         * Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        width?: number;
+        bottomCentered = "BottomCentered",
     }
     /**
      * Represents the collection of shapes.
@@ -1622,6 +1717,31 @@ export declare namespace PowerPoint {
         * Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
+    }
+    /**
+     * Represents the available options when getting an image of a slide.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideGetImageOptions {
+        /**
+         * The desired height of the resulting image in pixels.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height?: number;
+        /**
+         * The desired width of the resulting image in pixels.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width?: number;
     }
     /**
      * Represents the layout of a slide.
@@ -1880,22 +2000,22 @@ export declare namespace PowerPoint {
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Tag[];
         /**
-         * Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the existing tag will be replaced with the given `value`.
+         * Adds a new tag at the end of the collection. If the key already exists in the collection, the value of the existing tag will be replaced with the given `value`.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. The key string is capitalized when saved in the document.
          * @param value - The value of the tag.
          */
         add(key: string, value: string): void;
         /**
-         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
+         * Deletes the tag with the given key in this collection. Does nothing if the key does not exist.
          *
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. `key` parameter is case-insensitive.
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. This parameter is case-insensitive.
          */
         delete(key: string): void;
         /**
@@ -1912,7 +2032,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param key - The ID of the tag. The `key` parameter is case-sensitive.
+         * @param key - The ID of the tag. The ID is case-sensitive and must be capitalized.
          * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
          */
         getItem(key: string): PowerPoint.Tag;
@@ -1932,7 +2052,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.3]
          *
-         * @param key - The ID of the tag. The `key` parameter is case-sensitive.
+         * @param key - The ID of the tag. The ID is case-sensitive and must be capitalized.
          * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
          */
         getItemOrNullObject(key: string): PowerPoint.Tag;
@@ -2011,6 +2131,27 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
+        /**
+         * Exports the slide to its own presentation file, returned as base64-encoded data.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        exportAsBase64(): OfficeExtension.ClientResult<string>;
+        /**
+         * Renders an image of the slide. The image is scaled to fit into the desired dimensions.
+                    If width and height aren't specified, the true size of the slide is used. If only one
+                    of either width or height is specified, the other will be calculated to preserve aspect ratio.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options to specify the desired size of the slide image.
+         * @returns A base64 string of the slide image in PNG format.
+         */
+        getImageAsBase64(options?: PowerPoint.SlideGetImageOptions): OfficeExtension.ClientResult<string>;
         /**
          * Selects the specified shapes. Existing shape selection is replaced with the new selection.
          *
@@ -2203,86 +2344,6 @@ export declare namespace PowerPoint {
         thinThin = "ThinThin",
     }
     /**
-     * Specifies the dash style for a line.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeLineDashStyle {
-        /**
-         * The dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dash = "Dash",
-        /**
-         * The dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDot = "DashDot",
-        /**
-         * The dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDotDot = "DashDotDot",
-        /**
-         * The long dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDash = "LongDash",
-        /**
-         * The long dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDot = "LongDashDot",
-        /**
-         * The round dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        roundDot = "RoundDot",
-        /**
-         * The solid line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        solid = "Solid",
-        /**
-         * The square dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        squareDot = "SquareDot",
-        /**
-         * The long dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDotDot = "LongDashDotDot",
-        /**
-         * The system dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDash = "SystemDash",
-        /**
-         * The system dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDot = "SystemDot",
-        /**
-         * The system dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDashDot = "SystemDashDot",
-    }
-    /**
      * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
      *
      * @remarks
@@ -2397,6 +2458,12 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         line = "Line",
+        /**
+         * The shape is a table
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        table = "Table",
     }
     /**
      * Determines the type of automatic sizing allowed.
@@ -2431,160 +2498,97 @@ export declare namespace PowerPoint {
         autoSizeMixed = "AutoSizeMixed",
     }
     /**
-     * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
-                If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
-                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment }.
+     * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
      */
-    enum TextVerticalAlignment {
+    export class BulletFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
-         * Specifies that the `TextFrame` should be top aligned to the `Shape`.
+         * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        top = "Top",
+        visible: boolean;
         /**
-         * Specifies that the `TextFrame` should be center aligned to the `Shape`.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
-        middle = "Middle",
+        load(options?: PowerPoint.Interfaces.BulletFormatLoadOptions): PowerPoint.BulletFormat;
         /**
-         * Specifies that the `TextFrame` should be bottom aligned to the `Shape`.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        bottom = "Bottom",
+        load(propertyNames?: string | string[]): PowerPoint.BulletFormat;
         /**
-         * Specifies that the `TextFrame` should be top aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        topCentered = "TopCentered",
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.BulletFormat;
         /**
-         * Specifies that the `TextFrame` should be center aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        middleCentered = "MiddleCentered",
-        /**
-         * Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        bottomCentered = "BottomCentered",
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.BulletFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BulletFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.BulletFormatData;
     }
     /**
-     * The type of underline applied to a font.
+     * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
      */
-    enum ShapeFontUnderlineStyle {
+    export class ParagraphFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
-         * No underlining.
+         * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        none = "None",
+        readonly bulletFormat: PowerPoint.BulletFormat;
         /**
-         * Regular single line underlining.
+         * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        single = "Single",
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
         /**
-         * Underlining of text with double lines.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
-        double = "Double",
+        load(options?: PowerPoint.Interfaces.ParagraphFormatLoadOptions): PowerPoint.ParagraphFormat;
         /**
-         * Underlining of text with a thick line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        heavy = "Heavy",
+        load(propertyNames?: string | string[]): PowerPoint.ParagraphFormat;
         /**
-         * Underlining of text with a dotted line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        dotted = "Dotted",
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.ParagraphFormat;
         /**
-         * Underlining of text with a thick, dotted line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dottedHeavy = "DottedHeavy",
-        /**
-         * Underlining of text with a line containing dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dash = "Dash",
-        /**
-         * Underlining of text with a thick line containing dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashHeavy = "DashHeavy",
-        /**
-         * Underlining of text with a line containing long dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashLong = "DashLong",
-        /**
-         * Underlining of text with a thick line containing long dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashLongHeavy = "DashLongHeavy",
-        /**
-         * Underlining of text with a line containing dots and dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dotDash = "DotDash",
-        /**
-         * Underlining of text with a thick line containing dots and dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dotDashHeavy = "DotDashHeavy",
-        /**
-         * Underlining of text with a line containing double dots and dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dotDotDash = "DotDotDash",
-        /**
-         * Underlining of text with a thick line containing double dots and dashes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dotDotDashHeavy = "DotDotDashHeavy",
-        /**
-         * Underlining of text with a wavy line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        wavy = "Wavy",
-        /**
-         * Underlining of text with a thick, wavy line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        wavyHeavy = "WavyHeavy",
-        /**
-         * Underlining of text with double wavy lines.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        wavyDouble = "WavyDouble",
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.ParagraphFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.ParagraphFormatData;
     }
     /**
      * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
@@ -2952,7 +2956,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
+        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
         /**
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
@@ -3035,6 +3039,61 @@ export declare namespace PowerPoint {
         * Whereas the original PowerPoint.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): PowerPoint.Interfaces.ShapeData;
+    }
+    /**
+     * Specifies the formatting options for when slides are inserted.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.2]
+     */
+    enum InsertSlideFormatting {
+        /**
+         * Copy the source theme into the target presentation and use that theme.
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        keepSourceFormatting = "KeepSourceFormatting",
+        /**
+         * Use the existing theme in the target presentation.
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        useDestinationTheme = "UseDestinationTheme",
+    }
+    /**
+     * Represents the available options when inserting slides.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.2]
+     */
+    export interface InsertSlideOptions {
+        /**
+         * Specifies which formatting to use during slide insertion.
+                    The default option is to use "KeepSourceFormatting".
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
+        /**
+         * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
+                    The order of these slides is preserved during the insertion.
+                    If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+                    All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        sourceSlideIds?: string[];
+        /**
+         * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
+                    If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
+                    If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        targetSlideId?: string;
     }
     /**
      * Represents a collection of shapes.
@@ -3360,26 +3419,6 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
-        export interface BulletFormatUpdateData {
-            /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            visible?: boolean;
-        }
-        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
-        export interface ParagraphFormatUpdateData {
-            /**
-             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
-        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -3463,6 +3502,26 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             weight?: number;
+        }
+        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
+        export interface BulletFormatUpdateData {
+            /**
+             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            visible?: boolean;
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
+            /**
+             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
         }
         /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
@@ -3643,27 +3702,14 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
+            /**
+             * Gets the ID of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
+            id?: string;
             title?: string;
-        }
-        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
-        export interface BulletFormatData {
-            /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
-        export interface ParagraphFormatData {
-            /**
-             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -3806,6 +3852,26 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             weight?: number;
+        }
+        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
+        export interface BulletFormatData {
+            /**
+             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            visible?: boolean;
+        }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
+            /**
+             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
         }
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
@@ -3980,7 +4046,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
+            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -4014,52 +4080,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Gets the ID of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
+            id?: boolean;
             title?: boolean;
-        }
-        /**
-         * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        export interface BulletFormatLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            visible?: boolean;
-        }
-        /**
-         * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        export interface ParagraphFormatLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-            * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
-            bulletFormat?: PowerPoint.Interfaces.BulletFormatLoadOptions;
-            /**
-             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            horizontalAlignment?: boolean;
         }
         /**
          * Represents the collection of shapes.
@@ -4392,6 +4420,51 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             weight?: boolean;
+        }
+        /**
+         * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        export interface BulletFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            visible?: boolean;
+        }
+        /**
+         * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        export interface ParagraphFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.4]
+            */
+            bulletFormat?: PowerPoint.Interfaces.BulletFormatLoadOptions;
+            /**
+             * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            horizontalAlignment?: boolean;
         }
         /**
          * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.

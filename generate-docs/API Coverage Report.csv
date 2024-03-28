@@ -4875,9 +4875,11 @@ Excel.Query,"loadedToDataModel",Property,Good,false
 Excel.Query,"name",Property,Good,true
 Excel.Query,"refreshDate",Property,Good,true
 Excel.Query,"rowsLoadedCount",Property,Good,true
+Excel.Query,"delete()",Method,Poor,false
 Excel.Query,"load(options)",Method,Poor,false
 Excel.Query,"load(propertyNames)",Method,Poor,false
 Excel.Query,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.Query,"refresh()",Method,Poor,false
 Excel.Query,"toJSON()",Method,Poor,false
 Excel.QueryCollection,N/A,Class,Good,false
 Excel.QueryCollection,"context",Property,Good,false
@@ -4887,6 +4889,7 @@ Excel.QueryCollection,"getItem(key)",Method,Fine,false
 Excel.QueryCollection,"load(options)",Method,Poor,false
 Excel.QueryCollection,"load(propertyNames)",Method,Poor,false
 Excel.QueryCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.QueryCollection,"refreshAll()",Method,Poor,false
 Excel.QueryCollection,"toJSON()",Method,Poor,false
 Excel.QueryError,N/A,Enum,Good,false
 Excel.QueryError,"failedDownload",EnumField,Fine,false
@@ -9510,6 +9513,7 @@ PowerPoint.ParagraphHorizontalAlignment,"right",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"thaiDistributed",EnumField,Fine,false
 PowerPoint.Presentation,N/A,Class,Fine,false
 PowerPoint.Presentation,"context",Property,Good,false
+PowerPoint.Presentation,"id",Property,Good,false
 PowerPoint.Presentation,"slideMasters",Property,Good,false
 PowerPoint.Presentation,"slides",Property,Good,false
 PowerPoint.Presentation,"tags",Property,Good,false
@@ -9672,6 +9676,7 @@ PowerPoint.ShapeType,"geometricShape",EnumField,Fine,false
 PowerPoint.ShapeType,"group",EnumField,Fine,false
 PowerPoint.ShapeType,"image",EnumField,Fine,false
 PowerPoint.ShapeType,"line",EnumField,Fine,false
+PowerPoint.ShapeType,"table",EnumField,Fine,false
 PowerPoint.ShapeType,"unsupported",EnumField,Fine,false
 PowerPoint.Slide,N/A,Class,Good,false
 PowerPoint.Slide,"context",Property,Good,false
@@ -9681,6 +9686,8 @@ PowerPoint.Slide,"shapes",Property,Good,false
 PowerPoint.Slide,"slideMaster",Property,Good,false
 PowerPoint.Slide,"tags",Property,Good,false
 PowerPoint.Slide,"delete()",Method,Poor,true
+PowerPoint.Slide,"exportAsBase64()",Method,Poor,false
+PowerPoint.Slide,"getImageAsBase64(options)",Method,Fine,false
 PowerPoint.Slide,"load(options)",Method,Poor,false
 PowerPoint.Slide,"load(propertyNames)",Method,Poor,false
 PowerPoint.Slide,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -9698,6 +9705,9 @@ PowerPoint.SlideCollection,"load(options)",Method,Poor,false
 PowerPoint.SlideCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.SlideCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideCollection,"toJSON()",Method,Poor,false
+PowerPoint.SlideGetImageOptions,N/A,Class,Good,false
+PowerPoint.SlideGetImageOptions,"height",Property,Good,false
+PowerPoint.SlideGetImageOptions,"width",Property,Good,false
 PowerPoint.SlideLayout,N/A,Class,Good,false
 PowerPoint.SlideLayout,"context",Property,Good,false
 PowerPoint.SlideLayout,"id",Property,Good,false

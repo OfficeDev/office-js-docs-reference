@@ -161,8 +161,8 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Represents the action type of the task change record. Some examples of action types are assign, undo, and
-      setPriority.
+      Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->,
+      `undo`<!-- -->, and `setPriority`<!-- -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

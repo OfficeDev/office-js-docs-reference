@@ -71,6 +71,8 @@ items:
             uid: 'powerpoint!PowerPoint.Slide:class'
           - name: SlideCollection
             uid: 'powerpoint!PowerPoint.SlideCollection:class'
+          - name: SlideGetImageOptions
+            uid: 'powerpoint!PowerPoint.SlideGetImageOptions:interface'
           - name: SlideLayout
             uid: 'powerpoint!PowerPoint.SlideLayout:class'
           - name: SlideLayoutCollection
