@@ -34,6 +34,7 @@ export declare namespace PowerPoint {
         
         
         
+        
         readonly title: string;
         
         
@@ -118,14 +119,6 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
-        export interface BulletFormatUpdateData {
-            
-        }
-        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
-        export interface ParagraphFormatUpdateData {
-            
-        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -154,6 +147,14 @@ export declare namespace PowerPoint {
             
             
             
+            
+        }
+        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
+        export interface BulletFormatUpdateData {
+            
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
             
         }
         /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
@@ -207,15 +208,8 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
+            
             title?: string;
-        }
-        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
-        export interface BulletFormatData {
-            
-        }
-        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
-        export interface ParagraphFormatData {
-            
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -261,6 +255,14 @@ export declare namespace PowerPoint {
             
             
             
+            
+        }
+        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
+        export interface BulletFormatData {
+            
+        }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
             
         }
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
@@ -324,6 +326,7 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             title?: boolean;
         }
         

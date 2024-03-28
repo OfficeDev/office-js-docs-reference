@@ -40,6 +40,14 @@ fields:
 
       * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Line"'
+  - name: table
+    uid: 'powerpoint!PowerPoint.ShapeType.table:member'
+    package: powerpoint!
+    summary: |-
+      The shape is a table
+
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Table"'
   - name: unsupported
     uid: 'powerpoint!PowerPoint.ShapeType.unsupported:member'
     package: powerpoint!

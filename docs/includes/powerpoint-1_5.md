@@ -4,6 +4,7 @@
 ||[getSelectedSlides()](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedslides-member(1))|Returns the selected slides in the current view of the presentation.|
 ||[getSelectedTextRange()](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1))|Returns the selected PowerPoint.TextRange in the current view of the presentation.|
 ||[getSelectedTextRangeOrNullObject()](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))|Returns the selected PowerPoint.TextRange in the current view of the presentation.|
+||[id](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-id-member)|Gets the ID of the presentation.|
 ||[setSelectedSlides(slideIds: string[])](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-setselectedslides-member(1))|Selects the slides in the current view of the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[getParentSlide()](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslide-member(1))|Returns the parent PowerPoint.Slide object that holds this `Shape`.|
 ||[getParentSlideLayout()](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayout-member(1))|Returns the parent PowerPoint.SlideLayout object that holds this `Shape`.|

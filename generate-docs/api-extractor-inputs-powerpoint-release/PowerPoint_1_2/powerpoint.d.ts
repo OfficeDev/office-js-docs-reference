@@ -40,6 +40,7 @@ export declare namespace PowerPoint {
          */
         readonly slides: PowerPoint.SlideCollection;
         
+        
         readonly title: string;
         
         
@@ -87,61 +88,7 @@ export declare namespace PowerPoint {
     
     
     
-    /**
-     * Specifies the formatting options for when slides are inserted.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.2]
-     */
-    enum InsertSlideFormatting {
-        /**
-         * Copy the source theme into the target presentation and use that theme.
-         * @remarks
-         * [Api set: PowerPointApi 1.2]
-         */
-        keepSourceFormatting = "KeepSourceFormatting",
-        /**
-         * Use the existing theme in the target presentation.
-         * @remarks
-         * [Api set: PowerPointApi 1.2]
-         */
-        useDestinationTheme = "UseDestinationTheme",
-    }
-    /**
-     * Represents the available options when inserting slides.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.2]
-     */
-    export interface InsertSlideOptions {
-        /**
-         * Specifies which formatting to use during slide insertion.
-                    The default option is to use "KeepSourceFormatting".
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.2]
-         */
-        formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
-        /**
-         * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
-                    The order of these slides is preserved during the insertion.
-                    If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
-                    All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.2]
-         */
-        sourceSlideIds?: string[];
-        /**
-         * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
-                    If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
-                    If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.2]
-         */
-        targetSlideId?: string;
-    }
+    
     
     
     
@@ -218,7 +165,61 @@ export declare namespace PowerPoint {
     
     
     
-    
+    /**
+     * Specifies the formatting options for when slides are inserted.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.2]
+     */
+    enum InsertSlideFormatting {
+        /**
+         * Copy the source theme into the target presentation and use that theme.
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        keepSourceFormatting = "KeepSourceFormatting",
+        /**
+         * Use the existing theme in the target presentation.
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        useDestinationTheme = "UseDestinationTheme",
+    }
+    /**
+     * Represents the available options when inserting slides.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.2]
+     */
+    export interface InsertSlideOptions {
+        /**
+         * Specifies which formatting to use during slide insertion.
+                    The default option is to use "KeepSourceFormatting".
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
+        /**
+         * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
+                    The order of these slides is preserved during the insertion.
+                    If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+                    All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        sourceSlideIds?: string[];
+        /**
+         * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
+                    If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
+                    If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        targetSlideId?: string;
+    }
     
     /**
      * Represents the collection of slides in the presentation.
@@ -316,14 +317,6 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
-        export interface BulletFormatUpdateData {
-            
-        }
-        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
-        export interface ParagraphFormatUpdateData {
-            
-        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -352,6 +345,14 @@ export declare namespace PowerPoint {
             
             
             
+            
+        }
+        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
+        export interface BulletFormatUpdateData {
+            
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
             
         }
         /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
@@ -405,15 +406,8 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
+            
             title?: string;
-        }
-        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
-        export interface BulletFormatData {
-            
-        }
-        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
-        export interface ParagraphFormatData {
-            
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -465,6 +459,14 @@ export declare namespace PowerPoint {
             
             
             
+            
+        }
+        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
+        export interface BulletFormatData {
+            
+        }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
             
         }
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
@@ -528,10 +530,9 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             title?: boolean;
         }
-        
-        
         
         
         
@@ -559,6 +560,8 @@ export declare namespace PowerPoint {
              */
             id?: boolean;
         }
+        
+        
         
         
         
