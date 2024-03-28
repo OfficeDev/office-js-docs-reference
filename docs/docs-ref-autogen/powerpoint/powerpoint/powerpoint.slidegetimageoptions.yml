@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: PowerPoint.SlideGetImageOptions
+uid: 'powerpoint!PowerPoint.SlideGetImageOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.SlideGetImageOptions
+summary: Represents the available options when getting an image of a slide.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: 'powerpoint!PowerPoint.SlideGetImageOptions#height:member'
+    package: powerpoint!
+    fullName: height
+    summary: The desired height of the resulting image in pixels.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: width
+    uid: 'powerpoint!PowerPoint.SlideGetImageOptions#width:member'
+    package: powerpoint!
+    fullName: width
+    summary: The desired width of the resulting image in pixels.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

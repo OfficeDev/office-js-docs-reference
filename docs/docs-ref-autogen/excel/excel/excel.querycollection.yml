@@ -162,6 +162,19 @@ methods:
       return:
         type: '<xref uid="excel!Excel.QueryCollection:class" />'
         description: ''
+  - name: refreshAll()
+    uid: 'excel!Excel.QueryCollection#refreshAll:member(1)'
+    package: excel!
+    fullName: refreshAll()
+    summary: Refresh all queries.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: 'excel!Excel.QueryCollection#toJSON:member(1)'
     package: excel!
