@@ -1008,75 +1008,11 @@
       "open_source_feedback_productName": "Office Add-ins",
       "titleSuffix": "Office Add-ins",
       "ms.devlang": "javascript",
-      "product": ["office", "office-add-ins"],
       "products": [
-        "https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d"
+        "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
       ]
     },
     "fileMetadata": {
-      "product": {
-        "docs-ref-autogen/excel/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_1/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_2/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_3/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_4/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_5/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_6/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_7/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_8/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_9/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_10/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_11/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_12/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_13/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_14/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_15/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_16/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_1_17/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/excel_online/**": ["office", "office-add-ins", "office-excel"],
-        "docs-ref-autogen/onenote/**": ["office", "office-add-ins", "office-onenote"],
-        "docs-ref-autogen/outlook/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_1/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_2/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_3/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_4/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_5/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_6/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_7/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_8/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_9/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_10/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_11/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_12/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/outlook_1_13/**": ["office", "office-add-ins", "office-outlook"],
-        "docs-ref-autogen/overview/**": ["office", "office-add-ins"],
-        "docs-ref-autogen/powerpoint/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/powerpoint_1_1/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/powerpoint_1_2/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/powerpoint_1_3/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/powerpoint_1_4/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/powerpoint_1_5/**": ["office", "office-add-ins", "office-powerpoint"],
-        "docs-ref-autogen/visio/**": ["office", "office-add-ins", "office-visio"],
-        "docs-ref-autogen/word/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_1/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_2/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_3/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_3_hidden_document/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_4/**": ["office", "office-add-ins", "office-word 1.4"],
-        "docs-ref-autogen/word_1_4_hidden_document/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_5/**": ["office", "office-add-ins", "office-word 1.5"],
-        "docs-ref-autogen/word_1_5_hidden_document/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_6/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_1_7/**": ["office", "office-add-ins", "office-word"],
-        "docs-ref-autogen/word_online/**": ["office", "office-add-ins", "office-word"],
-        "manifest/**": ["office", "office-add-ins"],
-        "requirement-sets/**": ["office", "office-add-ins"],
-        "requirement-sets/excel/**": ["office", "office-add-ins", "office-excel"],
-        "requirement-sets/onenote/**": ["office", "office-add-ins", "office-onenote"],
-        "requirement-sets/outlook/**": ["office", "office-add-ins", "office-outlook"],
-        "requirement-sets/powerpoint/**": ["office", "office-add-ins", "office-powerpoint"],
-        "requirement-sets/word/**": ["office", "office-add-ins", "office-word"]
-      },
       "ms.service": {
         "docs-ref-autogen/excel/**": "excel",
         "docs-ref-autogen/excel/office-runtime/**": "microsoft-365",
@@ -1139,23 +1075,29 @@
         "requirement-sets/word/**": "word"
       },
       "products": {
-        "docs-ref-autogen/outlook*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b"
+        "docs-ref-autogen/excel*/**": [
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/c43bb58b-1190-419b-8d18-e6052371b599",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/onenote/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/b8a347ba-1b4a-45ca-8d86-0f08145ec3ac"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/5cf7b7ed-3af7-438f-a1ad-c5d5bd10d155",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
-        "docs-ref-autogen/visio/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/905aec6a-1788-4124-b9e7-6ba301fe12b8"
-        ],
-        "docs-ref-autogen/excel*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
+        "docs-ref-autogen/outlook*/**": [
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/powerpoint*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/af64080b-70a9-4efa-8078-59a46ddbdaa4",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
+        ],
+        "docs-ref-autogen/visio/**": [
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/9f8c47e1-09b5-4135-9988-4b3776e19124",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/word*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/264d03ab-bab8-454b-a56c-0fedead7f602",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ]
       },
       "ms.topic": {
