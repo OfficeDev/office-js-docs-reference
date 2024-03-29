@@ -1076,22 +1076,28 @@
       },
       "products": {
         "docs-ref-autogen/excel*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/c43bb58b-1190-419b-8d18-e6052371b599"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/c43bb58b-1190-419b-8d18-e6052371b599",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/onenote/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/5cf7b7ed-3af7-438f-a1ad-c5d5bd10d155"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/5cf7b7ed-3af7-438f-a1ad-c5d5bd10d155",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/outlook*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/powerpoint*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/af64080b-70a9-4efa-8078-59a46ddbdaa4"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/af64080b-70a9-4efa-8078-59a46ddbdaa4",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/visio/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/9f8c47e1-09b5-4135-9988-4b3776e19124"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/9f8c47e1-09b5-4135-9988-4b3776e19124",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ],
         "docs-ref-autogen/word*/**": [
-          "https://authoring-docs-microsoft.poolparty.biz/devrel/264d03ab-bab8-454b-a56c-0fedead7f602"
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/264d03ab-bab8-454b-a56c-0fedead7f602",
+          "https://authoring-docs-microsoft.poolparty.biz/devrel/01e6eca5-e701-4cd9-a21f-56c9258f473e"
         ]
       },
       "ms.topic": {
