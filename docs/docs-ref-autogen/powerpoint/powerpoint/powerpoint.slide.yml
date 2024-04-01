@@ -124,6 +124,43 @@ methods:
       return:
         type: void
         description: ''
+  - name: exportAsBase64()
+    uid: 'powerpoint!PowerPoint.Slide#exportAsBase64:member(1)'
+    package: powerpoint!
+    fullName: exportAsBase64()
+    summary: 'Exports the slide to its own presentation file, returned as base64-encoded data.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'exportAsBase64(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getImageAsBase64(options)
+    uid: 'powerpoint!PowerPoint.Slide#getImageAsBase64:member(1)'
+    package: powerpoint!
+    fullName: getImageAsBase64(options)
+    summary: >-
+      Renders an image of the slide. The image is scaled to fit into the desired dimensions. If width and height aren't
+      specified, the true size of the slide is used. If only one of either width or height is specified, the other will
+      be calculated to preserve aspect ratio.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getImageAsBase64(options?: PowerPoint.SlideGetImageOptions): OfficeExtension.ClientResult<string>;'
+      parameters:
+        - id: options
+          description: Optional. Options to specify the desired size of the slide image.
+          type: '<xref uid="powerpoint!PowerPoint.SlideGetImageOptions:interface" />'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: A base64 string of the slide image in PNG format.
   - name: load(options)
     uid: 'powerpoint!PowerPoint.Slide#load:member(1)'
     package: powerpoint!

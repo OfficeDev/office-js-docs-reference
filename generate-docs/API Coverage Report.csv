@@ -4875,9 +4875,11 @@ Excel.Query,"loadedToDataModel",Property,Good,false
 Excel.Query,"name",Property,Good,true
 Excel.Query,"refreshDate",Property,Good,true
 Excel.Query,"rowsLoadedCount",Property,Good,true
+Excel.Query,"delete()",Method,Poor,false
 Excel.Query,"load(options)",Method,Poor,false
 Excel.Query,"load(propertyNames)",Method,Poor,false
 Excel.Query,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.Query,"refresh()",Method,Poor,false
 Excel.Query,"toJSON()",Method,Poor,false
 Excel.QueryCollection,N/A,Class,Good,false
 Excel.QueryCollection,"context",Property,Good,false
@@ -4887,6 +4889,7 @@ Excel.QueryCollection,"getItem(key)",Method,Fine,false
 Excel.QueryCollection,"load(options)",Method,Poor,false
 Excel.QueryCollection,"load(propertyNames)",Method,Poor,false
 Excel.QueryCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.QueryCollection,"refreshAll()",Method,Poor,false
 Excel.QueryCollection,"toJSON()",Method,Poor,false
 Excel.QueryError,N/A,Enum,Good,false
 Excel.QueryError,"failedDownload",EnumField,Fine,false
@@ -8581,7 +8584,7 @@ Office.DelayDeliveryTime,"getAsync(options, callback)",Method,Poor,false
 Office.DelayDeliveryTime,"getAsync(callback)",Method,Poor,true
 Office.DelayDeliveryTime,"setAsync(datetime, options, callback)",Method,Poor,false
 Office.DelayDeliveryTime,"setAsync(datetime, callback)",Method,Poor,true
-Office.Diagnostics,N/A,Class,Good,false
+Office.Diagnostics,N/A,Class,Good,true
 Office.Diagnostics,"hostName",Property,Good,false
 Office.Diagnostics,"hostVersion",Property,Good,false
 Office.Diagnostics,"OWAView",Property,Good,false
@@ -8666,7 +8669,7 @@ Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,"id",Property,Fine,false
 Office.LocationIdentifier,"type",Property,Poor,false
 Office.Mailbox,N/A,Class,Good,false
-Office.Mailbox,"diagnostics",Property,Good,false
+Office.Mailbox,"diagnostics",Property,Good,true
 Office.Mailbox,"ewsUrl",Property,Good,true
 Office.Mailbox,"item",Property,Good,false
 Office.Mailbox,"masterCategories",Property,Good,true
@@ -9510,6 +9513,7 @@ PowerPoint.ParagraphHorizontalAlignment,"right",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"thaiDistributed",EnumField,Fine,false
 PowerPoint.Presentation,N/A,Class,Fine,false
 PowerPoint.Presentation,"context",Property,Good,false
+PowerPoint.Presentation,"id",Property,Good,false
 PowerPoint.Presentation,"slideMasters",Property,Good,false
 PowerPoint.Presentation,"slides",Property,Good,false
 PowerPoint.Presentation,"tags",Property,Good,false
@@ -9672,6 +9676,7 @@ PowerPoint.ShapeType,"geometricShape",EnumField,Fine,false
 PowerPoint.ShapeType,"group",EnumField,Fine,false
 PowerPoint.ShapeType,"image",EnumField,Fine,false
 PowerPoint.ShapeType,"line",EnumField,Fine,false
+PowerPoint.ShapeType,"table",EnumField,Fine,false
 PowerPoint.ShapeType,"unsupported",EnumField,Fine,false
 PowerPoint.Slide,N/A,Class,Good,false
 PowerPoint.Slide,"context",Property,Good,false
@@ -9681,6 +9686,8 @@ PowerPoint.Slide,"shapes",Property,Good,false
 PowerPoint.Slide,"slideMaster",Property,Good,false
 PowerPoint.Slide,"tags",Property,Good,false
 PowerPoint.Slide,"delete()",Method,Poor,true
+PowerPoint.Slide,"exportAsBase64()",Method,Poor,false
+PowerPoint.Slide,"getImageAsBase64(options)",Method,Fine,false
 PowerPoint.Slide,"load(options)",Method,Poor,false
 PowerPoint.Slide,"load(propertyNames)",Method,Poor,false
 PowerPoint.Slide,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -9698,6 +9705,9 @@ PowerPoint.SlideCollection,"load(options)",Method,Poor,false
 PowerPoint.SlideCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.SlideCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideCollection,"toJSON()",Method,Poor,false
+PowerPoint.SlideGetImageOptions,N/A,Class,Good,false
+PowerPoint.SlideGetImageOptions,"height",Property,Good,false
+PowerPoint.SlideGetImageOptions,"width",Property,Good,false
 PowerPoint.SlideLayout,N/A,Class,Good,false
 PowerPoint.SlideLayout,"context",Property,Good,false
 PowerPoint.SlideLayout,"id",Property,Good,false
@@ -10679,11 +10689,14 @@ Word.ContentControl,"insertText(text, insertLocation)",Method,Fine,true
 Word.ContentControl,"load(options)",Method,Fine,true
 Word.ContentControl,"load(propertyNames)",Method,Poor,false
 Word.ContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ContentControl,"resetState()",Method,Poor,false
 Word.ContentControl,"search(searchText, searchOptions)",Method,Poor,true
 Word.ContentControl,"select(selectionMode)",Method,Poor,false
 Word.ContentControl,"select(selectionModeString)",Method,Poor,false
 Word.ContentControl,"set(properties, options)",Method,Fine,true
 Word.ContentControl,"set(properties)",Method,Poor,false
+Word.ContentControl,"setState(contentControlState)",Method,Poor,false
+Word.ContentControl,"setState(contentControlStateString)",Method,Poor,false
 Word.ContentControl,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Method,Fine,false
 Word.ContentControl,"toJSON()",Method,Poor,false
 Word.ContentControl,"track()",Method,Poor,false
@@ -10741,6 +10754,8 @@ Word.ContentControlSelectionChangedEventArgs,N/A,Class,Good,true
 Word.ContentControlSelectionChangedEventArgs,"eventType",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,"ids",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,"source",Property,Good,false
+Word.ContentControlState,N/A,Enum,Good,false
+Word.ContentControlState,"error",EnumField,Fine,false
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,"buildingBlockGallery",EnumField,Fine,false
 Word.ContentControlType,"checkBox",EnumField,Fine,false

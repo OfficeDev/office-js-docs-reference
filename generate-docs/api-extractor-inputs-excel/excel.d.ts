@@ -7983,6 +7983,24 @@ export declare namespace Excel {
          */
         readonly rowsLoadedCount: number;
         /**
+         * Deletes the query and associated connection.
+                    Tables associated with the query will no longer be connected.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Refreshes the query.
+                    This only starts the refresh.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refresh(): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -8037,6 +8055,14 @@ export declare namespace Excel {
          * @returns The query with the given name. If there is no query by that name, then an error is thrown.
          */
         getItem(key: string): Excel.Query;
+        /**
+         * Refresh all queries.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refreshAll(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8451,7 +8477,7 @@ export declare namespace Excel {
          */
         readonly title: string;
         /**
-         * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+         * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -19930,6 +19956,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Specifies the marker size of a chart series.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -20311,6 +20338,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Represents marker size of a data point.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -45704,6 +45732,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -45854,6 +45883,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -51775,6 +51805,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -51925,6 +51956,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -56522,7 +56554,7 @@ export declare namespace Excel {
              */
             title?: boolean;
             /**
-             * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -60186,6 +60218,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60515,6 +60548,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60679,6 +60713,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60747,6 +60782,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

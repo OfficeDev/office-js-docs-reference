@@ -64,6 +64,7 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface'
   - 'powerpoint!PowerPoint.ShapeAddOptions:interface'
+  - 'powerpoint!PowerPoint.SlideGetImageOptions:interface'
 classes:
   - 'powerpoint!PowerPoint.Application:class'
   - 'powerpoint!PowerPoint.BulletFormat:class'

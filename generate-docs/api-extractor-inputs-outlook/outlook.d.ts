@@ -11978,11 +11978,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * In Outlook on Windows, you can only use this property in a spam-reporting add-in starting in Version 2308 (Build 16724.10000).
-         * If you're using an earlier build that supports the integrated spam-reporting feature, use the `postProcessingAction`
-         * property instead.
+         * - You can only use this property in a spam-reporting add-in in Outlook on Windows (starting in Version 2308 (Build 16724.10000)), on Mac, on the web,
+         * and in new Outlook on Windows (preview). If you're using an earlier build in Outlook on Windows that supports the integrated spam-reporting feature, use the
+         * `postProcessingAction` property instead.
          *
-         * If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
+         * - If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
          * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
          * `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
          *
@@ -12027,10 +12027,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature.
+         * - In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature.
          * If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
          *
-         * If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
+         * - This property isn't supported in Outlook on the web, on Mac, or in new Outlook on Windows (preview). Use the `moveItemTo` property instead.
+         *
+         * - If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
          * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to
          * `moveToSpamFolder` and move the reported message to the **Junk Email** folder.
          *
@@ -12049,6 +12051,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: In Outlook on the web or in new Outlook on Windows (preview), a post-processing dialog isn't shown once the add-in completes processing a
+         * reported message. This applies even if `showPostProcessingDialog` is configured. However, depending on how you configured the `moveItemTo` property in the
+         * `event.completed` call, a notification is shown to signal when the reported message is deleted or moved to another folder in the mailbox. To learn more, see
+         * the "Review feature behavior and limitations" section of
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in (preview)}.
          *
          * @beta
          */

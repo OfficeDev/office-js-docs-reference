@@ -276,11 +276,11 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
+      content: 'readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";'
       return:
         type: >-
           <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
-          "Line"
+          "Line" | "Table"
   - name: width
     uid: 'powerpoint!PowerPoint.Shape#width:member'
     package: powerpoint!

@@ -2113,6 +2113,14 @@ export declare namespace Word {
          */
         insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
         /**
+         * Resets the state of the content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetState(): void;
+        /**
          * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
          *
          * @remarks
@@ -2148,6 +2156,26 @@ export declare namespace Word {
          * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
+        /**
+         * Sets the state of the content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param contentControlState - State to be set.
+         */
+        setState(contentControlState: Word.ContentControlState): void;
+        /**
+         * Sets the state of the content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param contentControlStateString - State to be set.
+         */
+        setState(contentControlStateString: "Error"): void;
         /**
          * Splits the content control into child ranges by using delimiters.
          *
@@ -10328,6 +10356,22 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         hidden = "Hidden",
+    }
+    /**
+     * Represents the state of the content control.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ContentControlState {
+        /**
+         * Error state.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        error = "Error",
     }
     /**
      * The supported styles for underline format.

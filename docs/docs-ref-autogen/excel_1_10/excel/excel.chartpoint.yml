@@ -87,7 +87,9 @@ properties:
     uid: 'excel!Excel.ChartPoint#markerSize:member'
     package: excel!
     fullName: markerSize
-    summary: Represents marker size of a data point.
+    summary: >-
+      Represents marker size of a data point. The supported size range is 2 to 72. This method returns an
+      InvalidArgument error if it's set with a size outside of the supported range.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
