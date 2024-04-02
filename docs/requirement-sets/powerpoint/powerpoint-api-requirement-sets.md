@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
-ms.date: 11/28/2022
+ms.date: 03/29/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -14,6 +14,7 @@ The following table lists the PowerPoint requirement sets, the supported Office 
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
+| [Preview](powerpoint-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [PowerPointApi 1.5](powerpoint-api-1-5-requirement-set.md) | Version 2208 (Build 15601.20230) | Not available | 16.64.804.0 | Not available | Supported |
 | [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md) | Version 2207 (Build 15330.20122) | Not available | 16.62 | Not available | Supported |
 | [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md) | Version 2111 (Build 14701.20060) | Not available | 16.55 | Not available | Supported |
