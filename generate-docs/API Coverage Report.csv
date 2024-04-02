@@ -10756,6 +10756,7 @@ Word.ContentControlSelectionChangedEventArgs,"ids",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,"source",Property,Good,false
 Word.ContentControlState,N/A,Enum,Good,false
 Word.ContentControlState,"error",EnumField,Fine,false
+Word.ContentControlState,"warning",EnumField,Fine,false
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,"buildingBlockGallery",EnumField,Fine,false
 Word.ContentControlType,"checkBox",EnumField,Fine,false

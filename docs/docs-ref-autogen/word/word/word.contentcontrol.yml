@@ -1705,11 +1705,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'setState(contentControlStateString: "Error"): void;'
+      content: 'setState(contentControlStateString: "Error" | "Warning"): void;'
       parameters:
         - id: contentControlStateString
           description: State to be set.
-          type: '"Error"'
+          type: '"Error" | "Warning"'
       return:
         type: void
         description: ''
