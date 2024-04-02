@@ -650,7 +650,7 @@ items:
               ../../requirement-sets/powerpoint/powerpoint-api-requirement-sets.md
             displayName: PowerPoint
           - name: PowerPoint preview APIs
-            href: ../../requirement-sets/word/powerpoint-preview-apis.md
+            href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
             displayName: PowerPoint
           - name: PowerPointApi 1.5 requirement set
             href: >-
