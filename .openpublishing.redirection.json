@@ -551,10 +551,6 @@
         {
             "source_path": "docs/docs-ref-conceptual/requirement-sets/word-api-requirement-sets.md",
             "redirect_url": "/javascript/api/requirement-sets/word/word-api-requirement-sets"
-        },
-        {
-            "source_path": "docs/docs-ref-conceptual/requirement-sets/powerpoint/powerpoint-preview-apis.md",
-            "redirect_url": "/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets"
         }
     ]
 }

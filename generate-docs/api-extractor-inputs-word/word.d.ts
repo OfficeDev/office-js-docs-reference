@@ -2175,7 +2175,7 @@ export declare namespace Word {
          *
          * @param contentControlStateString - State to be set.
          */
-        setState(contentControlStateString: "Error"): void;
+        setState(contentControlStateString: "Error" | "Warning"): void;
         /**
          * Splits the content control into child ranges by using delimiters.
          *
@@ -10372,6 +10372,13 @@ export declare namespace Word {
          * @beta
          */
         error = "Error",
+        /**
+         * Warning state.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        warning = "Warning",
     }
     /**
      * The supported styles for underline format.

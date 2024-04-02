@@ -16,3 +16,11 @@ fields:
 
       * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Error"'
+  - name: warning
+    uid: 'word!Word.ContentControlState.warning:member'
+    package: word!
+    summary: |-
+      Warning state.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Warning"'
