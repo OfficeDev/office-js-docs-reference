@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 03/22/2024
+ms.date: 04/08/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -67,7 +67,7 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 ---
 
-### Additional mail item properties
+### Additional message properties
 
 #### [Office.context.mailbox.item.inReplyTo](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-inreplyto-member)
 
