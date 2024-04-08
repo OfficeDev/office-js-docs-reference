@@ -93,7 +93,7 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 ---
 
-### Additional message properties
+### Additional message members
 
 #### [Office.context.mailbox.item.inReplyTo](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-inreplyto-member)
 
@@ -101,13 +101,13 @@ Added a property to get the message ID of the original message being replied to 
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-#### [Office.context.mailbox.item.getConversationIndexAsync](office.context.mailbox.item.md#methods)
+#### [Office.context.mailbox.item.getConversationIndexAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getconversationindexasync-member(1))
 
 Added a method to get the Base64-encoded position of the current message in a conversation thread.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-#### [Office.context.mailbox.item.getItemClassAsync](office.context.mailbox.item.md#methods)
+#### [Office.context.mailbox.item.getItemClassAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getitemclassasync-member(1))
 
 Added a method to get the Exchange Web Services (EWS) item class of a message in compose mode.
 
