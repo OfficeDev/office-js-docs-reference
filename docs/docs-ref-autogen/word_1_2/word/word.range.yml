@@ -81,8 +81,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content
-      control.
+      Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there
+      isn't a parent content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -315,7 +315,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -325,6 +325,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
 
       // Simulates creation of a template. First searches the document for instances of the string "Contractor",
 
@@ -360,13 +361,16 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        "RichText" | "PlainText"): Word.ContentControl;
+        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
+          description: >-
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
+            'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
+            uid="word!Word.ContentControlType.plainText:member" /> | <xref
+            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -874,7 +878,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -54,6 +54,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
+
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.centerHorizontally = true;
@@ -86,6 +87,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -203,6 +205,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -343,6 +346,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -576,6 +580,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
+
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.setPrintArea("A1:D41");
@@ -669,6 +674,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");

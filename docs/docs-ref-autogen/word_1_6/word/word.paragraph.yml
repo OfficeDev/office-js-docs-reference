@@ -26,6 +26,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+
       await Word.run(async (context) => {
         // Center last paragraph alignment.
         context.document.body.paragraphs.getLast().alignment = "Centered";
@@ -181,6 +182,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+
       await Word.run(async (context) => {
         // Indent the first paragraph.
         context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
@@ -212,6 +214,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+
       await Word.run(async (context) => {
         // Adjust line spacing.
         context.document.body.paragraphs.getFirst().lineSpacing = 20;
@@ -231,7 +234,27 @@ properties:
     package: word!
     fullName: lineUnitAfter
     summary: 'Specifies the amount of spacing, in grid lines, after the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+
+      await Word.run(async (context) => {
+        // Set the space (in line units) after the first paragraph.
+        context.document.body.paragraphs.getFirst().lineUnitAfter = 1;
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,7 +266,27 @@ properties:
     package: word!
     fullName: lineUnitBefore
     summary: 'Specifies the amount of spacing, in grid lines, before the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+
+      await Word.run(async (context) => {
+        // Set the space (in line units) before the first paragraph.
+        context.document.body.paragraphs.getFirst().lineUnitBefore = 1;
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -451,8 +494,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+
       await Word.run(async (context) => {
-        // Adjust space between paragraphs.
+        // Set the space (in points) after the first paragraph.
         context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
         await context.sync();
@@ -495,6 +539,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Applies the specified style to a paragraph.
 
@@ -551,6 +596,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
 
       await Word.run(async (context) => {
           const paragraph = context.document.body.insertParagraph("Timeline", "End");
@@ -681,6 +727,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+
       await Word.run(async (context) => {
         // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
         const paragraph = context.document.getSelection().paragraphs.getFirst();
@@ -704,7 +751,58 @@ properties:
     summary: >-
       Gets a string that represents the paragraph identifier in the current session. ID is in standard 8-4-4-4-12 GUID
       format without curly braces and differs across sessions and coauthors.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function paragraphChanged(args: Word.ParagraphChangedEventArgs) {
+        await Word.run(async (context) => {
+          const results = [];
+          for (let id of args.uniqueLocalIds) {
+            let para = context.document.getParagraphByUniqueLocalId(id);
+            para.load("uniqueLocalId");
+
+            results.push({ para: para, text: para.getText() });
+          }
+
+          await context.sync();
+
+          for (let result of results) {
+            console.log(`${args.type}: ${result.para.uniqueLocalId} - ${result.text.value}`);
+          }
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1061,6 +1159,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
         const sentences = context.document
@@ -1223,6 +1322,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
+
       Word.run(async (context) => {
         context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
 
@@ -1262,7 +1362,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5.
+      1.5. `CheckBox` support was added in WordApi 1.7.
 
 
       #### Examples
@@ -1303,13 +1403,16 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        "RichText" | "PlainText"): Word.ContentControl;
+        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
-          description: Optional. Content control type to insert. Must be 'RichText' or 'PlainText'. The default is 'RichText'.
+          description: >-
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
+            'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
+            uid="word!Word.ContentControlType.plainText:member" /> | <xref
+            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -1548,6 +1651,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
 
+
       await Word.run(async (context) => {
         // Replace the last paragraph.
         const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
@@ -1700,6 +1804,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
+
       await Word.run(async (context) => {
         // If select is called with no parameters, it selects the object.
         context.document.body.paragraphs.getLast().select();
@@ -1709,6 +1814,7 @@ methods:
 
 
       ...
+
 
       await Word.run(async (context) => {
         // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -1780,6 +1886,7 @@ methods:
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
+
           await Word.run(async (context) => {
             const paragraph = context.document.body.paragraphs.getFirst();
             paragraph.set({
@@ -1795,6 +1902,7 @@ methods:
 
 
           ...
+
 
           await Word.run(async (context) => {
             const firstParagraph = context.document.body.paragraphs.getFirst();
@@ -1842,6 +1950,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+
 
       await Word.run(async (context) => {
         const paragraph = context.document.body.paragraphs.getFirst();
@@ -1900,6 +2009,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
+
 
       // This example starts a new list with the second paragraph.
 
@@ -1982,7 +2092,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

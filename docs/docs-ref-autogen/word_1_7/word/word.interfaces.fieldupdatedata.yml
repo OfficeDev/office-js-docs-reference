@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Word.Interfaces.FieldUpdateData
+uid: 'word!Word.Interfaces.FieldUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.FieldUpdateData
+summary: 'An interface for updating data on the Field object, for use in `field.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: 'word!Word.Interfaces.FieldUpdateData#code:member'
+    package: word!
+    fullName: code
+    summary: Specifies the field's code instruction.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string;'
+      return:
+        type: string
+  - name: data
+    uid: 'word!Word.Interfaces.FieldUpdateData#data:member'
+    package: word!
+    fullName: data
+    summary: >-
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: string;'
+      return:
+        type: string
+  - name: locked
+    uid: 'word!Word.Interfaces.FieldUpdateData#locked:member'
+    package: word!
+    fullName: locked
+    summary: 'Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean
+  - name: result
+    uid: 'word!Word.Interfaces.FieldUpdateData#result:member'
+    package: word!
+    fullName: result
+    summary: Gets the field's result data.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'

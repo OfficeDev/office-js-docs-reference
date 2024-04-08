@@ -53,6 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
 
+
       const chosenMaster = $("#master-id").val() as string;
 
       const chosenLayout = $("#layout-id").val() as string;
@@ -126,6 +127,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
 
       // Selects slides 2, 4, and 5.
 

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Word.CloseBehavior
+uid: 'word!Word.CloseBehavior:enum'
+package: word!
+fullName: Word.CloseBehavior
+summary: Specifies the close behavior for `Document.close`<!-- -->.
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: save
+    uid: 'word!Word.CloseBehavior.save:member'
+    package: word!
+    summary: |-
+      Saves the changes before closing the document.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Save"'
+  - name: skipSave
+    uid: 'word!Word.CloseBehavior.skipSave:member'
+    package: word!
+    summary: |-
+      Discard the possible changes when closing the document.
+
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"SkipSave"'

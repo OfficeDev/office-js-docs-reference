@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
 
+
   // This function deletes data from a range and sets the delete shift direction to "up".
 
   await Excel.run(async (context) => {

@@ -28,6 +28,11 @@ fields:
     package: word!
     summary: ''
     value: '"ItemNotFound"'
+  - name: notAllowed
+    uid: 'word!Word.ErrorCodes.notAllowed:member'
+    package: word!
+    summary: ''
+    value: '"NotAllowed"'
   - name: notImplemented
     uid: 'word!Word.ErrorCodes.notImplemented:member'
     package: word!

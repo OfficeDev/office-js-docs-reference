@@ -42,6 +42,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+
       // Gets the current change tracking mode.
 
       await Word.run(async (context) => {
@@ -122,6 +123,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
+
       await Word.run(async (context) => {
           const builtInProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
@@ -180,6 +182,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
+
       // Gets all custom settings this add-in set on this document.
 
       await Word.run(async (context) => {
@@ -221,6 +224,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Adds a new style.
 
@@ -402,7 +406,7 @@ methods:
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's endnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -415,7 +419,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's footnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -440,6 +444,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
 
       await Word.run(async (context) => {
         const paragraphId = $("#paragraph-id").val() as string;
@@ -520,6 +525,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
+
       // Gets the number of styles.
 
       await Word.run(async (context) => {
@@ -543,7 +549,31 @@ methods:
     package: word!
     fullName: importStylesFromJson(stylesJson)
     summary: Import styles from a JSON-formatted string.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-custom-style.yaml
+
+
+      // Imports styles from JSON.
+
+      await Word.run(async (context) => {
+        const str =
+          '{"styles":[{"baseStyle":"Default Paragraph Font","builtIn":false,"inUse":true,"linked":false,"nameLocal":"NewCharStyle","priority":2,"quickStyle":true,"type":"Character","unhideWhenUsed":false,"visibility":false,"paragraphFormat":null,"font":{"name":"DengXian Light","size":16.0,"bold":true,"italic":false,"color":"#F1A983","underline":"None","subscript":false,"superscript":true,"strikeThrough":true,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#FF0000"}},{"baseStyle":"Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewParaStyle","nameLocal":"NewParaStyle","priority":1,"quickStyle":true,"type":"Paragraph","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Centered","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":72.0,"lineSpacing":18.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":72.0,"spaceAfter":30.0,"spaceBefore":30.0,"widowControl":true},"font":{"name":"DengXian","size":14.0,"bold":true,"italic":true,"color":"#8DD873","underline":"Single","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":true,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#00FF00"}},{"baseStyle":"Table Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewTableStyle","nameLocal":"NewTableStyle","priority":100,"type":"Table","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Left","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":0.0,"lineSpacing":12.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":0.0,"spaceAfter":0.0,"spaceBefore":0.0,"widowControl":true},"font":{"name":"DengXian","size":20.0,"bold":false,"italic":true,"color":"#D86DCB","underline":"None","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"tableStyle":{"allowBreakAcrossPage":true,"alignment":"Left","bottomCellMargin":0.0,"leftCellMargin":0.08,"rightCellMargin":0.08,"topCellMargin":0.0,"cellSpacing":0.0},"shading":{"backgroundPatternColor":"#60CAF3"}}]}';
+        const styles = context.document.importStylesFromJson(str);
+        await context.sync();
+        console.log("Styles imported from JSON:");
+        console.log(styles);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -568,6 +598,35 @@ methods:
 
       Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
       field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+      // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
+
+      await Word.run(async (context) => {
+        // Use the Base64-encoded string representation of the selected .docx file.
+        context.document.insertFileFromBase64(externalDocument, "Replace", {
+          importTheme: true,
+          importStyles: true,
+          importParagraphSpacing: true,
+          importPageColor: true,
+          importChangeTrackingMode: true,
+          importCustomProperties: true,
+          importCustomXmlParts: true,
+          importDifferentOddEvenPages: true
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -848,7 +907,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -877,6 +936,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
 
+
       // Registers the onAdded event handler on the document.
 
       await Word.run(async (context) => {
@@ -888,6 +948,7 @@ events:
 
 
       ...
+
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
@@ -922,6 +983,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
 
+
       // Registers the onParagraphAdded event handler on the document.
 
       await Word.run(async (context) => {
@@ -933,6 +995,7 @@ events:
 
 
       ...
+
 
       async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
         await Word.run(async (context) => {
@@ -967,6 +1030,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
 
+
       // Registers the onParagraphChanged event handler on the document.
 
       await Word.run(async (context) => {
@@ -978,6 +1042,7 @@ events:
 
 
       ...
+
 
       async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
         await Word.run(async (context) => {
@@ -1012,6 +1077,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
 
+
       // Registers the onParagraphDeleted event handler on the document.
 
       await Word.run(async (context) => {
@@ -1023,6 +1089,7 @@ events:
 
 
       ...
+
 
       async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
         await Word.run(async (context) => {

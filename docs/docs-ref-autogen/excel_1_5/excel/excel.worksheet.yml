@@ -93,6 +93,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
+
       await Excel.run(async (context) => {
         // Get the names of all the PivotTables in the current worksheet.
         const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
@@ -304,6 +305,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
+
       await Excel.run(async (context) => {
           const sheets = context.workbook.worksheets;
 
@@ -379,6 +381,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
 
       await Excel.run(async (context) => {
           const sheets = context.workbook.worksheets;

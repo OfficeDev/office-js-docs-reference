@@ -26,6 +26,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
 
+
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
           console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
@@ -40,12 +41,14 @@ properties:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted";
+        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+        "AnnotationInserted" | "AnnotationRemoved";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved"
   - name: ids
     uid: 'word!Word.ContentControlAddedEventArgs#ids:member'
     package: word!
@@ -62,6 +65,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {

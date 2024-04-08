@@ -40,6 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
 
+
       await Excel.run(async (context) => {
           context.runtime.load("enableEvents");
           await context.sync();

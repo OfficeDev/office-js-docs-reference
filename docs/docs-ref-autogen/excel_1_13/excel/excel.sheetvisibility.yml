@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
 
+
   await Excel.run(async (context) => {
 
       const visibleSheets = await filterWorksheetsByVisibility(context, Excel.SheetVisibility.visible);

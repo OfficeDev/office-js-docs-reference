@@ -79,6 +79,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
+
       // This function adds a percentage AutoFilter to the active worksheet 
 
       // and applies the filter to a column of the used range.
@@ -131,6 +132,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
 
       // This function clears the AutoFilter setting from one column.
 
@@ -286,6 +288,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
+
       // This function refreshes the AutoFilter to ensure that changes are captured.
 
       await Excel.run(async (context) => {
@@ -321,6 +324,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
 
       // This function removes all AutoFilters from the active worksheet.
 

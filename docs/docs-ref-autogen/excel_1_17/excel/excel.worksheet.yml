@@ -29,6 +29,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
+
       // This function adds a percentage AutoFilter to the active worksheet 
 
       // and applies the filter to a column of the used range.
@@ -108,6 +109,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
+
 
       await Excel.run(async (context) => {
         // Load the keys and values of all custom properties in the current worksheet.
@@ -234,6 +236,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
+
       await Excel.run(async (context) => {
         // Get the names of all the PivotTables in the current worksheet.
         const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
@@ -337,6 +340,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/gridlines.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           sheet.showGridlines = true;
@@ -379,6 +383,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Pivot");
@@ -444,6 +449,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/tab-color.yaml
+
 
       await Excel.run(async (context) => {
           const activeSheet = context.workbook.worksheets.getActiveWorksheet();
@@ -571,6 +577,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-copy.yaml
+
 
       await Excel.run(async (context) => {
 
@@ -704,6 +711,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-find-all.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           const foundRanges = sheet.findAllOrNullObject("Complete", {
@@ -799,6 +807,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
+
       await Excel.run(async (context) => {
           const sheets = context.workbook.worksheets;
 
@@ -874,6 +883,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
 
       await Excel.run(async (context) => {
           const sheets = context.workbook.worksheets;
@@ -1011,6 +1021,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
+
 
       await Excel.run(async (context) => {
 
@@ -1280,6 +1291,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
 
+
       Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -1399,6 +1411,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
 
+
       await Excel.run(async (context) => {
           let sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onChanged.add(onChange);
@@ -1432,6 +1445,7 @@ events:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
 
       await Excel.run(async (context) => {
           console.log("Adding column handler");
@@ -1526,6 +1540,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
 
+
       await Excel.run(async (context) => {
         // Retrieve the worksheet named "Sample".
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1539,6 +1554,7 @@ events:
 
 
       ...
+
 
       async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
         await Excel.run(async (context) => {
@@ -1596,6 +1612,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
+
       // This function registers an event handler for the onProtectionChanged event of a worksheet.
 
       await Excel.run(async (context) => {
@@ -1612,6 +1629,7 @@ events:
 
 
       ...
+
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
@@ -1681,6 +1699,7 @@ events:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
 
       await Excel.run(async (context) => {
           console.log("Adding row handler");
@@ -1766,6 +1785,7 @@ events:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-worksheet-single-click.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();

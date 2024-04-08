@@ -454,6 +454,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
+
       // This function adds a data table to a chart that already exists on the worksheet. 
 
       await Excel.run(async (context) => {
@@ -797,6 +798,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
 
+
       await Excel.run(async (context) => {
 
           const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -812,6 +814,7 @@ events:
 
 
       ...
+
 
       async function chartActivated(event) {
           await Excel.run(async (context) => {
@@ -854,6 +857,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
 
+
       await Excel.run(async (context) => {
 
           const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -869,6 +873,7 @@ events:
 
 
       ...
+
 
       async function chartDeactivated(event) {
           await Excel.run(async (context) => {

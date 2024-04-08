@@ -53,6 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Pivot");
           const slicer = sheet.slicers.add(
@@ -120,6 +121,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
 
       await Excel.run(async (context) => {
           const slicer = context.workbook.slicers.getItem("Fruit Slicer");

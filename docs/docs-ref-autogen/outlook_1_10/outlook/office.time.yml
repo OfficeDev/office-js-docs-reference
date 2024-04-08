@@ -96,6 +96,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
+
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
           console.error(`Action failed with message ${result.error.message}`);
@@ -183,6 +184,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
+
       const start = new Date(); // Represents current date and time.
 
       start.setDate(start.getDate() + 2); // Add 2 days to current date.
@@ -197,6 +199,7 @@ methods:
 
 
       ...
+
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {

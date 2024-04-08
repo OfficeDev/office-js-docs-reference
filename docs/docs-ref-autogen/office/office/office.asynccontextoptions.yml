@@ -4,7 +4,44 @@ uid: 'office!Office.AsyncContextOptions:interface'
 package: office!
 fullName: Office.AsyncContextOptions
 summary: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // The following example gets the attachment contents of the
+  // current mail item being composed in Outlook.
+  function getAttachmentContentCompose() {
+      const item = Office.context.mailbox.item;
+      const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
+      item.getAttachmentsAsync(options, callback);
+
+      function callback(result) {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.log(result.error.message);
+              return;
+          }
+
+          if (result.value.length <= 0) {
+              console.log("Mail item has no attachments.");
+              return;
+          }
+
+          const currentItem = result.asyncContext.currentItem;
+          for (let i = 0; i < result.value.length; i++) {
+              currentItem.getAttachmentContentAsync(result.value[i].id, (asyncResult) => {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                      return;
+                  }
+
+                  console.log(asyncResult.value.content);
+              });
+          }
+      }
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

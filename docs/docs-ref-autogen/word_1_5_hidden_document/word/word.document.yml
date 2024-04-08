@@ -42,6 +42,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+
       // Gets the current change tracking mode.
 
       await Word.run(async (context) => {
@@ -122,6 +123,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
+
       await Word.run(async (context) => {
           const builtInProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
@@ -180,6 +182,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
+
       // Gets all custom settings this add-in set on this document.
 
       await Word.run(async (context) => {
@@ -221,6 +224,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Adds a new style.
 
@@ -402,7 +406,7 @@ methods:
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's endnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -415,7 +419,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
+    summary: Gets the document's footnotes in a single body.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -480,6 +484,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
+
       // Gets the number of styles.
 
       await Word.run(async (context) => {
@@ -511,6 +516,35 @@ methods:
 
       Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
       field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+      // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
+
+      await Word.run(async (context) => {
+        // Use the Base64-encoded string representation of the selected .docx file.
+        context.document.insertFileFromBase64(externalDocument, "Replace", {
+          importTheme: true,
+          importStyles: true,
+          importParagraphSpacing: true,
+          importPageColor: true,
+          importChangeTrackingMode: true,
+          importCustomProperties: true,
+          importCustomXmlParts: true,
+          importDifferentOddEvenPages: true
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -791,7 +825,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -820,6 +854,7 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
 
+
       // Registers the onAdded event handler on the document.
 
       await Word.run(async (context) => {
@@ -831,6 +866,7 @@ events:
 
 
       ...
+
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {

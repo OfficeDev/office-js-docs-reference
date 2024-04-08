@@ -43,6 +43,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -81,6 +82,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -118,6 +120,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -176,6 +179,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -239,6 +243,7 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");

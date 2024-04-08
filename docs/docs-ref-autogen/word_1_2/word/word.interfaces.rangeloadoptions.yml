@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content
-      control.
+      Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there
+      isn't a parent content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

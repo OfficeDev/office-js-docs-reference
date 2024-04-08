@@ -3,11 +3,8 @@ name: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
 uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
-summary: |-
-  Represents the ShapeDataItemCollection for a given Shape.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+summary: Represents the ShapeDataItemCollection for a given Shape.
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#format:member'
     package: visio!
     fullName: format
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A string that specifies the format of the shape data item.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#formattedValue:member'
     package: visio!
     fullName: formattedValue
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#label:member'
     package: visio!
     fullName: label
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A string that specifies the label of the shape data item.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#value:member'
     package: visio!
     fullName: value
-    summary: |-
-      For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A string that specifies the value of the shape data item.'
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
     syntax:

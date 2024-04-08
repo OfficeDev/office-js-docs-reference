@@ -168,6 +168,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
+
       // Changes the selected shapes fill color to red.
 
       await PowerPoint.run(async (context) => {

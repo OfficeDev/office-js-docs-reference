@@ -29,6 +29,32 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
+### Activate an event-based add-in on a message in read mode
+
+#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+
+Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [HeaderName attribute in the LaunchEvent element](../../../manifest/launchevent.md#attributes)
+
+Added an attribute to the **\<LaunchEvent\>** XML element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [MessageAttachments element](../../../manifest/messageattachments.md)
+
+Added an XML element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Additional calendar properties
 
 #### [Office.IsAllDayEvent](/javascript/api/outlook/office.isalldayevent?view=outlook-js-preview&preserve-view=true)
@@ -107,23 +133,11 @@ Added method to close a current message being composed with the option to discar
 
 ---
 
-### Activate an event-based add-in on a message in read mode
+### Get the URL of the JavaScript runtime of an add-in
 
-#### [OnMessageReadWithCustomAttachment and OnMessageReadWithCustomHeader events](/office/dev/add-ins/outlook/autolaunch#supported-events)
+#### [Office.context.urls.javascriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
 
-Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [HeaderName attribute in the LaunchEvent element](../../../manifest/launchevent.md#attributes)
-
-Added an attribute to the **\<LaunchEvent\>** XML element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [MessageAttachments element](../../../manifest/messageattachments.md)
-
-Added an XML element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
+Added property to get the URL of the JavaScript runtime of an add-in.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
@@ -139,31 +153,31 @@ Added an XML element to specify the file extension of the attachment included in
 
 Added an extension point to activate your spam-reporting add-in in the Outlook ribbon and prevent it from appearing at the end of the ribbon or in the overflow section.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [ReportPhishingCustomization element](../../../manifest/reportphishingcustomization.md)
 
 Added a manifest element to configure the ribbon button and preprocessing dialog of a spam-reporting add-in.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.context.mailbox.item.getAsFileAsync](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getasfileasync-member(1))
 
 Added a method to get the Base64 encoding of a message.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.SpamReportingEventCompletedOptions](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true)
 
 Created options to customize a post-processing dialog or configure a spam-reporting add-in to perform additional operations on a reported message, such as deleting it from the inbox.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 #### [Office.MailboxEnums.MoveSpamItemTo](/javascript/api/outlook/office.mailboxenums.movespamitemto?view=outlook-js-preview&preserve-view=true)
 
 Added a new enum to specify the folder to which a reported message is moved once it's processed by a spam-reporting add-in.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
 
 To learn more about how to implement the integrated spam-reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 

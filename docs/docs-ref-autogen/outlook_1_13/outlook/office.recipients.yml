@@ -340,6 +340,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
+
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgBcc = asyncResult.value;
@@ -355,6 +356,7 @@ methods:
 
       ...
 
+
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgCc = asyncResult.value;
@@ -369,6 +371,7 @@ methods:
 
 
       ...
+
 
       Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -391,6 +394,7 @@ methods:
 
       ...
 
+
       Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const apptRequiredAttendees = asyncResult.value;
@@ -411,6 +415,7 @@ methods:
 
 
       ...
+
 
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -596,6 +601,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
+
       const email = $("#emailBcc")
         .val()
         .toString();
@@ -611,6 +617,7 @@ methods:
 
 
       ...
+
 
       const email = $("#emailCc")
         .val()
@@ -628,6 +635,7 @@ methods:
 
       ...
 
+
       const email = $("#emailOptional")
         .val()
         .toString();
@@ -644,6 +652,7 @@ methods:
 
       ...
 
+
       const email = $("#emailRequired")
         .val()
         .toString();
@@ -659,6 +668,7 @@ methods:
 
 
       ...
+
 
       const email = $("#emailTo")
         .val()

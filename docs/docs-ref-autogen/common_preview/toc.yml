@@ -192,6 +192,8 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+              - name: Urls
+                uid: 'office!Office.Urls:interface'
               - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
           - name: OfficeExtension
@@ -813,6 +815,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.7 requirement set
+            href: ../../requirement-sets/word/word-api-1-7-requirement-set.md
             displayName: Word
           - name: WordApi 1.6 requirement set
             href: ../../requirement-sets/word/word-api-1-6-requirement-set.md

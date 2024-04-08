@@ -69,6 +69,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
 
+
       await Excel.run(async (context) => {
           const settings = context.workbook.settings;
           let needsReview = settings.getItem("NeedsReview");

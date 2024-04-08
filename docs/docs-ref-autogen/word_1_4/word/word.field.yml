@@ -39,6 +39,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
+
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
@@ -95,6 +96,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
 
       // Gets the parent body of the first field in the document.
 
@@ -223,6 +225,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
 
       // Gets the first field in the document.
 
@@ -435,7 +438,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

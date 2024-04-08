@@ -4,7 +4,51 @@ uid: 'word!Word.TableStyle:class'
 package: word!
 fullName: Word.TableStyle
 summary: Represents the TableStyle object.
-remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-custom-style.yaml
+
+
+  // Gets the table style properties and displays them in the form.
+
+  const styleName = $("#style-name")
+    .val()
+    .toString();
+  if (styleName == "") {
+    console.warn("Please input a table style name.");
+    return;
+  }
+
+
+  await Word.run(async (context) => {
+    const tableStyle = context.document.getStyles().getByName(styleName).tableStyle;
+    tableStyle.load();
+    await context.sync();
+
+    if (tableStyle.isNullObject) {
+      console.warn(`There's no existing table style with the name '${styleName}'.`);
+      return;
+    }
+
+    console.log(tableStyle);
+    $("#alignment").val(tableStyle.alignment);
+    $("#allow-break-across-page").val(tableStyle.allowBreakAcrossPage.toString());
+    $("#top-cell-margin").val(tableStyle.topCellMargin);
+    $("#bottom-cell-margin").val(tableStyle.bottomCellMargin);
+    $("#left-cell-margin").val(tableStyle.leftCellMargin);
+    $("#right-cell-margin").val(tableStyle.rightCellMargin);
+    $("#cell-spacing").val(tableStyle.cellSpacing);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -262,7 +306,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

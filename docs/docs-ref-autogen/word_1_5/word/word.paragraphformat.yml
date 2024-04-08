@@ -4,7 +4,42 @@ uid: 'word!Word.ParagraphFormat:class'
 package: word!
 fullName: Word.ParagraphFormat
 summary: Represents a style of paragraph in a document.
-remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to update its paragraph format.");
+      return;
+    }
+
+    const style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      style.paragraphFormat.leftIndent = 30;
+      style.paragraphFormat.alignment = Word.Alignment.centered;
+      console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -25,6 +60,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
 
@@ -127,6 +163,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
 
       // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
 
@@ -428,7 +465,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

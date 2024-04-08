@@ -19,6 +19,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
+
   await Word.run(async (context) => {
     const sentence = context.document.body.insertParagraph(
       "To be or not to be",

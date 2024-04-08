@@ -7869,7 +7869,7 @@ export declare namespace Excel {
          */
         lowerBound?: string;
         /**
-         * The substring used for `beginsWith`, `endsWith`, and `contains` filter conditions.
+         * The substring used for the `beginsWith`, `endsWith`, and `contains` filter conditions.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11529,7 +11529,7 @@ export declare namespace Excel {
          * @param skipBlanks - True if to skip blank cells in the source range. Default is false.
          * @param transpose - True if to transpose the cells in the destination range. Default is false.
          */
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats", skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" | "Link", skipBlanks?: boolean, transpose?: boolean): void;
         /**
          * Deletes the cells associated with the range.
          *
@@ -11659,7 +11659,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * 
+         *
          * @remarks
          * [Api set: ExcelApi 1.15]
          */
@@ -12432,7 +12432,7 @@ export declare namespace Excel {
          * @param skipBlanks - True if to skip blank cells in the source range or `RangeAreas`. Default is false.
          * @param transpose - True if to transpose the cells in the destination `RangeAreas`. Default is false.
          */
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats", skipBlanks?: boolean, transpose?: boolean): void;
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats" | "Link", skipBlanks?: boolean, transpose?: boolean): void;
         /**
          * Returns a `RangeAreas` object that represents the entire columns of the `RangeAreas` (for example, if the current `RangeAreas` represents cells "B4:E11, H2", it returns a `RangeAreas` that represents columns "B:E, H:H").
          *
@@ -33343,6 +33343,8 @@ export declare namespace Excel {
         textAsNumber = "TextAsNumber"
     }
     /**
+     * Represents the ordering method to be used when sorting Chinese characters.
+     *
      * @remarks
      * [Api set: ExcelApi 1.2]
      */
@@ -34778,8 +34780,8 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        formats = "Formats"
-    }
+        formats = "Formats",
+            }
     /**
      * @remarks
      * [Api set: ExcelApi 1.9]

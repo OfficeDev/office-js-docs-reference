@@ -66,6 +66,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
 
+
       async function onChange(event) {
           await Excel.run(async (context) => {
               let table = context.workbook.tables.getItem(event.tableId);
@@ -115,6 +116,7 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
 
       async function onChange(event) {
           await Excel.run(async (context) => {

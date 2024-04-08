@@ -100,6 +100,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
 
+
       await Excel.run(async (context) => {
         // Load the keys and values of all custom properties.
         const customDocProperties = context.workbook.properties.custom;

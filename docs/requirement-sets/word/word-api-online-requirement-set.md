@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API online-only requirement set
 description: Details about the WordApiOnline requirement set.
-ms.date: 05/23/2023
+ms.date: 01/25/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -22,7 +22,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| Search | Search the entire document. | [Document.search](/javascript/api/word/word.document#word-word-document-search-member(1)) |
+| *None.* |||
 
 ## Recommended usage
 

@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
+
   await Excel.run(async (context) => {
       const farmSheet = context.workbook.worksheets.getItem("Print");
       farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;

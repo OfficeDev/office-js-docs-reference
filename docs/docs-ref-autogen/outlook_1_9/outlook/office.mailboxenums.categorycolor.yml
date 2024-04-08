@@ -30,6 +30,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
+
   const masterCategoriesToAdd = [
     {
       displayName: "TestCategory",

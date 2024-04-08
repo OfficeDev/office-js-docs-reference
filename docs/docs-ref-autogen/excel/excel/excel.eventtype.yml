@@ -263,6 +263,17 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WorkbookAutoSaveSettingChanged"'
+  - name: workbookFormulaReferenceStyleChanged
+    uid: 'excel!Excel.EventType.workbookFormulaReferenceStyleChanged:member'
+    package: excel!
+    summary: >-
+      WorkbookFormulaReferenceStyleChanged represents the type of event registered when the formula reference style has
+      changed on a workbook.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorkbookFormulaReferenceStyleChanged"'
   - name: workbookNavigationObjectChanged
     uid: 'excel!Excel.EventType.workbookNavigationObjectChanged:member'
     package: excel!

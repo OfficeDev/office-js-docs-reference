@@ -16,6 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
 
+
   // Registers the onParagraphDeleted event handler on the document.
 
   await Word.run(async (context) => {
@@ -27,6 +28,7 @@ remarks: >-
 
 
   ...
+
 
   async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
     await Word.run(async (context) => {
@@ -64,12 +66,14 @@ properties:
       content: >-
         type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
         | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-        "ParagraphChanged" | "ParagraphDeleted";
+        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
+        "AnnotationRemoved";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
-          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted"
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved"
   - name: uniqueLocalIds
     uid: 'word!Word.ParagraphDeletedEventArgs#uniqueLocalIds:member'
     package: word!
