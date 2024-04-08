@@ -17,6 +17,7 @@
     "@types/node": "7.0.5",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
+    "colors": "~1.2.1",
     "del": "2.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
