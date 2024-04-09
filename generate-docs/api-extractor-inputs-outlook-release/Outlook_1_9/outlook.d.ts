@@ -2546,9 +2546,9 @@ export declare namespace Office {
          */
         enhancedLocation: EnhancedLocation;
         /**
-         * Gets the Exchange Web Services item class of the selected item.
+         * Gets the Exchange Web Services item class of the selected appointment.
          *
-         * You can create custom message classes that extends a default message class, for example, a custom appointment message class `IPM.Appointment.Contoso`.
+         * Returns `IPM.Appointment` for non-recurring appointments and `IPM.Appointment.Occurrence` for recurring appointments.
          *
          * @remarks
          *
@@ -2556,26 +2556,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * The `itemClass` property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
-         *
-         * <table>
-         *   <tr>
-         *     <th>Type</th>
-         *     <th>Description</th>
-         *     <th>Item Class</th>
-         *   </tr>
-         *   <tr>
-         *     <td>Appointment items</td>
-         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
-         *   </tr>
-         *   <tr>
-         *     <td>Message items</td>
-         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
-         *   </tr>
-         * </table>
-         *
+         * **Important**: You can create custom classes that extend a default item class. For example, `IPM.Appointment.Contoso`.
          */
         itemClass: string;
         /**
@@ -5934,6 +5915,29 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
+         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
+         *
+         * - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * 
+         * - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always returned in Outlook
+         * mobile clients even if `options.isRest` is set to `false`.
+         *
+         *- Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+         *
+         * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
+         * The `saveAsync` method requires a minimum permission level of **read/write item**.
+         *
+         * - For guidance on delegate or shared scenarios, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
+         *
          * *REST Tokens*
          *
          * When a REST token is requested (`options.isRest` = `true`), the resulting token won't work to authenticate EWS calls.
@@ -5968,22 +5972,6 @@ export declare namespace Office {
          * attachment or item. For example, you can create a remote service to
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * **Important**:
-         *
-         * - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         * 
-         * - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always returned in Outlook
-         * mobile clients even if `options.isRest` is set to `false`.
-         *
-         *- Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
-         *
-         * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
-         * The `saveAsync` method requires a minimum permission level of **read/write item**.
-         *
-         * - For guidance on delegate or shared scenarios, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
-         *
          * **Errors**:
          *
          * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
@@ -6016,6 +6004,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * **Important**:
+         *
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
+         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
          * the token as a bearer authorization token to call the Exchange Web Services (EWS)
@@ -6063,7 +6058,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
+         * **Important**:
+         *
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
+         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
+         *
+         * - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with an external system}.
          *
          * **Errors**:
@@ -6094,6 +6098,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * **Important**:
+         *
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
+         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set `OAuthAuthentication` to `true` on the
          * Client Access Server EWS directory .
@@ -7583,10 +7594,7 @@ export declare namespace Office {
          */
         internetMessageId: string;
         /**
-         * Gets the Exchange Web Services item class of the selected item.
-         *
-         * You can create custom message classes that extends a default message class, for example, a custom appointment message class
-         * `IPM.Appointment.Contoso`.
+         * Gets the Exchange Web Services item class of the selected message.
          *
          * @remarks
          *
@@ -7594,27 +7602,42 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * The `itemClass` property specifies the message class of the selected item.
-         * The following are the default message classes for the message or appointment item.
+         * **Important**:
+         *
+         * The following table lists the default item classes for messages.
          *
          * <table>
          *   <tr>
-         *     <th>Type</th>
+         *     <th>Item class</th>
          *     <th>Description</th>
-         *     <th>Item Class</th>
          *   </tr>
          *   <tr>
-         *     <td>Appointment items</td>
-         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
+         *     <td>IPM.Note</td>
+         *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
-         *     <td>Message items</td>
-         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
+         *     <td>IPM.Schedule.Meeting.Request</td>
+         *     <td>Meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Canceled</td>
+         *     <td>Meeting cancellations</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Neg</td>
+         *     <td>Responses to decline meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Pos</td>
+         *     <td>Responses to accept meeting requests</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Schedule.Meeting.Resp.Tent</td>
+         *     <td>Responses to tentatively accept meeting requests</td>
          *   </tr>
          * </table>
          *
+         * You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`.
          */
         itemClass: string;
         /**
