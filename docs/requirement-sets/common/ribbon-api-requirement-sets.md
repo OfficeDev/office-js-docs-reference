@@ -1,7 +1,7 @@
 ---
 title: Ribbon API requirement sets
 description: Specifies which Office platforms and builds support the dynamic ribbon APIs.
-ms.date: 02/29/2024
+ms.date: 04/09/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,10 +14,10 @@ The Ribbon API set supports programmatic control of when custom add-in commands 
 
 Office Add-ins run across multiple versions of Office. The following table lists the Ribbon API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on the web |  Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| RibbonApi 1.2  | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported | Supported | Not supported |
-| RibbonApi 1.1  | See [support](#support-for-version-11-in-office-on-windows-microsoft-365-subscription)<br>[section](#support-for-version-11-in-office-on-windows-microsoft-365-subscription) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported | Supported | Not supported |
+| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported | Not supported |
+| RibbonApi 1.1 | Supported | See [support](#support-for-version-11-in-office-on-windows-microsoft-365-subscription)<br>[section](#support-for-version-11-in-office-on-windows-microsoft-365-subscription) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported | Not supported |
 
 > [!IMPORTANT]
 >

@@ -1,7 +1,7 @@
 ---
 title: Dialog API requirement sets
 description: Learn more about the Dialog API requirement sets.
-ms.date: 09/28/2022
+ms.date: 04/09/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,15 +12,13 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Dialog API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows\*<br>(retail perpetual Office 2016 or later) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows\*<br>(retail perpetual Office 2016 or later) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogApi 1.2 | See [support](#office-on-windows-microsoft-365-subscription-support)<br>[section](#office-on-windows-microsoft-365-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | 16.37 | 16.37 | Supported | Not supported |
-| DialogApi 1.1&dagger; | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2013: Build 15.0.4855.1000 | 15.20 | 1.22 | Supported | Version 1608 (Build 7601.6800) |
+| DialogApi 1.2 | Supported | See [support](#office-on-windows-microsoft-365-subscription-support)<br>[section](#office-on-windows-microsoft-365-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | 16.37 | 16.37 | Not supported |
+| DialogApi 1.1 | Supported | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2016 | 15.20 | 1.22 | Version 1608 (Build 7601.6800) |
 
 > [!NOTE]
-> \* Users of perpetual versions of Office may not have accepted all patches and updates. If so, the DLL that Office uses to report its version in the UI may be greater than the versions listed here even if the updated DLLs needed to support DialogApi have not be installed on the user's computer. To ensure that the needed patch is installed, the user must go to the Office update list ([Office 2013 list](/officeupdates/msp-files-office-2013) or [Office 2016 list](/officeupdates/msp-files-office-2016)), search for **osfclient-x-none**, and install the listed patch.
->
-> &dagger; Retail perpetual Office 2013 also supports DialogApi 1.1.
+> \* Users of perpetual versions of Office may not have accepted all patches and updates. If so, the DLL that Office uses to report its version in the UI may be greater than the versions listed here even if the updated DLLs needed to support DialogApi have not be installed on the user's computer. To ensure that the needed patch is installed, the user must go to the [Office 2016 update list](/officeupdates/msp-files-office-2016), search for **osfclient-x-none**, and install the listed patch.
 
 ## Office on Windows (Microsoft 365 subscription) support
 

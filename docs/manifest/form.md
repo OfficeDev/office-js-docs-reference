@@ -1,7 +1,7 @@
 ---
 title: Form element in the manifest file
 description: UX settings for the forms that your mail add-in will use when running on a particular device (desktop, tablet, or phone).
-ms.date: 06/10/2022
+ms.date: 04/09/2024
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 UX settings for the forms that your mail add-in will use when running on a particular device (desktop, tablet, or phone).
 
 > [!IMPORTANT]
-> The `DesktopSettings`, `TabletSettings`, and `PhoneSettings` elements are available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server) and Outlook 2013 on Windows.
+> The `DesktopSettings`, `TabletSettings`, and `PhoneSettings` elements are available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server).
 
 **Add-in type:** Mail
 

@@ -1,7 +1,7 @@
 ---
 title: Identity API requirement sets
 description: Identity API requirement set information for Office Add-ins.
-ms.date: 07/07/2023
+ms.date: 04/09/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,9 +12,9 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Identity API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul> | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| IdentityAPI 1.3  | Version 2008 (Build 13127.20000) | Office 2021: Version 2108 (Build 14326.20454) | 16.40 | Not supported | Microsoft SharePoint Online and OneDrive\* |
+| IdentityAPI 1.3 | Microsoft SharePoint Online and OneDrive\* | Version 2008 (Build 13127.20000) | Office 2021: Version 2108 (Build 14326.20454) | 16.40 | Not supported |
 
 > \* Currently, the IdentityAPI 1.3 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 
@@ -33,10 +33,9 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 ## Office versions and build numbers
 
-To find out more about versions, build numbers, and Office Online Server, see:
+To find out more about versions and build numbers, see:
 
 [!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
-- [Office Online Server overview](/officeonlineserver/office-online-server-overview)
 
 ## Office Common API requirement sets
 

@@ -1,7 +1,7 @@
 ---
 title: Shared runtime requirement sets
 description: Specifies the platforms and Office applications that support the SharedRuntime APIs.
-ms.date: 12/13/2022
+ms.date: 04/09/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,10 +14,10 @@ Parts of an Office Add-in that run JavaScript code, such as task panes, function
 
 The following table lists the Shared Runtime requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul> | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.2 | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: 16.52.0.0 | Not supported | Excel: Supported | Not supported |
-| SharedRuntime 1.1  | Excel: Version 2002 (Build 12527.20092)<br><br>PowerPoint: Version 2102 (Build 13722.10000)<br><br>Word: Version 2205 (Build 15202.10000) | Excel 2021: Version 2108 (Build 12527.20092)<br><br>PowerPoint 2021: Version 2108 (13722.10000) | Excel: 16.35<br><br>PowerPoint: 16.46.120.0<br><br>Word: 16.61.401.0 | Not supported | Excel, PowerPoint, Word: Supported | Not supported |
+| SharedRuntime 1.2 | Excel: Supported | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: 16.52.0.0 | Not supported | Not supported |
+| SharedRuntime 1.1  | Excel, PowerPoint, Word: Supported | <ul><li>Excel: Version 2002 (Build 12527.20092)</li><li>PowerPoint: Version 2102 (Build 13722.10000)</li><li>Word: Version 2205 (Build 15202.10000)</li></ul> | <ul><li>Excel 2021: Version 2108 (Build 12527.20092)</li><li>PowerPoint 2021: Version 2108 (13722.10000)</li></ul> | <ul><li>Excel: 16.35</li><li>PowerPoint: 16.46.120.0</li><li>Word: 16.61.401.0</li></ul> | Not supported | Not supported |
 
 ## Office versions and build numbers
 

@@ -1,7 +1,7 @@
 ---
 title: DesktopSettings element in the manifest file
 description: Specifies source location and control settings that apply when your mail add-in is used on a desktop computer.
-ms.date: 04/09/2020
+ms.date: 04/09/2024
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies source location and control settings that apply when your mail add-in is used on a desktop computer.
 
 > [!IMPORTANT]
-> The `DesktopSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server) and Outlook 2013 on Windows.
+> The `DesktopSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server).
 
 **Add-in type:** Mail
 
