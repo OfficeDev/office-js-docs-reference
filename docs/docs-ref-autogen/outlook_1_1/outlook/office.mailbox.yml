@@ -590,6 +590,17 @@ methods:
       **Important**:
 
 
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
       - You can pass both the token and either an attachment identifier or item identifier to an external system. That
       system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
       [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
@@ -694,7 +705,21 @@ methods:
       -->**: Compose or Read
 
 
-      The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
+      **Important**:
+
+
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
+      - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
       and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
 
 
@@ -776,6 +801,17 @@ methods:
 
 
       **Important**:
+
+
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
 
 
       - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set
