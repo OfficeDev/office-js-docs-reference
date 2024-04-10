@@ -1,7 +1,7 @@
 ---
 title: PreProcessingDialog element in the manifest file (preview)
 description: The PreProcessingDialog element configures the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 07/20/2023
+ms.date: 04/11/2024
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +39,7 @@ None.
 | **Description** | Yes | Specifies the custom text that appears in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [LongStrings](longstrings.md) element under the [Resources](resources.md) element. |
 | [ReportingOptions](reportingoptions.md) | No | Lists up to five options a user can select from the preprocessing dialog to provide a reason for reporting a message. |
 | **FreeTextLabel** | No | Adds a text box to the preprocessing dialog to allow users to provide additional information on the message they're reporting. Its **resid** attribute sets the title of the text box. The **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| [MoreInfo](moreinfo.md) | No | Specifies the custom text and URL to provide informational resources to the users. The custom text and URL configured in this element appear below the text provided in the **\<Description\>** element. |
+| [MoreInfo](moreinfo.md) | No | Specifies a link with custom text and URL to provide informational resources to the users. In the preprocessing dialog, the link is automatically prefixed with "For more info go to: ". It appears below the text provided in the **\<Description\>** element. |
 
 ## Example
 
