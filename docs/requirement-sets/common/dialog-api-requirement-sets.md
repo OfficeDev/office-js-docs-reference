@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Dialog API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows\*<br>(retail perpetual Office 2016 or later) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
+| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows\*<br>(retail perpetual) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | DialogApi 1.2 | Supported | See [support](#office-on-windows-microsoft-365-subscription-support)<br>[section](#office-on-windows-microsoft-365-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | 16.37 | 16.37 | Not supported |
 | DialogApi 1.1 | Supported | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2016 | 15.20 | 1.22 | Version 1608 (Build 7601.6800) |
