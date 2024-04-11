@@ -34,9 +34,6 @@ Specifies the Host type targeted by this add-in. The value must be one of the fo
 - `Project` (Project)
 - `Workbook` (Excel)
 
-> [!IMPORTANT]
-> We no longer recommend that you create and use Access web apps and databases in SharePoint. As an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code business solutions for web and mobile devices.
-
 ### Example
 
 ```xml
