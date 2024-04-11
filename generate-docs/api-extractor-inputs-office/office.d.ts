@@ -416,10 +416,6 @@ export declare namespace Office {
         Project,
         /**
          * The Office application is Microsoft Access.
-         *
-         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-         * to build no-code business solutions for web and mobile devices.
          */
         Access
     }
@@ -1791,10 +1787,6 @@ export declare namespace Office {
         filterType?: Office.FilterType | string
         /**
          * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-         *
-         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-         * to build no-code business solutions for web and mobile devices.
          */
         rows?: string
         /**
@@ -1823,18 +1815,10 @@ export declare namespace Office {
         coercionType?: Office.CoercionType | string
         /**
          * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
-         *
-         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-         * to build no-code business solutions for web and mobile devices.
          */
         columns?: string[]
         /**
          * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-         *
-         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-         * to build no-code business solutions for web and mobile devices.
          */
         rows?: string
         /**
@@ -1929,10 +1913,6 @@ export declare namespace Office {
          * The headers provided in the TableData object specify the labels used in the field selection UI.
          *
          * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
-         *
-         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-         * to build no-code business solutions for web and mobile devices.
          */
         sampleData?: Office.TableData
         /**

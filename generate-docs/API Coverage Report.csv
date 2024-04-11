@@ -6912,7 +6912,7 @@ Office.Group,N/A,Class,Fine,false
 Office.Group,"controls",Property,Good,false
 Office.Group,"id",Property,Fine,false
 Office.HostType,N/A,Enum,Good,true
-Office.HostType,"Access",EnumField,Good,false
+Office.HostType,"Access",EnumField,Fine,false
 Office.HostType,"Excel",EnumField,Fine,false
 Office.HostType,"OneNote",EnumField,Fine,false
 Office.HostType,"Outlook",EnumField,Fine,false
@@ -9012,7 +9012,7 @@ Office.MessageCompose,"cc",Property,Good,true
 Office.MessageCompose,"conversationId",Property,Good,true
 Office.MessageCompose,"delayDeliveryTime",Property,Good,true
 Office.MessageCompose,"from",Property,Good,true
-Office.MessageCompose,"inReplyTo",Property,Good,false
+Office.MessageCompose,"inReplyTo",Property,Good,true
 Office.MessageCompose,"internetHeaders",Property,Good,true
 Office.MessageCompose,"itemType",Property,Good,true
 Office.MessageCompose,"notificationMessages",Property,Good,true
@@ -9041,11 +9041,11 @@ Office.MessageCompose,"getAttachmentsAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getComposeTypeAsync(options, callback)",Method,Fine,false
 Office.MessageCompose,"getComposeTypeAsync(callback)",Method,Fine,true
 Office.MessageCompose,"getConversationIndexAsync(options, callback)",Method,Poor,false
-Office.MessageCompose,"getConversationIndexAsync(callback)",Method,Poor,false
+Office.MessageCompose,"getConversationIndexAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"getInitializationContextAsync(callback)",Method,Poor,false
 Office.MessageCompose,"getItemClassAsync(options, callback)",Method,Poor,false
-Office.MessageCompose,"getItemClassAsync(callback)",Method,Poor,false
+Office.MessageCompose,"getItemClassAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
