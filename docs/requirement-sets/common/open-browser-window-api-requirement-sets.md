@@ -14,9 +14,9 @@ The OpenBrowserWindow API set enables add-ins to open a browser to accomplish ta
 
 Office Add-ins run across multiple versions of Office. The following table lists the OpenBrowserWindow API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul> | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| OpenBrowserWindowApi 1.1 | Not supported | Version 1810 (Build 11001.20074) | Office 2021: Version 2108 (Build 14326.20454) | 16.0.0.0 | 16.0.0.0 | Not supported |
+| OpenBrowserWindowApi 1.1 | Not supported | Version 1810 (Build 11001.20074) | Office 2021: Version 2108 (Build 14326.20454) | 16.0.0.0 | 16.0.0.0 |
 
 > [!IMPORTANT]
 > The OpenBrowserWindowApi 1.1 requirement set is only available as follows:
@@ -24,10 +24,9 @@ Office Add-ins run across multiple versions of Office. The following table lists
 > - Excel, PowerPoint, Word: Windows, Mac, iPad
 > - Outlook: Windows, Mac
 
-To find out more about versions, build numbers, and Office Online Server, see:
+To find out more about versions and build numbers, see:
 
 [!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
-- [Office Online Server overview](/officeonlineserver/office-online-server-overview)
 
 ## Office Common API requirement sets
 

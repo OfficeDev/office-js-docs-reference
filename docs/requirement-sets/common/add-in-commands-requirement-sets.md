@@ -17,7 +17,7 @@ Add-in commands are UI elements that extend the Office UI and start actions in y
 
 The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the **minimum** builds or versions for those applications where applicable.  
 
-| Release | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
+| Release | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Add-in commands (initial release, no requirement set) | Supported | Version 1603 (Build 6769.0000) | Office 2021: Version 1809 (Build 10827.20150) | 15.33 | Not supported |
 
@@ -27,7 +27,7 @@ The AddinCommands **1.3** requirement set introduces manifest markup that enable
 
 The following table lists the add-in commands requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual Office 2016 and later</li></ul> | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | AddinCommands 1.3 | PowerPoint: Supported | PowerPoint: Version 2204 (Build 14827.10000) | Not supported | PowerPoint: 16.57.105.0 | Not supported |
 | AddinCommands 1.1 | Supported | Version 1705 (Build 8121.1000)&dagger; | Office 2021: Version 1809 (Build 10827.20150)&dagger; | 15.34&dagger;\* | Not supported |

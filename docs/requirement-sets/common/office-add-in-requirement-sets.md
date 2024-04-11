@@ -168,14 +168,6 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ---
 
-### PartialTableBindings
-
-| Minimum Office application support | Methods in set |
-|:-----|:-----|
-| None. ||
-
----
-
 ### PdfFile
 
 | Minimum Office application support | Methods in set |
