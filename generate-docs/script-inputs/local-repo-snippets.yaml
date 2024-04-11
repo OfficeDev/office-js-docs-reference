@@ -1002,6 +1002,14 @@ Excel.RangeFormat#load:member(2):
         console.log(range.format.fill.color);
         console.log(range.format.font.name);
     });
+Excel.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -5563,6 +5571,23 @@ Office.VisibilityMode:enum:
         });
 
         // Other startup tasks.
+    });
+OfficeExtension.ClientObject#isNullObject:member:
+  - |-
+    // This Word snippet sets the hyperlink URL of a selected image. 
+    await Word.run(async (context) => {
+        const selection = context.document.getSelection();
+        const firstImage = selection.inlinePictures.getFirstOrNullObject();
+        await context.sync();
+
+        // Check if an image was selected before changing its property.
+        if (!firstImage.isNullObject) {
+            firstImage.hyperlink = "https://www.microsoft.com";
+        } else {
+            console.log("No image selected");
+        }
+
+        await context.sync();
     });
 OfficeExtension.Error#traceMessages:member:
   - |-
