@@ -11732,7 +11732,7 @@ Word.RangeLocation,"content",EnumField,Fine,false
 Word.RangeLocation,"end",EnumField,Good,false
 Word.RangeLocation,"start",EnumField,Good,false
 Word.RangeLocation,"whole",EnumField,Good,false
-Word.RequestContext,N/A,Class,Good,false
+Word.RequestContext,N/A,Class,Good,true
 Word.RequestContext,"application",Property,Fine,false
 Word.RequestContext,"document",Property,Missing,false
 Word.SaveBehavior,N/A,Enum,Good,false

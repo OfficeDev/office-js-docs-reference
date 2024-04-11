@@ -1296,6 +1296,14 @@ Word.Range#select:member(1):
         await context.sync();
         console.log('Selected the range.');
     });
+Word.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Word.run(async (context: Excel.RequestContext) => {
+      const document = context.document;
+      // Interact with the Word document...
+    });
 Word.SearchOptions#load:member(1):
   - |-
     // Ignore punctuation search
