@@ -27,12 +27,12 @@ When defined in the basic manifest (under [OfficeApp](officeapp.md)), the host t
 Specifies the Host type targeted by this add-in. The value must be one of the following:
 
 - `Document` (Word)
-- `Database` (Access (obsolete))
 - `Mailbox` (Outlook)
 - `Notebook` (OneNote)
 - `Presentation` (PowerPoint)
 - `Project` (Project)
 - `Workbook` (Excel)
+- `Database` (Access (obsolete))
 
 ### Example
 
