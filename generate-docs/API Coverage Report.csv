@@ -5281,7 +5281,7 @@ Excel.RemoveDuplicatesResult,"toJSON()",Method,Poor,false
 Excel.ReplaceCriteria,N/A,Class,Good,false
 Excel.ReplaceCriteria,"completeMatch",Property,Good,false
 Excel.ReplaceCriteria,"matchCase",Property,Good,false
-Excel.RequestContext,N/A,Class,Good,false
+Excel.RequestContext,N/A,Class,Good,true
 Excel.RequestContext,"application",Property,Missing,false
 Excel.RequestContext,"runtime",Property,Fine,false
 Excel.RequestContext,"workbook",Property,Missing,false
@@ -7590,7 +7590,7 @@ Office.VisibilityModeChangedMessage,N/A,Class,Fine,false
 Office.VisibilityModeChangedMessage,"visibilityMode",Property,Poor,false
 OfficeExtension.ClientObject,N/A,Class,Good,false
 OfficeExtension.ClientObject,"context",Property,Fine,false
-OfficeExtension.ClientObject,"isNullObject",Property,Good,false
+OfficeExtension.ClientObject,"isNullObject",Property,Good,true
 OfficeExtension.ClientRequestContext,N/A,Class,Good,false
 OfficeExtension.ClientRequestContext,"debugInfo",Property,Poor,false
 OfficeExtension.ClientRequestContext,"requestHeaders",Property,Poor,false
@@ -11732,7 +11732,7 @@ Word.RangeLocation,"content",EnumField,Fine,false
 Word.RangeLocation,"end",EnumField,Good,false
 Word.RangeLocation,"start",EnumField,Good,false
 Word.RangeLocation,"whole",EnumField,Good,false
-Word.RequestContext,N/A,Class,Good,false
+Word.RequestContext,N/A,Class,Good,true
 Word.RequestContext,"application",Property,Fine,false
 Word.RequestContext,"document",Property,Missing,false
 Word.SaveBehavior,N/A,Enum,Good,false

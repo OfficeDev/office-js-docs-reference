@@ -38,3 +38,25 @@ properties:
       content: 'isNullObject: boolean;'
       return:
         type: boolean
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // This Word snippet sets the hyperlink URL of a selected image. 
+          await Word.run(async (context) => {
+              const selection = context.document.getSelection();
+              const firstImage = selection.inlinePictures.getFirstOrNullObject();
+              await context.sync();
+
+              // Check if an image was selected before changing its property.
+              if (!firstImage.isNullObject) {
+                  firstImage.hyperlink = "https://www.microsoft.com";
+              } else {
+                  console.log("No image selected");
+              }
+
+              await context.sync();
+          });
+          ```
