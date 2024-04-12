@@ -15,7 +15,7 @@ remarks: |-
   ```TypeScript
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
   // object to work with the Office file.
-  await Word.run(async (context: Excel.RequestContext) => {
+  await Word.run(async (context: Word.RequestContext) => {
     const document = context.document;
     // Interact with the Word document...
   });
