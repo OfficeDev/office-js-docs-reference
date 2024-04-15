@@ -1,7 +1,7 @@
 ---
 title: Custom Functions requirement sets
 description: Details about the Custom Functions requirement sets for Excel JavaScript API.
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---

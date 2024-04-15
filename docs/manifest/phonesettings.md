@@ -1,7 +1,7 @@
 ---
 title: PhoneSettings element in the manifest file
 description: The PhoneSettings element specifies the source location and control settings that apply when your mail add-in is used on a phone.
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 

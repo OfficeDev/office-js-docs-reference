@@ -1,7 +1,7 @@
 ---
 title: Form element in the manifest file
 description: UX settings for the forms that your mail add-in will use when running on a particular device (desktop, tablet, or phone).
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 

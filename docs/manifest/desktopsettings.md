@@ -1,7 +1,7 @@
 ---
 title: DesktopSettings element in the manifest file
 description: Specifies source location and control settings that apply when your mail add-in is used on a desktop computer.
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 

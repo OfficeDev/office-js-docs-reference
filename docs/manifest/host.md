@@ -1,7 +1,7 @@
 ---
 title: Host element in the manifest file
 description: Specifies an individual Office application type where the add-in should activate.
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 
