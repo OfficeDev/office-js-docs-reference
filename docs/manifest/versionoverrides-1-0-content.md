@@ -23,7 +23,7 @@ The following table applies only to version 1.0 of **\<VersionOverrides\>** elem
 
 ## Example
 
-The following is a simple example. For more complex examples, see the manifests for the sample add-ins in [Office Add-in code samples](https://github.com/OfficeDev/PnP-OfficeAddins).
+The following is a simple example. For more complex examples, see the manifests for the sample add-ins in [Office Add-in code samples](https://github.com/OfficeDev/Office-Add-in-samples).
 
 ```xml
 <OfficeApp ... xsi:type="Content">

@@ -1,7 +1,7 @@
 ---
 title: AllFormFactors element in the manifest file
 description: Specifies the settings for an add-in for all form factors. 
-ms.date: 02/25/2022
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [CustomFunctionsRuntime 1.1](../requirement-sets/excel/custom-functions-requirement-sets.md)
 
 > [!NOTE]
-> This element is only supported in Excel on Windows, on Mac, and on the web. It is not supported in other Office applications or on iOS or Android.
+> This element is only supported in Excel on the web, on Windows, and on Mac. It isn't supported in other Office applications or on iOS or Android.
 
 ## Child elements
 
