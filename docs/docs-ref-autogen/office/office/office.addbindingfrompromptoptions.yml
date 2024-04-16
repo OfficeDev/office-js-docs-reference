@@ -63,7 +63,8 @@ properties:
       in an add-in for Excel.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Microsoft Access is no longer supported.
     syntax:
       content: 'sampleData?: Office.TableData'
       return:

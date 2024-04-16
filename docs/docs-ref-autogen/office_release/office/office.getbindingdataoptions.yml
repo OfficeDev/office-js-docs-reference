@@ -88,7 +88,8 @@ properties:
       the currently selected row.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Microsoft Access is no longer supported.
     syntax:
       content: 'rows?: string'
       return:
