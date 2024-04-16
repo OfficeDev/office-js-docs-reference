@@ -94,16 +94,16 @@ node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/p
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts "PowerPointApi 1.2" ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts "PowerPointApi 1.1" ./tool-inputs/powerpoint-base.d.ts
 
-node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-int.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_online/word-int.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-int.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-int2.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-int2.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-int.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-int2.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-int2.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts "WordApi 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_online/word-online1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-online1.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-online2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-online2.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts "WordApi 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_7/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_7/word.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_6/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_6/word.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5/word.d.ts

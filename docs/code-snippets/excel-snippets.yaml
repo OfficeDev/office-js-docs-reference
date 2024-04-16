@@ -950,6 +950,14 @@ Excel.RangeFormat#load:member(2):
         console.log(range.format.fill.color);
         console.log(range.format.font.name);
     });
+Excel.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 

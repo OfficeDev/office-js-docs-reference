@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 02/29/2024
+ms.date: 04/15/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -30,7 +30,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac | - Document.getActiveViewAsync |
+| <ul><li>PowerPoint on the web</li><ul><li>PowerPoint on Windows</li><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
 
 ---
 
@@ -44,7 +44,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Binding.addHandlerAsync<br>- Binding.removeHandlerAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows<li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Binding.addHandlerAsync</li><li>Binding.removeHandlerAsync</li></ul> |
 
 ---
 
@@ -52,7 +52,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2016<br>- Excel on the web<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method. |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method. |
 
 ---
 
@@ -60,7 +60,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - CustomXmlNode.getNodesAsync<br>- CustomXmlNode.getNodeValueAsync<br>- CustomXmlNode.getTextAsync<br>- CustomXmlNode.getXmlAsync<br>- CustomXmlNode.setNodeValueAsync<br>- CustomXmlNode.setTextAsync<br>- CustomXmlNode.setXmlAsync<br>- CustomXmlPart.addHandlerAsync<br>- CustomXmlPart.deleteAsync<br>- CustomXmlPart.getNodesAsync<br>- CustomXmlPart.getXmlAsync<br>- CustomXmlPart.removeHandlerAsync<br>- CustomXmlParts.addAsync<br>- CustomXmlParts.getByIdAsync<br>- CustomXmlParts.getByNamespaceAsync<br>- CustomXmlPrefixMappings.addNamespaceAsync<br>- CustomXmlPrefixMappings.getNamespaceAsync<br>- CustomXmlPrefixMappings.getPrefixAsync |
+| <ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>CustomXmlNode.getNodesAsync</li><li>CustomXmlNode.getNodeValueAsync</li><li>CustomXmlNode.getTextAsync</li><li>CustomXmlNode.getXmlAsync</li><li>CustomXmlNode.setNodeValueAsync</li><li>CustomXmlNode.setTextAsync</li><li>CustomXmlNode.setXmlAsync</li><li>CustomXmlPart.addHandlerAsync</li><li>CustomXmlPart.deleteAsync</li><li>CustomXmlPart.getNodesAsync</li><li>CustomXmlPart.getXmlAsync</li><li>CustomXmlPart.removeHandlerAsync</li><li>CustomXmlParts.addAsync</li><li>CustomXmlParts.getByIdAsync</li><li>CustomXmlParts.getByNamespaceAsync</li><li>CustomXmlPrefixMappings.addNamespaceAsync</li><li>CustomXmlPrefixMappings.getNamespaceAsync</li><li>CustomXmlPrefixMappings.getPrefixAsync</li></ul> |
 
 ---
 
@@ -68,7 +68,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Dialog API requirement sets](dialog-api-requirement-sets.md). | - UI.messageParent<br>- UI.displayDialogAsync<br>- UI.closeContainer<br>- UI.Dialog |
+| See [Dialog API requirement sets](dialog-api-requirement-sets.md). | <ul><li>UI.messageParent</li><li>UI.displayDialogAsync</li><li>UI.closeContainer</li><li>UI.Dialog</li></ul> |
 
 ---
 
@@ -76,7 +76,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Dialog Origin requirement sets](dialog-origin-requirement-sets.md). | Cross-domain support for:<br>- UI.messageParent<br>- UI.Dialog.messageChild |
+| See [Dialog Origin requirement sets](dialog-origin-requirement-sets.md). | Cross-domain support for:<ul><li>UI.messageParent</li><li>UI.Dialog.messageChild</li></ul> |
 
 ---
 
@@ -84,7 +84,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- OneNote on the web<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Document.addHandlerAsync<br>- Document.removeHandlerAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>OneNote on the web</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Document.addHandlerAsync</li><li>Document.removeHandlerAsync</li></ul> |
 
 ---
 
@@ -92,7 +92,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Document.getFileAsync<br>- File.closeAsync<br>- File.getSliceAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Document.getFileAsync</li><li>File.closeAsync</li><li>File.getSliceAsync</li></ul> |
 
 ---
 
@@ -100,7 +100,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - OneNote on the web<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| <ul><li>OneNote on the web</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
@@ -108,7 +108,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Identity API requirement sets](identity-api-requirement-sets.md). | - Auth.getAccessToken |
+| See [Identity API requirement sets](identity-api-requirement-sets.md). | <ul><li>Auth.getAccessToken</li></ul> |
 
 ---
 
@@ -116,7 +116,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Image Coercion requirement sets](image-coercion-requirement-sets.md). | - Document.setSelectedDataAsync |
+| See [Image Coercion requirement sets](image-coercion-requirement-sets.md). | <ul><li>Document.setSelectedDataAsync</li></ul> |
 
 ---
 
@@ -124,7 +124,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Keyboard Shortcuts requirement sets](keyboard-shortcuts-requirement-sets.md). | - Office.actions.areShortcutsInUse<br>- Office.actions.getShortcuts<br>- Office.actions.replaceShortcuts |
+| See [Keyboard Shortcuts requirement sets](keyboard-shortcuts-requirement-sets.md). | <ul><li>Office.actions.areShortcutsInUse</li><li>Office.actions.getShortcuts</li><li>Office.actions.replaceShortcuts</li></ul> |
 
 ---
 
@@ -132,7 +132,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Outlook on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<br>- Outlook on the web<br>- Outlook on Android<br>- Outlook on Mac<br>- Outlook on iOS | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
+| <ul><li>Outlook on the web</li><li>[new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
 
 ---
 
@@ -140,7 +140,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on the web<br>- Word on iPad<br>- Word on Mac | - Bindings.addFromNamedItemAsync<br>- Bindings.addFromSelectionAsync<br>- Bindings.getAllAsync<br>- Bindings.getByIdAsync<br>- Bindings.releaseByIdAsync<br>- Binding.getDataAsync<br>- Binding.setDataAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Bindings.addFromNamedItemAsync</li><li>Bindings.addFromSelectionAsync</li><li>Bindings.getAllAsync</li><li>Bindings.getByIdAsync</li><li>Bindings.releaseByIdAsync</li><li>Binding.getDataAsync</li><li>Binding.setDataAsync</li></ul> |
 
 ---
 
@@ -148,7 +148,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
@@ -156,7 +156,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| <ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
@@ -164,15 +164,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Open Browser Window API requirement sets](open-browser-window-api-requirement-sets.md). | - Office.context.ui.openBrowserWindow |
-
----
-
-### PartialTableBindings
-
-| Minimum Office application support | Methods in set |
-|:-----|:-----|
-| None. ||
+| See [Open Browser Window API requirement sets](open-browser-window-api-requirement-sets.md). | <ul><li>Office.context.ui.openBrowserWindow</li></ul> |
 
 ---
 
@@ -180,7 +172,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports output to PDF format (Office.FileType.Pdf)<br>when using the Document.getFileAsync method. |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports output to PDF format (Office.FileType.Pdf) when using the Document.getFileAsync method. |
 
 ---
 
@@ -188,7 +180,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Ribbon API requirement sets](ribbon-api-requirement-sets.md). | - Office.ribbon.requestUpdate |
+| See [Ribbon API requirement sets](ribbon-api-requirement-sets.md). | <ul><li>Office.ribbon.requestUpdate</li></ul> |
 
 ---
 
@@ -196,7 +188,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Project on Windows<br>-- volume-licensed perpetual Office 2013<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Document.getSelectedDataAsync<br>- Document.setSelectedDataAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Project on Windows</li><ul><li>volume-licensed perpetual Office 2016</li></ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Document.getSelectedDataAsync</li><li>Document.setSelectedDataAsync</li></ul> |
 
 ---
 
@@ -204,7 +196,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- OneNote on the web<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Settings.get<br>- Settings.remove<br>- Settings.saveAsync<br>- Settings.set |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>OneNote on the web</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Settings.get</li><li>Settings.remove</li><li>Settings.saveAsync</li><li>Settings.set</li></ul> |
 
 ---
 
@@ -212,7 +204,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.addin.getStartupBehavior<br>- Office.addin.hide<br>- Office.addin.onVisibilityModeChanged<br>- Office.addin.setStartupBehavior<br>- Office.addin.showAsTaskpane<br>- Office.BeforeDocumentCloseNotification.disable<br>- Office.BeforeDocumentCloseNotification.enable<br>- Office.BeforeDocumentCloseNotification.onCloseActionCancelled |
+| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | <ul><li>Office.addin.getStartupBehavior</li><li>Office.addin.hide</li><li>Office.addin.onVisibilityModeChanged</li><li>Office.addin.setStartupBehavior</li><li>Office.addin.showAsTaskpane</li><li>Office.BeforeDocumentCloseNotification.disable</li><li>Office.BeforeDocumentCloseNotification.enable</li><li>Office.BeforeDocumentCloseNotification.onCloseActionCancelled</li></ul> |
 
 ---
 
@@ -220,7 +212,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Bindings.addFromNamedItemAsync<br>- Bindings.addFromSelectionAsync<br>- Bindings.getAllAsync<br>- Bindings.getByIdAsync<br>- Bindings.releaseByIdAsync<br>- Binding.addColumnsAsync<br>- Binding.addRowsAsync<br>- Binding.deleteAllDataValuesAsync<br>- Binding.getDataAsync<br>- Binding.setDataAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li> Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Bindings.addFromNamedItemAsync</li><li>Bindings.addFromSelectionAsync</li><li>Bindings.getAllAsync</li><li>Bindings.getByIdAsync</li><li>Bindings.releaseByIdAsync</li><li>Binding.addColumnsAsync</li><li>Binding.addRowsAsync</li><li>Binding.deleteAllDataValuesAsync</li><li>Binding.getDataAsync</li><li>Binding.setDataAsync</li></ul> |
 
 ---
 
@@ -228,7 +220,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
@@ -236,7 +228,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | - Bindings.addFromNamedItemAsync<br>- Bindings.addFromSelectionAsync<br>- Bindings.getAllAsync<br>- Bindings.getByIdAsync<br>- Bindings.releaseByIdAsync<br>- Binding.getDataAsync<br>- Binding.setDataAsync |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>Bindings.addFromNamedItemAsync</li><li>Bindings.addFromSelectionAsync</li><li>Bindings.getAllAsync</li><li>Bindings.getByIdAsync</li><li>Bindings.releaseByIdAsync</li><li>Binding.getDataAsync</li><li>Binding.setDataAsync</li></ul> |
 
 ---
 
@@ -244,7 +236,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- OneNote on the web<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Project on Windows<br>-- volume-licensed perpetual Office 2013<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on iPad</li><li>OneNote on the web</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Project on Windows</li><ul><li>volume-licensed perpetual Office 2016</li></ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
@@ -252,7 +244,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method. |
+| <ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method. |
 
 ---
 
@@ -262,22 +254,22 @@ The following methods in the Office JavaScript API aren't part of a requirement 
 
 | Method name | Minimum Office application support |
 |:-----|:-----|
-| Bindings.addFromPromptAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac |
-| Document.getFilePropertiesAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on the web<br>- Word on iPad<br>- Word on Mac |
-| Document.getProjectFieldAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getResourceFieldAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getSelectedResourceAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getSelectedTaskAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getSelectedViewAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getTaskAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.getTaskFieldAsync | - Project Standard 2013<br>- Project Professional 2013 |
-| Document.goToByIdAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on the web<br>- Word on iPad<br>- Word on Mac |
-| Settings.addHandlerAsync | - Excel on the web |
-| Settings.refreshAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- PowerPoint on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- Word on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Word on the web |
-| Settings.removeHandlerAsync | - Excel on the web |
-| TableBinding.clearFormatsAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac |
-| TableBinding.setFormatsAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac |
-| TableBinding.setTableOptionsAsync | - Excel on Windows<br>-- Microsoft 365 subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- Excel on Mac |
+| Bindings.addFromPromptAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li></ul> |
+| Document.getFilePropertiesAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> |
+| Document.getProjectFieldAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getResourceFieldAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getSelectedResourceAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getSelectedTaskAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getSelectedViewAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getTaskAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.getTaskFieldAsync | <ul><li>Project Standard 2016</li><li>Project Professional 2016</li></ul> |
+| Document.goToByIdAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> |
+| Settings.addHandlerAsync | <ul><li>Excel on the web</li></ul> |
+| Settings.refreshAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul> |
+| Settings.removeHandlerAsync | <ul><li>Excel on the web</li></ul> |
+| TableBinding.clearFormatsAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li></ul> |
+| TableBinding.setFormatsAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li></ul> |
+| TableBinding.setTableOptionsAsync | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li></ul> |
 
 ## See also
 

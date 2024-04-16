@@ -170,15 +170,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: word.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_online/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
-        "word",
-        forceRebuild
-    );
-
-    console.log("\ncreate file: word-init.d.ts (release-desktop)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts',
+        '../api-extractor-inputs-word-release/word_online/word-init.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
         "word",
         forceRebuild
