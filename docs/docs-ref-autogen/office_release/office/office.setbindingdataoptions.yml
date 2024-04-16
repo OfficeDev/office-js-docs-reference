@@ -61,7 +61,8 @@ properties:
     summary: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Microsoft Access is no longer supported.
     syntax:
       content: 'columns?: string[]'
       return:
@@ -75,7 +76,8 @@ properties:
       the currently selected row.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Microsoft Access is no longer supported.
     syntax:
       content: 'rows?: string'
       return:

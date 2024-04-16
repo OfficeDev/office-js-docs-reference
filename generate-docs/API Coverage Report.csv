@@ -6591,7 +6591,7 @@ Office.AddBindingFromPromptOptions,N/A,Class,Fine,false
 Office.AddBindingFromPromptOptions,"asyncContext",Property,Fine,false
 Office.AddBindingFromPromptOptions,"id",Property,Good,false
 Office.AddBindingFromPromptOptions,"promptText",Property,Good,false
-Office.AddBindingFromPromptOptions,"sampleData",Property,Good,false
+Office.AddBindingFromPromptOptions,"sampleData",Property,Deprecated,false
 Office.AddBindingFromSelectionOptions,N/A,Class,Fine,false
 Office.AddBindingFromSelectionOptions,"asyncContext",Property,Fine,false
 Office.AddBindingFromSelectionOptions,"columns",Property,Fine,false
@@ -6889,7 +6889,7 @@ Office.GetBindingDataOptions,"coercionType",Property,Good,false
 Office.GetBindingDataOptions,"columnCount",Property,Good,false
 Office.GetBindingDataOptions,"filterType",Property,Good,false
 Office.GetBindingDataOptions,"rowCount",Property,Good,false
-Office.GetBindingDataOptions,"rows",Property,Good,false
+Office.GetBindingDataOptions,"rows",Property,Deprecated,false
 Office.GetBindingDataOptions,"startColumn",Property,Good,false
 Office.GetBindingDataOptions,"startRow",Property,Good,false
 Office.GetBindingDataOptions,"valueFormat",Property,Good,false
@@ -7504,8 +7504,8 @@ Office.SetBindingDataOptions,N/A,Class,Good,false
 Office.SetBindingDataOptions,"asyncContext",Property,Fine,false
 Office.SetBindingDataOptions,"cellFormat",Property,Good,false
 Office.SetBindingDataOptions,"coercionType",Property,Good,false
-Office.SetBindingDataOptions,"columns",Property,Good,false
-Office.SetBindingDataOptions,"rows",Property,Good,false
+Office.SetBindingDataOptions,"columns",Property,Deprecated,false
+Office.SetBindingDataOptions,"rows",Property,Deprecated,false
 Office.SetBindingDataOptions,"startColumn",Property,Good,false
 Office.SetBindingDataOptions,"startRow",Property,Good,false
 Office.SetBindingDataOptions,"tableOptions",Property,Good,false
