@@ -156,10 +156,10 @@ node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ../../docs/includes/powerpoint-1_2
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts ../../docs/includes/powerpoint-1_1
 
-node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts ../../docs/includes/word-preview
+node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_online/word-init.d.ts ../../docs/includes/word-preview
 node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_7/word.d.ts ../../docs/includes/word-online
-node whats-new word ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts ../../docs/includes/word-1_5_hidden_document
-node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts ../../docs/includes/word-1_4_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../../docs/includes/word-1_5_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts ../../docs/includes/word-1_4_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_3_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_7/word.d.ts ../api-extractor-inputs-word-release/word_1_6/word.d.ts ../../docs/includes/word-1_7
 node whats-new word ../api-extractor-inputs-word-release/word_1_6/word.d.ts ../api-extractor-inputs-word-release/word_1_5/word.d.ts ../../docs/includes/word-1_6
