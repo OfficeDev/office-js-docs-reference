@@ -43,7 +43,7 @@ properties:
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
-      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on desktop or mobile clients, the
+      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on desktop or on mobile clients, the
       `hostVersion` property returns the version of the application, Outlook. In Outlook on the web, the property
       returns the version of the Exchange Server.
 
@@ -632,7 +632,7 @@ methods:
       Gets a dictionary containing time information in local client time.
 
 
-      The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones.
+      The dates and times used by a mail app for Outlook on the web or on desktop clients can use different time zones.
       Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center
       (EAC). You should handle date and time values so that the values you display on the user interface are always
       consistent with the time zone that the user expects.
@@ -913,7 +913,7 @@ methods:
       computer or device, and no error message is returned.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -997,7 +997,7 @@ methods:
       computer or device, and no error message is returned.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1117,13 +1117,13 @@ methods:
       computer, and no error message is returned.
 
 
-      Do not use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an
+      Don't use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an
       appointment. Use the `displayAppointmentForm` or `displayAppointmentFormAsync` method to display an existing
       appointment, and `displayNewAppointmentForm` or `displayNewAppointmentFormAsync` to display a form to create a new
       appointment.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1202,13 +1202,13 @@ methods:
       computer, and no error message is returned.
 
 
-      Do not use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an
+      Don't use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an
       appointment. Use the `displayAppointmentForm` or `displayAppointmentFormAsync` method to display an existing
       appointment, and `displayNewAppointmentForm` or `displayNewAppointmentFormAsync` to display a form to create a new
       appointment.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1349,7 +1349,7 @@ methods:
       exception is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1452,7 +1452,7 @@ methods:
       exception is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2055,8 +2055,8 @@ methods:
 
 
       - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running
-      on Outlook mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs
-      supported in Outlook on mobile
+      in Outlook on mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 

@@ -1083,9 +1083,9 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the
-      parent item.
+      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
+      parent (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of
+      the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1095,8 +1095,8 @@ properties:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1615,7 +1615,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1693,7 +1693,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1917,7 +1917,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2016,7 +2016,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2268,7 +2268,7 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
       valid only within the same session. A session is over when the user closes the app, or if the user starts
       composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2360,7 +2360,7 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
       valid only within the same session. A session is over when the user closes the app, or if the user starts
       composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2584,8 +2584,8 @@ methods:
             **read item** to access, as specified in the following table.
 
 
-            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-            Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required permission
+            level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
             <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
             <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
             <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
@@ -3036,7 +3036,7 @@ methods:
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3303,7 +3303,7 @@ methods:
       -->**: Message Read
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -3405,7 +3405,7 @@ methods:
       -->**: Message Read
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples

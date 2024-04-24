@@ -230,7 +230,7 @@ methods:
 
 
       <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
-      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol
       and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
       </tr> <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In
       some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr>
@@ -245,10 +245,10 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access the
-      Dialog object</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
-      operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
-      information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Access your
-      user-defined object or value, if you passed one as the asyncContext parameter</td> </tr> </table>
+      Dialog object.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of
+      the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides
+      error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td>
+      <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td> </tr> </table>
 
 
       #### Examples
@@ -296,7 +296,7 @@ methods:
         void): void;
       parameters:
         - id: startAddress
-          description: Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+          description: Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs mustn't be used.
           type: string
         - id: options
           description: >-
@@ -384,7 +384,7 @@ methods:
 
 
       <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
-      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol
       and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
       </tr> <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In
       some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr>
@@ -399,17 +399,17 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access the
-      Dialog object</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
-      operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
-      information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Access your
-      user-defined object or value, if you passed one as the asyncContext parameter</td> </tr> </table>
+      Dialog object.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of
+      the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides
+      error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td>
+      <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;'
       parameters:
         - id: startAddress
-          description: Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+          description: Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs mustn't be used.
           type: string
         - id: callback
           description: >-

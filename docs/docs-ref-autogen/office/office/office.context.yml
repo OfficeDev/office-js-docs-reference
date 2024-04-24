@@ -5,8 +5,24 @@ package: office!
 fullName: Office.Context
 summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
-  exists as a property of Office. It is accessed using `Office.context`<!-- -->.
-remarks: '**Applications**: Excel, Outlook, PowerPoint, Project, Word'
+  exists as a property of Office. It's accessed using `Office.context`<!-- -->.
+remarks: >-
+  **Support details**
+
+
+  For more information about Office application and server requirements, see [Requirements for running Office
+  Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+  *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+  </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel
+  </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable
+  </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td>
+  Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
+  </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Project
+  </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Not
+  applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td> Supported
+  </td><td> Supported </td><td> Not applicable </td></tr> </table>
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,14 +78,15 @@ properties:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
-      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td>
-      </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not
+      applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td>
+      Supported </td><td> Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
+      Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not applicable </td></tr>
+      <tr><td><strong> Project </strong></td><td> Not supported </td><td> Supported </td><td> Not supported </td><td>
+      Not supported </td><td> Not applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td>
+      Supported </td><td> Not supported </td><td> Supported </td><td> Not applicable </td></tr> </table>
 
 
       #### Examples
@@ -157,14 +174,15 @@ properties:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
-      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
-      Supported </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td>
-      Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
-      Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td>
-      Supported </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td>
-      Supported </td><td> </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not
+      applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td>
+      Supported </td><td> Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
+      Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr>
+      <tr><td><strong> Project </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not
+      supported </td><td> Not applicable </td></tr> <tr><td><strong> Word </strong></td><td> Not supported </td><td>
+      Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> </table>
 
 
       #### Examples

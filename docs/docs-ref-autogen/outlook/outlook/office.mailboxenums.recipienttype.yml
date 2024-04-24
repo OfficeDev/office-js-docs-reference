@@ -101,7 +101,7 @@ fields:
       added from a personal Outlook address book.
 
 
-      **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web,
+      **Important**: In Outlook on the web, on Windows (starting with Version 2210 (Build 15813.20002)), and on Mac,
       Global Address Book (GAL) recipients saved to a personal address book return the `ExternalUser` value, even if
       their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
       added or resolved against the GAL.
