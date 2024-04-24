@@ -849,9 +849,9 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
-      parent item.
+      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
+      parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of
+      the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1605,8 +1605,8 @@ methods:
             **read item** to access, as specified in the following table.
 
 
-            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-            Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required permission
+            level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
             <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
             <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
             <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>

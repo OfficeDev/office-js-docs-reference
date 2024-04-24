@@ -672,16 +672,16 @@ methods:
       enumeration or text values. But the possible values vary with the application.
 
 
-      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
-      </th><th> Office on iPad </th><th> Office on Mac </th></tr> <tr><td><strong> Excel
+      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      </th><th> Office on Mac </th><th> Office on iPad </th></tr> <tr><td><strong> Excel
+      </strong></td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>, <code>Pdf</code>,
+      <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported
+      </td></tr> <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
+      </td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>, <code>Pdf</code>
+      </td><td><code>Compressed</code>, <code>Pdf</code></td></tr> <tr><td><strong> Word
       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code> </td><td> </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
-      <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
-      </td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>,
-      <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code> </td></tr> <tr><td><strong> Word
-      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr> </table>
+      <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>,
+      <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr> </table>
 
 
       #### Examples
@@ -833,7 +833,7 @@ methods:
 
 
       For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting
-      files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the `getFileAsync`
+      files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync`
       method supports getting files in slices of up to 65536 (64 KB).
 
 
@@ -841,16 +841,16 @@ methods:
       enumeration or text values. But the possible values vary with the application.
 
 
-      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
-      </th><th> Office on iPad </th><th> Office on Mac </th></tr> <tr><td><strong> Excel
+      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      </th><th> Office on Mac </th><th> Office on iPad </th></tr> <tr><td><strong> Excel
+      </strong></td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>, <code>Pdf</code>,
+      <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported
+      </td></tr> <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
+      </td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>, <code>Pdf</code>
+      </td><td><code>Compressed</code>, <code>Pdf</code></td></tr> <tr><td><strong> Word
       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code> </td><td> </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
-      <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>
-      </td><td><code>Compressed</code>, <code>Pdf</code> </td><td><code>Compressed</code>,
-      <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code> </td></tr> <tr><td><strong> Word
-      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
-      <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr> </table>
+      <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>,
+      <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -967,7 +967,7 @@ methods:
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -995,7 +995,7 @@ methods:
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1099,7 +1099,7 @@ methods:
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1127,7 +1127,7 @@ methods:
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1228,7 +1228,7 @@ methods:
     uid: 'office!Office.Document#getProjectFieldAsync:member(1)'
     package: office!
     fullName: 'getProjectFieldAsync(fieldId, options, callback)'
-    summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
+    summary: 'Project documents only. Get Project field (e.g., ProjectWebAccessURL).'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1256,7 +1256,7 @@ methods:
     uid: 'office!Office.Document#getProjectFieldAsync:member(2)'
     package: office!
     fullName: 'getProjectFieldAsync(fieldId, callback)'
-    summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
+    summary: 'Project documents only. Get Project field (e.g., ProjectWebAccessURL).'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1381,7 +1381,7 @@ methods:
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1495,7 +1495,7 @@ methods:
     uid: 'office!Office.Document#getResourceFieldAsync:member(1)'
     package: office!
     fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
-    summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
+    summary: 'Project documents only. Get resource field for provided resource ID. (e.g., ResourceName)'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1505,7 +1505,7 @@ methods:
         (result: AsyncResult<string>) => void): void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource Id.
+          description: Either a string or value of the Resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -1526,7 +1526,7 @@ methods:
     uid: 'office!Office.Document#getResourceFieldAsync:member(2)'
     package: office!
     fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
-    summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
+    summary: 'Project documents only. Get resource field for provided resource ID. (e.g., ResourceName)'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1536,7 +1536,7 @@ methods:
         void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource Id.
+          description: Either a string or value of the Resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -1687,11 +1687,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
 
       The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
@@ -1699,14 +1699,15 @@ methods:
 
 
       <table> <tr> <th><code>CoercionType</code></th> <th>Supported applications</th> </tr> <tr>
-      <td><code>Office.CoercionType.Html</code></td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.SlideRange</code></td> <td>- PowerPoint</td> </tr> <tr>
-      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
-      </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web</td> </tr> </table>
+      <td><code>Office.CoercionType.Html</code></td> <td><ul><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td><ul><li>Word</li></ul></td> </tr>
+      <tr> <td><code>Office.CoercionType.SlideRange</code></td> <td><ul><li>PowerPoint</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
+      <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr>
+      </table>
 
 
       #### Examples
@@ -1906,11 +1907,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
 
       The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
@@ -1918,14 +1919,15 @@ methods:
 
 
       <table> <tr> <th><code>CoercionType</code></th> <th>Supported applications</th> </tr> <tr>
-      <td><code>Office.CoercionType.Html</code></td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.SlideRange</code></td> <td>- PowerPoint</td> </tr> <tr>
-      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
-      </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web</td> </tr> </table>
+      <td><code>Office.CoercionType.Html</code></td> <td><ul><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td><ul><li>Word</li></ul></td> </tr>
+      <tr> <td><code>Office.CoercionType.SlideRange</code></td> <td><ul><li>PowerPoint</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
+      <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr>
+      </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1950,7 +1952,7 @@ methods:
     uid: 'office!Office.Document#getSelectedResourceAsync:member(1)'
     package: office!
     fullName: 'getSelectedResourceAsync(options, callback)'
-    summary: Project documents only. Get the current selected Resource's Id.
+    summary: Project documents only. Get the current selected Resource's ID.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1975,7 +1977,7 @@ methods:
     uid: 'office!Office.Document#getSelectedResourceAsync:member(2)'
     package: office!
     fullName: getSelectedResourceAsync(callback)
-    summary: Project documents only. Get the current selected Resource's Id.
+    summary: Project documents only. Get the current selected Resource's ID.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2100,7 +2102,7 @@ methods:
     uid: 'office!Office.Document#getSelectedTaskAsync:member(1)'
     package: office!
     fullName: 'getSelectedTaskAsync(options, callback)'
-    summary: Project documents only. Get the current selected Task's Id.
+    summary: Project documents only. Get the current selected Task's ID.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2218,7 +2220,7 @@ methods:
     uid: 'office!Office.Document#getSelectedViewAsync:member(1)'
     package: office!
     fullName: 'getSelectedViewAsync(options, callback)'
-    summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
+    summary: 'Project documents only. Get the current selected View Type (e.g., Gantt) and View Name.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2242,7 +2244,7 @@ methods:
     uid: 'office!Office.Document#getSelectedViewAsync:member(2)'
     package: office!
     fullName: getSelectedViewAsync(callback)
-    summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
+    summary: 'Project documents only. Get the current selected View Type (e.g., Gantt) and View Name.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2311,7 +2313,7 @@ methods:
     uid: 'office!Office.Document#getTaskAsync:member(1)'
     package: office!
     fullName: 'getTaskAsync(taskId, options, callback)'
-    summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
+    summary: 'Project documents only. Get the Task Name, WSS Task ID, and ResourceNames for given taskId.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2321,7 +2323,7 @@ methods:
         void): void;
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the Task ID.
           type: string
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
@@ -2342,7 +2344,7 @@ methods:
     uid: 'office!Office.Document#getTaskAsync:member(2)'
     package: office!
     fullName: 'getTaskAsync(taskId, callback)'
-    summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
+    summary: 'Project documents only. Get the Task Name, WSS Task ID, and ResourceNames for given taskId.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2350,7 +2352,7 @@ methods:
       content: 'getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the Task ID.
           type: string
         - id: callback
           description: >-
@@ -2445,7 +2447,7 @@ methods:
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2476,7 +2478,7 @@ methods:
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2581,7 +2583,7 @@ methods:
     uid: 'office!Office.Document#getTaskFieldAsync:member(1)'
     package: office!
     fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
-    summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
+    summary: 'Project documents only. Get task field for provided task ID. (e.g., StartDate).'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2591,7 +2593,7 @@ methods:
         AsyncResult<any>) => void): void;
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the Task ID.
           type: string
         - id: fieldId
           description: Task Fields.
@@ -2612,7 +2614,7 @@ methods:
     uid: 'office!Office.Document#getTaskFieldAsync:member(2)'
     package: office!
     fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
-    summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
+    summary: 'Project documents only. Get task field for provided task ID. (e.g., StartDate).'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2620,7 +2622,7 @@ methods:
       content: 'getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the Task ID.
           type: string
         - id: fieldId
           description: Task Fields.
@@ -2752,7 +2754,7 @@ methods:
     uid: 'office!Office.Document#getWSSUrlAsync:member(2)'
     package: office!
     fullName: getWSSUrlAsync(callback)
-    summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
+    summary: 'Project documents only. Get the WSS URL and list name for the Tasks List, the MPP is synced too.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3158,9 +3160,9 @@ methods:
     package: office!
     fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
     summary: |-
-      Project documents only. Set resource field for specified resource Id.
+      Project documents only. Set resource field for specified resource ID.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3170,7 +3172,7 @@ methods:
         options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource Id.
+          description: Either a string or value of the Resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -3194,9 +3196,9 @@ methods:
     package: office!
     fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
     summary: |-
-      Project documents only. Set resource field for specified resource Id.
+      Project documents only. Set resource field for specified resource ID.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3206,7 +3208,7 @@ methods:
         callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource Id.
+          description: Either a string or value of the Resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -3359,19 +3361,20 @@ methods:
       The following application-specific actions apply when writing data to a selection.
 
 
-      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion point is at a valid location, the
-      specified <code>data</code> is inserted at the insertion point</td> <td>If <code>data</code> is a string, the
-      specified text is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is an array of arrays
-      ("matrix") or a TableData object, a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
-      </code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is
-      invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid
-      data).</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is Office Open XML, the specified XML is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is a base64 encoded image stream, the
-      specified image is inserted.</td> </tr> <tr> <td></td> <td>If there is a selection</td> <td>It will be replaced
-      with the specified <code>data</code> following the same rules as above.</td> </tr> <tr> <td></td> <td>Insert
-      images</td> <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image
-      aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value
-      will be automatically scaled to keep the original aspect ratio.</td> </tr>
+      <table> <tr> <th>Application</th> <th>Condition</th> <th>Behavior</th> </tr> <tr> <td>Word</td> <td>If there's no
+      selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the
+      insertion point</td> <td>If <code>data</code> is a string, the specified text is inserted.</td> </tr> <tr>
+      <td></td> <td></td> <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word
+      table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If </code>data</code> is HTML, the specified HTML is
+      inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will
+      insert as much of the HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td> <td></td> <td>If
+      <code>data</code> is Office Open XML, the specified XML is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
+      <code>data</code> is a Base64-encoded image stream, the specified image is inserted.</td> </tr> <tr> <td></td>
+      <td>If there's a selection</td> <td>It will be replaced with the specified <code>data</code> following the same
+      rules as above.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are placed inline. The
+      imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the
+      imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original
+      aspect ratio.</td> </tr>
 
 
       <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If <code>data</code> is a string, the specified text
@@ -3379,7 +3382,7 @@ methods:
       array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding
       cells will be overwritten.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is a TableData object, a
       new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will
-      be overwritten.</td> </tr> <tr> <td></td> <td>If multiple cells are selected</td> <td>If the shape does not match
+      be overwritten.</td> </tr> <tr> <td></td> <td>If multiple cells are selected</td> <td>If the shape doesn't match
       the shape of <code>data</code>, an error is returned.</td> </tr> <tr> <td></td> <td></td> <td>If the shape of the
       selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on
       the values in <code>data</code>.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are
@@ -3414,14 +3417,15 @@ methods:
 
 
       <table> <tr> <th><code>CoercionType</code></th> <th>Supported applications</th> </tr> <tr>
-      <td><code>Office.CoercionType.Html</code></td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.SlideRange</code></td> <td>- PowerPoint on the web and on Windows</td> </tr> <tr>
-      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
-      </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
+      <td><code>Office.CoercionType.Html</code></td> <td><ul><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td><ul><li>Word</li></ul></td> </tr>
+      <tr> <td><code>Office.CoercionType.SlideRange</code></td> <td><ul><li>PowerPoint on the web and on
+      Windows</li></ul></td> </tr> <tr> <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+      <td><ul><li>Excel</li><li>Word</li></ul></td> </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
+      <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the
+      web, on Windows, and on Mac</li><li>Word on Windows and on Mac</li></ul></td> </tr> </table>
 
 
       #### Examples
@@ -3581,7 +3585,7 @@ methods:
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2D
             array or TableData object.
 
 
@@ -3684,19 +3688,20 @@ methods:
       The following application-specific actions apply when writing data to a selection.
 
 
-      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion point is at a valid location, the
-      specified `data` is inserted at the insertion point</td> <td>If <code>data</code> is a string, the specified text
-      is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is an array of arrays ("matrix") or a
-      TableData object, a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is
-      HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't
-      raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td> </tr> <tr>
-      <td></td> <td></td> <td>If <code>data</code> is Office Open XML, the specified XML is inserted.</td> </tr> <tr>
-      <td></td> <td></td> <td>If <code>data</code> is a base64 encoded image stream, the specified image is
-      inserted.</td></tr></td> </tr> <tr> <td></td> <td>If there is a selection</td> <td>It will be replaced with the
-      specified <code>data</code> following the same rules as above.</td> </tr> <tr> <td></td> <td>Insert images</td>
-      <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio
-      is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be
-      automatically scaled to keep the original aspect ratio.</td> </tr>
+      <table> <tr> <th>Application</th> <th>Condition</th> <th>Behavior</th> </tr> <tr> <td>Word</td> <td>If there's no
+      selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion
+      point</td> <td>If <code>data</code> is a string, the specified text is inserted.</td> </tr> <tr> <td></td>
+      <td></td> <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word table is
+      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is HTML, the specified HTML is inserted.
+      (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much
+      of the HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is
+      Office Open XML, the specified XML is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is a
+      Base64-encoded image stream, the specified image is inserted.</td> </tr> <tr> <td></td> <td>If there's a
+      selection</td> <td>It will be replaced with the specified <code>data</code> following the same rules as
+      above.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are placed inline. The imageLeft and
+      imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and
+      imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect
+      ratio.</td> </tr>
 
 
       <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If <code>data</code> is a string, the specified text
@@ -3704,7 +3709,7 @@ methods:
       array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding
       cells will be overwritten.</td> </tr> <tr> <td></td> <td></td> <td>If <code>data</code> is a TableData object, a
       new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will
-      be overwritten.</td> </tr> <tr> <td></td> <td>If multiple cells are selected</td> <td>If the shape does not match
+      be overwritten.</td> </tr> <tr> <td></td> <td>If multiple cells are selected</td> <td>If the shape doesn't match
       the shape of <code>data</code>, an error is returned.</td> </tr> <tr> <td></td> <td></td> <td>If the shape of the
       selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on
       the values in <code>data</code>.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are
@@ -3739,14 +3744,15 @@ methods:
 
 
       <table> <tr> <th><code>CoercionType</code></th> <th>Supported applications</th> </tr> <tr>
-      <td><code>Office.CoercionType.Html</code></td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.SlideRange</code></td> <td>- PowerPoint on the web and on Windows</td> </tr> <tr>
-      <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td>- Excel<br>- Word</td> </tr> <tr>
-      <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
-      </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
-      Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
+      <td><code>Office.CoercionType.Html</code></td> <td><ul><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
+      </tr> <tr> <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td> <td><ul><li>Word</li></ul></td> </tr>
+      <tr> <td><code>Office.CoercionType.SlideRange</code></td> <td><ul><li>PowerPoint on the web and on
+      Windows</li></ul></td> </tr> <tr> <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+      <td><ul><li>Excel</li><li>Word</li></ul></td> </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
+      <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the
+      web, on Windows, and on Mac</li><li>Word on Windows and on Mac</li></ul></td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3754,7 +3760,7 @@ methods:
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2D
             array or TableData object.
 
 
@@ -3805,9 +3811,9 @@ methods:
     package: office!
     fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
     summary: |-
-      Project documents only. Set task field for specified task Id.
+      Project documents only. Set task field for specified task ID.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3817,7 +3823,7 @@ methods:
         Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the task ID.
           type: string
         - id: fieldId
           description: Task Fields.
@@ -3841,9 +3847,9 @@ methods:
     package: office!
     fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
     summary: |-
-      Project documents only. Set task field for specified task Id.
+      Project documents only. Set task field for specified task ID.
 
-      **Important**: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3853,7 +3859,7 @@ methods:
         (result: AsyncResult<void>) => void): void;
       parameters:
         - id: taskId
-          description: Either a string or value of the Task Id.
+          description: Either a string or value of the Task ID.
           type: string
         - id: fieldId
           description: Task Fields.

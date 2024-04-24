@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Word.Interfaces.ContentControlListItemCollectionLoadOptions
+uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ContentControlListItemCollectionLoadOptions
+summary: >-
+  Contains a collection of [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) objects that
+  represent the items in a dropdown list content control.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: displayText
+    uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions#displayText:member'
+    package: word!
+    fullName: displayText
+    summary: 'For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list content control.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayText?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions#index:member'
+    package: word!
+    fullName: index
+    summary: >-
+      For EACH ITEM in the collection: Specifies the index location of a content control list item in the collection of
+      list items.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions#value:member'
+    package: word!
+    fullName: value
+    summary: >-
+      For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list content
+      control.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

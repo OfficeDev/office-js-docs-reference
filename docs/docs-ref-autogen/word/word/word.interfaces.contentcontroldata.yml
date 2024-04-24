@@ -83,6 +83,18 @@ properties:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: dropDownListContentControl
+    uid: 'word!Word.Interfaces.ContentControlData#dropDownListContentControl:member'
+    package: word!
+    fullName: dropDownListContentControl
+    summary: Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's null otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dropDownListContentControl?: Word.Interfaces.DropDownListContentControlData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.DropDownListContentControlData:interface" />'
   - name: fields
     uid: 'word!Word.Interfaces.ContentControlData#fields:member'
     package: word!

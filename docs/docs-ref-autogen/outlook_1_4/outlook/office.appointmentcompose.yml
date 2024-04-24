@@ -1418,9 +1418,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1515,9 +1515,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1824,7 +1824,7 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and Windows. If the field is an HTML editor, only the text
+            current style is applied in Outlook on the web and on Windows. If the field is an HTML editor, only the text
             data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the
             current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
             clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not

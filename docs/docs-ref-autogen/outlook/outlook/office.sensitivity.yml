@@ -42,7 +42,7 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
       Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or
       Personal sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
       property.
@@ -88,7 +88,7 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
       Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or
       Personal sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
       property.
@@ -147,7 +147,7 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
       Normal and Private sensitivity levels.
 
 
@@ -220,7 +220,7 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
       Normal and Private sensitivity levels.
 
 

@@ -1541,8 +1541,8 @@ methods:
             **read item** to access, as specified in the following table.
 
 
-            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-            Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required permission
+            level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
             <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
             <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
             <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>

@@ -672,11 +672,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -688,13 +688,13 @@ methods:
           description: |-
             The data to be set in the current selection. Possible data types by Office application:
 
-            string: Excel on the web and Windows, and Word on the web and Windows only
+            string: Excel on the web and Windows, and Word on the web and on Windows only
 
             array of arrays: Excel and Word only
 
             [Office.TableData](xref:office!Office.TableData:class)<!-- -->: Excel and Word only
 
-            HTML: Word on the web and Windows only
+            HTML: Word on the web and on Windows only
 
             Office Open XML: Word only
           type: '<xref uid="office!Office.TableData:class" /> | any'
@@ -827,11 +827,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
 
       #### Examples
@@ -959,13 +959,13 @@ methods:
           description: |-
             The data to be set in the current selection. Possible data types by Office application:
 
-            string: Excel on the web and Windows, and Word on the web and Windows only
+            string: Excel on the web and on Windows, and Word on the web and on Windows only
 
             array of arrays: Excel and Word only
 
             `TableData`<!-- -->: Excel and Word only
 
-            HTML: Word on the web and Windows only
+            HTML: Word on the web and on Windows only
 
             Office Open XML: Word only
           type: '<xref uid="office!Office.TableData:class" /> | any'

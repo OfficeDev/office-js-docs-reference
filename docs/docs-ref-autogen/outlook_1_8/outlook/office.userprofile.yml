@@ -23,12 +23,10 @@ properties:
     uid: 'outlook!Office.UserProfile#accountType:member'
     package: outlook!
     fullName: accountType
-    summary: >-
+    summary: |-
       Gets the account type of the user associated with the mailbox.
 
-
-      **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and
-      greater.
+      **Note**: This member is currently only supported in Outlook on Mac, Build 16.9.1212 and greater.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

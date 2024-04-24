@@ -11,13 +11,14 @@ summary: >-
   by the user with **File** &gt; **Office Account** &gt; **Office Theme UI**, which is applied across all
   Office applications. Using Office theme colors is appropriate for mail and task pane add-ins.
 remarks: >-
-  *Supported applications, by platform* <table> <tr> <th></th> <th>Office on Windows</th> <th>Office on the web</th>
+  *Supported applications, by platform* <table> <tr> <th></th> <th>Office on the web</th> <th>Office on Windows</th>
   <th>Office on Mac</th> <th>Office on iOS</th> <th>Office on Android</th> </tr> <tr> <td><strong>Excel</strong></td>
-  <td>Supported</td> <td>Not available</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
-  <td><strong>Outlook</strong></td> <td>Preview</td> <td>Not available</td> <td>Not available</td> <td>Not
-  available</td> <td>Not available</td> </tr> <tr> <td><strong>PowerPoint</strong></td> <td>Supported</td> <td>Not
-  available</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr> <td><strong>Word</strong></td>
-  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> </table>
+  <td>Not available</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
+  <td><strong>Outlook</strong></td> <td>Not available</td> <td>Preview</td> <td>Not available</td> <td>Not
+  available</td> <td>Not available</td> </tr> <tr> <td><strong>PowerPoint</strong></td> <td>Not available</td>
+  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
+  <td><strong>Word</strong></td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not
+  available</td> </tr> </table>
 
 
   #### Examples

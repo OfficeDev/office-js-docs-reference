@@ -163,6 +163,10 @@ items:
             uid: 'word!Word.ContentControlEventArgs:interface'
           - name: ContentControlExitedEventArgs
             uid: 'word!Word.ContentControlExitedEventArgs:interface'
+          - name: ContentControlListItem
+            uid: 'word!Word.ContentControlListItem:class'
+          - name: ContentControlListItemCollection
+            uid: 'word!Word.ContentControlListItemCollection:class'
           - name: ContentControlOptions
             uid: 'word!Word.ContentControlOptions:interface'
           - name: ContentControlSelectionChangedEventArgs
@@ -191,6 +195,8 @@ items:
             uid: 'word!Word.DocumentCreated:class'
           - name: DocumentProperties
             uid: 'word!Word.DocumentProperties:class'
+          - name: DropDownListContentControl
+            uid: 'word!Word.DropDownListContentControl:class'
           - name: Field
             uid: 'word!Word.Field:class'
           - name: FieldCollection

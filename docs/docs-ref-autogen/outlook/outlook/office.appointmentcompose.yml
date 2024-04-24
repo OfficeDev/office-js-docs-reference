@@ -1035,7 +1035,7 @@ properties:
       -->**: Appointment Organizer
 
 
-      **Important**: Outlook on Mac, Outlook on the web, and the new Outlook on Windows (preview) only support
+      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
       Normal and Private sensitivity levels.
 
 
@@ -1148,9 +1148,9 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of
-      the parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID
-      of the parent item.
+      In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID
+      of the parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST
+      ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -2242,7 +2242,7 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2342,7 +2342,7 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2890,7 +2890,7 @@ methods:
       -->**: Appointment Organizer
 
 
-      *Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -2992,7 +2992,7 @@ methods:
       -->**: Appointment Organizer
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -3043,7 +3043,7 @@ methods:
       replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
       should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
       `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the Web, the API call should return `false`<!-- -->.
+      the web, the API call should return `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3110,7 +3110,7 @@ methods:
       replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
       should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
       `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the Web, the API call should return `false`<!-- -->.
+      the web, the API call should return `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3270,9 +3270,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3367,9 +3367,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3765,7 +3765,7 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and Windows. If the field is an HTML editor, only the text
+            current style is applied in Outlook on the web and on Windows. If the field is an HTML editor, only the text
             data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the
             current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
             clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not
