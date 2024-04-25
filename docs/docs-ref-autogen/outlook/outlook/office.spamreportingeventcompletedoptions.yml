@@ -127,8 +127,8 @@ properties:
       **Important**:
 
 
-      - You can only use this property in a spam-reporting add-in in Outlook on Windows (starting in Version 2308 (Build
-      16724.10000)), on Mac, on the web, and in new Outlook on Windows (preview). If you're using an earlier build in
+      - You can only use this property in a spam-reporting add-in in Outlook on the web, on Windows (starting in Version
+      2308 (Build 16724.10000)), on Mac, and in new Outlook on Windows (preview). If you're using an earlier build in
       Outlook on Windows that supports the integrated spam-reporting feature, use the `postProcessingAction` property
       instead.
 

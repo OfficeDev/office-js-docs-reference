@@ -160,6 +160,18 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: dropDownListContentControl
+    uid: 'word!Word.ContentControl#dropDownListContentControl:member'
+    package: word!
+    fullName: dropDownListContentControl
+    summary: Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's null otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly dropDownListContentControl: Word.DropDownListContentControl;'
+      return:
+        type: '<xref uid="word!Word.DropDownListContentControl:class" />'
   - name: endnotes
     uid: 'word!Word.ContentControl#endnotes:member'
     package: word!

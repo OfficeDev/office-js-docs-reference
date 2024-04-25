@@ -10647,6 +10647,7 @@ Word.ContentControl,"checkboxContentControl",Property,Good,false
 Word.ContentControl,"color",Property,Good,false
 Word.ContentControl,"contentControls",Property,Good,false
 Word.ContentControl,"context",Property,Good,false
+Word.ContentControl,"dropDownListContentControl",Property,Good,false
 Word.ContentControl,"endnotes",Property,Good,false
 Word.ContentControl,"fields",Property,Good,false
 Word.ContentControl,"font",Property,Good,false
@@ -10753,6 +10754,32 @@ Word.ContentControlExitedEventArgs,N/A,Class,Good,true
 Word.ContentControlExitedEventArgs,"eventType",Property,Good,false
 Word.ContentControlExitedEventArgs,"ids",Property,Good,false
 Word.ContentControlExitedEventArgs,"source",Property,Good,false
+Word.ContentControlListItem,N/A,Class,Good,false
+Word.ContentControlListItem,"context",Property,Good,false
+Word.ContentControlListItem,"displayText",Property,Good,false
+Word.ContentControlListItem,"index",Property,Good,false
+Word.ContentControlListItem,"value",Property,Good,false
+Word.ContentControlListItem,"delete()",Method,Poor,false
+Word.ContentControlListItem,"load(options)",Method,Poor,false
+Word.ContentControlListItem,"load(propertyNames)",Method,Poor,false
+Word.ContentControlListItem,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ContentControlListItem,"select()",Method,Poor,false
+Word.ContentControlListItem,"set(properties, options)",Method,Poor,false
+Word.ContentControlListItem,"set(properties)",Method,Poor,false
+Word.ContentControlListItem,"toJSON()",Method,Poor,false
+Word.ContentControlListItem,"track()",Method,Poor,false
+Word.ContentControlListItem,"untrack()",Method,Poor,false
+Word.ContentControlListItemCollection,N/A,Class,Good,false
+Word.ContentControlListItemCollection,"context",Property,Good,false
+Word.ContentControlListItemCollection,"items",Property,Fine,false
+Word.ContentControlListItemCollection,"getFirst()",Method,Poor,false
+Word.ContentControlListItemCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.ContentControlListItemCollection,"load(options)",Method,Poor,false
+Word.ContentControlListItemCollection,"load(propertyNames)",Method,Poor,false
+Word.ContentControlListItemCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ContentControlListItemCollection,"toJSON()",Method,Poor,false
+Word.ContentControlListItemCollection,"track()",Method,Poor,false
+Word.ContentControlListItemCollection,"untrack()",Method,Poor,false
 Word.ContentControlOptions,N/A,Class,Good,false
 Word.ContentControlOptions,"types",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,N/A,Class,Good,true
@@ -10991,6 +11018,16 @@ Word.DocumentPropertyType,"boolean",EnumField,Fine,false
 Word.DocumentPropertyType,"date",EnumField,Fine,false
 Word.DocumentPropertyType,"number",EnumField,Fine,false
 Word.DocumentPropertyType,"string",EnumField,Fine,false
+Word.DropDownListContentControl,N/A,Class,Good,false
+Word.DropDownListContentControl,"context",Property,Good,false
+Word.DropDownListContentControl,"listItems",Property,Good,false
+Word.DropDownListContentControl,"addListItem(displayText, value, index)",Method,Fine,false
+Word.DropDownListContentControl,"deleteAllListItems()",Method,Poor,false
+Word.DropDownListContentControl,"load(propertyNames)",Method,Poor,false
+Word.DropDownListContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.DropDownListContentControl,"toJSON()",Method,Poor,false
+Word.DropDownListContentControl,"track()",Method,Poor,false
+Word.DropDownListContentControl,"untrack()",Method,Poor,false
 Word.ErrorCodes,N/A,Enum,Missing,false
 Word.ErrorCodes,"accessDenied",EnumField,Missing,false
 Word.ErrorCodes,"generalException",EnumField,Missing,false

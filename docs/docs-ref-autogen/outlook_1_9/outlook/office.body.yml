@@ -516,7 +516,7 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body.
+      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
       For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
       appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
       the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
@@ -637,7 +637,7 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body.
+      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
       For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
       appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
       the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when

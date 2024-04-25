@@ -221,20 +221,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Support details**
-     *
-     * For more information about Office application and server requirements, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-     *
-     * *Supported applications, by platform*
-     *  <table>
-     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-     *  </table>
+     * **Applications**: Excel, Outlook, PowerPoint, Project, Word
      */
     var context: Context;
     /**
@@ -276,12 +263,12 @@ export declare namespace Office {
      *
      * *Supported applications, by platform*
      *  <table>
-     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><th>                             </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Supported                 </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Not supported     </td><td> Supported         </td><td> Supported     </td><td> Not supported  </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
      *  </table>
      *
      * @param reason - Indicates how the app was initialized.
@@ -319,9 +306,9 @@ export declare namespace Office {
      *
      * *Supported applications, by platform*
      *  <table>
-     *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
-     *   <tr><td><strong> Excel  </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td></tr>
-     *   <tr><td><strong> Word   </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td></tr>
+     *   <tr><th>                         </th><th> Office on the web </th><th> Office on Windows </th><th> Office on iPad </th></tr>
+     *   <tr><td><strong> Excel  </strong></td><td> Supported         </td><td> Supported         </td><td> Supported      </td></tr>
+     *   <tr><td><strong> Word   </strong></td><td> Not supported     </td><td> Supported         </td><td> Supported      </td></tr>
      *  </table>
      */
     export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;
@@ -337,12 +324,12 @@ export declare namespace Office {
      *
      * *Supported applications, by platform*
      *  <table>
-     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+     *   <tr><th>                             </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Supported                 </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Not supported     </td><td> Supported         </td><td> Not supported </td><td> Not supported  </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
      *  </table>
      *
      * @param useShortNamespace - True to use the shortcut alias; otherwise false to disable it. The default is true.
@@ -3399,9 +3386,20 @@ export declare namespace Office {
          *
          * *Supported errors*
          * <table>
-         *   <tr><th><code>AsyncResult.error.name</code> </th><th><code>AsyncResult.error.message</code>                                                            </th><th>Description of diagnostics object returned                                                                                                     </th></tr>
-         *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., <code>{"HTTPCode":"401"}</code>                                                                     </td></tr>
-         *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., <code>{"ErrorText": "The mailbox database is temporarily unavailable"}</code></td></tr>
+         *   <tr>
+         *     <th><code>AsyncResult.error.name</code> </th><th><code>AsyncResult.error.message</code></th>
+         *     <th>Description of diagnostics object returned</th>
+         *   </tr>
+         *   <tr>
+         *     <td><strong>HTTPRequestFailure</strong></td>
+         *     <td>The request has failed. Please look at the diagnostics object for the HTTP error code.</td>
+         *     <td>The HTTP error code in a JSON object e.g., <code>{"HTTPCode":"401"}</code>.</td>
+         *   </tr>
+         *   <tr>
+         *     <td><strong>InternalServerError</strong></td>
+         *     <td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td>
+         *     <td>The error message from the Exchange server in a JSON object e.g., <code>{"ErrorText": "The mailbox database is temporarily unavailable"}</code>.</td>
+         *   </tr>
          * </table>
          */
         diagnostics: any;
@@ -3887,31 +3885,31 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param data - The data to be set in the current selection. Possible data types by Office application:
          *
-         *        string: Excel on the web and Windows, and Word on the web and Windows only
+         *        string: Excel on the web and on Windows, and Word on the web and on Windows only
          *
          *        array of arrays: Excel and Word only
          *
          *        {@link Office.TableData}: Excel and Word only
          *
-         *        HTML: Word on the web and Windows only
+         *        HTML: Word on the web and on Windows only
          *
          *        Office Open XML: Word only
          *
@@ -4034,31 +4032,31 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param data - The data to be set in the current selection. Possible data types by Office application:
          *
-         *        string: Excel on the web and Windows, and Word on the web and Windows only
+         *        string: Excel on the web and on Windows, and Word on the web and on Windows only
          *
          *        array of arrays: Excel and Word only
          *
          *        `TableData`: Excel and Word only
          *
-         *        HTML: Word on the web and Windows only
+         *        HTML: Word on the web and on Windows only
          *
          *        Office Open XML: Word only
          *
@@ -4416,11 +4414,24 @@ export declare namespace Office {
     }
     /**
      * Represents the runtime environment of the add-in and provides access to key objects of the API.
-     * The current context exists as a property of Office. It is accessed using `Office.context`.
+     * The current context exists as a property of Office. It's accessed using `Office.context`.
      *
      * @remarks
      *
-     * **Applications**: Excel, Outlook, PowerPoint, Project, Word
+     * **Support details**
+     *
+     * For more information about Office application and server requirements, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     *
+     * *Supported applications, by platform*
+     *  <table>
+     *   <tr><th>                             </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Supported                 </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Not supported     </td><td> Supported         </td><td> Supported     </td><td> Not supported  </td><td> Not applicable            </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+     *  </table>
      */
     export interface Context {
         /**
@@ -4458,12 +4469,12 @@ export declare namespace Office {
          *
          * *Supported applications, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+         *   <tr><th>                             </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Supported                 </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Not supported     </td><td> Supported         </td><td> Not supported </td><td> Not supported  </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported         </td><td> Not supported </td><td> Supported      </td><td> Not applicable            </td></tr>
          *  </table>
          */
         contentLanguage: string;
@@ -4496,12 +4507,12 @@ export declare namespace Office {
          *
          * *Supported applications, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+         *   <tr><th>                             </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Supported                 </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Not supported     </td><td> Supported         </td><td> Supported     </td><td> Not supported  </td><td> Not applicable            </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Not supported     </td><td> Supported         </td><td> Supported     </td><td> Supported      </td><td> Not applicable            </td></tr>
          *  </table>
          */
         displayLanguage: string;
@@ -5436,10 +5447,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -5463,7 +5474,7 @@ export declare namespace Office {
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          *
          * For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
-         * to 4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the `getFileAsync` method supports getting files in slices of up to
+         * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to
          * 65536 (64 KB).
          *
          * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with
@@ -5471,10 +5482,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -5538,19 +5549,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -5563,31 +5574,31 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Html</code></td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.SlideRange</code></td>
-         *     <td>- PowerPoint</td>
+         *     <td><ul><li>PowerPoint</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Text</code> (string)</td>
-         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web</td>
+         *     <td><ul><li>Excel on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *
@@ -5630,19 +5641,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -5655,31 +5666,31 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Html</code></td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.SlideRange</code></td>
-         *     <td>- PowerPoint</td>
+         *     <td><ul><li>PowerPoint</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Text</code> (string)</td>
-         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web</td>
+         *     <td><ul><li>Excel on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *
@@ -5795,8 +5806,13 @@ export declare namespace Office {
          *
          * <table>
          *   <tr>
+         *     <th>Application</th>
+         *     <th>Condition</th>
+         *     <th>Behavior</th>
+         *   </tr>
+         *   <tr>
          *     <td>Word</td>
-         *     <td>If there is no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
+         *     <td>If there's no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
          *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
          *   </tr>
          *   <tr>
@@ -5817,18 +5833,18 @@ export declare namespace Office {
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td>
+         *     <td>If <code>data</code> is a Base64-encoded image stream, the specified image is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
-         *     <td>If there is a selection</td>
+         *     <td>If there's a selection</td>
          *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>Insert images</td>
          *     <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
-         * </tr>
+         *   </tr>
          *
          *   <tr>
          *     <td>Excel</td>
@@ -5848,7 +5864,7 @@ export declare namespace Office {
          *   <tr>
          *     <td></td>
          *     <td>If multiple cells are selected</td>
-         *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
+         *     <td>If the shape doesn't match the shape of <code>data</code>, an error is returned.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -5895,35 +5911,35 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Html</code></td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.SlideRange</code></td>
-         *     <td>- PowerPoint on the web and on Windows</td>
+         *     <td><ul><li>PowerPoint on the web and on Windows</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Text</code> (string)</td>
-         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
+         *     <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the web, on Windows, and on Mac</li><li>Word on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *
-         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
+         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2D array or TableData object.
          *
          * If the value passed for `data` is:
          *
@@ -5984,8 +6000,13 @@ export declare namespace Office {
          *
          * <table>
          *   <tr>
+         *     <th>Application</th>
+         *     <th>Condition</th>
+         *     <th>Behavior</th>
+         *   </tr>
+         *   <tr>
          *     <td>Word</td>
-         *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
+         *     <td>If there's no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
          *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
          *   </tr>
          *   <tr>
@@ -6006,11 +6027,11 @@ export declare namespace Office {
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td></tr></td>
+         *     <td>If <code>data</code> is a Base64-encoded image stream, the specified image is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
-         *     <td>If there is a selection</td>
+         *     <td>If there's a selection</td>
          *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
          *   </tr>
          *   <tr>
@@ -6037,7 +6058,7 @@ export declare namespace Office {
          *   <tr>
          *     <td></td>
          *     <td>If multiple cells are selected</td>
-         *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
+         *     <td>If the shape doesn't match the shape of <code>data</code>, an error is returned.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -6084,35 +6105,35 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Html</code></td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
-         *     <td>- Word</td>
+         *     <td><ul><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.SlideRange</code></td>
-         *     <td>- PowerPoint on the web and on Windows</td>
+         *     <td><ul><li>PowerPoint on the web and on Windows</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
-         *     <td>- Excel<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Text</code> (string)</td>
-         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
+         *     <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
+         *     <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the web, on Windows, and on Mac</li><li>Word on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *
-         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
+         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2D array or TableData object.
          *
          * If the value passed for `data` is:
          *
@@ -6144,7 +6165,7 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string | TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Project documents only. Get Project field (Ex. ProjectWebAccessURL).
+         * Project documents only. Get Project field (e.g., ProjectWebAccessURL).
          * @param fieldId - Project level fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6152,7 +6173,7 @@ export declare namespace Office {
          */
         getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get Project field (Ex. ProjectWebAccessURL).
+         * Project documents only. Get Project field (e.g., ProjectWebAccessURL).
          * @param fieldId - Project level fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
@@ -6160,8 +6181,8 @@ export declare namespace Office {
          */
         getProjectFieldAsync(fieldId: number, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
-         * @param resourceId - Either a string or value of the Resource Id.
+         * Project documents only. Get resource field for provided resource ID. (e.g., ResourceName)
+         * @param resourceId - Either a string or value of the Resource ID.
          * @param fieldId - Resource Fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6170,8 +6191,8 @@ export declare namespace Office {
          */
         getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
-         * @param resourceId - Either a string or value of the Resource Id.
+         * Project documents only. Get resource field for provided resource ID. (e.g., ResourceName)
+         * @param resourceId - Either a string or value of the Resource ID.
          * @param fieldId - Resource Fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
@@ -6179,7 +6200,7 @@ export declare namespace Office {
          */
         getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get the current selected Resource's Id.
+         * Project documents only. Get the current selected Resource's ID.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
@@ -6187,14 +6208,14 @@ export declare namespace Office {
          */
         getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get the current selected Resource's Id.
+         * Project documents only. Get the current selected Resource's ID.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
          *
          */
         getSelectedResourceAsync(callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get the current selected Task's Id.
+         * Project documents only. Get the current selected Task's ID.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
@@ -6209,7 +6230,7 @@ export declare namespace Office {
          */
         getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
+         * Project documents only. Get the current selected View Type (e.g., Gantt) and View Name.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
@@ -6219,7 +6240,7 @@ export declare namespace Office {
          */
         getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
+         * Project documents only. Get the current selected View Type (e.g., Gantt) and View Name.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
          *                  `viewName` - The name of the view, as a ProjectViewTypes constant.
@@ -6228,8 +6249,8 @@ export declare namespace Office {
          */
         getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
-         * @param taskId - Either a string or value of the Task Id.
+         * Project documents only. Get the Task Name, WSS Task ID, and ResourceNames for given taskId.
+         * @param taskId - Either a string or value of the Task ID.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
@@ -6240,8 +6261,8 @@ export declare namespace Office {
          */
         getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
-         * @param taskId - Either a string or value of the Task Id.
+         * Project documents only. Get the Task Name, WSS Task ID, and ResourceNames for given taskId.
+         * @param taskId - Either a string or value of the Task ID.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
          *                  `taskName` - The name of the task.
@@ -6251,8 +6272,8 @@ export declare namespace Office {
          */
         getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get task field for provided task Id. (Ex. StartDate).
-         * @param taskId - Either a string or value of the Task Id.
+         * Project documents only. Get task field for provided task ID. (e.g., StartDate).
+         * @param taskId - Either a string or value of the Task ID.
          * @param fieldId - Task Fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6261,8 +6282,8 @@ export declare namespace Office {
          */
         getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get task field for provided task Id. (Ex. StartDate).
-         * @param taskId - Either a string or value of the Task Id.
+         * Project documents only. Get task field for provided task ID. (e.g., StartDate).
+         * @param taskId - Either a string or value of the Task ID.
          * @param fieldId - Task Fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
@@ -6280,7 +6301,7 @@ export declare namespace Office {
          */
         getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.
+         * Project documents only. Get the WSS URL and list name for the Tasks List, the MPP is synced too.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
          *                  `listName` - the name of the synchronized SharePoint task list.
@@ -6291,7 +6312,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of resources in the current project.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6302,7 +6323,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of resources in the current project.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's resource collection.
@@ -6312,7 +6333,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of tasks in the current project.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6323,7 +6344,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of tasks in the current project.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's task collection.
@@ -6333,7 +6354,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -6345,7 +6366,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6356,7 +6377,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the task that has the specified index in the task collection.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -6368,7 +6389,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the task that has the specified index in the task collection.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6377,11 +6398,11 @@ export declare namespace Office {
          */
         getTaskByIndexAsync(taskIndex: number, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Set resource field for specified resource Id.
+         * Project documents only. Set resource field for specified resource ID.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
-         * @param resourceId - Either a string or value of the Resource Id.
+         * @param resourceId - Either a string or value of the Resource ID.
          * @param fieldId - Resource Fields.
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -6390,11 +6411,11 @@ export declare namespace Office {
          */
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Project documents only. Set resource field for specified resource Id.
+         * Project documents only. Set resource field for specified resource ID.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
-         * @param resourceId - Either a string or value of the Resource Id.
+         * @param resourceId - Either a string or value of the Resource ID.
          * @param fieldId - Resource Fields.
          * @param fieldValue - Value of the target field.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6402,11 +6423,11 @@ export declare namespace Office {
          */
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Project documents only. Set task field for specified task Id.
+         * Project documents only. Set task field for specified task ID.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
-         * @param taskId - Either a string or value of the Task Id.
+         * @param taskId - Either a string or value of the task ID.
          * @param fieldId - Task Fields.
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -6415,11 +6436,11 @@ export declare namespace Office {
          */
         setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Project documents only. Set task field for specified task Id.
+         * Project documents only. Set task field for specified task ID.
          *
-         * **Important**: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project on Windows desktop.
          *
-         * @param taskId - Either a string or value of the Task Id.
+         * @param taskId - Either a string or value of the Task ID.
          * @param fieldId - Task Fields.
          * @param fieldValue - Value of the target field.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -6499,19 +6520,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -6535,19 +6556,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the Slice object</td>
+         *     <td>Access the Slice object.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -6777,32 +6798,32 @@ export declare namespace Office {
      * <table>
      *  <tr>
      *    <th></th>
-     *    <th>Office on Windows</th>
      *    <th>Office on the web</th>
+     *    <th>Office on Windows</th>
      *    <th>Office on Mac</th>
      *    <th>Office on iOS</th>
      *    <th>Office on Android</th>
      *  </tr>
      *  <tr>
      *    <td><strong>Excel</strong></td>
-     *    <td>Supported</td>
      *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Not available</td>
      *  </tr>
      *  <tr>
      *    <td><strong>Outlook</strong></td>
-     *    <td>Preview</td>
      *    <td>Not available</td>
+     *    <td>Preview</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *  </tr>
      *  <tr>
      *    <td><strong>PowerPoint</strong></td>
-     *    <td>Supported</td>
      *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Not available</td>
@@ -7103,19 +7124,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when adding an event handler</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when adding an event handler.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          */
@@ -7144,19 +7165,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when adding an event handler</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when adding an event handler.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          */
@@ -7195,19 +7216,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access a Settings object with the refreshed values</td>
+         *     <td>Access a Settings object with the refreshed values.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -7254,19 +7275,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when setting formats.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -7298,19 +7319,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when setting formats.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -7341,19 +7362,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -7384,19 +7405,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
+         *     <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -7538,12 +7559,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office
+         * When you insert an empty table by selecting a single row in Excel on desktop and Excel on the web (using Table on the Insert tab), both Office
          * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this
          * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the
-         * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
+         * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel on desktop or Excel on the web.
          *
-         * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+         * - In Excel on the desktop (i.e., Windows and Mac), rowCount will return 0 (the blank row following the headers isn't counted).
          *
          * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
          *
@@ -7713,15 +7734,15 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>{row: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{column: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{row: i, column: j}</code></td>
-         *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
+         *     <td>Specifies the single cell that's the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.Table.All</code></td>
@@ -7767,15 +7788,15 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>{row: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{column: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{row: i, column: j}</code></td>
-         *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
+         *     <td>Specifies the single cell that's the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.Table.All</code></td>
@@ -7824,15 +7845,15 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>{row: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{column: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{row: i, column: j}</code></td>
-         *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
+         *     <td>Specifies the single cell that's the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.Table.All</code></td>
@@ -7923,15 +7944,15 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>{row: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{column: n}</code></td>
-         *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
+         *     <td>Specifies the range that's the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>{row: i, column: j}</code></td>
-         *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
+         *     <td>Specifies the single cell that's the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.Table.All</code></td>
@@ -8013,19 +8034,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when setting formats.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8051,19 +8072,19 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *     <td>Always returns <code>undefined</code> because there's no data or object to retrieve when setting formats.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8210,7 +8231,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>12004</td>
-         *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
+         *     <td>The domain of the URL passed to displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
          *   </tr>
          *   <tr>
          *     <td>12005</td>
@@ -8236,23 +8257,23 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the Dialog object</td>
+         *     <td>Access the Dialog object.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
+         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
          *   </tr>
          * </table>
          *
-         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs mustn't be used.
          * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
          * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
          */
@@ -8311,7 +8332,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>12004</td>
-         *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
+         *     <td>The domain of the URL passed to displayDialogAsync isn't trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
          *   </tr>
          *   <tr>
          *     <td>12005</td>
@@ -8337,23 +8358,23 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the Dialog object</td>
+         *     <td>Access the Dialog object.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
-         *     <td>Determine the success or failure of the operation</td>
+         *     <td>Determine the success or failure of the operation.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *     <td>Access an Error object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
+         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
          *   </tr>
          * </table>
          *
-         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs mustn't be used.
          * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
          */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
