@@ -95,7 +95,7 @@ tryCatch(async () => {
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
     const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
                             {host: "onenote", versions: 1},
-                            {host: "outlook", versions: 14},
+                            {host: "outlook", versions: 15},
                             {host: "powerpoint", versions: 6},
                             {host: "visio", versions: 1},
                             {host: "word", versions: 8}]; /* not including online or desktop*/

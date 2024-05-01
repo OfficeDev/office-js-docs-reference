@@ -1,15 +1,15 @@
 ---
-title: MoreInfo element in the manifest file (preview)
+title: MoreInfo element in the manifest file
 description: The MoreInfo element specifies the custom text and URL that direct users to informational resources from the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 07/20/2023
+ms.date: 04/29/2024
 ms.localizationpriority: medium
 ---
 
-# MoreInfo element (preview)
+# MoreInfo element
 
 Specifies the custom text and URL to provide informational resources to the users from the preprocessing dialog of a spam-reporting add-in in Outlook. The information provided in this element helps users identify and report unsolicited messages.
 
-To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting).
 
 **Add-in type**: Mail
 
@@ -21,11 +21,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox preview](../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md)
+- [Mailbox 1.14](../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md)
 
 ## Contained in
 
-- [PreProcessingDialog (preview)](preprocessingdialog.md)
+- [PreProcessingDialog](preprocessingdialog.md)
 
 ## Attributes
 

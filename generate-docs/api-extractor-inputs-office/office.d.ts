@@ -524,6 +524,7 @@ export declare namespace Office {
         ActiveViewChanged,
         /**
          * Occurs when any date or time of the selected appointment or series is changed in Outlook.
+         *
          * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
          *
          * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -534,7 +535,9 @@ export declare namespace Office {
          */
         AppointmentTimeChanged,
         /**
-         * Occurs when an attachment is added to or removed from an item. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * Occurs when an attachment is added to or removed from an item.
+         *
+         * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
          *
          * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -599,6 +602,7 @@ export declare namespace Office {
         InfobarClicked,
         /**
          * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
+         *
          * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
          *
          * To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
@@ -619,19 +623,25 @@ export declare namespace Office {
          */
         NodeReplaced,
         /**
-         * Occurs when the OfficeTheme is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * Occurs when the OfficeTheme is changed in Outlook.
          *
          * To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          * The event handler receives an argument of type
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview | Office.OfficeThemeChangedEventArgs}.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs | Office.OfficeThemeChangedEventArgs}.
          *
-         * [Api set: Mailbox preview]
+         * **Important**:
          *
-         * @beta
+         * - The `OfficeThemeChanged` event can only be handled in a task pane. It isn't supported by function commands.
+         *
+         * - The `OfficeThemeChanged` event isn't supported in add-ins that implement
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+         *
+         * [Api set: Mailbox 1.14]
          */
         OfficeThemeChanged,
         /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
+         *
          * **Important**: Only available with task pane implementation.
          *
          * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -643,6 +653,7 @@ export declare namespace Office {
         RecipientsChanged,
         /**
          * Occurs when the recurrence pattern of the selected series is changed in Outlook.
+         *
          * **Important**: Only available with task pane implementation.
          *
          * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -658,8 +669,9 @@ export declare namespace Office {
         ResourceSelectionChanged,
         /**
          * Occurs in Outlook when one or more messages are selected or deselected.
+         *
          * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
-         * 
+         *
          * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          * 
          * [Api set: Mailbox 1.13]
@@ -682,11 +694,9 @@ export declare namespace Office {
         SettingsChanged,
         /**
          * Occurs in Outlook when an unsolicited message is reported. The event handler receives an argument of type
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs?view=outlook-js-preview&preserve-view=true | Office.SpamReportingEventArgs}.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs | Office.SpamReportingEventArgs}.
          *
-         * [Api set: Mailbox preview]
-         *
-         * @beta
+         * [Api set: Mailbox 1.14]
          */
         SpamReporting,
         /**
@@ -4634,13 +4644,13 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * **Applications**: Outlook
+         *
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
-         * @beta
          */
         urls: Urls;
     }
@@ -6814,8 +6824,8 @@ export declare namespace Office {
      *  </tr>
      *  <tr>
      *    <td><strong>Outlook</strong></td>
-     *    <td>Not available</td>
-     *    <td>Preview</td>
+     *    <td>Supported\*</td>
+     *    <td>Supported\*</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
@@ -6837,6 +6847,10 @@ export declare namespace Office {
      *    <td>Not available</td>
      *  </tr>
      * </table>
+     *
+     * \* In Outlook, the Office theme API is supported starting in
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14 }.
+     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch| event-based activation }.
      */
     export interface OfficeTheme {
         /**
@@ -8432,13 +8446,11 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * [Api set: Mailbox preview]
+     * [Api set: Mailbox 1.14]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-     *
-     * @beta
      */
     export interface Urls {
         /**
@@ -8446,7 +8458,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
@@ -8454,22 +8466,16 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - This property is currently in preview in Outlook on Windows. To test it in your add-in, you must install Version 2401 (Build 17228.20000) or later.
-         * Then, join the {@link https://insider.microsoft365.com/join/windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access
-         * Office beta builds.
-         *
-         * - The URL returned points to the location of the JavaScript file that Outlook on Windows uses to handle event-based activation
+         * - The URL returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
          *
          * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
          *
-         * - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the value of the `script` property in the
+         * - If your add-in uses the unified manifest for Microsoft 365, the URL returned matches the value of the `script` property in the
          * "code" object.
-         *
-         * @beta
          */
         javascriptRuntimeUrl: string;
     }

@@ -1,15 +1,15 @@
 ---
-title: ReportPhishingCustomization element in the manifest file (preview)
+title: ReportPhishingCustomization element in the manifest file
 description: The ReportPhishingCustomization element configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 07/20/2023
+ms.date: 04/29/2024
 ms.localizationpriority: medium
 ---
 
-# ReportPhishingCustomization element (preview)
+# ReportPhishingCustomization element
 
 Configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
 
-To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting).
 
 **Add-in type**: Mail
 
@@ -21,11 +21,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox preview](../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md)
+- [Mailbox 1.14](../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md)
 
 ## Contained in
 
-- **\<ExtensionPoint\>** element with the **xsi:type** attribute set to [ReportPhishingCommandSurface (preview)](extensionpoint.md#reportphishingcommandsurface-preview).
+- **\<ExtensionPoint\>** element with the **xsi:type** attribute set to [ReportPhishingCommandSurface](extensionpoint.md#reportphishingcommandsurface).
 
 ## Attributes
 
@@ -36,7 +36,7 @@ None.
 | Element | Required | Description |
 | :------ | :------: | :------ |
 | [Control](control.md) | Yes | Configures and adds the add-in button to the ribbon. The **xsi:type** attribute must be set to `Button` and the **xsi:type** attribute of its **\<Action\>** child element must be set to `ExecuteFunction`. |
-| [PreProcessingDialog (preview)](preprocessingdialog.md) | Yes | Configures the preprocessing dialog shown after the add-in button is selected from the ribbon. This dialog allows users to provide additional information about a message they're reporting. |
+| [PreProcessingDialog](preprocessingdialog.md) | Yes | Configures the preprocessing dialog shown after the add-in button is selected from the ribbon. This dialog allows users to provide additional information about a message they're reporting. |
 | [SourceLocation element (version overrides)](customfunctionssourcelocation.md) | Yes | Specifies the location of the source JavaScript file. |
 
 ## Example

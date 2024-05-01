@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 01/16/2024
+ms.date: 04/29/2024
 ms.localizationpriority: medium
 ---
 
@@ -145,7 +145,7 @@ A custom function written in JavaScript or TypeScript for Excel.
 - [LaunchEvent](#launchevent)
 - [Events](#events)
 - [DetectedEntity](#detectedentity)
-- [ReportPhishingCommandSurface (preview)](#reportphishingcommandsurface-preview)
+- [ReportPhishingCommandSurface](#reportphishingcommandsurface)
 
 ### MessageReadCommandSurface
 
@@ -501,17 +501,17 @@ However, there are some limitations to be aware of. These limitations are in pla
 </ExtensionPoint>
 ```
 
-### ReportPhishingCommandSurface (preview)
+### ReportPhishingCommandSurface
 
 This extension point activates your spam-reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow menu.
 
-To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting).
 
 #### Child elements
 
 | Element | Description |
 | ------- | ------- |
-| [ReportPhishingCustomization element (preview)](reportphishingcustomization.md)| Configures the ribbon button and preprocessing dialog of a spam-reporting add-in. |
+| [ReportPhishingCustomization element](reportphishingcustomization.md)| Configures the ribbon button and preprocessing dialog of a spam-reporting add-in. |
 
 #### Example
 
