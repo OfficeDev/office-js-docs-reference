@@ -3,7 +3,7 @@ title: Keyboard Shortcuts requirement sets
 description: Keyboard Shortcuts requirement set information for Office Add-ins.
 ms.date: 04/15/2024
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ---
 
 # Keyboard Shortcuts requirement sets
