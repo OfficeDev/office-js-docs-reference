@@ -30,8 +30,7 @@ remarks: >-
     if (field.isNullObject) {
       console.log("There are no fields in this document.");
     } else {
-      console.log("Code of the field: " + field.code);
-      console.log("Result of the field: " + JSON.stringify(field.result));
+      console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
     }
   });
 
