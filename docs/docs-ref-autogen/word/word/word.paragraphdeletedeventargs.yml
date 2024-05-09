@@ -32,8 +32,7 @@ remarks: >-
 
   async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
     await Word.run(async (context) => {
-      console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`);
-      console.log(event.uniqueLocalIds);
+      console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`, event.uniqueLocalIds);
     });
   }
 

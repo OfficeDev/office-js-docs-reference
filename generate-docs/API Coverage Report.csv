@@ -10219,7 +10219,7 @@ Word.Body,"fields",Property,Good,true
 Word.Body,"font",Property,Good,true
 Word.Body,"footnotes",Property,Good,true
 Word.Body,"inlinePictures",Property,Good,true
-Word.Body,"lists",Property,Good,false
+Word.Body,"lists",Property,Good,true
 Word.Body,"paragraphs",Property,Good,true
 Word.Body,"parentBody",Property,Good,false
 Word.Body,"parentBodyOrNullObject",Property,Good,false
@@ -10526,7 +10526,7 @@ Word.ChangeTrackingState,"unknown",EnumField,Fine,false
 Word.ChangeTrackingVersion,N/A,Enum,Good,true
 Word.ChangeTrackingVersion,"current",EnumField,Fine,false
 Word.ChangeTrackingVersion,"original",EnumField,Fine,false
-Word.CheckboxContentControl,N/A,Class,Good,false
+Word.CheckboxContentControl,N/A,Class,Good,true
 Word.CheckboxContentControl,"context",Property,Good,false
 Word.CheckboxContentControl,"isChecked",Property,Good,false
 Word.CheckboxContentControl,"load(options)",Method,Poor,false
@@ -10537,7 +10537,7 @@ Word.CheckboxContentControl,"set(properties)",Method,Poor,false
 Word.CheckboxContentControl,"toJSON()",Method,Poor,false
 Word.CheckboxContentControl,"track()",Method,Poor,false
 Word.CheckboxContentControl,"untrack()",Method,Poor,false
-Word.CloseBehavior,N/A,Enum,Good,false
+Word.CloseBehavior,N/A,Enum,Good,true
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Fine,false
 Word.Comment,N/A,Class,Good,false
@@ -10561,7 +10561,7 @@ Word.Comment,"set(properties)",Method,Poor,false
 Word.Comment,"toJSON()",Method,Poor,false
 Word.Comment,"track()",Method,Poor,false
 Word.Comment,"untrack()",Method,Poor,false
-Word.CommentChangeType,N/A,Enum,Good,false
+Word.CommentChangeType,N/A,Enum,Good,true
 Word.CommentChangeType,"edited",EnumField,Fine,false
 Word.CommentChangeType,"none",EnumField,Fine,false
 Word.CommentChangeType,"reopened",EnumField,Fine,false
@@ -10598,15 +10598,15 @@ Word.CommentContentRange,"set(properties)",Method,Poor,false
 Word.CommentContentRange,"toJSON()",Method,Poor,false
 Word.CommentContentRange,"track()",Method,Poor,false
 Word.CommentContentRange,"untrack()",Method,Poor,false
-Word.CommentDetail,N/A,Class,Good,false
+Word.CommentDetail,N/A,Class,Good,true
 Word.CommentDetail,"id",Property,Good,false
 Word.CommentDetail,"replyIds",Property,Good,false
-Word.CommentEventArgs,N/A,Class,Good,false
+Word.CommentEventArgs,N/A,Class,Good,true
 Word.CommentEventArgs,"changeType",Property,Good,false
 Word.CommentEventArgs,"commentDetails",Property,Good,false
 Word.CommentEventArgs,"source",Property,Good,false
 Word.CommentEventArgs,"type",Property,Good,false
-Word.CommentReply,N/A,Class,Good,false
+Word.CommentReply,N/A,Class,Good,true
 Word.CommentReply,"authorEmail",Property,Good,false
 Word.CommentReply,"authorName",Property,Good,false
 Word.CommentReply,"content",Property,Good,false
@@ -10643,7 +10643,7 @@ Word.ContentControl,N/A,Class,Good,true
 Word.ContentControl,"appearance",Property,Good,false
 Word.ContentControl,"cannotDelete",Property,Good,false
 Word.ContentControl,"cannotEdit",Property,Good,false
-Word.ContentControl,"checkboxContentControl",Property,Good,false
+Word.ContentControl,"checkboxContentControl",Property,Good,true
 Word.ContentControl,"color",Property,Good,false
 Word.ContentControl,"contentControls",Property,Good,false
 Word.ContentControl,"context",Property,Good,false
@@ -10707,9 +10707,9 @@ Word.ContentControl,"split(delimiters, multiParagraphs, trimDelimiters, trimSpac
 Word.ContentControl,"toJSON()",Method,Poor,false
 Word.ContentControl,"track()",Method,Poor,false
 Word.ContentControl,"untrack()",Method,Poor,false
-Word.ContentControlAddedEventArgs,N/A,Class,Good,false
-Word.ContentControlAddedEventArgs,"eventType",Property,Good,true
-Word.ContentControlAddedEventArgs,"ids",Property,Good,true
+Word.ContentControlAddedEventArgs,N/A,Class,Good,true
+Word.ContentControlAddedEventArgs,"eventType",Property,Good,false
+Word.ContentControlAddedEventArgs,"ids",Property,Good,false
 Word.ContentControlAddedEventArgs,"source",Property,Good,false
 Word.ContentControlAppearance,N/A,Enum,Good,true
 Word.ContentControlAppearance,"boundingBox",EnumField,Fine,false
@@ -10725,7 +10725,7 @@ Word.ContentControlCollection,"getByTag(tag)",Method,Poor,true
 Word.ContentControlCollection,"getByTitle(title)",Method,Poor,true
 Word.ContentControlCollection,"getByTypes(types)",Method,Poor,false
 Word.ContentControlCollection,"getFirst()",Method,Poor,true
-Word.ContentControlCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.ContentControlCollection,"getFirstOrNullObject()",Method,Poor,true
 Word.ContentControlCollection,"getItem(id)",Method,Poor,false
 Word.ContentControlCollection,"load(options)",Method,Fine,true
 Word.ContentControlCollection,"load(propertyNames)",Method,Poor,false
@@ -10780,7 +10780,7 @@ Word.ContentControlListItemCollection,"load(propertyNamesAndPaths)",Method,Poor,
 Word.ContentControlListItemCollection,"toJSON()",Method,Poor,false
 Word.ContentControlListItemCollection,"track()",Method,Poor,false
 Word.ContentControlListItemCollection,"untrack()",Method,Poor,false
-Word.ContentControlOptions,N/A,Class,Good,false
+Word.ContentControlOptions,N/A,Class,Good,true
 Word.ContentControlOptions,"types",Property,Good,false
 Word.ContentControlSelectionChangedEventArgs,N/A,Class,Good,true
 Word.ContentControlSelectionChangedEventArgs,"eventType",Property,Good,false
@@ -10824,7 +10824,7 @@ Word.CritiqueAnnotation,"reject()",Method,Poor,true
 Word.CritiqueAnnotation,"toJSON()",Method,Poor,false
 Word.CritiqueAnnotation,"track()",Method,Poor,false
 Word.CritiqueAnnotation,"untrack()",Method,Poor,false
-Word.CritiqueColorScheme,N/A,Enum,Good,false
+Word.CritiqueColorScheme,N/A,Enum,Good,true
 Word.CritiqueColorScheme,"berry",EnumField,Fine,false
 Word.CritiqueColorScheme,"blue",EnumField,Fine,false
 Word.CritiqueColorScheme,"green",EnumField,Fine,false
@@ -10923,14 +10923,14 @@ Word.Document,"sections",Property,Good,false
 Word.Document,"settings",Property,Good,true
 Word.Document,"addStyle(name, type)",Method,Fine,true
 Word.Document,"addStyle(name, typeString)",Method,Fine,false
-Word.Document,"close(closeBehavior)",Method,Poor,false
+Word.Document,"close(closeBehavior)",Method,Poor,true
 Word.Document,"close(closeBehaviorString)",Method,Poor,false
 Word.Document,"compare(filePath, documentCompareOptions)",Method,Fine,true
 Word.Document,"deleteBookmark(name)",Method,Poor,false
 Word.Document,"getAnnotationById(id)",Method,Poor,false
 Word.Document,"getBookmarkRange(name)",Method,Poor,false
 Word.Document,"getBookmarkRangeOrNullObject(name)",Method,Poor,false
-Word.Document,"getContentControls(options)",Method,Poor,false
+Word.Document,"getContentControls(options)",Method,Poor,true
 Word.Document,"getEndnoteBody()",Method,Poor,false
 Word.Document,"getFootnoteBody()",Method,Poor,false
 Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,true
@@ -11028,7 +11028,7 @@ Word.DropDownListContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.DropDownListContentControl,"toJSON()",Method,Poor,false
 Word.DropDownListContentControl,"track()",Method,Poor,false
 Word.DropDownListContentControl,"untrack()",Method,Poor,false
-Word.ErrorCodes,N/A,Enum,Missing,false
+Word.ErrorCodes,N/A,Enum,Missing,true
 Word.ErrorCodes,"accessDenied",EnumField,Missing,false
 Word.ErrorCodes,"generalException",EnumField,Missing,false
 Word.ErrorCodes,"invalidArgument",EnumField,Missing,false
@@ -11037,7 +11037,7 @@ Word.ErrorCodes,"notAllowed",EnumField,Missing,false
 Word.ErrorCodes,"notImplemented",EnumField,Missing,false
 Word.ErrorCodes,"searchDialogIsOpen",EnumField,Missing,false
 Word.ErrorCodes,"searchStringInvalidOrTooLong",EnumField,Missing,false
-Word.EventSource,N/A,Enum,Good,false
+Word.EventSource,N/A,Enum,Good,true
 Word.EventSource,"local",EnumField,Fine,false
 Word.EventSource,"remote",EnumField,Fine,false
 Word.EventType,N/A,Enum,Good,true
@@ -11102,7 +11102,7 @@ Word.FieldCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.FieldCollection,"toJSON()",Method,Poor,false
 Word.FieldCollection,"track()",Method,Poor,false
 Word.FieldCollection,"untrack()",Method,Poor,false
-Word.FieldKind,N/A,Enum,Good,false
+Word.FieldKind,N/A,Enum,Good,true
 Word.FieldKind,"cold",EnumField,Fine,false
 Word.FieldKind,"hot",EnumField,Fine,false
 Word.FieldKind,"none",EnumField,Good,false
@@ -11220,7 +11220,7 @@ Word.Font,"set(properties)",Method,Poor,false
 Word.Font,"toJSON()",Method,Poor,false
 Word.Font,"track()",Method,Poor,false
 Word.Font,"untrack()",Method,Poor,false
-Word.GetTextOptions,N/A,Class,Good,false
+Word.GetTextOptions,N/A,Class,Good,true
 Word.GetTextOptions,"includeHiddenText",Property,Good,false
 Word.GetTextOptions,"includeTextMarkedAsDeleted",Property,Good,false
 Word.HeaderFooterType,N/A,Enum,Fine,true
@@ -11411,7 +11411,7 @@ Word.ListBullet,"diamonds",EnumField,Fine,false
 Word.ListBullet,"hollow",EnumField,Fine,false
 Word.ListBullet,"solid",EnumField,Fine,false
 Word.ListBullet,"square",EnumField,Fine,false
-Word.ListCollection,N/A,Class,Good,false
+Word.ListCollection,N/A,Class,Good,true
 Word.ListCollection,"context",Property,Good,false
 Word.ListCollection,"items",Property,Fine,false
 Word.ListCollection,"getById(id)",Method,Poor,false
@@ -11541,7 +11541,7 @@ Word.NoteItemCollection,"untrack()",Method,Poor,false
 Word.NoteItemType,N/A,Enum,Fine,true
 Word.NoteItemType,"endnote",EnumField,Fine,false
 Word.NoteItemType,"footnote",EnumField,Fine,false
-Word.OutlineLevel,N/A,Enum,Good,false
+Word.OutlineLevel,N/A,Enum,Good,true
 Word.OutlineLevel,"outlineLevel1",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel2",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel3",EnumField,Fine,false
@@ -11692,7 +11692,7 @@ Word.Range,"isEmpty",Property,Good,false
 Word.Range,"lists",Property,Good,false
 Word.Range,"paragraphs",Property,Good,false
 Word.Range,"parentBody",Property,Good,false
-Word.Range,"parentContentControl",Property,Good,false
+Word.Range,"parentContentControl",Property,Good,true
 Word.Range,"parentContentControlOrNullObject",Property,Good,false
 Word.Range,"parentTable",Property,Good,false
 Word.Range,"parentTableCell",Property,Good,false
@@ -11709,7 +11709,7 @@ Word.Range,"expandTo(range)",Method,Poor,false
 Word.Range,"expandToOrNullObject(range)",Method,Poor,false
 Word.Range,"getBookmarks(includeHidden, includeAdjacent)",Method,Fine,false
 Word.Range,"getComments()",Method,Poor,true
-Word.Range,"getContentControls(options)",Method,Poor,false
+Word.Range,"getContentControls(options)",Method,Poor,true
 Word.Range,"getHtml()",Method,Poor,true
 Word.Range,"getHyperlinkRanges()",Method,Poor,true
 Word.Range,"getNextTextRange(endingMarks, trimSpacing)",Method,Fine,false
@@ -11772,7 +11772,7 @@ Word.RangeLocation,"whole",EnumField,Good,false
 Word.RequestContext,N/A,Class,Good,true
 Word.RequestContext,"application",Property,Fine,false
 Word.RequestContext,"document",Property,Missing,false
-Word.SaveBehavior,N/A,Enum,Good,false
+Word.SaveBehavior,N/A,Enum,Good,true
 Word.SaveBehavior,"prompt",EnumField,Good,false
 Word.SaveBehavior,"save",EnumField,Good,false
 Word.SearchOptions,N/A,Class,Good,false

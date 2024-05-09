@@ -60,10 +60,7 @@ properties:
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -138,10 +135,7 @@ properties:
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -315,9 +309,7 @@ properties:
         firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table's first row:`);
-        console.log(`- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
       });
 
       ```
@@ -539,10 +531,7 @@ properties:
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -742,10 +731,7 @@ methods:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```

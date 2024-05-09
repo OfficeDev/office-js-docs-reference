@@ -4,7 +4,60 @@ uid: 'word!Word.CritiqueColorScheme:enum'
 package: word!
 fullName: Word.CritiqueColorScheme
 summary: 'Represents the color scheme of a critique in the document, affecting underline and highlight.'
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+  // Adds annotations to the selected paragraph.
+
+  await Word.run(async (context) => {
+    const paragraph = context.document.getSelection().paragraphs.getFirst();
+    const critique1 = {
+      colorScheme: Word.CritiqueColorScheme.red,
+      start: 1,
+      length: 3
+    };
+    const critique2 = {
+      colorScheme: Word.CritiqueColorScheme.green,
+      start: 6,
+      length: 1
+    };
+    const critique3 = {
+      colorScheme: Word.CritiqueColorScheme.blue,
+      start: 10,
+      length: 3
+    };
+    const critique4 = {
+      colorScheme: Word.CritiqueColorScheme.lavender,
+      start: 14,
+      length: 3
+    };
+    const critique5 = {
+      colorScheme: Word.CritiqueColorScheme.berry,
+      start: 18,
+      length: 10
+    };
+    const annotationSet: Word.AnnotationSet = {
+      critiques: [critique1, critique2, critique3, critique4, critique5]
+    };
+
+    const annotationIds = paragraph.insertAnnotations(annotationSet);
+
+    await context.sync();
+
+    console.log("Annotations inserted:", annotationIds.value);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

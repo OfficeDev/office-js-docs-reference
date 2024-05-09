@@ -17,10 +17,32 @@ remarks: >-
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
 
 
+  await Word.run(async (context) => {
+    const contentControls = context.document.contentControls;
+    contentControls.load("items");
+    await context.sync();
+
+    if (contentControls.items.length === 0) {
+      console.log("There aren't any content controls in this document so can't register event handlers.");
+    } else {
+      for (let i = 0; i < contentControls.items.length; i++) {
+        eventContexts[i] = contentControls.items[i].onSelectionChanged.add(contentControlSelectionChanged);
+        contentControls.items[i].track();
+      }
+
+      await context.sync();
+
+      console.log("Added event handlers for when selections are changed in content controls.");
+    }
+  });
+
+
+  ...
+
+
   async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
     await Word.run(async (context) => {
-      console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
-      console.log(event.ids);
+      console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`, event.ids);
     });
   }
 
