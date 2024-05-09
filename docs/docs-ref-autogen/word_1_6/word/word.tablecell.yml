@@ -108,9 +108,7 @@ properties:
         firstCell.load(["horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table's first cell:`);
-        console.log(`- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`);
-        console.log(`- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
       });
 
       ```
@@ -206,9 +204,7 @@ properties:
         firstCell.load(["horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table's first cell:`);
-        console.log(`- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`);
-        console.log(`- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
       });
 
       ```
@@ -302,10 +298,7 @@ methods:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table's first cell:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table's first cell:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```

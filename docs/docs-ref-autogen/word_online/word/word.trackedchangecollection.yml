@@ -60,7 +60,7 @@ methods:
         const body = context.document.body;
         const trackedChanges = body.getTrackedChanges();
         trackedChanges.acceptAll();
-        console.log("Accepted all tracked changes");
+        console.log("Accepted all tracked changes.");
       });
 
       ```
@@ -217,7 +217,7 @@ methods:
         const body = context.document.body;
         const trackedChanges = body.getTrackedChanges();
         trackedChanges.rejectAll();
-        console.log("Rejected all tracked changes");
+        console.log("Rejected all tracked changes.");
       });
 
       ```

@@ -68,8 +68,7 @@ methods:
         await context.sync();
 
         const readableXml = addLineBreaksToXML(xmlBlob.value);
-        console.log(`Added custom XML part with namespace URI ${customXmlPart.namespaceUri}:`);
-        console.log(readableXml);
+        console.log(`Added custom XML part with namespace URI ${customXmlPart.namespaceUri}:`, readableXml);
 
         // Store the XML part's ID in a setting so the ID is available to other functions.
         const settings = context.document.settings;
@@ -94,8 +93,7 @@ methods:
         await context.sync();
 
         const readableXml = addLineBreaksToXML(xmlBlob.value);
-        console.log("Added custom XML part:");
-        console.log(readableXml);
+        console.log("Added custom XML part:", readableXml);
 
         // Store the XML part's ID in a setting so the ID is available to other functions.
         const settings = context.document.settings;
@@ -190,7 +188,7 @@ methods:
             console.log(clientResult.value[i]);
           }
         } else {
-          console.warn("Didn't find custom XML part to query");
+          console.warn("Didn't find custom XML part to query.");
         }
       });
 
@@ -224,7 +222,7 @@ methods:
             console.log(clientResult.value[i]);
           }
         } else {
-          console.warn("Didn't find custom XML part to query");
+          console.warn("Didn't find custom XML part to query.");
         }
       });
 
