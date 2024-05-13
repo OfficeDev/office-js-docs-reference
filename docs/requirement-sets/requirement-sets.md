@@ -1,7 +1,7 @@
 ---
 title: Office client application and platform availability for Office Add-ins
 description: Supported requirement sets for Excel, OneNote, Outlook, PowerPoint, Project, and Word.
-ms.date: 05/10/2024
+ms.date: 05/13/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---

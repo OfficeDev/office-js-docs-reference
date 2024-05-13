@@ -1,7 +1,7 @@
 ---
 title: Device Permission Service requirement sets
 description: Learn more about the Device Permission Service API requirement sets and the platforms it supports.
-ms.date: 05/10/2024
+ms.date: 05/13/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 With the Device Permissions Service requirement set, your add-in running in Office on the web can request access to a user's device capabilities. A user's device capabilities include their camera, geolocation, or microphone.
 
-Office Add-ins run across multiple versions of Office. The following table lists the Device Permission Service requirement sets, its supported Office client applications, and the minimum builds or versions for those application, where applicable.
+Office Add-ins run across multiple versions of Office. The following table lists the Device Permission Service requirement sets, its supported Office client applications, and the minimum builds or versions for those applications, where applicable.
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|

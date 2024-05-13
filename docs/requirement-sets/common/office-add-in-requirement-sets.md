@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 05/10/2024
+ms.date: 05/13/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
