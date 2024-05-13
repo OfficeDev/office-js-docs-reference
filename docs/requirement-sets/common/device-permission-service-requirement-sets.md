@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-With the Device Permissions Service requirement set, your add-in running in Office on the web can request access to a user's device capabilities. A user's device capabilities include their camera, geolocation, or microphone.
+With the Device Permissions Service requirement set, your add-in can request access to a user's device capabilities. A user's device capabilities include their camera, geolocation, or microphone.
 
 Office Add-ins run across multiple versions of Office. The following table lists the Device Permission Service requirement sets, its supported Office client applications, and the minimum builds or versions for those applications, where applicable.
 
