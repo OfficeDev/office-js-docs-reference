@@ -26,11 +26,11 @@ remarks: >-
 
     await context.sync();
 
-    for (var i = 0; i < annotations.items.length; i++) {
+    for (let i = 0; i < annotations.items.length; i++) {
       const annotation = annotations.items[i];
 
       if (annotation.state === Word.AnnotationState.created) {
-        console.log(`Accepting ${annotation.id}`);
+        console.log(`Accepting ID ${annotation.id}...`);
         annotation.critiqueAnnotation.accept();
 
         await context.sync();
