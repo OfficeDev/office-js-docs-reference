@@ -44,7 +44,7 @@ remarks: >-
 
       await context.sync();
 
-      console.log(`AnnotationClicked: ${args.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+      console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
     });
   }
 
