@@ -250,10 +250,7 @@ methods:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table's first row:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```

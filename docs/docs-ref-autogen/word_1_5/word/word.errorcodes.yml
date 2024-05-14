@@ -4,7 +4,32 @@ uid: 'word!Word.ErrorCodes:enum'
 package: word!
 fullName: Word.ErrorCodes
 summary: ''
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+  async function tryCatch(callback) {
+    try {
+      await callback();
+    } catch (error) {
+      // Note: In a production add-in, you'd want to notify the user through your add-in's UI.
+      if (error.code === Word.ErrorCodes.itemNotFound) {
+        console.warn("No checkbox content control is currently selected.");
+      } else {
+        console.error(error);
+      }
+    }
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

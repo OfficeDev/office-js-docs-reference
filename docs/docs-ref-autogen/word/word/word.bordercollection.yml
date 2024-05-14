@@ -40,7 +40,7 @@ remarks: >-
       borders.outsideBorderType = Word.BorderType.dashed;
       borders.outsideBorderWidth = Word.BorderWidth.pt025;
       borders.outsideBorderColor = "green";
-      console.log("Updated outside borders");
+      console.log("Updated outside borders.");
     }
   });
 
@@ -169,7 +169,7 @@ properties:
           borders.outsideBorderType = Word.BorderType.dashed;
           borders.outsideBorderWidth = Word.BorderWidth.pt025;
           borders.outsideBorderColor = "green";
-          console.log("Updated outside borders");
+          console.log("Updated outside borders.");
         }
       });
 
@@ -221,7 +221,7 @@ properties:
           borders.outsideBorderType = Word.BorderType.dashed;
           borders.outsideBorderWidth = Word.BorderWidth.pt025;
           borders.outsideBorderColor = "green";
-          console.log("Updated outside borders");
+          console.log("Updated outside borders.");
         }
       });
 
@@ -282,7 +282,7 @@ properties:
           borders.outsideBorderType = Word.BorderType.dashed;
           borders.outsideBorderWidth = Word.BorderWidth.pt025;
           borders.outsideBorderColor = "green";
-          console.log("Updated outside borders");
+          console.log("Updated outside borders.");
         }
       });
 

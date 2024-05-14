@@ -4,13 +4,17 @@ uid: 'word!Word.ContentControlType:enum'
 package: word!
 fullName: Word.ContentControlType
 summary: Specifies supported content control types and subtypes.
-remarks: |-
+remarks: >-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Run a batch operation against the Word object model.
+
   await Word.run(async (context) => {
 
       // Create a proxy object for the content controls collection.
@@ -64,6 +68,33 @@ remarks: |-
               '   ----- font color: ' + contentControls.items[0].font.color);
       }
   });
+
+  ```
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+  // Traverses each paragraph of the document and places a checkbox content control at the beginning of each.
+
+  await Word.run(async (context) => {
+    let paragraphs = context.document.body.paragraphs;
+    paragraphs.load("$none"); // Don't need any properties; just start each paragraph with a content control.
+
+    await context.sync();
+
+    for (let i = 0; i < paragraphs.items.length; i++) {
+      let contentControl = paragraphs.items[i]
+        .getRange(Word.RangeLocation.start)
+        .insertContentControl(Word.ContentControlType.checkBox);
+    }
+    console.log("Checkbox content controls inserted: " + paragraphs.items.length);
+
+    await context.sync();
+  });
+
   ```
 isPreview: false
 isDeprecated: false

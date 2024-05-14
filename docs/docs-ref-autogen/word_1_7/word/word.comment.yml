@@ -63,12 +63,11 @@ properties:
           .getFirst();
         comment.content = text;
 
-        // Load object for display in Script Lab console.
+        // Load object to log in the console.
         comment.load();
         await context.sync();
 
-        console.log("Comment content changed:");
-        console.log(comment);
+        console.log("Comment content changed:", comment);
       });
 
       ```
@@ -173,13 +172,12 @@ properties:
         // Toggle resolved status.
         // If the comment is active, set as resolved.
         // If it's resolved, set resolved to false.
-        const toggleResolved: boolean = comment.resolved;
-        comment.resolved = !toggleResolved;
+        const resolvedBefore = comment.resolved;
+        comment.resolved = !resolvedBefore;
         comment.load();
         await context.sync();
 
-        console.log(`Comment Resolved status: ${comment.resolved}`);
-        console.log(comment);
+        console.log(`Comment Resolved status: ${comment.resolved}`, comment);
       });
 
       ```
@@ -363,6 +361,7 @@ methods:
         const comments = context.document.getSelection().getComments();
         comments.load("items");
         await context.sync();
+
         const firstActiveComment = comments.items.find((item) => item.resolved !== true);
         if (firstActiveComment) {
           const reply = firstActiveComment.reply(text);

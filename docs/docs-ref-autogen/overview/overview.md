@@ -2,7 +2,7 @@
 ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.date: 02/27/2024
 ---
 
