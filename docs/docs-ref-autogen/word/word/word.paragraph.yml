@@ -797,7 +797,7 @@ properties:
           await context.sync();
 
           for (let result of results) {
-            console.log(`${args.type}: ${result.para.uniqueLocalId} - ${result.text.value}`);
+            console.log(`${args.type}: ID ${result.para.uniqueLocalId}:-`, result.text.value);
           }
         });
       }
