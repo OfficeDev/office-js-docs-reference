@@ -1,0 +1,78 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.OWAView
+uid: 'outlook!Office.MailboxEnums.OWAView:enum'
+package: outlook!
+fullName: Office.MailboxEnums.OWAView
+summary: Represents the current view of Outlook on the web.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+
+  // This function gets a mailbox's diagnostic information, such as Outlook client and version, and logs it to the
+  console.
+
+  const diagnostics = Office.context.mailbox.diagnostics;
+
+  console.log(`Client application: ${diagnostics.hostName}`);
+
+  console.log(`Client version: ${diagnostics.hostVersion}`);
+
+
+  switch (diagnostics.OWAView) {
+    case undefined:
+      console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumnNarrow:
+      console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumn:
+      console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.TwoColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a tablet");
+      break;
+    case Office.MailboxEnums.OWAView.ThreeColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+      break;
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: OneColumnNarrow
+    uid: 'outlook!Office.MailboxEnums.OWAView.OneColumnNarrow:member'
+    package: outlook!
+    summary: >-
+      Narrow one-column view. Displayed when the screen width is less than 436 pixels. For example, Outlook on the web
+      uses this view on the entire screen of older smartphones.
+    value: '"OneColumnNarrow"'
+  - name: OneColumn
+    uid: 'outlook!Office.MailboxEnums.OWAView.OneColumn:member'
+    package: outlook!
+    summary: >-
+      One-column view. Displayed when the screen width is greater than or equal to 436 pixels, but less than 536 pixels.
+      For example, Outlook on the web uses this view on the entire screen of newer smartphones.
+    value: '"OneColumn"'
+  - name: TwoColumns
+    uid: 'outlook!Office.MailboxEnums.OWAView.TwoColumns:member'
+    package: outlook!
+    summary: >-
+      Two-column view. Displayed when the screen width is greater than or equal to 536 pixels, but less than 780 pixels.
+      For example, Outlook on the web uses this view on most tablets.
+    value: '"TwoColumns"'
+  - name: ThreeColumns
+    uid: 'outlook!Office.MailboxEnums.OWAView.ThreeColumns:member'
+    package: outlook!
+    summary: >-
+      Three-column view. Displayed when the screen width is greater than or equal to 780 pixels. For example, Outlook on
+      the web uses this view in a full screen window on a desktop computer.
+    value: '"ThreeColumns"'

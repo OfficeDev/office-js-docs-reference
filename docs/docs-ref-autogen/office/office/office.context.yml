@@ -591,7 +591,10 @@ properties:
     fullName: urls
     summary: Gets the object to retrieve the runtime URLs of an add-in.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      **Applications**: Outlook
+
+
+      \[ [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission
@@ -622,7 +625,7 @@ properties:
       console.log(`First parameter value: ${url.match(regex)[1]}`);
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'urls: Urls;'

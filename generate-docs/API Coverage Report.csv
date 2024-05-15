@@ -8706,7 +8706,7 @@ Office.MailboxEnums.ActionType,"ShowTaskPane",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,"Normal",EnumField,Fine,false
 Office.MailboxEnums.AppointmentSensitivityType,"Personal",EnumField,Fine,false
-Office.MailboxEnums.AppointmentSensitivityType,"Private",EnumField,Fine,false
+Office.MailboxEnums.AppointmentSensitivityType,"Private",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,"Confidential",EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,N/A,Enum,Good,true
 Office.MailboxEnums.AttachmentContentFormat,"Base64",EnumField,Fine,false
@@ -9206,10 +9206,10 @@ Office.SelectedItemDetails,N/A,Class,Good,true
 Office.SelectedItemDetails,"conversationId",Property,Good,false
 Office.SelectedItemDetails,"hasAttachment",Property,Good,false
 Office.SelectedItemDetails,"internetMessageId",Property,Good,false
-Office.SelectedItemDetails,"itemId",Property,Fine,false
-Office.SelectedItemDetails,"itemMode",Property,Fine,false
+Office.SelectedItemDetails,"itemId",Property,Good,false
+Office.SelectedItemDetails,"itemMode",Property,Good,false
 Office.SelectedItemDetails,"itemType",Property,Good,false
-Office.SelectedItemDetails,"subject",Property,Fine,false
+Office.SelectedItemDetails,"subject",Property,Good,false
 Office.Sensitivity,N/A,Class,Good,false
 Office.Sensitivity,"getAsync(options, callback)",Method,Poor,false
 Office.Sensitivity,"getAsync(callback)",Method,Poor,true
@@ -9260,7 +9260,7 @@ Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
-Office.SmartAlertsEventCompletedOptions,N/A,Class,Fine,true
+Office.SmartAlertsEventCompletedOptions,N/A,Class,Good,true
 Office.SmartAlertsEventCompletedOptions,"allowEvent",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"cancelLabel",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"commandId",Property,Good,false

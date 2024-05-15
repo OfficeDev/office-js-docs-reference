@@ -525,7 +525,7 @@ export declare namespace Office {
         /**
          * Occurs when any date or time of the selected appointment or series is changed in Outlook.
          *
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -537,7 +537,7 @@ export declare namespace Office {
         /**
          * Occurs when an attachment is added to or removed from an item.
          *
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -577,7 +577,9 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
-         * Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane implementation.
+         * Occurs when the appointment location is changed in Outlook.
+         *
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -591,7 +593,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions | custom action}.
          * Currently, "Dismiss" is the only supported action that fires this event.
          *
-         * **Important**: This event is only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -603,7 +605,7 @@ export declare namespace Office {
         /**
          * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
          *
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          *
@@ -631,7 +633,7 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `OfficeThemeChanged` event can only be handled in a task pane. It isn't supported by function commands.
+         * - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * - The `OfficeThemeChanged` event isn't supported in add-ins that implement
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
@@ -642,7 +644,7 @@ export declare namespace Office {
         /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
          *
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -654,7 +656,7 @@ export declare namespace Office {
         /**
          * Occurs when the recurrence pattern of the selected series is changed in Outlook.
          *
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -670,7 +672,7 @@ export declare namespace Office {
         /**
          * Occurs in Outlook when one or more messages are selected or deselected.
          *
-         * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          *
@@ -680,7 +682,7 @@ export declare namespace Office {
         /**
          * Occurs in Outlook when the sensitivity label of a message or appointment changes.
          *
-         * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
          * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -6815,8 +6817,8 @@ export declare namespace Office {
      *  </tr>
      *  <tr>
      *    <td><strong>Outlook</strong></td>
-     *    <td>Supported</td>
-     *    <td>Supported</td>
+     *    <td>Supported\*</td>
+     *    <td>Supported\*</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
@@ -6840,8 +6842,8 @@ export declare namespace Office {
      * </table>
      *
      * \* In Outlook, the Office theme API is supported starting in
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14 }.
-     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch| event-based activation }.
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
+     * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
      */
     export interface OfficeTheme {
         /**
@@ -8197,9 +8199,7 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
-         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -8300,9 +8300,7 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
-         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -8461,10 +8459,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The URL returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
+         * - The URL that's returned points to the location of the JavaScript file that classic Outlook on Windows uses to handle event-based activation
          * and integrated spam reporting. To learn more about these features, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.

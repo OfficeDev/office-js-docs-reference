@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ActionType
+uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ActionType
+summary: Specifies the type of custom action in a notification message.
+remarks: >-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+  // Adds an informational message with actions to the mail item.
+
+  const id = $("#notificationId").val().toString();
+
+
+  const itemId = Office.context.mailbox.item.itemId;
+
+  const details = {
+    type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+    message: "This is an insight notification with id = " + id,
+    icon: "icon1",
+    actions: [
+      {
+        actionText: "Open insight",
+        actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+        // Identify whether the current mail item is in read or compose mode to set the appropriate commandId value.
+        commandId: (itemId == undefined ? "PG.HelpCommand.Compose" : "PG.HelpCommand.Read"),
+        contextData: { a: "aValue", b: "bValue" }
+      }
+    ]
+  };
+
+
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ShowTaskPane
+    uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+    package: outlook!
+    summary: The `showTaskPane` action.
+    value: '"showTaskPane"'

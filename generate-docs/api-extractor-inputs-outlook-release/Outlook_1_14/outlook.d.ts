@@ -589,7 +589,7 @@ export declare namespace Office {
          * Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting add-in.
          *
          * To learn more about the integrated spam-reporting feature, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * @remarks
          * [Api set: Mailbox 1.14]
@@ -6794,7 +6794,8 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
+     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -6803,10 +6804,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based add-in has completed processing an event.
+         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -6815,9 +6818,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
+         * **Important**:
+         *
+         * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+         *
+         * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
+         *
+         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
          */
-        completed(options?: SmartAlertsEventCompletedOptions): void;
+        completed(options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions): void;
     }
     /**
      * Represents the categories master list on the mailbox.
@@ -11563,7 +11572,7 @@ export declare namespace Office {
      */
     export interface SmartAlertsEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
          * this value indicates if the handled event should continue execution or be canceled.
          * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item.
          * For a complete sample, see the
@@ -11579,7 +11588,7 @@ export declare namespace Office {
          */
         allowEvent?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
          *
          * For an example, see the
@@ -11595,7 +11604,7 @@ export declare namespace Office {
          */
         cancelLabel?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies the ID of the task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * For an example, see the
@@ -11623,7 +11632,7 @@ export declare namespace Office {
          */
         commandId?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * @remarks
@@ -11648,7 +11657,7 @@ export declare namespace Office {
          */
         contextData?: any;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property
          * to `false`, this property sets the error message that will be displayed to the user. For an example, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
          *
@@ -11662,7 +11671,7 @@ export declare namespace Office {
          */
         errorMessage?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
          * and set its `allowEvent` property to `false`, this property overrides the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
          * specified in the manifest at runtime.
@@ -11701,7 +11710,7 @@ export declare namespace Office {
          * element in the manifest of your add-in.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         freeText: string;
         /**
@@ -11715,7 +11724,7 @@ export declare namespace Office {
          * element of your add-in's manifest.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         options: boolean[];
         /**
@@ -11741,7 +11750,7 @@ export declare namespace Office {
      */
     export interface SpamReportingEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies the Outlook mailbox folder to which the message will be moved.
          *
          * @remarks
@@ -11762,7 +11771,7 @@ export declare namespace Office {
          */
         folderName?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox.
          *
          * @remarks
@@ -11786,7 +11795,7 @@ export declare namespace Office {
         moveItemTo?: MailboxEnums.MoveSpamItemTo;
         /**
          * When set to `true`, deletes a reported message if an error occurs while the message is processed.
-         * If this property is set to `false` or isn't specified in the {@link Office.MailboxEvent.completed | completed method},
+         * If this property is set to `false` or isn't specified in the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method},
          * the reported message remains in its current mailbox folder.
          *
          * @remarks
@@ -11799,7 +11808,7 @@ export declare namespace Office {
          */
         onErrorDeleteItem?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox. The following post-processing actions are available.
          *
          * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
@@ -11831,7 +11840,7 @@ export declare namespace Office {
          */
         postProcessingAction?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property must contain a title and a description.
          * If this property isn't specified, a dialog isn't shown to the user once their reported message is processed.
          *
@@ -11847,7 +11856,7 @@ export declare namespace Office {
          * reported message. This applies even if `showPostProcessingDialog` is configured. However, depending on how you configured the `moveItemTo` property in the
          * `event.completed` call, a notification is shown to signal when the reported message is deleted or moved to another folder in the mailbox. To learn more, see
          * the "Review feature behavior and limitations" section of
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in}.
          */
         showPostProcessingDialog?: object;
     }

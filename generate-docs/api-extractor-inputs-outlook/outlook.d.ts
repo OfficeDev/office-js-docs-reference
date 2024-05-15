@@ -588,7 +588,7 @@ export declare namespace Office {
          * Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting add-in.
          *
          * To learn more about the integrated spam-reporting feature, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * @remarks
          * [Api set: Mailbox 1.14]
@@ -3465,7 +3465,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3533,7 +3533,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3567,7 +3567,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3600,7 +3600,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3635,7 +3635,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -5653,14 +5653,6 @@ export declare namespace Office {
      * @remarks
      * [Api set: Mailbox 1.8]
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-     *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-     *
-     * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-     * To learn more about features supported in Outlook on mobile devices, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-     *
      * **Recommended practices**
      *
      * Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create any more internet headers
@@ -5676,6 +5668,10 @@ export declare namespace Office {
      *
      * - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner
      * (for example, based on user input, timestamp, etc.).
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
      */
     export interface InternetHeaders {
         /**
@@ -5690,10 +5686,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param names - The names of the internet headers to be returned.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5716,10 +5708,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param names - The names of the internet headers to be returned.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, of type `Office.AsyncResult`. The string key-value pairs of internet headers are returned in the
@@ -5737,10 +5725,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param names - The names of the internet headers to be removed.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5761,10 +5745,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param names - The names of the internet headers to be removed.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
@@ -5777,6 +5757,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5784,18 +5770,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**:
-         *
-         * - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
-         * - The header quota is based on the total size of headers applied to a message. In Exchange Online,
-         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
-         * For further information on header limits, see 
-         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
-         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
          *                and values being the corresponding header value strings.
@@ -5812,6 +5786,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5819,18 +5799,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * **Important**:
-         *
-         * - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
-         * - The header quota is based on the total size of headers applied to a message. In Exchange Online,
-         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
-         * For further information on header limits, see 
-         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
-         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
          *                and values being the corresponding header value strings.
@@ -7073,6 +7041,8 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      */
     export interface MailboxEvent {
         /**
@@ -7084,6 +7054,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+         *
+         * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
          * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
          */
@@ -7438,10 +7414,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
-         * To learn more about features supported in Outlook on mobile devices, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         internetHeaders: InternetHeaders;
         /**
@@ -9604,7 +9576,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -9672,7 +9644,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -9706,7 +9678,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -9721,8 +9693,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
          * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | unified manifest for Microsoft 365}.
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
@@ -9744,7 +9715,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -9779,7 +9750,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -11941,7 +11912,7 @@ export declare namespace Office {
      */
     export interface SmartAlertsEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
          * this value indicates if the handled event should continue execution or be canceled.
          * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item.
          * For a complete sample, see the
@@ -11957,7 +11928,7 @@ export declare namespace Office {
          */
         allowEvent?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
          *
          * For an example, see the
@@ -11973,7 +11944,7 @@ export declare namespace Office {
          */
         cancelLabel?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies the ID of the task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * For an example, see the
@@ -11994,14 +11965,14 @@ export declare namespace Office {
          *
          * - **XML manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane.
          *
-         * - **Unified manifest for Microsoft 365**: The "id" property of the task pane command in the "extensions.ribbons.tabs.groups.controls" array.
+         * - **Unified manifest for Microsoft 365 (preview)**: The "id" property of the task pane command in the "controls" array.
          *
          * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
          */
         commandId?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * @remarks
@@ -12026,7 +11997,7 @@ export declare namespace Office {
          */
         contextData?: any;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property
          * to `false`, this property sets the error message displayed to the user. For an example, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
          *
@@ -12040,7 +12011,7 @@ export declare namespace Office {
          */
         errorMessage?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
          * and set its `allowEvent` property to `false`, this property overrides the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
          * specified in the manifest at runtime.
@@ -12079,7 +12050,7 @@ export declare namespace Office {
          * element in the manifest of your add-in.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         freeText: string;
         /**
@@ -12093,7 +12064,7 @@ export declare namespace Office {
          * element of your add-in's manifest.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         options: boolean[];
         /**
@@ -12119,7 +12090,7 @@ export declare namespace Office {
      */
     export interface SpamReportingEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies the Outlook mailbox folder to which the message will be moved.
          *
          * @remarks
@@ -12140,7 +12111,7 @@ export declare namespace Office {
          */
         folderName?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox.
          *
          * @remarks
@@ -12164,7 +12135,7 @@ export declare namespace Office {
         moveItemTo?: MailboxEnums.MoveSpamItemTo;
         /**
          * When set to `true`, deletes a reported message if an error occurs while the message is processed.
-         * If this property is set to `false` or isn't specified in the {@link Office.MailboxEvent.completed | completed method},
+         * If this property is set to `false` or isn't specified in the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method},
          * the reported message remains in its current mailbox folder.
          *
          * @remarks
@@ -12177,7 +12148,7 @@ export declare namespace Office {
          */
         onErrorDeleteItem?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox. The following post-processing actions are available.
          *
          * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
@@ -12209,7 +12180,7 @@ export declare namespace Office {
          */
         postProcessingAction?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property must contain a title and a description.
          * If this property isn't specified, a dialog isn't shown to the user once their reported message is processed.
          *
@@ -12225,7 +12196,7 @@ export declare namespace Office {
          * reported message. This applies even if `showPostProcessingDialog` is configured. However, depending on how you configured the `moveItemTo` property in the
          * `event.completed` call, a notification is shown to signal when the reported message is deleted or moved to another folder in the mailbox. To learn more, see
          * the "Review feature behavior and limitations" section of
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in }.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in}.
          */
         showPostProcessingDialog?: object;
     }

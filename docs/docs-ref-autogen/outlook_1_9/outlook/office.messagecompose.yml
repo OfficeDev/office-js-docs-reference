@@ -473,12 +473,6 @@ properties:
       -->**: Message Compose
 
 
-      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
-      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
-      supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
       #### Examples
 
 
@@ -1653,6 +1647,20 @@ methods:
       **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using
       `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
       item was last saved.
+
+
+      **Tip**: Use the
+      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
+      method instead of the `close` method if you want your add-in to:
+
+
+      - Automatically discard a message being composed without prompting the user with the save dialog.
+
+
+      - Determine when a user cancels the save item dialog on a message being composed.
+
+
+      - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
 
 
       #### Examples

@@ -1,0 +1,297 @@
+### YamlMime:TSType
+name: Office.Time
+uid: 'outlook!Office.Time:interface'
+package: outlook!
+fullName: Office.Time
+summary: The `Time` object is returned as the start or end property of an appointment in compose mode.
+remarks: >-
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.Time#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
+    summary: >-
+      Gets the start or end time of an appointment.
+
+
+      The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the
+      `convertToLocalClientTime` method.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<Date>) => void):
+        void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is a `Date` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.Time#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: >-
+      Gets the start or end time of an appointment.
+
+
+      The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the
+      `convertToLocalClientTime` method.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
+
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment starts: ${result.value}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<Date>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is a `Date` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(dateTime, options, callback)'
+    uid: 'outlook!Office.Time#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(dateTime, options, callback)'
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the
+      duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the
+      duration of the appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
+
+
+      **Important**: In the Windows client, you can't use this method to update the start or end of a recurrence.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Errors**:
+
+
+      - `InvalidEndTime`<!-- -->: The appointment end time is before the appointment start time.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const startTime = new Date("3/14/2015");
+
+      const options = {
+          // Pass information that can be used in the callback.
+          asyncContext: {verb: "Set"}
+      };
+
+      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync method.
+              console.debug("Start Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
+
+      const start = new Date(); // Represents current date and time.
+
+      start.setDate(start.getDate() + 2); // Add 2 days to current date.
+
+      Office.context.mailbox.item.start.setAsync(start, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set start date and time to ${start}`);
+      });
+
+
+      ...
+
+
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Get start date failed with message ${result.error.message}`);
+          return;
+        }
+
+        const end = result.value; // Set end to current start date and time.
+        end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
+        Office.context.mailbox.item.end.setAsync(end, (result) => {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+            console.error(`Set end date failed with message ${result.error.message}`);
+            return;
+          }
+          console.log(`Successfully set end date and time to ${end}`);
+        });
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(dateTime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type: Date
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If setting the date and time fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(dateTime, callback)'
+    uid: 'outlook!Office.Time#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(dateTime, callback)'
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the
+      duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the
+      duration of the appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
+
+
+      **Important**: In the Windows client, you can't use this method to update the start or end of a recurrence.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Errors**:
+
+
+      - `InvalidEndTime`<!-- -->: The appointment end time is before the appointment start time.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAsync(dateTime: Date, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type: Date
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If setting the date and time fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
