@@ -18,6 +18,21 @@ remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+  4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported
+  in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
   **Recommended practices**
 
 
@@ -41,16 +56,6 @@ remarks: >-
 
   - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner
   (for example, based on user input, timestamp, etc.).
-
-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
-
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-  Compose
 isPreview: false
 isDeprecated: false
 type: interface
@@ -78,6 +83,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -151,6 +162,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,6 +210,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -262,6 +285,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,16 +321,6 @@ methods:
 
 
       **Note**: This method is intended to set the values of your custom headers.
-
-
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
-      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
-      determined by your organization's administrator. For further information on header limits, see [Exchange Online
-      message
-      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
-      and [Exchange Server message
-      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
-      -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -314,6 +333,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn
+      more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The header quota is based on the total size of headers applied to a message. In Exchange Online, the header
+      limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your
+      organization's administrator. For further information on header limits, see [Exchange Online message
+      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
+      and [Exchange Server message
+      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
+      -->.
 
 
       #### Examples
@@ -377,16 +413,6 @@ methods:
 
 
       **Note**: This method is intended to set the values of your custom headers.
-
-
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
-      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
-      determined by your organization's administrator. For further information on header limits, see [Exchange Online
-      message
-      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
-      and [Exchange Server message
-      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
-      -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -399,6 +425,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn
+      more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The header quota is based on the total size of headers applied to a message. In Exchange Online, the header
+      limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your
+      organization's administrator. For further information on header limits, see [Exchange Online message
+      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
+      and [Exchange Server message
+      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
+      -->.
     isPreview: false
     isDeprecated: false
     syntax:

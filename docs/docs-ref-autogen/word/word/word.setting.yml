@@ -51,7 +51,7 @@ properties:
           .toString();
 
         if (key == "") {
-          console.error("Key shouldn't be empty");
+          console.error("Key shouldn't be empty.");
           return;
         }
 
@@ -64,8 +64,7 @@ properties:
         setting.load();
         await context.sync();
 
-        console.log("Setting added or edited:");
-        console.log(setting);
+        console.log("Setting added or edited:", setting);
       });
 
       ```
@@ -103,7 +102,7 @@ properties:
           .toString();
 
         if (key == "") {
-          console.error("Key shouldn't be empty");
+          console.error("Key shouldn't be empty.");
           return;
         }
 
@@ -116,8 +115,7 @@ properties:
         setting.load();
         await context.sync();
 
-        console.log("Setting added or edited:");
-        console.log(setting);
+        console.log("Setting added or edited:", setting);
       });
 
       ```

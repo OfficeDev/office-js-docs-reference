@@ -191,7 +191,7 @@ properties:
         await context.sync();
 
         if (settings.items.length == 0) {
-          console.log("There are no settings");
+          console.log("There are no settings.");
         } else {
           console.log("All settings:");
           for (let i = 0; i < settings.items.length; i++) {
@@ -293,7 +293,28 @@ methods:
     package: word!
     fullName: close(closeBehavior)
     summary: Closes the current document.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Closes the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.close();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -461,6 +482,67 @@ methods:
       [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
       additional types of content controls may be supported. Therefore, your add-in should request and handle specific
       types of content controls.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property on all checkbox content controls.
+
+      await Word.run(async (context) => {
+        let contentControls = context.document.getContentControls({
+          types: [Word.ContentControlType.checkBox]
+        });
+        contentControls.load("items");
+
+        await context.sync();
+
+        const length = contentControls.items.length;
+        console.log(`Number of checkbox content controls: ${length}`);
+
+        if (length <= 0) {
+          return;
+        }
+
+        const checkboxContentControls = [];
+        for (let i = 0; i < length; i++) {
+          let contentControl = contentControls.items[i];
+          contentControl.load("id,checkboxContentControl/isChecked");
+          checkboxContentControls.push(contentControl);
+        }
+
+        await context.sync();
+
+        console.log("isChecked state before:");
+        const updatedCheckboxContentControls = [];
+        for (let i = 0; i < checkboxContentControls.length; i++) {
+          const currentCheckboxContentControl = checkboxContentControls[i];
+          const isCheckedBefore = currentCheckboxContentControl.checkboxContentControl.isChecked;
+          console.log(`id: ${currentCheckboxContentControl.id} ... isChecked: ${isCheckedBefore}`);
+
+          currentCheckboxContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+          currentCheckboxContentControl.load("id,checkboxContentControl/isChecked");
+          updatedCheckboxContentControls.push(currentCheckboxContentControl);
+        }
+
+        await context.sync();
+
+        console.log("isChecked state after:");
+        for (let i = 0; i < updatedCheckboxContentControls.length; i++) {
+          const currentCheckboxContentControl = updatedCheckboxContentControls[i];
+          console.log(
+            `id: ${currentCheckboxContentControl.id} ... isChecked: ${currentCheckboxContentControl.checkboxContentControl.isChecked}`
+          );
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -639,8 +721,7 @@ methods:
           '{"styles":[{"baseStyle":"Default Paragraph Font","builtIn":false,"inUse":true,"linked":false,"nameLocal":"NewCharStyle","priority":2,"quickStyle":true,"type":"Character","unhideWhenUsed":false,"visibility":false,"paragraphFormat":null,"font":{"name":"DengXian Light","size":16.0,"bold":true,"italic":false,"color":"#F1A983","underline":"None","subscript":false,"superscript":true,"strikeThrough":true,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#FF0000"}},{"baseStyle":"Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewParaStyle","nameLocal":"NewParaStyle","priority":1,"quickStyle":true,"type":"Paragraph","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Centered","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":72.0,"lineSpacing":18.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":72.0,"spaceAfter":30.0,"spaceBefore":30.0,"widowControl":true},"font":{"name":"DengXian","size":14.0,"bold":true,"italic":true,"color":"#8DD873","underline":"Single","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":true,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#00FF00"}},{"baseStyle":"Table Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewTableStyle","nameLocal":"NewTableStyle","priority":100,"type":"Table","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Left","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":0.0,"lineSpacing":12.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":0.0,"spaceAfter":0.0,"spaceBefore":0.0,"widowControl":true},"font":{"name":"DengXian","size":20.0,"bold":false,"italic":true,"color":"#D86DCB","underline":"None","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"tableStyle":{"allowBreakAcrossPage":true,"alignment":"Left","bottomCellMargin":0.0,"leftCellMargin":0.08,"rightCellMargin":0.08,"topCellMargin":0.0,"cellSpacing":0.0},"shading":{"backgroundPatternColor":"#60CAF3"}}]}';
         const styles = context.document.importStylesFromJson(str);
         await context.sync();
-        console.log("Styles imported from JSON:");
-        console.log(styles);
+        console.log("Styles imported from JSON:", styles);
       });
 
       ```
@@ -819,15 +900,20 @@ methods:
     package: word!
     fullName: 'save(saveBehavior, fileName)'
     summary: Saves the document.
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
 
+
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
           
           // Create a proxy object for the document.
@@ -852,6 +938,24 @@ methods:
               console.log('The document has not changed since the last save.');
           }
       });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Saves the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.save();
+        await context.sync();
+      });
+
       ```
     isPreview: false
     isDeprecated: false
@@ -1132,8 +1236,7 @@ events:
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
-          console.log(event.ids);
+          console.log(`${event.eventType} event detected. IDs of content controls that were added:`, event.ids);
         });
       }
 
@@ -1179,8 +1282,7 @@ events:
 
       async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs that were added:`);
-          console.log(event.uniqueLocalIds);
+          console.log(`${event.type} event detected. IDs of paragraphs that were added:`, event.uniqueLocalIds);
         });
       }
 
@@ -1226,8 +1328,7 @@ events:
 
       async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`);
-          console.log(event.uniqueLocalIds);
+          console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`, event.uniqueLocalIds);
         });
       }
 
@@ -1273,8 +1374,7 @@ events:
 
       async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`);
-          console.log(event.uniqueLocalIds);
+          console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`, event.uniqueLocalIds);
         });
       }
 

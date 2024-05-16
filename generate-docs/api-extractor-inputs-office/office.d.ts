@@ -8192,7 +8192,9 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
+         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -8293,7 +8295,9 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
+         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -8466,7 +8470,7 @@ export declare namespace Office {
          * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
          *
-         * - If your add-in uses the unified manifest for Microsoft 365 (developer preview), the URL returned matches the value of the `script` property in the
+         * - If your add-in uses the unified manifest for Microsoft 365, the URL returned matches the value of the `script` property in the
          * "code" object.
          *
          * @beta

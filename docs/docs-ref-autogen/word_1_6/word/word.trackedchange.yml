@@ -99,10 +99,9 @@ methods:
         trackedChange.load();
         await context.sync();
 
-        console.log("First tracked change:");
-        console.log(trackedChange);
+        console.log("First tracked change:", trackedChange);
         trackedChange.accept();
-        console.log("Accepted the first tracked change");
+        console.log("Accepted the first tracked change.");
       });
 
       ```
@@ -318,10 +317,9 @@ methods:
         trackedChange.load();
         await context.sync();
 
-        console.log("First tracked change:");
-        console.log(trackedChange);
+        console.log("First tracked change:, trackedChange);
         trackedChange.reject();
-        console.log("Rejected the first tracked change");
+        console.log("Rejected the first tracked change.");
       });
 
       ```

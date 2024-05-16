@@ -669,8 +669,7 @@ methods:
         if (contentControls.items.length === 0) {
           console.log("There are no content controls in this document.");
         } else {
-          console.log("Control to be deleted:");
-          console.log(contentControls.items[0]);
+          console.log("Control to be deleted:", contentControls.items[0]);
           contentControls.items[0].delete(false);
           await context.sync();
         }
@@ -1493,7 +1492,7 @@ methods:
             await context.sync();
 
             for (let i = 0; i < evenContentControls.items.length; i++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               evenContentControls.items[i].set({
                 color: "red",
                 title: "Odd ContentControl #" + (i + 1),
@@ -1503,7 +1502,7 @@ methods:
             }
 
             for (let j = 0; j < oddContentControls.items.length; j++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               oddContentControls.items[j].set({
                 color: "green",
                 title: "Even ContentControl #" + (j + 1),

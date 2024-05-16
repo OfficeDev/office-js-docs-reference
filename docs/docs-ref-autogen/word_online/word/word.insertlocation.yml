@@ -30,7 +30,7 @@ remarks: >-
 
     await context.sync();
 
-    console.log("Inserted section without an associated page break");
+    console.log("Inserted section without an associated page break.");
   });
 
   ```

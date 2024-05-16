@@ -591,6 +591,12 @@ properties:
       -->**: Message Compose
 
 
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       #### Examples
 
 
