@@ -1,7 +1,7 @@
 ---
 title: Device Permission Service requirement sets
 description: Learn more about the Device Permission Service API requirement sets and the platforms it supports.
-ms.date: 05/13/2024
+ms.date: 05/16/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -16,10 +16,10 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|
-| DevicePermissionService 1.1 | Chromium-based browsers* | Not supported | Not supported | Not supported |
+| DevicePermissionService 1.1 | Chromium-based browsers* | [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | Not supported | Not supported |
 
 > [!NOTE]
-> \* DevicePermissionService 1.1 is only supported in Office on the web running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
+> \* DevicePermissionService 1.1 is supported in Office on the web running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
 
 ## Office Common API requirement sets
 
