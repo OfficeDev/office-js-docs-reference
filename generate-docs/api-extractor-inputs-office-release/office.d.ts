@@ -492,6 +492,43 @@ export declare namespace Office {
         Text,
     }
     /**
+     * Specifies the device capability to which an add-in is requesting access.
+     *
+     * @remarks
+     *
+     * **Applications**: This API is supported by the following Office applications when running in Chromium-based browsers,
+     * such as Microsoft Edge and Google Chrome.
+     *
+     * - Excel on the web
+     *
+     * - Outlook on the web
+     *
+     * - PowerPoint on the web
+     *
+     * - Word on the web
+     *
+     * It's also supported in
+     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets | DevicePermission 1.1}
+     */
+    enum DevicePermissionType {
+        /**
+         * The add-in is requesting access to the user's camera.
+         */
+        camera,
+        /**
+         * The add-in is requesting access to the user's geolocation.
+         *
+         * **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on Windows (preview).
+         */
+        geolocation,
+        /**
+         * The add-in is requesting access to the user's microphone.
+         */
+        microphone
+    }
+    /**
      * Specifies whether the document in the associated application is read-only or read-write.
      *
      * @remarks
@@ -5164,6 +5201,141 @@ export declare namespace Office {
          *                  The `value` property of the result is a string that contains the prefix of the specified namespace.
          */
         getPrefixAsync(ns: string, callback?: (result: AsyncResult<string>) => void): void;
+    }
+    /**
+     * Provides methods for an add-in to request permission from a user to access their device capabilities.
+     * A user's device capabilities include their camera, geolocation, and microphone.
+     *
+     * @remarks
+     *
+     * **Applications**: This API is supported by the following Office applications when running in Chromium-based browsers,
+     * such as Microsoft Edge and Google Chrome.
+     *
+     * - Excel on the web
+     *
+     * - Outlook on the web
+     *
+     * - PowerPoint on the web
+     *
+     * - Word on the web
+     *
+     * It's also supported in
+     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets | DevicePermission 1.1}
+     */
+    export interface DevicePermission {
+        /**
+         * Requests permission from a user to access their device capabilities, such as a camera or microphone.
+         *
+         * All the requested permissions are displayed in a single modal dialog to the user.
+         * The dialog includes options to **Allow**, **Allow once**, or **Deny** the requested permissions.
+         *
+         * This method returns a promise. Use it with Excel, PowerPoint, and Word add-ins.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - This method isn't supported in Outlook add-ins. Use the `requestPermissionsAsync` method instead.
+         *
+         * - If your add-in uses the same code for both Office on the web and Office desktop clients, verify the platform on which the add-in is running before calling `requestPermissions`.
+         * Use {@link https://learn.microsoft.com/javascript/api/office/office.context#office-office-context-platform-member | Office.context.platform} and verify that it returns
+         * `Office.PlatformType.OfficeOnline`. Otherwise, the `requestPermissions` call will return an error.
+         *
+         * - If the user allows access to their camera or microphone, the add-in must be reloaded in the browser for the permissions to take effect.
+         * For example, you can call `window.location.reload()` to reload your add-in.
+         *
+         * - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or until the
+         * cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s access to their camera or microphone,
+         * they must uninstall the add-in or clear their browser cache.
+         *
+         * - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in which the add-in is running is closed.
+         *
+         * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
+         *
+         * @param permissions - An array of device capabilities to which an add-in is requesting access.
+         *     In web versions of Excel, PowerPoint, and Word, add-ins can only request access to a user's camera and microphone.
+         *     Access to a user's geolocation is blocked.
+         */
+        requestPermissions(permissions: Office.DevicePermissionType[]): Promise<boolean>;
+        /**
+         * Requests permission from a user to access their device capabilities, such as a camera, geolocation, or microphone.
+         *
+         * All the requested permissions are displayed in a single modal dialog to the user.
+         * The dialog includes options to **Allow**, **Allow once**, or **Deny** the requested permissions.
+         *
+         * This method accepts a callback function. Use it with Outlook add-ins.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
+         *
+         * - If the user allows access to their camera, geolocation, or microphone, the add-in must be reloaded in the browser for the permissions to take effect.
+         * For example, you can call `window.location.reload()` to reload your add-in.
+         *
+         * - If your add-in uses the same code for both Office on the web and Office desktop clients, verify the platform on which the add-in is running before calling `requestPermissionsAsync`.
+         * Use {@link https://learn.microsoft.com/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-hostname-member | Office.context.mailbox.diagnostics.hostName}
+         * and verify that it returns `OutlookWebApp`. Otherwise, the `requestPermissionsAsync` call will return an error.
+         *
+         * - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or until the
+         * cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s access to their camera or microphone,
+         * they must uninstall the add-in or clear their browser cache.
+         *
+         * - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in which the add-in is running is closed.
+         *
+         * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
+         *
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
+         *
+         * @param permissions - An array of device capabilities to which an add-in is requesting access.
+         *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
+         * @param options - An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult object.
+         *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
+         */
+        requestPermissionsAsync(permissions: Office.DevicePermissionType[], options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;
+        /**
+         * Requests permission from a user to access their device capabilities, such as a camera, geolocation, or microphone.
+         *
+         * All the requested permissions are displayed in a single modal dialog to the user.
+         * The dialog includes options to **Allow**, **Allow once**, or **Deny** the requested permissions.
+         *
+         * This method accepts a callback function. Use it with Outlook add-ins.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
+         *
+         * - If the user allows access to their camera, geolocation, or microphone, the add-in must be reloaded in the browser for the permissions to take effect.
+         * For example, you can call `window.location.reload()` to reload your add-in.
+         *
+         * - If your add-in uses the same code for both Office on the web and Office desktop clients, verify the platform on which the add-in is running before calling `requestPermissionsAsync`.
+         * Use {@link https://learn.microsoft.com/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-hostname-member | Office.context.mailbox.diagnostics.hostName}
+         * and verify that it returns `OutlookWebApp`. Otherwise, the `requestPermissionsAsync` call will return an error.
+         *
+         * - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or until the
+         * cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s access to their camera or microphone,
+         * they must uninstall the add-in or clear their browser cache.
+         *
+         * - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in which the add-in is running is closed.
+         *
+         * - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time the add-in requires access to the user's device capabilities.
+         *
+         * - If your add-in implements {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation},
+         * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
+         *
+         * @param permissions - An array of device capabilities to which an add-in is requesting access.
+         *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult object.
+         *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
+         */
+        requestPermissionsAsync(permissions: Office.DevicePermissionType[], callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;
     }
     /**
      * The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers and closing the dialog.

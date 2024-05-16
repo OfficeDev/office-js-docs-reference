@@ -6766,6 +6766,14 @@ Office.CustomXmlPrefixMappings,"getNamespaceAsync(prefix, options, callback)",Me
 Office.CustomXmlPrefixMappings,"getNamespaceAsync(prefix, callback)",Method,Fine,false
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, options, callback)",Method,Fine,false
 Office.CustomXmlPrefixMappings,"getPrefixAsync(ns, callback)",Method,Fine,false
+Office.DevicePermission,N/A,Class,Good,false
+Office.DevicePermission,"requestPermissions(permissions)",Method,Poor,false
+Office.DevicePermission,"requestPermissionsAsync(permissions, options, callback)",Method,Fine,false
+Office.DevicePermission,"requestPermissionsAsync(permissions, callback)",Method,Fine,false
+Office.DevicePermissionType,N/A,Enum,Good,false
+Office.DevicePermissionType,"camera",EnumField,Fine,false
+Office.DevicePermissionType,"geolocation",EnumField,Fine,false
+Office.DevicePermissionType,"microphone",EnumField,Fine,false
 Office.Dialog,N/A,Class,Good,false
 Office.Dialog,"addEventHandler(eventType, handler)",Method,Fine,true
 Office.Dialog,"close()",Method,Good,true
