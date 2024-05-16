@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -61,6 +61,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>CustomXmlNode.getNodesAsync</li><li>CustomXmlNode.getNodeValueAsync</li><li>CustomXmlNode.getTextAsync</li><li>CustomXmlNode.getXmlAsync</li><li>CustomXmlNode.setNodeValueAsync</li><li>CustomXmlNode.setTextAsync</li><li>CustomXmlNode.setXmlAsync</li><li>CustomXmlPart.addHandlerAsync</li><li>CustomXmlPart.deleteAsync</li><li>CustomXmlPart.getNodesAsync</li><li>CustomXmlPart.getXmlAsync</li><li>CustomXmlPart.removeHandlerAsync</li><li>CustomXmlParts.addAsync</li><li>CustomXmlParts.getByIdAsync</li><li>CustomXmlParts.getByNamespaceAsync</li><li>CustomXmlPrefixMappings.addNamespaceAsync</li><li>CustomXmlPrefixMappings.getNamespaceAsync</li><li>CustomXmlPrefixMappings.getPrefixAsync</li></ul> |
+
+---
+
+### DevicePermissionService
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Device Permission Service requirement sets](device-permission-service-requirement-sets.md). | <ul><li>DevicePermission.requestPermissions</li><li>DevicePermission.requestPermissionsAsync</li></ul> |
 
 ---
 
