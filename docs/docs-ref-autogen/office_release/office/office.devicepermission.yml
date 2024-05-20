@@ -157,9 +157,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult object. If the user grants permission to
-            access the requested device capabilities, `<!-- -->true` is returned in the `<!-- -->asyncResult.value<!--
-            -->\` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the user grants permission to
+            access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
@@ -227,9 +226,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult object. If the user grants permission to
-            access the requested device capabilities, `<!-- -->true` is returned in the `<!-- -->asyncResult.value<!--
-            -->\` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the user grants permission to
+            access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void

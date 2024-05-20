@@ -21,6 +21,9 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,6 +45,16 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+
+
+      - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in
+      Mailbox 1.12.
 
 
       #### Examples

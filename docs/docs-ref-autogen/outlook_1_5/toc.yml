@@ -13,6 +13,8 @@ items:
           - name: MailboxEnums
             uid: ''
             items:
+              - name: AppointmentSensitivityType
+                uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
               - name: AttachmentType
                 uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
               - name: EntityType
@@ -21,6 +23,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
               - name: ItemType
                 uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+              - name: MoveSpamItemTo
+                uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
@@ -29,6 +33,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
               - name: RestVersion
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SendModeOverride
+                uid: 'outlook!Office.MailboxEnums.SendModeOverride:enum'
               - name: SourceProperty
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
           - name: AppointmentCompose
@@ -71,6 +77,8 @@ items:
             uid: 'outlook!Office.NotificationMessageDetails:interface'
           - name: NotificationMessages
             uid: 'outlook!Office.NotificationMessages:interface'
+          - name: OfficeThemeChangedEventArgs
+            uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
           - name: PhoneNumber
             uid: 'outlook!Office.PhoneNumber:interface'
           - name: Recipients
@@ -81,8 +89,12 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
-          - name: SmartAlertsEventCompletedOptions
-            uid: 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
+          - name: Sensitivity
+            uid: 'outlook!Office.Sensitivity:interface'
+          - name: SpamReportingEventArgs
+            uid: 'outlook!Office.SpamReportingEventArgs:interface'
+          - name: SpamReportingEventCompletedOptions
+            uid: 'outlook!Office.SpamReportingEventCompletedOptions:interface'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion
@@ -278,6 +290,8 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+              - name: Urls
+                uid: 'office!Office.Urls:interface'
               - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
           - name: OfficeExtension

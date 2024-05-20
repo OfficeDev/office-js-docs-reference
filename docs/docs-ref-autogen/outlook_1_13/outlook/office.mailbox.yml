@@ -426,7 +426,7 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -510,7 +510,7 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -2207,9 +2207,12 @@ methods:
 
         asyncResult.value.forEach((message) => {
           console.log(`Item ID: ${message.itemId}`);
+          console.log(`Conversation ID: ${message.conversationId}`);
+          console.log(`Internet message ID: ${message.internetMessageId}`);
           console.log(`Subject: ${message.subject}`);
           console.log(`Item type: ${message.itemType}`);
           console.log(`Item mode: ${message.itemMode}`);
+          console.log(`Has attachment: ${message.hasAttachment}`);
         });
       });
 
@@ -2538,7 +2541,7 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -2583,7 +2586,7 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]

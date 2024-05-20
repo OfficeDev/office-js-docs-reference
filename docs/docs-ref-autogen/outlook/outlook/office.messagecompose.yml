@@ -510,7 +510,7 @@ properties:
     fullName: inReplyTo
     summary: Gets the message ID of the original message being replied to by the current message.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -523,16 +523,8 @@ properties:
       -->**: Message Compose
 
 
-      **Important**:
-
-
-      - To preview the `inReplyTo` property, you must install Outlook on Windows Version 2402 (Build 17317.20000) or
-      later. Then, join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join/Windows) and select
-      the **Beta Channel** option to access Office beta builds.
-
-
-      - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the
-      user, such as changing the subject in a reply.
+      **Important**: In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes
+      made by the user, such as changing the subject in a reply.
 
 
       #### Examples
@@ -541,7 +533,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-in-reply-to.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-in-reply-to.yaml
 
 
       // This snippet gets the ID of the message being replied to by the current message (PR_IN_REPLY_TO_ID).
@@ -557,7 +549,7 @@ properties:
       }
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inReplyTo: string;'
@@ -1882,7 +1874,7 @@ methods:
 
 
       **Tip**: Use the
-      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
+      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
       method instead of the `close` method if you want your add-in to:
 
 
@@ -1922,7 +1914,7 @@ methods:
       Closes the current message being composed with the option to discard unsaved changes. The message being composed
       can be a new message, reply, or an existing draft.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1935,9 +1927,6 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.
-
-
       **Errors**:
 
 
@@ -1947,7 +1936,7 @@ methods:
 
       - `The operation is not supported`<!-- -->: The `closeAsync` method attempts to close a reply in the Reading Pane
       or an existing draft and the `discardItem` property isn't defined or is set to `false`<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1986,7 +1975,7 @@ methods:
       unsaved changes, a save dialog appears prompting the user to save a draft, discard changes, or cancel the
       operation.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1997,9 +1986,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
-
-
-      **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.
 
 
       **Errors**:
@@ -2018,7 +2004,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/close-async.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/25-item-save-and-close/close-async.yaml
 
 
       // This snippet closes the current message being composed and discards any unsaved changes when the optional
@@ -2038,7 +2024,7 @@ methods:
           }
         });
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'closeAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
@@ -2568,7 +2554,7 @@ methods:
     fullName: 'getConversationIndexAsync(options, callback)'
     summary: Gets the Base64-encoded position of the current message in a conversation thread.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2581,15 +2567,9 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: To preview the `getConversationIndexAsync` method, you must install Outlook on Windows Version
-      2402 (Build 17317.20000) or later. Then, join the [Microsoft 365 Insider
-      program](https://insider.microsoft365.com/join/Windows) and select the **Beta Channel** option to access
-      Office beta builds.
-
-
       **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2616,7 +2596,7 @@ methods:
     fullName: getConversationIndexAsync(callback)
     summary: Gets the Base64-encoded position of the current message in a conversation thread.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2629,12 +2609,6 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: To preview the `getConversationIndexAsync` method, you must install Outlook on Windows Version
-      2402 (Build 17317.20000) or later. Then, join the [Microsoft 365 Insider
-      program](https://insider.microsoft365.com/join/Windows) and select the **Beta Channel** option to access
-      Office beta builds.
-
-
       **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
 
@@ -2645,7 +2619,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-conversation-index.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-index.yaml
 
 
       // This snippet returns the Base64-encoded position of the current message in a conversation thread
@@ -2668,7 +2642,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getConversationIndexAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -2785,7 +2759,7 @@ methods:
     fullName: 'getItemClassAsync(options, callback)'
     summary: Gets the Exchange Web Services item class of the selected message.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2801,11 +2775,6 @@ methods:
       **Important**:
 
 
-      To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or
-      later. Then, join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join/Windows) and select
-      the **Beta Channel** option to access Office beta builds.
-
-
       The following table lists the default message classes.
 
 
@@ -2815,7 +2784,7 @@ methods:
       <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr>
       <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2842,7 +2811,7 @@ methods:
     fullName: getItemClassAsync(callback)
     summary: Gets the Exchange Web Services item class of the selected message.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2856,11 +2825,6 @@ methods:
 
 
       **Important**:
-
-
-      To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or
-      later. Then, join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join/Windows) and select
-      the **Beta Channel** option to access Office beta builds.
 
 
       The following table lists the default message classes.
@@ -2880,10 +2844,10 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-item-class-async.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-async.yaml
 
 
-      // This snippet returns the Exchange Web Services item class property (PR_MESSAGE_CLASS) of the current mail item.
+      // This snippet returns the Exchange Web Services item class property (PR_MESSAGE_CLASS) of the current message.
 
       // The API call is only supported on a message being composed.
 
@@ -2893,11 +2857,11 @@ methods:
           return;
         }
 
-        console.log("Item class of the current mail item: " + asyncResult.value);
+        console.log("Item class of the current message: " + asyncResult.value);
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemClassAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'

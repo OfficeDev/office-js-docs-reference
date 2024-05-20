@@ -72,7 +72,7 @@ properties:
 
 
       await Word.run(async (context) => {
-          const builtInProperties = context.document.properties;
+          const builtInProperties : Word.DocumentProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
 
           await context.sync();

@@ -541,6 +541,8 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+              - name: Urls
+                uid: 'office!Office.Urls:interface'
               - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
           - name: OfficeExtension

@@ -9,7 +9,7 @@ summary: >-
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
   treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
-  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item)
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item)
   page.
 
 
@@ -504,6 +504,57 @@ properties:
       content: 'from: From;'
       return:
         type: '<xref uid="outlook!Office.From:interface" />'
+  - name: inReplyTo
+    uid: 'outlook!Office.MessageCompose#inReplyTo:member'
+    package: outlook!
+    fullName: inReplyTo
+    summary: Gets the message ID of the original message being replied to by the current message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**: In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes
+      made by the user, such as changing the subject in a reply.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-in-reply-to.yaml
+
+
+      // This snippet gets the ID of the message being replied to by the current message (PR_IN_REPLY_TO_ID).
+
+      // The API call is supported on messages being composed and isn't supported on read items.
+
+      const inReplyTo = Office.context.mailbox.item.inReplyTo;
+
+      if (inReplyTo) {
+        console.log("ID of the message being replied to: " + inReplyTo);
+      } else {
+        console.log("No InReplyTo property available for this message");
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inReplyTo: string;'
+      return:
+        type: string
   - name: internetHeaders
     uid: 'outlook!Office.MessageCompose#internetHeaders:member'
     package: outlook!
@@ -1503,7 +1554,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -1575,7 +1626,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -1822,6 +1873,20 @@ methods:
       item was last saved.
 
 
+      **Tip**: Use the
+      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
+      method instead of the `close` method if you want your add-in to:
+
+
+      - Automatically discard a message being composed without prompting the user with the save dialog.
+
+
+      - Determine when a user cancels the save item dialog on a message being composed.
+
+
+      - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
+
+
       #### Examples
 
 
@@ -1838,6 +1903,137 @@ methods:
     isDeprecated: false
     syntax:
       content: 'close(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'closeAsync(options, callback)'
+    uid: 'outlook!Office.MessageCompose#closeAsync:member(1)'
+    package: outlook!
+    fullName: 'closeAsync(options, callback)'
+    summary: >-
+      Closes the current message being composed with the option to discard unsaved changes. The message being composed
+      can be a new message, reply, or an existing draft.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Errors**:
+
+
+      - `The operation was cancelled by the user`<!-- -->: The user selects **Cancel** from the save dialog and the
+      `discardItem` property isn't defined or is set to `false`<!-- -->.
+
+
+      - `The operation is not supported`<!-- -->: The `closeAsync` method attempts to close a reply in the Reading Pane
+      or an existing draft and the `discardItem` property isn't defined or is set to `false`<!-- -->.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        closeAsync(options: Office.AsyncContextOptions & { discardItem: boolean }, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function. `discardItem`<!-- -->: If `true`<!--
+            -->, the current message being composed is closed and unsaved changes are discarded. When the parameter
+            isn't declared or is set to `false`<!-- -->, a save dialog appears prompting the user to save a draft,
+            discard changes, or cancel the operation. This behavior occurs for new messages and replies popped out from
+            the Reading Pane. If you want to close a reply in the Reading Pane or an existing draft, you must set
+            `discardItem` to `true`<!-- -->. Otherwise, the call will return an error. For more information on the
+            error, see the Remarks section.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { discardItem: boolean }'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: closeAsync(callback)
+    uid: 'outlook!Office.MessageCompose#closeAsync:member(2)'
+    package: outlook!
+    fullName: closeAsync(callback)
+    summary: >-
+      Closes the current new message being composed.
+
+
+      The behavior on a new message being composed depends on whether the message contains any unsaved changes. If no
+      changes have been made, the message is closed without a save dialog. On the other hand, if the message contains
+      unsaved changes, a save dialog appears prompting the user to save a draft, discard changes, or cancel the
+      operation.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Errors**:
+
+
+      - `The operation was cancelled by the user`<!-- -->: The user selects **Cancel** from the save dialog.
+
+
+      - `The operation is not supported`<!-- -->: The `closeAsync` method attempts to close a reply in the Reading Pane
+      or an existing draft.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/25-item-save-and-close/close-async.yaml
+
+
+      // This snippet closes the current message being composed and discards any unsaved changes when the optional
+      property, discardItem, is set to true.
+
+      // The API call works on a new message being composed, a reply, or an existing draft.
+
+      // When discardItem is set to false or isn't defined on a new message with unsaved changes, the user is prompted
+      to save a draft, discard the changes, or cancel the close operation.
+
+      Office.context.mailbox.item.closeAsync(
+        { discardItem: true },
+        (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+            return;
+          }
+        });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'closeAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2352,6 +2548,114 @@ methods:
       return:
         type: void
         description: An object with `ComposeType` and `CoercionType` enum values for the message item.
+  - name: 'getConversationIndexAsync(options, callback)'
+    uid: 'outlook!Office.MessageCompose#getConversationIndexAsync:member(1)'
+    package: outlook!
+    fullName: 'getConversationIndexAsync(options, callback)'
+    summary: Gets the Base64-encoded position of the current message in a conversation thread.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      contents to provide context for the current message being composed.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getConversationIndexAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded position of
+            the current message in a conversation is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getConversationIndexAsync(callback)
+    uid: 'outlook!Office.MessageCompose#getConversationIndexAsync:member(2)'
+    package: outlook!
+    fullName: getConversationIndexAsync(callback)
+    summary: Gets the Base64-encoded position of the current message in a conversation thread.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      contents to provide context for the current message being composed.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-index.yaml
+
+
+      // This snippet returns the Base64-encoded position of the current message in a conversation thread
+      (PR_CONVERSATION_INDEX).
+
+      // The API call is supported on a message being composed and isn't supported on read items or appointments.
+
+      Office.context.mailbox.item.getConversationIndexAsync((result) => {
+         if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(result.error.message);
+            return;
+         }
+         
+         const conversationIndex = result.value;
+         if (conversationIndex) {
+            console.log("Position in the conversation thread: " + conversationIndex);
+         } else {
+            console.log("The current message doesn't belong to a conversation thread.");
+         }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConversationIndexAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded position of
+            the current message in a conversation is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
   - name: 'getInitializationContextAsync(options, callback)'
     uid: 'outlook!Office.MessageCompose#getInitializationContextAsync:member(1)'
     package: outlook!
@@ -2445,6 +2749,128 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
             (or an empty string if there's no initialization context) in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'getItemClassAsync(options, callback)'
+    uid: 'outlook!Office.MessageCompose#getItemClassAsync:member(1)'
+    package: outlook!
+    fullName: 'getItemClassAsync(options, callback)'
+    summary: Gets the Exchange Web Services item class of the selected message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      The following table lists the default message classes.
+
+
+      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr> <td>IPM.Note</td> <td>New messages and message
+      replies</td> </tr> <tr> <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getItemClassAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>)
+        => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The message class is returned in
+            the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getItemClassAsync(callback)
+    uid: 'outlook!Office.MessageCompose#getItemClassAsync:member(2)'
+    package: outlook!
+    fullName: getItemClassAsync(callback)
+    summary: Gets the Exchange Web Services item class of the selected message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      The following table lists the default message classes.
+
+
+      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr> <td>IPM.Note</td> <td>New messages and message
+      replies</td> </tr> <tr> <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-async.yaml
+
+
+      // This snippet returns the Exchange Web Services item class property (PR_MESSAGE_CLASS) of the current message.
+
+      // The API call is only supported on a message being composed.
+
+      Office.context.mailbox.item.getItemClassAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+
+        console.log("Item class of the current message: " + asyncResult.value);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemClassAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The message class is returned in
+            the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -3331,7 +3757,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -3378,7 +3804,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]

@@ -752,6 +752,71 @@ properties:
       content: 'requiredAttendees: Recipients;'
       return:
         type: '<xref uid="outlook!Office.Recipients:interface" />'
+  - name: sensitivity
+    uid: 'outlook!Office.AppointmentCompose#sensitivity:member'
+    package: outlook!
+    fullName: sensitivity
+    summary: >-
+      Gets or sets the [sensitivity level](xref:outlook!Office.Sensitivity:interface) of an appointment. For information
+      about sensitivity levels, see [Mark your email as Normal, Personal, Private, or
+      Confidential](https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Organizer
+
+
+      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
+      and Private sensitivity levels.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
+
+
+      Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Sensitivity: " + asyncResult.value);
+        } else {
+          console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+
+      ...
+
+
+      Office.context.mailbox.item.sensitivity.setAsync(
+        Office.MailboxEnums.AppointmentSensitivityType.Private,
+        function callback(asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+          } else {
+            console.log("Successfully set appointment sensitivity.");
+          }
+        }
+      );
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sensitivity: Sensitivity;'
+      return:
+        type: '<xref uid="outlook!Office.Sensitivity:interface" />'
   - name: seriesId
     uid: 'outlook!Office.AppointmentCompose#seriesId:member'
     package: outlook!

@@ -82,7 +82,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-set-isalldayevent.yaml
 
 
       Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
@@ -136,7 +136,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-set-isalldayevent.yaml
 
 
       Office.context.mailbox.item.isAllDayEvent.setAsync(true, function(asyncResult) {
