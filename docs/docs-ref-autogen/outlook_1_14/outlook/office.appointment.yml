@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Office.Appointment
+uid: 'outlook!Office.Appointment:interface'
+package: outlook!
+fullName: Office.Appointment
+summary: >-
+  The subclass of [Item](xref:outlook!Office.Item:interface) dealing with appointments.
+
+
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item)
+  page.
+
+
+  Child interfaces:
+
+
+  - [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)
+
+
+  - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="outlook!Office.Item:interface" />'

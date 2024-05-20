@@ -1045,7 +1045,7 @@ properties:
     fullName: sensitivity
     summary: Provides the sensitivity value of the appointment.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1058,8 +1058,8 @@ properties:
       -->**: Appointment Attendee
 
 
-      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
-      Normal and Private sensitivity levels.
+      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
+      and Private sensitivity levels.
 
 
       #### Examples
@@ -1072,7 +1072,7 @@ properties:
       console.log("Sensitivity: " + sensitivity);
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivity: MailboxEnums.AppointmentSensitivityType;'
@@ -2333,8 +2333,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
@@ -2510,8 +2510,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2635,8 +2635,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2755,8 +2755,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -2871,8 +2871,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook

@@ -1,7 +1,7 @@
 ---
 title: Office namespace - preview requirement set
 description: Office namespace members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 08/02/2023
+ms.date: 05/20/2024
 ms.localizationpriority: medium
 ---
 
@@ -110,12 +110,12 @@ Specifies the event associated with an event handler.
 |`EnhancedLocationsChanged`| String | The location of the selected appointment has changed. | 1.8 |
 |`InfobarClicked`| String | An action on a notification message is selected. | 1.10 |
 |`ItemChanged`| String | A different Outlook item is selected for viewing while the task pane is pinned. | 1.5 |
-|`OfficeThemeChanged`| String | The Office theme on the mailbox has changed. | Preview |
+|`OfficeThemeChanged`| String | The Office theme on the mailbox has changed. | 1.14 |
 |`RecipientsChanged`| String | The recipient list of the selected item or appointment location has changed. | 1.7 |
 |`RecurrenceChanged`| String | The recurrence pattern of the selected series has changed. | 1.7 |
 |`SelectedItemsChanged`| String | One or more messages are selected or deselected. | 1.13 |
 |`SensitivityLabelChanged`| String | The sensitivity label of a message or appointment has changed. | 1.13 |
-|`SpamReporting`| String | An unsolicited message is reported in Outlook. | Preview |
+|`SpamReporting`| String | An unsolicited message has been reported in Outlook. | 1.14 |
 
 ##### Requirements
 

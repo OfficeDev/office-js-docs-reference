@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/08/2024
+ms.date: 05/20/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -20,7 +20,7 @@ To use preview APIs:
 
 - You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
-The preview requirement set includes all of the features of [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md).
+The preview requirement set includes all of the features of [requirement set 1.14](../requirement-set-1.14/outlook-requirement-set-1.14.md).
 
 > [!IMPORTANT]
 > This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
@@ -63,179 +63,11 @@ Added a new object that represents the all-day event property of an appointment 
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-#### [Office.Sensitivity](/javascript/api/outlook/office.sensitivity?view=outlook-js-preview&preserve-view=true)
-
-Added a new object that represents the sensitivity level of an appointment in compose mode.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
 Added a new property that represents if an appointment is an all-day event.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.context.mailbox.item.sensitivity](office.context.mailbox.item.md#properties)
-
-Added a new property that represents the sensitivity of an appointment.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-#### [Office.MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true)
-
-Added a new enum `AppointmentSensitivityType` that represents the sensitivity options available on an appointment.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-<br>
-
----
-
----
-
-### Additional message members
-
-#### [Office.context.mailbox.item.inReplyTo](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-inreplyto-member)
-
-Added a property to get the message ID of the original message being replied to by the current message.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.context.mailbox.item.getConversationIndexAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getconversationindexasync-member(1))
-
-Added a method to get the Base64-encoded position of the current message in a conversation thread.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.context.mailbox.item.getItemClassAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getitemclassasync-member(1))
-
-Added a method to get the Exchange Web Services (EWS) item class of a message in compose mode.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Close and discard a message in compose
-
-#### [Office.context.mailbox.item.closeAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
-
-Added method to close a current message being composed with the option to discard unsaved changes.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Get the URL of the JavaScript runtime of an add-in
-
-#### [Office.context.urls.javascriptRuntimeUrl](/javascript/api/office/office.urls?view=common-js-preview&preserve-view=true#office-office-urls-javascriptruntimeurl-member)
-
-Added property to get the URL of the JavaScript runtime of an add-in.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Integrated spam reporting
-
-#### [ReportPhishingCommandSurface extension point](../../../manifest/extensionpoint.md#reportphishingcommandsurface-preview)
-
-Added an extension point to activate your spam-reporting add-in in the Outlook ribbon and prevent it from appearing at the end of the ribbon or in the overflow section.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-#### [ReportPhishingCustomization element](../../../manifest/reportphishingcustomization.md)
-
-Added a manifest element to configure the ribbon button and preprocessing dialog of a spam-reporting add-in.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-#### [Office.context.mailbox.item.getAsFileAsync](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getasfileasync-member(1))
-
-Added a method to get the Base64 encoding of a message.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-#### [Office.SpamReportingEventCompletedOptions](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true)
-
-Created options to customize a post-processing dialog or configure a spam-reporting add-in to perform additional operations on a reported message, such as deleting it from the inbox.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-#### [Office.MailboxEnums.MoveSpamItemTo](/javascript/api/outlook/office.mailboxenums.movespamitemto?view=outlook-js-preview&preserve-view=true)
-
-Added a new enum to specify the folder to which a reported message is moved once it's processed by a spam-reporting add-in.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern), new Outlook on Windows (preview)
-
-To learn more about how to implement the integrated spam-reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
-
-<br>
-
----
-
----
-
-### Item multi-select: Additional message properties
-
-#### [Office.SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails?view=outlook-js-preview&preserve-view=true)
-
-The ability to get the properties of selected messages in Outlook using [Office.context.mailbox.getSelectedItemsAsync](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getselecteditemsasync-member(1)) was introduced in [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md). Additional properties, such as `conversationId`, `internetMessageId`, and `hasAttachment`, are now available in preview.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Office theme
-
-#### [Office.context.officeTheme](/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-officetheme-member)
-
-Added ability to get Office theme.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.EventType.OfficeThemeChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
-
-Added `OfficeThemeChanged` event to `Mailbox`.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Smart Alerts: Customize the Don't Send option and override the send mode option at runtime
-
-#### [Office.SmartAlertsEventCompletedOptions](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
-
-Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog and override the send mode option at runtime.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride?view=outlook-js-preview&preserve-view=true)
-
-Added an enum to specify the send mode option that overrides the option set in the manifest at runtime.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-To learn how to implement these features, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 <br>
 

@@ -1,0 +1,157 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.CategoryColor
+uid: 'outlook!Office.MailboxEnums.CategoryColor:enum'
+package: outlook!
+fullName: Office.MailboxEnums.CategoryColor
+summary: Specifies the category color.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  **Important**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on
+  each preset apply to Outlook on the web, on Windows, and on Mac (starting in Version 16.78).
+
+
+  Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors. This has now been fixed starting
+  in Version 16.78. If you've recently updated your Outlook client, you need to adjust the category colors in your
+  add-in to match the updated preset values.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
+
+
+  const masterCategoriesToAdd = [
+    {
+      displayName: "TestCategory",
+      color: Office.MailboxEnums.CategoryColor.Preset0
+    }
+  ];
+
+
+  Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function(asyncResult) {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+      console.log("Successfully added categories to master list");
+    } else {
+      console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: None
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.None:member'
+    package: outlook!
+    summary: Default color or no color mapped.
+  - name: Preset0
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset0:member'
+    package: outlook!
+    summary: Red
+  - name: Preset1
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset1:member'
+    package: outlook!
+    summary: Orange
+  - name: Preset2
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset2:member'
+    package: outlook!
+    summary: Brown
+  - name: Preset3
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset3:member'
+    package: outlook!
+    summary: Yellow
+  - name: Preset4
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset4:member'
+    package: outlook!
+    summary: Green
+  - name: Preset5
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset5:member'
+    package: outlook!
+    summary: Teal
+  - name: Preset6
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset6:member'
+    package: outlook!
+    summary: Olive
+  - name: Preset7
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset7:member'
+    package: outlook!
+    summary: Blue
+  - name: Preset8
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
+    package: outlook!
+    summary: Purple
+  - name: Preset9
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
+    package: outlook!
+    summary: Cranberry
+  - name: Preset10
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset10:member'
+    package: outlook!
+    summary: Steel
+  - name: Preset11
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset11:member'
+    package: outlook!
+    summary: DarkSteel
+  - name: Preset12
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset12:member'
+    package: outlook!
+    summary: Gray
+  - name: Preset13
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset13:member'
+    package: outlook!
+    summary: DarkGray
+  - name: Preset14
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset14:member'
+    package: outlook!
+    summary: Black
+  - name: Preset15
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset15:member'
+    package: outlook!
+    summary: DarkRed
+  - name: Preset16
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset16:member'
+    package: outlook!
+    summary: DarkOrange
+  - name: Preset17
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset17:member'
+    package: outlook!
+    summary: DarkBrown
+  - name: Preset18
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset18:member'
+    package: outlook!
+    summary: DarkYellow
+  - name: Preset19
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset19:member'
+    package: outlook!
+    summary: DarkGreen
+  - name: Preset20
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset20:member'
+    package: outlook!
+    summary: DarkTeal
+  - name: Preset21
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset21:member'
+    package: outlook!
+    summary: DarkOlive
+  - name: Preset22
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset22:member'
+    package: outlook!
+    summary: DarkBlue
+  - name: Preset23
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset23:member'
+    package: outlook!
+    summary: DarkPurple
+  - name: Preset24
+    uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset24:member'
+    package: outlook!
+    summary: DarkCranberry

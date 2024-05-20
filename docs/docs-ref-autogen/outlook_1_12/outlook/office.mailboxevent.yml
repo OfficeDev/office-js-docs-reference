@@ -6,7 +6,8 @@ fullName: Office.MailboxEvent
 summary: >-
   The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, including [Smart
-  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->. It
+  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->, or the
+  [integrated spam-reporting feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->. It
   allows the add-in to signify to the Outlook client that it has completed processing an event.
 remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -20,6 +21,9 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,7 +32,7 @@ methods:
     uid: 'outlook!Office.MailboxEvent#completed:member(1)'
     package: outlook!
     fullName: completed(options)
-    summary: Indicates that the event-based add-in has completed processing an event.
+    summary: Indicates that the event-based or spam-reporting add-in has completed processing an event.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -41,6 +45,16 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+
+
+      - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in
+      Mailbox 1.12.
 
 
       #### Examples
@@ -80,8 +94,8 @@ methods:
       parameters:
         - id: options
           description: >-
-            Optional. An object that specifies the behavior of an event-based add-in when it completes processing an
-            event.
+            Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes
+            processing an event.
           type: '<xref uid="outlook!Office.SmartAlertsEventCompletedOptions:interface" />'
       return:
         type: void

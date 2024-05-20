@@ -1838,8 +1838,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
@@ -1918,8 +1918,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2043,8 +2043,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2135,8 +2135,8 @@ methods:
 
       **Note**: This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview)<!-- -->.
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
@@ -2172,8 +2172,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -2288,8 +2288,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft 365
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook

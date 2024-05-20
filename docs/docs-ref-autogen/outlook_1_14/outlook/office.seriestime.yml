@@ -1,0 +1,599 @@
+### YamlMime:TSType
+name: Office.SeriesTime
+uid: 'outlook!Office.SeriesTime:interface'
+package: outlook!
+fullName: Office.SeriesTime
+summary: >-
+  The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and
+  get the dates and times of meeting requests in a recurring series.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: getDuration()
+    uid: 'outlook!Office.SeriesTime#getDuration:member(1)'
+    package: outlook!
+    fullName: getDuration()
+    summary: Gets the duration in minutes of a usual instance in a recurring appointment series.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the duration of a usual instance in a recurring appointment series.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const duration = recurrence.seriesTime.getDuration();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDuration(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getEndDate()
+    uid: 'outlook!Office.SeriesTime#getEndDate:member(1)'
+    package: outlook!
+    fullName: getEndDate()
+    summary: >-
+      Gets the end date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the end date of a recurring appointment series.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getEndDate();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndDate(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getEndTime()
+    uid: 'outlook!Office.SeriesTime#getEndTime:member(1)'
+    package: outlook!
+    fullName: getEndTime()
+    summary: >-
+      Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
+      zone that the user or add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the end time of a usual instance in a recurring appointment series.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getEndTime();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndTime(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getStartDate()
+    uid: 'outlook!Office.SeriesTime#getStartDate:member(1)'
+    package: outlook!
+    fullName: getStartDate()
+    summary: >-
+      Gets the start date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the start date of a recurring appointment series.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getStartDate();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStartDate(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getStartTime()
+    uid: 'outlook!Office.SeriesTime#getStartTime:member(1)'
+    package: outlook!
+    fullName: getStartTime()
+    summary: >-
+      Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
+      user/add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the start time of a usual
+
+      // instance in a recurring appointment series.
+
+      const seriesTimeObject = new SeriesTime();
+
+      seriesTimeObject.setDuration(120);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStartTime(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setDuration(minutes)
+    uid: 'outlook!Office.SeriesTime#setDuration:member(1)'
+    package: outlook!
+    fullName: setDuration(minutes)
+    summary: >-
+      Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
+      recurrence pattern.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the duration of each appointment
+
+      // in a recurring series to 2 hours.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getStartTime();
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setDuration(minutes: number): void;'
+      parameters:
+        - id: minutes
+          description: The length of the appointment in minutes.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'setEndDate(year, month, day)'
+    uid: 'outlook!Office.SeriesTime#setEndDate:member(1)'
+    package: outlook!
+    fullName: 'setEndDate(year, month, day)'
+    summary: Sets the end date of a recurring appointment series.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the end date of a recurring
+
+      // appointment series to November 2, 2017.
+
+      const seriesTimeObject = new SeriesTime();
+
+      seriesTimeObject.setEndDate(2017, 10, 2);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEndDate(year: number, month: number, day: number): void;'
+      parameters:
+        - id: year
+          description: The year value of the end date.
+          type: number
+        - id: month
+          description: >-
+            The month value of the end date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the
+            12th month.
+          type: number
+        - id: day
+          description: The day value of the end date.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setEndDate(date)
+    uid: 'outlook!Office.SeriesTime#setEndDate:member(2)'
+    package: outlook!
+    fullName: setEndDate(date)
+    summary: Sets the end date of a recurring appointment series.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the end date of a
+
+      // recurring appointment series to November 2, 2017
+
+      // using ISO 8601 date standard.
+
+      const seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setEndDate("2017-11-02");
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEndDate(date: string): void;'
+      parameters:
+        - id: date
+          description: >-
+            End date of the recurring appointment series represented in the [ISO
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'setStartDate(year, month, day)'
+    uid: 'outlook!Office.SeriesTime#setStartDate:member(1)'
+    package: outlook!
+    fullName: 'setStartDate(year, month, day)'
+    summary: Sets the start date of a recurring appointment series.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the start date of a recurring
+
+      // appointment series to November 2, 2017.
+
+      const seriesTimeObject = new SeriesTime();
+
+      seriesTimeObject.setStartDate(2017, 10, 2);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStartDate(year:number, month:number, day:number): void;'
+      parameters:
+        - id: year
+          description: The year value of the start date.
+          type: number
+        - id: month
+          description: >-
+            The month value of the start date. Valid range is 0-11 where 0 represents the 1st month and 11 represents
+            the 12th month.
+          type: number
+        - id: day
+          description: The day value of the start date.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setStartDate(date)
+    uid: 'outlook!Office.SeriesTime#setStartDate:member(2)'
+    package: outlook!
+    fullName: setStartDate(date)
+    summary: Sets the start date of a recurring appointment series.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the start date of a recurring
+
+      // appointment series to November 2, 2017
+
+      // using ISO 8601 date standard.
+
+      const seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setStartDate("2017-11-02");
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStartDate(date:string): void;'
+      parameters:
+        - id: date
+          description: >-
+            Start date of the recurring appointment series represented in the [ISO
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'setStartTime(hours, minutes)'
+    uid: 'outlook!Office.SeriesTime#setStartTime:member(1)'
+    package: outlook!
+    fullName: 'setStartTime(hours, minutes)'
+    summary: >-
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the start time of each instance
+
+      // of a recurring appointment series to 1:30 PM.
+
+      const seriesTimeObject = new SeriesTime();
+
+      seriesTimeObject.setStartTime(13, 30);
+
+
+      // This example sets the start time of each instance
+
+      // of a recurring appointment series to 11:30 AM.
+
+      seriesTimeObject.setStartTime(11, 30);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStartTime(hours: number, minutes: number): void;'
+      parameters:
+        - id: hours
+          description: 'The hour value of the start time. Valid range: 0-24.'
+          type: number
+        - id: minutes
+          description: 'The minute value of the start time. Valid range: 0-59.'
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setStartTime(time)
+    uid: 'outlook!Office.SeriesTime#setStartTime:member(2)'
+    package: outlook!
+    fullName: setStartTime(time)
+    summary: >-
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example sets the start time of each instance
+
+      // of a recurring appointment series to 11:30 PM.
+
+      const seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setStartTime("T23:30:00");
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStartTime(time: string): void;'
+      parameters:
+        - id: time
+          description: 'Start time of all instances represented by standard datetime string format: "THH:mm:ss:mmm".'
+          type: string
+      return:
+        type: void
+        description: ''
