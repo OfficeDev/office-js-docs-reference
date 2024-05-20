@@ -72,6 +72,8 @@ items:
                     uid: 'office!Office.CoercionType:enum'
                   - name: CustomXMLNodeType
                     uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DevicePermissionType
+                    uid: 'office!Office.DevicePermissionType:enum'
                   - name: DocumentMode
                     uid: 'office!Office.DocumentMode:enum'
                   - name: EventType
@@ -156,6 +158,8 @@ items:
                 uid: 'office!Office.CustomXmlParts:interface'
               - name: CustomXmlPrefixMappings
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
+              - name: DevicePermission
+                uid: 'office!Office.DevicePermission:interface'
               - name: Dialog
                 uid: 'office!Office.Dialog:interface'
               - name: DialogMessageOptions
@@ -896,6 +900,9 @@ items:
             href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
             href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Device Permission Service requirement sets
+            href: >-
+              ../../requirement-sets/common/device-permission-service-requirement-sets.md
           - name: Dialog API requirement sets
             href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets

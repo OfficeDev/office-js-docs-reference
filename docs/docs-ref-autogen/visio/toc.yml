@@ -722,6 +722,9 @@ items:
             href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
             href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Device Permission Service requirement sets
+            href: >-
+              ../../requirement-sets/common/device-permission-service-requirement-sets.md
           - name: Dialog API requirement sets
             href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets
