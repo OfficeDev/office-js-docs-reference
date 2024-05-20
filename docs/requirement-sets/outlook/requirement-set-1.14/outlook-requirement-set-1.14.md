@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.14
 description: Requirement set 1.14 for Outlook add-in API.
-ms.date: 04/29/2024
+ms.date: 05/20/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---

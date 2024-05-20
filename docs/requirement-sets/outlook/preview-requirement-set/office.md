@@ -1,7 +1,7 @@
 ---
 title: Office namespace - preview requirement set
 description: Office namespace members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 04/29/2024
+ms.date: 05/20/2024
 ms.localizationpriority: medium
 ---
 

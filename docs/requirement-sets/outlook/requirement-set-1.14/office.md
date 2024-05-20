@@ -1,7 +1,7 @@
 ---
 title: Office namespace - requirement set 1.14
 description: Office namespace members available for Outlook add-ins using Mailbox API requirement set 1.14.
-ms.date: 04/29/2024
+ms.date: 05/20/2024
 ms.localizationpriority: medium
 ---
 
