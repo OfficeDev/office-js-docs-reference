@@ -1045,7 +1045,7 @@ properties:
     fullName: sensitivity
     summary: Provides the sensitivity value of the appointment.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1058,8 +1058,8 @@ properties:
       -->**: Appointment Attendee
 
 
-      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
-      Normal and Private sensitivity levels.
+      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
+      and Private sensitivity levels.
 
 
       #### Examples
@@ -1072,7 +1072,7 @@ properties:
       console.log("Sensitivity: " + sensitivity);
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivity: MailboxEnums.AppointmentSensitivityType;'

@@ -21,43 +21,29 @@ export declare namespace Office {
          * Specifies the {@link Office.Sensitivity | sensitivity level} of an appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
-         * @beta
          */
         enum AppointmentSensitivityType {
             /**
              * The item needs no special treatment.
-             *
-             * @remarks
-             * [Api set: Mailbox preview]
              */
             Normal = "normal",
             /**
              * Treat the item as personal.
              *
              * **Important**: The Personal sensitivity level is only supported in Outlook on Windows.
-             *
-             * @remarks
-             * [Api set: Mailbox preview]
              */
             Personal = "personal",
             /**
              * Treat the item as private.
-             *
-             * @remarks
-             * [Api set: Mailbox preview]
              */
             Private = "private",
             /**
              * Treat the item as confidential.
              *
              * **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
-             *
-             * @remarks
-             * [Api set: Mailbox preview]
              */
             Confidential = "confidential"
         }
@@ -602,22 +588,20 @@ export declare namespace Office {
          * Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting add-in.
          *
          * To learn more about the integrated spam-reporting feature, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
          * **Important**: This enum can only be used to assign values to the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-moveitemto-member | moveItemTo}
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member | moveItemTo}
          * property of the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | event.completed}
          * method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property,
          * you must assign it different string values. For a list of supported string values, see
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member |
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member |
          * Office.SpamReportingEventCompletedOptions.postProcessingAction}.
-         *
-         * @beta
          */
         enum MoveSpamItemTo {
             /**
@@ -1345,18 +1329,14 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Handle OnMessageSend and OnAppointmentSend events in your Outlook add-in with Smart Alerts}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * @beta
          */
         enum SendModeOverride {
             /**
              * Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of the event-based add-in.
              * To learn more, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user | **prompt user** send mode option}.
-             *
-             * @beta
              */
             PromptUser = "promptUser"
         }
@@ -1612,15 +1592,13 @@ export declare namespace Office {
          * {@link https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1 | Mark your email as Normal, Personal, Private, or Confidential}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         *
-         * @beta
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          */
         sensitivity: Sensitivity;
         /**
@@ -3090,18 +3068,15 @@ export declare namespace Office {
          * Provides the sensitivity value of the appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
-         *
-         * @beta
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          */
         sensitivity: MailboxEnums.AppointmentSensitivityType;
-
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -7098,6 +7073,8 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      */
     export interface MailboxEvent {
         /**
@@ -7109,6 +7086,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+         *
+         * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
          * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
          */
@@ -7440,20 +7423,13 @@ export declare namespace Office {
          * Gets the message ID of the original message being replied to by the current message.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**:
-         *
-         * - To preview the `inReplyTo` property, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
-         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
-         *
-         * - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the user, such as changing the subject in a reply.
-         *
-         * @beta
+         * **Important**: In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the user, such as changing the subject in a reply.
          */
         inReplyTo: string;
         /**
@@ -7867,78 +7843,69 @@ export declare namespace Office {
          * 
          * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save,
          * discard, or cancel even if no changes have occurred since the item was last saved.
-         * 
-         * **Tip**: Use the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1) | closeAsync}
-         * method instead of the `close` method if you want your add-in to:
-         * 
-         * - Automatically discard a message being composed without prompting the user with the save dialog.
-         * 
-         * - Determine when a user cancels the save item dialog on a message being composed.
-         * 
-         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
          *
+         * **Tip**: Use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1) | closeAsync}
+         * method instead of the `close` method if you want your add-in to:
+         *
+         * - Automatically discard a message being composed without prompting the user with the save dialog.
+         *
+         * - Determine when a user cancels the save item dialog on a message being composed.
+         *
+         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
          */
         close(): void;
         /**
          * Closes the current message being composed with the option to discard unsaved changes.
          * The message being composed can be a new message, reply, or an existing draft.
-         * 
+         *
          * @remarks
-         * [Api set: Mailbox preview]
-         * 
+         * [Api set: Mailbox 1.14]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         * 
-         * **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.
-         * 
+         *
          * **Errors**:
-         * 
+         *
          * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog and the `discardItem` property isn't defined or is set to `false`.
-         * 
+         *
          * - `The operation is not supported`: The `closeAsync` method attempts to close a reply in the Reading Pane or an existing draft and the `discardItem` property isn't defined or
          * is set to `false`.
-         * 
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `discardItem`: If `true`, the current message being composed is closed and unsaved changes are discarded. When the parameter isn't declared or is
          *        set to `false`, a save dialog appears prompting the user to save a draft, discard changes, or cancel the operation. This behavior occurs for new messages and replies
          *        popped out from the Reading Pane. If you want to close a reply in the Reading Pane or an existing draft, you must set `discardItem` to `true`. Otherwise, the call will
          *        return an error. For more information on the error, see the Remarks section.
-         * 
+         *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         * 
-         * @beta
          */
         closeAsync(options: CommonAPI.AsyncContextOptions & { discardItem: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Closes the current new message being composed.
-         * 
+         *
          * The behavior on a new message being composed depends on whether the message contains any unsaved changes. If no changes have been made, the message is
          * closed without a save dialog. On the other hand, if the message contains unsaved changes, a save dialog appears prompting the user to save a draft,
          * discard changes, or cancel the operation.
          *
          * @remarks
-         * [Api set: Mailbox preview]
-         * 
+         * [Api set: Mailbox 1.14]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         * 
-         * **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.
          *
          * **Errors**:
-         * 
+         *
          * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog.
-         * 
+         *
          * - `The operation is not supported`: The `closeAsync` method attempts to close a reply in the Reading Pane or an existing draft.
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         * 
-         * @beta
          */
         closeAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -8143,14 +8110,11 @@ export declare namespace Office {
          * Gets the Base64-encoded position of the current message in a conversation thread.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * **Important**: To preview the `getConversationIndexAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
-         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
          *
          * **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its contents
          * to provide context for the current message being composed.
@@ -8160,22 +8124,17 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The Base64-encoded position of the current message in a conversation is returned in the `asyncResult.value`
          *                 property.
-         *
-         * @beta
          */
         getConversationIndexAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets the Base64-encoded position of the current message in a conversation thread.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * **Important**: To preview the `getConversationIndexAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
-         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
          *
          * **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its contents
          * to provide context for the current message being composed.
@@ -8183,8 +8142,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The Base64-encoded position of the current message in a conversation is returned in the `asyncResult.value`
          *                 property.
-         *
-         * @beta
          */
         getConversationIndexAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -8225,16 +8182,13 @@ export declare namespace Office {
          * Gets the Exchange Web Services item class of the selected message.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * **Important**:
-         *
-         * To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
-         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
          *
          * The following table lists the default message classes.
          *
@@ -8273,24 +8227,19 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                   `Office.AsyncResult` object. The message class is returned in the `asyncResult.value` property.
-         *
-         * @beta
          */
         getItemClassAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets the Exchange Web Services item class of the selected message.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * **Important**:
-         *
-         * To preview the `getItemClassAsync` method, you must install Outlook on Windows Version 2402 (Build 17317.20000) or later. Then, join the
-         * {@link https://insider.microsoft365.com/join/Windows | Microsoft 365 Insider program} and select the **Beta Channel** option to access Office beta builds.
          *
          * The following table lists the default message classes.
          *
@@ -8327,8 +8276,6 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                   `Office.AsyncResult` object. The message class is returned in the `asyncResult.value` property.
-         *
-         * @beta
          */
         getItemClassAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -9202,7 +9149,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         to: EmailAddressDetails[];
-
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -9450,7 +9396,7 @@ export declare namespace Office {
          * Gets the current message in EML format encoded in Base64.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
@@ -9461,15 +9407,13 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an
          *          `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are
          *          returned in the `asyncResult.error` property.
-         *
-         * @beta
          */
         getAsFileAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets the current message in EML format encoded in Base64.
          * 
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
@@ -9478,8 +9422,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an
          *          `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are
          *          returned in the `asyncResult.error` property.
-         *
-         * @beta
          */
         getAsFileAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -10331,27 +10273,21 @@ export declare namespace Office {
      * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
      *
      * @remarks
-     * [Api set: Mailbox preview]
-     *
-     * @beta
+     * [Api set: Mailbox 1.14]
      */
     export interface OfficeThemeChangedEventArgs {
         /**
          * Gets the updated Office theme.
          *
          * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * @beta
+         * [Api set: Mailbox 1.14]
          */
         officeTheme: CommonAPI.OfficeTheme;
         /**
          * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * @beta
+         * [Api set: Mailbox 1.14]
          */
         type: "officeThemeChanged";
     }
@@ -11198,46 +11134,77 @@ export declare namespace Office {
          * The identifier of the message conversation that contains the message that's currently selected.
          *
          * @remarks
-         * This property is currently in preview in Outlook on Windows. To test it,
-         * you must install Version 2305 (Build 16501.20210) or later.
+         * [Api set: Mailbox 1.14]
          *
-         * @beta
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         conversationId: string;
         /**
          * Returns `true` if the message that's currently selected contains an attachment.
          *
          * @remarks
-         * This property is currently in preview in Outlook on Windows. To test it,
-         * you must install Version 2305 (Build 16501.20210) or later.
+         * [Api set: Mailbox 1.14]
          *
-         * @beta
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         hasAttachment: boolean;
         /**
          * The internet message identifier of the message that's currently selected.
          *
          * @remarks
-         * This property is currently in preview in Outlook on Windows. To test it,
-         * you must install Version 2305 (Build 16501.20210) or later.
+         * [Api set: Mailbox 1.14]
          *
-         * @beta
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         internetMessageId: string;
         /**
          * The Exchange Web Services (EWS) item identifier of the message that's currently selected.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.13]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         itemId: string;
         /**
          * The Outlook mode (`Read` or `Compose`) of the message that's currently selected.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.13]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         itemMode: string;
         /**
          * The type of the item that's currently selected. `Message` is the only supported type at this time.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.13]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         itemType: MailboxEnums.ItemType | string;
         /**
          * The description that appears in the subject field of the message that's currently selected.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.13]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
          */
         subject: string;
     }
@@ -11246,26 +11213,24 @@ export declare namespace Office {
      * {@link https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1 | Mark your email as Normal, Personal, Private, or Confidential}.
      *
      * @remarks
-     * [Api set: Mailbox preview]
+     * [Api set: Mailbox 1.14]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-     *
-     * @beta
      */
     export interface Sensitivity {
         /**
          * Gets the sensitivity level of an appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          * If you call `getAsync` on an appointment that has a Confidential or Personal sensitivity level from these clients, the Normal sensitivity level
          * is returned in the `asyncResult.value` property.
          *
@@ -11273,41 +11238,37 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The sensitivity level of the appointment is returned in the `asyncResult.value` property.
-         *
-         * @beta
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void): void;
         /**
          * Gets the sensitivity level of an appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          * If you call `getAsync` on an appointment that has a Confidential or Personal sensitivity level from these clients, the Normal sensitivity level
          * is returned in the `asyncResult.value` property.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The sensitivity level of the appointment is returned in the `asyncResult.value` property.
-         *
-         * @beta
          */
         getAsync(callback: (asyncResult: CommonAPI.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void): void;
         /**
          * Sets the sensitivity level of an appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          *
          * **Errors**:
          *
@@ -11318,21 +11279,19 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Sets the sensitivity level of an appointment.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support Normal and Private sensitivity levels.
+         * **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal and Private sensitivity levels.
          *
          * **Errors**:
          *
@@ -11341,8 +11300,6 @@ export declare namespace Office {
          * @param sensitivity - The sensitivity level as an enum or string.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -11981,10 +11938,18 @@ export declare namespace Office {
     /**
      * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
      * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.12]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
      */
     export interface SmartAlertsEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
          * this value indicates if the handled event should continue execution or be canceled.
          * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item.
          * For a complete sample, see the
@@ -12000,33 +11965,31 @@ export declare namespace Office {
          */
         allowEvent?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters or less.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional-preview | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * @beta
          */
         cancelLabel?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies the ID of the task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional-preview | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
@@ -12043,17 +12006,15 @@ export declare namespace Office {
          *
          * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
-         *
-         * @beta
          */
         commandId?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
          * this property specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
@@ -12070,12 +12031,10 @@ export declare namespace Office {
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
-         *
-         * @beta
          */
         contextData?: any;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler and set its `allowEvent` property
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property
          * to `false`, this property sets the error message displayed to the user. For an example, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
          *
@@ -12089,17 +12048,17 @@ export declare namespace Office {
          */
         errorMessage?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal completion of an event handler
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler
          * and set its `allowEvent` property to `false`, this property overrides the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
          * specified in the manifest at runtime.
          *
          * For an example, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional-preview | Smart Alerts walkthrough}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional | Smart Alerts walkthrough}.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
@@ -12107,8 +12066,6 @@ export declare namespace Office {
          *
          * **Important**: Currently, `sendModeOverride` can only be set to the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user | prompt user} option.
-         *
-         * @beta
          */
         sendModeOverride?: MailboxEnums.SendModeOverride | string;
     }
@@ -12116,76 +12073,66 @@ export declare namespace Office {
      * Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
      *
      * @remarks
-     * [Api set: Mailbox preview]
-     *
-     * @beta
+     * [Api set: Mailbox 1.14]
      */
     export interface SpamReportingEventArgs {
         /**
          * The text provided by the user in the preprocessing dialog of a spam-reporting add-in.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * To add an optional text box to the preprocessing dialog of your spam-reporting add-in, you must configure the
-         * {@link https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog?view=outlook-js-preview&preserve-view=true#child-elements | FreeTextLabel}
+         * {@link https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog#child-elements | FreeTextLabel}
          * element in the manifest of your add-in.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
-         *
-         * @beta
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         freeText: string;
         /**
          * Returns `true` for each reporting option selected by the user in the preprocessing dialog of a spam-reporting add-in.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * The order of the booleans in the array corresponds to the order of the reporting options specified in the
-         * {@link https://learn.microsoft.com/javascript/api/manifest/reportingoptions?view=outlook-js-preview&preserve-view=true | ReportingOptions}
+         * {@link https://learn.microsoft.com/javascript/api/manifest/reportingoptions | ReportingOptions}
          * element of your add-in's manifest.
          *
          * To learn more about how to develop a spam-reporting add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in (preview)}.
-         *
-         * @beta
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          */
         options: boolean[];
         /**
          * The type of event that was raised. For details, see {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * @beta
+         * [Api set: Mailbox 1.14]
          */
         type: "SpamReporting";
     }
     /**
      * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting add-in}
      * after it completes processing a
-     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true#fields | SpamReporting} event.
+     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | SpamReporting} event.
      *
      * @remarks
      *
-     * [Api set: Mailbox preview]
+     * [Api set: Mailbox 1.14]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-     *
-     * @beta
      */
     export interface SpamReportingEventCompletedOptions {
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies the Outlook mailbox folder to which the message will be moved.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -12196,19 +12143,17 @@ export declare namespace Office {
          * - If the specified folder doesn't exist yet, it will be created before the message is moved.
          *
          * - If the `postProcessingAction` property is set to `moveToCustomFolder`, the `folderName` property must be specified.
-         * Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`,
+         * Otherwise, the reported message is moved to the **Junk Email** folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`,
          * the `folderName` property is ignored.
-         *
-         * @beta
          */
         folderName?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -12223,28 +12168,24 @@ export declare namespace Office {
          * - If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`, you must specify the name of the folder to which
          * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to
          * `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the **Junk Email** folder.
-         *
-         * @beta
          */
         moveItemTo?: MailboxEnums.MoveSpamItemTo;
         /**
          * When set to `true`, deletes a reported message if an error occurs while the message is processed.
-         * If this property is set to `false` or isn't specified in the {@link Office.MailboxEvent.completed | completed method},
+         * If this property is set to `false` or isn't specified in the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method},
          * the reported message remains in its current mailbox folder.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-         *
-         * @beta
          */
         onErrorDeleteItem?: boolean;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property specifies whether the message is moved to a different folder in the mailbox. The following post-processing actions are available.
          *
          * - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
@@ -12257,7 +12198,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -12273,18 +12214,16 @@ export declare namespace Office {
          * - If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which
          * the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to
          * `moveToSpamFolder` and move the reported message to the **Junk Email** folder.
-         *
-         * @beta
          */
         postProcessingAction?: string;
         /**
-         * When you use the {@link Office.MailboxEvent.completed | completed method} to signal that a reported message has finished processing,
+         * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal that a reported message has finished processing,
          * this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property must contain a title and a description.
          * If this property isn't specified, a dialog isn't shown to the user once their reported message is processed.
          *
          * @remarks
          *
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
          *
@@ -12294,9 +12233,7 @@ export declare namespace Office {
          * reported message. This applies even if `showPostProcessingDialog` is configured. However, depending on how you configured the `moveItemTo` property in the
          * `event.completed` call, a notification is shown to signal when the reported message is deleted or moved to another folder in the mailbox. To learn more, see
          * the "Review feature behavior and limitations" section of
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in (preview)}.
-         *
-         * @beta
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#review-feature-behavior-and-limitations | Implement an integrated spam-reporting add-in}.
          */
         showPostProcessingDialog?: object;
     }

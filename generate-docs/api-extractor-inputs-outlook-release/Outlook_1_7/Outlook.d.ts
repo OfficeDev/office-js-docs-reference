@@ -8,6 +8,7 @@ export declare namespace Office {
         
         
         
+        
         /**
          * Specifies an attachment's type.
          *
@@ -249,6 +250,7 @@ export declare namespace Office {
              */
             Dec = "dec"
         }
+        
         /**
          * Represents the current view of Outlook on the web.
          */
@@ -949,6 +951,7 @@ export declare namespace Office {
              */
             Beta = "beta"
         }
+        
         /**
          * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
          *
@@ -1161,6 +1164,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          *
@@ -2194,7 +2198,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         subject: string;
-
+        
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -4568,6 +4572,7 @@ export declare namespace Office {
          */
         from: From;
         
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -4845,8 +4850,24 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save,
          * discard, or cancel even if no changes have occurred since the item was last saved.
+         *
+         * **Tip**: Use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1) | closeAsync}
+         * method instead of the `close` method if you want your add-in to:
+         *
+         * - Automatically discard a message being composed without prompting the user with the save dialog.
+         *
+         * - Determine when a user cancels the save item dialog on a message being composed.
+         *
+         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
          */
         close(): void;
+        
+        
+        
+        
+        
+        
         
         
         
@@ -5539,7 +5560,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         to: EmailAddressDetails[];
-
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -5637,6 +5657,8 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
+        
         
         
         
@@ -6216,6 +6238,7 @@ export declare namespace Office {
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment.
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
@@ -7049,6 +7072,7 @@ export declare namespace Office {
     
     
     
+    
     /**
      * The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times
      * of meeting requests in a recurring series.
@@ -7224,14 +7248,9 @@ export declare namespace Office {
     }
     
     
-    /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
-     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-     */
-    export interface SmartAlertsEventCompletedOptions {
-        
-        
-    }
+    
+    
+    
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *

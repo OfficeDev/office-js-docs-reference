@@ -1701,6 +1701,20 @@ methods:
       item was last saved.
 
 
+      **Tip**: Use the
+      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
+      method instead of the `close` method if you want your add-in to:
+
+
+      - Automatically discard a message being composed without prompting the user with the save dialog.
+
+
+      - Determine when a user cancels the save item dialog on a message being composed.
+
+
+      - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
+
+
       #### Examples
 
 

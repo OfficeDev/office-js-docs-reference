@@ -8,6 +8,7 @@ export declare namespace Office {
         
         
         
+        
         /**
          * Specifies an attachment's type.
          *
@@ -120,6 +121,7 @@ export declare namespace Office {
         }
         
         
+        
         /**
          * Represents the current view of Outlook on the web.
          */
@@ -216,6 +218,7 @@ export declare namespace Office {
              */
             Declined = "declined"
         }
+        
         
         
         
@@ -343,6 +346,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         
         
         /**
@@ -1033,7 +1037,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         subject: string;
-
+        
         
         
         /**
@@ -2745,6 +2749,7 @@ export declare namespace Office {
         
         
         
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -2934,6 +2939,12 @@ export declare namespace Office {
          *                 the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
+        
+        
+        
+        
         
         
         
@@ -3366,7 +3377,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         to: EmailAddressDetails[];
-
         
         
         /**
@@ -3424,6 +3434,8 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
+        
         
         
         
@@ -3673,6 +3685,7 @@ export declare namespace Office {
         
         
     }
+    
     
     
     
@@ -4131,14 +4144,10 @@ export declare namespace Office {
     
     
     
-    /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
-     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-     */
-    export interface SmartAlertsEventCompletedOptions {
-        
-        
-    }
+    
+    
+    
+    
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *

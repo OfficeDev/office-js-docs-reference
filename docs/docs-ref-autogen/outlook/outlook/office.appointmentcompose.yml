@@ -402,7 +402,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-set-isalldayevent.yaml
 
 
       Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
@@ -1022,7 +1022,7 @@ properties:
       about sensitivity levels, see [Mark your email as Normal, Personal, Private, or
       Confidential](https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1035,8 +1035,8 @@ properties:
       -->**: Appointment Organizer
 
 
-      **Important**: Outlook on the web, Outlook on Mac, and the new Outlook on Windows (preview) only support
-      Normal and Private sensitivity levels.
+      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
+      and Private sensitivity levels.
 
 
       #### Examples
@@ -1045,7 +1045,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
 
 
       Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
@@ -1061,7 +1061,7 @@ properties:
 
 
       Office.context.mailbox.item.sensitivity.setAsync(
-        Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+        Office.MailboxEnums.AppointmentSensitivityType.Private,
         function callback(asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
             console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
@@ -1072,7 +1072,7 @@ properties:
       );
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivity: Sensitivity;'

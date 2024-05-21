@@ -8714,7 +8714,7 @@ Office.MailboxEnums.ActionType,"ShowTaskPane",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,"Normal",EnumField,Fine,false
 Office.MailboxEnums.AppointmentSensitivityType,"Personal",EnumField,Fine,false
-Office.MailboxEnums.AppointmentSensitivityType,"Private",EnumField,Fine,false
+Office.MailboxEnums.AppointmentSensitivityType,"Private",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,"Confidential",EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,N/A,Enum,Good,true
 Office.MailboxEnums.AttachmentContentFormat,"Base64",EnumField,Fine,false
@@ -9214,10 +9214,10 @@ Office.SelectedItemDetails,N/A,Class,Good,true
 Office.SelectedItemDetails,"conversationId",Property,Good,false
 Office.SelectedItemDetails,"hasAttachment",Property,Good,false
 Office.SelectedItemDetails,"internetMessageId",Property,Good,false
-Office.SelectedItemDetails,"itemId",Property,Fine,false
-Office.SelectedItemDetails,"itemMode",Property,Fine,false
+Office.SelectedItemDetails,"itemId",Property,Good,false
+Office.SelectedItemDetails,"itemMode",Property,Good,false
 Office.SelectedItemDetails,"itemType",Property,Good,false
-Office.SelectedItemDetails,"subject",Property,Fine,false
+Office.SelectedItemDetails,"subject",Property,Good,false
 Office.Sensitivity,N/A,Class,Good,false
 Office.Sensitivity,"getAsync(options, callback)",Method,Poor,false
 Office.Sensitivity,"getAsync(callback)",Method,Poor,true
@@ -9268,7 +9268,7 @@ Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
-Office.SmartAlertsEventCompletedOptions,N/A,Class,Fine,true
+Office.SmartAlertsEventCompletedOptions,N/A,Class,Good,true
 Office.SmartAlertsEventCompletedOptions,"allowEvent",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"cancelLabel",Property,Good,false
 Office.SmartAlertsEventCompletedOptions,"commandId",Property,Good,false
@@ -10279,7 +10279,7 @@ Word.BodyType,"noteItem",EnumField,Fine,false
 Word.BodyType,"section",EnumField,Fine,false
 Word.BodyType,"tableCell",EnumField,Fine,false
 Word.BodyType,"unknown",EnumField,Fine,false
-Word.Border,N/A,Class,Good,false
+Word.Border,N/A,Class,Good,true
 Word.Border,"color",Property,Good,false
 Word.Border,"context",Property,Good,false
 Word.Border,"location",Property,Good,false
@@ -10895,7 +10895,7 @@ Word.CustomXmlPartCollection,N/A,Class,Good,false
 Word.CustomXmlPartCollection,"context",Property,Good,false
 Word.CustomXmlPartCollection,"items",Property,Fine,false
 Word.CustomXmlPartCollection,"add(xml)",Method,Poor,true
-Word.CustomXmlPartCollection,"getByNamespace(namespaceUri)",Method,Poor,false
+Word.CustomXmlPartCollection,"getByNamespace(namespaceUri)",Method,Poor,true
 Word.CustomXmlPartCollection,"getCount()",Method,Poor,false
 Word.CustomXmlPartCollection,"getItem(id)",Method,Poor,true
 Word.CustomXmlPartCollection,"getItemOrNullObject(id)",Method,Poor,false
@@ -10905,7 +10905,7 @@ Word.CustomXmlPartCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CustomXmlPartCollection,"toJSON()",Method,Poor,false
 Word.CustomXmlPartCollection,"track()",Method,Poor,false
 Word.CustomXmlPartCollection,"untrack()",Method,Poor,false
-Word.CustomXmlPartScopedCollection,N/A,Class,Good,false
+Word.CustomXmlPartScopedCollection,N/A,Class,Good,true
 Word.CustomXmlPartScopedCollection,"context",Property,Good,false
 Word.CustomXmlPartScopedCollection,"items",Property,Fine,false
 Word.CustomXmlPartScopedCollection,"getCount()",Method,Poor,false
@@ -10993,7 +10993,7 @@ Word.DocumentCreated,"set(properties)",Method,Poor,false
 Word.DocumentCreated,"toJSON()",Method,Poor,false
 Word.DocumentCreated,"track()",Method,Poor,false
 Word.DocumentCreated,"untrack()",Method,Poor,false
-Word.DocumentProperties,N/A,Class,Good,false
+Word.DocumentProperties,N/A,Class,Good,true
 Word.DocumentProperties,"applicationName",Property,Good,false
 Word.DocumentProperties,"author",Property,Good,false
 Word.DocumentProperties,"category",Property,Good,false
@@ -11759,7 +11759,7 @@ Word.Range,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Met
 Word.Range,"toJSON()",Method,Poor,false
 Word.Range,"track()",Method,Poor,false
 Word.Range,"untrack()",Method,Poor,false
-Word.RangeCollection,N/A,Class,Good,false
+Word.RangeCollection,N/A,Class,Good,true
 Word.RangeCollection,"context",Property,Good,false
 Word.RangeCollection,"items",Property,Fine,false
 Word.RangeCollection,"getFirst()",Method,Poor,false

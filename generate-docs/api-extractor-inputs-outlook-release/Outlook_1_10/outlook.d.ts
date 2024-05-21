@@ -17,6 +17,7 @@ export declare namespace Office {
              */
             ShowTaskPane = "showTaskPane"
         }
+        
         /**
          * Specifies the formatting that applies to an attachment's content.
          *
@@ -555,6 +556,7 @@ export declare namespace Office {
              */
             Dec = "dec"
         }
+        
         /**
          * Represents the current view of Outlook on the web.
          */
@@ -1255,6 +1257,7 @@ export declare namespace Office {
              */
             Beta = "beta"
         }
+        
         /**
          * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
          *
@@ -1488,6 +1491,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          *
@@ -2908,7 +2912,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         subject: string;
-
+        
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -6487,7 +6491,8 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
+     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -6496,10 +6501,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based add-in has completed processing an event.
+         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -6508,9 +6515,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
+         * **Important**:
+         *
+         * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+         *
+         * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
+         *
+         * 
          */
-        completed(options?: SmartAlertsEventCompletedOptions): void;
+        completed(): void;
     }
     /**
      * Represents the categories master list on the mailbox.
@@ -6822,6 +6835,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          */
         from: From;
+        
         /**
          * Gets or sets the custom internet headers of a message.
          *
@@ -7206,8 +7220,20 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save,
          * discard, or cancel even if no changes have occurred since the item was last saved.
+         *
+         * **Tip**: Use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1) | closeAsync}
+         * method instead of the `close` method if you want your add-in to:
+         *
+         * - Automatically discard a message being composed without prompting the user with the save dialog.
+         *
+         * - Determine when a user cancels the save item dialog on a message being composed.
+         *
+         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
          */
         close(): void;
+        
+        
         /**
          * Disables the Outlook client signature.
          *
@@ -7406,6 +7432,8 @@ export declare namespace Office {
          * An object with `ComposeType` and `CoercionType` enum values for the message item.
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        
+        
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -7440,6 +7468,8 @@ export declare namespace Office {
          *                 in the `asyncResult.value` property.
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -8298,7 +8328,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         to: EmailAddressDetails[];
-
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -8542,6 +8571,8 @@ export declare namespace Office {
          *                If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
          */
         getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
@@ -9297,6 +9328,7 @@ export declare namespace Office {
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment.
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
@@ -10130,6 +10162,7 @@ export declare namespace Office {
     
     
     
+    
     /**
      * The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times
      * of meeting requests in a recurring series.
@@ -10343,14 +10376,9 @@ export declare namespace Office {
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
-    /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
-     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-     */
-    export interface SmartAlertsEventCompletedOptions {
-        
-        
-    }
+    
+    
+    
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
