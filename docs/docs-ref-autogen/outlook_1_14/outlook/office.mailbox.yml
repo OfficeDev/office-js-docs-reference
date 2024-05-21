@@ -2207,9 +2207,12 @@ methods:
 
         asyncResult.value.forEach((message) => {
           console.log(`Item ID: ${message.itemId}`);
+          console.log(`Conversation ID: ${message.conversationId}`);
+          console.log(`Internet message ID: ${message.internetMessageId}`);
           console.log(`Subject: ${message.subject}`);
           console.log(`Item type: ${message.itemType}`);
           console.log(`Item mode: ${message.itemMode}`);
+          console.log(`Has attachment: ${message.hasAttachment}`);
         });
       });
 

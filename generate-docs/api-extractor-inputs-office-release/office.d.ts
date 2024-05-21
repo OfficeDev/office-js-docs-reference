@@ -5342,7 +5342,7 @@ export declare namespace Office {
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
          * @param options - An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult object.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.
          *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
          */
         requestPermissionsAsync(permissions: Office.DevicePermissionType[], options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;
@@ -5380,7 +5380,7 @@ export declare namespace Office {
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
          *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult object.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.
          *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
          */
         requestPermissionsAsync(permissions: Office.DevicePermissionType[], callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;
@@ -8371,7 +8371,9 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
+         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -8472,7 +8474,9 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
+         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.

@@ -204,7 +204,10 @@ methods:
             await context.sync();
           } else {
             const readableXml = addLineBreaksToXML(xmlBlob.value);
-            console.error(`This is strange. The XML part with the id ${xmlPartIDSetting.value} wasn't deleted:`, readableXml);
+            console.error(
+              `This is strange. The XML part with the id ${xmlPartIDSetting.value} wasn't deleted:`,
+              readableXml
+            );
           }
         } else {
           console.warn("Didn't find custom XML part to delete.");
