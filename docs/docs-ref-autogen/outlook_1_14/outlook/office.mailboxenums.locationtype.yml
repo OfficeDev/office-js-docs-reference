@@ -1,0 +1,64 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.LocationType
+uid: 'outlook!Office.MailboxEnums.LocationType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.LocationType
+summary: Specifies an appointment location's type.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+  const locations = [
+    {
+      id: "Contoso",
+      type: Office.MailboxEnums.LocationType.Custom
+    },
+    {
+      id: "room500@test.com",
+      type: Office.MailboxEnums.LocationType.Room
+    }
+  ];
+
+  Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result) => {
+    if (result.status === Office.AsyncResultStatus.Succeeded) {
+      console.log(`Successfully added locations ${JSON.stringify(locations)}`);
+    } else {
+      console.error(`Failed to add locations. Error message: ${result.error.message}`);
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Custom
+    uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
+    package: outlook!
+    summary: >-
+      A custom location. Custom locations don't have an SMTP address.
+
+
+      **Note**: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      added as appointment locations aren't returned by the
+      [EnhancedLocation.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
+      method.
+    value: '"custom"'
+  - name: Room
+    uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
+    package: outlook!
+    summary: A conference room or similar resource that has an SMTP address.
+    value: '"room"'

@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Office.ItemCompose
+uid: 'outlook!Office.ItemCompose:interface'
+package: outlook!
+fullName: Office.ItemCompose
+summary: >-
+  The compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
+
+
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item)
+  page.
+
+
+  Child interfaces:
+
+
+  - [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)
+
+
+  - [MessageCompose](xref:outlook!Office.MessageCompose:interface)
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="outlook!Office.Item:interface" />'

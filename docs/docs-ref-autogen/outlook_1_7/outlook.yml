@@ -46,8 +46,6 @@ interfaces:
   - 'outlook!Office.RoamingSettings:interface'
   - 'outlook!Office.Sensitivity:interface'
   - 'outlook!Office.SeriesTime:interface'
-  - 'outlook!Office.SpamReportingEventArgs:interface'
-  - 'outlook!Office.SpamReportingEventCompletedOptions:interface'
   - 'outlook!Office.Subject:interface'
   - 'outlook!Office.TaskSuggestion:interface'
   - 'outlook!Office.Time:interface'

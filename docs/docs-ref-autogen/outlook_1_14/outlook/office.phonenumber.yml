@@ -1,0 +1,115 @@
+### YamlMime:TSType
+name: Office.PhoneNumber
+uid: 'outlook!Office.PhoneNumber:interface'
+package: outlook!
+fullName: Office.PhoneNumber
+summary: >-
+  Represents a phone number identified in an item. Read mode only.
+
+
+  An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the
+  `phoneNumbers` property of the `Entities` object that is returned when you call the `getEntities` method on the
+  selected item.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Read
+
+
+  **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this
+  feature will start in May and continue until the end of June. After June, contextual add-ins will no longer be able to
+  detect entities in mail items to perform tasks on them. The following APIs will also be retired.
+
+
+  - `Office.context.mailbox.item.getEntities` - `Office.context.mailbox.item.getEntitiesByType` -
+  `Office.context.mailbox.item.getFilteredEntitiesByName` - `Office.context.mailbox.item.getSelectedEntities`
+
+
+  To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins
+  are retired.
+
+
+  - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
+  being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
+  transition to the alternative implementation to activate the **Join Meeting** button.
+
+
+  - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
+  recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on
+  how to implement these rules, see [Use regular expression activation rules to show an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
+  -->.
+
+
+  For more information, see [Retirement of entity-based contextual Outlook
+  add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
+  -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const item = Office.context.mailbox.item;
+
+  // Get an array of strings that represent phone numbers in the current item's body.
+
+  const phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+
+  console.log("There are " + phoneNumbers.length + " phone numbers.")
+
+  phoneNumbers.forEach(function (phoneNumber) {
+      console.log("Phone number: " + JSON.stringify(phoneNumber.phoneString));
+      console.log("Type: " + JSON.stringify(phoneNumber.type));
+      console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: originalPhoneString
+    uid: 'outlook!Office.PhoneNumber#originalPhoneString:member'
+    package: outlook!
+    fullName: originalPhoneString
+    summary: Gets the text that was identified in an item as a phone number.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'originalPhoneString: string;'
+      return:
+        type: string
+  - name: phoneString
+    uid: 'outlook!Office.PhoneNumber#phoneString:member'
+    package: outlook!
+    fullName: phoneString
+    summary: >-
+      Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
+      characters like parentheses and hyphens, if they exist in the original item.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneString: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'outlook!Office.PhoneNumber#type:member'
+    package: outlook!
+    fullName: type
+    summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string

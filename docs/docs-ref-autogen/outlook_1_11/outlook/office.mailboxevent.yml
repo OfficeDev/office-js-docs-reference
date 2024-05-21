@@ -28,10 +28,10 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'completed(, SpamReportingEventCompletedOptions)'
+  - name: completed()
     uid: 'outlook!Office.MailboxEvent#completed:member(1)'
     package: outlook!
-    fullName: 'completed(, SpamReportingEventCompletedOptions)'
+    fullName: completed()
     summary: Indicates that the event-based or spam-reporting add-in has completed processing an event.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -90,14 +90,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'completed( | SpamReportingEventCompletedOptions): void;'
-      parameters:
-        - id: ''
-          description: ''
-          type: ''
-        - id: SpamReportingEventCompletedOptions
-          description: ''
-          type: ''
+      content: 'completed(): void;'
       return:
         type: void
         description: ''

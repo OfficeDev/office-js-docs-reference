@@ -165,8 +165,8 @@ properties:
       [Control](https://learn.microsoft.com/javascript/api/manifest/control) element representing the task pane.
 
 
-      - **Unified manifest for Microsoft 365**: The "id" property of the task pane command in the
-      "extensions.ribbons.tabs.groups.controls" array.
+      - **Unified manifest for Microsoft 365 (preview)**: The "id" property of the task pane command in the
+      "controls" array.
 
 
       If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the

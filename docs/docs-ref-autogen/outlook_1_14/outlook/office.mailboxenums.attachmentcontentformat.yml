@@ -1,0 +1,74 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.AttachmentContentFormat
+uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
+package: outlook!
+fullName: Office.MailboxEnums.AttachmentContentFormat
+summary: Specifies the formatting that applies to an attachment's content.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
+
+
+  function handleAttachmentsCallback(result) {
+    // Identifies whether the attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
+    switch (result.value.format) {
+      case Office.MailboxEnums.AttachmentContentFormat.Base64:
+        // Handle file attachment.
+        console.log("Attachment is a Base64-encoded string.");
+        break;
+      case Office.MailboxEnums.AttachmentContentFormat.Eml:
+        // Handle email item attachment.
+        console.log("Attachment is a message.");
+        break;
+      case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+        // Handle .icalender attachment.
+        console.log("Attachment is a calendar item.");
+        break;
+      case Office.MailboxEnums.AttachmentContentFormat.Url:
+        // Handle cloud attachment.
+        console.log("Attachment is a cloud attachment.");
+        break;
+      default:
+      // Handle attachment formats that aren't supported.
+    }
+
+    console.log(result.value.content);
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Base64
+    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
+    package: outlook!
+    summary: The content of the attachment is returned as a base64-encoded string.
+    value: '"base64"'
+  - name: Url
+    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
+    package: outlook!
+    summary: The content of the attachment is returned as a string representing a URL.
+    value: '"url"'
+  - name: Eml
+    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
+    package: outlook!
+    summary: The content of the attachment is returned as a string representing an .eml formatted file.
+    value: '"eml"'
+  - name: ICalendar
+    uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
+    package: outlook!
+    summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
+    value: '"iCalendar"'
