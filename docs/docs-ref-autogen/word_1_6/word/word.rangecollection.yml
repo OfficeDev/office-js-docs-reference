@@ -4,7 +4,36 @@ uid: 'word!Word.RangeCollection:class'
 package: word!
 fullName: Word.RangeCollection
 summary: 'Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.'
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
+
+
+  // Does a basic text search and highlights matches in the document.
+
+  await Word.run(async (context) => {
+    const results : Word.RangeCollection = context.document.body.search("Online");
+    results.load("length");
+
+    await context.sync();
+
+    // Let's traverse the search results and highlight matches.
+    for (let i = 0; i < results.items.length; i++) {
+      results.items[i].font.highlightColor = "yellow";
+    }
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

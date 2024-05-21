@@ -10279,7 +10279,7 @@ Word.BodyType,"noteItem",EnumField,Fine,false
 Word.BodyType,"section",EnumField,Fine,false
 Word.BodyType,"tableCell",EnumField,Fine,false
 Word.BodyType,"unknown",EnumField,Fine,false
-Word.Border,N/A,Class,Good,false
+Word.Border,N/A,Class,Good,true
 Word.Border,"color",Property,Good,false
 Word.Border,"context",Property,Good,false
 Word.Border,"location",Property,Good,false
@@ -10895,7 +10895,7 @@ Word.CustomXmlPartCollection,N/A,Class,Good,false
 Word.CustomXmlPartCollection,"context",Property,Good,false
 Word.CustomXmlPartCollection,"items",Property,Fine,false
 Word.CustomXmlPartCollection,"add(xml)",Method,Poor,true
-Word.CustomXmlPartCollection,"getByNamespace(namespaceUri)",Method,Poor,false
+Word.CustomXmlPartCollection,"getByNamespace(namespaceUri)",Method,Poor,true
 Word.CustomXmlPartCollection,"getCount()",Method,Poor,false
 Word.CustomXmlPartCollection,"getItem(id)",Method,Poor,true
 Word.CustomXmlPartCollection,"getItemOrNullObject(id)",Method,Poor,false
@@ -10905,7 +10905,7 @@ Word.CustomXmlPartCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CustomXmlPartCollection,"toJSON()",Method,Poor,false
 Word.CustomXmlPartCollection,"track()",Method,Poor,false
 Word.CustomXmlPartCollection,"untrack()",Method,Poor,false
-Word.CustomXmlPartScopedCollection,N/A,Class,Good,false
+Word.CustomXmlPartScopedCollection,N/A,Class,Good,true
 Word.CustomXmlPartScopedCollection,"context",Property,Good,false
 Word.CustomXmlPartScopedCollection,"items",Property,Fine,false
 Word.CustomXmlPartScopedCollection,"getCount()",Method,Poor,false
@@ -10993,7 +10993,7 @@ Word.DocumentCreated,"set(properties)",Method,Poor,false
 Word.DocumentCreated,"toJSON()",Method,Poor,false
 Word.DocumentCreated,"track()",Method,Poor,false
 Word.DocumentCreated,"untrack()",Method,Poor,false
-Word.DocumentProperties,N/A,Class,Good,false
+Word.DocumentProperties,N/A,Class,Good,true
 Word.DocumentProperties,"applicationName",Property,Good,false
 Word.DocumentProperties,"author",Property,Good,false
 Word.DocumentProperties,"category",Property,Good,false
@@ -11759,7 +11759,7 @@ Word.Range,"split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)",Met
 Word.Range,"toJSON()",Method,Poor,false
 Word.Range,"track()",Method,Poor,false
 Word.Range,"untrack()",Method,Poor,false
-Word.RangeCollection,N/A,Class,Good,false
+Word.RangeCollection,N/A,Class,Good,true
 Word.RangeCollection,"context",Property,Good,false
 Word.RangeCollection,"items",Property,Fine,false
 Word.RangeCollection,"getFirst()",Method,Poor,false
