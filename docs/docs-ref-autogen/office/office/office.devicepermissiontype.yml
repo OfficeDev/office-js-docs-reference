@@ -27,6 +27,67 @@ remarks: >-
 
   **Requirement set**: [DevicePermission
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Request permission from a user to access their device capabilities.
+
+  const host = Office.context.host;
+
+  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+      if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.microphone
+          ];
+          Office.devicePermission
+              .requestPermissions(deviceCapabilities)
+              .then((isGranted) => {
+                  if (isGranted) {
+                      console.log("Permission granted.");
+
+                      // Do something when permission is granted.
+                  } else {
+                      console.log("Permission denied.");
+
+                      // Do something when permission is denied.
+                  }
+              });
+      }
+  } else if (host === Office.HostType.Outlook) {
+      if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.geolocation,
+              Office.DevicePermissionType.microphone
+          ];
+
+          Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log (asyncResult.error.message);
+                  return;
+              }
+
+              if (asyncResult.value) {
+                  console.log("Permission granted.");
+
+                  // Do something when permission is granted.
+              } else {
+                  console.log("Permission denied.");
+
+                  // Do something when permission is denied.
+              }
+          });
+      }
+  } else {
+      console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
