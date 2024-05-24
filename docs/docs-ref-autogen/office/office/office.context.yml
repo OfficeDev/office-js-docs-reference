@@ -591,7 +591,7 @@ properties:
     fullName: urls
     summary: Gets the object to retrieve the runtime URLs of an add-in.
     remarks: >-
-      **Applications**: Outlook
+      **Applications**: Outlook on the web and on Windows (classic and new clients)
 
 
       \[ [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
@@ -605,6 +605,18 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task
+      pane. On these clients, the API is only supported in add-ins that implement event-based activation or integrated
+      spam reporting.
+
+
+      - In classic Outlook on Windows, this API is supported in add-ins that implement a task pane, event-based
+      activation, or integrated spam reporting.
 
 
       #### Examples
