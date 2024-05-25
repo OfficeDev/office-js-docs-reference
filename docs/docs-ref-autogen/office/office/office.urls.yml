@@ -49,13 +49,18 @@ properties:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
 
 
+      - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task
+      pane. On these clients, the API is only supported in add-ins that implement event-based activation or integrated
+      spam reporting.
+
+
       - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride**
       element of type `javascript`<!-- -->. To learn more, see [Override element for
       Runtime](https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime)<!-- -->.
 
 
       - If your add-in uses the unified manifest for Microsoft 365, the URL returned matches the value of the `script`
-      property in the "code" object.
+      property in the "extensions.runtimes.code" object.
 
 
       #### Examples

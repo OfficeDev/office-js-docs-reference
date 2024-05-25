@@ -237,6 +237,10 @@ export declare namespace Office {
      */
     const auth: Auth;
     /**
+     * Represents the Device Permission interface.
+     */
+    const devicePermission: DevicePermission;
+    /**
      * Represents the ribbon associated with the Office application.
      */
     const ribbon: Ribbon;
@@ -4674,13 +4678,20 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Applications**: Outlook
+         * **Applications**: Outlook on the web and on Windows (classic and new clients)
          *
          * [Api set: Mailbox 1.14]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane. On these clients,
+         * the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
+         *
+         * - In classic Outlook on Windows, this API is supported in add-ins that implement a task pane, event-based activation, or integrated spam reporting.
          */
         urls: Urls;
     }
@@ -8640,11 +8651,14 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
+         * - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane. On these clients,
+         * the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
+         *
          * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
          *
          * - If your add-in uses the unified manifest for Microsoft 365, the URL returned matches the value of the `script` property in the
-         * "code" object.
+         * "extensions.runtimes.code" object.
          */
         javascriptRuntimeUrl: string;
     }
