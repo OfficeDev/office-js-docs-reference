@@ -75,6 +75,36 @@ methods:
 
       - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time
       the add-in requires access to the user's device capabilities.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Request permission from a user to access their camera and microphone.
+
+      if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.microphone
+          ];
+          Office.devicePermission
+              .requestPermissions(deviceCapabilities)
+              .then((isGranted) => {
+                  if (isGranted) {
+                      console.log("Permission granted.");
+
+                      // Do something when permission is granted.
+                  } else {
+                      console.log("Permission denied.");
+
+                      // Do something when permission is denied.
+                  }
+              });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,6 +241,41 @@ methods:
       - If your add-in implements [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, browser permissions to
       device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Request permission from a user to access their camera, geolocation, and microphone.
+
+      if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.geolocation,
+              Office.DevicePermissionType.microphone
+          ];
+
+          Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log (asyncResult.error.message);
+                  return;
+              }
+
+              if (asyncResult.value) {
+                  console.log("Permission granted.");
+
+                  // Do something when permission is granted.
+              } else {
+                  console.log("Permission denied.");
+
+                  // Do something when permission is denied.
+              }
+          });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
