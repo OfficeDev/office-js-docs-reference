@@ -1200,27 +1200,6 @@ methods:
 
       ```TypeScript
 
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
-
-      function addAttachment() {
-          // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
-
-          const attachmentURL = "https://contoso.com/rtm/icon.png";
-          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
@@ -1720,25 +1699,25 @@ methods:
 
       // The following example adds an existing Outlook item as an attachment
 
-      // with the name `My Attachment`.
-
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
+      // with the name "My Attachment".
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
           const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { asyncContext: { var1: 1, var2: 2 } };
 
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error("Failed to add attachment: " + result.error.message);
+                  return;
+              }
+
+              console.log("Attachment added successfully.");
+              console.log("var1: " + result.asyncContext.var1);
+              console.log("var2: " + result.asyncContext.var2);
+          });
       }
 
       ```
@@ -2947,47 +2926,6 @@ methods:
 
       ```TypeScript
 
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
@@ -3067,21 +3005,6 @@ methods:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // The following code removes an attachment with an identifier of '0'.
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-          '0',
-          { asyncContext : null },
-          function (asyncResult)
-          {
-              console.log(asyncResult.status);
-          }
-      );
-
-      ```
 
       ```TypeScript
 
