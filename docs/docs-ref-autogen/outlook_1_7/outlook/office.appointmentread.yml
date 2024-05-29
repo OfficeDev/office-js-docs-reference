@@ -1305,90 +1305,6 @@ methods:
 
       ```TypeScript
 
-      // The following code passes a string to the `displayReplyForm` method.
-
-      Office.context.mailbox.item.displayReplyForm('hello there');
-
-      Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
-
-
-      // Reply with an empty body.
-
-      Office.context.mailbox.item.displayReplyForm({});
-
-
-      // Reply with just a body.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi'
-      });
-
-
-      // Reply with a body and a file attachment.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              }
-          ]
-      });
-
-
-      // Reply with a body and an item attachment.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ]
-      });
-
-
-      // Reply with a body, file attachment, item attachment, and a callback.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              },
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ],
-          'callback' : function(asyncResult)
-          {
-              console.log(asyncResult.value);
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
@@ -2229,47 +2145,6 @@ methods:
 
       #### Examples
 
-
-      ```TypeScript
-
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
 
       ```TypeScript
 

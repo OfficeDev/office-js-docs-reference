@@ -8584,7 +8584,7 @@ Office.CustomProperties,N/A,Class,Good,false
 Office.CustomProperties,"get(name)",Method,Fine,true
 Office.CustomProperties,"getAll()",Method,Fine,false
 Office.CustomProperties,"remove(name)",Method,Poor,true
-Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,true
+Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,false
 Office.CustomProperties,"saveAsync(asyncContext)",Method,Poor,false
 Office.CustomProperties,"set(name, value)",Method,Poor,true
 Office.DelayDeliveryTime,N/A,Class,Good,false
