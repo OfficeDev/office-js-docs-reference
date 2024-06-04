@@ -2,7 +2,7 @@
 ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.date: 02/27/2024
 ---
 
@@ -49,6 +49,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <h3>Outlook APIs</h3>
         <ul>
             <li><a href="/javascript/api/outlook?view=outlook-js-preview&preserve-view=true">Mailbox Preview</a></li>
+            <li><a href="/javascript/api/outlook?view=outlook-js-1.14&preserve-view=true">Mailbox 1.14</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.13&preserve-view=true">Mailbox 1.13</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.12&preserve-view=true">Mailbox 1.12</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.11&preserve-view=true">Mailbox 1.11</a></li>

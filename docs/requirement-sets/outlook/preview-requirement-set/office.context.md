@@ -1,7 +1,7 @@
 ---
 title: Office.context - preview requirement set
 description: Office.Context object members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 01/26/2024
+ms.date: 05/20/2024
 ms.localizationpriority: medium
 ---
 
@@ -28,13 +28,13 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 | [displayLanguage](#displaylanguage-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [host](#host-hosttype) | Compose<br>Read | [HostType](/javascript/api/office/office.hosttype?view=outlook-js-preview&preserve-view=true) | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [mailbox](office.context.mailbox.md) | Compose<br>Read | [Mailbox](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| [officeTheme](#officetheme-officetheme) | Compose<br>Read | [OfficeTheme](/javascript/api/office/office.officetheme?view=outlook-js-preview&preserve-view=true) | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
+| [officeTheme](#officetheme-officetheme) | Compose<br>Read | [OfficeTheme](/javascript/api/office/office.officetheme?view=outlook-js-preview&preserve-view=true) | [1.14](../requirement-set-1.14/outlook-requirement-set-1.14.md) |
 | [platform](#platform-platformtype) | Compose<br>Read | [PlatformType](/javascript/api/office/office.platformtype?view=outlook-js-preview&preserve-view=true) | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [requirements](#requirements-requirementsetsupport) | Compose<br>Read | [RequirementSetSupport](/javascript/api/office/office.requirementsetsupport?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [roamingSettings](#roamingsettings-roamingsettings) | Compose<br>Read | [RoamingSettings](/javascript/api/outlook/office.roamingsettings?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [sensitivityLabelsCatalog](#sensitivitylabelscatalog-sensitivitylabelscatalog) | Compose | [SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true) | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 | [ui](#ui-ui) | Compose<br>Read | [UI](/javascript/api/office/office.ui?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| [urls](#urls-urls) | Compose<br>Read | [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true) | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
+| [urls](#urls-urls) | Compose<br>Read | [Urls](/javascript/api/office/office.urls?view=outlook-js-preview&preserve-view=true) | [1.14](../requirement-set-1.14/outlook-requirement-set-1.14.md) |
 
 ## Property details
 
@@ -398,5 +398,13 @@ Gets the object to retrieve the runtime URLs of an add-in.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| Preview|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.14 |
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
+
+## Events
+
+You can subscribe to and unsubscribe from the following events using [addHandlerAsync](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-addhandlerasync-member(1)) and [removeHandlerAsync](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-removehandlerasync-member(1)) respectively.
+
+| [Event](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true) | Description | Minimum<br>requirement set |
+|---|---|:---:|
+|`OfficeThemeChanged`| The Office theme in Outlook changed. Only available with task pane implementation. | [1.14](../requirement-set-1.14/outlook-requirement-set-1.14.md) |

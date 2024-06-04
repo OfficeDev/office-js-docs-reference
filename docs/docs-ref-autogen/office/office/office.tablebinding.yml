@@ -77,15 +77,16 @@ properties:
     fullName: rowCount
     summary: 'Gets the number of rows in the TableBinding, as an integer value.'
     remarks: >-
-      When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the
-      Insert tab), both Office applications create a single row of headers followed by a single blank row. However, if
-      your add-in's script creates a binding for this newly inserted table (for example, by using the
+      When you insert an empty table by selecting a single row in Excel on desktop and Excel on the web (using Table on
+      the Insert tab), both Office applications create a single row of headers followed by a single blank row. However,
+      if your add-in's script creates a binding for this newly inserted table (for example, by using the
       [Office.Bindings](xref:office!Office.Bindings:interface)<!-- -->.addFromSelectionAsync method), and then checks
       the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in
-      Excel 2013 or Excel on the web.
+      Excel on desktop or Excel on the web.
 
 
-      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+      - In Excel on the desktop (i.e., Windows and Mac), rowCount will return 0 (the blank row following the headers
+      isn't counted).
 
 
       - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
@@ -506,14 +507,13 @@ methods:
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
-      n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth row of data in the table.</td> </tr>
-      <tr> <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth column
-      of data in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the
-      single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td><code>Office.Table.All</code></td> <td>Specifies the entire table, including column headers, data, and totals
-      (if any).</td> </tr> <tr> <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no
-      headers and totals).</td> </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header
-      row.</td> </tr> </table>
+      n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth row of data in the table.</td> </tr> <tr>
+      <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth column of data
+      in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the single
+      cell that's the ith row and jth column of the table.</td> </tr> <tr> <td><code>Office.Table.All</code></td>
+      <td>Specifies the entire table, including column headers, data, and totals (if any).</td> </tr> <tr>
+      <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no headers and totals).</td>
+      </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -567,14 +567,13 @@ methods:
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
-      n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth row of data in the table.</td> </tr>
-      <tr> <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth column
-      of data in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the
-      single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td><code>Office.Table.All</code></td> <td>Specifies the entire table, including column headers, data, and totals
-      (if any).</td> </tr> <tr> <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no
-      headers and totals).</td> </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header
-      row.</td> </tr> </table>
+      n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth row of data in the table.</td> </tr> <tr>
+      <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth column of data
+      in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the single
+      cell that's the ith row and jth column of the table.</td> </tr> <tr> <td><code>Office.Table.All</code></td>
+      <td>Specifies the entire table, including column headers, data, and totals (if any).</td> </tr> <tr>
+      <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no headers and totals).</td>
+      </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -631,14 +630,13 @@ methods:
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
-      n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth row of data in the table.</td> </tr>
-      <tr> <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth column
-      of data in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the
-      single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td><code>Office.Table.All</code></td> <td>Specifies the entire table, including column headers, data, and totals
-      (if any).</td> </tr> <tr> <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no
-      headers and totals).</td> </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header
-      row.</td> </tr> </table>
+      n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth row of data in the table.</td> </tr> <tr>
+      <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth column of data
+      in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the single
+      cell that's the ith row and jth column of the table.</td> </tr> <tr> <td><code>Office.Table.All</code></td>
+      <td>Specifies the entire table, including column headers, data, and totals (if any).</td> </tr> <tr>
+      <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no headers and totals).</td>
+      </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -801,14 +799,13 @@ methods:
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
-      n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth row of data in the table.</td> </tr>
-      <tr> <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that is the zero-based nth column
-      of data in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the
-      single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td><code>Office.Table.All</code></td> <td>Specifies the entire table, including column headers, data, and totals
-      (if any).</td> </tr> <tr> <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no
-      headers and totals).</td> </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header
-      row.</td> </tr> </table>
+      n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth row of data in the table.</td> </tr> <tr>
+      <td><code>{<!-- -->column: n<!-- -->}</code></td> <td>Specifies the range that's the zero-based nth column of data
+      in the table.</td> </tr> <tr> <td><code>{<!-- -->row: i, column: j<!-- -->}</code></td> <td>Specifies the single
+      cell that's the ith row and jth column of the table.</td> </tr> <tr> <td><code>Office.Table.All</code></td>
+      <td>Specifies the entire table, including column headers, data, and totals (if any).</td> </tr> <tr>
+      <td><code>Office.Table.Data</code></td> <td>Specifies only the data in the table (no headers and totals).</td>
+      </tr> <tr> <td><code>Office.Table.Headers</code></td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -910,11 +907,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no data or object to retrieve when setting formats</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no data or object to retrieve when setting formats.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
 
       #### Examples
@@ -973,11 +970,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no data or object to retrieve when setting formats</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no data or object to retrieve when setting formats.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:

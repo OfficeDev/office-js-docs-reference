@@ -4,7 +4,36 @@ uid: 'outlook!Office.ReplyFormAttachment:interface'
 package: outlook!
 fullName: Office.ReplyFormAttachment
 summary: A file or item attachment. Used when displaying a reply form.
-remarks: ''
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+  // The async version is only available starting with requirement set 1.9.
+
+  // It provides a callback when the new appointment form has been created.
+
+  Office.context.mailbox.item.displayReplyFormAsync(
+    {
+      htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
+      attachments: [
+        { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
+        { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
+      ]
+    },
+    (asyncResult) => {
+      console.log(JSON.stringify(asyncResult));
+    }
+  );
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

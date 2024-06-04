@@ -26,7 +26,7 @@ remarks: >-
     await context.sync();
 
     if (lists.items.length === 0) {
-      console.warn("There are no lists in this document");
+      console.warn("There are no lists in this document.");
       return;
     }
     

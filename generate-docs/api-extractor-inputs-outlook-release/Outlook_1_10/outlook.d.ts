@@ -17,6 +17,7 @@ export declare namespace Office {
              */
             ShowTaskPane = "showTaskPane"
         }
+        
         /**
          * Specifies the formatting that applies to an attachment's content.
          *
@@ -97,7 +98,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * **Important**: The actual color depends on how the Outlook client renders it.
-         * In this case, the colors noted on each preset apply to Outlook on Windows, on the web,
+         * In this case, the colors noted on each preset apply to Outlook on the web, on Windows,
          * and on Mac (starting in Version 16.78).
          *
          * Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors.
@@ -555,6 +556,7 @@ export declare namespace Office {
              */
             Dec = "dec"
         }
+        
         /**
          * Represents the current view of Outlook on the web.
          */
@@ -605,7 +607,7 @@ export declare namespace Office {
             /**
              * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.
              * 
-             * **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web, Global Address Book (GAL) recipients saved to a personal address book return
+             * **Important**: In Outlook on the web, on Windows (starting with Version 2210 (Build 15813.20002)), and on Mac, Global Address Book (GAL) recipients saved to a personal address book return
              * the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
              * added or resolved against the GAL.
              */
@@ -1255,6 +1257,7 @@ export declare namespace Office {
              */
             Beta = "beta"
         }
+        
         /**
          * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
          *
@@ -1488,10 +1491,11 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
@@ -1876,7 +1880,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -1907,7 +1911,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -2112,7 +2116,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * *Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -2133,7 +2137,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * *Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -2145,7 +2149,7 @@ export declare namespace Office {
          * For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages, replies, or forwards is set
          * to a template for the sending Outlook account.
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
-         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
+         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the web, the API call should return `false`.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -2166,7 +2170,7 @@ export declare namespace Office {
          * For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages, replies, or forwards is set
          * to a template for the sending Outlook account.
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
-         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
+         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the web, the API call should return `false`.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -2210,7 +2214,7 @@ export declare namespace Office {
          *
          * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
-         * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * in the same session. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -2239,7 +2243,7 @@ export declare namespace Office {
          *
          * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
-         * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * in the same session. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -2397,7 +2401,7 @@ export declare namespace Office {
          *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `coercionType`: If text, the current style is applied in Outlook on the web and Windows.
+         *        `coercionType`: If text, the current style is applied in Outlook on the web and on Windows.
          *                      If the field is an HTML editor, only the text data is inserted, even if the data is HTML.
          *                      If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the
          *                      default style is applied in Outlook on desktop clients.
@@ -2504,11 +2508,11 @@ export declare namespace Office {
         * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
         * each optional attendee to the meeting. Collection size limits:
         *
+        * - Web browser, new Mac UI, Android: No limit
+        *
         * - Windows: 500 members
         *
         * - Classic Mac UI: 100 members
-        *
-        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -2541,11 +2545,11 @@ export declare namespace Office {
         * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
         * each required attendee to the meeting. Collection size limits:
         *
+        * - Web browser, new Mac UI, Android: No limit
+        *
         * - Windows: 500 members
         *
         * - Classic Mac UI: 100 members
-        *
-        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -2875,7 +2879,7 @@ export declare namespace Office {
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
@@ -2908,7 +2912,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         subject: string;
-
+        
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -2989,7 +2993,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3017,7 +3021,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3068,7 +3072,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3095,7 +3099,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3115,7 +3119,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
-         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -3146,7 +3150,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
-         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -3230,7 +3234,7 @@ export declare namespace Office {
          *   <tr>
          *     <th>Value of entityType</th>
          *     <th>Type of objects in returned array</th>
-         *     <th>Required Permission Level</th>
+         *     <th>Required permission level</th>
          *   </tr>
          *   <tr>
          *     <td>Address</td>
@@ -3297,7 +3301,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3365,7 +3369,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3399,7 +3403,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -3432,7 +3436,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3467,7 +3471,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -3490,7 +3494,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -3511,7 +3515,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -3672,7 +3676,7 @@ export declare namespace Office {
          * Gets the name of the attachment.
          *
          * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
-         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
+         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or on Windows.
          */
         name: string;
         /**
@@ -3724,7 +3728,7 @@ export declare namespace Office {
          * Gets the name of the attachment.
          *
          * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
-         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
+         * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or on Windows.
          */
         name: string;
         /**
@@ -3956,7 +3960,7 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows, the cursor
          * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
          * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
          * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
@@ -3998,7 +4002,7 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows, the cursor
          * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
          * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
          * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
@@ -5118,7 +5122,15 @@ export declare namespace Office {
      * @remarks
      * [Api set: Mailbox 1.8]
      *
-     * **Recommended practices**
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+     * To learn more about features supported in Outlook on mobile devices, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+     *
+     * **Recommended practices**:
      *
      * Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create any more internet headers
      * on that mailbox, which can result in unexpected behavior from clients that rely on this to function.
@@ -5132,11 +5144,7 @@ export declare namespace Office {
      * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
      *
      * - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner
-     * (for example, based on user input, timestamp, etc.).
-     *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-     *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     * (for example, based on user input or a timestamp).
      */
     export interface InternetHeaders {
         /**
@@ -5151,6 +5159,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param names - The names of the internet headers to be returned.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5173,6 +5185,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * @param names - The names of the internet headers to be returned.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, of type `Office.AsyncResult`. The string key-value pairs of internet headers are returned in the
@@ -5190,6 +5206,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param names - The names of the internet headers to be removed.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5210,6 +5230,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}. 
+         *
          * @param names - The names of the internet headers to be removed.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
@@ -5222,12 +5246,6 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
-         * 
-         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
-         * For further information on header limits, see 
-         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
-         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5235,6 +5253,18 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
          *                and values being the corresponding header value strings.
@@ -5251,12 +5281,6 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
-         * 
-         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
-         * For further information on header limits, see 
-         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
-         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5264,6 +5288,18 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
          *                and values being the corresponding header value strings.
@@ -5540,7 +5576,7 @@ export declare namespace Office {
          * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
          *
          *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
-         * If the mail add-in is running in Outlook on desktop or mobile clients, the `hostVersion` property returns the version of the
+         * If the mail add-in is running in Outlook on desktop or on mobile clients, the `hostVersion` property returns the version of the
          * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
          *
          *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web.
@@ -5705,7 +5741,7 @@ export declare namespace Office {
         /**
          * Gets a dictionary containing time information in local client time.
          *
-         * The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones.
+         * The dates and times used by a mail app for Outlook on the web or on desktop clients can use different time zones.
          * Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center (EAC).
          * You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that
          * the user expects.
@@ -5809,7 +5845,7 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
          * no error message is returned.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -5840,7 +5876,7 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
          * no error message is returned.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -5892,11 +5928,11 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
          * no error message is returned.
          *
-         * Do not use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an appointment.
+         * Don't use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an appointment.
          * Use the `displayAppointmentForm` or `displayAppointmentFormAsync` method to display an existing appointment,
          * and `displayNewAppointmentForm` or `displayNewAppointmentFormAsync` to display a form to create a new appointment.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -5922,11 +5958,11 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
          * no error message is returned.
          *
-         * Do not use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an appointment.
+         * Don't use the `displayMessageForm` or `displayMessageFormAsync` method with an itemId that represents an appointment.
          * Use the `displayAppointmentForm` or `displayAppointmentFormAsync` method to display an existing appointment,
          * and `displayNewAppointmentForm` or `displayNewAppointmentFormAsync` to display a form to create a new appointment.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -5985,7 +6021,7 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -6017,7 +6053,7 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -6208,7 +6244,7 @@ export declare namespace Office {
          * - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always returned in Outlook
          * mobile clients even if `options.isRest` is set to `false`.
          *
-         *- Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+         * - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
          *
          * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
          * The `saveAsync` method requires a minimum permission level of **read/write item**.
@@ -6302,7 +6338,7 @@ export declare namespace Office {
          * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
          * The `saveAsync` method requires a minimum permission level of **read/write item**.
          *
-         * - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running on Outlook mobile clients.
+         * - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running in Outlook on mobile clients.
          * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -6455,7 +6491,8 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
+     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -6464,10 +6501,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based add-in has completed processing an event.
+         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -6476,9 +6515,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
+         * **Important**:
+         *
+         * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+         *
+         * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
+         *
+         * 
          */
-        completed(options?: SmartAlertsEventCompletedOptions): void;
+        completed(): void;
     }
     /**
      * Represents the categories master list on the mailbox.
@@ -6790,6 +6835,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          */
         from: From;
+        
         /**
          * Gets or sets the custom internet headers of a message.
          *
@@ -6804,6 +6850,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0.
+         * To learn more about features supported in Outlook on mobile devices, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         internetHeaders: InternetHeaders;
         /**
@@ -6834,7 +6884,7 @@ export declare namespace Office {
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
@@ -7170,19 +7220,31 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save,
          * discard, or cancel even if no changes have occurred since the item was last saved.
+         *
+         * **Tip**: Use the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1) | closeAsync}
+         * method instead of the `close` method if you want your add-in to:
+         *
+         * - Automatically discard a message being composed without prompting the user with the save dialog.
+         *
+         * - Determine when a user cancels the save item dialog on a message being composed.
+         *
+         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
          */
         close(): void;
+        
+        
         /**
          * Disables the Outlook client signature.
          *
          * The behavior of this method depends on which client the add-in is running.
          *
-         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
-         * of the sending account is set to **(none)**.
-         *
          * - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled.
          * A signature that's selected is also disabled by the method.
          * 
+         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
+         * of the sending account is set to **(none)**.
+         *
          * - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
          *
          * @remarks
@@ -7207,12 +7269,12 @@ export declare namespace Office {
          *
          * The behavior of this method depends on which client the add-in is running.
          *
-         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
-         * of the sending account is set to **(none)**.
-         *
          * - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled.
          * A signature that's selected is also disabled by the method.
          * 
+         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
+         * of the sending account is set to **(none)**.
+         *
          * - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
          *
          * @remarks
@@ -7235,7 +7297,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -7266,7 +7328,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
-         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -7370,6 +7432,8 @@ export declare namespace Office {
          * An object with `ComposeType` and `CoercionType` enum values for the message item.
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        
+        
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -7404,6 +7468,8 @@ export declare namespace Office {
          *                 in the `asyncResult.value` property.
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -7519,9 +7585,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android. 
+         * **Note**: This method isn't supported in Outlook on iOS or on Android. 
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         * **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless the following conditions are met.
          *
          * a. **Delegate access/Shared folders**
          *
@@ -7561,9 +7627,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         * **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless the following conditions are met.
          *
          * a. **Delegate access/Shared folders**
          *
@@ -7594,7 +7660,7 @@ export declare namespace Office {
          * For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages, replies, or forwards is set
          * to a template for the sending Outlook account.
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
-         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
+         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the web, the API call should return `false`.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -7615,7 +7681,7 @@ export declare namespace Office {
          * For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages, replies, or forwards is set
          * to a template for the sending Outlook account.
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
-         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
+         * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the web, the API call should return `false`.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -7659,7 +7725,7 @@ export declare namespace Office {
          *
          * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
-         * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * in the same session. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -7688,7 +7754,7 @@ export declare namespace Office {
          *
          * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item.
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment
-         * in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * in the same session. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -7842,7 +7908,7 @@ export declare namespace Office {
          *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `coercionType`: If text, the current style is applied in Outlook on the web and desktop clients.
+         *        `coercionType`: If text, the current style is applied in Outlook on the web and on desktop clients.
          *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML.
          *        If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is
          *        applied in Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned.
@@ -8179,7 +8245,7 @@ export declare namespace Office {
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
@@ -8187,8 +8253,8 @@ export declare namespace Office {
          * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          *
-         * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-         * and returns `undefined` for any other items that are not meeting requests.
+         * The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series items, or meeting requests
+         * and returns `undefined` for any other items that aren't meeting requests.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8262,7 +8328,6 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         to: EmailAddressDetails[];
-
         /**
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
@@ -8343,7 +8408,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -8371,7 +8436,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -8422,7 +8487,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -8449,7 +8514,7 @@ export declare namespace Office {
          * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
          * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -8506,12 +8571,14 @@ export declare namespace Office {
          *                If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
          */
         getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
-         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -8542,7 +8609,7 @@ export declare namespace Office {
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
-         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -8627,7 +8694,7 @@ export declare namespace Office {
          *   <tr>
          *     <th>Value of entityType</th>
          *     <th>Type of objects in returned array</th>
-         *     <th>Required Permission Level</th>
+         *     <th>Required permission level</th>
          *   </tr>
          *   <tr>
          *     <td>Address</td>
@@ -8694,7 +8761,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -8762,7 +8829,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -8796,7 +8863,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
@@ -8811,9 +8878,10 @@ export declare namespace Office {
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
          * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | unified manifest for Microsoft 365}.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @remarks
          * [Api set: Mailbox 1.6]
@@ -8833,7 +8901,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -8868,7 +8936,7 @@ export declare namespace Office {
          * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365 (preview)}.
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -8891,7 +8959,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -8912,7 +8980,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * **Note**: This method isn't supported in Outlook on iOS or on Android.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
          *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
@@ -9260,6 +9328,7 @@ export declare namespace Office {
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment.
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
@@ -9383,10 +9452,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI),
-         * on the web, on Android, and on iOS. However, take note of the following:
+         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows,
+         * on Mac (classic UI), on Android, and on iOS. However, take note of the following:
          *
-         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
@@ -9417,10 +9486,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI),
-         * on the web, on Android, and on iOS. However, take note of the following:
+         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows,
+         * on Mac (classic UI), on Android, and on iOS. However, take note of the following:
          *
-         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
@@ -9539,10 +9608,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI),
-         * on the web, on Android, and on iOS. However, take note of the following:
+         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows,
+         * on Mac (classic UI), on Android, and on iOS. However, take note of the following:
          *
-         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
@@ -9576,10 +9645,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI),
-         * on the web, on Android, and on iOS. However, take note of the following:
+         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows,
+         * on Mac (classic UI), on Android, and on iOS. However, take note of the following:
          *
-         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
@@ -10013,7 +10082,7 @@ export declare namespace Office {
      * your add-in has persisted changes.
      * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
      *
-     * - When set and saved through Outlook on Windows or Mac, these settings are reflected in Outlook on the web only after a browser refresh.
+     * - When set and saved through Outlook on Windows or on Mac, these settings are reflected in Outlook on the web only after a browser refresh.
      * 
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
@@ -10088,6 +10157,7 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
     
     
     
@@ -10306,14 +10376,9 @@ export declare namespace Office {
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
-    /**
-     * Specifies the behavior of a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts add-in}
-     * when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-     */
-    export interface SmartAlertsEventCompletedOptions {
-        
-        
-    }
+    
+    
+    
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
@@ -10551,7 +10616,7 @@ export declare namespace Office {
         /**
          * Gets the account type of the user associated with the mailbox.
          *
-         * **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
+         * **Note**: This member is currently only supported in Outlook on Mac, Build 16.9.1212 and greater.
          *
          * @remarks
          * [Api set: Mailbox 1.6]

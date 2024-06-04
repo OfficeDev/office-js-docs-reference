@@ -516,7 +516,7 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body.
+      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
       For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
       appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
       the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
@@ -560,7 +560,7 @@ methods:
 
       /* This snippet adds text to the beginning of the message or appointment's body. 
         
-        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
       const text = $("#text-field").val();
@@ -637,7 +637,7 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body.
+      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
       For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
       appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
       the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
@@ -975,7 +975,7 @@ methods:
 
       /* This snippet replaces selected text in a message or appointment's body with specified text.
         
-        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
       const text = $("#text-field").val();

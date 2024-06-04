@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 01/25/2024
+ms.date: 04/15/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -19,20 +19,20 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
-| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
-| [WordApiOnline 1.1](word-api-online-requirement-set.md) | Not applicable | Not applicable | Not applicable | Not applicable | Latest (see [requirement set page](word-api-online-requirement-set.md)) |
-| [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Version 2302 (Build 16130.20332) | Not available | 16.70 | Not applicable | Not applicable |
-| [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Version 2208 (Build 15601.20148) | Not available | 16.64 | Not applicable | Not applicable |
-| [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | Not applicable | Not applicable |
-| [WordApi 1.7](word-api-1-7-requirement-set.md) | Version 2311 (Build 17029.20068) | Not available | 16.79 | Not available | Supported |
-| [WordApi 1.6](word-api-1-6-requirement-set.md) | Version 2308 (Build 16731.20234) | Not available | 16.76 | 16.76 | Supported |
-| [WordApi 1.5](word-api-1-5-requirement-set.md) | Version 2302 (Build 16130.20332) | Not available | 16.70 | 16.70 | Supported |
-| [WordApi 1.4](word-api-1-4-requirement-set.md) | Version 2208 (Build 15601.20148) | Not available | 16.64 | 16.64 | Supported |
-| [WordApi 1.3](word-api-1-3-requirement-set.md) | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | 2.22 | Supported |
-| [WordApi 1.2](word-api-1-2-requirement-set.md) | Version 1601 (Build 6568.1000) | Office 2019: Version 1601 (Build 6568.1000) | 15.19 | 1.18 | Supported |
-| [WordApi 1.1](word-api-1-1-requirement-set.md) | Version 1509 (Build 4266.1001) | Office 2016: Version 1509 (Build 4266.1001) | 15.19 | 1.18 | Supported |
+| [WordApiOnline 1.1](word-api-online-requirement-set.md) | Latest (see [requirement set page](word-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
+| [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2302 (Build 16130.20332) | Not available | 16.70 | Not applicable |
+| [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2208 (Build 15601.20148) | Not available | 16.64 | Not applicable |
+| [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | Not applicable |
+| [WordApi 1.7](word-api-1-7-requirement-set.md) | Supported | Version 2311 (Build 17029.20068) | Not available | 16.79 | Not available |
+| [WordApi 1.6](word-api-1-6-requirement-set.md) | Supported | Version 2308 (Build 16731.20234) | Not available | 16.76 | 16.76 |
+| [WordApi 1.5](word-api-1-5-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Not available | 16.70 | 16.70 |
+| [WordApi 1.4](word-api-1-4-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Not available | 16.64 | 16.64 |
+| [WordApi 1.3](word-api-1-3-requirement-set.md) | Supported | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | 2.22 |
+| [WordApi 1.2](word-api-1-2-requirement-set.md) | Supported | Version 1601 (Build 6568.1000) | Office 2019: Version 1601 (Build 6568.1000) | 15.19 | 1.18 |
+| [WordApi 1.1](word-api-1-1-requirement-set.md) | Supported | Version 1509 (Build 4266.1001) | Office 2016: Version 1509 (Build 4266.1001) | 15.19 | 1.18 |
 
 ## Office versions and build numbers
 

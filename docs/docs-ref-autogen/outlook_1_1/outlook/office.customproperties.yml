@@ -72,11 +72,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#propertyName").val();
+      const propertyName = $("#get-property-name").val();
 
       const propertyValue = customProps.get(propertyName);
-
-      $("#propertyValue").val(propertyValue);
 
       console.log(`The value of custom property "${propertyName}" is "${propertyValue}".`);
 
@@ -122,7 +120,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#propertyName").val();
+      const propertyName = $("#remove-property-name").val();
 
       customProps.remove(propertyName);
 
@@ -179,53 +177,18 @@ methods:
 
       ```TypeScript
 
-      // The following JavaScript code sample shows how to asynchronously use
-
-      // the loadCustomPropertiesAsync method to load custom properties that
-
-      // are specific to the current item, and the saveAsync method to save
-
-      // these to the mail item. After loading the custom properties,
-
-      // the code sample uses the get method to read the custom property myProp,
-
-      // the set method to write the custom property myProp, and then finally
-
-      // calls the saveAsync method to save the custom properties.
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      // The initialize function is required for all add-ins.
+      customProps.saveAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error(`saveAsync failed with message ${result.error.message}`);
+          return;
+        }
 
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const item = Office.context.mailbox.item;
-              item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-          console.log("myProp: " + myProp); // First run on current item will return `undefined`.
-
-          // Set myProp custom property.
-          customProps.set("myProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error(asyncResult.error.message);
-          }
-          else {
-              // Async call to save custom properties completed.
-              // Proceed to do the appropriate for your add-in.
-          }
-      }
+        console.log(`Custom properties saved with status: ${result.status}`);
+      });
 
       ```
     isPreview: false
@@ -321,9 +284,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#propertyName").val();
+      const propertyName = $("#set-property-name").val();
 
-      const propertyValue = $("#propertyValue").val();
+      const propertyValue = $("#property-value").val();
 
       customProps.set(propertyName, propertyValue);
 

@@ -473,6 +473,12 @@ properties:
       -->**: Message Compose
 
 
+      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       #### Examples
 
 
@@ -678,9 +684,9 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
-      parent item.
+      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
+      parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of
+      the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -927,62 +933,22 @@ methods:
 
       ```TypeScript
 
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
-
-      function addAttachment() {
-          // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
-
-          const attachmentURL = "https://contoso.com/rtm/icon.png";
-          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
-      }
-
-      ```
-
-      ```TypeScript
-
-      // The following example adds an image file as an inline attachment and
-
-      // references the attachment in the message body.
-
-      Office.context.mailbox.item.addFileAttachmentAsync(
-          "http://i.imgur.com/WJXklif.png",
-          "cute_bird.png",
-          {
-              isInline: true
-          },
-          function (asyncResult) {
-              Office.context.mailbox.item.body.setAsync(
-                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
-                  {
-                      "coercionType": "html"
-                  },
-                  function (asyncResult) {
-                      // Do something here.
-                  });
-          });
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl").val();
-
+      const attachmentUrl = $("#attachmentUrl")
+        .val()
+        .toString();
       Office.context.mailbox.item.addFileAttachmentAsync(
-          attachmentUrl,
-          getFileName(attachmentUrl),
-          { "asyncContext" : { var1: 1, var2: true } },
-          function(result) { console.log(result); });
+        attachmentUrl,
+        getFileName(attachmentUrl),
+        { isInline: false },
+        (result) => {
+          console.log(result);
+        }
+      );
+
       ```
     isPreview: false
     isDeprecated: false
@@ -1159,14 +1125,17 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      base64String =
-      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
-
+      const base64String =
+        "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
       Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-          base64String,
-          "logo.png",
-          { isInline: false },
-          function(result) { console.log(result); });
+        base64String,
+        "logo.png",
+        { isInline: false },
+        (result) => {
+          console.log(result);
+        }
+      );
+
 
       ...
 
@@ -1487,42 +1456,27 @@ methods:
 
       // The following example adds an existing Outlook item as an attachment
 
-      // with the name `My Attachment`.
-
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
+      // with the name "My Attachment".
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
           const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { asyncContext: { var1: 1, var2: 2 } };
 
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error("Failed to add attachment: " + result.error.message);
+                  return;
+              }
+
+              console.log("Attachment added successfully.");
+              console.log("var1: " + result.asyncContext.var1);
+              console.log("var2: " + result.asyncContext.var2);
+          });
       }
 
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      const attachmentItemId = $("#attachmentItemId").val();
-
-      Office.context.mailbox.item.addItemAttachmentAsync(
-          attachmentItemId,
-          "My attachment",
-          { "asyncContext" : { var3: 3, var4: false } },
-          function(result) { console.log(result); });
       ```
     isPreview: false
     isDeprecated: false
@@ -1649,6 +1603,20 @@ methods:
       item was last saved.
 
 
+      **Tip**: Use the
+      [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
+      method instead of the `close` method if you want your add-in to:
+
+
+      - Automatically discard a message being composed without prompting the user with the save dialog.
+
+
+      - Determine when a user cancels the save item dialog on a message being composed.
+
+
+      - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
+
+
       #### Examples
 
 
@@ -1679,12 +1647,12 @@ methods:
       The behavior of this method depends on which client the add-in is running.
 
 
-      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
-      sections of the sending account is set to **(none)**.
-
-
       - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
       selected is also disabled by the method.
+
+
+      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
+      sections of the sending account is set to **(none)**.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -1758,12 +1726,12 @@ methods:
       The behavior of this method depends on which client the add-in is running.
 
 
-      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
-      sections of the sending account is set to **(none)**.
-
-
       - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
       selected is also disabled by the method.
+
+
+      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
+      sections of the sending account is set to **(none)**.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -1807,7 +1775,7 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1907,7 +1875,7 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1982,34 +1950,47 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      Office.context.mailbox.item.getAttachmentsAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
-              console.error(result.error.message);
-          } else {
-              if (result.value.length > 0) {
-                  for (let i = 0; i < result.value.length; i++) {
-                      const attachment = result.value[i];
-                      console.log("ID: " + attachment.id + "\n" +
-                          "Name: " + attachment.name + "\n" +
-                          "Size: " + attachment.size + "\n" +
-                          "isInline: " + attachment.isInline);
-                      switch (attachment.attachmentType) {
-                          case Office.MailboxEnums.AttachmentType.Cloud:
-                              console.log("Attachment type: Attachment is stored in a cloud location.");
-                              break;
-                          case Office.MailboxEnums.AttachmentType.File:
-                              console.log("Attachment type: Attachment is a file.");
-                              break;
-                          case Office.MailboxEnums.AttachmentType.Item:
-                              console.log("Attachment type: Attachment is an Exchange item.");
-                              break;
-                      }
-                  }
-              }
-              else {
-                  console.log("No attachments on this message.");
-              }
+      Office.context.mailbox.item.getAttachmentsAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error(result.error.message);
+          return;
+        }
+
+        if (result.value.length > 0) {
+          for (let i = 0; i < result.value.length; i++) {
+            const attachment = result.value[i];
+            let attachmentType;
+            switch (attachment.attachmentType) {
+              case Office.MailboxEnums.AttachmentType.Cloud:
+                attachmentType = "Attachment is stored in a cloud location";
+                break;
+              case Office.MailboxEnums.AttachmentType.File:
+                attachmentType = "Attachment is a file";
+                break;
+              case Office.MailboxEnums.AttachmentType.Item:
+                attachmentType = "Attachment is an Exchange item";
+                break;
+            }
+            console.log(
+              "ID: " +
+                attachment.id +
+                "\n" +
+                "Type: " +
+                attachmentType +
+                "\n" +
+                "Name: " +
+                attachment.name +
+                "\n" +
+                "Size: " +
+                attachment.size +
+                "\n" +
+                "isInline: " +
+                attachment.isInline
+            );
           }
+        } else {
+          console.log("No attachments on this message.");
+        }
       });
 
       ```
@@ -2565,10 +2546,10 @@ methods:
       -->**: Message Compose
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
       the following conditions are met.
 
 
@@ -2699,10 +2680,10 @@ methods:
       -->**: Message Compose
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
       the following conditions are met.
 
 
@@ -2782,7 +2763,7 @@ methods:
       replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
       should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
       `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the Web, the API call should return `false`<!-- -->.
+      the web, the API call should return `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2849,7 +2830,7 @@ methods:
       replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
       should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
       `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the Web, the API call should return `false`<!-- -->.
+      the web, the API call should return `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2914,66 +2895,18 @@ methods:
 
       ```TypeScript
 
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Loaded following custom properties:");
-          customProps = result.value;
-          const dataKey = Object.keys(customProps)[0];
-          const data = customProps[dataKey];
-          for (let propertyName in data)
-          {
-            let propertyValue = data[propertyName];
-            console.log(`${propertyName}: ${propertyValue}`);
-          }              
-        }
-        else {
+      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
           console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+          return;
         }
+
+        customProps = result.value;
+        console.log("Loaded the CustomProperties object.");
       });
 
       ```
@@ -3009,9 +2942,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3037,36 +2970,22 @@ methods:
 
       ```TypeScript
 
-      // The following code removes an attachment with an identifier of '0'.
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-          '0',
-          { asyncContext : null },
-          function (asyncResult)
-          {
-              console.log(asyncResult.status);
-          }
-      );
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-          $("#attachmentId").val(),
-          { asyncContext : null },
-          function(result)
-          {
-              if (result.status !== Office.AsyncResultStatus.Succeeded) {
-                  console.error(`${result.error.message}`);
-              } else {
-                  console.log(`Attachment removed successfully.`);
-              }
+        $("#attachmentId")
+          .val()
+          .toString(),
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(result.error.message);
+            return;
           }
+
+          console.log(`Attachment removed successfully.`);
+        }
       );
 
       ```
@@ -3106,9 +3025,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3473,12 +3392,12 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the
-            text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't),
-            the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
-            clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not
-            set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then
-            plain text is used.
+            current style is applied in Outlook on the web and on desktop clients. If the field is an HTML editor, only
+            the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject
+            doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on
+            desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType`
+            is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text,
+            then plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />

@@ -51,11 +51,7 @@ properties:
         if (field.isNullObject) {
           console.log("This document has no fields.");
         } else {
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
-          console.log("Type of first field: " + field.type);
-          console.log("Is the first field locked? " + field.locked);
-          console.log("Kind of the first field: " + field.kind);
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
         }
       });
 
@@ -123,11 +119,7 @@ properties:
         if (field.isNullObject) {
           console.log("This document has no fields.");
         } else {
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
-          console.log("Type of first field: " + field.type);
-          console.log("Is the first field locked? " + field.locked);
-          console.log("Kind of the first field: " + field.kind);
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
         }
       });
 
@@ -339,11 +331,7 @@ properties:
         if (field.isNullObject) {
           console.log("This document has no fields.");
         } else {
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
-          console.log("Type of first field: " + field.type);
-          console.log("Is the first field locked? " + field.locked);
-          console.log("Kind of the first field: " + field.kind);
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
         }
       });
 
@@ -397,11 +385,7 @@ properties:
         if (field.isNullObject) {
           console.log("This document has no fields.");
         } else {
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
-          console.log("Type of first field: " + field.type);
-          console.log("Is the first field locked? " + field.locked);
-          console.log("Kind of the first field: " + field.kind);
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
         }
       });
 
@@ -605,9 +589,7 @@ methods:
         if (field.isNullObject) {
           console.log("No field in selection.");
         } else {
-          console.log("Before updating:");
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("Before updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
 
           field.updateResult();
           field.select();
@@ -616,9 +598,7 @@ methods:
           field.load(["code", "result"]);
           await context.sync();
 
-          console.log("After updating:");
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("After updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
         }
       });
 
@@ -776,9 +756,7 @@ methods:
         if (field.isNullObject) {
           console.log("No field in selection.");
         } else {
-          console.log("Before updating:");
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("Before updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
 
           field.updateResult();
           field.select();
@@ -787,9 +765,7 @@ methods:
           field.load(["code", "result"]);
           await context.sync();
 
-          console.log("After updating:");
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("After updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
         }
       });
 

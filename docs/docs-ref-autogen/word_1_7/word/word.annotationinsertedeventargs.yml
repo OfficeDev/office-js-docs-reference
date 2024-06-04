@@ -50,7 +50,7 @@ remarks: >-
       await context.sync();
 
       for (let annotation of annotations) {
-        console.log(`AnnotationInserted: ${annotation.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+        console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
       }
     });
   }

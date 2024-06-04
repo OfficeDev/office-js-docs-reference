@@ -210,6 +210,8 @@ items:
                     uid: 'office!Office.CoercionType:enum'
                   - name: CustomXMLNodeType
                     uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DevicePermissionType
+                    uid: 'office!Office.DevicePermissionType:enum'
                   - name: DocumentMode
                     uid: 'office!Office.DocumentMode:enum'
                   - name: EventType
@@ -294,6 +296,8 @@ items:
                 uid: 'office!Office.CustomXmlParts:interface'
               - name: CustomXmlPrefixMappings
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
+              - name: DevicePermission
+                uid: 'office!Office.DevicePermission:interface'
               - name: Dialog
                 uid: 'office!Office.Dialog:interface'
               - name: DialogMessageOptions
@@ -368,6 +372,8 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+              - name: Urls
+                uid: 'office!Office.Urls:interface'
               - name: VisibilityModeChangedMessage
                 uid: 'office!Office.VisibilityModeChangedMessage:interface'
           - name: OfficeExtension
@@ -603,7 +609,6 @@ items:
             href: ../../manifest/mobileformfactor.md
           - name: MoreInfo
             href: ../../manifest/moreinfo.md
-            displayName: preview
           - name: OfficeMenu
             href: ../../manifest/officemenu.md
           - name: OfficeTab
@@ -616,13 +621,10 @@ items:
             href: ../../manifest/page.md
           - name: PreProcessingDialog
             href: ../../manifest/preprocessingdialog.md
-            displayName: preview
           - name: ReportPhishingCustomization
             href: ../../manifest/reportphishingcustomization.md
-            displayName: preview
           - name: ReportingOptions
             href: ../../manifest/reportingoptions.md
-            displayName: preview
           - name: Resources
             href: ../../manifest/resources.md
           - name: Runtime
@@ -745,6 +747,22 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.14
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.14/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.13
             items:
               - name: Overview
@@ -1020,6 +1038,9 @@ items:
             href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
             href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Device Permission Service requirement sets
+            href: >-
+              ../../requirement-sets/common/device-permission-service-requirement-sets.md
           - name: Dialog API requirement sets
             href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets

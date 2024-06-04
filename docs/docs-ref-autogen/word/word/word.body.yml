@@ -79,8 +79,7 @@ properties:
           await context.sync();
 
           for (let i = 0; i < fields.items.length; i++) {
-            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
-            console.log(`Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
+            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
           }
         }
       });
@@ -225,7 +224,52 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of list objects in the body.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
+
+
+      // Gets information about the first list in the document.
+
+      await Word.run(async (context) => {
+        const lists = context.document.body.lists;
+        lists.load("items");
+
+        await context.sync();
+
+        if (lists.items.length === 0) {
+          console.warn("There are no lists in this document.");
+          return;
+        }
+        
+        // Get the first list.
+        const list = lists.getFirst();
+        list.load("levelTypes,levelExistences");
+
+        await context.sync();
+
+        const levelTypes = list.levelTypes;
+        console.log("Level types of the first list:");
+        for (let i = 0; i < levelTypes.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelTypes[i]}`);
+        }
+
+        const levelExistences = list.levelExistences;
+        console.log("Level existences of the first list:");
+        for (let i = 0; i < levelExistences.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -686,12 +730,11 @@ methods:
       await Word.run(async (context) => {
         const comments = context.document.body.getComments();
 
-        // Load objects for display in Script Lab console.
+        // Load objects to log in the console.
         comments.load();
         await context.sync();
 
-        console.log("All comments:");
-        console.log(comments);
+        console.log("All comments:", comments);
       });
 
       ```
@@ -1405,7 +1448,7 @@ methods:
         // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        console.log('Text added to the beginning of the document body.');
+        console.log("Text added to the beginning of the document body.");
       });
 
       ```
@@ -1517,7 +1560,7 @@ methods:
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
-        const results = context.document.body.search("Online");
+        const results : Word.RangeCollection = context.document.body.search("Online");
         results.load("length");
 
         await context.sync();
@@ -1538,7 +1581,7 @@ methods:
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
-        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results : Word.RangeCollection = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();
@@ -1749,7 +1792,48 @@ events:
     package: word!
     fullName: onCommentAdded
     summary: Occurs when new comments are added.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        body.track();
+        await context.sync();
+
+        eventContexts[0] = body.onCommentAdded.add(onEventHandler);
+        eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
+        eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
+        eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
+        eventContexts[4] = body.onCommentSelected.add(onEventHandler);
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onEventHandler(event: Word.CommentEventArgs) {
+        // Handler for all events except onCommentChanged.
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1763,7 +1847,49 @@ events:
     package: word!
     fullName: onCommentChanged
     summary: Occurs when a comment or its reply is changed.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        body.track();
+        await context.sync();
+
+        eventContexts[0] = body.onCommentAdded.add(onEventHandler);
+        eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
+        eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
+        eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
+        eventContexts[4] = body.onCommentSelected.add(onEventHandler);
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onChangedHandler(event: Word.CommentEventArgs) {
+        await Word.run(async (context) => {
+          console.log(
+            `${event.type} event detected. ${event.changeType} change made. Event source: ${event.source}. Comment info:`, event.commentDetails
+          );
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1777,7 +1903,48 @@ events:
     package: word!
     fullName: onCommentDeleted
     summary: Occurs when comments are deleted.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        body.track();
+        await context.sync();
+
+        eventContexts[0] = body.onCommentAdded.add(onEventHandler);
+        eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
+        eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
+        eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
+        eventContexts[4] = body.onCommentSelected.add(onEventHandler);
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onEventHandler(event: Word.CommentEventArgs) {
+        // Handler for all events except onCommentChanged.
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1791,7 +1958,48 @@ events:
     package: word!
     fullName: onCommentDeselected
     summary: Occurs when a comment is deselected.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        body.track();
+        await context.sync();
+
+        eventContexts[0] = body.onCommentAdded.add(onEventHandler);
+        eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
+        eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
+        eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
+        eventContexts[4] = body.onCommentSelected.add(onEventHandler);
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onEventHandler(event: Word.CommentEventArgs) {
+        // Handler for all events except onCommentChanged.
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1805,7 +2013,48 @@ events:
     package: word!
     fullName: onCommentSelected
     summary: Occurs when a comment is selected.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        const body = context.document.body;
+        body.track();
+        await context.sync();
+
+        eventContexts[0] = body.onCommentAdded.add(onEventHandler);
+        eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
+        eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
+        eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
+        eventContexts[4] = body.onCommentSelected.add(onEventHandler);
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onEventHandler(event: Word.CommentEventArgs) {
+        // Handler for all events except onCommentChanged.
+        await Word.run(async (context) => {
+          console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

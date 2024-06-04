@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies control settings that apply when your mail add-in is used on a tablet.
 
 > [!IMPORTANT]
-> The `TabletSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server) and Outlook 2013 on Windows. To support Outlook on Android and iOS, see [Add-ins for Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-addins).
+> The `TabletSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server). To support Outlook on Android and iOS, see [Add-ins for Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-addins).
 
 **Add-in type:** Mail
 

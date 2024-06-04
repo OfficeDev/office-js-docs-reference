@@ -55,11 +55,11 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
-      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
-      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
-      that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that's returned in the AsyncResult object without being altered.</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,10 +88,10 @@ methods:
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access the
-      Slice object</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
-      operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
-      information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an
-      item of any type that is returned in the AsyncResult object without being altered</td> </tr> </table>
+      Slice object.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
+      operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
+      information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an
+      item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
 
       #### Examples

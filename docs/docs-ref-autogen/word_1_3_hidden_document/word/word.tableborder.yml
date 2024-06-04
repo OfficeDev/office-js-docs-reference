@@ -36,10 +36,7 @@ properties:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -90,10 +87,7 @@ properties:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -139,10 +133,7 @@ properties:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```

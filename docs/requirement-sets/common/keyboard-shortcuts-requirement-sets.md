@@ -1,9 +1,9 @@
 ---
 title: Keyboard Shortcuts requirement sets
 description: Keyboard Shortcuts requirement set information for Office Add-ins.
-ms.date: 09/28/2022
+ms.date: 04/15/2024
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ---
 
 # Keyboard Shortcuts requirement sets
@@ -12,19 +12,18 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Keyboard Shortcuts requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| KeyboardShortcuts 1.1 | Version 2111 (Build 14701.10000) | Not available | 16.55 | Not supported | Supported |
+| KeyboardShortcuts 1.1 | Supported | Version 2111 (Build 14701.10000) | Not available | 16.55 | Not supported |
 
 > [!NOTE]
 > The **KeyboardShortcuts 1.1** requirement set is supported only in Excel.
 
 ## Office versions and build numbers
 
-To find out more about versions, build numbers, and Office Online Server, see:
+To find out more about versions and build numbers, see:
 
 [!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
-- [Office Online Server overview](/officeonlineserver/office-online-server-overview)
 
 ## Office Common API requirement sets
 

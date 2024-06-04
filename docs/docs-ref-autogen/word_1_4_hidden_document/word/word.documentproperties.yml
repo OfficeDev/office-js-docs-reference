@@ -4,7 +4,28 @@ uid: 'word!Word.DocumentProperties:class'
 package: word!
 fullName: Word.DocumentProperties
 summary: Represents document properties.
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
+
+
+  await Word.run(async (context) => {
+      const builtInProperties : Word.DocumentProperties = context.document.properties;
+      builtInProperties.load("*"); // Let's get all!
+
+      await context.sync();
+      console.log(JSON.stringify(builtInProperties, null, 4));
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

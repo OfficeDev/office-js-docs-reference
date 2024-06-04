@@ -1083,9 +1083,9 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the
-      parent item.
+      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
+      parent (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of
+      the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1095,8 +1095,8 @@ properties:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1615,7 +1615,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1693,7 +1693,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1773,90 +1773,6 @@ methods:
 
       ```TypeScript
 
-      // The following code passes a string to the `displayReplyForm` method.
-
-      Office.context.mailbox.item.displayReplyForm('hello there');
-
-      Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
-
-
-      // Reply with an empty body.
-
-      Office.context.mailbox.item.displayReplyForm({});
-
-
-      // Reply with just a body.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi'
-      });
-
-
-      // Reply with a body and a file attachment.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              }
-          ]
-      });
-
-
-      // Reply with a body and an item attachment.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ]
-      });
-
-
-      // Reply with a body, file attachment, item attachment, and a callback.
-
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              },
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ],
-          'callback' : function(asyncResult)
-          {
-              console.log(asyncResult.value);
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
@@ -1868,16 +1784,18 @@ methods:
 
 
       Office.context.mailbox.item.displayReplyForm({
-        htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
+        htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
         attachments: [
-          { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
+          { type: "file", url: "https://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
           { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
         ],
-        options: { asyncContext: null },
-        callback: function(result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        callback: (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(`Action failed with message ${result.error.message}`);
+            return;
           }
+
+          console.log("Created reply with attachments.");
         }
       });
 
@@ -1917,7 +1835,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1951,19 +1869,19 @@ methods:
       ...
 
 
-      // The async version is only available starting with requirement set 1.9,
+      // The async version is only available starting with requirement set 1.9.
 
-      // and provides a callback when the new appointment form has been created.
+      // It provides a callback when the new appointment form has been created.
 
       Office.context.mailbox.item.displayReplyFormAsync(
         {
-          htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
+          htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
           attachments: [
-            { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
+            { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
             { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
           ]
         },
-        function(asyncResult) {
+        (asyncResult) => {
           console.log(JSON.stringify(asyncResult));
         }
       );
@@ -2016,7 +1934,7 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2171,7 +2089,7 @@ methods:
     fullName: 'getAsFileAsync(options, callback)'
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2182,7 +2100,7 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2210,7 +2128,7 @@ methods:
     fullName: getAsFileAsync(callback)
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2229,7 +2147,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-eml-format.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-eml-format.yaml
 
 
       Office.context.mailbox.item.getAsFileAsync((asyncResult) => {
@@ -2242,7 +2160,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getAsFileAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
@@ -2268,7 +2186,7 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
       valid only within the same session. A session is over when the user closes the app, or if the user starts
       composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2360,7 +2278,7 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
       valid only within the same session. A session is over when the user closes the app, or if the user starts
       composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2584,8 +2502,8 @@ methods:
             **read item** to access, as specified in the following table.
 
 
-            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-            Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required permission
+            level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
             <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
             <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
             <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
@@ -2638,8 +2556,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft 365
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
@@ -2815,8 +2733,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft 365
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2940,8 +2858,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft 365
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -3032,11 +2950,11 @@ methods:
 
       **Note**: This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview)<!-- -->.
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -3069,8 +2987,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft 365
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -3185,8 +3103,8 @@ methods:
 
       - This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft 365
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -3303,7 +3221,7 @@ methods:
       -->**: Message Read
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -3405,7 +3323,7 @@ methods:
       -->**: Message Read
 
 
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -3483,66 +3401,18 @@ methods:
 
       ```TypeScript
 
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Loaded following custom properties:");
-          customProps = result.value;
-          const dataKey = Object.keys(customProps)[0];
-          const data = customProps[dataKey];
-          for (let propertyName in data)
-          {
-            let propertyValue = data[propertyName];
-            console.log(`${propertyName}: ${propertyValue}`);
-          }              
-        }
-        else {
+      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
           console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+          return;
         }
+
+        customProps = result.value;
+        console.log("Loaded the CustomProperties object.");
       });
 
       ```

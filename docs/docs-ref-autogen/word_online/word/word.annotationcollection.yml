@@ -28,10 +28,10 @@ remarks: >-
 
     console.log("Annotations found:");
 
-    for (var i = 0; i < annotations.items.length; i++) {
+    for (let i = 0; i < annotations.items.length; i++) {
       const annotation = annotations.items[i];
 
-      console.log(`${annotation.id} - ${annotation.state} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+      console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
     }
   });
 
