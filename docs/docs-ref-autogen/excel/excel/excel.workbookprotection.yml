@@ -107,7 +107,7 @@ methods:
     uid: 'excel!Excel.WorkbookProtection#protect:member(1)'
     package: excel!
     fullName: protect(password)
-    summary: Protects a workbook. Fails if the workbook has been protected.
+    summary: Protects the workbook. Fails if the workbook has been protected.
     remarks: >-
       \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -170,7 +170,7 @@ methods:
     uid: 'excel!Excel.WorkbookProtection#unprotect:member(1)'
     package: excel!
     fullName: unprotect(password)
-    summary: Unprotects a workbook.
+    summary: Unprotects the workbook.
     remarks: >-
       \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

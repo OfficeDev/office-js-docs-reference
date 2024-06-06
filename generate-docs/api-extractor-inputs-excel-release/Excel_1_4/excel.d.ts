@@ -763,7 +763,7 @@ export declare namespace Excel {
          */
         readonly id: string;
         /**
-         * The display name of the worksheet.
+         * The display name of the worksheet. The name must be fewer than 32 characters.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -11799,7 +11799,7 @@ export declare namespace Excel {
             
             
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -13744,7 +13744,7 @@ export declare namespace Excel {
              */
             id?: string;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -16140,7 +16140,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -16210,7 +16210,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: The display name of the worksheet.
+             * For EACH ITEM in the collection: The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

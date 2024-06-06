@@ -1322,7 +1322,8 @@ methods:
     fullName: getDirectPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
