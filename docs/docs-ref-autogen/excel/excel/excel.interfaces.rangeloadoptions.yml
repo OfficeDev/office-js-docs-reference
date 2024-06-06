@@ -103,6 +103,20 @@ properties:
       content: 'columnIndex?: boolean;'
       return:
         type: boolean
+  - name: control
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#control:member'
+    package: excel!
+    fullName: control
+    summary: >-
+      Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
+      `EmptyCellControl`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'control?: boolean;'
+      return:
+        type: boolean
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member'
     package: excel!

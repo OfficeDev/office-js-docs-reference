@@ -39,7 +39,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#commentId:member'
     package: excel!
     fullName: commentId
-    summary: Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+    summary: Represents the ID of the comment or comment reply to which the task change is anchored.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

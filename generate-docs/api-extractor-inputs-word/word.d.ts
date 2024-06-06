@@ -47,40 +47,35 @@ export declare namespace Word {
      * Properties defining the behavior of the pop-up menu for a given critique.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.8]
      */
     export interface CritiquePopupOptions {
         /**
          * Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         brandingTextResourceId: string;
         /**
          * Gets the manifest resource ID of the string to use as the subtitle.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         subtitleResourceId: string;
         /**
          * Gets the suggestions to display in the critique pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         suggestions: string[];
         /**
          * Gets the manifest resource ID of the string to use as the title.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         titleResourceId: string;
     }
@@ -109,8 +104,7 @@ export declare namespace Word {
          * Specifies the behavior of the pop-up menu for the critique.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         popupOptions: Word.CritiquePopupOptions;
         /**
@@ -370,32 +364,28 @@ export declare namespace Word {
      * Represents action information that's passed back on annotation pop-up action event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.8]
      */
     export interface AnnotationPopupActionEventArgs {
         /**
          * Specifies the chosen action in the pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         action: string;
         /**
          * Specifies the accepted suggestion (only populated when accepting a critique suggestion).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         critiqueSuggestion: string;
         /**
          * Specifies the annotation ID for which the event was fired.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         id: string;
     }
@@ -757,10 +747,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` support is currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -3542,10 +3533,9 @@ export declare namespace Word {
          * Occurs when the user performs an action in an annotation pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.8]
          *
          * @eventproperty
-         * @beta
          */
         readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;
         /**
@@ -6086,10 +6076,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` support is currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -6852,8 +6843,7 @@ export declare namespace Word {
                     To highlight the text permanently, set the range's Font.HighlightColor.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         highlight(): void;
         /**
@@ -6894,10 +6884,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` support is currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
         /**
          * Inserts an endnote. The endnote reference is placed after the range.
          *
@@ -7064,8 +7055,7 @@ export declare namespace Word {
          * Removes the highlight added by the Highlight function if any.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         removeHighlight(): void;
         /**
@@ -10013,8 +10003,7 @@ export declare namespace Word {
         /**
          * Represents an action in the annotation pop-up.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         annotationPopupAction = "AnnotationPopupAction",
     }
@@ -10035,47 +10024,6 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         remote = "Remote",
-    }
-    /**
-     * Provides information about the content control that raised an event.
-     *
-     * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface ContentControlEventArgs {
-        /**
-         * The object that raised the event. Load this object to get its properties.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        contentControl: Word.ContentControl;
-        /**
-         * The event type. See Word.EventType for details.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
-        /**
-         * Gets the content control IDs.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        ids: number[];
-        /**
-         * The source of the event. It can be local or remote (through coauthoring).
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Word.EventSource | "Local" | "Remote";
     }
     /**
      * Provides information about the content control that raised contentControlAdded event.

@@ -512,6 +512,16 @@ Excel.CellBorderCollection,"left",Property,Good,false
 Excel.CellBorderCollection,"right",Property,Good,false
 Excel.CellBorderCollection,"top",Property,Good,false
 Excel.CellBorderCollection,"vertical",Property,Good,false
+Excel.CellControl,N/A,TypeAlias,Good,false
+Excel.CellControlType,N/A,Enum,Good,false
+Excel.CellControlType,"checkbox",EnumField,Fine,false
+Excel.CellControlType,"Checkbox",EnumField,Poor,false
+Excel.CellControlType,"empty",EnumField,Fine,false
+Excel.CellControlType,"Empty",EnumField,Poor,false
+Excel.CellControlType,"mixed",EnumField,Fine,false
+Excel.CellControlType,"Mixed",EnumField,Fine,false
+Excel.CellControlType,"unknown",EnumField,Good,false
+Excel.CellControlType,"Unknown",EnumField,Good,false
 Excel.CellProperties,N/A,Class,Fine,false
 Excel.CellProperties,"address",Property,Fine,false
 Excel.CellProperties,"addressLocal",Property,Fine,false
@@ -1098,6 +1108,7 @@ Excel.ChartFill,"context",Property,Good,false
 Excel.ChartFill,"clear()",Method,Poor,true
 Excel.ChartFill,"getSolidColor()",Method,Poor,false
 Excel.ChartFill,"setSolidColor(color)",Method,Poor,true
+Excel.ChartFill,"toJSON()",Method,Poor,false
 Excel.ChartFont,N/A,Class,Good,true
 Excel.ChartFont,"bold",Property,Good,false
 Excel.ChartFont,"color",Property,Good,false
@@ -1682,6 +1693,8 @@ Excel.ChartType,"xyscatterSmoothNoMarkers",EnumField,Fine,false
 Excel.ChartUnderlineStyle,N/A,Enum,Fine,false
 Excel.ChartUnderlineStyle,"none",EnumField,Fine,false
 Excel.ChartUnderlineStyle,"single",EnumField,Fine,false
+Excel.CheckboxCellControl,N/A,Class,Good,false
+Excel.CheckboxCellControl,"type",Property,Missing,false
 Excel.ClearApplyTo,N/A,Enum,Fine,true
 Excel.ClearApplyTo,"all",EnumField,Fine,false
 Excel.ClearApplyTo,"contents",EnumField,Fine,false
@@ -2570,6 +2583,8 @@ Excel.EmailIdentity,N/A,Class,Good,false
 Excel.EmailIdentity,"displayName",Property,Good,false
 Excel.EmailIdentity,"email",Property,Good,false
 Excel.EmailIdentity,"id",Property,Good,false
+Excel.EmptyCellControl,N/A,Class,Good,false
+Excel.EmptyCellControl,"type",Property,Missing,false
 Excel.EmptyCellValue,N/A,Class,Good,false
 Excel.EmptyCellValue,"basicType",Property,Good,false
 Excel.EmptyCellValue,"basicValue",Property,Good,false
@@ -3223,6 +3238,7 @@ Excel.EventType,"chartDeleted",EnumField,Fine,false
 Excel.EventType,"commentAdded",EnumField,Fine,false
 Excel.EventType,"commentChanged",EnumField,Fine,false
 Excel.EventType,"commentDeleted",EnumField,Fine,false
+Excel.EventType,"lineageActivityUpdateAvailable",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Fine,false
@@ -3242,7 +3258,6 @@ Excel.EventType,"visualSelectionChanged",EnumField,Fine,false
 Excel.EventType,"workbookActivated",EnumField,Fine,false
 Excel.EventType,"workbookAutoSaveSettingChanged",EnumField,Fine,false
 Excel.EventType,"workbookFormulaReferenceStyleChanged",EnumField,Fine,false
-Excel.EventType,"workbookNavigationObjectChanged",EnumField,Fine,false
 Excel.EventType,"worksheetActivated",EnumField,Fine,false
 Excel.EventType,"worksheetAdded",EnumField,Fine,false
 Excel.EventType,"worksheetCalculated",EnumField,Fine,false
@@ -3475,7 +3490,7 @@ Excel.FunctionResult,"load(options)",Method,Poor,false
 Excel.FunctionResult,"load(propertyNames)",Method,Poor,false
 Excel.FunctionResult,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.FunctionResult,"toJSON()",Method,Poor,false
-Excel.Functions,N/A,Class,Good,true
+Excel.Functions,N/A,Class,Good,false
 Excel.Functions,"context",Property,Good,false
 Excel.Functions,"abs(number)",Method,Poor,false
 Excel.Functions,"accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)",Method,Poor,false
@@ -3793,7 +3808,7 @@ Excel.Functions,"stDevA(values)",Method,Poor,false
 Excel.Functions,"stDevPA(values)",Method,Poor,false
 Excel.Functions,"substitute(text, oldText, newText, instanceNum)",Method,Fine,false
 Excel.Functions,"subtotal(functionNum, values)",Method,Poor,false
-Excel.Functions,"sum(values)",Method,Poor,true
+Excel.Functions,"sum(values)",Method,Poor,false
 Excel.Functions,"sumIf(range, criteria, sumRange)",Method,Poor,false
 Excel.Functions,"sumIfs(sumRange, values)",Method,Poor,false
 Excel.Functions,"sumSq(values)",Method,Poor,false
@@ -3829,7 +3844,7 @@ Excel.Functions,"var_S(values)",Method,Poor,false
 Excel.Functions,"varA(values)",Method,Poor,false
 Excel.Functions,"varPA(values)",Method,Poor,false
 Excel.Functions,"vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)",Method,Poor,false
-Excel.Functions,"vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)",Method,Fine,true
+Excel.Functions,"vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)",Method,Fine,false
 Excel.Functions,"weekday(serialNumber, returnType)",Method,Poor,false
 Excel.Functions,"weekNum(serialNumber, returnType)",Method,Poor,false
 Excel.Functions,"weibull_Dist(x, alpha, beta, cumulative)",Method,Poor,false
@@ -4313,6 +4328,10 @@ Excel.LoadToType,"connectionOnly",EnumField,Fine,false
 Excel.LoadToType,"pivotChart",EnumField,Fine,false
 Excel.LoadToType,"pivotTable",EnumField,Fine,false
 Excel.LoadToType,"table",EnumField,Fine,false
+Excel.LocalImage,N/A,Class,Good,false
+Excel.LocalImage,"context",Property,Good,false
+Excel.LocalImage,"getBase64EncodedImageData(cacheUid)",Method,Fine,false
+Excel.LocalImage,"toJSON()",Method,Poor,false
 Excel.LocalImageCellValue,N/A,Class,Good,false
 Excel.LocalImageCellValue,"altText",Property,Good,false
 Excel.LocalImageCellValue,"attribution",Property,Good,false
@@ -4323,6 +4342,8 @@ Excel.LocalImageCellValue,"provider",Property,Good,false
 Excel.LocalImageCellValue,"type",Property,Good,false
 Excel.LocalImageCellValueCacheId,N/A,Class,Good,false
 Excel.LocalImageCellValueCacheId,"cacheUid",Property,Good,false
+Excel.MixedCellControl,N/A,Class,Good,false
+Excel.MixedCellControl,"type",Property,Missing,false
 Excel.NamedItem,N/A,Class,Good,true
 Excel.NamedItem,"arrayValues",Property,Good,false
 Excel.NamedItem,"comment",Property,Good,false
@@ -4907,6 +4928,7 @@ Excel.Range,"columnHidden",Property,Good,false
 Excel.Range,"columnIndex",Property,Good,false
 Excel.Range,"conditionalFormats",Property,Good,false
 Excel.Range,"context",Property,Good,false
+Excel.Range,"control",Property,Good,false
 Excel.Range,"dataValidation",Property,Good,false
 Excel.Range,"format",Property,Good,false
 Excel.Range,"formulas",Property,Good,false
@@ -5009,6 +5031,7 @@ Excel.Range,"merge(across)",Method,Poor,true
 Excel.Range,"moveTo(destinationRange)",Method,Poor,true
 Excel.Range,"removeDuplicates(columns, includesHeader)",Method,Fine,true
 Excel.Range,"replaceAll(text, replacement, criteria)",Method,Poor,false
+Excel.Range,"resetContent()",Method,Poor,false
 Excel.Range,"select()",Method,Poor,true
 Excel.Range,"set(properties, options)",Method,Poor,false
 Excel.Range,"set(properties)",Method,Poor,true
@@ -5461,6 +5484,7 @@ Excel.ShapeCollection,"addGroup(values)",Method,Poor,true
 Excel.ShapeCollection,"addImage(base64ImageString)",Method,Poor,true
 Excel.ShapeCollection,"addLine(startLeft, startTop, endLeft, endTop, connectorType)",Method,Poor,true
 Excel.ShapeCollection,"addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)",Method,Poor,false
+Excel.ShapeCollection,"addLocalImageReference(address)",Method,Fine,false
 Excel.ShapeCollection,"addSvg(xml)",Method,Poor,false
 Excel.ShapeCollection,"addTextBox(text)",Method,Poor,true
 Excel.ShapeCollection,"getCount()",Method,Poor,false
@@ -6189,6 +6213,8 @@ Excel.TopBottomSelectionType,N/A,Enum,Good,false
 Excel.TopBottomSelectionType,"items",EnumField,Fine,false
 Excel.TopBottomSelectionType,"percent",EnumField,Fine,false
 Excel.TopBottomSelectionType,"sum",EnumField,Fine,false
+Excel.UnknownCellControl,N/A,Class,Good,false
+Excel.UnknownCellControl,"type",Property,Missing,false
 Excel.ValueErrorCellValue,N/A,Class,Good,false
 Excel.ValueErrorCellValue,"basicType",Property,Good,false
 Excel.ValueErrorCellValue,"basicValue",Property,Good,false
@@ -6260,6 +6286,7 @@ Excel.Workbook,"functions",Property,Good,false
 Excel.Workbook,"isDirty",Property,Good,false
 Excel.Workbook,"linkedDataTypes",Property,Good,false
 Excel.Workbook,"linkedWorkbooks",Property,Good,false
+Excel.Workbook,"localImage",Property,Good,false
 Excel.Workbook,"name",Property,Good,false
 Excel.Workbook,"names",Property,Good,false
 Excel.Workbook,"pivotTables",Property,Good,true
@@ -8582,9 +8609,9 @@ Office.Contact,"phoneNumbers",Property,Good,false
 Office.Contact,"urls",Property,Good,false
 Office.CustomProperties,N/A,Class,Good,false
 Office.CustomProperties,"get(name)",Method,Fine,true
-Office.CustomProperties,"getAll()",Method,Fine,true
+Office.CustomProperties,"getAll()",Method,Fine,false
 Office.CustomProperties,"remove(name)",Method,Poor,true
-Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,true
+Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,false
 Office.CustomProperties,"saveAsync(asyncContext)",Method,Poor,false
 Office.CustomProperties,"set(name, value)",Method,Poor,true
 Office.DelayDeliveryTime,N/A,Class,Good,false
@@ -9194,13 +9221,13 @@ Office.RecurrenceProperties,"weekNumber",Property,Fine,false
 Office.RecurrenceTimeZone,N/A,Class,Good,true
 Office.RecurrenceTimeZone,"name",Property,Fine,false
 Office.RecurrenceTimeZone,"offset",Property,Fine,false
-Office.ReplyFormAttachment,N/A,Class,Good,true
+Office.ReplyFormAttachment,N/A,Class,Good,false
 Office.ReplyFormAttachment,"inLine",Property,Good,false
 Office.ReplyFormAttachment,"itemId",Property,Good,false
 Office.ReplyFormAttachment,"name",Property,Fine,false
 Office.ReplyFormAttachment,"type",Property,Good,false
 Office.ReplyFormAttachment,"url",Property,Good,false
-Office.ReplyFormData,N/A,Class,Good,true
+Office.ReplyFormData,N/A,Class,Good,false
 Office.ReplyFormData,"attachments",Property,Fine,false
 Office.ReplyFormData,"callback",Property,Fine,false
 Office.ReplyFormData,"htmlBody",Property,Good,false
@@ -10200,7 +10227,7 @@ Word.AnnotationHoveredEventArgs,N/A,Class,Good,true
 Word.AnnotationHoveredEventArgs,"id",Property,Good,false
 Word.AnnotationInsertedEventArgs,N/A,Class,Good,true
 Word.AnnotationInsertedEventArgs,"ids",Property,Good,false
-Word.AnnotationPopupActionEventArgs,N/A,Class,Good,false
+Word.AnnotationPopupActionEventArgs,N/A,Class,Good,true
 Word.AnnotationPopupActionEventArgs,"action",Property,Good,false
 Word.AnnotationPopupActionEventArgs,"critiqueSuggestion",Property,Good,false
 Word.AnnotationPopupActionEventArgs,"id",Property,Good,false
@@ -10753,11 +10780,6 @@ Word.ContentControlEnteredEventArgs,N/A,Class,Good,true
 Word.ContentControlEnteredEventArgs,"eventType",Property,Good,false
 Word.ContentControlEnteredEventArgs,"ids",Property,Good,false
 Word.ContentControlEnteredEventArgs,"source",Property,Good,false
-Word.ContentControlEventArgs,N/A,Class,Good,false
-Word.ContentControlEventArgs,"contentControl",Property,Good,false
-Word.ContentControlEventArgs,"eventType",Property,Good,false
-Word.ContentControlEventArgs,"ids",Property,Good,false
-Word.ContentControlEventArgs,"source",Property,Good,false
 Word.ContentControlExitedEventArgs,N/A,Class,Good,true
 Word.ContentControlExitedEventArgs,"eventType",Property,Good,false
 Word.ContentControlExitedEventArgs,"ids",Property,Good,false
@@ -10838,7 +10860,7 @@ Word.CritiqueColorScheme,"blue",EnumField,Fine,false
 Word.CritiqueColorScheme,"green",EnumField,Fine,false
 Word.CritiqueColorScheme,"lavender",EnumField,Fine,false
 Word.CritiqueColorScheme,"red",EnumField,Fine,false
-Word.CritiquePopupOptions,N/A,Class,Good,false
+Word.CritiquePopupOptions,N/A,Class,Good,true
 Word.CritiquePopupOptions,"brandingTextResourceId",Property,Good,false
 Word.CritiquePopupOptions,"subtitleResourceId",Property,Good,false
 Word.CritiquePopupOptions,"suggestions",Property,Good,false

@@ -1732,18 +1732,16 @@ methods:
 
 
       Office.context.mailbox.item.displayReplyForm({
-        htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
+        htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
         attachments: [
-          { type: "file", url: "https://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
+          { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
           { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
         ],
-        callback: (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
+        options: { asyncContext: null },
+        callback: function(result) {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(`Action failed with message ${result.error.message}`);
-            return;
           }
-
-          console.log("Created reply with attachments.");
         }
       });
 
@@ -1817,19 +1815,19 @@ methods:
       ...
 
 
-      // The async version is only available starting with requirement set 1.9.
+      // The async version is only available starting with requirement set 1.9,
 
-      // It provides a callback when the new appointment form has been created.
+      // and provides a callback when the new appointment form has been created.
 
       Office.context.mailbox.item.displayReplyFormAsync(
         {
-          htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
+          htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
           attachments: [
-            { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
+            { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
             { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
           ]
         },
-        (asyncResult) => {
+        function(asyncResult) {
           console.log(JSON.stringify(asyncResult));
         }
       );
@@ -2095,7 +2093,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-eml-format.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-eml-format.yaml
 
 
       Office.context.mailbox.item.getAsFileAsync((asyncResult) => {
@@ -3353,14 +3351,21 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
-          return;
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          const dataKey = Object.keys(customProps)[0];
+          const data = customProps[dataKey];
+          for (let propertyName in data)
+          {
+            let propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
         }
-
-        customProps = result.value;
-        console.log("Loaded the CustomProperties object.");
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
       });
 
       ```

@@ -769,18 +769,13 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl")
-        .val()
-        .toString();
-      Office.context.mailbox.item.addFileAttachmentAsync(
-        attachmentUrl,
-        getFileName(attachmentUrl),
-        { isInline: false },
-        (result) => {
-          console.log(result);
-        }
-      );
+      const attachmentUrl = $("#attachmentUrl").val();
 
+      Office.context.mailbox.item.addFileAttachmentAsync(
+          attachmentUrl,
+          getFileName(attachmentUrl),
+          { "asyncContext" : { var1: 1, var2: true } },
+          function(result) { console.log(result); });
       ```
     isPreview: false
     isDeprecated: false
@@ -1074,6 +1069,21 @@ methods:
           });
       }
 
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+
+      const attachmentItemId = $("#attachmentItemId").val();
+
+      Office.context.mailbox.item.addItemAttachmentAsync(
+          attachmentItemId,
+          "My attachment",
+          { "asyncContext" : { var3: 3, var4: false } },
+          function(result) { console.log(result); });
       ```
     isPreview: false
     isDeprecated: false
@@ -1423,14 +1433,21 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
-          return;
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          const dataKey = Object.keys(customProps)[0];
+          const data = customProps[dataKey];
+          for (let propertyName in data)
+          {
+            let propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
         }
-
-        customProps = result.value;
-        console.log("Loaded the CustomProperties object.");
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
       });
 
       ```
@@ -1499,17 +1516,16 @@ methods:
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-        $("#attachmentId")
-          .val()
-          .toString(),
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error(result.error.message);
-            return;
+          $("#attachmentId").val(),
+          { asyncContext : null },
+          function(result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded) {
+                  console.error(`${result.error.message}`);
+              } else {
+                  console.log(`Attachment removed successfully.`);
+              }
           }
-
-          console.log(`Attachment removed successfully.`);
-        }
       );
 
       ```

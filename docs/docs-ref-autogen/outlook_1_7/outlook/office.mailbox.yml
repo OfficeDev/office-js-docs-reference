@@ -1003,7 +1003,7 @@ methods:
           {
             type: "file",
             name: "image.png",
-            url: "https://i.imgur.com/9S36xvA.jpg",
+            url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
             isInline: true
           }
         ]

@@ -72,9 +72,11 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#get-property-name").val();
+      const propertyName = $("#propertyName").val();
 
       const propertyValue = customProps.get(propertyName);
+
+      $("#propertyValue").val(propertyValue);
 
       console.log(`The value of custom property "${propertyName}" is "${propertyValue}".`);
 
@@ -114,29 +116,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-
-      let allCustomProps;
-
-      if (Office.context.requirements.isSetSupported("Mailbox", "1.9")) {
-        allCustomProps = customProps.getAll();
-      } else {
-        allCustomProps = customProps["rawData"];
-      }
-
-
-      console.log(allCustomProps);
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,7 +153,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#remove-property-name").val();
+      const propertyName = $("#propertyName").val();
 
       customProps.remove(propertyName);
 
@@ -224,27 +203,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-
-      customProps.saveAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`saveAsync failed with message ${result.error.message}`);
-          return;
-        }
-
-        console.log(`Custom properties saved with status: ${result.status}`);
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -338,9 +296,9 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      const propertyName = $("#set-property-name").val();
+      const propertyName = $("#propertyName").val();
 
-      const propertyValue = $("#property-value").val();
+      const propertyValue = $("#propertyValue").val();
 
       customProps.set(propertyName, propertyValue);
 

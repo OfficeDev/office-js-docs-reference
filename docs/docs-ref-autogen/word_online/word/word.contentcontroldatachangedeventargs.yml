@@ -65,13 +65,13 @@ properties:
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
         "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-        "AnnotationInserted" | "AnnotationRemoved";
+        "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
           "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved"
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: ids
     uid: 'word!Word.ContentControlDataChangedEventArgs#ids:member'
     package: word!

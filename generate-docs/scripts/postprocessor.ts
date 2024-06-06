@@ -98,7 +98,7 @@ tryCatch(async () => {
                             {host: "outlook", versions: 15},
                             {host: "powerpoint", versions: 6},
                             {host: "visio", versions: 1},
-                            {host: "word", versions: 8}]; /* not including online or desktop*/
+                            {host: "word", versions: 9}]; /* not including online or desktop*/
 
     hostVersionMap.forEach(category => {
         if (category.versions > 1) {

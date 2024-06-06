@@ -335,6 +335,23 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
         description: ''
+  - name: addLocalImageReference(address)
+    uid: 'excel!Excel.ShapeCollection#addLocalImageReference:member(1)'
+    package: excel!
+    fullName: addLocalImageReference(address)
+    summary: Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addLocalImageReference(address: string): Excel.Shape;'
+      parameters:
+        - id: address
+          description: The address of the cell that contains the local image.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Shape:class" />'
+        description: The `Shape` object associated with the floating shape.
   - name: addSvg(xml)
     uid: 'excel!Excel.ShapeCollection#addSvg:member(1)'
     package: excel!

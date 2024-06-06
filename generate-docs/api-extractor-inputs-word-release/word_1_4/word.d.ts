@@ -16,6 +16,8 @@ export declare namespace Word {
     
     
     
+    
+    
     /**
      * Represents the application object.
      *
@@ -2239,6 +2241,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -4451,6 +4454,7 @@ export declare namespace Word {
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         
+        
         /**
          * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
          *
@@ -4589,6 +4593,7 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
+        
         /**
          * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
          *

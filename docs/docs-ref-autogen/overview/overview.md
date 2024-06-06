@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 02/27/2024
+ms.date: 06/10/2024
 ---
 
 # Office Add-ins JavaScript API reference
@@ -75,6 +75,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <li><a href="/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true">WordApiHiddenDocument 1.5</a> (Desktop only)</li>
             <li><a href="/javascript/api/word?view=word-js-1.4-hidden-document&preserve-view=true">WordApiHiddenDocument 1.4</a> (Desktop only)</li>
             <li><a href="/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true">WordApiHiddenDocument 1.3</a> (Desktop only)</li>
+            <li><a href="/javascript/api/word?view=word-js-1.8&preserve-view=true">WordApi 1.8</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.7&preserve-view=true">WordApi 1.7</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.6&preserve-view=true">WordApi 1.6</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.5&preserve-view=true">WordApi 1.5</a></li>

@@ -190,6 +190,18 @@ properties:
       content: 'readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;'
       return:
         type: '<xref uid="excel!Excel.LinkedWorkbookCollection:class" />'
+  - name: localImage
+    uid: 'excel!Excel.Workbook#localImage:member'
+    package: excel!
+    fullName: localImage
+    summary: Returns the `LocalImage` object associated with the workbook.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly localImage: Excel.LocalImage;'
+      return:
+        type: '<xref uid="excel!Excel.LocalImage:class" />'
   - name: name
     uid: 'excel!Excel.Workbook#name:member'
     package: excel!

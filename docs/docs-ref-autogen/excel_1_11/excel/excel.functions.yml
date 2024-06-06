@@ -4,32 +4,7 @@ uid: 'excel!Excel.Functions:class'
 package: excel!
 fullName: Excel.Functions
 summary: An object for evaluating Excel functions.
-remarks: >-
-  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-built-in-functions.yaml
-
-
-  await Excel.run(async (context) => {
-    // This function uses VLOOKUP to find data in the "Wrench" row on the worksheet. 
-    let range = context.workbook.worksheets.getItem("Sample").getRange("A1:D4");
-
-    // Get the value in the second column in the "Wrench" row.
-    let unitSoldInNov = context.workbook.functions.vlookup("Wrench", range, 2, false);
-    unitSoldInNov.load("value");
-
-    await context.sync();
-    console.log(" Number of wrenches sold in November = " + unitSoldInNov.value);
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -9082,38 +9057,7 @@ methods:
     package: excel!
     fullName: sum(values)
     summary: Adds all the numbers in a range of cells.
-    remarks: >-
-      \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-built-in-functions.yaml
-
-
-      await Excel.run(async (context) => {
-        // This function uses VLOOKUP to find data in the "Wrench" row 
-        // on the worksheet, and then it uses SUM to combine the values.
-        let range = context.workbook.worksheets.getItem("Sample").getRange("A1:D4");
-
-        // Get the values in the second, third, and fourth columns in the "Wrench" row,
-        // and combine those values with SUM. 
-        let sumOfTwoLookups = context.workbook.functions.sum(
-          context.workbook.functions.vlookup("Wrench", range, 2, false),
-          context.workbook.functions.vlookup("Wrench", range, 3, false),
-          context.workbook.functions.vlookup("Wrench", range, 4, false)
-        );
-        sumOfTwoLookups.load("value");
-
-        await context.sync();
-        console.log(" Number of wrenches sold in November, December, and January = " + sumOfTwoLookups.value);
-      });
-
-      ```
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10052,32 +9996,7 @@ methods:
     summary: >-
       Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you
       specify. By default, the table must be sorted in an ascending order.
-    remarks: >-
-      \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-built-in-functions.yaml
-
-
-      await Excel.run(async (context) => {
-        // This function uses VLOOKUP to find data in the "Wrench" row on the worksheet. 
-        let range = context.workbook.worksheets.getItem("Sample").getRange("A1:D4");
-
-        // Get the value in the second column in the "Wrench" row.
-        let unitSoldInNov = context.workbook.functions.vlookup("Wrench", range, 2, false);
-        unitSoldInNov.load("value");
-
-        await context.sync();
-        console.log(" Number of wrenches sold in November = " + unitSoldInNov.value);
-      });
-
-      ```
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

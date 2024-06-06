@@ -115,6 +115,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: control
+    uid: 'excel!Excel.Range#control:member'
+    package: excel!
+    fullName: control
+    summary: >-
+      Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
+      `EmptyCellControl`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'control: CellControl;'
+      return:
+        type: '<xref uid="excel!Excel.CellControl:type" />'
   - name: dataValidation
     uid: 'excel!Excel.Range#dataValidation:member'
     package: excel!
@@ -1390,7 +1404,8 @@ methods:
     fullName: getDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1441,7 +1456,8 @@ methods:
     fullName: getDirectDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1488,7 +1504,8 @@ methods:
     fullName: getDirectPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -2060,7 +2077,8 @@ methods:
     fullName: getPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -3167,6 +3185,21 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of replacements performed.
+  - name: resetContent()
+    uid: 'excel!Excel.Range#resetContent:member(1)'
+    package: excel!
+    fullName: resetContent()
+    summary: >-
+      Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined
+      by each control. Cells without cell controls are set to blank.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetContent(): void;'
+      return:
+        type: void
+        description: ''
   - name: select()
     uid: 'excel!Excel.Range#select:member(1)'
     package: excel!
