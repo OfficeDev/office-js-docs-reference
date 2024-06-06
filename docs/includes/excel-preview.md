@@ -5,6 +5,7 @@
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the encoded image.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
+|[CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)|[type](/javascript/api/excel/excel.checkboxcellcontrol#excel-excel-checkboxcellcontrol-type-member)|Represents an interactable control inside of a cell.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
@@ -28,7 +29,7 @@
 ||[unassignAll()](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassignall-member(1))|Removes all users from the list of assignees attached to the task.|
 |[DocumentTaskChange](/javascript/api/excel/excel.documenttaskchange)|[assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member)|Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.|
 ||[changedBy](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-changedby-member)|Represents the identity of the user who made the task change.|
-||[commentId](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-commentid-member)|Represents the ID of the `comment` or `commentReply` to which the task change is anchored.|
+||[commentId](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-commentid-member)|Represents the ID of the comment or comment reply to which the task change is anchored.|
 ||[createdDateTime](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-createddatetime-member)|Represents the creation date and time of the task change record.|
 ||[dueDateTime](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-duedatetime-member)|Represents the task's due date and time.|
 ||[id](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-id-member)|The unique GUID of the task change.|
@@ -51,6 +52,7 @@
 |[EmailIdentity](/javascript/api/excel/excel.emailidentity)|[displayName](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-displayname-member)|Represents the user's display name.|
 ||[email](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-email-member)|Represents the user's email.|
 ||[id](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-id-member)|Represents the user's unique ID.|
+|[EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol)|[type](/javascript/api/excel/excel.emptycellcontrol#excel-excel-emptycellcontrol-type-member)||
 |[EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)|[arrayProperty](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-arrayproperty-member)|Represents name of the property that contains the array shown in the card.|
 ||[columnsToReport](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-columnstoreport-member)|Represents the count of columns which the card claims are in the array.|
 ||[displayName](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-displayname-member)|Represents name of the property that contains the array shown in the card.|
@@ -86,6 +88,7 @@
 ||[getItemOrNullObject(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitemornullobject-member(1))|Gets a linked data type by ID.|
 ||[items](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-items-member)|Gets the loaded child items in this collection.|
 ||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-requestrefreshall-member(1))|Makes a request to refresh all the linked data types in the collection.|
+|[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
 |[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
 ||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
 ||[basicType](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
@@ -94,6 +97,7 @@
 ||[provider](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-provider-member)|Represents information that describes the entity or individual who provided the image.|
 ||[type](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-type-member)|Represents the type of this cell value.|
 |[LocalImageCellValueCacheId](/javascript/api/excel/excel.localimagecellvaluecacheid)|[cacheUid](/javascript/api/excel/excel.localimagecellvaluecacheid#excel-excel-localimagecellvaluecacheid-cacheuid-member)|Represents the image's UID as it appears in the cache.|
+|[MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol)|[type](/javascript/api/excel/excel.mixedcellcontrol#excel-excel-mixedcellcontrol-type-member)||
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
@@ -105,7 +109,8 @@
 |[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
 ||[refresh()](/javascript/api/excel/excel.query#excel-excel-query-refresh-member(1))|Refreshes the query.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
-|[Range](/javascript/api/excel/excel.range)|||
+|[Range](/javascript/api/excel/excel.range)|[control](/javascript/api/excel/excel.range#excel-excel-range-control-member)|Accesses the cell control applied to this range.|
+||[resetContent()](/javascript/api/excel/excel.range#excel-excel-range-resetcontent-member(1))|Sets all cells in the range to their default state.|
 |[RangeAreas](/javascript/api/excel/excel.rangeareas)|||
 |[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
@@ -116,7 +121,8 @@
 ||[source](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-source-member)|Gets the source of the event.|
 ||[type](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-type-member)|Gets the type of the event.|
 ||[warnings](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-warnings-member)|An array that contains any warnings generated from the refresh request.|
-|[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
+|[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
+||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 |[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Represents the slicer name used in the formula.|
 ||[setStyle(style: string \| SlicerStyle \| BuiltInSlicerStyle)](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))|Sets the style applied to the slicer.|
 ||[slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)|The style applied to the slicer.|
@@ -133,8 +139,10 @@
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
+|[UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol)|[type](/javascript/api/excel/excel.unknowncellcontrol#excel-excel-unknowncellcontrol-type-member)||
 |[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
+||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
