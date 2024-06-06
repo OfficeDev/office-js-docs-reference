@@ -95,6 +95,14 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentDeleted"'
+  - name: lineageActivityUpdateAvailable
+    uid: 'excel!Excel.EventType.lineageActivityUpdateAvailable:member'
+    package: excel!
+    summary: |-
+      LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"LineageActivityUpdateAvailable"'
   - name: linkedDataTypeLinkedDataTypeAdded
     uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
     package: excel!
@@ -274,14 +282,6 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"WorkbookFormulaReferenceStyleChanged"'
-  - name: workbookNavigationObjectChanged
-    uid: 'excel!Excel.EventType.workbookNavigationObjectChanged:member'
-    package: excel!
-    summary: |-
-      LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"WorkbookNavigationObjectChanged"'
   - name: worksheetActivated
     uid: 'excel!Excel.EventType.worksheetActivated:member'
     package: excel!

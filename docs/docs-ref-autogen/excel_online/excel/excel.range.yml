@@ -1390,7 +1390,8 @@ methods:
     fullName: getDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1441,7 +1442,8 @@ methods:
     fullName: getDirectDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1488,7 +1490,8 @@ methods:
     fullName: getDirectPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -2060,7 +2063,8 @@ methods:
     fullName: getPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

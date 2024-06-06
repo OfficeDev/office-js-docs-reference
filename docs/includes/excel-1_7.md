@@ -190,9 +190,9 @@
 ||[properties](/javascript/api/excel/excel.workbook#excel-excel-workbook-properties-member)|Gets the workbook properties.|
 ||[protection](/javascript/api/excel/excel.workbook#excel-excel-workbook-protection-member)|Returns the protection object for a workbook.|
 ||[styles](/javascript/api/excel/excel.workbook#excel-excel-workbook-styles-member)|Represents a collection of styles associated with the workbook.|
-|[WorkbookProtection](/javascript/api/excel/excel.workbookprotection)|[protect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protect-member(1))|Protects a workbook.|
+|[WorkbookProtection](/javascript/api/excel/excel.workbookprotection)|[protect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protect-member(1))|Protects the workbook.|
 ||[protected](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protected-member)|Specifies if the workbook is protected.|
-||[unprotect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-unprotect-member(1))|Unprotects a workbook.|
+||[unprotect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-unprotect-member(1))|Unprotects the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))|Copies a worksheet and places it at the specified position.|
 ||[freezePanes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-freezepanes-member)|Gets an object that can be used to manipulate frozen panes on the worksheet.|
 ||[getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrangebyindexes-member(1))|Gets the `Range` object beginning at a particular row index and column index, and spanning a certain number of rows and columns.|

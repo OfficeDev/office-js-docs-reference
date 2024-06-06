@@ -89,7 +89,7 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#name:member'
     package: excel!
     fullName: name
-    summary: The display name of the worksheet.
+    summary: The display name of the worksheet. The name must be fewer than 32 characters.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

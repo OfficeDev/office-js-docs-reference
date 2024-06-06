@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.EmptyCellControl
+uid: 'excel!Excel.EmptyCellControl:interface'
+package: excel!
+fullName: Excel.EmptyCellControl
+summary: >-
+  Represents an empty cell control. This represents the state where a cell does not have a control. \[ [API set:
+  ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: 'excel!Excel.EmptyCellControl#type:member'
+    package: excel!
+    fullName: type
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellControlType.Empty;'
+      return:
+        type: '<xref uid="excel!Excel.CellControlType.Empty:member" />'

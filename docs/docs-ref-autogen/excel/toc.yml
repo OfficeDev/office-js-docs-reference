@@ -68,6 +68,8 @@ items:
                 uid: 'excel!Excel.CalculationState:enum'
               - name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
+              - name: CellControlType
+                uid: 'excel!Excel.CellControlType:enum'
               - name: CellValueType
                 uid: 'excel!Excel.CellValueType:enum'
               - name: ChartAxisCategoryType
@@ -481,6 +483,8 @@ items:
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
             uid: 'excel!Excel.CellBorderCollection:interface'
+          - name: CellControl
+            uid: 'excel!Excel.CellControl:type'
           - name: CellProperties
             uid: 'excel!Excel.CellProperties:interface'
           - name: CellPropertiesBorderLoadOptions
@@ -619,6 +623,8 @@ items:
             uid: 'excel!Excel.ChartTrendlineLabel:class'
           - name: ChartTrendlineLabelFormat
             uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+          - name: CheckboxCellControl
+            uid: 'excel!Excel.CheckboxCellControl:interface'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:class'
           - name: ColumnProperties
@@ -739,6 +745,8 @@ items:
             uid: 'excel!Excel.DoubleCellValue:interface'
           - name: EmailIdentity
             uid: 'excel!Excel.EmailIdentity:interface'
+          - name: EmptyCellControl
+            uid: 'excel!Excel.EmptyCellControl:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
           - name: EntityArrayCardLayout
@@ -823,10 +831,14 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
+          - name: LocalImage
+            uid: 'excel!Excel.LocalImage:class'
           - name: LocalImageCellValue
             uid: 'excel!Excel.LocalImageCellValue:interface'
           - name: LocalImageCellValueCacheId
             uid: 'excel!Excel.LocalImageCellValueCacheId:interface'
+          - name: MixedCellControl
+            uid: 'excel!Excel.MixedCellControl:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -1063,6 +1075,8 @@ items:
             uid: 'excel!Excel.TimeoutErrorCellValue:interface'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
+          - name: UnknownCellControl
+            uid: 'excel!Excel.UnknownCellControl:interface'
           - name: ValueErrorCellValue
             uid: 'excel!Excel.ValueErrorCellValue:interface'
           - name: ValueTypeNotAvailableCellValue
