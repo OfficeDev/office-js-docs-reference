@@ -19,11 +19,11 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
 
 
   Office.context.mailbox.item.sensitivity.setAsync(
-    Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+    Office.MailboxEnums.AppointmentSensitivityType.Private,
     function callback(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Failed) {
         console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));

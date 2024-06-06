@@ -1529,7 +1529,7 @@ methods:
           {
             type: "file",
             name: "image.png",
-            url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
+            url: "https://i.imgur.com/9S36xvA.jpg",
             isInline: true
           }
         ]
@@ -1647,12 +1647,12 @@ methods:
             {
               type: "file",
               name: "image.png",
-              url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
+              url: "https://i.imgur.com/9S36xvA.jpg",
               isInline: true
             }
           ]
         },
-        function(asyncResult) {
+        (asyncResult) => {
           console.log(JSON.stringify(asyncResult));
         }
       );
@@ -2207,9 +2207,12 @@ methods:
 
         asyncResult.value.forEach((message) => {
           console.log(`Item ID: ${message.itemId}`);
+          console.log(`Conversation ID: ${message.conversationId}`);
+          console.log(`Internet message ID: ${message.internetMessageId}`);
           console.log(`Subject: ${message.subject}`);
           console.log(`Item type: ${message.itemType}`);
           console.log(`Item mode: ${message.itemMode}`);
+          console.log(`Has attachment: ${message.hasAttachment}`);
         });
       });
 

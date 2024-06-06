@@ -3490,7 +3490,7 @@ Excel.FunctionResult,"load(options)",Method,Poor,false
 Excel.FunctionResult,"load(propertyNames)",Method,Poor,false
 Excel.FunctionResult,"load(propertyNamesAndPaths)",Method,Poor,false
 Excel.FunctionResult,"toJSON()",Method,Poor,false
-Excel.Functions,N/A,Class,Good,false
+Excel.Functions,N/A,Class,Good,true
 Excel.Functions,"context",Property,Good,false
 Excel.Functions,"abs(number)",Method,Poor,false
 Excel.Functions,"accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)",Method,Poor,false
@@ -3808,7 +3808,7 @@ Excel.Functions,"stDevA(values)",Method,Poor,false
 Excel.Functions,"stDevPA(values)",Method,Poor,false
 Excel.Functions,"substitute(text, oldText, newText, instanceNum)",Method,Fine,false
 Excel.Functions,"subtotal(functionNum, values)",Method,Poor,false
-Excel.Functions,"sum(values)",Method,Poor,false
+Excel.Functions,"sum(values)",Method,Poor,true
 Excel.Functions,"sumIf(range, criteria, sumRange)",Method,Poor,false
 Excel.Functions,"sumIfs(sumRange, values)",Method,Poor,false
 Excel.Functions,"sumSq(values)",Method,Poor,false
@@ -3844,7 +3844,7 @@ Excel.Functions,"var_S(values)",Method,Poor,false
 Excel.Functions,"varA(values)",Method,Poor,false
 Excel.Functions,"varPA(values)",Method,Poor,false
 Excel.Functions,"vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)",Method,Poor,false
-Excel.Functions,"vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)",Method,Fine,false
+Excel.Functions,"vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)",Method,Fine,true
 Excel.Functions,"weekday(serialNumber, returnType)",Method,Poor,false
 Excel.Functions,"weekNum(serialNumber, returnType)",Method,Poor,false
 Excel.Functions,"weibull_Dist(x, alpha, beta, cumulative)",Method,Poor,false
@@ -8609,9 +8609,9 @@ Office.Contact,"phoneNumbers",Property,Good,false
 Office.Contact,"urls",Property,Good,false
 Office.CustomProperties,N/A,Class,Good,false
 Office.CustomProperties,"get(name)",Method,Fine,true
-Office.CustomProperties,"getAll()",Method,Fine,false
+Office.CustomProperties,"getAll()",Method,Fine,true
 Office.CustomProperties,"remove(name)",Method,Poor,true
-Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,false
+Office.CustomProperties,"saveAsync(callback, asyncContext)",Method,Poor,true
 Office.CustomProperties,"saveAsync(asyncContext)",Method,Poor,false
 Office.CustomProperties,"set(name, value)",Method,Poor,true
 Office.DelayDeliveryTime,N/A,Class,Good,false
@@ -9221,13 +9221,13 @@ Office.RecurrenceProperties,"weekNumber",Property,Fine,false
 Office.RecurrenceTimeZone,N/A,Class,Good,true
 Office.RecurrenceTimeZone,"name",Property,Fine,false
 Office.RecurrenceTimeZone,"offset",Property,Fine,false
-Office.ReplyFormAttachment,N/A,Class,Good,false
+Office.ReplyFormAttachment,N/A,Class,Good,true
 Office.ReplyFormAttachment,"inLine",Property,Good,false
 Office.ReplyFormAttachment,"itemId",Property,Good,false
 Office.ReplyFormAttachment,"name",Property,Fine,false
 Office.ReplyFormAttachment,"type",Property,Good,false
 Office.ReplyFormAttachment,"url",Property,Good,false
-Office.ReplyFormData,N/A,Class,Good,false
+Office.ReplyFormData,N/A,Class,Good,true
 Office.ReplyFormData,"attachments",Property,Fine,false
 Office.ReplyFormData,"callback",Property,Fine,false
 Office.ReplyFormData,"htmlBody",Property,Good,false
