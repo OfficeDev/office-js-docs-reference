@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Word.GetTextOptions
+uid: 'word!Word.GetTextOptions:interface'
+package: word!
+fullName: Word.GetTextOptions
+summary: Specifies the options to be included in a getText operation.
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-text.yaml
+
+
+  await Word.run(async (context) => {
+    const paragraph = context.document.getSelection().paragraphs.getFirst();
+
+    const text = paragraph.getText();
+    const textIncludingHidden = paragraph.getText({ IncludeHiddenText: true });
+    const textIncludingDeleted = paragraph.getText({ IncludeTextMarkedAsDeleted: true });
+
+    await context.sync();
+
+    console.log("Text:- " + text.value, "Including hidden text:- " + textIncludingHidden.value, "Including text marked as deleted:- " + textIncludingDeleted.value);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: includeHiddenText
+    uid: 'word!Word.GetTextOptions#includeHiddenText:member'
+    package: word!
+    fullName: includeHiddenText
+    summary: >-
+      Specifies a value that indicates whether to include hidden text in the result of the GetText method. The default
+      value is False.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeHiddenText?: boolean;'
+      return:
+        type: boolean
+  - name: includeTextMarkedAsDeleted
+    uid: 'word!Word.GetTextOptions#includeTextMarkedAsDeleted:member'
+    package: word!
+    fullName: includeTextMarkedAsDeleted
+    summary: >-
+      Specifies a value that indicates whether to include text marked as deleted in the result of the GetText method.
+      The default value is False.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeTextMarkedAsDeleted?: boolean;'
+      return:
+        type: boolean

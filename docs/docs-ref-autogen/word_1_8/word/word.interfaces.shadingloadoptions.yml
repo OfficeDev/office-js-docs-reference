@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShadingLoadOptions
+uid: 'word!Word.Interfaces.ShadingLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ShadingLoadOptions
+summary: Represents the shading object.
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ShadingLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: backgroundPatternColor
+    uid: 'word!Word.Interfaces.ShadingLoadOptions#backgroundPatternColor:member'
+    package: word!
+    fullName: backgroundPatternColor
+    summary: >-
+      Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backgroundPatternColor?: boolean;'
+      return:
+        type: boolean

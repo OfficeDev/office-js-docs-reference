@@ -1356,6 +1356,12 @@ methods:
       -->**: Appointment Organizer
 
 
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
+      Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
+      of an item.
+
+
       **Errors**:
 
 
@@ -1437,6 +1443,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
+      Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
+      of an item.
 
 
       **Errors**:

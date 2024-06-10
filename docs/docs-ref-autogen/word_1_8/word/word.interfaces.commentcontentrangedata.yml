@@ -1,0 +1,105 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentContentRangeData
+uid: 'word!Word.Interfaces.CommentContentRangeData:interface'
+package: word!
+fullName: Word.Interfaces.CommentContentRangeData
+summary: An interface describing the data returned by calling `commentContentRange.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bold
+    uid: 'word!Word.Interfaces.CommentContentRangeData#bold:member'
+    package: word!
+    fullName: bold
+    summary: Specifies a value that indicates whether the comment text is bold.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: hyperlink
+    uid: 'word!Word.Interfaces.CommentContentRangeData#hyperlink:member'
+    package: word!
+    fullName: hyperlink
+    summary: >-
+      Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
+      when you set a new hyperlink on the range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type: string
+  - name: isEmpty
+    uid: 'word!Word.Interfaces.CommentContentRangeData#isEmpty:member'
+    package: word!
+    fullName: isEmpty
+    summary: Checks whether the range length is zero.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEmpty?: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: 'word!Word.Interfaces.CommentContentRangeData#italic:member'
+    package: word!
+    fullName: italic
+    summary: Specifies a value that indicates whether the comment text is italicized.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: strikeThrough
+    uid: 'word!Word.Interfaces.CommentContentRangeData#strikeThrough:member'
+    package: word!
+    fullName: strikeThrough
+    summary: Specifies a value that indicates whether the comment text has a strikethrough.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strikeThrough?: boolean;'
+      return:
+        type: boolean
+  - name: text
+    uid: 'word!Word.Interfaces.CommentContentRangeData#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the comment range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: underline
+    uid: 'word!Word.Interfaces.CommentContentRangeData#underline:member'
+    package: word!
+    fullName: underline
+    summary: Specifies a value that indicates the comment text's underline type. 'None' if the comment text isn't underlined.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" |
+        "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
+        "WaveDouble";
+      return:
+        type: >-
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
+          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
+          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
+          "WaveHeavy" | "WaveDouble"

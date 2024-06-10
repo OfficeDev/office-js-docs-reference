@@ -1,0 +1,54 @@
+### YamlMime:TSEnum
+name: Word.VerticalAlignment
+uid: 'word!Word.VerticalAlignment:enum'
+package: word!
+fullName: Word.VerticalAlignment
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+
+  // Gets content alignment details about the first row of the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable = context.document.body.tables.getFirst();
+    const firstTableRow = firstTable.rows.getFirst();
+    firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
+    await context.sync();
+
+    console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'word!Word.VerticalAlignment.bottom:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Bottom"'
+  - name: center
+    uid: 'word!Word.VerticalAlignment.center:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Center"'
+  - name: mixed
+    uid: 'word!Word.VerticalAlignment.mixed:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Mixed"'
+  - name: top
+    uid: 'word!Word.VerticalAlignment.top:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Top"'

@@ -1,0 +1,73 @@
+### YamlMime:TSType
+name: Word.Interfaces.TrackedChangeLoadOptions
+uid: 'word!Word.Interfaces.TrackedChangeLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.TrackedChangeLoadOptions
+summary: Represents a tracked change in a Word document.
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.TrackedChangeLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: 'word!Word.Interfaces.TrackedChangeLoadOptions#author:member'
+    package: word!
+    fullName: author
+    summary: Specifies the author of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: date
+    uid: 'word!Word.Interfaces.TrackedChangeLoadOptions#date:member'
+    package: word!
+    fullName: date
+    summary: Specifies the date of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date?: boolean;'
+      return:
+        type: boolean
+  - name: text
+    uid: 'word!Word.Interfaces.TrackedChangeLoadOptions#text:member'
+    package: word!
+    fullName: text
+    summary: Specifies the text of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.TrackedChangeLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: Specifies the type of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

@@ -44,6 +44,42 @@ export declare namespace Word {
         berry = "Berry",
     }
     /**
+     * Properties defining the behavior of the pop-up menu for a given critique.
+     *
+     * @remarks
+     * [Api set: WordApi 1.8]
+     */
+    export interface CritiquePopupOptions {
+        /**
+         * Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        brandingTextResourceId: string;
+        /**
+         * Gets the manifest resource ID of the string to use as the subtitle.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        subtitleResourceId: string;
+        /**
+         * Gets the suggestions to display in the critique pop-up menu.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        suggestions: string[];
+        /**
+         * Gets the manifest resource ID of the string to use as the title.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        titleResourceId: string;
+    }
+    /**
      * Critique that will be rendered as underline for the specified part of paragraph in the document.
      *
      * @remarks
@@ -64,6 +100,13 @@ export declare namespace Word {
          * [Api set: WordApi 1.7]
          */
         length: number;
+        /**
+         * Specifies the behavior of the pop-up menu for the critique.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        popupOptions: Word.CritiquePopupOptions;
         /**
          * Gets the start index of the critique inside paragraph.
          *
@@ -314,6 +357,35 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.7]
+         */
+        id: string;
+    }
+    /**
+     * Represents action information that's passed back on annotation pop-up action event.
+     *
+     * @remarks
+     * [Api set: WordApi 1.8]
+     */
+    export interface AnnotationPopupActionEventArgs {
+        /**
+         * Specifies the chosen action in the pop-up menu.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        action: string;
+        /**
+         * Specifies the accepted suggestion (only populated when accepting a critique suggestion).
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        critiqueSuggestion: string;
+        /**
+         * Specifies the annotation ID for which the event was fired.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
          */
         id: string;
     }
@@ -2945,6 +3017,15 @@ export declare namespace Word {
          * @eventproperty
          */
         readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;
+        /**
+         * Occurs when the user performs an action in an annotation pop-up menu.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         *
+         * @eventproperty
+         */
+        readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;
         /**
          * Occurs when the user deletes one or more annotations.
          *
@@ -5792,6 +5873,14 @@ export declare namespace Word {
          */
         getTrackedChanges(): Word.TrackedChangeCollection;
         /**
+         * Highlights the range temporarily without changing document content.
+                    To highlight the text permanently, set the range's Font.HighlightColor.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        highlight(): void;
+        /**
          * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
          *
          * @remarks
@@ -5995,6 +6084,13 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
+        /**
+         * Removes the highlight added by the Highlight function if any.
+         *
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        removeHighlight(): void;
         /**
          * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
          *
@@ -8732,6 +8828,12 @@ export declare namespace Word {
          * [Api set: WordApi 1.7]
          */
         annotationRemoved = "AnnotationRemoved",
+        /**
+         * Represents an action in the annotation pop-up.
+         * @remarks
+         * [Api set: WordApi 1.8]
+         */
+        annotationPopupAction = "AnnotationPopupAction",
     }
     /**
      * An enum that specifies an event's source. It can be local or remote (through coauthoring).
@@ -8764,7 +8866,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8793,7 +8895,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8822,7 +8924,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8851,7 +8953,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8880,7 +8982,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8909,7 +9011,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -8945,7 +9047,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -8974,7 +9076,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -9003,7 +9105,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *

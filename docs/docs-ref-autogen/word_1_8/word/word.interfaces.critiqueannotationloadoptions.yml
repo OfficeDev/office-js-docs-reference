@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: Word.Interfaces.CritiqueAnnotationLoadOptions
+uid: 'word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.CritiqueAnnotationLoadOptions
+summary: Represents an annotation wrapper around critique displayed in the document.
+remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.CritiqueAnnotationLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: critique
+    uid: 'word!Word.Interfaces.CritiqueAnnotationLoadOptions#critique:member'
+    package: word!
+    fullName: critique
+    summary: Gets the critique that was passed when the annotation was inserted.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'critique?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: 'word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member'
+    package: word!
+    fullName: range
+    summary: Gets the range of text that is annotated.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />'
