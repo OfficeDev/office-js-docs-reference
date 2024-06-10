@@ -758,20 +758,20 @@ methods:
 
       Office.context.mailbox.item.body.setAsync(
           '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      Office.context.mailbox.item.body.setAsync(
-          "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
-          { coercionType: "html", asyncContext: "This is passed to the callback" },
-          function callback(result) {
+          { 
+              coercionType: Office.CoercionType.Html,
+              asyncContext: "This is passed to the callback"
+          },
+          (result) => {
               // Process the result.
-      });
+          }
+      );
 
 
       // The following is an example of the result parameter passed to the callback function.
 
       {
-          "value":null,
+          "value": null,
           "status": "succeeded",
           "asyncContext": "This is passed to the callback"
       }
