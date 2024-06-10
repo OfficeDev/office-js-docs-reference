@@ -57,7 +57,7 @@ fields:
     summary: |-
       Represents an action in the annotation pop-up.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationPopupAction"'
   - name: annotationRemoved
     uid: 'word!Word.EventType.annotationRemoved:member'

@@ -159,8 +159,6 @@ items:
             uid: 'word!Word.ContentControlDeletedEventArgs:interface'
           - name: ContentControlEnteredEventArgs
             uid: 'word!Word.ContentControlEnteredEventArgs:interface'
-          - name: ContentControlEventArgs
-            uid: 'word!Word.ContentControlEventArgs:interface'
           - name: ContentControlExitedEventArgs
             uid: 'word!Word.ContentControlExitedEventArgs:interface'
           - name: ContentControlListItem
@@ -1100,6 +1098,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.8 requirement set
+            href: ../../requirement-sets/word/word-api-1-8-requirement-set.md
             displayName: Word
           - name: WordApi 1.7 requirement set
             href: ../../requirement-sets/word/word-api-1-7-requirement-set.md

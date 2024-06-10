@@ -10227,7 +10227,7 @@ Word.AnnotationHoveredEventArgs,N/A,Class,Good,true
 Word.AnnotationHoveredEventArgs,"id",Property,Good,false
 Word.AnnotationInsertedEventArgs,N/A,Class,Good,true
 Word.AnnotationInsertedEventArgs,"ids",Property,Good,false
-Word.AnnotationPopupActionEventArgs,N/A,Class,Good,false
+Word.AnnotationPopupActionEventArgs,N/A,Class,Good,true
 Word.AnnotationPopupActionEventArgs,"action",Property,Good,false
 Word.AnnotationPopupActionEventArgs,"critiqueSuggestion",Property,Good,false
 Word.AnnotationPopupActionEventArgs,"id",Property,Good,false
@@ -10780,11 +10780,6 @@ Word.ContentControlEnteredEventArgs,N/A,Class,Good,true
 Word.ContentControlEnteredEventArgs,"eventType",Property,Good,false
 Word.ContentControlEnteredEventArgs,"ids",Property,Good,false
 Word.ContentControlEnteredEventArgs,"source",Property,Good,false
-Word.ContentControlEventArgs,N/A,Class,Good,false
-Word.ContentControlEventArgs,"contentControl",Property,Good,false
-Word.ContentControlEventArgs,"eventType",Property,Good,false
-Word.ContentControlEventArgs,"ids",Property,Good,false
-Word.ContentControlEventArgs,"source",Property,Good,false
 Word.ContentControlExitedEventArgs,N/A,Class,Good,true
 Word.ContentControlExitedEventArgs,"eventType",Property,Good,false
 Word.ContentControlExitedEventArgs,"ids",Property,Good,false
@@ -10865,7 +10860,7 @@ Word.CritiqueColorScheme,"blue",EnumField,Fine,false
 Word.CritiqueColorScheme,"green",EnumField,Fine,false
 Word.CritiqueColorScheme,"lavender",EnumField,Fine,false
 Word.CritiqueColorScheme,"red",EnumField,Fine,false
-Word.CritiquePopupOptions,N/A,Class,Good,false
+Word.CritiquePopupOptions,N/A,Class,Good,true
 Word.CritiquePopupOptions,"brandingTextResourceId",Property,Good,false
 Word.CritiquePopupOptions,"subtitleResourceId",Property,Good,false
 Word.CritiquePopupOptions,"suggestions",Property,Good,false

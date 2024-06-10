@@ -125,7 +125,6 @@ interfaces:
   - 'word!Word.ContentControlDataChangedEventArgs:interface'
   - 'word!Word.ContentControlDeletedEventArgs:interface'
   - 'word!Word.ContentControlEnteredEventArgs:interface'
-  - 'word!Word.ContentControlEventArgs:interface'
   - 'word!Word.ContentControlExitedEventArgs:interface'
   - 'word!Word.ContentControlOptions:interface'
   - 'word!Word.ContentControlSelectionChangedEventArgs:interface'

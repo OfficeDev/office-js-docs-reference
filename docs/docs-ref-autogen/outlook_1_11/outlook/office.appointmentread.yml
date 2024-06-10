@@ -120,16 +120,18 @@ properties:
       // This example gets the body of the item as plain text.
 
       Office.context.mailbox.item.body.getAsync(
-          "text",
+          Office.CoercionType.Text,
           { asyncContext: "This is passed to the callback" },
-          function callback(result) {
+          (result) => {
               // Do something with the result.
-          });
+          }
+      );
+
 
       // The following is an example of the result parameter passed to the callback function.
 
       {
-          "value": "TEXT of whole body (including threads below)",
+          "value": "TEXT of whole body (including message threads that appear below the current body)",
           "status": "succeeded",
           "asyncContext": "This is passed to the callback"
       }

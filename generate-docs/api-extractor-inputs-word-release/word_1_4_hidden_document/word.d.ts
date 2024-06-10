@@ -16,6 +16,8 @@ export declare namespace Word {
     
     
     
+    
+    
     /**
      * Represents the application object.
      *
@@ -2231,6 +2233,7 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        
         
         
         
@@ -4539,6 +4542,7 @@ export declare namespace Word {
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         
+        
         /**
          * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
          *
@@ -4677,6 +4681,7 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
+        
         /**
          * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
          *

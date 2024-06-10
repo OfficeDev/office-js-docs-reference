@@ -66,13 +66,13 @@ properties:
         type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
         | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
         "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
-        "AnnotationRemoved";
+        "AnnotationRemoved" | "AnnotationPopupAction";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
           "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved"
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: uniqueLocalIds
     uid: 'word!Word.ParagraphDeletedEventArgs#uniqueLocalIds:member'
     package: word!

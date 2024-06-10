@@ -1075,8 +1075,8 @@ methods:
     summary: >-
       Highlights the range temporarily without changing document content. To highlight the text permanently, set the
       range's Font.HighlightColor.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'highlight(): void;'
@@ -1212,7 +1212,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support was added in WordApi 1.7.
+      1.5. `CheckBox` support was added in WordApi 1.7. `DropDownList` support is currently in preview.
 
 
       #### Examples
@@ -1258,16 +1258,19 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox"
+        | "DropDownList"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
-            'RichText'.
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'.
+            The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
+            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
+            uid="word!Word.ContentControlType.dropDownList:member" /> | "RichText" | "PlainText" | "CheckBox" |
+            "DropDownList"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -1885,8 +1888,8 @@ methods:
     package: word!
     fullName: removeHighlight()
     summary: Removes the highlight added by the Highlight function if any.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'removeHighlight(): void;'
