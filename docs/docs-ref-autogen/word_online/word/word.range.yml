@@ -1331,7 +1331,7 @@ methods:
       // Inserts a Date field before selection.
 
       await Word.run(async (context) => {
-        var range = context.document.getSelection().getRange();
+        const range = context.document.getSelection().getRange();
 
         const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
 

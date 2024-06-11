@@ -151,7 +151,7 @@ properties:
       // Gets the first field in the selection and toggles between setting it to locked or unlocked.
 
       await Word.run(async (context) => {
-        var field = context.document.getSelection().fields.getFirstOrNullObject();
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
         field.load(["code", "result", "type", "locked"]);
         await context.sync();
 
@@ -567,7 +567,7 @@ methods:
       // Gets and updates the first field in the selection.
 
       await Word.run(async (context) => {
-        var field = context.document.getSelection().fields.getFirstOrNullObject();
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
         field.load(["code", "result", "type", "locked"]);
 
         await context.sync();
@@ -734,7 +734,7 @@ methods:
       // Gets and updates the first field in the selection.
 
       await Word.run(async (context) => {
-        var field = context.document.getSelection().fields.getFirstOrNullObject();
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
         field.load(["code", "result", "type", "locked"]);
 
         await context.sync();
