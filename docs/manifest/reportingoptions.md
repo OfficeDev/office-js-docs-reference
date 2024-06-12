@@ -35,7 +35,7 @@ None.
 
 | Element | Required | Description |
 | :------ | :------: | :------ |
-| **Title** | Yes | Specifies a custom title for the reporting options in a preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
+| **Title** | Yes | Specifies a custom title for the reporting options in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
 | **Option** | Yes | Specifies a custom option with a checkbox that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
 
 ## Example
