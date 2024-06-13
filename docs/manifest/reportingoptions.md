@@ -1,7 +1,7 @@
 ---
 title: ReportingOptions element in the manifest file
 description: The ReportingOptions element specifies the reporting options listed in the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 05/20/2024
+ms.date: 06/12/2024
 ms.localizationpriority: medium
 ---
 
@@ -35,8 +35,8 @@ None.
 
 | Element | Required | Description |
 | :------ | :------: | :------ |
-| **Title** | Yes | Specifies the custom title of the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| **Option** | Yes | Specifies a custom option that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must set at least one option. |
+| **Title** | Yes | Specifies a custom title for the reporting options in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
+| **Option** | Yes | Specifies a custom option with a checkbox that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
 
 ## Example
 

@@ -20,7 +20,7 @@ remarks: >-
   // Registers event handlers.
 
   await Word.run(async (context) => {
-    const body = context.document.body;
+    const body: Word.Body = context.document.body;
     body.track();
     await context.sync();
 
