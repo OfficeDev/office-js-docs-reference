@@ -728,7 +728,7 @@ methods:
       // Gets the comments in the document body.
 
       await Word.run(async (context) => {
-        const comments = context.document.body.getComments();
+        const comments: Word.CommentCollection = context.document.body.getComments();
 
         // Load objects to log in the console.
         comments.load();

@@ -728,7 +728,7 @@ methods:
       // Gets the comments in the document body.
 
       await Word.run(async (context) => {
-        const comments = context.document.body.getComments();
+        const comments: Word.CommentCollection = context.document.body.getComments();
 
         // Load objects to log in the console.
         comments.load();
@@ -938,8 +938,8 @@ methods:
       // Gets all tracked changes.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.load();
         await context.sync();
 
@@ -1811,7 +1811,7 @@ events:
       // Registers event handlers.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
         body.track();
         await context.sync();
 
@@ -1866,7 +1866,7 @@ events:
       // Registers event handlers.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
         body.track();
         await context.sync();
 
@@ -1922,7 +1922,7 @@ events:
       // Registers event handlers.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
         body.track();
         await context.sync();
 
@@ -1977,7 +1977,7 @@ events:
       // Registers event handlers.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
         body.track();
         await context.sync();
 
@@ -2032,7 +2032,7 @@ events:
       // Registers event handlers.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
         body.track();
         await context.sync();
 
