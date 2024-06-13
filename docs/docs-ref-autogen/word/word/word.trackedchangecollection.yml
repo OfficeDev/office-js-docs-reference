@@ -57,8 +57,8 @@ methods:
       // Accepts all tracked changes.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.acceptAll();
         console.log("Accepted all tracked changes.");
       });
@@ -92,12 +92,12 @@ methods:
       // Gets the range of the first tracked change.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
-        const trackedChange = trackedChanges.getFirst();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
         await context.sync();
 
-        const range = trackedChange.getRange();
+        const range: Word.Range = trackedChange.getRange();
         range.load();
         await context.sync();
 
@@ -214,8 +214,8 @@ methods:
       // Rejects all tracked changes.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.rejectAll();
         console.log("Rejected all tracked changes.");
       });

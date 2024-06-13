@@ -15626,7 +15626,7 @@
     // Gets the comments in the document body.
 
     await Word.run(async (context) => {
-      const comments = context.document.body.getComments();
+      const comments: Word.CommentCollection = context.document.body.getComments();
 
       // Load objects to log in the console.
       comments.load();
@@ -15687,8 +15687,8 @@
     // Gets all tracked changes.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
       trackedChanges.load();
       await context.sync();
 
@@ -16111,7 +16111,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16144,7 +16144,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16178,7 +16178,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16211,7 +16211,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16244,7 +16244,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16790,6 +16790,26 @@
     await Word.run(async (context) => {
       context.document.close(Word.CloseBehavior.save);
     });
+'Word.Comment:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+    // Sets a comment on the selected content.
+
+    await Word.run(async (context) => {
+      const text = $("#comment-text")
+        .val()
+        .toString();
+      const comment: Word.Comment = context.document.getSelection().insertComment(text);
+
+      // Load object to log in the console.
+      comment.load();
+      await context.sync();
+
+      console.log("Comment inserted:", comment);
+    });
 'Word.Comment#delete:member(1)':
   - >-
     // Link to full sample:
@@ -16799,14 +16819,16 @@
     // Deletes the first comment in the selected content.
 
     await Word.run(async (context) => {
-      context.document
-        .getSelection()
-        .getComments()
-        .getFirst()
-        .delete();
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.delete();
       await context.sync();
 
-      console.log("Comment deleted");
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so nothing to delete.");
+        return;
+      }
+
+      console.log("Comment deleted.");
     });
 'Word.Comment#getRange:member(1)':
   - >-
@@ -16817,15 +16839,20 @@
     // Gets the range of the first comment in the selected content.
 
     await Word.run(async (context) => {
-      const range = context.document
-        .getSelection()
-        .getComments()
-        .getFirst()
-        .getRange();
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("contentRange");
+      const range: Word.Range = comment.getRange();
       range.load("text");
       await context.sync();
 
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no range to get.");
+        return;
+      }
+
       console.log(`Comment location: ${range.text}`);
+      const contentRange: Word.CommentContentRange = comment.contentRange;
+      console.log("Comment content range:", contentRange);
     });
 'Word.Comment#reply:member(1)':
   - >-
@@ -16839,16 +16866,16 @@
       const text = $("#reply-text")
         .val()
         .toString();
-      const comments = context.document.getSelection().getComments();
+      const comments: Word.CommentCollection = context.document.getSelection().getComments();
       comments.load("items");
       await context.sync();
 
-      const firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
       if (firstActiveComment) {
-        const reply = firstActiveComment.reply(text);
-        console.log("Reply added");
+        const reply: Word.CommentReply = firstActiveComment.reply(text);
+        console.log("Reply added.");
       } else {
-        console.log("No active comment was found in the selection so couldn't reply.");
+        console.warn("No active comment was found in the selection, so couldn't reply.");
       }
     });
 'Word.Comment#content:member':
@@ -16857,23 +16884,74 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
 
-    // Edits the first comment in the selected content.
+    // Edits the first active comment in the selected content.
 
     await Word.run(async (context) => {
       const text = $("#edit-comment-text")
         .val()
         .toString();
-      const comment = context.document
-        .getSelection()
-        .getComments()
-        .getFirst();
-      comment.content = text;
-
-      // Load object to log in the console.
-      comment.load();
+      const comments: Word.CommentCollection = context.document.getSelection().getComments();
+      comments.load("items");
       await context.sync();
 
-      console.log("Comment content changed:", comment);
+      const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
+      if (!firstActiveComment) {
+        console.warn("No active comment was found in the selection, so couldn't edit.");
+        return;
+      }
+
+      firstActiveComment.content = text;
+
+      // Load object to log in the console.
+      firstActiveComment.load();
+      await context.sync();
+
+      console.log("Comment content changed:", firstActiveComment);
+    });
+'Word.Comment#contentRange:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+    // Gets the range of the first comment in the selected content.
+
+    await Word.run(async (context) => {
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("contentRange");
+      const range: Word.Range = comment.getRange();
+      range.load("text");
+      await context.sync();
+
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no range to get.");
+        return;
+      }
+
+      console.log(`Comment location: ${range.text}`);
+      const contentRange: Word.CommentContentRange = comment.contentRange;
+      console.log("Comment content range:", contentRange);
+    });
+'Word.Comment#replies:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+    // Gets the replies to the first comment in the selected content.
+
+    await Word.run(async (context) => {
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("replies");
+      await context.sync();
+
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no replies to get.");
+        return;
+      }
+
+      const replies: Word.CommentReplyCollection = comment.replies;
+      console.log("Replies to the first comment:", replies);
     });
 'Word.Comment#resolved:member':
   - >-
@@ -16884,22 +16962,28 @@
     // Toggles Resolved status of the first comment in the selected content.
 
     await Word.run(async (context) => {
-      const comment = context.document
+      const comment: Word.Comment = context.document
         .getSelection()
         .getComments()
-        .getFirst();
+        .getFirstOrNullObject();
       comment.load("resolved");
       await context.sync();
+
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so nothing to toggle.");
+        return;
+      }
 
       // Toggle resolved status.
       // If the comment is active, set as resolved.
       // If it's resolved, set resolved to false.
       const resolvedBefore = comment.resolved;
+      console.log(`Comment Resolved status (before): ${resolvedBefore}`);
       comment.resolved = !resolvedBefore;
-      comment.load();
+      comment.load("resolved");
       await context.sync();
 
-      console.log(`Comment Resolved status: ${comment.resolved}`, comment);
+      console.log(`Comment Resolved status (after): ${comment.resolved}`);
     });
 'Word.CommentChangeType:enum':
   - >-
@@ -16910,7 +16994,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -16935,7 +17019,7 @@
         );
       });
     }
-'Word.CommentCollection#getFirst:member(1)':
+'Word.CommentCollection#getFirstOrNullObject:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
@@ -16944,15 +17028,20 @@
     // Gets the range of the first comment in the selected content.
 
     await Word.run(async (context) => {
-      const range = context.document
-        .getSelection()
-        .getComments()
-        .getFirst()
-        .getRange();
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("contentRange");
+      const range: Word.Range = comment.getRange();
       range.load("text");
       await context.sync();
 
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no range to get.");
+        return;
+      }
+
       console.log(`Comment location: ${range.text}`);
+      const contentRange: Word.CommentContentRange = comment.contentRange;
+      console.log("Comment content range:", contentRange);
     });
 'Word.CommentCollection#items:member':
   - >-
@@ -16966,17 +17055,41 @@
       const text = $("#reply-text")
         .val()
         .toString();
-      const comments = context.document.getSelection().getComments();
+      const comments: Word.CommentCollection = context.document.getSelection().getComments();
       comments.load("items");
       await context.sync();
 
-      const firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
       if (firstActiveComment) {
-        const reply = firstActiveComment.reply(text);
-        console.log("Reply added");
+        const reply: Word.CommentReply = firstActiveComment.reply(text);
+        console.log("Reply added.");
       } else {
-        console.log("No active comment was found in the selection so couldn't reply.");
+        console.warn("No active comment was found in the selection, so couldn't reply.");
       }
+    });
+'Word.CommentContentRange:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+    // Gets the range of the first comment in the selected content.
+
+    await Word.run(async (context) => {
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("contentRange");
+      const range: Word.Range = comment.getRange();
+      range.load("text");
+      await context.sync();
+
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no range to get.");
+        return;
+      }
+
+      console.log(`Comment location: ${range.text}`);
+      const contentRange: Word.CommentContentRange = comment.contentRange;
+      console.log("Comment content range:", contentRange);
     });
 'Word.CommentDetail:interface':
   - >-
@@ -16987,7 +17100,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -17020,7 +17133,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -17057,17 +17170,38 @@
       const text = $("#reply-text")
         .val()
         .toString();
-      const comments = context.document.getSelection().getComments();
+      const comments: Word.CommentCollection = context.document.getSelection().getComments();
       comments.load("items");
       await context.sync();
 
-      const firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
       if (firstActiveComment) {
-        const reply = firstActiveComment.reply(text);
-        console.log("Reply added");
+        const reply: Word.CommentReply = firstActiveComment.reply(text);
+        console.log("Reply added.");
       } else {
-        console.log("No active comment was found in the selection so couldn't reply.");
+        console.warn("No active comment was found in the selection, so couldn't reply.");
       }
+    });
+'Word.CommentReplyCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+    // Gets the replies to the first comment in the selected content.
+
+    await Word.run(async (context) => {
+      const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+      comment.load("replies");
+      await context.sync();
+
+      if (comment.isNullObject) {
+        console.warn("No comments in the selection, so no replies to get.");
+        return;
+      }
+
+      const replies: Word.CommentReplyCollection = comment.replies;
+      console.log("Replies to the first comment:", replies);
     });
 'Word.CompareTarget:enum':
   - >-
@@ -19177,7 +19311,7 @@
     // Registers event handlers.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
+      const body: Word.Body = context.document.body;
       body.track();
       await context.sync();
 
@@ -20961,7 +21095,7 @@
     // Gets the comments in the selected content.
 
     await Word.run(async (context) => {
-      const comments = context.document.getSelection().getComments();
+      const comments: Word.CommentCollection = context.document.getSelection().getComments();
 
       // Load objects to log in the console.
       comments.load();
@@ -21067,7 +21201,7 @@
       const text = $("#comment-text")
         .val()
         .toString();
-      const comment = context.document.getSelection().insertComment(text);
+      const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
       // Load object to log in the console.
       comment.load();
@@ -22095,6 +22229,30 @@
       $("#right-cell-margin").val(tableStyle.rightCellMargin);
       $("#cell-spacing").val(tableStyle.cellSpacing);
     });
+'Word.TrackedChange:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+    // Gets the next (second) tracked change.
+
+    await Word.run(async (context) => {
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      await context.sync();
+
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+      await context.sync();
+
+      const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
+      await context.sync();
+
+      nextTrackedChange.load(["author", "date", "text", "type"]);
+      await context.sync();
+
+      console.log(nextTrackedChange);
+    });
 'Word.TrackedChange#accept:member(1)':
   - >-
     // Link to full sample:
@@ -22104,9 +22262,9 @@
     // Accepts the first tracked change.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
-      const trackedChange = trackedChanges.getFirst();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
       trackedChange.load();
       await context.sync();
 
@@ -22123,17 +22281,17 @@
     // Gets the next (second) tracked change.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
       await context.sync();
 
-      const trackedChange = trackedChanges.getFirst();
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
       await context.sync();
 
-      const nextTrackedChange = trackedChange.getNext();
+      const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
       await context.sync();
 
-      nextTrackedChange.load();
+      nextTrackedChange.load(["author", "date", "text", "type"]);
       await context.sync();
 
       console.log(nextTrackedChange);
@@ -22147,12 +22305,12 @@
     // Gets the range of the first tracked change.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
-      const trackedChange = trackedChanges.getFirst();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
       await context.sync();
 
-      const range = trackedChange.getRange();
+      const range: Word.Range = trackedChange.getRange();
       range.load();
       await context.sync();
 
@@ -22167,13 +22325,13 @@
     // Rejects the first tracked change.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
-      const trackedChange = trackedChanges.getFirst();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
       trackedChange.load();
       await context.sync();
 
-      console.log("First tracked change:, trackedChange);
+      console.log("First tracked change:", trackedChange);
       trackedChange.reject();
       console.log("Rejected the first tracked change.");
     });
@@ -22186,8 +22344,8 @@
     // Accepts all tracked changes.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
       trackedChanges.acceptAll();
       console.log("Accepted all tracked changes.");
     });
@@ -22200,12 +22358,12 @@
     // Gets the range of the first tracked change.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
-      const trackedChange = trackedChanges.getFirst();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
       await context.sync();
 
-      const range = trackedChange.getRange();
+      const range: Word.Range = trackedChange.getRange();
       range.load();
       await context.sync();
 
@@ -22220,10 +22378,34 @@
     // Rejects all tracked changes.
 
     await Word.run(async (context) => {
-      const body = context.document.body;
-      const trackedChanges = body.getTrackedChanges();
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
       trackedChanges.rejectAll();
       console.log("Rejected all tracked changes.");
+    });
+'Word.TrackedChangeType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+    // Gets the next (second) tracked change.
+
+    await Word.run(async (context) => {
+      const body: Word.Body = context.document.body;
+      const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+      await context.sync();
+
+      const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+      await context.sync();
+
+      const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
+      await context.sync();
+
+      nextTrackedChange.load(["author", "date", "text", "type"]);
+      await context.sync();
+
+      console.log(nextTrackedChange);
     });
 'Word.VerticalAlignment:enum':
   - >-

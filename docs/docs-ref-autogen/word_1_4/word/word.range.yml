@@ -619,7 +619,7 @@ methods:
       // Gets the comments in the selected content.
 
       await Word.run(async (context) => {
-        const comments = context.document.getSelection().getComments();
+        const comments: Word.CommentCollection = context.document.getSelection().getComments();
 
         // Load objects to log in the console.
         comments.load();
@@ -1036,7 +1036,7 @@ methods:
         const text = $("#comment-text")
           .val()
           .toString();
-        const comment = context.document.getSelection().insertComment(text);
+        const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
         // Load object to log in the console.
         comment.load();

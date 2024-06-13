@@ -4,7 +4,39 @@ uid: 'word!Word.TrackedChange:class'
 package: word!
 fullName: Word.TrackedChange
 summary: Represents a tracked change in a Word document.
-remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+  // Gets the next (second) tracked change.
+
+  await Word.run(async (context) => {
+    const body: Word.Body = context.document.body;
+    const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+    await context.sync();
+
+    const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+    await context.sync();
+
+    const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
+    await context.sync();
+
+    nextTrackedChange.load(["author", "date", "text", "type"]);
+    await context.sync();
+
+    console.log(nextTrackedChange);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -93,9 +125,9 @@ methods:
       // Accepts the first tracked change.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
-        const trackedChange = trackedChanges.getFirst();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
         trackedChange.load();
         await context.sync();
 
@@ -133,17 +165,17 @@ methods:
       // Gets the next (second) tracked change.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         await context.sync();
 
-        const trackedChange = trackedChanges.getFirst();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
         await context.sync();
 
-        const nextTrackedChange = trackedChange.getNext();
+        const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
         await context.sync();
 
-        nextTrackedChange.load();
+        nextTrackedChange.load(["author", "date", "text", "type"]);
         await context.sync();
 
         console.log(nextTrackedChange);
@@ -195,12 +227,12 @@ methods:
       // Gets the range of the first tracked change.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
-        const trackedChange = trackedChanges.getFirst();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
         await context.sync();
 
-        const range = trackedChange.getRange();
+        const range: Word.Range = trackedChange.getRange();
         range.load();
         await context.sync();
 
@@ -311,13 +343,13 @@ methods:
       // Rejects the first tracked change.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        const trackedChanges = body.getTrackedChanges();
-        const trackedChange = trackedChanges.getFirst();
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
         trackedChange.load();
         await context.sync();
 
-        console.log("First tracked change:, trackedChange);
+        console.log("First tracked change:", trackedChange);
         trackedChange.reject();
         console.log("Rejected the first tracked change.");
       });
