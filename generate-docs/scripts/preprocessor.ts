@@ -130,7 +130,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
         "outlook",
         forceRebuild
@@ -170,15 +170,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: word.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_online/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
-        "word",
-        forceRebuild
-    );
-
-    console.log("\ncreate file: word-init.d.ts (release-desktop)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts',
+        '../api-extractor-inputs-word-release/word_online/word-init.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
         "word",
         forceRebuild

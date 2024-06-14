@@ -40,10 +40,10 @@ methods:
 
 
       **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
-      on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+      on the web, on Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
       field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
       mindful of the recipient limit of the field.
 
@@ -142,10 +142,10 @@ methods:
 
 
       **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
-      on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+      on the web, on Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
       field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
       mindful of the recipient limit of the field.
 
@@ -468,11 +468,11 @@ methods:
       -->**: Compose
 
 
-      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on
-      Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
+      Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
       field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
       recipient limit of the field.
 
@@ -541,11 +541,11 @@ methods:
       -->**: Compose
 
 
-      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on
-      Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
+      Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
       field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
       recipient limit of the field.
 

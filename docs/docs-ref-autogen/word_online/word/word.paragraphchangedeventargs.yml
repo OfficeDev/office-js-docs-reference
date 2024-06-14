@@ -32,8 +32,7 @@ remarks: >-
 
   async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
     await Word.run(async (context) => {
-      console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`);
-      console.log(event.uniqueLocalIds);
+      console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`, event.uniqueLocalIds);
     });
   }
 
@@ -67,13 +66,13 @@ properties:
         type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
         | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
         "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
-        "AnnotationRemoved";
+        "AnnotationRemoved" | "AnnotationPopupAction";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
           "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved"
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: uniqueLocalIds
     uid: 'word!Word.ParagraphChangedEventArgs#uniqueLocalIds:member'
     package: word!

@@ -54,7 +54,7 @@ remarks: >-
 
   // This function displays the currently selected text in the console.
 
-  // It uses the Common (Office 2013) APIs.
+  // It uses the Common APIs.
 
   function run() {
       Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {

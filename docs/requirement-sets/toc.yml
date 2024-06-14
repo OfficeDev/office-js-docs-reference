@@ -91,6 +91,18 @@
         href: ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+    - name: Mailbox requirement set 1.14
+      items:
+      - name: Overview
+        href: ../../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md
+      - name: Office
+        href: ../../requirement-sets/outlook/requirement-set-1.14/office.md
+      - name: Office.context
+        href: ../../requirement-sets/outlook/requirement-set-1.14/Office.context.md
+      - name: Office.context.mailbox
+        href: ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.md
+      - name: Office.context.mailbox.item
+        href: ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.item.md
     - name: Mailbox requirement set 1.13
       items:
       - name: Overview
@@ -253,6 +265,9 @@
     - name: Overview
       href: ../../requirement-sets/powerpoint/powerpoint-api-requirement-sets.md
       displayName: PowerPoint
+    - name: PowerPoint preview APIs
+      href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
+      displayName: PowerPoint
     - name: PowerPointApi 1.5 requirement set
       href: ../../requirement-sets/powerpoint/powerpoint-api-1-5-requirement-set.md
       displayName: PowerPoint
@@ -279,6 +294,9 @@
       displayName: Word
     - name: WordApi online-only requirement set
       href: ../../requirement-sets/word/word-api-online-requirement-set.md
+      displayName: Word
+    - name: WordApi 1.8 requirement set
+      href: ../../requirement-sets/word/word-api-1-8-requirement-set.md
       displayName: Word
     - name: WordApi 1.7 requirement set
       href: ../../requirement-sets/word/word-api-1-7-requirement-set.md
@@ -307,10 +325,12 @@
       href: ../../requirement-sets/common/office-add-in-requirement-sets.md
     - name: Add-in commands requirement sets
       href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+    - name: Device Permission Service requirement sets
+      href: ../../requirement-sets/common/device-permission-service-requirement-sets.md
     - name: Dialog API requirement sets
       href: ../../requirement-sets/common/dialog-api-requirement-sets.md
     - name: Dialog Origin requirement sets
-      href: ../../requirement-sets/common/dialog-origin-requirement-sets.md        
+      href: ../../requirement-sets/common/dialog-origin-requirement-sets.md
     - name: Identity API requirement sets
       href: ../../requirement-sets/common/identity-api-requirement-sets.md
     - name: Image Coercion requirement sets

@@ -1,7 +1,7 @@
 ---
 title: Host element in the manifest file
 description: Specifies an individual Office application type where the add-in should activate.
-ms.date: 02/25/2022
+ms.date: 04/15/2024
 ms.localizationpriority: medium
 ---
 
@@ -27,15 +27,12 @@ When defined in the basic manifest (under [OfficeApp](officeapp.md)), the host t
 Specifies the Host type targeted by this add-in. The value must be one of the following:
 
 - `Document` (Word)
-- `Database` (Access)
 - `Mailbox` (Outlook)
 - `Notebook` (OneNote)
 - `Presentation` (PowerPoint)
 - `Project` (Project)
 - `Workbook` (Excel)
-
-> [!IMPORTANT]
-> We no longer recommend that you create and use Access web apps and databases in SharePoint. As an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code business solutions for web and mobile devices.
+- `Database` (Access (obsolete))
 
 ### Example
 
@@ -73,7 +70,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |  [DesktopFormFactor](desktopformfactor.md)    |  Yes   |  Defines the settings for the desktop form factor. |
-|  [MobileFormFactor](mobileformfactor.md)    |  No   |  Defines the settings for the mobile form factor. **Note:** This element is only supported in Outlook on iOS and Android. |
+|  [MobileFormFactor](mobileformfactor.md)    |  No   |  Defines the settings for the mobile form factor. **Note:** This element is only supported in Outlook on Android and iOS. |
 |  [AllFormFactors](allformfactors.md)    |  No   |  Defines the settings for all form factors. Only used by custom functions in Excel. |
 |  [Runtimes](runtimes.md)    |  No   |  Specifies the runtimes of your add-in. |
 

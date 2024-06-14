@@ -774,6 +774,7 @@ properties:
         eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
         eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
         eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
 
         await context.sync();
 
@@ -797,7 +798,7 @@ properties:
           await context.sync();
 
           for (let result of results) {
-            console.log(`${args.type}: ${result.para.uniqueLocalId} - ${result.text.value}`);
+            console.log(`${args.type}: ID ${result.para.uniqueLocalId}:-`, result.text.value);
           }
         });
       }
@@ -1339,30 +1340,41 @@ methods:
 
       await Word.run(async (context) => {
         const paragraph = context.document.getSelection().paragraphs.getFirst();
+        const options: Word.CritiquePopupOptions = {
+          brandingTextResourceId: "PG.TabLabel",
+          subtitleResourceId: "PG.HelpCommand.TipTitle",
+          titleResourceId: "PG.HelpCommand.Label",
+          suggestions: ["suggestion 1", "suggestion 2", "suggestion 3"]
+        };
         const critique1 = {
           colorScheme: Word.CritiqueColorScheme.red,
           start: 1,
-          length: 3
+          length: 3,
+          popupOptions: options
         };
         const critique2 = {
           colorScheme: Word.CritiqueColorScheme.green,
           start: 6,
-          length: 1
+          length: 1,
+          popupOptions: options
         };
         const critique3 = {
           colorScheme: Word.CritiqueColorScheme.blue,
           start: 10,
-          length: 3
+          length: 3,
+          popupOptions: options
         };
         const critique4 = {
           colorScheme: Word.CritiqueColorScheme.lavender,
           start: 14,
-          length: 3
+          length: 3,
+          popupOptions: options
         };
         const critique5 = {
           colorScheme: Word.CritiqueColorScheme.berry,
           start: 18,
-          length: 10
+          length: 10,
+          popupOptions: options
         };
         const annotationSet: Word.AnnotationSet = {
           critiques: [critique1, critique2, critique3, critique4, critique5]
@@ -1508,6 +1520,36 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Wrapped the first paragraph in a content control.');
+      });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+
+      // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags.
+
+      await Word.run(async (context) => {
+        let paragraphs = context.document.body.paragraphs;
+        paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
+
+        await context.sync();
+
+        for (let i = 0; i < paragraphs.items.length; i++) {
+          let contentControl = paragraphs.items[i].insertContentControl();
+          // For even, tag "even".
+          if (i % 2 === 0) {
+            contentControl.tag = "even";
+          } else {
+            contentControl.tag = "odd";
+          }
+        }
+        console.log("Content controls inserted: " + paragraphs.items.length);
+
+        await context.sync();
       });
 
       ```

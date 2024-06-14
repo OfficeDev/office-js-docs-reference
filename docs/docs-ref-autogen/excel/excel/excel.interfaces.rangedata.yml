@@ -98,6 +98,20 @@ properties:
       content: 'conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />[]'
+  - name: control
+    uid: 'excel!Excel.Interfaces.RangeData#control:member'
+    package: excel!
+    fullName: control
+    summary: >-
+      Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
+      `EmptyCellControl`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'control?: CellControl;'
+      return:
+        type: '<xref uid="excel!Excel.CellControl:type" />'
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeData#dataValidation:member'
     package: excel!

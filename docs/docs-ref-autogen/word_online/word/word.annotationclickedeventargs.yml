@@ -27,6 +27,7 @@ remarks: >-
     eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
     eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
     eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+    eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
 
     await context.sync();
 
@@ -44,7 +45,7 @@ remarks: >-
 
       await context.sync();
 
-      console.log(`AnnotationClicked: ${args.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+      console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
     });
   }
 

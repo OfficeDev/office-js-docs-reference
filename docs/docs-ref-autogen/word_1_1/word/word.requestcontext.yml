@@ -7,7 +7,19 @@ summary: >-
   The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word
   application run in two different processes, the request context is required to get access to the Word object model
   from the add-in.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // *.run methods automatically create an OfficeExtension.ClientRequestContext
+  // object to work with the Office file.
+  await Word.run(async (context: Word.RequestContext) => {
+    const document = context.document;
+    // Interact with the Word document...
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class

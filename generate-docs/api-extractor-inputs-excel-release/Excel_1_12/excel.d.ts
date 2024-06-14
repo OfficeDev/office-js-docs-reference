@@ -3308,7 +3308,7 @@ export declare namespace Excel {
          */
         readonly protected: boolean;
         /**
-         * Protects a workbook. Fails if the workbook has been protected.
+         * Protects the workbook. Fails if the workbook has been protected.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -3317,7 +3317,7 @@ export declare namespace Excel {
          */
         protect(password?: string): void;
         /**
-         * Unprotects a workbook.
+         * Unprotects the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -3507,7 +3507,7 @@ export declare namespace Excel {
          */
         readonly id: string;
         /**
-         * The display name of the worksheet.
+         * The display name of the worksheet. The name must be fewer than 32 characters.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -4856,6 +4856,7 @@ export declare namespace Excel {
         
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
+         * Note: This API returns an `ItemNotFound` error if no precedents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -9817,6 +9818,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Specifies the marker size of a chart series.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -10166,6 +10168,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Represents marker size of a data point.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -33008,7 +33011,7 @@ export declare namespace Excel {
              */
             enableCalculation?: boolean;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -34167,6 +34170,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -34317,6 +34321,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -37991,7 +37996,7 @@ export declare namespace Excel {
              */
             id?: string;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -39671,6 +39676,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -39821,6 +39827,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -44206,7 +44213,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -44328,7 +44335,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: The display name of the worksheet.
+             * For EACH ITEM in the collection: The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -46965,6 +46972,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -47294,6 +47302,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -47458,6 +47467,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -47526,6 +47536,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

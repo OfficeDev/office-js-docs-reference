@@ -26,8 +26,7 @@ remarks: >-
 
     await context.sync();
 
-    console.log(`Reviewed text (before):\n${before.value}`);
-    console.log(`Reviewed text (after):\n${after.value}`);
+    console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
   });
 
   ```

@@ -17,6 +17,8 @@ export declare namespace Word {
     
     
     
+    
+    
     /**
      * Represents the body of a document or a section.
      *
@@ -814,6 +816,7 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        
         
         
         
@@ -1667,6 +1670,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -1747,6 +1751,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        
         
         
         /**

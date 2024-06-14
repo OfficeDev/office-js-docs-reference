@@ -7,6 +7,65 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 
 export declare namespace Excel {
     /**
+     * Represents the type of cell control.
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     */
+    enum CellControlType {
+        /**
+         * Type representing an unknown control.
+         * This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+         */
+        Unknown = 0,
+        /**
+         * Type representing an empty control.
+         */
+        Empty = 1,
+        /**
+         * Type representing a query that results in a mix of control results.
+         */
+        Mixed = 2,
+        /**
+         * Type representing a checkbox control.
+         */
+        Checkbox = 3
+    }
+    /**
+     * Represents an unknown cell control.
+     * This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     */
+    export interface UnknownCellControl {
+        type: CellControlType.Unknown;
+    }
+    /**
+     * Represents an empty cell control.
+     * This represents the state where a cell does not have a control.
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     */
+    export interface EmptyCellControl {
+        type: CellControlType.Empty;
+    }
+    /**
+     * Represents the result of a query that resulted in multiple cell controls.
+     * If the result has multiple controls, then they can't be represented as a single result.
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     */
+    export interface MixedCellControl {
+        type: CellControlType.Mixed;
+    }
+    /**
+    * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+    export interface CheckboxCellControl {
+        type: CellControlType.Checkbox;
+    }
+    /**
+    * Represents an interactable control inside of a cell.
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+    export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
+    /**
     * Represents a 2D array of cell values.
     *
     * @remarks
@@ -5966,7 +6025,8 @@ export declare namespace Excel {
         * Represents the type of this cell value.
         *
         * @remarks
-        * [Api set: ExcelApi 1.16]
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.localImage | "LocalImage";
         /**
@@ -5975,14 +6035,16 @@ export declare namespace Excel {
         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
-        * [Api set: ExcelApi 1.16]
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
         * @remarks
-        * [Api set: ExcelApi 1.16]
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         basicType?: RangeValueType.error | "Error";
         /**
@@ -7544,6 +7606,35 @@ export declare namespace Excel {
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
+     * Provides information about the local image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class LocalImage extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param cacheUid - Represents the unique identifier (UID) of the image as it appears in the cache. The cache UID can be obtained from JSON representation of the values in the cell.
+         * @returns The base64-encoded image data.
+         */
+        getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.LocalImage object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LocalImageData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): {
+            [key: string]: string;
+        };
+    }
+    /**
      * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
                 When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
      *
@@ -7983,6 +8074,24 @@ export declare namespace Excel {
          */
         readonly rowsLoadedCount: number;
         /**
+         * Deletes the query and associated connection.
+                    Tables associated with the query will no longer be connected.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Refreshes the query.
+                    This only starts the refresh.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refresh(): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -8037,6 +8146,14 @@ export declare namespace Excel {
          * @returns The query with the given name. If there is no query by that name, then an error is thrown.
          */
         getItem(key: string): Excel.Query;
+        /**
+         * Refresh all queries.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refreshAll(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8383,7 +8500,7 @@ export declare namespace Excel {
          */
         readonly changedBy: Excel.EmailIdentity;
         /**
-         * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+         * Represents the ID of the comment or comment reply to which the task change is anchored.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -8451,7 +8568,7 @@ export declare namespace Excel {
          */
         readonly title: string;
         /**
-         * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+         * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -10938,6 +11055,44 @@ export declare namespace Excel {
         type: "WorkbookAutoSaveSettingChanged";
     }
     /**
+     * Represents the type of cell control.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CellControlType {
+        /**
+         * Type representing an unknown control.
+                    This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unknown = "Unknown",
+        /**
+         * Type representing an empty control.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        empty = "Empty",
+        /**
+         * Type representing a query that results in a mix of control results.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Type representing a checkbox control.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        checkbox = "Checkbox"
+    }
+    /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
      *
      * @remarks
@@ -12483,6 +12638,14 @@ export declare namespace Excel {
          */
         readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;
         /**
+         * Returns the `LocalImage` object associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly localImage: Excel.LocalImage;
+        /**
          * Represents a collection of workbook-scoped named items (named ranges and constants).
          *
          * @remarks
@@ -12868,7 +13031,7 @@ export declare namespace Excel {
          */
         readonly protected: boolean;
         /**
-         * Protects a workbook. Fails if the workbook has been protected.
+         * Protects the workbook. Fails if the workbook has been protected.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -12877,7 +13040,7 @@ export declare namespace Excel {
          */
         protect(password?: string): void;
         /**
-         * Unprotects a workbook.
+         * Unprotects the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -13081,7 +13244,7 @@ export declare namespace Excel {
          */
         readonly id: string;
         /**
-         * The display name of the worksheet.
+         * The display name of the worksheet. The name must be fewer than 32 characters.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -14258,6 +14421,15 @@ export declare namespace Excel {
          */
         readonly columnIndex: number;
         /**
+         * Accesses the cell control applied to this range.
+                    If the range has multiple cell controls, this returns `EmptyCellControl`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        control: CellControl;
+        /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
          * @remarks
@@ -14685,6 +14857,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
+         * Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -14692,6 +14865,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
+         * Note: This API returns an `ItemNotFound` error if no dependents are found.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -14699,6 +14873,7 @@ export declare namespace Excel {
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
+         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -14816,6 +14991,7 @@ export declare namespace Excel {
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
+         * Note: This API returns an `ItemNotFound` error if no precedents are found. 
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
@@ -15110,6 +15286,16 @@ export declare namespace Excel {
          * @returns The number of replacements performed.
          */
         replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria): OfficeExtension.ClientResult<number>;
+        /**
+         * Sets all cells in the range to their default state.
+                    Cells with cell controls are set to the default value defined by each control.
+                    Cells without cell controls are set to blank.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetContent(): void;
         /**
          * Selects the specified range in the Excel UI.
          *
@@ -19930,6 +20116,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Specifies the marker size of a chart series.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -20311,6 +20498,7 @@ export declare namespace Excel {
         markerForegroundColor: string;
         /**
          * Represents marker size of a data point.
+                    The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -22545,6 +22733,13 @@ export declare namespace Excel {
          * @param color - HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setSolidColor(color: string): void;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): {
+            [key: string]: string;
+        };
     }
     /**
      * Represents the border formatting of a chart element.
@@ -31117,6 +31312,17 @@ export declare namespace Excel {
          */
         addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorTypeString?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
         /**
+         * Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param address - The address of the cell that contains the local image.
+         * @returns The `Shape` object associated with the floating shape.
+         */
+        addLocalImageReference(address: string): Excel.Shape;
+        /**
          * Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet. Returns a `Shape` object that represents the new image.
          *
          * @remarks
@@ -37546,7 +37752,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        workbookNavigationObjectChanged = "WorkbookNavigationObjectChanged",
+        lineageActivityUpdateAvailable = "LineageActivityUpdateAvailable",
         /**
          * WorksheetRowHeightChanged represents the type of event registered when the height of a worksheet row is changed.
          * @remarks
@@ -44473,7 +44679,7 @@ export declare namespace Excel {
              */
             enableCalculation?: boolean;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -44552,6 +44758,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             columnHidden?: boolean;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            control?: CellControl;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -45704,6 +45919,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -45854,6 +46070,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -49352,7 +49569,7 @@ export declare namespace Excel {
              */
             changedBy?: Excel.EmailIdentity;
             /**
-             * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+             * Represents the ID of the comment or comment reply to which the task change is anchored.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -49953,7 +50170,7 @@ export declare namespace Excel {
              */
             id?: string;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -50142,6 +50359,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: number;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            control?: CellControl;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -51775,6 +52001,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -51925,6 +52152,7 @@ export declare namespace Excel {
             markerForegroundColor?: string;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -56454,7 +56682,7 @@ export declare namespace Excel {
              */
             changedBy?: boolean;
             /**
-             * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+             * Represents the ID of the comment or comment reply to which the task change is anchored.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -56522,7 +56750,7 @@ export declare namespace Excel {
              */
             title?: boolean;
             /**
-             * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -56567,7 +56795,7 @@ export declare namespace Excel {
              */
             changedBy?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+             * For EACH ITEM in the collection: Represents the ID of the comment or comment reply to which the task change is anchored.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -57206,7 +57434,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * The display name of the worksheet.
+             * The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -57334,7 +57562,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: The display name of the worksheet.
+             * For EACH ITEM in the collection: The display name of the worksheet. The name must be fewer than 32 characters.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -57530,6 +57758,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            control?: boolean;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -60186,6 +60423,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60515,6 +60753,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Specifies the marker size of a chart series.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60679,6 +60918,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * For EACH ITEM in the collection: Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60747,6 +60987,7 @@ export declare namespace Excel {
             markerForegroundColor?: boolean;
             /**
              * Represents marker size of a data point.
+                        The supported size range is 2 to 72. This method returns an InvalidArgument error if it's set with a size outside of the supported range.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -65841,6 +66082,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            /**
+             * For EACH ITEM in the collection: Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            control?: boolean;
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *

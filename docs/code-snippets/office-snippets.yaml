@@ -900,7 +900,7 @@ Office.Bindings#releaseByIdAsync:member(2):
 Office.CoercionType:enum:
   - |-
     // This function displays the currently selected text in the console.
-    // It uses the Common (Office 2013) APIs.
+    // It uses the Common APIs.
     function run() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -1476,6 +1476,107 @@ Office.CustomXmlParts#getByNamespaceAsync:member(2):
     // Function that writes to a div with id='message' on the page.
     function write(message){
         document.getElementById('message').innerText += message; 
+    }
+Office.DevicePermission#requestPermissions:member(1):
+  - |-
+    // Request permission from a user to access their camera and microphone.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    console.log("Permission granted.");
+
+                    // Do something when permission is granted.
+                } else {
+                    console.log("Permission denied.");
+
+                    // Do something when permission is denied.
+                }
+            });
+    }
+Office.DevicePermission#requestPermissionsAsync:member(2):
+  - |-
+    // Request permission from a user to access their camera, geolocation, and microphone.
+    if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.geolocation,
+            Office.DevicePermissionType.microphone
+        ];
+
+        Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log (asyncResult.error.message);
+                return;
+            }
+
+            if (asyncResult.value) {
+                console.log("Permission granted.");
+
+                // Do something when permission is granted.
+            } else {
+                console.log("Permission denied.");
+
+                // Do something when permission is denied.
+            }
+        });
+    }
+Office.DevicePermissionType:enum:
+  - |-
+    // Request permission from a user to access their device capabilities.
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+            const deviceCapabilities = [
+                Office.DevicePermissionType.camera,
+                Office.DevicePermissionType.microphone
+            ];
+            Office.devicePermission
+                .requestPermissions(deviceCapabilities)
+                .then((isGranted) => {
+                    if (isGranted) {
+                        console.log("Permission granted.");
+
+                        // Do something when permission is granted.
+                    } else {
+                        console.log("Permission denied.");
+
+                        // Do something when permission is denied.
+                    }
+                });
+        }
+    } else if (host === Office.HostType.Outlook) {
+        if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+            const deviceCapabilities = [
+                Office.DevicePermissionType.camera,
+                Office.DevicePermissionType.geolocation,
+                Office.DevicePermissionType.microphone
+            ];
+
+            Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.log (asyncResult.error.message);
+                    return;
+                }
+
+                if (asyncResult.value) {
+                    console.log("Permission granted.");
+
+                    // Do something when permission is granted.
+                } else {
+                    console.log("Permission denied.");
+
+                    // Do something when permission is denied.
+                }
+            });
+        }
+    } else {
+        console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
     }
 Office.Dialog#addEventHandler:member(1):
   - |-
@@ -4053,6 +4154,23 @@ Office.VisibilityMode:enum:
         });
 
         // Other startup tasks.
+    });
+OfficeExtension.ClientObject#isNullObject:member:
+  - |-
+    // This Word snippet sets the hyperlink URL of a selected image. 
+    await Word.run(async (context) => {
+        const selection = context.document.getSelection();
+        const firstImage = selection.inlinePictures.getFirstOrNullObject();
+        await context.sync();
+
+        // Check if an image was selected before changing its property.
+        if (!firstImage.isNullObject) {
+            firstImage.hyperlink = "https://www.microsoft.com";
+        } else {
+            console.log("No image selected");
+        }
+
+        await context.sync();
     });
 OfficeExtension.Error#traceMessages:member:
   - |-

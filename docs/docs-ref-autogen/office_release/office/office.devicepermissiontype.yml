@@ -1,0 +1,110 @@
+### YamlMime:TSEnum
+name: Office.DevicePermissionType
+uid: 'office!Office.DevicePermissionType:enum'
+package: office!
+fullName: Office.DevicePermissionType
+summary: Specifies the device capability to which an add-in is requesting access.
+remarks: >-
+  **Applications**: This API is supported by the following Office applications when running in Chromium-based
+  browsers, such as Microsoft Edge and Google Chrome.
+
+
+  - Excel on the web
+
+
+  - Outlook on the web
+
+
+  - PowerPoint on the web
+
+
+  - Word on the web
+
+
+  It's also supported in [new Outlook on Windows
+  (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+
+
+  **Requirement set**: [DevicePermission
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Request permission from a user to access their device capabilities.
+
+  const host = Office.context.host;
+
+  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+      if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.microphone
+          ];
+          Office.devicePermission
+              .requestPermissions(deviceCapabilities)
+              .then((isGranted) => {
+                  if (isGranted) {
+                      console.log("Permission granted.");
+
+                      // Do something when permission is granted.
+                  } else {
+                      console.log("Permission denied.");
+
+                      // Do something when permission is denied.
+                  }
+              });
+      }
+  } else if (host === Office.HostType.Outlook) {
+      if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.geolocation,
+              Office.DevicePermissionType.microphone
+          ];
+
+          Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log (asyncResult.error.message);
+                  return;
+              }
+
+              if (asyncResult.value) {
+                  console.log("Permission granted.");
+
+                  // Do something when permission is granted.
+              } else {
+                  console.log("Permission denied.");
+
+                  // Do something when permission is denied.
+              }
+          });
+      }
+  } else {
+      console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: camera
+    uid: 'office!Office.DevicePermissionType.camera:member'
+    package: office!
+    summary: The add-in is requesting access to the user's camera.
+  - name: geolocation
+    uid: 'office!Office.DevicePermissionType.geolocation:member'
+    package: office!
+    summary: >-
+      The add-in is requesting access to the user's geolocation.
+
+
+      **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on
+      Windows (preview).
+  - name: microphone
+    uid: 'office!Office.DevicePermissionType.microphone:member'
+    package: office!
+    summary: The add-in is requesting access to the user's microphone.

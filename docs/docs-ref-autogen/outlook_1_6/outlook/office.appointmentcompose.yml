@@ -772,38 +772,22 @@ methods:
 
       ```TypeScript
 
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
-
-      function addAttachment() {
-          // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
-
-          const attachmentURL = "https://contoso.com/rtm/icon.png";
-          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
-      const attachmentUrl = $("#attachmentUrl").val();
-
+      const attachmentUrl = $("#attachmentUrl")
+        .val()
+        .toString();
       Office.context.mailbox.item.addFileAttachmentAsync(
-          attachmentUrl,
-          getFileName(attachmentUrl),
-          { "asyncContext" : { var1: 1, var2: true } },
-          function(result) { console.log(result); });
+        attachmentUrl,
+        getFileName(attachmentUrl),
+        { isInline: false },
+        (result) => {
+          console.log(result);
+        }
+      );
+
       ```
     isPreview: false
     isDeprecated: false
@@ -956,42 +940,27 @@ methods:
 
       // The following example adds an existing Outlook item as an attachment
 
-      // with the name `My Attachment`.
-
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
+      // with the name "My Attachment".
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
           const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          const options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { asyncContext: { var1: 1, var2: 2 } };
 
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error("Failed to add attachment: " + result.error.message);
+                  return;
+              }
+
+              console.log("Attachment added successfully.");
+              console.log("var1: " + result.asyncContext.var1);
+              console.log("var2: " + result.asyncContext.var2);
+          });
       }
 
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      const attachmentItemId = $("#attachmentItemId").val();
-
-      Office.context.mailbox.item.addItemAttachmentAsync(
-          attachmentItemId,
-          "My attachment",
-          { "asyncContext" : { var3: 3, var4: false } },
-          function(result) { console.log(result); });
       ```
     isPreview: false
     isDeprecated: false
@@ -1323,66 +1292,18 @@ methods:
 
       ```TypeScript
 
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
 
-      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Loaded following custom properties:");
-          customProps = result.value;
-          const dataKey = Object.keys(customProps)[0];
-          const data = customProps[dataKey];
-          for (let propertyName in data)
-          {
-            let propertyValue = data[propertyName];
-            console.log(`${propertyName}: ${propertyValue}`);
-          }              
-        }
-        else {
+      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
           console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+          return;
         }
+
+        customProps = result.value;
+        console.log("Loaded the CustomProperties object.");
       });
 
       ```
@@ -1418,9 +1339,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1435,6 +1356,12 @@ methods:
       -->**: Appointment Organizer
 
 
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
+      Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
+      of an item.
+
+
       **Errors**:
 
 
@@ -1446,36 +1373,22 @@ methods:
 
       ```TypeScript
 
-      // The following code removes an attachment with an identifier of '0'.
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-          '0',
-          { asyncContext : null },
-          function (asyncResult)
-          {
-              console.log(asyncResult.status);
-          }
-      );
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
 
       Office.context.mailbox.item.removeAttachmentAsync(
-          $("#attachmentId").val(),
-          { asyncContext : null },
-          function(result)
-          {
-              if (result.status !== Office.AsyncResultStatus.Succeeded) {
-                  console.error(`${result.error.message}`);
-              } else {
-                  console.log(`Attachment removed successfully.`);
-              }
+        $("#attachmentId")
+          .val()
+          .toString(),
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(result.error.message);
+            return;
           }
+
+          console.log(`Attachment removed successfully.`);
+        }
       );
 
       ```
@@ -1515,9 +1428,9 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1530,6 +1443,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
+      Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
+      of an item.
 
 
       **Errors**:
@@ -1824,7 +1743,7 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and Windows. If the field is an HTML editor, only the text
+            current style is applied in Outlook on the web and on Windows. If the field is an HTML editor, only the text
             data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the
             current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
             clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not

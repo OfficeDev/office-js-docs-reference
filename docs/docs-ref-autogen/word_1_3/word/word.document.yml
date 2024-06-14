@@ -72,7 +72,7 @@ properties:
 
 
       await Word.run(async (context) => {
-          const builtInProperties = context.document.properties;
+          const builtInProperties : Word.DocumentProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
 
           await context.sync();
@@ -252,15 +252,20 @@ methods:
     package: word!
     fullName: 'save(saveBehavior, fileName)'
     summary: Saves the document.
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
 
+
       #### Examples
 
+
       ```TypeScript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
           
           // Create a proxy object for the document.
@@ -285,6 +290,24 @@ methods:
               console.log('The document has not changed since the last save.');
           }
       });
+
+      ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Saves the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.save();
+        await context.sync();
+      });
+
       ```
     isPreview: false
     isDeprecated: false

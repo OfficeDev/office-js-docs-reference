@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: Excel.MixedCellControl
+uid: 'excel!Excel.MixedCellControl:interface'
+package: excel!
+fullName: Excel.MixedCellControl
+summary: >-
+  Represents the result of a query that resulted in multiple cell controls. If the result has multiple controls, then
+  they can't be represented as a single result. \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: 'excel!Excel.MixedCellControl#type:member'
+    package: excel!
+    fullName: type
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellControlType.Mixed;'
+      return:
+        type: '<xref uid="excel!Excel.CellControlType.Mixed:member" />'

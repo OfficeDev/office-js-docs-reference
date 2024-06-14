@@ -43,7 +43,7 @@ properties:
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
-      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on desktop or mobile clients, the
+      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on desktop or on mobile clients, the
       `hostVersion` property returns the version of the application, Outlook. In Outlook on the web, the property
       returns the version of the Exchange Server.
 
@@ -70,6 +70,46 @@ properties:
       Starting with Mailbox requirement set 1.5, you can also use the
       [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member)
       property to get similar information.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+
+      // This function gets a mailbox's diagnostic information, such as Outlook client and version, and logs it to the
+      console.
+
+      const diagnostics = Office.context.mailbox.diagnostics;
+
+      console.log(`Client application: ${diagnostics.hostName}`);
+
+      console.log(`Client version: ${diagnostics.hostVersion}`);
+
+
+      switch (diagnostics.OWAView) {
+        case undefined:
+          console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
+          break;
+        case Office.MailboxEnums.OWAView.OneColumnNarrow:
+          console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
+          break;
+        case Office.MailboxEnums.OWAView.OneColumn:
+          console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
+          break;
+        case Office.MailboxEnums.OWAView.TwoColumns:
+          console.log("Current view (Outlook on the web only): Viewed from a tablet");
+          break;
+        case Office.MailboxEnums.OWAView.ThreeColumns:
+          console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+          break;
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -592,7 +632,7 @@ methods:
       Gets a dictionary containing time information in local client time.
 
 
-      The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones.
+      The dates and times used by a mail app for Outlook on the web or on desktop clients can use different time zones.
       Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center
       (EAC). You should handle date and time values so that the values you display on the user interface are always
       consistent with the time zone that the user expects.
@@ -1047,7 +1087,7 @@ methods:
           {
             type: "file",
             name: "image.png",
-            url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
+            url: "https://i.imgur.com/9S36xvA.jpg",
             isInline: true
           }
         ]
@@ -1141,6 +1181,41 @@ methods:
       -->**: Compose or Read
 
 
+      **Important**:
+
+
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
+      - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported
+      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always
+      returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
+
+
+      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read
+      item**.
+
+
+      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
+      method requires a minimum permission level of **read/write item**.
+
+
+      - For guidance on delegate or shared scenarios, see the [shared folders and shared
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+
+
       *REST Tokens*
 
 
@@ -1186,30 +1261,6 @@ methods:
       [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation
       to return an attachment or item. For example, you can create a remote service to [get attachments from the
       selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
-
-
-      **Important**:
-
-
-      - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported
-      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
-      - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always
-      returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
-
-
-      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read
-      item**.
-
-
-      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of **read/write item**.
-
-
-      - For guidance on delegate or shared scenarios, see the [shared folders and shared
-      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       **Errors**:
@@ -1306,6 +1357,17 @@ methods:
       **Important**:
 
 
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
       - You can pass both the token and either an attachment identifier or item identifier to an external system. That
       system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
       [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
@@ -1324,8 +1386,8 @@ methods:
 
 
       - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running
-      on Outlook mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs
-      supported in Outlook on mobile
+      in Outlook on mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
@@ -1403,7 +1465,21 @@ methods:
       -->**: Compose or Read
 
 
-      The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
+      **Important**:
+
+
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
+      - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
       and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
 
 
@@ -1485,6 +1561,17 @@ methods:
 
 
       **Important**:
+
+
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
 
 
       - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set

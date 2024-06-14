@@ -19,8 +19,7 @@ remarks: >-
 
   async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
     await Word.run(async (context) => {
-      console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
-      console.log(event.ids);
+      console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`, event.ids);
     });
   }
 

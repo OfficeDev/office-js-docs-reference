@@ -25,9 +25,7 @@ remarks: >-
     firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
-    console.log(`Details about the alignment of the first table's first row:`);
-    console.log(`- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`);
-    console.log(`- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+    console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
   });
 
   ```
@@ -90,10 +88,7 @@ methods:
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table's first row:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```

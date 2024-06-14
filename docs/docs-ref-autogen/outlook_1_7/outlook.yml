@@ -44,7 +44,6 @@ interfaces:
   - 'outlook!Office.ReplyFormData:interface'
   - 'outlook!Office.RoamingSettings:interface'
   - 'outlook!Office.SeriesTime:interface'
-  - 'outlook!Office.SmartAlertsEventCompletedOptions:interface'
   - 'outlook!Office.Subject:interface'
   - 'outlook!Office.TaskSuggestion:interface'
   - 'outlook!Office.Time:interface'

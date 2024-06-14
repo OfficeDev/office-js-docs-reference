@@ -4,7 +4,39 @@ uid: 'word!Word.ContentControlAddedEventArgs:interface'
 package: word!
 fullName: Word.ContentControlAddedEventArgs
 summary: Provides information about the content control that raised contentControlAdded event.
-remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+
+  // Registers the onAdded event handler on the document.
+
+  await Word.run(async (context) => {
+    eventContext = context.document.onContentControlAdded.add(contentControlAdded);
+    await context.sync();
+
+    console.log("Added event handler for when content controls are added.");
+  });
+
+
+  ...
+
+
+  async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
+    await Word.run(async (context) => {
+      console.log(`${event.eventType} event detected. IDs of content controls that were added:`, event.ids);
+    });
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,27 +46,7 @@ properties:
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
-
-
-      async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
-          console.log(event.ids);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,39 +54,19 @@ properties:
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
         "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-        "AnnotationInserted" | "AnnotationRemoved";
+        "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
           "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved"
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: ids
     uid: 'word!Word.ContentControlAddedEventArgs#ids:member'
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: >-
-      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
-
-
-      async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
-          console.log(event.ids);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

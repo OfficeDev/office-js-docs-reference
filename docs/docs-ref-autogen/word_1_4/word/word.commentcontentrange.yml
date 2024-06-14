@@ -4,7 +4,39 @@ uid: 'word!Word.CommentContentRange:class'
 package: word!
 fullName: Word.CommentContentRange
 summary: ''
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

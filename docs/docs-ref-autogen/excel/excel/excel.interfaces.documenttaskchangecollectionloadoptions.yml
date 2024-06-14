@@ -54,7 +54,7 @@ properties:
     package: excel!
     fullName: commentId
     summary: >-
-      For EACH ITEM in the collection: Represents the ID of the `comment` or `commentReply` to which the task change is
+      For EACH ITEM in the collection: Represents the ID of the comment or comment reply to which the task change is
       anchored.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true

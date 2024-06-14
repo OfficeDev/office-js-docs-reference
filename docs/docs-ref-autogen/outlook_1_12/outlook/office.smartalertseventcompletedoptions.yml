@@ -7,13 +7,27 @@ summary: >-
   Specifies the behavior of a [Smart Alerts
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) when it
   completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-remarks: |-
+remarks: >-
+  \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission level
+  (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **restricted**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
 
 
   #### Examples
 
+
   ```TypeScript
+
   // The following example checks whether a location is specified in an appointment before it's sent.
+
   function onAppointmentSendHandler(event) {
       Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
           const event = asyncResult.asyncContext;
@@ -42,6 +56,7 @@ remarks: |-
           }
       });
   }
+
   ```
 isPreview: false
 isDeprecated: false
@@ -52,10 +67,11 @@ properties:
     package: outlook!
     fullName: allowEvent
     summary: >-
-      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
-      of an event handler, this value indicates if the handled event should continue execution or be canceled. For
-      example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false`
-      to cancel the sending of an item. For a complete sample, see the [Smart Alerts
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal completion of an event handler, this value indicates if the handled event should continue execution or
+      be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set
+      `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
@@ -81,9 +97,10 @@ properties:
     package: outlook!
     fullName: errorMessage
     summary: >-
-      When you use the [completed method](xref:outlook!Office.MailboxEvent%23completed:member(1)) to signal completion
-      of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message
-      that will be displayed to the user. For an example, see the [Smart Alerts
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets
+      the error message that will be displayed to the user. For an example, see the [Smart Alerts
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-

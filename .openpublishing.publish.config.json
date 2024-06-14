@@ -41,6 +41,7 @@
         "outlook-js-1.11",
         "outlook-js-1.12",
         "outlook-js-1.13",
+        "outlook-js-1.14",
         "powerpoint-js-preview",
         "powerpoint-js-1.1",
         "powerpoint-js-1.2",
@@ -59,6 +60,7 @@
         "word-js-1.5-hidden-document",
         "word-js-1.6",
         "word-js-1.7",
+        "word-js-1.8",
         "word-js-online"
       ],
       "open_to_public_contributors": true,
@@ -171,6 +173,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_13/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_14/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
@@ -327,6 +333,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/word_1_7/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/word_1_8/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

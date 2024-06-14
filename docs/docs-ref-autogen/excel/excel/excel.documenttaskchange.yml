@@ -39,7 +39,7 @@ properties:
     uid: 'excel!Excel.DocumentTaskChange#commentId:member'
     package: excel!
     fullName: commentId
-    summary: Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+    summary: Represents the ID of the comment or comment reply to which the task change is anchored.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -161,8 +161,8 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Represents the action type of the task change record. Some examples of action types are assign, undo, and
-      setPriority.
+      Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->,
+      `undo`<!-- -->, and `setPriority`<!-- -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

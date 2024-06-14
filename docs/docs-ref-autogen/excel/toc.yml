@@ -68,6 +68,8 @@ items:
                 uid: 'excel!Excel.CalculationState:enum'
               - name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
+              - name: CellControlType
+                uid: 'excel!Excel.CellControlType:enum'
               - name: CellValueType
                 uid: 'excel!Excel.CellValueType:enum'
               - name: ChartAxisCategoryType
@@ -481,6 +483,8 @@ items:
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
             uid: 'excel!Excel.CellBorderCollection:interface'
+          - name: CellControl
+            uid: 'excel!Excel.CellControl:type'
           - name: CellProperties
             uid: 'excel!Excel.CellProperties:interface'
           - name: CellPropertiesBorderLoadOptions
@@ -619,6 +623,8 @@ items:
             uid: 'excel!Excel.ChartTrendlineLabel:class'
           - name: ChartTrendlineLabelFormat
             uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+          - name: CheckboxCellControl
+            uid: 'excel!Excel.CheckboxCellControl:interface'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:class'
           - name: ColumnProperties
@@ -739,6 +745,8 @@ items:
             uid: 'excel!Excel.DoubleCellValue:interface'
           - name: EmailIdentity
             uid: 'excel!Excel.EmailIdentity:interface'
+          - name: EmptyCellControl
+            uid: 'excel!Excel.EmptyCellControl:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
           - name: EntityArrayCardLayout
@@ -823,10 +831,14 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
+          - name: LocalImage
+            uid: 'excel!Excel.LocalImage:class'
           - name: LocalImageCellValue
             uid: 'excel!Excel.LocalImageCellValue:interface'
           - name: LocalImageCellValueCacheId
             uid: 'excel!Excel.LocalImageCellValueCacheId:interface'
+          - name: MixedCellControl
+            uid: 'excel!Excel.MixedCellControl:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -1063,6 +1075,8 @@ items:
             uid: 'excel!Excel.TimeoutErrorCellValue:interface'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
+          - name: UnknownCellControl
+            uid: 'excel!Excel.UnknownCellControl:interface'
           - name: ValueErrorCellValue
             uid: 'excel!Excel.ValueErrorCellValue:interface'
           - name: ValueTypeNotAvailableCellValue
@@ -1162,6 +1176,8 @@ items:
                     uid: 'office!Office.CoercionType:enum'
                   - name: CustomXMLNodeType
                     uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DevicePermissionType
+                    uid: 'office!Office.DevicePermissionType:enum'
                   - name: DocumentMode
                     uid: 'office!Office.DocumentMode:enum'
                   - name: EventType
@@ -1246,6 +1262,8 @@ items:
                 uid: 'office!Office.CustomXmlParts:interface'
               - name: CustomXmlPrefixMappings
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
+              - name: DevicePermission
+                uid: 'office!Office.DevicePermission:interface'
               - name: Dialog
                 uid: 'office!Office.Dialog:interface'
               - name: DialogMessageOptions
@@ -1557,7 +1575,6 @@ items:
             href: ../../manifest/mobileformfactor.md
           - name: MoreInfo
             href: ../../manifest/moreinfo.md
-            displayName: preview
           - name: OfficeMenu
             href: ../../manifest/officemenu.md
           - name: OfficeTab
@@ -1570,13 +1587,10 @@ items:
             href: ../../manifest/page.md
           - name: PreProcessingDialog
             href: ../../manifest/preprocessingdialog.md
-            displayName: preview
           - name: ReportPhishingCustomization
             href: ../../manifest/reportphishingcustomization.md
-            displayName: preview
           - name: ReportingOptions
             href: ../../manifest/reportingoptions.md
-            displayName: preview
           - name: Resources
             href: ../../manifest/resources.md
           - name: Runtime
@@ -1699,6 +1713,22 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.14
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.14/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.13
             items:
               - name: Overview
@@ -1913,6 +1943,9 @@ items:
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-requirement-sets.md
             displayName: PowerPoint
+          - name: PowerPoint preview APIs
+            href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
+            displayName: PowerPoint
           - name: PowerPointApi 1.5 requirement set
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-1-5-requirement-set.md
@@ -1944,6 +1977,9 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApi 1.8 requirement set
+            href: ../../requirement-sets/word/word-api-1-8-requirement-set.md
+            displayName: Word
           - name: WordApi 1.7 requirement set
             href: ../../requirement-sets/word/word-api-1-7-requirement-set.md
             displayName: Word
@@ -1971,6 +2007,9 @@ items:
             href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
             href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Device Permission Service requirement sets
+            href: >-
+              ../../requirement-sets/common/device-permission-service-requirement-sets.md
           - name: Dialog API requirement sets
             href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets

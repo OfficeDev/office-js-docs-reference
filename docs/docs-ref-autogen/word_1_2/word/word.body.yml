@@ -850,7 +850,7 @@ methods:
         // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        console.log('Text added to the beginning of the document body.');
+        console.log("Text added to the beginning of the document body.");
       });
 
       ```
@@ -962,7 +962,7 @@ methods:
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
-        const results = context.document.body.search("Online");
+        const results : Word.RangeCollection = context.document.body.search("Online");
         results.load("length");
 
         await context.sync();
@@ -983,7 +983,7 @@ methods:
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
-        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results : Word.RangeCollection = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();

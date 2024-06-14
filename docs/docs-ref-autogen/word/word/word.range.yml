@@ -193,7 +193,58 @@ properties:
     summary: >-
       Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there
       isn't a parent content control.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property of the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,checkboxContentControl/isChecked");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        const isCheckedBefore = selectedContentControl.checkboxContentControl.isChecked;
+        console.log("isChecked state before:", `id: ${selectedContentControl.id} ... isChecked: ${isCheckedBefore}`);
+        selectedContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+        await context.sync();
+
+        console.log(
+          "isChecked state after:",
+          `id: ${selectedContentControl.id} ... isChecked: ${selectedContentControl.checkboxContentControl.isChecked}`
+        );
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -615,14 +666,13 @@ methods:
       // Gets the comments in the selected content.
 
       await Word.run(async (context) => {
-        const comments = context.document.getSelection().getComments();
+        const comments: Word.CommentCollection = context.document.getSelection().getComments();
 
-        // Load objects for display in Script Lab console.
+        // Load objects to log in the console.
         comments.load();
         await context.sync();
 
-        console.log("Comments:");
-        console.log(comments);
+        console.log("Comments:", comments);
       });
 
       ```
@@ -647,6 +697,51 @@ methods:
       [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
       additional types of content controls may be supported. Therefore, your add-in should request and handle specific
       types of content controls.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Deletes the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        console.log(`About to delete checkbox content control with id: ${selectedContentControl.id}`);
+        selectedContentControl.delete(false);
+        await context.sync();
+
+        console.log("Deleted checkbox content control.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -866,8 +961,7 @@ methods:
 
         await context.sync();
 
-        console.log(`Reviewed text (before):\n${before.value}`);
-        console.log(`Reviewed text (after):\n${after.value}`);
+        console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
       });
 
       ```
@@ -981,8 +1075,8 @@ methods:
     summary: >-
       Highlights the range temporarily without changing document content. To highlight the text permanently, set the
       range's Font.HighlightColor.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'highlight(): void;'
@@ -1087,14 +1181,13 @@ methods:
         const text = $("#comment-text")
           .val()
           .toString();
-        const comment = context.document.getSelection().insertComment(text);
+        const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
-        // Load object for display in Script Lab console.
+        // Load object to log in the console.
         comment.load();
         await context.sync();
 
-        console.log("Comment inserted:");
-        console.log(comment);
+        console.log("Comment inserted:", comment);
       });
 
       ```
@@ -1119,7 +1212,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support was added in WordApi 1.7.
+      1.5. `CheckBox` support was added in WordApi 1.7. `DropDownList` support is currently in preview.
 
 
       #### Examples
@@ -1165,16 +1258,19 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox"
+        | "DropDownList"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
-            'RichText'.
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'.
+            The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
+            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
+            uid="word!Word.ContentControlType.dropDownList:member" /> | "RichText" | "PlainText" | "CheckBox" |
+            "DropDownList"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -1238,7 +1334,7 @@ methods:
       // Inserts a Date field before selection.
 
       await Word.run(async (context) => {
-        var range = context.document.getSelection().getRange();
+        const range = context.document.getSelection().getRange();
 
         const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
 
@@ -1248,8 +1344,7 @@ methods:
         if (field.isNullObject) {
           console.log("There are no fields in this document.");
         } else {
-          console.log("Code of the field: " + field.code);
-          console.log("Result of the field: " + JSON.stringify(field.result));
+          console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
         }
       });
 
@@ -1793,8 +1888,8 @@ methods:
     package: word!
     fullName: removeHighlight()
     summary: Removes the highlight added by the Highlight function if any.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'removeHighlight(): void;'

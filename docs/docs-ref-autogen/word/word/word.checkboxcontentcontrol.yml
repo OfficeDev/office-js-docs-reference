@@ -4,7 +4,69 @@ uid: 'word!Word.CheckboxContentControl:class'
 package: word!
 fullName: Word.CheckboxContentControl
 summary: The data specific to content controls of type CheckBox.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+  // Toggles the isChecked property on all checkbox content controls.
+
+  await Word.run(async (context) => {
+    let contentControls = context.document.getContentControls({
+      types: [Word.ContentControlType.checkBox]
+    });
+    contentControls.load("items");
+
+    await context.sync();
+
+    const length = contentControls.items.length;
+    console.log(`Number of checkbox content controls: ${length}`);
+
+    if (length <= 0) {
+      return;
+    }
+
+    const checkboxContentControls = [];
+    for (let i = 0; i < length; i++) {
+      let contentControl = contentControls.items[i];
+      contentControl.load("id,checkboxContentControl/isChecked");
+      checkboxContentControls.push(contentControl);
+    }
+
+    await context.sync();
+
+    console.log("isChecked state before:");
+    const updatedCheckboxContentControls = [];
+    for (let i = 0; i < checkboxContentControls.length; i++) {
+      const currentCheckboxContentControl = checkboxContentControls[i];
+      const isCheckedBefore = currentCheckboxContentControl.checkboxContentControl.isChecked;
+      console.log(`id: ${currentCheckboxContentControl.id} ... isChecked: ${isCheckedBefore}`);
+
+      currentCheckboxContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+      currentCheckboxContentControl.load("id,checkboxContentControl/isChecked");
+      updatedCheckboxContentControls.push(currentCheckboxContentControl);
+    }
+
+    await context.sync();
+
+    console.log("isChecked state after:");
+    for (let i = 0; i < updatedCheckboxContentControls.length; i++) {
+      const currentCheckboxContentControl = updatedCheckboxContentControls[i];
+      console.log(
+        `id: ${currentCheckboxContentControl.id} ... isChecked: ${currentCheckboxContentControl.checkboxContentControl.isChecked}`
+      );
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
