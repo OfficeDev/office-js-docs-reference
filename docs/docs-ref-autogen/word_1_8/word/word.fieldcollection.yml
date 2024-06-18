@@ -60,7 +60,7 @@ properties:
           // Gets all fields in the document body.
 
           await Word.run(async (context) => {
-            const fields = context.document.body.fields.load("items");
+            const fields: Word.FieldCollection = context.document.body.fields.load("items");
 
             await context.sync();
 
@@ -133,7 +133,7 @@ methods:
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();

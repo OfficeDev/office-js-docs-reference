@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ContentControlListItemCollectionLoadOptions
 summary: >-
   Contains a collection of [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) objects that
-  represent the items in a dropdown list content control.
+  represent the items in a dropdown list or combo box content control.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -29,7 +29,9 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlListItemCollectionLoadOptions#displayText:member'
     package: word!
     fullName: displayText
-    summary: 'For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list content control.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list or combo box
+      content control.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -56,8 +58,8 @@ properties:
     package: word!
     fullName: value
     summary: >-
-      For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list content
-      control.
+      For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list or combo box
+      content control.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

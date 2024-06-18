@@ -42,7 +42,7 @@ remarks: >-
     await Word.run(async (context) => {
       const annotations = [];
       for (let i = 0; i < args.ids.length; i++) {
-        let annotation = context.document.getAnnotationById(args.ids[i]);
+        let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
         annotation.load("id,critiqueAnnotation");
 
         annotations.push(annotation);

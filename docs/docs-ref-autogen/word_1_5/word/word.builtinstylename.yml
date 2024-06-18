@@ -21,7 +21,7 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    const sentence = context.document.body.insertParagraph(
+    const sentence: Word.Paragraph = context.document.body.insertParagraph(
       "To be or not to be",
       "End"
     );

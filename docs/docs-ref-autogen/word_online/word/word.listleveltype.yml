@@ -20,7 +20,7 @@ remarks: >-
   // Gets information about the first list in the document.
 
   await Word.run(async (context) => {
-    const lists = context.document.body.lists;
+    const lists: Word.ListCollection = context.document.body.lists;
     lists.load("items");
 
     await context.sync();
@@ -31,12 +31,12 @@ remarks: >-
     }
     
     // Get the first list.
-    const list = lists.getFirst();
+    const list: Word.List = lists.getFirst();
     list.load("levelTypes,levelExistences");
 
     await context.sync();
 
-    const levelTypes = list.levelTypes;
+    const levelTypes  = list.levelTypes;
     console.log("Level types of the first list:");
     for (let i = 0; i < levelTypes.length; i++) {
       console.log(`- Level ${i + 1} (index ${i}): ${levelTypes[i]}`);

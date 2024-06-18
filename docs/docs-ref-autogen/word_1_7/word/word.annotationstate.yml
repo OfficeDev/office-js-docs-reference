@@ -20,14 +20,14 @@ remarks: >-
   // Accepts the first annotation found in the selected paragraph.
 
   await Word.run(async (context) => {
-    const paragraph = context.document.getSelection().paragraphs.getFirst();
-    const annotations = paragraph.getAnnotations();
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
     annotations.load("id,state,critiqueAnnotation");
 
     await context.sync();
 
     for (let i = 0; i < annotations.items.length; i++) {
-      const annotation = annotations.items[i];
+      const annotation: Word.Annotation = annotations.items[i];
 
       if (annotation.state === Word.AnnotationState.created) {
         console.log(`Accepting ID ${annotation.id}...`);

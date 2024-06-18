@@ -20,7 +20,7 @@ remarks: >-
   // Gets cell padding details about the first table in the document.
 
   await Word.run(async (context) => {
-    const firstTable = context.document.body.tables.getFirst();
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
     const cellPaddingLocation = Word.CellPaddingLocation.right;
     const cellPadding = firstTable.getCellPadding(cellPaddingLocation);
     await context.sync();

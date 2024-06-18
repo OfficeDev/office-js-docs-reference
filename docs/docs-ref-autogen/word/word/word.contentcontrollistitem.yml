@@ -3,7 +3,7 @@ name: Word.ContentControlListItem
 uid: 'word!Word.ContentControlListItem:class'
 package: word!
 fullName: Word.ContentControlListItem
-summary: Represents a list item in a dropdown list content control.
+summary: Represents a list item in a dropdown list or combo box content control.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.ContentControlListItem#displayText:member'
     package: word!
     fullName: displayText
-    summary: Specifies the display text of a list item for a dropdown list content control.
+    summary: Specifies the display text of a list item for a dropdown list or combo box content control.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.ContentControlListItem#value:member'
     package: word!
     fullName: value
-    summary: Specifies the programmatic value of a list item for a dropdown list content control.
+    summary: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

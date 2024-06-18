@@ -44,8 +44,8 @@ properties:
       // Gets annotations found in the selected paragraph.
 
       await Word.run(async (context) => {
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations = paragraph.getAnnotations();
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
         annotations.load("id,state,critiqueAnnotation");
 
         await context.sync();
@@ -53,7 +53,7 @@ properties:
         console.log("Annotations found:");
 
         for (let i = 0; i < annotations.items.length; i++) {
-          const annotation = annotations.items[i];
+          const annotation: Word.Annotation = annotations.items[i];
 
           console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
         }
@@ -87,14 +87,14 @@ properties:
       // Accepts the first annotation found in the selected paragraph.
 
       await Word.run(async (context) => {
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations = paragraph.getAnnotations();
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
         annotations.load("id,state,critiqueAnnotation");
 
         await context.sync();
 
         for (let i = 0; i < annotations.items.length; i++) {
-          const annotation = annotations.items[i];
+          const annotation: Word.Annotation = annotations.items[i];
 
           if (annotation.state === Word.AnnotationState.created) {
             console.log(`Accepting ID ${annotation.id}...`);
@@ -134,14 +134,14 @@ properties:
       // Rejects the last annotation found in the selected paragraph.
 
       await Word.run(async (context) => {
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations = paragraph.getAnnotations();
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
         annotations.load("id,state,critiqueAnnotation");
 
         await context.sync();
 
         for (let i = annotations.items.length - 1; i >= 0; i--) {
-          const annotation = annotations.items[i];
+          const annotation: Word.Annotation = annotations.items[i];
 
           if (annotation.state === Word.AnnotationState.created) {
             console.log(`Rejecting ID ${annotation.id}...`);
@@ -182,15 +182,15 @@ methods:
       // Deletes all annotations found in the selected paragraph.
 
       await Word.run(async (context) => {
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations = paragraph.getAnnotations();
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
         annotations.load("id");
 
         await context.sync();
 
         const ids = [];
         for (let i = 0; i < annotations.items.length; i++) {
-          const annotation = annotations.items[i];
+          const annotation: Word.Annotation = annotations.items[i];
 
           ids.push(annotation.id);
           annotation.delete();

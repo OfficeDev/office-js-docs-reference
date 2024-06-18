@@ -26,14 +26,14 @@ remarks: >-
       return;
     }
 
-    const style = context.document.getStyles().getByNameOrNullObject(styleName);
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
     style.load();
     await context.sync();
 
     if (style.isNullObject) {
       console.warn(`There's no existing style with the name '${styleName}'.`);
     } else {
-      const borders = style.borders;
+      const borders: Word.BorderCollection = style.borders;
       borders.load("items");
       await context.sync();
 

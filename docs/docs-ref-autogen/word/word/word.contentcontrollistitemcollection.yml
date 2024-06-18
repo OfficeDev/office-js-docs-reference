@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ContentControlListItemCollection
 summary: >-
   Contains a collection of [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) objects that
-  represent the items in a dropdown list content control.
+  represent the items in a dropdown list or combo box content control.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false

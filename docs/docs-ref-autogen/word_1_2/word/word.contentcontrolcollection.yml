@@ -98,7 +98,7 @@ methods:
 
 
       await Word.run(async (context) => {
-          const contentControls = context.document.contentControls.getByTag("customer");
+          const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
           contentControls.load("text");
 
           await context.sync();

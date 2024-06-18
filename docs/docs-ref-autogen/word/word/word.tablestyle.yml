@@ -29,7 +29,7 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    const tableStyle = context.document.getStyles().getByName(styleName).tableStyle;
+    const tableStyle: Word.TableStyle = context.document.getStyles().getByName(styleName).tableStyle;
     tableStyle.load();
     await context.sync();
 

@@ -131,7 +131,7 @@ properties:
       // Toggles the isChecked property of the first checkbox content control found in the selection.
 
       await Word.run(async (context) => {
-        const selectedRange = context.document.getSelection();
+        const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
             types: [Word.ContentControlType.checkBox]
@@ -142,7 +142,7 @@ properties:
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
-          const parentContentControl = selectedRange.parentContentControl;
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
           parentContentControl.load("id,type,checkboxContentControl/isChecked");
           await context.sync();
 
@@ -185,6 +185,18 @@ properties:
       content: 'color: string;'
       return:
         type: string
+  - name: comboBoxContentControl
+    uid: 'word!Word.ContentControl#comboBoxContentControl:member'
+    package: word!
+    fullName: comboBoxContentControl
+    summary: Specifies the combo box-related data if the content control's type is 'ComboBox'. It's `null` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly comboBoxContentControl: Word.ComboBoxContentControl;'
+      return:
+        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
   - name: contentControls
     uid: 'word!Word.ContentControl#contentControls:member'
     package: word!
@@ -773,7 +785,7 @@ methods:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 
@@ -1943,7 +1955,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2002,7 +2014,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2059,7 +2071,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2116,7 +2128,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2173,7 +2185,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 

@@ -4,7 +4,39 @@ uid: 'word!Word.Range:class'
 package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -92,7 +124,7 @@ properties:
       // Gets the footnotes in the selected document range.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.getSelection().footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.getSelection().footnotes;
         footnotes.load("length");
         await context.sync();
 
@@ -209,7 +241,7 @@ properties:
       // Toggles the isChecked property of the first checkbox content control found in the selection.
 
       await Word.run(async (context) => {
-        const selectedRange = context.document.getSelection();
+        const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
             types: [Word.ContentControlType.checkBox]
@@ -220,7 +252,7 @@ properties:
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
-          const parentContentControl = selectedRange.parentContentControl;
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
           parentContentControl.load("id,type,checkboxContentControl/isChecked");
           await context.sync();
 
@@ -360,7 +392,7 @@ properties:
 
 
       await Word.run(async (context) => {
-          const header = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
+          const header: Word.Range = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
               "Start" /*this means at the beginning of the body */);
           header.styleBuiltIn = Word.BuiltInStyleName.heading1;
 
@@ -517,19 +549,20 @@ methods:
       // Compares the location of one paragraph in relation to another paragraph.
 
       await Word.run(async (context) => {
-        const paragraphs = context.document.body.paragraphs;
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("items");
 
         await context.sync();
 
-        const firstParagraphAsRange = paragraphs.items[0].getRange();
-        const secondParagraphAsRange = paragraphs.items[1].getRange();
+        const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
+        const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
 
         const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
 
         await context.sync();
 
-        console.log(`Location of the first paragraph in relation to the second paragraph: ${comparedLocation.value}`);
+        const locationValue: Word.LocationRelation = comparedLocation.value;
+        console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
       });
 
       ```
@@ -711,7 +744,7 @@ methods:
       // Deletes the first checkbox content control found in the selection.
 
       await Word.run(async (context) => {
-        const selectedRange = context.document.getSelection();
+        const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
             types: [Word.ContentControlType.checkBox]
@@ -722,7 +755,7 @@ methods:
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
-          const parentContentControl = selectedRange.parentContentControl;
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
           parentContentControl.load("id,type");
           await context.sync();
 
@@ -955,7 +988,7 @@ methods:
       // Gets the reviewed text.
 
       await Word.run(async (context) => {
-        const range = context.document.getSelection();
+        const range: Word.Range = context.document.getSelection();
         const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
         const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
@@ -1013,14 +1046,14 @@ methods:
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
-        const sentences = context.document
+        const sentences: Word.RangeCollection = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
         // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph = sentences.items[0]
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
           .getRange()
           .expandTo(
             context.document
@@ -1218,18 +1251,18 @@ methods:
       // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
-          const results = context.document.body.search("Contractor");
+          const results: Word.RangeCollection = context.document.body.search("Contractor");
           results.load("font/bold");
 
           // Check to make sure these content controls haven't been added yet.
-          const customerContentControls = context.document.contentControls.getByTag("customer");
+          const customerContentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
           customerContentControls.load("text");
           await context.sync();
 
         if (customerContentControls.items.length === 0) {
           for (let i = 0; i < results.items.length; i++) { 
               results.items[i].font.bold = true;
-              let cc = results.items[i].insertContentControl();
+              let cc: Word.ContentControl = results.items[i].insertContentControl();
               cc.tag = "customer";  // This value is used in the next step of this sample.
               cc.title = "Customer Name " + i;
           }
@@ -1316,9 +1349,9 @@ methods:
       // Inserts a Date field before selection.
 
       await Word.run(async (context) => {
-        const range = context.document.getSelection().getRange();
+        const range: Word.Range = context.document.getSelection().getRange();
 
-        const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+        const field: Word.Field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
 
         field.load("result,code");
         await context.sync();
@@ -1510,7 +1543,7 @@ methods:
         const text = $("#input-footnote")
           .val()
           .toString();
-        const footnote = context.document.getSelection().insertFootnote(text);
+        const footnote: Word.NoteItem = context.document.getSelection().insertFootnote(text);
         await context.sync();
 
         console.log("Inserted footnote.");

@@ -68,7 +68,7 @@ properties:
       // Gets all fields in the document body.
 
       await Word.run(async (context) => {
-        const fields = context.document.body.fields.load("items");
+        const fields: Word.FieldCollection = context.document.body.fields.load("items");
 
         await context.sync();
 
@@ -115,7 +115,7 @@ properties:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to load font and style information for the document body.
         body.load("font/size, font/name, font/color, style");
@@ -165,7 +165,7 @@ properties:
       // Gets the footnotes in the document body.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("length");
         await context.sync();
 
@@ -200,7 +200,7 @@ properties:
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
         firstPicture.load("width, height");
 
         await context.sync();
@@ -240,7 +240,7 @@ properties:
       // Gets information about the first list in the document.
 
       await Word.run(async (context) => {
-        const lists = context.document.body.lists;
+        const lists: Word.ListCollection = context.document.body.lists;
         lists.load("items");
 
         await context.sync();
@@ -251,12 +251,12 @@ properties:
         }
         
         // Get the first list.
-        const list = lists.getFirst();
+        const list: Word.List = lists.getFirst();
         list.load("levelTypes,levelExistences");
 
         await context.sync();
 
-        const levelTypes = list.levelTypes;
+        const levelTypes  = list.levelTypes;
         console.log("Level types of the first list:");
         for (let i = 0; i < levelTypes.length; i++) {
           console.log(`- Level ${i + 1} (index ${i}): ${levelTypes[i]}`);
@@ -301,7 +301,7 @@ properties:
       // Counts how many times each term appears in the document.
 
       await Word.run(async (context) => {
-        const paragraphs = context.document.body.paragraphs;
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -556,7 +556,7 @@ properties:
       // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
-        const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
         firstCell.load("text");
 
         await context.sync();
@@ -594,7 +594,7 @@ properties:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to load the text in document body.
         body.load("text");
@@ -635,13 +635,13 @@ properties:
       // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
+        const item: Word.NoteItem = footnotes.items[mark];
         console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
         item.body.load("type");
@@ -686,7 +686,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to clear the contents of the body.
         body.clear();
@@ -798,7 +798,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to get the HTML contents of the body.
         const bodyHTML = body.getHtml();
@@ -841,7 +841,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to get the OOXML contents of the body.
         const bodyOOXML = body.getOoxml();
@@ -978,7 +978,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert a page break at the start of the document body.
         body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
@@ -1039,7 +1039,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to wrap the body in a content control.
         body.insertContentControl();
@@ -1097,7 +1097,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert the Base64-encoded string representation of the body of the selected .docx file at the beginning of the current document.
         body.insertFileFromBase64(externalDocument, Word.InsertLocation.start);
@@ -1151,7 +1151,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert HTML at the beginning of the document.
         body.insertHtml("<strong>This is text inserted with body.insertHtml()</strong>", Word.InsertLocation.start);
@@ -1205,7 +1205,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Base64-encoded image to insert inline.
         const base64EncodedImg =
@@ -1263,7 +1263,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert OOXML at the beginning of the body.
         body.insertOoxml(
@@ -1326,7 +1326,7 @@ methods:
 
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        const secondSentence = context.document.body.insertParagraph(
+        const secondSentence: Word.Paragraph = context.document.body.insertParagraph(
           "This is the first text with a custom style.",
           "End"
         );
@@ -1384,7 +1384,7 @@ methods:
           ["Tokyo", "Beijing", "Seattle"],
           ["Apple", "Orange", "Pineapple"]
         ];
-        const table = context.document.body.insertTable(2, 3, "Start", data);
+        const table: Word.Table = context.document.body.insertTable(2, 3, "Start", data);
         table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
         table.styleFirstColumn = false;
 
@@ -1440,7 +1440,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert text at the beginning of the current document.
         body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
@@ -1652,7 +1652,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to select the document body.
         // The Word UI will move to the selected document body.

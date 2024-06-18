@@ -71,6 +71,18 @@ properties:
       content: 'color?: string;'
       return:
         type: string
+  - name: comboBoxContentControl
+    uid: 'word!Word.Interfaces.ContentControlData#comboBoxContentControl:member'
+    package: word!
+    fullName: comboBoxContentControl
+    summary: Specifies the combo box-related data if the content control's type is 'ComboBox'. It's null otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ComboBoxContentControlData:interface" />'
   - name: contentControls
     uid: 'word!Word.Interfaces.ContentControlData#contentControls:member'
     package: word!

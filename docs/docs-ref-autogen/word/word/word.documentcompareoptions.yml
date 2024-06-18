@@ -25,7 +25,7 @@ remarks: >-
       .val()
       .toString();
     // Options that configure the compare operation.
-    const options = {
+    const options: Word.DocumentCompareOptions = {
       compareTarget: Word.CompareTarget.compareTargetCurrent,
       detectFormatChanges: false
       // Other options you choose...

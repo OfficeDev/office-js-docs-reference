@@ -747,11 +747,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` support is currently in preview.
+         * `DropDownList` and `ComboBox` support are currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -1704,6 +1704,14 @@ export declare namespace Word {
          */
         readonly checkboxContentControl: Word.CheckboxContentControl;
         /**
+         * Specifies the combo box-related data if the content control's type is 'ComboBox'. It's `null` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly comboBoxContentControl: Word.ComboBoxContentControl;
+        /**
          * Gets the collection of content control objects in the content control.
          *
          * @remarks
@@ -2428,7 +2436,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     /**
-     * Represents a list item in a dropdown list content control.
+     * Represents a list item in a dropdown list or combo box content control.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2438,7 +2446,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the display text of a list item for a dropdown list content control.
+         * Specifies the display text of a list item for a dropdown list or combo box content control.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2454,7 +2462,7 @@ export declare namespace Word {
          */
         index: number;
         /**
-         * Specifies the programmatic value of a list item for a dropdown list content control.
+         * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2521,7 +2529,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlListItemData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list content control.
+     * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2590,12 +2598,13 @@ export declare namespace Word {
      */
     export interface ContentControlOptions {
         /**
-         * An array of content control types, item must be 'RichText', 'PlainText', or 'CheckBox'.
+         * An array of content control types, item must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Note: `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was added in WordApi 1.7.
+         * 'DropDownList' and 'ComboBox' support are currently in preview.
          */
         types: Word.ContentControlType[];
     }
@@ -4054,6 +4063,73 @@ export declare namespace Word {
          * Whereas the original Word.DropDownListContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DropDownListContentControlData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.DropDownListContentControlData;
+    }
+    /**
+     * The data specific to content controls of type 'ComboBox'.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ComboBoxContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of list items in the combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listItems: Word.ContentControlListItemCollection;
+        /**
+         * Adds a new list item to this combo box content control and returns a {@link Word.ContentControlListItem} object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param displayText - Required. Display text of the list item.
+         * @param value - Optional. Value of the list item.
+         * @param index - Optional. Index location of the new item in the list. If an item exists at the position specified, the existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+         */
+        addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;
+        /**
+         * Deletes all list items in this combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAllListItems(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ComboBoxContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ComboBoxContentControl;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ComboBoxContentControl;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ComboBoxContentControl;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.ComboBoxContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ComboBoxContentControlData;
     }
     /**
      * Represents a field.
@@ -6076,11 +6152,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` support is currently in preview.
+         * `DropDownList` and `ComboBox` support are currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -6884,11 +6960,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` support is currently in preview.
+         * `DropDownList` and `ComboBox` support are currently in preview.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', or 'DropDownList'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | "RichText" | "PlainText" | "CheckBox" | "DropDownList"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts an endnote. The endnote reference is placed after the range.
          *
@@ -14066,7 +14142,7 @@ export declare namespace Word {
         /** An interface for updating data on the ContentControlListItem object, for use in `contentControlListItem.set({ ... })`. */
         export interface ContentControlListItemUpdateData {
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -14082,7 +14158,7 @@ export declare namespace Word {
              */
             index?: number;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -15640,6 +15716,14 @@ export declare namespace Word {
              */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlData;
             /**
+             * Specifies the combo box-related data if the content control's type is 'ComboBox'. It's null otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;
+            /**
              * Gets the collection of content control objects in the content control.
              *
              * @remarks
@@ -15806,7 +15890,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControlListItem.toJSON()`. */
         export interface ContentControlListItemData {
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -15822,7 +15906,7 @@ export declare namespace Word {
              */
             index?: number;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16129,6 +16213,9 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `dropDownListContentControl.toJSON()`. */
         export interface DropDownListContentControlData {
+        }
+        /** An interface describing the data returned by calling `comboBoxContentControl.toJSON()`. */
+        export interface ComboBoxContentControlData {
         }
         /** An interface describing the data returned by calling `field.toJSON()`. */
         export interface FieldData {
@@ -18494,7 +18581,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a list item in a dropdown list content control.
+         * Represents a list item in a dropdown list or combo box content control.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18506,7 +18593,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18522,7 +18609,7 @@ export declare namespace Word {
              */
             index?: boolean;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18531,7 +18618,7 @@ export declare namespace Word {
             value?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list content control.
+         * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18543,7 +18630,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list content control.
+             * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18559,7 +18646,7 @@ export declare namespace Word {
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list content control.
+             * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -20691,7 +20778,7 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi 1.1]
-            */
+             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
