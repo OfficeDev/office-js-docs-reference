@@ -14,7 +14,7 @@ The Ribbon API set supports programmatic control of when custom add-in commands 
 
 ## Support
 
-`RibbonApi 1.1` is available with **Excel**, **PowerPoint**, and **Word**.  `RibbonApi 1.2` is only available with **Excel**. Both are only for use with **task pane add-ins**. The following table lists the Ribbon API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+`RibbonApi 1.1` is available with **Excel**, **PowerPoint**, and **Word**.  `RibbonApi 1.2` is only available with **Excel**. Both are only for use with **task pane add-ins**. The following table lists the Ribbon API requirement sets, the supported platforms, and the **minimum** builds or versions where applicable.
 
 | Requirement set | Office on the web |  Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
