@@ -6,7 +6,36 @@ fullName: Word.Document
 summary: >-
   The Document object is the top level object. A Document object contains one or more sections, content controls, and
   the body that contains the contents of the document.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+  // Gets the current change tracking mode.
+
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+    document.load("changeTrackingMode");
+    await context.sync();
+
+    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+      console.log("Only my changes are being tracked.");
+    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+      console.log("Everyone's changes are being tracked.");
+    } else {
+      console.log("No changes are being tracked.");
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,7 +75,7 @@ properties:
       // Gets the current change tracking mode.
 
       await Word.run(async (context) => {
-        const document = context.document;
+        const document: Word.Document = context.document;
         document.load("changeTrackingMode");
         await context.sync();
 
@@ -125,7 +154,7 @@ properties:
 
 
       await Word.run(async (context) => {
-          const builtInProperties : Word.DocumentProperties = context.document.properties;
+          const builtInProperties: Word.DocumentProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
 
           await context.sync();
@@ -186,7 +215,7 @@ properties:
       // Gets all custom settings this add-in set on this document.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
+        const settings: Word.SettingCollection = context.document.settings;
         settings.load("items");
         await context.sync();
 
@@ -235,7 +264,7 @@ methods:
           return;
         }
 
-        const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
         style.load();
         await context.sync();
 
@@ -530,7 +559,7 @@ methods:
 
       await Word.run(async (context) => {
         const paragraphId = $("#paragraph-id").val() as string;
-        const paragraph = context.document.getParagraphByUniqueLocalId(paragraphId);
+        const paragraph: Word.Paragraph = context.document.getParagraphByUniqueLocalId(paragraphId);
         paragraph.load();
         await paragraph.context.sync();
 
@@ -611,7 +640,7 @@ methods:
       // Gets the number of styles.
 
       await Word.run(async (context) => {
-        const styles = context.document.getStyles();
+        const styles: Word.StyleCollection = context.document.getStyles();
         const count = styles.getCount();
         await context.sync();
 

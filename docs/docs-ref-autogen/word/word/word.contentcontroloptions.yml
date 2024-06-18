@@ -20,7 +20,7 @@ remarks: >-
   // Toggles the isChecked property of the first checkbox content control found in the selection.
 
   await Word.run(async (context) => {
-    const selectedRange = context.document.getSelection();
+    const selectedRange: Word.Range = context.document.getSelection();
     let selectedContentControl = selectedRange
       .getContentControls({
         types: [Word.ContentControlType.checkBox]
@@ -31,7 +31,7 @@ remarks: >-
     await context.sync();
 
     if (selectedContentControl.isNullObject) {
-      const parentContentControl = selectedRange.parentContentControl;
+      const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
       parentContentControl.load("id,type,checkboxContentControl/isChecked");
       await context.sync();
 
@@ -64,11 +64,15 @@ properties:
     uid: 'word!Word.ContentControlOptions#types:member'
     package: word!
     fullName: types
-    summary: 'An array of content control types, item must be ''RichText'', ''PlainText'', or ''CheckBox''.'
-    remarks: |-
+    summary: >-
+      An array of content control types, item must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or
+      'ComboBox'.
+    remarks: >-
       \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-      Note: `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+
+      Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was added in WordApi 1.7. 'DropDownList'
+      and 'ComboBox' support are currently in preview.
     isPreview: false
     isDeprecated: false
     syntax:

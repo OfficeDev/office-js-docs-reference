@@ -46,7 +46,7 @@ properties:
       await Word.run(async (context) => {
         const originalXml =
           "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
-        const customXmlPart = context.document.customXmlParts.add(originalXml);
+        const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.add(originalXml);
         customXmlPart.load("id");
         const xmlBlob = customXmlPart.getXml();
 
@@ -56,7 +56,7 @@ properties:
         console.log("Added custom XML part:", readableXml);
 
         // Store the XML part's ID in a setting so the ID is available to other functions.
-        const settings = context.document.settings;
+        const settings: Word.SettingCollection = context.document.settings;
         settings.add("ContosoReviewXmlPartId", customXmlPart.id);
 
         await context.sync();
@@ -94,13 +94,13 @@ properties:
       // Gets the namespace URI from a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
 
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           customXmlPart.load("namespaceUri");
           await context.sync();
 
@@ -144,12 +144,12 @@ methods:
       // Deletes a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          let customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          let customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           const xmlBlob = customXmlPart.getXml();
           customXmlPart.delete();
           customXmlPart = context.document.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
@@ -183,12 +183,12 @@ methods:
       // Deletes a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          let customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          let customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           const xmlBlob = customXmlPart.getXml();
           customXmlPart.delete();
           customXmlPart = context.document.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
@@ -362,7 +362,7 @@ methods:
         console.log(`Added custom XML part with namespace URI ${customXmlPart.namespaceUri}:`, readableXml);
 
         // Store the XML part's ID in a setting so the ID is available to other functions.
-        const settings = context.document.settings;
+        const settings: Word.SettingCollection = context.document.settings;
         settings.add("ContosoReviewXmlPartIdNS", customXmlPart.id);
 
         await context.sync();
@@ -377,7 +377,7 @@ methods:
       await Word.run(async (context) => {
         const originalXml =
           "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
-        const customXmlPart = context.document.customXmlParts.add(originalXml);
+        const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.add(originalXml);
         customXmlPart.load("id");
         const xmlBlob = customXmlPart.getXml();
 
@@ -387,7 +387,7 @@ methods:
         console.log("Added custom XML part:", readableXml);
 
         // Store the XML part's ID in a setting so the ID is available to other functions.
-        const settings = context.document.settings;
+        const settings: Word.SettingCollection = context.document.settings;
         settings.add("ContosoReviewXmlPartId", customXmlPart.id);
 
         await context.sync();
@@ -446,12 +446,12 @@ methods:
       // Inserts an attribute into a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
 
           // The insertAttribute method inserts an attribute with the given name and value into the element identified by the xpath parameter.
           customXmlPart.insertAttribute(
@@ -481,12 +481,12 @@ methods:
       // Inserts an attribute into a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
 
           // The insertAttribute method inserts an attribute with the given name and value into the element identified by the xpath parameter.
           customXmlPart.insertAttribute("/Reviewers", { contoso: "http://schemas.contoso.com/review/1.0" }, "Nation", "US");
@@ -576,12 +576,12 @@ methods:
       // Inserts an element into a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
 
           // The insertElement method inserts the given XML under the parent element identified by the xpath parameter at the provided child position index.
           customXmlPart.insertElement(
@@ -611,12 +611,12 @@ methods:
       // Inserts an element into a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
 
           // The insertElement method inserts the given XML under the parent element identified by the xpath parameter at the provided child position index.
           customXmlPart.insertElement(
@@ -780,13 +780,13 @@ methods:
       // Queries a custom XML part for elements matching the search terms.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
 
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           const xpathToQueryFor = "/contoso:Reviewers";
           const clientResult = customXmlPart.query(xpathToQueryFor, {
             contoso: "http://schemas.contoso.com/review/1.0"
@@ -814,13 +814,13 @@ methods:
       // Queries a custom XML part for elements matching the search terms.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
 
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           const xpathToQueryFor = "/Reviewers/Reviewer";
           const clientResult = customXmlPart.query(xpathToQueryFor, {
             contoso: "http://schemas.contoso.com/review/1.0"
@@ -887,12 +887,12 @@ methods:
       // Replaces a custom XML part.
 
       await Word.run(async (context) => {
-        const settings = context.document.settings;
-        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        const settings: Word.SettingCollection = context.document.settings;
+        const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
         await context.sync();
 
         if (xmlPartIDSetting.value) {
-          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
           const originalXmlBlob = customXmlPart.getXml();
           await context.sync();
 

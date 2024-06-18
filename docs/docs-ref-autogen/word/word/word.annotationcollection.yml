@@ -20,8 +20,8 @@ remarks: >-
   // Gets annotations found in the selected paragraph.
 
   await Word.run(async (context) => {
-    const paragraph = context.document.getSelection().paragraphs.getFirst();
-    const annotations = paragraph.getAnnotations();
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
     annotations.load("id,state,critiqueAnnotation");
 
     await context.sync();
@@ -29,7 +29,7 @@ remarks: >-
     console.log("Annotations found:");
 
     for (let i = 0; i < annotations.items.length; i++) {
-      const annotation = annotations.items[i];
+      const annotation: Word.Annotation = annotations.items[i];
 
       console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
     }

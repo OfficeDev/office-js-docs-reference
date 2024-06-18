@@ -116,7 +116,7 @@ properties:
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
         firstPicture.load("width, height, imageFormat");
 
         await context.sync();
@@ -301,7 +301,7 @@ methods:
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
         firstPicture.load("width, height");
 
         await context.sync();

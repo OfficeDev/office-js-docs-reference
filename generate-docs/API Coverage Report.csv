@@ -10575,6 +10575,16 @@ Word.CheckboxContentControl,"untrack()",Method,Poor,false
 Word.CloseBehavior,N/A,Enum,Good,true
 Word.CloseBehavior,"save",EnumField,Fine,false
 Word.CloseBehavior,"skipSave",EnumField,Fine,false
+Word.ComboBoxContentControl,N/A,Class,Good,false
+Word.ComboBoxContentControl,"context",Property,Good,false
+Word.ComboBoxContentControl,"listItems",Property,Good,false
+Word.ComboBoxContentControl,"addListItem(displayText, value, index)",Method,Fine,false
+Word.ComboBoxContentControl,"deleteAllListItems()",Method,Poor,false
+Word.ComboBoxContentControl,"load(propertyNames)",Method,Poor,false
+Word.ComboBoxContentControl,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ComboBoxContentControl,"toJSON()",Method,Poor,false
+Word.ComboBoxContentControl,"track()",Method,Poor,false
+Word.ComboBoxContentControl,"untrack()",Method,Poor,false
 Word.Comment,N/A,Class,Good,true
 Word.Comment,"authorEmail",Property,Good,false
 Word.Comment,"authorName",Property,Good,false
@@ -10680,6 +10690,7 @@ Word.ContentControl,"cannotDelete",Property,Good,false
 Word.ContentControl,"cannotEdit",Property,Good,false
 Word.ContentControl,"checkboxContentControl",Property,Good,true
 Word.ContentControl,"color",Property,Good,false
+Word.ContentControl,"comboBoxContentControl",Property,Good,false
 Word.ContentControl,"contentControls",Property,Good,false
 Word.ContentControl,"context",Property,Good,false
 Word.ContentControl,"dropDownListContentControl",Property,Good,false
@@ -10941,7 +10952,7 @@ Word.CustomXmlPartScopedCollection,"load(propertyNamesAndPaths)",Method,Poor,fal
 Word.CustomXmlPartScopedCollection,"toJSON()",Method,Poor,false
 Word.CustomXmlPartScopedCollection,"track()",Method,Poor,false
 Word.CustomXmlPartScopedCollection,"untrack()",Method,Poor,false
-Word.Document,N/A,Class,Good,false
+Word.Document,N/A,Class,Good,true
 Word.Document,"body",Property,Good,false
 Word.Document,"changeTrackingMode",Property,Good,true
 Word.Document,"contentControls",Property,Good,false
@@ -11709,7 +11720,7 @@ Word.ParagraphFormat,"set(properties)",Method,Poor,false
 Word.ParagraphFormat,"toJSON()",Method,Poor,false
 Word.ParagraphFormat,"track()",Method,Poor,false
 Word.ParagraphFormat,"untrack()",Method,Poor,false
-Word.Range,N/A,Class,Good,false
+Word.Range,N/A,Class,Good,true
 Word.Range,"contentControls",Property,Good,false
 Word.Range,"context",Property,Good,false
 Word.Range,"endnotes",Property,Good,false
@@ -12095,7 +12106,7 @@ Word.TableCell,"split(rowCount, columnCount)",Method,Fine,false
 Word.TableCell,"toJSON()",Method,Poor,false
 Word.TableCell,"track()",Method,Poor,false
 Word.TableCell,"untrack()",Method,Poor,false
-Word.TableCellCollection,N/A,Class,Good,false
+Word.TableCellCollection,N/A,Class,Good,true
 Word.TableCellCollection,"context",Property,Good,false
 Word.TableCellCollection,"items",Property,Fine,false
 Word.TableCellCollection,"getFirst()",Method,Poor,false
@@ -12119,7 +12130,7 @@ Word.TableCollection,"track()",Method,Poor,false
 Word.TableCollection,"untrack()",Method,Poor,false
 Word.TableRow,N/A,Class,Good,false
 Word.TableRow,"cellCount",Property,Good,false
-Word.TableRow,"cells",Property,Good,false
+Word.TableRow,"cells",Property,Good,true
 Word.TableRow,"context",Property,Good,false
 Word.TableRow,"endnotes",Property,Good,false
 Word.TableRow,"fields",Property,Good,false

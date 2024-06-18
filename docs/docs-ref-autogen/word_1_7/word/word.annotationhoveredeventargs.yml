@@ -40,7 +40,7 @@ remarks: >-
 
   async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
     await Word.run(async (context) => {
-      const annotation = context.document.getAnnotationById(args.id);
+      const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
       annotation.load("critiqueAnnotation");
 
       await context.sync();
