@@ -133,6 +133,8 @@ items:
             uid: 'word!Word.BorderCollection:class'
           - name: CheckboxContentControl
             uid: 'word!Word.CheckboxContentControl:class'
+          - name: ComboBoxContentControl
+            uid: 'word!Word.ComboBoxContentControl:class'
           - name: Comment
             uid: 'word!Word.Comment:class'
           - name: CommentCollection

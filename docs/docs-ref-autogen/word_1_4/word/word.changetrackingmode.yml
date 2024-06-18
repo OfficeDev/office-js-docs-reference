@@ -20,7 +20,7 @@ remarks: >-
   // Gets the current change tracking mode.
 
   await Word.run(async (context) => {
-    const document = context.document;
+    const document: Word.Document = context.document;
     document.load("changeTrackingMode");
     await context.sync();
 

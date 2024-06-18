@@ -20,7 +20,7 @@ remarks: >-
   // Inserts a section break on the next even page.
 
   await Word.run(async (context) => {
-    const body = context.document.body;
+    const body: Word.Body = context.document.body;
     body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
 
     await context.sync();

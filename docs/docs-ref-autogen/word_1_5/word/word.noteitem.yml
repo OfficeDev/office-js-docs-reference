@@ -30,13 +30,13 @@ properties:
       // Gets the text of the referenced footnote.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items/body");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const footnoteBody = footnotes.items[mark].body.getRange();
+        const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
         footnoteBody.load("text");
         await context.sync();
 
@@ -85,14 +85,14 @@ properties:
       // Selects the footnote's reference mark in the document body.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items/reference");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
-        const reference = item.reference;
+        const item: Word.NoteItem = footnotes.items[mark];
+        const reference: Word.Range = item.reference;
         reference.select();
         await context.sync();
 
@@ -127,13 +127,13 @@ properties:
       // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
+        const item: Word.NoteItem = footnotes.items[mark];
         console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
         item.body.load("type");
@@ -171,7 +171,7 @@ methods:
       // Deletes this referenced footnote.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items");
         await context.sync();
 
@@ -212,13 +212,13 @@ methods:
       // Selects the next footnote in the document body.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items/reference");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const reference = footnotes.items[mark].getNext().reference;
+        const reference: Word.Range = footnotes.items[mark].getNext().reference;
         reference.select();
         console.log("Selected is the next footnote: " + (mark + 2));
       });

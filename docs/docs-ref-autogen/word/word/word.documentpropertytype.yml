@@ -18,7 +18,7 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-      const properties = context.document.properties.customProperties;
+      const properties: Word.CustomPropertyCollection = context.document.properties.customProperties;
       properties.load("key,type,value");
 
       await context.sync();

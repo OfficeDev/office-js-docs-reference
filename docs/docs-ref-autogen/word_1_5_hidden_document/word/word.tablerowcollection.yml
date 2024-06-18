@@ -20,8 +20,8 @@ remarks: >-
   // Gets content alignment details about the first row of the first table in the document.
 
   await Word.run(async (context) => {
-    const firstTable = context.document.body.tables.getFirst();
-    const firstTableRow = firstTable.rows.getFirst();
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
     firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
@@ -81,10 +81,10 @@ methods:
       // Gets border details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
-        const firstTableRow = firstTable.rows.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
         const borderLocation = Word.BorderLocation.bottom;
-        const border = firstTableRow.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTableRow.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 

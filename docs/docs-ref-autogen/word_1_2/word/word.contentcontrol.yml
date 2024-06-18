@@ -449,7 +449,7 @@ methods:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 

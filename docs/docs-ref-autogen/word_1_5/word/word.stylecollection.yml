@@ -82,7 +82,7 @@ methods:
           return;
         }
 
-        const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
         style.load();
         await context.sync();
 
@@ -133,7 +133,7 @@ methods:
       // Gets the number of styles.
 
       await Word.run(async (context) => {
-        const styles = context.document.getStyles();
+        const styles: Word.StyleCollection = context.document.getStyles();
         const count = styles.getCount();
         await context.sync();
 

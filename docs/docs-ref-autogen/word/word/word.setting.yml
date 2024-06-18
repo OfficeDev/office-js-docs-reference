@@ -59,8 +59,8 @@ properties:
           .val()
           .toString();
 
-        const settings = context.document.settings;
-        const setting = settings.add(key, value);
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
         setting.load();
         await context.sync();
 
@@ -110,8 +110,8 @@ properties:
           .val()
           .toString();
 
-        const settings = context.document.settings;
-        const setting = settings.add(key, value);
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
         setting.load();
         await context.sync();
 

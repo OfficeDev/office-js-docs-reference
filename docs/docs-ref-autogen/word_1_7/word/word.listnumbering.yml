@@ -20,20 +20,20 @@ remarks: >-
   // Inserts a list starting with the first paragraph then set numbering and bullet types of the list items.
 
   await Word.run(async (context) => {
-    const paragraphs = context.document.body.paragraphs;
+    const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
     paragraphs.load("$none");
 
     await context.sync();
 
     // Use the first paragraph to start a new list.
-    const list = paragraphs.items[0].startNewList();
+    const list: Word.List = paragraphs.items[0].startNewList();
     list.load("$none");
 
     await context.sync();
 
     // To add new items to the list, use Start or End on the insertLocation parameter.
     list.insertParagraph("New list item at the start of the list", "Start");
-    const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
+    const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
     // Set numbering for list level 1.
     list.setLevelNumbering(0, Word.ListNumbering.arabic);

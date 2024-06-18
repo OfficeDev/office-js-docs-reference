@@ -18,7 +18,7 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    const contentControls = context.document.contentControls;
+    const contentControls: Word.ContentControlCollection = context.document.contentControls;
     contentControls.load("items");
     await context.sync();
 

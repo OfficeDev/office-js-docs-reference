@@ -144,7 +144,7 @@ methods:
 
 
       await Word.run(async (context) => {
-          const contentControls = context.document.contentControls.getByTag("customer");
+          const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
           contentControls.load("text");
 
           await context.sync();
@@ -295,7 +295,7 @@ methods:
       // Toggles the isChecked property of the first checkbox content control found in the selection.
 
       await Word.run(async (context) => {
-        const selectedRange = context.document.getSelection();
+        const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
           .getContentControls({
             types: [Word.ContentControlType.checkBox]
@@ -306,7 +306,7 @@ methods:
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
-          const parentContentControl = selectedRange.parentContentControl;
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
           parentContentControl.load("id,type,checkboxContentControl/isChecked");
           await context.sync();
 

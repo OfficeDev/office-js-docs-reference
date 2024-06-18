@@ -19,14 +19,14 @@ remarks: >-
 
   await Word.run(async (context) => {
     // Get the complete sentence (as range) associated with the insertion point.
-    const sentences = context.document
+    const sentences: Word.RangeCollection = context.document
       .getSelection()
       .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
     sentences.load("$none");
     await context.sync();
 
     // Expand the range to the end of the paragraph to get all the complete sentences.
-    const sentencesToTheEndOfParagraph = sentences.items[0]
+    const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
       .getRange()
       .expandTo(
         context.document

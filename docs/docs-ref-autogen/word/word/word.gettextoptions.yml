@@ -18,7 +18,7 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    const paragraph = context.document.getSelection().paragraphs.getFirst();
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
 
     const text = paragraph.getText();
     const textIncludingHidden = paragraph.getText({ IncludeHiddenText: true });

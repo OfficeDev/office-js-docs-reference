@@ -57,7 +57,7 @@ methods:
       // Gets the first footnote in the document body and select its reference mark.
 
       await Word.run(async (context) => {
-        const reference = context.document.body.footnotes.getFirst().reference;
+        const reference: Word.Range = context.document.body.footnotes.getFirst().reference;
         reference.select();
         console.log("The first footnote is selected.");
       });

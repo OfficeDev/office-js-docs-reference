@@ -43,7 +43,7 @@ properties:
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
@@ -111,7 +111,7 @@ properties:
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
@@ -194,7 +194,7 @@ properties:
       // Gets the parent body of the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load("parentBody/text");
 
         await context.sync();
@@ -202,7 +202,7 @@ properties:
         if (field.isNullObject) {
           console.log("This document has no fields.");
         } else {
-          const parentBody = field.parentBody;
+          const parentBody: Word.Body = field.parentBody;
           console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
         }
       });
@@ -323,7 +323,7 @@ properties:
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
@@ -363,7 +363,7 @@ properties:
       // Gets the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
@@ -426,7 +426,7 @@ methods:
       // Deletes the first field in the document.
 
       await Word.run(async (context) => {
-        const field = context.document.body.fields.getFirstOrNullObject();
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
         field.load();
 
         await context.sync();

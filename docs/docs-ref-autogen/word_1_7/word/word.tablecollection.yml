@@ -20,7 +20,7 @@ remarks: >-
   // Gets alignment details about the first table in the document.
 
   await Word.run(async (context) => {
-    const firstTable = context.document.body.tables.getFirst();
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
     firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
@@ -80,7 +80,7 @@ methods:
       // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
-        const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
         firstCell.load("text");
 
         await context.sync();
