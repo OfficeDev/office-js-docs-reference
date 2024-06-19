@@ -5705,7 +5705,7 @@ OfficeExtension.ClientResult:class:
     await Excel.run(async (context) => {
         // Get the count of worksheets in the Excel workbook.
         const workbook = context.workbook;
-        let countResult : OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
+        let countResult: OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
 
         // Sync to populate the countResult object.
         await context.sync();
