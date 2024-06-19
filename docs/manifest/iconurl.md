@@ -31,11 +31,11 @@ Specifies the full, absolute URL of the image that is used to represent your Off
 
 The image must be in one of the following file formats. 
 
+- BMP
+- EXIF
 - GIF
 - JPG
 - PNG
-- EXIF
-- BMP
 - TIFF
 
 The image resolution requirements are as follows.
