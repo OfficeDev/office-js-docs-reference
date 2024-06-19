@@ -1490,13 +1490,23 @@ Office.DevicePermission#requestPermissions:member(1):
             .then((isGranted) => {
                 if (isGranted) {
                     console.log("Permission granted.");
+                    // Reload your add-in before you run code that uses the device capabilities.
+                    location.reload();
 
-                    // Do something when permission is granted.
+                    // Do something with the device capabilities.
                 } else {
-                    console.log("Permission denied.");
+                    console.log("Permission has been previously granted and is already set in the iframe.");
 
-                    // Do something when permission is denied.
+                    // Since permission has been previously granted, you don't need to reload your add-in.
+
+                    // Do something with the device capabilities.
                 }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+
+                // Do something when permission is denied.
             });
     }
 Office.DevicePermission#requestPermissionsAsync:member(2):
@@ -1511,18 +1521,23 @@ Office.DevicePermission#requestPermissionsAsync:member(2):
 
         Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log (asyncResult.error.message);
-                return;
-            }
-
-            if (asyncResult.value) {
-                console.log("Permission granted.");
-
-                // Do something when permission is granted.
-            } else {
                 console.log("Permission denied.");
 
                 // Do something when permission is denied.
+            } else {
+                if (asyncResult.value) {
+                    console.log("Permission granted.");
+                    // Reload your add-in before you run code that uses the device capabilities.
+                    location.reload();
+
+                    // Do something with the device capabilities.
+                } else {
+                    console.log("Permission has been previously granted and is already set in the iframe.");
+                    
+                    // Since permission has been previously granted, you don't need to reload your add-in.
+
+                    // Do something with the device capabilities.
+                }
             }
         });
     }
@@ -1541,13 +1556,23 @@ Office.DevicePermissionType:enum:
                 .then((isGranted) => {
                     if (isGranted) {
                         console.log("Permission granted.");
+                        // Reload your add-in before you run code that uses the device capabilities.
+                        location.reload();
 
-                        // Do something when permission is granted.
+                        // Do something with the device capabilities.
                     } else {
-                        console.log("Permission denied.");
+                        console.log("Permission has been previously granted and is already set in the iframe.");
 
-                        // Do something when permission is denied.
+                        // Since permission has been previously granted, you don't need to reload your add-in.
+
+                        // Do something with the device capabilities.
                     }
+                })
+                .catch((error) => {
+                    console.log("Permission denied.");
+                    console.error(error);
+
+                    // Do something when permission is denied.
                 });
         }
     } else if (host === Office.HostType.Outlook) {
@@ -1560,18 +1585,23 @@ Office.DevicePermissionType:enum:
 
             Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                    console.log (asyncResult.error.message);
-                    return;
-                }
-
-                if (asyncResult.value) {
-                    console.log("Permission granted.");
-
-                    // Do something when permission is granted.
-                } else {
                     console.log("Permission denied.");
 
                     // Do something when permission is denied.
+                } else {
+                    if (asyncResult.value) {
+                        console.log("Permission granted.");
+                        // Reload your add-in before you run code that uses the device capabilities.
+                        location.reload();
+
+                        // Do something with the device capabilities.
+                    } else {
+                        console.log("Permission has been previously granted and is already set in the iframe.");
+                        
+                        // Since permission has been previously granted, you don't need to reload your add-in.
+
+                        // Do something with the device capabilities.
+                    }
                 }
             });
         }
