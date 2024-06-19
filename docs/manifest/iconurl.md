@@ -46,7 +46,7 @@ The image resolution requirements are as follows.
 | Mail        | 64 x 64             |
 | Task pane   | 32 x 32             |
 
-You should also specify an icon for use with Office client applications running on high DPI screens using the [HighResolutionIconUrl](highresolutioniconurl.md) element. For more information, see the section _Create a consistent visual identity for your app_ in [Create effective listings in AppSource and within Office](/office/dev/store/create-effective-office-store-listings#create-a-consistent-visual-identity).
+You should also specify an icon for use with Office client applications running on high DPI screens using the [HighResolutionIconUrl](highresolutioniconurl.md) element. For more information, see the section _Create a consistent visual identity_ in [Create effective listings in AppSource and within Office](/office/dev/store/create-effective-office-store-listings#create-a-consistent-visual-identity).
 
 For a mail add-in, the icon is displayed in the **File** > **Manage add-ins** UI (Outlook) or **Settings** > **Manage add-ins** UI (Outlook on the web). For a content or task pane add-in, the icon is displayed in the **Insert** > **Add-ins** UI. 
 
