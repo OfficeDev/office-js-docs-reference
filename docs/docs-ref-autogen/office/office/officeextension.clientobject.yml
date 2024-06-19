@@ -24,6 +24,21 @@ properties:
       content: 'context: ClientRequestContext;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // *.run methods automatically create an OfficeExtension.ClientRequestContext
+          // object to work with the Office file.
+          await Excel.run(async (context: Excel.RequestContext) => {
+            // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
+            
+            const workbook = context.workbook;
+            // Interact with the Excel workbook...
+          });
+          ```
   - name: isNullObject
     uid: 'office!OfficeExtension.ClientObject#isNullObject:member'
     package: office!

@@ -4172,6 +4172,29 @@ OfficeExtension.ClientObject#isNullObject:member:
 
         await context.sync();
     });
+OfficeExtension.ClientObject#context:member:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
+      
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
+OfficeExtension.ClientResult:class:
+  - |-
+    await Excel.run(async (context) => {
+        // Get the count of worksheets in the Excel workbook.
+        const workbook = context.workbook;
+        let countResult: OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
+
+        // Sync to populate the countResult object.
+        await context.sync();
+
+        // Log the count using the value parameter.
+        console.log(countResult.value);
+    });
 OfficeExtension.Error#traceMessages:member:
   - |-
     // The following example shows how you can instrument a batch of commands
