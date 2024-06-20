@@ -609,6 +609,8 @@ items:
                     uid: 'office!Office.StartupBehavior:enum'
                   - name: Table
                     uid: 'office!Office.Table:enum'
+                  - name: ThemeId
+                    uid: 'office!Office.ThemeId:enum'
                   - name: ValueFormat
                     uid: 'office!Office.ValueFormat:enum'
                   - name: VisibilityMode

@@ -8,20 +8,24 @@ summary: >-
 
 
   Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected
-  by the user with **File** &gt; **Office Account** &gt; **Office Theme UI**, which is applied across all
-  Office applications. Using Office theme colors is appropriate for mail and task pane add-ins.
+  by the user. The user sets a theme in an Office application through **File** &gt; **Account** or **Office
+  Account** &gt; **Office Theme**. The selected theme is then applied across all Office applications. Using Office
+  theme colors is appropriate for mail and task pane add-ins.
+
+
+  For more information on Office themes, see [Change the look and feel of Microsoft
+  365](https://support.microsoft.com/office/63e65e1c-08d4-4dea-820e-335f54672310)<!-- -->.
 remarks: >-
   *Supported applications, by platform* <table> <tr> <th></th> <th>Office on the web</th> <th>Office on Windows</th>
   <th>Office on Mac</th> <th>Office on iOS</th> <th>Office on Android</th> </tr> <tr> <td><strong>Excel</strong></td>
-  <td>Not available</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
-  <td><strong>Outlook</strong></td> <td>Supported<!-- -->*</td> <td>Supported<!-- -->*</td> <td>Not available</td>
-  <td>Not available</td> <td>Not available</td> </tr> <tr> <td><strong>PowerPoint</strong></td> <td>Not available</td>
-  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
-  <td><strong>Word</strong></td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not
-  available</td> </tr> </table>
+  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr>
+  <td><strong>Outlook</strong></td> <td>Supported</td> <td>Supported</td> <td>Not available</td> <td>Not available</td>
+  <td>Not available</td> </tr> <tr> <td><strong>PowerPoint</strong></td> <td>Supported</td> <td>Supported</td>
+  <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> <tr> <td><strong>Word</strong></td>
+  <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Supported</td> <td>Not available</td> </tr> </table>
 
 
-  * In Outlook, the Office theme API is supported starting in [Mailbox requirement set
+  **Important**: In Outlook, the Office theme API is supported starting in [Mailbox requirement set
   1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14)<!--
   -->. It isn't supported in Outlook add-ins that implement [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
@@ -107,3 +111,27 @@ properties:
       content: 'controlForegroundColor: string;'
       return:
         type: string
+  - name: isDarkTheme
+    uid: 'office!Office.OfficeTheme#isDarkTheme:member'
+    package: office!
+    fullName: isDarkTheme
+    summary: Returns `true` if the Office theme that's currently selected is **Black** (dark mode) or **Dark Gray**.
+    remarks: '**Important**: The `isDarkTheme` property isn''t yet supported in Outlook.'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDarkTheme: boolean;'
+      return:
+        type: boolean
+  - name: themeId
+    uid: 'office!Office.OfficeTheme#themeId:member'
+    package: office!
+    fullName: themeId
+    summary: Gets the Office theme that's currently selected.
+    remarks: '**Important**: The `themeId` property isn''t yet supported in Outlook.'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'themeId: ThemeId;'
+      return:
+        type: '<xref uid="office!Office.ThemeId:enum" />'
