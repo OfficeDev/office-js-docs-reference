@@ -6988,6 +6988,8 @@ Office.OfficeTheme,"bodyBackgroundColor",Property,Fine,false
 Office.OfficeTheme,"bodyForegroundColor",Property,Fine,false
 Office.OfficeTheme,"controlBackgroundColor",Property,Fine,false
 Office.OfficeTheme,"controlForegroundColor",Property,Fine,false
+Office.OfficeTheme,"isDarkTheme",Property,Good,false
+Office.OfficeTheme,"themeId",Property,Good,false
 Office.PlatformType,N/A,Enum,Good,true
 Office.PlatformType,"Android",EnumField,Fine,false
 Office.PlatformType,"iOS",EnumField,Fine,false
@@ -7605,6 +7607,11 @@ Office.TableData,N/A,Class,Fine,false
 Office.TableData,"headers",Property,Good,true
 Office.TableData,"rows",Property,Good,true
 Office.TextBinding,N/A,Class,Good,false
+Office.ThemeId,N/A,Enum,Fine,false
+Office.ThemeId,"Black",EnumField,Fine,false
+Office.ThemeId,"Colorful",EnumField,Fine,false
+Office.ThemeId,"DarkGray",EnumField,Fine,false
+Office.ThemeId,"White",EnumField,Fine,false
 Office.UI,N/A,Class,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,true
@@ -7624,7 +7631,7 @@ Office.VisibilityMode,"taskpane",EnumField,Poor,false
 Office.VisibilityModeChangedMessage,N/A,Class,Fine,false
 Office.VisibilityModeChangedMessage,"visibilityMode",Property,Poor,false
 OfficeExtension.ClientObject,N/A,Class,Good,false
-OfficeExtension.ClientObject,"context",Property,Fine,false
+OfficeExtension.ClientObject,"context",Property,Fine,true
 OfficeExtension.ClientObject,"isNullObject",Property,Good,true
 OfficeExtension.ClientRequestContext,N/A,Class,Good,false
 OfficeExtension.ClientRequestContext,"debugInfo",Property,Poor,false
@@ -7634,7 +7641,7 @@ OfficeExtension.ClientRequestContext,"load(object, option)",Method,Poor,false
 OfficeExtension.ClientRequestContext,"loadRecursive(object, options, maxDepth)",Method,Poor,false
 OfficeExtension.ClientRequestContext,"sync(passThroughValue)",Method,Poor,false
 OfficeExtension.ClientRequestContext,"trace(message)",Method,Poor,false
-OfficeExtension.ClientResult,N/A,Class,Good,false
+OfficeExtension.ClientResult,N/A,Class,Good,true
 OfficeExtension.ClientResult,"value",Property,Fine,false
 OfficeExtension.DebugInfo,N/A,Class,Poor,false
 OfficeExtension.DebugInfo,"code",Property,Fine,false
@@ -9568,7 +9575,7 @@ PowerPoint.Presentation,"load(propertyNames)",Method,Poor,false
 PowerPoint.Presentation,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Presentation,"setSelectedSlides(slideIds)",Method,Poor,true
 PowerPoint.Presentation,"toJSON()",Method,Poor,false
-PowerPoint.RequestContext,N/A,Class,Good,false
+PowerPoint.RequestContext,N/A,Class,Good,true
 PowerPoint.RequestContext,"application",Property,Missing,false
 PowerPoint.RequestContext,"presentation",Property,Missing,false
 PowerPoint.Shape,N/A,Class,Good,false

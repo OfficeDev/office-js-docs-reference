@@ -98,6 +98,7 @@ enums:
   - 'office!Office.SelectionMode:enum'
   - 'office!Office.StartupBehavior:enum'
   - 'office!Office.Table:enum'
+  - 'office!Office.ThemeId:enum'
   - 'office!Office.ValueFormat:enum'
   - 'office!Office.VisibilityMode:enum'
 classes:

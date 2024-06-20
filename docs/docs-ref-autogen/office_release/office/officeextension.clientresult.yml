@@ -6,7 +6,24 @@ fullName: OfficeExtension.ClientResult
 summary: >-
   Contains the result for methods that return primitive types. The object's value property is retrieved from the
   document after `context.sync()` is invoked.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  await Excel.run(async (context) => {
+      // Get the count of worksheets in the Excel workbook.
+      const workbook = context.workbook;
+      let countResult: OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
+
+      // Sync to populate the countResult object.
+      await context.sync();
+
+      // Log the count using the value parameter.
+      console.log(countResult.value);
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class

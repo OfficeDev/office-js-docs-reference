@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Office.ThemeId
+uid: 'office!Office.ThemeId:enum'
+package: office!
+fullName: Office.ThemeId
+summary: >-
+  Specifies the Office theme that's currently selected.
+
+
+  For information on Office themes, see [Change the look and feel of Microsoft
+  365](https://support.microsoft.com/office/63e65e1c-08d4-4dea-820e-335f54672310)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Black
+    uid: 'office!Office.ThemeId.Black:member'
+    package: office!
+    summary: The currently selected Office theme is **Black**.
+  - name: Colorful
+    uid: 'office!Office.ThemeId.Colorful:member'
+    package: office!
+    summary: The currently selected Office theme is **Colorful**.
+  - name: DarkGray
+    uid: 'office!Office.ThemeId.DarkGray:member'
+    package: office!
+    summary: The currently selected Office theme is **Dark Gray**.
+  - name: White
+    uid: 'office!Office.ThemeId.White:member'
+    package: office!
+    summary: The currently selected Office theme is **White**.

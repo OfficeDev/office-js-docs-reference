@@ -2488,15 +2488,26 @@ Office.Context#mailbox:member:
     const item = Office.context.mailbox.item;
 Office.Context#officeTheme:member:
   - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
+    function applyOfficeTheme() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
+            console.log("No changes required.");
+        }
+
+        // Get the colors of the current Office theme.
         const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
         const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
+        // Apply theme colors to a CSS class.
+        $(".body").css("background-color", bodyBackgroundColor);
+
+        if (Office.context.officeTheme.isDarkTheme()) {
+            $(".h1").css("color", controlForegroundColor);
+        }
     }
 Office.Context#partitionKey:member:
   - |-
@@ -4171,15 +4182,26 @@ Office.MatrixBinding#rowCount:member:
     }
 Office.OfficeTheme:interface:
   - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
+    function applyOfficeTheme() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
+            console.log("No changes required.");
+        }
+
+        // Get the colors of the current Office theme.
         const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
         const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
+        // Apply theme colors to a CSS class.
+        $(".body").css("background-color", bodyBackgroundColor);
+
+        if (Office.context.officeTheme.isDarkTheme()) {
+            $(".h1").css("color", controlForegroundColor);
+        }
     }
 Office.Document#getMaxResourceIndexAsync:member(2):
   - |-
@@ -5689,6 +5711,29 @@ OfficeExtension.ClientObject#isNullObject:member:
         }
 
         await context.sync();
+    });
+OfficeExtension.ClientObject#context:member:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
+      
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
+OfficeExtension.ClientResult:class:
+  - |-
+    await Excel.run(async (context) => {
+        // Get the count of worksheets in the Excel workbook.
+        const workbook = context.workbook;
+        let countResult: OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
+
+        // Sync to populate the countResult object.
+        await context.sync();
+
+        // Log the count using the value parameter.
+        console.log(countResult.value);
     });
 OfficeExtension.Error#traceMessages:member:
   - |-
@@ -8902,6 +8947,14 @@ PowerPoint.createPresentation:function(1):
 
     // Read in the file as a data URL so we can parse the base64-encoded string.
     reader.readAsDataURL(myFile.files[0]);
+PowerPoint.RequestContext:class:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await PowerPoint.run(async (context) => {
+      const presentation = context.presentation;
+      // Interact with the PowerPoint presentation...
+    });
 Visio.Application#showBorders:member:
   - |-
     Visio.run(session, function (ctx) {

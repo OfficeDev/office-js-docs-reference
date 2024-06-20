@@ -3068,6 +3068,30 @@ export declare namespace Office {
         Headers
     }
     /**
+     * Specifies the Office theme that's currently selected.
+     *
+     * For information on Office themes, see
+     * {@link https://support.microsoft.com/office/63e65e1c-08d4-4dea-820e-335f54672310 | Change the look and feel of Microsoft 365}.
+     */
+    enum ThemeId {
+        /**
+         * The currently selected Office theme is **Black**.
+         */
+        Black,
+        /**
+         * The currently selected Office theme is **Colorful**.
+         */
+        Colorful,
+        /**
+         * The currently selected Office theme is **Dark Gray**.
+         */
+        DarkGray,
+        /**
+         * The currently selected Office theme is **White**.
+         */
+        White
+    }
+    /**
      * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
      *
      * @remarks
@@ -6984,9 +7008,13 @@ export declare namespace Office {
     /**
      * Provides access to the properties for Office theme colors.
      *
-     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with **File** \>
-     * **Office Account** \> **Office Theme UI**, which is applied across all Office applications. Using Office theme colors is appropriate for mail and
+     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user.
+     * The user sets a theme in an Office application through **File** \> **Account** or **Office Account** \> **Office Theme**.
+     * The selected theme is then applied across all Office applications. Using Office theme colors is appropriate for mail and
      * task pane add-ins.
+     *
+     * For more information on Office themes, see
+     * {@link https://support.microsoft.com/office/63e65e1c-08d4-4dea-820e-335f54672310 | Change the look and feel of Microsoft 365}.
      *
      * @remarks
      *
@@ -7002,7 +7030,7 @@ export declare namespace Office {
      *  </tr>
      *  <tr>
      *    <td><strong>Excel</strong></td>
-     *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
@@ -7010,15 +7038,15 @@ export declare namespace Office {
      *  </tr>
      *  <tr>
      *    <td><strong>Outlook</strong></td>
-     *    <td>Supported\*</td>
-     *    <td>Supported\*</td>
+     *    <td>Supported</td>
+     *    <td>Supported</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *    <td>Not available</td>
      *  </tr>
      *  <tr>
      *    <td><strong>PowerPoint</strong></td>
-     *    <td>Not available</td>
+     *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
      *    <td>Supported</td>
@@ -7034,7 +7062,7 @@ export declare namespace Office {
      *  </tr>
      * </table>
      *
-     * \* In Outlook, the Office theme API is supported starting in
+     * **Important**: In Outlook, the Office theme API is supported starting in
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
      * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
      */
@@ -7055,6 +7083,22 @@ export declare namespace Office {
          * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         controlForegroundColor: string;
+        /**
+         * Returns `true` if the Office theme that's currently selected is **Black** (dark mode) or **Dark Gray**.
+         *
+         * @remarks
+         *
+         * **Important**: The `isDarkTheme` property isn't yet supported in Outlook. 
+         */
+        isDarkTheme: boolean;
+        /**
+         * Gets the Office theme that's currently selected.
+         *
+         * @remarks
+         *
+         * **Important**: The `themeId` property isn't yet supported in Outlook. 
+         */
+        themeId: ThemeId;
     }
     /**
      * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
