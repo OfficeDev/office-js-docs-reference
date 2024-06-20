@@ -96,8 +96,6 @@ methods:
                       console.log("Permission granted.");
                       // Reload your add-in before you run code that uses the device capabilities.
                       location.reload();
-
-                      // Do something with the device capabilities.
                   } else {
                       console.log("Permission has been previously granted and is already set in the iframe.");
 
@@ -277,8 +275,6 @@ methods:
                       console.log("Permission granted.");
                       // Reload your add-in before you run code that uses the device capabilities.
                       location.reload();
-
-                      // Do something with the device capabilities.
                   } else {
                       console.log("Permission has been previously granted and is already set in the iframe.");
                       

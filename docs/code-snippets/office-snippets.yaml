@@ -1492,8 +1492,6 @@ Office.DevicePermission#requestPermissions:member(1):
                     console.log("Permission granted.");
                     // Reload your add-in before you run code that uses the device capabilities.
                     location.reload();
-
-                    // Do something with the device capabilities.
                 } else {
                     console.log("Permission has been previously granted and is already set in the iframe.");
 
@@ -1529,8 +1527,6 @@ Office.DevicePermission#requestPermissionsAsync:member(2):
                     console.log("Permission granted.");
                     // Reload your add-in before you run code that uses the device capabilities.
                     location.reload();
-
-                    // Do something with the device capabilities.
                 } else {
                     console.log("Permission has been previously granted and is already set in the iframe.");
                     
@@ -1558,8 +1554,6 @@ Office.DevicePermissionType:enum:
                         console.log("Permission granted.");
                         // Reload your add-in before you run code that uses the device capabilities.
                         location.reload();
-
-                        // Do something with the device capabilities.
                     } else {
                         console.log("Permission has been previously granted and is already set in the iframe.");
 
@@ -1593,8 +1587,6 @@ Office.DevicePermissionType:enum:
                         console.log("Permission granted.");
                         // Reload your add-in before you run code that uses the device capabilities.
                         location.reload();
-
-                        // Do something with the device capabilities.
                     } else {
                         console.log("Permission has been previously granted and is already set in the iframe.");
                         
