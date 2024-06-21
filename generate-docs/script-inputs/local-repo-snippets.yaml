@@ -2503,10 +2503,10 @@ Office.Context#officeTheme:member:
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply theme colors to a CSS class.
-        $(".body").css("background-color", bodyBackgroundColor);
+        $("body").css("background-color", bodyBackgroundColor);
 
         if (Office.context.officeTheme.isDarkTheme()) {
-            $(".h1").css("color", controlForegroundColor);
+            $("h1").css("color", controlForegroundColor);
         }
     }
 Office.Context#partitionKey:member:
@@ -4197,10 +4197,10 @@ Office.OfficeTheme:interface:
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply theme colors to a CSS class.
-        $(".body").css("background-color", bodyBackgroundColor);
+        $("body").css("background-color", bodyBackgroundColor);
 
         if (Office.context.officeTheme.isDarkTheme()) {
-            $(".h1").css("color", controlForegroundColor);
+            $("h1").css("color", controlForegroundColor);
         }
     }
 Office.Document#getMaxResourceIndexAsync:member(2):
@@ -5589,6 +5589,19 @@ Office.TableData#rows:member:
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
+    }
+Office.ThemeId:enum:
+  - |-
+    // The following example sets the color of a heading based on the current Office theme.
+    function setHeadingColor() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful) {
+            $("h1").css("color", "#1849ff");
+        }
+
+        ...
     }
 Office.UI#addHandlerAsync:member(2):
   - |-
