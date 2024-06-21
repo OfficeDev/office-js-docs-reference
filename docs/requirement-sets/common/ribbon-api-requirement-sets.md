@@ -18,8 +18,8 @@ The Ribbon API set supports programmatic control of when custom add-in commands 
 
 | Requirement set | Office on the web |  Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| RibbonApi 1.2 | Suported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported |
-| RibbonApi 1.1 | In preview* | 12527.20880 | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported |
+| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported |
+| RibbonApi 1.1 | In preview* | Version 2002 (12527.20880) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported |
 
 > \* To use Office.js preview APIs, see [Accessing the Office JavaScript API library](/office/dev/add-ins/develop/understanding-the-javascript-api-for-office#accessing-the-office-javascript-api-library).
 
