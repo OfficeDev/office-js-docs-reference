@@ -7607,7 +7607,7 @@ Office.TableData,N/A,Class,Fine,false
 Office.TableData,"headers",Property,Good,true
 Office.TableData,"rows",Property,Good,true
 Office.TextBinding,N/A,Class,Good,false
-Office.ThemeId,N/A,Enum,Fine,false
+Office.ThemeId,N/A,Enum,Fine,true
 Office.ThemeId,"Black",EnumField,Fine,false
 Office.ThemeId,"Colorful",EnumField,Fine,false
 Office.ThemeId,"DarkGray",EnumField,Fine,false
