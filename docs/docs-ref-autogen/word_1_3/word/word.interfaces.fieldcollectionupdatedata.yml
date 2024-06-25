@@ -3,7 +3,7 @@ name: Word.Interfaces.FieldCollectionUpdateData
 uid: 'word!Word.Interfaces.FieldCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.FieldCollectionUpdateData
-summary: 'An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `FieldCollection` object, for use in `fieldCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ContentControlCollectionUpdateData
 summary: >-
-  An interface for updating data on the ContentControlCollection object, for use in `contentControlCollection.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `ContentControlCollection` object, for use in `contentControlCollection.set({
+  ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

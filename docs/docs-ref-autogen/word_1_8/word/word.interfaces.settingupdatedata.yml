@@ -3,7 +3,7 @@ name: Word.Interfaces.SettingUpdateData
 uid: 'word!Word.Interfaces.SettingUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.SettingUpdateData
-summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Setting` object, for use in `setting.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

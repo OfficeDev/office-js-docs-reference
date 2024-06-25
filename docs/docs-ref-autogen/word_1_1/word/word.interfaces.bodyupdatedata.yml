@@ -3,7 +3,7 @@ name: Word.Interfaces.BodyUpdateData
 uid: 'word!Word.Interfaces.BodyUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.BodyUpdateData
-summary: 'An interface for updating data on the Body object, for use in `body.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Body` object, for use in `body.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

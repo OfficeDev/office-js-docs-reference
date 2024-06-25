@@ -321,7 +321,10 @@ methods:
     uid: 'word!Word.Document#close:member(1)'
     package: word!
     fullName: close(closeBehavior)
-    summary: Closes the current document.
+    summary: |-
+      Closes the current document.
+
+      Note: This API isn't supported in Word on the web.
     remarks: >-
       \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -359,7 +362,10 @@ methods:
     uid: 'word!Word.Document#close:member(2)'
     package: word!
     fullName: close(closeBehaviorString)
-    summary: Closes the current document.
+    summary: |-
+      Closes the current document.
+
+      Note: This API isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -1058,7 +1064,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain
+      passed to it.) Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''

@@ -3,7 +3,9 @@ name: Word.Interfaces.TableRowCollectionUpdateData
 uid: 'word!Word.Interfaces.TableRowCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.TableRowCollectionUpdateData
-summary: 'An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

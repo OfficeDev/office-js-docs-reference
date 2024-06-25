@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ParagraphCollectionUpdateData
 summary: >-
-  An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`<!--
+  An interface for updating data on the `ParagraphCollection` object, for use in `paragraphCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

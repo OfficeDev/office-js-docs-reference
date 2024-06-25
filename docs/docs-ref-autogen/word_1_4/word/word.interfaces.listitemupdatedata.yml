@@ -3,7 +3,7 @@ name: Word.Interfaces.ListItemUpdateData
 uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ListItemUpdateData
-summary: 'An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ListItem` object, for use in `listItem.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

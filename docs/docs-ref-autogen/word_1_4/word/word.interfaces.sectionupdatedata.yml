@@ -3,7 +3,7 @@ name: Word.Interfaces.SectionUpdateData
 uid: 'word!Word.Interfaces.SectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.SectionUpdateData
-summary: 'An interface for updating data on the Section object, for use in `section.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Section` object, for use in `section.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

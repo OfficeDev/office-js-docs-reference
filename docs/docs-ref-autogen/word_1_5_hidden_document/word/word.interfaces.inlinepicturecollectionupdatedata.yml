@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.InlinePictureCollectionUpdateData
 summary: >-
-  An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({ ...
+  An interface for updating data on the `InlinePictureCollection` object, for use in `inlinePictureCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

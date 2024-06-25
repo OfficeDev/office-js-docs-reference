@@ -3,7 +3,7 @@ name: Word.Interfaces.BorderCollectionUpdateData
 uid: 'word!Word.Interfaces.BorderCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.BorderCollectionUpdateData
-summary: 'An interface for updating data on the BorderCollection object, for use in `borderCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

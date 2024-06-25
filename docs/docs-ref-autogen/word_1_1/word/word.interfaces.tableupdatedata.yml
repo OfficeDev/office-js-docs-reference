@@ -3,7 +3,7 @@ name: Word.Interfaces.TableUpdateData
 uid: 'word!Word.Interfaces.TableUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.TableUpdateData
-summary: 'An interface for updating data on the Table object, for use in `table.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Table` object, for use in `table.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

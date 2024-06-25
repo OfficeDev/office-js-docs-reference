@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
 summary: >-
-  An interface for updating data on the CustomXmlPartScopedCollection object, for use in
+  An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in
   `customXmlPartScopedCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
