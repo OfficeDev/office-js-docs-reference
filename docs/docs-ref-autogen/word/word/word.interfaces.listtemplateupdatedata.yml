@@ -3,7 +3,7 @@ name: Word.Interfaces.ListTemplateUpdateData
 uid: 'word!Word.Interfaces.ListTemplateUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ListTemplateUpdateData
-summary: 'An interface for updating data on the ListTemplate object, for use in `listTemplate.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

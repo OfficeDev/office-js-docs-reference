@@ -3,7 +3,7 @@ name: Word.Interfaces.ContentControlUpdateData
 uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ContentControlUpdateData
-summary: 'An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

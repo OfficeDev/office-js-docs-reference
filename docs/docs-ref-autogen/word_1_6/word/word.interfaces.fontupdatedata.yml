@@ -3,7 +3,7 @@ name: Word.Interfaces.FontUpdateData
 uid: 'word!Word.Interfaces.FontUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.FontUpdateData
-summary: 'An interface for updating data on the Font object, for use in `font.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Font` object, for use in `font.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

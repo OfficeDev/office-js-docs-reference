@@ -4,7 +4,35 @@ uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.AddSlideOptions
 summary: Represents the available options when adding a new slide.
-remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
+
+
+  const chosenMaster = $("#master-id").val() as string;
+
+  const chosenLayout = $("#layout-id").val() as string;
+
+
+  await PowerPoint.run(async function(context) {
+    // Create a new slide using an existing master slide and layout.
+    const newSlideOptions: PowerPoint.AddSlideOptions = {
+      slideMasterId: chosenMaster, /* An ID from `Presentation.slideMasters`. */
+      layoutId: chosenLayout /* An ID from `SlideMaster.layouts`. */
+    };
+    context.presentation.slides.add(newSlideOptions);
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

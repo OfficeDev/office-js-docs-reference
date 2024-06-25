@@ -3,7 +3,7 @@ name: Word.Interfaces.CommentReplyUpdateData
 uid: 'word!Word.Interfaces.CommentReplyUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CommentReplyUpdateData
-summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `CommentReply` object, for use in `commentReply.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,7 +3,7 @@ name: Word.Interfaces.CustomPropertyUpdateData
 uid: 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CustomPropertyUpdateData
-summary: 'An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

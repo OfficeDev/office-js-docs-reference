@@ -16,8 +16,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -46,6 +46,14 @@ methods:
 
 
       This method returns a promise. Use it with Excel, PowerPoint, and Word add-ins.
+
+
+      If a user grants access to a device capability for the first time, the promise resolves with `true`<!-- -->. You
+      must then reload the add-in before you can run code that uses the device capability. For example, you can call
+      `window.location.reload()` to reload your add-in. If a user had previously granted access to a device capability,
+      the promise resolves with `false`<!-- -->. You don't need to reload your add-in to run code that uses the device
+      capability, as the permission is already set. If a user denies access to a device capability, the promise rejects
+      with a "User denied the permission request" error message.
     remarks: >-
       **Important**:
 
@@ -58,10 +66,6 @@ methods:
       [Office.context.platform](https://learn.microsoft.com/javascript/api/office/office.context#office-office-context-platform-member)
       and verify that it returns `Office.PlatformType.OfficeOnline`<!-- -->. Otherwise, the `requestPermissions` call
       will return an error.
-
-
-      - If the user allows access to their camera or microphone, the add-in must be reloaded in the browser for the
-      permissions to take effect. For example, you can call `window.location.reload()` to reload your add-in.
 
 
       - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or
@@ -94,13 +98,21 @@ methods:
               .then((isGranted) => {
                   if (isGranted) {
                       console.log("Permission granted.");
-
-                      // Do something when permission is granted.
+                      // Reload your add-in before you run code that uses the device capabilities.
+                      location.reload();
                   } else {
-                      console.log("Permission denied.");
+                      console.log("Permission has been previously granted and is already set in the iframe.");
 
-                      // Do something when permission is denied.
+                      // Since permission has been previously granted, you don't need to reload your add-in.
+
+                      // Do something with the device capabilities.
                   }
+              })
+              .catch((error) => {
+                  console.log("Permission denied.");
+                  console.error(error);
+
+                  // Do something when permission is denied.
               });
       }
 
@@ -137,11 +149,6 @@ methods:
 
 
       - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
-
-
-      - If the user allows access to their camera, geolocation, or microphone, the add-in must be reloaded in the
-      browser for the permissions to take effect. For example, you can call `window.location.reload()` to reload your
-      add-in.
 
 
       - If your add-in uses the same code for both Office on the web and Office desktop clients, verify the platform on
@@ -188,7 +195,13 @@ methods:
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the user grants permission to
-            access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
+            access the requested device capabilities, `true` is returned in the `asyncResult.value` property. You must
+            then reload the add-in before you can run code that uses the device capabilities. For example, you can call
+            `window.location.reload()` to reload your add-in. If the user had previously granted permission to access
+            the requested device capabilities, `false` is returned in the `asyncResult.value` property. You don't need
+            to reload your add-in to run code that uses the device capability, as the permission is already set. If a
+            user denies access to the requested device capabilities, `Office.AsyncResultStatus.Failed` is returned in
+            the `asyncResult.status` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
@@ -211,11 +224,6 @@ methods:
 
 
       - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
-
-
-      - If the user allows access to their camera, geolocation, or microphone, the add-in must be reloaded in the
-      browser for the permissions to take effect. For example, you can call `window.location.reload()` to reload your
-      add-in.
 
 
       - If your add-in uses the same code for both Office on the web and Office desktop clients, verify the platform on
@@ -259,18 +267,21 @@ methods:
 
           Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log (asyncResult.error.message);
-                  return;
-              }
-
-              if (asyncResult.value) {
-                  console.log("Permission granted.");
-
-                  // Do something when permission is granted.
-              } else {
                   console.log("Permission denied.");
 
                   // Do something when permission is denied.
+              } else {
+                  if (asyncResult.value) {
+                      console.log("Permission granted.");
+                      // Reload your add-in before you run code that uses the device capabilities.
+                      location.reload();
+                  } else {
+                      console.log("Permission has been previously granted and is already set in the iframe.");
+                      
+                      // Since permission has been previously granted, you don't need to reload your add-in.
+
+                      // Do something with the device capabilities.
+                  }
               }
           });
       }
@@ -292,7 +303,13 @@ methods:
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the user grants permission to
-            access the requested device capabilities, `true` is returned in the `asyncResult.value` property.
+            access the requested device capabilities, `true` is returned in the `asyncResult.value` property. You must
+            then reload the add-in before you can run code that uses the device capabilities. For example, you can call
+            `window.location.reload()` to reload your add-in. If the user had previously granted permission to access
+            the requested device capabilities, `false` is returned in the `asyncResult.value` property. You don't need
+            to reload your add-in to run code that uses the device capability, as the permission is already set. If a
+            user denies access to the requested device capabilities, `Office.AsyncResultStatus.Failed` is returned in
+            the `asyncResult.status` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void

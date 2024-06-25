@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.CommentContentRangeUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CommentContentRangeUpdateData
 summary: >-
-  An interface for updating data on the CommentContentRange object, for use in `commentContentRange.set({ ... })`<!--
+  An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

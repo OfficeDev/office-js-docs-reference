@@ -3,7 +3,7 @@ name: Word.Interfaces.ParagraphUpdateData
 uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ParagraphUpdateData
-summary: 'An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

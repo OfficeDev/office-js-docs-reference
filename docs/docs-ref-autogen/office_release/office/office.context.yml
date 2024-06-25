@@ -340,10 +340,10 @@ properties:
               const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
               // Apply theme colors to a CSS class.
-              $(".body").css("background-color", bodyBackgroundColor);
+              $("body").css("background-color", bodyBackgroundColor);
 
               if (Office.context.officeTheme.isDarkTheme()) {
-                  $(".h1").css("color", controlForegroundColor);
+                  $("h1").css("color", controlForegroundColor);
               }
           }
           ```

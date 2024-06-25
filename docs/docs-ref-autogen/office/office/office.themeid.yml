@@ -9,7 +9,24 @@ summary: >-
 
   For information on Office themes, see [Change the look and feel of Microsoft
   365](https://support.microsoft.com/office/63e65e1c-08d4-4dea-820e-335f54672310)<!-- -->.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // The following example sets the color of a heading based on the current Office theme.
+  function setHeadingColor() {
+      // Identify the current Office theme in use.
+      const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+      if (currentOfficeTheme === Office.ThemeId.Colorful) {
+          $("h1").css("color", "#1849ff");
+      }
+
+      ...
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:

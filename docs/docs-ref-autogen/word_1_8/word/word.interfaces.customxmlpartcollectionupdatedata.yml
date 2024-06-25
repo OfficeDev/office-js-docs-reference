@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CustomXmlPartCollectionUpdateData
 summary: >-
-  An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ...
+  An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

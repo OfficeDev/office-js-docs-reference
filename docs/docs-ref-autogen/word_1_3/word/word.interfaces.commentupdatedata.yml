@@ -3,7 +3,7 @@ name: Word.Interfaces.CommentUpdateData
 uid: 'word!Word.Interfaces.CommentUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CommentUpdateData
-summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
