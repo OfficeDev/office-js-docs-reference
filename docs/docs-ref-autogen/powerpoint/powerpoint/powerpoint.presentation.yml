@@ -385,12 +385,18 @@ methods:
 
 
       await PowerPoint.run(async function(context) {
-          const selectedSlideID = await getSelectedSlideID();
+          // Get the ID of the first selected slide.
+          const presentation = context.presentation;
+          const selected = presentation.getSelectedSlides().getItemAt(0);
+          selected.load("id");
+          await context.sync();
 
-          context.presentation.insertSlidesFromBase64(chosenFileBase64, {
+          // Insert the other presentation after the selected slide.
+          const insertOptions: PowerPoint.InsertSlideOptions = {
               formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
-              targetSlideId: selectedSlideID + "#"
-          });
+              targetSlideId: selected.id
+          };
+          presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
           await context.sync();
       });
 

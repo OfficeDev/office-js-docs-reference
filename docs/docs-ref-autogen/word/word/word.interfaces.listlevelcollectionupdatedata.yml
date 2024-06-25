@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.ListLevelCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ListLevelCollectionUpdateData
 summary: >-
-  An interface for updating data on the ListLevelCollection object, for use in `listLevelCollection.set({ ... })`<!--
+  An interface for updating data on the `ListLevelCollection` object, for use in `listLevelCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
 summary: >-
-  An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({
+  ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

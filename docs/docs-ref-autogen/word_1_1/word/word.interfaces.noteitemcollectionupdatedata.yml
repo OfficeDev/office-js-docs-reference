@@ -3,7 +3,9 @@ name: Word.Interfaces.NoteItemCollectionUpdateData
 uid: 'word!Word.Interfaces.NoteItemCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.NoteItemCollectionUpdateData
-summary: 'An interface for updating data on the NoteItemCollection object, for use in `noteItemCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `NoteItemCollection` object, for use in `noteItemCollection.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,7 +3,7 @@ name: Word.Interfaces.ListLevelUpdateData
 uid: 'word!Word.Interfaces.ListLevelUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ListLevelUpdateData
-summary: 'An interface for updating data on the ListLevel object, for use in `listLevel.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

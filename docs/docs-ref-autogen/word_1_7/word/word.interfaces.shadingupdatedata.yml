@@ -3,7 +3,7 @@ name: Word.Interfaces.ShadingUpdateData
 uid: 'word!Word.Interfaces.ShadingUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ShadingUpdateData
-summary: 'An interface for updating data on the Shading object, for use in `shading.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Shading` object, for use in `shading.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -60,10 +60,12 @@ methods:
 
 
       await PowerPoint.run(async function(context) {
-        context.presentation.slides.add({
-          slideMasterId: chosenMaster,
-          layoutId: chosenLayout
-        });
+        // Create a new slide using an existing master slide and layout.
+        const newSlideOptions: PowerPoint.AddSlideOptions = {
+          slideMasterId: chosenMaster, /* An ID from `Presentation.slideMasters`. */
+          layoutId: chosenLayout /* An ID from `SlideMaster.layouts`. */
+        };
+        context.presentation.slides.add(newSlideOptions);
         await context.sync();
       });
 

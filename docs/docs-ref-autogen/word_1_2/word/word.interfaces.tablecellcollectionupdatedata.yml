@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.TableCellCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.TableCellCollectionUpdateData
 summary: >-
-  An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`<!--
+  An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

@@ -3,7 +3,7 @@ name: Word.Interfaces.DocumentUpdateData
 uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.DocumentUpdateData
-summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Document` object, for use in `document.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,7 +3,7 @@ name: Word.Interfaces.StyleCollectionUpdateData
 uid: 'word!Word.Interfaces.StyleCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.StyleCollectionUpdateData
-summary: 'An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `StyleCollection` object, for use in `styleCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.ContentControlListItemCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ContentControlListItemCollectionUpdateData
 summary: >-
-  An interface for updating data on the ContentControlListItemCollection object, for use in
+  An interface for updating data on the `ContentControlListItemCollection` object, for use in
   `contentControlListItemCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

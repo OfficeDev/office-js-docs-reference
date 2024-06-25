@@ -3,7 +3,7 @@ name: Word.Interfaces.ListCollectionUpdateData
 uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.ListCollectionUpdateData
-summary: 'An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ListCollection` object, for use in `listCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

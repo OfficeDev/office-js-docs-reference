@@ -3,7 +3,7 @@ name: Word.Interfaces.SearchOptionsUpdateData
 uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.SearchOptionsUpdateData
-summary: 'An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `SearchOptions` object, for use in `searchOptions.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

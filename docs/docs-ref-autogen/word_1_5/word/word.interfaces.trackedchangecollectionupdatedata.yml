@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.TrackedChangeCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.TrackedChangeCollectionUpdateData
 summary: >-
-  An interface for updating data on the TrackedChangeCollection object, for use in `trackedChangeCollection.set({ ...
+  An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

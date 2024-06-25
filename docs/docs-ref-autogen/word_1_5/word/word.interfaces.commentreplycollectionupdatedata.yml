@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.CommentReplyCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.CommentReplyCollectionUpdateData
 summary: >-
-  An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ...
+  An interface for updating data on the `CommentReplyCollection` object, for use in `commentReplyCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

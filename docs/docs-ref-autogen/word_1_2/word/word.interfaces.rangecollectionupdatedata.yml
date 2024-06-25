@@ -3,7 +3,7 @@ name: Word.Interfaces.RangeCollectionUpdateData
 uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.RangeCollectionUpdateData
-summary: 'An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `RangeCollection` object, for use in `rangeCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
