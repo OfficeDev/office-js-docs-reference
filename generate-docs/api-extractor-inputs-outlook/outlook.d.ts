@@ -7437,7 +7437,11 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the user, such as changing the subject in a reply.
+         * **Important**:
+         *
+         * - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the user, such as changing the subject in a reply.
+         *
+         * - The `inReplyTo` property returns `null` for new or forwarded messages.
          */
         inReplyTo: string;
         /**
