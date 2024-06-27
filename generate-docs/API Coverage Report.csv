@@ -10561,7 +10561,7 @@ Word.ChangeTrackingMode,N/A,Enum,Good,true
 Word.ChangeTrackingMode,"off",EnumField,Fine,false
 Word.ChangeTrackingMode,"trackAll",EnumField,Fine,false
 Word.ChangeTrackingMode,"trackMineOnly",EnumField,Fine,false
-Word.ChangeTrackingState,N/A,Enum,Good,false
+Word.ChangeTrackingState,N/A,Enum,Good,true
 Word.ChangeTrackingState,"added",EnumField,Fine,false
 Word.ChangeTrackingState,"deleted",EnumField,Fine,false
 Word.ChangeTrackingState,"normal",EnumField,Fine,false

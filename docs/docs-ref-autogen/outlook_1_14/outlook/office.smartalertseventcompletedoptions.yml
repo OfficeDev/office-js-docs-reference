@@ -47,6 +47,10 @@ remarks: >-
                       commandId: "msgComposeOpenPaneButton",
                       contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
                       errorMessage: "Don't forget to add a meeting location.",
+                      errorMessageMarkdown: `
+                          Don't forget to add a meeting location.\n\n
+                          **Tip**: For a list of locations,
+                          see [Meeting Locations]("https://www.contoso.com/meeting-locations).`,
                       sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
                   }
               );

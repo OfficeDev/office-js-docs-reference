@@ -904,7 +904,7 @@ methods:
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
-        const results : Word.RangeCollection = context.document.body.search("Online");
+        const results : Word.RangeCollection = context.document.body.search("extend");
         results.load("length");
 
         await context.sync();
