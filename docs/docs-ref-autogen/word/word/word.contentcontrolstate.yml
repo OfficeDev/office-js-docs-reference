@@ -4,7 +4,39 @@ uid: 'word!Word.ContentControlState:enum'
 package: word!
 fullName: Word.ContentControlState
 summary: Represents the state of the content control.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+  // Sets the state of the first content control.
+
+  await Word.run(async (context) => {
+    const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
+    let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+    await context.sync();
+
+    if (firstContentControl.isNullObject) {
+      console.warn("There are no content controls in this document.");
+      return;
+    }
+
+    firstContentControl.setState(state);
+    firstContentControl.load("id");
+    await context.sync();
+
+    console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 fields:
