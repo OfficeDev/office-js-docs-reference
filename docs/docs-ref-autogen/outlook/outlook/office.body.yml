@@ -1132,13 +1132,6 @@ methods:
       if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
       or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
       insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1151,6 +1144,21 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType` parameter.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded and selected in Outlook.
+      For information on how to get information on multiple messages, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:

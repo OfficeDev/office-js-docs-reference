@@ -37,6 +37,8 @@ interfaces:
   - 'outlook!Office.Item:interface'
   - 'outlook!Office.ItemCompose:interface'
   - 'outlook!Office.ItemRead:interface'
+  - 'outlook!Office.LoadedMessageCompose:interface'
+  - 'outlook!Office.LoadedMessageRead:interface'
   - 'outlook!Office.LocalClientTime:interface'
   - 'outlook!Office.Location:interface'
   - 'outlook!Office.LocationDetails:interface'
