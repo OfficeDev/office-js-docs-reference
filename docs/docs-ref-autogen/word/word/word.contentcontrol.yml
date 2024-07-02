@@ -206,7 +206,7 @@ properties:
       // Adds the provided list item to the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItem = $("#item-to-add")
+        const listItemText = $("#item-to-add")
           .val()
           .toString()
           .trim();
@@ -217,7 +217,6 @@ properties:
           })
           .getFirstOrNullObject();
         selectedContentControl.load("id,comboBoxContentControl");
-
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
@@ -233,10 +232,10 @@ properties:
           }
         }
 
-        selectedContentControl.comboBoxContentControl.addListItem(listItem);
+        selectedContentControl.comboBoxContentControl.addListItem(listItemText);
         await context.sync();
 
-        console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
       });
 
       ```
@@ -293,7 +292,7 @@ properties:
       // Adds the provided list item to the first dropdown list content control in the selection.
 
       await Word.run(async (context) => {
-        const listItem = $("#item-to-add")
+        const listItemText = $("#item-to-add")
           .val()
           .toString()
           .trim();
@@ -304,7 +303,6 @@ properties:
           })
           .getFirstOrNullObject();
         selectedContentControl.load("id,dropDownListContentControl");
-
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
@@ -320,10 +318,10 @@ properties:
           }
         }
 
-        selectedContentControl.dropDownListContentControl.addListItem(listItem);
+        selectedContentControl.dropDownListContentControl.addListItem(listItemText);
         await context.sync();
 
-        console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
       });
 
       ```
