@@ -1118,7 +1118,52 @@ events:
     package: word!
     fullName: onAnnotationClicked
     summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onClickedHandler(args: Word.AnnotationClickedEventArgs) {
+        await Word.run(async (context) => {
+          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+          annotation.load("critiqueAnnotation");
+
+          await context.sync();
+
+          console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1132,7 +1177,52 @@ events:
     package: word!
     fullName: onAnnotationHovered
     summary: Occurs when the user hovers the cursor over an annotation.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
+        await Word.run(async (context) => {
+          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+          annotation.load("critiqueAnnotation");
+
+          await context.sync();
+
+          console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1146,7 +1236,59 @@ events:
     package: word!
     fullName: onAnnotationInserted
     summary: Occurs when the user adds one or more annotations.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onInsertedHandler(args: Word.AnnotationInsertedEventArgs) {
+        await Word.run(async (context) => {
+          const annotations = [];
+          for (let i = 0; i < args.ids.length; i++) {
+            let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
+            annotation.load("id,critiqueAnnotation");
+
+            annotations.push(annotation);
+          }
+
+          await context.sync();
+
+          for (let annotation of annotations) {
+            console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
+          }
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1160,7 +1302,49 @@ events:
     package: word!
     fullName: onAnnotationRemoved
     summary: Occurs when the user deletes one or more annotations.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onRemovedHandler(args: Word.AnnotationRemovedEventArgs) {
+        await Word.run(async (context) => {
+          for (let id of args.ids) {
+            console.log(`AnnotationRemoved: ID ${id}`);
+          }
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
