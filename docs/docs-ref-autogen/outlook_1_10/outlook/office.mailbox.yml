@@ -1864,6 +1864,9 @@ methods:
       page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
 
 
+      - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+
+
       - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported
       APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
@@ -2060,6 +2063,9 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
+      - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+
+
       - For guidance on delegate or shared scenarios, see the [shared folders and shared
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
@@ -2150,6 +2156,9 @@ methods:
 
       - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
       and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
+
+
+      - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
 
 
       **Errors**:

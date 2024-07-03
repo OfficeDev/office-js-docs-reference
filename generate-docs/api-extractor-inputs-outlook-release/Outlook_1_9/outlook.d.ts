@@ -5968,6 +5968,8 @@ export declare namespace Office {
          * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
+         * - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+         *
          * - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          * 
@@ -6072,6 +6074,8 @@ export declare namespace Office {
          * For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+         *
          * - For guidance on delegate or shared scenarios, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
@@ -6113,6 +6117,8 @@ export declare namespace Office {
          *
          * - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with an external system}.
+         *
+         * - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
          *
          * **Errors**:
          *
