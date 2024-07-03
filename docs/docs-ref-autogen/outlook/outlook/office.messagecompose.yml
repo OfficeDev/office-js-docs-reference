@@ -530,7 +530,8 @@ properties:
       user, such as changing the subject in a reply.
 
 
-      - The `inReplyTo` property returns `null` for new or forwarded messages.
+      - The `inReplyTo` property returns `null` for new messages and meeting invites being forwarded by a user who's
+      also the meeting organizer.
 
 
       #### Examples

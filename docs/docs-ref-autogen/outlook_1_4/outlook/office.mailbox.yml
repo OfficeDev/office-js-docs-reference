@@ -799,6 +799,9 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
+      - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+
+
       - For guidance on delegate or shared scenarios, see the [shared folders and shared
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
@@ -896,6 +899,9 @@ methods:
 
       - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
       and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
+
+
+      - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
 
 
       **Errors**:
