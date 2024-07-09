@@ -46,7 +46,37 @@ properties:
     summary: >-
       Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash
       styles. See PowerPoint.ShapeLineDashStyle for details.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+      // Changes the dash style of every line in the slide.
+
+      await PowerPoint.run(async (context) => {
+        // Get the type of shape for every shape in the collection.
+        const shapes = context.presentation.slides.getItemAt(0).shapes;
+        shapes.load("type");
+        await context.sync();
+
+        // Change the dash style for shapes of the type `line`.
+        shapes.items.forEach((shape) => {
+          if (shape.type === PowerPoint.ShapeType.line) {
+            shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+          }
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
