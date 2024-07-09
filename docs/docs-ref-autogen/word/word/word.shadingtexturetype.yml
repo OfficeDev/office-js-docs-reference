@@ -7,7 +7,48 @@ summary: >-
   Represents the shading texture. To learn more about how to apply backgrounds like textures, see [Add, change, or
   delete the background color in Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
   -->.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+
+  // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to update shading properties.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      const shading: Word.Shading = style.shading;
+      shading.load();
+      await context.sync();
+
+      shading.backgroundPatternColor = "blue";
+      shading.foregroundPatternColor = "yellow";
+      shading.texture = Word.ShadingTextureType.darkTrellis;
+
+      console.log("Updated shading.");
+    }
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 fields:
