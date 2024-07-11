@@ -30,7 +30,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 There are three types of extension points available in some or all of these hosts.
 
 - [PrimaryCommandSurface](#primarycommandsurface) (Valid for Word, Excel, PowerPoint, and OneNote) - The ribbon in Office.
-- [ContextMenu](#contextmenu) (Valid for Word, Excel, PowerPoint, and OneNote) - The shortcut menu that appears when you select and hold (or right-click) in the Office UI.
+- [ContextMenu](#contextmenu) (Valid for Word, Excel, PowerPoint, and OneNote) - The shortcut menu that appears when you right-click (or select and hold) in the Office UI.
 - [CustomFunctions](#customfunctions) (Valid only for Excel) - A custom function written in JavaScript for Excel.
 
 See the following subsections for the child elements and examples of these types of extension points.
@@ -85,7 +85,7 @@ A context menu is a shortcut menu that appears when you right-click (or select a
 
 |Element|Description|
 |:-----|:-----|
-|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings: <ul><li>**ContextMenuText** if the context menu should open when a user right-clicks (or selects and holds) on the selected text.</li><li>**ContextMenuCell** if the context menu should open when the user right-clicks (or selects and holds) on a cell in an Excel spreadsheet.</li></ul>|
+|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings.<ul><li>**ContextMenuText** if the context menu should open when a user right-clicks (or selects and holds) on the selected text.</li><li>**ContextMenuCell** if the context menu should open when the user right-clicks (or selects and holds) on a cell in an Excel spreadsheet.</li></ul>|
 
 #### Example
 
