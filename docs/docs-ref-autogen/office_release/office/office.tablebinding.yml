@@ -517,8 +517,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
+      **Home** &gt; **Format** &gt; **Format Cells**).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -577,8 +577,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
+      **Home** &gt; **Format** &gt; **Format Cells**).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -640,8 +640,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
+      **Home** &gt; **Format** &gt; **Format Cells**).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -809,8 +809,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
+      **Home** &gt; **Format** &gt; **Format Cells**).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a

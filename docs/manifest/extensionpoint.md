@@ -85,7 +85,7 @@ A context menu is a shortcut menu that appears when you right-click (or select a
 
 |Element|Description|
 |:-----|:-----|
-|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings.<ul><li>**ContextMenuText** if the context menu should open when a user right-clicks (or selects and holds) on the selected text.</li><li>**ContextMenuCell** if the context menu should open when the user right-clicks (or selects and holds) on a cell in an Excel spreadsheet.</li></ul>|
+|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings.<ul><li>**ContextMenuText** if the context menu should open when a user right-clicks (or selects and holds) on the selected text.</li><li>**ContextMenuCell** if the context menu should open when a user right-clicks (or selects and holds) on a cell in an Excel spreadsheet.</li></ul>|
 
 #### Example
 
