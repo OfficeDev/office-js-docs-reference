@@ -22,7 +22,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| *None.* |||
+| *None* |||
 
 ## Recommended usage
 
