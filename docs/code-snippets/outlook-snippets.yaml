@@ -513,52 +513,6 @@ Office.EmailAddressDetails#recipientType:member:
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-Office.EmailUser:interface:
-  - |-
-    // The following example is an excerpt from a larger sample.
-    // For the full sample, visit https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
-
-    // Gets instances of the task suggestion entity on the item.
-    function myGetTaskSuggestions()
-    {
-        let htmlText = "";
-
-        // Gets an array of TaskSuggestion objects, each array element 
-        // containing an instance of a task suggestion entity from 
-        // the current item.
-        const tasksArray = _MyEntities.taskSuggestions;
-
-        // Iterates through each instance of a task suggestion.
-        for (let i = 0; i < tasksArray.length; i++)
-        {
-            // Gets the string that was identified as a task suggestion.
-            htmlText += "TaskString : <span>" + 
-            tasksArray[i].taskString + "</span><br/>";
-
-            // Gets an array of assignees for that instance of a task 
-            // suggestion. Each assignee is represented by an 
-            // EmailUser object.
-            let assigneesArray = tasksArray[i].assignees;
-            for (let j = 0; j < assigneesArray.length; j++)
-            {
-                htmlText += "Assignee : ( ";
-                // Gets the displayName property of the assignee.
-                htmlText += "displayName = <span>" + assigneesArray[j].displayName + 
-                "</span> , ";
-
-                // Gets the emailAddress property of each assignee.
-                // This is the SMTP address of the assignee.
-                htmlText += "emailAddress = <span>" + assigneesArray[j].emailAddress + 
-                    "</span>";
-
-                htmlText += " )<br/>";
-            }
-
-            htmlText += "<hr/>";
-        }
-
-        document.getElementById("entities_box").innerHTML = htmlText;
-    }
 Office.Entities#addresses:member:
   - |-
     const item = Office.context.mailbox.item;

@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 05/20/2024
+ms.date: 07/18/2024
 ms.localizationpriority: medium
 ---
 
@@ -462,7 +462,7 @@ The containing [VersionOverrides](versionoverrides.md) element must have an **xs
 > [!NOTE]
 >
 > - This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
-> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events isn't available with this extension point.
 
 |  Element |  Description  |
 |:-----|:-----|
@@ -476,27 +476,23 @@ Required. The label of the group. The **resid** attribute can be no more than 32
 
 #### Highlight requirements
 
-The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for `ItemHasKnownEntity` and `ItemHasRegularExpressionMatch` rule types.
+The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for `ItemHasRegularExpressionMatch` rule types.
 
 However, there are some limitations to be aware of. These limitations are in place to ensure that there will always be a highlighted entity in applicable messages or appointments to give the user a way to activate the add-in.
 
-- The `EmailAddress` and `Url` entity types cannot be highlighted, and therefore cannot be used to activate an add-in.
 - If using a single rule, the **Highlight** attribute MUST be set to `all`.
-- If using a `RuleCollection` rule type with `Mode="AND"` to combine multiple rules, at least one of the rules MUST have the **Highlight** attribute set to `all`.
-- If using a `RuleCollection` rule type with `Mode="OR"` to combine multiple rules, all of the rules MUST have the **Highlight** attribute set to `all`.
+- If using a `RuleCollection` rule type with `Mode="And"` to combine multiple rules, at least one of the rules MUST have the **Highlight** attribute set to `all`.
+- If using a `RuleCollection` rule type with `Mode="Or"` to combine multiple rules, all of the rules MUST have the **Highlight** attribute set to `all`.
 
 #### DetectedEntity event example
 
 ```xml
 <ExtensionPoint xsi:type="DetectedEntity">
-  <Label resid="residLabelName"/>
-  <!--If you opt to include RequestedHeight, it must be between 140px to 450px, inclusive.-->
-  <!--<RequestedHeight>360</RequestedHeight>-->
-  <SourceLocation resid="residDetectedEntityURL" />
+  <Label resid="Context.Label"/>
+  <SourceLocation resid="DetectedEntity.URL" />
   <Rule xsi:type="RuleCollection" Mode="And">
-    <Rule xsi:type="ItemIs" ItemType="Message" />
-    <Rule xsi:type="ItemHasKnownEntity" EntityType="MeetingSuggestion" Highlight="all" />
-    <Rule xsi:type="ItemHasKnownEntity" EntityType="Address" Highlight="none" />
+    <Rule xsi:type="ItemIs" ItemType="Message"/>
+    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="videoURL" RegExValue="http://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}" PropertyName="BodyAsPlaintext"/>
   </Rule>
 </ExtensionPoint>
 ```

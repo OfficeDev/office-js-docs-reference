@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.14
 description: Outlook Mailbox API requirement set 1.14 version of the Item object model.
-ms.date: 05/20/2024
+ms.date: 07/18/2024
 ms.localizationpriority: medium
 ---
 
@@ -140,11 +140,11 @@ ms.localizationpriority: medium
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.14&preserve-view=true#outlook-office-messagecompose-getattachmentsasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | getComposeTypeAsync([options], callback) | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.14&preserve-view=true#outlook-office-messagecompose-getcomposetypeasync-member(1)) | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
 | getConversationIndexAsync([options], callback) | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.14&preserve-view=true#outlook-office-messagecompose-getconversationindexasync-member(1)) | [1.14](outlook-requirement-set-1.14.md) |
-| getEntities() | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getentities-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| getEntities() **(deprecated)** | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getentities-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getentities-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| getEntitiesByType(entityType) | **restricted** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getentitiesbytype-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| getEntitiesByType(entityType) **(deprecated)** | **restricted** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getentitiesbytype-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getentitiesbytype-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| getFilteredEntitiesByName(name) | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getfilteredentitiesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| getFilteredEntitiesByName(name) **(deprecated)** | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getfilteredentitiesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getfilteredentitiesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | getInitializationContextAsync([options], [callback]) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentcompose-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
@@ -159,7 +159,7 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getregexmatchesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | getSelectedDataAsync(coercionType, [options], callback) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentcompose-getselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.14&preserve-view=true#outlook-office-messagecompose-getselecteddataasync-member(1)) | [1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md) |
-| getSelectedEntities() | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getselectedentities-member(1)) | [1.6](../requirement-set-1.6/outlook-requirement-set-1.6.md) |
+| getSelectedEntities() **(deprecated)** | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getselectedentities-member(1)) | [1.6](../requirement-set-1.6/outlook-requirement-set-1.6.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getselectedentities-member(1)) | [1.6](../requirement-set-1.6/outlook-requirement-set-1.6.md) |
 | getSelectedRegExMatches() | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.14&preserve-view=true#outlook-office-appointmentread-getselectedregexmatches-member(1)) | [1.6](../requirement-set-1.6/outlook-requirement-set-1.6.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.14&preserve-view=true#outlook-office-messageread-getselectedregexmatches-member(1)) | [1.6](../requirement-set-1.6/outlook-requirement-set-1.6.md) |
