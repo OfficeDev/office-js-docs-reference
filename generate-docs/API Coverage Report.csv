@@ -11754,7 +11754,7 @@ Word.Range,"text",Property,Good,false
 Word.Range,"clear()",Method,Poor,true
 Word.Range,"compareLocationWith(range)",Method,Poor,true
 Word.Range,"delete()",Method,Poor,true
-Word.Range,"expandTo(range)",Method,Poor,false
+Word.Range,"expandTo(range)",Method,Poor,true
 Word.Range,"expandToOrNullObject(range)",Method,Poor,false
 Word.Range,"getBookmarks(includeHidden, includeAdjacent)",Method,Fine,false
 Word.Range,"getComments()",Method,Poor,true
@@ -11764,7 +11764,7 @@ Word.Range,"getHyperlinkRanges()",Method,Poor,true
 Word.Range,"getNextTextRange(endingMarks, trimSpacing)",Method,Fine,false
 Word.Range,"getNextTextRangeOrNullObject(endingMarks, trimSpacing)",Method,Fine,false
 Word.Range,"getOoxml()",Method,Poor,true
-Word.Range,"getRange(rangeLocation)",Method,Poor,false
+Word.Range,"getRange(rangeLocation)",Method,Poor,true
 Word.Range,"getReviewedText(changeTrackingVersion)",Method,Poor,true
 Word.Range,"getReviewedText(changeTrackingVersionString)",Method,Poor,false
 Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
