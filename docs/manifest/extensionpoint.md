@@ -476,7 +476,7 @@ Required. The label of the group. The **resid** attribute can be no more than 32
 
 #### Highlight requirements
 
-The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for `ItemHasRegularExpressionMatch` rule types.
+The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for the `ItemHasRegularExpressionMatch` rule type.
 
 However, there are some limitations to be aware of. These limitations are in place to ensure that there will always be a highlighted entity in applicable messages or appointments to give the user a way to activate the add-in.
 
