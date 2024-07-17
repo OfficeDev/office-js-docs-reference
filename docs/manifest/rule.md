@@ -1,7 +1,7 @@
 ---
 title: Rule element in the manifest file
 description: The Rule element specifies the activation rules that should be evaluated for this contextual mail add-in.
-ms.date: 01/16/2024
+ms.date: 07/18/2024
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +28,7 @@ The type of rule can be one of the following:
 
 - [ItemIs](#itemis-rule)
 - [ItemHasAttachment](#itemhasattachment-rule)
-- [ItemHasKnownEntity](#itemhasknownentity-rule)
+- [ItemHasKnownEntity](#itemhasknownentity-rule-deprecated) (deprecated)
 - [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch-rule)
 - [RuleCollection](#rulecollection)
 
@@ -61,7 +61,10 @@ Defines a rule that evaluates to true if the item contains an attachment.
 <Rule xsi:type="ItemHasAttachment" />
 ```
 
-## ItemHasKnownEntity rule
+## ItemHasKnownEntity rule (deprecated)
+
+> [!WARNING]
+> The **\<ItemHasKnownEntity\>** element is now deprecated. Specify regular expression rules using the [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch-rule) element instead.
 
 Defines a rule that evaluates to true if the item contains text of the specified entity type in its subject or body.
 
@@ -114,15 +117,17 @@ Defines a collection of rules and the logical operator to use when evaluating th
 ### Example
 
 ```XML
-<Rule xsi:type="RuleCollection" Mode="And">
-  <Rule xsi:type="ItemIs" ItemType="Message" />
-  <Rule xsi:type="ItemHasKnownEntity" EntityType="MeetingSuggestion" />
-  <Rule xsi:type="ItemHasKnownEntity" EntityType="Address" Highlight="none" />
-</Rule>
+<ExtensionPoint xsi:type="DetectedEntity">
+  <Label resid="Context.Label"/>
+  <SourceLocation resid="DetectedEntity.URL" />
+  <Rule xsi:type="RuleCollection" Mode="And">
+    <Rule xsi:type="ItemIs" ItemType="Message"/>
+    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="videoURL" RegExValue="http://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}" PropertyName="BodyAsPlaintext"/>
+  </Rule>
+</ExtensionPoint>
 ```
 
 ## See also
 
 - [Activation rules for Outlook add-ins](/office/dev/add-ins/outlook/activation-rules)
-- [Match strings in an Outlook item as well-known entities](/office/dev/add-ins/outlook/match-strings-in-an-item-as-well-known-entities)
-- [Use regular expression activation rules to show an Outlook add-in](/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)
+- [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins)
