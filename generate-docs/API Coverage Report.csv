@@ -8539,14 +8539,14 @@ Office.AppointmentRead,"displayReplyFormAsync(formData, options, callback)",Meth
 Office.AppointmentRead,"displayReplyFormAsync(formData, callback)",Method,Fine,false
 Office.AppointmentRead,"getAttachmentContentAsync(attachmentId, options, callback)",Method,Poor,true
 Office.AppointmentRead,"getAttachmentContentAsync(attachmentId, callback)",Method,Poor,false
-Office.AppointmentRead,"getEntities()",Method,Poor,true
-Office.AppointmentRead,"getEntitiesByType(entityType)",Method,Fine,true
-Office.AppointmentRead,"getFilteredEntitiesByName(name)",Method,Fine,true
+Office.AppointmentRead,"getEntities()",Method,Deprecated,false
+Office.AppointmentRead,"getEntitiesByType(entityType)",Method,Deprecated,false
+Office.AppointmentRead,"getFilteredEntitiesByName(name)",Method,Deprecated,false
 Office.AppointmentRead,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.AppointmentRead,"getInitializationContextAsync(callback)",Method,Poor,false
 Office.AppointmentRead,"getRegExMatches()",Method,Good,true
 Office.AppointmentRead,"getRegExMatchesByName(name)",Method,Fine,true
-Office.AppointmentRead,"getSelectedEntities()",Method,Poor,true
+Office.AppointmentRead,"getSelectedEntities()",Method,Deprecated,false
 Office.AppointmentRead,"getSelectedRegExMatches()",Method,Good,true
 Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
 Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
@@ -8607,13 +8607,13 @@ Office.CategoryDetails,"color",Property,Poor,false
 Office.CategoryDetails,"displayName",Property,Good,false
 Office.CoercionTypeOptions,N/A,Class,Fine,false
 Office.CoercionTypeOptions,"coercionType",Property,Poor,false
-Office.Contact,N/A,Class,Good,true
-Office.Contact,"addresses",Property,Good,false
-Office.Contact,"businessName",Property,Good,false
-Office.Contact,"emailAddresses",Property,Good,false
-Office.Contact,"personName",Property,Good,false
-Office.Contact,"phoneNumbers",Property,Good,false
-Office.Contact,"urls",Property,Good,false
+Office.Contact,N/A,Class,Deprecated,true
+Office.Contact,"addresses",Property,Deprecated,false
+Office.Contact,"businessName",Property,Deprecated,false
+Office.Contact,"emailAddresses",Property,Deprecated,false
+Office.Contact,"personName",Property,Deprecated,false
+Office.Contact,"phoneNumbers",Property,Deprecated,false
+Office.Contact,"urls",Property,Deprecated,false
 Office.CustomProperties,N/A,Class,Good,false
 Office.CustomProperties,"get(name)",Method,Fine,true
 Office.CustomProperties,"getAll()",Method,Fine,true
@@ -8644,7 +8644,7 @@ Office.EmailAddressDetails,"appointmentResponse",Property,Good,true
 Office.EmailAddressDetails,"displayName",Property,Fine,true
 Office.EmailAddressDetails,"emailAddress",Property,Poor,true
 Office.EmailAddressDetails,"recipientType",Property,Good,true
-Office.EmailUser,N/A,Class,Good,true
+Office.EmailUser,N/A,Class,Good,false
 Office.EmailUser,"displayName",Property,Fine,false
 Office.EmailUser,"emailAddress",Property,Poor,false
 Office.EnhancedLocation,N/A,Class,Good,false
@@ -8657,14 +8657,14 @@ Office.EnhancedLocation,"removeAsync(locationIdentifiers, callback)",Method,Poor
 Office.EnhancedLocationsChangedEventArgs,N/A,Class,Good,false
 Office.EnhancedLocationsChangedEventArgs,"enhancedLocations",Property,Good,false
 Office.EnhancedLocationsChangedEventArgs,"type",Property,Good,false
-Office.Entities,N/A,Class,Good,false
-Office.Entities,"addresses",Property,Fine,true
-Office.Entities,"contacts",Property,Fine,true
-Office.Entities,"emailAddresses",Property,Fine,true
-Office.Entities,"meetingSuggestions",Property,Fine,true
-Office.Entities,"phoneNumbers",Property,Fine,true
-Office.Entities,"taskSuggestions",Property,Fine,true
-Office.Entities,"urls",Property,Fine,true
+Office.Entities,N/A,Class,Deprecated,false
+Office.Entities,"addresses",Property,Deprecated,true
+Office.Entities,"contacts",Property,Deprecated,true
+Office.Entities,"emailAddresses",Property,Deprecated,true
+Office.Entities,"meetingSuggestions",Property,Deprecated,true
+Office.Entities,"phoneNumbers",Property,Deprecated,true
+Office.Entities,"taskSuggestions",Property,Deprecated,true
+Office.Entities,"urls",Property,Deprecated,true
 Office.From,N/A,Class,Good,false
 Office.From,"getAsync(options, callback)",Method,Poor,true
 Office.From,"getAsync(callback)",Method,Poor,false
@@ -8811,7 +8811,7 @@ Office.MailboxEnums.DelegatePermissions,"DeleteOwn",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"DeleteAll",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"EditOwn",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"EditAll",EnumField,Fine,false
-Office.MailboxEnums.EntityType,N/A,Enum,Good,true
+Office.MailboxEnums.EntityType,N/A,Enum,Deprecated,false
 Office.MailboxEnums.EntityType,"MeetingSuggestion",EnumField,Fine,false
 Office.MailboxEnums.EntityType,"TaskSuggestion",EnumField,Fine,false
 Office.MailboxEnums.EntityType,"Address",EnumField,Fine,false
@@ -9038,13 +9038,13 @@ Office.MasterCategories,"getAsync(options, callback)",Method,Poor,false
 Office.MasterCategories,"getAsync(callback)",Method,Poor,true
 Office.MasterCategories,"removeAsync(categories, options, callback)",Method,Poor,true
 Office.MasterCategories,"removeAsync(categories, callback)",Method,Poor,false
-Office.MeetingSuggestion,N/A,Class,Good,true
-Office.MeetingSuggestion,"attendees",Property,Fine,false
-Office.MeetingSuggestion,"end",Property,Fine,false
-Office.MeetingSuggestion,"location",Property,Fine,false
-Office.MeetingSuggestion,"meetingString",Property,Fine,false
-Office.MeetingSuggestion,"start",Property,Fine,false
-Office.MeetingSuggestion,"subject",Property,Fine,false
+Office.MeetingSuggestion,N/A,Class,Deprecated,true
+Office.MeetingSuggestion,"attendees",Property,Deprecated,false
+Office.MeetingSuggestion,"end",Property,Deprecated,false
+Office.MeetingSuggestion,"location",Property,Deprecated,false
+Office.MeetingSuggestion,"meetingString",Property,Deprecated,false
+Office.MeetingSuggestion,"start",Property,Deprecated,false
+Office.MeetingSuggestion,"subject",Property,Deprecated,false
 Office.Message,N/A,Class,Good,false
 Office.MessageCompose,N/A,Class,Good,false
 Office.MessageCompose,"bcc",Property,Good,true
@@ -9143,14 +9143,14 @@ Office.MessageRead,"getAsFileAsync(options, callback)",Method,Poor,false
 Office.MessageRead,"getAsFileAsync(callback)",Method,Poor,true
 Office.MessageRead,"getAttachmentContentAsync(attachmentId, options, callback)",Method,Poor,true
 Office.MessageRead,"getAttachmentContentAsync(attachmentId, callback)",Method,Poor,false
-Office.MessageRead,"getEntities()",Method,Poor,true
-Office.MessageRead,"getEntitiesByType(entityType)",Method,Fine,true
-Office.MessageRead,"getFilteredEntitiesByName(name)",Method,Fine,true
+Office.MessageRead,"getEntities()",Method,Deprecated,false
+Office.MessageRead,"getEntitiesByType(entityType)",Method,Deprecated,false
+Office.MessageRead,"getFilteredEntitiesByName(name)",Method,Deprecated,false
 Office.MessageRead,"getInitializationContextAsync(options, callback)",Method,Poor,true
 Office.MessageRead,"getInitializationContextAsync(callback)",Method,Poor,false
 Office.MessageRead,"getRegExMatches()",Method,Good,true
 Office.MessageRead,"getRegExMatchesByName(name)",Method,Fine,true
-Office.MessageRead,"getSelectedEntities()",Method,Poor,true
+Office.MessageRead,"getSelectedEntities()",Method,Deprecated,false
 Office.MessageRead,"getSelectedRegExMatches()",Method,Good,true
 Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
 Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
@@ -9184,10 +9184,10 @@ Office.OfficeThemeChangedEventArgs,"type",Property,Good,false
 Office.Organizer,N/A,Class,Good,false
 Office.Organizer,"getAsync(options, callback)",Method,Poor,true
 Office.Organizer,"getAsync(callback)",Method,Poor,false
-Office.PhoneNumber,N/A,Class,Good,true
-Office.PhoneNumber,"originalPhoneString",Property,Fine,false
-Office.PhoneNumber,"phoneString",Property,Good,false
-Office.PhoneNumber,"type",Property,Fine,false
+Office.PhoneNumber,N/A,Class,Deprecated,true
+Office.PhoneNumber,"originalPhoneString",Property,Deprecated,false
+Office.PhoneNumber,"phoneString",Property,Deprecated,false
+Office.PhoneNumber,"type",Property,Deprecated,false
 Office.Recipients,N/A,Class,Good,false
 Office.Recipients,"addAsync(recipients, options, callback)",Method,Fine,true
 Office.Recipients,"addAsync(recipients, callback)",Method,Fine,false
@@ -9325,9 +9325,9 @@ Office.Subject,"getAsync(options, callback)",Method,Poor,false
 Office.Subject,"getAsync(callback)",Method,Poor,true
 Office.Subject,"setAsync(subject, options, callback)",Method,Fine,true
 Office.Subject,"setAsync(subject, callback)",Method,Fine,false
-Office.TaskSuggestion,N/A,Class,Good,true
-Office.TaskSuggestion,"assignees",Property,Fine,false
-Office.TaskSuggestion,"taskString",Property,Fine,false
+Office.TaskSuggestion,N/A,Class,Deprecated,true
+Office.TaskSuggestion,"assignees",Property,Deprecated,false
+Office.TaskSuggestion,"taskString",Property,Deprecated,false
 Office.Time,N/A,Class,Good,false
 Office.Time,"getAsync(options, callback)",Method,Poor,false
 Office.Time,"getAsync(callback)",Method,Poor,true
