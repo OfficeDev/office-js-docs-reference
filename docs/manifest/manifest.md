@@ -4,13 +4,13 @@ description: The elements of an Office Add-ins XML manifest.
 author: o365devx
 ms.author: o365devx
 ms.localizationpriority: medium
-ms.date: 02/07/2023
+ms.date: 07/18/2024
 ms.topic: overview
 ---
 
 # Office Add-ins manifest reference
 
-This section contains information about every element used by an Office Add-in's XML manifest. To learn more about how the manifest describes your add-in to an Office application, visit [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests).
+This section contains information about every element used by an Office Add-in's XML manifest. To learn more about how the manifest describes your add-in to an Office application, see [Office Add-ins XML manifest](/office/dev/add-ins/develop/xml-manifest-overview).
 
 ## Elements
 

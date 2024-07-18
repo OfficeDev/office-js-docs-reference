@@ -3169,7 +3169,7 @@ export declare namespace Office {
          */
         getShortcuts(): Promise<{[actionId: string]: string|null}>;
         /**
-         * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the Office application.
+         * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the Office application. For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}.
          *
          * @remarks
          *
