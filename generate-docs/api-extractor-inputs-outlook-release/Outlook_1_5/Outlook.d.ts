@@ -43,31 +43,16 @@ export declare namespace Office {
         /**
          * Specifies an entity's type.
          *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
+         *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
-         * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this feature will start in May and continue
-         * until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * The following APIs will also be retired.
-         *
-         * - `Office.context.mailbox.item.getEntities`
-         * - `Office.context.mailbox.item.getEntitiesByType`
-         * - `Office.context.mailbox.item.getFilteredEntitiesByName`
-         * - `Office.context.mailbox.item.getSelectedEntities`
-         *
-         * To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins are retired.
-         *
-         * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-         * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-         * **Join Meeting** button.
-         *
-         * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         *
-         * For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
          */
         enum EntityType {
             /**
@@ -1388,29 +1373,30 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getEntities` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          *
          * @returns
          * If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns null.
@@ -1424,69 +1410,18 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getEntitiesByType` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param entityType - One of the `EntityType` enumeration values.
-         *
-         * While the minimum permission level to use this method is **restricted**, some entity types require **read item** to access, as specified in the following table.
-         *
-         * <table>
-         *   <tr>
-         *     <th>Value of entityType</th>
-         *     <th>Type of objects in returned array</th>
-         *     <th>Required permission level</th>
-         *   </tr>
-         *   <tr>
-         *     <td>Address</td>
-         *     <td>String</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         *   <tr>
-         *     <td>Contact</td>
-         *     <td>Contact</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>EmailAddress</td>
-         *     <td>String</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>MeetingSuggestion</td>
-         *     <td>MeetingSuggestion</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>PhoneNumber</td>
-         *     <td>PhoneNumber</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         *   <tr>
-         *     <td>TaskSuggestion</td>
-         *     <td>TaskSuggestion</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>URL</td>
-         *     <td>String</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         * </table>
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          *
          * @returns
          * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
@@ -1501,22 +1436,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getFilteredEntitiesByName` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
@@ -1527,8 +1446,8 @@ export declare namespace Office {
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-         * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule
-         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
+         * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule.
+         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
          * of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
          *
          * @remarks
@@ -1540,12 +1459,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. Regular expression rules will continue to be supported after entity-based contextual add-ins are retired.
-         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
+         * - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
@@ -1574,12 +1491,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. Regular expression rules will continue to be supported after entity-based contextual add-ins are retired.
-         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
+         * - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
@@ -2028,6 +1943,13 @@ export declare namespace Office {
      * The list of contacts extracted from the body of an email message or appointment is returned in the `contacts` property of the
      * {@link Office.Entities | Entities} object returned by the `getEntities` or `getEntitiesByType` method of the current item.
      *
+     * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+     * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+     * For guidance on how to implement these rules, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+     *
+     * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
+     *
      * @remarks
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
@@ -2051,7 +1973,7 @@ export declare namespace Office {
      *
      * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
      * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
      *
      * For more information, see
      * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
@@ -2059,26 +1981,68 @@ export declare namespace Office {
     export interface Contact {
         /**
          * An array of strings containing the mailing and street addresses associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         addresses: string[];
         /**
          * A string containing the name of the business associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         businessName: string;
         /**
          * An array of strings containing the SMTP email addresses associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         emailAddresses: string[];
         /**
          * A string containing the name of the person associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         personName: string;
         /**
          * An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         phoneNumbers: PhoneNumber[];
         /**
          * An array of strings containing the Internet URLs associated with the contact. Nullable.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         urls: string[];
     }
@@ -2371,61 +2335,95 @@ export declare namespace Office {
      * When the property arrays are returned by the `getEntitiesByType` method, only the property for the specified entity contains data;
      * all other properties are null.
      *
+     * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+     * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+     * For guidance on how to implement these rules, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+     *
+     * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
+     *
      * @remarks
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this feature will start in May and continue
-     * until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-     * The following APIs will also be retired.
-     *
-     * - `Office.context.mailbox.item.getEntities`
-     * - `Office.context.mailbox.item.getEntitiesByType`
-     * - `Office.context.mailbox.item.getFilteredEntitiesByName`
-     * - `Office.context.mailbox.item.getSelectedEntities`
-     *
-     * To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface Entities {
         /**
          * Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         addresses: string[];
         /**
          * Gets the contacts found in an email address or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         contacts: Contact[];
         /**
          * Gets the email addresses found in an email message or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         emailAddresses: string[];
         /**
          * Gets the meeting suggestions found in an email message.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         meetingSuggestions: MeetingSuggestion[];
         /**
          * Gets the phone numbers found in an email message or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         phoneNumbers: PhoneNumber[];
         /**
          * Gets the task suggestions found in an email message or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         taskSuggestions: string[];
         /**
          * Gets the Internet URLs present in an email message or appointment.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         urls: string[];
     }
@@ -3250,63 +3248,90 @@ export declare namespace Office {
     /**
      * Represents a suggested meeting found in an item. Read mode only.
      *
-     * The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the `Entities` object that is returned when
+     * The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the `Entities` object that's returned when
      * the `getEntities` or `getEntitiesByType` method is called on the active item.
      *
      * The start and end values are string representations of a `Date` object that contains the date and time at which the suggested meeting is to
      * begin and end. The values are in the default time zone specified for the current user.
+     *
+     * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+     * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+     * For guidance on how to implement these rules, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+     *
+     * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
      *
      * @remarks
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this feature will start in May and continue
-     * until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-     * The following APIs will also be retired.
-     *
-     * - `Office.context.mailbox.item.getEntities`
-     * - `Office.context.mailbox.item.getEntitiesByType`
-     * - `Office.context.mailbox.item.getFilteredEntitiesByName`
-     * - `Office.context.mailbox.item.getSelectedEntities`
-     *
-     * To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface MeetingSuggestion {
         /**
          * Gets the attendees for a suggested meeting.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         attendees: EmailUser[];
         /**
          * Gets the date and time that a suggested meeting is to end.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         end: string;
         /**
          * Gets the location of a suggested meeting.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         location: string;
         /**
          * Gets a string that was identified as a meeting suggestion.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         meetingString: string;
         /**
          * Gets the date and time that a suggested meeting is to begin.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         start: string;
         /**
          * Gets the subject of a suggested meeting.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         subject: string;
     }
@@ -3972,11 +3997,11 @@ export declare namespace Office {
          * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - Windows: 500 recipients
+         * - classic Windows: 500 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser: 20 recipients
+         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -4243,11 +4268,11 @@ export declare namespace Office {
          * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - Windows: 500 recipients
+         * - classic Windows: 500 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser: 20 recipients
+         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -4326,29 +4351,30 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getEntities` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          *
          * @returns
          * If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns `null`.
@@ -4362,70 +4388,18 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getEntitiesByType` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param entityType - One of the `EntityType` enumeration values.
-         *
-         * While the minimum permission level to use this method is **restricted**, some entity types require **read item** to access, as specified in the
-         * following table.
-         *
-         * <table>
-         *   <tr>
-         *     <th>Value of entityType</th>
-         *     <th>Type of objects in returned array</th>
-         *     <th>Required permission level</th>
-         *   </tr>
-         *   <tr>
-         *     <td>Address</td>
-         *     <td>String</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         *   <tr>
-         *     <td>Contact</td>
-         *     <td>Contact</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>EmailAddress</td>
-         *     <td>String</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>MeetingSuggestion</td>
-         *     <td>MeetingSuggestion</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>PhoneNumber</td>
-         *     <td>PhoneNumber</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         *   <tr>
-         *     <td>TaskSuggestion</td>
-         *     <td>TaskSuggestion</td>
-         *     <td>ReadItem</td>
-         *   </tr>
-         *   <tr>
-         *     <td>URL</td>
-         *     <td>String</td>
-         *     <td>Restricted</td>
-         *   </tr>
-         * </table>
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          *
          * @returns
          * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
@@ -4440,22 +4414,6 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Important**:
-         *
-         * - Entity-based contextual Outlook add-ins, including the `getFilteredEntitiesByName` method, will be retired in Q2 of 2024. The work to retire this method will
-         * start in May and continue until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-         * Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-         * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual Outlook add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
-         *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
-         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
-         *
-         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
-         *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
@@ -4466,9 +4424,9 @@ export declare namespace Office {
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-         * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule
-         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
-         * of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
+         * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule.
+         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
+         * of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -4479,12 +4437,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. Regular expression rules will continue to be supported after entity-based contextual add-ins are retired.
-         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
+         * - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
@@ -4513,12 +4469,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no longer be able to detect
-         * entities in mail items to perform tasks on them. Regular expression rules will continue to be supported after entity-based contextual add-ins are retired.
-         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-         * To learn more about the retirement of entity-based contextual add-ins, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
+         * - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
          * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
@@ -4797,48 +4751,54 @@ export declare namespace Office {
      * Represents a phone number identified in an item. Read mode only.
      *
      * An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the
-     * `Entities` object that is returned when you call the `getEntities` method on the selected item.
+     * `Entities` object that's returned when you call the `getEntities` method on the selected item.
+     *
+     * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+     * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+     * For guidance on how to implement these rules, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+     *
+     * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
      *
      * @remarks
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
-     *
-     * **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this feature will start in May and continue
-     * until the end of June. After June, contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them.
-     * The following APIs will also be retired.
-     *
-     * - `Office.context.mailbox.item.getEntities`
-     * - `Office.context.mailbox.item.getEntitiesByType`
-     * - `Office.context.mailbox.item.getFilteredEntitiesByName`
-     * - `Office.context.mailbox.item.getSelectedEntities`
-     *
-     * To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins are retired.
-     *
-     * - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is being developed. Once support for
-     * entity-based contextual add-ins ends, online meeting add-ins will automatically transition to the alternative implementation to activate the
-     * **Join Meeting** button.
-     *
-     * - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in
-     * to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in | Use regular expression activation rules to show an Outlook add-in}.
-     *
-     * For more information, see
-     * {@link https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins | Retirement of entity-based contextual Outlook add-ins}.
      */
     export interface PhoneNumber {
         /**
          * Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes characters
          * like parentheses and hyphens, if they exist in the original item.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         phoneString: string;
         /**
          * Gets the text that was identified in an item as a phone number.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         originalPhoneString: string;
         /**
          * Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         type: string;
     }
@@ -5355,7 +5315,14 @@ export declare namespace Office {
      * Represents a suggested task identified in an item. Read mode only.
      *
      * The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the {@link Office.Entities | Entities} object
-     * that is returned when the `getEntities` or `getEntitiesByType` method is called on the active item.
+     * that's returned when the `getEntities` or `getEntitiesByType` method is called on the active item.
+     *
+     * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+     * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+     * For guidance on how to implement these rules, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+     *
+     * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
      *
      * @remarks
      *
@@ -5366,10 +5333,24 @@ export declare namespace Office {
     export interface TaskSuggestion {
         /**
          * Gets the users that should be assigned a suggested task.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         assignees: EmailUser[];
         /**
          * Gets the text of an item that was identified as a task suggestion.
+         *
+         * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+         * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+         * For guidance on how to implement these rules, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
+         *
+         * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         taskString: string;
     }
