@@ -31,7 +31,7 @@ For information about Common API requirement sets, see [Office Common API requir
 
 ## KeyboardShortcuts 1.1
 
-For details about the APIs in this requirement set, see [Office.actions](/javascript/api/office/office.actions).
+To learn about the keyboard shortcuts feature, see [Add custom keyboard shortcuts to your Office Add-ins](/office/dev/add-ins/design/keyboard-shortcuts). For details about the APIs in this requirement set, see [Office.actions](/javascript/api/office/office.actions).
 
 ## See also
 
