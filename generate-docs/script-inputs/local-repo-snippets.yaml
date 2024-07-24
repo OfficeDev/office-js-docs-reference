@@ -7875,7 +7875,7 @@ Office.EmailAddressDetails#recipientType:member:
     });
 Office.EmailUser:interface:
   - |-
-    // Adds recipients to the To field of an email.
+    // Add recipients to the To field of an email.
     const recipients = [
         {
             "displayName": "Allie Bellew",
