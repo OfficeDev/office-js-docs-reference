@@ -8644,7 +8644,7 @@ Office.EmailAddressDetails,"appointmentResponse",Property,Good,true
 Office.EmailAddressDetails,"displayName",Property,Fine,true
 Office.EmailAddressDetails,"emailAddress",Property,Poor,true
 Office.EmailAddressDetails,"recipientType",Property,Good,true
-Office.EmailUser,N/A,Class,Good,false
+Office.EmailUser,N/A,Class,Good,true
 Office.EmailUser,"displayName",Property,Fine,false
 Office.EmailUser,"emailAddress",Property,Poor,false
 Office.EnhancedLocation,N/A,Class,Good,false

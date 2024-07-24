@@ -20,6 +20,37 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adds recipients to the To field of an email.
+
+  const recipients = [
+      {
+          "displayName": "Allie Bellew",
+          "emailAddress": "allieb@contoso.com"
+      },
+      {
+          "displayName": "Alex Darrow",
+          "emailAddress": "alexd@contoso.com"
+      }
+  ];
+
+
+  Office.context.mailbox.item.to.addAsync(recipients, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(result.error.message);
+          return;
+      }
+
+      console.log("Recipients added to the To field.");
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
