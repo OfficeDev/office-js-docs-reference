@@ -3778,6 +3778,14 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.Ribbon#requestCreateControls:member(1):
+  - |-
+    // Registers a custom contextual tab with Office.
+    Office.onReady(async () => {
+        const contextualTabJSON = ` ... `; // Assign the JSON string.
+        const contextualTab = JSON.parse(contextualTabJSON);
+        await Office.ribbon.requestCreateControls(contextualTab);
+    });
 Office.Ribbon#requestUpdate:member(1):
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
