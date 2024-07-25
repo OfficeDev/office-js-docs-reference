@@ -25,6 +25,22 @@ methods:
       application and may not be complete when the returned `Promise` object is resolved. For more information and code
       examples, see [Create custom contextual
       tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Registers a custom contextual tab with Office.
+
+      Office.onReady(async () => {
+          const contextualTabJSON = ` ... `; // Assign the JSON string.
+          const contextualTab = JSON.parse(contextualTabJSON);
+          await Office.ribbon.requestCreateControls(contextualTab);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

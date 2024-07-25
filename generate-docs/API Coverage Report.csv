@@ -7526,7 +7526,7 @@ Office.RequirementSetSupport,N/A,Class,Fine,false
 Office.RequirementSetSupport,"isSetSupported(name, minVersion)",Method,Poor,false
 Office.RequirementSetSupport,"isSetSupported(name, minVersionNumber)",Method,Deprecated,false
 Office.Ribbon,N/A,Class,Good,false
-Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Poor,false
+Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Poor,true
 Office.Ribbon,"requestUpdate(input)",Method,Poor,true
 Office.RibbonUpdaterData,N/A,Class,Good,false
 Office.RibbonUpdaterData,"tabs",Property,Fine,true
