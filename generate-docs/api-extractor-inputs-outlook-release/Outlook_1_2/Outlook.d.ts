@@ -2005,10 +2005,6 @@ export declare namespace Office {
     /**
      * Represents an email account on an Exchange Server.
      *
-     * `EmailUser` objects are primarily received in {@link Office.MeetingSuggestion | MeetingSuggestion} and
-     * {@link Office.TaskSuggestion | TaskSuggestion} entities extracted from an Outlook item. To learn more about this scenario, refer to
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item | Extract entity strings from an Outlook item}.
-     *
      * @remarks
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
