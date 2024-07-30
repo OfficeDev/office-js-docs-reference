@@ -3,14 +3,7 @@ name: Office.EmailUser
 uid: 'outlook!Office.EmailUser:interface'
 package: outlook!
 fullName: Office.EmailUser
-summary: >-
-  Represents an email account on an Exchange Server.
-
-
-  `EmailUser` objects are primarily received in [MeetingSuggestion](xref:outlook!Office.MeetingSuggestion:interface) and
-  [TaskSuggestion](xref:outlook!Office.TaskSuggestion:interface) entities extracted from an Outlook item. To learn more
-  about this scenario, refer to [Extract entity strings from an Outlook
-  item](https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item)<!-- -->.
+summary: Represents an email account on an Exchange Server.
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
