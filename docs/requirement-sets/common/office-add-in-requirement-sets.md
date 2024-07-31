@@ -140,7 +140,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>Outlook on the web</li><li>[new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
+| <ul><li>Outlook on the web</li><li>[new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>classic Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
 
 ---
 
