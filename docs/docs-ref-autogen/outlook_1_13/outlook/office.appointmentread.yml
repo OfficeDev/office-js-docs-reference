@@ -1433,8 +1433,9 @@ methods:
       and all attendees of the selected appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
@@ -1511,8 +1512,9 @@ methods:
       and all attendees of the selected appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
@@ -1581,8 +1583,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
@@ -1653,8 +1656,9 @@ methods:
       appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
@@ -1752,8 +1756,9 @@ methods:
       appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
@@ -1809,9 +1814,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
-      that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier
-      is valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1901,9 +1907,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
-      that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier
-      is valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

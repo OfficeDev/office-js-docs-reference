@@ -42,7 +42,8 @@ methods:
       user is not signed into Office").
 
 
-      - In Outlook on the web, if you use the
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if you use the
       [displayDialogAsync](https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
       method to open a dialog, you must close the dialog before you can call `getAccessToken`<!-- -->.
 

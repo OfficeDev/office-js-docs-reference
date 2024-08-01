@@ -40,12 +40,13 @@ methods:
 
 
       **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
-      on the web, on Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and
+      classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
-      field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
-      mindful of the recipient limit of the field.
+      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
+      recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync`
+      repeatedly, but be mindful of the recipient limit of the field.
 
 
       - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
@@ -142,12 +143,13 @@ methods:
 
 
       **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
-      on the web, on Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and
+      classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
-      field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
-      mindful of the recipient limit of the field.
+      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
+      recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync`
+      repeatedly, but be mindful of the recipient limit of the field.
 
 
       - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
@@ -212,7 +214,8 @@ methods:
       The maximum number of recipients returned by this method varies per Outlook client.
 
 
-      - Windows, web browser, Mac (classic UI): 500 recipients
+      - Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), web
+      browser, Mac (classic UI): 500 recipients
 
 
       - Android, iOS: 100 recipients
@@ -242,9 +245,9 @@ methods:
       suggested contact or email address from the auto-complete list.
 
 
-      In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link
-      from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address
-      in the `displayName` property of the associated
+      In Outlook on the web and on Windows (new and classic), if a user creates a new message by activating a contact's
+      email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
+      contact's email address in the `displayName` property of the associated
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
       name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
     isPreview: false
@@ -295,7 +298,8 @@ methods:
       The maximum number of recipients returned by this method varies per Outlook client.
 
 
-      - Windows, web browser, Mac (classic UI): 500 recipients
+      - Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), web
+      browser, Mac (classic UI): 500 recipients
 
 
       - Android, iOS: 100 recipients
@@ -325,9 +329,9 @@ methods:
       suggested contact or email address from the auto-complete list.
 
 
-      In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link
-      from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address
-      in the `displayName` property of the associated
+      In Outlook on the web and on Windows (new and classic), if a user creates a new message by activating a contact's
+      email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
+      contact's email address in the `displayName` property of the associated
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
       name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
@@ -469,12 +473,13 @@ methods:
 
 
       **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
-      Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac
+      (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
-      field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
-      recipient limit of the field.
+      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
+      recipients in a target field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but
+      be mindful of the recipient limit of the field.
 
 
       - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the
@@ -542,12 +547,13 @@ methods:
 
 
       **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
-      Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac
+      (classic UI), on Android, and on iOS. However, take note of the following:
 
 
-      - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
-      field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
-      recipient limit of the field.
+      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
+      recipients in a target field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but
+      be mindful of the recipient limit of the field.
 
 
       - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the

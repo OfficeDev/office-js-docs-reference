@@ -21,8 +21,8 @@ remarks: >-
   - Word on the web
 
 
-  It's also supported in [new Outlook on Windows
-  (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+  It's also supported in [new Outlook on
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
 
   **Requirement set**: [DevicePermission
@@ -114,7 +114,7 @@ fields:
 
 
       **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on
-      Windows (preview).
+      Windows.
   - name: microphone
     uid: 'office!Office.DevicePermissionType.microphone:member'
     package: office!

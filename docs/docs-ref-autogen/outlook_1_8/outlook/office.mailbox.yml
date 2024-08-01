@@ -43,9 +43,10 @@ properties:
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
-      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on desktop or on mobile clients, the
-      `hostVersion` property returns the version of the application, Outlook. In Outlook on the web, the property
-      returns the version of the Exchange Server.
+      Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile
+      devices, the `hostVersion` property returns the version of the Outlook client. In Outlook on the web and [new
+      Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      property returns the version of the Exchange Server.
 
 
       - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of
@@ -632,16 +633,18 @@ methods:
       Gets a dictionary containing time information in local client time.
 
 
-      The dates and times used by a mail app for Outlook on the web or on desktop clients can use different time zones.
-      Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center
-      (EAC). You should handle date and time values so that the values you display on the user interface are always
-      consistent with the time zone that the user expects.
+      The time zone used by the Outlook client varies by platform. Outlook on Windows (classic) and on Mac use the
+      client computer time zone. Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) use the time zone set on the
+      Exchange Admin Center (EAC). You should handle date and time values so that the values you display on the user
+      interface are always consistent with the time zone that the user expects.
 
 
-      If the mail app is running in Outlook on desktop clients, the `convertToLocalClientTime` method will return a
-      dictionary object with the values set to the client computer time zone. If the mail app is running in Outlook on
-      the web, the `convertToLocalClientTime` method will return a dictionary object with the values set to the time
-      zone specified in the EAC.
+      In Outlook on Windows (classic) and on Mac, the `convertToLocalClientTime` method returns a dictionary object with
+      the values set to the client computer time zone. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `convertToLocalClientTime` method returns a dictionary object with the values set to the time zone specified in
+      the EAC.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -838,8 +841,9 @@ methods:
       can't access the properties (including the item ID) of instances of a recurring series.
 
 
-      In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to
-      32K characters.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, this method opens the
+      specified form only if the body of the form is less than or equal to 32K characters.
 
 
       If the specified item identifier does not identify an existing appointment, a blank pane opens on the client
@@ -899,8 +903,9 @@ methods:
       The `displayMessageForm` method opens an existing message in a new window on the desktop.
 
 
-      In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to
-      32K characters.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, this method opens the
+      specified form only if the body of the form is less than or equal to 32K characters.
 
 
       If the specified item identifier doesn't identify an existing message, no message will be displayed on the client
@@ -970,9 +975,11 @@ methods:
       parameters.
 
 
-      In Outlook on the web, this method always displays a form with an attendees field. If you don't specify any
-      attendees as input arguments, the method displays a form with a **Save** button. If you have specified
-      attendees, the form would include the attendees and a **Send** button.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, this method always
+      displays a form with an attendees field. If you don't specify any attendees as input arguments, the method
+      displays a form with a **Save** button. If you have specified attendees, the form would include the attendees
+      and a **Send** button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
@@ -1609,8 +1616,9 @@ methods:
       - When you use the `makeEwsRequestAsync` method in add-ins that run in Outlook versions earlier than Version
       15.0.4535.1004, you must set the encoding value to ISO-8859-1 (`<?xml version="1.0" encoding="iso-8859-1"?>`<!--
       -->). To determine the version of an Outlook client, use the `mailbox.diagnostics.hostVersion` property. You don't
-      need to set the encoding value when your add-in is running in Outlook on the web. To determine the Outlook client
-      in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
+      need to set the encoding value when your add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->. To determine the
+      Outlook client in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
 
 
       #### Examples
@@ -1741,9 +1749,11 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The XML response of the EWS
             request is provided as a string in the `asyncResult.value` property. In Outlook on the web, on Windows
-            (starting in Version 2303 (Build 16225.10000)), and on Mac (starting in Version 16.73 (23042601)), if the
-            response exceeds 5 MB in size, an error message is returned in the `asyncResult.error` property. In earlier
-            versions of the Outlook desktop client, an error message is returned if the response exceeds 1 MB in size.
+            ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic (starting in
+            Version 2303, Build 16225.10000)), and on Mac (starting in Version 16.73 (23042601)), if the response
+            exceeds 5 MB in size, an error message is returned in the `asyncResult.error` property. In earlier versions
+            of Outlook on Windows (classic) and on Mac, an error message is returned if the response exceeds 1 MB in
+            size.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.

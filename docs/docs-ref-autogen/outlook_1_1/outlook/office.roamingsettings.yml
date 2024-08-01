@@ -35,8 +35,9 @@ remarks: >-
   add-ins) is closed and reopened.
 
 
-  - When set and saved through Outlook on Windows or on Mac, these settings are reflected in Outlook on the web only
-  after a browser refresh.
+  - When set and saved through Outlook on Windows
+  ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) or classic) or on Mac, these
+  settings are reflected in Outlook on the web only after a browser refresh.
 
 
   **[Minimum permission

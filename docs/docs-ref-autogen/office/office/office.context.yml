@@ -444,7 +444,7 @@ properties:
 
 
       - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on
-      Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -602,7 +602,8 @@ properties:
     fullName: urls
     summary: Gets the object to retrieve the runtime URLs of an add-in.
     remarks: >-
-      **Applications**: Outlook on the web and on Windows (classic and new clients)
+      **Applications**: Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic clients)
 
 
       \[ [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
