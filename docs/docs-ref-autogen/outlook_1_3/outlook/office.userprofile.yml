@@ -91,8 +91,9 @@ properties:
       Gets the user's time zone in Windows format.
 
 
-      The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
-      preferences is returned instead.
+      The system time zone is usually returned. However, in Outlook on the web and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->), the default time
+      zone in the calendar preferences is returned instead.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--

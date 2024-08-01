@@ -18,8 +18,9 @@ remarks: >-
   Compose or Read
 
 
-  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode
-  only.
+  **Important**: In modern Outlook on the web and [new Outlook on
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+  `NotificationMessageAction` object is available in Compose mode only.
 
 
   #### Examples

@@ -8559,7 +8559,7 @@ Office.AppointmentTimeChangedEventArgs,"start",Property,Good,false
 Office.AppointmentTimeChangedEventArgs,"type",Property,Good,false
 Office.AttachmentContent,N/A,Class,Good,false
 Office.AttachmentContent,"content",Property,Fine,false
-Office.AttachmentContent,"format",Property,Good,true
+Office.AttachmentContent,"format",Property,Fine,true
 Office.AttachmentDetails,N/A,Class,Good,true
 Office.AttachmentDetails,"attachmentType",Property,Fine,false
 Office.AttachmentDetails,"contentType",Property,Deprecated,false

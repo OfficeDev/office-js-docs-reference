@@ -161,11 +161,13 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
@@ -282,11 +284,13 @@ methods:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to

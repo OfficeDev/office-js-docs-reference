@@ -162,10 +162,13 @@ properties:
     uid: 'outlook!Office.MessageCompose#categories:member'
     package: outlook!
     fullName: categories
-    summary: |-
+    summary: >-
       Gets an object that provides methods for managing the item's categories.
 
-      **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories on a message in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -684,9 +687,10 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
-      parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of
-      the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, in Outlook on Android and on iOS, the seriesId returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1427,8 +1431,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you are editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1526,8 +1532,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you are editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1598,9 +1606,10 @@ methods:
       -->**: Message Compose
 
 
-      **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using
-      `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
-      item was last saved.
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the item is an
+      appointment and it has previously been saved using `saveAsync`<!-- -->, the user is prompted to save, discard, or
+      cancel even if no changes have occurred since the item was last saved.
 
 
       **Tip**: Use the
@@ -1646,7 +1655,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1746,7 +1756,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2310,8 +2321,9 @@ methods:
       **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
-      the following conditions are met.
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
+      following conditions are met.
 
 
       a. **Delegate access/Shared folders**
@@ -2444,8 +2456,9 @@ methods:
       **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
-      the following conditions are met.
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
+      following conditions are met.
 
 
       a. **Delegate access/Shared folders**
@@ -2598,9 +2611,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2661,7 +2675,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: options
           description: >-
@@ -2687,9 +2701,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2724,7 +2739,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: callback
           description: >-
@@ -2846,8 +2861,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -2860,12 +2877,12 @@ methods:
       to the server. Until the item is synced, using the item ID will return an error.
 
 
-      - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a
-      message that will be sent from a shared mailbox account. If the sender creates a new message from their personal
-      mailbox and selects the shared mailbox account in the **From** field, `saveAsync` saves the draft to the
-      **Drafts** folder of the user's personal mailbox. If the sender opens the shared mailbox account in a separate
-      browser tab (through the **Open another mailbox** option, for example) and creates a new message there,
-      `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
+      `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
+      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
+      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
 
 
       **Errors**:
@@ -2915,8 +2932,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -2929,12 +2948,12 @@ methods:
       to the server. Until the item is synced, using the item ID will return an error.
 
 
-      - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a
-      message that will be sent from a shared mailbox account. If the sender creates a new message from their personal
-      mailbox and selects the shared mailbox account in the **From** field, `saveAsync` saves the draft to the
-      **Drafts** folder of the user's personal mailbox. If the sender opens the shared mailbox account in a separate
-      browser tab (through the **Open another mailbox** option, for example) and creates a new message there,
-      `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
+      `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
+      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
+      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
 
 
       **Errors**:
@@ -3060,12 +3079,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and on desktop clients. If the field is an HTML editor, only
-            the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject
-            doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on
-            desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType`
-            is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text,
-            then plain text is used.
+            current style is applied in Outlook on the web, on Windows
+            ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac.
+            If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If the data is
+            HTML and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web
+            and new Outlook on Windows. The default style is applied in Outlook on Windows (classic) and on Mac. If the
+            field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result
+            depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />

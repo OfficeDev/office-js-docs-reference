@@ -911,8 +911,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you're editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1010,8 +1012,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you're editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1082,9 +1086,10 @@ methods:
       -->**: Appointment Organizer
 
 
-      **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using
-      `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
-      item was last saved.
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the item is an
+      appointment and it has previously been saved using `saveAsync`<!-- -->, the user is prompted to save, discard, or
+      cancel even if no changes have occurred since the item was last saved.
 
 
       #### Examples
@@ -1339,9 +1344,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1402,7 +1408,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: options
           description: >-
@@ -1428,9 +1434,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1465,7 +1472,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: callback
           description: >-
@@ -1504,8 +1511,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -1599,8 +1608,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -1743,12 +1754,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and on Windows. If the field is an HTML editor, only the text
-            data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the
-            current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
-            clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not
-            set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then
-            plain text is used.
+            current style is applied in Outlook on the web, on Windows
+            ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac.
+            If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If the data is
+            HTML and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web
+            and new Outlook on Windows. The default style is applied in Outlook on Windows (classic) and on Mac. If the
+            field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result
+            depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />

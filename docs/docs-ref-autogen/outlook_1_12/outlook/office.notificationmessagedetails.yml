@@ -53,7 +53,9 @@ properties:
       unsupported type or including too many actions throws an error.
 
 
-      **Important**: In modern Outlook on the web, the `actions` property is available in Compose mode only.
+      **Important**: In modern Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the `actions`
+      property is available in Compose mode only.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
