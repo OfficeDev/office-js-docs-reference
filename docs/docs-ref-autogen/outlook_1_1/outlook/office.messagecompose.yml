@@ -667,8 +667,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you are editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -766,8 +768,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you are editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -897,9 +901,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -960,7 +965,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: options
           description: >-
@@ -986,9 +991,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1023,7 +1029,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: callback
           description: >-

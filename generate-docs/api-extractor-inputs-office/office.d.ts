@@ -512,7 +512,7 @@ export declare namespace Office {
      * - Word on the web
      *
      * It's also supported in
-     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets | DevicePermission 1.1}
      */
@@ -524,7 +524,7 @@ export declare namespace Office {
         /**
          * The add-in is requesting access to the user's geolocation.
          *
-         * **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on Windows (preview).
+         * **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on Windows.
          */
         geolocation,
         /**
@@ -903,7 +903,7 @@ export declare namespace Office {
          * The platform is Office on the web (in a browser).
          *
          * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
-         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
          */
         OfficeOnline,
         /**
@@ -3575,7 +3575,7 @@ export declare namespace Office {
          *
          * - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The user is not signed into Office").
          *
-         * - In Outlook on the web, if you use the
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, if you use the
          * {@link https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1) | displayDialogAsync}
          * method to open a dialog, you must close the dialog before you can call `getAccessToken`.
          *
@@ -4656,7 +4656,7 @@ export declare namespace Office {
          * property to get similar information.
          *
          * - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
-         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
          */
         platform: PlatformType;
         /**
@@ -4712,7 +4712,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Applications**: Outlook on the web and on Windows (classic and new clients)
+         * **Applications**: Outlook on the web and on Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic clients)
          *
          * [Api set: Mailbox 1.14]
          *
@@ -4722,8 +4722,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane. On these clients,
-         * the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
+         * - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane.
+         * On these clients, the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
          *
          * - In classic Outlook on Windows, this API is supported in add-ins that implement a task pane, event-based activation, or integrated spam reporting.
          */
@@ -4748,7 +4748,7 @@ export declare namespace Office {
          *
          * @remarks
          * **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in
-         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
          */
         platform: Office.PlatformType;
         /**
@@ -5313,7 +5313,7 @@ export declare namespace Office {
      * - Word on the web
      *
      * It's also supported in
-     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows (preview)}.
+     * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets | DevicePermission 1.1}
      */
@@ -5386,7 +5386,8 @@ export declare namespace Office {
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
-         *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
+         *     In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, an add-in can request access to a
+         *     user's camera, geolocation, and microphone.
          * @param options - An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.
          *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property. You must then reload the add-in before you can
@@ -5426,7 +5427,8 @@ export declare namespace Office {
          * browser permissions to device capabilities aren't inherited and the `requestPermissionsAsync` method isn't supported.
          *
          * @param permissions - An array of device capabilities to which an add-in is requesting access.
-         *     In Outlook on the web, an add-in can request access to a user's camera, geolocation, and microphone.
+         *     In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, an add-in can request access to a
+         *     user's camera, geolocation, and microphone.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.
          *     If the user grants permission to access the requested device capabilities, `true` is returned in the `asyncResult.value` property. You must then reload the add-in before you can
          *     run code that uses the device capabilities. For example, you can call `window.location.reload()` to reload your add-in.
@@ -8711,8 +8713,9 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | Configure your Outlook add-in for event-based activation} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | Implement an integrated spam-reporting add-in}.
          *
-         * - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane. On these clients,
-         * the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * this API isn't supported in add-ins that implement a task pane. On these clients, the API is only supported in add-ins that implement event-based activation
+         * or integrated spam reporting.
          *
          * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.

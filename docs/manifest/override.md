@@ -233,7 +233,7 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 <!-- Event-based activation and integrated spam reporting happen in a lightweight runtime.-->
 <Runtimes>
   <!-- HTML file including reference to or inline JavaScript event handlers.
-  This is used by Outlook on the web, on the new Mac UI, and new Outlook on Windows (preview). -->
+  This is used by Outlook on the web, on the new Mac UI, and new Outlook on Windows. -->
   <Runtime resid="WebViewRuntime.Url">
     <!-- JavaScript file containing event handlers. This is used by Outlook on Windows. -->
     <Override type="javascript" resid="JSRuntime.Url"/>

@@ -1083,9 +1083,10 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
-      parent (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of
-      the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, in Outlook on Android and on iOS, the `seriesId` returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1465,11 +1466,12 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
-      - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+      - If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
 
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
@@ -1601,21 +1603,6 @@ methods:
     summary: >-
       Displays a reply form that includes either the sender and all recipients of the selected message or the organizer
       and all attendees of the selected appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1628,6 +1615,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -1679,21 +1687,6 @@ methods:
     summary: >-
       Displays a reply form that includes either the sender and all recipients of the selected message or the organizer
       and all attendees of the selected appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1706,6 +1699,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1751,8 +1765,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
@@ -1821,21 +1836,6 @@ methods:
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1848,6 +1848,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -1920,21 +1941,6 @@ methods:
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1947,6 +1953,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2186,9 +2213,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2278,9 +2306,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that
-      identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

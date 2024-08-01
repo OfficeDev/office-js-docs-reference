@@ -927,9 +927,10 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
-      parent (series) item that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of
-      the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, in Outlook on Android and on iOS, the `seriesId` returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1309,11 +1310,12 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
-      - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+      - If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
 
       - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
@@ -1462,8 +1464,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
