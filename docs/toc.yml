@@ -17,7 +17,7 @@ items:
         href: /javascript/api/word
       - name: Common APIs
         href: /javascript/api/office
-  - name: Manifest reference
+  - name: Add-in only manifest reference
     href: /javascript/api/manifest
   - name: Requirement sets
     href: /javascript/api/requirement-sets
