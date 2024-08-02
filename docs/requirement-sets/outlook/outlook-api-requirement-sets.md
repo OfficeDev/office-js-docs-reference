@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365](/office/dev/add-ins/develop/unified-manifest-overview).
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [add-in only manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365](/office/dev/add-ins/develop/unified-manifest-overview).
 
 # [Unified manifest for Microsoft 365](#tab/jsonmanifest)
 

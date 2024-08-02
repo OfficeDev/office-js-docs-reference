@@ -15,7 +15,7 @@ Specifies the action to perform when the user selects a [Button](control-button.
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -92,7 +92,7 @@ Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the ID of the 
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -146,7 +146,7 @@ Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the custom tit
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -188,7 +188,7 @@ Optional element when **xsi:type** is `ShowTaskpane`. The containing [VersionOve
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -219,7 +219,7 @@ Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -242,7 +242,7 @@ Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
