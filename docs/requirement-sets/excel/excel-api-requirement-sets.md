@@ -84,4 +84,4 @@ The following code sample shows the `Requirements` element in an add-in manifest
 ## See also
 
 - [Excel JavaScript API Reference Documentation](/javascript/api/excel)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

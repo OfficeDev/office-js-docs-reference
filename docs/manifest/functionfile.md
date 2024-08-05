@@ -20,7 +20,7 @@ Specifies the source code file for operations that an add-in exposes in one of t
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 The **\<FunctionFile\>** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **\<FunctionFile\>** element can be no more than 32 characters and is set to the value of the `id` attribute of a **\<Url\>** element in the [Resources](resources.md) element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by [function command](/office/dev/add-ins/design/add-in-commands) buttons, as defined by the [Control element](control.md).
 

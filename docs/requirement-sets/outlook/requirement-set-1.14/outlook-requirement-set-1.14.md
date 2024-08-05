@@ -27,8 +27,8 @@ Requirement set 1.14 includes all of the features of [requirement set 1.13](../r
 
 ### Change log
 
-- Added the [ReportPhishingCommandSurface](/javascript/api/manifest/extensionpoint?view=outlook-js-1.14&preserve-view=true#reportphishingcommandsurface) XML manifest extension point: Activates a spam-reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow section.
-- Added the [ReportPhishingCustomization](/javascript/api/manifest/reportphishingcustomization?view=outlook-js-1.14&preserve-view=true) XML manifest element: Configures the ribbon button and preprocessing dialog of a spam-reporting add-in.
+- Added the [ReportPhishingCommandSurface](/javascript/api/manifest/extensionpoint?view=outlook-js-1.14&preserve-view=true#reportphishingcommandsurface) add-in only manifest extension point: Activates a spam-reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow section.
+- Added the [ReportPhishingCustomization](/javascript/api/manifest/reportphishingcustomization?view=outlook-js-1.14&preserve-view=true) add-in only manifest element: Configures the ribbon button and preprocessing dialog of a spam-reporting add-in.
 - Added the [Office.EventType.SpamReporting](/javascript/api/office/office.eventtype?view=outlook-js-1.14&preserve-view=true#fields) event: Occurs in Outlook when an unsolicited message is reported.
 - Added [Office.SpamReportingEventArgs](/javascript/api/outlook/office.spamreportingeventargs?view=outlook-js-1.14&preserve-view=true): Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
 - Added [Office.SpamReportingEventCompletedOptions](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-1.14&preserve-view=true): Provides options to customize the post-processing dialog of a spam-reporting add-in and run additional operations on a reported message.
