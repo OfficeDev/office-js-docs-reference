@@ -1,6 +1,6 @@
 ---
 title: Add-in only manifest reference for Office Add-ins
-description: The elements of an Office Add-ins add-in only manifest.
+description: The elements of the XML-based Office Add-ins add-in only manifest.
 author: o365devx
 ms.author: o365devx
 ms.localizationpriority: medium
