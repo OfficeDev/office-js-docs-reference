@@ -1,16 +1,16 @@
 ---
-title: Office Add-ins manifest reference
-description: The elements of an Office Add-ins XML manifest.
+title: Add-in only manifest reference for Office Add-ins
+description: The elements of the XML-based Office Add-ins add-in only manifest.
 author: o365devx
 ms.author: o365devx
 ms.localizationpriority: medium
-ms.date: 07/18/2024
+ms.date: 08/05/2024
 ms.topic: overview
 ---
 
-# Office Add-ins manifest reference
+# Add-in only manifest reference for Office Add-ins
 
-This section contains information about every element used by an Office Add-in's XML manifest. To learn more about how the manifest describes your add-in to an Office application, see [Office Add-ins XML manifest](/office/dev/add-ins/develop/xml-manifest-overview).
+This section contains information about every element used by an Office Add-in's add-in only manifest. To learn more about how the manifest describes your add-in to an Office application, see [Office Add-ins with an add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview).
 
 ## Elements
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 This element contains information for features that aren't supported in the base manifest. Its child markup may override some of the markup in the base manifest (or in a parent **\<VersionOverrides\>**). **\<VersionOverrides\>** is a child element of either the root [OfficeApp](officeapp.md) element in the manifest or a parent **\<VersionOverrides\>** element. This element is supported in manifest schema v1.1 and later but is defined in separate VersionOverrides schemas.
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 ## Attributes
 

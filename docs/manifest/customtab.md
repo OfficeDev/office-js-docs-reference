@@ -20,7 +20,7 @@ Defines a custom tab for the Office ribbon. Add ribbon controls and groups for t
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 > [!NOTE]
 > Some child elements are not valid in the Mail schemas. See [Child elements](#child-elements).
@@ -67,7 +67,7 @@ Optional, but if not present there must be at least one **\<Group\>** element. R
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -85,7 +85,7 @@ Required. The label of the custom tab. The **resid** attribute can be no more th
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -104,7 +104,7 @@ Optional. Specifies that the custom tab should be immediately after a specified 
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -123,7 +123,7 @@ Optional. Specifies that the custom tab should be immediately before a specified
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 

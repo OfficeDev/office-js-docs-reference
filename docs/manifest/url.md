@@ -17,7 +17,7 @@ Defines the URL of a resource.
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 ## Attributes
 

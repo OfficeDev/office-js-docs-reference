@@ -22,7 +22,7 @@ A mobile button performs a single action when the user selects it. It can either
 
 The `MobileButton` value for **xsi:type** is defined in VersionOverrides schema 1.1. The containing [VersionOverrides](versionoverrides.md) element must have an `xsi:type` attribute value of `VersionOverridesV1_1`.
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -46,7 +46,7 @@ Specifies the text for the button by means of its only attribute, **resid**, whi
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 

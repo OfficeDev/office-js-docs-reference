@@ -15,7 +15,7 @@ Configures your event-based add-in to activate on the `OnMessageReadWithCustomAt
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 ## Syntax
 
