@@ -3403,7 +3403,7 @@ export declare namespace Office {
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
-         * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         * Returns well-known entities in the selected item that pass the named filter defined in an add-in only manifest file.
          *
          * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
          * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
@@ -3414,7 +3414,7 @@ export declare namespace Office {
          *
          * @returns
          * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
-         * manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
+         * add-in manifest file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
          * `FilterName` element value that matches the `name` parameter, the method returns `null`. If the `name` parameter matches an
          * `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match, the method returns an empty array.
          *
@@ -3463,10 +3463,10 @@ export declare namespace Office {
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+         * Returns string values in the selected item that match the regular expressions defined in an add-in only manifest file.
          *
          * @returns
-         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+         * An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file.
          * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule.
          * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
          * of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
@@ -3497,10 +3497,10 @@ export declare namespace Office {
          */
         getRegExMatches(): any;
         /**
-         * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
+         * Returns string values in the selected item that match the named regular expression defined in an add-in only manifest file.
          *
          * @returns
-         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file,
+         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the add-in manifest file,
          * with the specified `RegExName` element value.
          *
          * @remarks
@@ -3551,11 +3551,11 @@ export declare namespace Office {
          */
         getSelectedEntities(): Entities;
         /**
-         * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
+         * Returns string values in a highlighted match that match the regular expressions defined in an add-in only manifest file.
          * Highlighted matches apply to contextual add-ins.
          *
          * @returns
-         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+         * An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file.
          * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule.
          * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's specified by that rule.
          * The `PropertyName` simple type defines the supported properties.
@@ -9631,7 +9631,7 @@ export declare namespace Office {
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;
         /**
-         * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         * Returns well-known entities in the selected item that pass the named filter defined in an add-in only manifest file.
          *
          * **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
          * We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
@@ -9642,7 +9642,7 @@ export declare namespace Office {
          *
          * @returns
          * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
-         * manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
+         * add-in manifest file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
          * `FilterName` element value that matches the `name` parameter, the method returns `null`. If the `name` parameter matches an
          * `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match, the method returns an empty array.
          *
@@ -9691,10 +9691,10 @@ export declare namespace Office {
          */
         getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+         * Returns string values in the selected item that match the regular expressions defined in an add-in only manifest file.
          *
          * @returns
-         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+         * An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file.
          * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule.
          * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
          * of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
@@ -9725,10 +9725,10 @@ export declare namespace Office {
          */
         getRegExMatches(): any;
         /**
-         * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
+         * Returns string values in the selected item that match the named regular expression defined in an add-in only manifest file.
          *
          * @returns
-         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file,
+         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the add-in manifest file,
          * with the specified `RegExName` element value.
          *
          * @remarks
@@ -9779,11 +9779,11 @@ export declare namespace Office {
          */
         getSelectedEntities(): Entities;
         /**
-         * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
+         * Returns string values in a highlighted match that match the regular expressions defined in an add-in only manifest file.
          * Highlighted matches apply to contextual add-ins.
          *
          * @returns
-         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+         * An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file.
          * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule.
          * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's specified by that rule.
          * The `PropertyName` simple type defines the supported properties.
@@ -12032,7 +12032,7 @@ export declare namespace Office {
          * The `commandId` value must match the task pane ID specified in the manifest of your add-in. The markup depends on the type of manifest your
          * add-in uses.
          *
-         * - **XML manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane.
+         * - **Add-in only manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane.
          *
          * - **Unified manifest for Microsoft 365**: The "id" property of the task pane command in the "extensions.ribbons.tabs.groups.controls" array.
          *

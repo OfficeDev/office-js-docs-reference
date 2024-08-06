@@ -3132,7 +3132,7 @@ export declare namespace Office {
         /**
          * Associates the ID or name of an action with a function.
          * 
-         * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
+         * @param actionId - The ID of an action that is defined in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
@@ -3147,14 +3147,14 @@ export declare namespace Office {
          * 
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
-         * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
+         * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
          * To learn how to specify a valid action ID and a key combination, see {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
          * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
          * Otherwise, the promise will be rejected with error code and error message. An "InvalidOperation" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.
          */
         replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;
         /**
-         * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist.
+         * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist.
          * The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.
          *
          * @remarks
@@ -3165,7 +3165,7 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          *
-         * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
+         * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
         getShortcuts(): Promise<{[actionId: string]: string|null}>;
         /**
@@ -3503,7 +3503,7 @@ export declare namespace Office {
         value: T;
     }
     /**
-     * The Office Auth namespace, `Office.auth`, provides a method that allows the Office client application to obtain an access token to the add-in's web application.
+     * The Office Auth namespace, `Office.auth`, provides methods for the Office client application to obtain access tokens to the add-in's web application.
      * Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
      */
     export interface Auth {
@@ -3589,6 +3589,19 @@ export declare namespace Office {
          * @returns Promise to the access token.
          */
         getAccessToken(options?: AuthOptions): Promise<string>;
+        /**
+         * Gets information about the signed-in user. 
+         * The add-in can pass this information to the Microsoft authentication library (MSAL.js) to get an access token for the current session.
+         *
+         * @remarks
+         *
+         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * 
+         * **Requirement set**: NestedAppAuth 1.1
+         * 
+         * @returns Promise to the AuthContext object.
+         */
+        getAuthContext(): Promise<AuthContext>;
     }
     /**
      * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
@@ -3648,6 +3661,35 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
          */
         forMSGraphAccess?: boolean;
+    }
+    /**
+     * Represents the user information which can be passed to msal.js.
+     */
+    export interface AuthContext {
+        /**
+         * The unique ID of the account.
+         */
+        userObjectId: string;
+        /**
+         * The full tenant or organizational ID that this account belongs to.
+         */
+        tenantId: string;
+        /**
+         * The user's internet-style login name, based on the Internet standard RFC. Also known as UPN. 
+         */
+        userPrincipalName: string;
+        /**
+         * The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a {@link https://support.microsoft.com/account-billing/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa | Microsoft personal account}.
+         */
+        authorityType: "aad" | "msa" | "other";
+        /**
+         * The URL that indicates a directory that MSAL can request tokens from.
+         */
+        authorityBaseUrl: string;
+        /**
+         * An optional claim that provides a hint about the user account attempting to sign in.
+         */
+        loginHint: string;
     }
     /**
      * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
@@ -8445,7 +8487,7 @@ export declare namespace Office {
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
-         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
@@ -8548,7 +8590,7 @@ export declare namespace Office {
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements},
-         * if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see
+         * if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview | Office Add-ins with the unified app manifest for Microsoft 365}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
@@ -8717,7 +8759,7 @@ export declare namespace Office {
          * this API isn't supported in add-ins that implement a task pane. On these clients, the API is only supported in add-ins that implement event-based activation
          * or integrated spam reporting.
          *
-         * - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
+         * - If your add-in uses the add-in only manifest, the URL returned matches the `resid` value of the **RuntimeOverride** element of type `javascript`.
          * To learn more, see {@link https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime | Override element for Runtime}.
          *
          * - If your add-in uses the unified manifest for Microsoft 365, the URL returned matches the value of the `script` property in the
