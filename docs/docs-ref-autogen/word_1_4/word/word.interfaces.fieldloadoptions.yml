@@ -4,7 +4,17 @@ uid: 'word!Word.Interfaces.FieldLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.FieldLoadOptions
 summary: Represents a field.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in
+  requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the
+  Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the
+  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->), the `Addin` field is
+  editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of
+  [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
+  -->.
 isPreview: false
 isDeprecated: false
 type: interface

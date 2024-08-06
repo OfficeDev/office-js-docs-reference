@@ -96,6 +96,8 @@ items:
                 uid: 'office!Office.AsyncResult:interface'
               - name: Auth
                 uid: 'office!Office.Auth:interface'
+              - name: AuthContext
+                uid: 'office!Office.AuthContext:interface'
               - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
               - name: BeforeDocumentCloseNotification

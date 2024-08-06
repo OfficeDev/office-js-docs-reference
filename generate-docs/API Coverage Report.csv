@@ -6652,6 +6652,14 @@ Office.Auth,N/A,Class,Good,false
 Office.Auth,"getAccessToken(options)",Method,Fine,true
 Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
+Office.Auth,"getAuthContext()",Method,Poor,false
+Office.AuthContext,N/A,Class,Fine,false
+Office.AuthContext,"authorityBaseUrl",Property,Fine,false
+Office.AuthContext,"authorityType",Property,Good,false
+Office.AuthContext,"loginHint",Property,Fine,false
+Office.AuthContext,"tenantId",Property,Fine,false
+Office.AuthContext,"userObjectId",Property,Fine,false
+Office.AuthContext,"userPrincipalName",Property,Good,false
 Office.AuthOptions,N/A,Class,Good,false
 Office.AuthOptions,"allowConsentPrompt",Property,Good,false
 Office.AuthOptions,"allowSignInPrompt",Property,Good,false

@@ -4,9 +4,9 @@ uid: 'office!Office.Auth:interface'
 package: office!
 fullName: Office.Auth
 summary: >-
-  The Office Auth namespace, `Office.auth`<!-- -->, provides a method that allows the Office client application to
-  obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the
-  signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
+  The Office Auth namespace, `Office.auth`<!-- -->, provides methods for the Office client application to obtain access
+  tokens to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's
+  Microsoft Graph data without requiring the user to sign in a second time.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -188,3 +188,21 @@ methods:
       return:
         type: void
         description: ''
+  - name: getAuthContext()
+    uid: 'office!Office.Auth#getAuthContext:member(1)'
+    package: office!
+    fullName: getAuthContext()
+    summary: >-
+      Gets information about the signed-in user. The add-in can pass this information to the Microsoft authentication
+      library (MSAL.js) to get an access token for the current session.
+    remarks: |-
+      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+
+      **Requirement set**: NestedAppAuth 1.1
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAuthContext(): Promise<AuthContext>;'
+      return:
+        type: 'Promise&lt;<xref uid="office!Office.AuthContext:interface" />&gt;'
+        description: Promise to the AuthContext object.

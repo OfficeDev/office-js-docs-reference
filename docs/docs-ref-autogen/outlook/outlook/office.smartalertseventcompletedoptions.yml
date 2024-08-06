@@ -165,7 +165,7 @@ properties:
       the type of manifest your add-in uses.
 
 
-      - **XML manifest**: The `id` attribute of the
+      - **Add-in only manifest**: The `id` attribute of the
       [Control](https://learn.microsoft.com/javascript/api/manifest/control) element representing the task pane.
 
 

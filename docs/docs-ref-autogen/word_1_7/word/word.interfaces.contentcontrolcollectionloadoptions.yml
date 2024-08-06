@@ -75,7 +75,7 @@ properties:
     fullName: checkboxContentControl
     summary: >-
       For EACH ITEM in the collection: Specifies the checkbox-related data if the content control's type is 'CheckBox'.
-      It's null otherwise.
+      It's `null` otherwise.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
