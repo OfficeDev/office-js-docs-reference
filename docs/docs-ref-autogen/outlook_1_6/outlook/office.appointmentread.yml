@@ -1193,7 +1193,8 @@ methods:
     package: outlook!
     fullName: getFilteredEntitiesByName(name)
     summary: >-
-      Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+      Returns well-known entities in the selected item that pass the named filter defined in an add-in only manifest
+      file.
 
 
       **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
@@ -1231,16 +1232,18 @@ methods:
           uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> |
           <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
         description: >-
-          The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
-          manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in
-          the manifest with a `FilterName` element value that matches the `name` parameter, the method returns
-          `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are
-          no entities in the current item that match, the method returns an empty array.
+          The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the add-in
+          manifest file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the
+          manifest with a `FilterName` element value that matches the `name` parameter, the method returns `null`<!--
+          -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are no
+          entities in the current item that match, the method returns an empty array.
   - name: getRegExMatches()
     uid: 'outlook!Office.AppointmentRead#getRegExMatches:member(1)'
     package: outlook!
     fullName: getRegExMatches()
-    summary: Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+    summary: >-
+      Returns string values in the selected item that match the regular expressions defined in an add-in only manifest
+      file.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1348,8 +1351,8 @@ methods:
       return:
         type: any
         description: >-
-          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
+          An object that contains arrays of strings that match the regular expressions defined in the add-in manifest
+          file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to
           occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the
           supported properties.
@@ -1358,8 +1361,8 @@ methods:
     package: outlook!
     fullName: getRegExMatchesByName(name)
     summary: >-
-      Returns string values in the selected item that match the named regular expression defined in an XML manifest
-      file.
+      Returns string values in the selected item that match the named regular expression defined in an add-in only
+      manifest file.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1464,8 +1467,8 @@ methods:
         type: 'string[]'
         description: >-
           An array that contains the strings that match the regular expression defined in the
-          `ItemHasRegularExpressionMatch` rule element in the manifest XML file, with the specified `RegExName` element
-          value.
+          `ItemHasRegularExpressionMatch` rule element in the add-in manifest file, with the specified `RegExName`
+          element value.
   - name: getSelectedEntities()
     uid: 'outlook!Office.AppointmentRead#getSelectedEntities:member(1)'
     package: outlook!
@@ -1506,8 +1509,8 @@ methods:
     package: outlook!
     fullName: getSelectedRegExMatches()
     summary: >-
-      Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
-      Highlighted matches apply to contextual add-ins.
+      Returns string values in a highlighted match that match the regular expressions defined in an add-in only manifest
+      file. Highlighted matches apply to contextual add-ins.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1619,8 +1622,8 @@ methods:
       return:
         type: any
         description: >-
-          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
+          An object that contains arrays of strings that match the regular expressions defined in the add-in manifest
+          file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
           `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to
           occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the
           supported properties.

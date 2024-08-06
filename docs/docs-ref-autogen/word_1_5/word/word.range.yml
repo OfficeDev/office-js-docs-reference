@@ -1368,22 +1368,22 @@ methods:
 
 
       In Word on Windows and on Mac, the API supports inserting and managing all types listed in
-      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+      [Word.FieldType](xref:word!Word.FieldType:enum) except `Word.FieldType.others`<!-- -->.
 
 
       In Word on the web, the API supports inserting and managing the following field types.
 
 
-      - Word.FieldType.addin
+      - `Word.FieldType.addin`
 
 
-      - Word.FieldType.date
+      - `Word.FieldType.date`
 
 
-      - Word.FieldType.hyperlink
+      - `Word.FieldType.hyperlink`
 
 
-      - Word.FieldType.toc
+      - `Word.FieldType.toc`
 
 
       #### Examples
@@ -1452,22 +1452,22 @@ methods:
 
 
       In Word on Windows and on Mac, the API supports inserting and managing all types listed in
-      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+      [Word.FieldType](xref:word!Word.FieldType:enum) except `Word.FieldType.others`<!-- -->.
 
 
       In Word on the web, the API supports inserting and managing the following field types.
 
 
-      - Word.FieldType.addin
+      - `Word.FieldType.addin`
 
 
-      - Word.FieldType.date
+      - `Word.FieldType.date`
 
 
-      - Word.FieldType.hyperlink
+      - `Word.FieldType.hyperlink`
 
 
-      - Word.FieldType.toc
+      - `Word.FieldType.toc`
     isPreview: false
     isDeprecated: false
     syntax:

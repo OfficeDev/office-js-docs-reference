@@ -55,8 +55,8 @@ properties:
       implement event-based activation or integrated spam reporting.
 
 
-      - If your add-in uses the XML manifest, the URL returned matches the `resid` value of the **RuntimeOverride**
-      element of type `javascript`<!-- -->. To learn more, see [Override element for
+      - If your add-in uses the add-in only manifest, the URL returned matches the `resid` value of the
+      **RuntimeOverride** element of type `javascript`<!-- -->. To learn more, see [Override element for
       Runtime](https://learn.microsoft.com/javascript/api/manifest/override#override-element-for-runtime)<!-- -->.
 
 
