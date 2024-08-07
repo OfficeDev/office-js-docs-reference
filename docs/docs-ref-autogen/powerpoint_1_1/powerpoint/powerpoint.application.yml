@@ -28,7 +28,7 @@ methods:
     uid: 'powerpoint!PowerPoint.Application.newObject:member(1)'
     package: powerpoint!
     fullName: newObject(context)
-    summary: Create a new instance of PowerPoint.Application object
+    summary: Create a new instance of the `PowerPoint.Application` object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -48,9 +48,9 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original PowerPoint.Application object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of
-      any loaded child properties from the original object.
+      passed to it.) Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

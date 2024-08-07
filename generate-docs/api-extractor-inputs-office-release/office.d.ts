@@ -3135,7 +3135,7 @@ export declare namespace Office {
          * @param actionId - The ID of an action that is defined in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
          */
-        associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
+        associate(actionId: string, actionFunction: (arg?: any) => void): void;
         /**
          * Replaces existing add-in shortcuts with custom shortcuts for the user.
          *

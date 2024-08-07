@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.SlideCollectionUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideCollectionUpdateData
-summary: 'An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `SlideCollection` object, for use in `slideCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

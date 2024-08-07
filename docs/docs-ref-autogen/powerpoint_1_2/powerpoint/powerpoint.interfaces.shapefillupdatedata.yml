@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.ShapeFillUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.ShapeFillUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeFillUpdateData
-summary: 'An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

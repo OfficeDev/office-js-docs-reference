@@ -41,7 +41,7 @@ methods:
     package: powerpoint!
     fullName: 'add(key, value)'
     summary: >-
-      Adds a new tag at the end of the collection. If the key already exists in the collection, the value of the
+      Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the
       existing tag will be replaced with the given `value`<!-- -->.
     remarks: >-
       \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
@@ -81,8 +81,8 @@ methods:
       parameters:
         - id: key
           description: >-
-            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. The key string is capitalized
-            when saved in the document.
+            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. 'key' parameter is
+            case-insensitive, but it is always capitalized when saved in the document.
           type: string
         - id: value
           description: The value of the tag.
@@ -94,7 +94,7 @@ methods:
     uid: 'powerpoint!PowerPoint.TagCollection#delete:member(1)'
     package: powerpoint!
     fullName: delete(key)
-    summary: Deletes the tag with the given key in this collection. Does nothing if the key does not exist.
+    summary: Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
     remarks: >-
       \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
@@ -126,7 +126,7 @@ methods:
       parameters:
         - id: key
           description: >-
-            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. This parameter is
+            The unique ID of a tag, which is unique within this `TagCollection`<!-- -->. `key` parameter is
             case-insensitive.
           type: string
       return:
@@ -189,7 +189,7 @@ methods:
       content: 'getItem(key: string): PowerPoint.Tag;'
       parameters:
         - id: key
-          description: The ID of the tag. The ID is case-sensitive and must be capitalized.
+          description: The ID of the tag.
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
@@ -225,7 +225,7 @@ methods:
       content: 'getItemOrNullObject(key: string): PowerPoint.Tag;'
       parameters:
         - id: key
-          description: The ID of the tag. The ID is case-sensitive and must be capitalized.
+          description: The ID of the tag.
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'

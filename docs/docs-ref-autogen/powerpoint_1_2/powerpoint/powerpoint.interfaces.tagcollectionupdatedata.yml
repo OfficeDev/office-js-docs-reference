@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.TagCollectionUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagCollectionUpdateData
-summary: 'An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TagCollection` object, for use in `tagCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

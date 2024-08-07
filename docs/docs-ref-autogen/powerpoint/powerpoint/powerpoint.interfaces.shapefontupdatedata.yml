@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.ShapeFontUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeFontUpdateData
-summary: 'An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

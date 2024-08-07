@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.ShapeCollectionUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeCollectionUpdateData
-summary: 'An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -45,7 +45,6 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface'

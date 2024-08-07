@@ -6604,8 +6604,8 @@ Excel.WorksheetVisibilityChangedEventArgs,"visibilityAfter",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"visibilityBefore",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"worksheetId",Property,Good,false
 Office.Actions,N/A,Class,Poor,false
-Office.Actions,"associate",Property,Fine,false
 Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,false
+Office.Actions,"associate(actionId, actionFunction)",Method,Poor,false
 Office.Actions,"getShortcuts()",Method,Good,false
 Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,false
 Office.ActiveView,N/A,Enum,Fine,true
@@ -9830,9 +9830,9 @@ PowerPoint.TagCollection,"items",Property,Fine,false
 PowerPoint.TagCollection,"add(key, value)",Method,Poor,true
 PowerPoint.TagCollection,"delete(key)",Method,Poor,true
 PowerPoint.TagCollection,"getCount()",Method,Fine,false
-PowerPoint.TagCollection,"getItem(key)",Method,Good,true
+PowerPoint.TagCollection,"getItem(key)",Method,Fine,true
 PowerPoint.TagCollection,"getItemAt(index)",Method,Fine,false
-PowerPoint.TagCollection,"getItemOrNullObject(key)",Method,Good,false
+PowerPoint.TagCollection,"getItemOrNullObject(key)",Method,Fine,false
 PowerPoint.TagCollection,"load(options)",Method,Poor,false
 PowerPoint.TagCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.TagCollection,"load(propertyNamesAndPaths)",Method,Poor,false

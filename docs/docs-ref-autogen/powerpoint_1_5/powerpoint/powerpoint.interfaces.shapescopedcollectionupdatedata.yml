@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeScopedCollectionUpdateData
 summary: >-
-  An interface for updating data on the ShapeScopedCollection object, for use in `shapeScopedCollection.set({ ...
+  An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

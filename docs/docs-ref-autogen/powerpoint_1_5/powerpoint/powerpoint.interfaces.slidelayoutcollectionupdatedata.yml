@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutCollectionUpdateData
 summary: >-
-  An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ...
+  An interface for updating data on the `SlideLayoutCollection` object, for use in `slideLayoutCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.ShapeLineFormatUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeLineFormatUpdateData
-summary: 'An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ShapeLineFormat` object, for use in `shapeLineFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
