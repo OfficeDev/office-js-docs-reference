@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterCollectionUpdateData
 summary: >-
-  An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ...
+  An interface for updating data on the `SlideMasterCollection` object, for use in `slideMasterCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

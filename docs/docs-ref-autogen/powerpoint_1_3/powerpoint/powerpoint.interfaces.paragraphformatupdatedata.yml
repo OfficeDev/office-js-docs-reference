@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.ParagraphFormatUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ParagraphFormatUpdateData
-summary: 'An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
