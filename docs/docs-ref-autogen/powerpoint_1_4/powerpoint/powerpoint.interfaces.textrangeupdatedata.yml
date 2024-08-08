@@ -3,7 +3,7 @@ name: PowerPoint.Interfaces.TextRangeUpdateData
 uid: 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TextRangeUpdateData
-summary: 'An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
