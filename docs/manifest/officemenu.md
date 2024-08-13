@@ -39,10 +39,10 @@ Although its official data type is string, this attribute effectively functions 
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  [Control of type Button](control-button.md)    | Yes |  A single Button control object.  |
+|  [Control of type Button](control-button.md)    | Yes |  A single **Button** control object.  |
 
 > [!NOTE]
-> There can be only one child control and it can't be a menu control type.
+> There can be only one child control and it must be type **Button**.
 
 ## Example
 
