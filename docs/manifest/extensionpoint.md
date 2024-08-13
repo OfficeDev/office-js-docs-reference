@@ -89,7 +89,7 @@ A context menu is a shortcut menu that appears when you right-click (or select a
 
 #### Example
 
-The following adds a custom context menu to the cells in an Excel spreadsheet. Note that the child control must be of type **Button**, not menu.
+The following adds a custom context menu to the cells in an Excel spreadsheet. Note that the child control must be of type **Button**, not **Menu**.
 
 ```xml
 <ExtensionPoint xsi:type="ContextMenu">
