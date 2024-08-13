@@ -3556,18 +3556,6 @@ export declare namespace Office {
          * To use `appendOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. See {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}. To learn more
          * about append-on-send and its configuration, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
-         * 
-         * **Important**: If the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature}
-         * is implemented with append-on-send, the following apply.
-         * 
-         * - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
-         *
-         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
-         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
-         * **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3575,6 +3563,22 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+         *
+         *  **Important**:
+         *
+         * - If the user is running add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send feature}
+         * using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
+         *
+         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
+         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
+         *
+         * - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3596,18 +3600,6 @@ export declare namespace Office {
          * To use `appendOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. See {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}. To learn more
          * about append-on-send and its configuration, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
-         * 
-         * **Important**: If the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature}
-         * is implemented with append-on-send, the following apply.
-         * 
-         * - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
-         *
-         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
-         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
-         * **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
          *
          * @remarks
          * [Api set: Mailbox 1.9]
@@ -3615,6 +3607,22 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+         *
+         * **Important**:
+         *
+         * - If the user is running add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send feature}
+         * using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
+         *
+         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
+         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
+         *
+         * - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3721,6 +3729,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows
@@ -3740,7 +3750,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3764,6 +3776,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows
@@ -3783,7 +3797,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3806,6 +3822,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
@@ -3827,7 +3845,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3853,6 +3873,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
@@ -3874,7 +3896,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3894,17 +3918,23 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important*:
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -3927,17 +3957,23 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important*:
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
