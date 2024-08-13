@@ -1390,6 +1390,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows
@@ -1409,7 +1411,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -1433,6 +1437,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.
+         *
          * **Important**:
          *
          * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on the web and on Windows
@@ -1452,7 +1458,9 @@ export declare namespace Office {
          * supported. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -1474,17 +1482,23 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important*:
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
@@ -1507,17 +1521,23 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important*:
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - SVG files aren't supported. Use JPG or PNG files instead.
+         *
+         * - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
          *
          * **Errors**:
          *
