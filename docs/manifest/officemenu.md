@@ -29,10 +29,10 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ### id
 
-Although its official data type is string, this attribute effectively functions as a type attribute, and there are only two possible values. The attribute specifies a built-in menu of the Office client application on which to add this Office Add-in. 
+Although its official data type is string, this attribute effectively functions as a type attribute, and there are only two possible values. The attribute specifies the type of built-in Office menu to add this Office Add-in to.
 
-- `ContextMenuText` -  Displays the item on the context menu when text is selected and the user opens the context menu (e.g., right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
-- `ContextMenuCell` -  Displays the item on the context menu when the user opens the context menu (e.g., right-clicks) on a cell on the spreadsheet. Applies to Excel.
+- `ContextMenuText` - Displays the item on the context menu when text is selected and the user opens that menu (e.g., right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
+- `ContextMenuCell` - Displays the item on the context menu when the user opens that menu (e.g., right-clicks) on a cell on the spreadsheet. Applies to Excel.
 
 
 ## Child elements
