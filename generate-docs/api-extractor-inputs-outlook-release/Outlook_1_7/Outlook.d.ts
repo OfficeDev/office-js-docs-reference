@@ -1150,6 +1150,7 @@ export declare namespace Office {
          */
         requiredAttendees: Recipients;
         
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          *

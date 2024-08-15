@@ -5655,6 +5655,11 @@ Office.UI#addHandlerAsync:member(2):
             return;
         }
     }
+Office.UI#closeContainer:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.UI#displayDialogAsync:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -5693,6 +5698,11 @@ Office.UI#messageParent:member(1):
         };
         Office.context.ui.messageParent(JSON.stringify(profileMessage));
     }
+Office.UI#openBrowserWindow:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.Urls#javascriptRuntimeUrl:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.

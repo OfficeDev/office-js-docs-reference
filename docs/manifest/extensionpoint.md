@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 07/18/2024
+ms.date: 08/13/2024
 ms.localizationpriority: medium
 ---
 
@@ -89,15 +89,26 @@ A context menu is a shortcut menu that appears when you right-click (or select a
 
 #### Example
 
-The following adds a custom context menu to the cells in an Excel spreadsheet.
+The following customizes the context menu opened on the selected text in a supported Office application. Note that the child control must be of type **Button**.
 
 ```xml
 <ExtensionPoint xsi:type="ContextMenu">
-  <OfficeMenu id="ContextMenuCell">
-    <Control xsi:type="Menu" id="Contoso.ContextMenu2">
-            <!-- information about the control -->
+  <OfficeMenu id="ContextMenuText"> <!-- OR, for Excel only: <OfficeMenu id="ContextMenuCell"> -->
+    <Control xsi:type="Button" id="ContextMenuButton">
+      <Label resid="TaskpaneButton.Label"/>
+      <Supertip>
+        <Title resid="TaskpaneButton.Label" />
+        <Description resid="TaskpaneButton.Tooltip" />
+      </Supertip>
+      <Icon>
+        <bt:Image size="16" resid="tpicon_16x16" />
+        <bt:Image size="32" resid="tpicon_32x32" />
+        <bt:Image size="80" resid="tpicon_80x80" />
+      </Icon>
+      <Action xsi:type="ExecuteFunction">
+        <FunctionName>action</FunctionName>
+      </Action>
     </Control>
-    <!-- other controls, as needed -->
   </OfficeMenu>
 </ExtensionPoint>
 ```

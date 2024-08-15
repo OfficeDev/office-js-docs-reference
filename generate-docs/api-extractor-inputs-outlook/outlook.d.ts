@@ -1591,7 +1591,7 @@ export declare namespace Office {
          * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of an appointment.
          * 
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.13]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -1600,9 +1600,7 @@ export declare namespace Office {
          * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
          *
          * To learn more about how to manage sensitivity labels in your add-in, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
-         *
-         * @beta
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
          */
         sensitivityLabel: SensitivityLabel;
         /**

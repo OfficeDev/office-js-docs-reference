@@ -1087,7 +1087,7 @@ properties:
       Gets the object to get or set the [sensitivity label](xref:outlook!Office.SensitivityLabel:interface) of an
       appointment.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1105,8 +1105,8 @@ properties:
 
 
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
-      message or appointment in compose mode
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+      message or appointment in compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
       #### Examples
@@ -1135,7 +1135,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivityLabel: SensitivityLabel;'

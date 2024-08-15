@@ -7623,11 +7623,11 @@ Office.ThemeId,"White",EnumField,Fine,false
 Office.UI,N/A,Class,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,true
-Office.UI,"closeContainer()",Method,Poor,false
+Office.UI,"closeContainer()",Method,Poor,true
 Office.UI,"displayDialogAsync(startAddress, options, callback)",Method,Fine,true
 Office.UI,"displayDialogAsync(startAddress, callback)",Method,Fine,false
 Office.UI,"messageParent(message, messageOptions)",Method,Fine,true
-Office.UI,"openBrowserWindow(url)",Method,Poor,false
+Office.UI,"openBrowserWindow(url)",Method,Poor,true
 Office.Urls,N/A,Class,Good,false
 Office.Urls,"javascriptRuntimeUrl",Property,Good,true
 Office.ValueFormat,N/A,Enum,Good,false
