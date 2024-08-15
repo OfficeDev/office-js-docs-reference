@@ -405,6 +405,7 @@ export declare namespace Office {
         
         
         
+        
         /**
          * Gets or sets the date and time that the appointment is to begin.
          *

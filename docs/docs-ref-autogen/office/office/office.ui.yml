@@ -152,6 +152,21 @@ methods:
 
 
       - Called from a module extension: No effect.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to open a browser window to a download page and then close the add-in task
+      pane.
+
+      Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+
+      Office.context.ui.closeContainer();
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -482,6 +497,21 @@ methods:
     remarks: >-
       **Requirement set**: [OpenBrowserWindowAPI
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to open a browser window to a download page and then close the add-in task
+      pane.
+
+      Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+
+      Office.context.ui.closeContainer();
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

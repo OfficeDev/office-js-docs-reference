@@ -1478,6 +1478,22 @@ export declare namespace Office {
         requiredAttendees: Recipients;
         
         /**
+         * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of an appointment.
+         * 
+         * @remarks
+         * [Api set: Mailbox 1.13]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
+         */
+        sensitivityLabel: SensitivityLabel;
+        /**
          * Gets the ID of the series that an instance belongs to.
          *
          * In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
