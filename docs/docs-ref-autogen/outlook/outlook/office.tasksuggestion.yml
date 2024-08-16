@@ -8,8 +8,14 @@ summary: >-
 
 
   The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the
-  [Entities](xref:outlook!Office.Entities:interface) object that is returned when the `getEntities` or
+  [Entities](xref:outlook!Office.Entities:interface) object that's returned when the `getEntities` or
   `getEntitiesByType` method is called on the active item.
+
+
+  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
+  supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+  For guidance on how to implement these rules, see [Contextual Outlook
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -41,17 +47,30 @@ remarks: >-
 
   ```
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+  instead.
 type: interface
 properties:
   - name: assignees
     uid: 'outlook!Office.TaskSuggestion#assignees:member'
     package: outlook!
     fullName: assignees
-    summary: Gets the users that should be assigned a suggested task.
+    summary: >-
+      Gets the users that should be assigned a suggested task.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'assignees: EmailUser[];'
       return:
@@ -60,10 +79,20 @@ properties:
     uid: 'outlook!Office.TaskSuggestion#taskString:member'
     package: outlook!
     fullName: taskString
-    summary: Gets the text of an item that was identified as a task suggestion.
+    summary: >-
+      Gets the text of an item that was identified as a task suggestion.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'taskString: string;'
       return:

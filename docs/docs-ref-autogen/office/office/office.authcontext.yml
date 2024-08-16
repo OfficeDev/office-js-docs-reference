@@ -1,0 +1,86 @@
+### YamlMime:TSType
+name: Office.AuthContext
+uid: 'office!Office.AuthContext:interface'
+package: office!
+fullName: Office.AuthContext
+summary: Represents the user information which can be passed to msal.js.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authorityBaseUrl
+    uid: 'office!Office.AuthContext#authorityBaseUrl:member'
+    package: office!
+    fullName: authorityBaseUrl
+    summary: The URL that indicates a directory that MSAL can request tokens from.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorityBaseUrl: string;'
+      return:
+        type: string
+  - name: authorityType
+    uid: 'office!Office.AuthContext#authorityType:member'
+    package: office!
+    fullName: authorityType
+    summary: >-
+      The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and
+      "msa" represents a [Microsoft personal
+      account](https://support.microsoft.com/account-billing/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorityType: "aad" | "msa" | "other";'
+      return:
+        type: '"aad" | "msa" | "other"'
+  - name: loginHint
+    uid: 'office!Office.AuthContext#loginHint:member'
+    package: office!
+    fullName: loginHint
+    summary: An optional claim that provides a hint about the user account attempting to sign in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loginHint: string;'
+      return:
+        type: string
+  - name: tenantId
+    uid: 'office!Office.AuthContext#tenantId:member'
+    package: office!
+    fullName: tenantId
+    summary: The full tenant or organizational ID that this account belongs to.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId: string;'
+      return:
+        type: string
+  - name: userObjectId
+    uid: 'office!Office.AuthContext#userObjectId:member'
+    package: office!
+    fullName: userObjectId
+    summary: The unique ID of the account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userObjectId: string;'
+      return:
+        type: string
+  - name: userPrincipalName
+    uid: 'office!Office.AuthContext#userPrincipalName:member'
+    package: office!
+    fullName: userPrincipalName
+    summary: 'The user''s internet-style login name, based on the Internet standard RFC. Also known as UPN.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userPrincipalName: string;'
+      return:
+        type: string

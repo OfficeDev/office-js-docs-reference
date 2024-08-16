@@ -15,6 +15,7 @@ interfaces:
   - 'office!Office.AsyncContextOptions:interface'
   - 'office!Office.AsyncResult:interface'
   - 'office!Office.Auth:interface'
+  - 'office!Office.AuthContext:interface'
   - 'office!Office.AuthOptions:interface'
   - 'office!Office.BeforeDocumentCloseNotification:interface'
   - 'office!Office.Binding:interface'

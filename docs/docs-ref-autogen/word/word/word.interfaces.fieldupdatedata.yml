@@ -29,7 +29,7 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general
       exception when code attempts to set it.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

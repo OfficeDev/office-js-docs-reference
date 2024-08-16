@@ -93,10 +93,7 @@ properties:
     uid: 'outlook!Office.LoadedMessageCompose#categories:member'
     package: outlook!
     fullName: categories
-    summary: |-
-      Gets an object that provides methods for managing the item's categories.
-
-      **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.
+    summary: Gets an object that provides methods for managing the item's categories.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -109,6 +106,11 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories on a message in Compose mode.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -143,6 +145,36 @@ properties:
       content: 'cc: Recipients;'
       return:
         type: '<xref uid="outlook!Office.Recipients:interface" />'
+  - name: conversationId
+    uid: 'outlook!Office.LoadedMessageCompose#conversationId:member'
+    package: outlook!
+    fullName: conversationId
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular message.
+
+
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
+
+
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the `conversationId` property will return a value.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type: string
   - name: delayDeliveryTime
     uid: 'outlook!Office.LoadedMessageCompose#delayDeliveryTime:member'
     package: outlook!
@@ -202,6 +234,40 @@ properties:
       content: 'from: From;'
       return:
         type: '<xref uid="outlook!Office.From:interface" />'
+  - name: inReplyTo
+    uid: 'outlook!Office.LoadedMessageCompose#inReplyTo:member'
+    package: outlook!
+    fullName: inReplyTo
+    summary: Gets the message ID of the original message being replied to by the current message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the
+      user, such as changing the subject in a reply.
+
+
+      - The `inReplyTo` property returns `null` for new messages and meeting invites being forwarded by a user who's
+      also the meeting organizer.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'inReplyTo: string;'
+      return:
+        type: string
   - name: internetHeaders
     uid: 'outlook!Office.LoadedMessageCompose#internetHeaders:member'
     package: outlook!
@@ -240,6 +306,31 @@ properties:
       content: 'internetHeaders: InternetHeaders;'
       return:
         type: '<xref uid="outlook!Office.InternetHeaders:interface" />'
+  - name: itemType
+    uid: 'outlook!Office.LoadedMessageCompose#itemType:member'
+    package: outlook!
+    fullName: itemType
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
+      instance is a message or an appointment.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'itemType: MailboxEnums.ItemType | string;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: notificationMessages
     uid: 'outlook!Office.LoadedMessageCompose#notificationMessages:member'
     package: outlook!
@@ -297,6 +388,47 @@ properties:
       content: 'sensitivityLabel: SensitivityLabel;'
       return:
         type: '<xref uid="outlook!Office.SensitivityLabel:interface" />'
+  - name: seriesId
+    uid: 'outlook!Office.LoadedMessageCompose#seriesId:member'
+    package: outlook!
+    fullName: seriesId
+    summary: >-
+      Gets the ID of the series that an instance belongs to.
+
+
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services
+      item identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
+
+
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'seriesId: string;'
+      return:
+        type: string
   - name: subject
     uid: 'outlook!Office.LoadedMessageCompose#subject:member'
     package: outlook!
@@ -698,8 +830,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you are editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -811,53 +945,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: closeAsync(callback)
-    uid: 'outlook!Office.LoadedMessageCompose#closeAsync:member(1)'
-    package: outlook!
-    fullName: closeAsync(callback)
-    summary: >-
-      Closes the current new message being composed.
-
-
-      The behavior on a new message being composed depends on whether the message contains any unsaved changes. If no
-      changes have been made, the message is closed without a save dialog. On the other hand, if the message contains
-      unsaved changes, a save dialog appears prompting the user to save a draft, discard changes, or cancel the
-      operation.
-    remarks: >-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-
-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
-
-
-      **Errors**:
-
-
-      - `The operation was cancelled by the user`<!-- -->: The user selects **Cancel** from the save dialog.
-
-
-      - `The operation is not supported`<!-- -->: The `closeAsync` method attempts to close a reply in the Reading Pane
-      or an existing draft.
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'closeAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
-      parameters:
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
-      return:
-        type: void
-        description: ''
   - name: 'disableClientSignatureAsync(options, callback)'
     uid: 'outlook!Office.LoadedMessageCompose#disableClientSignatureAsync:member(1)'
     package: outlook!
@@ -869,12 +956,13 @@ methods:
       The behavior of this method depends on which client the add-in is running.
 
 
-      - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
-      selected is also disabled by the method.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the signature option
+      for new mails, replies, and forwards is disabled. A signature that's selected is also disabled by the method.
 
 
-      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
-      sections of the sending account is set to **(none)**.
+      - In Outlook on Windows (classic) and on Mac, the signature under the **New messages** and
+      **Replies/forwards** sections of the sending account is set to **(none)**.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -926,12 +1014,13 @@ methods:
       The behavior of this method depends on which client the add-in is running.
 
 
-      - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
-      selected is also disabled by the method.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the signature option
+      for new mails, replies, and forwards is disabled. A signature that's selected is also disabled by the method.
 
 
-      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
-      sections of the sending account is set to **(none)**.
+      - In Outlook on Windows (classic) and on Mac, the signature under the **New messages** and
+      **Replies/forwards** sections of the sending account is set to **(none)**.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -975,7 +1064,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1037,7 +1127,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1240,6 +1331,83 @@ methods:
       return:
         type: void
         description: An object with `ComposeType` and `CoercionType` enum values for the message item.
+  - name: 'getConversationIndexAsync(options, callback)'
+    uid: 'outlook!Office.LoadedMessageCompose#getConversationIndexAsync:member(1)'
+    package: outlook!
+    fullName: 'getConversationIndexAsync(options, callback)'
+    summary: Gets the Base64-encoded position of the current message in a conversation thread.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      contents to provide context for the current message being composed.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getConversationIndexAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded position of
+            the current message in a conversation is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getConversationIndexAsync(callback)
+    uid: 'outlook!Office.LoadedMessageCompose#getConversationIndexAsync:member(2)'
+    package: outlook!
+    fullName: getConversationIndexAsync(callback)
+    summary: Gets the Base64-encoded position of the current message in a conversation thread.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      contents to provide context for the current message being composed.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getConversationIndexAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded position of
+            the current message in a conversation is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
   - name: 'getInitializationContextAsync(options, callback)'
     uid: 'outlook!Office.LoadedMessageCompose#getInitializationContextAsync:member(1)'
     package: outlook!
@@ -1309,6 +1477,103 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
             (or an empty string if there's no initialization context) in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'getItemClassAsync(options, callback)'
+    uid: 'outlook!Office.LoadedMessageCompose#getItemClassAsync:member(1)'
+    package: outlook!
+    fullName: 'getItemClassAsync(options, callback)'
+    summary: Gets the Exchange Web Services item class of the selected message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      The following table lists the default message classes.
+
+
+      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr> <td>IPM.Note</td> <td>New messages and message
+      replies</td> </tr> <tr> <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getItemClassAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>)
+        => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The message class is returned in
+            the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getItemClassAsync(callback)
+    uid: 'outlook!Office.LoadedMessageCompose#getItemClassAsync:member(2)'
+    package: outlook!
+    fullName: getItemClassAsync(callback)
+    summary: Gets the Exchange Web Services item class of the selected message.
+    remarks: >-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      The following table lists the default message classes.
+
+
+      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr> <td>IPM.Note</td> <td>New messages and message
+      replies</td> </tr> <tr> <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemClassAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The message class is returned in
+            the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -1438,8 +1703,9 @@ methods:
       **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
-      the following conditions are met.
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
+      following conditions are met.
 
 
       a. **Delegate access/Shared folders**
@@ -1454,7 +1720,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to Outlook on Windows only)**
+      b. **Shared mailbox (applies to classic Outlook on Windows only)**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -1519,8 +1785,9 @@ methods:
       **Note**: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows unless
-      the following conditions are met.
+      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
+      following conditions are met.
 
 
       a. **Delegate access/Shared folders**
@@ -1573,11 +1840,12 @@ methods:
       Gets if the client signature is enabled.
 
 
-      For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages,
-      replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
-      should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
-      `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the web, the API call should return `false`<!-- -->.
+      In Outlook on Windows (classic) and on Mac, the API call returns `true` if the default signature for new messages,
+      replies, or forwards is set to a template for the sending Outlook account. In Outlook on the web and [new Outlook
+      on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the API call
+      returns `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or `forward`<!--
+      -->. If the settings are set to "(none)" in Outlook on Windows (classic) or on Mac, or disabled in Outlook on the
+      web or new Outlook on Windows, the API call returns `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1618,11 +1886,12 @@ methods:
       Gets if the client signature is enabled.
 
 
-      For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages,
-      replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call
-      should return `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or
-      `forward`<!-- -->. If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on
-      the web, the API call should return `false`<!-- -->.
+      In Outlook on Windows (classic) and on Mac, the API call returns `true` if the default signature for new messages,
+      replies, or forwards is set to a template for the sending Outlook account. In Outlook on the web and [new Outlook
+      on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the API call
+      returns `true` if the signature is enabled for compose types `newMail`<!-- -->, `reply`<!-- -->, or `forward`<!--
+      -->. If the settings are set to "(none)" in Outlook on Windows (classic) or on Mac, or disabled in Outlook on the
+      web or new Outlook on Windows, the API call returns `false`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1712,9 +1981,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1749,7 +2019,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: options
           description: >-
@@ -1775,9 +2045,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1812,7 +2083,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: callback
           description: >-
@@ -1845,8 +2116,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -1859,12 +2132,12 @@ methods:
       to the server. Until the item is synced, using the item ID will return an error.
 
 
-      - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a
-      message that will be sent from a shared mailbox account. If the sender creates a new message from their personal
-      mailbox and selects the shared mailbox account in the **From** field, `saveAsync` saves the draft to the
-      **Drafts** folder of the user's personal mailbox. If the sender opens the shared mailbox account in a separate
-      browser tab (through the **Open another mailbox** option, for example) and creates a new message there,
-      `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
+      `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
+      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
+      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
 
 
       **Errors**:
@@ -1914,8 +2187,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -1928,12 +2203,12 @@ methods:
       to the server. Until the item is synced, using the item ID will return an error.
 
 
-      - In Outlook on the web, the mailbox account to which a draft is saved varies when `saveAsync` is called on a
-      message that will be sent from a shared mailbox account. If the sender creates a new message from their personal
-      mailbox and selects the shared mailbox account in the **From** field, `saveAsync` saves the draft to the
-      **Drafts** folder of the user's personal mailbox. If the sender opens the shared mailbox account in a separate
-      browser tab (through the **Open another mailbox** option, for example) and creates a new message there,
-      `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
+      `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
+      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
+      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
 
 
       **Errors**:
@@ -1988,7 +2263,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        unloadAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<void>) =>
+        unloadAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       parameters:
         - id: options
@@ -1998,8 +2273,51 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: unloadAsync(callback)
+    uid: 'outlook!Office.LoadedMessageCompose#unloadAsync:member(2)'
+    package: outlook!
+    fullName: unloadAsync(callback)
+    summary: >-
+      When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be
+      loaded for processing.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
+
+
+      **Important**:
+
+
+      - To learn more about processing multiple selected messages, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
+      - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after
+      processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unloadAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void

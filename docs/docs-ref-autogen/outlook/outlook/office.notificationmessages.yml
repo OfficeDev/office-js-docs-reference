@@ -52,7 +52,9 @@ methods:
       is allowed per add-in. Attempting to add more will throw an error.
 
 
-      - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+      - In modern Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can add an
+      `InsightMessage` notification only in Compose mode.
 
 
       - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
@@ -190,7 +192,9 @@ methods:
       is allowed per add-in. Attempting to add more will throw an error.
 
 
-      - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+      - In modern Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can add an
+      `InsightMessage` notification only in Compose mode.
 
 
       - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.

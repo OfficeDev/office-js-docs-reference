@@ -8,7 +8,7 @@ remarks: >-
   \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-  Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in
   requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the
   Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the
   web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->), the `Addin` field is

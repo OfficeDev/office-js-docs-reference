@@ -9333,168 +9333,35 @@
       // Log the attachment type and its contents to the console.
       item.getAttachmentContentAsync(attachments[i].id, handleAttachmentsCallback);
     }
-'Office.AppointmentRead#getEntities:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-    const entities = Office.context.mailbox.item.getEntities();
-
-    let entityTypesFound = 0;
-
-    if (entities.addresses.length > 0) {
-        console.warn("physical addresses: ");
-        console.log(entities.addresses);
-        entityTypesFound++;
-    }
-
-    if (entities.contacts.length > 0) {
-        console.warn("contacts: ");
-        entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-        entityTypesFound++;
-    }
-
-    if (entities.emailAddresses.length > 0) {
-        console.warn("email addresses: ");
-        console.log(entities.emailAddresses);
-        entityTypesFound++;
-    }
-
-    if (entities.meetingSuggestions.length > 0) {
-        console.warn("meetings suggestions: ");
-        entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-        entityTypesFound++;
-    }
-
-    if (entities.phoneNumbers.length > 0) {
-        console.warn("phone numbers: ");
-        entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-        entityTypesFound++;
-    }
-
-    if (entities.taskSuggestions.length > 0) {
-        console.warn("task suggestions: ");
-        entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-        entityTypesFound++;
-    }
-
-    if (entities.urls.length > 0) {
-        console.warn("URLs: ");
-        console.log(entities.urls);
-        entityTypesFound++;
-    }
-
-    if (entityTypesFound == 0)
-
-    {
-        console.log("No entities found on this item.");
-    }
-'Office.AppointmentRead#getEntitiesByType:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-    console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
-'Office.AppointmentRead#getFilteredEntitiesByName:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
-
-
-    // This API would only work when you click on highlighted physical address
-    that has the word "Way" in it.
-
-    console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
 'Office.AppointmentRead#getRegExMatches:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-    // This API would only work when you click on highlighted word "ScriptLab".
+    // This API only works when you click on the highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatches());
 'Office.AppointmentRead#getRegExMatchesByName:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-    // This API would only work when you click on highlighted word "ScriptLab".
+    // This API only works when you click on the highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
-'Office.AppointmentRead#getSelectedEntities:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
-
-
-    const entities = Office.context.mailbox.item.getSelectedEntities();
-
-    let entityTypesFound = 0;
-
-    if (entities.addresses.length > 0) {
-        console.warn("physical addresses: ");
-        console.log(entities.addresses);
-        entityTypesFound++;
-    }
-
-    if (entities.contacts.length > 0) {
-        console.warn("contacts: ");
-        entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-        entityTypesFound++;
-    }
-
-    if (entities.emailAddresses.length > 0) {
-        console.warn("email addresses: ");
-        console.log(entities.emailAddresses);
-        entityTypesFound++;
-    }
-
-    if (entities.meetingSuggestions.length > 0) {
-        console.warn("meetings suggestions: ");
-        entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-        entityTypesFound++;
-    }
-
-    if (entities.phoneNumbers.length > 0) {
-        console.warn("phone numbers: ");
-        entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-        entityTypesFound++;
-    }
-
-    if (entities.taskSuggestions.length > 0) {
-        console.warn("task suggestions: ");
-        entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-        entityTypesFound++;
-    }
-
-    if (entities.urls.length > 0) {
-        console.warn("URLs: ");
-        console.log(entities.urls);
-        entityTypesFound++;
-    }
-
-    if (entityTypesFound == 0)
-
-    {
-        console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
-    }
 'Office.AppointmentRead#getSelectedRegExMatches:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
     const matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
     if (matches) {
         console.log(matches);
-    }
-
-    else {
+    } else {
         console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
     }
 'Office.AppointmentRead#getSharedPropertiesAsync:member(2)':
@@ -11393,13 +11260,6 @@
         );
       }
     });
-'Office.MailboxEnums.EntityType:enum':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-    console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 'Office.MailboxEnums.ItemNotificationMessageType:enum':
   - >-
     // Link to full sample:
@@ -13053,168 +12913,35 @@
       // Log the attachment type and its contents to the console.
       item.getAttachmentContentAsync(attachments[i].id, handleAttachmentsCallback);
     }
-'Office.MessageRead#getEntities:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-    const entities = Office.context.mailbox.item.getEntities();
-
-    let entityTypesFound = 0;
-
-    if (entities.addresses.length > 0) {
-        console.warn("physical addresses: ");
-        console.log(entities.addresses);
-        entityTypesFound++;
-    }
-
-    if (entities.contacts.length > 0) {
-        console.warn("contacts: ");
-        entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-        entityTypesFound++;
-    }
-
-    if (entities.emailAddresses.length > 0) {
-        console.warn("email addresses: ");
-        console.log(entities.emailAddresses);
-        entityTypesFound++;
-    }
-
-    if (entities.meetingSuggestions.length > 0) {
-        console.warn("meetings suggestions: ");
-        entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-        entityTypesFound++;
-    }
-
-    if (entities.phoneNumbers.length > 0) {
-        console.warn("phone numbers: ");
-        entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-        entityTypesFound++;
-    }
-
-    if (entities.taskSuggestions.length > 0) {
-        console.warn("task suggestions: ");
-        entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-        entityTypesFound++;
-    }
-
-    if (entities.urls.length > 0) {
-        console.warn("URLs: ");
-        console.log(entities.urls);
-        entityTypesFound++;
-    }
-
-    if (entityTypesFound == 0)
-
-    {
-        console.log("No entities found on this item.");
-    }
-'Office.MessageRead#getEntitiesByType:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-    console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
-'Office.MessageRead#getFilteredEntitiesByName:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
-
-
-    // This API would only work when you click on highlighted physical address
-    that has the word "Way" in it.
-
-    console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
 'Office.MessageRead#getRegExMatches:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-    // This API would only work when you click on highlighted word "ScriptLab".
+    // This API only works when you click on the highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatches());
 'Office.MessageRead#getRegExMatchesByName:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-    // This API would only work when you click on highlighted word "ScriptLab".
+    // This API only works when you click on the highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
-'Office.MessageRead#getSelectedEntities:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
-
-
-    const entities = Office.context.mailbox.item.getSelectedEntities();
-
-    let entityTypesFound = 0;
-
-    if (entities.addresses.length > 0) {
-        console.warn("physical addresses: ");
-        console.log(entities.addresses);
-        entityTypesFound++;
-    }
-
-    if (entities.contacts.length > 0) {
-        console.warn("contacts: ");
-        entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-        entityTypesFound++;
-    }
-
-    if (entities.emailAddresses.length > 0) {
-        console.warn("email addresses: ");
-        console.log(entities.emailAddresses);
-        entityTypesFound++;
-    }
-
-    if (entities.meetingSuggestions.length > 0) {
-        console.warn("meetings suggestions: ");
-        entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-        entityTypesFound++;
-    }
-
-    if (entities.phoneNumbers.length > 0) {
-        console.warn("phone numbers: ");
-        entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-        entityTypesFound++;
-    }
-
-    if (entities.taskSuggestions.length > 0) {
-        console.warn("task suggestions: ");
-        entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-        entityTypesFound++;
-    }
-
-    if (entities.urls.length > 0) {
-        console.warn("URLs: ");
-        console.log(entities.urls);
-        entityTypesFound++;
-    }
-
-    if (entityTypesFound == 0)
-
-    {
-        console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
-    }
 'Office.MessageRead#getSelectedRegExMatches:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
     const matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
     if (matches) {
         console.log(matches);
-    }
-
-    else {
+    } else {
         console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
     }
 'Office.MessageRead#getSharedPropertiesAsync:member(2)':
@@ -14818,6 +14545,28 @@
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
     });
+'PowerPoint.Shape#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the transparency of every geometric shape in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the shape transparency to be halfway transparent.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.geometricShape) {
+          shape.fill.transparency = 0.5;
+        }
+      });
+      await context.sync();
+    });
 'PowerPoint.Shape#width:member':
   - >-
     // Link to full sample:
@@ -14944,6 +14693,28 @@
 
       console.log("Added key " + JSON.stringify(myShapeTag.key) + " with value " + JSON.stringify(myShapeTag.value));
     });
+'PowerPoint.ShapeCollection#load:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the transparency of every geometric shape in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the shape transparency to be halfway transparent.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.geometricShape) {
+          shape.fill.transparency = 0.5;
+        }
+      });
+      await context.sync();
+    });
 'PowerPoint.ShapeFill#setSolidColor:member(1)':
   - >-
     // Link to full sample:
@@ -14962,6 +14733,28 @@
       });
       await context.sync();
     });
+'PowerPoint.ShapeFill#transparency:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the transparency of every geometric shape in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the shape transparency to be halfway transparent.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.geometricShape) {
+          shape.fill.transparency = 0.5;
+        }
+      });
+      await context.sync();
+    });
 'PowerPoint.ShapeFont#color:member':
   - >-
     // Link to full sample:
@@ -14973,6 +14766,72 @@
     await PowerPoint.run(async (context) => {
       const textRange = context.presentation.getSelectedTextRange();
       textRange.font.color = "green";
+      await context.sync();
+    });
+'PowerPoint.ShapeLineDashStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the dash style of every line in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the dash style for shapes of the type `line`.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.ShapeLineFormat#dashStyle:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the dash style of every line in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the dash style for shapes of the type `line`.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+        }
+      });
+      await context.sync();
+    });
+'PowerPoint.ShapeType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the dash style of every line in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the dash style for shapes of the type `line`.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+        }
+      });
       await context.sync();
     });
 'PowerPoint.Slide#delete:member(1)':
@@ -17005,7 +16864,7 @@
     selection.
 
     await Word.run(async (context) => {
-      const listItem = $("#item-to-add")
+      const listItemText = $("#item-to-add")
         .val()
         .toString()
         .trim();
@@ -17016,7 +16875,6 @@
         })
         .getFirstOrNullObject();
       selectedContentControl.load("id,comboBoxContentControl");
-
       await context.sync();
 
       if (selectedContentControl.isNullObject) {
@@ -17032,10 +16890,10 @@
         }
       }
 
-      selectedContentControl.comboBoxContentControl.addListItem(listItem);
+      selectedContentControl.comboBoxContentControl.addListItem(listItemText);
       await context.sync();
 
-      console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+      console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.ComboBoxContentControl#deleteAllListItems:member(1)':
   - >-
@@ -17069,11 +16927,63 @@
         }
       }
 
-      console.log(`About to delete the list from the combo box content control with ID: ${selectedContentControl.id}`);
+      console.log(`About to delete the list from the combo box content control with ID ${selectedContentControl.id}`);
       selectedContentControl.comboBoxContentControl.deleteAllListItems();
       await context.sync();
 
       console.log("Deleted the list from the combo box content control.");
+    });
+'Word.ComboBoxContentControl#listItems:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-combo-box-content-control.yaml
+
+
+    // Deletes the provided list item from the first combo box content control
+    in the selection.
+
+    await Word.run(async (context) => {
+      const listItemText = $("#item-to-delete")
+        .val()
+        .toString()
+        .trim();
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.comboBox]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,comboBoxContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,comboBoxContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+          console.warn("No combo box content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+      selectedComboBox.listItems.load("items/*");
+      await context.sync();
+
+      let listItems: Word.ContentControlListItemCollection = selectedContentControl.comboBoxContentControl.listItems;
+      let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+      if (!itemToDelete) {
+        console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`);
+        return;
+      }
+
+      itemToDelete.delete();
+      await context.sync();
+
+      console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.Comment:class':
   - >-
@@ -17532,6 +17442,29 @@
         await context.sync();
       }
     });
+'Word.ContentControl#resetState:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+    // Resets the state of the first content control.
+
+    await Word.run(async (context) => {
+      let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+      await context.sync();
+
+      if (firstContentControl.isNullObject) {
+        console.warn("There are no content controls in this document.");
+        return;
+      }
+      
+      firstContentControl.resetState();
+      firstContentControl.load("id");
+      await context.sync();
+
+      console.log(`Reset state of first content control with ID: ${firstContentControl.id}`);
+    });
 'Word.ContentControl#set:member(1)':
   - >-
     // Link to full sample:
@@ -17571,6 +17504,30 @@
       }
 
       await context.sync();
+    });
+'Word.ContentControl#setState:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+    // Sets the state of the first content control.
+
+    await Word.run(async (context) => {
+      const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
+      let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+      await context.sync();
+
+      if (firstContentControl.isNullObject) {
+        console.warn("There are no content controls in this document.");
+        return;
+      }
+
+      firstContentControl.setState(state);
+      firstContentControl.load("id");
+      await context.sync();
+
+      console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
     });
 'Word.ContentControl#checkboxContentControl:member':
   - >-
@@ -17626,7 +17583,7 @@
     selection.
 
     await Word.run(async (context) => {
-      const listItem = $("#item-to-add")
+      const listItemText = $("#item-to-add")
         .val()
         .toString()
         .trim();
@@ -17637,7 +17594,6 @@
         })
         .getFirstOrNullObject();
       selectedContentControl.load("id,comboBoxContentControl");
-
       await context.sync();
 
       if (selectedContentControl.isNullObject) {
@@ -17653,10 +17609,10 @@
         }
       }
 
-      selectedContentControl.comboBoxContentControl.addListItem(listItem);
+      selectedContentControl.comboBoxContentControl.addListItem(listItemText);
       await context.sync();
 
-      console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+      console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.ContentControl#dropDownListContentControl:member':
   - >-
@@ -17668,7 +17624,7 @@
     the selection.
 
     await Word.run(async (context) => {
-      const listItem = $("#item-to-add")
+      const listItemText = $("#item-to-add")
         .val()
         .toString()
         .trim();
@@ -17679,7 +17635,6 @@
         })
         .getFirstOrNullObject();
       selectedContentControl.load("id,dropDownListContentControl");
-
       await context.sync();
 
       if (selectedContentControl.isNullObject) {
@@ -17695,10 +17650,10 @@
         }
       }
 
-      selectedContentControl.dropDownListContentControl.addListItem(listItem);
+      selectedContentControl.dropDownListContentControl.addListItem(listItemText);
       await context.sync();
 
-      console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+      console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.ContentControl#onDataChanged:member':
   - >-
@@ -18178,6 +18133,201 @@
         console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
       });
     }
+'Word.ContentControlListItem:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-dropdown-list-content-control.yaml
+
+
+    // Deletes the provided list item from the first dropdown list content
+    control in the selection.
+
+    await Word.run(async (context) => {
+      const listItemText = $("#item-to-delete")
+        .val()
+        .toString()
+        .trim();
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.dropDownList]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,dropDownListContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,dropDownListContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+          console.warn("No dropdown list content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
+      selectedDropdownList.listItems.load("items/*");
+      await context.sync();
+
+      let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
+      let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+      if (!itemToDelete) {
+        console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
+        return;
+      }
+      
+      itemToDelete.delete();
+      await context.sync();
+
+      console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+    });
+'Word.ContentControlListItem#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-combo-box-content-control.yaml
+
+
+    // Deletes the provided list item from the first combo box content control
+    in the selection.
+
+    await Word.run(async (context) => {
+      const listItemText = $("#item-to-delete")
+        .val()
+        .toString()
+        .trim();
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.comboBox]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,comboBoxContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,comboBoxContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+          console.warn("No combo box content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+      selectedComboBox.listItems.load("items/*");
+      await context.sync();
+
+      let listItems: Word.ContentControlListItemCollection = selectedContentControl.comboBoxContentControl.listItems;
+      let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+      if (!itemToDelete) {
+        console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`);
+        return;
+      }
+
+      itemToDelete.delete();
+      await context.sync();
+
+      console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+    });
+'Word.ContentControlListItem#displayText:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-dropdown-list-content-control.yaml
+
+
+    // Deletes the provided list item from the first dropdown list content
+    control in the selection.
+
+    await Word.run(async (context) => {
+      const listItemText = $("#item-to-delete")
+        .val()
+        .toString()
+        .trim();
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.dropDownList]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,dropDownListContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,dropDownListContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+          console.warn("No dropdown list content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
+      selectedDropdownList.listItems.load("items/*");
+      await context.sync();
+
+      let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
+      let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+      if (!itemToDelete) {
+        console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
+        return;
+      }
+      
+      itemToDelete.delete();
+      await context.sync();
+
+      console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+    });
+'Word.ContentControlListItemCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-combo-box-content-control.yaml
+
+
+    // Gets the list items from the first combo box content control found in the
+    selection.
+
+    await Word.run(async (context) => {
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.comboBox]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,comboBoxContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,comboBoxContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+          console.warn("No combo box content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+      selectedComboBox.listItems.load("items");
+      await context.sync();
+
+      const currentItems: Word.ContentControlListItemCollection = selectedComboBox.listItems;
+      console.log(`The list from the combo box content control with ID ${selectedContentControl.id}:`, currentItems);
+    });
 'Word.ContentControlOptions:interface':
   - >-
     // Link to full sample:
@@ -18257,6 +18407,30 @@
         console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`, event.ids);
       });
     }
+'Word.ContentControlState:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+    // Sets the state of the first content control.
+
+    await Word.run(async (context) => {
+      const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
+      let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+      await context.sync();
+
+      if (firstContentControl.isNullObject) {
+        console.warn("There are no content controls in this document.");
+        return;
+      }
+
+      firstContentControl.setState(state);
+      firstContentControl.load("id");
+      await context.sync();
+
+      console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
+    });
 'Word.ContentControlType:enum':
   - >-
     // Link to full sample:
@@ -19426,6 +19600,124 @@
         console.log("No changes are being tracked.");
       }
     });
+'Word.Document#onAnnotationClicked:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    // Registers event handlers.
+
+    await Word.run(async (context) => {
+      eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+      eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+      eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+      eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+      eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+      eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+      eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+      await context.sync();
+
+      console.log("Event handlers registered.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    async function onClickedHandler(args: Word.AnnotationClickedEventArgs) {
+      await Word.run(async (context) => {
+        const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+        annotation.load("critiqueAnnotation");
+
+        await context.sync();
+
+        console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+      });
+    }
+'Word.Document#onAnnotationHovered:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    // Registers event handlers.
+
+    await Word.run(async (context) => {
+      eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+      eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+      eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+      eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+      eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+      eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+      eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+      await context.sync();
+
+      console.log("Event handlers registered.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
+      await Word.run(async (context) => {
+        const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+        annotation.load("critiqueAnnotation");
+
+        await context.sync();
+
+        console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+      });
+    }
+'Word.Document#onAnnotationInserted:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    // Registers event handlers.
+
+    await Word.run(async (context) => {
+      eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+      eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+      eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+      eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+      eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+      eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+      eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+      await context.sync();
+
+      console.log("Event handlers registered.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    async function onInsertedHandler(args: Word.AnnotationInsertedEventArgs) {
+      await Word.run(async (context) => {
+        const annotations = [];
+        for (let i = 0; i < args.ids.length; i++) {
+          let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
+          annotation.load("id,critiqueAnnotation");
+
+          annotations.push(annotation);
+        }
+
+        await context.sync();
+
+        for (let annotation of annotations) {
+          console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
+        }
+      });
+    }
 'Word.Document#onAnnotationPopupAction:member':
   - >-
     // Link to full sample:
@@ -19464,6 +19756,40 @@
         }
 
         console.log(message);
+      });
+    }
+'Word.Document#onAnnotationRemoved:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    // Registers event handlers.
+
+    await Word.run(async (context) => {
+      eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+      eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+      eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+      eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+      eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+      eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+      eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+      await context.sync();
+
+      console.log("Event handlers registered.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+    async function onRemovedHandler(args: Word.AnnotationRemovedEventArgs) {
+      await Word.run(async (context) => {
+        for (let id of args.ids) {
+          console.log(`AnnotationRemoved: ID ${id}`);
+        }
       });
     }
 'Word.Document#onContentControlAdded:member':
@@ -19699,7 +20025,7 @@
     the selection.
 
     await Word.run(async (context) => {
-      const listItem = $("#item-to-add")
+      const listItemText = $("#item-to-add")
         .val()
         .toString()
         .trim();
@@ -19710,7 +20036,6 @@
         })
         .getFirstOrNullObject();
       selectedContentControl.load("id,dropDownListContentControl");
-
       await context.sync();
 
       if (selectedContentControl.isNullObject) {
@@ -19726,10 +20051,10 @@
         }
       }
 
-      selectedContentControl.dropDownListContentControl.addListItem(listItem);
+      selectedContentControl.dropDownListContentControl.addListItem(listItemText);
       await context.sync();
 
-      console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+      console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.DropDownListContentControl#deleteAllListItems:member(1)':
   - >-
@@ -19764,12 +20089,64 @@
       }
 
       console.log(
-        `About to delete the list from the dropdown list content control with ID: ${selectedContentControl.id}`
+        `About to delete the list from the dropdown list content control with ID ${selectedContentControl.id}`
       );
       selectedContentControl.dropDownListContentControl.deleteAllListItems();
       await context.sync();
 
       console.log("Deleted the list from the dropdown list content control.");
+    });
+'Word.DropDownListContentControl#listItems:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-dropdown-list-content-control.yaml
+
+
+    // Deletes the provided list item from the first dropdown list content
+    control in the selection.
+
+    await Word.run(async (context) => {
+      const listItemText = $("#item-to-delete")
+        .val()
+        .toString()
+        .trim();
+      const selectedRange: Word.Range = context.document.getSelection();
+      let selectedContentControl = selectedRange
+        .getContentControls({
+          types: [Word.ContentControlType.dropDownList]
+        })
+        .getFirstOrNullObject();
+      selectedContentControl.load("id,dropDownListContentControl");
+      await context.sync();
+
+      if (selectedContentControl.isNullObject) {
+        const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+        parentContentControl.load("id,type,dropDownListContentControl");
+        await context.sync();
+
+        if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+          console.warn("No dropdown list content control is currently selected.");
+          return;
+        } else {
+          selectedContentControl = parentContentControl;
+        }
+      }
+
+      let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
+      selectedDropdownList.listItems.load("items/*");
+      await context.sync();
+
+      let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
+      let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+      if (!itemToDelete) {
+        console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
+        return;
+      }
+      
+      itemToDelete.delete();
+      await context.sync();
+
+      console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
     });
 'Word.ErrorCodes:enum':
   - >-
@@ -20506,6 +20883,42 @@
         console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
       }
     });
+'Word.ListBuiltInNumberStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
+      }
+    });
 'Word.ListBullet:enum':
   - >-
     // Link to full sample:
@@ -20613,6 +21026,78 @@
 
       await context.sync();
     });
+'Word.ListLevel:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
+      }
+    });
+'Word.ListLevelCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
+      }
+    });
 'Word.ListLevelType:enum':
   - >-
     // Link to full sample:
@@ -20687,6 +21172,42 @@
       list.load("levelTypes");
 
       await context.sync();
+    });
+'Word.ListTemplate:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
+      }
     });
 'Word.LocationRelation:enum':
   - >-
@@ -21599,6 +22120,37 @@
       const locationValue: Word.LocationRelation = comparedLocation.value;
       console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
     });
+'Word.Range#expandTo:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+    await Word.run(async (context) => {
+      // Get the complete sentence (as range) associated with the insertion point.
+      const sentences: Word.RangeCollection = context.document
+        .getSelection()
+        .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+      sentences.load("$none");
+      await context.sync();
+
+      // Expand the range to the end of the paragraph to get all the complete sentences.
+      const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+        .getRange()
+        .expandTo(
+          context.document
+            .getSelection()
+            .paragraphs.getFirst()
+            .getRange(Word.RangeLocation.end)
+        )
+        .getTextRanges(["."], false /* Don't trim spaces*/);
+      sentencesToTheEndOfParagraph.load("text");
+      await context.sync();
+
+      for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+        console.log(sentencesToTheEndOfParagraph.items[i].text);
+      }
+    });
 'Word.Range#getComments:member(1)':
   - >-
     // Link to full sample:
@@ -21653,6 +22205,21 @@
       await context.sync();
 
       console.log("Deleted checkbox content control.");
+    });
+'Word.Range#getRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-dropdown-list-content-control.yaml
+
+
+    // Places a dropdown list content control at the end of the selection.
+
+    await Word.run(async (context) => {
+      let selection = context.document.getSelection();
+      selection.getRange(Word.RangeLocation.end).insertContentControl(Word.ContentControlType.dropDownList);
+      await context.sync();
+
+      console.log("Dropdown list content control inserted at the end of the selection.");
     });
 'Word.Range#getReviewedText:member(1)':
   - >-
@@ -22134,6 +22701,74 @@
         }
       }
     });
+'Word.Shading:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+
+    // Updates shading properties (e.g., texture, pattern colors) of the
+    specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update shading properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        const shading: Word.Shading = style.shading;
+        shading.load();
+        await context.sync();
+
+        shading.backgroundPatternColor = "blue";
+        shading.foregroundPatternColor = "yellow";
+        shading.texture = Word.ShadingTextureType.darkTrellis;
+
+        console.log("Updated shading.");
+      }
+    });
+'Word.ShadingTextureType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+
+    // Updates shading properties (e.g., texture, pattern colors) of the
+    specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update shading properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        const shading: Word.Shading = style.shading;
+        shading.load();
+        await context.sync();
+
+        shading.backgroundPatternColor = "blue";
+        shading.foregroundPatternColor = "yellow";
+        shading.texture = Word.ShadingTextureType.darkTrellis;
+
+        console.log("Updated shading.");
+      }
+    });
 'Word.Style#delete:member(1)':
   - >-
     // Link to full sample:
@@ -22158,6 +22793,39 @@
       } else {
         style.delete();
         console.log(`Successfully deleted custom style '${styleName}'.`);
+      }
+    });
+'Word.Style#borders:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+
+    // Updates border properties (e.g., type, width, color) of the specified
+    style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update border properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        const borders: Word.BorderCollection = style.borders;
+        borders.load("items");
+        await context.sync();
+
+        borders.outsideBorderType = Word.BorderType.dashed;
+        borders.outsideBorderWidth = Word.BorderWidth.pt025;
+        borders.outsideBorderColor = "green";
+        console.log("Updated outside borders.");
       }
     });
 'Word.Style#font:member':
@@ -22186,6 +22854,42 @@
         font.color = "#FF0000";
         font.size = 20;
         console.log(`Successfully updated font properties of the '${styleName}' style.`);
+      }
+    });
+'Word.Style#listTemplate:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
       }
     });
 'Word.Style#nameLocal:member':
@@ -22249,6 +22953,40 @@
         style.paragraphFormat.leftIndent = 30;
         style.paragraphFormat.alignment = Word.Alignment.centered;
         console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+      }
+    });
+'Word.Style#shading:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+
+
+    // Updates shading properties (e.g., texture, pattern colors) of the
+    specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update shading properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        const shading: Word.Shading = style.shading;
+        shading.load();
+        await context.sync();
+
+        shading.backgroundPatternColor = "blue";
+        shading.foregroundPatternColor = "yellow";
+        shading.texture = Word.ShadingTextureType.darkTrellis;
+
+        console.log("Updated shading.");
       }
     });
 'Word.StyleCollection#getByNameOrNullObject:member(1)':
@@ -22960,6 +23698,42 @@
       await context.sync();
 
       console.log(nextTrackedChange);
+    });
+'Word.TrailingCharacter:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+
+
+    // Gets the properties of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to get properties.");
+        return;
+      }
+
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load("type");
+      await context.sync();
+
+      if (style.isNullObject || style.type != Word.StyleType.list) {
+        console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+      } else {
+        // Load objects to log properties and their values in the console.
+        style.load();
+        style.listTemplate.load();
+        await context.sync();
+
+        console.log(`Properties of the '${styleName}' style:`, style);
+
+        const listLevels = style.listTemplate.listLevels;
+        listLevels.load("items");
+        await context.sync();
+
+        console.log(`List levels of the '${styleName}' style:`, listLevels);
+      }
     });
 'Word.VerticalAlignment:enum':
   - >-

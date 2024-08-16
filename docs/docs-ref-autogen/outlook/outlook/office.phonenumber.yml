@@ -8,8 +8,14 @@ summary: >-
 
 
   An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the
-  `phoneNumbers` property of the `Entities` object that is returned when you call the `getEntities` method on the
+  `phoneNumbers` property of the `Entities` object that's returned when you call the `getEntities` method on the
   selected item.
+
+
+  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
+  supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
+  For guidance on how to implement these rules, see [Contextual Outlook
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -19,36 +25,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Read
-
-
-  **Important**: Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. The work to retire this
-  feature will start in May and continue until the end of June. After June, contextual add-ins will no longer be able to
-  detect entities in mail items to perform tasks on them. The following APIs will also be retired.
-
-
-  - `Office.context.mailbox.item.getEntities` - `Office.context.mailbox.item.getEntitiesByType` -
-  `Office.context.mailbox.item.getFilteredEntitiesByName` - `Office.context.mailbox.item.getSelectedEntities`
-
-
-  To help minimize potential disruptions, the following will still be supported after entity-based contextual add-ins
-  are retired.
-
-
-  - An alternative implementation of the **Join Meeting** button, which is activated by online meeting add-ins, is
-  being developed. Once support for entity-based contextual add-ins ends, online meeting add-ins will automatically
-  transition to the alternative implementation to activate the **Join Meeting** button.
-
-
-  - Regular expression rules will continue to be supported after entity-based contextual add-ins are retired. We
-  recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on
-  how to implement these rules, see [Use regular expression activation rules to show an Outlook
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-  -->.
-
-
-  For more information, see [Retirement of entity-based contextual Outlook
-  add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-  -->.
 
 
   #### Examples
@@ -72,17 +48,30 @@ remarks: >-
 
   ```
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+  instead.
 type: interface
 properties:
   - name: originalPhoneString
     uid: 'outlook!Office.PhoneNumber#originalPhoneString:member'
     package: outlook!
     fullName: originalPhoneString
-    summary: Gets the text that was identified in an item as a phone number.
+    summary: >-
+      Gets the text that was identified in an item as a phone number.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'originalPhoneString: string;'
       return:
@@ -94,9 +83,18 @@ properties:
     summary: >-
       Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
       characters like parentheses and hyphens, if they exist in the original item.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'phoneString: string;'
       return:
@@ -105,10 +103,20 @@ properties:
     uid: 'outlook!Office.PhoneNumber#type:member'
     package: outlook!
     fullName: type
-    summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
+    summary: >-
+      Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'type: string;'
       return:

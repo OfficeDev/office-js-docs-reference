@@ -181,8 +181,8 @@ methods:
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office applications and API
       requirements](https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
-      -->, if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see [Office Add-ins
-      with the unified app manifest for Microsoft
+      -->, if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see [Office
+      Add-ins with the unified app manifest for Microsoft
       365](https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview)<!-- -->.
 
 
@@ -336,8 +336,8 @@ methods:
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office applications and API
       requirements](https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
-      -->, if you're using the XML manifest. If you're using the unified manifest for Microsoft 365, see [Office Add-ins
-      with the unified app manifest for Microsoft
+      -->, if you're using the add-in only manifest. If you're using the unified manifest for Microsoft 365, see [Office
+      Add-ins with the unified app manifest for Microsoft
       365](https://learn.microsoft.com/office/dev/add-ins/develop/unified-manifest-overview)<!-- -->.
 
 

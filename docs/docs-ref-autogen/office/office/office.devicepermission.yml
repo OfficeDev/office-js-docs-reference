@@ -23,8 +23,8 @@ remarks: >-
   - Word on the web
 
 
-  It's also supported in [new Outlook on Windows
-  (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+  It's also supported in [new Outlook on
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
 
   **Requirement set**: [DevicePermission
@@ -183,8 +183,9 @@ methods:
       parameters:
         - id: permissions
           description: >-
-            An array of device capabilities to which an add-in is requesting access. In Outlook on the web, an add-in
-            can request access to a user's camera, geolocation, and microphone.
+            An array of device capabilities to which an add-in is requesting access. In Outlook on the web and [new
+            Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, an
+            add-in can request access to a user's camera, geolocation, and microphone.
           type: '<xref uid="office!Office.DevicePermissionType:enum" />[]'
         - id: options
           description: >-
@@ -296,8 +297,9 @@ methods:
       parameters:
         - id: permissions
           description: >-
-            An array of device capabilities to which an add-in is requesting access. In Outlook on the web, an add-in
-            can request access to a user's camera, geolocation, and microphone.
+            An array of device capabilities to which an add-in is requesting access. In Outlook on the web and [new
+            Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, an
+            add-in can request access to a user's camera, geolocation, and microphone.
           type: '<xref uid="office!Office.DevicePermissionType:enum" />[]'
         - id: callback
           description: >-

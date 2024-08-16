@@ -272,7 +272,37 @@ properties:
     package: powerpoint!
     fullName: type
     summary: 'Returns the type of this shape. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+      // Changes the transparency of every geometric shape in the slide.
+
+      await PowerPoint.run(async (context) => {
+        // Get the type of shape for every shape in the collection.
+        const shapes = context.presentation.slides.getItemAt(0).shapes;
+        shapes.load("type");
+        await context.sync();
+
+        // Change the shape transparency to be halfway transparent.
+        shapes.items.forEach((shape) => {
+          if (shape.type === PowerPoint.ShapeType.geometricShape) {
+            shape.fill.transparency = 0.5;
+          }
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

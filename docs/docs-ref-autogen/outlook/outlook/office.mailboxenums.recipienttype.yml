@@ -101,10 +101,11 @@ fields:
       added from a personal Outlook address book.
 
 
-      **Important**: In Outlook on the web, on Windows (starting with Version 2210 (Build 15813.20002)), and on Mac,
-      Global Address Book (GAL) recipients saved to a personal address book return the `ExternalUser` value, even if
-      their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
-      added or resolved against the GAL.
+      **Important**: In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic (starting with
+      Version 2210, Build 15813.20002)), and on Mac, Global Address Book (GAL) recipients saved to a personal address
+      book return the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients
+      return a `User` value only if they're directly added or resolved against the GAL.
     value: '"externalUser"'
   - name: Other
     uid: 'outlook!Office.MailboxEnums.RecipientType.Other:member'
