@@ -597,6 +597,20 @@ Excel.QueryCollection#getCount:member(1):
 
       console.log("Query count: " + count.value);
     });
+Excel.Range:class:
+  - |-
+    // Get a Range object by its address.
+    await Excel.run(async (context) => {
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const cell = range.getCell(0,0);
+        cell.load('address');
+        await context.sync();
+        
+        console.log(cell.address);
+    });
 Excel.Range#clear:member(1):
   - |-
     // Clear the format and contents of the range.
@@ -1262,6 +1276,15 @@ Excel.Workbook#getSelectedRange:member(1):
         selectedRange.load('address');
         await context.sync();
         console.log(selectedRange.address);
+    });
+Excel.Worksheet:class:
+  - |-
+    // Get a Worksheet object by its name and activate it.
+    await Excel.run(async (context) => { 
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
+        worksheet.activate();
+        await context.sync(); 
     });
 Excel.Worksheet#activate:member(1):
   - |-
