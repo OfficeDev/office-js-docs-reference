@@ -442,17 +442,17 @@ Office.AsyncResultStatus:enum:
     );
 Office.Auth:class:
   - |-
-      // Get the auth context object and use it to get an
-      // access token.
-      const authContext = Office.context.auth;
-      authContext.getAccessTokenAsync(function(result) {
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync(function(result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             console.log(token);
         } else {
             console.log("Error obtaining token", result.error);
         }
-      });
+    });
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
