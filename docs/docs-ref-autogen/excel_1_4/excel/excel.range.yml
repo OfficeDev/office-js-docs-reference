@@ -7,7 +7,25 @@ summary: >-
   Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
   more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Get a Range object by its address.
+  await Excel.run(async (context) => {
+      const sheetName = "Sheet1";
+      const rangeAddress = "A1:F8";
+      const worksheet = context.workbook.worksheets.getItem(sheetName);
+      const range = worksheet.getRange(rangeAddress);
+      const cell = range.getCell(0,0);
+      cell.load('address');
+      await context.sync();
+      
+      console.log(cell.address);
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class

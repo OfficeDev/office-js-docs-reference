@@ -23,6 +23,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: customXmlParts
+    uid: 'powerpoint!PowerPoint.SlideLayout#customXmlParts:member'
+    package: powerpoint!
+    fullName: customXmlParts
+    summary: Returns a collection of custom XML parts in the slide layout.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly customXmlParts: PowerPoint.CustomXmlPartCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPartCollection:class" />'
   - name: id
     uid: 'powerpoint!PowerPoint.SlideLayout#id:member'
     package: powerpoint!

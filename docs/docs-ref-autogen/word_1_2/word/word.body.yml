@@ -4,7 +4,23 @@ uid: 'word!Word.Body:class'
 package: word!
 fullName: Word.Body
 summary: Represents the body of a document or a section.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Get the body object and read its font size.
+  await Word.run(async (context) => {
+      // Create a proxy object for the document body.
+      const body = context.document.body;
+      body.load("font/size");
+
+      await context.sync();
+
+      console.log("Font size: " + body.font.size);
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
