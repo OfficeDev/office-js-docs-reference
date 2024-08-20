@@ -440,6 +440,19 @@ Office.AsyncResultStatus:enum:
             console.log(`Selected data: ${result.value}`);
         }
     );
+Office.Auth:class:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync(function(result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+            const token = result.value;
+            console.log(token);
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -3913,6 +3926,16 @@ Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
     Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+Office.Tab:class:
+  - |-
+    // Create an Office.Tab object (a contextual tab), set its visibility
+    // and add it to the ribbon.
+    async function showDataTab() {
+        // Create the Office.Tab object.
+        const myContextualTab = { id: "CtxTab1", visible: true };
+        const ribbonUpdater = { tabs: [ myContextualTab ] };
+        await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.Tab#id:member:
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -4115,6 +4138,11 @@ Office.ThemeId:enum:
 
         ...
     }
+Office.UI:class:
+  - |-
+    // Get an Office.UI object and use it to open a dialog with a specified size. 
+    const uiContext = Office.context.ui;
+    uiContext.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 });
 Office.UI#addHandlerAsync:member(2):
   - |-
     // The following example shows how to add an event handler for the DialogParentMessageReceived event.

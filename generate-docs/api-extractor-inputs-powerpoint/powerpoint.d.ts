@@ -32,6 +32,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a collection of custom XML parts that are associated with the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
+        /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
          * @remarks
@@ -165,6 +173,368 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         slideMasterId?: string;
+    }
+    /**
+     * Represents a custom XML part object.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPart extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The ID of the custom XML part.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * The namespace URI of the custom XML part.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         * Deletes the custom XML part.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Gets the XML content of the custom XML part.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getXml(): OfficeExtension.ClientResult<string>;
+        /**
+         * Sets the XML content for the custom XML part.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - XML content for the part.
+         */
+        setXml(xml: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.CustomXmlPartLoadOptions): PowerPoint.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.CustomXmlPart;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.CustomXmlPartData;
+    }
+    /**
+     * A scoped collection of custom XML parts.
+                A scoped collection is the result of some operation (such as filtering by namespace).
+                A scoped collection cannot be scoped any further.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.CustomXmlPart[];
+        /**
+         * Gets the number of custom XML parts in this collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of custom XML parts in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a `CustomXmlPart` based on its ID.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the object to be retrieved.
+         */
+        getItem(id: string): PowerPoint.CustomXmlPart;
+        /**
+         * Gets a `CustomXmlPart` based on its ID.
+                    If the `CustomXmlPart` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the object to be retrieved.
+         */
+        getItemOrNullObject(id: string): PowerPoint.CustomXmlPart;
+        /**
+         * If the collection contains exactly one item, this method returns it.
+                    If the collection contains no items or more than one item, then this method returns the `GeneralException` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getOnlyItem(): PowerPoint.CustomXmlPart;
+        /**
+         * If the collection contains exactly one item, this method returns it.
+                    Otherwise, this method returns `null`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getOnlyItemOrNullObject(): PowerPoint.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.CustomXmlPartScopedCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.CustomXmlPartScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.CustomXmlPartScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.CustomXmlPartScopedCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.CustomXmlPartScopedCollectionData;
+    }
+    /**
+     * A collection of custom XML parts.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.CustomXmlPart[];
+        /**
+         * Adds a new `CustomXmlPart` to the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - XML content. Must be a valid XML fragment. If the XML fragment is invalid, then this method returns the `GeneralException` error.
+         */
+        add(xml: string): PowerPoint.CustomXmlPart;
+        /**
+         * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param namespaceUri - This must be a fully qualified schema URI, such as "http://schemas.contoso.com/review/1.0".
+         */
+        getByNamespace(namespaceUri: string): PowerPoint.CustomXmlPartScopedCollection;
+        /**
+         * Gets the number of custom XML parts in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of custom XML parts in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a `CustomXmlPart` based on its ID.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the object to be retrieved.
+         */
+        getItem(id: string): PowerPoint.CustomXmlPart;
+        /**
+         * Gets a `CustomXmlPart` based on its ID.
+                    If the `CustomXmlPart` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the object to be retrieved.
+         */
+        getItemOrNullObject(id: string): PowerPoint.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.CustomXmlPartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.CustomXmlPartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.CustomXmlPartCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.CustomXmlPartCollectionData;
+    }
+    /**
+     * Represents a single hyperlink.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Hyperlink extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the URL target of the hyperlink.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address: string;
+        /**
+         * Specifies the string displayed when hovering over the hyperlink.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        screenTip: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.HyperlinkLoadOptions): PowerPoint.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Hyperlink;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.Hyperlink` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.HyperlinkData;
+    }
+    /**
+     * Represents a collection of hyperlinks.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class HyperlinkCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.Hyperlink[];
+        /**
+         * Gets the number of hyperlinks in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of hyperlinks in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a hyperlink using its zero-based index in the collection. An error is thrown if the index is out of range.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the hyperlink in the collection.
+         * @returns The hyperlink at the given index. An error is thrown if index is out of range.
+         */
+        getItemAt(index: number): PowerPoint.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.HyperlinkCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.HyperlinkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.HyperlinkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.HyperlinkCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.HyperlinkCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.HyperlinkCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.HyperlinkCollectionData;
     }
     /**
      * Specifies the connector type for line shapes.
@@ -1753,6 +2123,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a collection of custom XML parts in the slide layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
+        /**
          * Returns a collection of shapes in the slide layout.
          *
          * @remarks
@@ -1883,6 +2261,14 @@ export declare namespace PowerPoint {
     export class SlideMaster extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Returns a collection of custom XML parts in the Slide Master.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
         /**
          * Gets the collection of layouts provided by the Slide Master for slides.
          *
@@ -2089,6 +2475,22 @@ export declare namespace PowerPoint {
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Returns a collection of custom XML parts in the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
+        /**
+         * Returns a collection of hyperlinks in the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hyperlinks: PowerPoint.HyperlinkCollection;
         /**
          * Gets the layout of the slide.
          *
@@ -2888,6 +3290,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Returns a collection of custom XML parts in the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
+        /**
          * Returns the fill formatting of this shape.
          *
          * @remarks
@@ -3419,6 +3829,37 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        export interface CustomXmlPartScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
+        export interface CustomXmlPartCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
+        export interface HyperlinkUpdateData {
+            /**
+             * Specifies the URL target of the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: string;
+            /**
+             * Specifies the string displayed when hovering over the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: string;
+        }
+        /** An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`. */
+        export interface HyperlinkCollectionUpdateData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -3710,6 +4151,56 @@ export declare namespace PowerPoint {
              */
             id?: string;
             title?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
+        export interface CustomXmlPartData {
+            /**
+             * The ID of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * The namespace URI of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
+        export interface CustomXmlPartScopedCollectionData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
+        export interface CustomXmlPartCollectionData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
+        export interface HyperlinkData {
+            /**
+             * Specifies the URL target of the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: string;
+            /**
+             * Specifies the string displayed when hovering over the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: string;
+        }
+        /** An interface describing the data returned by calling `hyperlinkCollection.toJSON()`. */
+        export interface HyperlinkCollectionData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -4088,6 +4579,153 @@ export declare namespace PowerPoint {
              */
             id?: boolean;
             title?: boolean;
+        }
+        /**
+         * Represents a custom XML part object.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The ID of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * The namespace URI of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         * A scoped collection of custom XML parts.
+                    A scoped collection is the result of some operation (such as filtering by namespace).
+                    A scoped collection cannot be scoped any further.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartScopedCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: The ID of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: The namespace URI of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         * A collection of custom XML parts.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: The ID of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: The namespace URI of the custom XML part.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         * Represents a single hyperlink.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HyperlinkLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the URL target of the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: boolean;
+            /**
+             * Specifies the string displayed when hovering over the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: boolean;
+        }
+        /**
+         * Represents a collection of hyperlinks.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface HyperlinkCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the URL target of the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the string displayed when hovering over the hyperlink.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            screenTip?: boolean;
         }
         /**
          * Represents the collection of shapes.

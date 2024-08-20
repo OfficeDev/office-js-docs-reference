@@ -1,3 +1,15 @@
+Word.Body:class:
+  - |-
+    // Get the body object and read its font size.
+    await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body = context.document.body;
+        body.load("font/size");
+
+        await context.sync();
+
+        console.log("Font size: " + body.font.size);
+    });
 Word.ContentControl:class:
   - |-
     // Run a batch operation against the Word object model.

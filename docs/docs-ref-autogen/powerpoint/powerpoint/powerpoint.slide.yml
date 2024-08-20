@@ -23,6 +23,34 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: customXmlParts
+    uid: 'powerpoint!PowerPoint.Slide#customXmlParts:member'
+    package: powerpoint!
+    fullName: customXmlParts
+    summary: Returns a collection of custom XML parts in the slide.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly customXmlParts: PowerPoint.CustomXmlPartCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.CustomXmlPartCollection:class" />'
+  - name: hyperlinks
+    uid: 'powerpoint!PowerPoint.Slide#hyperlinks:member'
+    package: powerpoint!
+    fullName: hyperlinks
+    summary: Returns a collection of hyperlinks in the slide.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hyperlinks: PowerPoint.HyperlinkCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.HyperlinkCollection:class" />'
   - name: id
     uid: 'powerpoint!PowerPoint.Slide#id:member'
     package: powerpoint!
