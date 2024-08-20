@@ -45,6 +45,16 @@ items:
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: BulletFormat
             uid: 'powerpoint!PowerPoint.BulletFormat:class'
+          - name: CustomXmlPart
+            uid: 'powerpoint!PowerPoint.CustomXmlPart:class'
+          - name: CustomXmlPartCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
+          - name: CustomXmlPartScopedCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+          - name: Hyperlink
+            uid: 'powerpoint!PowerPoint.Hyperlink:class'
+          - name: HyperlinkCollection
+            uid: 'powerpoint!PowerPoint.HyperlinkCollection:class'
           - name: InsertSlideOptions
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
           - name: ParagraphFormat
