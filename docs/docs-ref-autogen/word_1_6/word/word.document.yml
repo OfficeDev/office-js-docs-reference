@@ -278,7 +278,7 @@ methods:
         const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
         context.document.addStyle(newStyleName, newStyleType);
         await context.sync();
-        
+
         console.log(newStyleName + " has been added to the style list.");
       });
 
@@ -643,7 +643,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
 
-      // Gets the number of styles.
+      // Gets the number of available styles stored with the document.
 
       await Word.run(async (context) => {
         const styles: Word.StyleCollection = context.document.getStyles();
@@ -676,7 +676,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-custom-style.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
 
 
       // Imports styles from JSON.

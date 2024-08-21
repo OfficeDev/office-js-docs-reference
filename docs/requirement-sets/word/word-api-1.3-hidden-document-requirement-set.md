@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API Hidden Document requirement set 1.3
 description: Details about the WordApiHiddenDocument 1.3 requirement set.
-ms.date: 07/01/2022
+ms.date: 08/22/2024
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +31,7 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 ## API list
 
-The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true).
+The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument 1.3` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument 1.3` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true).
 
 | Class | Fields | Description |
 |:---|:---|:---|

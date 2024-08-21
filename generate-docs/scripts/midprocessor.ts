@@ -49,8 +49,8 @@ tryCatch(async () => {
 
     console.log("\nCreating snippets file...");
 
-    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml");
-    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml", "text"));
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/a61851f9accf66f39cac20e6c5e8fa23c3618fbd/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/a61851f9accf66f39cac20e6c5e8fa23c3618fbd/snippet-extractor-output/snippets.yaml", "text"));
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
@@ -67,7 +67,7 @@ tryCatch(async () => {
     // Parse the YAML into an object/hash set.
     let allSnippets: Object = yaml.load(localCodeSnippetsString);
 
-    // If a duplicate key exists, merge the Script Lab example(s) into the item with the existing key.
+    // If a duplicate key exists, merge the Script Lab examples into the item with the existing key.
     let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
     for (const key of Object.keys(scriptLabSnippets)) {
         scriptLabSnippets[key] = consolidateMappedSnippets(scriptLabSnippets[key]);
@@ -190,6 +190,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_1/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_4_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_3_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
@@ -252,6 +253,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiDesktop 1.1 case.
+        console.log(`\nStarting ${host}_desktop_1_1...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_1/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_1/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_1`);
         // Handle WordApiHiddenDocument 1.5 case.
         console.log(`\nStarting ${host}_1_5_hidden_document...`);
         json = fsx.readFileSync(`${jsonPath}_1_5_hidden_document/${fileName}`).toString();

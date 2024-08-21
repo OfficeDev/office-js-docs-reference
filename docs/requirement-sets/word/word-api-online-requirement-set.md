@@ -1,16 +1,16 @@
 ---
 title: Word JavaScript API online-only requirement set
 description: Details about the WordApiOnline requirement set.
-ms.date: 01/25/2024
+ms.date: 08/22/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 
 # Word JavaScript API online-only requirement set
 
-The `WordApiOnline` requirement set is a special requirement set that includes features that are only available for Word on the web. APIs in this requirement set are considered to be production APIs for the Word on the web application. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiOnline` APIs are considered to be "preview" APIs for other platforms (Windows, Mac, iPad) and may not be supported by any of those platforms.
+The `WordApiOnline` requirement set is a special requirement set that includes features that are only available for Word on the web. APIs in this requirement set are considered to be production APIs for the Word application on the web. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiOnline` APIs are considered to be "preview" APIs for other platforms (Windows, Mac, iPad) and may not be supported by any of those platforms.
 
-When APIs in the `WordApiOnline` requirement set are supported across all platforms, they will added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement is public, those APIs will be removed from `WordApiOnline`. Think of this as a similar promotion process to an API moving from preview to release.
+When APIs in the `WordApiOnline` requirement set are supported across all platforms, they will be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will be removed from `WordApiOnline`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
 > `WordApiOnline` is a superset of the latest numbered requirement set.
@@ -26,7 +26,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 
 ## Recommended usage
 
-Because `WordApiOnline` APIs are only supported by Word on the web, your add-in should check if the requirement set is supported before calling these APIs. This avoids calling an online-only API on a different platform.
+Because `WordApiOnline` APIs are only supported by Word on the web, your add-in should check if the requirement set is supported before calling these APIs. This avoids any attempt to use online-only APIs on an unsupported platform.
 
 ```js
 if (Office.context.requirements.isSetSupported("WordApiOnline", "1.1")) {
@@ -37,7 +37,7 @@ if (Office.context.requirements.isSetSupported("WordApiOnline", "1.1")) {
 Once the API is in a cross-platform requirement set, you should remove or edit the `isSetSupported` check. This will enable your add-in's feature on other platforms. Be sure to test the feature on those platforms when making this change.
 
 > [!IMPORTANT]
-> Your manifest cannot specify `WordApiOnline 1.1` as an activation requirement. It is not a valid value to use in the [Set element](/javascript/api/manifest/set).
+> Your manifest cannot specify `WordApiOnline 1.1` as an activation requirement. It isn't a valid value to use in the [Set element](/javascript/api/manifest/set).
 
 ## API list
 

@@ -287,6 +287,8 @@ export declare namespace Word {
     
     
     
+    
+    
     /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
      *
@@ -707,9 +709,9 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControlCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     
@@ -767,6 +769,7 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        
         
         
         
@@ -1046,6 +1049,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         hyperlink: string;
+        
         /**
          * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
          *
@@ -1257,11 +1261,14 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePictureCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.InlinePictureCollectionData;
     }
+    
+    
+    
     
     
     
@@ -1656,9 +1663,9 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
     
@@ -1992,9 +1999,9 @@ export declare namespace Word {
          */
         untrack(): Word.RangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
     
@@ -2096,6 +2103,7 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
+    
     
     /**
      * Represents a section in a Word document.
@@ -2234,9 +2242,9 @@ export declare namespace Word {
          */
         untrack(): Word.SectionCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     
@@ -2721,6 +2729,8 @@ export declare namespace Word {
     
     
     
+    
+    
     /**
      * Specifies the save behavior for `Document.save`.
      *
@@ -2743,6 +2753,10 @@ export declare namespace Word {
          */
         prompt = "Prompt",
     }
+    
+    
+    
+    
     
     
     enum ErrorCodes {
@@ -2790,6 +2804,23 @@ export declare namespace Word {
              */
             style?: string;
             
+        }
+        /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
+        export interface BorderUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`. */
+        export interface BorderCollectionUpdateData {
+            
+            
+            
+            
+            
+            
+            items?: Word.Interfaces.BorderData[];
         }
         /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
@@ -2955,6 +2986,7 @@ export declare namespace Word {
             
             
             
+            
         }
         /** An interface for updating data on the `FieldCollection` object, for use in `fieldCollection.set({ ... })`. */
         export interface FieldCollectionUpdateData {
@@ -3095,6 +3127,28 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `ListItem` object, for use in `listItem.set({ ... })`. */
         export interface ListItemUpdateData {
+            
+        }
+        /** An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`. */
+        export interface ListLevelUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ListLevelCollection` object, for use in `listLevelCollection.set({ ... })`. */
+        export interface ListLevelCollectionUpdateData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`. */
+        export interface ListTemplateUpdateData {
             
         }
         /** An interface for updating data on the `NoteItem` object, for use in `noteItem.set({ ... })`. */
@@ -3330,9 +3384,13 @@ export declare namespace Word {
             
             
             
+            
+            
         }
         /** An interface for updating data on the `Shading` object, for use in `shading.set({ ... })`. */
         export interface ShadingUpdateData {
+            
+            
             
         }
         /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
@@ -3355,6 +3413,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
+            
+            
             
             
             
@@ -3417,36 +3477,36 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-            * Gets the collection of rich text content control objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of rich text content control objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            *
-            * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-            */
+             * Gets the collection of paragraph objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             *
+             * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             
             /**
@@ -3465,6 +3525,18 @@ export declare namespace Word {
              */
             text?: string;
             
+        }
+        /** An interface describing the data returned by calling `border.toJSON()`. */
+        export interface BorderData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `borderCollection.toJSON()`. */
+        export interface BorderCollectionData {
+            items?: Word.Interfaces.BorderData[];
         }
         /** An interface describing the data returned by calling `checkboxContentControl.toJSON()`. */
         export interface CheckboxContentControlData {
@@ -3735,6 +3807,7 @@ export declare namespace Word {
             
             
             
+            
         }
         /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
         export interface FieldCollectionData {
@@ -3850,6 +3923,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
+            
             /**
              * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -3886,6 +3960,29 @@ export declare namespace Word {
             
             
         }
+        /** An interface describing the data returned by calling `listLevel.toJSON()`. */
+        export interface ListLevelData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `listLevelCollection.toJSON()`. */
+        export interface ListLevelCollectionData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
+        export interface ListTemplateData {
+            
+            
+        }
         /** An interface describing the data returned by calling `noteItem.toJSON()`. */
         export interface NoteItemData {
             
@@ -3900,18 +3997,18 @@ export declare namespace Word {
         export interface ParagraphData {
             
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             
@@ -4030,18 +4127,18 @@ export declare namespace Word {
         export interface RangeData {
             
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * Gets the collection of inline picture objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             
@@ -4120,11 +4217,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
         }
         /** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
@@ -4161,9 +4258,13 @@ export declare namespace Word {
             
             
             
+            
+            
         }
         /** An interface describing the data returned by calling `shading.toJSON()`. */
         export interface ShadingData {
+            
+            
             
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
@@ -4192,6 +4293,8 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
         export interface TableStyleData {
+            
+            
             
             
             
@@ -4303,6 +4406,8 @@ export declare namespace Word {
             text?: boolean;
             
         }
+        
+        
         
         
         
@@ -4735,6 +4840,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
+            
             /**
              * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -4808,6 +4914,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -4823,6 +4930,9 @@ export declare namespace Word {
              */
             width?: boolean;
         }
+        
+        
+        
         
         
         
@@ -5251,11 +5361,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
