@@ -3954,9 +3954,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * **Important**:
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
+         *
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+         * Otherwise, you may receive an unexpected value, such as an empty string.
          *
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -3977,9 +3983,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * **Important**:
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
+         *
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+         * Otherwise, you may receive an unexpected value, such as an empty string.
          *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
