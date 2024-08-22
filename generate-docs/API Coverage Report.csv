@@ -6648,7 +6648,7 @@ Office.AsyncResult,"value",Property,Good,true
 Office.AsyncResultStatus,N/A,Enum,Good,true
 Office.AsyncResultStatus,"Failed",EnumField,Fine,false
 Office.AsyncResultStatus,"Succeeded",EnumField,Poor,false
-Office.Auth,N/A,Class,Good,false
+Office.Auth,N/A,Class,Good,true
 Office.Auth,"getAccessToken(options)",Method,Fine,true
 Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
@@ -7584,7 +7584,7 @@ Office.Slice,"size",Property,Fine,false
 Office.StartupBehavior,N/A,Enum,Fine,true
 Office.StartupBehavior,"load",EnumField,Fine,false
 Office.StartupBehavior,"none",EnumField,Fine,false
-Office.Tab,N/A,Class,Good,false
+Office.Tab,N/A,Class,Good,true
 Office.Tab,"controls",Property,Good,false
 Office.Tab,"groups",Property,Good,false
 Office.Tab,"id",Property,Fine,true
@@ -7620,7 +7620,7 @@ Office.ThemeId,"Black",EnumField,Fine,false
 Office.ThemeId,"Colorful",EnumField,Fine,false
 Office.ThemeId,"DarkGray",EnumField,Fine,false
 Office.ThemeId,"White",EnumField,Fine,false
-Office.UI,N/A,Class,Fine,false
+Office.UI,N/A,Class,Fine,true
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,true
 Office.UI,"closeContainer()",Method,Poor,true
