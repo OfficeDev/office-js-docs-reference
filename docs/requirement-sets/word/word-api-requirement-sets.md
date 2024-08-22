@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 08/22/2024
+ms.date: 09/03/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,7 +15,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Word add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, iPad, and Mac. The following table lists the Word requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets, `WordApiOnline`, or `WordApiHiddenDocument`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
+> To use APIs in any of the numbered requirement sets, `WordApiOnline`, `WordApiDesktop`, or `WordApiHiddenDocument`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
@@ -23,7 +23,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Latest (see [requirement set page](word-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
-| [WordApiDesktop 1.1](word-api-desktop-1.1-requirement-set.md) | Not applicable | TODO: Pending | Not available | TODO: Pending | Not applicable |
+| [WordApiDesktop 1.1](word-api-desktop-1.1-requirement-set.md) | Not applicable | TODO: Pending | Not available | TODO: Pending | TODO: Pending |
 | [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2302 (Build 16130.20332) | Not available | 16.70 | Not applicable |
 | [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2208 (Build 15601.20148) | Not available | 16.64 | Not applicable |
 | [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | Not applicable |
