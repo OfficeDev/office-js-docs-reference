@@ -11,7 +11,16 @@ summary: >-
   Visit "[Use the Dialog API in your Office
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
   information.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Get an Office.UI object and use it to open a dialog with a specified size. 
+  const uiContext = Office.context.ui;
+  uiContext.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 });
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

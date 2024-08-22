@@ -399,9 +399,9 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-  - name: Manifest reference
+  - name: Add-in only manifest reference
     items:
-      - name: Manifest overview
+      - name: Add-in only manifest overview
         href: ../../manifest/manifest.md
       - name: AllowSnapshot
         href: ../../manifest/allowsnapshot.md
