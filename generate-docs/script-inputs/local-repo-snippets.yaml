@@ -1981,7 +1981,7 @@ Office.AsyncResultStatus:enum:
             console.log(`Selected data: ${result.value}`);
         }
     );
-Office.Auth:class:
+Office.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
@@ -5467,7 +5467,7 @@ Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
     Office.addin.setStartupBehavior(Office.StartupBehavior.load);
-Office.Tab:class:
+Office.Tab:interface:
   - |-
     // Create an Office.Tab object (a contextual tab), set its visibility
     // and add it to the ribbon.
@@ -5679,7 +5679,7 @@ Office.ThemeId:enum:
 
         ...
     }
-Office.UI:class:
+Office.UI:interface:
   - |-
     // Get an Office.UI object and use it to open a dialog with a specified size. 
     const uiContext = Office.context.ui;
