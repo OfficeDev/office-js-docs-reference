@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The `WordApiDesktop` requirement set is a special requirement set that includes features that are only available for Word on Windows, on Mac, and on iPad. APIs in this requirement set are considered to be production APIs for the Word application on Windows, on Mac, and on iPad. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiDesktop` APIs are considered to be "preview" APIs for other platforms (web) and may not be supported by any of those platforms.
 
-When APIs in the `WordApiDesktop` requirement set are supported across all platforms, they will be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will be removed from `WordApiDesktop`. Think of this as a similar promotion process to an API moving from preview to release.
+When APIs in the `WordApiDesktop` requirement set are supported across all platforms, they will be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also be continue to be tagged in this `WordApiDesktop` requirement set.
 
 > [!IMPORTANT]
 > `WordApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the WordApi 1.8 and WordApiHiddenDocument 1.5 requirement sets.
