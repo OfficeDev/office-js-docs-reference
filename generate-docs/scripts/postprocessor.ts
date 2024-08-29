@@ -119,6 +119,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_1`), tocWithReleaseCommon, "word", 8.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_5_hidden_document`), tocWithReleaseCommon, "word", 5.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);

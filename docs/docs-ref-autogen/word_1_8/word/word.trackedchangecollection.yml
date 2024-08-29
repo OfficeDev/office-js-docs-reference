@@ -4,7 +4,35 @@ uid: 'word!Word.TrackedChangeCollection:class'
 package: word!
 fullName: Word.TrackedChangeCollection
 summary: 'Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.'
-remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+  // Gets the range of the first tracked change.
+
+  await Word.run(async (context) => {
+    const body: Word.Body = context.document.body;
+    const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+    const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+    await context.sync();
+
+    const range: Word.Range = trackedChange.getRange();
+    range.load();
+    await context.sync();
+
+    console.log("range.text: " + range.text);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

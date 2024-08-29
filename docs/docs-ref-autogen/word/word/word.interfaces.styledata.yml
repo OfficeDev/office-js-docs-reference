@@ -29,8 +29,8 @@ properties:
     package: word!
     fullName: borders
     summary: Specifies a BorderCollection object that represents all the borders for the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Word.Interfaces.BorderData[];'
@@ -103,8 +103,8 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listTemplate?: Word.Interfaces.ListTemplateData;'

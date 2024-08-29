@@ -4,7 +4,31 @@ uid: 'word!Word.ParagraphCollection:class'
 package: word!
 fullName: Word.ParagraphCollection
 summary: 'Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.'
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+
+  // Inserts an image anchored to the last paragraph.
+
+  await Word.run(async (context) => {
+    context.document.body.paragraphs
+      .getLast()
+      .insertParagraph("", "After")
+      .insertInlinePictureFromBase64(base64Image, "End");
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

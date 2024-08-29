@@ -4,7 +4,38 @@ uid: 'word!Word.CritiqueAnnotation:class'
 package: word!
 fullName: Word.CritiqueAnnotation
 summary: Represents an annotation wrapper around critique displayed in the document.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+  // Gets annotations found in the selected paragraph.
+
+  await Word.run(async (context) => {
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
+    annotations.load("id,state,critiqueAnnotation");
+
+    await context.sync();
+
+    console.log("Annotations found:");
+
+    for (let i = 0; i < annotations.items.length; i++) {
+      const annotation: Word.Annotation = annotations.items[i];
+
+      console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

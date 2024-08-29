@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeData#author:member'
     package: word!
     fullName: author
-    summary: Specifies the author of the tracked change.
+    summary: Gets the author of the tracked change.
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeData#date:member'
     package: word!
     fullName: date
-    summary: Specifies the date of the tracked change.
+    summary: Gets the date of the tracked change.
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeData#text:member'
     package: word!
     fullName: text
-    summary: Specifies the text of the tracked change.
+    summary: Gets the text of the tracked change.
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeData#type:member'
     package: word!
     fullName: type
-    summary: Specifies the type of the tracked change.
+    summary: Gets the type of the tracked change.
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

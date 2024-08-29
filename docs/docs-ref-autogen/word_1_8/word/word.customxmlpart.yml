@@ -4,7 +4,41 @@ uid: 'word!Word.CustomXmlPart:class'
 package: word!
 fullName: Word.CustomXmlPart
 summary: Represents a custom XML part.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
+
+
+  // Adds a custom XML part.
+
+  await Word.run(async (context) => {
+    const originalXml =
+      "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+    const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.add(originalXml);
+    customXmlPart.load("id");
+    const xmlBlob = customXmlPart.getXml();
+
+    await context.sync();
+
+    const readableXml = addLineBreaksToXML(xmlBlob.value);
+    console.log("Added custom XML part:", readableXml);
+
+    // Store the XML part's ID in a setting so the ID is available to other functions.
+    const settings: Word.SettingCollection = context.document.settings;
+    settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

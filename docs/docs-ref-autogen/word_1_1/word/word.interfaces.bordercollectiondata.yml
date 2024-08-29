@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderCollectionData
+uid: 'word!Word.Interfaces.BorderCollectionData:interface'
+package: word!
+fullName: Word.Interfaces.BorderCollectionData
+summary: An interface describing the data returned by calling `borderCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'word!Word.Interfaces.BorderCollectionData#items:member'
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.BorderData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BorderData:interface" />[]'

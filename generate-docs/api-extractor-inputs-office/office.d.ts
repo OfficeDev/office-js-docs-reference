@@ -285,15 +285,15 @@ export declare namespace Office {
      */
     export function isSetSupported(name: string, minVersion?: string): boolean;
     /**
-    * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise
-    * will wait until the Office application is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
-    * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office application, it will call
-    * the callback and resolve the promise with "null" for both the application and platform.
-    *
-    * @param callback - An optional callback function, that will receive the application and platform info.
-    *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
-    * @returns A Promise that contains the application and platform info, once initialization is completed.
-    */
+     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise
+     * will wait until the Office application is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
+     * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office application, it will call
+     * the callback and resolve the promise with "null" for both the application and platform.
+     *
+     * @param callback - An optional callback function, that will receive the application and platform info.
+     *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
+     * @returns A Promise that contains the application and platform info, once initialization is completed.
+     */
     export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
      * Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
