@@ -255,18 +255,10 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**:
-
-
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
-
-
-      - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
-      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the
+      `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync`
+      method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering
+      engine.
 
 
       #### Examples
@@ -338,18 +330,10 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**:
-
-
-      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
-      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
-      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
-
-
-      - In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
-      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the
+      `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync`
+      method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering
+      engine.
 
 
       #### Examples

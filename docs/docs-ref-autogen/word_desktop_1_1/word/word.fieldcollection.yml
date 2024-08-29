@@ -1,0 +1,274 @@
+### YamlMime:TSType
+name: Word.FieldCollection
+uid: 'word!Word.FieldCollection:class'
+package: word!
+fullName: Word.FieldCollection
+summary: 'Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in
+  requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the
+  Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the
+  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->), the `Addin` field is
+  editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of
+  [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
+  -->.
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.FieldCollection#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.FieldCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Field[];'
+      return:
+        type: '<xref uid="word!Word.Field:class" />[]'
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+          // Gets all fields in the document body.
+
+          await Word.run(async (context) => {
+            const fields: Word.FieldCollection = context.document.body.fields.load("items");
+
+            await context.sync();
+
+            if (fields.items.length === 0) {
+              console.log("No fields in this document.");
+            } else {
+              fields.load(["code", "result"]);
+              await context.sync();
+
+              for (let i = 0; i < fields.items.length; i++) {
+                console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
+              }
+            }
+          });
+
+          ```
+methods:
+  - name: getByTypes(types)
+    uid: 'word!Word.FieldCollection#getByTypes:member(1)'
+    package: word!
+    fullName: getByTypes(types)
+    summary: Gets the Field object collection including the specified types of fields.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getByTypes(types: Word.FieldType[]): Word.FieldCollection;'
+      parameters:
+        - id: types
+          description: Required. An array of field types.
+          type: '<xref uid="word!Word.FieldType:enum" />[]'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+  - name: getFirst()
+    uid: 'word!Word.FieldCollection#getFirst:member(1)'
+    package: word!
+    fullName: getFirst()
+    summary: Gets the first field in this collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirst(): Word.Field;'
+      return:
+        type: '<xref uid="word!Word.Field:class" />'
+        description: ''
+  - name: getFirstOrNullObject()
+    uid: 'word!Word.FieldCollection#getFirstOrNullObject:member(1)'
+    package: word!
+    fullName: getFirstOrNullObject()
+    summary: >-
+      Gets the first field in this collection. If this collection is empty, then this method will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+        }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Word.Field;'
+      return:
+        type: '<xref uid="word!Word.Field:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.FieldCollection#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.FieldCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.FieldCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions:interface" /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.FieldCollection#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.FieldCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.FieldCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.FieldCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.FieldCollection#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.FieldCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.FieldCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.FieldCollectionData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldCollectionData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.FieldCollection#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.FieldCollection;'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.FieldCollection#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.FieldCollection;'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

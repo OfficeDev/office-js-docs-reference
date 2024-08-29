@@ -1,0 +1,236 @@
+### YamlMime:TSType
+name: Word.Interfaces.DocumentPropertiesLoadOptions
+uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.DocumentPropertiesLoadOptions
+summary: Represents document properties.
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: applicationName
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#applicationName:member'
+    package: word!
+    fullName: applicationName
+    summary: Gets the application name of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationName?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#author:member'
+    package: word!
+    fullName: author
+    summary: Specifies the author of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: category
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#category:member'
+    package: word!
+    fullName: category
+    summary: Specifies the category of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: boolean;'
+      return:
+        type: boolean
+  - name: comments
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#comments:member'
+    package: word!
+    fullName: comments
+    summary: Specifies the comments of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comments?: boolean;'
+      return:
+        type: boolean
+  - name: company
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#company:member'
+    package: word!
+    fullName: company
+    summary: Specifies the company of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'company?: boolean;'
+      return:
+        type: boolean
+  - name: creationDate
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
+    package: word!
+    fullName: creationDate
+    summary: Gets the creation date of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#format:member'
+    package: word!
+    fullName: format
+    summary: Specifies the format of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: boolean;'
+      return:
+        type: boolean
+  - name: keywords
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
+    package: word!
+    fullName: keywords
+    summary: Specifies the keywords of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keywords?: boolean;'
+      return:
+        type: boolean
+  - name: lastAuthor
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
+    package: word!
+    fullName: lastAuthor
+    summary: Gets the last author of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastAuthor?: boolean;'
+      return:
+        type: boolean
+  - name: lastPrintDate
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastPrintDate:member'
+    package: word!
+    fullName: lastPrintDate
+    summary: Gets the last print date of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastPrintDate?: boolean;'
+      return:
+        type: boolean
+  - name: lastSaveTime
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastSaveTime:member'
+    package: word!
+    fullName: lastSaveTime
+    summary: Gets the last save time of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastSaveTime?: boolean;'
+      return:
+        type: boolean
+  - name: manager
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#manager:member'
+    package: word!
+    fullName: manager
+    summary: Specifies the manager of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'manager?: boolean;'
+      return:
+        type: boolean
+  - name: revisionNumber
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
+    package: word!
+    fullName: revisionNumber
+    summary: Gets the revision number of the document.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revisionNumber?: boolean;'
+      return:
+        type: boolean
+  - name: security
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#security:member'
+    package: word!
+    fullName: security
+    summary: >-
+      Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document
+      Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is
+      encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document:
+      Both \#1 and \#2; 4 = File on disk is read-only; 5 = Both \#1 and \#4; 6 = Both \#2 and \#4; 7 = All of \#1, \#2,
+      and \#4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both \#1 and \#8; 10 = Both \#2 and \#8; 11 = All
+      of \#1, \#2, and \#8; 12 = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4, and \#8; 15 =
+      All of \#1, \#2, \#4, and \#8.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'security?: boolean;'
+      return:
+        type: boolean
+  - name: subject
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#subject:member'
+    package: word!
+    fullName: subject
+    summary: Specifies the subject of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: boolean;'
+      return:
+        type: boolean
+  - name: template
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#template:member'
+    package: word!
+    fullName: template
+    summary: Gets the template of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'template?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#title:member'
+    package: word!
+    fullName: title
+    summary: Specifies the title of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean

@@ -30,7 +30,7 @@ properties:
     fullName: borders
     summary: Specifies a BorderCollection object that represents all the borders for the specified style.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -39,7 +39,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
 
       // Updates border properties (e.g., type, width, color) of the specified style.
@@ -70,7 +70,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly borders: Word.BorderCollection;'
@@ -194,7 +194,7 @@ properties:
     fullName: listTemplate
     summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -203,7 +203,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-list-styles.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-styles.yaml
 
 
       // Gets the properties of the specified style.
@@ -238,7 +238,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly listTemplate: Word.ListTemplate;'
@@ -402,7 +402,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-styles.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
 
       // Updates shading properties (e.g., texture, pattern colors) of the specified style.

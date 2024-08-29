@@ -47,8 +47,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a BorderCollection object that represents all the borders for the
       specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
@@ -127,8 +127,8 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified
       Style object.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listTemplate?: Word.Interfaces.ListTemplateLoadOptions;'

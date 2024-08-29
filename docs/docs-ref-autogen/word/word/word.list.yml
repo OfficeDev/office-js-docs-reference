@@ -209,8 +209,8 @@ methods:
     package: word!
     fullName: getLevelFont(level)
     summary: 'Gets the font of the bullet, number, or picture at the specified level in the list.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getLevelFont(level: number): Word.Font;'
@@ -243,8 +243,8 @@ methods:
     package: word!
     fullName: getLevelPicture(level)
     summary: Gets the Base64-encoded string representation of the picture at the specified level in the list.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getLevelPicture(level: number): OfficeExtension.ClientResult<string>;'
@@ -700,8 +700,8 @@ methods:
     package: word!
     fullName: 'setLevelPicture(level, base64EncodedImage)'
     summary: Sets the picture at the specified level in the list.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'setLevelPicture(level: number, base64EncodedImage?: string): void;'

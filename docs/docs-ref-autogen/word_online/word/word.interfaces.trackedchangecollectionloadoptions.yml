@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#author:member'
     package: word!
     fullName: author
-    summary: 'For EACH ITEM in the collection: Specifies the author of the tracked change.'
+    summary: 'For EACH ITEM in the collection: Gets the author of the tracked change.'
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#date:member'
     package: word!
     fullName: date
-    summary: 'For EACH ITEM in the collection: Specifies the date of the tracked change.'
+    summary: 'For EACH ITEM in the collection: Gets the date of the tracked change.'
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: 'For EACH ITEM in the collection: Specifies the text of the tracked change.'
+    summary: 'For EACH ITEM in the collection: Gets the text of the tracked change.'
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'word!Word.Interfaces.TrackedChangeCollectionLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: 'For EACH ITEM in the collection: Specifies the type of the tracked change.'
+    summary: 'For EACH ITEM in the collection: Gets the type of the tracked change.'
     remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

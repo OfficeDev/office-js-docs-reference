@@ -951,8 +951,7 @@ export declare namespace Word {
      * Represents the Border object for text, a paragraph, or a table.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class Border extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -961,40 +960,35 @@ export declare namespace Word {
          * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         color: string;
         /**
          * Gets the location of the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly location: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";
         /**
          * Specifies the border type for the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies whether the border is visible.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         visible: boolean;
         /**
          * Specifies the width for the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         width: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
@@ -1044,8 +1038,7 @@ export declare namespace Word {
      * Represents the collection of border styles.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class BorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -1056,80 +1049,70 @@ export declare namespace Word {
          * Specifies the 24-bit color of the inside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderColor: string;
         /**
          * Specifies the border type of the inside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderType: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies the width of the inside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderWidth: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
          * Specifies the 24-bit color of the outside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderColor: string;
         /**
          * Specifies the border type of the outside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderType: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies the width of the outside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderWidth: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
          * Gets the border that has the specified location.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getByLocation(borderLocation: Word.BorderLocation.top | Word.BorderLocation.left | Word.BorderLocation.bottom | Word.BorderLocation.right | Word.BorderLocation.insideHorizontal | Word.BorderLocation.insideVertical | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical"): Word.Border;
         /**
          * Gets the first border in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirst(): Word.Border;
         /**
          * Gets the first border in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirstOrNullObject(): Word.Border;
         /**
          * Gets a Border object by its index in the collection.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param index - A number that identifies the index location of a Border object.
          */
@@ -3339,8 +3322,7 @@ export declare namespace Word {
          * Displays revision marks that indicate where the specified document differs from another document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param filePath - Required. The path of the document with which the specified document is compared.
          * @param documentCompareOptions - Optional. The additional options that specifies the behavior of comparing document.
@@ -4240,8 +4222,7 @@ export declare namespace Word {
          * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         showCodes: boolean;
         /**
@@ -4639,8 +4620,7 @@ export declare namespace Word {
          * Gets the format of the inline image.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
         /**
@@ -4932,8 +4912,7 @@ export declare namespace Word {
          * Gets the font of the bullet, number, or picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          */
@@ -4951,8 +4930,7 @@ export declare namespace Word {
          * Gets the Base64-encoded string representation of the picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          */
@@ -5068,8 +5046,7 @@ export declare namespace Word {
          * Sets the picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          * @param base64EncodedImage - Optional. The Base64-encoded image to be set. If not given, the default picture is set.
@@ -5308,8 +5285,7 @@ export declare namespace Word {
      * Represents a list level.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListLevel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5318,88 +5294,77 @@ export declare namespace Word {
          * Gets a Font object that represents the character formatting of the specified object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly font: Word.Font;
         /**
          * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          * Specifies the name of the style that's linked to the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         linkedStyle: string;
         /**
          * Specifies the number format for the specified list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberFormat: string;
         /**
          * Specifies the position (in points) of the number or bullet for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberPosition: number;
         /**
          * Specifies the number style for the list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberStyle: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
         /**
          * Specifies the list level that must appear before the specified list level restarts numbering at 1.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         resetOnHigher: number;
         /**
          * Specifies the starting number for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         startAt: number;
         /**
          * Specifies the tab position for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         tabPosition: number;
         /**
          * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         textPosition: number;
         /**
          * Specifies the character inserted after the number for the specified list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingCharacter: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         /**
@@ -5449,8 +5414,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.ListLevel} objects.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListLevelCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5461,16 +5425,14 @@ export declare namespace Word {
          * Gets the first list level in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirst(): Word.ListLevel;
         /**
          * Gets the first list level in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirstOrNullObject(): Word.ListLevel;
         /**
@@ -5509,8 +5471,7 @@ export declare namespace Word {
      * Represents a ListTemplate.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListTemplate extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5519,16 +5480,14 @@ export declare namespace Word {
          * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly listLevels: Word.ListLevelCollection;
         /**
          * Specifies whether the specified ListTemplate object is outline numbered.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outlineNumbered: boolean;
         /**
@@ -6448,7 +6407,7 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in  turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
          * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
          */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
@@ -7514,16 +7473,14 @@ export declare namespace Word {
      * Specifies the options to be included in a compare document operation.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export interface DocumentCompareOptions {
         /**
          * True adds the document to the list of recently used files on the File menu. The default value is True.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         addToRecentFiles?: boolean;
         /**
@@ -7531,48 +7488,42 @@ export declare namespace Word {
                     If unspecified, the value defaults to the author name of the revised document or the string "Comparison" if no author information is present.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         authorName?: string;
         /**
          * The target document for the comparison. Default value is 'CompareTargetCurrent'.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTarget?: Word.CompareTarget | "CompareTargetCurrent" | "CompareTargetSelected" | "CompareTargetNew";
         /**
          * True (default) for the comparison to include detection of format changes.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         detectFormatChanges?: boolean;
         /**
          * True compares the documents without notifying a user of problems. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         ignoreAllComparisonWarnings?: boolean;
         /**
          * True removes date and time stamp information from tracked changes in the returned Document object. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         removeDateAndTime?: boolean;
         /**
          * True removes all user information from comments, revisions, and the properties dialog box in the returned Document object. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         removePersonalInformation?: boolean;
     }
@@ -7990,8 +7941,7 @@ export declare namespace Word {
          * Specifies a BorderCollection object that represents all the borders for the specified style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly borders: Word.BorderCollection;
         /**
@@ -8005,8 +7955,7 @@ export declare namespace Word {
          * Gets a ListTemplate object that represents the list formatting for the specified Style object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly listTemplate: Word.ListTemplate;
         /**
@@ -8189,16 +8138,14 @@ export declare namespace Word {
          * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         foregroundPatternColor: string;
         /**
          * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         texture: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         /**
@@ -8793,16 +8740,14 @@ export declare namespace Word {
          * Specifies the table's alignment against the page margin.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          * Specifies whether lines in tables formatted with a specified style break across pages.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         allowBreakAcrossPage: boolean;
         /**
@@ -9123,8 +9068,7 @@ export declare namespace Word {
          * Inserts a content control on the row.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
@@ -11010,78 +10954,77 @@ export declare namespace Word {
     }
     /**
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ImageFormat {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         unsupported = "Unsupported",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         undefined = "Undefined",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         bmp = "Bmp",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         jpeg = "Jpeg",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gif = "Gif",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tiff = "Tiff",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         png = "Png",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         icon = "Icon",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         exif = "Exif",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         wmf = "Wmf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         emf = "Emf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pict = "Pict",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pdf = "Pdf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         svg = "Svg",
     }
@@ -11298,85 +11241,73 @@ export declare namespace Word {
      * Represents the width of a style's border.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum BorderWidth {
         /**
          * None width.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * 0.25 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt025 = "Pt025",
         /**
          * 0.50 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt050 = "Pt050",
         /**
          * 0.75 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt075 = "Pt075",
         /**
          * 1.00 point. This is the default.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt100 = "Pt100",
         /**
          * 1.50 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt150 = "Pt150",
         /**
          * 2.25 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt225 = "Pt225",
         /**
          * 3.00 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt300 = "Pt300",
         /**
          * 4.50 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt450 = "Pt450",
         /**
          * 6.00 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt600 = "Pt600",
         /**
          * Mixed width.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         mixed = "Mixed",
     }
@@ -13144,376 +13075,371 @@ export declare namespace Word {
      * Represents the character inserted after the list item mark.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum TrailingCharacter {
         /**
          * A tab is inserted.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingTab = "TrailingTab",
         /**
          * A space is inserted. Default.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingSpace = "TrailingSpace",
         /**
          * No character is inserted.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingNone = "TrailingNone",
     }
     /**
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ListBuiltInNumberStyle {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic = "Arabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         upperRoman = "UpperRoman",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowerRoman = "LowerRoman",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         upperLetter = "UpperLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowerLetter = "LowerLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ordinal = "Ordinal",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         cardinalText = "CardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ordinalText = "OrdinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanji = "Kanji",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiDigit = "KanjiDigit",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         aiueoHalfWidth = "AiueoHalfWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         irohaHalfWidth = "IrohaHalfWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicFullWidth = "ArabicFullWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiTraditional = "KanjiTraditional",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiTraditional2 = "KanjiTraditional2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         numberInCircle = "NumberInCircle",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         aiueo = "Aiueo",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         iroha = "Iroha",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ = "ArabicLZ",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         bullet = "Bullet",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ganada = "Ganada",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         chosung = "Chosung",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum1 = "GBNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum2 = "GBNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum3 = "GBNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum4 = "GBNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac1 = "Zodiac1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac2 = "Zodiac2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac3 = "Zodiac3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum1 = "TradChinNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum2 = "TradChinNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum3 = "TradChinNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum4 = "TradChinNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum1 = "SimpChinNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum2 = "SimpChinNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum3 = "SimpChinNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum4 = "SimpChinNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanjaRead = "HanjaRead",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanjaReadDigit = "HanjaReadDigit",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hangul = "Hangul",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanja = "Hanja",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hebrew1 = "Hebrew1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic1 = "Arabic1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hebrew2 = "Hebrew2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic2 = "Arabic2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiLetter1 = "HindiLetter1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiLetter2 = "HindiLetter2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiArabic = "HindiArabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiCardinalText = "HindiCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiLetter = "ThaiLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiArabic = "ThaiArabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiCardinalText = "ThaiCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         vietCardinalText = "VietCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseRussian = "LowercaseRussian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseRussian = "UppercaseRussian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseGreek = "LowercaseGreek",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseGreek = "UppercaseGreek",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ2 = "ArabicLZ2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ3 = "ArabicLZ3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ4 = "ArabicLZ4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseTurkish = "LowercaseTurkish",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseTurkish = "UppercaseTurkish",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseBulgarian = "LowercaseBulgarian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseBulgarian = "UppercaseBulgarian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pictureBullet = "PictureBullet",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         legal = "Legal",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         legalLZ = "LegalLZ",
     }
@@ -13521,267 +13447,229 @@ export declare namespace Word {
      * Represents the shading texture. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ShadingTextureType {
         /**
          * Represents dark diagonal-down texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkDiagonalDown = "DarkDiagonalDown",
         /**
          * Represents dark diagonal-up texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkDiagonalUp = "DarkDiagonalUp",
         /**
          * Represents dark horizontal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkGrid = "DarkGrid",
         /**
          * Represents dark horizontal texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkHorizontal = "DarkHorizontal",
         /**
          * Represents dark diagonal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkTrellis = "DarkTrellis",
         /**
          * Represents dark vertical texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkVertical = "DarkVertical",
         /**
          * Represents light diagonal-down texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightDiagonalDown = "LightDiagonalDown",
         /**
          * Represents light diagonal-up texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightDiagonalUp = "LightDiagonalUp",
         /**
          * Represents light horizontal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightGrid = "LightGrid",
         /**
          * Represents light horizontal texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightHorizontal = "LightHorizontal",
         /**
          * Represents light diagonal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightTrellis = "LightTrellis",
         /**
          * Represents light vertical texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightVertical = "LightVertical",
         /**
          * Represents that there's no texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * Represents 10 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent10 = "Percent10",
         /**
          * Represents 12.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent12Pt5 = "Percent12Pt5",
         /**
          * Represents 15 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent15 = "Percent15",
         /**
          * Represents 20 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent20 = "Percent20",
         /**
          * Represents 25 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent25 = "Percent25",
         /**
          * Represents 30 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent30 = "Percent30",
         /**
          * Represents 35 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent35 = "Percent35",
         /**
          * Represents 37.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent37Pt5 = "Percent37Pt5",
         /**
          * Represents 40 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent40 = "Percent40",
         /**
          * Represents 45 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent45 = "Percent45",
         /**
          * Represents 5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent5 = "Percent5",
         /**
          * Represents 50 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent50 = "Percent50",
         /**
          * Represents 55 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent55 = "Percent55",
         /**
          * Represents 60 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent60 = "Percent60",
         /**
          * Represents 62.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent62Pt5 = "Percent62Pt5",
         /**
          * Represents 65 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent65 = "Percent65",
         /**
          * Represents 70 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent70 = "Percent70",
         /**
          * Represents 75 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent75 = "Percent75",
         /**
          * Represents 80 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent80 = "Percent80",
         /**
          * Represents 85 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent85 = "Percent85",
         /**
          * Represents 87.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent87Pt5 = "Percent87Pt5",
         /**
          * Represents 90 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent90 = "Percent90",
         /**
          * Represents 95 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent95 = "Percent95",
         /**
          * Represents solid texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         solid = "Solid",
     }
@@ -13789,29 +13677,25 @@ export declare namespace Word {
      * Specifies the target document for displaying document comparison differences.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum CompareTarget {
         /**
          * Places comparison differences in the current document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTargetCurrent = "CompareTargetCurrent",
         /**
          * Places comparison differences in the target document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTargetSelected = "CompareTargetSelected",
         /**
          * Places comparison differences in a new document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTargetNew = "CompareTargetNew",
     }
@@ -13827,16 +13711,16 @@ export declare namespace Word {
     }
     export namespace Interfaces {
         /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
+         * Provides ways to load properties of only a subset of members of a collection.
+         */
         export interface CollectionLoadOptions {
             /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
+             * Specify the number of items in the queried collection to be included in the result.
+             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
+             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+             */
             $skip?: number;
         }
         /** An interface for updating data on the `AnnotationCollection` object, for use in `annotationCollection.set({ ... })`. */
@@ -13846,11 +13730,11 @@ export declare namespace Word {
         /** An interface for updating data on the `Body` object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -13873,32 +13757,28 @@ export declare namespace Word {
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: string;
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         }
@@ -13908,48 +13788,42 @@ export declare namespace Word {
              * Specifies the 24-bit color of the inside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderColor?: string;
             /**
              * Specifies the border type of the inside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies the width of the inside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
             /**
              * Specifies the 24-bit color of the outside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderColor?: string;
             /**
              * Specifies the border type of the outside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies the width of the outside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
             items?: Word.Interfaces.BorderData[];
@@ -14033,18 +13907,18 @@ export declare namespace Word {
         /** An interface for updating data on the `CommentReply` object, for use in `commentReply.set({ ... })`. */
         export interface CommentReplyUpdateData {
             /**
-            * Specifies the commentReply's content range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Specifies the commentReply's content range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             contentRange?: Word.Interfaces.CommentContentRangeUpdateData;
             /**
-            * Gets the parent comment of this reply.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the parent comment of this reply.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             parentComment?: Word.Interfaces.CommentUpdateData;
             /**
              * Specifies the comment reply's content. The string is plain text.
@@ -14347,8 +14221,7 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
         }
@@ -14513,88 +14386,77 @@ export declare namespace Word {
              * Gets a Font object that represents the character formatting of the specified object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: string;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: string;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: number;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: number;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: number;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: number;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: number;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         }
@@ -14608,8 +14470,7 @@ export declare namespace Word {
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
@@ -14651,11 +14512,11 @@ export declare namespace Word {
              */
             listItem?: Word.Interfaces.ListItemUpdateData;
             /**
-            * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItemOrNullObject?: Word.Interfaces.ListItemUpdateData;
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -14972,8 +14833,7 @@ export declare namespace Word {
              * Specifies a BorderCollection object that represents all the borders for the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             borders?: Word.Interfaces.BorderCollectionUpdateData;
             /**
@@ -14987,8 +14847,7 @@ export declare namespace Word {
              * Gets a ListTemplate object that represents the list formatting for the specified Style object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             listTemplate?: Word.Interfaces.ListTemplateUpdateData;
             /**
@@ -15072,16 +14931,14 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: string;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
@@ -15199,16 +15056,14 @@ export declare namespace Word {
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**
@@ -15496,40 +15351,35 @@ export declare namespace Word {
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: string;
             /**
              * Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         }
@@ -16272,8 +16122,7 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -16410,8 +16259,7 @@ export declare namespace Word {
              * Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
@@ -16495,91 +16343,80 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `listLevel.toJSON()`. */
         export interface ListLevelData {
             /**
-            * Gets a Font object that represents the character formatting of the specified object.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a Font object that represents the character formatting of the specified object.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: string;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: string;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: number;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: number;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: number;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: number;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: number;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         }
@@ -16590,37 +16427,35 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
         export interface ListTemplateData {
             /**
-            * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+             *
+             * @remarks
+             * [Api set: WordApiDesktop 1.1]
+             */
             listLevels?: Word.Interfaces.ListLevelData[];
             /**
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
         /** An interface describing the data returned by calling `noteItem.toJSON()`. */
         export interface NoteItemData {
             /**
-            * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Represents a footnote or endnote reference in the main document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Represents a footnote or endnote reference in the main document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             reference?: Word.Interfaces.RangeData;
             /**
              * Represents the note item type: footnote or endnote.
@@ -16637,39 +16472,39 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
-            * Gets the collection of fields in the paragraph.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of fields in the paragraph.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItem?: Word.Interfaces.ListItemData;
             /**
-            * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -16899,25 +16734,25 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             /**
-            * Gets the collection of field objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of field objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * Gets the collection of inline picture objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
@@ -17014,11 +16849,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
         }
         /** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
@@ -17056,8 +16891,7 @@ export declare namespace Word {
              * Specifies a BorderCollection object that represents all the borders for the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             borders?: Word.Interfaces.BorderData[];
             /**
@@ -17071,8 +16905,7 @@ export declare namespace Word {
              * Gets a ListTemplate object that represents the list formatting for the specified Style object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             listTemplate?: Word.Interfaces.ListTemplateData;
             /**
@@ -17199,48 +17032,46 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: string;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
             /**
-            * Gets the collection of field objects in the table.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of field objects in the table.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the font. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets all of the table rows.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets all of the table rows.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             rows?: Word.Interfaces.TableRowData[];
             /**
-            * Gets the child tables nested one level deeper.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the child tables nested one level deeper.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             tables?: Word.Interfaces.TableData[];
             /**
              * Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
@@ -17368,16 +17199,14 @@ export declare namespace Word {
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**
@@ -17507,11 +17336,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableCell.toJSON()`. */
         export interface TableCellData {
             /**
-            * Gets the body object of the cell.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the body object of the cell.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             body?: Word.Interfaces.BodyData;
             /**
              * Gets the index of the cell in its row.
@@ -17671,11 +17500,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the critique annotation object.
-            *
-            * @remarks
-            * [Api set: WordApi 1.7]
-            */
+             * Gets the critique annotation object.
+             *
+             * @remarks
+             * [Api set: WordApi 1.7]
+             */
             critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;
             /**
              * Gets the unique identifier, which is meant to be used for easier tracking of Annotation objects.
@@ -17818,8 +17647,7 @@ export declare namespace Word {
          * Represents the Border object for text, a paragraph, or a table.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface BorderLoadOptions {
             /**
@@ -17830,40 +17658,35 @@ export declare namespace Word {
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: boolean;
             /**
              * Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: boolean;
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: boolean;
         }
@@ -17871,8 +17694,7 @@ export declare namespace Word {
          * Represents the collection of border styles.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface BorderCollectionLoadOptions {
             /**
@@ -17883,40 +17705,35 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: boolean;
         }
@@ -19121,8 +18938,7 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -19240,8 +19056,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -19441,8 +19256,7 @@ export declare namespace Word {
              * Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: boolean;
             /**
@@ -19552,8 +19366,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: boolean;
             /**
@@ -19674,8 +19487,7 @@ export declare namespace Word {
          * Represents a list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListLevelLoadOptions {
             /**
@@ -19686,88 +19498,77 @@ export declare namespace Word {
              * Gets a Font object that represents the character formatting of the specified object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: boolean;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: boolean;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: boolean;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: boolean;
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: boolean;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: boolean;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: boolean;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: boolean;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: boolean;
         }
@@ -19775,8 +19576,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.ListLevel} objects.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListLevelCollectionLoadOptions {
             /**
@@ -19787,88 +19587,77 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets a Font object that represents the character formatting of the specified object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             font?: Word.Interfaces.FontLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: boolean;
         }
@@ -19876,8 +19665,7 @@ export declare namespace Word {
          * Represents a ListTemplate.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListTemplateLoadOptions {
             /**
@@ -19888,8 +19676,7 @@ export declare namespace Word {
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
@@ -20872,8 +20659,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Specifies a BorderCollection object that represents all the borders for the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             borders?: Word.Interfaces.BorderCollectionLoadOptions;
             /**
@@ -20887,8 +20673,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
@@ -21017,8 +20802,7 @@ export declare namespace Word {
              * Specifies a BorderCollection object that represents all the borders for the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             borders?: Word.Interfaces.BorderCollectionLoadOptions;
             /**
@@ -21032,8 +20816,7 @@ export declare namespace Word {
              * Gets a ListTemplate object that represents the list formatting for the specified Style object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
@@ -21169,16 +20952,14 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: boolean;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: boolean;
         }
@@ -21384,16 +21165,14 @@ export declare namespace Word {
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**

@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderData
+uid: 'word!Word.Interfaces.BorderData:interface'
+package: word!
+fullName: Word.Interfaces.BorderData
+summary: An interface describing the data returned by calling `border.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

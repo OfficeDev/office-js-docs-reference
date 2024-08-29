@@ -1,0 +1,259 @@
+### YamlMime:TSType
+name: Word.Interfaces.StyleCollectionLoadOptions
+uid: 'word!Word.Interfaces.StyleCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.StyleCollectionLoadOptions
+summary: 'Contains a collection of [Word.Style](xref:word!Word.Style:class) objects.'
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: baseStyle
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#baseStyle:member'
+    package: word!
+    fullName: baseStyle
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of an existing style to use as the base formatting of another
+      style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseStyle?: boolean;'
+      return:
+        type: boolean
+  - name: borders
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#borders:member'
+    package: word!
+    fullName: borders
+    summary: >-
+      For EACH ITEM in the collection: Specifies a BorderCollection object that represents all the borders for the
+      specified style.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface" />'
+  - name: builtIn
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#builtIn:member'
+    package: word!
+    fullName: builtIn
+    summary: 'For EACH ITEM in the collection: Gets whether the specified style is a built-in style.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'builtIn?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#font:member'
+    package: word!
+    fullName: font
+    summary: >-
+      For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified
+      style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
+  - name: inUse
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#inUse:member'
+    package: word!
+    fullName: inUse
+    summary: >-
+      For EACH ITEM in the collection: Gets whether the specified style is a built-in style that has been modified or
+      applied in the document or a new style that has been created in the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inUse?: boolean;'
+      return:
+        type: boolean
+  - name: linked
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#linked:member'
+    package: word!
+    fullName: linked
+    summary: >-
+      For EACH ITEM in the collection: Gets whether a style is a linked style that can be used for both paragraph and
+      character formatting.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linked?: boolean;'
+      return:
+        type: boolean
+  - name: listTemplate
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#listTemplate:member'
+    package: word!
+    fullName: listTemplate
+    summary: >-
+      For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified
+      Style object.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ListTemplateLoadOptions:interface" />'
+  - name: nameLocal
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#nameLocal:member'
+    package: word!
+    fullName: nameLocal
+    summary: 'For EACH ITEM in the collection: Gets the name of a style in the language of the user.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameLocal?: boolean;'
+      return:
+        type: boolean
+  - name: nextParagraphStyle
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#nextParagraphStyle:member'
+    package: word!
+    fullName: nextParagraphStyle
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of the style to be applied automatically to a new paragraph
+      that is inserted after a paragraph formatted with the specified style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextParagraphStyle?: boolean;'
+      return:
+        type: boolean
+  - name: paragraphFormat
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member'
+    package: word!
+    fullName: paragraphFormat
+    summary: >-
+      For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the
+      specified style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ParagraphFormatLoadOptions:interface" />'
+  - name: priority
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#priority:member'
+    package: word!
+    fullName: priority
+    summary: 'For EACH ITEM in the collection: Specifies the priority.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'priority?: boolean;'
+      return:
+        type: boolean
+  - name: quickStyle
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#quickStyle:member'
+    package: word!
+    fullName: quickStyle
+    summary: 'For EACH ITEM in the collection: Specifies whether the style corresponds to an available quick style.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'quickStyle?: boolean;'
+      return:
+        type: boolean
+  - name: shading
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#shading:member'
+    package: word!
+    fullName: shading
+    summary: >-
+      For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not
+      applicable to List style.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShadingLoadOptions:interface" />'
+  - name: tableStyle
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member'
+    package: word!
+    fullName: tableStyle
+    summary: >-
+      For EACH ITEM in the collection: Gets a TableStyle object representing Style properties that can be applied to a
+      table.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableStyle?: Word.Interfaces.TableStyleLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableStyleLoadOptions:interface" />'
+  - name: type
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: 'For EACH ITEM in the collection: Gets the style type.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: unhideWhenUsed
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#unhideWhenUsed:member'
+    package: word!
+    fullName: unhideWhenUsed
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the specified style is made visible as a recommended style in
+      the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unhideWhenUsed?: boolean;'
+      return:
+        type: boolean
+  - name: visibility
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#visibility:member'
+    package: word!
+    fullName: visibility
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the specified style is visible as a recommended style in the
+      Styles gallery and in the Styles task pane.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type: boolean
