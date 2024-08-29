@@ -4,7 +4,36 @@ uid: 'word!Word.NoteItem:class'
 package: word!
 fullName: Word.NoteItem
 summary: Represents a footnote or endnote.
-remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+
+  // Gets the text of the referenced footnote.
+
+  await Word.run(async (context) => {
+    const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
+    footnotes.load("items/body");
+    await context.sync();
+
+    const referenceNumber = $("#input-reference").val();
+    const mark = (referenceNumber as number) - 1;
+    const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
+    footnoteBody.load("text");
+    await context.sync();
+
+    console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

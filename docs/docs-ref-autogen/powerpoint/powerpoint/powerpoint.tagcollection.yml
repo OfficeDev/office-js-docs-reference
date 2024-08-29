@@ -4,7 +4,39 @@ uid: 'powerpoint!PowerPoint.TagCollection:class'
 package: powerpoint!
 fullName: PowerPoint.TagCollection
 summary: Represents the collection of tags.
-remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+  await PowerPoint.run(async function(context) {
+    let selectedSlideIndex = await getSelectedSlideIndex();
+
+    // Decrement because the getSelectedSlideByIndex method is 1-based,
+    // but the getItemAt method is 0-based.
+    selectedSlideIndex = selectedSlideIndex - 1;
+    const slide = context.presentation.slides.getItemAt(selectedSlideIndex);
+    slide.tags.add("CUSTOMER_TYPE", "Premium");
+
+    await context.sync();
+
+    const audienceTag = slide.tags.getItem("CUSTOMER_TYPE");
+    audienceTag.load("key, value");
+
+    await context.sync();
+
+    console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
