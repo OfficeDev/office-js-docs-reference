@@ -4,7 +4,28 @@ uid: 'word!Word.Font:class'
 package: word!
 fullName: Word.Font
 summary: Represents a font.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Change the font color
+  // Run a batch operation against the Word object model.
+  await Word.run(async (context) => {
+
+      // Create a range proxy object for the current selection.
+      const selection = context.document.getSelection();
+
+      // Queue a command to change the font color of the current selection.
+      selection.font.color = 'blue';
+
+      // Synchronize the document state by executing the queued commands,
+      // and return a promise to indicate task completion.
+      await context.sync();
+      console.log('The font color of the selection has been changed.');
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class

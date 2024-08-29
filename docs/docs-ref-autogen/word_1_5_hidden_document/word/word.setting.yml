@@ -4,7 +4,46 @@ uid: 'word!Word.Setting:class'
 package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+  // Adds a new custom setting or
+
+  // edits the value of an existing one.
+
+  await Word.run(async (context) => {
+    const key = $("#key")
+      .val()
+      .toString();
+
+    if (key == "") {
+      console.error("Key shouldn't be empty.");
+      return;
+    }
+
+    const value = $("#value")
+      .val()
+      .toString();
+
+    const settings: Word.SettingCollection = context.document.settings;
+    const setting: Word.Setting = settings.add(key, value);
+    setting.load();
+    await context.sync();
+
+    console.log("Setting added or edited:", setting);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

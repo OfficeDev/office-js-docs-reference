@@ -4,7 +4,30 @@ uid: 'word!Word.StyleCollection:class'
 package: word!
 fullName: Word.StyleCollection
 summary: 'Contains a collection of [Word.Style](xref:word!Word.Style:class) objects.'
-remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Gets the number of available styles stored with the document.
+
+  await Word.run(async (context) => {
+    const styles: Word.StyleCollection = context.document.getStyles();
+    const count = styles.getCount();
+    await context.sync();
+
+    console.log(`Number of styles: ${count.value}`);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
