@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 08/13/2024
+ms.date: 09/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -67,7 +67,6 @@ The following example shows how to use the **\<ExtensionPoint\>** element with *
         <bt:Image size="32" resid="icon1_32x32" />
         <bt:Image size="80" resid="icon1_32x32" />
       </Icon>
-      <Tooltip resid="residToolTip" />
       <Control xsi:type="Button" id="Contoso.Button1">
           <!-- information about the control -->
       </Control>
