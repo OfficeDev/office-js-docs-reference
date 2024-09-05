@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 08/29/2024
+ms.date: 09/05/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -46,7 +46,6 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[deleteAllListItems()](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-deletealllistitems-member(1))|Deletes all list items in this dropdown list content control.|
 ||[listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)|Gets the collection of list items in the dropdown list content control.|
 |[Font](/javascript/api/word/word.font)|[hidden](/javascript/api/word/word.font#word-word-font-hidden-member)|Specifies a value that indicates whether the font is tagged as hidden.|
-|[List](/javascript/api/word/word.list)|[resetLevelFont(level: number, resetFontName?: boolean)](/javascript/api/word/word.list#word-word-list-resetlevelfont-member(1))|Resets the font of the bullet, number, or picture at the specified level in the list.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| Word.ContentControlType.dropDownList \| Word.ContentControlType.comboBox \| "RichText" \| "PlainText" \| "CheckBox" \| "DropDownList" \| "ComboBox")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 |[Range](/javascript/api/word/word.range)|[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| Word.ContentControlType.checkBox \| Word.ContentControlType.dropDownList \| Word.ContentControlType.comboBox \| "RichText" \| "PlainText" \| "CheckBox" \| "DropDownList" \| "ComboBox")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 |[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|

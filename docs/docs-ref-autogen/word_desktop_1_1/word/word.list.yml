@@ -404,6 +404,28 @@ methods:
       return:
         type: '<xref uid="word!Word.List:class" />'
         description: ''
+  - name: 'resetLevelFont(level, resetFontName)'
+    uid: 'word!Word.List#resetLevelFont:member(1)'
+    package: word!
+    fullName: 'resetLevelFont(level, resetFontName)'
+    summary: 'Resets the font of the bullet, number, or picture at the specified level in the list.'
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resetLevelFont(level: number, resetFontName?: boolean): void;'
+      parameters:
+        - id: level
+          description: Required. The level in the list.
+          type: number
+        - id: resetFontName
+          description: >-
+            Optional. Indicates whether to reset the font name. Default is false that indicates the font name is kept
+            unchanged.
+          type: boolean
+      return:
+        type: void
+        description: ''
   - name: 'setLevelAlignment(level, alignment)'
     uid: 'word!Word.List#setLevelAlignment:member(1)'
     package: word!
