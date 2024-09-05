@@ -4695,21 +4695,21 @@ export declare namespace PowerPoint {
             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
             *
             * @remarks
-            * [Api set: PowerPointApi 1.4]
+            * [Api set: PowerPointApi 1.5]
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the line formatting of this shape.
             *
             * @remarks
-            * [Api set: PowerPointApi 1.4]
+            * [Api set: PowerPointApi 1.5]
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
             * @remarks
-            * [Api set: PowerPointApi 1.4]
+            * [Api set: PowerPointApi 1.5]
             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
@@ -4810,14 +4810,14 @@ export declare namespace PowerPoint {
             * For EACH ITEM in the collection: Gets the layout of the slide.
             *
             * @remarks
-            * [Api set: PowerPointApi 1.3]
+            * [Api set: PowerPointApi 1.5]
             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
             *
             * @remarks
-            * [Api set: PowerPointApi 1.3]
+            * [Api set: PowerPointApi 1.5]
             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
