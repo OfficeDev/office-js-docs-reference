@@ -45,7 +45,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 | Attribute | Required | Description |
 |:-----|:-----:|:-----|
-| **Type** | Yes | Specifies a supported event type. For the set of supported types, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events). |
+| **Type** | Yes | Specifies a supported event type. For the set of supported types, see the "Event canonical name and add-in only manifest name" column of the table of supported events in [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events). |
 | **FunctionName** | Yes | Specifies the name of the JavaScript function to handle the event specified in the `Type` attribute. |
 | **SendMode** | No | Used by the `OnMessageSend` and `OnAppointmentSend` events. Specifies the options available to the user if your add-in stops an item from being sent or if the add-in is unavailable. If the **SendMode** property isn't included, the `SoftBlock` option is set by default. For a list of available send mode options, see [Available send mode options](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#available-send-mode-options). |
 | **HeaderName** (preview) | No | Specifies the internet header name used to identify a message on which the `OnMessageReadWithCustomHeader` event occurs. The `Type` attribute must be set to `OnMessageReadWithCustomHeader`. |

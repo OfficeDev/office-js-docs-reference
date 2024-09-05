@@ -3483,7 +3483,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -3515,7 +3515,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -3572,7 +3572,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
@@ -9775,7 +9775,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -9807,7 +9807,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -9864,7 +9864,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see

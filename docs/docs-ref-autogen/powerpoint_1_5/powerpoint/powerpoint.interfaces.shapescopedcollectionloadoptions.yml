@@ -28,7 +28,7 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: 'For EACH ITEM in the collection: Returns the fill formatting of this shape.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +80,7 @@ properties:
     package: powerpoint!
     fullName: lineFormat
     summary: 'For EACH ITEM in the collection: Returns the line formatting of this shape.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +104,7 @@ properties:
     package: powerpoint!
     fullName: textFrame
     summary: 'For EACH ITEM in the collection: Returns the text frame object of this shape.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

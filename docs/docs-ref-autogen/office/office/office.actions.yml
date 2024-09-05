@@ -27,6 +27,26 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Checks if a specific keyboard shortcut is in use.
+
+      const shortcuts = ["Ctrl+Shift+1", "Ctrl+Shift+2"];
+
+      Office.actions.areShortcutsInUse(shortcuts)
+          .then((shortcutsInUse) => {
+              const availableShortcuts = shortcutsInUse.filter((shortcut) => { return !shortcut.inUse; });
+              console.log(`Available keyboard shortcuts: ${availableShortcuts}`);
+              const usedShortcuts = shortcutsInUse.filter((shortcut) => { return shortcut.inUse; });
+              console.log(`Shortcuts in use: ${usedShortcuts}`);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +81,24 @@ methods:
           type: '(arg?: any) =&gt; void'
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Maps the action ID to the showTaskPane function.
+          Office.actions.associate("ShowTaskpane", showTaskPane);
+
+          // Displays the add-in's task pane.
+          function showTaskPane() {
+              return Office.addin.showAsTaskpane()
+                  .then(() => { console.log("Task pane is visible."); })
+                  .catch((error) => {
+                      console.log(error.code);
+                  });
+          }
+          ```
   - name: getShortcuts()
     uid: 'office!Office.Actions#getShortcuts:member(1)'
     package: office!
@@ -84,6 +121,24 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Gets the list of keyboard shortcuts for an add-in.
+
+      Office.actions.getShortcuts()
+          .then((shortcuts) => {
+              for (const action in shortcuts) {
+                  let shortcut = shortcuts[action];
+                  console.log(`${action}: ${shortcut}`);
+              }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,6 +164,29 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Replaces the keyboard shortcuts of an add-in.
+
+      const customShortcuts = {
+          ShowTaskpane:"Ctrl+Shift+1",
+          HideTaskpane:"Ctrl+Shift+2"
+      };
+
+      Office.actions.replaceShortcuts(customShortcuts)
+          .then(() => { console.log("Keyboard shortcuts successfully registered."); })
+          .catch((error) => {
+              if (error.code == "InvalidOperation") {
+                  console.log("ActionId does not exist or shortcut combination is invalid.");
+              }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -6604,10 +6604,10 @@ Excel.WorksheetVisibilityChangedEventArgs,"visibilityAfter",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"visibilityBefore",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"worksheetId",Property,Good,false
 Office.Actions,N/A,Class,Poor,false
-Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,false
-Office.Actions,"associate(actionId, actionFunction)",Method,Poor,false
-Office.Actions,"getShortcuts()",Method,Good,false
-Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,false
+Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,true
+Office.Actions,"associate(actionId, actionFunction)",Method,Poor,true
+Office.Actions,"getShortcuts()",Method,Good,true
+Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,true
 Office.ActiveView,N/A,Enum,Fine,true
 Office.ActiveView,"Edit",EnumField,Fine,false
 Office.ActiveView,"Read",EnumField,Fine,false
