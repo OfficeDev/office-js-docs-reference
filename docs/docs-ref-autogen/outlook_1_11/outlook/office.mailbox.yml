@@ -448,24 +448,26 @@ methods:
 
       ```TypeScript
 
-      Office.initialize = function (reason) {
-          $(document).ready(function () {
+      Office.onReady((info) => {
+          if (info.host === Office.HostType.Outlook) {
               Office.context.mailbox.addHandlerAsync(
                   Office.EventType.ItemChanged,
                   loadNewItem,
-                  function (result) {
+                  (result) => {
                       if (result.status === Office.AsyncResultStatus.Failed) {
-                          // Handle error.
+                          console.error(result.error.message);
+                          return;
                       }
-                  });
-          });
+                  }
+              );
+          }
       };
 
 
       function loadNewItem(eventArgs) {
           const item = Office.context.mailbox.item;
 
-          // Check that item is not null.
+          // Check that item isn't null.
           if (item !== null) {
               // Work with item, e.g., define and call function that
               // loads the properties of the newly selected item.
