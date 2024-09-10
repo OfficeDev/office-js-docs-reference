@@ -966,20 +966,21 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID
-      of the parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST
-      ID of the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs
+      to. However, in Outlook on Android and on iOS, `seriesId` returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
-      identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
-      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      identifier. The `seriesId` property isn't identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->.
+      For more details, see [Use the Outlook REST APIs from an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1238,8 +1239,8 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
-            that the attachment will be shown inline in the message body, and should not be displayed in the attachment
-            list.
+            that the attachment will be shown inline as an image in the message body and won't be displayed in the
+            attachment list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
         - id: callback
           description: >-
@@ -1448,8 +1449,8 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
-            that the attachment will be shown inline in the message body and should not be displayed in the attachment
-            list.
+            that the attachment will be shown inline as an image in the message body and won't be displayed in the
+            attachment list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> &  { isInline: boolean }'
         - id: callback
           description: >-
@@ -1838,7 +1839,7 @@ methods:
       unsaved changes, the client prompts the user to save, discard, or close the action.
 
 
-      In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.
+      In Outlook on Windows (classic) and on Mac, the `close` method has no effect on a reply in the Reading Pane.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
