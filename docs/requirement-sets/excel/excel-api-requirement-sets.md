@@ -23,23 +23,23 @@ Excel add-ins run across multiple versions of Office, including Office 2016 or l
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [ExcelApiOnline](excel-api-online-requirement-set.md) | Latest (see [requirement set page](excel-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
-| [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Not available | 16.70 | 16.70 |
-| [ExcelApi 1.16](excel-api-1-16-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Not available | 16.64 | 16.66 |
-| [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Supported | Version 2202 (Build 14931.20132) | Not available | 16.58 | 16.59 |
-| [ExcelApi 1.14](excel-api-1-14-requirement-set.md) | Supported | Version 2108 (Build 14326.20508) | Office 2021: Version 2108 (Build 14326.20508) | 16.52 | 16.53 |
-| [ExcelApi 1.13](excel-api-1-13-requirement-set.md) | Supported | Version 2102 (Build 13801.20738) | Office 2021: Version 2102 (Build 13801.20738) | 16.50 | 16.50 |
-| [ExcelApi 1.12](excel-api-1-12-requirement-set.md) | Supported | Version 2008 (Build 13127.20408) | Office 2021: Version 2008 (Build 13127.20408) | 16.40 | 16.40 |
-| [ExcelApi 1.11](excel-api-1-11-requirement-set.md) | Supported | Version 2002 (Build 12527.20470) | Office 2021: Version 2002 (Build 12527.20470) | 16.33 | 16.35 |
-| [ExcelApi 1.10](excel-api-1-10-requirement-set.md) | Supported | Version 1907 (Build 11929.20306) | Office 2021: Version 1907 (Build 11929.20306) | 16.30 | 16.0 |
-| [ExcelApi 1.9](excel-api-1-9-requirement-set.md) | Supported | Version 1903 (Build 11425.20204) | Office 2021: Version 1903 (Build 11425.20204) | 16.24 | 16.0 |
-| [ExcelApi 1.8](excel-api-1-8-requirement-set.md) | Supported | Version 1808 (Build 10730.20102) | Office 2021: Version 1808 (Build 10730.20102) | 16.17 | 16.0 |
-| [ExcelApi 1.7](excel-api-1-7-requirement-set.md) | Supported | Version 1801 (Build 9001.2171) | Office 2019: Version 1801 (Build 9001.2171) | 16.9  | 16.0  |
-| [ExcelApi 1.6](excel-api-1-6-requirement-set.md) | Supported | Version 1704 (Build 8201.2001) | Office 2019: Version 1704 (Build 8201.2001) | 15.36  | 15.0 |
-| [ExcelApi 1.5](excel-api-1-5-requirement-set.md) | Supported | Version 1703 (Build 8067.2070) | Office 2019: Version 1703 (Build 8067.2070) | 15.36  | 15.0 |
-| [ExcelApi 1.4](excel-api-1-4-requirement-set.md) | Supported | Version 1701 (Build 7870.2024) | Office 2019: Version 1701 (Build 7870.2024) | 15.36  | 15.0 |
-| [ExcelApi 1.3](excel-api-1-3-requirement-set.md) | Supported | Version 1608 (Build 7369.2055) | Office 2019: Version 1608 (Build 7369.2055) | 15.27 | 15.0 |
-| [ExcelApi 1.2](excel-api-1-2-requirement-set.md) | Supported | Version 1601 (Build 6741.2088) | Office 2019: Version 1601 (Build 6741.2088) | 15.22 | 15.0 |
-| [ExcelApi 1.1](excel-api-1-1-requirement-set.md) | Supported | Version 1509 (Build 4266.1001) | Office 2016: Version 1509 (Build 4266.1001) | 15.20 | 15.0 |
+| [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Not available | Version 16.70 | Version 16.70 |
+| [ExcelApi 1.16](excel-api-1-16-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Not available | Version 16.64 | Version 16.66 |
+| [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Supported | Version 2202 (Build 14931.20132) | Not available | Version 16.58 | Version 16.59 |
+| [ExcelApi 1.14](excel-api-1-14-requirement-set.md) | Supported | Version 2108 (Build 14326.20508) | Office 2021: Version 2108 (Build 14326.20508) | Version 16.52 | Version 16.53 |
+| [ExcelApi 1.13](excel-api-1-13-requirement-set.md) | Supported | Version 2102 (Build 13801.20738) | Office 2021: Version 2102 (Build 13801.20738) | Version 16.50 | Version 16.50 |
+| [ExcelApi 1.12](excel-api-1-12-requirement-set.md) | Supported | Version 2008 (Build 13127.20408) | Office 2021: Version 2008 (Build 13127.20408) | Version 16.40 | Version 16.40 |
+| [ExcelApi 1.11](excel-api-1-11-requirement-set.md) | Supported | Version 2002 (Build 12527.20470) | Office 2021: Version 2002 (Build 12527.20470) | Version 16.33 | Version 16.35 |
+| [ExcelApi 1.10](excel-api-1-10-requirement-set.md) | Supported | Version 1907 (Build 11929.20306) | Office 2021: Version 1907 (Build 11929.20306) | Version 16.30 | Version 16.0 |
+| [ExcelApi 1.9](excel-api-1-9-requirement-set.md) | Supported | Version 1903 (Build 11425.20204) | Office 2021: Version 1903 (Build 11425.20204) | Version 16.24 | Version 16.0 |
+| [ExcelApi 1.8](excel-api-1-8-requirement-set.md) | Supported | Version 1808 (Build 10730.20102) | Office 2021: Version 1808 (Build 10730.20102) | Version 16.17 | Version 16.0 |
+| [ExcelApi 1.7](excel-api-1-7-requirement-set.md) | Supported | Version 1801 (Build 9001.2171) | Office 2019: Version 1801 (Build 9001.2171) | Version 16.9  | Version 16.0  |
+| [ExcelApi 1.6](excel-api-1-6-requirement-set.md) | Supported | Version 1704 (Build 8201.2001) | Office 2019: Version 1704 (Build 8201.2001) | Version 15.36  | Version 15.0 |
+| [ExcelApi 1.5](excel-api-1-5-requirement-set.md) | Supported | Version 1703 (Build 8067.2070) | Office 2019: Version 1703 (Build 8067.2070) | Version 15.36  | Version 15.0 |
+| [ExcelApi 1.4](excel-api-1-4-requirement-set.md) | Supported | Version 1701 (Build 7870.2024) | Office 2019: Version 1701 (Build 7870.2024) | Version 15.36  | Version 15.0 |
+| [ExcelApi 1.3](excel-api-1-3-requirement-set.md) | Supported | Version 1608 (Build 7369.2055) | Office 2019: Version 1608 (Build 7369.2055) | Version 15.27 | Version 15.0 |
+| [ExcelApi 1.2](excel-api-1-2-requirement-set.md) | Supported | Version 1601 (Build 6741.2088) | Office 2019: Version 1601 (Build 6741.2088) | Version 15.22 | Version 15.0 |
+| [ExcelApi 1.1](excel-api-1-1-requirement-set.md) | Supported | Version 1509 (Build 4266.1001) | Office 2016: Version 1509 (Build 4266.1001) | Version 15.20 | Version 15.0 |
 
 ## Office versions and build numbers
 

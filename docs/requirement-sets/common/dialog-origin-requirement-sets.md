@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogOrigin 1.1 | Supported | Supported | Office 2016 | 16.52 | 2.52 | Version 2108 (Build 10377.1000) |
+| DialogOrigin 1.1 | Supported | Supported | Office 2016 | Version 16.52 | Version 2.52 | Version 2108 (Build 10377.1000) |
 
 ## Office versions and build numbers
 

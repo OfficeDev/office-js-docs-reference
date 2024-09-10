@@ -15,9 +15,9 @@ Parts of an Office Add-in that run JavaScript code, such as task panes, function
 The following table lists the Shared Runtime requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.2 | Excel: Supported | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: 16.52.0.0 | Not supported |
-| SharedRuntime 1.1  | Excel, PowerPoint, Word: Supported | <ul><li>Excel: Version 2002 (Build 12527.20092)</li><li>PowerPoint: Version 2102 (Build 13722.10000)</li><li>Word: Version 2205 (Build 15202.10000)</li></ul> | <ul><li>Excel 2021: Version 2108 (Build 12527.20092)</li><li>PowerPoint 2021: Version 2108 (13722.10000)</li></ul> | <ul><li>Excel: 16.35</li><li>PowerPoint: 16.46.120.0</li><li>Word: 16.61.401.0</li></ul> | Not supported |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| SharedRuntime 1.2 | Excel: Supported | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: Version 16.52 | Not supported |
+| SharedRuntime 1.1  | Excel, PowerPoint, Word: Supported | <ul><li>Excel: Version 2002 (Build 12527.20092)</li><li>PowerPoint: Version 2102 (Build 13722.10000)</li><li>Word: Version 2205 (Build 15202.10000)</li></ul> | <ul><li>Excel 2021: Version 2108 (Build 12527.20092)</li><li>PowerPoint 2021: Version 2108 (13722.10000)</li></ul> | <ul><li>Excel: Version 16.35</li><li>PowerPoint: Version 16.46 (21012000)</li><li>Word: 16.61.401.0</li></ul> | Not supported |
 
 ## Office versions and build numbers
 
