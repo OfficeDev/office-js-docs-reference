@@ -6,7 +6,7 @@ fullName: Office.AttachmentDetails
 summary: |-
   Represents an attachment on an item from the server. Read mode only.
 
-  An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
+  An array of `AttachmentDetails` objects is returned as the `attachments` property of an appointment or message item.
 remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -60,7 +60,7 @@ properties:
     uid: 'outlook!Office.AttachmentDetails#attachmentType:member'
     package: outlook!
     fullName: attachmentType
-    summary: Gets a value that indicates the type of an attachment.
+    summary: Gets a value that indicates the attachment's type.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,7 +107,9 @@ properties:
     uid: 'outlook!Office.AttachmentDetails#isInline:member'
     package: outlook!
     fullName: isInline
-    summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
+    summary: >-
+      Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the
+      attachment list.
     remarks: ''
     isPreview: false
     isDeprecated: false
