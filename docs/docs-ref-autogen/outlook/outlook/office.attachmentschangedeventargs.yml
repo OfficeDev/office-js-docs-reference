@@ -3,7 +3,7 @@ name: Office.AttachmentsChangedEventArgs
 uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.AttachmentsChangedEventArgs
-summary: Provides information about an attachment on a mail item that raised the `Office.EventType.AttachmentsChanged` event.
+summary: Provides information about the attachment on a mail item that raised the `Office.EventType.AttachmentsChanged` event.
 remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

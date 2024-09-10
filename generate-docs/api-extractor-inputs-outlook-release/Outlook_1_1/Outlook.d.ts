@@ -10,7 +10,7 @@ export declare namespace Office {
         
         
         /**
-         * Specifies an attachment's type.
+         * Specifies the attachment's type.
          *
          * @remarks
          *
@@ -398,8 +398,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body,
-         *                    and should not be displayed in the attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
          *                 On success, the attachment identifier will be provided in the `asyncResult.value` property.
@@ -1274,7 +1273,7 @@ export declare namespace Office {
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
-     * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
+     * An array of `AttachmentDetails` objects is returned as the `attachments` property of an appointment or message item.
      *
      * @remarks
      * [Api set: Mailbox 1.1]
@@ -1285,7 +1284,7 @@ export declare namespace Office {
      */
     export interface AttachmentDetails {
         /**
-         * Gets a value that indicates the type of an attachment.
+         * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
@@ -1304,7 +1303,7 @@ export declare namespace Office {
          */
         id: string;
         /**
-         * Gets a value that indicates whether the attachment should be displayed in the body of the item.
+         * Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
          */
         isInline: boolean;
         /**
@@ -1824,8 +1823,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: The `Outlook` value is returned for Outlook desktop clients on Windows and on Mac. `newOutlookWindows` is returned for the
-         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows desktop client}.
+         * **Important**: The `Outlook` value is returned for Outlook on Windows (classic) and on Mac. `newOutlookWindows` is returned for
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
          */
         hostName: string;
         /**
@@ -2264,8 +2263,8 @@ export declare namespace Office {
          * Contains the following members.
          *
          *  - `hostName` (string): A string that represents the name of the Office application.
-         * It should be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
-         * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+         * It should be one of the following values: `Outlook`, `newOutlookWindows`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
+         * **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on Mac.
          *
          *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
          * If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile devices, the `hostVersion` property returns the version of the
@@ -2449,7 +2448,7 @@ export declare namespace Office {
          * If you don't specify any attendees as input arguments, the method displays a form with a **Save** button.
          * If you have specified attendees, the form would include the attendees and a **Send** button.
          *
-         * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
+         * In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
          * `resources` parameter, this method displays a meeting form with a **Send** button.
          * If you don't specify any recipients, this method displays an appointment form with a **Save & Close** button.
          *
@@ -2890,8 +2889,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the
-         *        attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
          *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
