@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows\*<br>(retail perpetual) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogApi 1.2 | Supported | See [support](#office-on-windows-microsoft-365-subscription-support)<br>[section](#office-on-windows-microsoft-365-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | Version 16.37 | Version 16.37 | Not supported |
+| DialogApi 1.2 | Supported | See [support](#office-on-windows-microsoft-365-subscription-support)<br>[section](#office-on-windows-microsoft-365-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2005 (Build 12827.20268) | Version 16.37 (20051002) | Version 16.37 | Not supported |
 | DialogApi 1.1 | Supported | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2016 | Version 15.20 | Version 1.22 | Version 1608 (Build 7601.6800) |
 
 > [!NOTE]

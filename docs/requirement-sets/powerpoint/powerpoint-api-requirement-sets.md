@@ -16,10 +16,10 @@ The following table lists the PowerPoint requirement sets, the supported Office 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](powerpoint-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [PowerPointApi 1.5](powerpoint-api-1-5-requirement-set.md) | Supported | Version 2208 (Build 15601.20230) | Not available | Version 16.64 (22080400) | Not available |
-| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md) | Supported | Version 2207 (Build 15330.20122) | Not available | Version 16.62 | Not available |
-| [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md) | Supported | Version 2111 (Build 14701.20060) | Not available | Version 16.55 | Not available |
-| [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md) | Supported | Version 2011 (Build 13426.20184) | Office 2021: Version 2011 (Build 13426.20184) | Version 16.43 | Not available |
-| [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Supported | Version 1810 (Build 11001.20074) | Office 2021: Version 1810 (Build 11001.20074) | Version 16.19 | Version 2.17 |
+| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md) | Supported | Version 2207 (Build 15330.20122) | Not available | Version 16.62 (22061100) | Not available |
+| [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md) | Supported | Version 2111 (Build 14701.20060) | Not available | Version 16.55 (21111400) | Not available |
+| [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md) | Supported | Version 2011 (Build 13426.20184) | Office 2021: Version 2011 (Build 13426.20184) | Version 16.43 (20110804) | Not available |
+| [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Supported | Version 1810 (Build 11001.20074) | Office 2021: Version 1810 (Build 11001.20074) | Version 16.19 (18110915) | Version 2.17 |
 
 ## Office versions and build numbers
 
