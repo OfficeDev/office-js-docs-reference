@@ -18,8 +18,8 @@ The Ribbon API set supports programmatic control of when custom add-in commands 
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported |
-| RibbonApi 1.1 | Supported | Version 2002 (12527.20880) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported |
+| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.53 (21080600) | Not supported |
+| RibbonApi 1.1 | Supported | Version 2002 (12527.20880) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.38 (20061401) | Not supported |
 
 To find out more about versions and build numbers, see:
 

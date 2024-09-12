@@ -52,14 +52,14 @@ export declare namespace Word {
      */
     export interface Critique {
         /**
-         * Gets the color scheme of the critique.
+         * Specifies the color scheme of the critique.
          *
          * @remarks
          * [Api set: WordApi 1.7]
          */
         colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";
         /**
-         * Gets the length of the critique inside paragraph.
+         * Specifies the length of the critique inside paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.7]
@@ -67,7 +67,7 @@ export declare namespace Word {
         length: number;
         
         /**
-         * Gets the start index of the critique inside paragraph.
+         * Specifies the start index of the critique inside paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.7]
