@@ -199,8 +199,8 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 >
 > - Modern Outlook on the web
 > - [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
-> - Outlook 2016 or later on Windows (build 7628.1000 or later)
-> - Outlook on Mac (build 16.13.503 or later)
+> - Outlook 2016 or later on Windows (Version 1612 (Build 7628.1000) or later)
+> - Outlook on Mac (Version 16.13 (18050300) or later)
 
 ```xml
 <Action xsi:type="ShowTaskpane">

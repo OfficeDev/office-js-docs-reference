@@ -10,6 +10,25 @@ summary: >-
 remarks: >-
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Create an Office.Tab object (a contextual tab), set its visibility
+
+  // and add it to the ribbon.
+
+  async function showDataTab() {
+      // Create the Office.Tab object.
+      const myContextualTab = { id: "CtxTab1", visible: true };
+      const ribbonUpdater = { tabs: [ myContextualTab ] };
+      await Office.ribbon.requestUpdate(ribbonUpdater);
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

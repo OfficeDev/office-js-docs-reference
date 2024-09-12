@@ -1089,9 +1089,10 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
-      parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of
-      the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, on iOS and Android, the seriesId returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -2309,9 +2310,9 @@ methods:
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2428,9 +2429,9 @@ methods:
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2576,9 +2577,9 @@ methods:
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook

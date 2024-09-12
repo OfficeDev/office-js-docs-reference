@@ -38,8 +38,9 @@ properties:
 
 
       - `hostName` (string): A string that represents the name of the Office application. It should be one of the
-      following values: `Outlook`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->, or `OutlookAndroid`<!-- -->.
-      **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+      following values: `Outlook`<!-- -->, `newOutlookWindows`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->,
+      or `OutlookAndroid`<!-- -->. **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on
+      Mac.
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
@@ -675,7 +676,7 @@ methods:
       and a **Send** button.
 
 
-      In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
+      In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
       form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
       with a **Save &amp; Close** button.

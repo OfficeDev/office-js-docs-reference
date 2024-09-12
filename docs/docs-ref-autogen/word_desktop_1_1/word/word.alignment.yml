@@ -1,0 +1,85 @@
+### YamlMime:TSEnum
+name: Word.Alignment
+uid: 'word!Word.Alignment:enum'
+package: word!
+fullName: Word.Alignment
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+
+  await Word.run(async (context) => {
+    const body: Word.Body = context.document.body;
+    body.clear();
+    body.insertParagraph(
+      "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
+      "Start"
+    );
+    body.paragraphs
+      .getLast()
+      .insertText(
+        "Use add-in commands to extend the Word UI and launch task panes that run JavaScript that interacts with the content in a Word document. Any code that you can run in a browser can run in a Word add-in. Add-ins that interact with content in a Word document create requests to act on Word objects and synchronize object state.",
+        "Replace"
+      );
+    body.paragraphs.getFirst().alignment = "Left";
+    body.paragraphs.getLast().alignment = Word.Alignment.left;
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: centered
+    uid: 'word!Word.Alignment.centered:member'
+    package: word!
+    summary: |-
+      Alignment to the center.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Centered"'
+  - name: justified
+    uid: 'word!Word.Alignment.justified:member'
+    package: word!
+    summary: |-
+      Fully justified alignment.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Justified"'
+  - name: left
+    uid: 'word!Word.Alignment.left:member'
+    package: word!
+    summary: |-
+      Alignment to the left.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Left"'
+  - name: mixed
+    uid: 'word!Word.Alignment.mixed:member'
+    package: word!
+    summary: '* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Mixed"'
+  - name: right
+    uid: 'word!Word.Alignment.right:member'
+    package: word!
+    summary: |-
+      Alignment to the right.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Right"'
+  - name: unknown
+    uid: 'word!Word.Alignment.unknown:member'
+    package: word!
+    summary: |-
+      Unknown alignment.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Unknown"'

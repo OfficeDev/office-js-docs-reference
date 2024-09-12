@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderUpdateData
+uid: 'word!Word.Interfaces.BorderUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.BorderUpdateData
+summary: 'An interface for updating data on the `Border` object, for use in `border.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

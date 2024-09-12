@@ -1,0 +1,420 @@
+### YamlMime:TSType
+name: Word.TrackedChange
+uid: 'word!Word.TrackedChange:class'
+package: word!
+fullName: Word.TrackedChange
+summary: Represents a tracked change in a Word document.
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+  // Gets the next (second) tracked change.
+
+  await Word.run(async (context) => {
+    const body: Word.Body = context.document.body;
+    const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+    await context.sync();
+
+    const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+    await context.sync();
+
+    const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
+    await context.sync();
+
+    nextTrackedChange.load(["author", "date", "text", "type"]);
+    await context.sync();
+
+    console.log(nextTrackedChange);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: author
+    uid: 'word!Word.TrackedChange#author:member'
+    package: word!
+    fullName: author
+    summary: Gets the author of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly author: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'word!Word.TrackedChange#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: date
+    uid: 'word!Word.TrackedChange#date:member'
+    package: word!
+    fullName: date
+    summary: Gets the date of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly date: Date;'
+      return:
+        type: Date
+  - name: text
+    uid: 'word!Word.TrackedChange#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly text: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'word!Word.TrackedChange#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the type of the tracked change.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
+      return:
+        type: '<xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"'
+methods:
+  - name: accept()
+    uid: 'word!Word.TrackedChange#accept:member(1)'
+    package: word!
+    fullName: accept()
+    summary: Accepts the tracked change.
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+      // Accepts the first tracked change.
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+        trackedChange.load();
+        await context.sync();
+
+        console.log("First tracked change:", trackedChange);
+        trackedChange.accept();
+        console.log("Accepted the first tracked change.");
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accept(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getNext()
+    uid: 'word!Word.TrackedChange#getNext:member(1)'
+    package: word!
+    fullName: getNext()
+    summary: Gets the next tracked change. Throws an `ItemNotFound` error if this tracked change is the last one.
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+      // Gets the next (second) tracked change.
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        await context.sync();
+
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
+        await context.sync();
+
+        nextTrackedChange.load(["author", "date", "text", "type"]);
+        await context.sync();
+
+        console.log(nextTrackedChange);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNext(): Word.TrackedChange;'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: getNextOrNullObject()
+    uid: 'word!Word.TrackedChange#getNextOrNullObject:member(1)'
+    package: word!
+    fullName: getNextOrNullObject()
+    summary: >-
+      Gets the next tracked change. If this tracked change is the last one, then this method will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNextOrNullObject(): Word.TrackedChange;'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: getRange(rangeLocation)
+    uid: 'word!Word.TrackedChange#getRange:member(1)'
+    package: word!
+    fullName: getRange(rangeLocation)
+    summary: Gets the range of the tracked change.
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+      // Gets the range of the first tracked change.
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+        await context.sync();
+
+        const range: Word.Range = trackedChange.getRange();
+        range.load();
+        await context.sync();
+
+        console.log("range.text: " + range.text);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole"
+        | "Start" | "End"): Word.Range;
+      parameters:
+        - id: rangeLocation
+          description: ''
+          type: >-
+            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> |
+            <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.TrackedChange#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.TrackedChangeLoadOptions): Word.TrackedChange;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.TrackedChangeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.TrackedChange#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TrackedChange;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.TrackedChange#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.TrackedChange;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: reject()
+    uid: 'word!Word.TrackedChange#reject:member(1)'
+    package: word!
+    fullName: reject()
+    summary: Rejects the tracked change.
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+      // Rejects the first tracked change.
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+        trackedChange.load();
+        await context.sync();
+
+        console.log("First tracked change:", trackedChange);
+        trackedChange.reject();
+        console.log("Rejected the first tracked change.");
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reject(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.TrackedChange#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.TrackedChange` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.TrackedChangeData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TrackedChangeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TrackedChangeData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.TrackedChange#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.TrackedChange;'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.TrackedChange#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TrackedChange;'
+      return:
+        type: '<xref uid="word!Word.TrackedChange:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

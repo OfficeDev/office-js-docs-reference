@@ -4,7 +4,38 @@ uid: 'powerpoint!PowerPoint.SlideMaster:class'
 package: powerpoint!
 fullName: PowerPoint.SlideMaster
 summary: Represents the Slide Master of a slide.
-remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+    // Load information about all the slide masters and associated layouts.
+    const slideMasters = context.presentation.slideMasters.load("id, name, layouts/items/name, layouts/items/id");
+    await context.sync();
+
+    // Log the name and ID of each slide master.
+    for (let i = 0; i < slideMasters.items.length; i++) {
+      console.log("Master name: " + slideMasters.items[i].name);
+      console.log("Master ID: " + slideMasters.items[i].id);
+
+      // Log the name and ID of each slide layout in the slide master.
+      const layoutsInMaster = slideMasters.items[i].layouts;
+      for (let j = 0; j < layoutsInMaster.items.length; j++) {
+        console.log("    Layout name: " + layoutsInMaster.items[j].name + " Layout ID: " + layoutsInMaster.items[j].id);
+      }
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

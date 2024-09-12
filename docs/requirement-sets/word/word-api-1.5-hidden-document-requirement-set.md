@@ -1,15 +1,13 @@
 ---
 title: Word JavaScript API Hidden Document requirement set 1.5
 description: Details about the WordApiHiddenDocument 1.5 requirement set.
-ms.date: 05/23/2023
+ms.date: 08/29/2024
 ms.localizationpriority: medium
 ---
 
 # Word JavaScript API Hidden Document requirement set 1.5
 
 The `WordApiHiddenDocument 1.5` requirement set is a special requirement set that includes features that are only available for Word on Windows and on Mac. APIs in this requirement set are considered to be production APIs for the Word application on Windows and on Mac. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiHiddenDocument` APIs are considered to be "preview" APIs for other platforms (web, iPad) and may not be supported by any of those platforms.
-
-When APIs in the `WordApiHiddenDocument` requirement set are supported across all platforms, they will be added to a subsequent released requirement set (`WordApi 1.[FUTURE]`) and no longer tagged as `WordApiHiddenDocument`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
 > `WordApiHiddenDocument 1.5` is a superset of the WordApi 1.5 and WordApiHiddenDocument 1.4 requirement sets, and is a desktop-only requirement set.
@@ -31,7 +29,7 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 ## API list
 
-The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true).
+The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument 1.5` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument 1.5` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true).
 
 | Class | Fields | Description |
 |:---|:---|:---|

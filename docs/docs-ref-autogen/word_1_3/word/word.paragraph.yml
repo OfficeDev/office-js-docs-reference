@@ -4,7 +4,29 @@ uid: 'word!Word.Paragraph:class'
 package: word!
 fullName: Word.Paragraph
 summary: 'Represents a single paragraph in a selection, range, content control, or document body.'
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+  await Word.run(async (context) => {
+    // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    paragraph.load("text");
+
+    await context.sync();
+    console.log(paragraph.text);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

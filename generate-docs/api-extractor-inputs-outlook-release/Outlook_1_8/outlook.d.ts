@@ -52,7 +52,7 @@ export declare namespace Office {
             Removed = "removed"
         }
         /**
-         * Specifies an attachment's type.
+         * Specifies the attachment's type.
          *
          * @remarks
          *
@@ -1393,16 +1393,17 @@ export declare namespace Office {
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
-         * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+         * In Outlook on the web, on Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), and on Mac,
+         * the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+         * However, in Outlook on Android and on iOS, `seriesId` returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
-         * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+         * The `seriesId` property isn't identical to the Outlook IDs used by the Outlook REST API.
          * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          *
-         * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-         * and returns `undefined` for any other items that are not meeting requests.
+         * The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series items, or meeting requests
+         * and returns `undefined` for any other items that aren't meeting requests.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1476,8 +1477,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body,
-         *                    and should not be displayed in the attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
          *                 On success, the attachment identifier will be provided in the `asyncResult.value` property.
@@ -1555,8 +1555,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body
-         *                    and should not be displayed in the attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
          *                  On success, the attachment identifier will be provided in the `asyncResult.value` property.
@@ -1720,7 +1719,7 @@ export declare namespace Office {
          * The behavior of the `close` method depends on the current state of the item being composed.
          * If the item has unsaved changes, the client prompts the user to save, discard, or close the action.
          *
-         * In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.
+         * In Outlook on Windows (classic) and on Mac, the `close` method has no effect on a reply in the Reading Pane.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -2717,8 +2716,9 @@ export declare namespace Office {
         /**
          * Gets the ID of the series that an instance belongs to.
          *
-         * In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
-         * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+         * In Outlook on the web, on Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), and on Mac,
+         * the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+         * However, on iOS and Android, the seriesId returns the REST ID of the parent item.
          *
          * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
          * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it
@@ -3037,7 +3037,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -3069,7 +3069,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -3126,7 +3126,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
@@ -3308,7 +3308,7 @@ export declare namespace Office {
     /**
      * Represents an attachment on an item. Compose mode only.
      *
-     * An array of `AttachmentDetailsCompose` objects is returned as the attachments property of an appointment or message item.
+     * An array of `AttachmentDetailsCompose` objects is returned by the `getAttachmentsAsync` method.
      *
      * @remarks
      * [Api set: Mailbox 1.8]
@@ -3319,7 +3319,7 @@ export declare namespace Office {
      */
     export interface AttachmentDetailsCompose {
         /**
-         * Gets a value that indicates the type of an attachment.
+         * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
@@ -3327,7 +3327,7 @@ export declare namespace Office {
          */
         id: string;
         /**
-         * Gets a value that indicates whether the attachment should be displayed in the body of the item.
+         * Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
          */
         isInline: boolean;
         /**
@@ -3349,7 +3349,7 @@ export declare namespace Office {
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
-     * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
+     * An array of `AttachmentDetails` objects is returned as the `attachments` property of an appointment or message item.
      *
      * @remarks
      * [Api set: Mailbox 1.1]
@@ -3360,7 +3360,7 @@ export declare namespace Office {
      */
     export interface AttachmentDetails {
         /**
-         * Gets a value that indicates the type of an attachment.
+         * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
@@ -3379,7 +3379,7 @@ export declare namespace Office {
          */
         id: string;
         /**
-         * Gets a value that indicates whether the attachment should be displayed in the body of the item.
+         * Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
          */
         isInline: boolean;
         /**
@@ -3395,7 +3395,7 @@ export declare namespace Office {
         size: number;
     }
     /**
-     * Provides information about an attachment on a mail item that raised the
+     * Provides information about the attachment on a mail item that raised the
      * `Office.EventType.AttachmentsChanged` event.
      *
      * @remarks
@@ -3459,9 +3459,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * **Important**:
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
+         *
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+         * Otherwise, you may receive an unexpected value, such as an empty string.
          *
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -3482,9 +3488,15 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * **Important**:
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
+         *
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
+         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+         * Otherwise, you may receive an unexpected value, such as an empty string.
          *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -4240,8 +4252,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: The `Outlook` value is returned for Outlook desktop clients on Windows and on Mac. `newOutlookWindows` is returned for the
-         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows desktop client}.
+         * **Important**: The `Outlook` value is returned for Outlook on Windows (classic) and on Mac. `newOutlookWindows` is returned for
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}.
          */
         hostName: string;
         /**
@@ -5141,8 +5153,8 @@ export declare namespace Office {
          * Contains the following members.
          *
          *  - `hostName` (string): A string that represents the name of the Office application.
-         * It should be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
-         * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+         * It should be one of the following values: `Outlook`, `newOutlookWindows`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
+         * **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on Mac.
          *
          *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
          * If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile devices, the `hostVersion` property returns the version of the
@@ -5444,7 +5456,7 @@ export declare namespace Office {
          * If you don't specify any attendees as input arguments, the method displays a form with a **Save** button.
          * If you have specified attendees, the form would include the attendees and a **Send** button.
          *
-         * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
+         * In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
          * `resources` parameter, this method displays a meeting form with a **Send** button.
          * If you don't specify any recipients, this method displays an appointment form with a **Save & Close** button.
          *
@@ -5497,18 +5509,18 @@ export declare namespace Office {
          *
          *        `attachments`: An array of JSON objects that are either file or item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
-         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file. **Important**: This link must be
+         *        `attachments.url`: Only used if the attachment type is set to `file`. The URI of the location for the file. **Important**: This link must be
          *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
          *        be accessible on a private network as long as it doesn't need further authentication.
          *
-         *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
-         *        message body, and should not be displayed in the attachment list.
+         *        `attachments.isInline`: Only used if the attachment type is set to `file`. If true, indicates that the attachment will be shown inline as an image
+         *        in the message body and won't be displayed in the attachment list.
          *
-         *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
+         *        `attachments.itemId`: Only used if the attachment type is set to `item`. The EWS item ID of the existing e-mail you want to attach to the new message.
          *        This is a string up to 100 characters.
          */
         displayNewMessageForm(parameters: any): void;
@@ -6264,8 +6276,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the
-         *        attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
          *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
@@ -6346,7 +6357,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         *        `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
+         *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                             type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property.
          *                  If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.
@@ -6509,7 +6520,7 @@ export declare namespace Office {
          * The behavior of the `close` method depends on the current state of the item being composed.
          * If the item has unsaved changes, the client prompts the user to save, discard, or close the action.
          *
-         * In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.
+         * In Outlook on Windows (classic) and on Mac, the `close` method has no effect on a reply in the Reading Pane.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -6530,7 +6541,7 @@ export declare namespace Office {
          *
          * - Determine when a user cancels the save item dialog on a message being composed.
          *
-         * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.
+         * - Close a reply in the Reading Pane or an existing draft.
          */
         close(): void;
         
@@ -7837,7 +7848,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -7869,7 +7880,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
@@ -7926,7 +7937,7 @@ export declare namespace Office {
          * For guidance on how to implement these rules, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | Contextual Outlook add-ins}.
          *
-         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * - This method is used with the {@link https://learn.microsoft.com/javascript/api/manifest/rule | activation rules feature for Outlook add-ins},
          * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | unified manifest for Microsoft 365}.
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see

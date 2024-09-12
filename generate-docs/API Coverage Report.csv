@@ -6604,10 +6604,10 @@ Excel.WorksheetVisibilityChangedEventArgs,"visibilityAfter",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"visibilityBefore",Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,"worksheetId",Property,Good,false
 Office.Actions,N/A,Class,Poor,false
-Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,false
-Office.Actions,"associate(actionId, actionFunction)",Method,Poor,false
-Office.Actions,"getShortcuts()",Method,Good,false
-Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,false
+Office.Actions,"areShortcutsInUse(shortcuts)",Method,Good,true
+Office.Actions,"associate(actionId, actionFunction)",Method,Poor,true
+Office.Actions,"getShortcuts()",Method,Good,true
+Office.Actions,"replaceShortcuts(shortcuts)",Method,Good,true
 Office.ActiveView,N/A,Enum,Fine,true
 Office.ActiveView,"Edit",EnumField,Fine,false
 Office.ActiveView,"Read",EnumField,Fine,false
@@ -6648,7 +6648,7 @@ Office.AsyncResult,"value",Property,Good,true
 Office.AsyncResultStatus,N/A,Enum,Good,true
 Office.AsyncResultStatus,"Failed",EnumField,Fine,false
 Office.AsyncResultStatus,"Succeeded",EnumField,Poor,false
-Office.Auth,N/A,Class,Good,false
+Office.Auth,N/A,Class,Good,true
 Office.Auth,"getAccessToken(options)",Method,Fine,true
 Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
@@ -7584,7 +7584,7 @@ Office.Slice,"size",Property,Fine,false
 Office.StartupBehavior,N/A,Enum,Fine,true
 Office.StartupBehavior,"load",EnumField,Fine,false
 Office.StartupBehavior,"none",EnumField,Fine,false
-Office.Tab,N/A,Class,Good,false
+Office.Tab,N/A,Class,Good,true
 Office.Tab,"controls",Property,Good,false
 Office.Tab,"groups",Property,Good,false
 Office.Tab,"id",Property,Fine,true
@@ -7620,7 +7620,7 @@ Office.ThemeId,"Black",EnumField,Fine,false
 Office.ThemeId,"Colorful",EnumField,Fine,false
 Office.ThemeId,"DarkGray",EnumField,Fine,false
 Office.ThemeId,"White",EnumField,Fine,false
-Office.UI,N/A,Class,Fine,false
+Office.UI,N/A,Class,Fine,true
 Office.UI,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,false
 Office.UI,"addHandlerAsync(eventType, handler, callback)",Method,Fine,true
 Office.UI,"closeContainer()",Method,Poor,true
@@ -9619,7 +9619,7 @@ PowerPoint.ParagraphHorizontalAlignment,"justifyLow",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"left",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"right",EnumField,Fine,false
 PowerPoint.ParagraphHorizontalAlignment,"thaiDistributed",EnumField,Fine,false
-PowerPoint.Presentation,N/A,Class,Fine,false
+PowerPoint.Presentation,N/A,Class,Fine,true
 PowerPoint.Presentation,"context",Property,Good,false
 PowerPoint.Presentation,"customXmlParts",Property,Good,false
 PowerPoint.Presentation,"id",Property,Good,false
@@ -9640,7 +9640,7 @@ PowerPoint.Presentation,"toJSON()",Method,Poor,false
 PowerPoint.RequestContext,N/A,Class,Good,true
 PowerPoint.RequestContext,"application",Property,Missing,false
 PowerPoint.RequestContext,"presentation",Property,Missing,false
-PowerPoint.Shape,N/A,Class,Good,false
+PowerPoint.Shape,N/A,Class,Good,true
 PowerPoint.Shape,"context",Property,Good,false
 PowerPoint.Shape,"customXmlParts",Property,Good,false
 PowerPoint.Shape,"fill",Property,Good,true
@@ -9675,7 +9675,7 @@ PowerPoint.ShapeAutoSize,"autoSizeMixed",EnumField,Fine,false
 PowerPoint.ShapeAutoSize,"autoSizeNone",EnumField,Fine,false
 PowerPoint.ShapeAutoSize,"autoSizeShapeToFitText",EnumField,Fine,false
 PowerPoint.ShapeAutoSize,"autoSizeTextToFitShape",EnumField,Fine,false
-PowerPoint.ShapeCollection,N/A,Class,Good,false
+PowerPoint.ShapeCollection,N/A,Class,Good,true
 PowerPoint.ShapeCollection,"context",Property,Good,false
 PowerPoint.ShapeCollection,"items",Property,Fine,false
 PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeType, options)",Method,Fine,true
@@ -9691,7 +9691,7 @@ PowerPoint.ShapeCollection,"load(options)",Method,Poor,false
 PowerPoint.ShapeCollection,"load(propertyNames)",Method,Fine,true
 PowerPoint.ShapeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.ShapeCollection,"toJSON()",Method,Poor,false
-PowerPoint.ShapeFill,N/A,Class,Good,false
+PowerPoint.ShapeFill,N/A,Class,Good,true
 PowerPoint.ShapeFill,"context",Property,Good,false
 PowerPoint.ShapeFill,"foregroundColor",Property,Good,false
 PowerPoint.ShapeFill,"transparency",Property,Good,true
@@ -9709,7 +9709,7 @@ PowerPoint.ShapeFillType,"pattern",EnumField,Fine,false
 PowerPoint.ShapeFillType,"pictureAndTexture",EnumField,Fine,false
 PowerPoint.ShapeFillType,"slideBackground",EnumField,Fine,false
 PowerPoint.ShapeFillType,"solid",EnumField,Fine,false
-PowerPoint.ShapeFont,N/A,Class,Good,false
+PowerPoint.ShapeFont,N/A,Class,Good,true
 PowerPoint.ShapeFont,"bold",Property,Good,false
 PowerPoint.ShapeFont,"color",Property,Good,true
 PowerPoint.ShapeFont,"context",Property,Good,false
@@ -9752,7 +9752,7 @@ PowerPoint.ShapeLineDashStyle,"squareDot",EnumField,Fine,false
 PowerPoint.ShapeLineDashStyle,"systemDash",EnumField,Fine,false
 PowerPoint.ShapeLineDashStyle,"systemDashDot",EnumField,Fine,false
 PowerPoint.ShapeLineDashStyle,"systemDot",EnumField,Fine,false
-PowerPoint.ShapeLineFormat,N/A,Class,Good,false
+PowerPoint.ShapeLineFormat,N/A,Class,Good,true
 PowerPoint.ShapeLineFormat,"color",Property,Good,false
 PowerPoint.ShapeLineFormat,"context",Property,Good,false
 PowerPoint.ShapeLineFormat,"dashStyle",Property,Good,true
@@ -9788,7 +9788,7 @@ PowerPoint.ShapeType,"image",EnumField,Fine,false
 PowerPoint.ShapeType,"line",EnumField,Fine,false
 PowerPoint.ShapeType,"table",EnumField,Fine,false
 PowerPoint.ShapeType,"unsupported",EnumField,Fine,false
-PowerPoint.Slide,N/A,Class,Good,false
+PowerPoint.Slide,N/A,Class,Good,true
 PowerPoint.Slide,"context",Property,Good,false
 PowerPoint.Slide,"customXmlParts",Property,Good,false
 PowerPoint.Slide,"hyperlinks",Property,Good,false
@@ -9805,7 +9805,7 @@ PowerPoint.Slide,"load(propertyNames)",Method,Poor,false
 PowerPoint.Slide,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Slide,"setSelectedShapes(shapeIds)",Method,Poor,true
 PowerPoint.Slide,"toJSON()",Method,Poor,false
-PowerPoint.SlideCollection,N/A,Class,Good,false
+PowerPoint.SlideCollection,N/A,Class,Good,true
 PowerPoint.SlideCollection,"context",Property,Good,false
 PowerPoint.SlideCollection,"items",Property,Fine,false
 PowerPoint.SlideCollection,"add(options)",Method,Poor,true
@@ -9820,7 +9820,7 @@ PowerPoint.SlideCollection,"toJSON()",Method,Poor,false
 PowerPoint.SlideGetImageOptions,N/A,Class,Good,false
 PowerPoint.SlideGetImageOptions,"height",Property,Good,false
 PowerPoint.SlideGetImageOptions,"width",Property,Good,false
-PowerPoint.SlideLayout,N/A,Class,Good,false
+PowerPoint.SlideLayout,N/A,Class,Good,true
 PowerPoint.SlideLayout,"context",Property,Good,false
 PowerPoint.SlideLayout,"customXmlParts",Property,Good,false
 PowerPoint.SlideLayout,"id",Property,Good,true
@@ -9830,7 +9830,7 @@ PowerPoint.SlideLayout,"load(options)",Method,Poor,false
 PowerPoint.SlideLayout,"load(propertyNames)",Method,Poor,false
 PowerPoint.SlideLayout,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideLayout,"toJSON()",Method,Poor,false
-PowerPoint.SlideLayoutCollection,N/A,Class,Good,false
+PowerPoint.SlideLayoutCollection,N/A,Class,Good,true
 PowerPoint.SlideLayoutCollection,"context",Property,Good,false
 PowerPoint.SlideLayoutCollection,"items",Property,Fine,false
 PowerPoint.SlideLayoutCollection,"getCount()",Method,Fine,false
@@ -9841,7 +9841,7 @@ PowerPoint.SlideLayoutCollection,"load(options)",Method,Poor,false
 PowerPoint.SlideLayoutCollection,"load(propertyNames)",Method,Fine,true
 PowerPoint.SlideLayoutCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideLayoutCollection,"toJSON()",Method,Poor,false
-PowerPoint.SlideMaster,N/A,Class,Good,false
+PowerPoint.SlideMaster,N/A,Class,Good,true
 PowerPoint.SlideMaster,"context",Property,Good,false
 PowerPoint.SlideMaster,"customXmlParts",Property,Good,false
 PowerPoint.SlideMaster,"id",Property,Good,true
@@ -9852,7 +9852,7 @@ PowerPoint.SlideMaster,"load(options)",Method,Poor,false
 PowerPoint.SlideMaster,"load(propertyNames)",Method,Poor,false
 PowerPoint.SlideMaster,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideMaster,"toJSON()",Method,Poor,false
-PowerPoint.SlideMasterCollection,N/A,Class,Good,false
+PowerPoint.SlideMasterCollection,N/A,Class,Good,true
 PowerPoint.SlideMasterCollection,"context",Property,Good,false
 PowerPoint.SlideMasterCollection,"items",Property,Fine,false
 PowerPoint.SlideMasterCollection,"getCount()",Method,Fine,false
@@ -9882,7 +9882,7 @@ PowerPoint.Tag,"load(options)",Method,Poor,false
 PowerPoint.Tag,"load(propertyNames)",Method,Poor,false
 PowerPoint.Tag,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Tag,"toJSON()",Method,Poor,false
-PowerPoint.TagCollection,N/A,Class,Good,false
+PowerPoint.TagCollection,N/A,Class,Good,true
 PowerPoint.TagCollection,"context",Property,Good,false
 PowerPoint.TagCollection,"items",Property,Fine,false
 PowerPoint.TagCollection,"add(key, value)",Method,Poor,true
@@ -9912,7 +9912,7 @@ PowerPoint.TextFrame,"load(options)",Method,Poor,false
 PowerPoint.TextFrame,"load(propertyNames)",Method,Poor,false
 PowerPoint.TextFrame,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.TextFrame,"toJSON()",Method,Poor,false
-PowerPoint.TextRange,N/A,Class,Good,false
+PowerPoint.TextRange,N/A,Class,Good,true
 PowerPoint.TextRange,"context",Property,Good,false
 PowerPoint.TextRange,"font",Property,Good,true
 PowerPoint.TextRange,"length",Property,Good,false
@@ -9926,7 +9926,7 @@ PowerPoint.TextRange,"load(propertyNames)",Method,Poor,false
 PowerPoint.TextRange,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.TextRange,"setSelected()",Method,Poor,true
 PowerPoint.TextRange,"toJSON()",Method,Poor,false
-PowerPoint.TextVerticalAlignment,N/A,Enum,Good,false
+PowerPoint.TextVerticalAlignment,N/A,Enum,Good,true
 PowerPoint.TextVerticalAlignment,"bottom",EnumField,Fine,false
 PowerPoint.TextVerticalAlignment,"bottomCentered",EnumField,Good,false
 PowerPoint.TextVerticalAlignment,"middle",EnumField,Fine,false
@@ -10272,7 +10272,7 @@ Word.Alignment,"left",EnumField,Fine,false
 Word.Alignment,"mixed",EnumField,Fine,false
 Word.Alignment,"right",EnumField,Fine,false
 Word.Alignment,"unknown",EnumField,Fine,false
-Word.Annotation,N/A,Class,Good,false
+Word.Annotation,N/A,Class,Good,true
 Word.Annotation,"context",Property,Good,false
 Word.Annotation,"critiqueAnnotation",Property,Good,true
 Word.Annotation,"id",Property,Good,true
@@ -10313,7 +10313,7 @@ Word.AnnotationState,N/A,Enum,Good,true
 Word.AnnotationState,"accepted",EnumField,Fine,false
 Word.AnnotationState,"created",EnumField,Fine,false
 Word.AnnotationState,"rejected",EnumField,Fine,false
-Word.Application,N/A,Class,Good,false
+Word.Application,N/A,Class,Good,true
 Word.Application,"context",Property,Good,false
 Word.Application,"createDocument(base64File)",Method,Poor,true
 Word.Application,"newObject(context)",Method,Poor,false
@@ -10688,7 +10688,7 @@ Word.CommentChangeType,"replyAdded",EnumField,Fine,false
 Word.CommentChangeType,"replyDeleted",EnumField,Fine,false
 Word.CommentChangeType,"replyEdited",EnumField,Fine,false
 Word.CommentChangeType,"resolved",EnumField,Fine,false
-Word.CommentCollection,N/A,Class,Good,false
+Word.CommentCollection,N/A,Class,Good,true
 Word.CommentCollection,"context",Property,Good,false
 Word.CommentCollection,"items",Property,Fine,true
 Word.CommentCollection,"getFirst()",Method,Poor,false
@@ -10835,7 +10835,7 @@ Word.ContentControlAppearance,N/A,Enum,Good,true
 Word.ContentControlAppearance,"boundingBox",EnumField,Fine,false
 Word.ContentControlAppearance,"hidden",EnumField,Fine,false
 Word.ContentControlAppearance,"tags",EnumField,Fine,false
-Word.ContentControlCollection,N/A,Class,Good,false
+Word.ContentControlCollection,N/A,Class,Good,true
 Word.ContentControlCollection,"context",Property,Good,false
 Word.ContentControlCollection,"items",Property,Fine,false
 Word.ContentControlCollection,"getByChangeTrackingStates(changeTrackingStates)",Method,Poor,false
@@ -10927,7 +10927,7 @@ Word.Critique,"colorScheme",Property,Good,false
 Word.Critique,"length",Property,Good,false
 Word.Critique,"popupOptions",Property,Good,false
 Word.Critique,"start",Property,Good,false
-Word.CritiqueAnnotation,N/A,Class,Good,false
+Word.CritiqueAnnotation,N/A,Class,Good,true
 Word.CritiqueAnnotation,"context",Property,Good,false
 Word.CritiqueAnnotation,"critique",Property,Good,true
 Word.CritiqueAnnotation,"range",Property,Good,false
@@ -10964,7 +10964,7 @@ Word.CustomProperty,"set(properties)",Method,Poor,false
 Word.CustomProperty,"toJSON()",Method,Poor,false
 Word.CustomProperty,"track()",Method,Poor,false
 Word.CustomProperty,"untrack()",Method,Poor,false
-Word.CustomPropertyCollection,N/A,Class,Good,false
+Word.CustomPropertyCollection,N/A,Class,Good,true
 Word.CustomPropertyCollection,"context",Property,Good,false
 Word.CustomPropertyCollection,"items",Property,Fine,true
 Word.CustomPropertyCollection,"add(key, value)",Method,Poor,true
@@ -10978,7 +10978,7 @@ Word.CustomPropertyCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.CustomPropertyCollection,"toJSON()",Method,Poor,false
 Word.CustomPropertyCollection,"track()",Method,Poor,false
 Word.CustomPropertyCollection,"untrack()",Method,Poor,false
-Word.CustomXmlPart,N/A,Class,Good,false
+Word.CustomXmlPart,N/A,Class,Good,true
 Word.CustomXmlPart,"context",Property,Good,false
 Word.CustomXmlPart,"id",Property,Good,true
 Word.CustomXmlPart,"namespaceUri",Property,Good,true
@@ -11175,7 +11175,7 @@ Word.EventType,"contentControlSelectionChanged",EnumField,Fine,false
 Word.EventType,"paragraphAdded",EnumField,Fine,false
 Word.EventType,"paragraphChanged",EnumField,Fine,false
 Word.EventType,"paragraphDeleted",EnumField,Fine,false
-Word.Field,N/A,Class,Good,false
+Word.Field,N/A,Class,Good,true
 Word.Field,"code",Property,Good,true
 Word.Field,"context",Property,Good,false
 Word.Field,"data",Property,Good,false
@@ -11205,7 +11205,7 @@ Word.Field,"toJSON()",Method,Poor,false
 Word.Field,"track()",Method,Poor,false
 Word.Field,"untrack()",Method,Poor,false
 Word.Field,"updateResult()",Method,Poor,true
-Word.FieldCollection,N/A,Class,Good,false
+Word.FieldCollection,N/A,Class,Good,true
 Word.FieldCollection,"context",Property,Good,false
 Word.FieldCollection,"items",Property,Fine,true
 Word.FieldCollection,"getByTypes(types)",Method,Poor,false
@@ -11313,7 +11313,7 @@ Word.FieldType,"userAddress",EnumField,Fine,false
 Word.FieldType,"userInitials",EnumField,Fine,false
 Word.FieldType,"userName",EnumField,Fine,false
 Word.FieldType,"xe",EnumField,Fine,false
-Word.Font,N/A,Class,Good,false
+Word.Font,N/A,Class,Good,true
 Word.Font,"bold",Property,Good,true
 Word.Font,"color",Property,Good,true
 Word.Font,"context",Property,Good,false
@@ -11540,7 +11540,7 @@ Word.ListCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.ListCollection,"toJSON()",Method,Poor,false
 Word.ListCollection,"track()",Method,Poor,false
 Word.ListCollection,"untrack()",Method,Poor,false
-Word.ListItem,N/A,Class,Good,false
+Word.ListItem,N/A,Class,Good,true
 Word.ListItem,"context",Property,Good,false
 Word.ListItem,"level",Property,Good,true
 Word.ListItem,"listString",Property,Good,false
@@ -11626,7 +11626,7 @@ Word.LocationRelation,"insideStart",EnumField,Good,false
 Word.LocationRelation,"overlapsAfter",EnumField,Fine,false
 Word.LocationRelation,"overlapsBefore",EnumField,Fine,false
 Word.LocationRelation,"unrelated",EnumField,Fine,false
-Word.NoteItem,N/A,Class,Good,false
+Word.NoteItem,N/A,Class,Good,true
 Word.NoteItem,"body",Property,Good,true
 Word.NoteItem,"context",Property,Good,false
 Word.NoteItem,"reference",Property,Good,true
@@ -11642,7 +11642,7 @@ Word.NoteItem,"set(properties)",Method,Poor,false
 Word.NoteItem,"toJSON()",Method,Poor,false
 Word.NoteItem,"track()",Method,Poor,false
 Word.NoteItem,"untrack()",Method,Poor,false
-Word.NoteItemCollection,N/A,Class,Good,false
+Word.NoteItemCollection,N/A,Class,Good,true
 Word.NoteItemCollection,"context",Property,Good,false
 Word.NoteItemCollection,"items",Property,Fine,false
 Word.NoteItemCollection,"getFirst()",Method,Poor,true
@@ -11667,7 +11667,7 @@ Word.OutlineLevel,"outlineLevel7",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel8",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevel9",EnumField,Fine,false
 Word.OutlineLevel,"outlineLevelBodyText",EnumField,Fine,false
-Word.Paragraph,N/A,Class,Good,false
+Word.Paragraph,N/A,Class,Good,true
 Word.Paragraph,"alignment",Property,Good,true
 Word.Paragraph,"contentControls",Property,Good,false
 Word.Paragraph,"context",Property,Good,false
@@ -11753,7 +11753,7 @@ Word.ParagraphChangedEventArgs,N/A,Class,Good,true
 Word.ParagraphChangedEventArgs,"source",Property,Good,false
 Word.ParagraphChangedEventArgs,"type",Property,Good,false
 Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Good,false
-Word.ParagraphCollection,N/A,Class,Good,false
+Word.ParagraphCollection,N/A,Class,Good,true
 Word.ParagraphCollection,"context",Property,Good,false
 Word.ParagraphCollection,"items",Property,Fine,true
 Word.ParagraphCollection,"getFirst()",Method,Poor,true
@@ -11890,7 +11890,7 @@ Word.RequestContext,"document",Property,Missing,false
 Word.SaveBehavior,N/A,Enum,Good,true
 Word.SaveBehavior,"prompt",EnumField,Good,false
 Word.SaveBehavior,"save",EnumField,Good,false
-Word.SearchOptions,N/A,Class,Good,false
+Word.SearchOptions,N/A,Class,Good,true
 Word.SearchOptions,"context",Property,Good,false
 Word.SearchOptions,"ignorePunct",Property,Good,false
 Word.SearchOptions,"ignoreSpace",Property,Good,false
@@ -11938,7 +11938,7 @@ Word.SelectionMode,N/A,Enum,Good,true
 Word.SelectionMode,"end",EnumField,Fine,false
 Word.SelectionMode,"select",EnumField,Fine,false
 Word.SelectionMode,"start",EnumField,Fine,false
-Word.Setting,N/A,Class,Good,false
+Word.Setting,N/A,Class,Good,true
 Word.Setting,"context",Property,Good,false
 Word.Setting,"key",Property,Good,true
 Word.Setting,"value",Property,Good,true
@@ -12016,7 +12016,7 @@ Word.ShadingTextureType,"percent87Pt5",EnumField,Fine,false
 Word.ShadingTextureType,"percent90",EnumField,Fine,false
 Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
-Word.Style,N/A,Class,Good,false
+Word.Style,N/A,Class,Good,true
 Word.Style,"baseStyle",Property,Good,false
 Word.Style,"borders",Property,Good,true
 Word.Style,"builtIn",Property,Good,false
@@ -12045,7 +12045,7 @@ Word.Style,"set(properties)",Method,Poor,false
 Word.Style,"toJSON()",Method,Poor,false
 Word.Style,"track()",Method,Poor,false
 Word.Style,"untrack()",Method,Poor,false
-Word.StyleCollection,N/A,Class,Good,false
+Word.StyleCollection,N/A,Class,Good,true
 Word.StyleCollection,"context",Property,Good,false
 Word.StyleCollection,"items",Property,Fine,false
 Word.StyleCollection,"getByName(name)",Method,Poor,false
@@ -12133,7 +12133,7 @@ Word.Table,"setCellPadding(cellPaddingLocationString, cellPadding)",Method,Poor,
 Word.Table,"toJSON()",Method,Poor,false
 Word.Table,"track()",Method,Poor,false
 Word.Table,"untrack()",Method,Poor,false
-Word.TableBorder,N/A,Class,Good,false
+Word.TableBorder,N/A,Class,Good,true
 Word.TableBorder,"color",Property,Good,true
 Word.TableBorder,"context",Property,Good,false
 Word.TableBorder,"type",Property,Good,true
@@ -12202,7 +12202,7 @@ Word.TableCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.TableCollection,"toJSON()",Method,Poor,false
 Word.TableCollection,"track()",Method,Poor,false
 Word.TableCollection,"untrack()",Method,Poor,false
-Word.TableRow,N/A,Class,Good,false
+Word.TableRow,N/A,Class,Good,true
 Word.TableRow,"cellCount",Property,Good,false
 Word.TableRow,"cells",Property,Good,true
 Word.TableRow,"context",Property,Good,false
@@ -12287,7 +12287,7 @@ Word.TrackedChange,"reject()",Method,Poor,true
 Word.TrackedChange,"toJSON()",Method,Poor,false
 Word.TrackedChange,"track()",Method,Poor,false
 Word.TrackedChange,"untrack()",Method,Poor,false
-Word.TrackedChangeCollection,N/A,Class,Good,false
+Word.TrackedChangeCollection,N/A,Class,Good,true
 Word.TrackedChangeCollection,"context",Property,Good,false
 Word.TrackedChangeCollection,"items",Property,Fine,false
 Word.TrackedChangeCollection,"acceptAll()",Method,Poor,true

@@ -7,7 +7,24 @@ summary: >-
   The Office Auth namespace, `Office.auth`<!-- -->, provides a method that allows the Office client application to
   obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the
   signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Get the auth context object and use it to get an
+  // access token.
+  const authContext = Office.context.auth;
+  authContext.getAccessTokenAsync(function(result) {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+          const token = result.value;
+          console.log(token);
+      } else {
+          console.log("Error obtaining token", result.error);
+      }
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

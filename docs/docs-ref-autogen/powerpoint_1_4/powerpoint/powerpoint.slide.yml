@@ -4,7 +4,29 @@ uid: 'powerpoint!PowerPoint.Slide:class'
 package: powerpoint!
 fullName: PowerPoint.Slide
 summary: Represents a single slide of a presentation.
-remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+  // Reselects shapes that were saved previously.
+
+  await PowerPoint.run(async (context) => {
+    const slide1 = context.presentation.slides.getItem(savedSlideSelection[0]);
+    await context.sync();
+    slide1.setSelectedShapes(savedShapeSelection);
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
