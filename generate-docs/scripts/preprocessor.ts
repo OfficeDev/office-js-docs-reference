@@ -6,21 +6,30 @@ import * as path from "path";
 import * as fsx from 'fs-extra';
 
 tryCatch(async () => {
-    // ----
-    // Display prompts
-    // ----
-    console.log('\n\n');
+    const args = process.argv.slice(2);
+    let sourceChoice;
 
-    console.log('\n');
-    const sourceChoice = await promptFromList({
-        message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
-        choices: [
-            { name: "DefinitelyTyped (optimized rebuild)", value: "DT" },
-            { name: "DefinitelyTyped (full rebuild)", value: "DT+" },
-            { name: "CDN (if available)", value: "CDN" },
-            { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
-        ]
-    });
+    // Bypass the prompt - for use with the GitHub Action.
+    if (args.length > 0 && args[0] === "bypass") {
+        console.log("Bypassing source choice prompt.");
+        sourceChoice = "DT+";
+    } else {
+        // ----
+        // Display prompts
+        // ----
+        console.log('\n\n');
+
+        console.log('\n');
+        sourceChoice = await promptFromList({
+            message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
+            choices: [
+                { name: "DefinitelyTyped (optimized rebuild)", value: "DT" },
+                { name: "DefinitelyTyped (full rebuild)", value: "DT+" },
+                { name: "CDN (if available)", value: "CDN" },
+                { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
+            ]
+        });
+    }
 
 
     let urlToCopyOfficeJsFrom = "";
