@@ -10,9 +10,9 @@ tryCatch(async () => {
     let sourceChoice;
 
     // Bypass the prompt - for use with the GitHub Action.
-    if (args.length > 0 && args[0] === "bypass") {
+    if (args.length > 0 && args[0] !== null && args[0].trim().length > 0) {
         console.log("Bypassing source choice prompt.");
-        sourceChoice = "DT+";
+        sourceChoice = args[0].trim();
     } else {
         // ----
         // Display prompts
@@ -57,6 +57,8 @@ tryCatch(async () => {
         //     to avoid being redirected to the EDOG environment on corpnet.
         // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",
         //     replace the filename.
+        default:
+            throw new Error(`Invalid prompt selection: ${sourceChoice}`);
     }
 
     console.log("\nStarting preprocessor script...\n");
