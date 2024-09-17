@@ -11,8 +11,8 @@ tryCatch(async () => {
 
     // Bypass the prompt - for use with the GitHub Action.
     if (args.length > 0 && args[0] !== null && args[0].trim().length > 0) {
-        console.log("Bypassing source choice prompt.");
         sourceChoice = args[0].trim();
+        console.log(`Bypassing prompt with source choice ${sourceChoice}`);
     } else {
         // ----
         // Display prompts
