@@ -1,5 +1,12 @@
 #!/bin/bash
 
+while getopts b: flag
+do
+  case "${flag}" in
+    b) bypassPrompt=${OPTARG};;
+  esac
+done
+
 if [ -e "build-log.txt" ]; then
     rm build-log.txt
 fi
@@ -35,7 +42,7 @@ npm install
 pushd scripts
 npm install
 npm run build
-node preprocessor.js
+node preprocessor.js $bypassPrompt
 popd
 
 

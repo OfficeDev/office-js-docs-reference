@@ -2163,7 +2163,7 @@ export declare namespace Office {
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
-         * - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting.
+         * - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
@@ -2203,7 +2203,7 @@ export declare namespace Office {
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
-         * - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting.
+         * - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
@@ -10203,7 +10203,7 @@ export declare namespace Office {
         /**
          * Gets the account type of the user associated with the mailbox.
          *
-         * **Note**: This member is currently only supported in Outlook on Mac, Build 16.9.1212 and greater.
+         * **Note**: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
          *
          * @remarks
          * [Api set: Mailbox 1.6]
