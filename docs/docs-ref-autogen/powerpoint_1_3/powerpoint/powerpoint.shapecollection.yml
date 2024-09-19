@@ -21,7 +21,7 @@ remarks: >-
 
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     shapes.load("type");
     await context.sync();
 
@@ -115,13 +115,13 @@ methods:
 
 
       await PowerPoint.run(async function(context) {
-        const slide = context.presentation.slides.getItemAt(0);
-        const shape = slide.shapes.getItemAt(0);
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
+        const shape: PowerPoint.Shape = slide.shapes.getItemAt(0);
         shape.tags.add("MOUNTAIN", "Denali");
 
         await context.sync();
 
-        const myShapeTag = shape.tags.getItem("MOUNTAIN");
+        const myShapeTag: PowerPoint.Tag = shape.tags.getItem("MOUNTAIN");
         myShapeTag.load("key, value");
 
         await context.sync();
@@ -219,7 +219,7 @@ methods:
 
           await PowerPoint.run(async (context) => {
             // Get the type of shape for every shape in the collection.
-            const shapes = context.presentation.slides.getItemAt(0).shapes;
+            const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
             shapes.load("type");
             await context.sync();
 

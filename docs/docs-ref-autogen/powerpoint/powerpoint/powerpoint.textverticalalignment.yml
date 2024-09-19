@@ -31,8 +31,8 @@ remarks: >-
   // color, and centers it inside the braces.
 
   await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
-    const braces = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
         left: 100,
         top: 400,
         height: 50,
