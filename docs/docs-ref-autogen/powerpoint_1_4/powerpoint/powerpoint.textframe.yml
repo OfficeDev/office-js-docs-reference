@@ -4,7 +4,49 @@ uid: 'powerpoint!PowerPoint.TextFrame:class'
 package: powerpoint!
 fullName: PowerPoint.TextFrame
 summary: Represents the text frame of a shape object.
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+  // Selects the first 10 characters of the selected shape.
+
+  await PowerPoint.run(async (context) => {
+    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+    const shapeCount = shapes.getCount();
+    await context.sync();
+    if (shapeCount.value !== 1) {
+      console.warn("You must select only one shape with text in it.");
+      return;
+    }
+    const shape: PowerPoint.Shape = shapes.getItemAt(0);
+    const textFrame: PowerPoint.TextFrame = shape.textFrame.load("textRange,hasText");
+    await context.sync();
+    if (textFrame.hasText != true) {
+      console.warn("You must select only one shape with text in it.");
+      return;
+    }
+    const textRange: PowerPoint.TextRange = textFrame.textRange;
+    textRange.load("text");
+    await context.sync();
+    if (textRange.text.length < 10) {
+      console.warn("You must select only one shape with at least 10 characters in it.");
+      return;
+    }
+    const textRange10 = textRange.getSubstring(0, 10);
+    textRange10.setSelected();
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

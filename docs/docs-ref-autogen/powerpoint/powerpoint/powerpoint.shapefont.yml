@@ -20,7 +20,7 @@ remarks: >-
   // Sets the color of the selected text range to green.
 
   await PowerPoint.run(async (context) => {
-    const textRange = context.presentation.getSelectedTextRange();
+    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
     textRange.font.color = "green";
     await context.sync();
   });
@@ -67,7 +67,7 @@ properties:
       // Sets the color of the selected text range to green.
 
       await PowerPoint.run(async (context) => {
-        const textRange = context.presentation.getSelectedTextRange();
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
         textRange.font.color = "green";
         await context.sync();
       });

@@ -21,7 +21,7 @@ remarks: >-
 
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     shapes.load("type");
     await context.sync();
 
