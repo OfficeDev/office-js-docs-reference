@@ -4,7 +4,34 @@ uid: 'powerpoint!PowerPoint.Tag:class'
 package: powerpoint!
 fullName: PowerPoint.Tag
 summary: Represents a single tag in the slide.
-remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+  await PowerPoint.run(async function (context) {
+    let presentationTags: PowerPoint.TagCollection = context.presentation.tags;
+    presentationTags.add("COLOR", "blue");
+
+    await context.sync();
+
+    const tag: PowerPoint.Tag = presentationTags.getItem("COLOR");
+    tag.load("key, value");
+
+    await context.sync();
+
+    console.log("Added key " + JSON.stringify(tag.key) + " with value " + JSON.stringify(tag.value));
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class

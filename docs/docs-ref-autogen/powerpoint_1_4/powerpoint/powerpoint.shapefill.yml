@@ -21,7 +21,7 @@ remarks: >-
 
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     shapes.load("type");
     await context.sync();
 
@@ -60,7 +60,42 @@ properties:
     summary: >-
       Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
       named HTML color (e.g., "orange").
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Creates random shapes on the selected slide.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        const currentSlide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        const maxNewShapeWidth = 200;
+        const maxNewShapeHeight = 200;
+        const minNewShapeWidth = 50;
+        const minNewShapeHeight = 50;
+        for (let i = 0; i < 20; i++) {
+          const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle);
+          rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
+          rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
+          rectangle.left = getRandomBetween(0, slideWidth - rectangle.width);
+          rectangle.top = getRandomBetween(0, slideHeight - rectangle.height);
+          rectangle.fill.foregroundColor = generateRandomHexColor();
+        }
+        finalTable += "Done<br>";
+        $("#slide-tags").empty();
+        $("#slide-tags").append(finalTable);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +127,7 @@ properties:
 
       await PowerPoint.run(async (context) => {
         // Get the type of shape for every shape in the collection.
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
         shapes.load("type");
         await context.sync();
 
@@ -232,7 +267,7 @@ methods:
       // Changes the selected shapes fill color to red.
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedShapes();
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
         shapes.load("items");
         await context.sync();

@@ -9654,7 +9654,7 @@ PowerPoint.Shape,"textFrame",Property,Good,false
 PowerPoint.Shape,"top",Property,Good,true
 PowerPoint.Shape,"type",Property,Good,true
 PowerPoint.Shape,"width",Property,Good,true
-PowerPoint.Shape,"delete()",Method,Poor,false
+PowerPoint.Shape,"delete()",Method,Poor,true
 PowerPoint.Shape,"getParentSlide()",Method,Poor,false
 PowerPoint.Shape,"getParentSlideLayout()",Method,Poor,false
 PowerPoint.Shape,"getParentSlideLayoutOrNullObject()",Method,Poor,false
@@ -9665,7 +9665,7 @@ PowerPoint.Shape,"load(options)",Method,Poor,false
 PowerPoint.Shape,"load(propertyNames)",Method,Poor,false
 PowerPoint.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Shape,"toJSON()",Method,Poor,false
-PowerPoint.ShapeAddOptions,N/A,Class,Good,false
+PowerPoint.ShapeAddOptions,N/A,Class,Good,true
 PowerPoint.ShapeAddOptions,"height",Property,Good,false
 PowerPoint.ShapeAddOptions,"left",Property,Good,false
 PowerPoint.ShapeAddOptions,"top",Property,Good,false
@@ -9693,7 +9693,7 @@ PowerPoint.ShapeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.ShapeCollection,"toJSON()",Method,Poor,false
 PowerPoint.ShapeFill,N/A,Class,Good,true
 PowerPoint.ShapeFill,"context",Property,Good,false
-PowerPoint.ShapeFill,"foregroundColor",Property,Good,false
+PowerPoint.ShapeFill,"foregroundColor",Property,Good,true
 PowerPoint.ShapeFill,"transparency",Property,Good,true
 PowerPoint.ShapeFill,"type",Property,Good,false
 PowerPoint.ShapeFill,"clear()",Method,Poor,false
@@ -9770,10 +9770,10 @@ PowerPoint.ShapeLineStyle,"thickBetweenThin",EnumField,Fine,false
 PowerPoint.ShapeLineStyle,"thickThin",EnumField,Good,false
 PowerPoint.ShapeLineStyle,"thinThick",EnumField,Good,false
 PowerPoint.ShapeLineStyle,"thinThin",EnumField,Fine,false
-PowerPoint.ShapeScopedCollection,N/A,Class,Good,false
+PowerPoint.ShapeScopedCollection,N/A,Class,Good,true
 PowerPoint.ShapeScopedCollection,"context",Property,Good,false
 PowerPoint.ShapeScopedCollection,"items",Property,Fine,false
-PowerPoint.ShapeScopedCollection,"getCount()",Method,Fine,false
+PowerPoint.ShapeScopedCollection,"getCount()",Method,Fine,true
 PowerPoint.ShapeScopedCollection,"getItem(key)",Method,Fine,false
 PowerPoint.ShapeScopedCollection,"getItemAt(index)",Method,Fine,false
 PowerPoint.ShapeScopedCollection,"getItemOrNullObject(id)",Method,Fine,false
@@ -9863,7 +9863,7 @@ PowerPoint.SlideMasterCollection,"load(options)",Method,Poor,false
 PowerPoint.SlideMasterCollection,"load(propertyNames)",Method,Fine,true
 PowerPoint.SlideMasterCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideMasterCollection,"toJSON()",Method,Poor,false
-PowerPoint.SlideScopedCollection,N/A,Class,Good,false
+PowerPoint.SlideScopedCollection,N/A,Class,Good,true
 PowerPoint.SlideScopedCollection,"context",Property,Good,false
 PowerPoint.SlideScopedCollection,"items",Property,Fine,false
 PowerPoint.SlideScopedCollection,"getCount()",Method,Fine,false
@@ -9874,7 +9874,7 @@ PowerPoint.SlideScopedCollection,"load(options)",Method,Poor,false
 PowerPoint.SlideScopedCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.SlideScopedCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.SlideScopedCollection,"toJSON()",Method,Poor,false
-PowerPoint.Tag,N/A,Class,Good,false
+PowerPoint.Tag,N/A,Class,Good,true
 PowerPoint.Tag,"context",Property,Good,false
 PowerPoint.Tag,"key",Property,Good,false
 PowerPoint.Tag,"value",Property,Good,false
@@ -9895,7 +9895,7 @@ PowerPoint.TagCollection,"load(options)",Method,Poor,false
 PowerPoint.TagCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.TagCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.TagCollection,"toJSON()",Method,Poor,false
-PowerPoint.TextFrame,N/A,Class,Good,false
+PowerPoint.TextFrame,N/A,Class,Good,true
 PowerPoint.TextFrame,"autoSizeSetting",Property,Good,false
 PowerPoint.TextFrame,"bottomMargin",Property,Good,false
 PowerPoint.TextFrame,"context",Property,Good,false

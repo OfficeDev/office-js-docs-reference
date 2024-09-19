@@ -24,14 +24,14 @@ remarks: >-
   // location and size. Then it names the shape.
 
   await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
-    const hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
-        {
-          left: 100,
-          top: 100,
-          height: 150,
-          width: 150
-        });
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    const shapeOptions: PowerPoint.ShapeAddOptions = {
+      left: 100,
+      top: 100,
+      height: 150,
+      width: 150
+    };
+    const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
     hexagon.name = "Hexagon";
 
     await context.sync();

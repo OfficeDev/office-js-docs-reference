@@ -164,9 +164,9 @@ methods:
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
-        const slide2 = context.presentation.slides.getItemAt(1);
-        const slide4 = context.presentation.slides.getItemAt(3);
-        const slide5 = context.presentation.slides.getItemAt(4);
+        const slide2: PowerPoint.Slide = context.presentation.slides.getItemAt(1);
+        const slide4: PowerPoint.Slide = context.presentation.slides.getItemAt(3);
+        const slide5: PowerPoint.Slide = context.presentation.slides.getItemAt(4);
         slide2.load("id");
         slide4.load("id");
         slide5.load("id");

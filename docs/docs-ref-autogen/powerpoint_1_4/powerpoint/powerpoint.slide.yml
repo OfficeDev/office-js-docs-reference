@@ -20,7 +20,7 @@ remarks: >-
   // Reselects shapes that were saved previously.
 
   await PowerPoint.run(async (context) => {
-    const slide1 = context.presentation.slides.getItem(savedSlideSelection[0]);
+    const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
     await context.sync();
     slide1.setSelectedShapes(savedShapeSelection);
     await context.sync();
@@ -129,7 +129,7 @@ methods:
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
-        const slides = context.presentation.getSelectedSlides();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
         const slideCount = slides.getCount();
         slides.load("items");
         await context.sync();

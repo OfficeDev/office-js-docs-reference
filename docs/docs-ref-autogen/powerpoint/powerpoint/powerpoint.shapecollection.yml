@@ -21,7 +21,7 @@ remarks: >-
 
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     shapes.load("type");
     await context.sync();
 
@@ -91,14 +91,14 @@ methods:
       // location and size. Then it names the shape.
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
-        const hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
-            {
-              left: 100,
-              top: 100,
-              height: 150,
-              width: 150
-            });
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+        const shapeOptions: PowerPoint.ShapeAddOptions = {
+          left: 100,
+          top: 100,
+          height: 150,
+          width: 150
+        };
+        const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
         hexagon.name = "Hexagon";
 
         await context.sync();
@@ -232,11 +232,11 @@ methods:
       // start and end points. Then it names the shape.
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
 
         // For a line, left and top are the coordinates of the start point,
         // while height and width are the coordinates of the end point.
-        const line = shapes.addLine(PowerPoint.ConnectorType.straight, 
+        const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, 
             { 
               left: 400, 
               top: 200, 
@@ -320,8 +320,8 @@ methods:
       // location, and size. Then it names the text box.
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
-        const textbox = shapes.addTextBox("Hello!", 
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+        const textbox: PowerPoint.Shape = shapes.addTextBox("Hello!", 
             { 
               left: 100, 
               top: 300, 
@@ -397,13 +397,13 @@ methods:
 
 
       await PowerPoint.run(async function(context) {
-        const slide = context.presentation.slides.getItemAt(0);
-        const shape = slide.shapes.getItemAt(0);
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
+        const shape: PowerPoint.Shape = slide.shapes.getItemAt(0);
         shape.tags.add("MOUNTAIN", "Denali");
 
         await context.sync();
 
-        const myShapeTag = shape.tags.getItem("MOUNTAIN");
+        const myShapeTag: PowerPoint.Tag = shape.tags.getItem("MOUNTAIN");
         myShapeTag.load("key, value");
 
         await context.sync();
@@ -501,7 +501,7 @@ methods:
 
           await PowerPoint.run(async (context) => {
             // Get the type of shape for every shape in the collection.
-            const shapes = context.presentation.slides.getItemAt(0).shapes;
+            const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
             shapes.load("type");
             await context.sync();
 
