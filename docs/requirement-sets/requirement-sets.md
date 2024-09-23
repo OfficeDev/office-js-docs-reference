@@ -66,7 +66,7 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 >
 > <sup>5</sup> Support for the new Mac UI is available from Outlook Version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac#add-in-support-in-outlook-on-new-mac-ui) section.
 >
-> <sup>6</sup> Although, classic Outlook on Mac doesn't support Mailbox requirement set 1.9, it does support the DialogApi 1.2 requirement set. For information on the minimum supported version and build, see [Dialog API requirement sets](../common/dialog-api-requirement-sets.md).
+> <sup>6</sup> Although, classic Outlook on Mac doesn't support Mailbox requirement set 1.9, it does support the DialogApi 1.2 requirement set. For information on the minimum supported version and build, see [Dialog API requirement sets](common/dialog-api-requirement-sets.md).
 >
 > <sup>7</sup> Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets, such as APIs related to event-based activation. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
 
