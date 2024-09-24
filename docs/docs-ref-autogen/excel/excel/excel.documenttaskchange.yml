@@ -259,7 +259,7 @@ methods:
     uid: 'excel!Excel.DocumentTaskChange.newObject:member(1)'
     package: excel!
     fullName: newObject(context)
-    summary: Create a new instance of Excel.DocumentTaskChange object
+    summary: Create a new instance of the `Excel.DocumentTaskChange` object.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -279,9 +279,9 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.DocumentTaskChange object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      passed to it.) Whereas the original `Excel.DocumentTaskChange` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: true
     isDeprecated: false

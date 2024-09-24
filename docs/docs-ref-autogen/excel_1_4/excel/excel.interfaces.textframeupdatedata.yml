@@ -3,7 +3,7 @@ name: Excel.Interfaces.TextFrameUpdateData
 uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TextFrameUpdateData
-summary: 'An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

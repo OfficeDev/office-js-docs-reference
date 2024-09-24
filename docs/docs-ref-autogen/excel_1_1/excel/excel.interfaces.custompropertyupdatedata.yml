@@ -3,7 +3,7 @@ name: Excel.Interfaces.CustomPropertyUpdateData
 uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomPropertyUpdateData
-summary: 'An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

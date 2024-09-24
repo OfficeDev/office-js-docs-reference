@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartLegendFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLegendFormatUpdateData
-summary: 'An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartLegendFormat` object, for use in `chartLegendFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

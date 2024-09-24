@@ -3,7 +3,7 @@ name: Excel.Interfaces.ShapeCollectionUpdateData
 uid: 'excel!Excel.Interfaces.ShapeCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ShapeCollectionUpdateData
-summary: 'An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

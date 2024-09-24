@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartAxisFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxisFormatUpdateData
-summary: 'An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartAxisFormat` object, for use in `chartAxisFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
