@@ -3251,11 +3251,8 @@ Excel.EventType,"tableChanged",EnumField,Fine,false
 Excel.EventType,"tableDeleted",EnumField,Fine,false
 Excel.EventType,"tableFiltered",EnumField,Fine,false
 Excel.EventType,"tableSelectionChanged",EnumField,Fine,false
-Excel.EventType,"vbaRecorderRecordingChanged",EnumField,Fine,false
-Excel.EventType,"vbaRecorderRecordingChanged2",EnumField,Fine,false
 Excel.EventType,"visualChange",EnumField,Fine,false
 Excel.EventType,"visualSelectionChanged",EnumField,Fine,false
-Excel.EventType,"workbookActionRecorded",EnumField,Fine,false
 Excel.EventType,"workbookActivated",EnumField,Fine,false
 Excel.EventType,"workbookAutoSaveSettingChanged",EnumField,Fine,false
 Excel.EventType,"workbookFormulaReferenceStyleChanged",EnumField,Fine,false

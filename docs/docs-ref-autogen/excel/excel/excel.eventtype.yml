@@ -227,25 +227,6 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TableSelectionChanged"'
-  - name: vbaRecorderRecordingChanged
-    uid: 'excel!Excel.EventType.vbaRecorderRecordingChanged:member'
-    package: excel!
-    summary: >-
-      Deprecated VbaRecorderRecordingChanged represents the type of event registered when the VBA recording output
-      changes.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"VbaRecorderRecordingChanged"'
-  - name: vbaRecorderRecordingChanged2
-    uid: 'excel!Excel.EventType.vbaRecorderRecordingChanged2:member'
-    package: excel!
-    summary: |-
-      VbaRecorderRecordingChanged represents the type of event registered when the VBA recording output changes.
-
-      * \[ [API set: Recorder 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"VbaRecorderRecordingChanged2"'
   - name: visualChange
     uid: 'excel!Excel.EventType.visualChange:member'
     package: excel!
@@ -264,14 +245,6 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"VisualSelectionChanged"'
-  - name: workbookActionRecorded
-    uid: 'excel!Excel.EventType.workbookActionRecorded:member'
-    package: excel!
-    summary: |-
-      Workbook Action Recorded represents the type of event registered when the workbook records an action.
-
-      * \[ [API set: Recorder 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"WorkbookActionRecorded"'
   - name: workbookActivated
     uid: 'excel!Excel.EventType.workbookActivated:member'
     package: excel!

@@ -37793,14 +37793,6 @@ export declare namespace Excel {
          */
         workbookFormulaReferenceStyleChanged = "WorkbookFormulaReferenceStyleChanged",
         /**
-         * Deprecated
-                    VbaRecorderRecordingChanged represents the type of event registered when the VBA recording output changes.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        vbaRecorderRecordingChanged = "VbaRecorderRecordingChanged",
-        /**
          * RangeValuesPreviewDismissed represents the type of event registered when a RangeValuePreview is dismissed.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -37812,18 +37804,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          */
         annotationAdded = "AnnotationAdded",
-        /**
-         * Workbook Action Recorded represents the type of event registered when the workbook records an action.
-         * @remarks
-         * [Api set: Recorder 1.1]
-         */
-        workbookActionRecorded = "WorkbookActionRecorded",
-        /**
-         * VbaRecorderRecordingChanged represents the type of event registered when the VBA recording output changes.
-         * @remarks
-         * [Api set: Recorder 1.1]
-         */
-        vbaRecorderRecordingChanged2 = "VbaRecorderRecordingChanged2"
     }
     /**
      * @remarks

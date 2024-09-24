@@ -22733,18 +22733,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         worksheetMoved = "WorksheetMoved",
-        /**
-         * LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        workbookActionRecorded = "WorkbookActionRecorded",
-        /**
-         * VbaRecorderRecordingChanged represents the type of event registered when the VBA recording output changes.
-         * @remarks
-         * [Api set: Recorder 1.1]
-         */
-        vbaRecorderRecordingChanged2 = "VbaRecorderRecordingChanged2"
     }
     /**
      * @remarks
