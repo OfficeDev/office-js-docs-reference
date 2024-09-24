@@ -2189,11 +2189,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getIsOpenFromLocationAllowed(openLocation: Office.MailboxEnums.OpenLocation): boolean;'
+      content: 'getIsOpenFromLocationAllowed(openLocation: MailboxEnums.OpenLocation): boolean;'
       parameters:
         - id: openLocation
           description: The location from which the add-in is attempting to access data.
-          type: Office.MailboxEnums.OpenLocation
+          type: '<xref uid="outlook!Office.MailboxEnums.OpenLocation:enum" />'
       return:
         type: boolean
         description: True if an organization's Intune MAM policy allows an add-in to access data from the specified location.
@@ -2220,11 +2220,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getIsSaveToLocationAllowed(saveLocation: Office.MailboxEnums.SaveLocation): boolean;'
+      content: 'getIsSaveToLocationAllowed(saveLocation: MailboxEnums.SaveLocation): boolean;'
       parameters:
         - id: saveLocation
           description: The location in which the add-in is attempting to save data.
-          type: Office.MailboxEnums.SaveLocation
+          type: '<xref uid="outlook!Office.MailboxEnums.SaveLocation:enum" />'
       return:
         type: boolean
         description: True if an organization's Intune MAM policy allows an add-in to save data to the specified location.
