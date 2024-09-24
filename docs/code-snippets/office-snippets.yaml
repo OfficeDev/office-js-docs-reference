@@ -501,6 +501,14 @@ Office.Auth:interface:
             console.log("Error obtaining token", result.error);
         }
     });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -4034,6 +4042,102 @@ Office.Settings#set:member(1):
   - |-
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
+    }
+Office.SharedProperties:interface:
+  - |-
+    function performOperation() {
+      Office.context.mailbox.getCallbackTokenAsync({
+          isRest: true
+        },
+        function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
+            Office.context.mailbox.item.getSharedPropertiesAsync({
+                // Pass auth token along.
+                asyncContext: asyncResult.value
+              },
+              function (asyncResult1) {
+                let sharedProperties = asyncResult1.value;
+                let delegatePermissions = sharedProperties.delegatePermissions;
+
+                // Determine if user can do the expected operation.
+                // E.g., do they have Write permission?
+                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+                  // Construct REST URL for your operation.
+                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
+                  // Update <operation> placeholder with actual operation.
+                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
+      
+                  $.ajax({
+                      url: rest_url,
+                      dataType: 'json',
+                      headers:
+                      {
+                        "Authorization": "Bearer " + asyncResult1.asyncContext
+                      }
+                    }
+                  ).done(
+                    function (response) {
+                      console.log("success");
+                    }
+                  ).fail(
+                    function (error) {
+                      console.log("error message");
+                    }
+                  );
+                }
+              }
+            );
+          }
+        }
+      );
+    }
+Office.SharedProperties#delegatePermissions:member:
+  - |-
+    function performOperation() {
+      Office.context.mailbox.getCallbackTokenAsync({
+          isRest: true
+        },
+        function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
+            Office.context.mailbox.item.getSharedPropertiesAsync({
+                // Pass auth token along.
+                asyncContext: asyncResult.value
+              },
+              function (asyncResult1) {
+                let sharedProperties = asyncResult1.value;
+                let delegatePermissions = sharedProperties.delegatePermissions;
+
+                // Determine if user can do the expected operation.
+                // E.g., do they have Write permission?
+                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+                  // Construct REST URL for your operation.
+                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
+                  // Update <operation> placeholder with actual operation.
+                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
+      
+                  $.ajax({
+                      url: rest_url,
+                      dataType: 'json',
+                      headers:
+                      {
+                        "Authorization": "Bearer " + asyncResult1.asyncContext
+                      }
+                    }
+                  ).done(
+                    function (response) {
+                      console.log("success");
+                    }
+                  ).fail(
+                    function (error) {
+                      console.log("error message");
+                    }
+                  );
+                }
+              }
+            );
+          }
+        }
+      );
     }
 Office.TableBinding#addColumnsAsync:member(1):
   - |-
