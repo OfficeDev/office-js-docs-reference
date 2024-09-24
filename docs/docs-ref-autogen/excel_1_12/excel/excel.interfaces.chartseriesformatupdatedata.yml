@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartSeriesFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
-summary: 'An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartSeriesFormat` object, for use in `chartSeriesFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

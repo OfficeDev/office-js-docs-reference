@@ -3,7 +3,9 @@ name: Excel.Interfaces.TableRowCollectionUpdateData
 uid: 'excel!Excel.Interfaces.TableRowCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableRowCollectionUpdateData
-summary: 'An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

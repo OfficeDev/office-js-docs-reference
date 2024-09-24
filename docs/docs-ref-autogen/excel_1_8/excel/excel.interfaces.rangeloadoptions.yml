@@ -17,8 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -223,8 +223,7 @@ properties:
     fullName: numberFormat
     summary: >-
       Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format
-      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
+      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
