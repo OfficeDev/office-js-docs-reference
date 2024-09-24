@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.Critique#colorScheme:member'
     package: word!
     fullName: colorScheme
-    summary: Gets the color scheme of the critique.
+    summary: Specifies the color scheme of the critique.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +89,7 @@ properties:
     uid: 'word!Word.Critique#length:member'
     package: word!
     fullName: length
-    summary: Gets the length of the critique inside paragraph.
+    summary: Specifies the length of the critique inside paragraph.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -106,14 +106,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'popupOptions: Word.CritiquePopupOptions;'
+      content: 'popupOptions?: Word.CritiquePopupOptions;'
       return:
         type: '<xref uid="word!Word.CritiquePopupOptions:interface" />'
   - name: start
     uid: 'word!Word.Critique#start:member'
     package: word!
     fullName: start
-    summary: Gets the start index of the critique inside paragraph.
+    summary: Specifies the start index of the critique inside paragraph.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

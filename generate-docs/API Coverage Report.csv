@@ -8745,6 +8745,9 @@ Office.Mailbox,"displayNewMessageFormAsync(parameters, options, callback)",Metho
 Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,true
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
+Office.Mailbox,"getIsIdentityManaged()",Method,Fine,false
+Office.Mailbox,"getIsOpenFromLocationAllowed(openLocation)",Method,Fine,false
+Office.Mailbox,"getIsSaveToLocationAllowed(saveLocation)",Method,Fine,false
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
 Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
@@ -8863,6 +8866,14 @@ Office.MailboxEnums.MoveSpamItemTo,"CustomFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"DeletedItemsFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"JunkFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"NoMove",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,N/A,Enum,Good,false
+Office.MailboxEnums.OpenLocation,"ACCOUNT_DOCUMENT",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"CAMERA",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"LOCAL",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"ONEDRIVE_FOR_BUSINESS",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"OTHER",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"PHOTO_LIBRARY",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"SHAREPOINT",EnumField,Good,false
 Office.MailboxEnums.OWAView,N/A,Enum,Fine,true
 Office.MailboxEnums.OWAView,"OneColumnNarrow",EnumField,Good,false
 Office.MailboxEnums.OWAView,"OneColumn",EnumField,Good,false
@@ -9026,6 +9037,16 @@ Office.MailboxEnums.RestVersion,N/A,Enum,Good,true
 Office.MailboxEnums.RestVersion,"v1_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v2_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"Beta",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,N/A,Enum,Good,false
+Office.MailboxEnums.SaveLocation,"ACCOUNT_DOCUMENT",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"BOX",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"DROPBOX",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"GOOGLE_DRIVE",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"LOCAL",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"ONEDRIVE_FOR_BUSINESS",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"OTHER",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"PHOTO_LIBRARY",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"SHAREPOINT",EnumField,Good,false
 Office.MailboxEnums.SendModeOverride,N/A,Enum,Good,true
 Office.MailboxEnums.SendModeOverride,"PromptUser",EnumField,Good,false
 Office.MailboxEnums.SourceProperty,N/A,Enum,Good,true
@@ -9579,7 +9600,7 @@ PowerPoint.GeometricShapeType,"wave",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeEllipseCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRectCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRRectCallout",EnumField,Fine,false
-PowerPoint.Hyperlink,N/A,Class,Good,false
+PowerPoint.Hyperlink,N/A,Class,Good,true
 PowerPoint.Hyperlink,"address",Property,Good,false
 PowerPoint.Hyperlink,"context",Property,Good,false
 PowerPoint.Hyperlink,"screenTip",Property,Good,false
@@ -9587,7 +9608,7 @@ PowerPoint.Hyperlink,"load(options)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNames)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Hyperlink,"toJSON()",Method,Poor,false
-PowerPoint.HyperlinkCollection,N/A,Class,Good,false
+PowerPoint.HyperlinkCollection,N/A,Class,Good,true
 PowerPoint.HyperlinkCollection,"context",Property,Good,false
 PowerPoint.HyperlinkCollection,"items",Property,Fine,false
 PowerPoint.HyperlinkCollection,"getCount()",Method,Fine,false

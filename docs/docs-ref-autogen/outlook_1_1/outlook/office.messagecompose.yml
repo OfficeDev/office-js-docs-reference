@@ -566,8 +566,8 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
-            that the attachment will be shown inline in the message body, and should not be displayed in the attachment
-            list.
+            that the attachment will be shown inline as an image in the message body and won't be displayed in the
+            attachment list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
         - id: callback
           description: >-

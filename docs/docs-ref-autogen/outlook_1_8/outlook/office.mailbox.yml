@@ -38,8 +38,9 @@ properties:
 
 
       - `hostName` (string): A string that represents the name of the Office application. It should be one of the
-      following values: `Outlook`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->, or `OutlookAndroid`<!-- -->.
-      **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+      following values: `Outlook`<!-- -->, `newOutlookWindows`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->,
+      or `OutlookAndroid`<!-- -->. **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on
+      Mac.
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
@@ -982,7 +983,7 @@ methods:
       and a **Send** button.
 
 
-      In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
+      In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
       form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
       with a **Save &amp; Close** button.
@@ -1137,26 +1138,27 @@ methods:
             `attachments`<!-- -->: An array of JSON objects that are either file or item attachments.
 
 
-            `attachments.type`<!-- -->: Indicates the type of attachment. Must be file for a file attachment or item for
-            an item attachment.
+            `attachments.type`<!-- -->: Indicates the type of attachment. Must be `file` for a file attachment or `item`
+            for an item attachment.
 
 
             `attachments.name`<!-- -->: A string that contains the name of the attachment, up to 255 characters in
             length.
 
 
-            `attachments.url`<!-- -->: Only used if type is set to file. The URI of the location for the file.
-            **Important**: This link must be publicly accessible, without need for authentication by Exchange Online
-            servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it
-            doesn't need further authentication.
+            `attachments.url`<!-- -->: Only used if the attachment type is set to `file`<!-- -->. The URI of the
+            location for the file. **Important**: This link must be publicly accessible, without need for
+            authentication by Exchange Online servers. However, with on-premises Exchange, the link can be accessible on
+            a private network as long as it doesn't need further authentication.
 
 
-            `attachments.isInline`<!-- -->: Only used if type is set to file. If true, indicates that the attachment
-            will be shown inline in the message body, and should not be displayed in the attachment list.
+            `attachments.isInline`<!-- -->: Only used if the attachment type is set to `file`<!-- -->. If true,
+            indicates that the attachment will be shown inline as an image in the message body and won't be displayed in
+            the attachment list.
 
 
-            `attachments.itemId`<!-- -->: Only used if type is set to item. The EWS item ID of the existing e-mail you
-            want to attach to the new message. This is a string up to 100 characters.
+            `attachments.itemId`<!-- -->: Only used if the attachment type is set to `item`<!-- -->. The EWS item ID of
+            the existing e-mail you want to attach to the new message. This is a string up to 100 characters.
           type: any
       return:
         type: void

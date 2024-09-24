@@ -53,6 +53,8 @@ tryCatch(async () => {
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
+        case "Local":
+            break;
         // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
         //     to avoid being redirected to the EDOG environment on corpnet.
         // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",

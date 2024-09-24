@@ -89,9 +89,9 @@ properties:
       -->**: Compose or Read
 
 
-      **Important**: The `Outlook` value is returned for Outlook desktop clients on Windows and on Mac.
-      `newOutlookWindows` is returned for the [new Outlook on Windows desktop
-      client](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+      **Important**: The `Outlook` value is returned for Outlook on Windows (classic) and on Mac.
+      `newOutlookWindows` is returned for [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
