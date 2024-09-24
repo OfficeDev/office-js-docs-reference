@@ -3,7 +3,7 @@ name: Excel.Interfaces.StyleUpdateData
 uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.StyleUpdateData
-summary: 'An interface for updating data on the Style object, for use in `style.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Style` object, for use in `style.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

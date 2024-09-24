@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.PivotFieldCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotFieldCollectionUpdateData
 summary: >-
-  An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `PivotFieldCollection` object, for use in `pivotFieldCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

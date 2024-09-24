@@ -3,7 +3,7 @@ name: Excel.Interfaces.SlicerItemUpdateData
 uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerItemUpdateData
-summary: 'An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `SlicerItem` object, for use in `slicerItem.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -515,13 +515,9 @@ Excel.CellBorderCollection,"vertical",Property,Good,false
 Excel.CellControl,N/A,TypeAlias,Good,false
 Excel.CellControlType,N/A,Enum,Good,false
 Excel.CellControlType,"checkbox",EnumField,Fine,false
-Excel.CellControlType,"Checkbox",EnumField,Poor,false
 Excel.CellControlType,"empty",EnumField,Fine,false
-Excel.CellControlType,"Empty",EnumField,Poor,false
 Excel.CellControlType,"mixed",EnumField,Fine,false
-Excel.CellControlType,"Mixed",EnumField,Fine,false
 Excel.CellControlType,"unknown",EnumField,Good,false
-Excel.CellControlType,"Unknown",EnumField,Good,false
 Excel.CellProperties,N/A,Class,Fine,false
 Excel.CellProperties,"address",Property,Fine,false
 Excel.CellProperties,"addressLocal",Property,Fine,false
@@ -602,6 +598,7 @@ Excel.CellPropertiesLoadOptions,"format",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"hidden",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"hyperlink",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"style",Property,Fine,false
+Excel.CellPropertiesLoadOptions,"textRuns",Property,Fine,false
 Excel.CellPropertiesProtection,N/A,Class,Good,false
 Excel.CellPropertiesProtection,"formulaHidden",Property,Good,false
 Excel.CellPropertiesProtection,"locked",Property,Good,false
@@ -1701,6 +1698,7 @@ Excel.ClearApplyTo,"contents",EnumField,Fine,false
 Excel.ClearApplyTo,"formats",EnumField,Fine,false
 Excel.ClearApplyTo,"hyperlinks",EnumField,Fine,false
 Excel.ClearApplyTo,"removeHyperlinks",EnumField,Fine,false
+Excel.ClearApplyTo,"resetContents",EnumField,Good,false
 Excel.CloseBehavior,N/A,Enum,Good,true
 Excel.CloseBehavior,"save",EnumField,Fine,false
 Excel.CloseBehavior,"skipSave",EnumField,Fine,false
@@ -2407,6 +2405,7 @@ Excel.DatetimeFormatInfo,"dateSeparator",Property,Good,false
 Excel.DatetimeFormatInfo,"longDatePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"longTimePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"shortDatePattern",Property,Good,false
+Excel.DatetimeFormatInfo,"shortDateTimePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"timeSeparator",Property,Good,false
 Excel.DatetimeFormatInfo,"load(options)",Method,Poor,false
 Excel.DatetimeFormatInfo,"load(propertyNames)",Method,Poor,false
@@ -3238,7 +3237,6 @@ Excel.EventType,"chartDeleted",EnumField,Fine,false
 Excel.EventType,"commentAdded",EnumField,Fine,false
 Excel.EventType,"commentChanged",EnumField,Fine,false
 Excel.EventType,"commentDeleted",EnumField,Fine,false
-Excel.EventType,"lineageActivityUpdateAvailable",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Fine,false
@@ -4964,6 +4962,7 @@ Excel.Range,"autoFill(destinationRange, autoFillTypeString)",Method,Fine,false
 Excel.Range,"calculate()",Method,Poor,false
 Excel.Range,"clear(applyTo)",Method,Poor,true
 Excel.Range,"clear(applyToString)",Method,Poor,false
+Excel.Range,"clearOrResetContents()",Method,Poor,false
 Excel.Range,"convertDataTypeToText()",Method,Poor,false
 Excel.Range,"convertToLinkedDataType(serviceID, languageCulture)",Method,Poor,false
 Excel.Range,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Fine,true
@@ -5031,7 +5030,6 @@ Excel.Range,"merge(across)",Method,Poor,true
 Excel.Range,"moveTo(destinationRange)",Method,Poor,true
 Excel.Range,"removeDuplicates(columns, includesHeader)",Method,Fine,true
 Excel.Range,"replaceAll(text, replacement, criteria)",Method,Poor,false
-Excel.Range,"resetContent()",Method,Poor,false
 Excel.Range,"select()",Method,Poor,true
 Excel.Range,"set(properties, options)",Method,Poor,false
 Excel.Range,"set(properties)",Method,Poor,true
@@ -5065,6 +5063,7 @@ Excel.RangeAreas,"worksheet",Property,Good,false
 Excel.RangeAreas,"calculate()",Method,Poor,false
 Excel.RangeAreas,"clear(applyTo)",Method,Poor,false
 Excel.RangeAreas,"clear(applyToString)",Method,Poor,false
+Excel.RangeAreas,"clearOrResetContents()",Method,Poor,false
 Excel.RangeAreas,"convertDataTypeToText()",Method,Poor,false
 Excel.RangeAreas,"convertToLinkedDataType(serviceID, languageCulture)",Method,Poor,false
 Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Fine,false
@@ -5211,6 +5210,9 @@ Excel.RangeSort,"context",Property,Good,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Fine,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, methodString)",Method,Fine,false
 Excel.RangeSort,"toJSON()",Method,Poor,false
+Excel.RangeTextRun,N/A,Class,Fine,false
+Excel.RangeTextRun,"font",Property,Missing,false
+Excel.RangeTextRun,"text",Property,Missing,false
 Excel.RangeUnderlineStyle,N/A,Enum,Fine,true
 Excel.RangeUnderlineStyle,"double",EnumField,Fine,false
 Excel.RangeUnderlineStyle,"doubleAccountant",EnumField,Fine,false
@@ -5389,6 +5391,7 @@ Excel.SettableCellProperties,N/A,Class,Fine,false
 Excel.SettableCellProperties,"format",Property,Fine,false
 Excel.SettableCellProperties,"hyperlink",Property,Fine,false
 Excel.SettableCellProperties,"style",Property,Fine,true
+Excel.SettableCellProperties,"textRuns",Property,Fine,false
 Excel.SettableColumnProperties,N/A,Class,Fine,false
 Excel.SettableColumnProperties,"columnHidden",Property,Fine,false
 Excel.SettableColumnProperties,"format",Property,Fine,false
@@ -9579,7 +9582,7 @@ PowerPoint.GeometricShapeType,"wave",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeEllipseCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRectCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRRectCallout",EnumField,Fine,false
-PowerPoint.Hyperlink,N/A,Class,Good,false
+PowerPoint.Hyperlink,N/A,Class,Good,true
 PowerPoint.Hyperlink,"address",Property,Good,false
 PowerPoint.Hyperlink,"context",Property,Good,false
 PowerPoint.Hyperlink,"screenTip",Property,Good,false
@@ -9587,7 +9590,7 @@ PowerPoint.Hyperlink,"load(options)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNames)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Hyperlink,"toJSON()",Method,Poor,false
-PowerPoint.HyperlinkCollection,N/A,Class,Good,false
+PowerPoint.HyperlinkCollection,N/A,Class,Good,true
 PowerPoint.HyperlinkCollection,"context",Property,Good,false
 PowerPoint.HyperlinkCollection,"items",Property,Fine,false
 PowerPoint.HyperlinkCollection,"getCount()",Method,Fine,false

@@ -48,13 +48,16 @@ fields:
   - name: all
     uid: 'excel!Excel.ClearApplyTo.all:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: |-
+      Clears everything in the range.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
     uid: 'excel!Excel.ClearApplyTo.contents:member'
     package: excel!
     summary: |-
-      Clears the contents of the range.
+      Clears the contents of the range, leaving formatting intact.
 
       * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
@@ -62,7 +65,7 @@ fields:
     uid: 'excel!Excel.ClearApplyTo.formats:member'
     package: excel!
     summary: |-
-      Clears all formatting for the range.
+      Clears all formatting for the range, leaving values intact.
 
       * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
@@ -84,3 +87,14 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'
+  - name: resetContents
+    uid: 'excel!Excel.ClearApplyTo.resetContents:member'
+    package: excel!
+    summary: >-
+      Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined
+      by each control. Cells without cell controls are set to blank.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ResetContents"'

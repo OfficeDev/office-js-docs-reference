@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
 summary: >-
-  An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ...
+  An interface for updating data on the `TimelineStyleCollection` object, for use in `timelineStyleCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false
