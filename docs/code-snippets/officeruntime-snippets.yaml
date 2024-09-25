@@ -1,4 +1,4 @@
-Office.Auth:interface:
+OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
