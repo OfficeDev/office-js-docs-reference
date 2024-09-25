@@ -142,3 +142,18 @@ properties:
           });
 
           ```
+  - name: textRuns
+    uid: 'excel!Excel.SettableCellProperties#textRuns:member'
+    package: excel!
+    fullName: textRuns
+    summary: |-
+      Represents the `textRuns` property.
+
+      \[ [API set: RangeTextRun](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRuns?: RangeTextRun[];'
+      return:
+        type: '<xref uid="excel!Excel.RangeTextRun:interface" />[]'

@@ -65,9 +65,8 @@ properties:
     fullName: numberFormat
     summary: >-
       Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format
-      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
-      Cleared if `null` is passed in.
+      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->. Cleared
+      if `null` is passed in.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -204,7 +203,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method
+      passed to it.) Whereas the original `Excel.ConditionalRangeFormat` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''

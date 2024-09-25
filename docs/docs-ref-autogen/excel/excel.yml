@@ -1007,6 +1007,7 @@ interfaces:
   - 'excel!Excel.PythonErrorCellValue:interface'
   - 'excel!Excel.RangeHyperlink:interface'
   - 'excel!Excel.RangeReference:interface'
+  - 'excel!Excel.RangeTextRun:interface'
   - 'excel!Excel.ReferenceCellValue:interface'
   - 'excel!Excel.RefErrorCellValue:interface'
   - 'excel!Excel.RefreshModeChangedEventArgs:interface'

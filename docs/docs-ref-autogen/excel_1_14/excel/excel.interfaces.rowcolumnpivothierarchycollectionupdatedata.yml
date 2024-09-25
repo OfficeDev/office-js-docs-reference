@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interfa
 package: excel!
 fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
 summary: >-
-  An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in
+  An interface for updating data on the `RowColumnPivotHierarchyCollection` object, for use in
   `rowColumnPivotHierarchyCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartTitleFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartTitleFormatUpdateData
-summary: 'An interface for updating data on the ChartTitleFormat object, for use in `chartTitleFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartTitleFormat` object, for use in `chartTitleFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

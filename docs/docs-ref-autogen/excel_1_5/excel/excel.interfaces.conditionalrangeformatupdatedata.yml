@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
 summary: >-
-  An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ...
+  An interface for updating data on the `ConditionalRangeFormat` object, for use in `conditionalRangeFormat.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

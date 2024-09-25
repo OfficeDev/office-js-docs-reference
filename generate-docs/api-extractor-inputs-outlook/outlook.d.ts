@@ -607,45 +607,6 @@ export declare namespace Office {
             NoMove = "noMove"
         }
         /**
-         * Specifies the location from which an add-in wants to access data.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         */
-        enum OpenLocation {
-            /**
-             * A location associated with an account within an add-in.
-             */
-            ACCOUNT_DOCUMENT,
-            /**
-             * The device's camera.
-             */
-            CAMERA,
-            /**
-             * Local device storage.
-             */
-            LOCAL,
-            /**
-             * OneDrive for Business.
-             *
-             * **Important**: For OneDrive Personal, use OTHER.
-             */
-            ONEDRIVE_FOR_BUSINESS,
-            /**
-             * Other cloud storage providers, including OneDrive Personal.
-             */
-            OTHER,
-            /**
-             * Photo library.
-             */
-            PHOTO_LIBRARY,
-            /**
-             * SharePoint. Includes both SharePoint Online and SharePoint on-premises (if accessed with a Microsoft Entra ID account).
-             */
-            SHAREPOINT
-        }
-        /**
          * Represents the current view of Outlook on the web.
          */
         enum OWAView {
@@ -1344,53 +1305,6 @@ export declare namespace Office {
              * Beta.
              */
             Beta = "beta"
-        }
-        /**
-         * Specifies the location in which an add-in wants to save data.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         */
-        enum SaveLocation {
-            /**
-             * A location associated with an account within an add-in.
-             */
-            ACCOUNT_DOCUMENT,
-            /**
-             * Box.
-             */
-            BOX,
-            /**
-             * Dropbox.
-             */
-            DROPBOX,
-            /**
-             * Google Drive.
-             */
-            GOOGLE_DRIVE,
-            /**
-             * Local device storage.
-             */
-            LOCAL,
-            /**
-             * OneDrive for Business.
-             *
-             * **Important**: For OneDrive Personal, use OTHER.
-             */
-            ONEDRIVE_FOR_BUSINESS,
-            /**
-             * Other cloud storage providers, including OneDrive Personal.
-             */
-            OTHER,
-            /**
-             * Photo library.
-             */
-            PHOTO_LIBRARY,
-            /**
-             * SharePoint. Includes both SharePoint Online and SharePoint on-premises (if accessed with a Microsoft Entra ID account).
-             */
-            SHAREPOINT
         }
         /**
          * Specifies the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options | send mode option}
@@ -5054,10 +4968,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
-         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
+         * This allows the message to be sent even if the Outlook client isn't running. In classic Outlook on Windows, the message doesn't appear in the
          * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
-         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
+         * the message from the **Sent Items** folder. In Outlook on the web, on Mac, and in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, the message appears in the **Drafts** folder
+         * until the scheduled delivery time. While it's in the **Drafts** folder, you'll be able to edit the message before it's sent.
+         * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
          *
          * **Errors**:
          *
@@ -5081,10 +4997,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server.
-         * This allows the message to be sent even if the Outlook client isn't running. However, because of this, the message doesn't appear in the
+         * This allows the message to be sent even if the Outlook client isn't running. In classic Outlook on Windows, the message doesn't appear in the
          * **Outbox** folder, so you won't be able to edit the message or cancel its delivery after selecting **Send**. You'll only be able to review
-         * the mesasge from the **Sent Items** folder once the message is sent. To learn more, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
+         * the message from the **Sent Items** folder. In Outlook on the web, on Mac, and in
+         * {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, the message appears in the **Drafts** folder
+         * until the scheduled delivery time. While it's in the **Drafts** folder, you'll be able to edit the message before it's sent.
+         * To learn more, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery | Manage the delivery date and time of a message}.
          *
          * **Errors**:
          *
@@ -7062,54 +6980,6 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
-        /**
-         * Returns true if the current mailbox is managed by {@link https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune | Microsoft Intune}.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @returns True if the current mailbox is managed by Microsoft Intune.
-         */
-        getIsIdentityManaged(): boolean;
-        /**
-         * Returns true if an organization's {@link https://learn.microsoft.com/mem/intune/apps/app-management | Intune mobile application management (MAM) policy}
-         * allows an add-in to access data from the specified location.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @param openLocation - The location from which the add-in is attempting to access data.
-         *
-         * @returns True if an organization's Intune MAM policy allows an add-in to access data from the specified location.
-         */
-        getIsOpenFromLocationAllowed(openLocation: MailboxEnums.OpenLocation): boolean;
-        /**
-         * Returns true if an organization's {@link https://learn.microsoft.com/mem/intune/apps/app-management | Intune mobile application management (MAM) policy}
-         * allows an add-in to save data to the specified location.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @param saveLocation - The location in which the add-in is attempting to save data.
-         *
-         * @returns True if an organization's Intune MAM policy allows an add-in to save data to the specified location.
-         */
-        getIsSaveToLocationAllowed(saveLocation: MailboxEnums.SaveLocation): boolean;
         /**
          * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
          * To learn more about item multi-select, see

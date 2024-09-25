@@ -88,14 +88,6 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentDeleted"'
-  - name: lineageActivityUpdateAvailable
-    uid: 'excel!Excel.EventType.lineageActivityUpdateAvailable:member'
-    package: excel!
-    summary: |-
-      LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"LineageActivityUpdateAvailable"'
   - name: linkedDataTypeLinkedDataTypeAdded
     uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
     package: excel!
@@ -144,6 +136,14 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedWorkbookWorkbookLinksChanged"'
+  - name: recordingStateChangedEvent
+    uid: 'excel!Excel.EventType.recordingStateChangedEvent:member'
+    package: excel!
+    summary: |-
+      `RecordingStateChangedEvent` represents the event fired when macro recording starts or stops.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"RecordingStateChangedEvent"'
   - name: ribbonCommandExecuted
     uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     package: excel!

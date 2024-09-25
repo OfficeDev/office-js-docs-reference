@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
 summary: >-
-  An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({
-  ... })`<!-- -->.
+  An interface for updating data on the `TopBottomConditionalFormat` object, for use in
+  `topBottomConditionalFormat.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

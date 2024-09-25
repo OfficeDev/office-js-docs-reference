@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartAxesUpdateData
 uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxesUpdateData
-summary: 'An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartAxes` object, for use in `chartAxes.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

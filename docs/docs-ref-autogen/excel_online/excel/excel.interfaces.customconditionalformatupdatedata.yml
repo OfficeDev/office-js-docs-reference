@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
 summary: >-
-  An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ...
+  An interface for updating data on the `CustomConditionalFormat` object, for use in `customConditionalFormat.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

@@ -3,7 +3,7 @@ name: Excel.Interfaces.StyleCollectionUpdateData
 uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.StyleCollectionUpdateData
-summary: 'An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `StyleCollection` object, for use in `styleCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotTableStyleCollectionUpdateData
 summary: >-
-  An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({
+  An interface for updating data on the `PivotTableStyleCollection` object, for use in `pivotTableStyleCollection.set({
   ... })`<!-- -->.
 remarks: ''
 isPreview: false

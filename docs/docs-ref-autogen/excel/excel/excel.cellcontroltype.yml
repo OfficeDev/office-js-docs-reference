@@ -3,11 +3,9 @@ name: Excel.CellControlType
 uid: 'excel!Excel.CellControlType:enum'
 package: excel!
 fullName: Excel.CellControlType
-summary: >-
-  Represents the type of cell control. \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: ''
-isPreview: false
+summary: Represents the type of cell control.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
 isDeprecated: false
 fields:
   - name: checkbox
@@ -20,11 +18,6 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Checkbox"'
-  - name: Checkbox
-    uid: 'excel!Excel.CellControlType.Checkbox:member'
-    package: excel!
-    summary: Type representing a checkbox control.
-    value: '3'
   - name: empty
     uid: 'excel!Excel.CellControlType.empty:member'
     package: excel!
@@ -35,11 +28,6 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Empty"'
-  - name: Empty
-    uid: 'excel!Excel.CellControlType.Empty:member'
-    package: excel!
-    summary: Type representing an empty control.
-    value: '1'
   - name: mixed
     uid: 'excel!Excel.CellControlType.mixed:member'
     package: excel!
@@ -50,11 +38,6 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Mixed"'
-  - name: Mixed
-    uid: 'excel!Excel.CellControlType.Mixed:member'
-    package: excel!
-    summary: Type representing a query that results in a mix of control results.
-    value: '2'
   - name: unknown
     uid: 'excel!Excel.CellControlType.unknown:member'
     package: excel!
@@ -66,10 +49,3 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'
-  - name: Unknown
-    uid: 'excel!Excel.CellControlType.Unknown:member'
-    package: excel!
-    summary: >-
-      Type representing an unknown control. This represents a control that was added in a future version of Excel, and
-      the current version of Excel doesn't know how to display this control.
-    value: '0'

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeViewCollectionUpdateData
 summary: >-
-  An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`<!--
+  An interface for updating data on the `RangeViewCollection` object, for use in `rangeViewCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

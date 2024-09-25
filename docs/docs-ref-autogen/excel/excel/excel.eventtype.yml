@@ -95,14 +95,6 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentDeleted"'
-  - name: lineageActivityUpdateAvailable
-    uid: 'excel!Excel.EventType.lineageActivityUpdateAvailable:member'
-    package: excel!
-    summary: |-
-      LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"LineageActivityUpdateAvailable"'
   - name: linkedDataTypeLinkedDataTypeAdded
     uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
     package: excel!

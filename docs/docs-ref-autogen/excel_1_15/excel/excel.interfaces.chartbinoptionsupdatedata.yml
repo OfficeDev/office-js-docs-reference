@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartBinOptionsUpdateData
 uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartBinOptionsUpdateData
-summary: 'An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartBinOptions` object, for use in `chartBinOptions.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

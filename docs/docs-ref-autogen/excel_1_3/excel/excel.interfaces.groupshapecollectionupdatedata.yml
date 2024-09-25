@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.GroupShapeCollectionUpdateData
 summary: >-
-  An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

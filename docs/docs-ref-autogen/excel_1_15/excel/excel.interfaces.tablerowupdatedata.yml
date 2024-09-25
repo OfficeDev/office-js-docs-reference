@@ -3,7 +3,7 @@ name: Excel.Interfaces.TableRowUpdateData
 uid: 'excel!Excel.Interfaces.TableRowUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableRowUpdateData
-summary: 'An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

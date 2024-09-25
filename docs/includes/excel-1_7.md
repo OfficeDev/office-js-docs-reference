@@ -115,7 +115,7 @@
 |[DataConnectionCollection](/javascript/api/excel/excel.dataconnectioncollection)|[refreshAll()](/javascript/api/excel/excel.dataconnectioncollection#excel-excel-dataconnectioncollection-refreshall-member(1))|Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.|
 |[DocumentProperties](/javascript/api/excel/excel.documentproperties)|[author](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-author-member)|The author of the workbook.|
 ||[category](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-category-member)|The category of the workbook.|
-||[comments](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-comments-member)|The comments of the workbook.|
+||[comments](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-comments-member)|The comment field in the metadata of the workbook.|
 ||[company](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-company-member)|The company of the workbook.|
 ||[creationDate](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-creationdate-member)|Gets the creation date of the workbook.|
 ||[custom](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-custom-member)|Gets the collection of custom properties of the workbook.|

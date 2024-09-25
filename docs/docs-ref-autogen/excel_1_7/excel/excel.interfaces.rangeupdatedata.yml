@@ -3,7 +3,7 @@ name: Excel.Interfaces.RangeUpdateData
 uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeUpdateData
-summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Range` object, for use in `range.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -93,8 +93,7 @@ properties:
     fullName: numberFormat
     summary: >-
       Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format
-      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
+      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -3,7 +3,7 @@ name: Excel.Interfaces.CommentUpdateData
 uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CommentUpdateData
-summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

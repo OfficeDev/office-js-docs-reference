@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
 summary: >-
-  An interface for updating data on the DataBarConditionalFormat object, for use in `dataBarConditionalFormat.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `DataBarConditionalFormat` object, for use in `dataBarConditionalFormat.set({
+  ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

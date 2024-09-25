@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableScopedCollectionUpdateData
 summary: >-
-  An interface for updating data on the TableScopedCollection object, for use in `tableScopedCollection.set({ ...
+  An interface for updating data on the `TableScopedCollection` object, for use in `tableScopedCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

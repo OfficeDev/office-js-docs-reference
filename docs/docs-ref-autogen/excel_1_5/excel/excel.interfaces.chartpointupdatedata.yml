@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartPointUpdateData
 uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPointUpdateData
-summary: 'An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartPoint` object, for use in `chartPoint.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

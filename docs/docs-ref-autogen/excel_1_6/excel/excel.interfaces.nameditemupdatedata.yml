@@ -3,7 +3,7 @@ name: Excel.Interfaces.NamedItemUpdateData
 uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.NamedItemUpdateData
-summary: 'An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `NamedItem` object, for use in `namedItem.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

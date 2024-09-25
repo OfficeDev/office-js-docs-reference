@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
 summary: >-
-  An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `ChartDataLabelFormat` object, for use in `chartDataLabelFormat.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

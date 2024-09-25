@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartPivotOptionsUpdateData
 uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
-summary: 'An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartPivotOptions` object, for use in `chartPivotOptions.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

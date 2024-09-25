@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
 summary: >-
-  An interface for updating data on the ConditionalRangeFont object, for use in `conditionalRangeFont.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `ConditionalRangeFont` object, for use in `conditionalRangeFont.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

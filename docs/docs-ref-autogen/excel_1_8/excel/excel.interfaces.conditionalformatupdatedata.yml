@@ -3,7 +3,7 @@ name: Excel.Interfaces.ConditionalFormatUpdateData
 uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalFormatUpdateData
-summary: 'An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ConditionalFormat` object, for use in `conditionalFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

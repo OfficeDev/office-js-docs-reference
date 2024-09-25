@@ -131,45 +131,6 @@ export declare namespace Office {
         
         
         /**
-         * Specifies the location from which an add-in wants to access data.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         */
-        enum OpenLocation {
-            /**
-             * A location associated with an account within an add-in.
-             */
-            ACCOUNT_DOCUMENT,
-            /**
-             * The device's camera.
-             */
-            CAMERA,
-            /**
-             * Local device storage.
-             */
-            LOCAL,
-            /**
-             * OneDrive for Business.
-             *
-             * **Important**: For OneDrive Personal, use OTHER.
-             */
-            ONEDRIVE_FOR_BUSINESS,
-            /**
-             * Other cloud storage providers, including OneDrive Personal.
-             */
-            OTHER,
-            /**
-             * Photo library.
-             */
-            PHOTO_LIBRARY,
-            /**
-             * SharePoint. Includes both SharePoint Online and SharePoint on-premises (if accessed with a Microsoft Entra ID account).
-             */
-            SHAREPOINT
-        }
-        /**
          * Represents the current view of Outlook on the web.
          */
         enum OWAView {
@@ -286,53 +247,6 @@ export declare namespace Office {
              * Beta.
              */
             Beta = "beta"
-        }
-        /**
-         * Specifies the location in which an add-in wants to save data.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         */
-        enum SaveLocation {
-            /**
-             * A location associated with an account within an add-in.
-             */
-            ACCOUNT_DOCUMENT,
-            /**
-             * Box.
-             */
-            BOX,
-            /**
-             * Dropbox.
-             */
-            DROPBOX,
-            /**
-             * Google Drive.
-             */
-            GOOGLE_DRIVE,
-            /**
-             * Local device storage.
-             */
-            LOCAL,
-            /**
-             * OneDrive for Business.
-             *
-             * **Important**: For OneDrive Personal, use OTHER.
-             */
-            ONEDRIVE_FOR_BUSINESS,
-            /**
-             * Other cloud storage providers, including OneDrive Personal.
-             */
-            OTHER,
-            /**
-             * Photo library.
-             */
-            PHOTO_LIBRARY,
-            /**
-             * SharePoint. Includes both SharePoint Online and SharePoint on-premises (if accessed with a Microsoft Entra ID account).
-             */
-            SHAREPOINT
         }
         
         /**
@@ -3098,54 +3012,6 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
-        /**
-         * Returns true if the current mailbox is managed by {@link https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune | Microsoft Intune}.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @returns True if the current mailbox is managed by Microsoft Intune.
-         */
-        getIsIdentityManaged(): boolean;
-        /**
-         * Returns true if an organization's {@link https://learn.microsoft.com/mem/intune/apps/app-management | Intune mobile application management (MAM) policy}
-         * allows an add-in to access data from the specified location.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @param openLocation - The location from which the add-in is attempting to access data.
-         *
-         * @returns True if an organization's Intune MAM policy allows an add-in to access data from the specified location.
-         */
-        getIsOpenFromLocationAllowed(openLocation: MailboxEnums.OpenLocation): boolean;
-        /**
-         * Returns true if an organization's {@link https://learn.microsoft.com/mem/intune/apps/app-management | Intune mobile application management (MAM) policy}
-         * allows an add-in to save data to the specified location.
-         *
-         * @remarks
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
-         *
-         * **Important**: This method is only supported in Outlook on Android and on iOS.
-         *
-         * @param saveLocation - The location in which the add-in is attempting to save data.
-         *
-         * @returns True if an organization's Intune MAM policy allows an add-in to save data to the specified location.
-         */
-        getIsSaveToLocationAllowed(saveLocation: MailboxEnums.SaveLocation): boolean;
         
         
         /**

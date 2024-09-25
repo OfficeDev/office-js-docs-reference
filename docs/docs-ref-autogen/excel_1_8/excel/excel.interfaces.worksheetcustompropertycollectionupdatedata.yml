@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interfa
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
 summary: >-
-  An interface for updating data on the WorksheetCustomPropertyCollection object, for use in
+  An interface for updating data on the `WorksheetCustomPropertyCollection` object, for use in
   `worksheetCustomPropertyCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

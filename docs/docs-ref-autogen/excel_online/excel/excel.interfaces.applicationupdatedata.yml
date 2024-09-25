@@ -3,7 +3,7 @@ name: Excel.Interfaces.ApplicationUpdateData
 uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ApplicationUpdateData
-summary: 'An interface for updating data on the Application object, for use in `application.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Application` object, for use in `application.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,7 +3,7 @@ name: Excel.Interfaces.CommentReplyUpdateData
 uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CommentReplyUpdateData
-summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `CommentReply` object, for use in `commentReply.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

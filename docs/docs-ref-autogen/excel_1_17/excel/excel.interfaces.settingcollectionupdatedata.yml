@@ -3,7 +3,7 @@ name: Excel.Interfaces.SettingCollectionUpdateData
 uid: 'excel!Excel.Interfaces.SettingCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.SettingCollectionUpdateData
-summary: 'An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `SettingCollection` object, for use in `settingCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,6 +69,18 @@ properties:
     isDeprecated: false
     syntax:
       content: 'shortDatePattern?: boolean;'
+      return:
+        type: boolean
+  - name: shortDateTimePattern
+    uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDateTimePattern:member'
+    package: excel!
+    fullName: shortDateTimePattern
+    summary: Gets the format string for a short date and time value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shortDateTimePattern?: boolean;'
       return:
         type: boolean
   - name: timeSeparator

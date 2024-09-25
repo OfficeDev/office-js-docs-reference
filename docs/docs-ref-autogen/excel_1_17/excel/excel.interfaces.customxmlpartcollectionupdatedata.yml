@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartCollectionUpdateData
 summary: >-
-  An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ...
+  An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

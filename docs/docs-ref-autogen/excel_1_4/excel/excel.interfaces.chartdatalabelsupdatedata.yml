@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartDataLabelsUpdateData
 uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelsUpdateData
-summary: 'An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartDataLabels` object, for use in `chartDataLabels.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

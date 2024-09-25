@@ -5323,9 +5323,7 @@ methods:
     uid: 'excel!Excel.Functions#isErr:member(1)'
     package: excel!
     fullName: isErr(value)
-    summary: >-
-      Checks whether a value is an error (\#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!) excluding \#N/A, and
-      returns TRUE or FALSE.
+    summary: 'Checks whether a value is an error other than \#N/A, and returns TRUE or FALSE.'
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -5348,9 +5346,7 @@ methods:
     uid: 'excel!Excel.Functions#isError:member(1)'
     package: excel!
     fullName: isError(value)
-    summary: >-
-      Checks whether a value is an error (\#N/A, \#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!), and returns
-      TRUE or FALSE.
+    summary: 'Checks whether a value is an error, and returns TRUE or FALSE.'
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -7348,9 +7344,7 @@ methods:
     uid: 'excel!Excel.Functions#percentRank_Exc:member(1)'
     package: excel!
     fullName: 'percentRank_Exc(array, x, significance)'
-    summary: >-
-      Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the
-      data set.
+    summary: 'Returns the rank of a value in a data set as a percentage (0..1, exclusive) of the data set.'
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -7384,9 +7378,7 @@ methods:
     uid: 'excel!Excel.Functions#percentRank_Inc:member(1)'
     package: excel!
     fullName: 'percentRank_Inc(array, x, significance)'
-    summary: >-
-      Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the
-      data set.
+    summary: 'Returns the rank of a value in a data set as a percentage (0..1, inclusive) of the data set.'
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -9580,9 +9572,7 @@ methods:
             number | string | boolean | <xref uid="excel!Excel.Range:class" /> | <xref
             uid="excel!Excel.RangeReference:interface" /> | <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
         - id: formatText
-          description: >-
-            Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not
-            General).
+          description: Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box.
           type: >-
             string | <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeReference:interface" /> |
             <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
@@ -9666,7 +9656,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain
+      passed to it.) Whereas the original `Excel.Functions` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.FunctionsData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
@@ -9773,7 +9763,7 @@ methods:
     fullName: type(value)
     summary: >-
       Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value =
-      16; array = 64.
+      16; array = 64; compound data = 128.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

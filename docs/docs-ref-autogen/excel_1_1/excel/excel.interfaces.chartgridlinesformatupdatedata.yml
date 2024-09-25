@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
 summary: >-
-  An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `ChartGridlinesFormat` object, for use in `chartGridlinesFormat.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

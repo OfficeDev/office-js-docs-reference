@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interfac
 package: excel!
 fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
 summary: >-
-  An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
+  An interface for updating data on the `ConditionalDataBarNegativeFormat` object, for use in
   `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
