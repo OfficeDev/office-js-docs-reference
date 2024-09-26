@@ -1,0 +1,25 @@
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = OfficeRuntime.context.auth;
+    const accessToken = authContext.getAccessTokenAsync();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }

@@ -6655,7 +6655,7 @@ Office.Auth,N/A,Class,Good,true
 Office.Auth,"getAccessToken(options)",Method,Fine,true
 Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
-Office.Auth,"getAuthContext()",Method,Poor,false
+Office.Auth,"getAuthContext()",Method,Poor,true
 Office.AuthContext,N/A,Class,Fine,false
 Office.AuthContext,"authorityBaseUrl",Property,Fine,false
 Office.AuthContext,"authorityType",Property,Good,false
@@ -7725,8 +7725,8 @@ OfficeExtension.UpdateOptions,N/A,Class,Fine,false
 OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Fine,false
 OfficeRuntime.ApiInformation,N/A,Class,Fine,false
 OfficeRuntime.ApiInformation,"isSetSupported(name, minVersion)",Method,Poor,false
-OfficeRuntime.Auth,N/A,Class,Good,false
-OfficeRuntime.Auth,"getAccessToken(options)",Method,Fine,false
+OfficeRuntime.Auth,N/A,Class,Good,true
+OfficeRuntime.Auth,"getAccessToken(options)",Method,Fine,true
 OfficeRuntime.AuthOptions,N/A,Class,Good,false
 OfficeRuntime.AuthOptions,"allowConsentPrompt",Property,Good,false
 OfficeRuntime.AuthOptions,"allowSignInPrompt",Property,Good,false
@@ -8721,7 +8721,7 @@ Office.LocationDetails,"locationIdentifier",Property,Poor,false
 Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,"id",Property,Fine,false
 Office.LocationIdentifier,"type",Property,Poor,false
-Office.Mailbox,N/A,Class,Good,false
+Office.Mailbox,N/A,Class,Good,true
 Office.Mailbox,"diagnostics",Property,Good,true
 Office.Mailbox,"ewsUrl",Property,Good,true
 Office.Mailbox,"item",Property,Good,false
@@ -9116,7 +9116,7 @@ Office.MessageCompose,"saveAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"saveAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Fine,false
-Office.MessageRead,N/A,Class,Good,false
+Office.MessageRead,N/A,Class,Good,true
 Office.MessageRead,"attachments",Property,Good,true
 Office.MessageRead,"body",Property,Good,true
 Office.MessageRead,"categories",Property,Good,true
@@ -9308,8 +9308,8 @@ Office.SessionData,"removeAsync(name, options, callback)",Method,Poor,true
 Office.SessionData,"removeAsync(name, callback)",Method,Poor,false
 Office.SessionData,"setAsync(name, value, options, callback)",Method,Poor,true
 Office.SessionData,"setAsync(name, value, callback)",Method,Poor,false
-Office.SharedProperties,N/A,Class,Good,false
-Office.SharedProperties,"delegatePermissions",Property,Fine,false
+Office.SharedProperties,N/A,Class,Good,true
+Office.SharedProperties,"delegatePermissions",Property,Fine,true
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false

@@ -6,7 +6,7 @@
   },
   "docModel": {
     "enabled": true,
-    "apiJsonFilePath": "../json/<unscopedPackageName>.api.json"
+    "apiJsonFilePath": "../json/office-runtime/<unscopedPackageName>.api.json"
   },
   "dtsRollup": {
     "enabled": false

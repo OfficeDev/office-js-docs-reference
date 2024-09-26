@@ -2042,6 +2042,14 @@ Office.Auth:interface:
             console.log("Error obtaining token", result.error);
         }
     });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -5576,6 +5584,102 @@ Office.Settings#set:member(1):
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
     }
+Office.SharedProperties:interface:
+  - |-
+    function performOperation() {
+      Office.context.mailbox.getCallbackTokenAsync({
+          isRest: true
+        },
+        function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
+            Office.context.mailbox.item.getSharedPropertiesAsync({
+                // Pass auth token along.
+                asyncContext: asyncResult.value
+              },
+              function (asyncResult1) {
+                let sharedProperties = asyncResult1.value;
+                let delegatePermissions = sharedProperties.delegatePermissions;
+
+                // Determine if user can do the expected operation.
+                // E.g., do they have Write permission?
+                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+                  // Construct REST URL for your operation.
+                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
+                  // Update <operation> placeholder with actual operation.
+                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
+      
+                  $.ajax({
+                      url: rest_url,
+                      dataType: 'json',
+                      headers:
+                      {
+                        "Authorization": "Bearer " + asyncResult1.asyncContext
+                      }
+                    }
+                  ).done(
+                    function (response) {
+                      console.log("success");
+                    }
+                  ).fail(
+                    function (error) {
+                      console.log("error message");
+                    }
+                  );
+                }
+              }
+            );
+          }
+        }
+      );
+    }
+Office.SharedProperties#delegatePermissions:member:
+  - |-
+    function performOperation() {
+      Office.context.mailbox.getCallbackTokenAsync({
+          isRest: true
+        },
+        function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
+            Office.context.mailbox.item.getSharedPropertiesAsync({
+                // Pass auth token along.
+                asyncContext: asyncResult.value
+              },
+              function (asyncResult1) {
+                let sharedProperties = asyncResult1.value;
+                let delegatePermissions = sharedProperties.delegatePermissions;
+
+                // Determine if user can do the expected operation.
+                // E.g., do they have Write permission?
+                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+                  // Construct REST URL for your operation.
+                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
+                  // Update <operation> placeholder with actual operation.
+                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
+      
+                  $.ajax({
+                      url: rest_url,
+                      dataType: 'json',
+                      headers:
+                      {
+                        "Authorization": "Bearer " + asyncResult1.asyncContext
+                      }
+                    }
+                  ).done(
+                    function (response) {
+                      console.log("success");
+                    }
+                  ).fail(
+                    function (error) {
+                      console.log("error message");
+                    }
+                  );
+                }
+              }
+            );
+          }
+        }
+      );
+    }
 Office.TableBinding#addColumnsAsync:member(1):
   - |-
     // The following example adds a single column with three rows to a bound table with the id "myTable"
@@ -5993,6 +6097,31 @@ OfficeExtension.LoadOption#top:member:
             })
         });
 
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = OfficeRuntime.context.auth;
+    const accessToken = authContext.getAccessTokenAsync();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -8070,6 +8199,34 @@ Office.LocationIdentifier:interface:
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
+Office.Mailbox:interface:
+  - |-
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            // Get a reference to the mailbox and use it to add an
+            // event handler.
+            const mailBox = Office.context.mailbox;
+            mailbox.addHandlerAsync(
+                Office.EventType.ItemChanged,
+                loadNewItem,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        // Handle error.
+                    }
+                });
+        });
+    };
+
+    function loadNewItem(eventArgs) {
+        const item = Office.context.mailbox.item;
+
+        // Check that item is not null.
+        if (item !== null) {
+            // Work with item, e.g., define and call function that
+            // loads the properties of the newly selected item.
+            loadProps(item);
+        }
+    }
 Office.Mailbox#addHandlerAsync:member(1):
   - |-
     Office.initialize = function (reason) {
@@ -8453,6 +8610,24 @@ Office.MessageCompose#to:member:
     function callback(asyncResult) {
         const arrayOfToRecipients = asyncResult.value;
     }
+Office.MessageRead:interface:
+ - |-
+   // The following code builds an HTML string with details of all attachments on the current item.
+    const item = Office.context.mailbox.item;
+    let outputString = "";
+    if (item.attachments.length > 0) {
+        for (let i = 0 ; i < item.attachments.length ; i++) {
+            const attachment = item.attachments[i];
+            outputString += "<BR>" + i + ". Name: ";
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
+        }
+    }
+    console.log(outputString);
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
