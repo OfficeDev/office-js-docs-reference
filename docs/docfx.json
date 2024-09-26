@@ -109,6 +109,30 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api/office-js-docs-reference"

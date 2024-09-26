@@ -272,9 +272,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'license: string;'
+      content: 'license: object;'
       return:
-        type: string
+        type: object
   - name: mailbox
     uid: 'office!Office.Context#mailbox:member'
     package: office!
