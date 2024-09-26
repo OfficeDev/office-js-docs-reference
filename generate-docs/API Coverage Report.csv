@@ -8721,7 +8721,7 @@ Office.LocationDetails,"locationIdentifier",Property,Poor,false
 Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,"id",Property,Fine,false
 Office.LocationIdentifier,"type",Property,Poor,false
-Office.Mailbox,N/A,Class,Good,false
+Office.Mailbox,N/A,Class,Good,true
 Office.Mailbox,"diagnostics",Property,Good,true
 Office.Mailbox,"ewsUrl",Property,Good,true
 Office.Mailbox,"item",Property,Good,false
