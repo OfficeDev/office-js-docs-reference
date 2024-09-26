@@ -1213,18 +1213,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -1251,18 +1257,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -4738,18 +4750,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -4775,18 +4793,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
