@@ -109,25 +109,13 @@
       },
       {
         "files": ["**/toc.yml"],
-        "group": "common-js",
+        "group": "office-runtime",
         "src": "docs-ref-autogen/office-runtime",
         "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
-        "src": "docs-ref-autogen/office-runtime",
-        "dest": "api"
-      },
-      {
-        "files": ["**/toc.yml"],
-        "group": "common-js-preview",
-        "src": "docs-ref-autogen/office-runtime",
-        "dest": "api/office-js-docs-reference"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-preview",
+        "group": "office-runtime",
         "src": "docs-ref-autogen/office-runtime",
         "dest": "api"
       },
@@ -1057,6 +1045,10 @@
       },
       "common-js-preview": {
         "dest": "common-js-preview",
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
+      },
+      "office-runtime": {
+        "dest": "office-runtime",
         "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
