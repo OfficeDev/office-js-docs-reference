@@ -182,7 +182,7 @@ tryCatch(async () => {
     writeSnippetFileAndClearYamlIfNew("../json/office/snippets.yaml", yaml.safeDump(commonSnippets), "office");
     writeSnippetFileAndClearYamlIfNew("../json/office_release/snippets.yaml", yaml.safeDump(commonSnippets), "office");
 
-    writeSnippetFileAndClearYamlIfNew("../json/office-runtime/snippets.yaml", yaml.safeDump(commonSnippets), "office-runtime");
+    writeSnippetFileAndClearYamlIfNew("../json/office-runtime/snippets.yaml", yaml.safeDump(officeRuntimeSnippets), "office-runtime");
 
     writeSnippetFileAndClearYamlIfNew("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets), "onenote");
 
