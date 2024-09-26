@@ -106,7 +106,7 @@ tryCatch(async () => {
     let visioSnippetKeys = [];
     let wordSnippetKeys = [];
     let officeRuntimeSnippetKeys = [];
-    let commonText = fsx.readFileSync(path.resolve("../json/office/office.api.json"));
+    let commonText = fsx.readFileSync(path.resolve("../json/office/office.api.json")).toString();
     for (const key of Object.keys(allSnippets)) {
         if (key.startsWith("Excel") || key.startsWith("CustomFunctions")) {
             excelSnippetKeys.push(key);
@@ -121,7 +121,10 @@ tryCatch(async () => {
         } else if (key.startsWith("OfficeRuntime")) {
             officeRuntimeSnippetKeys.push(key);
         } else if (key.startsWith("Office")) {
-            if (commonText.indexOf(key) >= 0) {
+            // Any key that's defined in the office.api.json is common. Otherwise, it's Outlook.
+            let reg = new RegExp(`"kind": ".*",[\\s]*"canonicalReference": [^\\s]*${key.substring(0, key.indexOf("(") == -1 ? key.length : key.indexOf("("))}`, "gm");
+            let match = commonText.match(reg)
+            if (match != null && match.length > 0) {
                 commonSnippetKeys.push(key);
             } else {
                 outlookSnippetKeys.push(key);
