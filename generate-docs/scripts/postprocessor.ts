@@ -195,6 +195,7 @@ tryCatch(async () => {
     fsx.removeSync(docsDestination + "/office/overview.md");
     fsx.removeSync(docsDestination + "/office/toc.yml");
     fsx.removeSync(docsDestination + "/office_release/toc.yml");
+    fsx.removeSync(docsDestination + "/office-runtime/toc.yml");
 
     console.log("\nPostprocessor script complete!\n");
 
@@ -343,7 +344,6 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
     let runtimeToc = (jsyaml.safeLoad(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
-    console.log(runtimeToc.items[0].items);
     origToc.items[0].items = origToc.items[0].items.concat(runtimeToc.items[0].items);
     let membersToMove = <IMembers>{};
 
