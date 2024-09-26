@@ -4602,7 +4602,7 @@ export declare namespace Office {
         /**
          * Gets the license information for the user's Office installation.
          */
-        license: string;
+        license: object;
         /**
          Provides access to the Microsoft Outlook add-in object model.
          *

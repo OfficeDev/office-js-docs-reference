@@ -105,6 +105,7 @@ tryCatch(async () => {
     let powerpointSnippetKeys = [];
     let visioSnippetKeys = [];
     let wordSnippetKeys = [];
+    let officeRuntimeSnippetKeys = [];
     let commonText = fsx.readFileSync(path.resolve("../json/office/office.api.json"));
     for (const key of Object.keys(allSnippets)) {
         if (key.startsWith("Excel") || key.startsWith("CustomFunctions")) {
@@ -117,6 +118,8 @@ tryCatch(async () => {
             visioSnippetKeys.push(key);
         } else if (key.startsWith("Word")) {
             wordSnippetKeys.push(key);
+        } else if (key.startsWith("OfficeRuntime")) {
+            officeRuntimeSnippetKeys.push(key);
         } else if (key.startsWith("Office")) {
             if (commonText.indexOf(key) >= 0) {
                 commonSnippetKeys.push(key);
@@ -135,6 +138,7 @@ tryCatch(async () => {
     let powerpointSnippets = {};
     let visioSnippets = {};
     let wordSnippets = {};
+    let officeRuntimeSnippets = {};
 
     commonSnippetKeys.forEach(key => {
         commonSnippets[key] = allSnippets[key];
@@ -164,6 +168,10 @@ tryCatch(async () => {
         wordSnippets[key] = allSnippets[key];
         delete allSnippets[key];
     });
+    officeRuntimeSnippetKeys.forEach(key => {
+        officeRuntimeSnippets[key] = allSnippets[key];
+        delete allSnippets[key];
+    });
 
     writeSnippetFileAndClearYamlIfNew("../json/excel/snippets.yaml", yaml.safeDump(excelSnippets), "excel");
     writeSnippetFileAndClearYamlIfNew("../json/excel_online/snippets.yaml", yaml.safeDump(excelSnippets), "excel");
@@ -173,6 +181,8 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/office/snippets.yaml", yaml.safeDump(commonSnippets), "office");
     writeSnippetFileAndClearYamlIfNew("../json/office_release/snippets.yaml", yaml.safeDump(commonSnippets), "office");
+
+    writeSnippetFileAndClearYamlIfNew("../json/office-runtime/snippets.yaml", yaml.safeDump(officeRuntimeSnippets), "office-runtime");
 
     writeSnippetFileAndClearYamlIfNew("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets), "onenote");
 
@@ -200,16 +210,11 @@ tryCatch(async () => {
 
     console.log("Moving Custom Functions APIs to correct versions of Excel");
     const customFunctionsJson = path.resolve("../json/custom-functions-runtime.api.json");
-    const officeRuntimeJson = path.resolve("../json/office-runtime.api.json");
     fsx.copySync(customFunctionsJson, "../json/excel/custom-functions-runtime.api.json");
     for (let i = CURRENT_EXCEL_RELEASE; i >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS; i--) {
         fsx.copySync(customFunctionsJson, `../json/excel_1_${i}/custom-functions-runtime.api.json`);
     }
     fsx.copySync(customFunctionsJson, `../json/excel_online/custom-functions-runtime.api.json`);
-
-    console.log("Moving Office Runtime APIs to Common API");
-    fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
-    fsx.copySync(officeRuntimeJson, `../json/office_release/office-runtime.api.json`);
 
     console.log("Cleaning up What's New markdown files.");
     let filePath = `../../docs/includes/outlook-preview.md`;
