@@ -8,7 +8,7 @@ summary: >-
   current version of Excel doesn't know how to display this control. \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -18,9 +18,9 @@ properties:
     fullName: type
     summary: ''
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellControlType.unknown;'
+      content: 'type: CellControlType.Unknown;'
       return:
-        type: '<xref uid="excel!Excel.CellControlType.unknown:member" />'
+        type: '<xref uid="excel!Excel.CellControlType.Unknown:member" />'

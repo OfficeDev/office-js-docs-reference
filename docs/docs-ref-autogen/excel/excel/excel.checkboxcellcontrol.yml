@@ -7,7 +7,7 @@ summary: >-
   Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell. \[ [API set:
   ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,9 +17,9 @@ properties:
     fullName: type
     summary: ''
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellControlType.checkbox;'
+      content: 'type: CellControlType.Checkbox;'
       return:
-        type: '<xref uid="excel!Excel.CellControlType.checkbox:member" />'
+        type: '<xref uid="excel!Excel.CellControlType.Checkbox:member" />'

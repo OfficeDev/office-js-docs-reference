@@ -25,6 +25,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ItemType:enum'
               - name: Month
                 uid: 'outlook!Office.MailboxEnums.Month:enum'
+              - name: OpenLocation
+                uid: 'outlook!Office.MailboxEnums.OpenLocation:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
@@ -37,6 +39,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
               - name: RestVersion
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SaveLocation
+                uid: 'outlook!Office.MailboxEnums.SaveLocation:enum'
               - name: SourceProperty
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
               - name: WeekNumber

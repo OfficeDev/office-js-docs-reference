@@ -8,7 +8,7 @@ summary: >-
   they can't be represented as a single result. \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -18,9 +18,9 @@ properties:
     fullName: type
     summary: ''
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: CellControlType.mixed;'
+      content: 'type: CellControlType.Mixed;'
       return:
-        type: '<xref uid="excel!Excel.CellControlType.mixed:member" />'
+        type: '<xref uid="excel!Excel.CellControlType.Mixed:member" />'
