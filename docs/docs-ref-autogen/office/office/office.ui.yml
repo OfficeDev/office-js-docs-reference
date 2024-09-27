@@ -453,10 +453,16 @@ methods:
     fullName: 'messageParent(message, messageOptions)'
     summary: Delivers a message from the dialog box to its parent/opener page.
     remarks: >-
+      **Applications**: Excel, Outlook, PowerPoint, Word
+
+
       **Requirement sets**:
 
 
       - [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+
+
+      - [Mailbox 1.4](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
       - If the `messageOptions` parameter is used, [DialogOrigin

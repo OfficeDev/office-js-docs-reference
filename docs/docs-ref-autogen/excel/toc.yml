@@ -937,8 +937,6 @@ items:
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:class'
-          - name: RangeTextRun
-            uid: 'excel!Excel.RangeTextRun:interface'
           - name: RangeView
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
