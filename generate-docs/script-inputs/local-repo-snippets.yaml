@@ -2542,7 +2542,7 @@ Office.Context#commerceAllowed:member:
     // Check if the add-in is running on an iPad.
     const allowCommerce = Office.context.commerceAllowed;
     const isTouchEnabled = Office.context.touchEnabled;
-    if (allowCommerce === false && isTouchEnabled === true) {
+    if (!allowCommerce && isTouchEnabled) {
         // Add-in is running on an iPad.
         // Do something.
     }
@@ -2728,7 +2728,7 @@ Office.Context#touchEnabled:member:
     // Check if the add-in is running on an iPad.
     const allowCommerce = Office.context.commerceAllowed;
     const isTouchEnabled = Office.context.touchEnabled;
-    if (allowCommerce === false && isTouchEnabled === true) {
+    if (!allowCommerce && isTouchEnabled) {
         // Add-in is running on an iPad.
         // Do something.
     }

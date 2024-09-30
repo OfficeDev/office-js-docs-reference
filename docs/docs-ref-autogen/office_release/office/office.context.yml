@@ -56,7 +56,7 @@ properties:
 
       const isTouchEnabled = Office.context.touchEnabled;
 
-      if (allowCommerce === false && isTouchEnabled === true) {
+      if (!allowCommerce && isTouchEnabled) {
           // Add-in is running on an iPad.
           // Do something.
       }
@@ -675,7 +675,7 @@ properties:
 
       const isTouchEnabled = Office.context.touchEnabled;
 
-      if (allowCommerce === false && isTouchEnabled === true) {
+      if (!allowCommerce && isTouchEnabled) {
           // Add-in is running on an iPad.
           // Do something.
       }
