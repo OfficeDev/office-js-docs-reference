@@ -43,6 +43,25 @@ properties:
       Office Add-ins running in Office on the Windows desktop or in the browser do allow such links. If you want the UI
       of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
       commerceAllowed property to control when that link is displayed.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Check if the add-in is running on an iPad.
+
+      const allowCommerce = Office.context.commerceAllowed;
+
+      const isTouchEnabled = Office.context.touchEnabled;
+
+      if (!allowCommerce && isTouchEnabled) {
+          // Add-in is running on an iPad.
+          // Do something.
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,6 +264,22 @@ properties:
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const host = Office.context.host;
+
+      if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+          // Do something.
+      } else if (host === Office.HostType.Outlook) {
+          // Do something.
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,6 +298,15 @@ properties:
       content: 'license: object;'
       return:
         type: object
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          const license = Office.context.license;
+          console.log(`Office license: ${license}`);
+          ```
   - name: mailbox
     uid: 'office!Office.Context#mailbox:member'
     package: office!
@@ -433,6 +477,34 @@ properties:
 
       - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Request permission from a user to access their devices from Office on the web.
+
+      if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.microphone
+          ];
+          Office.devicePermission
+              .requestPermissions(deviceCapabilities)
+              .then((isGranted) => {
+                  if (isGranted) {
+                      // Do something with device capabilities.
+                  }
+              })
+              .catch((error) => {
+                  console.log("Permission denied.");
+                  console.error(error);
+              });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -453,6 +525,30 @@ properties:
       content: 'requirements: RequirementSetSupport;'
       return:
         type: '<xref uid="office!Office.RequirementSetSupport:interface" />'
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+          if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+              const cellProperties: Excel.SettableCellProperties[][] =
+              colors2D.map(row =>
+                  row.map(color =>
+                      ({
+                          format: {
+                              fill: {
+                                  color: color
+                              }
+                          }
+                      })
+                  )
+              );
+              sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+          }
+          ...
+          ```
   - name: roamingSettings
     uid: 'office!Office.Context#roamingSettings:member'
     package: office!
@@ -566,6 +662,25 @@ properties:
 
       Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
       the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Check if the add-in is running on an iPad.
+
+      const allowCommerce = Office.context.commerceAllowed;
+
+      const isTouchEnabled = Office.context.touchEnabled;
+
+      if (!allowCommerce && isTouchEnabled) {
+          // Add-in is running on an iPad.
+          // Do something.
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
