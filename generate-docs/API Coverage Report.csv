@@ -6741,7 +6741,7 @@ Office.Context,"requirements",Property,Fine,true
 Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
 Office.Context,"touchEnabled",Property,Good,true
-Office.Context,"ui",Property,Fine,false
+Office.Context,"ui",Property,Fine,true
 Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
