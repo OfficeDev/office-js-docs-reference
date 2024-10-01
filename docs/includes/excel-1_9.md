@@ -313,7 +313,7 @@
 ||[fill](/javascript/api/excel/excel.shape#excel-excel-shape-fill-member)|Returns the fill formatting of this shape.|
 ||[geometricShape](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshape-member)|Returns the geometric shape associated with the shape.|
 ||[geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)|Specifies the geometric shape type of this geometric shape.|
-||[getAsImage(format: Excel.PictureFormat)](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))|Converts the shape to an image and returns the image as a base64-encoded string.|
+||[getAsImage(format: Excel.PictureFormat)](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))|Converts the shape to an image and returns the image as a Base64-encoded string.|
 ||[group](/javascript/api/excel/excel.shape#excel-excel-shape-group-member)|Returns the shape group associated with the shape.|
 ||[height](/javascript/api/excel/excel.shape#excel-excel-shape-height-member)|Specifies the height, in points, of the shape.|
 ||[id](/javascript/api/excel/excel.shape#excel-excel-shape-id-member)|Specifies the shape identifier.|
@@ -345,7 +345,7 @@
 ||[worksheetId](/javascript/api/excel/excel.shapeactivatedeventargs#excel-excel-shapeactivatedeventargs-worksheetid-member)|Gets the ID of the worksheet in which the shape is activated.|
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addGeometricShape(geometricShapeType: Excel.GeometricShapeType)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))|Adds a geometric shape to the worksheet.|
 ||[addGroup(values: Array<string \| Shape>)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1))|Groups a subset of shapes in this collection's worksheet.|
-||[addImage(base64ImageString: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))|Creates an image from a base64-encoded string and adds it to the worksheet.|
+||[addImage(base64ImageString: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))|Creates an image from a Base64-encoded string and adds it to the worksheet.|
 ||[addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?: Excel.ConnectorType)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))|Adds a line to worksheet.|
 ||[addTextBox(text?: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1))|Adds a text box to the worksheet with the provided text as the content.|
 ||[getCount()](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getcount-member(1))|Returns the number of shapes in the worksheet.|

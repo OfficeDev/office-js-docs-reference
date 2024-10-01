@@ -7356,12 +7356,12 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
      * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
-     * 
+     *
      * [Api set: ExcelApi 1.8]
      *
-     * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
     /** [Api set: ExcelApi 1.2] */
@@ -7610,14 +7610,14 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
+         * Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param cacheUid - Represents the unique identifier (UID) of the image as it appears in the cache. The cache UID can be obtained from JSON representation of the values in the cell.
-         * @returns The base64-encoded image data.
+         * @returns The Base64-encoded image data.
          */
         getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;
         /**
@@ -12931,7 +12931,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.13]
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
          * @returns An array of IDs corresponding to each newly inserted worksheet.
          */
@@ -13697,7 +13697,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
          * @param positionType - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
          * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
@@ -13713,7 +13713,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
          * @param positionTypeString - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
          * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
@@ -14918,7 +14918,7 @@ export declare namespace Excel {
          */
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
-         * Renders the range as a base64-encoded png image.
+         * Renders the range as a Base64-encoded png image.
                     **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
@@ -19575,7 +19575,7 @@ export declare namespace Excel {
          */
         getDataTableOrNullObject(): Excel.ChartDataTable;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -19587,7 +19587,7 @@ export declare namespace Excel {
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -26955,7 +26955,7 @@ export declare namespace Excel {
          */
         category: string;
         /**
-         * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+         * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -31298,12 +31298,12 @@ export declare namespace Excel {
          */
         addGroup(values: Array<string | Shape>): Excel.Shape;
         /**
-         * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that represents the new image.
+         * Creates an image from a Base64-encoded string and adds it to the worksheet. Returns the `Shape` object that represents the new image.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param base64ImageString - A base64-encoded string representing an image in either JPEG or PNG format.
+         * @param base64ImageString - A Base64-encoded string representing an image in either JPEG or PNG format.
          */
         addImage(base64ImageString: string): Excel.Shape;
         /**
@@ -31646,7 +31646,7 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+         * Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -31655,7 +31655,7 @@ export declare namespace Excel {
          */
         getAsImage(format: Excel.PictureFormat): OfficeExtension.ClientResult<string>;
         /**
-         * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+         * Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -47876,7 +47876,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -54400,7 +54400,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -64179,7 +64179,7 @@ export declare namespace Excel {
              */
             category?: boolean;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

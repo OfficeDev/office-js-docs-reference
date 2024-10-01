@@ -436,7 +436,7 @@ methods:
       content: 'insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;'
       parameters:
         - id: base64File
-          description: The base64-encoded string representing the source presentation file.
+          description: The Base64-encoded string representing the source presentation file.
           type: string
         - id: options
           description: >-

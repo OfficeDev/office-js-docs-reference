@@ -8,7 +8,7 @@
 ||[rowCount](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-rowcount-member)|Gets the number of rows selected.|
 ||[startColumn](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-startcolumn-member)|Gets the index of the first column of the selection (zero-based).|
 ||[startRow](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-startrow-member)|Gets the index of the first row of the selection (zero-based).|
-|[Chart](/javascript/api/excel/excel.chart)|[getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode)](/javascript/api/excel/excel.chart#excel-excel-chart-getimage-member(1))|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
+|[Chart](/javascript/api/excel/excel.chart)|[getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode)](/javascript/api/excel/excel.chart#excel-excel-chart-getimage-member(1))|Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.|
 ||[worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)|The worksheet containing the current chart.|
 |[Filter](/javascript/api/excel/excel.filter)|[apply(criteria: Excel.FilterCriteria)](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1))|Apply the given filter criteria on the given column.|
 ||[applyBottomItemsFilter(count: number)](/javascript/api/excel/excel.filter#excel-excel-filter-applybottomitemsfilter-member(1))|Apply a "Bottom Item" filter to the column for the given number of elements.|

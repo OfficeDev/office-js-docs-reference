@@ -130,7 +130,7 @@
 |[NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues)|[types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)|Represents the types for each item in the named item array|
 ||[values](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-values-member)|Represents the values of each item in the named item array.|
 |[Range](/javascript/api/excel/excel.range)|[getAbsoluteResizedRange(numRows: number, numColumns: number)](/javascript/api/excel/excel.range#excel-excel-range-getabsoluteresizedrange-member(1))|Gets a `Range` object with the same top-left cell as the current `Range` object, but with the specified numbers of rows and columns.|
-||[getImage()](/javascript/api/excel/excel.range#excel-excel-range-getimage-member(1))|Renders the range as a base64-encoded png image.|
+||[getImage()](/javascript/api/excel/excel.range#excel-excel-range-getimage-member(1))|Renders the range as a Base64-encoded png image.|
 ||[getSurroundingRegion()](/javascript/api/excel/excel.range#excel-excel-range-getsurroundingregion-member(1))|Returns a `Range` object that represents the surrounding region for the top-left cell in this range.|
 ||[hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)|Represents the hyperlink for the current range.|
 ||[isEntireColumn](/javascript/api/excel/excel.range#excel-excel-range-isentirecolumn-member)|Represents if the current range is an entire column.|
