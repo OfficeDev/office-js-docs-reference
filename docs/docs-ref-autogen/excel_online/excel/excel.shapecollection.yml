@@ -205,7 +205,7 @@ methods:
     package: excel!
     fullName: addImage(base64ImageString)
     summary: >-
-      Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that
+      Creates an image from a Base64-encoded string and adds it to the worksheet. Returns the `Shape` object that
       represents the new image.
     remarks: >-
       \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -248,7 +248,7 @@ methods:
       content: 'addImage(base64ImageString: string): Excel.Shape;'
       parameters:
         - id: base64ImageString
-          description: A base64-encoded string representing an image in either JPEG or PNG format.
+          description: A Base64-encoded string representing an image in either JPEG or PNG format.
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'

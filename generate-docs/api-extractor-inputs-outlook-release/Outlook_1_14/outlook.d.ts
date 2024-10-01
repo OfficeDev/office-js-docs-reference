@@ -57,7 +57,7 @@ export declare namespace Office {
          */
         enum AttachmentContentFormat {
             /**
-             * The content of the attachment is returned as a base64-encoded string.
+             * The content of the attachment is returned as a Base64-encoded string.
              */
             Base64 = "base64",
             /**
@@ -5118,10 +5118,16 @@ export declare namespace Office {
          * Gets the email address type of a recipient.
          * 
          * @remarks
-         * **Important**: A `recipientType` property value isn't returned by the 
+         * **Important**:
+         *
+         * - A `recipientType` property value isn't returned by the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync}
          * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
          * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
+         *
+         * - While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          */
         recipientType: MailboxEnums.RecipientType | string;
     }
@@ -6044,7 +6050,13 @@ export declare namespace Office {
          * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
          * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
          *
-         * **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
+         * **Important**:
+         *
+         * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+         * For guidance on how to configure the Reading Pane, see
+         * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
+         *
+         * - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler | Implement a pinnable task pane in Outlook}.
          */
         item?: Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose & AppointmentRead;
@@ -7236,9 +7248,15 @@ export declare namespace Office {
      /**
      * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
      *
-     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+     * **Important**:
+     *
+     * - This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item | Object Model} page.
+     *
+     * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+     * For guidance on how to configure the Reading Pane, see
+     * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
      *
      * Parent interfaces:
      *
@@ -8721,9 +8739,15 @@ export declare namespace Office {
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
-     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+     * **Important**:
+     *
+     * - This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox.item | Object Model} page.
+     *
+     * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+     * For guidance on how to configure the Reading Pane, see
+     * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
      *
      * Parent interfaces:
      *
@@ -10316,6 +10340,10 @@ export declare namespace Office {
          * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name.
          * For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
          *
+         * While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -10360,6 +10388,10 @@ export declare namespace Office {
          * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
          * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name.
          * For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         *
+         * While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of
@@ -11795,7 +11827,7 @@ export declare namespace Office {
         cancelLabel?: string;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies the ID of the task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * this property specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * For an example, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
@@ -11810,14 +11842,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * The `commandId` value must match the task pane ID specified in the manifest of your add-in. The markup depends on the type of manifest your
+         * The `commandId` value must match the task pane or function ID specified in the manifest of your add-in. The markup depends on the type of manifest your
          * add-in uses.
          *
-         * - **Add-in only manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane.
+         * - **Add-in only manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane or function.
          *
-         * - **Unified manifest for Microsoft 365**: The "id" property of the task pane command in the "controls" array.
+         * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
-         * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
          */
         commandId?: string;

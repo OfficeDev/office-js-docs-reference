@@ -7,10 +7,18 @@ summary: >-
   The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
-  treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  **Important**:
+
+
+  - This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a
+  mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item)
   page.
+
+
+  - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be
+  turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to preview
+  messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
 
 
   Parent interfaces:

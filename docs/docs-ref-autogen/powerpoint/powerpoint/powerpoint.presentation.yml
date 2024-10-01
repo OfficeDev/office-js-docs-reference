@@ -78,6 +78,20 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: properties
+    uid: 'powerpoint!PowerPoint.Presentation#properties:member'
+    package: powerpoint!
+    fullName: properties
+    summary: Gets the properties of the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly properties: PowerPoint.DocumentProperties;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.DocumentProperties:class" />'
   - name: slideMasters
     uid: 'powerpoint!PowerPoint.Presentation#slideMasters:member'
     package: powerpoint!
@@ -450,7 +464,7 @@ methods:
       content: 'insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;'
       parameters:
         - id: base64File
-          description: The base64-encoded string representing the source presentation file.
+          description: The Base64-encoded string representing the source presentation file.
           type: string
         - id: options
           description: >-
