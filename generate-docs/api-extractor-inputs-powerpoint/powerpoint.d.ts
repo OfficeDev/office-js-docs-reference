@@ -40,6 +40,14 @@ export declare namespace PowerPoint {
          */
         readonly customXmlParts: PowerPoint.CustomXmlPartCollection;
         /**
+         * Gets the properties of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly properties: PowerPoint.DocumentProperties;
+        /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
          * @remarks
@@ -107,7 +115,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.2]
          *
-         * @param base64File - The base64-encoded string representing the source presentation file.
+         * @param base64File - The Base64-encoded string representing the source presentation file.
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
@@ -1675,86 +1683,6 @@ export declare namespace PowerPoint {
         width?: number;
     }
     /**
-     * Specifies the dash style for a line.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeLineDashStyle {
-        /**
-         * The dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dash = "Dash",
-        /**
-         * The dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDot = "DashDot",
-        /**
-         * The dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDotDot = "DashDotDot",
-        /**
-         * The long dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDash = "LongDash",
-        /**
-         * The long dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDot = "LongDashDot",
-        /**
-         * The round dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        roundDot = "RoundDot",
-        /**
-         * The solid line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        solid = "Solid",
-        /**
-         * The square dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        squareDot = "SquareDot",
-        /**
-         * The long dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDotDot = "LongDashDotDot",
-        /**
-         * The system dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDash = "SystemDash",
-        /**
-         * The system dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDot = "SystemDot",
-        /**
-         * The system dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDashDot = "SystemDashDot",
-    }
-    /**
      * The type of underline applied to a font.
      *
      * @remarks
@@ -1913,6 +1841,86 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         thaiDistributed = "ThaiDistributed",
+    }
+    /**
+     * Specifies the dash style for a line.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeLineDashStyle {
+        /**
+         * The dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dash = "Dash",
+        /**
+         * The dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDot = "DashDot",
+        /**
+         * The dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * The long dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDash = "LongDash",
+        /**
+         * The long dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDot = "LongDashDot",
+        /**
+         * The round dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        roundDot = "RoundDot",
+        /**
+         * The solid line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        solid = "Solid",
+        /**
+         * The square dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        squareDot = "SquareDot",
+        /**
+         * The long dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDotDot = "LongDashDotDot",
+        /**
+         * The system dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDash = "SystemDash",
+        /**
+         * The system dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDot = "SystemDot",
+        /**
+         * The system dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDashDot = "SystemDashDot",
     }
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
@@ -2534,7 +2542,7 @@ export declare namespace PowerPoint {
          */
         delete(): void;
         /**
-         * Exports the slide to its own presentation file, returned as base64-encoded data.
+         * Exports the slide to its own presentation file, returned as Base64-encoded data.
          *
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
@@ -3451,6 +3459,336 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
     /**
+     * Specifies the document property type for custom properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DocumentPropertyType {
+        /**
+         * The Boolean document property type.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        boolean = "Boolean",
+        /**
+         * The Date document property type.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        date = "Date",
+        /**
+         * The Number document property type.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        number = "Number",
+        /**
+         * The String document property type.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        string = "String",
+    }
+    /**
+     * Represents a custom property.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomProperty extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The string that uniquely identifies the custom property.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly key: string;
+        /**
+         * The type of the value used for the custom property.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: PowerPoint.DocumentPropertyType | "Boolean" | "Date" | "Number" | "String";
+        /**
+         * The value of the custom property.
+                    If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        value: boolean | Date | number | string;
+        /**
+         * Deletes the custom property.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.CustomPropertyLoadOptions): PowerPoint.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.CustomProperty;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.CustomProperty` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.CustomPropertyData;
+    }
+    /**
+     * A collection of custom properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomPropertyCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.CustomProperty[];
+        /**
+         * Creates a new `CustomProperty` or updates the property with the given key.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The string that identifies the `CustomProperty` object. It's case-insensitive.
+         * The maximum key length is 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+         * @param value - The value of the `CustomProperty`.
+         * If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+         */
+        add(key: string, value: boolean | Date | number | string): PowerPoint.CustomProperty;
+        /**
+         * Deletes all custom properties in this collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAll(): void;
+        /**
+         * Gets the number of custom properties in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of custom properties in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a `CustomProperty` by its key.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The string that identifies the `CustomProperty` object. It's case-insensitive.
+         * Keys have a maximum length of 255 characters. If the argument exceeds 255 characters, then this method returns the `InvalidArgument` error.
+         */
+        getItem(key: string): PowerPoint.CustomProperty;
+        /**
+         * Gets a `CustomProperty` by its key.
+                    If the `CustomProperty` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The string that identifies the `CustomProperty` object. It's case-insensitive.
+         * Keys have a maximum length of 255 characters. If the argument exceeds 255 characters, then this method returns the `InvalidArgument` error.
+         */
+        getItemOrNullObject(key: string): PowerPoint.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.CustomPropertyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.CustomPropertyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.CustomPropertyCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.CustomPropertyCollectionData;
+    }
+    /**
+     * Represents presentation properties.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class DocumentProperties extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The collection of custom properties of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customProperties: PowerPoint.CustomPropertyCollection;
+        /**
+         * The author of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        author: string;
+        /**
+         * The category of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        category: string;
+        /**
+         * The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments: string;
+        /**
+         * The company of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        company: string;
+        /**
+         * The creation date of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly creationDate: Date;
+        /**
+         * The keywords of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keywords: string;
+        /**
+         * The last author of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly lastAuthor: string;
+        /**
+         * The manager of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        manager: string;
+        /**
+         * The revision number of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revisionNumber: number;
+        /**
+         * The subject of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject: string;
+        /**
+         * The title of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        title: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions): PowerPoint.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.DocumentProperties;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.DocumentProperties` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.DocumentPropertiesData;
+    }
+    /**
      * Specifies the formatting options for when slides are inserted.
      *
      * @remarks
@@ -4125,6 +4463,97 @@ export declare namespace PowerPoint {
              */
             width?: number;
         }
+        /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
+        export interface CustomPropertyUpdateData {
+            /**
+             * The value of the custom property.
+                        If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean | Date | number | string;
+        }
+        /** An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({ ... })`. */
+        export interface CustomPropertyCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomPropertyData[];
+        }
+        /** An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`. */
+        export interface DocumentPropertiesUpdateData {
+            /**
+             * The author of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            author?: string;
+            /**
+             * The category of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            category?: string;
+            /**
+             * The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comments?: string;
+            /**
+             * The company of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            company?: string;
+            /**
+             * The keywords of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keywords?: string;
+            /**
+             * The manager of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            manager?: string;
+            /**
+             * The revision number of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionNumber?: number;
+            /**
+             * The subject of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subject?: string;
+            /**
+             * The title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            title?: string;
+        }
         /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
         export interface ShapeScopedCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -4546,6 +4975,129 @@ export declare namespace PowerPoint {
              */
             width?: number;
         }
+        /** An interface describing the data returned by calling `customProperty.toJSON()`. */
+        export interface CustomPropertyData {
+            /**
+             * The string that uniquely identifies the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: string;
+            /**
+             * The type of the value used for the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.DocumentPropertyType | "Boolean" | "Date" | "Number" | "String";
+            /**
+             * The value of the custom property.
+                        If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean | Date | number | string;
+        }
+        /** An interface describing the data returned by calling `customPropertyCollection.toJSON()`. */
+        export interface CustomPropertyCollectionData {
+            items?: PowerPoint.Interfaces.CustomPropertyData[];
+        }
+        /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
+        export interface DocumentPropertiesData {
+            /**
+             * The author of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            author?: string;
+            /**
+             * The category of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            category?: string;
+            /**
+             * The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comments?: string;
+            /**
+             * The company of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            company?: string;
+            /**
+             * The creation date of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: Date;
+            /**
+             * The keywords of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keywords?: string;
+            /**
+             * The last author of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastAuthor?: string;
+            /**
+             * The manager of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            manager?: string;
+            /**
+             * The revision number of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionNumber?: number;
+            /**
+             * The subject of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subject?: string;
+            /**
+             * The title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            title?: string;
+        }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -4571,6 +5123,14 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+            * Gets the properties of the presentation.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            properties?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions;
             /**
              * Gets the ID of the presentation.
              *
@@ -5365,6 +5925,183 @@ export declare namespace PowerPoint {
             width?: boolean;
         }
         /**
+         * Represents a custom property.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomPropertyLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The string that uniquely identifies the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             * The type of the value used for the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * The value of the custom property.
+                        If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         * A collection of custom properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomPropertyCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: The string that uniquely identifies the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             * For EACH ITEM in the collection: The type of the value used for the custom property.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * For EACH ITEM in the collection: The value of the custom property.
+                        If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         * Represents presentation properties.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface DocumentPropertiesLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The author of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            author?: boolean;
+            /**
+             * The category of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            category?: boolean;
+            /**
+             * The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            comments?: boolean;
+            /**
+             * The company of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            company?: boolean;
+            /**
+             * The creation date of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: boolean;
+            /**
+             * The keywords of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keywords?: boolean;
+            /**
+             * The last author of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lastAuthor?: boolean;
+            /**
+             * The manager of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            manager?: boolean;
+            /**
+             * The revision number of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            revisionNumber?: boolean;
+            /**
+             * The subject of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subject?: boolean;
+            /**
+             * The title of the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            title?: boolean;
+        }
+        /**
          * Represents a collection of shapes.
          *
          * @remarks
@@ -5569,11 +6306,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

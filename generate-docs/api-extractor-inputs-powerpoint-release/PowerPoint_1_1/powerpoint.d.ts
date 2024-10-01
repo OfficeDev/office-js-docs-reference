@@ -379,11 +379,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

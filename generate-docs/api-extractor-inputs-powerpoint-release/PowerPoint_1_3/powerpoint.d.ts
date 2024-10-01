@@ -64,7 +64,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.2]
          *
-         * @param base64File - The base64-encoded string representing the source presentation file.
+         * @param base64File - The Base64-encoded string representing the source presentation file.
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
@@ -1522,11 +1522,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

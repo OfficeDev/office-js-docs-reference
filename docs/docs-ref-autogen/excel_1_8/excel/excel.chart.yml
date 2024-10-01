@@ -400,7 +400,7 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingMode)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
     remarks: |-
       \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -438,7 +438,7 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingModeString)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

@@ -243,8 +243,16 @@ properties:
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
-      see [Implement a pinnable task pane in
+      **Important**:
+
+
+      - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must
+      be turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to
+      preview messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
+
+
+      - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see [Implement a
+      pinnable task pane in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''

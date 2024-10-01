@@ -55,7 +55,7 @@ fields:
   - name: Base64
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
     package: outlook!
-    summary: The content of the attachment is returned as a base64-encoded string.
+    summary: The content of the attachment is returned as a Base64-encoded string.
     value: '"base64"'
   - name: Url
     uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
