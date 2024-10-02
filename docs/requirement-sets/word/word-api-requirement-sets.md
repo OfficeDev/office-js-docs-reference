@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 08/29/2024
+ms.date: 10/03/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,7 +15,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Word add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, iPad, and Mac. The following table lists the Word requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets, `WordApiOnline`, `WordApiDesktop`, or `WordApiHiddenDocument`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
+> To use APIs in any of the numbered requirement sets, `WordApiOnline`, `WordApiDesktop`, or `WordApiHiddenDocument`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
