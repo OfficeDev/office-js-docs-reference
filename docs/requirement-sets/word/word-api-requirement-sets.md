@@ -23,7 +23,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Latest (see [requirement set page](word-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
-| [WordApiDesktop 1.1](word-api-desktop-1.1-requirement-set.md) | Not applicable | Version 2408 (Build 17928.20114) | Not available | Verion 16.88 (24081116) | Version 16.88 |
+| [WordApiDesktop 1.1](word-api-desktop-1.1-requirement-set.md) | Not applicable | Version 2408 (Build 17928.20114) | Not available | Version 16.88 (24081116) | Version 16.88 |
 | [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2302 (Build 16130.20332) | Not available | Version 16.70 (23021201) | Not applicable |
 | [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2208 (Build 15601.20148) | Not available | Version 16.64 (22081401) | Not applicable |
 | [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | Version 15.32 (17030901) | Not applicable |
