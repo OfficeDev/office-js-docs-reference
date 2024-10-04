@@ -22,61 +22,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  function performOperation() {
-    Office.context.mailbox.getCallbackTokenAsync({
-        isRest: true
-      },
-      function (asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-          Office.context.mailbox.item.getSharedPropertiesAsync({
-              // Pass auth token along.
-              asyncContext: asyncResult.value
-            },
-            function (asyncResult1) {
-              let sharedProperties = asyncResult1.value;
-              let delegatePermissions = sharedProperties.delegatePermissions;
-
-              // Determine if user can do the expected operation.
-              // E.g., do they have Write permission?
-              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                // Construct REST URL for your operation.
-                // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                // Update <operation> placeholder with actual operation.
-                let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-    
-                $.ajax({
-                    url: rest_url,
-                    dataType: 'json',
-                    headers:
-                    {
-                      "Authorization": "Bearer " + asyncResult1.asyncContext
-                    }
-                  }
-                ).done(
-                  function (response) {
-                    console.log("success");
-                  }
-                ).fail(
-                  function (error) {
-                    console.log("error message");
-                  }
-                );
-              }
-            }
-          );
-        }
-      }
-    );
-  }
-
-  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -93,59 +38,6 @@ properties:
       content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
       return:
         type: '<xref uid="outlook!Office.MailboxEnums.DelegatePermissions:enum" />'
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function performOperation() {
-            Office.context.mailbox.getCallbackTokenAsync({
-                isRest: true
-              },
-              function (asyncResult) {
-                if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-                  Office.context.mailbox.item.getSharedPropertiesAsync({
-                      // Pass auth token along.
-                      asyncContext: asyncResult.value
-                    },
-                    function (asyncResult1) {
-                      let sharedProperties = asyncResult1.value;
-                      let delegatePermissions = sharedProperties.delegatePermissions;
-
-                      // Determine if user can do the expected operation.
-                      // E.g., do they have Write permission?
-                      if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                        // Construct REST URL for your operation.
-                        // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                        // Update <operation> placeholder with actual operation.
-                        let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-            
-                        $.ajax({
-                            url: rest_url,
-                            dataType: 'json',
-                            headers:
-                            {
-                              "Authorization": "Bearer " + asyncResult1.asyncContext
-                            }
-                          }
-                        ).done(
-                          function (response) {
-                            console.log("success");
-                          }
-                        ).fail(
-                          function (error) {
-                            console.log("error message");
-                          }
-                        );
-                      }
-                    }
-                  );
-                }
-              }
-            );
-          }
-          ```
   - name: owner
     uid: 'outlook!Office.SharedProperties#owner:member'
     package: outlook!

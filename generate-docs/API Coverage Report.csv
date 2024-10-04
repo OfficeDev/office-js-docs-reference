@@ -9308,8 +9308,8 @@ Office.SessionData,"removeAsync(name, options, callback)",Method,Poor,true
 Office.SessionData,"removeAsync(name, callback)",Method,Poor,false
 Office.SessionData,"setAsync(name, value, options, callback)",Method,Poor,true
 Office.SessionData,"setAsync(name, value, callback)",Method,Poor,false
-Office.SharedProperties,N/A,Class,Good,true
-Office.SharedProperties,"delegatePermissions",Property,Fine,true
+Office.SharedProperties,N/A,Class,Good,false
+Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
