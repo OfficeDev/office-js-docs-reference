@@ -1191,7 +1191,7 @@ Office.Context#touchEnabled:member:
         // Add-in is running on an iPad.
         // Do something.
     }
-Office.context#ui:member:
+Office.Context#ui:member:
   - |-
     // Open a dialog and register an event handler.
     Office.context.ui.displayDialogAsync(

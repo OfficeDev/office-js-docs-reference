@@ -12135,7 +12135,7 @@ export declare namespace Office {
         cancelLabel?: string;
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler and set its `allowEvent` property to `false`,
-         * this property specifies the ID of the task pane that opens when the **Don't Send** button is selected from the Smart Alerts dialog.
+         * this property specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the Smart Alerts dialog.
          *
          * For an example, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-dont-send-button-optional | Smart Alerts walkthrough}.
@@ -12150,14 +12150,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * The `commandId` value must match the task pane ID specified in the manifest of your add-in. The markup depends on the type of manifest your
+         * The `commandId` value must match the task pane or function ID specified in the manifest of your add-in. The markup depends on the type of manifest your
          * add-in uses.
          *
-         * - **Add-in only manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane.
+         * - **Add-in only manifest**: The `id` attribute of the {@link https://learn.microsoft.com/javascript/api/manifest/control | Control} element representing the task pane or function.
          *
-         * - **Unified manifest for Microsoft 365**: The "id" property of the task pane command in the "extensions.ribbons.tabs.groups.controls" array.
+         * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
-         * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option.
+         * If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option.
          * Otherwise, the JSON data assigned to `contextData` is ignored.
          */
         commandId?: string;

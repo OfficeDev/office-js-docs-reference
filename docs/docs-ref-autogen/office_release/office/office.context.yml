@@ -699,6 +699,25 @@ properties:
       content: 'ui: UI;'
       return:
         type: '<xref uid="office!Office.UI:interface" />'
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Open a dialog and register an event handler.
+          Office.context.ui.displayDialogAsync(
+              "https://www.contoso.com/myDialog.html",
+              { height: 30, width: 20 },
+              (asyncResult) => {
+                  const dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+          ```
   - name: urls
     uid: 'office!Office.Context#urls:member'
     package: office!

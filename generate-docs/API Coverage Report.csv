@@ -6741,7 +6741,7 @@ Office.Context,"requirements",Property,Fine,true
 Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
 Office.Context,"touchEnabled",Property,Good,true
-Office.Context,"ui",Property,Fine,false
+Office.Context,"ui",Property,Fine,true
 Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
@@ -8495,7 +8495,7 @@ Office.AppointmentCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -8559,7 +8559,7 @@ Office.AppointmentRead,"getRegExMatches()",Method,Good,true
 Office.AppointmentRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.AppointmentRead,"getSelectedEntities()",Method,Deprecated,false
 Office.AppointmentRead,"getSelectedRegExMatches()",Method,Good,true
-Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -8815,7 +8815,7 @@ Office.MailboxEnums.Days,"Sun",EnumField,Poor,false
 Office.MailboxEnums.Days,"Weekday",EnumField,Fine,false
 Office.MailboxEnums.Days,"WeekendDay",EnumField,Poor,false
 Office.MailboxEnums.Days,"Day",EnumField,Poor,false
-Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,true
+Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,false
 Office.MailboxEnums.DelegatePermissions,"Read",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"Write",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"DeleteOwn",EnumField,Fine,false
@@ -9103,7 +9103,7 @@ Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -9163,7 +9163,7 @@ Office.MessageRead,"getRegExMatches()",Method,Good,true
 Office.MessageRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.MessageRead,"getSelectedEntities()",Method,Deprecated,false
 Office.MessageRead,"getSelectedRegExMatches()",Method,Good,true
-Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
