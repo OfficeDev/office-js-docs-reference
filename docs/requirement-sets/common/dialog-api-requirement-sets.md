@@ -42,7 +42,7 @@ In Outlook, dialog features and their APIs were introduced in the following Mail
 | Deliver a message from the host page to a dialog | [Office.dialog.messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1)) | [1.9](../outlook/requirement-set-1.9/outlook-requirement-set-1.9.md)\* |
 
 > [!NOTE]
-> Although classic Outlook on Mac doesn't support Mailbox requirement set 1.9, it does support the DialogApi 1.2 requirement set.
+> \* Although classic Outlook on Mac doesn't support Mailbox requirement set 1.9, it does support the DialogApi 1.2 requirement set.
 
 ## Office versions and build numbers
 
