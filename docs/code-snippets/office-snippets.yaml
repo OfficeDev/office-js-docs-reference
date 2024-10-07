@@ -501,6 +501,14 @@ Office.Auth:interface:
             console.log("Error obtaining token", result.error);
         }
     });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -988,6 +996,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -1025,6 +1042,18 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
@@ -1087,6 +1116,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -1106,14 +1182,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.

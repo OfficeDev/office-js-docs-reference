@@ -2042,6 +2042,14 @@ Office.Auth:interface:
             console.log("Error obtaining token", result.error);
         }
     });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -2529,6 +2537,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -2566,6 +2583,18 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
@@ -2628,6 +2657,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -2647,14 +2723,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -5993,6 +6084,31 @@ OfficeExtension.LoadOption#top:member:
             })
         });
 
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = OfficeRuntime.context.auth;
+    const accessToken = authContext.getAccessTokenAsync();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -8070,6 +8186,34 @@ Office.LocationIdentifier:interface:
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
+Office.Mailbox:interface:
+  - |-
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            // Get a reference to the mailbox and use it to add an
+            // event handler.
+            const mailBox = Office.context.mailbox;
+            mailbox.addHandlerAsync(
+                Office.EventType.ItemChanged,
+                loadNewItem,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        // Handle error.
+                    }
+                });
+        });
+    };
+
+    function loadNewItem(eventArgs) {
+        const item = Office.context.mailbox.item;
+
+        // Check that item is not null.
+        if (item !== null) {
+            // Work with item, e.g., define and call function that
+            // loads the properties of the newly selected item.
+            loadProps(item);
+        }
+    }
 Office.Mailbox#addHandlerAsync:member(1):
   - |-
     Office.initialize = function (reason) {
@@ -8167,6 +8311,22 @@ Office.MailboxEnums.AttachmentStatus:enum:
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.DelegatePermissions:enum:
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error("The current folder or mailbox isn't shared.");
+            return;
+        }
+
+        const delegatePermissions = result.value.delegatePermissions;
+
+        // Check if the user has write permissions to the shared resource.
+        if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+            console.log("User has write permissions to the shared resource.");
+            // Perform the necessary operations.
+        }
+    });
 Office.MailboxEnums.InfobarActionType:enum:
   - |-
     /*
@@ -8453,6 +8613,24 @@ Office.MessageCompose#to:member:
     function callback(asyncResult) {
         const arrayOfToRecipients = asyncResult.value;
     }
+Office.MessageRead:interface:
+ - |-
+   // The following code builds an HTML string with details of all attachments on the current item.
+    const item = Office.context.mailbox.item;
+    let outputString = "";
+    if (item.attachments.length > 0) {
+        for (let i = 0 ; i < item.attachments.length ; i++) {
+            const attachment = item.attachments[i];
+            outputString += "<BR>" + i + ". Name: ";
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
+        }
+    }
+    console.log(outputString);
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {

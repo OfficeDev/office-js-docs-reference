@@ -178,7 +178,7 @@ methods:
     uid: 'powerpoint!PowerPoint.Slide#exportAsBase64:member(1)'
     package: powerpoint!
     fullName: exportAsBase64()
-    summary: 'Exports the slide to its own presentation file, returned as base64-encoded data.'
+    summary: 'Exports the slide to its own presentation file, returned as Base64-encoded data.'
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]

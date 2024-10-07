@@ -9,6 +9,22 @@ remarks: >-
   interface](https://learn.microsoft.com/javascript/api/office/office.auth)<!-- -->. If new authentication types are
   added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples
   throughout the documentation use `Office.auth`<!-- -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the auth context object and use it to get an
+
+  // access token.
+
+  const authContext = OfficeRuntime.context.auth;
+
+  const accessToken = authContext.getAccessTokenAsync();
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,6 +58,32 @@ methods:
       - In Outlook on the web, if you use the
       [displayDialogAsync](https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
       method to open a dialog, you must close the dialog before you can call `getAccessToken`<!-- -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      async function getUserData() {
+        try {
+            let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+            let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+            console.log(userToken.name); // user name
+            console.log(userToken.preferred_username); // email
+            console.log(userToken.oid); // user id     
+        }
+        catch (exception) {
+            if (exception.code === 13003) {
+                // SSO is not supported for domain user accounts, only
+                // Microsoft 365 Education or work account, or a Microsoft account.
+            } else {
+                // Handle error
+            }
+        }
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

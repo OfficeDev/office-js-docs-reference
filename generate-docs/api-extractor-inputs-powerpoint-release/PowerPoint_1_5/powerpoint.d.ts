@@ -99,7 +99,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.2]
          *
-         * @param base64File - The base64-encoded string representing the source presentation file.
+         * @param base64File - The Base64-encoded string representing the source presentation file.
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
@@ -1305,86 +1305,6 @@ export declare namespace PowerPoint {
         width?: number;
     }
     /**
-     * Specifies the dash style for a line.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeLineDashStyle {
-        /**
-         * The dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dash = "Dash",
-        /**
-         * The dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDot = "DashDot",
-        /**
-         * The dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDotDot = "DashDotDot",
-        /**
-         * The long dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDash = "LongDash",
-        /**
-         * The long dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDot = "LongDashDot",
-        /**
-         * The round dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        roundDot = "RoundDot",
-        /**
-         * The solid line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        solid = "Solid",
-        /**
-         * The square dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        squareDot = "SquareDot",
-        /**
-         * The long dash-dot-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDotDot = "LongDashDotDot",
-        /**
-         * The system dash line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDash = "SystemDash",
-        /**
-         * The system dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDot = "SystemDot",
-        /**
-         * The system dash-dot line pattern
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDashDot = "SystemDashDot",
-    }
-    /**
      * The type of underline applied to a font.
      *
      * @remarks
@@ -1543,6 +1463,86 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         thaiDistributed = "ThaiDistributed",
+    }
+    /**
+     * Specifies the dash style for a line.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeLineDashStyle {
+        /**
+         * The dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dash = "Dash",
+        /**
+         * The dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDot = "DashDot",
+        /**
+         * The dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * The long dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDash = "LongDash",
+        /**
+         * The long dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDot = "LongDashDot",
+        /**
+         * The round dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        roundDot = "RoundDot",
+        /**
+         * The solid line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        solid = "Solid",
+        /**
+         * The square dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        squareDot = "SquareDot",
+        /**
+         * The long dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDotDot = "LongDashDotDot",
+        /**
+         * The system dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDash = "SystemDash",
+        /**
+         * The system dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDot = "SystemDot",
+        /**
+         * The system dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDashDot = "SystemDashDot",
     }
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
@@ -4885,11 +4885,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

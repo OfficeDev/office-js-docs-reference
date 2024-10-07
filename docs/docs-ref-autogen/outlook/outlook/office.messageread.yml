@@ -7,10 +7,18 @@ summary: >-
   The message read mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
-  treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  **Important**:
+
+
+  - This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a
+  mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item)
   page.
+
+
+  - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be
+  turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to preview
+  messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
 
 
   Parent interfaces:
@@ -20,7 +28,29 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // The following code builds an HTML string with details of all attachments on the current item.
+   const item = Office.context.mailbox.item;
+   let outputString = "";
+   if (item.attachments.length > 0) {
+       for (let i = 0 ; i < item.attachments.length ; i++) {
+           const attachment = item.attachments[i];
+           outputString += "<BR>" + i + ". Name: ";
+           outputString += attachment.name;
+           outputString += "<BR>ID: " + attachment.id;
+           outputString += "<BR>contentType: " + attachment.contentType;
+           outputString += "<BR>size: " + attachment.size;
+           outputString += "<BR>attachmentType: " + attachment.attachmentType;
+           outputString += "<BR>isInline: " + attachment.isInline;
+       }
+   }
+   console.log(outputString);
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -2997,59 +3027,6 @@ methods:
 
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on a message from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function(result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-          Office.context.mailbox.item.getSharedPropertiesAsync(
-            {
-              // Pass auth token along.
-              asyncContext: result.value
-            },
-            function(result2) {
-              let sharedProperties = result2.value;
-              let delegatePermissions = sharedProperties.delegatePermissions;
-
-              // Determine if user has the appropriate permission to do the operation.
-              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-                const ewsId = Office.context.mailbox.item.itemId;
-                const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-                let rest_url =
-                  sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/messages/" + restId;
-
-                $.ajax({
-                  url: rest_url,
-                  dataType: "json",
-                  headers: { Authorization: "Bearer " + result2.asyncContext }
-                })
-                  .done(function(response) {
-                    console.log(response);
-                  })
-                  .fail(function(error) {
-                    console.error(error);
-                  });
-              }
-            }
-          );
-        }
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3110,14 +3087,15 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on an item from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-        console.log(result.value);
+      Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error("The current folder or mailbox isn't shared.");
+          return;
+        }
+        const sharedProperties = result.value;
+        console.log(`Owner: ${sharedProperties.owner}`);
+        console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+        console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
       });
 
       ```

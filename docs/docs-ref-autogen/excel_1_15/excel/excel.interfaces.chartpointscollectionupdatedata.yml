@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPointsCollectionUpdateData
 summary: >-
-  An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ...
+  An interface for updating data on the `ChartPointsCollection` object, for use in `chartPointsCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

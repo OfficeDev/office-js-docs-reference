@@ -3,7 +3,7 @@ name: Excel.Interfaces.RangeBorderUpdateData
 uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeBorderUpdateData
-summary: 'An interface for updating data on the RangeBorder object, for use in `rangeBorder.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `RangeBorder` object, for use in `rangeBorder.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

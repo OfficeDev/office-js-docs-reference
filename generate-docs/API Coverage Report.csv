@@ -515,13 +515,9 @@ Excel.CellBorderCollection,"vertical",Property,Good,false
 Excel.CellControl,N/A,TypeAlias,Good,false
 Excel.CellControlType,N/A,Enum,Good,false
 Excel.CellControlType,"checkbox",EnumField,Fine,false
-Excel.CellControlType,"Checkbox",EnumField,Poor,false
 Excel.CellControlType,"empty",EnumField,Fine,false
-Excel.CellControlType,"Empty",EnumField,Poor,false
 Excel.CellControlType,"mixed",EnumField,Fine,false
-Excel.CellControlType,"Mixed",EnumField,Fine,false
 Excel.CellControlType,"unknown",EnumField,Good,false
-Excel.CellControlType,"Unknown",EnumField,Good,false
 Excel.CellProperties,N/A,Class,Fine,false
 Excel.CellProperties,"address",Property,Fine,false
 Excel.CellProperties,"addressLocal",Property,Fine,false
@@ -602,6 +598,7 @@ Excel.CellPropertiesLoadOptions,"format",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"hidden",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"hyperlink",Property,Fine,false
 Excel.CellPropertiesLoadOptions,"style",Property,Fine,false
+Excel.CellPropertiesLoadOptions,"textRuns",Property,Fine,false
 Excel.CellPropertiesProtection,N/A,Class,Good,false
 Excel.CellPropertiesProtection,"formulaHidden",Property,Good,false
 Excel.CellPropertiesProtection,"locked",Property,Good,false
@@ -1701,6 +1698,7 @@ Excel.ClearApplyTo,"contents",EnumField,Fine,false
 Excel.ClearApplyTo,"formats",EnumField,Fine,false
 Excel.ClearApplyTo,"hyperlinks",EnumField,Fine,false
 Excel.ClearApplyTo,"removeHyperlinks",EnumField,Fine,false
+Excel.ClearApplyTo,"resetContents",EnumField,Good,false
 Excel.CloseBehavior,N/A,Enum,Good,true
 Excel.CloseBehavior,"save",EnumField,Fine,false
 Excel.CloseBehavior,"skipSave",EnumField,Fine,false
@@ -2407,6 +2405,7 @@ Excel.DatetimeFormatInfo,"dateSeparator",Property,Good,false
 Excel.DatetimeFormatInfo,"longDatePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"longTimePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"shortDatePattern",Property,Good,false
+Excel.DatetimeFormatInfo,"shortDateTimePattern",Property,Good,false
 Excel.DatetimeFormatInfo,"timeSeparator",Property,Good,false
 Excel.DatetimeFormatInfo,"load(options)",Method,Poor,false
 Excel.DatetimeFormatInfo,"load(propertyNames)",Method,Poor,false
@@ -3238,7 +3237,6 @@ Excel.EventType,"chartDeleted",EnumField,Fine,false
 Excel.EventType,"commentAdded",EnumField,Fine,false
 Excel.EventType,"commentChanged",EnumField,Fine,false
 Excel.EventType,"commentDeleted",EnumField,Fine,false
-Excel.EventType,"lineageActivityUpdateAvailable",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeLinkedDataTypeAdded",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshModeChanged",EnumField,Fine,false
 Excel.EventType,"linkedDataTypeRefreshRequestCompleted",EnumField,Fine,false
@@ -4964,6 +4962,7 @@ Excel.Range,"autoFill(destinationRange, autoFillTypeString)",Method,Fine,false
 Excel.Range,"calculate()",Method,Poor,false
 Excel.Range,"clear(applyTo)",Method,Poor,true
 Excel.Range,"clear(applyToString)",Method,Poor,false
+Excel.Range,"clearOrResetContents()",Method,Poor,false
 Excel.Range,"convertDataTypeToText()",Method,Poor,false
 Excel.Range,"convertToLinkedDataType(serviceID, languageCulture)",Method,Poor,false
 Excel.Range,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Fine,true
@@ -5031,7 +5030,6 @@ Excel.Range,"merge(across)",Method,Poor,true
 Excel.Range,"moveTo(destinationRange)",Method,Poor,true
 Excel.Range,"removeDuplicates(columns, includesHeader)",Method,Fine,true
 Excel.Range,"replaceAll(text, replacement, criteria)",Method,Poor,false
-Excel.Range,"resetContent()",Method,Poor,false
 Excel.Range,"select()",Method,Poor,true
 Excel.Range,"set(properties, options)",Method,Poor,false
 Excel.Range,"set(properties)",Method,Poor,true
@@ -5065,6 +5063,7 @@ Excel.RangeAreas,"worksheet",Property,Good,false
 Excel.RangeAreas,"calculate()",Method,Poor,false
 Excel.RangeAreas,"clear(applyTo)",Method,Poor,false
 Excel.RangeAreas,"clear(applyToString)",Method,Poor,false
+Excel.RangeAreas,"clearOrResetContents()",Method,Poor,false
 Excel.RangeAreas,"convertDataTypeToText()",Method,Poor,false
 Excel.RangeAreas,"convertToLinkedDataType(serviceID, languageCulture)",Method,Poor,false
 Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Fine,false
@@ -5211,6 +5210,9 @@ Excel.RangeSort,"context",Property,Good,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Fine,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, methodString)",Method,Fine,false
 Excel.RangeSort,"toJSON()",Method,Poor,false
+Excel.RangeTextRun,N/A,Class,Fine,false
+Excel.RangeTextRun,"font",Property,Missing,false
+Excel.RangeTextRun,"text",Property,Missing,false
 Excel.RangeUnderlineStyle,N/A,Enum,Fine,true
 Excel.RangeUnderlineStyle,"double",EnumField,Fine,false
 Excel.RangeUnderlineStyle,"doubleAccountant",EnumField,Fine,false
@@ -5389,6 +5391,7 @@ Excel.SettableCellProperties,N/A,Class,Fine,false
 Excel.SettableCellProperties,"format",Property,Fine,false
 Excel.SettableCellProperties,"hyperlink",Property,Fine,false
 Excel.SettableCellProperties,"style",Property,Fine,true
+Excel.SettableCellProperties,"textRuns",Property,Fine,false
 Excel.SettableColumnProperties,N/A,Class,Fine,false
 Excel.SettableColumnProperties,"columnHidden",Property,Fine,false
 Excel.SettableColumnProperties,"format",Property,Fine,false
@@ -6652,7 +6655,7 @@ Office.Auth,N/A,Class,Good,true
 Office.Auth,"getAccessToken(options)",Method,Fine,true
 Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
-Office.Auth,"getAuthContext()",Method,Poor,false
+Office.Auth,"getAuthContext()",Method,Poor,true
 Office.AuthContext,N/A,Class,Fine,false
 Office.AuthContext,"authorityBaseUrl",Property,Fine,false
 Office.AuthContext,"authorityType",Property,Good,false
@@ -6723,22 +6726,22 @@ Office.CoercionType,"Text",EnumField,Good,false
 Office.CoercionType,"XmlSvg",EnumField,Good,false
 Office.Context,N/A,Class,Good,false
 Office.Context,"auth",Property,Fine,false
-Office.Context,"commerceAllowed",Property,Good,false
+Office.Context,"commerceAllowed",Property,Good,true
 Office.Context,"contentLanguage",Property,Good,true
 Office.Context,"diagnostics",Property,Good,true
 Office.Context,"displayLanguage",Property,Good,true
 Office.Context,"document",Property,Fine,true
-Office.Context,"host",Property,Good,false
-Office.Context,"license",Property,Fine,false
+Office.Context,"host",Property,Good,true
+Office.Context,"license",Property,Fine,true
 Office.Context,"mailbox",Property,Good,true
 Office.Context,"officeTheme",Property,Fine,true
 Office.Context,"partitionKey",Property,Good,true
-Office.Context,"platform",Property,Good,false
-Office.Context,"requirements",Property,Fine,false
+Office.Context,"platform",Property,Good,true
+Office.Context,"requirements",Property,Fine,true
 Office.Context,"roamingSettings",Property,Good,true
 Office.Context,"sensitivityLabelsCatalog",Property,Good,true
-Office.Context,"touchEnabled",Property,Good,false
-Office.Context,"ui",Property,Fine,false
+Office.Context,"touchEnabled",Property,Good,true
+Office.Context,"ui",Property,Fine,true
 Office.Context,"urls",Property,Good,true
 Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
@@ -7722,8 +7725,8 @@ OfficeExtension.UpdateOptions,N/A,Class,Fine,false
 OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Fine,false
 OfficeRuntime.ApiInformation,N/A,Class,Fine,false
 OfficeRuntime.ApiInformation,"isSetSupported(name, minVersion)",Method,Poor,false
-OfficeRuntime.Auth,N/A,Class,Good,false
-OfficeRuntime.Auth,"getAccessToken(options)",Method,Fine,false
+OfficeRuntime.Auth,N/A,Class,Good,true
+OfficeRuntime.Auth,"getAccessToken(options)",Method,Fine,true
 OfficeRuntime.AuthOptions,N/A,Class,Good,false
 OfficeRuntime.AuthOptions,"allowConsentPrompt",Property,Good,false
 OfficeRuntime.AuthOptions,"allowSignInPrompt",Property,Good,false
@@ -8492,7 +8495,7 @@ Office.AppointmentCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -8556,7 +8559,7 @@ Office.AppointmentRead,"getRegExMatches()",Method,Good,true
 Office.AppointmentRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.AppointmentRead,"getSelectedEntities()",Method,Deprecated,false
 Office.AppointmentRead,"getSelectedRegExMatches()",Method,Good,true
-Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -8718,7 +8721,7 @@ Office.LocationDetails,"locationIdentifier",Property,Poor,false
 Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,"id",Property,Fine,false
 Office.LocationIdentifier,"type",Property,Poor,false
-Office.Mailbox,N/A,Class,Good,false
+Office.Mailbox,N/A,Class,Good,true
 Office.Mailbox,"diagnostics",Property,Good,true
 Office.Mailbox,"ewsUrl",Property,Good,true
 Office.Mailbox,"item",Property,Good,false
@@ -8812,7 +8815,7 @@ Office.MailboxEnums.Days,"Sun",EnumField,Poor,false
 Office.MailboxEnums.Days,"Weekday",EnumField,Fine,false
 Office.MailboxEnums.Days,"WeekendDay",EnumField,Poor,false
 Office.MailboxEnums.Days,"Day",EnumField,Poor,false
-Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,true
+Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,false
 Office.MailboxEnums.DelegatePermissions,"Read",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"Write",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"DeleteOwn",EnumField,Fine,false
@@ -9100,7 +9103,7 @@ Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -9113,7 +9116,7 @@ Office.MessageCompose,"saveAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"saveAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Fine,false
-Office.MessageRead,N/A,Class,Good,false
+Office.MessageRead,N/A,Class,Good,true
 Office.MessageRead,"attachments",Property,Good,true
 Office.MessageRead,"body",Property,Good,true
 Office.MessageRead,"categories",Property,Good,true
@@ -9160,7 +9163,7 @@ Office.MessageRead,"getRegExMatches()",Method,Good,true
 Office.MessageRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.MessageRead,"getSelectedEntities()",Method,Deprecated,false
 Office.MessageRead,"getSelectedRegExMatches()",Method,Good,true
-Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -9364,6 +9367,28 @@ PowerPoint.ConnectorType,N/A,Enum,Good,true
 PowerPoint.ConnectorType,"curve",EnumField,Fine,false
 PowerPoint.ConnectorType,"elbow",EnumField,Fine,false
 PowerPoint.ConnectorType,"straight",EnumField,Fine,false
+PowerPoint.CustomProperty,N/A,Class,Good,false
+PowerPoint.CustomProperty,"context",Property,Good,false
+PowerPoint.CustomProperty,"key",Property,Good,false
+PowerPoint.CustomProperty,"type",Property,Good,false
+PowerPoint.CustomProperty,"value",Property,Good,false
+PowerPoint.CustomProperty,"delete()",Method,Poor,false
+PowerPoint.CustomProperty,"load(options)",Method,Poor,false
+PowerPoint.CustomProperty,"load(propertyNames)",Method,Poor,false
+PowerPoint.CustomProperty,"load(propertyNamesAndPaths)",Method,Poor,false
+PowerPoint.CustomProperty,"toJSON()",Method,Poor,false
+PowerPoint.CustomPropertyCollection,N/A,Class,Good,false
+PowerPoint.CustomPropertyCollection,"context",Property,Good,false
+PowerPoint.CustomPropertyCollection,"items",Property,Fine,false
+PowerPoint.CustomPropertyCollection,"add(key, value)",Method,Fine,false
+PowerPoint.CustomPropertyCollection,"deleteAll()",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"getCount()",Method,Fine,false
+PowerPoint.CustomPropertyCollection,"getItem(key)",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"getItemOrNullObject(key)",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"load(options)",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"load(propertyNames)",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+PowerPoint.CustomPropertyCollection,"toJSON()",Method,Poor,false
 PowerPoint.CustomXmlPart,N/A,Class,Good,false
 PowerPoint.CustomXmlPart,"context",Property,Good,false
 PowerPoint.CustomXmlPart,"id",Property,Good,false
@@ -9399,6 +9424,29 @@ PowerPoint.CustomXmlPartScopedCollection,"load(options)",Method,Poor,false
 PowerPoint.CustomXmlPartScopedCollection,"load(propertyNames)",Method,Poor,false
 PowerPoint.CustomXmlPartScopedCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.CustomXmlPartScopedCollection,"toJSON()",Method,Poor,false
+PowerPoint.DocumentProperties,N/A,Class,Good,false
+PowerPoint.DocumentProperties,"author",Property,Good,false
+PowerPoint.DocumentProperties,"category",Property,Good,false
+PowerPoint.DocumentProperties,"comments",Property,Good,false
+PowerPoint.DocumentProperties,"company",Property,Good,false
+PowerPoint.DocumentProperties,"context",Property,Good,false
+PowerPoint.DocumentProperties,"creationDate",Property,Good,false
+PowerPoint.DocumentProperties,"customProperties",Property,Good,false
+PowerPoint.DocumentProperties,"keywords",Property,Good,false
+PowerPoint.DocumentProperties,"lastAuthor",Property,Good,false
+PowerPoint.DocumentProperties,"manager",Property,Good,false
+PowerPoint.DocumentProperties,"revisionNumber",Property,Good,false
+PowerPoint.DocumentProperties,"subject",Property,Good,false
+PowerPoint.DocumentProperties,"title",Property,Good,false
+PowerPoint.DocumentProperties,"load(options)",Method,Poor,false
+PowerPoint.DocumentProperties,"load(propertyNames)",Method,Poor,false
+PowerPoint.DocumentProperties,"load(propertyNamesAndPaths)",Method,Poor,false
+PowerPoint.DocumentProperties,"toJSON()",Method,Poor,false
+PowerPoint.DocumentPropertyType,N/A,Enum,Good,false
+PowerPoint.DocumentPropertyType,"boolean",EnumField,Fine,false
+PowerPoint.DocumentPropertyType,"date",EnumField,Fine,false
+PowerPoint.DocumentPropertyType,"number",EnumField,Fine,false
+PowerPoint.DocumentPropertyType,"string",EnumField,Fine,false
 PowerPoint.ErrorCodes,N/A,Enum,Missing,false
 PowerPoint.ErrorCodes,"generalException",EnumField,Missing,false
 PowerPoint.GeometricShapeType,N/A,Enum,Good,true
@@ -9579,7 +9627,7 @@ PowerPoint.GeometricShapeType,"wave",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeEllipseCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRectCallout",EnumField,Fine,false
 PowerPoint.GeometricShapeType,"wedgeRRectCallout",EnumField,Fine,false
-PowerPoint.Hyperlink,N/A,Class,Good,false
+PowerPoint.Hyperlink,N/A,Class,Good,true
 PowerPoint.Hyperlink,"address",Property,Good,false
 PowerPoint.Hyperlink,"context",Property,Good,false
 PowerPoint.Hyperlink,"screenTip",Property,Good,false
@@ -9587,7 +9635,7 @@ PowerPoint.Hyperlink,"load(options)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNames)",Method,Poor,false
 PowerPoint.Hyperlink,"load(propertyNamesAndPaths)",Method,Poor,false
 PowerPoint.Hyperlink,"toJSON()",Method,Poor,false
-PowerPoint.HyperlinkCollection,N/A,Class,Good,false
+PowerPoint.HyperlinkCollection,N/A,Class,Good,true
 PowerPoint.HyperlinkCollection,"context",Property,Good,false
 PowerPoint.HyperlinkCollection,"items",Property,Fine,false
 PowerPoint.HyperlinkCollection,"getCount()",Method,Fine,false
@@ -9623,6 +9671,7 @@ PowerPoint.Presentation,N/A,Class,Fine,true
 PowerPoint.Presentation,"context",Property,Good,false
 PowerPoint.Presentation,"customXmlParts",Property,Good,false
 PowerPoint.Presentation,"id",Property,Good,false
+PowerPoint.Presentation,"properties",Property,Good,false
 PowerPoint.Presentation,"slideMasters",Property,Good,false
 PowerPoint.Presentation,"slides",Property,Good,false
 PowerPoint.Presentation,"tags",Property,Good,false

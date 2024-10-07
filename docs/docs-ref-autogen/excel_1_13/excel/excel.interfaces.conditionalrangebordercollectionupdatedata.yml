@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interfac
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
 summary: >-
-  An interface for updating data on the ConditionalRangeBorderCollection object, for use in
+  An interface for updating data on the `ConditionalRangeBorderCollection` object, for use in
   `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

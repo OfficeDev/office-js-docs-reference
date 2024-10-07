@@ -3,7 +3,7 @@ name: Excel.Interfaces.TableColumnUpdateData
 uid: 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableColumnUpdateData
-summary: 'An interface for updating data on the TableColumn object, for use in `tableColumn.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

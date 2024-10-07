@@ -481,7 +481,7 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingMode)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
     remarks: |-
       \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -519,7 +519,7 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingModeString)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -769,7 +769,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain
+      passed to it.) Whereas the original `Excel.Chart` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.ChartData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''

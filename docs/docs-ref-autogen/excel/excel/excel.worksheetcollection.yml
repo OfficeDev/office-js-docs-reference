@@ -90,7 +90,7 @@ methods:
         relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
-          description: Required. The base64-encoded string representing the source workbook file.
+          description: Required. The Base64-encoded string representing the source workbook file.
           type: string
         - id: sheetNamesToInsert
           description: >-
@@ -130,7 +130,7 @@ methods:
         "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
-          description: Required. The base64-encoded string representing the source workbook file.
+          description: Required. The Base64-encoded string representing the source workbook file.
           type: string
         - id: sheetNamesToInsert
           description: >-

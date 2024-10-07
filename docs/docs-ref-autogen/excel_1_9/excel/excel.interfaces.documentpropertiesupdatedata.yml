@@ -3,7 +3,9 @@ name: Excel.Interfaces.DocumentPropertiesUpdateData
 uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DocumentPropertiesUpdateData
-summary: 'An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!-- -->.'
+summary: >-
+  An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -37,7 +39,9 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#comments:member'
     package: excel!
     fullName: comments
-    summary: The comments of the workbook.
+    summary: >-
+      The comment field in the metadata of the workbook. These have no connection to comments by users made in the
+      workbork.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

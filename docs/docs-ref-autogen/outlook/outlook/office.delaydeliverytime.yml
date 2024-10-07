@@ -140,10 +140,13 @@ methods:
 
 
       **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay
-      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. However,
-      because of this, the message doesn't appear in the **Outbox** folder, so you won't be able to edit the message
-      or cancel its delivery after selecting **Send**. You'll only be able to review the mesasge from the **Sent
-      Items** folder once the message is sent. To learn more, see [Manage the delivery date and time of a
+      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. In
+      classic Outlook on Windows, the message doesn't appear in the **Outbox** folder, so you won't be able to edit
+      the message or cancel its delivery after selecting **Send**. You'll only be able to review the message from
+      the **Sent Items** folder. In Outlook on the web, on Mac, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the message appears
+      in the **Drafts** folder until the scheduled delivery time. While it's in the **Drafts** folder, you'll be
+      able to edit the message before it's sent. To learn more, see [Manage the delivery date and time of a
       message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
 
 
@@ -195,10 +198,13 @@ methods:
 
 
       **Important**: When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay
-      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. However,
-      because of this, the message doesn't appear in the **Outbox** folder, so you won't be able to edit the message
-      or cancel its delivery after selecting **Send**. You'll only be able to review the mesasge from the **Sent
-      Items** folder once the message is sent. To learn more, see [Manage the delivery date and time of a
+      is processed on the server. This allows the message to be sent even if the Outlook client isn't running. In
+      classic Outlook on Windows, the message doesn't appear in the **Outbox** folder, so you won't be able to edit
+      the message or cancel its delivery after selecting **Send**. You'll only be able to review the message from
+      the **Sent Items** folder. In Outlook on the web, on Mac, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the message appears
+      in the **Drafts** folder until the scheduled delivery time. While it's in the **Drafts** folder, you'll be
+      able to edit the message before it's sent. To learn more, see [Manage the delivery date and time of a
       message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
 
 

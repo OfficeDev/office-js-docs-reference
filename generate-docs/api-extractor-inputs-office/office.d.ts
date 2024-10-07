@@ -4654,7 +4654,7 @@ export declare namespace Office {
         /**
          * Gets the license information for the user's Office installation.
          */
-        license: string;
+        license: object;
         /**
          * Provides access to the Microsoft Outlook add-in object model.
          *
@@ -7777,7 +7777,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if required.
+         * Files in the "compressed" format will return a byte array that can be transformed to a Base64-encoded string if required.
          */
         data: any;
         /**

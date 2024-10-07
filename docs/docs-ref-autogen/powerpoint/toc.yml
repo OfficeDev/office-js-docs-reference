@@ -17,6 +17,8 @@ items:
             items:
               - name: ConnectorType
                 uid: 'powerpoint!PowerPoint.ConnectorType:enum'
+              - name: DocumentPropertyType
+                uid: 'powerpoint!PowerPoint.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
               - name: GeometricShapeType
@@ -45,12 +47,18 @@ items:
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: BulletFormat
             uid: 'powerpoint!PowerPoint.BulletFormat:class'
+          - name: CustomProperty
+            uid: 'powerpoint!PowerPoint.CustomProperty:class'
+          - name: CustomPropertyCollection
+            uid: 'powerpoint!PowerPoint.CustomPropertyCollection:class'
           - name: CustomXmlPart
             uid: 'powerpoint!PowerPoint.CustomXmlPart:class'
           - name: CustomXmlPartCollection
             uid: 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
           - name: CustomXmlPartScopedCollection
             uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+          - name: DocumentProperties
+            uid: 'powerpoint!PowerPoint.DocumentProperties:class'
           - name: Hyperlink
             uid: 'powerpoint!PowerPoint.Hyperlink:class'
           - name: HyperlinkCollection

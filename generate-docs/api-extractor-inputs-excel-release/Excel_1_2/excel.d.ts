@@ -525,7 +525,7 @@ export declare namespace Excel {
         }): Excel.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ApplicationData;
     }
@@ -667,7 +667,7 @@ export declare namespace Excel {
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Workbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorkbookData;
     }
@@ -852,7 +852,7 @@ export declare namespace Excel {
         
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Worksheet` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
@@ -1004,7 +1004,7 @@ export declare namespace Excel {
         }): Excel.WorksheetProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.WorksheetProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorksheetProtectionData;
     }
@@ -1209,7 +1209,7 @@ export declare namespace Excel {
         
         
         /**
-         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1278,7 +1278,7 @@ export declare namespace Excel {
         
         
         /**
-         * Clear range values, format, fill, border, etc.
+         * Clear range values and formatting, such as fill and border.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1287,7 +1287,7 @@ export declare namespace Excel {
          */
         clear(applyTo?: Excel.ClearApplyTo): void;
         /**
-         * Clear range values, format, fill, border, etc.
+         * Clear range values and formatting, such as fill and border.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1573,16 +1573,16 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeData;
     }
@@ -1753,7 +1753,7 @@ export declare namespace Excel {
         }): Excel.NamedItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.NamedItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NamedItemData;
     }
@@ -1846,7 +1846,7 @@ export declare namespace Excel {
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Binding` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.BindingData;
     }
@@ -2166,7 +2166,7 @@ export declare namespace Excel {
         
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableData;
     }
@@ -2357,7 +2357,7 @@ export declare namespace Excel {
         }): Excel.TableColumn;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.TableColumn` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableColumnData;
     }
@@ -2518,7 +2518,7 @@ export declare namespace Excel {
         }): Excel.TableRow;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableRowData;
     }
@@ -2656,7 +2656,7 @@ export declare namespace Excel {
         }): Excel.RangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.RangeFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFormatData;
     }
@@ -2714,7 +2714,7 @@ export declare namespace Excel {
         }): Excel.FormatProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.FormatProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.FormatProtectionData;
     }
@@ -2776,7 +2776,7 @@ export declare namespace Excel {
         }): Excel.RangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.RangeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFillData;
     }
@@ -2849,7 +2849,7 @@ export declare namespace Excel {
         }): Excel.RangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.RangeBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeBorderData;
     }
@@ -3009,7 +3009,7 @@ export declare namespace Excel {
         }): Excel.RangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.RangeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFontData;
     }
@@ -3226,7 +3226,7 @@ export declare namespace Excel {
         
         
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -3238,7 +3238,7 @@ export declare namespace Excel {
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -3304,7 +3304,7 @@ export declare namespace Excel {
         
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Chart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartData;
     }
@@ -3366,7 +3366,7 @@ export declare namespace Excel {
         }): Excel.ChartAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAreaFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAreaFormatData;
     }
@@ -3537,7 +3537,7 @@ export declare namespace Excel {
         }): Excel.ChartSeries;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartSeries` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartSeriesData;
     }
@@ -3595,7 +3595,7 @@ export declare namespace Excel {
         }): Excel.ChartSeriesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartSeriesFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartSeriesFormatData;
     }
@@ -3711,7 +3711,7 @@ export declare namespace Excel {
         }): Excel.ChartPoint;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartPoint` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPointData;
     }
@@ -3763,7 +3763,7 @@ export declare namespace Excel {
         }): Excel.ChartPointFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartPointFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPointFormatData;
     }
@@ -3830,7 +3830,7 @@ export declare namespace Excel {
         }): Excel.ChartAxes;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAxes` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxesData;
     }
@@ -3964,7 +3964,7 @@ export declare namespace Excel {
         }): Excel.ChartAxis;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAxis` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisData;
     }
@@ -4023,7 +4023,7 @@ export declare namespace Excel {
         }): Excel.ChartAxisFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAxisFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisFormatData;
     }
@@ -4090,7 +4090,7 @@ export declare namespace Excel {
         }): Excel.ChartAxisTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAxisTitle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisTitleData;
     }
@@ -4143,7 +4143,7 @@ export declare namespace Excel {
         }): Excel.ChartAxisTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartAxisTitleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;
     }
@@ -4256,7 +4256,7 @@ export declare namespace Excel {
         }): Excel.ChartDataLabels;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartDataLabels` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataLabelsData;
     }
@@ -4316,7 +4316,7 @@ export declare namespace Excel {
         }): Excel.ChartDataLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartDataLabelFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
     }
@@ -4378,7 +4378,7 @@ export declare namespace Excel {
         }): Excel.ChartGridlines;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartGridlines` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartGridlinesData;
     }
@@ -4429,7 +4429,7 @@ export declare namespace Excel {
         }): Excel.ChartGridlinesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartGridlinesFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartGridlinesFormatData;
     }
@@ -4507,7 +4507,7 @@ export declare namespace Excel {
         }): Excel.ChartLegend;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartLegend` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLegendData;
     }
@@ -4568,7 +4568,7 @@ export declare namespace Excel {
         }): Excel.ChartLegendFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartLegendFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLegendFormatData;
     }
@@ -4652,7 +4652,7 @@ export declare namespace Excel {
         }): Excel.ChartTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartTitle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTitleData;
     }
@@ -4712,7 +4712,7 @@ export declare namespace Excel {
         }): Excel.ChartTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartTitleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTitleFormatData;
     }
@@ -4744,7 +4744,7 @@ export declare namespace Excel {
         setSolidColor(color: string): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
             [key: string]: string;
@@ -4809,7 +4809,7 @@ export declare namespace Excel {
         }): Excel.ChartLineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLineFormatData;
     }
@@ -4895,7 +4895,7 @@ export declare namespace Excel {
         }): Excel.ChartFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.ChartFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartFontData;
     }
@@ -4943,7 +4943,7 @@ export declare namespace Excel {
         apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", methodString?: "PinYin" | "StrokeCount"): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.RangeSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
             [key: string]: string;
@@ -5038,7 +5038,7 @@ export declare namespace Excel {
         }): Excel.TableSort;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.TableSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableSortData;
     }
@@ -5260,7 +5260,7 @@ export declare namespace Excel {
         }): Excel.Filter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Filter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.FilterData;
     }
@@ -6245,18 +6245,19 @@ export declare namespace Excel {
      */
     enum ClearApplyTo {
         /**
+         * Clears everything in the range.
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
         all = "All",
         /**
-         * Clears all formatting for the range.
+         * Clears all formatting for the range, leaving values intact.
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
         formats = "Formats",
         /**
-         * Clears the contents of the range.
+         * Clears the contents of the range, leaving formatting intact.
          * @remarks
          * [Api set: ExcelApi 1.1]
          */
@@ -9040,7 +9041,7 @@ export declare namespace Excel {
          */
         irr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-         * Checks whether a value is an error (#VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!) excluding #N/A, and returns TRUE or FALSE.
+         * Checks whether a value is an error other than #N/A, and returns TRUE or FALSE.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -9049,7 +9050,7 @@ export declare namespace Excel {
          */
         isErr(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
-         * Checks whether a value is an error (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!), and returns TRUE or FALSE.
+         * Checks whether a value is an error, and returns TRUE or FALSE.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -9724,7 +9725,7 @@ export declare namespace Excel {
          */
         pduration(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-         * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the data set.
+         * Returns the rank of a value in a data set as a percentage (0..1, exclusive) of the data set.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -9735,7 +9736,7 @@ export declare namespace Excel {
          */
         percentRank_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-         * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the data set.
+         * Returns the rank of a value in a data set as a percentage (0..1, inclusive) of the data set.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -10520,7 +10521,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param value - Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
-         * @param formatText - Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
+         * @param formatText - Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box.
          */
         text(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, formatText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -10587,7 +10588,7 @@ export declare namespace Excel {
          */
         trunc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-         * Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64.
+         * Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64; compound data = 128.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -10865,7 +10866,7 @@ export declare namespace Excel {
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.Functions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
             [key: string]: string;
@@ -10919,29 +10920,29 @@ export declare namespace Excel {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
+        /** An interface for updating data on the `AllowEditRange` object, for use in `allowEditRange.set({ ... })`. */
         export interface AllowEditRangeUpdateData {
             
             
         }
-        /** An interface for updating data on the AllowEditRangeCollection object, for use in `allowEditRangeCollection.set({ ... })`. */
+        /** An interface for updating data on the `AllowEditRangeCollection` object, for use in `allowEditRangeCollection.set({ ... })`. */
         export interface AllowEditRangeCollectionUpdateData {
             items?: Excel.Interfaces.AllowEditRangeData[];
         }
-        /** An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`. */
+        /** An interface for updating data on the `QueryCollection` object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
             items?: Excel.Interfaces.QueryData[];
         }
-        /** An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`. */
+        /** An interface for updating data on the `LinkedWorkbookCollection` object, for use in `linkedWorkbookCollection.set({ ... })`. */
         export interface LinkedWorkbookCollectionUpdateData {
             
             items?: Excel.Interfaces.LinkedWorkbookData[];
         }
-        /** An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`. */
+        /** An interface for updating data on the `Runtime` object, for use in `runtime.set({ ... })`. */
         export interface RuntimeUpdateData {
             
         }
-        /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
+        /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
             
             /**
@@ -10952,20 +10953,20 @@ export declare namespace Excel {
              */
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
         }
-        /** An interface for updating data on the IterativeCalculation object, for use in `iterativeCalculation.set({ ... })`. */
+        /** An interface for updating data on the `IterativeCalculation` object, for use in `iterativeCalculation.set({ ... })`. */
         export interface IterativeCalculationUpdateData {
             
             
             
         }
-        /** An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`. */
+        /** An interface for updating data on the `Workbook` object, for use in `workbook.set({ ... })`. */
         export interface WorkbookUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`. */
+        /** An interface for updating data on the `Worksheet` object, for use in `worksheet.set({ ... })`. */
         export interface WorksheetUpdateData {
             
             
@@ -10995,11 +10996,11 @@ export declare namespace Excel {
              */
             visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         }
-        /** An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ... })`. */
+        /** An interface for updating data on the `WorksheetCollection` object, for use in `worksheetCollection.set({ ... })`. */
         export interface WorksheetCollectionUpdateData {
             items?: Excel.Interfaces.WorksheetData[];
         }
-        /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
+        /** An interface for updating data on the `Range` object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
             
             /**
@@ -11039,7 +11040,7 @@ export declare namespace Excel {
             formulasR1C1?: any[][];
             
             /**
-             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -11065,13 +11066,13 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
+        /** An interface for updating data on the `RangeAreas` object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
             
             
             
         }
-        /** An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`. */
+        /** An interface for updating data on the `RangeView` object, for use in `rangeView.set({ ... })`. */
         export interface RangeViewUpdateData {
             
             
@@ -11081,23 +11082,23 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
+        /** An interface for updating data on the `RangeViewCollection` object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
             items?: Excel.Interfaces.RangeViewData[];
         }
-        /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
+        /** An interface for updating data on the `SettingCollection` object, for use in `settingCollection.set({ ... })`. */
         export interface SettingCollectionUpdateData {
             items?: Excel.Interfaces.SettingData[];
         }
-        /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
+        /** An interface for updating data on the `Setting` object, for use in `setting.set({ ... })`. */
         export interface SettingUpdateData {
             
         }
-        /** An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ... })`. */
+        /** An interface for updating data on the `NamedItemCollection` object, for use in `namedItemCollection.set({ ... })`. */
         export interface NamedItemCollectionUpdateData {
             items?: Excel.Interfaces.NamedItemData[];
         }
-        /** An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`. */
+        /** An interface for updating data on the `NamedItem` object, for use in `namedItem.set({ ... })`. */
         export interface NamedItemUpdateData {
             
             
@@ -11109,19 +11110,19 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the BindingCollection object, for use in `bindingCollection.set({ ... })`. */
+        /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
         export interface BindingCollectionUpdateData {
             items?: Excel.Interfaces.BindingData[];
         }
-        /** An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableCollection` object, for use in `tableCollection.set({ ... })`. */
         export interface TableCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface for updating data on the TableScopedCollection object, for use in `tableScopedCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableScopedCollection` object, for use in `tableScopedCollection.set({ ... })`. */
         export interface TableScopedCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
+        /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             
             
@@ -11159,11 +11160,11 @@ export declare namespace Excel {
              */
             style?: string;
         }
-        /** An interface for updating data on the TableColumnCollection object, for use in `tableColumnCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`. */
         export interface TableColumnCollectionUpdateData {
             items?: Excel.Interfaces.TableColumnData[];
         }
-        /** An interface for updating data on the TableColumn object, for use in `tableColumn.set({ ... })`. */
+        /** An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`. */
         export interface TableColumnUpdateData {
             /**
              * Specifies the name of the table column.
@@ -11183,11 +11184,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
             items?: Excel.Interfaces.TableRowData[];
         }
-        /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
+        /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
              * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
@@ -11200,14 +11201,14 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
+        /** An interface for updating data on the `DataValidation` object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`. */
+        /** An interface for updating data on the `RangeFormat` object, for use in `rangeFormat.set({ ... })`. */
         export interface RangeFormatUpdateData {
             /**
             * Collection of border objects that apply to the overall range.
@@ -11280,7 +11281,7 @@ export declare namespace Excel {
              */
             wrapText?: boolean;
         }
-        /** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
+        /** An interface for updating data on the `FormatProtection` object, for use in `formatProtection.set({ ... })`. */
         export interface FormatProtectionUpdateData {
             /**
              * Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range doesn't have a uniform formula hidden setting.
@@ -11297,7 +11298,7 @@ export declare namespace Excel {
              */
             locked?: boolean;
         }
-        /** An interface for updating data on the RangeFill object, for use in `rangeFill.set({ ... })`. */
+        /** An interface for updating data on the `RangeFill` object, for use in `rangeFill.set({ ... })`. */
         export interface RangeFillUpdateData {
             /**
              * HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
@@ -11311,7 +11312,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the RangeBorder object, for use in `rangeBorder.set({ ... })`. */
+        /** An interface for updating data on the `RangeBorder` object, for use in `rangeBorder.set({ ... })`. */
         export interface RangeBorderUpdateData {
             /**
              * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
@@ -11336,12 +11337,12 @@ export declare namespace Excel {
              */
             weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
         }
-        /** An interface for updating data on the RangeBorderCollection object, for use in `rangeBorderCollection.set({ ... })`. */
+        /** An interface for updating data on the `RangeBorderCollection` object, for use in `rangeBorderCollection.set({ ... })`. */
         export interface RangeBorderCollectionUpdateData {
             
             items?: Excel.Interfaces.RangeBorderData[];
         }
-        /** An interface for updating data on the RangeFont object, for use in `rangeFont.set({ ... })`. */
+        /** An interface for updating data on the `RangeFont` object, for use in `rangeFont.set({ ... })`. */
         export interface RangeFontUpdateData {
             /**
              * Represents the bold status of the font.
@@ -11390,11 +11391,11 @@ export declare namespace Excel {
              */
             underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
-        /** An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`. */
+        /** An interface for updating data on the `ChartCollection` object, for use in `chartCollection.set({ ... })`. */
         export interface ChartCollectionUpdateData {
             items?: Excel.Interfaces.ChartData[];
         }
-        /** An interface for updating data on the Chart object, for use in `chart.set({ ... })`. */
+        /** An interface for updating data on the `Chart` object, for use in `chart.set({ ... })`. */
         export interface ChartUpdateData {
             /**
             * Represents chart axes.
@@ -11478,14 +11479,14 @@ export declare namespace Excel {
              */
             width?: number;
         }
-        /** An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`. */
+        /** An interface for updating data on the `ChartPivotOptions` object, for use in `chartPivotOptions.set({ ... })`. */
         export interface ChartPivotOptionsUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartAreaFormat` object, for use in `chartAreaFormat.set({ ... })`. */
         export interface ChartAreaFormatUpdateData {
             
             /**
@@ -11498,11 +11499,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ... })`. */
+        /** An interface for updating data on the `ChartSeriesCollection` object, for use in `chartSeriesCollection.set({ ... })`. */
         export interface ChartSeriesCollectionUpdateData {
             items?: Excel.Interfaces.ChartSeriesData[];
         }
-        /** An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`. */
+        /** An interface for updating data on the `ChartSeries` object, for use in `chartSeries.set({ ... })`. */
         export interface ChartSeriesUpdateData {
             
             
@@ -11561,7 +11562,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartSeriesFormat` object, for use in `chartSeriesFormat.set({ ... })`. */
         export interface ChartSeriesFormatUpdateData {
             /**
             * Represents line formatting.
@@ -11571,11 +11572,11 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ... })`. */
+        /** An interface for updating data on the `ChartPointsCollection` object, for use in `chartPointsCollection.set({ ... })`. */
         export interface ChartPointsCollectionUpdateData {
             items?: Excel.Interfaces.ChartPointData[];
         }
-        /** An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`. */
+        /** An interface for updating data on the `ChartPoint` object, for use in `chartPoint.set({ ... })`. */
         export interface ChartPointUpdateData {
             
             /**
@@ -11591,11 +11592,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartPointFormat` object, for use in `chartPointFormat.set({ ... })`. */
         export interface ChartPointFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`. */
+        /** An interface for updating data on the `ChartAxes` object, for use in `chartAxes.set({ ... })`. */
         export interface ChartAxesUpdateData {
             /**
             * Represents the category axis in a chart.
@@ -11619,7 +11620,7 @@ export declare namespace Excel {
             */
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
-        /** An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`. */
+        /** An interface for updating data on the `ChartAxis` object, for use in `chartAxis.set({ ... })`. */
         export interface ChartAxisUpdateData {
             /**
             * Represents the formatting of a chart object, which includes line and font formatting.
@@ -11701,7 +11702,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartAxisFormat` object, for use in `chartAxisFormat.set({ ... })`. */
         export interface ChartAxisFormatUpdateData {
             /**
             * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
@@ -11718,7 +11719,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`. */
+        /** An interface for updating data on the `ChartAxisTitle` object, for use in `chartAxisTitle.set({ ... })`. */
         export interface ChartAxisTitleUpdateData {
             /**
             * Specifies the formatting of the chart axis title.
@@ -11743,7 +11744,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartAxisTitleFormat object, for use in `chartAxisTitleFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartAxisTitleFormat` object, for use in `chartAxisTitleFormat.set({ ... })`. */
         export interface ChartAxisTitleFormatUpdateData {
             
             /**
@@ -11754,7 +11755,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`. */
+        /** An interface for updating data on the `ChartDataLabels` object, for use in `chartDataLabels.set({ ... })`. */
         export interface ChartDataLabelsUpdateData {
             /**
             * Specifies the format of chart data labels, which includes fill and font formatting.
@@ -11826,7 +11827,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
+        /** An interface for updating data on the `ChartDataLabel` object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
             
             
@@ -11848,7 +11849,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartDataLabelFormat` object, for use in `chartDataLabelFormat.set({ ... })`. */
         export interface ChartDataLabelFormatUpdateData {
             
             /**
@@ -11873,7 +11874,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
+        /** An interface for updating data on the `ChartErrorBars` object, for use in `chartErrorBars.set({ ... })`. */
         export interface ChartErrorBarsUpdateData {
             
             
@@ -11881,11 +11882,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartErrorBarsFormat` object, for use in `chartErrorBarsFormat.set({ ... })`. */
         export interface ChartErrorBarsFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`. */
+        /** An interface for updating data on the `ChartGridlines` object, for use in `chartGridlines.set({ ... })`. */
         export interface ChartGridlinesUpdateData {
             /**
             * Represents the formatting of chart gridlines.
@@ -11902,7 +11903,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartGridlinesFormat` object, for use in `chartGridlinesFormat.set({ ... })`. */
         export interface ChartGridlinesFormatUpdateData {
             /**
             * Represents chart line formatting.
@@ -11912,7 +11913,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`. */
+        /** An interface for updating data on the `ChartLegend` object, for use in `chartLegend.set({ ... })`. */
         export interface ChartLegendUpdateData {
             /**
             * Represents the formatting of a chart legend, which includes fill and font formatting.
@@ -11948,15 +11949,15 @@ export declare namespace Excel {
             visible?: boolean;
             
         }
-        /** An interface for updating data on the ChartLegendEntry object, for use in `chartLegendEntry.set({ ... })`. */
+        /** An interface for updating data on the `ChartLegendEntry` object, for use in `chartLegendEntry.set({ ... })`. */
         export interface ChartLegendEntryUpdateData {
             
         }
-        /** An interface for updating data on the ChartLegendEntryCollection object, for use in `chartLegendEntryCollection.set({ ... })`. */
+        /** An interface for updating data on the `ChartLegendEntryCollection` object, for use in `chartLegendEntryCollection.set({ ... })`. */
         export interface ChartLegendEntryCollectionUpdateData {
             items?: Excel.Interfaces.ChartLegendEntryData[];
         }
-        /** An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartLegendFormat` object, for use in `chartLegendFormat.set({ ... })`. */
         export interface ChartLegendFormatUpdateData {
             
             /**
@@ -11967,13 +11968,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
+        /** An interface for updating data on the `ChartMapOptions` object, for use in `chartMapOptions.set({ ... })`. */
         export interface ChartMapOptionsUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`. */
+        /** An interface for updating data on the `ChartTitle` object, for use in `chartTitle.set({ ... })`. */
         export interface ChartTitleUpdateData {
             /**
             * Represents the formatting of a chart title, which includes fill and font formatting.
@@ -12011,11 +12012,11 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartFormatString object, for use in `chartFormatString.set({ ... })`. */
+        /** An interface for updating data on the `ChartFormatString` object, for use in `chartFormatString.set({ ... })`. */
         export interface ChartFormatStringUpdateData {
             
         }
-        /** An interface for updating data on the ChartTitleFormat object, for use in `chartTitleFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartTitleFormat` object, for use in `chartTitleFormat.set({ ... })`. */
         export interface ChartTitleFormatUpdateData {
             
             /**
@@ -12026,13 +12027,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
+        /** An interface for updating data on the `ChartBorder` object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
+        /** An interface for updating data on the `ChartBinOptions` object, for use in `chartBinOptions.set({ ... })`. */
         export interface ChartBinOptionsUpdateData {
             
             
@@ -12042,7 +12043,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartBoxwhiskerOptions object, for use in `chartBoxwhiskerOptions.set({ ... })`. */
+        /** An interface for updating data on the `ChartBoxwhiskerOptions` object, for use in `chartBoxwhiskerOptions.set({ ... })`. */
         export interface ChartBoxwhiskerOptionsUpdateData {
             
             
@@ -12050,7 +12051,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartLineFormat object, for use in `chartLineFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartLineFormat` object, for use in `chartLineFormat.set({ ... })`. */
         export interface ChartLineFormatUpdateData {
             /**
              * HTML color code representing the color of lines in the chart.
@@ -12062,7 +12063,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`. */
+        /** An interface for updating data on the `ChartFont` object, for use in `chartFont.set({ ... })`. */
         export interface ChartFontUpdateData {
             /**
              * Represents the bold status of font.
@@ -12107,7 +12108,7 @@ export declare namespace Excel {
              */
             underline?: Excel.ChartUnderlineStyle | "None" | "Single";
         }
-        /** An interface for updating data on the ChartTrendline object, for use in `chartTrendline.set({ ... })`. */
+        /** An interface for updating data on the `ChartTrendline` object, for use in `chartTrendline.set({ ... })`. */
         export interface ChartTrendlineUpdateData {
             
             
@@ -12121,15 +12122,15 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ... })`. */
+        /** An interface for updating data on the `ChartTrendlineCollection` object, for use in `chartTrendlineCollection.set({ ... })`. */
         export interface ChartTrendlineCollectionUpdateData {
             items?: Excel.Interfaces.ChartTrendlineData[];
         }
-        /** An interface for updating data on the ChartTrendlineFormat object, for use in `chartTrendlineFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartTrendlineFormat` object, for use in `chartTrendlineFormat.set({ ... })`. */
         export interface ChartTrendlineFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartTrendlineLabel object, for use in `chartTrendlineLabel.set({ ... })`. */
+        /** An interface for updating data on the `ChartTrendlineLabel` object, for use in `chartTrendlineLabel.set({ ... })`. */
         export interface ChartTrendlineLabelUpdateData {
             
             
@@ -12143,12 +12144,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in `chartTrendlineLabelFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartTrendlineLabelFormat` object, for use in `chartTrendlineLabelFormat.set({ ... })`. */
         export interface ChartTrendlineLabelFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
+        /** An interface for updating data on the `ChartPlotArea` object, for use in `chartPlotArea.set({ ... })`. */
         export interface ChartPlotAreaUpdateData {
             
             
@@ -12161,27 +12162,27 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartPlotAreaFormat object, for use in `chartPlotAreaFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartPlotAreaFormat` object, for use in `chartPlotAreaFormat.set({ ... })`. */
         export interface ChartPlotAreaFormatUpdateData {
             
         }
-        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`. */
         export interface CustomXmlPartScopedCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
         export interface CustomXmlPartCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the PivotTableScopedCollection object, for use in `pivotTableScopedCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotTableScopedCollection` object, for use in `pivotTableScopedCollection.set({ ... })`. */
         export interface PivotTableScopedCollectionUpdateData {
             items?: Excel.Interfaces.PivotTableData[];
         }
-        /** An interface for updating data on the PivotTableCollection object, for use in `pivotTableCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotTableCollection` object, for use in `pivotTableCollection.set({ ... })`. */
         export interface PivotTableCollectionUpdateData {
             items?: Excel.Interfaces.PivotTableData[];
         }
-        /** An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`. */
+        /** An interface for updating data on the `PivotTable` object, for use in `pivotTable.set({ ... })`. */
         export interface PivotTableUpdateData {
             
             
@@ -12189,7 +12190,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
+        /** An interface for updating data on the `PivotLayout` object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
             
             
@@ -12204,38 +12205,38 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PivotHierarchyCollection object, for use in `pivotHierarchyCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotHierarchyCollection` object, for use in `pivotHierarchyCollection.set({ ... })`. */
         export interface PivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.PivotHierarchyData[];
         }
-        /** An interface for updating data on the PivotHierarchy object, for use in `pivotHierarchy.set({ ... })`. */
+        /** An interface for updating data on the `PivotHierarchy` object, for use in `pivotHierarchy.set({ ... })`. */
         export interface PivotHierarchyUpdateData {
             
         }
-        /** An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in `rowColumnPivotHierarchyCollection.set({ ... })`. */
+        /** An interface for updating data on the `RowColumnPivotHierarchyCollection` object, for use in `rowColumnPivotHierarchyCollection.set({ ... })`. */
         export interface RowColumnPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.RowColumnPivotHierarchyData[];
         }
-        /** An interface for updating data on the RowColumnPivotHierarchy object, for use in `rowColumnPivotHierarchy.set({ ... })`. */
+        /** An interface for updating data on the `RowColumnPivotHierarchy` object, for use in `rowColumnPivotHierarchy.set({ ... })`. */
         export interface RowColumnPivotHierarchyUpdateData {
             
             
         }
-        /** An interface for updating data on the FilterPivotHierarchyCollection object, for use in `filterPivotHierarchyCollection.set({ ... })`. */
+        /** An interface for updating data on the `FilterPivotHierarchyCollection` object, for use in `filterPivotHierarchyCollection.set({ ... })`. */
         export interface FilterPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.FilterPivotHierarchyData[];
         }
-        /** An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ... })`. */
+        /** An interface for updating data on the `FilterPivotHierarchy` object, for use in `filterPivotHierarchy.set({ ... })`. */
         export interface FilterPivotHierarchyUpdateData {
             
             
             
         }
-        /** An interface for updating data on the DataPivotHierarchyCollection object, for use in `dataPivotHierarchyCollection.set({ ... })`. */
+        /** An interface for updating data on the `DataPivotHierarchyCollection` object, for use in `dataPivotHierarchyCollection.set({ ... })`. */
         export interface DataPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.DataPivotHierarchyData[];
         }
-        /** An interface for updating data on the DataPivotHierarchy object, for use in `dataPivotHierarchy.set({ ... })`. */
+        /** An interface for updating data on the `DataPivotHierarchy` object, for use in `dataPivotHierarchy.set({ ... })`. */
         export interface DataPivotHierarchyUpdateData {
             
             
@@ -12244,35 +12245,35 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotFieldCollection` object, for use in `pivotFieldCollection.set({ ... })`. */
         export interface PivotFieldCollectionUpdateData {
             items?: Excel.Interfaces.PivotFieldData[];
         }
-        /** An interface for updating data on the PivotField object, for use in `pivotField.set({ ... })`. */
+        /** An interface for updating data on the `PivotField` object, for use in `pivotField.set({ ... })`. */
         export interface PivotFieldUpdateData {
             
             
             
         }
-        /** An interface for updating data on the PivotItemCollection object, for use in `pivotItemCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotItemCollection` object, for use in `pivotItemCollection.set({ ... })`. */
         export interface PivotItemCollectionUpdateData {
             items?: Excel.Interfaces.PivotItemData[];
         }
-        /** An interface for updating data on the PivotItem object, for use in `pivotItem.set({ ... })`. */
+        /** An interface for updating data on the `PivotItem` object, for use in `pivotItem.set({ ... })`. */
         export interface PivotItemUpdateData {
             
             
             
         }
-        /** An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`. */
+        /** An interface for updating data on the `WorksheetCustomProperty` object, for use in `worksheetCustomProperty.set({ ... })`. */
         export interface WorksheetCustomPropertyUpdateData {
             
         }
-        /** An interface for updating data on the WorksheetCustomPropertyCollection object, for use in `worksheetCustomPropertyCollection.set({ ... })`. */
+        /** An interface for updating data on the `WorksheetCustomPropertyCollection` object, for use in `worksheetCustomPropertyCollection.set({ ... })`. */
         export interface WorksheetCustomPropertyCollectionUpdateData {
             items?: Excel.Interfaces.WorksheetCustomPropertyData[];
         }
-        /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
+        /** An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
             
             
@@ -12284,19 +12285,19 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`. */
+        /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
         }
-        /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({ ... })`. */
         export interface CustomPropertyCollectionUpdateData {
             items?: Excel.Interfaces.CustomPropertyData[];
         }
-        /** An interface for updating data on the ConditionalFormatCollection object, for use in `conditionalFormatCollection.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalFormatCollection` object, for use in `conditionalFormatCollection.set({ ... })`. */
         export interface ConditionalFormatCollectionUpdateData {
             items?: Excel.Interfaces.ConditionalFormatData[];
         }
-        /** An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalFormat` object, for use in `conditionalFormat.set({ ... })`. */
         export interface ConditionalFormatUpdateData {
             
             
@@ -12317,7 +12318,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the DataBarConditionalFormat object, for use in `dataBarConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `DataBarConditionalFormat` object, for use in `dataBarConditionalFormat.set({ ... })`. */
         export interface DataBarConditionalFormatUpdateData {
             
             
@@ -12328,69 +12329,69 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in `conditionalDataBarPositiveFormat.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalDataBarPositiveFormat` object, for use in `conditionalDataBarPositiveFormat.set({ ... })`. */
         export interface ConditionalDataBarPositiveFormatUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in `conditionalDataBarNegativeFormat.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalDataBarNegativeFormat` object, for use in `conditionalDataBarNegativeFormat.set({ ... })`. */
         export interface ConditionalDataBarNegativeFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `CustomConditionalFormat` object, for use in `customConditionalFormat.set({ ... })`. */
         export interface CustomConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalFormatRule object, for use in `conditionalFormatRule.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalFormatRule` object, for use in `conditionalFormatRule.set({ ... })`. */
         export interface ConditionalFormatRuleUpdateData {
             
             
             
         }
-        /** An interface for updating data on the IconSetConditionalFormat object, for use in `iconSetConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `IconSetConditionalFormat` object, for use in `iconSetConditionalFormat.set({ ... })`. */
         export interface IconSetConditionalFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `ColorScaleConditionalFormat` object, for use in `colorScaleConditionalFormat.set({ ... })`. */
         export interface ColorScaleConditionalFormatUpdateData {
             
         }
-        /** An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `TopBottomConditionalFormat` object, for use in `topBottomConditionalFormat.set({ ... })`. */
         export interface TopBottomConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in `presetCriteriaConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `PresetCriteriaConditionalFormat` object, for use in `presetCriteriaConditionalFormat.set({ ... })`. */
         export interface PresetCriteriaConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the TextConditionalFormat object, for use in `textConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `TextConditionalFormat` object, for use in `textConditionalFormat.set({ ... })`. */
         export interface TextConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the CellValueConditionalFormat object, for use in `cellValueConditionalFormat.set({ ... })`. */
+        /** An interface for updating data on the `CellValueConditionalFormat` object, for use in `cellValueConditionalFormat.set({ ... })`. */
         export interface CellValueConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalRangeFormat` object, for use in `conditionalRangeFormat.set({ ... })`. */
         export interface ConditionalRangeFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFont object, for use in `conditionalRangeFont.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalRangeFont` object, for use in `conditionalRangeFont.set({ ... })`. */
         export interface ConditionalRangeFontUpdateData {
             
             
@@ -12398,16 +12399,16 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFill object, for use in `conditionalRangeFill.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalRangeFill` object, for use in `conditionalRangeFill.set({ ... })`. */
         export interface ConditionalRangeFillUpdateData {
             
         }
-        /** An interface for updating data on the ConditionalRangeBorder object, for use in `conditionalRangeBorder.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalRangeBorder` object, for use in `conditionalRangeBorder.set({ ... })`. */
         export interface ConditionalRangeBorderUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
+        /** An interface for updating data on the `ConditionalRangeBorderCollection` object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
         export interface ConditionalRangeBorderCollectionUpdateData {
             
             
@@ -12415,7 +12416,7 @@ export declare namespace Excel {
             
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
-        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
+        /** An interface for updating data on the `Style` object, for use in `style.set({ ... })`. */
         export interface StyleUpdateData {
             
             
@@ -12439,43 +12440,43 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
+        /** An interface for updating data on the `StyleCollection` object, for use in `styleCollection.set({ ... })`. */
         export interface StyleCollectionUpdateData {
             items?: Excel.Interfaces.StyleData[];
         }
-        /** An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableStyleCollection` object, for use in `tableStyleCollection.set({ ... })`. */
         export interface TableStyleCollectionUpdateData {
             items?: Excel.Interfaces.TableStyleData[];
         }
-        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        /** An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
             
         }
-        /** An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({ ... })`. */
+        /** An interface for updating data on the `PivotTableStyleCollection` object, for use in `pivotTableStyleCollection.set({ ... })`. */
         export interface PivotTableStyleCollectionUpdateData {
             items?: Excel.Interfaces.PivotTableStyleData[];
         }
-        /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
+        /** An interface for updating data on the `PivotTableStyle` object, for use in `pivotTableStyle.set({ ... })`. */
         export interface PivotTableStyleUpdateData {
             
         }
-        /** An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ... })`. */
+        /** An interface for updating data on the `SlicerStyleCollection` object, for use in `slicerStyleCollection.set({ ... })`. */
         export interface SlicerStyleCollectionUpdateData {
             items?: Excel.Interfaces.SlicerStyleData[];
         }
-        /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
+        /** An interface for updating data on the `SlicerStyle` object, for use in `slicerStyle.set({ ... })`. */
         export interface SlicerStyleUpdateData {
             
         }
-        /** An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ... })`. */
+        /** An interface for updating data on the `TimelineStyleCollection` object, for use in `timelineStyleCollection.set({ ... })`. */
         export interface TimelineStyleCollectionUpdateData {
             items?: Excel.Interfaces.TimelineStyleData[];
         }
-        /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
+        /** An interface for updating data on the `TimelineStyle` object, for use in `timelineStyle.set({ ... })`. */
         export interface TimelineStyleUpdateData {
             
         }
-        /** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
+        /** An interface for updating data on the `PageLayout` object, for use in `pageLayout.set({ ... })`. */
         export interface PageLayoutUpdateData {
             
             
@@ -12498,7 +12499,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`. */
+        /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
             
             
@@ -12507,7 +12508,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`. */
+        /** An interface for updating data on the `HeaderFooterGroup` object, for use in `headerFooterGroup.set({ ... })`. */
         export interface HeaderFooterGroupUpdateData {
             
             
@@ -12517,40 +12518,40 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PageBreakCollection object, for use in `pageBreakCollection.set({ ... })`. */
+        /** An interface for updating data on the `PageBreakCollection` object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
             items?: Excel.Interfaces.PageBreakData[];
         }
-        /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
+        /** An interface for updating data on the `RangeCollection` object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
-        /** An interface for updating data on the RangeAreasCollection object, for use in `rangeAreasCollection.set({ ... })`. */
+        /** An interface for updating data on the `RangeAreasCollection` object, for use in `rangeAreasCollection.set({ ... })`. */
         export interface RangeAreasCollectionUpdateData {
             items?: Excel.Interfaces.RangeAreasData[];
         }
-        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        /** An interface for updating data on the `CommentCollection` object, for use in `commentCollection.set({ ... })`. */
         export interface CommentCollectionUpdateData {
             items?: Excel.Interfaces.CommentData[];
         }
-        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        /** An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
             
             
         }
-        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        /** An interface for updating data on the `CommentReplyCollection` object, for use in `commentReplyCollection.set({ ... })`. */
         export interface CommentReplyCollectionUpdateData {
             items?: Excel.Interfaces.CommentReplyData[];
         }
-        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        /** An interface for updating data on the `CommentReply` object, for use in `commentReply.set({ ... })`. */
         export interface CommentReplyUpdateData {
             
         }
-        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
+        /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
+        /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             
             
@@ -12567,11 +12568,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ... })`. */
+        /** An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface for updating data on the Line object, for use in `line.set({ ... })`. */
+        /** An interface for updating data on the `Line` object, for use in `line.set({ ... })`. */
         export interface LineUpdateData {
             
             
@@ -12581,12 +12582,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
+        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
         export interface ShapeFillUpdateData {
             
             
         }
-        /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
+        /** An interface for updating data on the `ShapeLineFormat` object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             
             
@@ -12595,7 +12596,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
+        /** An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
             
             
@@ -12609,12 +12610,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
+        /** An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             
             
         }
-        /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
+        /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             
             
@@ -12623,7 +12624,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
+        /** An interface for updating data on the `Slicer` object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
             
             
@@ -12635,23 +12636,23 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`. */
+        /** An interface for updating data on the `SlicerCollection` object, for use in `slicerCollection.set({ ... })`. */
         export interface SlicerCollectionUpdateData {
             items?: Excel.Interfaces.SlicerData[];
         }
-        /** An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`. */
+        /** An interface for updating data on the `SlicerItem` object, for use in `slicerItem.set({ ... })`. */
         export interface SlicerItemUpdateData {
             
         }
-        /** An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ... })`. */
+        /** An interface for updating data on the `SlicerItemCollection` object, for use in `slicerItemCollection.set({ ... })`. */
         export interface SlicerItemCollectionUpdateData {
             items?: Excel.Interfaces.SlicerItemData[];
         }
-        /** An interface for updating data on the NamedSheetView object, for use in `namedSheetView.set({ ... })`. */
+        /** An interface for updating data on the `NamedSheetView` object, for use in `namedSheetView.set({ ... })`. */
         export interface NamedSheetViewUpdateData {
             
         }
-        /** An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`. */
+        /** An interface for updating data on the `NamedSheetViewCollection` object, for use in `namedSheetViewCollection.set({ ... })`. */
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
@@ -12955,7 +12956,7 @@ export declare namespace Excel {
             
             
             /**
-             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -14968,7 +14969,7 @@ export declare namespace Excel {
          */
         export interface ApplicationLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -14996,7 +14997,7 @@ export declare namespace Excel {
          */
         export interface WorkbookLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15042,7 +15043,7 @@ export declare namespace Excel {
          */
         export interface WorksheetLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15112,7 +15113,7 @@ export declare namespace Excel {
          */
         export interface WorksheetCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15182,7 +15183,7 @@ export declare namespace Excel {
          */
         export interface WorksheetProtectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15213,7 +15214,7 @@ export declare namespace Excel {
          */
         export interface RangeLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15309,7 +15310,7 @@ export declare namespace Excel {
             
             
             /**
-             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -15381,7 +15382,7 @@ export declare namespace Excel {
          */
         export interface NamedItemCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15430,7 +15431,7 @@ export declare namespace Excel {
          */
         export interface NamedItemLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15480,7 +15481,7 @@ export declare namespace Excel {
          */
         export interface BindingLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15506,7 +15507,7 @@ export declare namespace Excel {
          */
         export interface BindingCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15532,7 +15533,7 @@ export declare namespace Excel {
          */
         export interface TableCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15618,7 +15619,7 @@ export declare namespace Excel {
          */
         export interface TableLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -15702,7 +15703,7 @@ export declare namespace Excel {
          */
         export interface TableColumnCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15752,7 +15753,7 @@ export declare namespace Excel {
          */
         export interface TableColumnLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15807,7 +15808,7 @@ export declare namespace Excel {
          */
         export interface TableRowCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15841,7 +15842,7 @@ export declare namespace Excel {
          */
         export interface TableRowLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15872,7 +15873,7 @@ export declare namespace Excel {
          */
         export interface RangeFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15954,7 +15955,7 @@ export declare namespace Excel {
          */
         export interface FormatProtectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -15980,7 +15981,7 @@ export declare namespace Excel {
          */
         export interface RangeFillLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16003,7 +16004,7 @@ export declare namespace Excel {
          */
         export interface RangeBorderLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16044,7 +16045,7 @@ export declare namespace Excel {
          */
         export interface RangeBorderCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16085,7 +16086,7 @@ export declare namespace Excel {
          */
         export interface RangeFontLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16143,7 +16144,7 @@ export declare namespace Excel {
          */
         export interface ChartCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16252,7 +16253,7 @@ export declare namespace Excel {
          */
         export interface ChartLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16361,7 +16362,7 @@ export declare namespace Excel {
          */
         export interface ChartAreaFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16383,7 +16384,7 @@ export declare namespace Excel {
          */
         export interface ChartSeriesCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16458,7 +16459,7 @@ export declare namespace Excel {
          */
         export interface ChartSeriesLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16533,7 +16534,7 @@ export declare namespace Excel {
          */
         export interface ChartSeriesFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16552,7 +16553,7 @@ export declare namespace Excel {
          */
         export interface ChartPointsCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16584,7 +16585,7 @@ export declare namespace Excel {
          */
         export interface ChartPointLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16616,7 +16617,7 @@ export declare namespace Excel {
          */
         export interface ChartPointFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16629,7 +16630,7 @@ export declare namespace Excel {
          */
         export interface ChartAxesLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16662,7 +16663,7 @@ export declare namespace Excel {
          */
         export interface ChartAxisLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16761,7 +16762,7 @@ export declare namespace Excel {
          */
         export interface ChartAxisFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16787,7 +16788,7 @@ export declare namespace Excel {
          */
         export interface ChartAxisTitleLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16821,7 +16822,7 @@ export declare namespace Excel {
          */
         export interface ChartAxisTitleFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16841,7 +16842,7 @@ export declare namespace Excel {
          */
         export interface ChartDataLabelsLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16923,7 +16924,7 @@ export declare namespace Excel {
          */
         export interface ChartDataLabelFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -16947,7 +16948,7 @@ export declare namespace Excel {
          */
         export interface ChartGridlinesLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16973,7 +16974,7 @@ export declare namespace Excel {
          */
         export interface ChartGridlinesFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -16992,7 +16993,7 @@ export declare namespace Excel {
          */
         export interface ChartLegendLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17039,7 +17040,7 @@ export declare namespace Excel {
          */
         export interface ChartLegendFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -17060,7 +17061,7 @@ export declare namespace Excel {
          */
         export interface ChartTitleLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17110,7 +17111,7 @@ export declare namespace Excel {
          */
         export interface ChartTitleFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             
@@ -17133,7 +17134,7 @@ export declare namespace Excel {
          */
         export interface ChartLineFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17154,7 +17155,7 @@ export declare namespace Excel {
          */
         export interface ChartFontLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17215,7 +17216,7 @@ export declare namespace Excel {
          */
         export interface TableSortLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17248,7 +17249,7 @@ export declare namespace Excel {
          */
         export interface FilterLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17352,7 +17353,7 @@ export declare namespace Excel {
          */
         export interface FunctionResultLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**

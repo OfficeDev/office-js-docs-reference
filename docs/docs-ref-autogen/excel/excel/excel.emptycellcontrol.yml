@@ -7,7 +7,7 @@ summary: >-
   Represents an empty cell control. This represents the state where a cell does not have a control. \[ [API set:
   ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -17,9 +17,9 @@ properties:
     fullName: type
     summary: ''
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'type: CellControlType.Empty;'
+      content: 'type: CellControlType.empty;'
       return:
-        type: '<xref uid="excel!Excel.CellControlType.Empty:member" />'
+        type: '<xref uid="excel!Excel.CellControlType.empty:member" />'

@@ -3,7 +3,7 @@ name: Excel.Interfaces.PivotLayoutUpdateData
 uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotLayoutUpdateData
-summary: 'An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `PivotLayout` object, for use in `pivotLayout.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -7,6 +7,6 @@ summary: >-
   Represents an interactable control inside of a cell. \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 syntax: export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;

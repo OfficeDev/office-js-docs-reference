@@ -564,6 +564,10 @@ if [ ! -d "yaml/office_release" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/office_release --output-folder ./yaml/office_release --office 2>/dev/null
 fi
 
+if [ ! -d "yaml/office-runtime" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/office-runtime --output-folder ./yaml/office-runtime --office
+fi
+
 if [ ! -d "yaml/excel" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel --output-folder ./yaml/excel --office
 fi

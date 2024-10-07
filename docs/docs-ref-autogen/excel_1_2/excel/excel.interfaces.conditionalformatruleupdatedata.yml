@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
 summary: >-
-  An interface for updating data on the ConditionalFormatRule object, for use in `conditionalFormatRule.set({ ...
+  An interface for updating data on the `ConditionalFormatRule` object, for use in `conditionalFormatRule.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

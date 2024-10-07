@@ -22,6 +22,42 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  Office.initialize = function (reason) {
+      $(document).ready(function () {
+          // Get a reference to the mailbox and use it to add an
+          // event handler.
+          const mailBox = Office.context.mailbox;
+          mailbox.addHandlerAsync(
+              Office.EventType.ItemChanged,
+              loadNewItem,
+              function (result) {
+                  if (result.status === Office.AsyncResultStatus.Failed) {
+                      // Handle error.
+                  }
+              });
+      });
+  };
+
+
+  function loadNewItem(eventArgs) {
+      const item = Office.context.mailbox.item;
+
+      // Check that item is not null.
+      if (item !== null) {
+          // Work with item, e.g., define and call function that
+          // loads the properties of the newly selected item.
+          loadProps(item);
+      }
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -207,8 +243,16 @@ properties:
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
-      see [Implement a pinnable task pane in
+      **Important**:
+
+
+      - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must
+      be turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to
+      preview messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
+
+
+      - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see [Implement a
+      pinnable task pane in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''

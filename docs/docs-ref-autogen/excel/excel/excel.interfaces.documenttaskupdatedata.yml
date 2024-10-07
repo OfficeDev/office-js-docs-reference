@@ -3,7 +3,7 @@ name: Excel.Interfaces.DocumentTaskUpdateData
 uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DocumentTaskUpdateData
-summary: 'An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `DocumentTask` object, for use in `documentTask.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

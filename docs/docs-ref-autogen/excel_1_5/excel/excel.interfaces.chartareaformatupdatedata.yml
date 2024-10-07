@@ -3,7 +3,7 @@ name: Excel.Interfaces.ChartAreaFormatUpdateData
 uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAreaFormatUpdateData
-summary: 'An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `ChartAreaFormat` object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

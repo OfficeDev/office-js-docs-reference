@@ -35,6 +35,20 @@ properties:
       content: 'id?: boolean;'
       return:
         type: boolean
+  - name: properties
+    uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#properties:member'
+    package: powerpoint!
+    fullName: properties
+    summary: Gets the properties of the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'properties?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface" />'
   - name: title
     uid: 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#title:member'
     package: powerpoint!

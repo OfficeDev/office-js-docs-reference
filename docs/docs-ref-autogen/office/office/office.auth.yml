@@ -216,6 +216,17 @@ methods:
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
       **Requirement set**: NestedAppAuth 1.1
+
+      #### Examples
+
+      ```TypeScript
+      try{
+          const authContext = await Office.auth.getAuthContext();
+          console.log(authContext.userPrincipalName);
+      } catch (error) {
+          console.log("Error obtaining token", error);
+      }
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
