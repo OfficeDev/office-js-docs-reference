@@ -1,7 +1,7 @@
 ---
 title: Dialog API requirement sets
 description: Learn more about the Dialog API requirement sets.
-ms.date: 09/24/2024
+ms.date: 10/08/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
