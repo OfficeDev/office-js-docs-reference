@@ -42,8 +42,8 @@ tryCatch(async () => {
         case "DT":
             forceRebuild = false;
         case "DT+":
-            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/4b8b6925a664f859c5a8bd15dd3f95c3ea00494c/types/office-js/index.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/4b8b6925a664f859c5a8bd15dd3f95c3ea00494c/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
@@ -159,7 +159,7 @@ tryCatch(async () => {
 
     console.log("create file: powerpoint.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_5/powerpoint.d.ts',
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_6/powerpoint.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
         "powerpoint",
         forceRebuild

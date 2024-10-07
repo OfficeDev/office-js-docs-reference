@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.HyperlinkData
+uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.HyperlinkData
+summary: An interface describing the data returned by calling `hyperlink.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

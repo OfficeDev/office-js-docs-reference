@@ -1,0 +1,328 @@
+### YamlMime:TSType
+name: PowerPoint.TextRange
+uid: 'powerpoint!PowerPoint.TextRange:class'
+package: powerpoint!
+fullName: PowerPoint.TextRange
+summary: 'Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.'
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+  // Sets the color of the selected text range to green.
+
+  await PowerPoint.run(async (context) => {
+    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+    textRange.font.color = "green";
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'powerpoint!PowerPoint.TextRange#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: font
+    uid: 'powerpoint!PowerPoint.TextRange#font:member'
+    package: powerpoint!
+    fullName: font
+    summary: Returns a `ShapeFont` object that represents the font attributes for the text range.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+      // Sets the color of the selected text range to green.
+
+      await PowerPoint.run(async (context) => {
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+        textRange.font.color = "green";
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly font: PowerPoint.ShapeFont;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFont:class" />'
+  - name: length
+    uid: 'powerpoint!PowerPoint.TextRange#length:member'
+    package: powerpoint!
+    fullName: length
+    summary: >-
+      Gets or sets the length of the range that this `TextRange` represents. Throws an `InvalidArgument` exception when
+      set with a negative value or if the value is greater than the length of the available text from the starting
+      point.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'length: number;'
+      return:
+        type: number
+  - name: paragraphFormat
+    uid: 'powerpoint!PowerPoint.TextRange#paragraphFormat:member'
+    package: powerpoint!
+    fullName: paragraphFormat
+    summary: >-
+      Represents the paragraph format of the text range. See
+      [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class) for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly paragraphFormat: PowerPoint.ParagraphFormat;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ParagraphFormat:class" />'
+  - name: start
+    uid: 'powerpoint!PowerPoint.TextRange#start:member'
+    package: powerpoint!
+    fullName: start
+    summary: >-
+      Gets or sets zero-based index, relative to the parent text frame, for the starting position of the range that this
+      `TextRange` represents. Throws an `InvalidArgument` exception when set with a negative value or if the value is
+      greater than the length of the text.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'start: number;'
+      return:
+        type: number
+  - name: text
+    uid: 'powerpoint!PowerPoint.TextRange#text:member'
+    package: powerpoint!
+    fullName: text
+    summary: Represents the plain text content of the text range.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: string;'
+      return:
+        type: string
+methods:
+  - name: getParentTextFrame()
+    uid: 'powerpoint!PowerPoint.TextRange#getParentTextFrame:member(1)'
+    package: powerpoint!
+    fullName: getParentTextFrame()
+    summary: >-
+      Returns the parent [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object that holds this
+      `TextRange`<!-- -->.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentTextFrame(): PowerPoint.TextFrame;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextFrame:class" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'powerpoint!PowerPoint.TextRange#getSubstring:member(1)'
+    package: powerpoint!
+    fullName: 'getSubstring(start, length)'
+    summary: Returns a `TextRange` object for the substring in the given range.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): PowerPoint.TextRange;'
+      parameters:
+        - id: start
+          description: The zero-based index of the first character to get from the text range.
+          type: number
+        - id: length
+          description: >-
+            Optional. The number of characters to be returned in the new text range. If length is omitted, all the
+            characters from start to the end of the text range's last paragraph will be returned.
+          type: number
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.TextRange#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.TextRangeLoadOptions): PowerPoint.TextRange;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.TextRange#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.TextRange;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.TextRange#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.TextRange;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: setSelected()
+    uid: 'powerpoint!PowerPoint.TextRange#setSelected:member(1)'
+    package: powerpoint!
+    fullName: setSelected()
+    summary: Selects this `TextRange` in the current view.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+      // Selects the first 10 characters of the selected shape.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        await context.sync();
+        if (shapeCount.value !== 1) {
+          console.warn("You must select only one shape with text in it.");
+          return;
+        }
+        const shape: PowerPoint.Shape = shapes.getItemAt(0);
+        const textFrame: PowerPoint.TextFrame = shape.textFrame.load("textRange,hasText");
+        await context.sync();
+        if (textFrame.hasText != true) {
+          console.warn("You must select only one shape with text in it.");
+          return;
+        }
+        const textRange: PowerPoint.TextRange = textFrame.textRange;
+        textRange.load("text");
+        await context.sync();
+        if (textRange.text.length < 10) {
+          console.warn("You must select only one shape with at least 10 characters in it.");
+          return;
+        }
+        const textRange10 = textRange.getSubstring(0, 10);
+        textRange10.setSelected();
+        await context.sync();
+      });
+
+
+      ...
+
+
+      // Sets the range selection to the range that was saved previously.
+
+      await PowerPoint.run(async (context) => {
+        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
+        const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
+        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+        textRange.setSelected();
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSelected(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.TextRange#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `PowerPoint.TextRange` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `PowerPoint.Interfaces.TextRangeData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.TextRangeData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.TextRangeData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
