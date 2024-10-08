@@ -718,6 +718,22 @@ Office.MailboxEnums.AttachmentStatus:enum:
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.DelegatePermissions:enum:
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error("The current folder or mailbox isn't shared.");
+            return;
+        }
+
+        const delegatePermissions = result.value.delegatePermissions;
+
+        // Check if the user has write permissions to the shared resource.
+        if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+            console.log("User has write permissions to the shared resource.");
+            // Perform the necessary operations.
+        }
+    });
 Office.MailboxEnums.InfobarActionType:enum:
   - |-
     /*

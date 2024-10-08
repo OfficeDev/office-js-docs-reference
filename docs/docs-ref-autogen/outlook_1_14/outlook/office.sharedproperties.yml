@@ -29,52 +29,20 @@ remarks: >-
 
   ```TypeScript
 
-  function performOperation() {
-    Office.context.mailbox.getCallbackTokenAsync({
-        isRest: true
-      },
-      function (asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-          Office.context.mailbox.item.getSharedPropertiesAsync({
-              // Pass auth token along.
-              asyncContext: asyncResult.value
-            },
-            function (asyncResult1) {
-              let sharedProperties = asyncResult1.value;
-              let delegatePermissions = sharedProperties.delegatePermissions;
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
-              // Determine if user can do the expected operation.
-              // E.g., do they have Write permission?
-              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                // Construct REST URL for your operation.
-                // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                // Update <operation> placeholder with actual operation.
-                let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-    
-                $.ajax({
-                    url: rest_url,
-                    dataType: 'json',
-                    headers:
-                    {
-                      "Authorization": "Bearer " + asyncResult1.asyncContext
-                    }
-                  }
-                ).done(
-                  function (response) {
-                    console.log("success");
-                  }
-                ).fail(
-                  function (error) {
-                    console.log("error message");
-                  }
-                );
-              }
-            }
-          );
-        }
-      }
-    );
-  }
+
+  Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+    if (result.status === Office.AsyncResultStatus.Failed) {
+      console.error("The current folder or mailbox isn't shared.");
+      return;
+    }
+    const sharedProperties = result.value;
+    console.log(`Owner: ${sharedProperties.owner}`);
+    console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+    console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
+  });
 
   ```
 isPreview: false
@@ -93,59 +61,6 @@ properties:
       content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
       return:
         type: '<xref uid="outlook!Office.MailboxEnums.DelegatePermissions:enum" />'
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function performOperation() {
-            Office.context.mailbox.getCallbackTokenAsync({
-                isRest: true
-              },
-              function (asyncResult) {
-                if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-                  Office.context.mailbox.item.getSharedPropertiesAsync({
-                      // Pass auth token along.
-                      asyncContext: asyncResult.value
-                    },
-                    function (asyncResult1) {
-                      let sharedProperties = asyncResult1.value;
-                      let delegatePermissions = sharedProperties.delegatePermissions;
-
-                      // Determine if user can do the expected operation.
-                      // E.g., do they have Write permission?
-                      if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                        // Construct REST URL for your operation.
-                        // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                        // Update <operation> placeholder with actual operation.
-                        let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-            
-                        $.ajax({
-                            url: rest_url,
-                            dataType: 'json',
-                            headers:
-                            {
-                              "Authorization": "Bearer " + asyncResult1.asyncContext
-                            }
-                          }
-                        ).done(
-                          function (response) {
-                            console.log("success");
-                          }
-                        ).fail(
-                          function (error) {
-                            console.log("error message");
-                          }
-                        );
-                      }
-                    }
-                  );
-                }
-              }
-            );
-          }
-          ```
   - name: owner
     uid: 'outlook!Office.SharedProperties#owner:member'
     package: outlook!

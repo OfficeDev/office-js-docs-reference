@@ -5520,6 +5520,8 @@ export declare namespace Office {
          *
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
          *
+         * Although classic Outlook on Mac doesn't support Mailbox 1.9, it does support DialogApi 1.2.
+         *
          * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
          * @param messageOptions - Optional. Provides options for how to send the message. 
          */
@@ -8677,18 +8679,22 @@ export declare namespace Office {
          */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
-         * Delivers a message from the dialog box to its parent/opener page. 
-         * 
+         * Delivers a message from the dialog box to its parent/opener page.
+         *
          * @remarks
-         * 
-         * **Requirement sets**: 
-         * 
+         *
+         * **Applications**: Excel, Outlook, PowerPoint, Word
+         *
+         * **Requirement sets**:
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-         * 
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
+         *
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
-         * 
-         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
-         * @param messageOptions - Optional. Provides options for how to send the message. 
+         *
+         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent.
+         * @param messageOptions - Optional. Provides options for how to send the message.
          */
          messageParent(message: string, messageOptions?: DialogMessageOptions): void;
         /**

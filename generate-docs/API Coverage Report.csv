@@ -8815,7 +8815,7 @@ Office.MailboxEnums.Days,"Sun",EnumField,Poor,false
 Office.MailboxEnums.Days,"Weekday",EnumField,Fine,false
 Office.MailboxEnums.Days,"WeekendDay",EnumField,Poor,false
 Office.MailboxEnums.Days,"Day",EnumField,Poor,false
-Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,false
+Office.MailboxEnums.DelegatePermissions,N/A,Enum,Good,true
 Office.MailboxEnums.DelegatePermissions,"Read",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"Write",EnumField,Fine,false
 Office.MailboxEnums.DelegatePermissions,"DeleteOwn",EnumField,Fine,false
@@ -9309,7 +9309,7 @@ Office.SessionData,"removeAsync(name, callback)",Method,Poor,false
 Office.SessionData,"setAsync(name, value, options, callback)",Method,Poor,true
 Office.SessionData,"setAsync(name, value, callback)",Method,Poor,false
 Office.SharedProperties,N/A,Class,Good,true
-Office.SharedProperties,"delegatePermissions",Property,Fine,true
+Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
