@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeLineFormatData
+uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeLineFormatData
+summary: An interface describing the data returned by calling `shapeLineFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#color:member'
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
+      (e.g., "orange").
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: dashStyle
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#dashStyle:member'
+    package: powerpoint!
+    fullName: dashStyle
+    summary: >-
+      Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash
+      styles. See PowerPoint.ShapeLineDashStyle for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
+        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeLineDashStyle:enum" /> | "Dash" | "DashDot" | "DashDotDot" | "LongDash"
+          | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" |
+          "SystemDashDot"
+  - name: style
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member'
+    package: powerpoint!
+    fullName: style
+    summary: >-
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
+      styles. See PowerPoint.ShapeLineStyle for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: PowerPoint.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";'
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeLineStyle:enum" /> | "Single" | "ThickBetweenThin" | "ThickThin" |
+          "ThinThick" | "ThinThin"
+  - name: transparency
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#transparency:member'
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null
+      when the shape has inconsistent transparencies.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type: number
+  - name: visible
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#visible:member'
+    package: powerpoint!
+    fullName: visible
+    summary: >-
+      Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent
+      visibilities.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: weight
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#weight:member'
+    package: powerpoint!
+    fullName: weight
+    summary: >-
+      Represents the weight of the line, in points. Returns `null` when the line is not visible or there are
+      inconsistent line weights.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type: number
