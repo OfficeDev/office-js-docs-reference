@@ -71,7 +71,7 @@ export function stripSpaces(text: string) {
 
     // Replace each tab with 4 spaces.
     for (let i: number = 0; i < lines.length; i++) {
-        lines[i].replace('\t', '    ');
+        lines[i].replace(/\t/g, '    ');
     }
 
     let isZeroLengthLine: boolean = true;
