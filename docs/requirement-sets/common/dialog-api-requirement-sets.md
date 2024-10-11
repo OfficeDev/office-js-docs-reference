@@ -18,7 +18,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 | DialogApi 1.1 | Supported | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2016<sup>2</sup> | Version 15.20 | Version 1.22 | Version 1608 (Build 7601.6800) |
 
 > [!NOTE]
-> <sup>1</sup>Users of perpetual versions of Office may not have accepted all patches and updates. If so, the DLL that Office uses to report its version in the UI may be greater than the versions listed here even if the updated DLLs needed to support DialogApi have not be installed on the user's computer. To ensure that the needed patch is installed, the user must go to the [Office 2016 update list](/officeupdates/msp-files-office-2016), search for **osfclient-x-none**, and install the listed patch.
+> <sup>1</sup>Users of perpetual versions of Office may not have accepted all patches and updates. If so, the DLL that Office uses to report its version in the UI may be greater than the versions listed here even if the updated DLLs needed to support DialogApi haven't been installed on the user's computer. To ensure that the needed patch is installed, the user must go to the [Office 2016 update list](/officeupdates/msp-files-office-2016), search for **osfclient-x-none**, and install the listed patch.
 >
 > <sup>2</sup> DialogApi 1.1 isn't supported in Outlook 2016 (volume-licensed perpetual).
 
