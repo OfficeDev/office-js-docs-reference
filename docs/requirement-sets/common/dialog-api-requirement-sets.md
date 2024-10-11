@@ -32,6 +32,20 @@ The DialogApi 1.2 requirement set is supported in the Consumer Channel from Vers
 | Monthly Enterprise Channel | 2004 | 12730.20430 |
 | Semi-Annual Enterprise Channel | 2002 | 12527.20720 |
 
+## Outlook support
+
+In Outlook, dialog features and their APIs were introduced in the following Mailbox requirement sets.
+
+| Feature | API | Mailbox requirement set |
+| :----- | :----- | :----- |
+| Display a dialog | [Office.context.ui.displayDialogAsync](/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1)) | [1.4](../outlook/requirement-set-1.4/outlook-requirement-set-1.4.md) |
+| Deliver a message from the dialog to the its parent page | [Office.context.ui.messageParent](/javascript/api/office/office.ui#office-office-ui-messageparent-member(1)) | [1.4](../outlook/requirement-set-1.4/outlook-requirement-set-1.4.md) |
+| Close a dialog | [Office.context.ui.closeContainer](/javascript/api/office/office.ui#office-office-ui-closecontainer-member(1)) | [1.5](../outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| Deliver a message from the host page to a dialog | [Office.dialog.messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1)) | [1.9](../outlook/requirement-set-1.9/outlook-requirement-set-1.9.md)\* |
+
+> [!NOTE]
+> \* Although classic Outlook on Mac doesn't support Mailbox requirement set 1.9, it does support the DialogApi 1.2 requirement set.
+
 ## Office versions and build numbers
 
 To find out more about versions, build numbers, and Office Online Server, see:
@@ -46,7 +60,7 @@ For information about Common API requirement sets, see [Office Common API requir
 
 ## Dialog API 1.1 and 1.2
 
-The Dialog API 1.1 is the first version of the API. Requirement set 1.2 adds support for sending data from the parent page to the dialog box with the [Office.dialog.messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1)) method. For details about these APIs, see the [Dialog API](/javascript/api/office/office.ui) reference topic.
+The Dialog API 1.1 is the first version of the API (see [Office.UI](/javascript/api/office/office.ui)). Requirement set 1.2 adds support for sending data from the parent page to the dialog box with the [Office.dialog.messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1)) method. For details about these APIs, see the [Dialog API](/javascript/api/office/office.ui) reference topic.
 
 ## See also
 

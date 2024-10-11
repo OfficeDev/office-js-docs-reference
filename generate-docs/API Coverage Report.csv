@@ -8495,7 +8495,7 @@ Office.AppointmentCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.AppointmentCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -8559,7 +8559,7 @@ Office.AppointmentRead,"getRegExMatches()",Method,Good,true
 Office.AppointmentRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.AppointmentRead,"getSelectedEntities()",Method,Deprecated,false
 Office.AppointmentRead,"getSelectedRegExMatches()",Method,Good,true
-Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -9103,7 +9103,7 @@ Office.MessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getItemIdAsync(callback)",Method,Poor,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 Office.MessageCompose,"getSelectedDataAsync(coercionType, callback)",Method,Fine,true
-Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,true
 Office.MessageCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
@@ -9163,7 +9163,7 @@ Office.MessageRead,"getRegExMatches()",Method,Good,true
 Office.MessageRead,"getRegExMatchesByName(name)",Method,Fine,true
 Office.MessageRead,"getSelectedEntities()",Method,Deprecated,false
 Office.MessageRead,"getSelectedRegExMatches()",Method,Good,true
-Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,true
+Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
 Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
@@ -9309,7 +9309,7 @@ Office.SessionData,"removeAsync(name, callback)",Method,Poor,false
 Office.SessionData,"setAsync(name, value, options, callback)",Method,Poor,true
 Office.SessionData,"setAsync(name, value, callback)",Method,Poor,false
 Office.SharedProperties,N/A,Class,Good,true
-Office.SharedProperties,"delegatePermissions",Property,Fine,true
+Office.SharedProperties,"delegatePermissions",Property,Fine,false
 Office.SharedProperties,"owner",Property,Fine,false
 Office.SharedProperties,"targetMailbox",Property,Good,false
 Office.SharedProperties,"targetRestUrl",Property,Fine,false
