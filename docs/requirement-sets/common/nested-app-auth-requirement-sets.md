@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| NestedAppAuth 1.1 | tbd | tbd | tbd | tbd | tbd |
+| NestedAppAuth 1.1 | Supported | tbd | tbd | tbd | tbd |
 
 > [!IMPORTANT]
 >
