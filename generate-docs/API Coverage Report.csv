@@ -11090,6 +11090,7 @@ Word.Document,"addStyle(name, typeString)",Method,Fine,false
 Word.Document,"close(closeBehavior)",Method,Poor,true
 Word.Document,"close(closeBehaviorString)",Method,Poor,false
 Word.Document,"compare(filePath, documentCompareOptions)",Method,Fine,true
+Word.Document,"compareFromBase64(base64File, documentCompareOptions)",Method,Fine,false
 Word.Document,"deleteBookmark(name)",Method,Poor,false
 Word.Document,"getAnnotationById(id)",Method,Poor,false
 Word.Document,"getBookmarkRange(name)",Method,Poor,false

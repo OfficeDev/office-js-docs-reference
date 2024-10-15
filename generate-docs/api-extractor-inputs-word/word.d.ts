@@ -3327,6 +3327,17 @@ export declare namespace Word {
          */
         compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
         /**
+         * Displays revision marks that indicate where the specified document differs from another document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64File - Required. The Base64-encoded content of the document with which the specified document is compared.
+         * @param documentCompareOptions - Optional. The additional options that specify the behavior for comparing the documents. Note that the `compareTarget` option isn't allowed to be `CompareTargetSelected` in this API.
+         */
+        compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
+        /**
          * Deletes a bookmark, if it exists, from the document.
          *
          * @remarks
