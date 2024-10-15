@@ -431,6 +431,28 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'compareFromBase64(base64File, documentCompareOptions)'
+    uid: 'word!Word.Document#compareFromBase64:member(1)'
+    package: word!
+    fullName: 'compareFromBase64(base64File, documentCompareOptions)'
+    summary: Displays revision marks that indicate where the specified document differs from another document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
+      parameters:
+        - id: base64File
+          description: Required. The Base64-encoded content of the document with which the specified document is compared.
+          type: string
+        - id: documentCompareOptions
+          description: >-
+            Optional. The additional options that specify the behavior for comparing the documents. Note that the
+            `compareTarget` option isn't allowed to be `CompareTargetSelected` in this API.
+          type: '<xref uid="word!Word.DocumentCompareOptions:interface" />'
+      return:
+        type: void
+        description: ''
   - name: deleteBookmark(name)
     uid: 'word!Word.Document#deleteBookmark:member(1)'
     package: word!
