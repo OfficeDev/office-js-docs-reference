@@ -160,6 +160,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ---
 
+### NestedAppAuth
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md) | Supports nested app auth and the `Office.auth.getAuthContext` method. |
+
+---
+
 ### OoxmlCoercion
 
 | Minimum Office application support | Methods in set |
