@@ -48,6 +48,7 @@
         "powerpoint-js-1.3",
         "powerpoint-js-1.4",
         "powerpoint-js-1.5",
+        "powerpoint-js-1.6",
         "visio-js-1.1",
         "word-js-preview",
         "word-js-1.1",
@@ -286,6 +287,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/powerpoint_1_5/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/powerpoint_1_6/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
