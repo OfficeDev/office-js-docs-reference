@@ -4,7 +4,42 @@ uid: 'word!Word.Annotation:class'
 package: word!
 fullName: Word.Annotation
 summary: Represents an annotation attached to a paragraph.
-remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+  // Accepts the first annotation found in the selected paragraph.
+
+  await Word.run(async (context) => {
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
+    annotations.load("id,state,critiqueAnnotation");
+
+    await context.sync();
+
+    for (let i = 0; i < annotations.items.length; i++) {
+      const annotation: Word.Annotation = annotations.items[i];
+
+      if (annotation.state === Word.AnnotationState.created) {
+        console.log(`Accepting ID ${annotation.id}...`);
+        annotation.critiqueAnnotation.accept();
+
+        await context.sync();
+        break;
+      }
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -282,7 +317,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Annotation` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.AnnotationData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.

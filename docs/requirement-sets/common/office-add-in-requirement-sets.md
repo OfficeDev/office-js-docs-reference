@@ -30,7 +30,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>PowerPoint on the web</li><ul><li>PowerPoint on Windows</li><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
+| <ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
 
 ---
 
@@ -140,7 +140,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>Outlook on the web</li><li>[new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
+| <ul><li>Outlook on the web</li><li>[new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>classic Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
 
 ---
 
@@ -291,4 +291,4 @@ The following methods in the Office JavaScript API aren't part of a requirement 
 
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

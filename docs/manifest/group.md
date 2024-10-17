@@ -1,7 +1,7 @@
 ---
 title: Group element in the manifest file
 description: Defines a group of UI controls in a tab. 
-ms.date: 07/18/2022
+ms.date: 09/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ Defines a group of UI controls in a tab. On custom tabs, the add-in can create m
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -38,6 +38,7 @@ Required. Unique identifier for the group. It is a string with a maximum of 125 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |  [Label](#label)      | Yes |  The label for a group.  |
+|  [Tooltip](#tooltip) | No | The tooltip for the group. |
 |  [Icon](icon.md)      | Yes |  The image for a group. Not supported in Outlook add-ins. |
 |  [Control](#control)    | No |  Represents a Control object. Can be zero or more.  |
 |  [OfficeControl](#officecontrol)  | No | Represents one of the built-in Office controls. Can be zero or more. Supported only in PowerPoint add-ins.|
@@ -46,6 +47,25 @@ Required. Unique identifier for the group. It is a string with a maximum of 125 
 ### Label
 
 Required. The label of the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** element in the [Resources](resources.md) element.
+
+### Tooltip
+
+**Add-in type:** Mail
+
+**Valid only in these VersionOverrides schemas**:
+
+- Mail 1.1
+
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
+
+**Associated with these requirement sets**:
+
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) 
+
+Optional. The tooltip for the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element.
+
+> [!NOTE]
+> This child element is supported only in Outlook add-ins.
 
 ### Icon
 
@@ -83,7 +103,7 @@ Optional, but if not present there must be at least one **\<Control\>**. Include
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 

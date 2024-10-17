@@ -3,14 +3,7 @@ name: Office.EmailUser
 uid: 'outlook!Office.EmailUser:interface'
 package: outlook!
 fullName: Office.EmailUser
-summary: >-
-  Represents an email account on an Exchange Server.
-
-
-  `EmailUser` objects are primarily received in [MeetingSuggestion](xref:outlook!Office.MeetingSuggestion:interface) and
-  [TaskSuggestion](xref:outlook!Office.TaskSuggestion:interface) entities extracted from an Outlook item. To learn more
-  about this scenario, refer to [Extract entity strings from an Outlook
-  item](https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item)<!-- -->.
+summary: Represents an email account on an Exchange Server.
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -27,55 +20,28 @@ remarks: >-
 
   ```TypeScript
 
-  // The following example is an excerpt from a larger sample.
+  // Add recipients to the To field of an email.
 
-  // For the full sample, visit
-  https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
-
-
-  // Gets instances of the task suggestion entity on the item.
-
-  function myGetTaskSuggestions()
-
-  {
-      let htmlText = "";
-
-      // Gets an array of TaskSuggestion objects, each array element 
-      // containing an instance of a task suggestion entity from 
-      // the current item.
-      const tasksArray = _MyEntities.taskSuggestions;
-
-      // Iterates through each instance of a task suggestion.
-      for (let i = 0; i < tasksArray.length; i++)
+  const recipients: Office.EmailUser[] = [
       {
-          // Gets the string that was identified as a task suggestion.
-          htmlText += "TaskString : <span>" + 
-          tasksArray[i].taskString + "</span><br/>";
+          "displayName": "Allie Bellew",
+          "emailAddress": "allieb@contoso.com"
+      },
+      {
+          "displayName": "Alex Darrow",
+          "emailAddress": "alexd@contoso.com"
+      }
+  ];
 
-          // Gets an array of assignees for that instance of a task 
-          // suggestion. Each assignee is represented by an 
-          // EmailUser object.
-          let assigneesArray = tasksArray[i].assignees;
-          for (let j = 0; j < assigneesArray.length; j++)
-          {
-              htmlText += "Assignee : ( ";
-              // Gets the displayName property of the assignee.
-              htmlText += "displayName = <span>" + assigneesArray[j].displayName + 
-              "</span> , ";
 
-              // Gets the emailAddress property of each assignee.
-              // This is the SMTP address of the assignee.
-              htmlText += "emailAddress = <span>" + assigneesArray[j].emailAddress + 
-                  "</span>";
-
-              htmlText += " )<br/>";
-          }
-
-          htmlText += "<hr/>";
+  Office.context.mailbox.item.to.addAsync(recipients, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(result.error.message);
+          return;
       }
 
-      document.getElementById("entities_box").innerHTML = htmlText;
-  }
+      console.log("Recipients added to the To field.");
+  });
 
   ```
 isPreview: false

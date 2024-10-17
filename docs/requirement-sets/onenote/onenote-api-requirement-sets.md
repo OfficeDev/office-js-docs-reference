@@ -56,4 +56,4 @@ For information about Common API requirement sets, see [Office Common API requir
 - [OneNote JavaScript API reference documentation](/javascript/api/onenote)
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

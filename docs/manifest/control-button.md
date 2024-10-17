@@ -1,7 +1,7 @@
 ---
 title: Control element of type Button in the manifest file
 description: Defines a button that executes an action or launches a task pane.
-ms.date: 09/25/2023
+ms.date: 09/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,6 @@ A button performs a single action when the user selects it. It can either execut
 | Element | Required | Description |
 |:-----|:-----:|:-----|
 | [Label](#label) | Yes | The text for the button. |
-| **\<ToolTip\>** | No | The tooltip for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element. |
 | [Supertip](supertip.md) | Yes | The supertip for the button.<br><br>**Important**: Supertips are only supported in Office desktop clients. |
 | [Icon](icon.md) | Yes | An image for the button. |
 | [Action](action.md) | Yes | Specifies the action to perform. There can be only one **\<Action\>** child of a **\<Control\>** element. |
@@ -41,7 +40,7 @@ Specifies the text for the button by means of its only attribute, **resid**, whi
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 

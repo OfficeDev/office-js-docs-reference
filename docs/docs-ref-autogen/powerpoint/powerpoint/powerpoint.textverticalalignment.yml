@@ -9,7 +9,44 @@ summary: >-
   contents of the `TextFrame` will be centered horizontally within the `Shape` as a group. To change the horizontal
   alignment of a text, see [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class) and
   [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)<!-- -->.
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+  // This function gets the collection of shapes on the first slide,
+
+  // and adds a brace pair, {}, to the collection, while specifying its
+
+  // location and size. Then it names the shape, sets its text and font
+
+  // color, and centers it inside the braces.
+
+  await PowerPoint.run(async (context) => {
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150
+      });
+    braces.name = "Braces";
+    braces.textFrame.textRange.text = "Shape text";
+    braces.textFrame.textRange.font.color = "purple";
+    braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+
+    return context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

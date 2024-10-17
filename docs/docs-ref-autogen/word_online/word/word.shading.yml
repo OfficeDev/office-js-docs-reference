@@ -4,7 +4,48 @@ uid: 'word!Word.Shading:class'
 package: word!
 fullName: Word.Shading
 summary: Represents the shading object.
-remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to update shading properties.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      const shading: Word.Shading = style.shading;
+      shading.load();
+      await context.sync();
+
+      shading.backgroundPatternColor = "blue";
+      shading.foregroundPatternColor = "yellow";
+      shading.texture = Word.ShadingTextureType.darkTrellis;
+
+      console.log("Updated shading.");
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -152,7 +193,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Shading` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.ShadingData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.

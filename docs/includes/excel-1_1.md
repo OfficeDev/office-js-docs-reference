@@ -109,7 +109,7 @@
 |[Range](/javascript/api/excel/excel.range)|[address](/javascript/api/excel/excel.range#excel-excel-range-address-member)|Specifies the range reference in A1-style.|
 ||[addressLocal](/javascript/api/excel/excel.range#excel-excel-range-addresslocal-member)|Represents the range reference for the specified range in the language of the user.|
 ||[cellCount](/javascript/api/excel/excel.range#excel-excel-range-cellcount-member)|Specifies the number of cells in the range.|
-||[clear(applyTo?: Excel.ClearApplyTo)](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))|Clear range values, format, fill, border, etc.|
+||[clear(applyTo?: Excel.ClearApplyTo)](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))|Clear range values and formatting, such as fill and border.|
 ||[columnCount](/javascript/api/excel/excel.range#excel-excel-range-columncount-member)|Specifies the total number of columns in the range.|
 ||[columnIndex](/javascript/api/excel/excel.range#excel-excel-range-columnindex-member)|Specifies the column number of the first cell in the range.|
 ||[delete(shift: Excel.DeleteShiftDirection)](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))|Deletes the cells associated with the range.|

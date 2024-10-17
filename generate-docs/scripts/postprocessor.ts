@@ -119,6 +119,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop_1_1`), tocWithReleaseCommon, "word", 8.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_5_hidden_document`), tocWithReleaseCommon, "word", 5.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);
@@ -194,6 +195,7 @@ tryCatch(async () => {
     fsx.removeSync(docsDestination + "/office/overview.md");
     fsx.removeSync(docsDestination + "/office/toc.yml");
     fsx.removeSync(docsDestination + "/office_release/toc.yml");
+    fsx.removeSync(docsDestination + "/office-runtime/toc.yml");
 
     console.log("\nPostprocessor script complete!\n");
 
@@ -341,6 +343,8 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
+    let runtimeToc = (jsyaml.safeLoad(fsx.readFileSync(path.resolve("../../docs/docs-ref-autogen/office-runtime/toc.yml")).toString()) as Toc);
+    origToc.items[0].items = origToc.items[0].items.concat(runtimeToc.items[0].items);
     let membersToMove = <IMembers>{};
 
     // Create roots for items we want to reorder.
@@ -352,6 +356,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
 
     // create folders for common (shared) API subcategories
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
+    sharedEnumFilter.concat(generateEnumList(fsx.readFileSync("../api-extractor-inputs-office-runtime/office-runtime.d.ts").toString()));
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {

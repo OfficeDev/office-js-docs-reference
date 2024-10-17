@@ -51,7 +51,66 @@ properties:
     package: word!
     fullName: listItems
     summary: Gets the collection of list items in the combo box content control.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-combo-box-content-control.yaml
+
+
+      // Deletes the provided list item from the first combo box content control in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = $("#item-to-delete")
+          .val()
+          .toString()
+          .trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.comboBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,comboBoxContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,comboBoxContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+            console.warn("No combo box content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+        selectedComboBox.listItems.load("items/*");
+        await context.sync();
+
+        let listItems: Word.ContentControlListItemCollection = selectedContentControl.comboBoxContentControl.listItems;
+        let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+        if (!itemToDelete) {
+          console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`);
+          return;
+        }
+
+        itemToDelete.delete();
+        await context.sync();
+
+        console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -82,7 +141,7 @@ methods:
       // Adds the provided list item to the first combo box content control in the selection.
 
       await Word.run(async (context) => {
-        const listItem = $("#item-to-add")
+        const listItemText = $("#item-to-add")
           .val()
           .toString()
           .trim();
@@ -93,7 +152,6 @@ methods:
           })
           .getFirstOrNullObject();
         selectedContentControl.load("id,comboBoxContentControl");
-
         await context.sync();
 
         if (selectedContentControl.isNullObject) {
@@ -109,10 +167,10 @@ methods:
           }
         }
 
-        selectedContentControl.comboBoxContentControl.addListItem(listItem);
+        selectedContentControl.comboBoxContentControl.addListItem(listItemText);
         await context.sync();
 
-        console.log(`List item ${listItem} added to control with ID: ${selectedContentControl.id}`);
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
       });
 
       ```
@@ -178,7 +236,7 @@ methods:
           }
         }
 
-        console.log(`About to delete the list from the combo box content control with ID: ${selectedContentControl.id}`);
+        console.log(`About to delete the list from the combo box content control with ID ${selectedContentControl.id}`);
         selectedContentControl.comboBoxContentControl.deleteAllListItems();
         await context.sync();
 
@@ -247,7 +305,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.ComboBoxContentControl` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.

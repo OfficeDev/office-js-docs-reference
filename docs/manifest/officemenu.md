@@ -1,7 +1,7 @@
 ---
 title: OfficeMenu element in the manifest file
 description: The OfficeMenu element defines a collection of controls to be added to the Office context menu.
-ms.date: 03/05/2024
+ms.date: 08/13/2024
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,7 @@ Defines a collection of controls to be added to the Office context menu. Applies
 
 - Taskpane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -25,53 +25,47 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 | Attribute            | Required | Description                          |
 |:---------------------|:--------:|:-------------------------------------|
-| [xsi:type](#xsitype) | Yes      | The type of OfficeMenu being defined.|
+| [id](#id) | Yes      | The type of OfficeMenu being defined.|
+
+### id
+
+Although its official data type is string, this attribute effectively functions as a type attribute, and there are only two possible values. The attribute specifies the type of built-in Office menu to add this Office Add-in to.
+
+- `ContextMenuText` - Displays the item on the context menu when text is selected and the user opens that menu (e.g., right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
+- `ContextMenuCell` - Displays the item on the context menu when the user opens that menu (e.g., right-clicks) on a cell on the spreadsheet. Applies to Excel.
+
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  [Control of type Menu](control-menu.md)    | Yes |  A collection of one or more Control objects.  |
+|  [Control of type Button](control-button.md)    | Yes |  A single **Button** control object.  |
 
-## xsi:type
-
-Specifies a built-in menu of the Office client application on which to add this Office Add-in.
-
-- `ContextMenuText` -  Displays the item on the context menu when text is selected and the user opens the context menu (right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
-- `ContextMenuCell` -  Displays the item on the context menu when the user opens the context menu (right-clicks) on a cell on the spreadsheet. Applies to Excel.
+> [!NOTE]
+> There can be only one child control and it must be type **Button**.
 
 ## Example
 
 ```xml
-<OfficeMenu xsi:type="ContextMenuCell">
-    <Control xsi:type="Menu" id="Contoso.myMenu">
-      <Label resid="residLabel3" />
+<ExtensionPoint xsi:type="ContextMenu">
+  <OfficeMenu id="ContextMenuText">
+    <Control xsi:type="Button" id="ContextMenuButton">
+      <Label resid="TaskpaneButton.Label"/>
       <Supertip>
-          <Title resid="residLabel" />
-          <Description resid="residToolTip" />
+        <!-- ToolTip title. resid must point to a ShortString resource. -->
+        <Title resid="TaskpaneButton.Label" />
+        <!-- ToolTip description. resid must point to a LongString resource. -->
+        <Description resid="TaskpaneButton.Tooltip" />
       </Supertip>
       <Icon>
-        <bt:Image size="16" resid="icon1_16x16" />
-        <bt:Image size="32" resid="icon1_32x32" />
-        <bt:Image size="80" resid="icon1_80x80" />
+        <bt:Image size="16" resid="tpicon_16x16" />
+        <bt:Image size="32" resid="tpicon_32x32" />
+        <bt:Image size="80" resid="tpicon_80x80" />
       </Icon>
-      <Items>
-        <Item id="myMenuItemID">
-          <Label resid="residLabel3"/>
-          <Supertip>
-            <Title resid="residLabel" />
-            <Description resid="residToolTip" />
-          </Supertip>
-          <Icon>
-            <bt:Image size="16" resid="icon1_16x16" />
-            <bt:Image size="32" resid="icon1_32x32" />
-            <bt:Image size="80" resid="icon1_80x80" />
-          </Icon>
-          <Action xsi:type="ShowTaskpane">
-            <SourceLocation resid="residTaskpaneUrl2" />
-          </Action>
-        </Item>
-      </Items>
+      <Action xsi:type="ExecuteFunction">
+        <FunctionName>action</FunctionName>
+      </Action>
     </Control>
-</OfficeMenu>
+  </OfficeMenu>
+</ExtensionPoint>
 ```

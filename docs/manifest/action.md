@@ -15,7 +15,7 @@ Specifies the action to perform when the user selects a [Button](control-button.
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -92,7 +92,7 @@ Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the ID of the 
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -146,7 +146,7 @@ Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the custom tit
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -188,7 +188,7 @@ Optional element when **xsi:type** is `ShowTaskpane`. The containing [VersionOve
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -198,9 +198,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > Although the **SupportsPinning** element was introduced in [requirement set 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md), it's currently only supported for Microsoft 365 subscribers using the following:
 >
 > - Modern Outlook on the web
-> - [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
-> - Outlook 2016 or later on Windows (build 7628.1000 or later)
-> - Outlook on Mac (build 16.13.503 or later)
+> - [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+> - Outlook 2016 or later on Windows (Version 1612 (Build 7628.1000) or later)
+> - Outlook on Mac (Version 16.13 (18050300) or later)
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -219,7 +219,7 @@ Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -242,14 +242,14 @@ Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
 - [Mailbox 1.13](../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md)
 
 > [!NOTE]
-> Although Outlook on the web and new Outlook on Windows (preview) support Mailbox requirement set 1.13, an add-in won't activate if the Reading Pane is hidden or a message isn't first selected. To learn more, see [Feature support in Outlook on the web and new Outlook on Windows (preview)](/office/dev/add-ins/outlook/contextless#feature-support-in-outlook-on-the-web-and-new-outlook-on-windows-preview).
+> Although Outlook on the web and new Outlook on Windows support Mailbox requirement set 1.13, an add-in won't activate if the Reading Pane is hidden or a message isn't first selected. To learn more, see [Feature support in Outlook on the web and new Outlook on Windows](/office/dev/add-ins/outlook/contextless#feature-support-in-outlook-on-the-web-and-new-outlook-on-windows).
 
 ```xml
 <Action xsi:type="ShowTaskpane">

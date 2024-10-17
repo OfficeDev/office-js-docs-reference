@@ -17,7 +17,7 @@ Provides the URL of an image file that is used as an icon.
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 > [!NOTE]
 > You must use Secure Sockets Layer (SSL) for all URLs in the **\<Image\>** element and any child **\<Override\>** elements.
@@ -47,7 +47,7 @@ The following image file formats are supported.
 
 > [!IMPORTANT]
 >
-> - If the image is your add-in's representative icon, see [Create effective listings in AppSource and within Office](/office/dev/store/create-effective-office-store-listings#create-an-icon-for-your-add-in) for size and other requirements.
+> - If the image is your add-in's representative icon, see [Create effective listings in AppSource and within Office](/partner-center/marketplace-offers/create-effective-office-store-listings#create-an-icon-for-your-add-in) for size and other requirements.
 > - Office Add-ins require the ability to cache image resources for performance purposes. For this reason, the server hosting an image resource must not add any CACHE-CONTROL directives to the response header. These directives result in Office automatically substituting a generic or default image. To force the use of new icons on your development computer, [Clear the Office cache](/office/dev/add-ins/testing/clear-cache). To force the use of new icons on your end-user's computers, you must give the new icons different URLs from the old ones.
 
 ## Child elements

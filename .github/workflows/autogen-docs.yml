@@ -1,0 +1,56 @@
+name: autogen-docs
+run-name: Automatically run GenerateDocs
+on:
+  schedule:
+    - cron: '45 10 * * TUE'
+    - cron: '45 10 * * THU'
+jobs:
+  autogen-docs:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./generate-docs
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Make the script file executable
+        run: |
+          echo "Making script file executable"
+          chmod +x ./GenerateDocs.sh
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Run GenerateDocs script
+        run: |
+          echo "Generating docs"
+          ./GenerateDocs.sh -b DT+
+      - name: Undo chmod
+        run: |
+          echo "Undoing script file chmod"
+          chmod -x ./GenerateDocs.sh
+      - name: Add any changes
+        run: |
+          echo "Determining if there are any changes"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git checkout -b autogen-docs
+          git add ../.
+      - name: Run git status
+        run: |
+          {
+            echo 'git_status<<EOF'
+            git status
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+        id: run_git_status
+      - name: Commit and push changes if any
+        if: ${{ !contains(steps.run_git_status.outputs.git_status, 'nothing to commit, working tree clean') }}
+        run: |
+          echo "Committing and pushing changes to autogen-docs branch"
+          git commit -m "Automatically generated docs"
+          git push --set-upstream origin autogen-docs
+  

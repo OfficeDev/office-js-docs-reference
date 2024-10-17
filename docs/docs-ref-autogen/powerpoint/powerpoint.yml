@@ -10,6 +10,29 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
@@ -68,6 +91,14 @@ interfaces:
 classes:
   - 'powerpoint!PowerPoint.Application:class'
   - 'powerpoint!PowerPoint.BulletFormat:class'
+  - 'powerpoint!PowerPoint.CustomProperty:class'
+  - 'powerpoint!PowerPoint.CustomPropertyCollection:class'
+  - 'powerpoint!PowerPoint.CustomXmlPart:class'
+  - 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
+  - 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+  - 'powerpoint!PowerPoint.DocumentProperties:class'
+  - 'powerpoint!PowerPoint.Hyperlink:class'
+  - 'powerpoint!PowerPoint.HyperlinkCollection:class'
   - 'powerpoint!PowerPoint.ParagraphFormat:class'
   - 'powerpoint!PowerPoint.Presentation:class'
   - 'powerpoint!PowerPoint.RequestContext:class'
@@ -90,6 +121,7 @@ classes:
   - 'powerpoint!PowerPoint.TextRange:class'
 enums:
   - 'powerpoint!PowerPoint.ConnectorType:enum'
+  - 'powerpoint!PowerPoint.DocumentPropertyType:enum'
   - 'powerpoint!PowerPoint.ErrorCodes:enum'
   - 'powerpoint!PowerPoint.GeometricShapeType:enum'
   - 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
@@ -106,7 +138,7 @@ functions:
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     package: powerpoint!
     summary: >-
-      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded
       .pptx file.
 
 
@@ -118,7 +150,7 @@ functions:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
       parameters:
         - id: base64File
-          description: Optional. The base64-encoded .pptx file. The default value is null.
+          description: Optional. The Base64-encoded .pptx file. The default value is null.
           type: string
       return:
         type: Promise&lt;void&gt;

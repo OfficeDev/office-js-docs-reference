@@ -473,22 +473,9 @@ properties:
     package: outlook!
     fullName: itemId
     summary: >-
-      Gets the [Exchange Web Services item
+      Gets the [Exchange Web Services (EWS) item
       identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
-      for the current item.
-
-
-      The `itemId` property is not available in compose mode. If an item identifier is required, the `saveAsync` method
-      can be used to save the item to the store, which will return the item identifier in the `asyncResult.value`
-      parameter in the callback function.
-
-
-      **Note**: The identifier returned by the `itemId` property is the same as the [Exchange Web Services item
-      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
-      -->. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
-      -->. For more details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id)<!-- -->.
+      of the current item.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -498,6 +485,20 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - The `itemId` property isn't available in compose mode. If an item identifier is required, the
+      `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the
+      item identifier in the `asyncResult.value` parameter in the callback function. If the item is already saved, you
+      can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
 
 
       #### Examples
@@ -1025,8 +1026,9 @@ properties:
       -->**: Appointment Attendee
 
 
-      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
-      and Private sensitivity levels.
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
+      only support Normal and Private sensitivity levels.
 
 
       #### Examples
@@ -1053,9 +1055,10 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the
-      parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of
-      the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
+      However, on iOS and Android, the seriesId returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
@@ -1472,8 +1475,9 @@ methods:
       and all attendees of the selected appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
@@ -1550,8 +1554,9 @@ methods:
       and all attendees of the selected appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
@@ -1620,8 +1625,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
-      the 2-column or 1-column view.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
@@ -1692,8 +1698,9 @@ methods:
       appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
@@ -1791,8 +1798,9 @@ methods:
       appointment.
 
 
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is
+      displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
@@ -1848,9 +1856,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
-      that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier
-      is valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1940,9 +1949,10 @@ methods:
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from an
       [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
-      that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment identifier
-      is valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1991,7 +2001,14 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getEntities:member(1)'
     package: outlook!
     fullName: getEntities()
-    summary: Gets the entities found in the selected item's body.
+    summary: >-
+      Gets the entities found in the selected item's body.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2004,93 +2021,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
-
-
-      **Important**:
-
-
-      - Entity-based contextual Outlook add-ins, including the `getEntities` method, will be retired in Q2 of 2024. The
-      work to retire this method will start in May and continue until the end of June. After June, contextual add-ins
-      will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will
-      continue to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual
-      add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules,
-      see [Use regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
-      entity-based contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
-
-
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
-      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-      const entities = Office.context.mailbox.item.getEntities();
-
-      let entityTypesFound = 0;
-
-      if (entities.addresses.length > 0) {
-          console.warn("physical addresses: ");
-          console.log(entities.addresses);
-          entityTypesFound++;
-      }
-
-      if (entities.contacts.length > 0) {
-          console.warn("contacts: ");
-          entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-          entityTypesFound++;
-      }
-
-      if (entities.emailAddresses.length > 0) {
-          console.warn("email addresses: ");
-          console.log(entities.emailAddresses);
-          entityTypesFound++;
-      }
-
-      if (entities.meetingSuggestions.length > 0) {
-          console.warn("meetings suggestions: ");
-          entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-          entityTypesFound++;
-      }
-
-      if (entities.phoneNumbers.length > 0) {
-          console.warn("phone numbers: ");
-          entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-          entityTypesFound++;
-      }
-
-      if (entities.taskSuggestions.length > 0) {
-          console.warn("task suggestions: ");
-          entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-          entityTypesFound++;
-      }
-
-      if (entities.urls.length > 0) {
-          console.warn("URLs: ");
-          console.log(entities.urls);
-          entityTypesFound++;
-      }
-
-      if (entityTypesFound == 0)
-
-      {
-          console.log("No entities found on this item.");
-      }
-
-      ```
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'getEntities(): Entities;'
       return:
@@ -2100,7 +2035,14 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
     package: outlook!
     fullName: getEntitiesByType(entityType)
-    summary: Gets an array of all the entities of the specified entity type found in the selected item's body.
+    summary: >-
+      Gets an array of all the entities of the specified entity type found in the selected item's body.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2113,63 +2055,18 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
-
-
-      **Important**:
-
-
-      - Entity-based contextual Outlook add-ins, including the `getEntitiesByType` method, will be retired in Q2 of
-      2024. The work to retire this method will start in May and continue until the end of June. After June, contextual
-      add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules
-      will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your
-      contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement
-      these rules, see [Use regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
-      entity-based contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
-
-
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
-      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
-
-
-      console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
-
-      ```
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: >-
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion |
         PhoneNumber | TaskSuggestion>;
       parameters:
         - id: entityType
-          description: >-
-            One of the `EntityType` enumeration values.
-
-
-            While the minimum permission level to use this method is **restricted**, some entity types require
-            **read item** to access, as specified in the following table.
-
-
-            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required permission
-            level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
-            <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
-            <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
-            <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
-            <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
+          description: One of the `EntityType` enumeration values.
           type: '<xref uid="outlook!Office.MailboxEnums.EntityType:enum" /> | string'
       return:
         type: >-
@@ -2185,7 +2082,15 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)'
     package: outlook!
     fullName: getFilteredEntitiesByName(name)
-    summary: Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+    summary: >-
+      Returns well-known entities in the selected item that pass the named filter defined in an add-in only manifest
+      file.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2198,51 +2103,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
-
-
-      **Important**:
-
-
-      - Entity-based contextual Outlook add-ins, including the `getFilteredEntitiesByName` method, will be retired in Q2
-      of 2024. The work to retire this method will start in May and continue until the end of June. After June,
-      contextual add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular
-      expression rules will continue to be supported after entity-based contextual add-ins are retired. We recommend
-      updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to
-      implement these rules, see [Use regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
-      entity-based contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
-
-
-      - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
-      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
-
-
-      // This API would only work when you click on highlighted physical address that has the word "Way" in it.
-
-      console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
-
-      ```
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: >-
         getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber |
@@ -2257,11 +2122,11 @@ methods:
           uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> |
           <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
         description: >-
-          The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
-          manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in
-          the manifest with a `FilterName` element value that matches the `name` parameter, the method returns
-          `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are
-          no entities in the current item that match, the method returns an empty array.
+          The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the add-in
+          manifest file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the
+          manifest with a `FilterName` element value that matches the `name` parameter, the method returns `null`<!--
+          -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are no
+          entities in the current item that match, the method returns an empty array.
   - name: 'getInitializationContextAsync(options, callback)'
     uid: 'outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)'
     package: outlook!
@@ -2363,7 +2228,9 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getRegExMatches:member(1)'
     package: outlook!
     fullName: getRegExMatches()
-    summary: Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+    summary: >-
+      Returns string values in the selected item that match the regular expressions defined in an add-in only manifest
+      file.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2381,22 +2248,16 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
-      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
-      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
-      regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
-      contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
+      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+      We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For
+      guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2462,10 +2323,10 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-      // This API would only work when you click on highlighted word "ScriptLab".
+      // This API only works when you click on the highlighted word "ScriptLab".
 
       console.log(Office.context.mailbox.item.getRegExMatches());
 
@@ -2477,18 +2338,18 @@ methods:
       return:
         type: any
         description: >-
-          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
-          `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
-          For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's
-          specified by that rule. The `PropertyName` simple type defines the supported properties.
+          An object that contains arrays of strings that match the regular expressions defined in the add-in manifest
+          file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching
+          `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to
+          occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the
+          supported properties.
   - name: getRegExMatchesByName(name)
     uid: 'outlook!Office.AppointmentRead#getRegExMatchesByName:member(1)'
     package: outlook!
     fullName: getRegExMatchesByName(name)
     summary: >-
-      Returns string values in the selected item that match the named regular expression defined in an XML manifest
-      file.
+      Returns string values in the selected item that match the named regular expression defined in an add-in only
+      manifest file.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2506,22 +2367,16 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
-      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
-      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
-      regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
-      contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
+      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+      We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For
+      guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
@@ -2579,10 +2434,10 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
-      // This API would only work when you click on highlighted word "ScriptLab".
+      // This API only works when you click on the highlighted word "ScriptLab".
 
       console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 
@@ -2599,8 +2454,8 @@ methods:
         type: 'string[]'
         description: >-
           An array that contains the strings that match the regular expression defined in the
-          `ItemHasRegularExpressionMatch` rule element in the manifest XML file, with the specified `RegExName` element
-          value.
+          `ItemHasRegularExpressionMatch` rule element in the add-in manifest file, with the specified `RegExName`
+          element value.
   - name: getSelectedEntities()
     uid: 'outlook!Office.AppointmentRead#getSelectedEntities:member(1)'
     package: outlook!
@@ -2608,6 +2463,12 @@ methods:
     summary: >-
       Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
       add-ins.
+
+
+      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2620,99 +2481,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
-
-
-      **Important**:
-
-
-      - Entity-based contextual Outlook add-ins, including the `getSelectedEntities` method, will be retired in Q2 of
-      2024. The work to retire this method will start in May and continue until the end of June. After June, contextual
-      add-ins will no longer be able to detect entities in mail items to perform tasks on them. Regular expression rules
-      will continue to be supported after entity-based contextual add-ins are retired. We recommend updating your
-      contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement
-      these rules, see [Use regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual Outlook add-ins, see [Retirement of
-      entity-based contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
-
-
-      - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
-      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
-
-
-      const entities = Office.context.mailbox.item.getSelectedEntities();
-
-      let entityTypesFound = 0;
-
-      if (entities.addresses.length > 0) {
-          console.warn("physical addresses: ");
-          console.log(entities.addresses);
-          entityTypesFound++;
-      }
-
-      if (entities.contacts.length > 0) {
-          console.warn("contacts: ");
-          entities.contacts.forEach(function (contact) { console.log(contact.personName); })
-          entityTypesFound++;
-      }
-
-      if (entities.emailAddresses.length > 0) {
-          console.warn("email addresses: ");
-          console.log(entities.emailAddresses);
-          entityTypesFound++;
-      }
-
-      if (entities.meetingSuggestions.length > 0) {
-          console.warn("meetings suggestions: ");
-          entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
-          entityTypesFound++;
-      }
-
-      if (entities.phoneNumbers.length > 0) {
-          console.warn("phone numbers: ");
-          entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
-          entityTypesFound++;
-      }
-
-      if (entities.taskSuggestions.length > 0) {
-          console.warn("task suggestions: ");
-          entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
-          entityTypesFound++;
-      }
-
-      if (entities.urls.length > 0) {
-          console.warn("URLs: ");
-          console.log(entities.urls);
-          entityTypesFound++;
-      }
-
-      if (entityTypesFound == 0)
-
-      {
-          console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
-      }
-
-      ```
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'getSelectedEntities(): Entities;'
       return:
@@ -2723,8 +2496,8 @@ methods:
     package: outlook!
     fullName: getSelectedRegExMatches()
     summary: >-
-      Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
-      Highlighted matches apply to contextual add-ins.
+      Returns string values in a highlighted match that match the regular expressions defined in an add-in only manifest
+      file. Highlighted matches apply to contextual add-ins.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2742,22 +2515,16 @@ methods:
       **Important**:
 
 
-      - Entity-based contextual Outlook add-ins will be retired in Q2 of 2024. Once retired, contextual add-ins will no
-      longer be able to detect entities in mail items to perform tasks on them. Regular expression rules will continue
-      to be supported after entity-based contextual add-ins are retired. We recommend updating your contextual add-in to
-      use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Use
-      regular expression activation rules to show an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)<!--
-      -->. To learn more about the retirement of entity-based contextual add-ins, see [Retirement of entity-based
-      contextual Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
-      -->.
+      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
+      We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For
+      guidance on how to implement these rules, see [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 
 
       - This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [unified manifest for Microsoft
-      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified
+      manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -2823,16 +2590,14 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
 
 
       const matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
       if (matches) {
           console.log(matches);
-      }
-
-      else {
+      } else {
           console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
       }
 
@@ -2844,11 +2609,11 @@ methods:
       return:
         type: any
         description: >-
-          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
-          `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
-          For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that
-          is specified by that rule. The `PropertyName` simple type defines the supported properties.
+          An object that contains arrays of strings that match the regular expressions defined in the add-in manifest
+          file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
+          `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to
+          occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the
+          supported properties.
   - name: 'getSharedPropertiesAsync(options, callback)'
     uid: 'outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)'
     package: outlook!
@@ -2875,59 +2640,6 @@ methods:
 
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on an appointment from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function(result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-          Office.context.mailbox.item.getSharedPropertiesAsync(
-            {
-              // Pass auth token along.
-              asyncContext: result.value
-            },
-            function(result2) {
-              let sharedProperties = result2.value;
-              let delegatePermissions = sharedProperties.delegatePermissions;
-
-              // Determine if user has the appropriate permission to do the operation.
-              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-                const ewsId = Office.context.mailbox.item.itemId;
-                const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-                let rest_url =
-                  sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
-
-                $.ajax({
-                  url: rest_url,
-                  dataType: "json",
-                  headers: { Authorization: "Bearer " + result2.asyncContext }
-                })
-                  .done(function(response) {
-                    console.log(response);
-                  })
-                  .fail(function(error) {
-                    console.error(error);
-                  });
-              }
-            }
-          );
-        }
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2988,14 +2700,15 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on an item from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-        console.log(result.value);
+      Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error("The current folder or mailbox isn't shared.");
+          return;
+        }
+        const sharedProperties = result.value;
+        console.log(`Owner: ${sharedProperties.owner}`);
+        console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+        console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
       });
 
       ```

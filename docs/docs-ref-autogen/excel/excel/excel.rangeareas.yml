@@ -248,11 +248,30 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: >-
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"):
+        void;
       parameters:
         - id: applyToString
           description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
-          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"'
+      return:
+        type: void
+        description: ''
+  - name: clearOrResetContents()
+    uid: 'excel!Excel.RangeAreas#clearOrResetContents:member(1)'
+    package: excel!
+    fullName: clearOrResetContents()
+    summary: >-
+      Clears the values of the cells in the ranges, with special consideration given to cells containing controls. If
+      the ranges contain only blank values and controls set to their default value, then the values and control
+      formatting are removed. Otherwise, this sets the cells with controls to their default value and clears the values
+      of the other cells in the ranges.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clearOrResetContents(): void;'
       return:
         type: void
         description: ''
@@ -771,9 +790,9 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RangeAreas object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      passed to it.) Whereas the original `Excel.RangeAreas` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -789,8 +808,8 @@ methods:
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
-      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created.
     remarks: ''
@@ -807,7 +826,7 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''

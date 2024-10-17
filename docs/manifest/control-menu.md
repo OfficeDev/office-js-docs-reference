@@ -1,7 +1,7 @@
 ---
 title: Control element of type Menu in the manifest file
 description: Defines a menu whose items can execute actions or launch task panes.
-ms.date: 09/25/2023
+ms.date: 09/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +26,6 @@ When used with the [ContextMenu extension point](extensionpoint.md#contextmenu),
 | Element | Required | Description |
 |:-----|:-----:|:-----|
 | [Label](#label) | Yes | The text for the menu. |
-| **\<ToolTip\>** | No | The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element. |
 | [Supertip](supertip.md) | Yes | The supertip for this menu.<br><br>**Important**: Supertips are only supported in Office desktop clients. |
 | [Icon](icon.md) | Yes | An image for the menu. |
 | **\<Items\>** | Yes | A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
@@ -44,7 +43,7 @@ Specifies the text for the menu name by means of its only attribute, **resid**, 
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -60,7 +59,6 @@ In the following example, the menu has two items. The first displays a task pane
 <Control xsi:type="Menu" id="Contoso.TestMenu2">
   <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
   <Label resid="residLabel3" />
-  <Tooltip resid="residToolTip" />
   <Supertip>
     <Title resid="residLabel" />
     <Description resid="residToolTip" />

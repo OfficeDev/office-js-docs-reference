@@ -4,7 +4,29 @@ uid: 'word!Word.Paragraph:class'
 package: word!
 fullName: Word.Paragraph
 summary: 'Represents a single paragraph in a selection, range, content control, or document body.'
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+  await Word.run(async (context) => {
+    // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    paragraph.load("text");
+
+    await context.sync();
+    console.log(paragraph.text);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -2207,7 +2229,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Paragraph` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.

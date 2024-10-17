@@ -1,7 +1,7 @@
 ---
 title: Rule element in the manifest file
 description: The Rule element specifies the activation rules that should be evaluated for this contextual mail add-in.
-ms.date: 01/16/2024
+ms.date: 09/04/2024
 ms.localizationpriority: medium
 ---
 
@@ -28,13 +28,13 @@ The type of rule can be one of the following:
 
 - [ItemIs](#itemis-rule)
 - [ItemHasAttachment](#itemhasattachment-rule)
-- [ItemHasKnownEntity](#itemhasknownentity-rule)
+- [ItemHasKnownEntity](#itemhasknownentity-rule-deprecated) (deprecated)
 - [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch-rule)
 - [RuleCollection](#rulecollection)
 
 ## ItemIs rule
 
-Defines a rule that evaluates to true if the selected item is of the specified type.
+Defines a rule that evaluates to true if the selected item in read or compose form is of the specified type. You can specify more than one `ItemIs` rule in the manifest.
 
 ### Attributes
 
@@ -42,8 +42,17 @@ Defines a rule that evaluates to true if the selected item is of the specified t
 |:-----|:-----:|:-----|
 | **ItemType** | Yes | Specifies the item type to match. Can be `Message` or `Appointment`. `Message` item type includes email, meeting requests, meeting responses, and meeting cancellations. |
 | **FormType** | No (within [ExtensionPoint](extensionpoint.md)), Yes (within [OfficeApp](officeapp.md)) | Specifies whether the app should appear in read or edit form for the item. Can be one of the following: `Read`, `Edit`, `ReadOrEdit`. If specified on a `Rule` within an `ExtensionPoint`, this value MUST be `Read`. |
-| **ItemClass** | No | Specifies the custom message class to match. For more information, see [Activate a mail add-in in Outlook for a specific message class](/office/dev/add-ins/outlook/activation-rules). |
+| **ItemClass** | No | Specifies the custom message class to match. For more information, see [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes). |
 | **IncludeSubClasses** | No | Specifies whether the rule should evaluate to true if the item is of a subclass of the specified message class; the default is `false`. |
+
+#### ItemType
+
+The following table describes the `Appointment` and `Message` item types you can specify in the `ItemType` attribute.
+
+| Value | Description |
+|:-----|:-----|
+| **Appointment** | Specifies an item in an Outlook calendar. This includes a meeting item that has been responded to and has an organizer and attendees, or an appointment that doesn't have an organizer or attendee and is simply an item on the calendar. This corresponds to the IPM.Appointment message class in Outlook. |
+| **Message** | Specifies one of the following items received in typically the Inbox. <ul><li><p>An email message. This corresponds to the IPM.Note message class in Outlook.</p></li><li><p>A meeting request, response, or cancellation. This corresponds to the following message classes in Outlook.</p><p>IPM.Schedule.Meeting.Request</p><p>IPM.Schedule.Meeting.Neg</p><p>IPM.Schedule.Meeting.Pos</p><p>IPM.Schedule.Meeting.Tent</p><p>IPM.Schedule.Meeting.Canceled</p></li></ul> |
 
 ### Example
 
@@ -53,7 +62,7 @@ Defines a rule that evaluates to true if the selected item is of the specified t
 
 ## ItemHasAttachment rule
 
-Defines a rule that evaluates to true if the item contains an attachment.
+Defines a rule that evaluates to true if the item in read form contains an attachment.
 
 ### Example
 
@@ -61,7 +70,10 @@ Defines a rule that evaluates to true if the item contains an attachment.
 <Rule xsi:type="ItemHasAttachment" />
 ```
 
-## ItemHasKnownEntity rule
+## ItemHasKnownEntity rule (deprecated)
+
+> [!WARNING]
+> The **\<ItemHasKnownEntity\>** element is now deprecated. Specify regular expression rules using the [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch-rule) element instead.
 
 Defines a rule that evaluates to true if the item contains text of the specified entity type in its subject or body.
 
@@ -83,7 +95,9 @@ Defines a rule that evaluates to true if the item contains text of the specified
 
 ## ItemHasRegularExpressionMatch rule
 
-Defines a rule that evaluates to true if a match for the specified regular expression can be found in the specified property of the item.
+Defines a rule that evaluates to true if a match for the specified regular expression can be found in the specified property of the item in read form.
+
+To learn how to implement the `ItemHasRegularExpressionMatch` rule, see [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins).
 
 ### Attributes
 
@@ -114,15 +128,16 @@ Defines a collection of rules and the logical operator to use when evaluating th
 ### Example
 
 ```XML
-<Rule xsi:type="RuleCollection" Mode="And">
-  <Rule xsi:type="ItemIs" ItemType="Message" />
-  <Rule xsi:type="ItemHasKnownEntity" EntityType="MeetingSuggestion" />
-  <Rule xsi:type="ItemHasKnownEntity" EntityType="Address" Highlight="none" />
-</Rule>
+<ExtensionPoint xsi:type="DetectedEntity">
+  <Label resid="Context.Label"/>
+  <SourceLocation resid="DetectedEntity.URL" />
+  <Rule xsi:type="RuleCollection" Mode="And">
+    <Rule xsi:type="ItemIs" ItemType="Message"/>
+    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="videoURL" RegExValue="http://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}" PropertyName="BodyAsPlaintext"/>
+  </Rule>
+</ExtensionPoint>
 ```
 
 ## See also
 
-- [Activation rules for Outlook add-ins](/office/dev/add-ins/outlook/activation-rules)
-- [Match strings in an Outlook item as well-known entities](/office/dev/add-ins/outlook/match-strings-in-an-item-as-well-known-entities)
-- [Use regular expression activation rules to show an Outlook add-in](/office/dev/add-ins/outlook/use-regular-expressions-to-show-an-outlook-add-in)
+- [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins)

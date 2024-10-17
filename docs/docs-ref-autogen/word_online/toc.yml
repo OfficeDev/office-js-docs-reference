@@ -481,9 +481,9 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-  - name: Manifest reference
+  - name: Add-in only manifest reference
     items:
-      - name: Manifest overview
+      - name: Add-in only manifest overview
         href: ../../manifest/manifest.md
       - name: AllowSnapshot
         href: ../../manifest/allowsnapshot.md
@@ -1062,6 +1062,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.1 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
             displayName: Word
           - name: WordApi 1.8 requirement set
             href: ../../requirement-sets/word/word-api-1-8-requirement-set.md

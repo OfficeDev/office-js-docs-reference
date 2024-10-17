@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalFormatCollectionUpdateData
 summary: >-
-  An interface for updating data on the ConditionalFormatCollection object, for use in
+  An interface for updating data on the `ConditionalFormatCollection` object, for use in
   `conditionalFormatCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

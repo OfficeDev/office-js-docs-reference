@@ -105,7 +105,7 @@ functions:
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     package: powerpoint!
     summary: >-
-      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded
       .pptx file.
 
 
@@ -117,7 +117,7 @@ functions:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
       parameters:
         - id: base64File
-          description: Optional. The base64-encoded .pptx file. The default value is null.
+          description: Optional. The Base64-encoded .pptx file. The default value is null.
           type: string
       return:
         type: Promise&lt;void&gt;

@@ -3,7 +3,7 @@ name: Excel.Interfaces.TimelineStyleUpdateData
 uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.TimelineStyleUpdateData
-summary: 'An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `TimelineStyle` object, for use in `timelineStyle.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

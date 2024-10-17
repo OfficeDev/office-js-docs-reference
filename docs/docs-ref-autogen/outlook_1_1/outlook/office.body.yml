@@ -157,15 +157,21 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
@@ -184,8 +190,10 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
       **Errors**:
@@ -278,15 +286,21 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
@@ -305,8 +319,10 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
       **Errors**:
@@ -342,13 +358,6 @@ methods:
       if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
       or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
       insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -361,6 +370,22 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+
+
+      **Important*:
+
+
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
       **Errors**:
@@ -450,13 +475,6 @@ methods:
       if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
       or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
       insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -469,6 +487,22 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+
+
+      **Important*:
+
+
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
       **Errors**:

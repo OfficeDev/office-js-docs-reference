@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.Interfaces.TableRowData#cells:member'
     package: word!
     fullName: cells
-    summary: Gets cells. Read-only.
+    summary: Gets cells.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

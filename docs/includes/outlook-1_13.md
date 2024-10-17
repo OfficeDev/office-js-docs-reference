@@ -1,5 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivitylabel-member)|Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of an appointment.|
 |[Body](/javascript/api/outlook/office.body)|[prependOnSendAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.body#outlook-office-body-prependonsendasync-member(1))|Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.|
 ||[prependOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.body#outlook-office-body-prependonsendasync-member(1))|Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.|
 |[DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime)|[getAsync(callback?: (asyncResult: Office.AsyncResult<Date \| 0>) => void)](/javascript/api/outlook/office.delaydeliverytime#outlook-office-delaydeliverytime-getasync-member(1))|Gets the delivery date and time of a message.|

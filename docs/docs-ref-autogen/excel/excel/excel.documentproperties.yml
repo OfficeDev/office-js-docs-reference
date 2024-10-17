@@ -37,7 +37,9 @@ properties:
     uid: 'excel!Excel.DocumentProperties#comments:member'
     package: excel!
     fullName: comments
-    summary: The comments of the workbook.
+    summary: >-
+      The Comments field in the metadata of the workbook. These have no connection to comments by users made in the
+      workbork.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -309,9 +311,9 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      passed to it.) Whereas the original `Excel.DocumentProperties` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

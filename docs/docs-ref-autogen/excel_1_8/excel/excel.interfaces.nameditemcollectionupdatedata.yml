@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.NamedItemCollectionUpdateData
 summary: >-
-  An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ... })`<!--
+  An interface for updating data on the `NamedItemCollection` object, for use in `namedItemCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

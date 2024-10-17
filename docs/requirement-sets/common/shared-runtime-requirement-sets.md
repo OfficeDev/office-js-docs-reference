@@ -15,9 +15,9 @@ Parts of an Office Add-in that run JavaScript code, such as task panes, function
 The following table lists the Shared Runtime requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.2 | Excel: Supported | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: 16.52.0.0 | Not supported |
-| SharedRuntime 1.1  | Excel, PowerPoint, Word: Supported | <ul><li>Excel: Version 2002 (Build 12527.20092)</li><li>PowerPoint: Version 2102 (Build 13722.10000)</li><li>Word: Version 2205 (Build 15202.10000)</li></ul> | <ul><li>Excel 2021: Version 2108 (Build 12527.20092)</li><li>PowerPoint 2021: Version 2108 (13722.10000)</li></ul> | <ul><li>Excel: 16.35</li><li>PowerPoint: 16.46.120.0</li><li>Word: 16.61.401.0</li></ul> | Not supported |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| SharedRuntime 1.2 | Excel: Supported | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: Version 16.52 (21080801) | Not supported |
+| SharedRuntime 1.1  | Excel, PowerPoint, Word: Supported | <ul><li>Excel: Version 2002 (Build 12527.20092)</li><li>PowerPoint: Version 2102 (Build 13722.10000)</li><li>Word: Version 2205 (Build 15202.10000)</li></ul> | <ul><li>Excel 2021: Version 2108 (Build 12527.20092)</li><li>PowerPoint 2021: Version 2108 (13722.10000)</li></ul> | <ul><li>Excel: Version 16.35 (20030802)</li><li>PowerPoint: Version 16.46 (21012000)</li><li>Word: 16.61 (22040100)</li></ul> | Not supported |
 
 ## Office versions and build numbers
 
@@ -45,4 +45,4 @@ The SharedRuntime API 1.2 adds the [Office.BeforeDocumentCloseNotification](/jav
 - [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

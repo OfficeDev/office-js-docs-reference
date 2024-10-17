@@ -278,7 +278,7 @@ methods:
         const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
         context.document.addStyle(newStyleName, newStyleType);
         await context.sync();
-        
+
         console.log(newStyleName + " has been added to the style list.");
       });
 
@@ -384,7 +384,7 @@ methods:
     fullName: 'compare(filePath, documentCompareOptions)'
     summary: Displays revision marks that indicate where the specified document differs from another document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -393,7 +393,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/compare-documents.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
 
 
       // Compares the current document with a specified external document.
@@ -417,7 +417,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
@@ -427,6 +427,28 @@ methods:
           type: string
         - id: documentCompareOptions
           description: Optional. The additional options that specifies the behavior of comparing document.
+          type: '<xref uid="word!Word.DocumentCompareOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: 'compareFromBase64(base64File, documentCompareOptions)'
+    uid: 'word!Word.Document#compareFromBase64:member(1)'
+    package: word!
+    fullName: 'compareFromBase64(base64File, documentCompareOptions)'
+    summary: Displays revision marks that indicate where the specified document differs from another document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
+      parameters:
+        - id: base64File
+          description: Required. The Base64-encoded content of the document with which the specified document is compared.
+          type: string
+        - id: documentCompareOptions
+          description: >-
+            Optional. The additional options that specify the behavior for comparing the documents. Note that the
+            `compareTarget` option isn't allowed to be `CompareTargetSelected` in this API.
           type: '<xref uid="word!Word.DocumentCompareOptions:interface" />'
       return:
         type: void
@@ -713,7 +735,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
 
-      // Gets the number of styles.
+      // Gets the number of available styles stored with the document.
 
       await Word.run(async (context) => {
         const styles: Word.StyleCollection = context.document.getStyles();
@@ -746,7 +768,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-custom-style.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
 
 
       // Imports styles from JSON.
@@ -1116,7 +1138,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
@@ -1171,7 +1193,52 @@ events:
     package: word!
     fullName: onAnnotationClicked
     summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onClickedHandler(args: Word.AnnotationClickedEventArgs) {
+        await Word.run(async (context) => {
+          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+          annotation.load("critiqueAnnotation");
+
+          await context.sync();
+
+          console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1185,7 +1252,52 @@ events:
     package: word!
     fullName: onAnnotationHovered
     summary: Occurs when the user hovers the cursor over an annotation.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
+        await Word.run(async (context) => {
+          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
+          annotation.load("critiqueAnnotation");
+
+          await context.sync();
+
+          console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1199,7 +1311,59 @@ events:
     package: word!
     fullName: onAnnotationInserted
     summary: Occurs when the user adds one or more annotations.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onInsertedHandler(args: Word.AnnotationInsertedEventArgs) {
+        await Word.run(async (context) => {
+          const annotations = [];
+          for (let i = 0; i < args.ids.length; i++) {
+            let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
+            annotation.load("id,critiqueAnnotation");
+
+            annotations.push(annotation);
+          }
+
+          await context.sync();
+
+          for (let annotation of annotations) {
+            console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
+          }
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1274,7 +1438,49 @@ events:
     package: word!
     fullName: onAnnotationRemoved
     summary: Occurs when the user deletes one or more annotations.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+
+      // Registers event handlers.
+
+      await Word.run(async (context) => {
+        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
+        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
+
+        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
+        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
+        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
+        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
+
+        await context.sync();
+
+        console.log("Event handlers registered.");
+      });
+
+
+      ...
+
+
+      async function onRemovedHandler(args: Word.AnnotationRemovedEventArgs) {
+        await Word.run(async (context) => {
+          for (let id of args.ids) {
+            console.log(`AnnotationRemoved: ID ${id}`);
+          }
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

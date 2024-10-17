@@ -4,7 +4,28 @@ uid: 'word!Word.Font:class'
 package: word!
 fullName: Word.Font
 summary: Represents a font.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Change the font color
+  // Run a batch operation against the Word object model.
+  await Word.run(async (context) => {
+
+      // Create a range proxy object for the current selection.
+      const selection = context.document.getSelection();
+
+      // Queue a command to change the font color of the current selection.
+      selection.font.color = 'blue';
+
+      // Synchronize the document state by executing the queued commands,
+      // and return a promise to indicate task completion.
+      await context.sync();
+      console.log('The font color of the selection has been changed.');
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -112,7 +133,7 @@ properties:
     summary: >-
       Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
       highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty string for
-      mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in
+      mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in
       Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal",
       "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for
       Windows Desktop, any other color is converted to the closest color when applied to the font.
@@ -440,7 +461,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.

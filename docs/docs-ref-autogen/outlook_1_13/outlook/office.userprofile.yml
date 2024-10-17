@@ -26,7 +26,7 @@ properties:
     summary: |-
       Gets the account type of the user associated with the mailbox.
 
-      **Note**: This member is currently only supported in Outlook on Mac, Build 16.9.1212 and greater.
+      **Note**: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -142,8 +142,9 @@ properties:
       Gets the user's time zone in Windows format.
 
 
-      The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
-      preferences is returned instead.
+      The system time zone is usually returned. However, in Outlook on the web and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->), the default time
+      zone in the calendar preferences is returned instead.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--

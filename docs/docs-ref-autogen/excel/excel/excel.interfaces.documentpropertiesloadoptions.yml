@@ -14,8 +14,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,9 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
     package: excel!
     fullName: comments
-    summary: The comments of the workbook.
+    summary: >-
+      The Comments field in the metadata of the workbook. These have no connection to comments by users made in the
+      workbork.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -4,10 +4,27 @@ uid: 'office!Office.Auth:interface'
 package: office!
 fullName: Office.Auth
 summary: >-
-  The Office Auth namespace, `Office.auth`<!-- -->, provides a method that allows the Office client application to
-  obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the
-  signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
-remarks: ''
+  The Office Auth namespace, `Office.auth`<!-- -->, provides methods for the Office client application to obtain access
+  tokens to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's
+  Microsoft Graph data without requiring the user to sign in a second time.
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Get the auth context object and use it to get an
+  // access token.
+  const authContext = Office.context.auth;
+  authContext.getAccessTokenAsync(function(result) {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+          const token = result.value;
+          console.log(token);
+      } else {
+          console.log("Error obtaining token", result.error);
+      }
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,7 +59,8 @@ methods:
       user is not signed into Office").
 
 
-      - In Outlook on the web, if you use the
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if you use the
       [displayDialogAsync](https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
       method to open a dialog, you must close the dialog before you can call `getAccessToken`<!-- -->.
 
@@ -187,3 +205,32 @@ methods:
       return:
         type: void
         description: ''
+  - name: getAuthContext()
+    uid: 'office!Office.Auth#getAuthContext:member(1)'
+    package: office!
+    fullName: getAuthContext()
+    summary: >-
+      Gets information about the signed-in user. The add-in can pass this information to the Microsoft authentication
+      library (MSAL.js) to get an access token for the current session.
+    remarks: |-
+      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+
+      **Requirement set**: NestedAppAuth 1.1
+
+      #### Examples
+
+      ```TypeScript
+      try{
+          const authContext = await Office.auth.getAuthContext();
+          console.log(authContext.userPrincipalName);
+      } catch (error) {
+          console.log("Error obtaining token", error);
+      }
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAuthContext(): Promise<AuthContext>;'
+      return:
+        type: 'Promise&lt;<xref uid="office!Office.AuthContext:interface" />&gt;'
+        description: Promise to the AuthContext object.

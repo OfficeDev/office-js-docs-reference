@@ -8,7 +8,33 @@ summary: >-
   bounded and potentially labeled regions in a document that serve as containers for specific types of content.
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
   only rich text and plain text content controls are supported.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+
+  await Word.run(async (context) => {
+      const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
+      contentControls.load("text");
+
+      await context.sync();
+
+      for (let i = 0; i < contentControls.items.length; i++) {
+        contentControls.items[i].insertText("Fabrikam", "Replace");
+      }
+
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -505,7 +531,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.

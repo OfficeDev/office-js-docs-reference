@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 05/20/2024
+ms.date: 09/05/2024
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 ## Attributes
 
@@ -30,7 +30,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 There are three types of extension points available in some or all of these hosts.
 
 - [PrimaryCommandSurface](#primarycommandsurface) (Valid for Word, Excel, PowerPoint, and OneNote) - The ribbon in Office.
-- [ContextMenu](#contextmenu) (Valid for Word, Excel, PowerPoint, and OneNote) - The shortcut menu that appears when you select and hold (or right-click) in the Office UI.
+- [ContextMenu](#contextmenu) (Valid for Word, Excel, PowerPoint, and OneNote) - The shortcut menu that appears when you right-click (or select and hold) in the Office UI.
 - [CustomFunctions](#customfunctions) (Valid only for Excel) - A custom function written in JavaScript for Excel.
 
 See the following subsections for the child elements and examples of these types of extension points.
@@ -67,7 +67,6 @@ The following example shows how to use the **\<ExtensionPoint\>** element with *
         <bt:Image size="32" resid="icon1_32x32" />
         <bt:Image size="80" resid="icon1_32x32" />
       </Icon>
-      <Tooltip resid="residToolTip" />
       <Control xsi:type="Button" id="Contoso.Button1">
           <!-- information about the control -->
       </Control>
@@ -79,25 +78,36 @@ The following example shows how to use the **\<ExtensionPoint\>** element with *
 
 ### ContextMenu
 
-A context menu is a shortcut menu that appears when you right-click in the Office UI.
+A context menu is a shortcut menu that appears when you right-click (or select and hold) in the Office UI.
 
 #### Child elements
 
 |Element|Description|
 |:-----|:-----|
-|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings: <ul><li>**ContextMenuText** if the context menu should open when a user right-clicks on the selected text.</li><li>**ContextMenuCell** if the context menu should open when the user right-clicks on a cell on an Excel spreadsheet.</li></ul>|
+|[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings.<ul><li>**ContextMenuText** if the context menu should open when a user right-clicks (or selects and holds) on the selected text.</li><li>**ContextMenuCell** if the context menu should open when a user right-clicks (or selects and holds) on a cell in an Excel spreadsheet.</li></ul>|
 
 #### Example
 
-The following adds a custom context menu to the cells in an Excel spreadsheet.
+The following customizes the context menu opened on the selected text in a supported Office application. Note that the child control must be of type **Button**.
 
 ```xml
 <ExtensionPoint xsi:type="ContextMenu">
-  <OfficeMenu id="ContextMenuCell">
-    <Control xsi:type="Menu" id="Contoso.ContextMenu2">
-            <!-- information about the control -->
+  <OfficeMenu id="ContextMenuText"> <!-- OR, for Excel only: <OfficeMenu id="ContextMenuCell"> -->
+    <Control xsi:type="Button" id="ContextMenuButton">
+      <Label resid="TaskpaneButton.Label"/>
+      <Supertip>
+        <Title resid="TaskpaneButton.Label" />
+        <Description resid="TaskpaneButton.Tooltip" />
+      </Supertip>
+      <Icon>
+        <bt:Image size="16" resid="tpicon_16x16" />
+        <bt:Image size="32" resid="tpicon_32x32" />
+        <bt:Image size="80" resid="tpicon_80x80" />
+      </Icon>
+      <Action xsi:type="ExecuteFunction">
+        <FunctionName>action</FunctionName>
+      </Action>
     </Control>
-    <!-- other controls, as needed -->
   </OfficeMenu>
 </ExtensionPoint>
 ```
@@ -462,7 +472,7 @@ The containing [VersionOverrides](versionoverrides.md) element must have an **xs
 > [!NOTE]
 >
 > - This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
-> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events isn't available with this extension point.
 
 |  Element |  Description  |
 |:-----|:-----|
@@ -476,27 +486,23 @@ Required. The label of the group. The **resid** attribute can be no more than 32
 
 #### Highlight requirements
 
-The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for `ItemHasKnownEntity` and `ItemHasRegularExpressionMatch` rule types.
+The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for the `ItemHasRegularExpressionMatch` rule type.
 
 However, there are some limitations to be aware of. These limitations are in place to ensure that there will always be a highlighted entity in applicable messages or appointments to give the user a way to activate the add-in.
 
-- The `EmailAddress` and `Url` entity types cannot be highlighted, and therefore cannot be used to activate an add-in.
 - If using a single rule, the **Highlight** attribute MUST be set to `all`.
-- If using a `RuleCollection` rule type with `Mode="AND"` to combine multiple rules, at least one of the rules MUST have the **Highlight** attribute set to `all`.
-- If using a `RuleCollection` rule type with `Mode="OR"` to combine multiple rules, all of the rules MUST have the **Highlight** attribute set to `all`.
+- If using a `RuleCollection` rule type with `Mode="And"` to combine multiple rules, at least one of the rules MUST have the **Highlight** attribute set to `all`.
+- If using a `RuleCollection` rule type with `Mode="Or"` to combine multiple rules, all of the rules MUST have the **Highlight** attribute set to `all`.
 
 #### DetectedEntity event example
 
 ```xml
 <ExtensionPoint xsi:type="DetectedEntity">
-  <Label resid="residLabelName"/>
-  <!--If you opt to include RequestedHeight, it must be between 140px to 450px, inclusive.-->
-  <!--<RequestedHeight>360</RequestedHeight>-->
-  <SourceLocation resid="residDetectedEntityURL" />
+  <Label resid="Context.Label"/>
+  <SourceLocation resid="DetectedEntity.URL" />
   <Rule xsi:type="RuleCollection" Mode="And">
-    <Rule xsi:type="ItemIs" ItemType="Message" />
-    <Rule xsi:type="ItemHasKnownEntity" EntityType="MeetingSuggestion" Highlight="all" />
-    <Rule xsi:type="ItemHasKnownEntity" EntityType="Address" Highlight="none" />
+    <Rule xsi:type="ItemIs" ItemType="Message"/>
+    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="videoURL" RegExValue="http://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}" PropertyName="BodyAsPlaintext"/>
   </Rule>
 </ExtensionPoint>
 ```

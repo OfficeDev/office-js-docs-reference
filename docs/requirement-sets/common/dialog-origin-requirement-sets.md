@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogOrigin 1.1 | Supported | Supported | Office 2016 | 16.52 | 2.52 | Version 2108 (Build 10377.1000) |
+| DialogOrigin 1.1 | Supported | Supported | Office 2016 | Version 16.52 (21080801) | Version 2.52 | Version 2108 (Build 10377.1000) |
 
 ## Office versions and build numbers
 
@@ -36,4 +36,4 @@ The Dialog Origin 1.1 is the first version of the API. It provides support for c
 - [Use the Office dialog API in Office Add-ins](/office/dev/add-ins/develop/dialog-api-in-office-add-ins)
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

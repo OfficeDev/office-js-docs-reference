@@ -4,7 +4,36 @@ uid: 'powerpoint!PowerPoint.Presentation:class'
 package: powerpoint!
 fullName: PowerPoint.Presentation
 summary: ''
-remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+      // Get the ID of the first selected slide.
+      const presentation: PowerPoint.Presentation = context.presentation;
+      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+      selected.load("id");
+      await context.sync();
+
+      // Insert the other presentation after the selected slide.
+      const insertOptions: PowerPoint.InsertSlideOptions = {
+          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+          targetSlideId: selected.id
+      };
+      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -68,8 +97,8 @@ methods:
 
       await PowerPoint.run(async function(context) {
           // Get the ID of the first selected slide.
-          const presentation = context.presentation;
-          const selected = presentation.getSelectedSlides().getItemAt(0);
+          const presentation: PowerPoint.Presentation = context.presentation;
+          const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
           selected.load("id");
           await context.sync();
 
@@ -89,7 +118,7 @@ methods:
       content: 'insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;'
       parameters:
         - id: base64File
-          description: The base64-encoded string representing the source presentation file.
+          description: The Base64-encoded string representing the source presentation file.
           type: string
         - id: options
           description: >-
@@ -173,8 +202,8 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original PowerPoint.Presentation object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow copies
+      passed to it.) Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.
     remarks: ''
     isPreview: false

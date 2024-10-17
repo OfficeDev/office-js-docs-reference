@@ -25,7 +25,6 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
@@ -44,7 +43,6 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
@@ -78,7 +76,7 @@ functions:
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     package: powerpoint!
     summary: >-
-      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded
       .pptx file.
 
 
@@ -90,7 +88,7 @@ functions:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
       parameters:
         - id: base64File
-          description: Optional. The base64-encoded .pptx file. The default value is null.
+          description: Optional. The Base64-encoded .pptx file. The default value is null.
           type: string
       return:
         type: Promise&lt;void&gt;

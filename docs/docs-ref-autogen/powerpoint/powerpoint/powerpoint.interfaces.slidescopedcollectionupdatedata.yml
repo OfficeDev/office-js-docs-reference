@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideScopedCollectionUpdateData
 summary: >-
-  An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ...
+  An interface for updating data on the `SlideScopedCollection` object, for use in `slideScopedCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

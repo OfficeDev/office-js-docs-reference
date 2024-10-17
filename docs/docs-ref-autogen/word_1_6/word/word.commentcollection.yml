@@ -4,7 +4,39 @@ uid: 'word!Word.CommentCollection:class'
 package: word!
 fullName: Word.CommentCollection
 summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.'
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Replies to the first active comment in the selected content.
+
+  await Word.run(async (context) => {
+    const text = $("#reply-text")
+      .val()
+      .toString();
+    const comments: Word.CommentCollection = context.document.getSelection().getComments();
+    comments.load("items");
+    await context.sync();
+
+    const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
+    if (firstActiveComment) {
+      const reply: Word.CommentReply = firstActiveComment.reply(text);
+      console.log("Reply added.");
+    } else {
+      console.warn("No active comment was found in the selection, so couldn't reply.");
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -199,7 +231,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns
       a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.

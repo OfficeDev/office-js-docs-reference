@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlUpdateData#checkboxContentControl:member'
     package: word!
     fullName: checkboxContentControl
-    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
+    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -90,9 +90,6 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
       empty.
-
-
-      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

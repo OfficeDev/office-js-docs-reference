@@ -36,4 +36,4 @@ Specifies an additional domain that Office should trust, in addition to the one 
 
 ## Remarks
 
-For more information, see [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests).
+For more information, see [Office Add-ins with an add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview).

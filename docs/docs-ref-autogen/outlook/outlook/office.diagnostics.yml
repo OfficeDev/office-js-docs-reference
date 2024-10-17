@@ -89,10 +89,9 @@ properties:
       -->**: Compose or Read
 
 
-      **Important**: The `Outlook` value is returned for Outlook desktop clients on Windows and on Mac.
-      `newOutlookWindows` is returned for the [new Outlook on Windows desktop
-      client](https://insider.microsoft365.com/blog/new-outlook-for-windows-available-to-all-office-insiders) currently
-      in preview.
+      **Important**: The `Outlook` value is returned for Outlook on Windows (classic) and on Mac.
+      `newOutlookWindows` is returned for [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,8 +107,10 @@ properties:
       "15.0.468.0").
 
 
-      If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the
-      version of the Outlook client. In Outlook on the web, the property returns the version of the Exchange Server.
+      If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile devices, the `hostVersion`
+      property returns the version of the Outlook client. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the property returns
+      the version of the Exchange Server.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

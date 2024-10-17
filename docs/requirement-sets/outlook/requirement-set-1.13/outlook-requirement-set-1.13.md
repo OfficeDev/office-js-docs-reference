@@ -27,7 +27,7 @@ Requirement set 1.13 includes all of the features of [requirement set 1.12](../r
 
 ### Change log
 
-- Added the [SupportsNoItemContext](/javascript/api/manifest/action?view=outlook-js-1.13&preserve-view=true#supportsnoitemcontext) XML manifest element: Allows task pane add-ins to activate without the Reading Pane enabled or a message selected.
+- Added the [SupportsNoItemContext](/javascript/api/manifest/action?view=outlook-js-1.13&preserve-view=true#supportsnoitemcontext) add-in only manifest element: Allows task pane add-ins to activate without the Reading Pane enabled or a message selected.
 - Added [Office.context.mailbox.item.delayDeliveryTime](office.context.mailbox.item.md#properties): Adds a property that provides the object to manage the delivery date and time of a message in compose mode.
 - Added [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-1.13&preserve-view=true): Adds an object to manage the delivery date and time of a message in compose mode.
 - Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events): Adds support for the following events.
@@ -46,7 +46,7 @@ Requirement set 1.13 includes all of the features of [requirement set 1.12](../r
 - Added [Office.SensitivityLabelDetails](/javascript/api/outlook/office.sensitivitylabeldetails?view=outlook-js-1.13&preserve-view=true): Adds an object that represents the properties of a sensitivity label.
 - Modified [Office.context.mailbox.item.getSharedPropertiesAsync](office.context.mailbox.item.md#methods): Adds support for shared mailbox scenarios. This method gets an object that represents the shared properties of a message or appointment.
 - Modified [Office.SharedProperties](/javascript/api/outlook/office.sharedproperties?view=outlook-js-1.13&preserve-view=true): Adds support for shared mailbox scenarios. This object represents the properties of a message or appointment in a shared folder or shared mailbox.
-- Modified the [SupportsSharedFolders](/javascript/api/manifest/supportssharedfolders?view=outlook-js-1.13&preserve-view=true) XML manifest element: Adds support for shared mailbox scenarios. This element defines whether the add-in is available in shared folder and shared mailbox scenarios.
+- Modified the [SupportsSharedFolders](/javascript/api/manifest/supportssharedfolders?view=outlook-js-1.13&preserve-view=true) add-in only manifest element: Adds support for shared mailbox scenarios. This element defines whether the add-in is available in shared folder and shared mailbox scenarios.
 
 ## See also
 

@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interfac
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideScopedCollectionLoadOptions
 summary: Represents a collection of slides in the presentation.
-remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,8 +14,8 @@ properties:
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -40,7 +40,7 @@ properties:
     package: powerpoint!
     fullName: layout
     summary: 'For EACH ITEM in the collection: Gets the layout of the slide.'
-    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +52,7 @@ properties:
     package: powerpoint!
     fullName: slideMaster
     summary: 'For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide''s default content.'
-    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

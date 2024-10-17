@@ -966,20 +966,21 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and on desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID
-      of the parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST
-      ID of the parent item.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
+      `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs
+      to. However, in Outlook on Android and on iOS, `seriesId` returns the REST ID of the parent item.
 
 
       **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
-      identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
-      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      identifier. The `seriesId` property isn't identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->.
+      For more details, see [Use the Outlook REST APIs from an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1160,15 +1161,6 @@ methods:
 
       The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
       compose form.
-
-
-      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
-      same session.
-
-
-      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
-      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
-      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1181,6 +1173,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization:
+      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try
+      using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+
+
+      - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't
+      return a `Cache-Control` header that specifies `no-cache`<!-- -->, `no-store`<!-- -->, or similar options in the
+      HTTP response. However, when you're developing the add-in and making changes to files, caching can prevent you
+      from seeing your changes. We recommend using `Cache-Control` headers during development.
+
+
+      - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
       **Errors**:
@@ -1238,8 +1247,8 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
-            that the attachment will be shown inline in the message body, and should not be displayed in the attachment
-            list.
+            that the attachment will be shown inline as an image in the message body and won't be displayed in the
+            attachment list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
         - id: callback
           description: >-
@@ -1261,15 +1270,6 @@ methods:
 
       The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
       compose form.
-
-
-      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
-      same session.
-
-
-      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
-      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
-      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1282,6 +1282,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization:
+      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try
+      using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+
+
+      - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't
+      return a `Cache-Control` header that specifies `no-cache`<!-- -->, `no-store`<!-- -->, or similar options in the
+      HTTP response. However, when you're developing the add-in and making changes to files, caching can prevent you
+      from seeing your changes. We recommend using `Cache-Control` headers during development.
+
+
+      - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
       **Errors**:
@@ -1448,8 +1465,8 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
-            that the attachment will be shown inline in the message body and should not be displayed in the attachment
-            list.
+            that the attachment will be shown inline as an image in the message body and won't be displayed in the
+            attachment list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> &  { isInline: boolean }'
         - id: callback
           description: >-
@@ -1678,8 +1695,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you're editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1777,8 +1796,10 @@ methods:
       same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
-      items other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office Add-in is running in Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+      `addItemAttachmentAsync` method can attach items to items other than the item that you're editing. However, this
+      isn't supported and isn't recommended.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1834,7 +1855,7 @@ methods:
       unsaved changes, the client prompts the user to save, discard, or close the action.
 
 
-      In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.
+      In Outlook on Windows (classic) and on Mac, the `close` method has no effect on a reply in the Reading Pane.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1849,9 +1870,10 @@ methods:
       -->**: Appointment Organizer
 
 
-      **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using
-      `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
-      item was last saved.
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the item is an
+      appointment and it has previously been saved using `saveAsync`<!-- -->, the user is prompted to save, discard, or
+      cancel even if no changes have occurred since the item was last saved.
 
 
       #### Examples
@@ -1883,7 +1905,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -1983,7 +2006,8 @@ methods:
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
       practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
-      use that identifier to retrieve the attachment. In Outlook on the web and on mobile devices, the attachment
+      use that identifier to retrieve the attachment. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
       identifier is valid only within the same session. A session is over when the user closes the app, or if the user
       starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
@@ -2260,15 +2284,12 @@ methods:
     package: outlook!
     fullName: 'getItemIdAsync(options, callback)'
     summary: >-
-      Asynchronously gets the ID of a saved item.
+      Asynchronously gets the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      of a saved item.
 
 
       When invoked, this method returns the item ID via the callback function.
-
-
-      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use
-      with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
-      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2281,6 +2302,19 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `getItemIdAsync` (for example, to get an item ID to use with EWS or the REST API), be aware
+      that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item
+      is synced, the item ID isn't recognized and using it returns an error.
 
 
       **Errors**:
@@ -2302,7 +2336,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            of type `Office.AsyncResult`<!-- -->. The EWS item ID of the item is returned in the `asyncResult.value`
+            property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -2312,15 +2347,12 @@ methods:
     package: outlook!
     fullName: getItemIdAsync(callback)
     summary: >-
-      Asynchronously gets the ID of a saved item.
+      Asynchronously gets the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      of a saved item.
 
 
       When invoked, this method returns the item ID via the callback function.
-
-
-      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use
-      with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
-      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2335,6 +2367,19 @@ methods:
       -->**: Appointment Organizer
 
 
+      **Important**:
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `getItemIdAsync` (for example, to get an item ID to use with EWS or the REST API), be aware
+      that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item
+      is synced, the item ID isn't recognized and using it returns an error.
+
+
       **Errors**:
 
 
@@ -2347,15 +2392,16 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/item-id-compose.yaml
 
 
-      Office.context.mailbox.item.getItemIdAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+      Office.context.mailbox.item.getItemIdAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
               console.error(`getItemIdAsync failed with message: ${result.error.message}`);
-          } else {
-              console.log(result.value);
+              return;
           }
+
+          console.log(result.value);
       });
 
       ```
@@ -2367,7 +2413,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            of type `Office.AsyncResult`<!-- -->. The EWS item ID of the item is returned in the `asyncResult.value`
+            property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -2545,59 +2592,6 @@ methods:
 
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on an appointment from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function(result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-          Office.context.mailbox.item.getSharedPropertiesAsync(
-            {
-              // Pass auth token along.
-              asyncContext: result.value
-            },
-            function(result2) {
-              let sharedProperties = result2.value;
-              let delegatePermissions = sharedProperties.delegatePermissions;
-
-              // Determine if user has the appropriate permission to do the operation.
-              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-                const ewsId = Office.context.mailbox.item.itemId;
-                const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-                let rest_url =
-                  sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
-
-                $.ajax({
-                  url: rest_url,
-                  dataType: "json",
-                  headers: { Authorization: "Bearer " + result2.asyncContext }
-                })
-                  .done(function(response) {
-                    console.log(response);
-                  })
-                  .fail(function(error) {
-                    console.error(error);
-                  });
-              }
-            }
-          );
-        }
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2658,14 +2652,15 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-        console.error("Try this sample on an item from a shared folder.");
-        return;
-      }
-
-
-      Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-        console.log(result.value);
+      Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error("The current folder or mailbox isn't shared.");
+          return;
+        }
+        const sharedProperties = result.value;
+        console.log(`Owner: ${sharedProperties.owner}`);
+        console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+        console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
       });
 
       ```
@@ -2771,9 +2766,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2834,7 +2830,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: options
           description: >-
@@ -2860,9 +2856,10 @@ methods:
 
       The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook on the web and on mobile devices, the attachment identifier is
-      valid only within the same session. A session is over when the user closes the app, or if the user starts
-      composing an inline form then subsequently pops out the form to continue in a separate window.
+      that attachment in the same session. In Outlook on the web, on mobile devices, and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2897,7 +2894,7 @@ methods:
         - id: attachmentId
           description: >-
             The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
-            characters in Outlook on the web and on Windows.
+            characters in Outlook on the web and on Windows (new and classic).
           type: string
         - id: callback
           description: >-
@@ -3025,8 +3022,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -3034,14 +3033,21 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the
-      REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced
-      to the server. Until the item is synced, using the item ID will return an error.
+      - The identifier returned is the same as the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
+      -->. The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
 
 
-      - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync` method
-      fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft in
-      Outlook for Mac by using Office JS
+      - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that when Outlook
+      is in cached mode, it may take some time before the item is actually synced to the server. Until the item is
+      synced, using the item ID will return an error.
+
+
+      - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting. Otherwise, the `saveAsync`
+      method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft
+      in Outlook for Mac by using Office JS
       API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
 
@@ -3086,8 +3092,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The appointment ID is returned in
-            the `asyncResult.value` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS appointment ID is
+            returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -3120,8 +3126,10 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
-      item is saved to the local cache.
+      - In Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, or classic Outlook on
+      Windows in online mode (non-cached mode), the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
 
 
       - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
@@ -3129,14 +3137,21 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the
-      REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced
-      to the server. Until the item is synced, using the item ID will return an error.
+      - The identifier returned is the same as the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
+      -->. The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
 
 
-      - In Outlook on Mac, only Build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync` method
-      fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft in
-      Outlook for Mac by using Office JS
+      - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that when Outlook
+      is in cached mode, it may take some time before the item is actually synced to the server. Until the item is
+      synced, using the item ID will return an error.
+
+
+      - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting. Otherwise, the `saveAsync`
+      method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft
+      in Outlook for Mac by using Office JS
       API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
 
@@ -3181,8 +3196,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The appointment ID is returned in
-            the `asyncResult.value` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS appointment ID is
+            returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -3264,12 +3279,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
-            current style is applied in Outlook on the web and on Windows. If the field is an HTML editor, only the text
-            data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the
-            current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
-            clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not
-            set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then
-            plain text is used.
+            current style is applied in Outlook on the web, on Windows
+            ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac.
+            If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If the data is
+            HTML and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web
+            and new Outlook on Windows. The default style is applied in Outlook on Windows (classic) and on Mac. If the
+            field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result
+            depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />

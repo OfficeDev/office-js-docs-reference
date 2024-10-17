@@ -109,6 +109,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "office-runtime",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "office-runtime",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api/office-js-docs-reference"
@@ -753,6 +765,18 @@
         "files": ["**/*.md", "**/*.yml"],
         "group": "word-js-1.8",
         "src": "docs-ref-autogen/word_1_8",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-desktop-1.1",
+        "src": "docs-ref-autogen/word_desktop_1_1",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-desktop-1.1",
+        "src": "docs-ref-autogen/word_desktop_1_1",
         "dest": "api"
       },
       {
@@ -999,6 +1023,10 @@
         "dest": "word-js-1.8",
         "moniker_range": "word-js-1.8"
       },
+      "word-js-desktop-1.1": {
+        "dest": "word-js-desktop-1.1",
+        "moniker_range": "word-js-desktop-1.1"
+      },
       "word-js-online": {
         "dest": "word-js-online",
         "moniker_range": "word-js-online"
@@ -1017,6 +1045,10 @@
       },
       "common-js-preview": {
         "dest": "common-js-preview",
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
+      },
+      "office-runtime": {
+        "dest": "office-runtime",
         "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
@@ -1108,6 +1140,7 @@
         "docs-ref-autogen/word_1_3_hidden_document/**": "word",
         "docs-ref-autogen/word_1_4_hidden_document/**": "word",
         "docs-ref-autogen/word_1_5_hidden_document/**": "word",
+        "docs-ref-autogen/word_desktop_1_1/**": "word",
         "requirement-sets/excel/**": "excel",
         "requirement-sets/onenote/**": "onenote",
         "requirement-sets/outlook/**": "outlook",

@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 
 | Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| CustomFunctionsRuntime 1.4 | Supported | Version 2208 (Build 15601.20148) | Not supported | Not supported | 16.64 | Not supported |
-| CustomFunctionsRuntime 1.3 | Supported | Version 2008 (Build 13127.20296) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 16.0.14332.20011) | 16.40.20081000 | Not supported |
-| CustomFunctionsRuntime 1.2 | Supported | Version 1909 (Build 11929.20934) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 16.0.14332.20011) | 16.34.20020900 | Not supported |
-| CustomFunctionsRuntime 1.1 | Supported | Version 1903 (Build 11425.20156) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 16.0.14332.20011) | 16.34 | Not supported |
+| CustomFunctionsRuntime 1.4 | Supported | Version 2208 (Build 15601.20148) | Not supported | Not supported | Version 16.64 (22081401) | Not supported |
+| CustomFunctionsRuntime 1.3 | Supported | Version 2008 (Build 13127.20296) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 14332.20011) | Version 16.40 (20081000) | Not supported |
+| CustomFunctionsRuntime 1.2 | Supported | Version 1909 (Build 11929.20934) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 14332.20011) | Version 16.34 (20020900) | Not supported |
+| CustomFunctionsRuntime 1.1 | Supported | Version 1903 (Build 11425.20156) | Version 2311 (Build 17029.20126) | Office 2021: Version 2108 (Build 14332.20011) | Version 16.34 (20020900) | Not supported |
 
 ## Requirement set history
 

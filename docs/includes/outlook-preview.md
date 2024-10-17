@@ -1,7 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[isAllDayEvent](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isalldayevent-member)|Gets or sets the Office.IsAllDayEvent property of an appointment.|
-||[sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivitylabel-member)|Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of an appointment.|
 |[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[isAllDayEvent](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-isalldayevent-member)|Returns a boolean value indicating whether the event is all day.|
 |[Display](/javascript/api/outlook/office.display)|[body](/javascript/api/outlook/office.display#outlook-office-display-body-member)|Gets an object to temporarily set the content displayed in the body of a message in read mode.|
 ||[subject](/javascript/api/outlook/office.display#outlook-office-display-subject-member)|Gets an object to temporarily set the content displayed in the subject of a message in read mode.|

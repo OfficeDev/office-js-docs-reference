@@ -649,6 +649,20 @@ Excel.QueryCollection#getCount:member(1):
 
       console.log("Query count: " + count.value);
     });
+Excel.Range:class:
+  - |-
+    // Get a Range object by its address.
+    await Excel.run(async (context) => {
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const cell = range.getCell(0,0);
+        cell.load('address');
+        await context.sync();
+        
+        console.log(cell.address);
+    });
 Excel.Range#clear:member(1):
   - |-
     // Clear the format and contents of the range.
@@ -1315,6 +1329,15 @@ Excel.Workbook#getSelectedRange:member(1):
         await context.sync();
         console.log(selectedRange.address);
     });
+Excel.Worksheet:class:
+  - |-
+    // Get a Worksheet object by its name and activate it.
+    await Excel.run(async (context) => { 
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
+        worksheet.activate();
+        await context.sync(); 
+    });
 Excel.Worksheet#activate:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1516,6 +1539,54 @@ Excel.Worksheet#protection:member:
       });
     });
 
+Office.Actions#areShortcutsInUse:member(1):
+  - |-
+    // Checks if a specific keyboard shortcut is in use.
+    const shortcuts = ["Ctrl+Shift+1", "Ctrl+Shift+2"];
+    Office.actions.areShortcutsInUse(shortcuts)
+        .then((shortcutsInUse) => {
+            const availableShortcuts = shortcutsInUse.filter((shortcut) => { return !shortcut.inUse; });
+            console.log(`Available keyboard shortcuts: ${availableShortcuts}`);
+            const usedShortcuts = shortcutsInUse.filter((shortcut) => { return shortcut.inUse; });
+            console.log(`Shortcuts in use: ${usedShortcuts}`);
+    });
+Office.Actions#associate:member(1):
+  - |-
+    // Maps the action ID to the showTaskPane function.
+    Office.actions.associate("ShowTaskpane", showTaskPane);
+
+    // Displays the add-in's task pane.
+    function showTaskPane() {
+        return Office.addin.showAsTaskpane()
+            .then(() => { console.log("Task pane is visible."); })
+            .catch((error) => {
+                console.log(error.code);
+            });
+    }
+Office.Actions#getShortcuts:member(1):
+  - |-
+    // Gets the list of keyboard shortcuts for an add-in.
+    Office.actions.getShortcuts()
+        .then((shortcuts) => {
+            for (const action in shortcuts) {
+                let shortcut = shortcuts[action];
+                console.log(`${action}: ${shortcut}`);
+            }
+    });
+Office.Actions#replaceShortcuts:member(1):
+  - |-
+    // Replaces the keyboard shortcuts of an add-in.
+    const customShortcuts = {
+        ShowTaskpane:"Ctrl+Shift+1",
+        HideTaskpane:"Ctrl+Shift+2"
+    };
+    Office.actions.replaceShortcuts(customShortcuts)
+        .then(() => { console.log("Keyboard shortcuts successfully registered."); })
+        .catch((error) => {
+            if (error.code == "InvalidOperation") {
+                console.log("ActionId does not exist or shortcut combination is invalid.");
+            }
+    });
 Office.ActiveView:enum:
   - |-
     // Get whether the current view is edit or read.
@@ -1958,6 +2029,27 @@ Office.AsyncResultStatus:enum:
             console.log(`Selected data: ${result.value}`);
         }
     );
+Office.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync(function(result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+            const token = result.value;
+            console.log(token);
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -2445,6 +2537,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -2482,6 +2583,18 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
@@ -2544,6 +2657,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -2563,14 +2723,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -5296,6 +5471,14 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.Ribbon#requestCreateControls:member(1):
+  - |-
+    // Registers a custom contextual tab with Office.
+    Office.onReady(async () => {
+        const contextualTabJSON = ` ... `; // Assign the JSON string.
+        const contextualTab = JSON.parse(contextualTabJSON);
+        await Office.ribbon.requestCreateControls(contextualTab);
+    });
 Office.Ribbon#requestUpdate:member(1):
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -5423,6 +5606,16 @@ Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
     Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+Office.Tab:interface:
+  - |-
+    // Create an Office.Tab object (a contextual tab), set its visibility
+    // and add it to the ribbon.
+    async function showDataTab() {
+        // Create the Office.Tab object.
+        const myContextualTab = { id: "CtxTab1", visible: true };
+        const ribbonUpdater = { tabs: [ myContextualTab ] };
+        await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.Tab#id:member:
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -5625,6 +5818,11 @@ Office.ThemeId:enum:
 
         ...
     }
+Office.UI:interface:
+  - |-
+    // Get an Office.UI object and use it to open a dialog with a specified size. 
+    const uiContext = Office.context.ui;
+    uiContext.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 });
 Office.UI#addHandlerAsync:member(2):
   - |-
     // The following example shows how to add an event handler for the DialogParentMessageReceived event.
@@ -5647,6 +5845,11 @@ Office.UI#addHandlerAsync:member(2):
             return;
         }
     }
+Office.UI#closeContainer:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.UI#displayDialogAsync:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -5685,6 +5888,11 @@ Office.UI#messageParent:member(1):
         };
         Office.context.ui.messageParent(JSON.stringify(profileMessage));
     }
+Office.UI#openBrowserWindow:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.Urls#javascriptRuntimeUrl:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -5876,6 +6084,31 @@ OfficeExtension.LoadOption#top:member:
             })
         });
 
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = OfficeRuntime.context.auth;
+    const accessToken = authContext.getAccessTokenAsync();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -7875,50 +8108,26 @@ Office.EmailAddressDetails#recipientType:member:
     });
 Office.EmailUser:interface:
   - |-
-    // The following example is an excerpt from a larger sample.
-    // For the full sample, visit https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
-
-    // Gets instances of the task suggestion entity on the item.
-    function myGetTaskSuggestions()
-    {
-        let htmlText = "";
-
-        // Gets an array of TaskSuggestion objects, each array element 
-        // containing an instance of a task suggestion entity from 
-        // the current item.
-        const tasksArray = _MyEntities.taskSuggestions;
-
-        // Iterates through each instance of a task suggestion.
-        for (let i = 0; i < tasksArray.length; i++)
+    // Add recipients to the To field of an email.
+    const recipients: Office.EmailUser[] = [
         {
-            // Gets the string that was identified as a task suggestion.
-            htmlText += "TaskString : <span>" + 
-            tasksArray[i].taskString + "</span><br/>";
+            "displayName": "Allie Bellew",
+            "emailAddress": "allieb@contoso.com"
+        },
+        {
+            "displayName": "Alex Darrow",
+            "emailAddress": "alexd@contoso.com"
+        }
+    ];
 
-            // Gets an array of assignees for that instance of a task 
-            // suggestion. Each assignee is represented by an 
-            // EmailUser object.
-            let assigneesArray = tasksArray[i].assignees;
-            for (let j = 0; j < assigneesArray.length; j++)
-            {
-                htmlText += "Assignee : ( ";
-                // Gets the displayName property of the assignee.
-                htmlText += "displayName = <span>" + assigneesArray[j].displayName + 
-                "</span> , ";
-
-                // Gets the emailAddress property of each assignee.
-                // This is the SMTP address of the assignee.
-                htmlText += "emailAddress = <span>" + assigneesArray[j].emailAddress + 
-                    "</span>";
-
-                htmlText += " )<br/>";
-            }
-
-            htmlText += "<hr/>";
+    Office.context.mailbox.item.to.addAsync(recipients, (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(result.error.message);
+            return;
         }
 
-        document.getElementById("entities_box").innerHTML = htmlText;
-    }
+        console.log("Recipients added to the To field.");
+    });
 Office.Entities#addresses:member:
   - |-
     const item = Office.context.mailbox.item;
@@ -7977,6 +8186,34 @@ Office.LocationIdentifier:interface:
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
+Office.Mailbox:interface:
+  - |-
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            // Get a reference to the mailbox and use it to add an
+            // event handler.
+            const mailBox = Office.context.mailbox;
+            mailbox.addHandlerAsync(
+                Office.EventType.ItemChanged,
+                loadNewItem,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        // Handle error.
+                    }
+                });
+        });
+    };
+
+    function loadNewItem(eventArgs) {
+        const item = Office.context.mailbox.item;
+
+        // Check that item is not null.
+        if (item !== null) {
+            // Work with item, e.g., define and call function that
+            // loads the properties of the newly selected item.
+            loadProps(item);
+        }
+    }
 Office.Mailbox#addHandlerAsync:member(1):
   - |-
     Office.initialize = function (reason) {
@@ -8062,6 +8299,11 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
+Office.Mailbox#restUrl:member:
+  - |-
+    // Get the URL of the REST endpoint.
+    const restUrl = Office.context.mailbox.restUrl;
+    console.log(`REST API URL: ${restUrl}`);
 Office.MailboxEnums.AttachmentStatus:enum:
   - |-
     // Get the attachment that was just added to a message or appointment.
@@ -8074,6 +8316,22 @@ Office.MailboxEnums.AttachmentStatus:enum:
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.DelegatePermissions:enum:
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error("The current folder or mailbox isn't shared.");
+            return;
+        }
+
+        const delegatePermissions = result.value.delegatePermissions;
+
+        // Check if the user has write permissions to the shared resource.
+        if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+            console.log("User has write permissions to the shared resource.");
+            // Perform the necessary operations.
+        }
+    });
 Office.MailboxEnums.InfobarActionType:enum:
   - |-
     /*
@@ -8360,6 +8618,24 @@ Office.MessageCompose#to:member:
     function callback(asyncResult) {
         const arrayOfToRecipients = asyncResult.value;
     }
+Office.MessageRead:interface:
+ - |-
+   // The following code builds an HTML string with details of all attachments on the current item.
+    const item = Office.context.mailbox.item;
+    let outputString = "";
+    if (item.attachments.length > 0) {
+        for (let i = 0 ; i < item.attachments.length ; i++) {
+            const attachment = item.attachments[i];
+            outputString += "<BR>" + i + ". Name: ";
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
+        }
+    }
+    console.log(outputString);
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -9465,6 +9741,18 @@ Visio.ShapeView#removeOverlay:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Word.Body:class:
+  - |-
+    // Get the body object and read its font size.
+    await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body = context.document.body;
+        body.load("font/size");
+
+        await context.sync();
+
+        console.log("Font size: " + body.font.size);
+    });
 Word.ContentControl:class:
   - |-
     // Run a batch operation against the Word object model.
@@ -10138,6 +10426,23 @@ Word.DocumentCreated#open:member(1):
         externalDoc.open();
         await context.sync();
     });
+Word.Font:class:
+  - |-
+    // Change the font color
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+    
+        // Create a range proxy object for the current selection.
+        const selection = context.document.getSelection();
+    
+        // Queue a command to change the font color of the current selection.
+        selection.font.color = 'blue';
+    
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The font color of the selection has been changed.');
+    });
 Word.Font#name:member:
   - |-
     // Change the font name
@@ -10771,6 +11076,35 @@ Word.RequestContext:class:
       const document = context.document;
       // Interact with the Word document...
     });
+Word.SearchOptions:class:
+  - |-
+    // Search using a wildcard
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Queue a command to search the document with a wildcard
+        // for any string of characters that starts with 'to' and ends with 'n'.
+        const searchResults = context.document.body.search('to*n', {matchWildcards: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        searchResults.load('font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Found count: ' + searchResults.items.length);
+
+        // Queue a set of commands to change the font for each found item.
+        for (let i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'purple';
+            searchResults.items[i].font.highlightColor = 'pink';
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    }); 
 Word.SearchOptions#load:member(1):
   - |-
     // Ignore punctuation search

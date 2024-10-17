@@ -42,10 +42,11 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
-      and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or Personal
-      sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
-      property.
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
+      only support Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a
+      Confidential or Personal sensitivity level from these clients, the Normal sensitivity level is returned in the
+      `asyncResult.value` property.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,10 +89,11 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
-      and Private sensitivity levels. If you call `getAsync` on an appointment that has a Confidential or Personal
-      sensitivity level from these clients, the Normal sensitivity level is returned in the `asyncResult.value`
-      property.
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
+      only support Normal and Private sensitivity levels. If you call `getAsync` on an appointment that has a
+      Confidential or Personal sensitivity level from these clients, the Normal sensitivity level is returned in the
+      `asyncResult.value` property.
 
 
       #### Examples
@@ -147,8 +149,9 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
-      and Private sensitivity levels.
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
+      only support Normal and Private sensitivity levels.
 
 
       **Errors**:
@@ -220,8 +223,9 @@ methods:
       -->**: Compose
 
 
-      **Important**: Outlook on the web, new Outlook on Windows (preview), and Outlook on Mac only support Normal
-      and Private sensitivity levels.
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
+      only support Normal and Private sensitivity levels.
 
 
       **Errors**:

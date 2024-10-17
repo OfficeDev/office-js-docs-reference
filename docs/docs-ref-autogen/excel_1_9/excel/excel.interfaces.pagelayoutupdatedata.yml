@@ -3,7 +3,7 @@ name: Excel.Interfaces.PageLayoutUpdateData
 uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.PageLayoutUpdateData
-summary: 'An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `PageLayout` object, for use in `pageLayout.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -24,11 +24,11 @@ remarks: >-
   // start and end points. Then it names the shape.
 
   await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.slides.getItemAt(0).shapes;
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
 
     // For a line, left and top are the coordinates of the start point,
     // while height and width are the coordinates of the end point.
-    const line = shapes.addLine(PowerPoint.ConnectorType.straight, 
+    const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, 
         { 
           left: 400, 
           top: 200, 

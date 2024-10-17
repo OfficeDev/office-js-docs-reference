@@ -1,7 +1,7 @@
 ---
 title: OfficeTab element in the manifest file
 description: The OfficeTab element defines the ribbon tab where your add-in command appears.
-ms.date: 08/01/2023
+ms.date: 07/31/2024
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ Defines the built-in Office ribbon tab on which your add-in command appears. If 
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
@@ -25,86 +25,25 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
 - [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
+## Attributes
+
+|  Attribute  |  Required  |  Description  |
+|:-----|:-----:|:-----|
+|  [id](#id)  |  Yes  | The ID of a built-in Office tab. |
+
+### id
+
+This attribute specifies the ID of the built-in Office tab. A list of valid `id` values is at [Find the IDs of built-in Office ribbon tabs](/office/dev/add-ins/develop/built-in-ui-ids).
+
 ## Child elements
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  Group      | Yes |  Defines a group of commands. You can add only one group per add-in to the default tab.  |
-
-The following are valid tab `id` values by application. Values in **bold** are supported in both desktop and online (for example, Word 2016 or later on Windows and Word on the web).
-
-### Outlook
-
-- **TabDefault** (either **Home**, **Message**, or **Meeting**)
-
-### Word
-
-- **TabHome**
-- **TabInsert**
-- **TabWordDesign**
-- **TabPageLayoutWord**
-- **TabReferences**
-- **TabMailings**
-- **TabReviewWord**
-- **TabView**
-- **TabDeveloper**
-- **TabAddIns**
-- TabBlogPost
-- TabBlogInsert
-- TabPrintPreview
-- TabOutlining
-- TabConflicts
-- TabBackgroundRemoval
-- TabBroadcastPresentation
-
-### Excel
-
-- **TabHome**
-- **TabInsert**
-- **TabPageLayoutExcel**
-- **TabFormulas**
-- **TabData**
-- **TabReview**
-- **TabView**
-- **TabDeveloper**
-- **TabAddIns**
-- TabPrintPreview
-- TabBackgroundRemoval
-
-### PowerPoint
-
-- **TabHome**
-- **TabInsert**
-- **TabDesign**
-- **TabTransitions**
-- **TabAnimations**
-- **TabSlideShow**
-- **TabReview**
-- **TabView**
-- **TabDeveloper**
-- **TabAddIns**
-- TabPrintPreview
-- TabMerge
-- TabGrayscale
-- TabBlackAndWhite
-- TabBroadcastPresentation
-- TabSlideMaster
-- TabHandoutMaster
-- TabNotesMaster
-- TabBackgroundRemoval
-- TabSlideMasterHome
-
-### OneNote
-
-- **TabHome**
-- **TabInsert**
-- **TabView**
-- TabDeveloper
-- TabAddIns
+|  Group      | Yes |  Defines a group of controls. |
 
 ## Group
 
-A group of UI extension points in a tab. A group can have up to six controls. The **id** attribute is required and each **id** must be unique among all groups in the manifest. The **id** is a string with a maximum of 125 characters. See [Group element](group.md).
+A group of controls in a tab. A group can have up to six controls. You can add only one group per add-in to the default tab. See [Group element](group.md).
 
 ## OfficeTab example
 

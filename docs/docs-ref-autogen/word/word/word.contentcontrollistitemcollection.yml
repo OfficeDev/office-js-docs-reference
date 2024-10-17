@@ -6,7 +6,53 @@ fullName: Word.ContentControlListItemCollection
 summary: >-
   Contains a collection of [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) objects that
   represent the items in a dropdown list or combo box content control.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-combo-box-content-control.yaml
+
+
+  // Gets the list items from the first combo box content control found in the selection.
+
+  await Word.run(async (context) => {
+    const selectedRange: Word.Range = context.document.getSelection();
+    let selectedContentControl = selectedRange
+      .getContentControls({
+        types: [Word.ContentControlType.comboBox]
+      })
+      .getFirstOrNullObject();
+    selectedContentControl.load("id,comboBoxContentControl");
+    await context.sync();
+
+    if (selectedContentControl.isNullObject) {
+      const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+      parentContentControl.load("id,type,comboBoxContentControl");
+      await context.sync();
+
+      if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+        console.warn("No combo box content control is currently selected.");
+        return;
+      } else {
+        selectedContentControl = parentContentControl;
+      }
+    }
+
+    let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+    selectedComboBox.listItems.load("items");
+    await context.sync();
+
+    const currentItems: Word.ContentControlListItemCollection = selectedComboBox.listItems;
+    console.log(`The list from the combo box content control with ID ${selectedContentControl.id}:`, currentItems);
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 type: class
@@ -137,7 +183,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.ContentControlListItemCollection` object is an API object, the `toJSON`
       method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemCollectionData`<!-- -->)
       that contains an "items" array with shallow copies of any loaded properties from the collection's items.

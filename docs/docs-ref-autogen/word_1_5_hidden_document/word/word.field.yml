@@ -8,13 +8,40 @@ remarks: >-
   \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-  Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in
   requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the
   Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the
   web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->), the `Addin` field is
   editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of
   [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+  // Gets the first field in the document.
+
+  await Word.run(async (context) => {
+    const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+    field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+    await context.sync();
+
+    if (field.isNullObject) {
+      console.log("This document has no fields.");
+    } else {
+      console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -81,7 +108,7 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general
       exception when code attempts to set it.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -664,7 +691,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Field` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.FieldData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.

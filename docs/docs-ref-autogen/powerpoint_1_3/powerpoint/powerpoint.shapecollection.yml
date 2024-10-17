@@ -4,7 +4,37 @@ uid: 'powerpoint!PowerPoint.ShapeCollection:class'
 package: powerpoint!
 fullName: PowerPoint.ShapeCollection
 summary: Represents the collection of shapes.
-remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+  // Changes the transparency of every geometric shape in the slide.
+
+  await PowerPoint.run(async (context) => {
+    // Get the type of shape for every shape in the collection.
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    shapes.load("type");
+    await context.sync();
+
+    // Change the shape transparency to be halfway transparent.
+    shapes.items.forEach((shape) => {
+      if (shape.type === PowerPoint.ShapeType.geometricShape) {
+        shape.fill.transparency = 0.5;
+      }
+    });
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -85,13 +115,13 @@ methods:
 
 
       await PowerPoint.run(async function(context) {
-        const slide = context.presentation.slides.getItemAt(0);
-        const shape = slide.shapes.getItemAt(0);
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
+        const shape: PowerPoint.Shape = slide.shapes.getItemAt(0);
         shape.tags.add("MOUNTAIN", "Denali");
 
         await context.sync();
 
-        const myShapeTag = shape.tags.getItem("MOUNTAIN");
+        const myShapeTag: PowerPoint.Tag = shape.tags.getItem("MOUNTAIN");
         myShapeTag.load("key, value");
 
         await context.sync();
@@ -173,7 +203,36 @@ methods:
           type: 'string | string[]'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeCollection:class" />'
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+          // Changes the transparency of every geometric shape in the slide.
+
+          await PowerPoint.run(async (context) => {
+            // Get the type of shape for every shape in the collection.
+            const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+            shapes.load("type");
+            await context.sync();
+
+            // Change the shape transparency to be halfway transparent.
+            shapes.items.forEach((shape) => {
+              if (shape.type === PowerPoint.ShapeType.geometricShape) {
+                shape.fill.transparency = 0.5;
+              }
+            });
+            await context.sync();
+          });
+
+          ```
   - name: load(propertyNamesAndPaths)
     uid: 'powerpoint!PowerPoint.ShapeCollection#load:member(3)'
     package: powerpoint!

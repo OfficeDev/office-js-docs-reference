@@ -1,3 +1,15 @@
+Word.Body:class:
+  - |-
+    // Get the body object and read its font size.
+    await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body = context.document.body;
+        body.load("font/size");
+
+        await context.sync();
+
+        console.log("Font size: " + body.font.size);
+    });
 Word.ContentControl:class:
   - |-
     // Run a batch operation against the Word object model.
@@ -671,6 +683,23 @@ Word.DocumentCreated#open:member(1):
         externalDoc.open();
         await context.sync();
     });
+Word.Font:class:
+  - |-
+    // Change the font color
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+    
+        // Create a range proxy object for the current selection.
+        const selection = context.document.getSelection();
+    
+        // Queue a command to change the font color of the current selection.
+        selection.font.color = 'blue';
+    
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The font color of the selection has been changed.');
+    });
 Word.Font#name:member:
   - |-
     // Change the font name
@@ -1304,6 +1333,35 @@ Word.RequestContext:class:
       const document = context.document;
       // Interact with the Word document...
     });
+Word.SearchOptions:class:
+  - |-
+    // Search using a wildcard
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Queue a command to search the document with a wildcard
+        // for any string of characters that starts with 'to' and ends with 'n'.
+        const searchResults = context.document.body.search('to*n', {matchWildcards: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        searchResults.load('font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Found count: ' + searchResults.items.length);
+
+        // Queue a set of commands to change the font for each found item.
+        for (let i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'purple';
+            searchResults.items[i].font.highlightColor = 'pink';
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    }); 
 Word.SearchOptions#load:member(1):
   - |-
     // Ignore punctuation search

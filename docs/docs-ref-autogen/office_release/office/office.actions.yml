@@ -8,19 +8,6 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
-properties:
-  - name: associate
-    uid: 'office!Office.Actions#associate:member'
-    package: office!
-    fullName: associate
-    summary: Associates the ID or name of an action with a function.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'associate: (actionId: string, actionFunction: (arg?: any) => void) => void;'
-      return:
-        type: '(actionId: string, actionFunction: (arg?: any) =&gt; void) =&gt; void'
 methods:
   - name: areShortcutsInUse(shortcuts)
     uid: 'office!Office.Actions#areShortcutsInUse:member(1)'
@@ -28,7 +15,8 @@ methods:
     fullName: areShortcutsInUse(shortcuts)
     summary: >-
       Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the
-      Office application.
+      Office application. For more information, see [Add custom keyboard shortcuts to your Office
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts)<!-- -->.
     remarks: >-
       **Requirement sets**:
 
@@ -39,6 +27,26 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Checks if a specific keyboard shortcut is in use.
+
+      const shortcuts = ["Ctrl+Shift+1", "Ctrl+Shift+2"];
+
+      Office.actions.areShortcutsInUse(shortcuts)
+          .then((shortcutsInUse) => {
+              const availableShortcuts = shortcutsInUse.filter((shortcut) => { return !shortcut.inUse; });
+              console.log(`Available keyboard shortcuts: ${availableShortcuts}`);
+              const usedShortcuts = shortcutsInUse.filter((shortcut) => { return shortcut.inUse; });
+              console.log(`Shortcuts in use: ${usedShortcuts}`);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,16 +62,53 @@ methods:
           value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a
           shortcut of the Office application; otherwise, `false`<!-- -->. For example, `[{shortcut:"Ctrl+1",
           inUse:true},{shortcut:"Ctrl+2", inUse:false}]`<!-- -->.
+  - name: 'associate(actionId, actionFunction)'
+    uid: 'office!Office.Actions#associate:member(1)'
+    package: office!
+    fullName: 'associate(actionId, actionFunction)'
+    summary: Associates the ID or name of an action with a function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'associate(actionId: string, actionFunction: (arg?: any) => void): void;'
+      parameters:
+        - id: actionId
+          description: The ID of an action that is defined in the manifest.
+          type: string
+        - id: actionFunction
+          description: The function that is run when the action is invoked.
+          type: '(arg?: any) =&gt; void'
+      return:
+        type: void
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Maps the action ID to the showTaskPane function.
+          Office.actions.associate("ShowTaskpane", showTaskPane);
+
+          // Displays the add-in's task pane.
+          function showTaskPane() {
+              return Office.addin.showAsTaskpane()
+                  .then(() => { console.log("Task pane is visible."); })
+                  .catch((error) => {
+                      console.log(error.code);
+                  });
+          }
+          ```
   - name: getShortcuts()
     uid: 'office!Office.Actions#getShortcuts:member(1)'
     package: office!
     fullName: getShortcuts()
     summary: >-
       Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's
-      extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut
-      can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it
-      would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the
-      current add-in. For more information about conflicts with shortcuts, see [Avoid key combinations in use by other
+      manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut can be
+      `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would
+      be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current
+      add-in. For more information about conflicts with shortcuts, see [Avoid key combinations in use by other
       add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins)<!--
       -->.
     remarks: >-
@@ -76,6 +121,24 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Gets the list of keyboard shortcuts for an add-in.
+
+      Office.actions.getShortcuts()
+          .then((shortcuts) => {
+              for (const action in shortcuts) {
+                  let shortcut = shortcuts[action];
+                  console.log(`${action}: ${shortcut}`);
+              }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,8 +147,8 @@ methods:
         type: 'Promise&lt;{[actionId: string]: string|null}&gt;'
         description: >-
           A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an
-          extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1",
-          "SetBold": "Ctrl+2", "SetUnderline": null}`<!-- -->.
+          manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold":
+          "Ctrl+2", "SetUnderline": null}`<!-- -->.
   - name: replaceShortcuts(shortcuts)
     uid: 'office!Office.Actions#replaceShortcuts:member(1)'
     package: office!
@@ -101,6 +164,29 @@ methods:
 
       - [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Replaces the keyboard shortcuts of an add-in.
+
+      const customShortcuts = {
+          ShowTaskpane:"Ctrl+Shift+1",
+          HideTaskpane:"Ctrl+Shift+2"
+      };
+
+      Office.actions.replaceShortcuts(customShortcuts)
+          .then(() => { console.log("Keyboard shortcuts successfully registered."); })
+          .catch((error) => {
+              if (error.code == "InvalidOperation") {
+                  console.log("ActionId does not exist or shortcut combination is invalid.");
+              }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,12 +194,12 @@ methods:
       parameters:
         - id: shortcuts
           description: >-
-            An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest)
-            and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`<!--
-            -->. To learn how to specify a valid action ID and a key combination, see [Add custom keyboard shortcuts to
-            your Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts)<!-- -->.
-            (Note that a key combination can be `null`<!-- -->, in which case, the action keeps the key combination
-            specified in the JSON file.)
+            An object of custom shortcuts with keys being the IDs of the actions and values being the shortcut
+            combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`<!-- -->. To learn how to specify a
+            valid action ID and a key combination, see [Add custom keyboard shortcuts to your Office
+            Add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts)<!-- -->. (Note that a key
+            combination can be `null`<!-- -->, in which case, the action keeps the key combination specified in the JSON
+            file.)
           type: '{[actionId: string]: string}'
       return:
         type: Promise&lt;void&gt;

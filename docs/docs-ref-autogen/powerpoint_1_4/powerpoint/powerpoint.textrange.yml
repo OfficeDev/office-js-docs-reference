@@ -4,7 +4,28 @@ uid: 'powerpoint!PowerPoint.TextRange:class'
 package: powerpoint!
 fullName: PowerPoint.TextRange
 summary: 'Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.'
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+  // Sets the color of the selected text range to green.
+
+  await PowerPoint.run(async (context) => {
+    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+    textRange.font.color = "green";
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,7 +65,7 @@ properties:
       // Sets the color of the selected text range to green.
 
       await PowerPoint.run(async (context) => {
-        const textRange = context.presentation.getSelectedTextRange();
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
         textRange.font.color = "green";
         await context.sync();
       });
@@ -179,7 +200,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original PowerPoint.TextRange object is an API object, the `toJSON` method returns a
+      passed to it.) Whereas the original `PowerPoint.TextRange` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `PowerPoint.Interfaces.TextRangeData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''

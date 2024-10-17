@@ -4,7 +4,50 @@ uid: 'word!Word.Style:class'
 package: word!
 fullName: Word.Style
 summary: Represents a style in a Word document.
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Applies the specified style to a paragraph.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name-to-use").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to apply.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else if (style.type != Word.StyleType.paragraph) {
+      console.log(`The '${styleName}' style isn't a paragraph style.`);
+    } else {
+      const body: Word.Body = context.document.body;
+      body.clear();
+      body.insertParagraph(
+        "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
+        "Start"
+      );
+      const paragraph: Word.Paragraph = body.paragraphs.getFirst();
+      paragraph.style = style.nameLocal;
+      console.log(`'${styleName}' style applied to first paragraph.`);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -138,7 +181,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Style` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.

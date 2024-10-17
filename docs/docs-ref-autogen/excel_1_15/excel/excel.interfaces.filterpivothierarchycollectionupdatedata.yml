@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
 summary: >-
-  An interface for updating data on the FilterPivotHierarchyCollection object, for use in
+  An interface for updating data on the `FilterPivotHierarchyCollection` object, for use in
   `filterPivotHierarchyCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false

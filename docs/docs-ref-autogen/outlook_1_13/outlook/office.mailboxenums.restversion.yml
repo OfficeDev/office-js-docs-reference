@@ -13,29 +13,46 @@ remarks: >-
   Compose or Read
 
 
+  **Important**: The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and
+  AppSource-hosted add-ins are able to use the REST service until extended support ends for Outlook 2019 on October 14,
+  2025. Traffic from these add-ins is automatically identified for exemption. This exemption also applies to new add-ins
+  developed after March 31, 2024. Although add-ins are able to use the REST service until 2025, we highly encourage you
+  to migrate your add-ins to use [Microsoft
+  Graph](https://learn.microsoft.com/outlook/rest#outlook-rest-api-via-microsoft-graph)<!-- -->. For guidance, see
+  [Compare Microsoft Graph and Outlook REST API endpoints](https://learn.microsoft.com/outlook/rest/compare-graph)<!--
+  -->.
+
+
   #### Examples
 
 
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
-  Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-      const ewsId = Office.context.mailbox.item.itemId;
-      const token = result.value;
-      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-      const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-              
-      const xhr = new XMLHttpRequest();
-      xhr.open('GET', getMessageUrl);
-      xhr.setRequestHeader("Authorization", "Bearer " + token);
-      xhr.onload = function (e) {
-          console.log(this.response);
-      }
-      xhr.send();
-  });
+  // Get the EWS URL and EWS item ID.
+
+  console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
+
+  const ewsId = Office.context.mailbox.item.itemId;
+
+  console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
+
+
+  // Convert the EWS item ID to a REST-formatted ID.
+
+  const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+
+  console.log("REST item ID: " + restId);
+
+
+  // Convert the REST-formatted ID back to an EWS-formatted ID.
+
+  const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+
+  console.log("EWS ID (from REST ID): " + ewsId2);
 
   ```
 isPreview: false

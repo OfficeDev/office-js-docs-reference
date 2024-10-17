@@ -4,7 +4,50 @@ uid: 'word!Word.Style:class'
 package: word!
 fullName: Word.Style
 summary: Represents a style in a Word document.
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Applies the specified style to a paragraph.
+
+  await Word.run(async (context) => {
+    const styleName = $("#style-name-to-use").val() as string;
+    if (styleName == "") {
+      console.warn("Enter a style name to apply.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else if (style.type != Word.StyleType.paragraph) {
+      console.log(`The '${styleName}' style isn't a paragraph style.`);
+    } else {
+      const body: Word.Body = context.document.body;
+      body.clear();
+      body.insertParagraph(
+        "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
+        "Start"
+      );
+      const paragraph: Word.Paragraph = body.paragraphs.getFirst();
+      paragraph.style = style.nameLocal;
+      console.log(`'${styleName}' style applied to first paragraph.`);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,8 +72,48 @@ properties:
     package: word!
     fullName: borders
     summary: Specifies a BorderCollection object that represents all the borders for the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Updates border properties (e.g., type, width, color) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders: Word.BorderCollection = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders.");
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly borders: Word.BorderCollection;'
@@ -153,8 +236,52 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-styles.yaml
+
+
+      // Gets the properties of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name-to-use").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to get properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load("type");
+        await context.sync();
+
+        if (style.isNullObject || style.type != Word.StyleType.list) {
+          console.warn(`There's no existing style with the name '${styleName}'. Or this isn't a list style.`);
+        } else {
+          // Load objects to log properties and their values in the console.
+          style.load();
+          style.listTemplate.load();
+          await context.sync();
+
+          console.log(`Properties of the '${styleName}' style:`, style);
+
+          const listLevels = style.listTemplate.listLevels;
+          listLevels.load("items");
+          await context.sync();
+
+          console.log(`List levels of the '${styleName}' style:`, listLevels);
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly listTemplate: Word.ListTemplate;'
@@ -308,7 +435,48 @@ properties:
     package: word!
     fullName: shading
     summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update shading properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const shading: Word.Shading = style.shading;
+          shading.load();
+          await context.sync();
+
+          shading.backgroundPatternColor = "blue";
+          shading.foregroundPatternColor = "yellow";
+          shading.texture = Word.ShadingTextureType.darkTrellis;
+
+          console.log("Updated shading.");
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -529,7 +697,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.Style` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.

@@ -558,7 +558,7 @@ methods:
     package: excel!
     fullName: getAsImage(format)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
     remarks: >-
@@ -602,7 +602,7 @@ methods:
     package: excel!
     fullName: getAsImage(formatString)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1057,7 +1057,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Shape object is an API object, the `toJSON` method returns a plain
+      passed to it.) Whereas the original `Excel.Shape` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''

@@ -51,7 +51,7 @@ export declare namespace Word {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): {
@@ -440,11 +440,13 @@ export declare namespace Word {
          */
         untrack(): Word.Body;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Body` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.BodyData;
     }
+    
+    
     
     /**
      * Represents a comment in the document.
@@ -572,7 +574,7 @@ export declare namespace Word {
          */
         untrack(): Word.Comment;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Comment` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CommentData;
@@ -629,9 +631,9 @@ export declare namespace Word {
          */
         untrack(): Word.CommentCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.CommentCollectionData;
     }
     /**
@@ -738,7 +740,7 @@ export declare namespace Word {
          */
         untrack(): Word.CommentContentRange;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.CommentContentRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentContentRangeData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CommentContentRangeData;
@@ -846,7 +848,7 @@ export declare namespace Word {
          */
         untrack(): Word.CommentReply;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.CommentReply` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CommentReplyData;
@@ -903,9 +905,9 @@ export declare namespace Word {
          */
         untrack(): Word.CommentReplyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.CommentReplyCollectionData;
     }
     /**
@@ -1069,8 +1071,6 @@ export declare namespace Word {
         readonly id: number;
         /**
          * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                    
-                    Note: The set operation for this property isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1435,7 +1435,7 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControl;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.ContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.ContentControlData;
@@ -1555,9 +1555,9 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControlCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     /**
@@ -1652,7 +1652,7 @@ export declare namespace Word {
          */
         untrack(): Word.CustomProperty;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.CustomProperty` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CustomPropertyData;
@@ -1737,9 +1737,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomPropertyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.CustomPropertyCollectionData;
     }
     /**
@@ -2016,7 +2016,7 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPart;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.CustomXmlPartData;
@@ -2102,9 +2102,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPartCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.CustomXmlPartCollectionData;
     }
     /**
@@ -2184,9 +2184,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPartScopedCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.CustomXmlPartScopedCollectionData;
     }
     /**
@@ -2284,8 +2284,8 @@ export declare namespace Word {
         addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Closes the current document.
-         *
-         * Note: This API isn't supported in Word on the web.
+                    
+                    Note: This API isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -2295,8 +2295,8 @@ export declare namespace Word {
         close(closeBehavior?: Word.CloseBehavior): void;
         /**
          * Closes the current document.
-         *
-         * Note: This API isn't supported in Word on the web.
+                    
+                    Note: This API isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -2304,6 +2304,7 @@ export declare namespace Word {
          * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
         close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -2460,7 +2461,7 @@ export declare namespace Word {
          */
         untrack(): Word.Document;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.DocumentData;
@@ -2673,7 +2674,7 @@ export declare namespace Word {
          */
         untrack(): Word.DocumentCreated;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.DocumentCreated` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.DocumentCreatedData;
@@ -2716,7 +2717,7 @@ export declare namespace Word {
          */
         category: string;
         /**
-         * Specifies the comments of the document.
+         * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2851,7 +2852,7 @@ export declare namespace Word {
          */
         untrack(): Word.DocumentProperties;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.DocumentProperties` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.DocumentPropertiesData;
@@ -2862,7 +2863,11 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+     * Support for managing fields is similar to what's available in the Word UI.
+     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2933,7 +2938,7 @@ export declare namespace Word {
          */
         code: string;
         /**
-         * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+         * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -2953,6 +2958,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         locked: boolean;
+        
         /**
          * Gets the field's type.
          *
@@ -3044,7 +3050,7 @@ export declare namespace Word {
          */
         untrack(): Word.Field;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Field` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.FieldData;
@@ -3055,7 +3061,11 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+     * Support for managing fields is similar to what's available in the Word UI.
+     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3112,9 +3122,9 @@ export declare namespace Word {
          */
         untrack(): Word.FieldCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.FieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.FieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.FieldCollectionData;
     }
     /**
@@ -3148,7 +3158,7 @@ export declare namespace Word {
          */
         doubleStrikeThrough: boolean;
         /**
-         * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3241,7 +3251,7 @@ export declare namespace Word {
          */
         untrack(): Word.Font;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.FontData;
@@ -3332,6 +3342,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         hyperlink: string;
+        
         /**
          * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
          *
@@ -3518,7 +3529,7 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePicture;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.InlinePicture` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.InlinePictureData;
@@ -3575,9 +3586,9 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePictureCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.InlinePictureCollectionData;
     }
     /**
@@ -3590,7 +3601,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets paragraphs in the list. Read-only.
+         * Gets paragraphs in the list.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3617,6 +3628,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly levelTypes: Word.ListLevelType[];
+        
         /**
          * Gets the paragraphs that occur at the specified level in the list.
          *
@@ -3626,6 +3638,7 @@ export declare namespace Word {
          * @param level - Required. The level in the list.
          */
         getLevelParagraphs(level: number): Word.ParagraphCollection;
+        
         /**
          * Gets the bullet, number, or picture at the specified level as a string.
          *
@@ -3645,6 +3658,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
+        
         /**
          * Sets the alignment of the bullet, number, or picture at the specified level in the list.
          *
@@ -3722,6 +3736,7 @@ export declare namespace Word {
          * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
         setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
+        
         /**
          * Sets the starting number at the specified level in the list. Default value is 1.
          *
@@ -3762,7 +3777,7 @@ export declare namespace Word {
          */
         untrack(): Word.List;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.List` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.ListData;
@@ -3846,9 +3861,9 @@ export declare namespace Word {
          */
         untrack(): Word.ListCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ListCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ListCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ListCollectionData;
     }
     /**
@@ -3946,11 +3961,14 @@ export declare namespace Word {
          */
         untrack(): Word.ListItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.ListItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListItemData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.ListItemData;
     }
+    
+    
+    
     /**
      * Represents a footnote or endnote.
      *
@@ -4040,7 +4058,7 @@ export declare namespace Word {
          */
         untrack(): Word.NoteItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.NoteItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.NoteItemData;
@@ -4097,9 +4115,9 @@ export declare namespace Word {
          */
         untrack(): Word.NoteItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.NoteItemCollectionData;
     }
     /**
@@ -4663,7 +4681,7 @@ export declare namespace Word {
          */
         untrack(): Word.Paragraph;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Paragraph` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.ParagraphData;
@@ -4734,9 +4752,9 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
     /**
@@ -4884,7 +4902,7 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.ParagraphFormatData;
@@ -5266,17 +5284,17 @@ export declare namespace Word {
          *
          * Important:
          *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
          *
          * In Word on the web, the API supports inserting and managing the following field types.
          *
-         * - Word.FieldType.addin
+         * - `Word.FieldType.addin`
          *
-         * - Word.FieldType.date
+         * - `Word.FieldType.date`
          *
-         * - Word.FieldType.hyperlink
+         * - `Word.FieldType.hyperlink`
          *
-         * - Word.FieldType.toc
+         * - `Word.FieldType.toc`
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5292,17 +5310,17 @@ export declare namespace Word {
          *
          * Important:
          *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
          *
          * In Word on the web, the API supports inserting and managing the following field types.
          *
-         * - Word.FieldType.addin
+         * - `Word.FieldType.addin`
          *
-         * - Word.FieldType.date
+         * - `Word.FieldType.date`
          *
-         * - Word.FieldType.hyperlink
+         * - `Word.FieldType.hyperlink`
          *
-         * - Word.FieldType.toc
+         * - `Word.FieldType.toc`
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5490,7 +5508,7 @@ export declare namespace Word {
          */
         untrack(): Word.Range;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.RangeData;
@@ -5547,9 +5565,9 @@ export declare namespace Word {
          */
         untrack(): Word.RangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
     /**
@@ -5691,11 +5709,12 @@ export declare namespace Word {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.SearchOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
+    
     
     /**
      * Represents a section in a Word document.
@@ -5801,7 +5820,7 @@ export declare namespace Word {
          */
         untrack(): Word.Section;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Section` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.SectionData;
@@ -5858,9 +5877,9 @@ export declare namespace Word {
          */
         untrack(): Word.SectionCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     /**
@@ -5931,7 +5950,7 @@ export declare namespace Word {
          */
         untrack(): Word.Setting;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Setting` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.SettingData;
@@ -6016,9 +6035,9 @@ export declare namespace Word {
          */
         untrack(): Word.SettingCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.SettingCollectionData;
     }
     /**
@@ -6093,9 +6112,9 @@ export declare namespace Word {
          */
         untrack(): Word.StyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.StyleCollectionData;
     }
     /**
@@ -6107,6 +6126,7 @@ export declare namespace Word {
     export class Style extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets a font object that represents the character formatting of the specified style.
          *
@@ -6114,6 +6134,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
          *
@@ -6249,7 +6270,7 @@ export declare namespace Word {
          */
         untrack(): Word.Style;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Style` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.StyleData;
@@ -6786,7 +6807,7 @@ export declare namespace Word {
          */
         untrack(): Word.Table;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.TableData;
@@ -6844,9 +6865,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.TableCollectionData;
     }
     /**
@@ -6859,7 +6880,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets cells. Read-only.
+         * Gets cells.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -7028,6 +7049,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.TableRow;
+        
         /**
          * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
          *
@@ -7132,7 +7154,7 @@ export declare namespace Word {
          */
         untrack(): Word.TableRow;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.TableRowData;
@@ -7189,9 +7211,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.TableRowCollectionData;
     }
     /**
@@ -7434,7 +7456,7 @@ export declare namespace Word {
          */
         untrack(): Word.TableCell;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.TableCellData;
@@ -7491,9 +7513,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableCellCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `Word.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): Word.Interfaces.TableCellCollectionData;
     }
     /**
@@ -7564,7 +7586,7 @@ export declare namespace Word {
          */
         untrack(): Word.TableBorder;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
          * Whereas the original `Word.TableBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableBorderData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): Word.Interfaces.TableBorderData;
@@ -8388,6 +8410,7 @@ export declare namespace Word {
          */
         end = "End",
     }
+    
     /**
      * @remarks
      * [Api set: WordApi 1.3]
@@ -8597,6 +8620,7 @@ export declare namespace Word {
          */
         right = "Right",
     }
+    
     /**
      * @remarks
      * [Api set: WordApi 1.3]
@@ -10357,6 +10381,10 @@ export declare namespace Word {
          */
         cold = "Cold",
     }
+    
+    
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -10408,6 +10436,23 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        }
+        /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
+        export interface BorderUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`. */
+        export interface BorderCollectionUpdateData {
+            
+            
+            
+            
+            
+            
+            items?: Word.Interfaces.BorderData[];
         }
         /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
@@ -10547,8 +10592,6 @@ export declare namespace Word {
             color?: string;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10674,7 +10717,7 @@ export declare namespace Word {
              */
             category?: string;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10742,7 +10785,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -10755,6 +10798,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             locked?: boolean;
+            
         }
         /** An interface for updating data on the `FieldCollection` object, for use in `fieldCollection.set({ ... })`. */
         export interface FieldCollectionUpdateData {
@@ -10784,7 +10828,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10902,6 +10946,28 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             level?: number;
+        }
+        /** An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`. */
+        export interface ListLevelUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ListLevelCollection` object, for use in `listLevelCollection.set({ ... })`. */
+        export interface ListLevelCollectionUpdateData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`. */
+        export interface ListTemplateUpdateData {
+            
         }
         /** An interface for updating data on the `NoteItem` object, for use in `noteItem.set({ ... })`. */
         export interface NoteItemUpdateData {
@@ -11258,6 +11324,7 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `Style` object, for use in `style.set({ ... })`. */
         export interface StyleUpdateData {
+            
             /**
              * Gets a font object that represents the character formatting of the specified style.
              *
@@ -11265,6 +11332,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             font?: Word.Interfaces.FontUpdateData;
+            
             /**
              * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
              *
@@ -11324,15 +11392,17 @@ export declare namespace Word {
         /** An interface for updating data on the `Shading` object, for use in `shading.set({ ... })`. */
         export interface ShadingUpdateData {
             
+            
+            
         }
         /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             /**
-            * Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the font. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
@@ -11435,6 +11505,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
+            
+            
             
             
             
@@ -11587,55 +11659,55 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-            * Gets the collection of rich text content control objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of rich text content control objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-            * Gets the collection of field objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of field objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the collection of list objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the collection of list objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             lists?: Word.Interfaces.ListData[];
             /**
-            * Gets the collection of paragraph objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            *
-            * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-            */
+             * Gets the collection of paragraph objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             *
+             * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-            * Gets the collection of table objects in the body.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the collection of table objects in the body.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             tables?: Word.Interfaces.TableData[];
             /**
              * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -11665,6 +11737,18 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+        }
+        /** An interface describing the data returned by calling `border.toJSON()`. */
+        export interface BorderData {
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `borderCollection.toJSON()`. */
+        export interface BorderCollectionData {
+            items?: Word.Interfaces.BorderData[];
         }
         /** An interface describing the data returned by calling `checkboxContentControl.toJSON()`. */
         export interface CheckboxContentControlData {
@@ -11932,8 +12016,6 @@ export declare namespace Word {
             id?: number;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -12195,7 +12277,7 @@ export declare namespace Word {
              */
             category?: string;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -12312,7 +12394,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -12332,6 +12414,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             locked?: boolean;
+            
             /**
              * Gets the field's type.
              *
@@ -12368,7 +12451,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -12454,6 +12537,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
+            
             /**
              * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -12476,7 +12560,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `list.toJSON()`. */
         export interface ListData {
             /**
-            * Gets paragraphs in the list. Read-only.
+            * Gets paragraphs in the list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -12532,21 +12616,44 @@ export declare namespace Word {
              */
             siblingIndex?: number;
         }
+        /** An interface describing the data returned by calling `listLevel.toJSON()`. */
+        export interface ListLevelData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `listLevelCollection.toJSON()`. */
+        export interface ListLevelCollectionData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
+        export interface ListTemplateData {
+            
+            
+        }
         /** An interface describing the data returned by calling `noteItem.toJSON()`. */
         export interface NoteItemData {
             /**
-            * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Represents a footnote or endnote reference in the main document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Represents a footnote or endnote reference in the main document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             reference?: Word.Interfaces.RangeData;
             /**
              * Represents the note item type: footnote or endnote.
@@ -12563,39 +12670,39 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
-            * Gets the collection of fields in the paragraph.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of fields in the paragraph.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItem?: Word.Interfaces.ListItemData;
             /**
-            * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -12819,25 +12926,25 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             /**
-            * Gets the collection of field objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of field objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.2]
-            */
+             * Gets the collection of inline picture objects in the range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.2]
+             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
@@ -12934,11 +13041,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyData;
         }
         /** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
@@ -12972,19 +13079,21 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
+            
             /**
-            * Gets a font object that represents the character formatting of the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a font object that represents the character formatting of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             font?: Word.Interfaces.FontData;
+            
             /**
-            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatData;
             
             
@@ -13073,36 +13182,38 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `shading.toJSON()`. */
         export interface ShadingData {
             
+            
+            
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
             /**
-            * Gets the collection of field objects in the table.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the collection of field objects in the table.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             fields?: Word.Interfaces.FieldData[];
             /**
-            * Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the font. Use this to get and set font name, size, color, and other properties.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets all of the table rows.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets all of the table rows.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             rows?: Word.Interfaces.TableRowData[];
             /**
-            * Gets the child tables nested one level deeper.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the child tables nested one level deeper.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             tables?: Word.Interfaces.TableData[];
             /**
              * Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
@@ -13231,6 +13342,8 @@ export declare namespace Word {
             
             
             
+            
+            
         }
         /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
         export interface TableCollectionData {
@@ -13239,7 +13352,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             /**
-            * Gets cells. Read-only.
+            * Gets cells.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -13323,11 +13436,11 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableCell.toJSON()`. */
         export interface TableCellData {
             /**
-            * Gets the body object of the cell.
-            *
-            * @remarks
-            * [Api set: WordApi 1.3]
-            */
+             * Gets the body object of the cell.
+             *
+             * @remarks
+             * [Api set: WordApi 1.3]
+             */
             body?: Word.Interfaces.BodyData;
             /**
              * Gets the index of the cell in its row.
@@ -13517,6 +13630,8 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        
+        
         
         /**
          * Represents a comment in the document.
@@ -13711,18 +13826,18 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Specifies the commentReply's content range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Specifies the commentReply's content range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
-            * Gets the parent comment of this reply.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * Gets the parent comment of this reply.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             parentComment?: Word.Interfaces.CommentLoadOptions;
             /**
              * Gets the email of the comment reply's author.
@@ -13772,18 +13887,18 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Specifies the commentReply's content range.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * For EACH ITEM in the collection: Specifies the commentReply's content range.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent comment of this reply.
-            *
-            * @remarks
-            * [Api set: WordApi 1.4]
-            */
+             * For EACH ITEM in the collection: Gets the parent comment of this reply.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
             parentComment?: Word.Interfaces.CommentLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the email of the comment reply's author.
@@ -13926,8 +14041,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14095,8 +14208,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14409,7 +14520,7 @@ export declare namespace Word {
              */
             category?: boolean;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -14512,6 +14623,12 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.4]
+         *
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI.
+         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldLoadOptions {
             /**
@@ -14584,7 +14701,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -14604,6 +14721,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             locked?: boolean;
+            
             /**
              * Gets the field's type.
              *
@@ -14617,6 +14735,12 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.4]
+         *
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI.
+         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldCollectionLoadOptions {
             /**
@@ -14689,7 +14813,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -14709,6 +14833,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             locked?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Gets the field's type.
              *
@@ -14750,7 +14875,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14894,6 +15019,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
+            
             /**
              * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -14997,6 +15123,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
@@ -15111,6 +15238,9 @@ export declare namespace Word {
              */
             siblingIndex?: boolean;
         }
+        
+        
+        
         /**
          * Represents a footnote or endnote.
          *
@@ -15156,18 +15286,18 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * For EACH ITEM in the collection: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.
-            *
-            * @remarks
-            * [Api set: WordApi 1.5]
-            */
+             * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.
+             *
+             * @remarks
+             * [Api set: WordApi 1.5]
+             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
              * For EACH ITEM in the collection: Represents the note item type: footnote or endnote.
@@ -15985,11 +16115,11 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
+             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+             *
+             * @remarks
+             * [Api set: WordApi 1.1]
+             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
@@ -16074,6 +16204,7 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
              *
@@ -16081,6 +16212,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             font?: Word.Interfaces.FontLoadOptions;
+            
             /**
              * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
              *
@@ -16183,6 +16315,7 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              * Gets a font object that represents the character formatting of the specified style.
              *
@@ -16190,6 +16323,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.5]
              */
             font?: Word.Interfaces.FontLoadOptions;
+            
             /**
              * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
              *
@@ -17048,19 +17182,19 @@ export declare namespace Word {
     }
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.
-     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by `context.sync()`.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }

@@ -4,7 +4,36 @@ uid: 'powerpoint!PowerPoint.Presentation:class'
 package: powerpoint!
 fullName: PowerPoint.Presentation
 summary: ''
-remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+      // Get the ID of the first selected slide.
+      const presentation: PowerPoint.Presentation = context.presentation;
+      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+      selected.load("id");
+      await context.sync();
+
+      // Insert the other presentation after the selected slide.
+      const insertOptions: PowerPoint.InsertSlideOptions = {
+          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+          targetSlideId: selected.id
+      };
+      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -107,7 +136,7 @@ methods:
       // Arranges the selected shapes in a line from left to right.
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedShapes();
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
         shapes.load("items");
         await context.sync();
@@ -135,7 +164,7 @@ methods:
 
       await PowerPoint.run(async (context) => {
         let finalTable = "";
-        const shapes = context.presentation.getSelectedShapes();
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
         await context.sync();
         finalTable += "<br>getSelectedShapes.getCount returned:<b>" + shapeCount.value + "</b><br>";
@@ -160,7 +189,7 @@ methods:
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
-        const slides = context.presentation.getSelectedSlides();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
         const slideCount = slides.getCount();
         slides.load("items");
         await context.sync();
@@ -168,7 +197,7 @@ methods:
         slides.items.map((slide) => {
           savedSlideSelection.push(slide.id);
         });
-        const shapes = context.presentation.getSelectedShapes();
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
         shapes.load("items");
         await context.sync();
@@ -215,7 +244,7 @@ methods:
         const allSlidesCount = context.presentation.slides.getCount();
         context.presentation.slides.load("items");
         await context.sync();
-        let allSlideItems = context.presentation.slides.items;
+        let allSlideItems: PowerPoint.Slide[] = context.presentation.slides.items;
         allSlideItems.map((slide, index) => {
           allSlidesList[slide.id] = `Slide ${index + 1}`;
         });
@@ -223,7 +252,7 @@ methods:
         if ($("#id-check-usenative").is(":checked")) {
           context.presentation.load("tags");
         }
-        const slides = context.presentation.getSelectedSlides();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
         const slideCount = slides.getCount();
         slides.load("items");
         await context.sync();
@@ -248,7 +277,7 @@ methods:
         let finalTable = "";
         context.presentation.load("slides");
         await context.sync();
-        const slides = context.presentation.getSelectedSlides();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
         const slideCount = slides.getCount();
         await context.sync();
         finalTable += "<br>getSelectedSlides.getCount returned:<b>" + slideCount.value + "</b><br>";
@@ -297,7 +326,7 @@ methods:
       // Gets the selected text range and prints data about the range on the task pane.
 
       await PowerPoint.run(async (context) => {
-        const textRange = context.presentation.getSelectedTextRange();
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
         try {
           await context.sync();
         } catch (error) {
@@ -336,9 +365,9 @@ methods:
       // Sets the range selection to the range that was saved previously.
 
       await PowerPoint.run(async (context) => {
-        const slide1 = context.presentation.slides.getItem(savedTextSlideSelection[0]);
-        const shape1 = slide1.shapes.getItem(savedTextShapeSelection[0]);
-        const textRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
+        const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
+        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
         textRange.setSelected();
         await context.sync();
       });
@@ -386,8 +415,8 @@ methods:
 
       await PowerPoint.run(async function(context) {
           // Get the ID of the first selected slide.
-          const presentation = context.presentation;
-          const selected = presentation.getSelectedSlides().getItemAt(0);
+          const presentation: PowerPoint.Presentation = context.presentation;
+          const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
           selected.load("id");
           await context.sync();
 
@@ -407,7 +436,7 @@ methods:
       content: 'insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;'
       parameters:
         - id: base64File
-          description: The base64-encoded string representing the source presentation file.
+          description: The Base64-encoded string representing the source presentation file.
           type: string
         - id: options
           description: >-
@@ -520,9 +549,9 @@ methods:
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
-        const slide2 = context.presentation.slides.getItemAt(1);
-        const slide4 = context.presentation.slides.getItemAt(3);
-        const slide5 = context.presentation.slides.getItemAt(4);
+        const slide2: PowerPoint.Slide = context.presentation.slides.getItemAt(1);
+        const slide4: PowerPoint.Slide = context.presentation.slides.getItemAt(3);
+        const slide5: PowerPoint.Slide = context.presentation.slides.getItemAt(4);
         slide2.load("id");
         slide4.load("id");
         slide5.load("id");
@@ -556,8 +585,8 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original PowerPoint.Presentation object is an API object, the `toJSON` method returns a
-      plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow copies
+      passed to it.) Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.
     remarks: ''
     isPreview: false

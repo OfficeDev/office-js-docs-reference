@@ -16,7 +16,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|
-| DevicePermissionService 1.1 | Chromium-based browsers* | [new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | Not supported | Not supported |
+| DevicePermissionService 1.1 | Chromium-based browsers* | [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) | Not supported | Not supported |
 
 > [!NOTE]
 > \* DevicePermissionService 1.1 is supported in Office on the web running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
@@ -33,4 +33,4 @@ For details about the API, see [Office.DevicePermission](/javascript/api/office/
 
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

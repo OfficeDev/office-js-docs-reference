@@ -7,7 +7,20 @@ summary: >-
   An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
   object model, read [Work with worksheets using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Get a Worksheet object by its name and activate it.
+  await Excel.run(async (context) => { 
+      const wSheetName = 'Sheet1';
+      const worksheet = context.workbook.worksheets.getItem(wSheetName);
+      worksheet.activate();
+      await context.sync(); 
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -1346,7 +1359,7 @@ methods:
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain
+      passed to it.) Whereas the original `Excel.Worksheet` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''

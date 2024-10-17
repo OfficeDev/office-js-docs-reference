@@ -17,6 +17,8 @@ items:
             items:
               - name: ConnectorType
                 uid: 'powerpoint!PowerPoint.ConnectorType:enum'
+              - name: DocumentPropertyType
+                uid: 'powerpoint!PowerPoint.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
               - name: GeometricShapeType
@@ -45,6 +47,22 @@ items:
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: BulletFormat
             uid: 'powerpoint!PowerPoint.BulletFormat:class'
+          - name: CustomProperty
+            uid: 'powerpoint!PowerPoint.CustomProperty:class'
+          - name: CustomPropertyCollection
+            uid: 'powerpoint!PowerPoint.CustomPropertyCollection:class'
+          - name: CustomXmlPart
+            uid: 'powerpoint!PowerPoint.CustomXmlPart:class'
+          - name: CustomXmlPartCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
+          - name: CustomXmlPartScopedCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+          - name: DocumentProperties
+            uid: 'powerpoint!PowerPoint.DocumentProperties:class'
+          - name: Hyperlink
+            uid: 'powerpoint!PowerPoint.Hyperlink:class'
+          - name: HyperlinkCollection
+            uid: 'powerpoint!PowerPoint.HyperlinkCollection:class'
           - name: InsertSlideOptions
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
           - name: ParagraphFormat
@@ -176,6 +194,8 @@ items:
                 uid: 'office!Office.AsyncResult:interface'
               - name: Auth
                 uid: 'office!Office.Auth:interface'
+              - name: AuthContext
+                uid: 'office!Office.AuthContext:interface'
               - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
               - name: BeforeDocumentCloseNotification
@@ -335,9 +355,9 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-  - name: Manifest reference
+  - name: Add-in only manifest reference
     items:
-      - name: Manifest overview
+      - name: Add-in only manifest overview
         href: ../../manifest/manifest.md
       - name: AllowSnapshot
         href: ../../manifest/allowsnapshot.md
@@ -916,6 +936,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.1 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
             displayName: Word
           - name: WordApi 1.8 requirement set
             href: ../../requirement-sets/word/word-api-1-8-requirement-set.md

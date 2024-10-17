@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
 summary: >-
-  An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `ChartErrorBarsFormat` object, for use in `chartErrorBarsFormat.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
