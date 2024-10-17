@@ -396,6 +396,16 @@ properties:
 
       ```TypeScript
 
+      // Get the URL of the REST endpoint.
+
+      const restUrl = Office.context.mailbox.restUrl;
+
+      console.log(`REST API URL: ${restUrl}`);
+
+      ```
+
+      ```TypeScript
+
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
