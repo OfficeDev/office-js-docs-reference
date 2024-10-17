@@ -1,16 +1,16 @@
 ---
 title: NAA API requirement sets
-description: Identity API requirement set information for Office Add-ins.
+description: Nested App Auth requirement set information for Office Add-ins.
 ms.date: 10/15/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
 
-# NAA API requirement sets
+# Nested App Auth requirement set
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-Office Add-ins run across multiple versions of Office. The following table lists the Identity API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+Office Add-ins run across multiple versions of Office. The following table lists the Nested App Auth requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -21,9 +21,9 @@ Office Add-ins run across multiple versions of Office. The following table lists
 > - Currently, the NestedAppAuth 1.1 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 > - In Outlook, the NestedAppAuth 1.1 requirement set isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
-## Outlook and Identity API requirement sets
+## Outlook and NestedAppAuth requirement set
 
-To require the NestedAppAuth set 1.1 in your Outlook add-in code, check if it's supported by calling `isSetSupported('NestedAppAuth', '1.1')`.
+To require the NestedAppAuth requirement set 1.1 in your Outlook add-in code, check if it's supported by calling `isSetSupported('NestedAppAuth', '1.1')`.
 Declaring it in the Outlook add-in's manifest isn't supported. You can also determine if the API is supported by checking that it's not `undefined`.
 For further details, see [Using APIs from later requirement sets](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#using-apis-from-later-requirement-sets).
 
