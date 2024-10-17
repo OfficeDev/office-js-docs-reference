@@ -2389,15 +2389,12 @@ methods:
     package: outlook!
     fullName: 'getItemIdAsync(options, callback)'
     summary: >-
-      Asynchronously gets the ID of a saved item.
+      Asynchronously gets the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      of a saved item.
 
 
       When invoked, this method returns the item ID via the callback function.
-
-
-      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use
-      with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
-      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2410,6 +2407,19 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**:
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `getItemIdAsync` (for example, to get an item ID to use with EWS or the REST API), be aware
+      that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item
+      is synced, the item ID isn't recognized and using it returns an error.
 
 
       **Errors**:
@@ -2431,7 +2441,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            of type `Office.AsyncResult`<!-- -->. The EWS item ID of the item is returned in the `asyncResult.value`
+            property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -2441,15 +2452,12 @@ methods:
     package: outlook!
     fullName: getItemIdAsync(callback)
     summary: >-
-      Asynchronously gets the ID of a saved item.
+      Asynchronously gets the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      of a saved item.
 
 
       When invoked, this method returns the item ID via the callback function.
-
-
-      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use
-      with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
-      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2464,6 +2472,19 @@ methods:
       -->**: Appointment Organizer
 
 
+      **Important**:
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `getItemIdAsync` (for example, to get an item ID to use with EWS or the REST API), be aware
+      that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item
+      is synced, the item ID isn't recognized and using it returns an error.
+
+
       **Errors**:
 
 
@@ -2476,15 +2497,16 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/item-id-compose.yaml
 
 
-      Office.context.mailbox.item.getItemIdAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+      Office.context.mailbox.item.getItemIdAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
               console.error(`getItemIdAsync failed with message: ${result.error.message}`);
-          } else {
-              console.log(result.value);
+              return;
           }
+
+          console.log(result.value);
       });
 
       ```
@@ -2496,7 +2518,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            of type `Office.AsyncResult`<!-- -->. The EWS item ID of the item is returned in the `asyncResult.value`
+            property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -3222,9 +3245,16 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the
-      REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced
-      to the server. Until the item is synced, using the item ID will return an error.
+      - The identifier returned is the same as the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
+      -->. The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that when Outlook
+      is in cached mode, it may take some time before the item is actually synced to the server. Until the item is
+      synced, using the item ID will return an error.
 
 
       - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting. Otherwise, the `saveAsync`
@@ -3274,8 +3304,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The appointment ID is returned in
-            the `asyncResult.value` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS appointment ID is
+            returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -3319,9 +3349,16 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the
-      REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced
-      to the server. Until the item is synced, using the item ID will return an error.
+      - The identifier returned is the same as the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
+      -->. The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
+
+
+      - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that when Outlook
+      is in cached mode, it may take some time before the item is actually synced to the server. Until the item is
+      synced, using the item ID will return an error.
 
 
       - In Outlook on Mac, only Version 16.35 (20030802) and later supports saving a meeting. Otherwise, the `saveAsync`
@@ -3371,8 +3408,8 @@ methods:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The appointment ID is returned in
-            the `asyncResult.value` property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The EWS appointment ID is
+            returned in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void

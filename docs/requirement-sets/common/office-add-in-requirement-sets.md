@@ -30,7 +30,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>PowerPoint on the web</li><ul><li>PowerPoint on Windows</li><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
+| <ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
 
 ---
 
