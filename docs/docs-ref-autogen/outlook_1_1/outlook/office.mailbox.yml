@@ -203,6 +203,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+      // Get the EWS URL and EWS item ID.
+
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -210,12 +212,14 @@ properties:
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-      console.log("REST URL: " + Office.context.mailbox.restUrl);
+      // Convert the EWS item ID to a REST-formatted ID.
 
       const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
+
+      // Convert the REST-formatted ID back to an EWS-formatted ID.
 
       const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -696,33 +700,6 @@ methods:
 
       - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
       try again.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          const ewsId = Office.context.mailbox.item.itemId;
-          const token = result.value;
-          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                  
-          const xhr = new XMLHttpRequest();
-          xhr.open('GET', getMessageUrl);
-          xhr.setRequestHeader("Authorization", "Bearer " + token);
-          xhr.onload = function (e) {
-              console.log(this.response);
-          }
-          xhr.send();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -805,12 +782,13 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
 
-      Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`);
-          } else {
-              console.log(result.value);
+      Office.context.mailbox.getUserIdentityTokenAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.error(`Token retrieval failed with message: ${result.error.message}`)
+              return;
           }
+
+          console.log(result.value);
       });
 
       ```
@@ -1011,7 +989,7 @@ methods:
           '  </soap:Body>'+
           '</soap:Envelope>';
 
-      Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
           console.log(result);
       });
 

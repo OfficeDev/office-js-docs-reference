@@ -233,6 +233,12 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted add-ins are able to use the REST service
+         * until extended support ends for Outlook 2019 on October 14, 2025. Traffic from these add-ins is automatically identified for exemption. This exemption also
+         * applies to new add-ins developed after March 31, 2024. Although add-ins are able to use the REST service until 2025, we highly encourage you to migrate your
+         * add-ins to use {@link https://learn.microsoft.com/outlook/rest#outlook-rest-api-via-microsoft-graph | Microsoft Graph}. For guidance, see
+         * {@link https://learn.microsoft.com/outlook/rest/compare-graph | Compare Microsoft Graph and Outlook REST API endpoints}.
          */
         enum RestVersion {
             /**
@@ -798,7 +804,12 @@ export declare namespace Office {
          * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
          * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
-         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * - The identifier returned is the same as the
+         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}.
+         * The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         *
+         * - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
@@ -813,7 +824,7 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
-         *                   which is an `Office.AsyncResult` object. The appointment ID is returned in the `asyncResult.value` property.
+         *                   which is an `Office.AsyncResult` object. The EWS appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -838,7 +849,12 @@ export declare namespace Office {
          * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
          * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
-         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * - The identifier returned is the same as the
+         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}.
+         * The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         *
+         * - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
@@ -851,7 +867,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
-         *                   which is an `Office.AsyncResult` object. The appointment ID is returned in the `asyncResult.value` property.
+         *                   which is an `Office.AsyncResult` object. The EWS appointment ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -1181,24 +1197,23 @@ export declare namespace Office {
          */
         itemClass: string;
         /**
-         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
-         * for the current item.
-         *
-         * The `itemId` property is not available in compose mode.
-         * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
-         * in the `asyncResult.value` parameter in the callback function.
-         *
-         * **Note**: The identifier returned by the `itemId` property is the same as the
-         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
-         * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
-         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}
+         * of the current item.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - The `itemId` property isn't available in compose mode.
+         * If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier
+         * in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+         *
+         * - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          */
         itemId: string;
         /**
@@ -2805,10 +2820,17 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
+         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
+         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
+         *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * - Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by EWS.
+         * - Item IDs retrieved via a REST API (such as {@link https://graph.microsoft.io/ | Microsoft Graph}) use a different format than the format used by EWS.
          * The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
          *
          * @param id - The ID to be converted into EWS format. This string can be an item ID formatted for the Outlook REST APIs or a conversation ID retrieved from
@@ -2852,10 +2874,8 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
-         * - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the format used by REST APIs (such as the
-         * {@link https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API}
-         * or the {@link https://graph.microsoft.io/ | Microsoft Graph}).
-         * The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
+         * - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the format used by REST APIs (such as
+         * {@link https://graph.microsoft.io/ | Microsoft Graph}). The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
          *
          * @param id - The ID to be converted into REST format. This string can be an item ID formatted for EWS that's usually retrieved from
          *             `Office.context.mailbox.item.itemId`, a conversation ID retrieved from `Office.context.mailbox.item.conversationId`, or a
@@ -3748,7 +3768,12 @@ export declare namespace Office {
          * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
          * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
-         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * - The identifier returned is the same as the
+         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}.
+         * The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         *
+         * - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
@@ -3765,7 +3790,7 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
-         *                   which is an `Office.AsyncResult` object. The message ID is returned in the `asyncResult.value` property.
+         *                   which is an `Office.AsyncResult` object. The EWS message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -3786,7 +3811,12 @@ export declare namespace Office {
          * - When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
          * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
-         * - If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that
+         * - The identifier returned is the same as the
+         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}.
+         * The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         *
+         * - If your add-in calls `saveAsync` to get an item ID to use with EWS or the REST API, be aware that
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the item ID will return an error.
          *
@@ -3801,7 +3831,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
-         *                   which is an `Office.AsyncResult` object. The message ID is returned in the `asyncResult.value` property.
+         *                   which is an `Office.AsyncResult` object. The EWS message ID is returned in the `asyncResult.value` property.
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -4068,24 +4098,23 @@ export declare namespace Office {
          */
         itemClass: string;
         /**
-         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
-         * for the current item.
-         *
-         * The `itemId` property is not available in compose mode.
-         * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
-         * in the `asyncResult.value` parameter in the callback function.
-         *
-         * **Note**: The identifier returned by the `itemId` property is the same as the
-         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
-         * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
-         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}
+         * of the current item.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `itemId` property isn't available in compose mode.
+         * If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier
+         * in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+         *
+         * - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          */
         itemId: string;
         /**
