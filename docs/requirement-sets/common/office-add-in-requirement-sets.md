@@ -164,7 +164,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul><li>Outlook on the web</li><li>Outlook on Windows</li><ul><li>Microsoft 365 subscription</li></ul><li>Outlook on Mac</li><li>Outlook on iPad</li><li>Outlook on Android</li></ul> | Supports nested app auth and the `Office.auth.getAuthContext` method. |
+| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md) | Supports nested app auth and the `Office.auth.getAuthContext` method. |
 
 ---
 
