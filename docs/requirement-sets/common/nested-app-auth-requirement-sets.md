@@ -1,5 +1,5 @@
 ---
-title: NAA API requirement sets
+title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
 ms.date: 10/15/2024
 ms.topic: overview
