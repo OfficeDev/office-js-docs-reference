@@ -1,16 +1,16 @@
 ---
 title: NAA API requirement sets
-description: Nested App Auth requirement set information for Office Add-ins.
+description: Nested app auth requirement set information for Office Add-ins.
 ms.date: 10/15/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
 
-# Nested App Auth requirement set
+# Nested app auth requirement set
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-Office Add-ins run across multiple versions of Office. The following table lists the Nested App Auth requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+Office Add-ins run across multiple versions of Office. The following table lists the nested app auth requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
