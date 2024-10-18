@@ -965,6 +965,8 @@ items:
           - name: Keyboard Shortcuts requirement sets
             href: >-
               ../../requirement-sets/common/keyboard-shortcuts-requirement-sets.md
+          - name: Nested App Auth requirement sets
+            href: ../../requirement-sets/common/nested-app-auth-requirement-sets.md
           - name: Open Browser Window requirement sets
             href: >-
               ../../requirement-sets/common/open-browser-window-api-requirement-sets.md
