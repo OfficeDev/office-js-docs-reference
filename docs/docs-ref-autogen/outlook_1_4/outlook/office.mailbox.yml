@@ -203,6 +203,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+      // Get the EWS URL and EWS item ID.
+
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -210,12 +212,14 @@ properties:
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-      console.log("REST URL: " + Office.context.mailbox.restUrl);
+      // Convert the EWS item ID to a REST-formatted ID.
 
       const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
+
+      // Convert the REST-formatted ID back to an EWS-formatted ID.
 
       const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -309,14 +313,25 @@ methods:
       **Important**:
 
 
+      - In October 2024, legacy Exchange [user
+      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
+      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
+      turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
+      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
+      -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
+      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
+      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
+      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+
+
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
       mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      - Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format
-      than the format used by EWS. The `convertToEwsId` method converts a REST-formatted ID into the proper format for
-      EWS.
+      - Item IDs retrieved via a REST API (such as [Microsoft Graph](https://graph.microsoft.io/)<!-- -->) use a
+      different format than the format used by EWS. The `convertToEwsId` method converts a REST-formatted ID into the
+      proper format for EWS.
 
 
       #### Examples
@@ -328,6 +343,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+      // Get the EWS URL and EWS item ID.
+
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -335,12 +352,14 @@ methods:
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-      console.log("REST URL: " + Office.context.mailbox.restUrl);
+      // Convert the EWS item ID to a REST-formatted ID.
 
       const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
+
+      // Convert the REST-formatted ID back to an EWS-formatted ID.
 
       const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -431,10 +450,8 @@ methods:
 
 
       - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the
-      format used by REST APIs (such as the [Outlook Mail
-      API](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->). The `convertToRestId` method converts an
-      EWS-formatted ID into the proper format for REST.
+      format used by REST APIs (such as [Microsoft Graph](https://graph.microsoft.io/)<!-- -->). The `convertToRestId`
+      method converts an EWS-formatted ID into the proper format for REST.
 
 
       #### Examples
@@ -443,27 +460,10 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          const ewsId = Office.context.mailbox.item.itemId;
-          const token = result.value;
-          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                  
-          const xhr = new XMLHttpRequest();
-          xhr.open('GET', getMessageUrl);
-          xhr.setRequestHeader("Authorization", "Bearer " + token);
-          xhr.onload = function (e) {
-              console.log(this.response);
-          }
-          xhr.send();
-      });
-
-
-      ...
-
+      // Get the EWS URL and EWS item ID.
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -472,12 +472,14 @@ methods:
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-      console.log("REST URL: " + Office.context.mailbox.restUrl);
+      // Convert the EWS item ID to a REST-formatted ID.
 
       const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
+
+      // Convert the REST-formatted ID back to an EWS-formatted ID.
 
       const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -871,33 +873,6 @@ methods:
 
       - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
       try again.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          const ewsId = Office.context.mailbox.item.itemId;
-          const token = result.value;
-          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                  
-          const xhr = new XMLHttpRequest();
-          xhr.open('GET', getMessageUrl);
-          xhr.setRequestHeader("Authorization", "Bearer " + token);
-          xhr.onload = function (e) {
-              console.log(this.response);
-          }
-          xhr.send();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -980,12 +955,13 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
 
-      Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`);
-          } else {
-              console.log(result.value);
+      Office.context.mailbox.getUserIdentityTokenAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.error(`Token retrieval failed with message: ${result.error.message}`)
+              return;
           }
+
+          console.log(result.value);
       });
 
       ```
@@ -1186,7 +1162,7 @@ methods:
           '  </soap:Body>'+
           '</soap:Envelope>';
 
-      Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
           console.log(result);
       });
 

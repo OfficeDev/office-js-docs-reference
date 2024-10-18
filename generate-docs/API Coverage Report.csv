@@ -8746,7 +8746,7 @@ Office.Mailbox,"displayNewAppointmentFormAsync(parameters, callback)",Method,Fin
 Office.Mailbox,"displayNewMessageForm(parameters)",Method,Poor,true
 Office.Mailbox,"displayNewMessageFormAsync(parameters, options, callback)",Method,Fine,true
 Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,false
-Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,true
+Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
 Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
