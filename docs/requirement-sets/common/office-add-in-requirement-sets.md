@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 05/13/2024
+ms.date: 10/17/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -164,7 +164,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md) | Supports nested app auth and the `Office.auth.getAuthContext` method. |
+| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md). | <ul><li>Office.auth.getAuthContext</li></ul> |
 
 ---
 

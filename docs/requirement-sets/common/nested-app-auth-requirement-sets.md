@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 10/15/2024
+ms.date: 10/17/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,9 +12,9 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the nested app auth requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad and Outlook on Android |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li></ul> | Office on Windows<ul><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad and Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | not available | Version 16.89 (Build 24090815) | Build v4.2433.0 |
+| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Not available | Version 16.89 (Build 24090815) | Build v4.2433.0 |
 
 > [!IMPORTANT]
 >
