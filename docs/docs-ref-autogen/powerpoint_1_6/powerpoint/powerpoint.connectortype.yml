@@ -1,0 +1,70 @@
+### YamlMime:TSEnum
+name: PowerPoint.ConnectorType
+uid: 'powerpoint!PowerPoint.ConnectorType:enum'
+package: powerpoint!
+fullName: PowerPoint.ConnectorType
+summary: Specifies the connector type for line shapes.
+remarks: >-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+  // This function gets the collection of shapes on the first slide,
+
+  // and adds a line to the collection, while specifying its
+
+  // start and end points. Then it names the shape.
+
+  await PowerPoint.run(async (context) => {
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+
+    // For a line, left and top are the coordinates of the start point,
+    // while height and width are the coordinates of the end point.
+    const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, 
+        { 
+          left: 400, 
+          top: 200, 
+          height: 20, 
+          width: 150 
+        });
+    line.name = "StraightLine";
+
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: curve
+    uid: 'powerpoint!PowerPoint.ConnectorType.curve:member'
+    package: powerpoint!
+    summary: |-
+      Curve connector type
+
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Curve"'
+  - name: elbow
+    uid: 'powerpoint!PowerPoint.ConnectorType.elbow:member'
+    package: powerpoint!
+    summary: |-
+      Elbow connector type
+
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Elbow"'
+  - name: straight
+    uid: 'powerpoint!PowerPoint.ConnectorType.straight:member'
+    package: powerpoint!
+    summary: |-
+      Straight connector type
+
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Straight"'

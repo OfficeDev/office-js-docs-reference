@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.PresentationData
+uid: 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.PresentationData
+summary: An interface describing the data returned by calling `presentation.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.PresentationData#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the ID of the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: title
+    uid: 'powerpoint!PowerPoint.Interfaces.PresentationData#title:member'
+    package: powerpoint!
+    fullName: title
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string

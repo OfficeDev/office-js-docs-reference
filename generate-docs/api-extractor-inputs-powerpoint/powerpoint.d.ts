@@ -439,8 +439,7 @@ export declare namespace PowerPoint {
      * Represents a single hyperlink.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.6]
      */
     export class Hyperlink extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -449,16 +448,14 @@ export declare namespace PowerPoint {
          * Specifies the URL target of the hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         address: string;
         /**
          * Specifies the string displayed when hovering over the hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         screenTip: string;
         /**
@@ -492,8 +489,7 @@ export declare namespace PowerPoint {
      * Represents a collection of hyperlinks.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.6]
      */
     export class HyperlinkCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -504,8 +500,7 @@ export declare namespace PowerPoint {
          * Gets the number of hyperlinks in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          * @returns The number of hyperlinks in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -513,8 +508,7 @@ export declare namespace PowerPoint {
          * Gets a hyperlink using its zero-based index in the collection. An error is thrown if the index is out of range.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          *
          * @param index - The index of the hyperlink in the collection.
          * @returns The hyperlink at the given index. An error is thrown if index is out of range.
@@ -2495,8 +2489,7 @@ export declare namespace PowerPoint {
          * Returns a collection of hyperlinks in the slide.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         readonly hyperlinks: PowerPoint.HyperlinkCollection;
         /**
@@ -4181,16 +4174,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: string;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: string;
         }
@@ -4614,16 +4605,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: string;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: string;
         }
@@ -5233,8 +5222,7 @@ export declare namespace PowerPoint {
          * Represents a single hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         export interface HyperlinkLoadOptions {
             /**
@@ -5245,16 +5233,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: boolean;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: boolean;
         }
@@ -5262,8 +5248,7 @@ export declare namespace PowerPoint {
          * Represents a collection of hyperlinks.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         export interface HyperlinkCollectionLoadOptions {
             /**
@@ -5274,16 +5259,14 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: boolean;
         }

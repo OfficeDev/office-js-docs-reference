@@ -96,7 +96,7 @@ tryCatch(async () => {
     const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 15},
-                            {host: "powerpoint", versions: 6},
+                            {host: "powerpoint", versions: 7},
                             {host: "visio", versions: 1},
                             {host: "word", versions: 9}]; /* not including online or desktop*/
 
