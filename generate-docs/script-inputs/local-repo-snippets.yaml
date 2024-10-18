@@ -8299,6 +8299,11 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
+Office.Mailbox#restUrl:member:
+  - |-
+    // Get the URL of the REST endpoint.
+    const restUrl = Office.context.mailbox.restUrl;
+    console.log(`REST API URL: ${restUrl}`);
 Office.MailboxEnums.AttachmentStatus:enum:
   - |-
     // Get the attachment that was just added to a message or appointment.

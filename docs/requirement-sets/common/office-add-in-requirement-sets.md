@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 05/13/2024
+ms.date: 10/17/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -30,7 +30,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>PowerPoint on the web</li><ul><li>PowerPoint on Windows</li><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
+| <ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
 
 ---
 
@@ -157,6 +157,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+
+---
+
+### NestedAppAuth
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md). | <ul><li>Office.auth.getAuthContext</li></ul> |
 
 ---
 
