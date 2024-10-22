@@ -1,7 +1,7 @@
 ---
 title: Ribbon API requirement sets
 description: Specifies which Office platforms and builds support the dynamic ribbon APIs.
-ms.date: 08/05/2024
+ms.date: 10/22/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -16,10 +16,10 @@ The Ribbon API set supports programmatic control of when custom add-in commands 
 
 `RibbonApi 1.1` is available with **Excel**, **PowerPoint**, and **Word**.  `RibbonApi 1.2` is only available with **Excel**. Both are only for use with **task pane add-ins**. The following table lists the Ribbon API requirement sets, the supported platforms, and the **minimum** builds or versions where applicable.
 
-| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.53 (21080600) | Not supported |
-| RibbonApi 1.1 | Supported | Version 2002 (12527.20880) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.38 (20061401) | Not supported |
+| Requirement set | Office on the web | Office on Windows<br>(Microsoft 365 subscription) | Office on Windows<br>(retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iOS | Outlook on Android |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| RibbonApi 1.2 | Supported | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.53 (21080600) | Not supported | Not supported |
+| RibbonApi 1.1 | Supported | Version 2002 (12527.20880) | Version 2006 (Build 13001.20266) | Office 2021: Version 2108 (Build 14326.20454) | Version 16.38 (20061401) | Not supported | Not supported |
 
 To find out more about versions and build numbers, see:
 
