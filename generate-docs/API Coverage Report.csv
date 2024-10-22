@@ -8589,7 +8589,7 @@ Office.AttachmentsChangedEventArgs,N/A,Class,Good,false
 Office.AttachmentsChangedEventArgs,"attachmentDetails",Property,Good,false
 Office.AttachmentsChangedEventArgs,"attachmentStatus",Property,Good,false
 Office.AttachmentsChangedEventArgs,"type",Property,Good,false
-Office.Body,N/A,Class,Good,false
+Office.Body,N/A,Class,Good,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Fine,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Fine,false
 Office.Body,"getAsync(coercionType, options, callback)",Method,Poor,true
