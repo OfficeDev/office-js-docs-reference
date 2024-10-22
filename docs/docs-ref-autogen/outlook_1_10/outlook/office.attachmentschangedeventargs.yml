@@ -4,7 +4,22 @@ uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.AttachmentsChangedEventArgs
 summary: Provides information about the attachment on a mail item that raised the `Office.EventType.AttachmentsChanged` event.
-remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Handles the OnMessageAttachmentsChanged event.
+  function onMessageAttachmentsChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+
+      if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+          const attachment = event.attachmentDetails;
+          // Perform operations on the attachment that was added.
+      }
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

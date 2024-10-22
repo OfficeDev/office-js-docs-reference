@@ -29,29 +29,25 @@ remarks: >-
 
   ```TypeScript
 
-  Office.initialize = function (reason) {
-      $(document).ready(function () {
-          // Get a reference to the mailbox and use it to add an
-          // event handler.
-          const mailBox = Office.context.mailbox;
-          mailbox.addHandlerAsync(
-              Office.EventType.ItemChanged,
-              loadNewItem,
-              function (result) {
-                  if (result.status === Office.AsyncResultStatus.Failed) {
-                      // Handle error.
-                  }
-              });
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  // Handle error.
+              }
+          });
       });
-  };
+  });
 
 
   function loadNewItem(eventArgs) {
       const item = Office.context.mailbox.item;
 
-      // Check that item is not null.
+      // Check that item isn't null.
       if (item !== null) {
-          // Work with item, e.g., define and call function that
+          // Work with item. For example, define and call a function that
           // loads the properties of the newly selected item.
           loadProps(item);
       }
@@ -468,26 +464,25 @@ methods:
 
       ```TypeScript
 
-      Office.initialize = function (reason) {
-          $(document).ready(function () {
-              Office.context.mailbox.addHandlerAsync(
-                  Office.EventType.ItemChanged,
-                  loadNewItem,
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          // Handle error.
-                      }
-                  });
+      Office.onReady(() => {
+          document.addEventListener('DOMContentLoaded', () => {
+              // Get a reference to the mailbox and use it to add an event handler.
+              const mailbox = Office.context.mailbox;
+              mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+                  if (result.status === Office.AsyncResultStatus.Failed) {
+                      // Handle error.
+                  }
+              });
           });
-      };
+      });
 
 
       function loadNewItem(eventArgs) {
           const item = Office.context.mailbox.item;
 
-          // Check that item is not null.
+          // Check that item isn't null.
           if (item !== null) {
-              // Work with item, e.g., define and call function that
+              // Work with item. For example, define and call a function that
               // loads the properties of the newly selected item.
               loadProps(item);
           }
@@ -2513,6 +2508,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error("Failed to remove event handler: " + asyncResult.error.message);
+              return;
+          }
+
+          console.log("Event handler removed successfully.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

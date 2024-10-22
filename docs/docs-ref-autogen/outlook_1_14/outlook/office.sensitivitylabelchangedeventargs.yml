@@ -15,6 +15,22 @@ remarks: >-
 
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
   or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Handles a change to an item's sensitivity label.
+
+  function onSensitivityLabelChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+
+      // Perform operations based on the event.
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
