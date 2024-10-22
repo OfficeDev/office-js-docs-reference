@@ -2676,7 +2676,7 @@ methods:
           const text = asyncResult.value.data;
           const prop = asyncResult.value.sourceProperty;
 
-          console.log(`Selected text in ${prop}: ${text});
+          console.log(`Selected text in ${prop}: ${text}`);
       }
 
       ```

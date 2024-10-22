@@ -7682,7 +7682,7 @@ Office.AppointmentCompose#getSelectedDataAsync:member(1):
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log(`Selected text in ${prop}: ${text});
+        console.log(`Selected text in ${prop}: ${text}`);
     }
 Office.AppointmentCompose#location:member:
   - |-
@@ -8728,7 +8728,7 @@ Office.MessageCompose#getSelectedDataAsync:member(1):
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log(`Selected text in ${prop}: ${text});
+        console.log(`Selected text in ${prop}: ${text}`);
     }
 Office.MessageCompose#removeHandlerAsync:member(2):
   - |-
