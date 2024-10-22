@@ -83,15 +83,13 @@ Office.AppointmentCompose#getInitializationContextAsync:member(1):
 Office.AppointmentCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
-    Office.initialize = function () {
-        Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    };
+    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
 
     function getCallback(asyncResult) {
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log("Selected text in " + prop + ": " + text);
+        console.log(`Selected text in ${prop}: ${text});
     }
 Office.AppointmentCompose#location:member:
   - |-
@@ -111,6 +109,16 @@ Office.AppointmentCompose#optionalAttendees:member:
     function callback(asyncResult) {
         const arrayOfOptionalAttendeesRecipients = asyncResult.value;
     }
+Office.AppointmentCompose#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.AppointmentCompose#requiredAttendees:member:
   - |-
     Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -358,10 +366,55 @@ Office.AppointmentRead#location:member:
   - |-
     const location = Office.context.mailbox.item.location;
     console.log("location: " + location);
+Office.AppointmentRead#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.AppointmentRead#sensitivity:member:
   - |-
     const sensitivity = Office.context.mailbox.item.sensitivity;
     console.log("Sensitivity: " + sensitivity);
+Office.AppointmentTimeChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the AppointmentTimeChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.AppointmentTimeChanged, appointmentTimeChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the AppointmentTimeChanged event.
+    function appointmentTimeChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        console.log(`Start time: ${event.start}`);
+        console.log(`End time: ${event.end}`);
+    }
+Office.AttachmentsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageAttachmentsChanged event.
+    function onMessageAttachmentsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = event.attachmentDetails;
+            // Perform operations on the attachment that was added.
+        }
+    }
 Office.AttachmentContent#format:member:
   - |-
     const item = Office.context.mailbox.item;
@@ -535,6 +588,37 @@ Office.EmailUser:interface:
 
         console.log("Recipients added to the To field.");
     });
+Office.EnhancedLocationsChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the EnhancedLocationsChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the EnhancedLocationsChanged event.
+    function enhancedLocationsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const enhancedLocations = event.enhancedLocations;
+        enhancedLocations.forEach((location) => {
+            console.log(`Display name: ${location.displayName}`);
+            const locationType = location.locationIdentifier.type;
+            console.log(`Type: ${locationType}`);
+            if (locationType === Office.MailboxEnums.LocationType.Room) {
+                console.log(`Email address: ${location.emailAddress}`);
+            }
+        });
+    }
 Office.Entities#addresses:member:
   - |-
     const item = Office.context.mailbox.item;
@@ -563,6 +647,31 @@ Office.Entities#urls:member:
   - |-
     const item = Office.context.mailbox.item;
     const urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+Office.InfobarClickedEventArgs:interface:
+  - |-
+    // Adds an event handler for the InfobarClicked event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.InfobarClicked, infobarClickedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the InfobarClicked event.
+    function infobarClickedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const infobarDetails = event.infobarDetails;
+        console.log(`Notification type: ${infobarDetails.infobarType}`);
+        console.log(`Action type: ${infobarDetails.actionType}`);
+    }
 Office.Location#getAsync:member(1):
   - |-
     const userContext = { value : 1 };
@@ -595,53 +704,48 @@ Office.LocationIdentifier:interface:
     ];
 Office.Mailbox:interface:
   - |-
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            // Get a reference to the mailbox and use it to add an
-            // event handler.
-            const mailBox = Office.context.mailbox;
-            mailbox.addHandlerAsync(
-                Office.EventType.ItemChanged,
-                loadNewItem,
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        // Handle error.
-                    }
-                });
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    // Handle error.
+                }
+            });
         });
-    };
+    });
 
     function loadNewItem(eventArgs) {
         const item = Office.context.mailbox.item;
 
-        // Check that item is not null.
+        // Check that item isn't null.
         if (item !== null) {
-            // Work with item, e.g., define and call function that
+            // Work with item. For example, define and call a function that
             // loads the properties of the newly selected item.
             loadProps(item);
         }
     }
 Office.Mailbox#addHandlerAsync:member(1):
   - |-
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            Office.context.mailbox.addHandlerAsync(
-                Office.EventType.ItemChanged,
-                loadNewItem,
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        // Handle error.
-                    }
-                });
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    // Handle error.
+                }
+            });
         });
-    };
+    });
 
     function loadNewItem(eventArgs) {
         const item = Office.context.mailbox.item;
 
-        // Check that item is not null.
+        // Check that item isn't null.
         if (item !== null) {
-            // Work with item, e.g., define and call function that
+            // Work with item. For example, define and call a function that
             // loads the properties of the newly selected item.
             loadProps(item);
         }
@@ -706,6 +810,16 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
+Office.Mailbox#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.Mailbox#restUrl:member:
   - |-
     // Get the URL of the REST endpoint.
@@ -740,6 +854,36 @@ Office.MailboxEnums.DelegatePermissions:enum:
         }
     });
 Office.MailboxEnums.InfobarActionType:enum:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+Office.InfobarDetails:interface:
   - |-
     /*
     * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
@@ -985,16 +1129,24 @@ Office.MessageCompose#getInitializationContextAsync:member(1):
 Office.MessageCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
-    Office.initialize = function () {
-        Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    };
+    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
 
     function getCallback(asyncResult) {
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log("Selected text in " + prop + ": " + text);
+        console.log(`Selected text in ${prop}: ${text});
     }
+Office.MessageCompose#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.ItemChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.MessageCompose#saveAsync:member(2):
   - |-
     Office.context.mailbox.item.saveAsync(
@@ -1250,6 +1402,40 @@ Office.MessageRead#itemId:member:
             itemId = result.value;
         });
     }
+Office.MessageRead#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.ItemChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
+Office.OfficeThemeChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the OfficeThemeChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.OfficeThemeChanged, officeThemeChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the OfficeThemeChanged event.
+    function officeThemeChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const currentTheme = event.officeTheme;
+        // Perform operations based on the current theme.
+    }
 Office.PhoneNumber:interface:
   - |-
     const item = Office.context.mailbox.item;
@@ -1305,6 +1491,61 @@ Office.Recipients#setAsync:member(2):
             console.log("Recipients overwritten");
         }
     });
+Office.RecipientsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageRecipientsChanged event.
+    function onMessageRecipientsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recipientFields = event.changedRecipientFields;
+        console.log(getChangedRecipientFields(recipientFields));
+    }
+
+    // Gets the recipient fields that have changed.
+    function getChangedRecipientFields(recipientFields) {
+        return Object.keys(recipientFields).filter((key) => recipientFields[key] === true);
+    }
+Office.RecipientsChangedFields:interface:
+  - |-
+    // Handles the OnMessageRecipientsChanged event.
+    function onMessageRecipientsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recipientFields = event.changedRecipientFields;
+        const changedFields = getChangedRecipientFields(recipientFields);
+
+        if (changedFields.includes("to")) {
+            // Perform operations based on the updated recipients in the To field.
+        }
+    }
+
+    // Gets the recipient fields that have changed.
+    function getChangedRecipientFields(recipientFields) {
+        return Object.keys(recipientFields).filter((key) => recipientFields[key] === true);
+    }
+Office.RecurrenceChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the RecurrenceChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.RecurrenceChanged, recurrenceChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the RecurrenceChanged event.
+    function recurrenceChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recurrence = event.recurrence;
+
+        // Perform operations based on the updated recurrence.
+    }
 Office.RecurrenceProperties:interface:
   - |-
     // This example gets the Recurrence object of an appointment item.
@@ -1355,6 +1596,14 @@ Office.RecurrenceTimeZone:interface:
         "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
+Office.SensitivityLabelChangedEventArgs:interface:
+  - |-
+    // Handles a change to an item's sensitivity label.
+    function onSensitivityLabelChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        // Perform operations based on the event.
     }
 Office.SensitivityLabelDetails:interface:
   - |-

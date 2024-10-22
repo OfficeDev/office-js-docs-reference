@@ -2790,16 +2790,14 @@ methods:
 
       // Get selected data.
 
-      Office.initialize = function () {
-          Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-      };
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
 
 
       function getCallback(asyncResult) {
           const text = asyncResult.value.data;
           const prop = asyncResult.value.sourceProperty;
 
-          console.log("Selected text in " + prop + ": " + text);
+          console.log(`Selected text in ${prop}: ${text});
       }
 
       ```
@@ -3415,6 +3413,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error("Failed to remove event handler: " + asyncResult.error.message);
+              return;
+          }
+
+          console.log("Event handler removed successfully.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

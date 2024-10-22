@@ -4,7 +4,42 @@ uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.EnhancedLocationsChangedEventArgs
 summary: Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
-remarks: '\[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Adds an event handler for the EnhancedLocationsChanged event.
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              console.log("Event handler added successfully.");
+          });
+      });
+  });
+
+  // Handles the EnhancedLocationsChanged event.
+  function enhancedLocationsChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      const enhancedLocations = event.enhancedLocations;
+      enhancedLocations.forEach((location) => {
+          console.log(`Display name: ${location.displayName}`);
+          const locationType = location.locationIdentifier.type;
+          console.log(`Type: ${locationType}`);
+          if (locationType === Office.MailboxEnums.LocationType.Room) {
+              console.log(`Email address: ${location.emailAddress}`);
+          }
+      });
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
