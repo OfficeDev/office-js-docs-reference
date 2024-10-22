@@ -1,7 +1,7 @@
 ---
 title: Keyboard Shortcuts requirement sets
 description: Keyboard Shortcuts requirement set information for Office Add-ins.
-ms.date: 09/12/2024
+ms.date: 10/22/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -12,9 +12,9 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Keyboard Shortcuts requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
-|:-----|:-----|:-----|:-----|:-----|:-----|
-| KeyboardShortcuts 1.1 | Supported | <ul><li>Excel: Version 2111 (Build 14701.10000)</li><li>Word: Version 2408 (Build 17928.20114)</li></ul> | Not available | <ul><li>Excel: Version 16.55 (21111400)</li><li>Word: Version 16.88 (24081116)</li></ul>| Not supported |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iOS | Outlook on Android |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| KeyboardShortcuts 1.1 | Supported | <ul><li>Excel: Version 2111 (Build 14701.10000)</li><li>Word: Version 2408 (Build 17928.20114)</li></ul> | Not available | <ul><li>Excel: Version 16.55 (21111400)</li><li>Word: Version 16.88 (24081116)</li></ul>| Not supported | Not supported |
 
 > [!NOTE]
 > The **KeyboardShortcuts 1.1** requirement set is supported only in **Excel** and **Word**.

@@ -8503,7 +8503,7 @@ Office.AppointmentCompose,"loadCustomPropertiesAsync(callback, userContext)",Met
 Office.AppointmentCompose,"removeAttachmentAsync(attachmentId, options, callback)",Method,Fine,true
 Office.AppointmentCompose,"removeAttachmentAsync(attachmentId, callback)",Method,Fine,false
 Office.AppointmentCompose,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
-Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,false
+Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.AppointmentCompose,"saveAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"saveAsync(callback)",Method,Poor,true
 Office.AppointmentCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
@@ -8563,8 +8563,8 @@ Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Poor
 Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.AppointmentRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
-Office.AppointmentRead,"removeHandlerAsync(eventType, callback)",Method,Poor,false
-Office.AppointmentTimeChangedEventArgs,N/A,Class,Good,false
+Office.AppointmentRead,"removeHandlerAsync(eventType, callback)",Method,Poor,true
+Office.AppointmentTimeChangedEventArgs,N/A,Class,Good,true
 Office.AppointmentTimeChangedEventArgs,"end",Property,Good,false
 Office.AppointmentTimeChangedEventArgs,"start",Property,Good,false
 Office.AppointmentTimeChangedEventArgs,"type",Property,Good,false
@@ -8585,11 +8585,11 @@ Office.AttachmentDetailsCompose,"isInline",Property,Fine,false
 Office.AttachmentDetailsCompose,"name",Property,Fine,false
 Office.AttachmentDetailsCompose,"size",Property,Fine,false
 Office.AttachmentDetailsCompose,"url",Property,Fine,false
-Office.AttachmentsChangedEventArgs,N/A,Class,Good,false
+Office.AttachmentsChangedEventArgs,N/A,Class,Good,true
 Office.AttachmentsChangedEventArgs,"attachmentDetails",Property,Good,false
 Office.AttachmentsChangedEventArgs,"attachmentStatus",Property,Good,false
 Office.AttachmentsChangedEventArgs,"type",Property,Good,false
-Office.Body,N/A,Class,Good,false
+Office.Body,N/A,Class,Good,true
 Office.Body,"appendOnSendAsync(data, options, callback)",Method,Fine,true
 Office.Body,"appendOnSendAsync(data, callback)",Method,Fine,false
 Office.Body,"getAsync(coercionType, options, callback)",Method,Poor,true
@@ -8665,7 +8665,7 @@ Office.EnhancedLocation,"getAsync(options, callback)",Method,Poor,true
 Office.EnhancedLocation,"getAsync(callback)",Method,Poor,false
 Office.EnhancedLocation,"removeAsync(locationIdentifiers, options, callback)",Method,Poor,true
 Office.EnhancedLocation,"removeAsync(locationIdentifiers, callback)",Method,Poor,false
-Office.EnhancedLocationsChangedEventArgs,N/A,Class,Good,false
+Office.EnhancedLocationsChangedEventArgs,N/A,Class,Good,true
 Office.EnhancedLocationsChangedEventArgs,"enhancedLocations",Property,Good,false
 Office.EnhancedLocationsChangedEventArgs,"type",Property,Good,false
 Office.Entities,N/A,Class,Deprecated,false
@@ -8679,10 +8679,10 @@ Office.Entities,"urls",Property,Deprecated,true
 Office.From,N/A,Class,Good,false
 Office.From,"getAsync(options, callback)",Method,Poor,true
 Office.From,"getAsync(callback)",Method,Poor,false
-Office.InfobarClickedEventArgs,N/A,Class,Good,false
+Office.InfobarClickedEventArgs,N/A,Class,Good,true
 Office.InfobarClickedEventArgs,"infobarDetails",Property,Good,false
 Office.InfobarClickedEventArgs,"type",Property,Good,false
-Office.InfobarDetails,N/A,Class,Good,false
+Office.InfobarDetails,N/A,Class,Good,true
 Office.InfobarDetails,"actionType",Property,Good,false
 Office.InfobarDetails,"infobarType",Property,Good,false
 Office.InternetHeaders,N/A,Class,Good,false
@@ -8753,7 +8753,7 @@ Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Poor,true
 Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
-Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Poor,false
+Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.MailboxEnums.ActionType,N/A,Enum,Good,true
 Office.MailboxEnums.ActionType,"ShowTaskPane",EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
@@ -9111,7 +9111,7 @@ Office.MessageCompose,"loadCustomPropertiesAsync(callback, userContext)",Method,
 Office.MessageCompose,"removeAttachmentAsync(attachmentId, options, callback)",Method,Fine,true
 Office.MessageCompose,"removeAttachmentAsync(attachmentId, callback)",Method,Fine,false
 Office.MessageCompose,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
-Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,false
+Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.MessageCompose,"saveAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"saveAsync(callback)",Method,Poor,true
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
@@ -9167,7 +9167,7 @@ Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,fal
 Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,true
 Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,true
 Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
-Office.MessageRead,"removeHandlerAsync(eventType, callback)",Method,Poor,false
+Office.MessageRead,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.NotificationMessageAction,N/A,Class,Good,true
 Office.NotificationMessageAction,"actionText",Property,Fine,false
 Office.NotificationMessageAction,"actionType",Property,Good,false
@@ -9189,7 +9189,7 @@ Office.NotificationMessages,"removeAsync(key, options, callback)",Method,Poor,tr
 Office.NotificationMessages,"removeAsync(key, callback)",Method,Poor,false
 Office.NotificationMessages,"replaceAsync(key, JSONmessage, options, callback)",Method,Fine,true
 Office.NotificationMessages,"replaceAsync(key, JSONmessage, callback)",Method,Fine,false
-Office.OfficeThemeChangedEventArgs,N/A,Class,Good,false
+Office.OfficeThemeChangedEventArgs,N/A,Class,Good,true
 Office.OfficeThemeChangedEventArgs,"officeTheme",Property,Good,false
 Office.OfficeThemeChangedEventArgs,"type",Property,Good,false
 Office.Organizer,N/A,Class,Good,false
@@ -9206,10 +9206,10 @@ Office.Recipients,"getAsync(options, callback)",Method,Poor,false
 Office.Recipients,"getAsync(callback)",Method,Poor,true
 Office.Recipients,"setAsync(recipients, options, callback)",Method,Fine,false
 Office.Recipients,"setAsync(recipients, callback)",Method,Fine,true
-Office.RecipientsChangedEventArgs,N/A,Class,Good,false
+Office.RecipientsChangedEventArgs,N/A,Class,Good,true
 Office.RecipientsChangedEventArgs,"changedRecipientFields",Property,Good,false
 Office.RecipientsChangedEventArgs,"type",Property,Good,false
-Office.RecipientsChangedFields,N/A,Class,Good,false
+Office.RecipientsChangedFields,N/A,Class,Good,true
 Office.RecipientsChangedFields,"bcc",Property,Good,false
 Office.RecipientsChangedFields,"cc",Property,Good,false
 Office.RecipientsChangedFields,"optionalAttendees",Property,Good,false
@@ -9225,7 +9225,7 @@ Office.Recurrence,"getAsync(options, callback)",Method,Poor,true
 Office.Recurrence,"getAsync(callback)",Method,Poor,false
 Office.Recurrence,"setAsync(recurrencePattern, options, callback)",Method,Poor,true
 Office.Recurrence,"setAsync(recurrencePattern, callback)",Method,Poor,false
-Office.RecurrenceChangedEventArgs,N/A,Class,Good,false
+Office.RecurrenceChangedEventArgs,N/A,Class,Good,true
 Office.RecurrenceChangedEventArgs,"recurrence",Property,Good,false
 Office.RecurrenceChangedEventArgs,"type",Property,Good,false
 Office.RecurrenceProperties,N/A,Class,Good,true
@@ -9273,7 +9273,7 @@ Office.SensitivityLabel,"getAsync(options, callback)",Method,Poor,false
 Office.SensitivityLabel,"getAsync(callback)",Method,Poor,true
 Office.SensitivityLabel,"setAsync(sensitivityLabel, options, callback)",Method,Fine,false
 Office.SensitivityLabel,"setAsync(sensitivityLabel, callback)",Method,Fine,true
-Office.SensitivityLabelChangedEventArgs,N/A,Class,Good,false
+Office.SensitivityLabelChangedEventArgs,N/A,Class,Good,true
 Office.SensitivityLabelChangedEventArgs,"type",Property,Good,false
 Office.SensitivityLabelDetails,N/A,Class,Good,true
 Office.SensitivityLabelDetails,"children",Property,Good,false
