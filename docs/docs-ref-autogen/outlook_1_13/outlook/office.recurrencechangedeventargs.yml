@@ -4,7 +4,36 @@ uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
 package: outlook!
 fullName: Office.RecurrenceChangedEventArgs
 summary: Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
-remarks: '\[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Adds an event handler for the RecurrenceChanged event.
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.RecurrenceChanged, recurrenceChangedHandler, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              console.log("Event handler added successfully.");
+          });
+      });
+  });
+
+  // Handles the RecurrenceChanged event.
+  function recurrenceChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      const recurrence = event.recurrence;
+
+      // Perform operations based on the updated recurrence.
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
