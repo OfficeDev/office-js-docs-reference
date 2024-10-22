@@ -2821,8 +2821,9 @@ export declare namespace Office {
          * - In compose mode you must call the `saveAsync` method before you can use the `restUrl` member.
          * Your add-in must have **read/write item** permissions to call the `saveAsync` method.
          * However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
-         * {@link Office.SharedProperties | SharedProperties} object (introduced in requirement set 1.8). For more information,
-         * see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetresturl-member | SharedProperties}
+         * object (introduced in requirement set 1.8). For more information, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          */
         restUrl: string;
         /**
