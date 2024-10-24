@@ -3573,7 +3573,8 @@ export declare namespace Office {
          *
          * - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
          *
-         * - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The user is not signed into Office").
+         * - In Outlook on the web, this API isn't supported if you use Firefox with Enhanced Tracking Protection turned on.
+         * This results in error 13001 ("The user is not signed into Office").
          *
          * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, if you use the
          * {@link https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1) | displayDialogAsync}
