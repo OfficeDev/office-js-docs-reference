@@ -2389,35 +2389,29 @@ export declare namespace PowerPoint {
          */
         unsupported = "Unsupported",
         /**
-         * The shape is an image
+         * The shape is an image.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         image = "Image",
         /**
-         * The shape is a geometric shape such as rectangle
+         * The shape is a geometric shape such as rectangle.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         geometricShape = "GeometricShape",
         /**
-         * The shape is a group shape which contains sub-shapes
+         * The shape is a group shape which contains sub-shapes.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         group = "Group",
         /**
-         * The shape is a line
+         * The shape is a line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         line = "Line",
-        /**
-         * The shape is a table
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        table = "Table",
     }
     /**
      * Determines the type of automatic sizing allowed.
@@ -2910,7 +2904,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
+        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
         /**
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
@@ -4000,7 +3994,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
+            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *

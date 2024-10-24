@@ -80,11 +80,15 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";'
+      content: >-
+        type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" |
+        "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" |
+        "Placeholder" | "SmartArt" | "TextBox";
       return:
         type: >-
           <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
-          "Line" | "Table"
+          "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" |
+          "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox"
   - name: width
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeData#width:member'
     package: powerpoint!
