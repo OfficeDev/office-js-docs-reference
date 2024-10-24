@@ -47,6 +47,7 @@
 |[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-customxmlparts-member)|Returns a collection of custom XML parts that are associated with the presentation.|
 ||[properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)|Gets the properties of the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[customXmlParts](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-customxmlparts-member)|Returns a collection of custom XML parts in the shape.|
+||[type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)|Returns the type of this shape.|
 |[Slide](/javascript/api/powerpoint/powerpoint.slide)|[customXmlParts](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-customxmlparts-member)|Returns a collection of custom XML parts in the slide.|
 ||[exportAsBase64()](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-exportasbase64-member(1))|Exports the slide to its own presentation file, returned as Base64-encoded data.|
 ||[getImageAsBase64(options?: PowerPoint.SlideGetImageOptions)](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-getimageasbase64-member(1))|Renders an image of the slide.|
