@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Mailbox object model.
-ms.date: 05/20/2024
+ms.date: 08/15/2024
 ms.localizationpriority: medium
 ---
 
@@ -51,6 +51,7 @@ Provides access to the Outlook add-in object model for Microsoft Outlook.
 | [getCallbackTokenAsync(callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getcallbacktokenasync-member(2)) | **read item** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md)<br>[1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [getSelectedItemsAsync([options], callback)](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getselecteditemsasync-member(1)) | **read/write mailbox** | Compose<br>Read | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 | [getUserIdentityTokenAsync(callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getuseridentitytokenasync-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| [loadItemByIdAsync(itemId, [options], callback)](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-loaditembyidasync-member(1)) | **read/write item** | Compose<br>Read | [Preview](outlook-requirement-set-preview.md) |
 | [makeEwsRequestAsync(data, callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-makeewsrequestasync-member(1)) | **read/write mailbox** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [removeHandlerAsync(eventType, [options], [callback])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-removehandlerasync-member(1)) | **read item** | Compose<br>Read | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 
