@@ -64,10 +64,8 @@ properties:
     package: powerpoint!
     fullName: hyperlinks
     summary: Returns a collection of hyperlinks in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly hyperlinks: PowerPoint.HyperlinkCollection;'

@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.HyperlinkUpdateData
+uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.HyperlinkUpdateData
+summary: 'An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

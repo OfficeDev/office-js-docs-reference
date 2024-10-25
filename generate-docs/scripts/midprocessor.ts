@@ -8,7 +8,7 @@ const CURRENT_EXCEL_RELEASE = 17;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 14;
 const CURRENT_WORD_RELEASE = 8;
-const CURRENT_POWERPOINT_RELEASE = 5;
+const CURRENT_POWERPOINT_RELEASE = 6;
 
 tryCatch(async () => {
     // ----
@@ -49,8 +49,8 @@ tryCatch(async () => {
 
     console.log("\nCreating snippets file...");
 
-    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml");
-    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml", "text"));
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/d1bcb673671f39d8d5c95d70ae79602f3637bb55/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/d1bcb673671f39d8d5c95d70ae79602f3637bb55/snippet-extractor-output/snippets.yaml", "text"));
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
