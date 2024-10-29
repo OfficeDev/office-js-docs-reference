@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
-ms.date: 10/17/2024
+ms.date: 10/29/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,6 +15,7 @@ The following table lists the PowerPoint requirement sets, the supported Office 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](powerpoint-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
+| [PowerPointApi 1.6](powerpoint-api-1-6-requirement-set.md) | Supported | Version 2410 (Build 18129.20030) | Not available | Version 16.90 (24101387) | Not available |
 | [PowerPointApi 1.5](powerpoint-api-1-5-requirement-set.md) | Supported | Version 2208 (Build 15601.20230) | Office 2024: Version 2208 (Build 15601.20230) | Version 16.64 (22080400) | Not available |
 | [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md) | Supported | Version 2207 (Build 15330.20122) | Office 2024: Version 2207 (Build 15330.20122) | Version 16.62 (22061100) | Not available |
 | [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md) | Supported | Version 2111 (Build 14701.20060) | Office 2024: Version 2111 (Build 14701.20060) | Version 16.55 (21111400) | Not available |
@@ -45,7 +46,11 @@ PowerPoint JavaScript API 1.4 adds additional support for adding, moving, sizing
 
 ## PowerPoint JavaScript API 1.5
 
-PowerPoint JavaScript API 1.5 includes APIs to select slides, text ranges, and shapes within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.5](powerpoint-api-1-5-requirement-set.md).
+PowerPoint JavaScript API 1.5 includes APIs to get and manage existing hyperlinks within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.5](powerpoint-api-1-5-requirement-set.md).
+
+## PowerPoint JavaScript API 1.6
+
+PowerPoint JavaScript API 1.6 includes APIs to select slides, text ranges, and shapes within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.6](powerpoint-api-1-6-requirement-set.md).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 
