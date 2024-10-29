@@ -179,10 +179,21 @@ methods:
 
       ```TypeScript
 
-      // The following example shows how to send information about the current worksheet to the dialog.
+      // The following example shows how to send information about the current active worksheet to the dialog.
 
-      function sheetPropertiesChanged() {
-          const messageToDialog = JSON.stringify({ name: "My Sheet", position: 2 });
+      await Excel.run(async (context) => {
+          const worksheet = context.workbook.worksheets.getActiveWorksheet();
+          worksheet.load();
+          await context.sync();
+          worksheetPropertiesChanged(worksheet);
+      });
+
+
+      ...
+
+
+      function worksheetPropertiesChanged(currentWorksheet) {
+          const messageToDialog = JSON.stringify(currentWorksheet);
           dialog.messageChild(messageToDialog);
       }
 
