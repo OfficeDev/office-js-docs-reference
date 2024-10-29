@@ -172,6 +172,21 @@ methods:
 
 
       Although classic Outlook on Mac doesn't support Mailbox 1.9, it does support DialogApi 1.2.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to send information about the current worksheet to the dialog.
+
+      function sheetPropertiesChanged() {
+          const messageToDialog = JSON.stringify({ name: "My Sheet", position: 2 });
+          dialog.messageChild(messageToDialog);
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
