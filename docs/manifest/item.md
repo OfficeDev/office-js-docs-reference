@@ -31,7 +31,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 |:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the menu item. |
 |  [Supertip](supertip.md)  | Yes |  The supertip for the menu item.    |
-|  [Icon](icon.md)      | No |  An image for the menu item.         |
+|  [Icon](icon.md)      | Yes |  An image for the menu item, In the desktop version it is optional, for the web version it is required.         |
 |  [Action](action.md)    | Yes |  Specifies the action to perform. There can be only one **\<Action\>** child of an **\<Item\>** element.  |
 |  [Enabled](enabled.md)    | No |  Specifies whether the menu item is enabled when the add-in launches.  |
 |  [OverriddenByRibbonApi](overriddenbyribbonapi.md)      | No |  Specifies whether the menu item should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
