@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement set 1.6
 description: Details about the PowerPointApi 1.6 requirement set.
-ms.date: 10/07/2024
+ms.date: 10/29/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
