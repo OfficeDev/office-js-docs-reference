@@ -439,8 +439,7 @@ export declare namespace PowerPoint {
      * Represents a single hyperlink.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.6]
      */
     export class Hyperlink extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -449,16 +448,14 @@ export declare namespace PowerPoint {
          * Specifies the URL target of the hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         address: string;
         /**
          * Specifies the string displayed when hovering over the hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         screenTip: string;
         /**
@@ -492,8 +489,7 @@ export declare namespace PowerPoint {
      * Represents a collection of hyperlinks.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.6]
      */
     export class HyperlinkCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -504,8 +500,7 @@ export declare namespace PowerPoint {
          * Gets the number of hyperlinks in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          * @returns The number of hyperlinks in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -513,8 +508,7 @@ export declare namespace PowerPoint {
          * Gets a hyperlink using its zero-based index in the collection. An error is thrown if the index is out of range.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          *
          * @param index - The index of the hyperlink in the collection.
          * @returns The hyperlink at the given index. An error is thrown if index is out of range.
@@ -1683,6 +1677,86 @@ export declare namespace PowerPoint {
         width?: number;
     }
     /**
+     * Specifies the dash style for a line.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeLineDashStyle {
+        /**
+         * The dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dash = "Dash",
+        /**
+         * The dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDot = "DashDot",
+        /**
+         * The dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * The long dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDash = "LongDash",
+        /**
+         * The long dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDot = "LongDashDot",
+        /**
+         * The round dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        roundDot = "RoundDot",
+        /**
+         * The solid line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        solid = "Solid",
+        /**
+         * The square dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        squareDot = "SquareDot",
+        /**
+         * The long dash-dot-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        longDashDotDot = "LongDashDotDot",
+        /**
+         * The system dash line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDash = "SystemDash",
+        /**
+         * The system dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDot = "SystemDot",
+        /**
+         * The system dash-dot line pattern.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        systemDashDot = "SystemDashDot",
+    }
+    /**
      * The type of underline applied to a font.
      *
      * @remarks
@@ -1843,89 +1917,9 @@ export declare namespace PowerPoint {
         thaiDistributed = "ThaiDistributed",
     }
     /**
-     * Specifies the dash style for a line.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeLineDashStyle {
-        /**
-         * The dash line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dash = "Dash",
-        /**
-         * The dash-dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDot = "DashDot",
-        /**
-         * The dash-dot-dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        dashDotDot = "DashDotDot",
-        /**
-         * The long dash line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDash = "LongDash",
-        /**
-         * The long dash-dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDot = "LongDashDot",
-        /**
-         * The round dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        roundDot = "RoundDot",
-        /**
-         * The solid line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        solid = "Solid",
-        /**
-         * The square dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        squareDot = "SquareDot",
-        /**
-         * The long dash-dot-dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        longDashDotDot = "LongDashDotDot",
-        /**
-         * The system dash line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDash = "SystemDash",
-        /**
-         * The system dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDot = "SystemDot",
-        /**
-         * The system dash-dot line pattern.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        systemDashDot = "SystemDashDot",
-    }
-    /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
                 If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
-                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment }.
+                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment}.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
@@ -2495,8 +2489,7 @@ export declare namespace PowerPoint {
          * Returns a collection of hyperlinks in the slide.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         readonly hyperlinks: PowerPoint.HyperlinkCollection;
         /**
@@ -4058,9 +4051,8 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
-                    and properties}.
+         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+                    {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -4133,9 +4125,8 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
-                    and properties}.
+         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+                    {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.5]
@@ -4273,16 +4264,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: string;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: string;
         }
@@ -4706,16 +4695,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: string;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: string;
         }
@@ -5325,8 +5312,7 @@ export declare namespace PowerPoint {
          * Represents a single hyperlink.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         export interface HyperlinkLoadOptions {
             /**
@@ -5337,16 +5323,14 @@ export declare namespace PowerPoint {
              * Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: boolean;
             /**
              * Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: boolean;
         }
@@ -5354,8 +5338,7 @@ export declare namespace PowerPoint {
          * Represents a collection of hyperlinks.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.6]
          */
         export interface HyperlinkCollectionLoadOptions {
             /**
@@ -5366,16 +5349,14 @@ export declare namespace PowerPoint {
              * For EACH ITEM in the collection: Specifies the URL target of the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             address?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the string displayed when hovering over the hyperlink.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.6]
              */
             screenTip?: boolean;
         }

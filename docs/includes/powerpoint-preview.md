@@ -39,11 +39,6 @@
 ||[revisionNumber](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-revisionnumber-member)|The revision number of the presentation.|
 ||[subject](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-subject-member)|The subject of the presentation.|
 ||[title](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-title-member)|The title of the presentation.|
-|[Hyperlink](/javascript/api/powerpoint/powerpoint.hyperlink)|[address](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-address-member)|Specifies the URL target of the hyperlink.|
-||[screenTip](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-screentip-member)|Specifies the string displayed when hovering over the hyperlink.|
-|[HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection)|[getCount()](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getcount-member(1))|Gets the number of hyperlinks in the collection.|
-||[getItemAt(index: number)](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1))|Gets a hyperlink using its zero-based index in the collection.|
-||[items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)|Gets the loaded child items in this collection.|
 |[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-customxmlparts-member)|Returns a collection of custom XML parts that are associated with the presentation.|
 ||[properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)|Gets the properties of the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[customXmlParts](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-customxmlparts-member)|Returns a collection of custom XML parts in the shape.|
@@ -51,7 +46,6 @@
 |[Slide](/javascript/api/powerpoint/powerpoint.slide)|[customXmlParts](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-customxmlparts-member)|Returns a collection of custom XML parts in the slide.|
 ||[exportAsBase64()](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-exportasbase64-member(1))|Exports the slide to its own presentation file, returned as Base64-encoded data.|
 ||[getImageAsBase64(options?: PowerPoint.SlideGetImageOptions)](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-getimageasbase64-member(1))|Renders an image of the slide.|
-||[hyperlinks](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-hyperlinks-member)|Returns a collection of hyperlinks in the slide.|
 |[SlideGetImageOptions](/javascript/api/powerpoint/powerpoint.slidegetimageoptions)|[height](/javascript/api/powerpoint/powerpoint.slidegetimageoptions#powerpoint-powerpoint-slidegetimageoptions-height-member)|The desired height of the resulting image in pixels.|
 ||[width](/javascript/api/powerpoint/powerpoint.slidegetimageoptions#powerpoint-powerpoint-slidegetimageoptions-width-member)|The desired width of the resulting image in pixels.|
 |[SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout)|[customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-customxmlparts-member)|Returns a collection of custom XML parts in the slide layout.|

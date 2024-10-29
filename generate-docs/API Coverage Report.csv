@@ -6815,7 +6815,7 @@ Office.DevicePermissionType,"microphone",EnumField,Fine,false
 Office.Dialog,N/A,Class,Good,false
 Office.Dialog,"addEventHandler(eventType, handler)",Method,Fine,true
 Office.Dialog,"close()",Method,Good,true
-Office.Dialog,"messageChild(message, messageOptions)",Method,Fine,false
+Office.Dialog,"messageChild(message, messageOptions)",Method,Fine,true
 Office.Dialog,"sendMessage(name)",Method,Poor,false
 Office.DialogMessageOptions,N/A,Class,Good,false
 Office.DialogMessageOptions,"targetOrigin",Property,Good,false
