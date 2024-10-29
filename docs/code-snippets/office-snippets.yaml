@@ -1817,6 +1817,22 @@ Office.Dialog#close:member(1):
             });
         }
     );
+Office.Dialog#messageChild:member(1):
+  - |-
+    // The following example shows how to send information about the current active worksheet to the dialog.
+    await Excel.run(async (context) => {
+        const worksheet = context.workbook.worksheets.getActiveWorksheet();
+        worksheet.load();
+        await context.sync();
+        worksheetPropertiesChanged(worksheet);
+    });
+
+    ...
+
+    function worksheetPropertiesChanged(currentWorksheet) {
+        const messageToDialog = JSON.stringify(currentWorksheet);
+        dialog.messageChild(messageToDialog);
+    }
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
