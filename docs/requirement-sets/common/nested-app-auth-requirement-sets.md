@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 10/22/2024
+ms.date: 10/30/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-Office Add-ins run across multiple versions of Office. The following table lists the nested app auth requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+Office Add-ins run across multiple versions of Office. The following table lists the nested app auth (NAA) requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li></ul> | Office on Windows<ul><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iOS | Outlook on Android |
+| Requirement set | Outlook on the web | Outlook on Windows<ul><li>Microsoft 365 subscription</li></ul> | Office on Windows<ul><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Outlook on Mac | Outlook on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Not available | Version 16.89 (Build 24090815) | <ul><li>Excel, PowerPoint, Word (iPad only): Build v4.2433.0</li><li>Outlook: Build v4.2433.0</li></ul> | Build v4.2433.0 |
 
@@ -20,6 +20,20 @@ Office Add-ins run across multiple versions of Office. The following table lists
 >
 > - Currently, the NestedAppAuth 1.1 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 > - In Outlook, the NestedAppAuth 1.1 requirement set isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+
+## Supported accounts and hosts
+
+NAA supports both Microsoft Accounts and Microsoft Entra ID (work/school) identities. It doesn't support Azure Active Directory B2C for business-to-consumer identity management scenarios. The following table explains the current support by platform. Platforms listed as generally available (GA) are ready for production usage in your add-in.
+
+| Application | Windows                                                                            | Mac | Web  | iOS/iPad   | Android        |
+|-------------|------------------------------------------------------------------------------------|-----|------|------------|----------------|
+| Excel       | In preview                                                    | In preview | In preview | In preview on iPad | Not applicable |
+| Outlook     | GA in Current Channel, (Preview) in all other channels                             | GA  | GA   | GA (iOS)   | GA             |
+| PowerPoint  | In preview                                                    | In preview | In preview | In preview on iPad | Not applicable |
+| Word        | In preview                                                    | In preview | In preview | In preview on iPad | Not applicable |
+
+> [!IMPORTANT]
+> To use NAA on platforms that are still in preview, join the Microsoft 365 Insider Program (https://insider.microsoft365.com/join) and choose **Current Channel (Preview)**. Don't use NAA in production add-ins for any preview platforms. We invite you to try out NAA in test or development environments and welcome feedback on your experience through GitHub (see the **Feedback** section at the end of this page).
 
 ## Outlook and NestedAppAuth requirement set
 
