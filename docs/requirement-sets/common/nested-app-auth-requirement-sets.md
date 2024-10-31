@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Outlook on the web | Outlook on Windows<ul><li>Microsoft 365 subscription</li></ul> | Office on Windows<ul><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Outlook on Mac | Outlook on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Not available | Version 16.89 (Build 24090815) | <ul><li>Excel, PowerPoint, Word (iPad only): Build v4.2433.0</li><li>Outlook: Build v4.2433.0</li></ul> | Build v4.2433.0 |
+| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Not available | Version 16.89 (Build 24090815) | Build v4.2433.0 | Build v4.2433.0 |
 
 > [!IMPORTANT]
 >
