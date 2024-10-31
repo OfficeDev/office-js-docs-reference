@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 10/30/2024
+ms.date: 10/31/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
