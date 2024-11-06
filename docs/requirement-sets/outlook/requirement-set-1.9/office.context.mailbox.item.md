@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.9
 description: Outlook Mailbox API requirement set 1.9 version of the Item object model.
-ms.date: 07/18/2024
+ms.date: 11/07/2024
 ms.localizationpriority: medium
 ---
 
@@ -99,8 +99,8 @@ ms.localizationpriority: medium
 
 | Method | Minimum<br>permission level | Details by mode | Minimum<br>requirement set |
 |---|---|---|:---:|
-| addFileAttachmentAsync(uri, attachmentName, [options], [callback]) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.9&preserve-view=true#outlook-office-appointmentcompose-addfileattachmentasync-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.9&preserve-view=true#outlook-office-messagecompose-addfileattachmentasync-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| addFileAttachmentAsync(uri, attachmentName, [options], [callback]) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.9&preserve-view=true#outlook-office-appointmentcompose-addfileattachmentasync-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md)<br>(classic Windows, Mac)<br><br>[1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md)<br>(Web, new Outlook) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.9&preserve-view=true#outlook-office-messagecompose-addfileattachmentasync-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md)<br>(classic Windows, Mac)<br><br>[1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md)<br>(Web, new Outlook) |
 | addFileAttachmentFromBase64Async(base64File, attachmentName, [options], [callback]) | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.9&preserve-view=true#outlook-office-appointmentcompose-addfileattachmentfrombase64async-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.9&preserve-view=true#outlook-office-messagecompose-addfileattachmentfrombase64async-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | addHandlerAsync(eventType, handler, [options], [callback]) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.9&preserve-view=true#outlook-office-appointmentcompose-addhandlerasync-member(1)) | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
