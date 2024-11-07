@@ -5200,7 +5200,7 @@ export declare namespace Excel {
         compact?: CompactLayout;
     }
     /**
-    * Represents a card layout that is best used for an array.
+    * Represents a card layout that is best used for an entity.
     *
     * @remarks
     * [Api set: ExcelApi 1.16]
@@ -5490,7 +5490,7 @@ export declare namespace Excel {
         fieldName?: string;
     }
     /**
-    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
+    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
     * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
     *
     * @remarks
@@ -5522,7 +5522,7 @@ export declare namespace Excel {
         * Returns the number format string that is used to display this value.
         * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
         * Number format strings must conform to Excel guidelines.
-        * To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+        * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
         *
         * @remarks
         * [Api set: ExcelApi 1.16]
@@ -5659,13 +5659,12 @@ export declare namespace Excel {
             };
         };
         /**
-        * Represents the layout of this linked entity in card view.
-        * If the `CardLayout` object doesn't have a layout property, it default value is "Entity".
+        * Represents layout information for views of this linked entity.
         *
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        cardLayout?: CardLayout;
+        layouts?: EntityViewLayouts;
         /**
         * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
         * This information can be used for branding in entity cards.
@@ -12372,7 +12371,7 @@ export declare namespace Excel {
          */
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
-         * Renders the range as a Base64-encoded png image.
+         * Renders the range as a Base64-encoded PNG image.
                     **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
@@ -24239,7 +24238,7 @@ export declare namespace Excel {
          */
         category: string;
         /**
-         * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+         * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -44537,7 +44536,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -50780,7 +50779,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -59968,7 +59967,7 @@ export declare namespace Excel {
              */
             category?: boolean;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

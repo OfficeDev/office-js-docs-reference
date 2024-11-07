@@ -3,7 +3,7 @@ name: OneNote.Interfaces.PageContentUpdateData
 uid: 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageContentUpdateData
-summary: 'An interface for updating data on the PageContent object, for use in `pageContent.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `PageContent` object, for use in `pageContent.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentUpdateData#image:member'
     package: onenote!
     fullName: image
-    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

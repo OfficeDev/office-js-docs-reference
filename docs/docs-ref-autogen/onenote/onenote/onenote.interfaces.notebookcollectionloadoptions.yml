@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -27,7 +27,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: 'For EACH ITEM in the collection: The url of the site where this notebook is located. Read only'
+    summary: 'For EACH ITEM in the collection: The URL of the site where this notebook is located. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: 'For EACH ITEM in the collection: The client url of the notebook. Read only'
+    summary: 'For EACH ITEM in the collection: The client URL of the notebook. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
     package: onenote!
     fullName: isVirtual
     summary: >-
-      For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections').
-      Read only
+      For EACH ITEM in the collection: True if the notebook isn't created by the user (i.e., 'Misplaced Sections').
+      Read-only.
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#sections:member'
     package: onenote!
     fullName: sections
-    summary: 'For EACH ITEM in the collection: The sections of the notebook. Read only'
+    summary: 'For EACH ITEM in the collection: The sections of the notebook. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

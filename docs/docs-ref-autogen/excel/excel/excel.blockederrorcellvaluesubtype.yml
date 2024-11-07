@@ -32,6 +32,82 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTypeUnsupportedApp"'
+  - name: environmentConnectionExceedQuota
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentConnectionExceedQuota:member'
+    package: excel!
+    summary: >-
+      An error caused by the user exceeding their quota of concurrent connections to external code service environments.
+      Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentConnectionExceedQuota"'
+  - name: environmentExceedsComputeResourceCountDaily
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsComputeResourceCountDaily:member'
+    package: excel!
+    summary: >-
+      An error caused by a user exceeding their daily quota of compute. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsComputeResourceCountDaily"'
+  - name: environmentExceedsComputeResourceEver
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsComputeResourceEver:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service execution environment exceeding its lifetime resource use. Displays as
+      error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsComputeResourceEver"'
+  - name: environmentExceedsQuota
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsQuota:member'
+    package: excel!
+    summary: >-
+      An error caused by the user exceeding their quota of concurrently active external code service execution
+      environments. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsQuota"'
+  - name: environmentExceedsQuotaDaily
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsQuotaDaily:member'
+    package: excel!
+    summary: >-
+      An error caused by the user exceeding their daily quota of external code service execution environments. Displays
+      as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsQuotaDaily"'
+  - name: environmentExceedsQuotaMonthly
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsQuotaMonthly:member'
+    package: excel!
+    summary: >-
+      An error caused by the user exceeding their monthly quota of external code service execution environments.
+      Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsQuotaMonthly"'
+  - name: environmentExceedsTakerQuotaMonthly
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsTakerQuotaMonthly:member'
+    package: excel!
+    summary: >-
+      An error caused by the user who is not licensed for a feature which uses an external code service exceeding their
+      monthly quota of external code service execution environments. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"EnvironmentExceedsTakerQuotaMonthly"'
   - name: externalLinksGeneric
     uid: 'excel!Excel.BlockedErrorCellValueSubType.externalLinksGeneric:member'
     package: excel!
@@ -40,6 +116,49 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ExternalLinksGeneric"'
+  - name: imageDownloadBlocked
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.imageDownloadBlocked:member'
+    package: excel!
+    summary: >-
+      An error caused by the image download coming from an untrusted URL. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageDownloadBlocked"'
+  - name: imageExceedsSizeLimit
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.imageExceedsSizeLimit:member'
+    package: excel!
+    summary: >-
+      An error caused by the image exceeding the size limit set in
+      ExcelServerSettings.CacheBackedAsyncImageDownloaderMaxFileSizeInKBytes. Displays as error type \#BLOCKED! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageExceedsSizeLimit"'
+  - name: imageExceedsTotalSizeLimit
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.imageExceedsTotalSizeLimit:member'
+    package: excel!
+    summary: >-
+      An error caused by the image exceeding the size limit for an entire workbook set in `ExcelWorkbookSizeMax`<!--
+      -->. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageExceedsTotalSizeLimit"'
+  - name: imageInvalidUrlNonHttps
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.imageInvalidUrlNonHttps:member'
+    package: excel!
+    summary: >-
+      An error caused by the image URL not being HTTPS. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageInvalidUrlNonHttps"'
   - name: noLicense
     uid: 'excel!Excel.BlockedErrorCellValueSubType.noLicense:member'
     package: excel!
@@ -48,6 +167,26 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"NoLicense"'
+  - name: pythonFunction
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.pythonFunction:member'
+    package: excel!
+    summary: >-
+      An error caused by the PY function being disabled. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonFunction"'
+  - name: pythonUnsupportedOnThisPlatform
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.pythonUnsupportedOnThisPlatform:member'
+    package: excel!
+    summary: >-
+      An error caused by Python not being supported in Excel on a platform. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonUnsupportedOnThisPlatform"'
   - name: richDataLinkDisabled
     uid: 'excel!Excel.BlockedErrorCellValueSubType.richDataLinkDisabled:member'
     package: excel!
@@ -72,3 +211,67 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'
+  - name: unmetRequirements
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.unmetRequirements:member'
+    package: excel!
+    summary: >-
+      An error caused by Excel not meeting the requirements to use a feature. Displays as error type \#BLOCKED! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UnmetRequirements"'
+  - name: unsupportedEnvironment
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.unsupportedEnvironment:member'
+    package: excel!
+    summary: >-
+      An error caused by an environment definition not being supported by an external code service. Displays as error
+      type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UnsupportedEnvironment"'
+  - name: unsupportedInCalculationMode
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.unsupportedInCalculationMode:member'
+    package: excel!
+    summary: >-
+      An error caused by function being unavailable in Partial or Manual calculation modes. Displays as error type
+      \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UnsupportedInCalculationMode"'
+  - name: wrongAccountType
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.wrongAccountType:member'
+    package: excel!
+    summary: >-
+      An error caused by using an unsupported identity provider. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WrongAccountType"'
+  - name: xlmDisabledInTrustCenter
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.xlmDisabledInTrustCenter:member'
+    package: excel!
+    summary: >-
+      An error caused by Excel 4.0 macros being disabled in Trust Center. Displays as error type \#BLOCKED! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"XlmDisabledInTrustCenter"'
+  - name: xlmNotSupportedOnPlatform
+    uid: 'excel!Excel.BlockedErrorCellValueSubType.xlmNotSupportedOnPlatform:member'
+    package: excel!
+    summary: >-
+      An error caused by Excel 4.0 macros not being supported on the platform. Displays as error type \#BLOCKED! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"XlmNotSupportedOnPlatform"'

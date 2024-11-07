@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -27,7 +27,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the section group. Read only
+    summary: The client URL of the section group. Read.only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -103,7 +103,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: The collection of section groups in the section group. Read only
+    summary: The collection of section groups in the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -115,7 +115,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions#sections:member'
     package: onenote!
     fullName: sections
-    summary: The collection of sections in the section group. Read only
+    summary: The collection of sections in the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

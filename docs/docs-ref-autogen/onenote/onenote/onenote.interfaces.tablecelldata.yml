@@ -61,7 +61,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
     package: onenote!
     fullName: shadingColor
-    summary: Gets and sets the shading color of the cell
+    summary: Gets and sets the shading color of the cell.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

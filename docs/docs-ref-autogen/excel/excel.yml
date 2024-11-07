@@ -123,6 +123,8 @@ enums:
   - 'excel!Excel.LoadToType:enum'
   - 'excel!Excel.NamedItemScope:enum'
   - 'excel!Excel.NamedItemType:enum'
+  - 'excel!Excel.NameErrorCellValueSubType:enum'
+  - 'excel!Excel.NotAvailableErrorCellValueSubType:enum'
   - 'excel!Excel.NumberFormatCategory:enum'
   - 'excel!Excel.NumErrorCellValueSubType:enum'
   - 'excel!Excel.PageOrientation:enum'

@@ -4,7 +4,7 @@ uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageContentCollectionUpdateData
 summary: >-
-  An interface for updating data on the PageContentCollection object, for use in `pageContentCollection.set({ ...
+  An interface for updating data on the `PageContentCollection` object, for use in `pageContentCollection.set({ ...
   })`<!-- -->.
 remarks: ''
 isPreview: false

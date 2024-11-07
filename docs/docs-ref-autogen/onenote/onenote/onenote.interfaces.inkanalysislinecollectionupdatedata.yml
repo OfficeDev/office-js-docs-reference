@@ -4,7 +4,7 @@ uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
 summary: >-
-  An interface for updating data on the InkAnalysisLineCollection object, for use in `inkAnalysisLineCollection.set({
+  An interface for updating data on the `InkAnalysisLineCollection` object, for use in `inkAnalysisLineCollection.set({
   ... })`<!-- -->.
 remarks: ''
 isPreview: false

@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.TableRow#cellCount:member'
     package: onenote!
     fullName: cellCount
-    summary: Gets the number of cells in the row. Read-only.
+    summary: Gets the number of cells in the row.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.TableRow#cells:member'
     package: onenote!
     fullName: cells
-    summary: Gets the cells in the row. Read-only.
+    summary: Gets the cells in the row.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'onenote!OneNote.TableRow#id:member'
     package: onenote!
     fullName: id
-    summary: Gets the ID of the row. Read-only.
+    summary: Gets the ID of the row.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.TableRow#parentTable:member'
     package: onenote!
     fullName: parentTable
-    summary: Gets the parent table. Read-only.
+    summary: Gets the parent table.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -75,7 +75,7 @@ properties:
     uid: 'onenote!OneNote.TableRow#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: Gets the index of the row in its parent table. Read-only.
+    summary: Gets the index of the row in its parent table.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -307,10 +307,10 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.TableRow object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.TableRowData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `OneNote.TableRow` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.TableRowData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -325,10 +325,11 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -343,9 +344,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

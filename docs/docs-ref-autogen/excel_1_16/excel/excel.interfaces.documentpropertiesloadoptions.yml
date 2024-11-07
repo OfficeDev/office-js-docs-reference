@@ -52,8 +52,8 @@ properties:
     package: excel!
     fullName: comments
     summary: >-
-      The comment field in the metadata of the workbook. These have no connection to comments by users made in the
-      workbork.
+      The Comments field in the metadata of the workbook. These have no connection to comments by users made in the
+      workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

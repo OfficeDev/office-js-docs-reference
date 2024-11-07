@@ -3,7 +3,7 @@ name: OneNote.Interfaces.ImageUpdateData
 uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.ImageUpdateData
-summary: 'An interface for updating data on the Image object, for use in `image.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

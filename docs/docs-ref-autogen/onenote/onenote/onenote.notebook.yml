@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: The url of the site where this notebook is located. Read only
+    summary: The url of the site where this notebook is located. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the notebook. Read only
+    summary: The client url of the notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#isVirtual:member'
     package: onenote!
     fullName: isVirtual
-    summary: 'True if the notebook is not created by the user (i.e., ''Misplaced Sections''). Read only'
+    summary: 'True if the notebook isn''t created by the user (i.e., ''Misplaced Sections'').'
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -75,7 +75,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#name:member'
     package: onenote!
     fullName: name
-    summary: Gets the name of the notebook. Read-only.
+    summary: Gets the name of the notebook.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -87,7 +87,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: The section groups in the notebook. Read only
+    summary: The section groups in the notebook.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -99,7 +99,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#sections:member'
     package: onenote!
     fullName: sections
-    summary: The sections of the notebook. Read only
+    summary: The sections of the notebook.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -311,10 +311,10 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.NotebookData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `OneNote.Notebook` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -329,10 +329,11 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -347,9 +348,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

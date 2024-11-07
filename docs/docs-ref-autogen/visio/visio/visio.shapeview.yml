@@ -286,23 +286,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.ShapeView#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.ShapeViewData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: setText(Text)
     uid: 'visio!Visio.ShapeView#setText:member(1)'
     package: visio!

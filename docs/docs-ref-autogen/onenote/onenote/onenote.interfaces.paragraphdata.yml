@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphData#image:member'
     package: onenote!
     fullName: image
-    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType isn't Image. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphData#inkWords:member'
     package: onenote!
     fullName: inkWords
-    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType isn't Ink. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

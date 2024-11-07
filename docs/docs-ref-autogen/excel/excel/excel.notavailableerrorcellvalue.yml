@@ -36,6 +36,24 @@ properties:
       content: 'basicValue?: "#N/A!" | string;'
       return:
         type: '"#N/A!" | string'
+  - name: errorSubType
+    uid: 'excel!Excel.NotAvailableErrorCellValue#errorSubType:member'
+    package: excel!
+    fullName: errorSubType
+    summary: Represents the type of `NotAvailableErrorCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        errorSubType?: NotAvailableErrorCellValueSubType | "Unknown" | "VlookupValueNotFound" | "HlookupValueNotFound" |
+        "StockHistoryInvalidProperty" | "StockHistoryNoData" | "PythonObjectUnknown" | "ERegexMatchNoResult" |
+        "ERegexReplaceOccurrenceNoResult" | "ERegexMatchNoCapture";
+      return:
+        type: >-
+          <xref uid="excel!Excel.NotAvailableErrorCellValueSubType:enum" /> | "Unknown" | "VlookupValueNotFound" |
+          "HlookupValueNotFound" | "StockHistoryInvalidProperty" | "StockHistoryNoData" | "PythonObjectUnknown" |
+          "ERegexMatchNoResult" | "ERegexReplaceOccurrenceNoResult" | "ERegexMatchNoCapture"
   - name: errorType
     uid: 'excel!Excel.NotAvailableErrorCellValue#errorType:member'
     package: excel!

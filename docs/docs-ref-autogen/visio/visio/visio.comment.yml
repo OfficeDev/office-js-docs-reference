@@ -195,23 +195,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.Comment#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.CommentData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: toJSON()
     uid: 'visio!Visio.Comment#toJSON:member(1)'
     package: visio!

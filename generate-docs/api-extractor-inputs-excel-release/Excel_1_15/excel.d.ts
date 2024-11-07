@@ -5377,7 +5377,7 @@ export declare namespace Excel {
          */
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
-         * Renders the range as a Base64-encoded png image.
+         * Renders the range as a Base64-encoded PNG image.
                     **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
@@ -17105,7 +17105,7 @@ export declare namespace Excel {
          */
         category: string;
         /**
-         * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+         * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -37073,7 +37073,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -43146,7 +43146,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -52016,7 +52016,7 @@ export declare namespace Excel {
              */
             category?: boolean;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

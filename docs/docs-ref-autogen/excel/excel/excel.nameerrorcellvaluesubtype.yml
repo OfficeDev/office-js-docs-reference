@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.NameErrorCellValueSubType
+uid: 'excel!Excel.NameErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.NameErrorCellValueSubType
+summary: 'Represents types of \#NAME? errors.'
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: unknown
+    uid: 'excel!Excel.NameErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: >-
+      An unknown type of error. Displays as error type \#NAME? in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Unknown"'
+  - name: unsupportedFunction
+    uid: 'excel!Excel.NameErrorCellValueSubType.unsupportedFunction:member'
+    package: excel!
+    summary: >-
+      An error caused by a formula containing an unsupported function. Displays as error type \#NAME? in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UnsupportedFunction"'

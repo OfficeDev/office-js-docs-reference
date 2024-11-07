@@ -38,6 +38,787 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CoerceStringToNumberInvalid"'
+  - name: cRegexAlphaAssertionUnknown
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexAlphaAssertionUnknown:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The (*alpha\_assertion) isn't recognized. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexAlphaAssertionUnknown"'
+  - name: cRegexBackslashCSyntax
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashCSyntax:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\<!-- -->c must be followed by a printable American Standard Code for
+      Information Interchange (ASCII) character. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashCSyntax"'
+  - name: cRegexBackslashGSyntax
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashGSyntax:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\<!-- -->g is not followed by a braced, angle-bracketed, or quoted name
+      or number, or by a plain number. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashGSyntax"'
+  - name: cRegexBackslashKInLookaround
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashKInLookaround:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\<!-- -->K is not allowed in `lookarounds=`<!-- -->. Displays as error
+      type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashKInLookaround"'
+  - name: cRegexBackslashNInClass
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashNInClass:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\<!-- -->N is not supported in class. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashNInClass"'
+  - name: cRegexBackslashOMissingBrace
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashOMissingBrace:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing opening brace after \\<!-- -->o. Displays as error type \#VALUE!
+      in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashOMissingBrace"'
+  - name: cRegexBackslashUCodePointTooBig
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashUCodePointTooBig:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. A character code point value in the \\<!-- -->u... sequence is too large.
+      Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBackslashUCodePointTooBig"'
+  - name: cRegexBadRelativeReference
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBadRelativeReference:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Digit expected after (?+ or (?-. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBadRelativeReference"'
+  - name: cRegexBadSubpatternReference
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBadSubpatternReference:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Reference to nonexistent subpattern. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexBadSubpatternReference"'
+  - name: cRegexCalloutBadStringDelimiter
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexCalloutBadStringDelimiter:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unrecognized string delimiter follows (?C. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexCalloutBadStringDelimiter"'
+  - name: cRegexCalloutNoStringDelimiter
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexCalloutNoStringDelimiter:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing terminating delimiter for callout with string argument. Displays
+      as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexCalloutNoStringDelimiter"'
+  - name: cRegexCalloutNumberTooBig
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexCalloutNumberTooBig:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Number after (?C is greater than 255. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexCalloutNumberTooBig"'
+  - name: cRegexCalloutStringTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexCalloutStringTooLong:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The callout string is too long. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexCalloutStringTooLong"'
+  - name: cRegexClassInvalidRange
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexClassInvalidRange:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Invalid range in character class. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexClassInvalidRange"'
+  - name: cRegexCodePointTooBig
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexCodePointTooBig:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Character code point value in \\<!-- -->x<!-- -->{<!-- -->} or \\<!--
+      -->o<!-- -->{<!-- -->} is too large. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexCodePointTooBig"'
+  - name: cRegexConditionAtomicAssertionExpected
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexConditionAtomicAssertionExpected:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Atomic assertion expected after (?( or (?(?C). Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexConditionAtomicAssertionExpected"'
+  - name: cRegexDefineTooManyBranches
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexDefineTooManyBranches:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. `DEFINE` subpattern contains more than one branch. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexDefineTooManyBranches"'
+  - name: cRegexDuplicateSubpatternName
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexDuplicateSubpatternName:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Two named subpatterns have the same name. Displays as error type \#VALUE!
+      in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexDuplicateSubpatternName"'
+  - name: cRegexEndBackslash
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexEndBackslash:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\ at end of pattern. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexEndBackslash"'
+  - name: cRegexEndBackslashC
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexEndBackslashC:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. \\<!-- -->c at end of pattern. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexEndBackslashC"'
+  - name: cRegexErrorGeneric
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexErrorGeneric:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. An unknown compile error has occurred. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexErrorGeneric"'
+  - name: cRegexEscapeInvalidInClass
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexEscapeInvalidInClass:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Escape sequence is invalid in character class. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexEscapeInvalidInClass"'
+  - name: cRegexEscapeInvalidInVerb
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexEscapeInvalidInVerb:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Invalid escape sequence in (*VERB) name. Displays as error type \#VALUE!
+      in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexEscapeInvalidInVerb"'
+  - name: cRegexInvalidAfterParensQuery
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexInvalidAfterParensQuery:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unrecognized character after (? or (?-. Displays as error type \#VALUE!
+      in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexInvalidAfterParensQuery"'
+  - name: cRegexInvalidHexadecimal
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexInvalidHexadecimal:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. A non-hexadecimal character in \\<!-- -->x<!-- -->{<!-- -->} is present.
+      The most common reason for this error is a missing closing brace. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexInvalidHexadecimal"'
+  - name: cRegexInvalidHyphenInOptions
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexInvalidHyphenInOptions:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Invalid hyphen in option setting. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexInvalidHyphenInOptions"'
+  - name: cRegexInvalidOctal
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexInvalidOctal:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. A non-octal character in \\<!-- -->o<!-- -->{<!-- -->} is present. The
+      most common reason for this error is a missing closing brace. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexInvalidOctal"'
+  - name: cRegexInvalidSubpatternName
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexInvalidSubpatternName:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Subpattern name must start with a non-digit. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexInvalidSubpatternName"'
+  - name: cRegexLookbehindNotFixedLength
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexLookbehindNotFixedLength:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Length of `lookbehind` assertion is not limited. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexLookbehindNotFixedLength"'
+  - name: cRegexLookbehindTooComplicated
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexLookbehindTooComplicated:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. `lookbehind` is too complicated. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexLookbehindTooComplicated"'
+  - name: cRegexLookbehindTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexLookbehindTooLong:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. `lookbehind` assertion is too long. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexLookbehindTooLong"'
+  - name: cRegexMalformedUnicodeProperty
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMalformedUnicodeProperty:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Malformed \\<!-- -->P or \\<!-- -->p sequence. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMalformedUnicodeProperty"'
+  - name: cRegexMarkMissingArgument
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMarkMissingArgument:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The (*MARK) must have an argument. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMarkMissingArgument"'
+  - name: cRegexMissingCalloutClosing
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingCalloutClosing:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Closing parenthesis for (?C expected. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingCalloutClosing"'
+  - name: cRegexMissingClosingParenthesis
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingClosingParenthesis:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing closing parenthesis. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingClosingParenthesis"'
+  - name: cRegexMissingCommentClosing
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingCommentClosing:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing ) after (?\# comment. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingCommentClosing"'
+  - name: cRegexMissingConditionClosing
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingConditionClosing:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing closing parenthesis for condition. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingConditionClosing"'
+  - name: cRegexMissingNameTerminator
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingNameTerminator:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Syntax error in subpattern name (missing terminator?). Displays as error
+      type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingNameTerminator"'
+  - name: cRegexMissingOctalOrHexDigits
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingOctalOrHexDigits:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Digits are missing in \\<!-- -->x<!-- -->{<!-- -->}<!-- -->, \\<!--
+      -->o<!-- -->{<!-- -->}<!-- -->, or \\<!-- -->N<!-- -->{<!-- -->U+<!-- -->}<!-- -->. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingOctalOrHexDigits"'
+  - name: cRegexMissingSquareBracket
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexMissingSquareBracket:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Missing terminating \] for character class. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexMissingSquareBracket"'
+  - name: cRegexParensQueryRMissingClosing
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexParensQueryRMissingClosing:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The recursive pattern call (?R must be followed by a closing parenthesis.
+      Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexParensQueryRMissingClosing"'
+  - name: cRegexParenthesesNestTooDeep
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexParenthesesNestTooDeep:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Parentheses are too deeply nested. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexParenthesesNestTooDeep"'
+  - name: cRegexPatternStringTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPatternStringTooLong:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Pattern string is longer than the limit set by the application. Displays
+      as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexPatternStringTooLong"'
+  - name: cRegexPatternTooComplicated
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPatternTooComplicated:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Regular expression is too complicated. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexPatternTooComplicated"'
+  - name: cRegexPatternTooLarge
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPatternTooLarge:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Regular expression is too large. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexPatternTooLarge"'
+  - name: cRegexPosixClassNotInClass
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPosixClassNotInClass:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. POSIX named classes are supported only within a class. Displays as error
+      type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexPosixClassNotInClass"'
+  - name: cRegexPosixNoSupportCollating
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPosixNoSupportCollating:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. POSIX collating elements are not supported. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexPosixNoSupportCollating"'
+  - name: cRegexQuantifierInvalid
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierInvalid:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Quantifier does not follow a repeatable item. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexQuantifierInvalid"'
+  - name: cRegexQuantifierOutOfOrder
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierOutOfOrder:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Number out of order in {<!-- -->} quantifier. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexQuantifierOutOfOrder"'
+  - name: cRegexQuantifierTooBig
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierTooBig:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Number too big in quantifier {<!-- -->}<!-- -->. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexQuantifierTooBig"'
+  - name: cRegexQueryBarjxNestTooDeep
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexQueryBarjxNestTooDeep:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The (?\|, (?J:, or (?x: parentheses are too deeply nested. Displays as
+      error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexQueryBarjxNestTooDeep"'
+  - name: cRegexSubpatternNameExpected
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNameExpected:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Subpattern name expected. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexSubpatternNameExpected"'
+  - name: cRegexSubpatternNamesMismatch
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNamesMismatch:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Different names for subpatterns of the same number are not allowed.
+      Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexSubpatternNamesMismatch"'
+  - name: cRegexSubpatternNameTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNameTooLong:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Subpattern name is too long. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexSubpatternNameTooLong"'
+  - name: cRegexSubpatternNumberTooBig
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNumberTooBig:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The subpattern number exceeds the limit of 65,535. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexSubpatternNumberTooBig"'
+  - name: cRegexTooManyCaptures
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexTooManyCaptures:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Too many capturing groups (maximum 65535). Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexTooManyCaptures"'
+  - name: cRegexTooManyConditionBranches
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexTooManyConditionBranches:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Conditional subpattern contains more than two branches. Displays as error
+      type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexTooManyConditionBranches"'
+  - name: cRegexTooManyNamedSubpatterns
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexTooManyNamedSubpatterns:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Too many named subpatterns. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexTooManyNamedSubpatterns"'
+  - name: cRegexUnicodeDisallowedCodePoint
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnicodeDisallowedCodePoint:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Disallowed Unicode point (<!-- -->&gt;<!-- -->= 0xD800 &amp;&amp;
+      &lt;<!-- -->= 0xDFFF). Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnicodeDisallowedCodePoint"'
+  - name: cRegexUnicodePropertiesUnavailable
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnicodePropertiesUnavailable:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. This version of PCRE2 does not have support for \\<!-- -->P, \\<!-- -->p,
+      or \\<!-- -->X. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnicodePropertiesUnavailable"'
+  - name: cRegexUnknownEscape
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnknownEscape:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unrecognized character follows . Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnknownEscape"'
+  - name: cRegexUnknownPosixClass
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnknownPosixClass:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unknown POSIX class name. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnknownPosixClass"'
+  - name: cRegexUnknownUnicodeProperty
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnknownUnicodeProperty:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unknown property after \\<!-- -->P or \\<!-- -->p. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnknownUnicodeProperty"'
+  - name: cRegexUnmatchedClosingParenthesis
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnmatchedClosingParenthesis:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unmatched closing parenthesis. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnmatchedClosingParenthesis"'
+  - name: cRegexUnrecognizedAfterQueryP
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnrecognizedAfterQueryP:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. Unrecongnized character after (?P. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnrecognizedAfterQueryP"'
+  - name: cRegexUnsupportedEscapeSequence
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnsupportedEscapeSequence:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. PCRE2 does not support \\<!-- -->F, \\<!-- -->L, \\<!-- -->l, \\<!--
+      -->N<!-- -->{<!-- -->name<!-- -->}<!-- -->, \\<!-- -->U, or \\<!-- -->u. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexUnsupportedEscapeSequence"'
+  - name: cRegexVerbNameTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexVerbNameTooLong:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. A name is too long in (*MARK), (*PRUNE), (*SKIP), or (*THEN).
+      Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexVerbNameTooLong"'
+  - name: cRegexVerbUnknown
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexVerbUnknown:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. The (*VERB) is not recognized or is malformed. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexVerbUnknown"'
+  - name: cRegexVersionConditionSyntax
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexVersionConditionSyntax:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. There is a syntax error, or a number is too big in the (?(VERSION
+      condition. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexVersionConditionSyntax"'
+  - name: cRegexZeroRelativeReference
+    uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexZeroRelativeReference:member'
+    package: excel!
+    summary: >-
+      An error in the regex `pattern`<!-- -->. A relative value of zero is not allowed. Displays as error type \#VALUE!
+      in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CRegexZeroRelativeReference"'
+  - name: eRegexErrorGeneric
+    uid: 'excel!Excel.ValueErrorCellValueSubType.eRegexErrorGeneric:member'
+    package: excel!
+    summary: >-
+      An unknown regex error occurred. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexErrorGeneric"'
+  - name: eRegexNoCaptureGroups
+    uid: 'excel!Excel.ValueErrorCellValueSubType.eRegexNoCaptureGroups:member'
+    package: excel!
+    summary: >-
+      No capture groups were found in the regex pattern. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexNoCaptureGroups"'
   - name: hlookupResultNotFound
     uid: 'excel!Excel.ValueErrorCellValueSubType.hlookupResultNotFound:member'
     package: excel!
@@ -56,6 +837,101 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"HlookupRowIndexLessThanOne"'
+  - name: imageFormulaInvalidAltText
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidAltText:member'
+    package: excel!
+    summary: >-
+      An error caused by a non-string `alt_text` parameter to an `IMAGE` function. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidAltText"'
+  - name: imageFormulaInvalidHeight
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidHeight:member'
+    package: excel!
+    summary: >-
+      An error caused by a non-numerical or invalid `height` argument passed to `IMAGE`<!-- -->. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidHeight"'
+  - name: imageFormulaInvalidImageFormat
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidImageFormat:member'
+    package: excel!
+    summary: >-
+      An error caused by an unsupported image formula. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidImageFormat"'
+  - name: imageFormulaInvalidSizing
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidSizing:member'
+    package: excel!
+    summary: >-
+      An error caused by invalid size parameters to `IMAGE`<!-- -->. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidSizing"'
+  - name: imageFormulaInvalidSource
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidSource:member'
+    package: excel!
+    summary: >-
+      An error caused by a non-string `source` parameter to an `IMAGE` function. Displays as error type \#VALUE! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidSource"'
+  - name: imageFormulaInvalidWidth
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidWidth:member'
+    package: excel!
+    summary: >-
+      An error caused by a non-numerical or invalid `width` argument passed to `IMAGE`<!-- -->. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaInvalidWidth"'
+  - name: imageFormulaNotEnoughArgs
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaNotEnoughArgs:member'
+    package: excel!
+    summary: >-
+      An error caused by too few arguments passed to `IMAGE`<!-- -->. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaNotEnoughArgs"'
+  - name: imageFormulaTooManyArgs
+    uid: 'excel!Excel.ValueErrorCellValueSubType.imageFormulaTooManyArgs:member'
+    package: excel!
+    summary: >-
+      An error caused by passing too many arguments to an `IMAGE` function. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageFormulaTooManyArgs"'
+  - name: invalidCellValueTypeCoercion
+    uid: 'excel!Excel.ValueErrorCellValueSubType.invalidCellValueTypeCoercion:member'
+    package: excel!
+    summary: >-
+      An error caused by an argument with the wrong data type passed to a custom function. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"InvalidCellValueTypeCoercion"'
   - name: invalidImageUrl
     uid: 'excel!Excel.ValueErrorCellValueSubType.invalidImageUrl:member'
     package: excel!
@@ -74,6 +950,126 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LambdaWrongParamCount"'
+  - name: mRegexBadrepescape
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadrepescape:member'
+    package: excel!
+    summary: >-
+      An error in regex match. There's an incorrect escape sequence in the replacement string. Displays as error type
+      \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexBadrepescape"'
+  - name: mRegexBadreplacement
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadreplacement:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Invalid replacement string. Displays as error type \#VALUE! in Excel. Note: The name of
+      this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexBadreplacement"'
+  - name: mRegexBadsubspattern
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadsubspattern:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Match with end before start or start moved backwards is not supported. Displays as error
+      type \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexBadsubspattern"'
+  - name: mRegexBadsubstitution
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadsubstitution:member'
+    package: excel!
+    summary: >-
+      An error in regex match. There's an incorrect substitution in the replacement string. Displays as error type
+      \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexBadsubstitution"'
+  - name: mRegexDepthlimit
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexDepthlimit:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Matching depth limit exceeded. Displays as error type \#VALUE! in Excel. Note: The name
+      of this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexDepthlimit"'
+  - name: mRegexErrorGeneric
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexErrorGeneric:member'
+    package: excel!
+    summary: >-
+      An error in regex match. An unknown match error has occurred. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexErrorGeneric"'
+  - name: mRegexMatchlimit
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexMatchlimit:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Match limit exceeded. Displays as error type \#VALUE! in Excel. Note: The name of this
+      API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexMatchlimit"'
+  - name: mRegexNosubstring
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexNosubstring:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Unknown substring. Displays as error type \#VALUE! in Excel. Note: The name of this API
+      is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexNosubstring"'
+  - name: mRegexNouniquesubstring
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexNouniquesubstring:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Nonunique substring name. Displays as error type \#VALUE! in Excel. Note: The name of
+      this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexNouniquesubstring"'
+  - name: mRegexRecurseLoop
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexRecurseLoop:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Recursive loop. Displays as error type \#VALUE! in Excel. Note: The name of this API is
+      likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexRecurseLoop"'
+  - name: mRegexRepmissingbrace
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexRepmissingbrace:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Expected closing curly bracket in replacement string. Displays as error type \#VALUE! in
+      Excel. Note: The name of this API is likely to change in the near future.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexRepmissingbrace"'
   - name: stockHistoryEndBeforeStart
     uid: 'excel!Excel.ValueErrorCellValueSubType.stockHistoryEndBeforeStart:member'
     package: excel!
@@ -168,6 +1164,38 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"SubArrayStartRowMissingEndRowNot"'
+  - name: translateStringTooLong
+    uid: 'excel!Excel.ValueErrorCellValueSubType.translateStringTooLong:member'
+    package: excel!
+    summary: >-
+      An error caused by the `text` parameter to `TRANSLATE` being too long. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"TranslateStringTooLong"'
+  - name: translateUnsupportedSrcLanguage
+    uid: 'excel!Excel.ValueErrorCellValueSubType.translateUnsupportedSrcLanguage:member'
+    package: excel!
+    summary: >-
+      An error caused because the `source_language` parameter to `TRANSLATE` is not supported. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"TranslateUnsupportedSrcLanguage"'
+  - name: translateUnsupportedTargetLanguage
+    uid: 'excel!Excel.ValueErrorCellValueSubType.translateUnsupportedTargetLanguage:member'
+    package: excel!
+    summary: >-
+      An error caused because the `target_language` parameter to `TRANSLATE` is not supported. Displays as error type
+      \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"TranslateUnsupportedTargetLanguage"'
   - name: unknown
     uid: 'excel!Excel.ValueErrorCellValueSubType.unknown:member'
     package: excel!

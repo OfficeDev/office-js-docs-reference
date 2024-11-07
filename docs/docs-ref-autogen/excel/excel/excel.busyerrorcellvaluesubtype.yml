@@ -24,6 +24,17 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LoadingImage"'
+  - name: placeholderInFormula
+    uid: 'excel!Excel.BusyErrorCellValueSubType.placeholderInFormula:member'
+    package: excel!
+    summary: >-
+      An error caused by a function being unable to process a placeholder value. Displays as error type \#BUSY! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PlaceholderInFormula"'
   - name: unknown
     uid: 'excel!Excel.BusyErrorCellValueSubType.unknown:member'
     package: excel!

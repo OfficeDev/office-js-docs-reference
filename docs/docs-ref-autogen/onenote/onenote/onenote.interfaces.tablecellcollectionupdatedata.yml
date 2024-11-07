@@ -4,7 +4,7 @@ uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableCellCollectionUpdateData
 summary: >-
-  An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`<!--
+  An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`<!--
   -->.
 remarks: ''
 isPreview: false

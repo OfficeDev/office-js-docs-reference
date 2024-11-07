@@ -253,23 +253,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.Page#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.PageData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: toJSON()
     uid: 'visio!Visio.Page#toJSON:member(1)'
     package: visio!

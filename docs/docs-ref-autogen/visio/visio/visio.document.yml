@@ -252,23 +252,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.Document#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.DocumentData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: 'showTaskPane(taskPaneType, initialProps, show)'
     uid: 'visio!Visio.Document#showTaskPane:member(1)'
     package: visio!
@@ -320,7 +303,7 @@ methods:
             initialize the content of the task pane.
           type: any
         - id: show
-          description: 'Optional Parameter. If it is set to false, it will hide the specified task pane.'
+          description: 'Optional Parameter. If it''s set to false, it will hide the specified task pane.'
           type: boolean
       return:
         type: void
