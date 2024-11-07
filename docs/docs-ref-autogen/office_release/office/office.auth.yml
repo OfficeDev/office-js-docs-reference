@@ -55,8 +55,8 @@ methods:
       - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
 
 
-      - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The
-      user is not signed into Office").
+      - In Outlook on the web, this API isn't supported if you use Firefox with Enhanced Tracking Protection turned on.
+      This results in error 13001 ("The user is not signed into Office").
 
 
       - In Outlook on the web and [new Outlook on

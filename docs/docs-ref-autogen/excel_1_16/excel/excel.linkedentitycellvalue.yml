@@ -36,20 +36,6 @@ properties:
       content: 'basicValue?: "#VALUE!" | string;'
       return:
         type: '"#VALUE!" | string'
-  - name: cardLayout
-    uid: 'excel!Excel.LinkedEntityCellValue#cardLayout:member'
-    package: excel!
-    fullName: cardLayout
-    summary: >-
-      Represents the layout of this linked entity in card view. If the `CardLayout` object doesn't have a layout
-      property, it default value is "Entity".
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'cardLayout?: CardLayout;'
-      return:
-        type: '<xref uid="excel!Excel.CardLayout:type" />'
   - name: id
     uid: 'excel!Excel.LinkedEntityCellValue#id:member'
     package: excel!
@@ -62,6 +48,18 @@ properties:
       content: 'id: LinkedEntityId;'
       return:
         type: '<xref uid="excel!Excel.LinkedEntityId:interface" />'
+  - name: layouts
+    uid: 'excel!Excel.LinkedEntityCellValue#layouts:member'
+    package: excel!
+    fullName: layouts
+    summary: Represents layout information for views of this linked entity.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: EntityViewLayouts;'
+      return:
+        type: '<xref uid="excel!Excel.EntityViewLayouts:interface" />'
   - name: properties
     uid: 'excel!Excel.LinkedEntityCellValue#properties:member'
     package: excel!

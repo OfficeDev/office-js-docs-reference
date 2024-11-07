@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.ListData#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: Gets paragraphs in the list. Read-only.
+    summary: Gets paragraphs in the list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

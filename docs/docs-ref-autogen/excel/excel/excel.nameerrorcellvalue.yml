@@ -36,6 +36,18 @@ properties:
       content: 'basicValue?: "#NAME?" | string;'
       return:
         type: '"#NAME?" | string'
+  - name: errorSubType
+    uid: 'excel!Excel.NameErrorCellValue#errorSubType:member'
+    package: excel!
+    fullName: errorSubType
+    summary: Represents the type of `NameErrorCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'errorSubType?: NameErrorCellValueSubType | "Unknown" | "UnsupportedFunction";'
+      return:
+        type: '<xref uid="excel!Excel.NameErrorCellValueSubType:enum" /> | "Unknown" | "UnsupportedFunction"'
   - name: errorType
     uid: 'excel!Excel.NameErrorCellValue#errorType:member'
     package: excel!

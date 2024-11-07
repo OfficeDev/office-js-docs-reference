@@ -40,7 +40,7 @@ properties:
       The string format to use for an attachment's content.
 
 
-      For file attachments, the formatting is a base64-encoded string.
+      For file attachments, the formatting is a Base64-encoded string.
 
 
       For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting

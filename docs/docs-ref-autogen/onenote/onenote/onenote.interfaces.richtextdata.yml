@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: The language id of the text. Read-only.
+    summary: The language ID of the text. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

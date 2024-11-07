@@ -4,7 +4,7 @@ uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
 summary: >-
-  An interface for updating data on the InkAnalysisWordCollection object, for use in `inkAnalysisWordCollection.set({
+  An interface for updating data on the `InkAnalysisWordCollection` object, for use in `inkAnalysisWordCollection.set({
   ... })`<!-- -->.
 remarks: ''
 isPreview: false

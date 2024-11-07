@@ -93,7 +93,7 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
-    * The base64 encoding type and data of an image.
+    * The Base64-encoded type and data of an image.
     *
     * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -101,15 +101,15 @@ export declare namespace Excel {
     */
     export interface Base64EncodedImage {
         /**
-        * The file type of the encoded image.
+        * The file type of the Base64-encoded image.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        type: Base64EncodingType | "JPG" | "PNG";
+        type: Base64EncodingType | "BMP" | "GIF" | "ICO" | "JPG" | "PNG" | "TIF" | "WEBP";
         /**
-        * The base64 string encoding.
+        * The Base64-encoded string.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -118,7 +118,7 @@ export declare namespace Excel {
         data: string;
     }
     /**
-    * The file type represented by the base64 encoding.
+    * The file type represented by the Base64 encoding.
     *
     * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -126,7 +126,31 @@ export declare namespace Excel {
     */
     enum Base64EncodingType {
         /**
-        * The JPG file type.
+        * The BMP file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        BMP = "BMP",
+        /**
+        * The GIF file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        GIF = "GIF",
+        /**
+        * The ICO file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        ICO = "ICO",
+        /**
+        * The JPG (or JPEG) file type.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -140,7 +164,23 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        PNG = "PNG"
+        PNG = "PNG",
+        /**
+        * The TIFF file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        TIF = "TIF",
+        /**
+        * The WEBP file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        WEBP = "WEBP"
     }
     /**
     * Represents a card layout that is best used for an array.
@@ -261,7 +301,159 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        noLicense = "NoLicense"
+        noLicense = "NoLicense",
+        /**
+        * An error caused by Excel 4.0 macros being disabled in Trust Center. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        xlmDisabledInTrustCenter = "XlmDisabledInTrustCenter",
+        /**
+        * An error caused by Excel 4.0 macros not being supported on the platform. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        xlmNotSupportedOnPlatform = "XlmNotSupportedOnPlatform",
+        /**
+        * An error caused by the image download coming from an untrusted URL. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageDownloadBlocked = "ImageDownloadBlocked",
+        /**
+        * An error caused by the image URL not being HTTPS. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageInvalidUrlNonHttps = "ImageInvalidUrlNonHttps",
+        /**
+        * An error caused by the image exceeding the size limit set in ExcelServerSettings.CacheBackedAsyncImageDownloaderMaxFileSizeInKBytes. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageExceedsSizeLimit = "ImageExceedsSizeLimit",
+        /**
+        * An error caused by the image exceeding the size limit for an entire workbook set in `ExcelWorkbookSizeMax`. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageExceedsTotalSizeLimit = "ImageExceedsTotalSizeLimit",
+        /**
+        * An error caused by the user exceeding their quota of concurrently active external code service execution environments. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsQuota = "EnvironmentExceedsQuota",
+        /**
+        * An error caused by the user exceeding their daily quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsQuotaDaily = "EnvironmentExceedsQuotaDaily",
+        /**
+        * An error caused by the user exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsQuotaMonthly = "EnvironmentExceedsQuotaMonthly",
+        /**
+        * An error caused by the user who is not licensed for a feature which uses an external code service exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsTakerQuotaMonthly = "EnvironmentExceedsTakerQuotaMonthly",
+        /**
+        * An error caused by using an unsupported identity provider. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        wrongAccountType = "WrongAccountType",
+        /**
+        * An error caused by an external code service execution environment exceeding its lifetime resource use. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsComputeResourceEver = "EnvironmentExceedsComputeResourceEver",
+        /**
+        * An error caused by a user exceeding their daily quota of compute. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentExceedsComputeResourceCountDaily = "EnvironmentExceedsComputeResourceCountDaily",
+        /**
+        * An error caused by Python not being supported in Excel on a platform. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonUnsupportedOnThisPlatform = "PythonUnsupportedOnThisPlatform",
+        /**
+        * An error caused by Excel not meeting the requirements to use a feature. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unmetRequirements = "UnmetRequirements",
+        /**
+        * An error caused by the PY function being disabled. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonFunction = "PythonFunction",
+        /**
+        * An error caused by the user exceeding their quota of concurrent connections to external code service environments.  Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        environmentConnectionExceedQuota = "EnvironmentConnectionExceedQuota",
+        /**
+        * An error caused by an environment definition not being supported by an external code service. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unsupportedEnvironment = "UnsupportedEnvironment",
+        /**
+        * An error caused by function being unavailable in Partial or Manual calculation modes. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unsupportedInCalculationMode = "UnsupportedInCalculationMode"
     }
     /**
     * Represents the value of a cell containing a #BLOCKED! error.
@@ -306,7 +498,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
+        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
     }
     /**
     * Represents the value of a cell containing a boolean.
@@ -364,7 +556,15 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        loadingImage = "LoadingImage"
+        loadingImage = "LoadingImage",
+        /**
+        * An error caused by a function being unable to process a placeholder value. Displays as error type #BUSY! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        placeholderInFormula = "PlaceholderInFormula"
     }
     /**
     * Represents the value of a cell containing a #BUSY! error.
@@ -409,7 +609,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage";
+        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage" | "PlaceholderInFormula";
     }
     /**
     * Represents types of #CALC! errors.
@@ -488,7 +688,87 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        textOverflow = "TextOverflow"
+        textOverflow = "TextOverflow",
+        /**
+        * An error caused by a formula generating too large a request for an external code service. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        requestTooLarge = "RequestTooLarge",
+        /**
+        * An error caused by a Power Query query referencing data in a sheet. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonGridQuery = "PythonGridQuery",
+        /**
+        * An error caused by a Power Query query ID change. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonPowerQueryDataUploadEtagChanged = "PythonPowerQueryDataUploadEtagChanged",
+        /**
+        * An error caused by Power Query exceeding the limit for data uploaded to an external code service. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonPowerQueryDataUploadSizeLimitExceeded = "PythonPowerQueryDataUploadSizeLimitExceeded",
+        /**
+        * An error caused by a formula referencing a value returned by an external code service in a different workbook. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        invalidPythonObject = "InvalidPythonObject",
+        /**
+        * An error caused by a formula returning a reference to a Power Query query. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        queryInCell = "QueryInCell",
+        /**
+        * An error caused by an uninitialized Python Object. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        uninitializedPythonObject = "UninitializedPythonObject",
+        /**
+        * An error caused by a reference to a Power Query query in a different workbook. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalQueryRef = "ExternalQueryRef",
+        /**
+        * An error caused by text that is longer than 65,535 characters. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexReplaceCharLimit = "ERegexReplaceCharLimit",
+        /**
+        * An error caused by an external code service returning an unexpected result. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unexpectedReturnValue = "UnexpectedReturnValue"
     }
     /**
     * Represents the value of a cell containing a #CALC! error.
@@ -533,7 +813,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow";
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
         /**
         * Represents the name of the function causing the error.
         *
@@ -5173,7 +5453,71 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        genericServerError = "GenericServerError"
+        genericServerError = "GenericServerError",
+        /**
+        * An error caused by an image download receiving an HTTP response code between 300 and 499. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageUnableToRetrieve = "ImageUnableToRetrieve",
+        /**
+        * An error caused by not being able to find an external code service execution environment. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalCodeServiceEnvironmentNotFound = "ExternalCodeServiceEnvironmentNotFound",
+        /**
+        * An error caused by not being able to find the runtime in an external code service's execution environment. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalCodeServiceRuntimeNotFound = "ExternalCodeServiceRuntimeNotFound",
+        /**
+        * An error caused by an external code service execution environment being in an inoperative state. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalCodeServiceEnvironmentBadState = "ExternalCodeServiceEnvironmentBadState",
+        /**
+        * An error caused by an external code service runtime being in an inoperative state. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalCodeServiceRuntimeBadState = "ExternalCodeServiceRuntimeBadState",
+        /**
+        * An error caused by an external code service compute resource not being available. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        externalCodeServiceComputeResourceNotAvailable = "ExternalCodeServiceComputeResourceNotAvailable",
+        /**
+        * An error caused by Power Query not having started upload of data to an external code service. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonPowerQueryDataUploadHasNotStarted = "PythonPowerQueryDataUploadHasNotStarted",
+        /**
+        * An error caused by Excel being incorrectly configured for connection to an external code service. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        excelClientMisconfigurationError = "ExcelClientMisconfigurationError"
     }
     /**
     * Represents the value of a cell containing a #CONNECT! error.
@@ -5218,7 +5562,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
+        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError" | "ImageUnableToRetrieve" | "ExternalCodeServiceEnvironmentNotFound" | "ExternalCodeServiceRuntimeNotFound" | "ExternalCodeServiceEnvironmentBadState" | "ExternalCodeServiceRuntimeBadState" | "ExternalCodeServiceComputeResourceNotAvailable" | "PythonPowerQueryDataUploadHasNotStarted" | "ExcelClientMisconfigurationError";
     }
     /**
     * Represents the value of a cell containing a #DIV/0! error.
@@ -5431,7 +5775,7 @@ export declare namespace Excel {
         compact?: CompactLayout;
     }
     /**
-    * Represents a card layout that is best used for an array.
+    * Represents a card layout that is best used for an entity.
     *
     * @remarks
     * [Api set: ExcelApi 1.16]
@@ -5720,6 +6064,15 @@ export declare namespace Excel {
         * @beta
         */
         Python_str: string;
+        /**
+        * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
+        * This field is not writable.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        provider?: CellValueProviderAttributes;
     }
     /**
     * Represents types of #FIELD! errors.
@@ -5810,7 +6163,7 @@ export declare namespace Excel {
         fieldName?: string;
     }
     /**
-    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
+    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
     * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
     *
     * @remarks
@@ -5842,7 +6195,7 @@ export declare namespace Excel {
         * Returns the number format string that is used to display this value.
         * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
         * Number format strings must conform to Excel guidelines.
-        * To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+        * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
         *
         * @remarks
         * [Api set: ExcelApi 1.16]
@@ -5979,13 +6332,12 @@ export declare namespace Excel {
             };
         };
         /**
-        * Represents the layout of this linked entity in card view.
-        * If the `CardLayout` object doesn't have a layout property, it default value is "Entity".
+        * Represents layout information for views of this linked entity.
         *
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        cardLayout?: CardLayout;
+        layouts?: EntityViewLayouts;
         /**
         * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
         * This information can be used for branding in entity cards.
@@ -6078,7 +6430,88 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        cacheUid: string;
+        cachedUid: string;
+    }
+    /**
+    * Represents types of #N/A! errors.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum NotAvailableErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        vlookupValueNotFound = "VlookupValueNotFound",
+        /**
+        * An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        hlookupValueNotFound = "HlookupValueNotFound",
+        /**
+        * An error caused by an invalid property argument to `STOCKHISTORY`. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        stockHistoryInvalidProperty = "StockHistoryInvalidProperty",
+        /**
+        * An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        stockHistoryNoData = "StockHistoryNoData",
+        /**
+        * An error caused by an external code service returning an unknown object. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonObjectUnknown = "PythonObjectUnknown",
+        /**
+        * No match was found for the pattern in the text provided. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexMatchNoResult = "ERegexMatchNoResult",
+        /**
+        * Occurrence is greater than the total number of matches. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexReplaceOccurrenceNoResult = "ERegexReplaceOccurrenceNoResult",
+        /**
+        * No capture groups were matched. Displays as error type #N/A! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexMatchNoCapture = "ERegexMatchNoCapture"
     }
     /**
     * Represents the value of a cell containing a #N/A! error.
@@ -6117,6 +6550,39 @@ export declare namespace Excel {
         * [Api set: ExcelApi 1.16]
         */
         errorType?: ErrorCellValueType.notAvailable | "NotAvailable";
+        /**
+        * Represents the type of `NotAvailableErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorSubType?: NotAvailableErrorCellValueSubType | "Unknown" | "VlookupValueNotFound" | "HlookupValueNotFound" | "StockHistoryInvalidProperty" | "StockHistoryNoData" | "PythonObjectUnknown" | "ERegexMatchNoResult" | "ERegexReplaceOccurrenceNoResult" | "ERegexMatchNoCapture";
+    }
+    /**
+    * Represents types of #NAME? errors.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum NameErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #NAME? in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a formula containing an unsupported function. Displays as error type #NAME? in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unsupportedFunction = "UnsupportedFunction"
     }
     /**
     * Represents the value of a cell containing a #NAME? error.
@@ -6155,6 +6621,14 @@ export declare namespace Excel {
         * [Api set: ExcelApi 1.16]
         */
         errorType?: ErrorCellValueType.name | "Name";
+        /**
+        * Represents the type of `NameErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorSubType?: NameErrorCellValueSubType | "Unknown" | "UnsupportedFunction";
     }
     /**
     * Represents the value of a cell containing a #NULL! error.
@@ -6295,7 +6769,15 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        externalLinksCalculatedRef = "ExternalLinksCalculatedRef"
+        externalLinksCalculatedRef = "ExternalLinksCalculatedRef",
+        /**
+        * An error caused by a corrupt formula. Displays as error type #REF! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        corruptCellRef = "CorruptCellRef"
     }
     /**
     * Represents the value of a cell containing a #REF! error.
@@ -6340,7 +6822,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef" | "CorruptCellRef";
     }
     /**
     * Represents types of #SPILL! errors.
@@ -6709,7 +7191,777 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        lambdaWrongParamCount = "LambdaWrongParamCount"
+        lambdaWrongParamCount = "LambdaWrongParamCount",
+        /**
+        * An error caused by passing too many arguments to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaTooManyArgs = "ImageFormulaTooManyArgs",
+        /**
+        * An error caused by an unsupported image formula. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidImageFormat = "ImageFormulaInvalidImageFormat",
+        /**
+        * An error caused by a non-string `source` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidSource = "ImageFormulaInvalidSource",
+        /**
+        * An error caused by a non-string `alt_text` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidAltText = "ImageFormulaInvalidAltText",
+        /**
+        * An error caused by invalid size parameters to `IMAGE`. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidSizing = "ImageFormulaInvalidSizing",
+        /**
+        * An error caused by too few arguments passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaNotEnoughArgs = "ImageFormulaNotEnoughArgs",
+        /**
+        * An error caused by a non-numerical or invalid `height` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidHeight = "ImageFormulaInvalidHeight",
+        /**
+        * An error caused by a non-numerical or invalid `width` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        imageFormulaInvalidWidth = "ImageFormulaInvalidWidth",
+        /**
+        * An error caused by an argument with the wrong data type passed to a custom function. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        invalidCellValueTypeCoercion = "InvalidCellValueTypeCoercion",
+        /**
+        * An error in the regex `pattern`. An unknown compile error has occurred. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexErrorGeneric = "CRegexErrorGeneric",
+        /**
+        * An error in the regex `pattern`. \ at end of pattern. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexEndBackslash = "CRegexEndBackslash",
+        /**
+        * An error in the regex `pattern`. \c at end of pattern. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexEndBackslashC = "CRegexEndBackslashC",
+        /**
+        * An error in the regex `pattern`. Unrecognized character follows \. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnknownEscape = "CRegexUnknownEscape",
+        /**
+        * An error in the regex `pattern`. Number out of order in {} quantifier. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexQuantifierOutOfOrder = "CRegexQuantifierOutOfOrder",
+        /**
+        * An error in the regex `pattern`. Number too big in quantifier {}. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexQuantifierTooBig = "CRegexQuantifierTooBig",
+        /**
+        * An error in the regex `pattern`. Missing terminating ] for character class. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingSquareBracket = "CRegexMissingSquareBracket",
+        /**
+        * An error in the regex `pattern`. Escape sequence is invalid in character class. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexEscapeInvalidInClass = "CRegexEscapeInvalidInClass",
+        /**
+        * An error in the regex `pattern`. Quantifier does not follow a repeatable item. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexQuantifierInvalid = "CRegexQuantifierInvalid",
+        /**
+        * An error in the regex `pattern`. Unrecognized character after (? or (?-. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexInvalidAfterParensQuery = "CRegexInvalidAfterParensQuery",
+        /**
+        * An error in the regex `pattern`. POSIX named classes are supported only within a class. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexPosixClassNotInClass = "CRegexPosixClassNotInClass",
+        /**
+        * An error in the regex `pattern`. POSIX collating elements are not supported. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexPosixNoSupportCollating = "CRegexPosixNoSupportCollating",
+        /**
+        * An error in the regex `pattern`. Missing closing parenthesis. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingClosingParenthesis = "CRegexMissingClosingParenthesis",
+        /**
+        * An error in the regex `pattern`. Reference to nonexistent subpattern. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBadSubpatternReference = "CRegexBadSubpatternReference",
+        /**
+        * An error in the regex `pattern`. Missing ) after (?# comment. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingCommentClosing = "CRegexMissingCommentClosing",
+        /**
+        * An error in the regex `pattern`. Parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexParenthesesNestTooDeep = "CRegexParenthesesNestTooDeep",
+        /**
+        * An error in the regex `pattern`. Regular expression is too large. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexPatternTooLarge = "CRegexPatternTooLarge",
+        /**
+        * An error in the regex `pattern`. Unmatched closing parenthesis. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnmatchedClosingParenthesis = "CRegexUnmatchedClosingParenthesis",
+        /**
+        * An error in the regex `pattern`. Missing closing parenthesis for condition. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingConditionClosing = "CRegexMissingConditionClosing",
+        /**
+        * An error in the regex `pattern`. Length of `lookbehind` assertion is not limited. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexLookbehindNotFixedLength = "CRegexLookbehindNotFixedLength",
+        /**
+        * An error in the regex `pattern`. A relative value of zero is not allowed. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexZeroRelativeReference = "CRegexZeroRelativeReference",
+        /**
+        * An error in the regex `pattern`. Conditional subpattern contains more than two branches. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexTooManyConditionBranches = "CRegexTooManyConditionBranches",
+        /**
+        * An error in the regex `pattern`. Digit expected after (?+ or (?-. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBadRelativeReference = "CRegexBadRelativeReference",
+        /**
+        * An error in the regex `pattern`. Unknown POSIX class name. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnknownPosixClass = "CRegexUnknownPosixClass",
+        /**
+        * An error in the regex `pattern`. Character code point value in \x{} or \o{} is too large. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexCodePointTooBig = "CRegexCodePointTooBig",
+        /**
+        * An error in the regex `pattern`. `lookbehind` is too complicated. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexLookbehindTooComplicated = "CRegexLookbehindTooComplicated",
+        /**
+        * An error in the regex `pattern`. PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnsupportedEscapeSequence = "CRegexUnsupportedEscapeSequence",
+        /**
+        * An error in the regex `pattern`. Number after (?C is greater than 255. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexCalloutNumberTooBig = "CRegexCalloutNumberTooBig",
+        /**
+        * An error in the regex `pattern`. Closing parenthesis for (?C expected. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingCalloutClosing = "CRegexMissingCalloutClosing",
+        /**
+        * An error in the regex `pattern`. Invalid escape sequence in (*VERB) name. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexEscapeInvalidInVerb = "CRegexEscapeInvalidInVerb",
+        /**
+        * An error in the regex `pattern`. Unrecongnized character after (?P. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnrecognizedAfterQueryP = "CRegexUnrecognizedAfterQueryP",
+        /**
+        * An error in the regex `pattern`. Syntax error in subpattern name (missing terminator?). Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingNameTerminator = "CRegexMissingNameTerminator",
+        /**
+        * An error in the regex `pattern`. Two named subpatterns have the same name. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexDuplicateSubpatternName = "CRegexDuplicateSubpatternName",
+        /**
+        * An error in the regex `pattern`. Subpattern name must start with a non-digit. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexInvalidSubpatternName = "CRegexInvalidSubpatternName",
+        /**
+        * An error in the regex `pattern`. This version of PCRE2 does not have support for \P, \p, or \X. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnicodePropertiesUnavailable = "CRegexUnicodePropertiesUnavailable",
+        /**
+        * An error in the regex `pattern`. Malformed \P or \p sequence. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMalformedUnicodeProperty = "CRegexMalformedUnicodeProperty",
+        /**
+        * An error in the regex `pattern`. Unknown property after \P or \p. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnknownUnicodeProperty = "CRegexUnknownUnicodeProperty",
+        /**
+        * An error in the regex `pattern`. Subpattern name is too long. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexSubpatternNameTooLong = "CRegexSubpatternNameTooLong",
+        /**
+        * An error in the regex `pattern`. Too many named subpatterns. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexTooManyNamedSubpatterns = "CRegexTooManyNamedSubpatterns",
+        /**
+        * An error in the regex `pattern`. Invalid range in character class. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexClassInvalidRange = "CRegexClassInvalidRange",
+        /**
+        * An error in the regex `pattern`. `DEFINE` subpattern contains more than one branch. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexDefineTooManyBranches = "CRegexDefineTooManyBranches",
+        /**
+        * An error in the regex `pattern`. Missing opening brace after \o. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashOMissingBrace = "CRegexBackslashOMissingBrace",
+        /**
+        * An error in the regex `pattern`. \g is not followed by a braced, angle-bracketed, or quoted name or number, or by a plain number. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashGSyntax = "CRegexBackslashGSyntax",
+        /**
+        * An error in the regex `pattern`. The recursive pattern call (?R must be followed by a closing parenthesis. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexParensQueryRMissingClosing = "CRegexParensQueryRMissingClosing",
+        /**
+        * An error in the regex `pattern`. The (*VERB) is not recognized or is malformed. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexVerbUnknown = "CRegexVerbUnknown",
+        /**
+        * An error in the regex `pattern`. The subpattern number exceeds the limit of 65,535. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexSubpatternNumberTooBig = "CRegexSubpatternNumberTooBig",
+        /**
+        * An error in the regex `pattern`. Subpattern name expected. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexSubpatternNameExpected = "CRegexSubpatternNameExpected",
+        /**
+        * An error in the regex `pattern`. A non-octal character in \o{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexInvalidOctal = "CRegexInvalidOctal",
+        /**
+        * An error in the regex `pattern`. Different names for subpatterns of the same number are not allowed. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexSubpatternNamesMismatch = "CRegexSubpatternNamesMismatch",
+        /**
+        * An error in the regex `pattern`. The (*MARK) must have an argument. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMarkMissingArgument = "CRegexMarkMissingArgument",
+        /**
+        * An error in the regex `pattern`. A non-hexadecimal character in \x{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexInvalidHexadecimal = "CRegexInvalidHexadecimal",
+        /**
+        * An error in the regex `pattern`. \c must be followed by a printable American Standard Code for Information Interchange (ASCII) character. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashCSyntax = "CRegexBackslashCSyntax",
+        /**
+        * An error in the regex `pattern`. \N is not supported in class. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashNInClass = "CRegexBackslashNInClass",
+        /**
+        * An error in the regex `pattern`. The callout string is too long. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexCalloutStringTooLong = "CRegexCalloutStringTooLong",
+        /**
+        * An error in the regex `pattern`. Disallowed Unicode point (>= 0xD800 && <= 0xDFFF). Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexUnicodeDisallowedCodePoint = "CRegexUnicodeDisallowedCodePoint",
+        /**
+        * An error in the regex `pattern`. A name is too long in (*MARK), (*PRUNE), (*SKIP), or (*THEN). Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexVerbNameTooLong = "CRegexVerbNameTooLong",
+        /**
+        * An error in the regex `pattern`. A character code point value in the \u... sequence is too large. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashUCodePointTooBig = "CRegexBackslashUCodePointTooBig",
+        /**
+        * An error in the regex `pattern`. Digits are missing in \x{}, \o{}, or \N{U+}. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexMissingOctalOrHexDigits = "CRegexMissingOctalOrHexDigits",
+        /**
+        * An error in the regex `pattern`. There is a syntax error, or a number is too big in the (?(VERSION condition. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexVersionConditionSyntax = "CRegexVersionConditionSyntax",
+        /**
+        * An error in the regex `pattern`. Missing terminating delimiter for callout with string argument. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexCalloutNoStringDelimiter = "CRegexCalloutNoStringDelimiter",
+        /**
+        * An error in the regex `pattern`. Unrecognized string delimiter follows (?C. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexCalloutBadStringDelimiter = "CRegexCalloutBadStringDelimiter",
+        /**
+        * An error in the regex `pattern`. The (?|, (?J:, or (?x: parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexQueryBarjxNestTooDeep = "CRegexQueryBarjxNestTooDeep",
+        /**
+        * An error in the regex `pattern`. Regular expression is too complicated. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexPatternTooComplicated = "CRegexPatternTooComplicated",
+        /**
+        * An error in the regex `pattern`. `lookbehind` assertion is too long. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexLookbehindTooLong = "CRegexLookbehindTooLong",
+        /**
+        * An error in the regex `pattern`. Pattern string is longer than the limit set by the application. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexPatternStringTooLong = "CRegexPatternStringTooLong",
+        /**
+        * An error in the regex `pattern`. Invalid hyphen in option setting. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexInvalidHyphenInOptions = "CRegexInvalidHyphenInOptions",
+        /**
+        * An error in the regex `pattern`. The (*alpha_assertion) isn't recognized. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexAlphaAssertionUnknown = "CRegexAlphaAssertionUnknown",
+        /**
+        * An error in the regex `pattern`. Too many capturing groups (maximum 65535). Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexTooManyCaptures = "CRegexTooManyCaptures",
+        /**
+        * An error in the regex `pattern`. Atomic assertion expected after (?( or (?(?C). Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexConditionAtomicAssertionExpected = "CRegexConditionAtomicAssertionExpected",
+        /**
+        * An error in the regex `pattern`. \K is not allowed in `lookarounds=`. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cRegexBackslashKInLookaround = "CRegexBackslashKInLookaround",
+        /**
+        * An error in regex match. An unknown match error has occurred. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexErrorGeneric = "MRegexErrorGeneric",
+        /**
+        * An error in regex match. Invalid replacement string. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexBadreplacement = "MRegexBadreplacement",
+        /**
+        * An error in regex match. Match limit exceeded. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexMatchlimit = "MRegexMatchlimit",
+        /**
+        * An error in regex match. Unknown substring. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexNosubstring = "MRegexNosubstring",
+        /**
+        * An error in regex match. Nonunique substring name. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexNouniquesubstring = "MRegexNouniquesubstring",
+        /**
+        * An error in regex match. Matching depth limit exceeded. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexDepthlimit = "MRegexDepthlimit",
+        /**
+        * An error in regex match. There's an incorrect escape sequence in the replacement string. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexBadrepescape = "MRegexBadrepescape",
+        /**
+        * An error in regex match. Expected closing curly bracket in replacement string. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexRepmissingbrace = "MRegexRepmissingbrace",
+        /**
+        * An error in regex match. There's an incorrect substitution in the replacement string. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexBadsubstitution = "MRegexBadsubstitution",
+        /**
+        * An error in regex match. Match with end before start or start moved backwards is not supported. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexBadsubspattern = "MRegexBadsubspattern",
+        /**
+        * An error in regex match. Recursive loop. Displays as error type #VALUE! in Excel.
+        * Note: The name of this API is likely to change in the near future.
+        * 
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mRegexRecurseLoop = "MRegexRecurseLoop",
+        /**
+        * An unknown regex error occurred. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexErrorGeneric = "ERegexErrorGeneric",
+        /**
+        * No capture groups were found in the regex pattern. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        eRegexNoCaptureGroups = "ERegexNoCaptureGroups",
+        /**
+        * An error caused by the `text` parameter to `TRANSLATE` being too long. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        translateStringTooLong = "TranslateStringTooLong",
+        /**
+        * An error caused because the `source_language` parameter to `TRANSLATE` is not supported. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        translateUnsupportedSrcLanguage = "TranslateUnsupportedSrcLanguage",
+        /**
+        * An error caused because the `target_language` parameter to `TRANSLATE` is not supported. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        translateUnsupportedTargetLanguage = "TranslateUnsupportedTargetLanguage"
     }
     /**
     * Represents the value of a cell containing a #VALUE! error.
@@ -6754,7 +8006,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount" | "ImageFormulaTooManyArgs" | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" | "ImageFormulaInvalidAltText" | "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" | "ImageFormulaInvalidHeight" | "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric" | "CRegexEndBackslash" | "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" | "CRegexQuantifierTooBig" | "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" | "CRegexQuantifierInvalid" | "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" | "CRegexPosixNoSupportCollating" | "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" | "CRegexMissingCommentClosing" | "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" | "CRegexUnmatchedClosingParenthesis" | "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" | "CRegexZeroRelativeReference" | "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" | "CRegexUnknownPosixClass" | "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" | "CRegexUnsupportedEscapeSequence" | "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" | "CRegexEscapeInvalidInVerb" | "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" | "CRegexDuplicateSubpatternName" | "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" | "CRegexMalformedUnicodeProperty" | "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" | "CRegexTooManyNamedSubpatterns" | "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" | "CRegexBackslashOMissingBrace" | "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" | "CRegexVerbUnknown" | "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" | "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" | "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" | "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" | "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" | "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" | "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" | "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" | "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" | "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" | "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage";
     }
     /**
     * Represents the value of a cell containing a type of value which cannot be serialized.
@@ -7356,12 +8608,12 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
      * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
-     * 
+     *
      * [Api set: ExcelApi 1.8]
      *
-     * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
     /** [Api set: ExcelApi 1.2] */
@@ -7610,14 +8862,14 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
+         * Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param cacheUid - Represents the unique identifier (UID) of the image as it appears in the cache. The cache UID can be obtained from JSON representation of the values in the cell.
-         * @returns The base64-encoded image data.
+         * @returns The Base64-encoded image data.
          */
         getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;
         /**
@@ -12931,7 +14183,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.13]
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
          * @returns An array of IDs corresponding to each newly inserted worksheet.
          */
@@ -13697,7 +14949,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
          * @param positionType - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
          * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
@@ -13713,7 +14965,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64-encoded string representing the source workbook file.
+         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
          * @param positionTypeString - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
          * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
@@ -14918,7 +16170,7 @@ export declare namespace Excel {
          */
         getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
         /**
-         * Renders the range as a base64-encoded png image.
+         * Renders the range as a Base64-encoded PNG image.
                     **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
@@ -19575,7 +20827,7 @@ export declare namespace Excel {
          */
         getDataTableOrNullObject(): Excel.ChartDataTable;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -19587,7 +20839,7 @@ export declare namespace Excel {
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -26955,7 +28207,7 @@ export declare namespace Excel {
          */
         category: string;
         /**
-         * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+         * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -31298,12 +32550,12 @@ export declare namespace Excel {
          */
         addGroup(values: Array<string | Shape>): Excel.Shape;
         /**
-         * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that represents the new image.
+         * Creates an image from a Base64-encoded string and adds it to the worksheet. Returns the `Shape` object that represents the new image.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param base64ImageString - A base64-encoded string representing an image in either JPEG or PNG format.
+         * @param base64ImageString - A Base64-encoded string representing an image in either JPEG or PNG format.
          */
         addImage(base64ImageString: string): Excel.Shape;
         /**
@@ -31646,7 +32898,7 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+         * Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -31655,7 +32907,7 @@ export declare namespace Excel {
          */
         getAsImage(format: Excel.PictureFormat): OfficeExtension.ClientResult<string>;
         /**
-         * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+         * Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -37804,6 +39056,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          */
         annotationAdded = "AnnotationAdded",
+        /**
+         * TableQueryRefreshCompleted represents the type of event registered when a table query refresh is completed.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted"
     }
     /**
      * @remarks
@@ -47876,7 +49135,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -54400,7 +55659,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -64179,7 +65438,7 @@ export declare namespace Excel {
              */
             category?: boolean;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

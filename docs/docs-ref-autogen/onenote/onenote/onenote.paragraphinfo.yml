@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#bulletType:member'
     package: onenote!
     fullName: bulletType
-    summary: // Bullet list type of paragraph
+    summary: Bullet list type of paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#indentationLevel:member'
     package: onenote!
     fullName: indentationLevel
-    summary: // Level of indentation of the paragraph
+    summary: Level of indentation of the paragraph.
     remarks: '\[ [API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#index:member'
     package: onenote!
     fullName: index
-    summary: // Index of paragraph in a list
+    summary: Index of paragraph in a list.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#listType:member'
     package: onenote!
     fullName: listType
-    summary: // Type of list in paragraph
+    summary: Type of list in paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -61,7 +61,7 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#numberType:member'
     package: onenote!
     fullName: numberType
-    summary: // Numbered list type of paragraph
+    summary: Numbered list type of paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

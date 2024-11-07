@@ -61,7 +61,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member'
     package: onenote!
     fullName: inkAnalysisOrNull
-    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -97,7 +97,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageData#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: The web url of the page. Read only
+    summary: The web URL of the page. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

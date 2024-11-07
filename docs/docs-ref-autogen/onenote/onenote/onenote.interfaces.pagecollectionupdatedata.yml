@@ -3,7 +3,7 @@ name: OneNote.Interfaces.PageCollectionUpdateData
 uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageCollectionUpdateData
-summary: 'An interface for updating data on the PageCollection object, for use in `pageCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

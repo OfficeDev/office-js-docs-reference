@@ -1,8 +1,11 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
-|[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The base64 string encoding.|
-||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the encoded image.|
+|[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
+||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
+|[BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue)|[errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-errorsubtype-member)|Represents the type of `BlockedErrorCellValue`.|
+|[BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-errorsubtype-member)|Represents the type of `BusyErrorCellValue`.|
+|[CalcErrorCellValue](/javascript/api/excel/excel.calcerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)|Represents the type of `CalcErrorCellValue`.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
 |[CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)|[type](/javascript/api/excel/excel.checkboxcellcontrol#excel-excel-checkboxcellcontrol-type-member)|Represents an interactable control inside of a cell.|
@@ -12,6 +15,7 @@
 |[CommentReply](/javascript/api/excel/excel.commentreply)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))|Assigns the task attached to the comment to the given user as the sole assignee.|
 ||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
+|[ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue)|[errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)|Represents the type of `ConnectErrorCellValue`.|
 |[DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo)|[shortDateTimePattern](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-shortdatetimepattern-member)|Gets the format string for a short date and time value.|
 |[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|
@@ -68,6 +72,7 @@
 ||[basicValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[language](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-language-member)|Represents the runtime language of this external code service.|
 ||[preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)|Represents the preview value shown in the cell.|
+||[provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-provider-member)|Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.|
 ||[type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-type-member)|Represents the type of this cell value.|
 |[Identity](/javascript/api/excel/excel.identity)|[displayName](/javascript/api/excel/excel.identity#excel-excel-identity-displayname-member)|Represents the user's display name.|
 ||[id](/javascript/api/excel/excel.identity#excel-excel-identity-id-member)|Represents the user's unique ID.|
@@ -89,7 +94,7 @@
 ||[getItemOrNullObject(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitemornullobject-member(1))|Gets a linked data type by ID.|
 ||[items](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-items-member)|Gets the loaded child items in this collection.|
 ||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-requestrefreshall-member(1))|Makes a request to refresh all the linked data types in the collection.|
-|[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
+|[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
 |[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
 ||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
 ||[basicType](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
@@ -97,9 +102,11 @@
 ||[image](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-image-member)|Represents the image itself, either cached or encoded.|
 ||[provider](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-provider-member)|Represents information that describes the entity or individual who provided the image.|
 ||[type](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-type-member)|Represents the type of this cell value.|
-|[LocalImageCellValueCacheId](/javascript/api/excel/excel.localimagecellvaluecacheid)|[cacheUid](/javascript/api/excel/excel.localimagecellvaluecacheid#excel-excel-localimagecellvaluecacheid-cacheuid-member)|Represents the image's UID as it appears in the cache.|
+|[LocalImageCellValueCacheId](/javascript/api/excel/excel.localimagecellvaluecacheid)|[cachedUid](/javascript/api/excel/excel.localimagecellvaluecacheid#excel-excel-localimagecellvaluecacheid-cacheduid-member)|Represents the image's UID as it appears in the cache.|
 |[MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol)|[type](/javascript/api/excel/excel.mixedcellcontrol#excel-excel-mixedcellcontrol-type-member)||
+|[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
+|[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
@@ -115,6 +122,7 @@
 |[RangeAreas](/javascript/api/excel/excel.rangeareas)|[clearOrResetContents()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clearorresetcontents-member(1))|Clears the values of the cells in the ranges, with special consideration given to cells containing controls.|
 |[RangeTextRun](/javascript/api/excel/excel.rangetextrun)|[font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)||
 ||[text](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-text-member)||
+|[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
 |[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
 ||[source](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-source-member)|Gets the source of the event.|
@@ -144,6 +152,7 @@
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
 |[UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol)|[type](/javascript/api/excel/excel.unknowncellcontrol#excel-excel-unknowncellcontrol-type-member)||
+|[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|

@@ -57,6 +57,20 @@ properties:
       content: 'preview?: CellValue;'
       return:
         type: '<xref uid="excel!Excel.CellValue:type" />'
+  - name: provider
+    uid: 'excel!Excel.ExternalCodeServiceObjectCellValue#provider:member'
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`<!--
+      -->. This field is not writable.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="excel!Excel.CellValueProviderAttributes:interface" />'
   - name: Python_str
     uid: 'excel!Excel.ExternalCodeServiceObjectCellValue#Python_str:member'
     package: excel!

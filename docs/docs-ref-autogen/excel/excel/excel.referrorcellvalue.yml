@@ -47,11 +47,11 @@ properties:
     syntax:
       content: >-
         errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" |
-        "ExternalLinksCalculatedRef";
+        "ExternalLinksCalculatedRef" | "CorruptCellRef";
       return:
         type: >-
           <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" | "ExternalLinksStructuredRef" |
-          "ExternalLinksCalculatedRef"
+          "ExternalLinksCalculatedRef" | "CorruptCellRef"
   - name: errorType
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!

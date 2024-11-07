@@ -8466,15 +8466,16 @@
 'Office.AppointmentCompose#getItemIdAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/item-id-compose.yaml
 
 
-    Office.context.mailbox.item.getItemIdAsync(function (result) {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+    Office.context.mailbox.item.getItemIdAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(`getItemIdAsync failed with message: ${result.error.message}`);
-        } else {
-            console.log(result.value);
+            return;
         }
+
+        console.log(result.value);
     });
 'Office.AppointmentCompose#getSelectedDataAsync:member(2)':
   - >-
@@ -8498,61 +8499,15 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an item from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-      console.log(result.value);
-    });
-'Office.AppointmentCompose#getSharedPropertiesAsync:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an appointment from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true },
-    function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-        Office.context.mailbox.item.getSharedPropertiesAsync(
-          {
-            // Pass auth token along.
-            asyncContext: result.value
-          },
-          function(result2) {
-            let sharedProperties = result2.value;
-            let delegatePermissions = sharedProperties.delegatePermissions;
-
-            // Determine if user has the appropriate permission to do the operation.
-            if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-              const ewsId = Office.context.mailbox.item.itemId;
-              const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-              let rest_url =
-                sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
-
-              $.ajax({
-                url: rest_url,
-                dataType: "json",
-                headers: { Authorization: "Bearer " + result2.asyncContext }
-              })
-                .done(function(response) {
-                  console.log(response);
-                })
-                .fail(function(error) {
-                  console.error(error);
-                });
-            }
-          }
-        );
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("The current folder or mailbox isn't shared.");
+        return;
       }
+      const sharedProperties = result.value;
+      console.log(`Owner: ${sharedProperties.owner}`);
+      console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+      console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
     });
 'Office.AppointmentCompose#isAllDayEvent:member':
   - >-
@@ -9370,61 +9325,15 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an item from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-      console.log(result.value);
-    });
-'Office.AppointmentRead#getSharedPropertiesAsync:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an appointment from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true },
-    function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-        Office.context.mailbox.item.getSharedPropertiesAsync(
-          {
-            // Pass auth token along.
-            asyncContext: result.value
-          },
-          function(result2) {
-            let sharedProperties = result2.value;
-            let delegatePermissions = sharedProperties.delegatePermissions;
-
-            // Determine if user has the appropriate permission to do the operation.
-            if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-              const ewsId = Office.context.mailbox.item.itemId;
-              const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-              let rest_url =
-                sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
-
-              $.ajax({
-                url: rest_url,
-                dataType: "json",
-                headers: { Authorization: "Bearer " + result2.asyncContext }
-              })
-                .done(function(response) {
-                  console.log(response);
-                })
-                .fail(function(error) {
-                  console.error(error);
-                });
-            }
-          }
-        );
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("The current folder or mailbox isn't shared.");
+        return;
       }
+      const sharedProperties = result.value;
+      console.log(`Owner: ${sharedProperties.owner}`);
+      console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+      console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
     });
 'Office.AppointmentRead#itemClass:member':
   - >-
@@ -9673,6 +9582,43 @@
 
 
     console.log(`Subject: ${Office.context.mailbox.item.subject}`);
+'Office.Body:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
+
+
+    const mailItem = Office.context.mailbox.item;
+
+    const base64String =
+      "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAnUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN0S+bUAAAAMdFJOUwAQIDBAUI+fr7/P7yEupu8AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVGhD7dfLdoMwDEVR6Cspzf9/b20QYOthS5Zn0Z2kVdY6O2WULrFYLBaLxd5ur4mDZD14b8ogWS/dtxV+dmx9ysA2QUj9TQRWv5D7HyKwuIW9n0vc8tkpHP0W4BOg3wQ8wtlvA+PC1e8Ao8Ld7wFjQtHvAiNC2e8DdqHqKwCrUPc1gE1AfRVgEXBfB+gF0lcCWoH2tYBOYPpqQCNwfT3QF9i+AegJfN8CtAWhbwJagtS3AbIg9o2AJMh9M5C+SVGBvx6zAfmT0r+Bv8JMwP4kyFPir+cswF5KL3WLv14zAFBCLf56Tw9cparFX4upgaJUtPhrOS1QlY5W+vWTXrGgBFB/b72ev3/0igUdQPppP/nfowfKUUEFcP207y/yxKmgAYQ+PywoAFOfCH3A2MdCFzD3kdADBvq10AGG+pXQBgb7pdAEhvuF0AIc/VtoAK7+JciAs38KIuDugyAC/v4hiMCE/i7IwLRBsh68N2WQjMVisVgs9i5bln8LGScNcCrONQAAAABJRU5ErkJggg==";
+
+    // Get the current body of the message or appointment.
+
+    mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
+      if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
+        // Insert the Base64-encoded image to the beginning of the body.
+        const options = { isInline: true, asyncContext: bodyResult.value };
+        mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
+          if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
+            let body = attachResult.asyncContext;
+            body = body.replace("<p class=MsoNormal>", `<p class=MsoNormal><img src="cid:sample.png">`);
+
+            mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
+              if (setResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("Inline Base64-encoded image added to the body.");
+              } else {
+                console.log(setResult.error.message);
+              }
+            });
+          } else {
+            console.log(attachResult.error.message);
+          }
+        });
+      } else {
+        console.log(bodyResult.error.message);
+      }
+    });
 'Office.Body#appendOnSendAsync:member(1)':
   - >-
     // Link to full sample:
@@ -9719,7 +9665,7 @@
 
     mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
       if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-        // Insert the Base64 image to the beginning of the body.
+        // Insert the Base64-encoded image to the beginning of the body.
         const options = { isInline: true, asyncContext: bodyResult.value };
         mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
           if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -9728,7 +9674,7 @@
 
             mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
               if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Inline Base64 image added to the body.");
+                console.log("Inline Base64-encoded image added to the body.");
               } else {
                 console.log(setResult.error.message);
               }
@@ -9838,7 +9784,7 @@
 
     mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
       if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-        // Insert the Base64 image to the beginning of the body.
+        // Insert the Base64-encoded image to the beginning of the body.
         const options = { isInline: true, asyncContext: bodyResult.value };
         mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
           if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -9847,7 +9793,7 @@
 
             mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
               if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Inline Base64 image added to the body.");
+                console.log("Inline Base64-encoded image added to the body.");
               } else {
                 console.log(setResult.error.message);
               }
@@ -10479,6 +10425,8 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+    // Get the EWS URL and EWS item ID.
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     const ewsId = Office.context.mailbox.item.itemId;
@@ -10486,13 +10434,15 @@
     console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-    console.log("REST URL: " + Office.context.mailbox.restUrl);
+    // Convert the EWS item ID to a REST-formatted ID.
 
     const restId = Office.context.mailbox.convertToRestId(ewsId,
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("REST item ID: " + restId);
 
+
+    // Convert the REST-formatted ID back to an EWS-formatted ID.
 
     const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
     Office.MailboxEnums.RestVersion.v2_0);
@@ -10501,28 +10451,10 @@
 'Office.Mailbox#convertToRestId:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
-    (result) {
-        const ewsId = Office.context.mailbox.item.itemId;
-        const token = result.value;
-        const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-        const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', getMessageUrl);
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-        xhr.onload = function (e) {
-            console.log(this.response);
-        }
-        xhr.send();
-    });
-  - >-
-    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
+
+    // Get the EWS URL and EWS item ID.
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -10531,13 +10463,15 @@
     console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-    console.log("REST URL: " + Office.context.mailbox.restUrl);
+    // Convert the EWS item ID to a REST-formatted ID.
 
     const restId = Office.context.mailbox.convertToRestId(ewsId,
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("REST item ID: " + restId);
 
+
+    // Convert the REST-formatted ID back to an EWS-formatted ID.
 
     const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
     Office.MailboxEnums.RestVersion.v2_0);
@@ -10738,6 +10672,8 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+    // Get the EWS URL and EWS item ID.
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     const ewsId = Office.context.mailbox.item.itemId;
@@ -10745,7 +10681,7 @@
     console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-    console.log("REST URL: " + Office.context.mailbox.restUrl);
+    // Convert the EWS item ID to a REST-formatted ID.
 
     const restId = Office.context.mailbox.convertToRestId(ewsId,
     Office.MailboxEnums.RestVersion.v2_0);
@@ -10753,43 +10689,25 @@
     console.log("REST item ID: " + restId);
 
 
+    // Convert the REST-formatted ID back to an EWS-formatted ID.
+
     const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
-'Office.Mailbox#getCallbackTokenAsync:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
-    (result) {
-        const ewsId = Office.context.mailbox.item.itemId;
-        const token = result.value;
-        const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-        const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', getMessageUrl);
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-        xhr.onload = function (e) {
-            console.log(this.response);
-        }
-        xhr.send();
-    });
 'Office.Mailbox#getCallbackTokenAsync:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
 
 
-    Office.context.mailbox.getCallbackTokenAsync(function (result) {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+    Office.context.mailbox.getCallbackTokenAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(`Token retrieval failed with message: ${result.error.message}`);
-        } else {
-            console.log(result.value);
+            return;
         }
+
+        console.log(result.value);
     });
 'Office.Mailbox#getSelectedItemsAsync:member(2)':
   - >-
@@ -10821,12 +10739,13 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
 
-    Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-            console.error(`Token retrieval failed with message: ${result.error.message}`);
-        } else {
-            console.log(result.value);
+    Office.context.mailbox.getUserIdentityTokenAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(`Token retrieval failed with message: ${result.error.message}`)
+            return;
         }
+
+        console.log(result.value);
     });
 'Office.Mailbox#makeEwsRequestAsync:member(1)':
   - >-
@@ -10889,7 +10808,7 @@
         '  </soap:Body>'+
         '</soap:Envelope>';
 
-    Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+    Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
         console.log(result);
     });
 'Office.Mailbox#masterCategories:member':
@@ -10948,51 +10867,6 @@
         console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
       }
     });
-'Office.Mailbox#restUrl:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
-    (result) {
-        const ewsId = Office.context.mailbox.item.itemId;
-        const token = result.value;
-        const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-        const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', getMessageUrl);
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-        xhr.onload = function (e) {
-            console.log(this.response);
-        }
-        xhr.send();
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
-
-
-    console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-
-    const ewsId = Office.context.mailbox.item.itemId;
-
-    console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-
-    console.log("REST URL: " + Office.context.mailbox.restUrl);
-
-    const restId = Office.context.mailbox.convertToRestId(ewsId,
-    Office.MailboxEnums.RestVersion.v2_0);
-
-    console.log("REST item ID: " + restId);
-
-
-    const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
-    Office.MailboxEnums.RestVersion.v2_0);
-
-    console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.MailboxEnums.ActionType:enum':
   - >-
     // Link to full sample:
@@ -11212,53 +11086,6 @@
         return;
       }
       console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
-    });
-'Office.MailboxEnums.DelegatePermissions:enum':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an appointment from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true },
-    function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-        Office.context.mailbox.item.getSharedPropertiesAsync(
-          {
-            // Pass auth token along.
-            asyncContext: result.value
-          },
-          function(result2) {
-            let sharedProperties = result2.value;
-            let delegatePermissions = sharedProperties.delegatePermissions;
-
-            // Determine if user has the appropriate permission to do the operation.
-            if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-              const ewsId = Office.context.mailbox.item.itemId;
-              const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-              let rest_url =
-                sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
-
-              $.ajax({
-                url: rest_url,
-                dataType: "json",
-                headers: { Authorization: "Bearer " + result2.asyncContext }
-              })
-                .done(function(response) {
-                  console.log(response);
-                })
-                .fail(function(error) {
-                  console.error(error);
-                });
-            }
-          }
-        );
-      }
     });
 'Office.MailboxEnums.ItemNotificationMessageType:enum':
   - >-
@@ -11606,24 +11433,32 @@
 'Office.MailboxEnums.RestVersion:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
-    (result) {
-        const ewsId = Office.context.mailbox.item.itemId;
-        const token = result.value;
-        const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-        const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', getMessageUrl);
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-        xhr.onload = function (e) {
-            console.log(this.response);
-        }
-        xhr.send();
-    });
+    // Get the EWS URL and EWS item ID.
+
+    console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
+
+    const ewsId = Office.context.mailbox.item.itemId;
+
+    console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
+
+
+    // Convert the EWS item ID to a REST-formatted ID.
+
+    const restId = Office.context.mailbox.convertToRestId(ewsId,
+    Office.MailboxEnums.RestVersion.v2_0);
+
+    console.log("REST item ID: " + restId);
+
+
+    // Convert the REST-formatted ID back to an EWS-formatted ID.
+
+    const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
+    Office.MailboxEnums.RestVersion.v2_0);
+
+    console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.MailboxEnums.SourceProperty:enum':
   - >-
     // Link to full sample:
@@ -12195,15 +12030,16 @@
 'Office.MessageCompose#getItemIdAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/item-id-compose.yaml
 
 
-    Office.context.mailbox.item.getItemIdAsync(function (result) {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+    Office.context.mailbox.item.getItemIdAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
             console.error(`getItemIdAsync failed with message: ${result.error.message}`);
-        } else {
-            console.log(result.value);
+            return;
         }
+
+        console.log(result.value);
     });
 'Office.MessageCompose#getSelectedDataAsync:member(2)':
   - >-
@@ -12227,61 +12063,15 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an item from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-      console.log(result.value);
-    });
-'Office.MessageCompose#getSharedPropertiesAsync:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on a message from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true },
-    function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-        Office.context.mailbox.item.getSharedPropertiesAsync(
-          {
-            // Pass auth token along.
-            asyncContext: result.value
-          },
-          function(result2) {
-            let sharedProperties = result2.value;
-            let delegatePermissions = sharedProperties.delegatePermissions;
-
-            // Determine if user has the appropriate permission to do the operation.
-            if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-              const ewsId = Office.context.mailbox.item.itemId;
-              const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-              let rest_url =
-                sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/messages/" + restId;
-
-              $.ajax({
-                url: rest_url,
-                dataType: "json",
-                headers: { Authorization: "Bearer " + result2.asyncContext }
-              })
-                .done(function(response) {
-                  console.log(response);
-                })
-                .fail(function(error) {
-                  console.error(error);
-                });
-            }
-          }
-        );
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("The current folder or mailbox isn't shared.");
+        return;
       }
+      const sharedProperties = result.value;
+      console.log(`Owner: ${sharedProperties.owner}`);
+      console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+      console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
     });
 'Office.MessageCompose#inReplyTo:member':
   - >-
@@ -12950,61 +12740,15 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
 
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on an item from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
-      console.log(result.value);
-    });
-'Office.MessageRead#getSharedPropertiesAsync:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-    if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
-      console.error("Try this sample on a message from a shared folder.");
-      return;
-    }
-
-
-    Office.context.mailbox.getCallbackTokenAsync({ isRest: true },
-    function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
-        Office.context.mailbox.item.getSharedPropertiesAsync(
-          {
-            // Pass auth token along.
-            asyncContext: result.value
-          },
-          function(result2) {
-            let sharedProperties = result2.value;
-            let delegatePermissions = sharedProperties.delegatePermissions;
-
-            // Determine if user has the appropriate permission to do the operation.
-            if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-              const ewsId = Office.context.mailbox.item.itemId;
-              const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-              let rest_url =
-                sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/messages/" + restId;
-
-              $.ajax({
-                url: rest_url,
-                dataType: "json",
-                headers: { Authorization: "Bearer " + result2.asyncContext }
-              })
-                .done(function(response) {
-                  console.log(response);
-                })
-                .fail(function(error) {
-                  console.error(error);
-                });
-            }
-          }
-        );
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("The current folder or mailbox isn't shared.");
+        return;
       }
+      const sharedProperties = result.value;
+      console.log(`Owner: ${sharedProperties.owner}`);
+      console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+      console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
     });
 'Office.MessageRead#internetMessageId:member':
   - >-
@@ -14017,6 +13761,22 @@
         console.log("Failed to set sessionData. Error: " + JSON.stringify(asyncResult.error));
       }
     });
+'Office.SharedProperties:interface':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
+
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("The current folder or mailbox isn't shared.");
+        return;
+      }
+      const sharedProperties = result.value;
+      console.log(`Owner: ${sharedProperties.owner}`);
+      console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+      console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
+    });
 'Office.Time#getAsync:member(2)':
   - >-
     // Link to full sample:
@@ -14144,7 +13904,7 @@
 'PowerPoint.Hyperlink:class':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-hyperlinks.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
 
 
     // Gets the hyperlinks found in the first selected slide.
@@ -14163,7 +13923,7 @@
 'PowerPoint.HyperlinkCollection:class':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-hyperlinks.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
 
 
     // Gets the hyperlinks found in the first selected slide.

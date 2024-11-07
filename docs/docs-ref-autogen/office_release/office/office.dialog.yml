@@ -169,6 +169,35 @@ methods:
       - If the `messageOptions` parameter is used, [DialogOrigin
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets) is also
       required.
+
+
+      Although classic Outlook on Mac doesn't support Mailbox 1.9, it does support DialogApi 1.2.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to send information about the current active worksheet to the dialog.
+
+      await Excel.run(async (context) => {
+          const worksheet = context.workbook.worksheets.getActiveWorksheet();
+          worksheet.load();
+          await context.sync();
+          worksheetPropertiesChanged(worksheet);
+      });
+
+
+      ...
+
+
+      function worksheetPropertiesChanged(currentWorksheet) {
+          const messageToDialog = JSON.stringify(currentWorksheet);
+          dialog.messageChild(messageToDialog);
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

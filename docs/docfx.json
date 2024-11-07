@@ -109,6 +109,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "office-runtime",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "office-runtime",
+        "src": "docs-ref-autogen/office-runtime",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api/office-js-docs-reference"
@@ -597,6 +609,18 @@
         "files": ["**/*.md", "**/*.yml"],
         "group": "powerpoint-js-1.5",
         "src": "docs-ref-autogen/powerpoint_1_5",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.6",
+        "src": "docs-ref-autogen/powerpoint_1_6",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.6",
+        "src": "docs-ref-autogen/powerpoint_1_6",
         "dest": "api"
       },
       {
@@ -959,6 +983,10 @@
         "dest": "powerpoint-js-1.5",
         "moniker_range": "powerpoint-js-1.5"
       },
+      "powerpoint-js-1.6": {
+        "dest": "powerpoint-js-1.6",
+        "moniker_range": "powerpoint-js-1.6"
+      },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
         "moniker_range": "visio-js-1.1"
@@ -1033,6 +1061,10 @@
       },
       "common-js-preview": {
         "dest": "common-js-preview",
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
+      },
+      "office-runtime": {
+        "dest": "office-runtime",
         "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
@@ -1110,6 +1142,7 @@
         "docs-ref-autogen/powerpoint_1_3/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_4/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_5/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_6/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
         "docs-ref-autogen/word_1_1/**": "word",

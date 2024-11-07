@@ -47,12 +47,24 @@ properties:
     syntax:
       content: >-
         errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting"
-        | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
+        | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" |
+        "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" |
+        "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" |
+        "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" |
+        "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" |
+        "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota"
+        | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
       return:
         type: >-
           <xref uid="excel!Excel.BlockedErrorCellValueSubType:enum" /> | "Unknown" | "DataTypeRestrictedDomain" |
           "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" |
-          "SignInError" | "NoLicense"
+          "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" |
+          "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" |
+          "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" |
+          "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" |
+          "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" |
+          "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" |
+          "UnsupportedInCalculationMode"
   - name: errorType
     uid: 'excel!Excel.BlockedErrorCellValue#errorType:member'
     package: excel!

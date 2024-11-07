@@ -85,12 +85,12 @@ export declare namespace Excel {
     
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
      * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
-     * 
+     *
      * [Api set: ExcelApi 1.8]
      *
-     * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
     /** [Api set: ExcelApi 1.2] */
@@ -2458,7 +2458,7 @@ export declare namespace Excel {
         
         
         /**
-         * Renders the range as a base64-encoded png image.
+         * Renders the range as a Base64-encoded PNG image.
                     **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * @remarks
@@ -5479,7 +5479,7 @@ export declare namespace Excel {
         
         
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -5491,7 +5491,7 @@ export declare namespace Excel {
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
-         * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+         * Renders the chart as a Base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
          *
          * @remarks
@@ -11124,7 +11124,7 @@ export declare namespace Excel {
          */
         category: string;
         /**
-         * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+         * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -23654,7 +23654,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -28095,7 +28095,7 @@ export declare namespace Excel {
              */
             category?: string;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -34408,7 +34408,7 @@ export declare namespace Excel {
              */
             category?: boolean;
             /**
-             * The comment field in the metadata of the workbook. These have no connection to comments by users made in the workbork.
+             * The Comments field in the metadata of the workbook. These have no connection to comments by users made in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]

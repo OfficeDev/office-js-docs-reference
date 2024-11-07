@@ -45,7 +45,7 @@
 |[DocumentProperties](/javascript/api/word/word.documentproperties)|[applicationName](/javascript/api/word/word.documentproperties#word-word-documentproperties-applicationname-member)|Gets the application name of the document.|
 ||[author](/javascript/api/word/word.documentproperties#word-word-documentproperties-author-member)|Specifies the author of the document.|
 ||[category](/javascript/api/word/word.documentproperties#word-word-documentproperties-category-member)|Specifies the category of the document.|
-||[comments](/javascript/api/word/word.documentproperties#word-word-documentproperties-comments-member)|Specifies the comments of the document.|
+||[comments](/javascript/api/word/word.documentproperties#word-word-documentproperties-comments-member)|Specifies the Comments field in the metadata of the document.|
 ||[company](/javascript/api/word/word.documentproperties#word-word-documentproperties-company-member)|Specifies the company of the document.|
 ||[creationDate](/javascript/api/word/word.documentproperties#word-word-documentproperties-creationdate-member)|Gets the creation date of the document.|
 ||[customProperties](/javascript/api/word/word.documentproperties#word-word-documentproperties-customproperties-member)|Gets the collection of custom properties of the document.|

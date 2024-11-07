@@ -310,22 +310,9 @@ properties:
     package: outlook!
     fullName: itemId
     summary: >-
-      Gets the [Exchange Web Services item
+      Gets the [Exchange Web Services (EWS) item
       identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
-      for the current item.
-
-
-      The `itemId` property is not available in compose mode. If an item identifier is required, the `saveAsync` method
-      can be used to save the item to the store, which will return the item identifier in the `asyncResult.value`
-      parameter in the callback function.
-
-
-      **Note**: The identifier returned by the `itemId` property is the same as the [Exchange Web Services item
-      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
-      -->. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
-      -->. For more details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id)<!-- -->.
+      of the current item.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -335,6 +322,20 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - The `itemId` property isn't available in compose mode. If an item identifier is required, the
+      `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the
+      item identifier in the `asyncResult.value` parameter in the callback function. If the item is already saved, you
+      can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->.
 
 
       #### Examples
@@ -2017,6 +2018,23 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error("Failed to remove event handler: " + asyncResult.error.message);
+              return;
+          }
+
+          console.log("Event handler removed successfully.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3569,7 +3569,8 @@ export declare namespace Office {
          *
          * - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
          *
-         * - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The user is not signed into Office").
+         * - In Outlook on the web, this API isn't supported if you use Firefox with Enhanced Tracking Protection turned on.
+         * This results in error 13001 ("The user is not signed into Office").
          *
          * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, if you use the
          * {@link https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1) | displayDialogAsync}
@@ -4602,7 +4603,7 @@ export declare namespace Office {
         /**
          * Gets the license information for the user's Office installation.
          */
-        license: string;
+        license: object;
         /**
          Provides access to the Microsoft Outlook add-in object model.
          *
@@ -5467,6 +5468,8 @@ export declare namespace Office {
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.9}
          *
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+         *
+         * Although classic Outlook on Mac doesn't support Mailbox 1.9, it does support DialogApi 1.2.
          *
          * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
          * @param messageOptions - Optional. Provides options for how to send the message. 
@@ -7725,7 +7728,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if required.
+         * Files in the "compressed" format will return a byte array that can be transformed to a Base64-encoded string if required.
          */
         data: any;
         /**
@@ -8625,18 +8628,22 @@ export declare namespace Office {
          */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
-         * Delivers a message from the dialog box to its parent/opener page. 
-         * 
+         * Delivers a message from the dialog box to its parent/opener page.
+         *
          * @remarks
-         * 
-         * **Requirement sets**: 
-         * 
+         *
+         * **Applications**: Excel, Outlook, PowerPoint, Word
+         *
+         * **Requirement sets**:
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-         * 
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
+         *
          * - If the `messageOptions` parameter is used, {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
-         * 
-         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
-         * @param messageOptions - Optional. Provides options for how to send the message. 
+         *
+         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent.
+         * @param messageOptions - Optional. Provides options for how to send the message.
          */
          messageParent(message: string, messageOptions?: DialogMessageOptions): void;
         /**

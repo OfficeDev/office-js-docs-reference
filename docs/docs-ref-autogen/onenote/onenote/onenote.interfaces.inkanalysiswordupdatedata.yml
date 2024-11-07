@@ -3,7 +3,7 @@ name: OneNote.Interfaces.InkAnalysisWordUpdateData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
-summary: 'An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `InkAnalysisWord` object, for use in `inkAnalysisWord.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

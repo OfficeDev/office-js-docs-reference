@@ -64,7 +64,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.2]
          *
-         * @param base64File - The base64-encoded string representing the source presentation file.
+         * @param base64File - The Base64-encoded string representing the source presentation file.
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
@@ -123,6 +123,8 @@ export declare namespace PowerPoint {
          */
         slideMasterId?: string;
     }
+    
+    
     
     
     
@@ -554,6 +556,7 @@ export declare namespace PowerPoint {
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the layout of the slide.
          *
@@ -813,9 +816,8 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
-                    and properties}.
+         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+                    {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -940,6 +942,15 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
+        export interface HyperlinkUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`. */
+        export interface HyperlinkCollectionUpdateData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -1037,6 +1048,15 @@ export declare namespace PowerPoint {
         export interface PresentationData {
             
             title?: string;
+        }
+        /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
+        export interface HyperlinkData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `hyperlinkCollection.toJSON()`. */
+        export interface HyperlinkCollectionData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -1204,6 +1224,8 @@ export declare namespace PowerPoint {
             
             title?: boolean;
         }
+        
+        
         /**
          * Represents the collection of shapes.
          *
@@ -1522,11 +1544,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

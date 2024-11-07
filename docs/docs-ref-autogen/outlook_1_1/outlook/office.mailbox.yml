@@ -22,6 +22,38 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  // Handle error.
+              }
+          });
+      });
+  });
+
+
+  function loadNewItem(eventArgs) {
+      const item = Office.context.mailbox.item;
+
+      // Check that item isn't null.
+      if (item !== null) {
+          // Work with item. For example, define and call a function that
+          // loads the properties of the newly selected item.
+          loadProps(item);
+      }
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -167,6 +199,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
 
+      // Get the EWS URL and EWS item ID.
+
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -174,12 +208,14 @@ properties:
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
-      console.log("REST URL: " + Office.context.mailbox.restUrl);
+      // Convert the EWS item ID to a REST-formatted ID.
 
       const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
+
+      // Convert the REST-formatted ID back to an EWS-formatted ID.
 
       const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -207,8 +243,16 @@ properties:
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
-      see [Implement a pinnable task pane in
+      **Important**:
+
+
+      - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must
+      be turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to
+      preview messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
+
+
+      - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see [Implement a
+      pinnable task pane in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''
@@ -652,33 +696,6 @@ methods:
 
       - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
       try again.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
-
-
-      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          const ewsId = Office.context.mailbox.item.itemId;
-          const token = result.value;
-          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
-                  
-          const xhr = new XMLHttpRequest();
-          xhr.open('GET', getMessageUrl);
-          xhr.setRequestHeader("Authorization", "Bearer " + token);
-          xhr.onload = function (e) {
-              console.log(this.response);
-          }
-          xhr.send();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -761,12 +778,13 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
 
-      Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`);
-          } else {
-              console.log(result.value);
+      Office.context.mailbox.getUserIdentityTokenAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.error(`Token retrieval failed with message: ${result.error.message}`)
+              return;
           }
+
+          console.log(result.value);
       });
 
       ```
@@ -967,7 +985,7 @@ methods:
           '  </soap:Body>'+
           '</soap:Envelope>';
 
-      Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
           console.log(result);
       });
 

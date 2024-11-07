@@ -64,7 +64,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.2]
          *
-         * @param base64File - The base64-encoded string representing the source presentation file.
+         * @param base64File - The Base64-encoded string representing the source presentation file.
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
@@ -123,6 +123,8 @@ export declare namespace PowerPoint {
          */
         slideMasterId?: string;
     }
+    
+    
     /**
      * Specifies the connector type for line shapes.
      *
@@ -1269,73 +1271,73 @@ export declare namespace PowerPoint {
      */
     enum ShapeLineDashStyle {
         /**
-         * The dash line pattern
+         * The dash line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         dash = "Dash",
         /**
-         * The dash-dot line pattern
+         * The dash-dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         dashDot = "DashDot",
         /**
-         * The dash-dot-dot line pattern
+         * The dash-dot-dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         dashDotDot = "DashDotDot",
         /**
-         * The long dash line pattern
+         * The long dash line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         longDash = "LongDash",
         /**
-         * The long dash-dot line pattern
+         * The long dash-dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         longDashDot = "LongDashDot",
         /**
-         * The round dot line pattern
+         * The round dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         roundDot = "RoundDot",
         /**
-         * The solid line pattern
+         * The solid line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         solid = "Solid",
         /**
-         * The square dot line pattern
+         * The square dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         squareDot = "SquareDot",
         /**
-         * The long dash-dot-dot line pattern
+         * The long dash-dot-dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         longDashDotDot = "LongDashDotDot",
         /**
-         * The system dash line pattern
+         * The system dash line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         systemDash = "SystemDash",
         /**
-         * The system dot line pattern
+         * The system dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         systemDot = "SystemDot",
         /**
-         * The system dash-dot line pattern
+         * The system dash-dot line pattern.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
@@ -1504,7 +1506,7 @@ export declare namespace PowerPoint {
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
                 If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
-                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment }.
+                To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment}.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
@@ -2021,6 +2023,7 @@ export declare namespace PowerPoint {
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the layout of the slide.
          *
@@ -2338,35 +2341,29 @@ export declare namespace PowerPoint {
          */
         unsupported = "Unsupported",
         /**
-         * The shape is an image
+         * The shape is an image.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         image = "Image",
         /**
-         * The shape is a geometric shape such as rectangle
+         * The shape is a geometric shape such as rectangle.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         geometricShape = "GeometricShape",
         /**
-         * The shape is a group shape which contains sub-shapes
+         * The shape is a group shape which contains sub-shapes.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         group = "Group",
         /**
-         * The shape is a line
+         * The shape is a line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         line = "Line",
-        /**
-         * The shape is a table
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        table = "Table",
     }
     /**
      * Determines the type of automatic sizing allowed.
@@ -2827,7 +2824,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
+        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
         /**
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
@@ -2981,9 +2978,8 @@ export declare namespace PowerPoint {
          */
         getItemAt(index: number): PowerPoint.Slide;
         /**
-         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
-                    see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
-                    and properties}.
+         * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see
+                    {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
@@ -3107,6 +3103,15 @@ export declare namespace PowerPoint {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
+        export interface HyperlinkUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`. */
+        export interface HyperlinkCollectionUpdateData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -3379,6 +3384,15 @@ export declare namespace PowerPoint {
         export interface PresentationData {
             
             title?: string;
+        }
+        /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
+        export interface HyperlinkData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `hyperlinkCollection.toJSON()`. */
+        export interface HyperlinkCollectionData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -3701,7 +3715,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table";
+            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -3738,6 +3752,8 @@ export declare namespace PowerPoint {
             
             title?: boolean;
         }
+        
+        
         /**
          * Represents the collection of shapes.
          *
@@ -4453,11 +4469,11 @@ export declare namespace PowerPoint {
 }
 export declare namespace PowerPoint {
     /**
-     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.
+     * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded .pptx file.
      *
      * [Api set: PowerPointApi 1.1]
      *
-     * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
+     * @param base64File - Optional. The Base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }

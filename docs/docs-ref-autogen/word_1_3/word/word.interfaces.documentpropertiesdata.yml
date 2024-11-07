@@ -49,7 +49,9 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#comments:member'
     package: word!
     fullName: comments
-    summary: Specifies the comments of the document.
+    summary: >-
+      Specifies the Comments field in the metadata of the document. These have no connection to comments by users made
+      in the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

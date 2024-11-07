@@ -373,18 +373,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -411,18 +417,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -897,24 +909,23 @@ export declare namespace Office {
          */
         itemClass: string;
         /**
-         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
-         * for the current item.
-         *
-         * The `itemId` property is not available in compose mode.
-         * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
-         * in the `asyncResult.value` parameter in the callback function.
-         *
-         * **Note**: The identifier returned by the `itemId` property is the same as the
-         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
-         * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
-         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}
+         * of the current item.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - The `itemId` property isn't available in compose mode.
+         * If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier
+         * in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+         *
+         * - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          */
         itemId: string;
         /**
@@ -1898,10 +1909,16 @@ export declare namespace Office {
          * Gets the email address type of a recipient.
          * 
          * @remarks
-         * **Important**: A `recipientType` property value isn't returned by the 
+         * **Important**:
+         *
+         * - A `recipientType` property value isn't returned by the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync}
          * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
          * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
+         *
+         * - While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          */
         recipientType: MailboxEnums.RecipientType | string;
     }
@@ -2321,7 +2338,13 @@ export declare namespace Office {
          * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
          * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
          *
-         * **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
+         * **Important**:
+         *
+         * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+         * For guidance on how to configure the Reading Pane, see
+         * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
+         *
+         * - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler | Implement a pinnable task pane in Outlook}.
          */
         item?: Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose & AppointmentRead;
@@ -2739,9 +2762,15 @@ export declare namespace Office {
      /**
      * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
      *
-     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+     * **Important**:
+     *
+     * - This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
+     *
+     * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+     * For guidance on how to configure the Reading Pane, see
+     * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
      *
      * Parent interfaces:
      *
@@ -2864,18 +2893,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -2901,18 +2936,24 @@ export declare namespace Office {
          *
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
-         *
-         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
-         * introduced with requirement set 1.8.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
+         * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
+         * specifies `no-cache`, `no-store`, or similar options in the HTTP response. However, when you're developing the add-in and making changes to files,
+         * caching can prevent you from seeing your changes. We recommend using `Cache-Control` headers during development.
+         *
+         * - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
          * **Errors**:
          *
@@ -3127,9 +3168,15 @@ export declare namespace Office {
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
-     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+     * **Important**:
+     *
+     * - This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
      * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
+     *
+     * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
+     * For guidance on how to configure the Reading Pane, see
+     * {@link https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0 | Use and configure the Reading Pane to preview messages}.
      *
      * Parent interfaces:
      *
@@ -3298,6 +3345,14 @@ export declare namespace Office {
          *     <td>New messages and message replies</td>
          *   </tr>
          *   <tr>
+         *     <td>IPM.Note.SMIME</td>
+         *     <td>Encrypted messages that can also be signed</td>
+         *   </tr>
+         *   <tr>
+         *     <td>IPM.Note.SMIME.MultipartSigned</td>
+         *     <td>Clear-signed messages</td>
+         *   </tr>
+         *   <tr>
          *     <td>IPM.Schedule.Meeting.Request</td>
          *     <td>Meeting requests</td>
          *   </tr>
@@ -3323,24 +3378,23 @@ export declare namespace Office {
          */
         itemClass: string;
         /**
-         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
-         * for the current item.
-         *
-         * The `itemId` property is not available in compose mode.
-         * If an item identifier is required, the `saveAsync` method can be used to save the item to the store, which will return the item identifier
-         * in the `asyncResult.value` parameter in the callback function.
-         *
-         * **Note**: The identifier returned by the `itemId` property is the same as the
-         * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
-         * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
-         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+         * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services (EWS) item identifier}
+         * of the current item.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `itemId` property isn't available in compose mode.
+         * If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier
+         * in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
+         *
+         * - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
          */
         itemId: string;
         /**
@@ -3864,6 +3918,10 @@ export declare namespace Office {
          * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name.
          * For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
          *
+         * While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -3908,6 +3966,10 @@ export declare namespace Office {
          * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
          * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name.
          * For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         *
+         * While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account,
+         * the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account.
+         * To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of

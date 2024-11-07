@@ -250,6 +250,13 @@ methods:
       contact's email address in the `displayName` property of the associated
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
       name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
+
+
+      While composing a mail item, when you switch to a sender account that's on a different domain than that of the
+      previously selected sender account, the value of the `recipientType` property for existing recipients isn't
+      updated and will still be based on the domain of the previously selected account. To get the correct recipient
+      types after switching accounts, you must first remove the existing recipients, then add them back to the mail
+      item.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -334,6 +341,13 @@ methods:
       contact's email address in the `displayName` property of the associated
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
       name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
+
+
+      While composing a mail item, when you switch to a sender account that's on a different domain than that of the
+      previously selected sender account, the value of the `recipientType` property for existing recipients isn't
+      updated and will still be based on the domain of the previously selected account. To get the correct recipient
+      types after switching accounts, you must first remove the existing recipients, then add them back to the mail
+      item.
 
 
       #### Examples

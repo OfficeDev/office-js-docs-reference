@@ -875,7 +875,7 @@ methods:
         OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: base64File
-          description: Required. The base64-encoded string representing the source workbook file.
+          description: Required. The Base64-encoded string representing the source workbook file.
           type: string
         - id: options
           description: >-

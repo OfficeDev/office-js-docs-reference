@@ -2042,6 +2042,14 @@ Office.Auth:interface:
             console.log("Error obtaining token", result.error);
         }
     });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -2529,6 +2537,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -2566,6 +2583,18 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
@@ -2628,6 +2657,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -2647,14 +2723,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -3267,6 +3358,22 @@ Office.Dialog#close:member(1):
             });
         }
     );
+Office.Dialog#messageChild:member(1):
+  - |-
+    // The following example shows how to send information about the current active worksheet to the dialog.
+    await Excel.run(async (context) => {
+        const worksheet = context.workbook.worksheets.getActiveWorksheet();
+        worksheet.load();
+        await context.sync();
+        worksheetPropertiesChanged(worksheet);
+    });
+
+    ...
+
+    function worksheetPropertiesChanged(currentWorksheet) {
+        const messageToDialog = JSON.stringify(currentWorksheet);
+        dialog.messageChild(messageToDialog);
+    }
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -5993,6 +6100,31 @@ OfficeExtension.LoadOption#top:member:
             })
         });
 
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = OfficeRuntime.context.auth;
+    const accessToken = authContext.getAccessTokenAsync();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
@@ -7560,15 +7692,13 @@ Office.AppointmentCompose#getInitializationContextAsync:member(1):
 Office.AppointmentCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
-    Office.initialize = function () {
-        Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    };
+    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
 
     function getCallback(asyncResult) {
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log("Selected text in " + prop + ": " + text);
+        console.log(`Selected text in ${prop}: ${text}`);
     }
 Office.AppointmentCompose#location:member:
   - |-
@@ -7588,6 +7718,16 @@ Office.AppointmentCompose#optionalAttendees:member:
     function callback(asyncResult) {
         const arrayOfOptionalAttendeesRecipients = asyncResult.value;
     }
+Office.AppointmentCompose#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.AppointmentCompose#requiredAttendees:member:
   - |-
     Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -7835,10 +7975,55 @@ Office.AppointmentRead#location:member:
   - |-
     const location = Office.context.mailbox.item.location;
     console.log("location: " + location);
+Office.AppointmentRead#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.AppointmentRead#sensitivity:member:
   - |-
     const sensitivity = Office.context.mailbox.item.sensitivity;
     console.log("Sensitivity: " + sensitivity);
+Office.AppointmentTimeChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the AppointmentTimeChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.AppointmentTimeChanged, appointmentTimeChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the AppointmentTimeChanged event.
+    function appointmentTimeChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        console.log(`Start time: ${event.start}`);
+        console.log(`End time: ${event.end}`);
+    }
+Office.AttachmentsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageAttachmentsChanged event.
+    function onMessageAttachmentsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = event.attachmentDetails;
+            // Perform operations on the attachment that was added.
+        }
+    }
 Office.AttachmentContent#format:member:
   - |-
     const item = Office.context.mailbox.item;
@@ -8012,6 +8197,37 @@ Office.EmailUser:interface:
 
         console.log("Recipients added to the To field.");
     });
+Office.EnhancedLocationsChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the EnhancedLocationsChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the EnhancedLocationsChanged event.
+    function enhancedLocationsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const enhancedLocations = event.enhancedLocations;
+        enhancedLocations.forEach((location) => {
+            console.log(`Display name: ${location.displayName}`);
+            const locationType = location.locationIdentifier.type;
+            console.log(`Type: ${locationType}`);
+            if (locationType === Office.MailboxEnums.LocationType.Room) {
+                console.log(`Email address: ${location.emailAddress}`);
+            }
+        });
+    }
 Office.Entities#addresses:member:
   - |-
     const item = Office.context.mailbox.item;
@@ -8040,6 +8256,31 @@ Office.Entities#urls:member:
   - |-
     const item = Office.context.mailbox.item;
     const urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+Office.InfobarClickedEventArgs:interface:
+  - |-
+    // Adds an event handler for the InfobarClicked event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.InfobarClicked, infobarClickedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the InfobarClicked event.
+    function infobarClickedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const infobarDetails = event.infobarDetails;
+        console.log(`Notification type: ${infobarDetails.infobarType}`);
+        console.log(`Action type: ${infobarDetails.actionType}`);
+    }
 Office.Location#getAsync:member(1):
   - |-
     const userContext = { value : 1 };
@@ -8070,27 +8311,50 @@ Office.LocationIdentifier:interface:
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-Office.Mailbox#addHandlerAsync:member(1):
+Office.Mailbox:interface:
   - |-
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            Office.context.mailbox.addHandlerAsync(
-                Office.EventType.ItemChanged,
-                loadNewItem,
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        // Handle error.
-                    }
-                });
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    // Handle error.
+                }
+            });
         });
-    };
+    });
 
     function loadNewItem(eventArgs) {
         const item = Office.context.mailbox.item;
 
-        // Check that item is not null.
+        // Check that item isn't null.
         if (item !== null) {
-            // Work with item, e.g., define and call function that
+            // Work with item. For example, define and call a function that
+            // loads the properties of the newly selected item.
+            loadProps(item);
+        }
+    }
+Office.Mailbox#addHandlerAsync:member(1):
+  - |-
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    // Handle error.
+                }
+            });
+        });
+    });
+
+    function loadNewItem(eventArgs) {
+        const item = Office.context.mailbox.item;
+
+        // Check that item isn't null.
+        if (item !== null) {
+            // Work with item. For example, define and call a function that
             // loads the properties of the newly selected item.
             loadProps(item);
         }
@@ -8155,6 +8419,21 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
+Office.Mailbox#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
+Office.Mailbox#restUrl:member:
+  - |-
+    // Get the URL of the REST endpoint.
+    const restUrl = Office.context.mailbox.restUrl;
+    console.log(`REST API URL: ${restUrl}`);
 Office.MailboxEnums.AttachmentStatus:enum:
   - |-
     // Get the attachment that was just added to a message or appointment.
@@ -8167,7 +8446,53 @@ Office.MailboxEnums.AttachmentStatus:enum:
     }
 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.DelegatePermissions:enum:
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error("The current folder or mailbox isn't shared.");
+            return;
+        }
+
+        const delegatePermissions = result.value.delegatePermissions;
+
+        // Check if the user has write permissions to the shared resource.
+        if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
+            console.log("User has write permissions to the shared resource.");
+            // Perform the necessary operations.
+        }
+    });
 Office.MailboxEnums.InfobarActionType:enum:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+Office.InfobarDetails:interface:
   - |-
     /*
     * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
@@ -8413,16 +8738,24 @@ Office.MessageCompose#getInitializationContextAsync:member(1):
 Office.MessageCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
-    Office.initialize = function () {
-        Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    };
+    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
 
     function getCallback(asyncResult) {
         const text = asyncResult.value.data;
         const prop = asyncResult.value.sourceProperty;
 
-        console.log("Selected text in " + prop + ": " + text);
+        console.log(`Selected text in ${prop}: ${text}`);
     }
+Office.MessageCompose#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.ItemChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
 Office.MessageCompose#saveAsync:member(2):
   - |-
     Office.context.mailbox.item.saveAsync(
@@ -8453,6 +8786,24 @@ Office.MessageCompose#to:member:
     function callback(asyncResult) {
         const arrayOfToRecipients = asyncResult.value;
     }
+Office.MessageRead:interface:
+ - |-
+   // The following code builds an HTML string with details of all attachments on the current item.
+    const item = Office.context.mailbox.item;
+    let outputString = "";
+    if (item.attachments.length > 0) {
+        for (let i = 0 ; i < item.attachments.length ; i++) {
+            const attachment = item.attachments[i];
+            outputString += "<BR>" + i + ". Name: ";
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
+        }
+    }
+    console.log(outputString);
 Office.MessageRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -8660,6 +9011,40 @@ Office.MessageRead#itemId:member:
             itemId = result.value;
         });
     }
+Office.MessageRead#removeHandlerAsync:member(2):
+  - |-
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.ItemChanged, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.error("Failed to remove event handler: " + asyncResult.error.message);
+            return;
+        }
+
+        console.log("Event handler removed successfully.");
+    });
+Office.OfficeThemeChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the OfficeThemeChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.OfficeThemeChanged, officeThemeChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the OfficeThemeChanged event.
+    function officeThemeChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const currentTheme = event.officeTheme;
+        // Perform operations based on the current theme.
+    }
 Office.PhoneNumber:interface:
   - |-
     const item = Office.context.mailbox.item;
@@ -8715,6 +9100,61 @@ Office.Recipients#setAsync:member(2):
             console.log("Recipients overwritten");
         }
     });
+Office.RecipientsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageRecipientsChanged event.
+    function onMessageRecipientsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recipientFields = event.changedRecipientFields;
+        console.log(getChangedRecipientFields(recipientFields));
+    }
+
+    // Gets the recipient fields that have changed.
+    function getChangedRecipientFields(recipientFields) {
+        return Object.keys(recipientFields).filter((key) => recipientFields[key] === true);
+    }
+Office.RecipientsChangedFields:interface:
+  - |-
+    // Handles the OnMessageRecipientsChanged event.
+    function onMessageRecipientsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recipientFields = event.changedRecipientFields;
+        const changedFields = getChangedRecipientFields(recipientFields);
+
+        if (changedFields.includes("to")) {
+            // Perform operations based on the updated recipients in the To field.
+        }
+    }
+
+    // Gets the recipient fields that have changed.
+    function getChangedRecipientFields(recipientFields) {
+        return Object.keys(recipientFields).filter((key) => recipientFields[key] === true);
+    }
+Office.RecurrenceChangedEventArgs:interface:
+  - |-
+    // Adds an event handler for the RecurrenceChanged event.
+    Office.onReady(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get a reference to the mailbox and use it to add an event handler.
+            const mailbox = Office.context.mailbox;
+            mailbox.addHandlerAsync(Office.EventType.RecurrenceChanged, recurrenceChangedHandler, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                    return;
+                }
+
+                console.log("Event handler added successfully.");
+            });
+        });
+    });
+
+    // Handles the RecurrenceChanged event.
+    function recurrenceChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+        const recurrence = event.recurrence;
+
+        // Perform operations based on the updated recurrence.
+    }
 Office.RecurrenceProperties:interface:
   - |-
     // This example gets the Recurrence object of an appointment item.
@@ -8765,6 +9205,14 @@ Office.RecurrenceTimeZone:interface:
         "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
+Office.SensitivityLabelChangedEventArgs:interface:
+  - |-
+    // Handles a change to an item's sensitivity label.
+    function onSensitivityLabelChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        // Perform operations based on the event.
     }
 Office.SensitivityLabelDetails:interface:
   - |-

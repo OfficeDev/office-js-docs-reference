@@ -51,8 +51,37 @@ properties:
         | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" |
         "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" |
         "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture"
-        | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" |
-        "LambdaWrongParamCount";
+        | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount"
+        | "ImageFormulaTooManyArgs" | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" |
+        "ImageFormulaInvalidAltText" | "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" |
+        "ImageFormulaInvalidHeight" | "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric"
+        | "CRegexEndBackslash" | "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" |
+        "CRegexQuantifierTooBig" | "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" |
+        "CRegexQuantifierInvalid" | "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" |
+        "CRegexPosixNoSupportCollating" | "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" |
+        "CRegexMissingCommentClosing" | "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" |
+        "CRegexUnmatchedClosingParenthesis" | "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" |
+        "CRegexZeroRelativeReference" | "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" |
+        "CRegexUnknownPosixClass" | "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" |
+        "CRegexUnsupportedEscapeSequence" | "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" |
+        "CRegexEscapeInvalidInVerb" | "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" |
+        "CRegexDuplicateSubpatternName" | "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" |
+        "CRegexMalformedUnicodeProperty" | "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" |
+        "CRegexTooManyNamedSubpatterns" | "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" |
+        "CRegexBackslashOMissingBrace" | "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" |
+        "CRegexVerbUnknown" | "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" |
+        "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" |
+        "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" |
+        "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" |
+        "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" |
+        "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" |
+        "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" |
+        "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" |
+        "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" |
+        "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" |
+        "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" |
+        "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" |
+        "TranslateUnsupportedTargetLanguage";
       return:
         type: >-
           <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColumnIndexLessThanOne" |
@@ -61,7 +90,37 @@ properties:
           "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" |
           "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" |
           "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" |
-          "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount"
+          "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount" | "ImageFormulaTooManyArgs"
+          | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" | "ImageFormulaInvalidAltText" |
+          "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" | "ImageFormulaInvalidHeight" |
+          "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric" | "CRegexEndBackslash" |
+          "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" | "CRegexQuantifierTooBig" |
+          "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" | "CRegexQuantifierInvalid" |
+          "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" | "CRegexPosixNoSupportCollating" |
+          "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" | "CRegexMissingCommentClosing" |
+          "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" | "CRegexUnmatchedClosingParenthesis" |
+          "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" | "CRegexZeroRelativeReference" |
+          "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" | "CRegexUnknownPosixClass" |
+          "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" | "CRegexUnsupportedEscapeSequence" |
+          "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" | "CRegexEscapeInvalidInVerb" |
+          "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" | "CRegexDuplicateSubpatternName" |
+          "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" | "CRegexMalformedUnicodeProperty" |
+          "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" | "CRegexTooManyNamedSubpatterns" |
+          "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" | "CRegexBackslashOMissingBrace" |
+          "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" | "CRegexVerbUnknown" |
+          "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" |
+          "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" |
+          "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" |
+          "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" |
+          "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" |
+          "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" |
+          "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" |
+          "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" |
+          "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" |
+          "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" |
+          "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" |
+          "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage"
+          | "TranslateUnsupportedTargetLanguage"
   - name: errorType
     uid: 'excel!Excel.ValueErrorCellValue#errorType:member'
     package: excel!

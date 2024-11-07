@@ -4,7 +4,7 @@ OfficeRuntime.Auth:interface:
     // access token.
     const authContext = OfficeRuntime.context.auth;
     const accessToken = authContext.getAccessTokenAsync();
-Office.Auth#getAccessToken:member(1):
+OfficeRuntime.Auth#getAccessToken:member(1):
   - |-
     async function getUserData() {
       try {

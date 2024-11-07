@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement sets
 description: Office Add-in requirement set information for Excel builds.
-ms.date: 04/15/2024
+ms.date: 10/17/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,7 +15,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Excel add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, Mac, and iPad. The following table lists the Excel requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets or `ExcelApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
+> To use APIs in any of the numbered requirement sets or `ExcelApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Excel JavaScript preview APIs](excel-preview-apis.md) article.
 
@@ -23,9 +23,9 @@ Excel add-ins run across multiple versions of Office, including Office 2016 or l
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [ExcelApiOnline](excel-api-online-requirement-set.md) | Latest (see [requirement set page](excel-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
-| [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Not available | Version 16.70 (23021201) | Version 16.70 |
-| [ExcelApi 1.16](excel-api-1-16-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Not available | Version 16.64 (22081401) | Version 16.66 |
-| [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Supported | Version 2202 (Build 14931.20132) | Not available | Version 16.58 (22021501) | Version 16.59 |
+| [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Office 2024: Version 2302 (Build 16130.20332) | Version 16.70 (23021201) | Version 16.70 |
+| [ExcelApi 1.16](excel-api-1-16-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Office 2024: Version 2208 (Build 15601.20148) | Version 16.64 (22081401) | Version 16.66 |
+| [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Supported | Version 2202 (Build 14931.20132) | Office 2024: Version 2202 (Build 14931.20132) | Version 16.58 (22021501) | Version 16.59 |
 | [ExcelApi 1.14](excel-api-1-14-requirement-set.md) | Supported | Version 2108 (Build 14326.20508) | Office 2021: Version 2108 (Build 14326.20508) | Version 16.52 (21080801) | Version 16.53 |
 | [ExcelApi 1.13](excel-api-1-13-requirement-set.md) | Supported | Version 2102 (Build 13801.20738) | Office 2021: Version 2102 (Build 13801.20738) | Version 16.50 (21061301) | Version 16.50 |
 | [ExcelApi 1.12](excel-api-1-12-requirement-set.md) | Supported | Version 2008 (Build 13127.20408) | Office 2021: Version 2008 (Build 13127.20408) | Version 16.40 (20081000) | Version 16.40 |

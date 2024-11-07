@@ -558,7 +558,7 @@ methods:
     package: excel!
     fullName: getAsImage(format)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
     remarks: >-
@@ -602,7 +602,7 @@ methods:
     package: excel!
     fullName: getAsImage(formatString)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      Converts the shape to an image and returns the image as a Base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

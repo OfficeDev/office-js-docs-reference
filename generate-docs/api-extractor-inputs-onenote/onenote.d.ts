@@ -99,6 +99,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         getActiveSectionOrNull(): OneNote.Section;
+        getDecimalSeparator(): OfficeExtension.ClientResult<string>;
         /**
          * Gets the currently selected ink strokes.
          *
@@ -107,6 +108,7 @@ export declare namespace OneNote {
          */
         getSelectedInkStrokes(): OneNote.InkStrokeCollection;
         getWindowSize(): OfficeExtension.ClientResult<number[]>;
+        insertAndEmbedLinkAtCurrentPosition(url: string): void;
         insertHtmlAtCurrentPosition(html: string): void;
         isViewingDeletedNotes(): OfficeExtension.ClientResult<boolean>;
         /**
@@ -150,9 +152,9 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ApplicationData;
     }
     /**
@@ -165,14 +167,14 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the parent page object. Read-only.
+         * Gets the parent page object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly page: OneNote.Page;
         /**
-         * Gets the ID of the InkAnalysis object. Read-only.
+         * Gets the ID of the InkAnalysis object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -208,17 +210,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkAnalysis;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysis;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysis;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysis` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisData;
     }
     /**
@@ -231,21 +233,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Reference to the parent InkAnalysisPage. Read-only.
+         * Reference to the parent InkAnalysisPage.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly inkAnalysis: OneNote.InkAnalysis;
         /**
-         * Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+         * Gets the ink analysis lines in this ink analysis paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly lines: OneNote.InkAnalysisLineCollection;
         /**
-         * Gets the ID of the InkAnalysisParagraph object. Read-only.
+         * Gets the ID of the InkAnalysisParagraph object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -281,17 +283,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkAnalysisParagraph;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisParagraph;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisParagraph;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisParagraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisParagraph` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisParagraphData;
     }
     /**
@@ -306,14 +308,14 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisParagraph[];
         /**
-         * Returns the number of InkAnalysisParagraphs in the page. Read-only.
+         * Returns the number of InkAnalysisParagraphs in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly count: number;
         /**
-         * Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
+         * Gets a InkAnalysisParagraph object by ID or by its index in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -349,17 +351,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisParagraphCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisParagraphCollectionData;
     }
     /**
@@ -372,21 +374,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Reference to the parent InkAnalysisParagraph. Read-only.
+         * Reference to the parent InkAnalysisParagraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraph: OneNote.InkAnalysisParagraph;
         /**
-         * Gets the ink analysis words in this ink analysis line. Read-only.
+         * Gets the ink analysis words in this ink analysis line.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly words: OneNote.InkAnalysisWordCollection;
         /**
-         * Gets the ID of the InkAnalysisLine object. Read-only.
+         * Gets the ID of the InkAnalysisLine object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -422,17 +424,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkAnalysisLine;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisLine;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisLine;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisLine object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisLine` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisLineData;
     }
     /**
@@ -447,7 +449,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisLine[];
         /**
-         * Returns the number of InkAnalysisLines in the page. Read-only.
+         * Returns the number of InkAnalysisLines in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -490,17 +492,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisLineCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisLineCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisLineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisLineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisLineCollectionData;
     }
     /**
@@ -513,35 +515,35 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Reference to the parent InkAnalysisLine. Read-only.
+         * Reference to the parent InkAnalysisLine.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly line: OneNote.InkAnalysisLine;
         /**
-         * Gets the ID of the InkAnalysisWord object. Read-only.
+         * Gets the ID of the InkAnalysisWord object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * The id of the recognized language in this inkAnalysisWord. Read-only.
+         * The ID of the recognized language in this inkAnalysisWord.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly languageId: string;
         /**
-         * Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
+         * Weak references to the ink strokes that were recognized as part of this ink analysis word.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly strokePointers: OneNote.InkStrokePointer[];
         /**
-         * The words that were recognized in this ink word, in order of likelihood. Read-only.
+         * The words that were recognized in this ink word, in order of likelihood.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -577,17 +579,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkAnalysisWord;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisWord;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisWord;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkAnalysisWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisWord` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisWordData;
     }
     /**
@@ -602,7 +604,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisWord[];
         /**
-         * Returns the number of InkAnalysisWords in the page. Read-only.
+         * Returns the number of InkAnalysisWords in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -645,17 +647,18 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkAnalysisWordCollection;
         /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkAnalysisWordCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkAnalysisWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkAnalysisWordCollectionData;
     }
     /**
@@ -668,21 +671,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the strokes of the FloatingInk object. Read-only.
+         * Gets the strokes of the FloatingInk object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly inkStrokes: OneNote.InkStrokeCollection;
         /**
-         * Gets the PageContent parent of the FloatingInk object. Read-only.
+         * Gets the PageContent parent of the FloatingInk object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly pageContent: OneNote.PageContent;
         /**
-         * Gets the ID of the FloatingInk object. Read-only.
+         * Gets the ID of the FloatingInk object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -710,17 +713,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.FloatingInk;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.FloatingInk;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.FloatingInk;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.FloatingInk object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.FloatingInk` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.FloatingInkData;
     }
     /**
@@ -740,7 +743,7 @@ export declare namespace OneNote {
          */
         readonly floatingInk: OneNote.FloatingInk;
         /**
-         * Gets the ID of the InkStroke object. Read-only.
+         * Gets the ID of the InkStroke object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -768,17 +771,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkStroke;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkStroke;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkStroke;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkStroke object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkStroke` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkStrokeData;
     }
     /**
@@ -793,7 +796,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkStroke[];
         /**
-         * Returns the number of InkStrokes in the page. Read-only.
+         * Returns the number of InkStrokes in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -836,17 +839,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.InkStrokeCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkStrokeCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkStrokeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkStrokeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkStrokeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkStrokeCollectionData;
     }
     /**
@@ -859,7 +862,7 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the ID of the Point object. Read-only.
+         * Gets the ID of the Point object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.9]
@@ -889,17 +892,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Point;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Point;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Point;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Point object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Point` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PointData;
     }
     /**
@@ -914,7 +917,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Point[];
         /**
-         * Returns the number of Point in the stroke. Read-only.
+         * Returns the number of Point in the stroke.
          *
          * @remarks
          * [Api set: OneNoteApi 1.9]
@@ -957,17 +960,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.PointCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.PointCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.PointCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PointCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.PointCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PointCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PointCollectionData;
     }
     /**
@@ -980,28 +983,28 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * The parent paragraph containing the ink word. Read-only.
+         * The parent paragraph containing the ink word.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraph: OneNote.Paragraph;
         /**
-         * Gets the ID of the InkWord object. Read-only.
+         * Gets the ID of the InkWord object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * The id of the recognized language in this ink word. Read-only.
+         * The ID of the recognized language in this ink word.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly languageId: string;
         /**
-         * The words that were recognized in this ink word, in order of likelihood. Read-only.
+         * The words that were recognized in this ink word, in order of likelihood.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1029,17 +1032,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.InkWord;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkWord;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkWord;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkWord` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.InkWordData;
     }
     /**
@@ -1054,7 +1057,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkWord[];
         /**
-         * Returns the number of InkWords in the page. Read-only.
+         * Returns the number of InkWords in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1097,17 +1100,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.InkWordCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.InkWordCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.InkWordCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.InkWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.InkWordCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.InkWordCollectionData;
     }
     /**
@@ -1120,28 +1123,28 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * The section groups in the notebook. Read only
+         * The section groups in the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly sectionGroups: OneNote.SectionGroupCollection;
         /**
-         * The sections of the notebook. Read only
+         * The sections of the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly sections: OneNote.SectionCollection;
         /**
-         * The url of the site where this notebook is located. Read only
+         * The url of the site where this notebook is located. Read-only.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly baseUrl: string;
         /**
-         * The client url of the notebook. Read only
+         * The client url of the notebook. Read-only.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1155,14 +1158,14 @@ export declare namespace OneNote {
          */
         readonly id: string;
         /**
-         * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
+         * True if the notebook isn't created by the user (i.e., 'Misplaced Sections').
          *
          * @remarks
          * [Api set: OneNoteApi 1.2]
          */
         readonly isVirtual: boolean;
         /**
-         * Gets the name of the notebook. Read-only.
+         * Gets the name of the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1215,17 +1218,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Notebook;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Notebook;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Notebook;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Notebook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.NotebookData;
     }
     /**
@@ -1240,7 +1243,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Notebook[];
         /**
-         * Returns the number of notebooks in the collection. Read-only.
+         * Returns the number of notebooks in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1292,17 +1295,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.NotebookCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.NotebookCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.NotebookCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.NotebookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.NotebookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.NotebookCollectionData;
     }
     /**
@@ -1315,56 +1318,56 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the notebook that contains the section group. Read-only.
+         * Gets the notebook that contains the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly notebook: OneNote.Notebook;
         /**
-         * Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook. Read-only.
+         * Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentSectionGroup: OneNote.SectionGroup;
         /**
-         * Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook. Read-only.
+         * Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentSectionGroupOrNull: OneNote.SectionGroup;
         /**
-         * The collection of section groups in the section group. Read only
+         * The collection of section groups in the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly sectionGroups: OneNote.SectionGroupCollection;
         /**
-         * The collection of sections in the section group. Read only
+         * The collection of sections in the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly sections: OneNote.SectionCollection;
         /**
-         * The client url of the section group. Read only
+         * The client URL of the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly clientUrl: string;
         /**
-         * Gets the ID of the section group. Read-only.
+         * Gets the ID of the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * Gets the name of the section group. Read-only.
+         * Gets the name of the section group.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1417,17 +1420,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.SectionGroup;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.SectionGroup;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.SectionGroup;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.SectionGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.SectionGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.SectionGroupData;
     }
     /**
@@ -1442,7 +1445,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.SectionGroup[];
         /**
-         * Returns the number of section groups in the collection. Read-only.
+         * Returns the number of section groups in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1494,17 +1497,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.SectionGroupCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.SectionGroupCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.SectionGroupCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.SectionGroupCollectionData;
     }
     /**
@@ -1517,21 +1520,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the notebook that contains the section. Read-only.
+         * Gets the notebook that contains the section.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly notebook: OneNote.Notebook;
         /**
-         * The collection of pages in the section. Read only
+         * The collection of pages in the section.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly pages: OneNote.PageCollection;
         /**
-         * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook. Read-only.
+         * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1545,42 +1548,42 @@ export declare namespace OneNote {
          */
         readonly parentSectionGroupOrNull: OneNote.SectionGroup;
         /**
-         * The client url of the section. Read only
+         * The client url of the section.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly clientUrl: string;
         /**
-         * Gets the ID of the section. Read-only.
+         * Gets the ID of the section.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * True if this section is encrypted with a password. Read only
+         * True if this section is encrypted with a password.
          *
          * @remarks
          * [Api set: OneNoteApi 1.2]
          */
         readonly isEncrypted: boolean;
         /**
-         * True if this section is locked. Read only
+         * True if this section is locked.
          *
          * @remarks
          * [Api set: OneNoteApi 1.2]
          */
         readonly isLocked: boolean;
         /**
-         * Gets the name of the section. Read-only.
+         * Gets the name of the section.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly name: string;
         /**
-         * The web url of the page. Read only
+         * The web URL of the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1662,17 +1665,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Section;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Section;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Section;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Section` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.SectionData;
     }
     /**
@@ -1687,7 +1690,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Section[];
         /**
-         * Returns the number of sections in the collection. Read-only.
+         * Returns the number of sections in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1739,17 +1742,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.SectionCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.SectionCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.SectionCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.SectionCollectionData;
     }
     /**
@@ -1776,7 +1779,7 @@ export declare namespace OneNote {
          */
         readonly inkAnalysisOrNull: OneNote.InkAnalysis;
         /**
-         * Gets the section that contains the page. Read-only.
+         * Gets the section that contains the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1790,14 +1793,14 @@ export declare namespace OneNote {
          */
         readonly classNotebookPageSource: string;
         /**
-         * The client url of the page. Read only
+         * The client url of the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly clientUrl: string;
         /**
-         * Gets the ID of the page. Read-only.
+         * Gets the ID of the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1818,7 +1821,7 @@ export declare namespace OneNote {
          */
         title: string;
         /**
-         * The web url of the page. Read only
+         * The web url of the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1840,11 +1843,11 @@ export declare namespace OneNote {
          *
          * @param left - The left position of the top, left corner of the Outline.
          * @param top - The top position of the top, left corner of the Outline.
-         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://learn.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         addOutline(left: number, top: number, html: string): OneNote.Outline;
         /**
-         * Return a json string with node id and content in html format.
+         * Return a JSON string with node ID and content in HTML format.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1856,7 +1859,7 @@ export declare namespace OneNote {
          * @remarks
          * [Api set: OneNoteApi 1.1]
          *
-         * @param translatedContent - Translated content of the page
+         * @param translatedContent - Translated content of the page.
          */
         applyTranslation(translatedContent: string): void;
         /**
@@ -1931,17 +1934,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Page;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Page;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Page;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Page object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Page` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PageData;
     }
     /**
@@ -1956,7 +1959,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Page[];
         /**
-         * Returns the number of pages in the collection. Read-only.
+         * Returns the number of pages in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2008,17 +2011,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.PageCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.PageCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.PageCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PageCollectionData;
     }
     /**
@@ -2052,14 +2055,14 @@ export declare namespace OneNote {
          */
         readonly outline: OneNote.Outline;
         /**
-         * Gets the page that contains the PageContent object. Read-only.
+         * Gets the page that contains the PageContent object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentPage: OneNote.Page;
         /**
-         * Gets the ID of the PageContent object. Read-only.
+         * Gets the ID of the PageContent object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2080,7 +2083,7 @@ export declare namespace OneNote {
          */
         top: number;
         /**
-         * Gets the type of the PageContent object. Read-only.
+         * Gets the type of the PageContent object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2123,17 +2126,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.PageContent;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.PageContent;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.PageContent;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.PageContent object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.PageContent` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.PageContentData;
     }
     /**
@@ -2148,7 +2151,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.PageContent[];
         /**
-         * Returns the number of page contents in the collection. Read-only.
+         * Returns the number of page contents in the collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2191,17 +2194,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.PageContentCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.PageContentCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.PageContentCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.PageContentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.PageContentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.PageContentCollectionData;
     }
     /**
@@ -2214,21 +2217,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page. Read-only.
+         * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly pageContent: OneNote.PageContent;
         /**
-         * Gets the collection of Paragraph objects in the Outline. Read-only.
+         * Gets the collection of Paragraph objects in the Outline.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraphs: OneNote.ParagraphCollection;
         /**
-         * Gets the ID of the Outline object. Read-only.
+         * Gets the ID of the Outline object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2240,7 +2243,7 @@ export declare namespace OneNote {
          * @remarks
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://learn.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -2303,17 +2306,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Outline;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Outline;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Outline;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Outline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.OutlineData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Outline` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.OutlineData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.OutlineData;
     }
     /**
@@ -2326,56 +2329,56 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+         * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly image: OneNote.Image;
         /**
-         * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+         * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly inkWords: OneNote.InkWordCollection;
         /**
-         * Gets the Outline object that contains the Paragraph. Read-only.
+         * Gets the Outline object that contains the Paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly outline: OneNote.Outline;
         /**
-         * The collection of paragraphs under this paragraph. Read only
+         * The collection of paragraphs under this paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraphs: OneNote.ParagraphCollection;
         /**
-         * Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+         * Gets the parent paragraph object. Throws if a parent paragraph does not exist.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentParagraph: OneNote.Paragraph;
         /**
-         * Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+         * Gets the parent paragraph object. Returns null if a parent paragraph doesn't exist.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentParagraphOrNull: OneNote.Paragraph;
         /**
-         * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound. Read-only.
+         * Gets the TableCell object that contains the Paragraph if one exists. If parent isn't a TableCell, throws ItemNotFound.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentTableCell: OneNote.TableCell;
         /**
-         * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null. Read-only.
+         * Gets the TableCell object that contains the Paragraph if one exists. If parent isn't a TableCell, returns null.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2389,21 +2392,21 @@ export declare namespace OneNote {
          */
         readonly richText: OneNote.RichText;
         /**
-         * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+         * Gets the Table object in the Paragraph. Throws an exception if ParagraphType isn't Table.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly table: OneNote.Table;
         /**
-         * Gets the ID of the Paragraph object. Read-only.
+         * Gets the ID of the Paragraph object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * Gets the type of the Paragraph object. Read-only.
+         * Gets the type of the Paragraph object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2458,7 +2461,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://learn.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;
         /**
@@ -2484,7 +2487,7 @@ export declare namespace OneNote {
          */
         insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height: number): OneNote.Image;
         /**
-         * Inserts the image at the specified insert location..
+         * Inserts the image at the specified insert location.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2561,17 +2564,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Paragraph;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Paragraph;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Paragraph;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Paragraph` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ParagraphData;
     }
     /**
@@ -2586,7 +2589,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Paragraph[];
         /**
-         * Returns the number of paragraphs in the page. Read-only.
+         * Returns the number of paragraphs in the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2629,17 +2632,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.ParagraphCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.ParagraphCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.ParagraphCollectionData;
     }
     /**
@@ -2652,21 +2655,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the Id of the NoteTag object. Read-only.
+         * Gets the Id of the NoteTag object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * Gets the status of the NoteTag object. Read-only.
+         * Gets the status of the NoteTag object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly status: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
         /**
-         * Gets the type of the NoteTag object. Read-only.
+         * Gets the type of the NoteTag object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2694,17 +2697,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.NoteTag;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.NoteTag;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.NoteTag;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.NoteTag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NoteTagData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.NoteTag` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NoteTagData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.NoteTagData;
     }
     /**
@@ -2717,21 +2720,21 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the Paragraph object that contains the RichText object. Read-only.
+         * Gets the Paragraph object that contains the RichText object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraph: OneNote.Paragraph;
         /**
-         * Gets the ID of the RichText object. Read-only.
+         * Gets the ID of the RichText object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * The language id of the text. Read-only.
+         * The language id of the text.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2752,7 +2755,7 @@ export declare namespace OneNote {
          */
         readonly text: string;
         /**
-         * Get the HTML of the rich text
+         * Gets the HTML of the rich text.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2781,17 +2784,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.RichText;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.RichText;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.RichText;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.RichText object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.RichTextData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.RichText` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.RichTextData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.RichTextData;
     }
     /**
@@ -2804,14 +2807,14 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page. Read-only.
+         * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly pageContent: OneNote.PageContent;
         /**
-         * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph. Read-only.
+         * Gets the Paragraph object that contains the Image. Throws if the Image isn't a direct child of a Paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2839,7 +2842,7 @@ export declare namespace OneNote {
          */
         hyperlink: string;
         /**
-         * Gets the ID of the Image object. Read-only.
+         * Gets the ID of the Image object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2897,17 +2900,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Image;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Image;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Image;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Image` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.ImageData;
     }
     /**
@@ -2920,14 +2923,14 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the Paragraph object that contains the Table object. Read-only.
+         * Gets the Paragraph object that contains the Table object.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraph: OneNote.Paragraph;
         /**
-         * Gets all of the table rows. Read-only.
+         * Gets all of the table rows.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -2948,7 +2951,7 @@ export declare namespace OneNote {
          */
         readonly columnCount: number;
         /**
-         * Gets the ID of the table. Read-only.
+         * Gets the ID of the table.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3054,17 +3057,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.Table;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.Table;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.Table;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableData;
     }
     /**
@@ -3077,35 +3080,35 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the cells in the row. Read-only.
+         * Gets the cells in the row.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly cells: OneNote.TableCellCollection;
         /**
-         * Gets the parent table. Read-only.
+         * Gets the parent table.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentTable: OneNote.Table;
         /**
-         * Gets the number of cells in the row. Read-only.
+         * Gets the number of cells in the row.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly cellCount: number;
         /**
-         * Gets the ID of the row. Read-only.
+         * Gets the ID of the row.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * Gets the index of the row in its parent table. Read-only.
+         * Gets the index of the row in its parent table.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3168,17 +3171,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.TableRow;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.TableRow;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.TableRow;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableRowData;
     }
     /**
@@ -3193,7 +3196,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.TableRow[];
         /**
-         * Returns the number of table rows in this collection. Read-only.
+         * Returns the number of table rows in this collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3236,17 +3239,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.TableRowCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.TableRowCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.TableRowCollectionData;
     }
     /**
@@ -3259,42 +3262,42 @@ export declare namespace OneNote {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of Paragraph objects in the TableCell. Read-only.
+         * Gets the collection of Paragraph objects in the TableCell.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly paragraphs: OneNote.ParagraphCollection;
         /**
-         * Gets the parent row of the cell. Read-only.
+         * Gets the parent row of the cell.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly parentRow: OneNote.TableRow;
         /**
-         * Gets the index of the cell in its row. Read-only.
+         * Gets the index of the cell in its row.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly cellIndex: number;
         /**
-         * Gets the ID of the cell. Read-only.
+         * Gets the ID of the cell.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
         /**
-         * Gets the index of the cell's row in the table. Read-only.
+         * Gets the index of the cell's row in the table.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly rowIndex: number;
         /**
-         * Gets and sets the shading color of the cell
+         * Gets and sets the shading color of the cell.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3314,7 +3317,7 @@ export declare namespace OneNote {
          * @remarks
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://learn.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -3377,17 +3380,17 @@ export declare namespace OneNote {
             expand?: string;
         }): OneNote.TableCell;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.TableCell;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.TableCell;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original OneNote.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): OneNote.Interfaces.TableCellData;
     }
     /**
@@ -3402,7 +3405,7 @@ export declare namespace OneNote {
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.TableCell[];
         /**
-         * Returns the number of tablecells in this collection. Read-only.
+         * Returns the number of tablecells in this collection.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3445,17 +3448,17 @@ export declare namespace OneNote {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): OneNote.TableCellCollection;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): OneNote.TableCellCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): OneNote.TableCellCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `OneNote.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `OneNote.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): OneNote.Interfaces.TableCellCollectionData;
     }
     /**
@@ -3466,14 +3469,14 @@ export declare namespace OneNote {
      */
     export interface ImageOcrData {
         /**
-         * Represents the OCR language, with values such as EN-US
+         * Represents the OCR language, with values such as EN-US.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         ocrLanguageId: string;
         /**
-         * Represents the text obtained by OCR of the image
+         * Represents the text obtained by OCR of the image.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3488,14 +3491,14 @@ export declare namespace OneNote {
      */
     export interface InkStrokePointer {
         /**
-         * Represents the id of the page content object corresponding to this stroke
+         * Represents the ID of the page content object corresponding to this stroke.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         contentId: string;
         /**
-         * Represents the id of the ink stroke
+         * Represents the ID of the ink stroke.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -3510,40 +3513,35 @@ export declare namespace OneNote {
      */
     export interface ParagraphInfo {
         /**
-         * //
-                    Bullet list type of paragraph
+         * Bullet list type of paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         bulletType: string;
         /**
-         * //
-                    Level of indentation of the paragraph
+         * Level of indentation of the paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.8]
          */
         indentationLevel: number;
         /**
-         * //
-                    Index of paragraph in a list
+         * Index of paragraph in a list.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         index: number;
         /**
-         * //
-                    Type of list in paragraph
+         * Type of list in paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         listType: OneNote.ListType | "None" | "Number" | "Bullet";
         /**
-         * //
-                    Numbered list type of paragraph
+         * Numbered list type of paragraph.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -4189,10 +4187,10 @@ export declare namespace OneNote {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
+        /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
         }
-        /** An interface for updating data on the InkAnalysis object, for use in `inkAnalysis.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysis` object, for use in `inkAnalysis.set({ ... })`. */
         export interface InkAnalysisUpdateData {
             /**
             * Gets the parent page object.
@@ -4202,7 +4200,7 @@ export declare namespace OneNote {
             */
             page?: OneNote.Interfaces.PageUpdateData;
         }
-        /** An interface for updating data on the InkAnalysisParagraph object, for use in `inkAnalysisParagraph.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisParagraph` object, for use in `inkAnalysisParagraph.set({ ... })`. */
         export interface InkAnalysisParagraphUpdateData {
             /**
             * Reference to the parent InkAnalysisPage.
@@ -4212,11 +4210,11 @@ export declare namespace OneNote {
             */
             inkAnalysis?: OneNote.Interfaces.InkAnalysisUpdateData;
         }
-        /** An interface for updating data on the InkAnalysisParagraphCollection object, for use in `inkAnalysisParagraphCollection.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisParagraphCollection` object, for use in `inkAnalysisParagraphCollection.set({ ... })`. */
         export interface InkAnalysisParagraphCollectionUpdateData {
             items?: OneNote.Interfaces.InkAnalysisParagraphData[];
         }
-        /** An interface for updating data on the InkAnalysisLine object, for use in `inkAnalysisLine.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisLine` object, for use in `inkAnalysisLine.set({ ... })`. */
         export interface InkAnalysisLineUpdateData {
             /**
             * Reference to the parent InkAnalysisParagraph.
@@ -4226,11 +4224,11 @@ export declare namespace OneNote {
             */
             paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;
         }
-        /** An interface for updating data on the InkAnalysisLineCollection object, for use in `inkAnalysisLineCollection.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisLineCollection` object, for use in `inkAnalysisLineCollection.set({ ... })`. */
         export interface InkAnalysisLineCollectionUpdateData {
             items?: OneNote.Interfaces.InkAnalysisLineData[];
         }
-        /** An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisWord` object, for use in `inkAnalysisWord.set({ ... })`. */
         export interface InkAnalysisWordUpdateData {
             /**
             * Reference to the parent InkAnalysisLine.
@@ -4240,38 +4238,38 @@ export declare namespace OneNote {
             */
             line?: OneNote.Interfaces.InkAnalysisLineUpdateData;
         }
-        /** An interface for updating data on the InkAnalysisWordCollection object, for use in `inkAnalysisWordCollection.set({ ... })`. */
+        /** An interface for updating data on the `InkAnalysisWordCollection` object, for use in `inkAnalysisWordCollection.set({ ... })`. */
         export interface InkAnalysisWordCollectionUpdateData {
             items?: OneNote.Interfaces.InkAnalysisWordData[];
         }
-        /** An interface for updating data on the InkStrokeCollection object, for use in `inkStrokeCollection.set({ ... })`. */
+        /** An interface for updating data on the `InkStrokeCollection` object, for use in `inkStrokeCollection.set({ ... })`. */
         export interface InkStrokeCollectionUpdateData {
             items?: OneNote.Interfaces.InkStrokeData[];
         }
-        /** An interface for updating data on the PointCollection object, for use in `pointCollection.set({ ... })`. */
+        /** An interface for updating data on the `PointCollection` object, for use in `pointCollection.set({ ... })`. */
         export interface PointCollectionUpdateData {
             items?: OneNote.Interfaces.PointData[];
         }
-        /** An interface for updating data on the InkWordCollection object, for use in `inkWordCollection.set({ ... })`. */
+        /** An interface for updating data on the `InkWordCollection` object, for use in `inkWordCollection.set({ ... })`. */
         export interface InkWordCollectionUpdateData {
             items?: OneNote.Interfaces.InkWordData[];
         }
-        /** An interface for updating data on the NotebookCollection object, for use in `notebookCollection.set({ ... })`. */
+        /** An interface for updating data on the `NotebookCollection` object, for use in `notebookCollection.set({ ... })`. */
         export interface NotebookCollectionUpdateData {
             items?: OneNote.Interfaces.NotebookData[];
         }
-        /** An interface for updating data on the SectionGroupCollection object, for use in `sectionGroupCollection.set({ ... })`. */
+        /** An interface for updating data on the `SectionGroupCollection` object, for use in `sectionGroupCollection.set({ ... })`. */
         export interface SectionGroupCollectionUpdateData {
             items?: OneNote.Interfaces.SectionGroupData[];
         }
-        /** An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`. */
+        /** An interface for updating data on the `SectionCollection` object, for use in `sectionCollection.set({ ... })`. */
         export interface SectionCollectionUpdateData {
             items?: OneNote.Interfaces.SectionData[];
         }
-        /** An interface for updating data on the Page object, for use in `page.set({ ... })`. */
+        /** An interface for updating data on the `Page` object, for use in `page.set({ ... })`. */
         export interface PageUpdateData {
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -4292,14 +4290,14 @@ export declare namespace OneNote {
              */
             title?: string;
         }
-        /** An interface for updating data on the PageCollection object, for use in `pageCollection.set({ ... })`. */
+        /** An interface for updating data on the `PageCollection` object, for use in `pageCollection.set({ ... })`. */
         export interface PageCollectionUpdateData {
             items?: OneNote.Interfaces.PageData[];
         }
-        /** An interface for updating data on the PageContent object, for use in `pageContent.set({ ... })`. */
+        /** An interface for updating data on the `PageContent` object, for use in `pageContent.set({ ... })`. */
         export interface PageContentUpdateData {
             /**
-            * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+            * Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -4320,11 +4318,11 @@ export declare namespace OneNote {
              */
             top?: number;
         }
-        /** An interface for updating data on the PageContentCollection object, for use in `pageContentCollection.set({ ... })`. */
+        /** An interface for updating data on the `PageContentCollection` object, for use in `pageContentCollection.set({ ... })`. */
         export interface PageContentCollectionUpdateData {
             items?: OneNote.Interfaces.PageContentData[];
         }
-        /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
+        /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
             /**
             * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
@@ -4345,7 +4343,7 @@ export declare namespace OneNote {
         export interface ParagraphCollectionUpdateData {
             items?: OneNote.Interfaces.ParagraphData[];
         }
-        /** An interface for updating data on the Image object, for use in `image.set({ ... })`. */
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
         export interface ImageUpdateData {
             /**
              * Gets or sets the description of the Image.
@@ -4376,7 +4374,7 @@ export declare namespace OneNote {
              */
             width?: number;
         }
-        /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
+        /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             /**
              * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
@@ -4386,11 +4384,11 @@ export declare namespace OneNote {
              */
             borderVisible?: boolean;
         }
-        /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
             items?: OneNote.Interfaces.TableRowData[];
         }
-        /** An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`. */
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
             /**
              * Gets and sets the shading color of the cell
@@ -4400,7 +4398,7 @@ export declare namespace OneNote {
              */
             shadingColor?: string;
         }
-        /** An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
         export interface TableCellCollectionUpdateData {
             items?: OneNote.Interfaces.TableCellData[];
         }
@@ -4621,21 +4619,21 @@ export declare namespace OneNote {
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupData[];
             /**
-            * The sections of the notebook. Read only
+            * The sections of the notebook. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionData[];
             /**
-             * The url of the site where this notebook is located. Read only
+             * The URL of the site where this notebook is located. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
              */
             baseUrl?: string;
             /**
-             * The client url of the notebook. Read only
+             * The client URL of the notebook. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4649,7 +4647,7 @@ export declare namespace OneNote {
              */
             id?: string;
             /**
-             * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
+             '* True if the notebook isn't created by the user (i.e., 'Misplaced Sections'). Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -4670,21 +4668,21 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `sectionGroup.toJSON()`. */
         export interface SectionGroupData {
             /**
-            * The collection of section groups in the section group. Read only
+            * The collection of section groups in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupData[];
             /**
-            * The collection of sections in the section group. Read only
+            * The collection of sections in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionData[];
             /**
-             * The client url of the section group. Read only
+             * The client url of the section group. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4712,14 +4710,14 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * The collection of pages in the section. Read only
+            * The collection of pages in the section. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             pages?: OneNote.Interfaces.PageData[];
             /**
-             * The client url of the section. Read only
+             * The client URL of the section. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4733,14 +4731,14 @@ export declare namespace OneNote {
              */
             id?: string;
             /**
-             * True if this section is encrypted with a password. Read only
+             * True if this section is encrypted with a password. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
              */
             isEncrypted?: boolean;
             /**
-             * True if this section is locked. Read only
+             * True if this section is locked. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -4754,7 +4752,7 @@ export declare namespace OneNote {
              */
             name?: string;
             /**
-             * The web url of the page. Read only
+             * The web URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4768,18 +4766,18 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `page.toJSON()`. */
         export interface PageData {
             /**
-            * The collection of PageContent objects on the page. Read only
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * The collection of PageContent objects on the page. Read only
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             contents?: OneNote.Interfaces.PageContentData[];
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisData;
             /**
              * Gets the ClassNotebookPageSource to the page.
@@ -4817,7 +4815,7 @@ export declare namespace OneNote {
              */
             title?: string;
             /**
-             * The web url of the page. Read only
+             * The web URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4831,21 +4829,21 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `pageContent.toJSON()`. */
         export interface PageContentData {
             /**
-            * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+            * Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             image?: OneNote.Interfaces.ImageData;
             /**
-            * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+            * Gets the ink in the PageContent object. Throws an exception if PageContentType isn't Ink.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             ink?: OneNote.Interfaces.FloatingInkData;
             /**
-            * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+            * Gets the Outline in the PageContent object. Throws an exception if PageContentType isn't Outline.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -4904,14 +4902,14 @@ export declare namespace OneNote {
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
             /**
-            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType isn't Image. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             image?: OneNote.Interfaces.ImageData;
             /**
-            * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+            * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType isn't Ink. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -4991,7 +4989,7 @@ export declare namespace OneNote {
              */
             id?: string;
             /**
-             * The language id of the text. Read-only.
+             * The language ID of the text. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5161,7 +5159,7 @@ export declare namespace OneNote {
              */
             rowIndex?: number;
             /**
-             * Gets and sets the shading color of the cell
+             * Gets and sets the shading color of the cell.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5180,15 +5178,15 @@ export declare namespace OneNote {
          */
         export interface ApplicationLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             notebooks?: OneNote.Interfaces.NotebookCollectionLoadOptions;
         }
         /**
@@ -5225,7 +5223,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisParagraphLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5258,7 +5256,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisParagraphCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5291,7 +5289,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisLineLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5324,7 +5322,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisLineCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5357,7 +5355,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisWordLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5404,7 +5402,7 @@ export declare namespace OneNote {
          */
         export interface InkAnalysisWordCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5451,7 +5449,7 @@ export declare namespace OneNote {
          */
         export interface FloatingInkLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5484,7 +5482,7 @@ export declare namespace OneNote {
          */
         export interface InkStrokeLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5510,7 +5508,7 @@ export declare namespace OneNote {
          */
         export interface InkStrokeCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5536,7 +5534,7 @@ export declare namespace OneNote {
          */
         export interface PointLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5557,7 +5555,7 @@ export declare namespace OneNote {
          */
         export interface PointCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5584,7 +5582,7 @@ export declare namespace OneNote {
          */
         export interface InkWordLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5602,7 +5600,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * The id of the recognized language in this ink word. Read-only.
+             * The ID of the recognized language in this ink word. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5624,7 +5622,7 @@ export declare namespace OneNote {
          */
         export interface InkWordCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5642,7 +5640,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: The id of the recognized language in this ink word. Read-only.
+             * For EACH ITEM in the collection: The ID of the recognized language in this ink word. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5664,32 +5662,32 @@ export declare namespace OneNote {
          */
         export interface NotebookLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * The section groups in the notebook. Read only
+            * The section groups in the notebook. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * The sections of the notebook. Read only
+            * The sections of the notebook. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
-             * The url of the site where this notebook is located. Read only
+             * The URL of the site where this notebook is located. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
              */
             baseUrl?: boolean;
             /**
-             * The client url of the notebook. Read only
+             * The client URL of the notebook. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5703,7 +5701,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
+             * True if the notebook isn't created by the user (i.e., 'Misplaced Sections'). Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -5725,7 +5723,7 @@ export declare namespace OneNote {
          */
         export interface NotebookCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5736,21 +5734,21 @@ export declare namespace OneNote {
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: The sections of the notebook. Read only
+            * For EACH ITEM in the collection: The sections of the notebook. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: The url of the site where this notebook is located. Read only
+             * For EACH ITEM in the collection: The URL of the site where this notebook is located. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
              */
             baseUrl?: boolean;
             /**
-             * For EACH ITEM in the collection: The client url of the notebook. Read only
+             * For EACH ITEM in the collection: The client URL of the notebook. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5764,7 +5762,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
+             * For EACH ITEM in the collection: True if the notebook isn't created by the user (i.e., 'Misplaced Sections'). Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -5786,7 +5784,7 @@ export declare namespace OneNote {
          */
         export interface SectionGroupLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5811,21 +5809,21 @@ export declare namespace OneNote {
             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * The collection of section groups in the section group. Read only
+            * The collection of section groups in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * The collection of sections in the section group. Read only
+            * The collection of sections in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
-             * The client url of the section group. Read only
+             * The client URL of the section group. Read.only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5854,7 +5852,7 @@ export declare namespace OneNote {
          */
         export interface SectionGroupCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5879,14 +5877,14 @@ export declare namespace OneNote {
             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of section groups in the section group. Read only
+            * For EACH ITEM in the collection: The collection of section groups in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of sections in the section group. Read only
+            * For EACH ITEM in the collection: The collection of sections in the section group. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -5922,7 +5920,7 @@ export declare namespace OneNote {
          */
         export interface SectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -5933,7 +5931,7 @@ export declare namespace OneNote {
             */
             notebook?: OneNote.Interfaces.NotebookLoadOptions;
             /**
-            * The collection of pages in the section. Read only
+            * The collection of pages in the section. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -5954,7 +5952,7 @@ export declare namespace OneNote {
             */
             parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
             /**
-             * The client url of the section. Read only
+             * The client URL of the section. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5975,7 +5973,7 @@ export declare namespace OneNote {
              */
             isEncrypted?: boolean;
             /**
-             * True if this section is locked. Read only
+             * True if this section is locked. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -5989,7 +5987,7 @@ export declare namespace OneNote {
              */
             name?: boolean;
             /**
-             * The web url of the page. Read only
+             * The web URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6004,7 +6002,7 @@ export declare namespace OneNote {
          */
         export interface SectionCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6057,7 +6055,7 @@ export declare namespace OneNote {
              */
             isEncrypted?: boolean;
             /**
-             * For EACH ITEM in the collection: True if this section is locked. Read only
+             * For EACH ITEM in the collection: True if this section is locked. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -6071,7 +6069,7 @@ export declare namespace OneNote {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: The web url of the page. Read only
+             * For EACH ITEM in the collection: The web URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6086,11 +6084,11 @@ export declare namespace OneNote {
          */
         export interface PageLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * The collection of PageContent objects on the page. Read only
+            * The collection of PageContent objects on the page. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6118,7 +6116,7 @@ export declare namespace OneNote {
              */
             classNotebookPageSource?: boolean;
             /**
-             * The client url of the page. Read only
+             * The client URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6146,7 +6144,7 @@ export declare namespace OneNote {
              */
             title?: boolean;
             /**
-             * The web url of the page. Read only
+             * The web URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6161,7 +6159,7 @@ export declare namespace OneNote {
          */
         export interface PageCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6172,7 +6170,7 @@ export declare namespace OneNote {
             */
             contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+            * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6193,7 +6191,7 @@ export declare namespace OneNote {
              */
             classNotebookPageSource?: boolean;
             /**
-             * For EACH ITEM in the collection: The client url of the page. Read only
+             * For EACH ITEM in the collection: The client URL of the page. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6236,7 +6234,7 @@ export declare namespace OneNote {
          */
         export interface PageContentLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6304,25 +6302,25 @@ export declare namespace OneNote {
          */
         export interface PageContentCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+            * For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+            * For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType isn't Ink.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             ink?: OneNote.Interfaces.FloatingInkLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+            * For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if PageContentType isn't Outline.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6372,7 +6370,7 @@ export declare namespace OneNote {
          */
         export interface OutlineLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6383,11 +6381,11 @@ export declare namespace OneNote {
             */
             pageContent?: OneNote.Interfaces.PageContentLoadOptions;
             /**
-            * Gets the collection of Paragraph objects in the Outline.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the collection of Paragraph objects in the Outline.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
              * Gets the ID of the Outline object. Read-only.
@@ -6405,22 +6403,22 @@ export declare namespace OneNote {
          */
         export interface ParagraphLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Image object in the Paragraph. Throws an exception if ParagraphType isn't Image.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
-            *
-            * @remarks
-            * [Api set: OneNoteApi 1.1]
-            */
+             * Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType isn't Ink.
+             *
+             * @remarks
+             * [Api set: OneNoteApi 1.1]
+             */
             inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;
             /**
             * Gets the Outline object that contains the Paragraph.
@@ -6430,28 +6428,28 @@ export declare namespace OneNote {
             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * The collection of paragraphs under this paragraph. Read only
+            * The collection of paragraphs under this paragraph. Read -nly.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+            * Gets the parent paragraph object. Throws if a parent paragraph doesn't exist.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+            * Gets the parent paragraph object. Returns null if a parent paragraph doesn't exist.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
+            * Gets the TableCell object that contains the Paragraph if one exists. If parent isn't a TableCell, throws ItemNotFound.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6465,14 +6463,14 @@ export declare namespace OneNote {
             */
             parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+            * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType isn't RichText.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             richText?: OneNote.Interfaces.RichTextLoadOptions;
             /**
-            * Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+            * Gets the Table object in the Paragraph. Throws an exception if ParagraphType isn't Table.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6501,18 +6499,18 @@ export declare namespace OneNote {
          */
         export interface ParagraphCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+            * For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType isn't Image.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             image?: OneNote.Interfaces.ImageLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
+            * For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType isn't Ink.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6526,28 +6524,28 @@ export declare namespace OneNote {
             */
             outline?: OneNote.Interfaces.OutlineLoadOptions;
             /**
-            * For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only
+            * For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read-only.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+            * For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph doesn't exist.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+            * For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph doesn't exist.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound.
+            * For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent isn't a TableCell, throws ItemNotFound.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6561,14 +6559,14 @@ export declare namespace OneNote {
             */
             parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+            * For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType isn't RichText.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             richText?: OneNote.Interfaces.RichTextLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+            * For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType isn't Table.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6597,7 +6595,7 @@ export declare namespace OneNote {
          */
         export interface NoteTagLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6630,7 +6628,7 @@ export declare namespace OneNote {
          */
         export interface RichTextLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6648,7 +6646,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * The language id of the text. Read-only.
+             * The language ID of the text. Read-only.
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -6677,18 +6675,18 @@ export declare namespace OneNote {
          */
         export interface ImageLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-            * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page.
+            * Gets the PageContent object that contains the Image. Throws if the Image isn't a direct child of a PageContent. This object defines the position of the Image on the page.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             pageContent?: OneNote.Interfaces.PageContentLoadOptions;
             /**
-            * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+            * Gets the Paragraph object that contains the Image. Throws if the Image isn't a direct child of a Paragraph.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6745,7 +6743,7 @@ export declare namespace OneNote {
          */
         export interface TableLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6799,7 +6797,7 @@ export declare namespace OneNote {
          */
         export interface TableRowLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6846,7 +6844,7 @@ export declare namespace OneNote {
          */
         export interface TableRowCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6893,7 +6891,7 @@ export declare namespace OneNote {
          */
         export interface TableCellLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -6947,7 +6945,7 @@ export declare namespace OneNote {
          */
         export interface TableCellCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**

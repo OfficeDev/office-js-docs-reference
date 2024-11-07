@@ -9,15 +9,15 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: cacheUid
-    uid: 'excel!Excel.LocalImageCellValueCacheId#cacheUid:member'
+  - name: cachedUid
+    uid: 'excel!Excel.LocalImageCellValueCacheId#cachedUid:member'
     package: excel!
-    fullName: cacheUid
+    fullName: cachedUid
     summary: Represents the image's UID as it appears in the cache.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'cacheUid: string;'
+      content: 'cachedUid: string;'
       return:
         type: string

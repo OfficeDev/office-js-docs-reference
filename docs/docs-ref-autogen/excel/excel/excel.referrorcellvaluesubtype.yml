@@ -8,6 +8,16 @@ remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/exc
 isPreview: false
 isDeprecated: false
 fields:
+  - name: corruptCellRef
+    uid: 'excel!Excel.RefErrorCellValueSubType.corruptCellRef:member'
+    package: excel!
+    summary: >-
+      An error caused by a corrupt formula. Displays as error type \#REF! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"CorruptCellRef"'
   - name: externalLinksCalculatedRef
     uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member'
     package: excel!

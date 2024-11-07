@@ -996,6 +996,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -1033,6 +1042,18 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
@@ -1095,6 +1116,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -1114,14 +1182,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -1734,6 +1817,22 @@ Office.Dialog#close:member(1):
             });
         }
     );
+Office.Dialog#messageChild:member(1):
+  - |-
+    // The following example shows how to send information about the current active worksheet to the dialog.
+    await Excel.run(async (context) => {
+        const worksheet = context.workbook.worksheets.getActiveWorksheet();
+        worksheet.load();
+        await context.sync();
+        worksheetPropertiesChanged(worksheet);
+    });
+
+    ...
+
+    function worksheetPropertiesChanged(currentWorksheet) {
+        const messageToDialog = JSON.stringify(currentWorksheet);
+        dialog.messageChild(messageToDialog);
+    }
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -4042,102 +4141,6 @@ Office.Settings#set:member(1):
   - |-
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
-    }
-Office.SharedProperties:interface:
-  - |-
-    function performOperation() {
-      Office.context.mailbox.getCallbackTokenAsync({
-          isRest: true
-        },
-        function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-            Office.context.mailbox.item.getSharedPropertiesAsync({
-                // Pass auth token along.
-                asyncContext: asyncResult.value
-              },
-              function (asyncResult1) {
-                let sharedProperties = asyncResult1.value;
-                let delegatePermissions = sharedProperties.delegatePermissions;
-
-                // Determine if user can do the expected operation.
-                // E.g., do they have Write permission?
-                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                  // Construct REST URL for your operation.
-                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                  // Update <operation> placeholder with actual operation.
-                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-      
-                  $.ajax({
-                      url: rest_url,
-                      dataType: 'json',
-                      headers:
-                      {
-                        "Authorization": "Bearer " + asyncResult1.asyncContext
-                      }
-                    }
-                  ).done(
-                    function (response) {
-                      console.log("success");
-                    }
-                  ).fail(
-                    function (error) {
-                      console.log("error message");
-                    }
-                  );
-                }
-              }
-            );
-          }
-        }
-      );
-    }
-Office.SharedProperties#delegatePermissions:member:
-  - |-
-    function performOperation() {
-      Office.context.mailbox.getCallbackTokenAsync({
-          isRest: true
-        },
-        function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value !== "") {
-            Office.context.mailbox.item.getSharedPropertiesAsync({
-                // Pass auth token along.
-                asyncContext: asyncResult.value
-              },
-              function (asyncResult1) {
-                let sharedProperties = asyncResult1.value;
-                let delegatePermissions = sharedProperties.delegatePermissions;
-
-                // Determine if user can do the expected operation.
-                // E.g., do they have Write permission?
-                if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Write) != 0) {
-                  // Construct REST URL for your operation.
-                  // Update <version> placeholder with actual Outlook REST API version e.g. "v2.0".
-                  // Update <operation> placeholder with actual operation.
-                  let rest_url = sharedProperties.targetRestUrl + "/<version>/users/" + sharedProperties.targetMailbox + "/<operation>";
-      
-                  $.ajax({
-                      url: rest_url,
-                      dataType: 'json',
-                      headers:
-                      {
-                        "Authorization": "Bearer " + asyncResult1.asyncContext
-                      }
-                    }
-                  ).done(
-                    function (response) {
-                      console.log("success");
-                    }
-                  ).fail(
-                    function (error) {
-                      console.log("error message");
-                    }
-                  );
-                }
-              }
-            );
-          }
-        }
-      );
     }
 Office.TableBinding#addColumnsAsync:member(1):
   - |-

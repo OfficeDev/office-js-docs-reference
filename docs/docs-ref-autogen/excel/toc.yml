@@ -266,6 +266,10 @@ items:
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
+              - name: NameErrorCellValueSubType
+                uid: 'excel!Excel.NameErrorCellValueSubType:enum'
+              - name: NotAvailableErrorCellValueSubType
+                uid: 'excel!Excel.NotAvailableErrorCellValueSubType:enum'
               - name: NumberFormatCategory
                 uid: 'excel!Excel.NumberFormatCategory:enum'
               - name: NumErrorCellValueSubType
@@ -1952,6 +1956,10 @@ items:
           - name: PowerPoint preview APIs
             href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
             displayName: PowerPoint
+          - name: PowerPointApi 1.6 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-6-requirement-set.md
+            displayName: PowerPoint
           - name: PowerPointApi 1.5 requirement set
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-1-5-requirement-set.md
@@ -2031,6 +2039,8 @@ items:
           - name: Keyboard Shortcuts requirement sets
             href: >-
               ../../requirement-sets/common/keyboard-shortcuts-requirement-sets.md
+          - name: Nested App Auth requirement sets
+            href: ../../requirement-sets/common/nested-app-auth-requirement-sets.md
           - name: Open Browser Window requirement sets
             href: >-
               ../../requirement-sets/common/open-browser-window-api-requirement-sets.md

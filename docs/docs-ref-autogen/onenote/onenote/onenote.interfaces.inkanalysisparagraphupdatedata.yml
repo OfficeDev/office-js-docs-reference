@@ -4,8 +4,8 @@ uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisParagraphUpdateData
 summary: >-
-  An interface for updating data on the InkAnalysisParagraph object, for use in `inkAnalysisParagraph.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `InkAnalysisParagraph` object, for use in `inkAnalysisParagraph.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
