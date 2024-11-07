@@ -1737,7 +1737,7 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a Base64-encoded png image. *Important**: This API is currently unsupported in Excel for
+      Renders the range as a Base64-encoded PNG image. *Important**: This API is currently unsupported in Excel for
       Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
       status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

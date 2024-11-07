@@ -48,12 +48,17 @@ properties:
       content: >-
         errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" |
         "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested"
-        | "TextOverflow";
+        | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" |
+        "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" |
+        "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
       return:
         type: >-
           <xref uid="excel!Excel.CalcErrorCellValueSubType:enum" /> | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" |
           "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" |
-          "TooDeeplyNested" | "TextOverflow"
+          "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" |
+          "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" |
+          "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" |
+          "ERegexReplaceCharLimit" | "UnexpectedReturnValue"
   - name: errorType
     uid: 'excel!Excel.CalcErrorCellValue#errorType:member'
     package: excel!

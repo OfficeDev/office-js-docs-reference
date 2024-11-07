@@ -24,6 +24,72 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTypeServiceError"'
+  - name: excelClientMisconfigurationError
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.excelClientMisconfigurationError:member'
+    package: excel!
+    summary: >-
+      An error caused by Excel being incorrectly configured for connection to an external code service. Displays as
+      error type \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExcelClientMisconfigurationError"'
+  - name: externalCodeServiceComputeResourceNotAvailable
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.externalCodeServiceComputeResourceNotAvailable:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service compute resource not being available. Displays as error type
+      \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceComputeResourceNotAvailable"'
+  - name: externalCodeServiceEnvironmentBadState
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.externalCodeServiceEnvironmentBadState:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service execution environment being in an inoperative state. Displays as error
+      type \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceEnvironmentBadState"'
+  - name: externalCodeServiceEnvironmentNotFound
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.externalCodeServiceEnvironmentNotFound:member'
+    package: excel!
+    summary: >-
+      An error caused by not being able to find an external code service execution environment. Displays as error type
+      \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceEnvironmentNotFound"'
+  - name: externalCodeServiceRuntimeBadState
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.externalCodeServiceRuntimeBadState:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service runtime being in an inoperative state. Displays as error type
+      \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceRuntimeBadState"'
+  - name: externalCodeServiceRuntimeNotFound
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.externalCodeServiceRuntimeNotFound:member'
+    package: excel!
+    summary: >-
+      An error caused by not being able to find the runtime in an external code service's execution environment.
+      Displays as error type \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalCodeServiceRuntimeNotFound"'
   - name: externalLinks
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinks:member'
     package: excel!
@@ -110,6 +176,17 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GenericServerError"'
+  - name: imageUnableToRetrieve
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.imageUnableToRetrieve:member'
+    package: excel!
+    summary: >-
+      An error caused by an image download receiving an HTTP response code between 300 and 499. Displays as error type
+      \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ImageUnableToRetrieve"'
   - name: missingContent
     uid: 'excel!Excel.ConnectErrorCellValueSubType.missingContent:member'
     package: excel!
@@ -126,6 +203,17 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OutdatedLinkedEntity"'
+  - name: pythonPowerQueryDataUploadHasNotStarted
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.pythonPowerQueryDataUploadHasNotStarted:member'
+    package: excel!
+    summary: >-
+      An error caused by Power Query not having started upload of data to an external code service. Displays as error
+      type \#CONNECT! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonPowerQueryDataUploadHasNotStarted"'
   - name: requestThrottle
     uid: 'excel!Excel.ConnectErrorCellValueSubType.requestThrottle:member'
     package: excel!

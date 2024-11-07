@@ -50,14 +50,22 @@ properties:
         "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" |
         "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" |
         "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" |
-        "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
+        "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError" | "ImageUnableToRetrieve" |
+        "ExternalCodeServiceEnvironmentNotFound" | "ExternalCodeServiceRuntimeNotFound" |
+        "ExternalCodeServiceEnvironmentBadState" | "ExternalCodeServiceRuntimeBadState" |
+        "ExternalCodeServiceComputeResourceNotAvailable" | "PythonPowerQueryDataUploadHasNotStarted" |
+        "ExcelClientMisconfigurationError";
       return:
         type: >-
           <xref uid="excel!Excel.ConnectErrorCellValueSubType:enum" /> | "Unknown" | "ServiceError" | "ExternalLinks" |
           "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" |
           "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError"
           | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" |
-          "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError"
+          "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError" | "ImageUnableToRetrieve" |
+          "ExternalCodeServiceEnvironmentNotFound" | "ExternalCodeServiceRuntimeNotFound" |
+          "ExternalCodeServiceEnvironmentBadState" | "ExternalCodeServiceRuntimeBadState" |
+          "ExternalCodeServiceComputeResourceNotAvailable" | "PythonPowerQueryDataUploadHasNotStarted" |
+          "ExcelClientMisconfigurationError"
   - name: errorType
     uid: 'excel!Excel.ConnectErrorCellValue#errorType:member'
     package: excel!

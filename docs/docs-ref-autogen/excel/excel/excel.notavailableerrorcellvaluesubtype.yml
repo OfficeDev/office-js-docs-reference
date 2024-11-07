@@ -1,0 +1,102 @@
+### YamlMime:TSEnum
+name: Excel.NotAvailableErrorCellValueSubType
+uid: 'excel!Excel.NotAvailableErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.NotAvailableErrorCellValueSubType
+summary: 'Represents types of \#N/A! errors.'
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: eRegexMatchNoCapture
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.eRegexMatchNoCapture:member'
+    package: excel!
+    summary: >-
+      No capture groups were matched. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexMatchNoCapture"'
+  - name: eRegexMatchNoResult
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.eRegexMatchNoResult:member'
+    package: excel!
+    summary: >-
+      No match was found for the pattern in the text provided. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexMatchNoResult"'
+  - name: eRegexReplaceOccurrenceNoResult
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.eRegexReplaceOccurrenceNoResult:member'
+    package: excel!
+    summary: >-
+      Occurrence is greater than the total number of matches. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexReplaceOccurrenceNoResult"'
+  - name: hlookupValueNotFound
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.hlookupValueNotFound:member'
+    package: excel!
+    summary: >-
+      An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type \#N/A! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"HlookupValueNotFound"'
+  - name: pythonObjectUnknown
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.pythonObjectUnknown:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service returning an unknown object. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonObjectUnknown"'
+  - name: stockHistoryInvalidProperty
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.stockHistoryInvalidProperty:member'
+    package: excel!
+    summary: >-
+      An error caused by an invalid property argument to `STOCKHISTORY`<!-- -->. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"StockHistoryInvalidProperty"'
+  - name: stockHistoryNoData
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.stockHistoryNoData:member'
+    package: excel!
+    summary: >-
+      An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"StockHistoryNoData"'
+  - name: unknown
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: >-
+      An unknown type of error. Displays as error type \#N/A! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"Unknown"'
+  - name: vlookupValueNotFound
+    uid: 'excel!Excel.NotAvailableErrorCellValueSubType.vlookupValueNotFound:member'
+    package: excel!
+    summary: >-
+      An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type \#N/A! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"VlookupValueNotFound"'
