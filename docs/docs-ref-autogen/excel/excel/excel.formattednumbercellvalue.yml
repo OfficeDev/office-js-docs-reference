@@ -6,9 +6,8 @@ fullName: Excel.FormattedNumberCellValue
 summary: >-
   Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel
   guidelines. To learn more, see [Review guidelines for customizing a number
-  format](https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
-  -->. In this scenario, the format is applied to the value and not to the cell, so the value retains its format string
-  throughout calculation.
+  format](https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!-- -->. In this scenario, the
+  format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
 remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -47,8 +46,7 @@ properties:
       property, this number format string is in the en-US locale. When accessed through a `valuesAsJsonLocal` property,
       this number format is in the user's display locale. Number format strings must conform to Excel guidelines. To
       learn more, see [Review guidelines for customizing a number
-      format](https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
-      -->.
+      format](https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

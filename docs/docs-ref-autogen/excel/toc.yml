@@ -266,6 +266,10 @@ items:
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
+              - name: NameErrorCellValueSubType
+                uid: 'excel!Excel.NameErrorCellValueSubType:enum'
+              - name: NotAvailableErrorCellValueSubType
+                uid: 'excel!Excel.NotAvailableErrorCellValueSubType:enum'
               - name: NumberFormatCategory
                 uid: 'excel!Excel.NumberFormatCategory:enum'
               - name: NumErrorCellValueSubType

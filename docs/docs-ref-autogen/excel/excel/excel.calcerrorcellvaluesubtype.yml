@@ -42,6 +42,38 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"EmptyArray"'
+  - name: eRegexReplaceCharLimit
+    uid: 'excel!Excel.CalcErrorCellValueSubType.eRegexReplaceCharLimit:member'
+    package: excel!
+    summary: >-
+      An error caused by text that is longer than 65,535 characters. Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ERegexReplaceCharLimit"'
+  - name: externalQueryRef
+    uid: 'excel!Excel.CalcErrorCellValueSubType.externalQueryRef:member'
+    package: excel!
+    summary: >-
+      An error caused by a reference to a Power Query query in a different workbook. Displays as error type \#CALC! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ExternalQueryRef"'
+  - name: invalidPythonObject
+    uid: 'excel!Excel.CalcErrorCellValueSubType.invalidPythonObject:member'
+    package: excel!
+    summary: >-
+      An error caused by a formula referencing a value returned by an external code service in a different workbook.
+      Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"InvalidPythonObject"'
   - name: lambdaInCell
     uid: 'excel!Excel.CalcErrorCellValueSubType.lambdaInCell:member'
     package: excel!
@@ -50,6 +82,59 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LambdaInCell"'
+  - name: pythonGridQuery
+    uid: 'excel!Excel.CalcErrorCellValueSubType.pythonGridQuery:member'
+    package: excel!
+    summary: >-
+      An error caused by a Power Query query referencing data in a sheet. Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonGridQuery"'
+  - name: pythonPowerQueryDataUploadEtagChanged
+    uid: 'excel!Excel.CalcErrorCellValueSubType.pythonPowerQueryDataUploadEtagChanged:member'
+    package: excel!
+    summary: >-
+      An error caused by a Power Query query ID change. Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonPowerQueryDataUploadEtagChanged"'
+  - name: pythonPowerQueryDataUploadSizeLimitExceeded
+    uid: 'excel!Excel.CalcErrorCellValueSubType.pythonPowerQueryDataUploadSizeLimitExceeded:member'
+    package: excel!
+    summary: >-
+      An error caused by Power Query exceeding the limit for data uploaded to an external code service. Displays as
+      error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PythonPowerQueryDataUploadSizeLimitExceeded"'
+  - name: queryInCell
+    uid: 'excel!Excel.CalcErrorCellValueSubType.queryInCell:member'
+    package: excel!
+    summary: >-
+      An error caused by a formula returning a reference to a Power Query query. Displays as error type \#CALC! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"QueryInCell"'
+  - name: requestTooLarge
+    uid: 'excel!Excel.CalcErrorCellValueSubType.requestTooLarge:member'
+    package: excel!
+    summary: >-
+      An error caused by a formula generating too large a request for an external code service. Displays as error type
+      \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"RequestTooLarge"'
   - name: textOverflow
     uid: 'excel!Excel.CalcErrorCellValueSubType.textOverflow:member'
     package: excel!
@@ -80,6 +165,27 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TooManyCells"'
+  - name: unexpectedReturnValue
+    uid: 'excel!Excel.CalcErrorCellValueSubType.unexpectedReturnValue:member'
+    package: excel!
+    summary: >-
+      An error caused by an external code service returning an unexpected result. Displays as error type \#CALC! in
+      Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UnexpectedReturnValue"'
+  - name: uninitializedPythonObject
+    uid: 'excel!Excel.CalcErrorCellValueSubType.uninitializedPythonObject:member'
+    package: excel!
+    summary: >-
+      An error caused by an uninitialized Python Object. Displays as error type \#CALC! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"UninitializedPythonObject"'
   - name: unknown
     uid: 'excel!Excel.CalcErrorCellValueSubType.unknown:member'
     package: excel!

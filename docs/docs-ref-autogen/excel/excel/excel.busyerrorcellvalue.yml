@@ -45,11 +45,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage";'
+      content: >-
+        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage" |
+        "PlaceholderInFormula";
       return:
         type: >-
           <xref uid="excel!Excel.BusyErrorCellValueSubType:enum" /> | "Unknown" | "ExternalLinksGeneric" |
-          "LoadingImage"
+          "LoadingImage" | "PlaceholderInFormula"
   - name: errorType
     uid: 'excel!Excel.BusyErrorCellValue#errorType:member'
     package: excel!
