@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,7 +41,7 @@ properties:
     fullName: image
     summary: >-
       For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType
-      is not Image.
+      isn't Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
     package: onenote!
     fullName: ink
     summary: >-
-      For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is
-      not Ink.
+      For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType
+      isn't Ink.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -81,7 +81,7 @@ properties:
     fullName: outline
     summary: >-
       For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType is not Outline.
+      PageContentType isn't Outline.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

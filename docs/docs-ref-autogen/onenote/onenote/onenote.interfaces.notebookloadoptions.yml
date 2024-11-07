@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -27,7 +27,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: The url of the site where this notebook is located. Read only
+    summary: The URL of the site where this notebook is located. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the notebook. Read only
+    summary: The client URL of the notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#isVirtual:member'
     package: onenote!
     fullName: isVirtual
-    summary: 'True if the notebook is not created by the user (i.e., ''Misplaced Sections''). Read only'
+    summary: 'True if the notebook isn''t created by the user (i.e., ''Misplaced Sections''). Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -87,7 +87,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: The section groups in the notebook. Read only
+    summary: The section groups in the notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -99,7 +99,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions#sections:member'
     package: onenote!
     fullName: sections
-    summary: The sections of the notebook. Read only
+    summary: The sections of the notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

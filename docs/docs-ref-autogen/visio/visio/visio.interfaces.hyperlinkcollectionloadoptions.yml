@@ -27,7 +27,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
     package: visio!
     fullName: address
-    summary: 'For EACH ITEM in the collection: Gets the address of the Hyperlink object.'
+    summary: 'For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
     package: visio!
     fullName: description
-    summary: 'For EACH ITEM in the collection: Gets the description of a hyperlink.'
+    summary: 'For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,9 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
     package: visio!
     fullName: extraInfo
-    summary: 'For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink''s URL.'
+    summary: >-
+      For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL.
+      Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +65,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
     package: visio!
     fullName: subAddress
-    summary: 'For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object.'
+    summary: 'For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false

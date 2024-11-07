@@ -3,7 +3,7 @@ name: OneNote.Interfaces.InkAnalysisLineUpdateData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
-summary: 'An interface for updating data on the InkAnalysisLine object, for use in `inkAnalysisLine.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `InkAnalysisLine` object, for use in `inkAnalysisLine.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

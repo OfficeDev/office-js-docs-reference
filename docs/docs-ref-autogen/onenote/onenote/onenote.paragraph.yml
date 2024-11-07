@@ -27,7 +27,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#id:member'
     package: onenote!
     fullName: id
-    summary: Gets the ID of the Paragraph object. Read-only.
+    summary: Gets the ID of the Paragraph object.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#image:member'
     package: onenote!
     fullName: image
-    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#inkWords:member'
     package: onenote!
     fullName: inkWords
-    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#outline:member'
     package: onenote!
     fullName: outline
-    summary: Gets the Outline object that contains the Paragraph. Read-only.
+    summary: Gets the Outline object that contains the Paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -75,7 +75,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: The collection of paragraphs under this paragraph. Read only
+    summary: The collection of paragraphs under this paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -87,7 +87,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#parentParagraph:member'
     package: onenote!
     fullName: parentParagraph
-    summary: Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+    summary: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -99,7 +99,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#parentParagraphOrNull:member'
     package: onenote!
     fullName: parentParagraphOrNull
-    summary: Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+    summary: Gets the parent paragraph object. Returns null if a parent paragraph doesn't exist.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -112,8 +112,8 @@ properties:
     package: onenote!
     fullName: parentTableCell
     summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
-      ItemNotFound. Read-only.
+      Gets the TableCell object that contains the Paragraph if one exists. If parent isn't a TableCell, throws
+      ItemNotFound.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -125,9 +125,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#parentTableCellOrNull:member'
     package: onenote!
     fullName: parentTableCellOrNull
-    summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-      Read-only.
+    summary: 'Gets the TableCell object that contains the Paragraph if one exists. If parent isn''t a TableCell, returns null.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -151,7 +149,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#table:member'
     package: onenote!
     fullName: table
-    summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+    summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType isn't Table.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -163,7 +161,7 @@ properties:
     uid: 'onenote!OneNote.Paragraph#type:member'
     package: onenote!
     fullName: type
-    summary: Gets the type of the Paragraph object. Read-only.
+    summary: Gets the type of the Paragraph object.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -322,8 +320,8 @@ methods:
         - id: html
           description: >-
             An HTML string that describes the visual presentation of the content. See [Supported
-            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
-            the OneNote add-ins JavaScript API.
+            HTML](https://learn.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            for the OneNote add-ins JavaScript API.
           type: string
       return:
         type: void
@@ -413,7 +411,7 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertImageAsSibling:member(2)'
     package: onenote!
     fullName: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
-    summary: Inserts the image at the specified insert location..
+    summary: Inserts the image at the specified insert location.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -705,10 +703,10 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `OneNote.Paragraph` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -723,10 +721,11 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -741,9 +740,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

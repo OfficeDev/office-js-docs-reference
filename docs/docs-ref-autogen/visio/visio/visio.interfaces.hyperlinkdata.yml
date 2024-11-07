@@ -13,7 +13,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkData#address:member'
     package: visio!
     fullName: address
-    summary: Gets the address of the Hyperlink object.
+    summary: Gets the address of the Hyperlink object. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkData#description:member'
     package: visio!
     fullName: description
-    summary: Gets the description of a hyperlink.
+    summary: Gets the description of a hyperlink. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkData#extraInfo:member'
     package: visio!
     fullName: extraInfo
-    summary: Gets the extra URL request information used to resolve the hyperlink's URL.
+    summary: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'visio!Visio.Interfaces.HyperlinkData#subAddress:member'
     package: visio!
     fullName: subAddress
-    summary: Gets the sub-address of the Hyperlink object.
+    summary: Gets the sub-address of the Hyperlink object. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false

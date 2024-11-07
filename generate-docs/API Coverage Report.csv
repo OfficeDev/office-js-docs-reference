@@ -7765,8 +7765,10 @@ OneNote.Application,"getActiveParagraph()",Method,Poor,false
 OneNote.Application,"getActiveParagraphOrNull()",Method,Poor,false
 OneNote.Application,"getActiveSection()",Method,Poor,true
 OneNote.Application,"getActiveSectionOrNull()",Method,Poor,true
+OneNote.Application,"getDecimalSeparator()",Method,Poor,false
 OneNote.Application,"getSelectedInkStrokes()",Method,Poor,false
 OneNote.Application,"getWindowSize()",Method,Poor,false
+OneNote.Application,"insertAndEmbedLinkAtCurrentPosition(url)",Method,Poor,false
 OneNote.Application,"insertHtmlAtCurrentPosition(html)",Method,Poor,false
 OneNote.Application,"isViewingDeletedNotes()",Method,Poor,false
 OneNote.Application,"load(options)",Method,Poor,false
@@ -7823,8 +7825,8 @@ OneNote.Image,"toJSON()",Method,Poor,false
 OneNote.Image,"track()",Method,Poor,false
 OneNote.Image,"untrack()",Method,Poor,false
 OneNote.ImageOcrData,N/A,Class,Good,false
-OneNote.ImageOcrData,"ocrLanguageId",Property,Fine,false
-OneNote.ImageOcrData,"ocrText",Property,Fine,false
+OneNote.ImageOcrData,"ocrLanguageId",Property,Good,false
+OneNote.ImageOcrData,"ocrText",Property,Good,false
 OneNote.InkAnalysis,N/A,Class,Good,false
 OneNote.InkAnalysis,"context",Property,Good,false
 OneNote.InkAnalysis,"id",Property,Good,false
@@ -7937,8 +7939,8 @@ OneNote.InkStrokeCollection,"toJSON()",Method,Poor,false
 OneNote.InkStrokeCollection,"track()",Method,Poor,false
 OneNote.InkStrokeCollection,"untrack()",Method,Poor,false
 OneNote.InkStrokePointer,N/A,Class,Good,false
-OneNote.InkStrokePointer,"contentId",Property,Fine,false
-OneNote.InkStrokePointer,"inkStrokeId",Property,Fine,false
+OneNote.InkStrokePointer,"contentId",Property,Good,false
+OneNote.InkStrokePointer,"inkStrokeId",Property,Good,false
 OneNote.InkWord,N/A,Class,Good,false
 OneNote.InkWord,"context",Property,Good,false
 OneNote.InkWord,"id",Property,Good,false
@@ -8236,11 +8238,11 @@ OneNote.ParagraphCollection,"toJSON()",Method,Poor,false
 OneNote.ParagraphCollection,"track()",Method,Poor,false
 OneNote.ParagraphCollection,"untrack()",Method,Poor,false
 OneNote.ParagraphInfo,N/A,Class,Good,false
-OneNote.ParagraphInfo,"bulletType",Property,Fine,false
-OneNote.ParagraphInfo,"indentationLevel",Property,Fine,false
-OneNote.ParagraphInfo,"index",Property,Fine,false
-OneNote.ParagraphInfo,"listType",Property,Fine,false
-OneNote.ParagraphInfo,"numberType",Property,Fine,false
+OneNote.ParagraphInfo,"bulletType",Property,Good,false
+OneNote.ParagraphInfo,"indentationLevel",Property,Good,false
+OneNote.ParagraphInfo,"index",Property,Good,false
+OneNote.ParagraphInfo,"listType",Property,Good,false
+OneNote.ParagraphInfo,"numberType",Property,Good,false
 OneNote.ParagraphStyle,N/A,Enum,Fine,false
 OneNote.ParagraphStyle,"citation",EnumField,Fine,false
 OneNote.ParagraphStyle,"code",EnumField,Fine,false
@@ -8293,7 +8295,7 @@ OneNote.RichText,"languageId",Property,Good,false
 OneNote.RichText,"paragraph",Property,Good,false
 OneNote.RichText,"style",Property,Good,false
 OneNote.RichText,"text",Property,Good,false
-OneNote.RichText,"getHtml()",Method,Poor,false
+OneNote.RichText,"getHtml()",Method,Fine,false
 OneNote.RichText,"load(options)",Method,Poor,false
 OneNote.RichText,"load(propertyNames)",Method,Fine,true
 OneNote.RichText,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -8399,7 +8401,7 @@ OneNote.TableCell,"id",Property,Good,false
 OneNote.TableCell,"paragraphs",Property,Good,false
 OneNote.TableCell,"parentRow",Property,Good,false
 OneNote.TableCell,"rowIndex",Property,Good,false
-OneNote.TableCell,"shadingColor",Property,Fine,false
+OneNote.TableCell,"shadingColor",Property,Good,false
 OneNote.TableCell,"appendHtml(html)",Method,Poor,true
 OneNote.TableCell,"appendImage(base64EncodedImage, width, height)",Method,Poor,false
 OneNote.TableCell,"appendRichText(paragraphText)",Method,Poor,true
@@ -10004,7 +10006,6 @@ Visio.Application,"load(propertyNames)",Method,Poor,false
 Visio.Application,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.Application,"set(properties, options)",Method,Poor,false
 Visio.Application,"set(properties)",Method,Poor,false
-Visio.Application,"setMockData(data)",Method,Poor,false
 Visio.Application,"showToolbar(id, show)",Method,Poor,false
 Visio.Application,"showToolbar(idString, show)",Method,Poor,false
 Visio.Application,"toJSON()",Method,Poor,false
@@ -10029,7 +10030,6 @@ Visio.Comment,"load(propertyNames)",Method,Poor,false
 Visio.Comment,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.Comment,"set(properties, options)",Method,Poor,false
 Visio.Comment,"set(properties)",Method,Poor,false
-Visio.Comment,"setMockData(data)",Method,Poor,false
 Visio.Comment,"toJSON()",Method,Poor,false
 Visio.CommentCollection,N/A,Class,Good,false
 Visio.CommentCollection,"context",Property,Good,false
@@ -10039,7 +10039,6 @@ Visio.CommentCollection,"getItem(key)",Method,Poor,false
 Visio.CommentCollection,"load(options)",Method,Fine,true
 Visio.CommentCollection,"load(propertyNames)",Method,Poor,false
 Visio.CommentCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.CommentCollection,"setMockData(data)",Method,Poor,false
 Visio.CommentCollection,"toJSON()",Method,Poor,false
 Visio.ConnectorDirection,N/A,Enum,Good,false
 Visio.ConnectorDirection,"fromTarget",EnumField,Fine,false
@@ -10095,7 +10094,6 @@ Visio.Document,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.Document,"set(properties, options)",Method,Poor,false
 Visio.Document,"set(properties)",Method,Poor,false
 Visio.Document,"setActivePage(PageName)",Method,Poor,true
-Visio.Document,"setMockData(data)",Method,Poor,false
 Visio.Document,"showTaskPane(taskPaneType, initialProps, show)",Method,Fine,false
 Visio.Document,"showTaskPane(taskPaneTypeString, initialProps, show)",Method,Fine,false
 Visio.Document,"startDataRefresh()",Method,Poor,true
@@ -10118,7 +10116,6 @@ Visio.DocumentView,"load(propertyNames)",Method,Poor,false
 Visio.DocumentView,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.DocumentView,"set(properties, options)",Method,Poor,false
 Visio.DocumentView,"set(properties)",Method,Poor,false
-Visio.DocumentView,"setMockData(data)",Method,Poor,false
 Visio.DocumentView,"toJSON()",Method,Poor,false
 Visio.ErrorCodes,N/A,Enum,Missing,false
 Visio.ErrorCodes,"accessDenied",EnumField,Missing,false
@@ -10141,7 +10138,6 @@ Visio.Hyperlink,"subAddress",Property,Good,false
 Visio.Hyperlink,"load(options)",Method,Fine,true
 Visio.Hyperlink,"load(propertyNames)",Method,Poor,false
 Visio.Hyperlink,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.Hyperlink,"setMockData(data)",Method,Poor,false
 Visio.Hyperlink,"toJSON()",Method,Poor,false
 Visio.HyperlinkCollection,N/A,Class,Good,false
 Visio.HyperlinkCollection,"context",Property,Good,false
@@ -10151,7 +10147,6 @@ Visio.HyperlinkCollection,"getItem(Key)",Method,Poor,false
 Visio.HyperlinkCollection,"load(options)",Method,Fine,true
 Visio.HyperlinkCollection,"load(propertyNames)",Method,Poor,false
 Visio.HyperlinkCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.HyperlinkCollection,"setMockData(data)",Method,Poor,false
 Visio.HyperlinkCollection,"toJSON()",Method,Poor,false
 Visio.LayoutVariant,N/A,Enum,Good,false
 Visio.LayoutVariant,"flowchart_BottomToTop",EnumField,Fine,false
@@ -10196,7 +10191,6 @@ Visio.Page,"load(propertyNames)",Method,Poor,false
 Visio.Page,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.Page,"set(properties, options)",Method,Poor,false
 Visio.Page,"set(properties)",Method,Poor,false
-Visio.Page,"setMockData(data)",Method,Poor,false
 Visio.Page,"toJSON()",Method,Poor,false
 Visio.PageCollection,N/A,Class,Good,false
 Visio.PageCollection,"context",Property,Good,false
@@ -10206,7 +10200,6 @@ Visio.PageCollection,"getItem(key)",Method,Poor,true
 Visio.PageCollection,"load(options)",Method,Poor,false
 Visio.PageCollection,"load(propertyNames)",Method,Poor,false
 Visio.PageCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.PageCollection,"setMockData(data)",Method,Poor,false
 Visio.PageCollection,"toJSON()",Method,Poor,false
 Visio.PageLoadCompleteEventArgs,N/A,Class,Good,true
 Visio.PageLoadCompleteEventArgs,"pageName",Property,Good,false
@@ -10227,7 +10220,6 @@ Visio.PageView,"load(propertyNames)",Method,Poor,false
 Visio.PageView,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.PageView,"set(properties, options)",Method,Poor,false
 Visio.PageView,"set(properties)",Method,Poor,false
-Visio.PageView,"setMockData(data)",Method,Poor,false
 Visio.PageView,"setPosition(Position)",Method,Poor,false
 Visio.PageView,"toJSON()",Method,Poor,false
 Visio.Position,N/A,Class,Good,false
@@ -10262,7 +10254,6 @@ Visio.Shape,"load(propertyNames)",Method,Fine,true
 Visio.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.Shape,"set(properties, options)",Method,Poor,false
 Visio.Shape,"set(properties)",Method,Poor,false
-Visio.Shape,"setMockData(data)",Method,Poor,false
 Visio.Shape,"toJSON()",Method,Poor,false
 Visio.ShapeCollection,N/A,Class,Good,false
 Visio.ShapeCollection,"context",Property,Good,false
@@ -10272,7 +10263,6 @@ Visio.ShapeCollection,"getItem(key)",Method,Poor,false
 Visio.ShapeCollection,"load(options)",Method,Poor,false
 Visio.ShapeCollection,"load(propertyNames)",Method,Poor,false
 Visio.ShapeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.ShapeCollection,"setMockData(data)",Method,Poor,false
 Visio.ShapeCollection,"toJSON()",Method,Poor,false
 Visio.ShapeDataItem,N/A,Class,Good,false
 Visio.ShapeDataItem,"context",Property,Good,false
@@ -10283,7 +10273,6 @@ Visio.ShapeDataItem,"value",Property,Good,false
 Visio.ShapeDataItem,"load(options)",Method,Fine,true
 Visio.ShapeDataItem,"load(propertyNames)",Method,Poor,false
 Visio.ShapeDataItem,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.ShapeDataItem,"setMockData(data)",Method,Poor,false
 Visio.ShapeDataItem,"toJSON()",Method,Poor,false
 Visio.ShapeDataItemCollection,N/A,Class,Good,false
 Visio.ShapeDataItemCollection,"context",Property,Good,false
@@ -10293,7 +10282,6 @@ Visio.ShapeDataItemCollection,"getItem(key)",Method,Poor,false
 Visio.ShapeDataItemCollection,"load(options)",Method,Fine,true
 Visio.ShapeDataItemCollection,"load(propertyNames)",Method,Poor,false
 Visio.ShapeDataItemCollection,"load(propertyNamesAndPaths)",Method,Poor,false
-Visio.ShapeDataItemCollection,"setMockData(data)",Method,Poor,false
 Visio.ShapeDataItemCollection,"toJSON()",Method,Poor,false
 Visio.ShapeMouseEnterEventArgs,N/A,Class,Good,true
 Visio.ShapeMouseEnterEventArgs,"pageName",Property,Good,false
@@ -10312,7 +10300,6 @@ Visio.ShapeView,"load(propertyNamesAndPaths)",Method,Poor,false
 Visio.ShapeView,"removeOverlay(OverlayId)",Method,Poor,true
 Visio.ShapeView,"set(properties, options)",Method,Poor,false
 Visio.ShapeView,"set(properties)",Method,Poor,false
-Visio.ShapeView,"setMockData(data)",Method,Poor,false
 Visio.ShapeView,"setText(Text)",Method,Poor,false
 Visio.ShapeView,"showOverlay(overlayId, show)",Method,Poor,false
 Visio.ShapeView,"toJSON()",Method,Poor,false

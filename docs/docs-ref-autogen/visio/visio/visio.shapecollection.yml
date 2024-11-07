@@ -147,23 +147,6 @@ methods:
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.ShapeCollection#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.ShapeCollectionData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.ShapeCollectionData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: toJSON()
     uid: 'visio!Visio.ShapeCollection#toJSON:member(1)'
     package: visio!
