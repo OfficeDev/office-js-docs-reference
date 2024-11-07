@@ -27,7 +27,7 @@ properties:
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
     package: visio!
     fullName: height
-    summary: 'For EACH ITEM in the collection: Returns the height of the page.'
+    summary: 'For EACH ITEM in the collection: Returns the height of the page. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
     package: visio!
     fullName: index
-    summary: 'For EACH ITEM in the collection: Index of the Page.'
+    summary: 'For EACH ITEM in the collection: Index of the Page. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
     package: visio!
     fullName: isBackground
-    summary: 'For EACH ITEM in the collection: Whether the page is a background page or not.'
+    summary: 'For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
     package: visio!
     fullName: name
-    summary: 'For EACH ITEM in the collection: Page name.'
+    summary: 'For EACH ITEM in the collection: Page name. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -87,7 +87,7 @@ properties:
     uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
     package: visio!
     fullName: width
-    summary: 'For EACH ITEM in the collection: Returns the width of the page.'
+    summary: 'For EACH ITEM in the collection: Returns the width of the page. Read-only.'
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false

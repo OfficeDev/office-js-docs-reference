@@ -3,7 +3,7 @@ name: OneNote.Interfaces.TableUpdateData
 uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableUpdateData
-summary: 'An interface for updating data on the Table object, for use in `table.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Table` object, for use in `table.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

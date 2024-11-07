@@ -250,23 +250,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: setMockData(data)
-    uid: 'visio!Visio.PageView#setMockData:member(1)'
-    package: visio!
-    fullName: setMockData(data)
-    summary: Set mock data
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setMockData(data: Visio.Interfaces.PageViewData): void;'
-      parameters:
-        - id: data
-          description: ''
-          type: '<xref uid="visio!Visio.Interfaces.PageViewData:interface" />'
-      return:
-        type: void
-        description: ''
   - name: setPosition(Position)
     uid: 'visio!Visio.PageView#setPosition:member(1)'
     package: visio!

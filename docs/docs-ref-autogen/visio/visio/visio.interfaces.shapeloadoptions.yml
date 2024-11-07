@@ -27,7 +27,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
     package: visio!
     fullName: id
-    summary: Shape's identifier.
+    summary: Shape's identifier. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
     package: visio!
     fullName: name
-    summary: Shape's name.
+    summary: Shape's name. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
     package: visio!
     fullName: text
-    summary: Shape's text.
+    summary: Shape's text. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false

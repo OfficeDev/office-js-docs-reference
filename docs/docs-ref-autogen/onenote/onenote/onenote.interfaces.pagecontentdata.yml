@@ -25,7 +25,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#image:member'
     package: onenote!
     fullName: image
-    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
     package: onenote!
     fullName: ink
-    summary: Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+    summary: Gets the ink in the PageContent object. Throws an exception if PageContentType isn't Ink.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -61,7 +61,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#outline:member'
     package: onenote!
     fullName: outline
-    summary: Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+    summary: Gets the Outline in the PageContent object. Throws an exception if PageContentType isn't Outline.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

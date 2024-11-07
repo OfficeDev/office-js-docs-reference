@@ -3,7 +3,7 @@ name: OneNote.Interfaces.PointCollectionUpdateData
 uid: 'onenote!OneNote.Interfaces.PointCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PointCollectionUpdateData
-summary: 'An interface for updating data on the PointCollection object, for use in `pointCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `PointCollection` object, for use in `pointCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

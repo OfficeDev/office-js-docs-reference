@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the section. Read only
+    summary: The client URL of the section. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#isEncrypted:member'
     package: onenote!
     fullName: isEncrypted
-    summary: True if this section is encrypted with a password. Read only
+    summary: True if this section is encrypted with a password. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#isLocked:member'
     package: onenote!
     fullName: isLocked
-    summary: True if this section is locked. Read only
+    summary: True if this section is locked. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#pages:member'
     package: onenote!
     fullName: pages
-    summary: The collection of pages in the section. Read only
+    summary: The collection of pages in the section. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -85,7 +85,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionData#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: The web url of the page. Read only
+    summary: The web URL of the page. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

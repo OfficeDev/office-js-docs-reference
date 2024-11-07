@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the section group. Read only
+    summary: The client url of the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: The collection of section groups in the section group. Read only
+    summary: The collection of section groups in the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -61,7 +61,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#sections:member'
     package: onenote!
     fullName: sections
-    summary: The collection of sections in the section group. Read only
+    summary: The collection of sections in the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

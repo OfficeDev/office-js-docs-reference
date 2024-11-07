@@ -13,7 +13,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemData#format:member'
     package: visio!
     fullName: format
-    summary: A string that specifies the format of the shape data item.
+    summary: A string that specifies the format of the shape data item. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemData#formattedValue:member'
     package: visio!
     fullName: formattedValue
-    summary: A string that specifies the formatted value of the shape data item.
+    summary: A string that specifies the formatted value of the shape data item. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemData#label:member'
     package: visio!
     fullName: label
-    summary: A string that specifies the label of the shape data item.
+    summary: A string that specifies the label of the shape data item. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeDataItemData#value:member'
     package: visio!
     fullName: value
-    summary: A string that specifies the value of the shape data item.
+    summary: A string that specifies the value of the shape data item. Read-only.
     remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false

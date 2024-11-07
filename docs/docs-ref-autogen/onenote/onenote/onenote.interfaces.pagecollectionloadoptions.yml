@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: 'For EACH ITEM in the collection: The client url of the page. Read only'
+    summary: 'For EACH ITEM in the collection: The client URL of the page. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ properties:
     fullName: inkAnalysisOrNull
     summary: >-
       For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink
-      analysis information.
+      analysis information. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

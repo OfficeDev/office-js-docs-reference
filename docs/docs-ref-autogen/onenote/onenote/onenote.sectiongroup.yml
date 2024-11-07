@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: The client url of the section group. Read only
+    summary: The client URL of the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#id:member'
     package: onenote!
     fullName: id
-    summary: Gets the ID of the section group. Read-only.
+    summary: Gets the ID of the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#name:member'
     package: onenote!
     fullName: name
-    summary: Gets the name of the section group. Read-only.
+    summary: Gets the name of the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#notebook:member'
     package: onenote!
     fullName: notebook
-    summary: Gets the notebook that contains the section group. Read-only.
+    summary: Gets the notebook that contains the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ properties:
     fullName: parentSectionGroup
     summary: >-
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
-      of the notebook. Read-only.
+      of the notebook.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -91,7 +91,7 @@ properties:
     fullName: parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
-      notebook. Read-only.
+      notebook.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -103,7 +103,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: The collection of section groups in the section group. Read only
+    summary: The collection of section groups in the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -115,7 +115,7 @@ properties:
     uid: 'onenote!OneNote.SectionGroup#sections:member'
     package: onenote!
     fullName: sections
-    summary: The collection of sections in the section group. Read only
+    summary: The collection of sections in the section group.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -324,8 +324,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original OneNote.SectionGroup object is an API object, the `toJSON` method returns a
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `OneNote.SectionGroup` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
@@ -342,10 +342,11 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -360,9 +361,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

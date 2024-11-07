@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -40,8 +40,8 @@ properties:
     package: onenote!
     fullName: image
     summary: >-
-      For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is
-      not Image.
+      For EACH ITEM in the collection: Gets the Image object in the Paragraph. Throws an exception if ParagraphType
+      isn't Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
     package: onenote!
     fullName: inkWords
     summary: >-
-      For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is
-      not Ink.
+      For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType
+      isn't Ink.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -79,7 +79,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: 'For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only'
+    summary: 'For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -91,7 +91,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member'
     package: onenote!
     fullName: parentParagraph
-    summary: 'For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.'
+    summary: 'For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph doesn''t exist.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -104,7 +104,7 @@ properties:
     package: onenote!
     fullName: parentParagraphOrNull
     summary: >-
-      For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not
+      For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph doesn't
       exist.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
@@ -118,8 +118,8 @@ properties:
     package: onenote!
     fullName: parentTableCell
     summary: >-
-      For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is
-      not a TableCell, throws ItemNotFound.
+      For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent
+      isn't a TableCell, throws ItemNotFound.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -147,7 +147,7 @@ properties:
     fullName: richText
     summary: >-
       For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType
-      is not RichText.
+      isn't RichText.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -160,8 +160,8 @@ properties:
     package: onenote!
     fullName: table
     summary: >-
-      For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is
-      not Table.
+      For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType
+      isn't Table.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -3,7 +3,7 @@ name: OneNote.Interfaces.InkWordCollectionUpdateData
 uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkWordCollectionUpdateData
-summary: 'An interface for updating data on the InkWordCollection object, for use in `inkWordCollection.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `InkWordCollection` object, for use in `inkWordCollection.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false

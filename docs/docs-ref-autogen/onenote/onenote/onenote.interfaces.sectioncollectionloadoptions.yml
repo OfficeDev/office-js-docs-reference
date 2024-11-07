@@ -14,8 +14,8 @@ properties:
     package: onenote!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#isLocked:member'
     package: onenote!
     fullName: isLocked
-    summary: 'For EACH ITEM in the collection: True if this section is locked. Read only'
+    summary: 'For EACH ITEM in the collection: True if this section is locked. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -139,7 +139,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: 'For EACH ITEM in the collection: The web url of the page. Read only'
+    summary: 'For EACH ITEM in the collection: The web URL of the page. Read-only.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
