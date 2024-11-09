@@ -76,6 +76,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <li><a href="/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true">WordApiHiddenDocument 1.5</a> (Desktop only)</li>
             <li><a href="/javascript/api/word?view=word-js-1.4-hidden-document&preserve-view=true">WordApiHiddenDocument 1.4</a> (Desktop only)</li>
             <li><a href="/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true">WordApiHiddenDocument 1.3</a> (Desktop only)</li>
+            <li><a href="/javascript/api/word?view=word-js-1.9&preserve-view=true">WordApi 1.9</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.8&preserve-view=true">WordApi 1.8</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.7&preserve-view=true">WordApi 1.7</a></li>
             <li><a href="/javascript/api/word?view=word-js-1.6&preserve-view=true">WordApi 1.6</a></li>

@@ -73,6 +73,8 @@ items:
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
                 uid: 'word!Word.ImageFormat:enum'
+              - name: ImportedStylesConflictBehavior
+                uid: 'word!Word.ImportedStylesConflictBehavior:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
               - name: ListBuiltInNumberStyle
@@ -1112,6 +1114,9 @@ items:
           - name: WordApiDesktop 1.1 requirement set
             href: >-
               ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.9 requirement set
+            href: ../../requirement-sets/word/word-api-1-9-requirement-set.md
             displayName: Word
           - name: WordApi 1.8 requirement set
             href: ../../requirement-sets/word/word-api-1-8-requirement-set.md

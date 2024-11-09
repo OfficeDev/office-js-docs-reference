@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 10/18/2024
+ms.date: 11/18/2024
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -27,6 +27,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 | [WordApiHiddenDocument 1.5](word-api-1.5-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2302 (Build 16130.20332) | Office 2024: Version 2302 (Build 16130.20332) | Version 16.70 (23021201) | Not applicable |
 | [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 2208 (Build 15601.20148) | Office 2024: Version 2208 (Build 15601.20148) | Version 16.64 (22081401) | Not applicable |
 | [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Not applicable | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | Version 15.32 (17030901) | Not applicable |
+| [WordApi 1.9](word-api-1-9-requirement-set.md) | Supported | Version 24nn (Build xxxxx.yyyyy) | Not available | Version 16.nn (24xxxxxx) | Version 16.nn |
 | [WordApi 1.8](word-api-1-8-requirement-set.md) | Supported | Version 2405 (Build 17628.20110) | Office 2024: Version 2405 (Build 17628.20110) | Version 16.85 (24051214) | Version 16.85 |
 | [WordApi 1.7](word-api-1-7-requirement-set.md) | Supported | Version 2311 (Build 17029.20068) | Office 2024: Version 2311 (Build 17029.20068) | Version 16.79 (23111019) | Version 16.79 |
 | [WordApi 1.6](word-api-1-6-requirement-set.md) | Supported | Version 2308 (Build 16731.20234) | Office 2024: Version 2308 (Build 16731.20234) | Version 16.76 (23081101) | Version 16.76 |

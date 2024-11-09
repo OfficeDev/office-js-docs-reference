@@ -747,7 +747,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` and `ComboBox` support are currently in preview.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
@@ -1680,18 +1680,17 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+         * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
          *
          * @remarks
          * [Api set: WordApi 1.7]
          */
         readonly checkboxContentControl: Word.CheckboxContentControl;
         /**
-         * Specifies the combo box-related data if the content control's type is 'ComboBox'. It's `null` otherwise.
+         * Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly comboBoxContentControl: Word.ComboBoxContentControl;
         /**
@@ -1702,11 +1701,10 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's `null` otherwise.
+         * Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly dropDownListContentControl: Word.DropDownListContentControl;
         /**
@@ -2420,8 +2418,7 @@ export declare namespace Word {
      * Represents a list item in a dropdown list or combo box content control.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class ContentControlListItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2430,24 +2427,21 @@ export declare namespace Word {
          * Specifies the display text of a list item for a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         displayText: string;
         /**
          * Specifies the index location of a content control list item in the collection of list items.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         index: number;
         /**
          * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         value: string;
         /**
@@ -2462,16 +2456,14 @@ export declare namespace Word {
          * Deletes the list item.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         delete(): void;
         /**
          * Selects the list item and sets the text of the content control to the value of the list item.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         select(): void;
         /**
@@ -2513,8 +2505,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class ContentControlListItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2525,8 +2516,7 @@ export declare namespace Word {
          * Gets the first list item in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         getFirst(): Word.ContentControlListItem;
         /**
@@ -2535,8 +2525,7 @@ export declare namespace Word {
                     see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         getFirstOrNullObject(): Word.ContentControlListItem;
         /**
@@ -2585,7 +2574,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.5]
          *
          * Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was added in WordApi 1.7.
-         * 'DropDownList' and 'ComboBox' support are currently in preview.
+         * 'DropDownList' and 'ComboBox' support was added in WordApi 1.9.
          */
         types: Word.ContentControlType[];
     }
@@ -3429,9 +3418,24 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          *
+         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
+         * @param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
          */
-        importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;
+        /**
+         * Import styles from a JSON-formatted string.
+         *
+         * @remarks
+         * [Api set: WordApi 1.6]
+         *
+         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         *
+         * @param stylesJson - Required. A JSON-formatted string representing the styles.
+         * @param importedStylesConflictBehaviorString - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
+         */
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
@@ -3996,8 +4000,7 @@ export declare namespace Word {
      * The data specific to content controls of type DropDownList.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class DropDownListContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4006,16 +4009,14 @@ export declare namespace Word {
          * Gets the collection of list items in the dropdown list content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly listItems: Word.ContentControlListItemCollection;
         /**
          * Adds a new list item to this dropdown list content control and returns a {@link Word.ContentControlListItem} object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          *
          * @param displayText - Required. Display text of the list item.
          * @param value - Optional. Value of the list item.
@@ -4026,8 +4027,7 @@ export declare namespace Word {
          * Deletes all list items in this dropdown list content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         deleteAllListItems(): void;
         /**
@@ -4063,8 +4063,7 @@ export declare namespace Word {
      * The data specific to content controls of type 'ComboBox'.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class ComboBoxContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4073,16 +4072,14 @@ export declare namespace Word {
          * Gets the collection of list items in the combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly listItems: Word.ContentControlListItemCollection;
         /**
          * Adds a new list item to this combo box content control and returns a {@link Word.ContentControlListItem} object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          *
          * @param displayText - Required. Display text of the list item.
          * @param value - Optional. Value of the list item.
@@ -4093,8 +4090,7 @@ export declare namespace Word {
          * Deletes all list items in this combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         deleteAllListItems(): void;
         /**
@@ -6131,7 +6127,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` and `ComboBox` support are currently in preview.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
@@ -6939,7 +6935,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
-         * `DropDownList` and `ComboBox` support are currently in preview.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
          * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
@@ -13707,6 +13703,32 @@ export declare namespace Word {
          */
         compareTargetNew = "CompareTargetNew",
     }
+    /**
+     * Specifies how to handle any conflicts, that is, when imported styles have the same name as existing styles in the current document.
+     *
+     * @remarks
+     * [Api set: WordApiDesktop 1.1]
+     */
+    enum ImportedStylesConflictBehavior {
+        /**
+         * Ignore conflicting imported styles and keep the existing version of those styles in the current document.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        ignore = "Ignore",
+        /**
+         * Overwrite the existing styles in the current document.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        overwrite = "Overwrite",
+        /**
+         * Rename conflicting imported styles so that both versions are kept in the current document. For example, if MyStyle already exists in the document, then the imported version could be added as MyStyle1.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        createNew = "CreateNew",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -13943,7 +13965,7 @@ export declare namespace Word {
         /** An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+             * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
              *
              * @remarks
              * [Api set: WordApi 1.7]
@@ -14037,24 +14059,21 @@ export declare namespace Word {
              * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: string;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: number;
             /**
              * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: string;
         }
@@ -15577,18 +15596,17 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+             * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
              *
              * @remarks
              * [Api set: WordApi 1.7]
              */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlData;
             /**
-             * Specifies the combo box-related data if the content control's type is 'ComboBox'. It's `null` otherwise.
+             * Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;
             /**
@@ -15599,11 +15617,10 @@ export declare namespace Word {
              */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-             * Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's `null` otherwise.
+             * Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             dropDownListContentControl?: Word.Interfaces.DropDownListContentControlData;
             /**
@@ -15759,24 +15776,21 @@ export declare namespace Word {
              * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: string;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: number;
             /**
              * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: string;
         }
@@ -18075,7 +18089,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+             * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
              *
              * @remarks
              * [Api set: WordApi 1.7]
@@ -18248,7 +18262,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+             * For EACH ITEM in the collection: Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
              *
              * @remarks
              * [Api set: WordApi 1.7]
@@ -18413,8 +18427,7 @@ export declare namespace Word {
          * Represents a list item in a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         export interface ContentControlListItemLoadOptions {
             /**
@@ -18425,24 +18438,21 @@ export declare namespace Word {
              * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: boolean;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: boolean;
             /**
              * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: boolean;
         }
@@ -18450,8 +18460,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         export interface ContentControlListItemCollectionLoadOptions {
             /**
@@ -18462,24 +18471,21 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: boolean;
         }

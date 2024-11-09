@@ -11257,7 +11257,8 @@ Word.Document,"getFootnoteBody()",Method,Poor,false
 Word.Document,"getParagraphByUniqueLocalId(id)",Method,Poor,true
 Word.Document,"getSelection()",Method,Poor,true
 Word.Document,"getStyles()",Method,Poor,true
-Word.Document,"importStylesFromJson(stylesJson)",Method,Poor,true
+Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehavior)",Method,Fine,true
+Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)",Method,Fine,false
 Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Fine,true
 Word.Document,"load(options)",Method,Fine,true
 Word.Document,"load(propertyNames)",Method,Poor,false
@@ -11563,6 +11564,10 @@ Word.ImageFormat,"tiff",EnumField,Fine,false
 Word.ImageFormat,"undefined",EnumField,Fine,false
 Word.ImageFormat,"unsupported",EnumField,Fine,false
 Word.ImageFormat,"wmf",EnumField,Fine,false
+Word.ImportedStylesConflictBehavior,N/A,Enum,Good,false
+Word.ImportedStylesConflictBehavior,"createNew",EnumField,Good,false
+Word.ImportedStylesConflictBehavior,"ignore",EnumField,Fine,false
+Word.ImportedStylesConflictBehavior,"overwrite",EnumField,Fine,false
 Word.InlinePicture,N/A,Class,Good,true
 Word.InlinePicture,"altTextDescription",Property,Good,false
 Word.InlinePicture,"altTextTitle",Property,Good,false
