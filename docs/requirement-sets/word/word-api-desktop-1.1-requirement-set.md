@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API desktop-only requirement set 1.1
 description: Details about the WordApiDesktop 1.1 requirement set.
-ms.date: 09/05/2024
+ms.date: 11/18/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 
 The `WordApiDesktop` requirement set is a special requirement set that includes features that are only available for Word on Windows, on Mac, and on iPad. APIs in this requirement set are considered to be production APIs for the Word application on Windows, on Mac, and on iPad. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiDesktop` APIs are considered to be "preview" APIs for other platforms (web) and may not be supported by any of those platforms.
 
-When APIs in the `WordApiDesktop` requirement set are supported across all platforms, they will be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `WordApiDesktop` requirement set.
+When APIs in the `WordApiDesktop` requirement set are supported across all platforms, they will be added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `WordApiDesktop` requirement set. To learn more about platform-specific requirements in general, see [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets).
 
 > [!IMPORTANT]
-> `WordApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the WordApi 1.8 and WordApiHiddenDocument 1.5 requirement sets.
+> `WordApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the WordApi 1.8.
 
 ## Recommended usage
 
-Because `WordApiDesktop` APIs are only supported by Word on Windows, on Mac, and on iPad, your add-in should check if the requirement set is supported before calling these APIs. This avoids any attempt to use desktop-only APIs on an unsupported platform.
+Because the `WordApiDesktop 1.1` APIs are only supported by Word on Windows, on Mac, and on iPad, your add-in should check if the requirement set is supported before calling these APIs. This avoids any attempt to use desktop-only APIs on an unsupported platform.
 
 ```js
 if (Office.context.requirements.isSetSupported("WordApiDesktop", "1.1")) {
-   // Any API exclusive to the WordApiDesktop requirement set.
+   // Any API exclusive to this WordApiDesktop requirement set.
 }
 ```
 
@@ -41,3 +41,4 @@ The following table lists the Word JavaScript APIs currently included in the `Wo
 - [Word JavaScript API Reference Documentation](/javascript/api/word?view=word-js-desktop-1.1&preserve-view=true)
 - [Word JavaScript preview APIs](word-preview-apis.md)
 - [Word JavaScript API requirement sets](word-api-requirement-sets.md)
+- [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets)

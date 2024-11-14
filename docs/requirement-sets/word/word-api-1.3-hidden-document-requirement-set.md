@@ -45,3 +45,4 @@ The following table lists the Word JavaScript APIs currently included in the `Wo
 - [Word JavaScript API Reference Documentation](/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true)
 - [Word JavaScript preview APIs](word-preview-apis.md)
 - [Word JavaScript API requirement sets](word-api-requirement-sets.md)
+- [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets)
