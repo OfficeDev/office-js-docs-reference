@@ -212,10 +212,17 @@ methods:
       -->**: Compose
 
 
-      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
-      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
-      supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn
+      more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       #### Examples
@@ -287,10 +294,17 @@ methods:
       -->**: Compose
 
 
-      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
-      4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
-      supported in Outlook on mobile
-      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn
+      more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,6 +364,11 @@ methods:
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
       -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       #### Examples
@@ -442,6 +461,11 @@ methods:
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
       -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:

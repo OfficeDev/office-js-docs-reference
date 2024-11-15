@@ -8858,6 +8858,88 @@ Office.IsAllDayEvent,"setAsync(isAllDayEvent, callback)",Method,Poor,false
 Office.Item,N/A,Class,Good,true
 Office.ItemCompose,N/A,Class,Good,false
 Office.ItemRead,N/A,Class,Good,false
+Office.LoadedMessageCompose,N/A,Class,Good,false
+Office.LoadedMessageCompose,"bcc",Property,Good,false
+Office.LoadedMessageCompose,"body",Property,Good,false
+Office.LoadedMessageCompose,"categories",Property,Good,false
+Office.LoadedMessageCompose,"cc",Property,Good,false
+Office.LoadedMessageCompose,"conversationId",Property,Good,false
+Office.LoadedMessageCompose,"delayDeliveryTime",Property,Good,false
+Office.LoadedMessageCompose,"from",Property,Good,false
+Office.LoadedMessageCompose,"inReplyTo",Property,Good,false
+Office.LoadedMessageCompose,"internetHeaders",Property,Good,false
+Office.LoadedMessageCompose,"itemType",Property,Good,false
+Office.LoadedMessageCompose,"notificationMessages",Property,Good,false
+Office.LoadedMessageCompose,"sensitivityLabel",Property,Good,false
+Office.LoadedMessageCompose,"seriesId",Property,Good,false
+Office.LoadedMessageCompose,"subject",Property,Good,false
+Office.LoadedMessageCompose,"to",Property,Good,false
+Office.LoadedMessageCompose,"getAttachmentContentAsync(attachmentId, options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getAttachmentContentAsync(attachmentId, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getAttachmentsAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getAttachmentsAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getComposeTypeAsync(options, callback)",Method,Fine,false
+Office.LoadedMessageCompose,"getComposeTypeAsync(callback)",Method,Fine,false
+Office.LoadedMessageCompose,"getConversationIndexAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getConversationIndexAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getInitializationContextAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getInitializationContextAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getItemClassAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getItemClassAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getItemIdAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getItemIdAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"getSharedPropertiesAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"isClientSignatureEnabledAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"isClientSignatureEnabledAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,false
+Office.LoadedMessageCompose,"saveAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageCompose,"saveAsync(callback)",Method,Poor,false
+Office.LoadedMessageCompose,"unloadAsync(options, callback)",Method,Fine,false
+Office.LoadedMessageCompose,"unloadAsync(callback)",Method,Poor,false
+Office.LoadedMessageRead,N/A,Class,Good,false
+Office.LoadedMessageRead,"attachments",Property,Good,false
+Office.LoadedMessageRead,"body",Property,Good,false
+Office.LoadedMessageRead,"categories",Property,Good,false
+Office.LoadedMessageRead,"cc",Property,Good,false
+Office.LoadedMessageRead,"conversationId",Property,Good,false
+Office.LoadedMessageRead,"dateTimeCreated",Property,Good,false
+Office.LoadedMessageRead,"dateTimeModified",Property,Good,false
+Office.LoadedMessageRead,"end",Property,Good,false
+Office.LoadedMessageRead,"from",Property,Good,false
+Office.LoadedMessageRead,"internetMessageId",Property,Good,false
+Office.LoadedMessageRead,"itemClass",Property,Good,false
+Office.LoadedMessageRead,"itemId",Property,Good,false
+Office.LoadedMessageRead,"itemType",Property,Good,false
+Office.LoadedMessageRead,"location",Property,Good,false
+Office.LoadedMessageRead,"normalizedSubject",Property,Good,false
+Office.LoadedMessageRead,"notificationMessages",Property,Good,false
+Office.LoadedMessageRead,"recurrence",Property,Good,false
+Office.LoadedMessageRead,"sender",Property,Good,false
+Office.LoadedMessageRead,"seriesId",Property,Good,false
+Office.LoadedMessageRead,"start",Property,Good,false
+Office.LoadedMessageRead,"subject",Property,Good,false
+Office.LoadedMessageRead,"to",Property,Good,false
+Office.LoadedMessageRead,"displayReplyAllFormAsync(formData, options, callback)",Method,Fine,false
+Office.LoadedMessageRead,"displayReplyAllFormAsync(formData, callback)",Method,Fine,false
+Office.LoadedMessageRead,"displayReplyFormAsync(formData, options, callback)",Method,Fine,false
+Office.LoadedMessageRead,"displayReplyFormAsync(formData, callback)",Method,Fine,false
+Office.LoadedMessageRead,"getAllInternetHeadersAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getAllInternetHeadersAsync(callback)",Method,Poor,false
+Office.LoadedMessageRead,"getAsFileAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getAsFileAsync(callback)",Method,Poor,false
+Office.LoadedMessageRead,"getAttachmentContentAsync(attachmentId, options, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getAttachmentContentAsync(attachmentId, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getInitializationContextAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getInitializationContextAsync(callback)",Method,Poor,false
+Office.LoadedMessageRead,"getRegExMatches()",Method,Good,false
+Office.LoadedMessageRead,"getRegExMatchesByName(name)",Method,Fine,false
+Office.LoadedMessageRead,"getSelectedRegExMatches()",Method,Good,false
+Office.LoadedMessageRead,"getSharedPropertiesAsync(options, callback)",Method,Poor,false
+Office.LoadedMessageRead,"getSharedPropertiesAsync(callback)",Method,Poor,false
+Office.LoadedMessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Poor,false
+Office.LoadedMessageRead,"unloadAsync(options, callback)",Method,Fine,false
+Office.LoadedMessageRead,"unloadAsync(callback)",Method,Poor,false
 Office.LocalClientTime,N/A,Class,Good,false
 Office.LocalClientTime,"date",Property,Fine,false
 Office.LocalClientTime,"hours",Property,Fine,false
@@ -8909,6 +8991,8 @@ Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
 Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
+Office.Mailbox,"loadItemByIdAsync(itemId, options, callback)",Method,Fine,false
+Office.Mailbox,"loadItemByIdAsync(itemId, callback)",Method,Poor,false
 Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Poor,true
 Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Poor,false
 Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Poor,true
