@@ -137,10 +137,18 @@ methods:
       -->**: Compose
 
 
-      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
-      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**:
+
+
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -210,10 +218,18 @@ methods:
       -->**: Compose
 
 
-      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
-      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
-      [Outlook JavaScript APIs supported in Outlook on mobile
+      **Important**:
+
+
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:

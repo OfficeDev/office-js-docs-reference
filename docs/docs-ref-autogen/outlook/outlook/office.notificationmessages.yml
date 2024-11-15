@@ -60,6 +60,11 @@ methods:
       - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
 
 
+      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       #### Examples
 
 
@@ -198,6 +203,11 @@ methods:
 
 
       - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
+
+
+      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -338,6 +348,11 @@ methods:
       -->**: Compose or Read
 
 
+      **Important**: The `removeAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       #### Examples
 
 
@@ -394,6 +409,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `removeAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -430,6 +450,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `replaceAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       #### Examples
@@ -503,6 +528,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `replaceAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
