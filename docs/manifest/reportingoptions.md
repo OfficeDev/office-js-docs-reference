@@ -1,7 +1,7 @@
 ---
 title: ReportingOptions element in the manifest file
 description: The ReportingOptions element specifies the reporting options listed in the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 06/12/2024
+ms.date: 11/21/2024
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +29,11 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Attributes
 
-None.
+| Attribute | Required | Description |
+|:-----|:-----:|:-----|
+| **inputType** (preview)* | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. |
+
+> \* The `inputType` attribute is currently in preview in classic Outlook on Windows starting in Version 2411 (Build 18227.20034).
 
 ## Child elements
 
