@@ -168,6 +168,11 @@ methods:
       -->**: Compose or Read
 
 
+      **Important**: The `remove` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       #### Examples
 
 
@@ -315,9 +320,9 @@ methods:
       persist on the mail item, you must call the `saveAsync` method.
 
 
-      The `set` method creates a new property if the specified property does not already exist; otherwise, the existing
-      value is replaced with the new value. The `value` parameter can be of any type; however, it is always passed to
-      the server as a string.
+      The `set` method creates a new property if the specified property doesn't already exist; otherwise, the existing
+      value is replaced with the new value. The `value` parameter can be of any type; however, it's always passed to the
+      server as a string.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -330,6 +335,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The `set` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       #### Examples
