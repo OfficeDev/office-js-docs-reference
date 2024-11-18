@@ -170,13 +170,7 @@ properties:
     uid: 'outlook!Office.MessageCompose#categories:member'
     package: outlook!
     fullName: categories
-    summary: >-
-      Gets an object that provides methods for managing the item's categories.
-
-
-      **Important**: In Outlook on the web and [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
-      to manage categories on a message in Compose mode.
+    summary: Gets an object that provides methods for managing the item's categories.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -189,6 +183,11 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories on a message in Compose mode.
 
 
       #### Examples
@@ -699,17 +698,6 @@ properties:
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the
       `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
       However, in Outlook on Android and on iOS, the seriesId returns the REST ID of the parent item.
-
-
-      **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
-      identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
-      -->. For more details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
-
-
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -722,6 +710,17 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services
+      item identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
+
+
+      The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
 
 
       #### Examples
@@ -2624,7 +2623,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to Outlook on Windows only)**
+      b. **Shared mailbox (applies to classic Outlook on Windows only)**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
@@ -2706,7 +2705,7 @@ methods:
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to Outlook on Windows only)**
+      b. **Shared mailbox (applies to classic Outlook on Windows only)**
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.

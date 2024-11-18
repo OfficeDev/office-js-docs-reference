@@ -127,6 +127,11 @@ methods:
       - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
+      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -250,6 +255,11 @@ methods:
 
 
       - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -623,6 +633,11 @@ methods:
       - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
+      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -752,6 +767,11 @@ methods:
       - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
+      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -826,6 +846,11 @@ methods:
 
 
       - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -957,6 +982,11 @@ methods:
       - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
 
 
+      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -1028,8 +1058,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -1042,6 +1072,11 @@ methods:
 
 
       - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1195,8 +1230,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -1209,6 +1244,11 @@ methods:
 
 
       - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1265,7 +1305,7 @@ methods:
       **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
 
 
-      **Important*:
+      **Important**:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
@@ -1276,6 +1316,11 @@ methods:
 
 
       - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1382,7 +1427,7 @@ methods:
       **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
 
 
-      **Important*:
+      **Important**:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
@@ -1393,6 +1438,11 @@ methods:
 
 
       - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1467,6 +1517,11 @@ methods:
 
 
       - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1609,6 +1664,11 @@ methods:
 
 
       - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:

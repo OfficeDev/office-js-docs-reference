@@ -2905,7 +2905,7 @@ export declare namespace Office {
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         * - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
@@ -2956,7 +2956,7 @@ export declare namespace Office {
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         * - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
@@ -4747,20 +4747,20 @@ export declare namespace Office {
          * the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
          * However, in Outlook on Android and on iOS, the seriesId returns the REST ID of the parent item.
          *
-         * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
-         * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
-         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
-         *
-         * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
-         * and returns `undefined` for any other items that are not meeting requests.
-         *
          * @remarks
          * [Api set: Mailbox 1.7]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+         * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+         *
+         * The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series items, or meeting requests
+         * and returns `undefined` for any other items that are not meeting requests.
          */
         seriesId: string;
         

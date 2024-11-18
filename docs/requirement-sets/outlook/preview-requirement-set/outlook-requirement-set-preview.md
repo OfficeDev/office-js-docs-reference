@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/25/2024
+ms.date: 11/14/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -35,19 +35,19 @@ The following features are in preview.
 
 Added events to activate an event-based add-in on a message in read mode when it contains certain attachment types or custom internet headers.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [HeaderName attribute in the LaunchEvent element](../../../manifest/launchevent.md#attributes)
 
 Added an attribute to the **\<LaunchEvent\>** XML element to specify the internet header name on which the `OnMessageReadWithCustomHeader` event occurs.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [MessageAttachments element](../../../manifest/messageattachments.md)
 
 Added an XML element to specify the file extension of the attachment included in a message on which the `OnMessageReadWithCustomAttachment` event occurs.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
@@ -61,13 +61,39 @@ Added an XML element to specify the file extension of the attachment included in
 
 Added a new object that represents the all-day event property of an appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
 Added a new property that represents if an appointment is an all-day event.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Item multi-select: Get additional message properties and run operations on multiple selected messages
+
+#### [Office.context.mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-loaditembyidasync-member(1))
+
+Added a new method to get additional properties and run operations on selected messages.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose?view=outlook-js-preview&preserve-view=true)
+
+Added a new object that represents the properties and methods of a selected message in compose mode.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread?view=outlook-js-preview&preserve-view=true)
+
+Added a new object that represents the properties and methods of a selected message in read mode.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
@@ -81,7 +107,7 @@ Added a new property that represents if an appointment is an all-day event.
 
 Added an `event.completed` option to format a message in a Smart Alerts dialog using Markdown. To learn more, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough) and [Limitations to formatting the dialog message using Markdown](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown).
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
@@ -95,25 +121,25 @@ Added an `event.completed` option to format a message in a Smart Alerts dialog u
 
 Added a property that gets an object to temporarily set the content displayed in the body or subject of a message in read mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.Display](/javascript/api/outlook/office.display?view=outlook-js-preview&preserve-view=true)
 
 Added an object that provides properties to temporarily set the content displayed in the body or subject of a message in read mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.DisplayedBody](/javascript/api/outlook/office.displayedbody?view=outlook-js-preview&preserve-view=true)
 
 Added an object that provides a method to temporarily set the content displayed in the body of a message in read mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.DisplayedSubject](/javascript/api/outlook/office.displayedsubject?view=outlook-js-preview&preserve-view=true)
 
 Added an object that provides a method to temporarily set the content displayed in the subject of a message in read mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
