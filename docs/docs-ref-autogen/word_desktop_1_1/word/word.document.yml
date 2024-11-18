@@ -731,13 +731,16 @@ methods:
       return:
         type: '<xref uid="word!Word.StyleCollection:class" />'
         description: ''
-  - name: importStylesFromJson(stylesJson)
+  - name: 'importStylesFromJson(stylesJson, importedStylesConflictBehavior)'
     uid: 'word!Word.Document#importStylesFromJson:member(1)'
     package: word!
-    fullName: importStylesFromJson(stylesJson)
+    fullName: 'importStylesFromJson(stylesJson, importedStylesConflictBehavior)'
     summary: Import styles from a JSON-formatted string.
     remarks: >-
       \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
 
 
       #### Examples
@@ -763,11 +766,45 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;'
+      content: >-
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior):
+        OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: stylesJson
           description: Required. A JSON-formatted string representing the styles.
           type: string
+        - id: importedStylesConflictBehavior
+          description: >-
+            Optional. Specifies how to handle any imported styles with the same name as existing styles in the current
+            document.
+          type: '<xref uid="word!Word.ImportedStylesConflictBehavior:enum" />'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        description: ''
+  - name: 'importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)'
+    uid: 'word!Word.Document#importStylesFromJson:member(2)'
+    package: word!
+    fullName: 'importStylesFromJson(stylesJson, importedStylesConflictBehaviorString)'
+    summary: Import styles from a JSON-formatted string.
+    remarks: |-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" |
+        "CreateNew"): OfficeExtension.ClientResult<string[]>;
+      parameters:
+        - id: stylesJson
+          description: Required. A JSON-formatted string representing the styles.
+          type: string
+        - id: importedStylesConflictBehaviorString
+          description: >-
+            Optional. Specifies how to handle any imported styles with the same name as existing styles in the current
+            document.
+          type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''

@@ -2350,6 +2350,145 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'loadItemByIdAsync(itemId, options, callback)'
+    uid: 'outlook!Office.Mailbox#loadItemByIdAsync:member(1)'
+    package: outlook!
+    fullName: 'loadItemByIdAsync(itemId, options, callback)'
+    summary: >-
+      Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
+      and methods of the loaded item.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose, Read
+
+
+      **Important**:
+
+
+      - This method only applies to messages.
+
+
+      - When implementing the [item multi-select
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->, call
+      `Office.context.mailbox.getSelectedItemsAsync` to get the item IDs of each selected item, so that they can be
+      loaded one at a time.
+
+
+      - Before you implement the `loadItemByIdAsync` method with the item multi-select feature, determine if you can
+      already access the required properties of the selected item using the
+      `Office.context.mailbox.getSelectedItemsAsync` call. If you can, you don't need to call `loadItemByIdAsync`<!--
+      -->.
+
+
+      - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`<!-- -->, you must call
+      `unloadAsync` after processing the item. This must be done before calling `loadItemByIdAsync` on another item.
+
+
+      - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        loadItemByIdAsync(itemId: string, options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<LoadedMessageCompose | LoadedMessageRead>) => void): void;
+      parameters:
+        - id: itemId
+          description: The EWS ID of a selected item.
+          type: string
+        - id: options
+          description: >-
+            An object literal that contains the `asyncContext` property. In this property, provide any object you wish
+            to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or
+            `LoadedMessageRead` object is returned in the `asyncResult.value` property. This object provides the
+            properties of the selected item that's currently loaded.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.LoadedMessageCompose:interface" /> | <xref
+            uid="outlook!Office.LoadedMessageRead:interface" />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'loadItemByIdAsync(itemId, callback)'
+    uid: 'outlook!Office.Mailbox#loadItemByIdAsync:member(2)'
+    package: outlook!
+    fullName: 'loadItemByIdAsync(itemId, callback)'
+    summary: >-
+      Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
+      and methods of the loaded item.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose, Read
+
+
+      **Important**:
+
+
+      - This method only applies to messages.
+
+
+      - When implementing the [item multi-select
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->, call
+      `Office.context.mailbox.getSelectedItemsAsync` to get the item IDs of each selected item, so that they can be
+      loaded one at a time.
+
+
+      - Before you implement the `loadItemByIdAsync` method with the item multi-select feature, determine if you can
+      already access the required properties of the selected item using the
+      `Office.context.mailbox.getSelectedItemsAsync` call. If you can, you don't need to call `loadItemByIdAsync`<!--
+      -->.
+
+
+      - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`<!-- -->, you must call
+      `unloadAsync` after processing the item. This must be done before calling `loadItemByIdAsync` on another item.
+
+
+      - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        loadItemByIdAsync(itemId: string, callback: (asyncResult: Office.AsyncResult<LoadedMessageCompose |
+        LoadedMessageRead>) => void): void;
+      parameters:
+        - id: itemId
+          description: The EWS ID of a selected item.
+          type: string
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. A `LoadedMessageCompose` or
+            `LoadedMessageRead` object is returned in the `asyncResult.value` property. This object provides the
+            properties of the selected item that's currently loaded.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.LoadedMessageCompose:interface" /> | <xref
+            uid="outlook!Office.LoadedMessageRead:interface" />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
   - name: 'makeEwsRequestAsync(data, callback, userContext)'
     uid: 'outlook!Office.Mailbox#makeEwsRequestAsync:member(1)'
     package: outlook!

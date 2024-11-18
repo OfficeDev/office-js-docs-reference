@@ -28,7 +28,7 @@
 |[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
 ||[ids](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)|The source of the event.|
-|[ContentControlOptions](/javascript/api/word/word.contentcontroloptions)|[types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)|An array of content control types, item must be 'RichText', 'PlainText', or 'CheckBox'.|
+|[ContentControlOptions](/javascript/api/word/word.contentcontroloptions)|[types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)|An array of content control types, item must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'.|
 |[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
 ||[ids](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)|The source of the event.|

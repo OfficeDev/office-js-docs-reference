@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: Word.Interfaces.FieldData
+uid: 'word!Word.Interfaces.FieldData:interface'
+package: word!
+fullName: Word.Interfaces.FieldData
+summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: 'word!Word.Interfaces.FieldData#code:member'
+    package: word!
+    fullName: code
+    summary: Specifies the field's code instruction.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string;'
+      return:
+        type: string
+  - name: data
+    uid: 'word!Word.Interfaces.FieldData#data:member'
+    package: word!
+    fullName: data
+    summary: >-
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: string;'
+      return:
+        type: string
+  - name: kind
+    uid: 'word!Word.Interfaces.FieldData#kind:member'
+    package: word!
+    fullName: kind
+    summary: Gets the field's kind.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind?: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";'
+      return:
+        type: '<xref uid="word!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" | "Cold"'
+  - name: locked
+    uid: 'word!Word.Interfaces.FieldData#locked:member'
+    package: word!
+    fullName: locked
+    summary: 'Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean
+  - name: result
+    uid: 'word!Word.Interfaces.FieldData#result:member'
+    package: word!
+    fullName: result
+    summary: Gets the field's result data.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: Word.Interfaces.RangeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.RangeData:interface" />'
+  - name: type
+    uid: 'word!Word.Interfaces.FieldData#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the field's type.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" |
+        "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" |
+        "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" |
+        "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton"
+        | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" |
+        "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" |
+        "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page"
+        | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" |
+        "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" |
+        "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" |
+        "Empty" | "Others" | "Undefined";
+      return:
+        type: >-
+          <xref uid="word!Word.FieldType:enum" /> | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText"
+          | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
+          "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" |
+          "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" |
+          "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
+          "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" |
+          "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" |
+          "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" |
+          "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" |
+          "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" |
+          "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"

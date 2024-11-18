@@ -614,8 +614,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -781,8 +781,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment

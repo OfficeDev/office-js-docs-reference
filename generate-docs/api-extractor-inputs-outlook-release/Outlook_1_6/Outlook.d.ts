@@ -1916,7 +1916,7 @@ export declare namespace Office {
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         * - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
@@ -1967,7 +1967,7 @@ export declare namespace Office {
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         * - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see

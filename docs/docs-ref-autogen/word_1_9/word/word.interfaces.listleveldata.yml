@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListLevelData
+uid: 'word!Word.Interfaces.ListLevelData:interface'
+package: word!
+fullName: Word.Interfaces.ListLevelData
+summary: An interface describing the data returned by calling `listLevel.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

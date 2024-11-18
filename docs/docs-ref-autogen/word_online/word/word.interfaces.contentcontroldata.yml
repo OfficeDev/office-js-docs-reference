@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlData#checkboxContentControl:member'
     package: word!
     fullName: checkboxContentControl
-    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's `null` otherwise.
+    summary: Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -71,6 +71,18 @@ properties:
       content: 'color?: string;'
       return:
         type: string
+  - name: comboBoxContentControl
+    uid: 'word!Word.Interfaces.ContentControlData#comboBoxContentControl:member'
+    package: word!
+    fullName: comboBoxContentControl
+    summary: Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ComboBoxContentControlData:interface" />'
   - name: contentControls
     uid: 'word!Word.Interfaces.ContentControlData#contentControls:member'
     package: word!
@@ -83,6 +95,18 @@ properties:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: dropDownListContentControl
+    uid: 'word!Word.Interfaces.ContentControlData#dropDownListContentControl:member'
+    package: word!
+    fullName: dropDownListContentControl
+    summary: Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dropDownListContentControl?: Word.Interfaces.DropDownListContentControlData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.DropDownListContentControlData:interface" />'
   - name: fields
     uid: 'word!Word.Interfaces.ContentControlData#fields:member'
     package: word!

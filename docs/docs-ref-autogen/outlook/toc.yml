@@ -123,6 +123,10 @@ items:
             uid: 'outlook!Office.IsAllDayEvent:interface'
           - name: Item
             uid: 'outlook!Office.Item:interface'
+          - name: LoadedMessageCompose
+            uid: 'outlook!Office.LoadedMessageCompose:interface'
+          - name: LoadedMessageRead
+            uid: 'outlook!Office.LoadedMessageRead:interface'
           - name: LocalClientTime
             uid: 'outlook!Office.LocalClientTime:interface'
           - name: Location
@@ -1044,6 +1048,9 @@ items:
           - name: WordApiDesktop 1.1 requirement set
             href: >-
               ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.9 requirement set
+            href: ../../requirement-sets/word/word-api-1-9-requirement-set.md
             displayName: Word
           - name: WordApi 1.8 requirement set
             href: ../../requirement-sets/word/word-api-1-8-requirement-set.md

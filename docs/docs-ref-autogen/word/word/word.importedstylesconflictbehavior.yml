@@ -1,0 +1,38 @@
+### YamlMime:TSEnum
+name: Word.ImportedStylesConflictBehavior
+uid: 'word!Word.ImportedStylesConflictBehavior:enum'
+package: word!
+fullName: Word.ImportedStylesConflictBehavior
+summary: >-
+  Specifies how to handle any conflicts, that is, when imported styles have the same name as existing styles in the
+  current document.
+remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: createNew
+    uid: 'word!Word.ImportedStylesConflictBehavior.createNew:member'
+    package: word!
+    summary: >-
+      Rename conflicting imported styles so that both versions are kept in the current document. For example, if MyStyle
+      already exists in the document, then the imported version could be added as MyStyle1.
+
+
+      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CreateNew"'
+  - name: ignore
+    uid: 'word!Word.ImportedStylesConflictBehavior.ignore:member'
+    package: word!
+    summary: |-
+      Ignore conflicting imported styles and keep the existing version of those styles in the current document.
+
+      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Ignore"'
+  - name: overwrite
+    uid: 'word!Word.ImportedStylesConflictBehavior.overwrite:member'
+    package: word!
+    summary: |-
+      Overwrite the existing styles in the current document.
+
+      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Overwrite"'
