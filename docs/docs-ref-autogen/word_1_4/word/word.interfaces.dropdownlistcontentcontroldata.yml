@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.DropDownListContentControlData
+uid: 'word!Word.Interfaces.DropDownListContentControlData:interface'
+package: word!
+fullName: Word.Interfaces.DropDownListContentControlData
+summary: An interface describing the data returned by calling `dropDownListContentControl.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

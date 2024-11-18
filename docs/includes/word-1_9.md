@@ -1,0 +1,18 @@
+| Class | Fields | Description |
+|:---|:---|:---|
+|[ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol)|[addListItem(displayText: string, value?: string, index?: number)](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-addlistitem-member(1))|Adds a new list item to this combo box content control and returns a Word.ContentControlListItem object.|
+||[deleteAllListItems()](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-deletealllistitems-member(1))|Deletes all list items in this combo box content control.|
+||[listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)|Gets the collection of list items in the combo box content control.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[comboBoxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-comboboxcontentcontrol-member)|Gets the data of the content control when its type is 'ComboBox'.|
+||[dropDownListContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-dropdownlistcontentcontrol-member)|Gets the data of the content control when its type is 'DropDownList'.|
+|[ContentControlListItem](/javascript/api/word/word.contentcontrollistitem)|[delete()](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-delete-member(1))|Deletes the list item.|
+||[displayText](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-displaytext-member)|Specifies the display text of a list item for a dropdown list or combo box content control.|
+||[index](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-index-member)|Specifies the index location of a content control list item in the collection of list items.|
+||[select()](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-select-member(1))|Selects the list item and sets the text of the content control to the value of the list item.|
+||[value](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-value-member)|Specifies the programmatic value of a list item for a dropdown list or combo box content control.|
+|[ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection)|[getFirst()](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirst-member(1))|Gets the first list item in this collection.|
+||[getFirstOrNullObject()](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirstornullobject-member(1))|Gets the first list item in this collection.|
+||[items](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-items-member)|Gets the loaded child items in this collection.|
+|[DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol)|[addListItem(displayText: string, value?: string, index?: number)](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-addlistitem-member(1))|Adds a new list item to this dropdown list content control and returns a Word.ContentControlListItem object.|
+||[deleteAllListItems()](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-deletealllistitems-member(1))|Deletes all list items in this dropdown list content control.|
+||[listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)|Gets the collection of list items in the dropdown list content control.|

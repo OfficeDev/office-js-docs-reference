@@ -1,0 +1,429 @@
+### YamlMime:TSType
+name: Word.ContentControlListItem
+uid: 'word!Word.ContentControlListItem:class'
+package: word!
+fullName: Word.ContentControlListItem
+summary: Represents a list item in a dropdown list or combo box content control.
+remarks: >-
+  \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+  // Deletes the provided list item from the first dropdown list content control in the selection.
+
+  await Word.run(async (context) => {
+    const listItemText = $("#item-to-delete")
+      .val()
+      .toString()
+      .trim();
+    const selectedRange: Word.Range = context.document.getSelection();
+    let selectedContentControl = selectedRange
+      .getContentControls({
+        types: [Word.ContentControlType.dropDownList]
+      })
+      .getFirstOrNullObject();
+    selectedContentControl.load("id,dropDownListContentControl");
+    await context.sync();
+
+    if (selectedContentControl.isNullObject) {
+      const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+      parentContentControl.load("id,type,dropDownListContentControl");
+      await context.sync();
+
+      if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+        console.warn("No dropdown list content control is currently selected.");
+        return;
+      } else {
+        selectedContentControl = parentContentControl;
+      }
+    }
+
+    let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
+    selectedDropdownList.listItems.load("items/*");
+    await context.sync();
+
+    let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
+    let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+    if (!itemToDelete) {
+      console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
+      return;
+    }
+    
+    itemToDelete.delete();
+    await context.sync();
+
+    console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.ContentControlListItem#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: displayText
+    uid: 'word!Word.ContentControlListItem#displayText:member'
+    package: word!
+    fullName: displayText
+    summary: Specifies the display text of a list item for a dropdown list or combo box content control.
+    remarks: >-
+      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+      // Deletes the provided list item from the first dropdown list content control in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = $("#item-to-delete")
+          .val()
+          .toString()
+          .trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.dropDownList]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,dropDownListContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,dropDownListContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+            console.warn("No dropdown list content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
+        selectedDropdownList.listItems.load("items/*");
+        await context.sync();
+
+        let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
+        let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+        if (!itemToDelete) {
+          console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
+          return;
+        }
+        
+        itemToDelete.delete();
+        await context.sync();
+
+        console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayText: string;'
+      return:
+        type: string
+  - name: index
+    uid: 'word!Word.ContentControlListItem#index:member'
+    package: word!
+    fullName: index
+    summary: Specifies the index location of a content control list item in the collection of list items.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index: number;'
+      return:
+        type: number
+  - name: value
+    uid: 'word!Word.ContentControlListItem#value:member'
+    package: word!
+    fullName: value
+    summary: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: string;'
+      return:
+        type: string
+methods:
+  - name: delete()
+    uid: 'word!Word.ContentControlListItem#delete:member(1)'
+    package: word!
+    fullName: delete()
+    summary: Deletes the list item.
+    remarks: >-
+      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
+
+
+      // Deletes the provided list item from the first combo box content control in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = $("#item-to-delete")
+          .val()
+          .toString()
+          .trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.comboBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,comboBoxContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,comboBoxContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+            console.warn("No combo box content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+        selectedComboBox.listItems.load("items/*");
+        await context.sync();
+
+        let listItems: Word.ContentControlListItemCollection = selectedContentControl.comboBoxContentControl.listItems;
+        let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
+        if (!itemToDelete) {
+          console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`);
+          return;
+        }
+
+        itemToDelete.delete();
+        await context.sync();
+
+        console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.ContentControlListItem#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.ContentControlListItemLoadOptions): Word.ContentControlListItem;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.ContentControlListItemLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.ContentControlListItem#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ContentControlListItem;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.ContentControlListItem#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.ContentControlListItem;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: select()
+    uid: 'word!Word.ContentControlListItem#select:member(1)'
+    package: word!
+    fullName: select()
+    summary: Selects the list item and sets the text of the content control to the value of the list item.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.ContentControlListItem#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ContentControlListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.ContentControlListItemUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.ContentControlListItem#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.ContentControlListItem): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.ContentControlListItem:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.ContentControlListItem#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.ContentControlListItem` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ContentControlListItemData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlListItemData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.ContentControlListItem#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ContentControlListItem;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.ContentControlListItem#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ContentControlListItem;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

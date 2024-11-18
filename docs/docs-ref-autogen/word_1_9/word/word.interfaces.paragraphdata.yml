@@ -1,0 +1,350 @@
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphData
+uid: 'word!Word.Interfaces.ParagraphData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphData
+summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
+    package: word!
+    fullName: alignment
+    summary: 'Specifies the alignment for a paragraph. The value can be ''left'', ''centered'', ''right'', or ''justified''.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - name: fields
+    uid: 'word!Word.Interfaces.ParagraphData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of fields in the paragraph.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
+  - name: firstLineIndent
+    uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
+    package: word!
+    fullName: firstLineIndent
+    summary: >-
+      Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstLineIndent?: number;'
+      return:
+        type: number
+  - name: font
+    uid: 'word!Word.Interfaces.ParagraphData#font:member'
+    package: word!
+    fullName: font
+    summary: 'Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+  - name: inlinePictures
+    uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
+    package: word!
+    fullName: inlinePictures
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection doesn't include floating images.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
+  - name: isLastParagraph
+    uid: 'word!Word.Interfaces.ParagraphData#isLastParagraph:member'
+    package: word!
+    fullName: isLastParagraph
+    summary: Indicates the paragraph is the last one inside its parent body.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLastParagraph?: boolean;'
+      return:
+        type: boolean
+  - name: isListItem
+    uid: 'word!Word.Interfaces.ParagraphData#isListItem:member'
+    package: word!
+    fullName: isListItem
+    summary: Checks whether the paragraph is a list item.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isListItem?: boolean;'
+      return:
+        type: boolean
+  - name: leftIndent
+    uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
+    package: word!
+    fullName: leftIndent
+    summary: 'Specifies the left indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: number;'
+      return:
+        type: number
+  - name: lineSpacing
+    uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
+    package: word!
+    fullName: lineSpacing
+    summary: 'Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineSpacing?: number;'
+      return:
+        type: number
+  - name: lineUnitAfter
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
+    package: word!
+    fullName: lineUnitAfter
+    summary: 'Specifies the amount of spacing, in grid lines, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitAfter?: number;'
+      return:
+        type: number
+  - name: lineUnitBefore
+    uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
+    package: word!
+    fullName: lineUnitBefore
+    summary: 'Specifies the amount of spacing, in grid lines, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitBefore?: number;'
+      return:
+        type: number
+  - name: listItem
+    uid: 'word!Word.Interfaces.ParagraphData#listItem:member'
+    package: word!
+    fullName: listItem
+    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listItem?: Word.Interfaces.ListItemData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ListItemData:interface" />'
+  - name: listItemOrNullObject
+    uid: 'word!Word.Interfaces.ParagraphData#listItemOrNullObject:member'
+    package: word!
+    fullName: listItemOrNullObject
+    summary: >-
+      Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listItemOrNullObject?: Word.Interfaces.ListItemData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ListItemData:interface" />'
+  - name: outlineLevel
+    uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
+    package: word!
+    fullName: outlineLevel
+    summary: Specifies the outline level for the paragraph.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outlineLevel?: number;'
+      return:
+        type: number
+  - name: rightIndent
+    uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
+    package: word!
+    fullName: rightIndent
+    summary: 'Specifies the right indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent?: number;'
+      return:
+        type: number
+  - name: spaceAfter
+    uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
+    package: word!
+    fullName: spaceAfter
+    summary: 'Specifies the spacing, in points, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: number;'
+      return:
+        type: number
+  - name: spaceBefore
+    uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
+    package: word!
+    fullName: spaceBefore
+    summary: 'Specifies the spacing, in points, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore?: number;'
+      return:
+        type: number
+  - name: style
+    uid: 'word!Word.Interfaces.ParagraphData#style:member'
+    package: word!
+    fullName: style
+    summary: >-
+      Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: string;'
+      return:
+        type: string
+  - name: styleBuiltIn
+    uid: 'word!Word.Interfaces.ParagraphData#styleBuiltIn:member'
+    package: word!
+    fullName: styleBuiltIn
+    summary: >-
+      Specifies the built-in style name for the paragraph. Use this property for built-in styles that are portable
+      between locales. To use custom styles or localized style names, see the "style" property.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" |
+        "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" |
+        "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+        "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" |
+        "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" |
+        "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" |
+        "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1"
+        | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5"
+        | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3"
+        | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+      return:
+        type: >-
+          <xref uid="word!Word.BuiltInStyleName:enum" /> | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" |
+          "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" |
+          "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" |
+          "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" |
+          "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+          "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+          "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+          "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+          "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+          "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+          "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+          "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+          "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+          "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+          "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+          "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2"
+          | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+          "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+          "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+          "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+          "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5"
+          | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" |
+          "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" |
+          "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" |
+          "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" |
+          "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" |
+          "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" |
+          "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+          "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+          "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+          "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+          "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+  - name: tableNestingLevel
+    uid: 'word!Word.Interfaces.ParagraphData#tableNestingLevel:member'
+    package: word!
+    fullName: tableNestingLevel
+    summary: Gets the level of the paragraph's table. It returns 0 if the paragraph isn't in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableNestingLevel?: number;'
+      return:
+        type: number
+  - name: text
+    uid: 'word!Word.Interfaces.ParagraphData#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the paragraph.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: uniqueLocalId
+    uid: 'word!Word.Interfaces.ParagraphData#uniqueLocalId:member'
+    package: word!
+    fullName: uniqueLocalId
+    summary: >-
+      Gets a string that represents the paragraph identifier in the current session. ID is in standard 8-4-4-4-12 GUID
+      format without curly braces and differs across sessions and coauthors.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uniqueLocalId?: string;'
+      return:
+        type: string

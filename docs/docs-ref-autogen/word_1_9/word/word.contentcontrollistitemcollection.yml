@@ -1,0 +1,235 @@
+### YamlMime:TSType
+name: Word.ContentControlListItemCollection
+uid: 'word!Word.ContentControlListItemCollection:class'
+package: word!
+fullName: Word.ContentControlListItemCollection
+summary: >-
+  Contains a collection of [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) objects that
+  represent the items in a dropdown list or combo box content control.
+remarks: >-
+  \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
+
+
+  // Gets the list items from the first combo box content control found in the selection.
+
+  await Word.run(async (context) => {
+    const selectedRange: Word.Range = context.document.getSelection();
+    let selectedContentControl = selectedRange
+      .getContentControls({
+        types: [Word.ContentControlType.comboBox]
+      })
+      .getFirstOrNullObject();
+    selectedContentControl.load("id,comboBoxContentControl");
+    await context.sync();
+
+    if (selectedContentControl.isNullObject) {
+      const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+      parentContentControl.load("id,type,comboBoxContentControl");
+      await context.sync();
+
+      if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+        console.warn("No combo box content control is currently selected.");
+        return;
+      } else {
+        selectedContentControl = parentContentControl;
+      }
+    }
+
+    let selectedComboBox: Word.ComboBoxContentControl = selectedContentControl.comboBoxContentControl;
+    selectedComboBox.listItems.load("items");
+    await context.sync();
+
+    const currentItems: Word.ContentControlListItemCollection = selectedComboBox.listItems;
+    console.log(`The list from the combo box content control with ID ${selectedContentControl.id}:`, currentItems);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.ContentControlListItemCollection#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.ContentControlListItemCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.ContentControlListItem[];'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />[]'
+methods:
+  - name: getFirst()
+    uid: 'word!Word.ContentControlListItemCollection#getFirst:member(1)'
+    package: word!
+    fullName: getFirst()
+    summary: Gets the first list item in this collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirst(): Word.ContentControlListItem;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: getFirstOrNullObject()
+    uid: 'word!Word.ContentControlListItemCollection#getFirstOrNullObject:member(1)'
+    package: word!
+    fullName: getFirstOrNullObject()
+    summary: >-
+      Gets the first list item in this collection. If this collection is empty, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Word.ContentControlListItem;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItem:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.ContentControlListItemCollection#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ContentControlListItemCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.ContentControlListItemCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.ContentControlListItemCollectionLoadOptions:interface" /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.ContentControlListItemCollection#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ContentControlListItemCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.ContentControlListItemCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ContentControlListItemCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.ContentControlListItemCollection#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.ContentControlListItemCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemCollectionData`<!-- -->)
+      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ContentControlListItemCollectionData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlListItemCollectionData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.ContentControlListItemCollection#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ContentControlListItemCollection;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.ContentControlListItemCollection#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ContentControlListItemCollection;'
+      return:
+        type: '<xref uid="word!Word.ContentControlListItemCollection:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
