@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlPartData
+uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+package: word!
+fullName: Word.Interfaces.CustomXmlPartData
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'word!Word.Interfaces.CustomXmlPartData#id:member'
+    package: word!
+    fullName: id
+    summary: Gets the ID of the custom XML part.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: namespaceUri
+    uid: 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
+    package: word!
+    fullName: namespaceUri
+    summary: Gets the namespace URI of the custom XML part.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: string;'
+      return:
+        type: string

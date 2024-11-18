@@ -1,0 +1,205 @@
+### YamlMime:TSType
+name: Word.Interfaces.StyleData
+uid: 'word!Word.Interfaces.StyleData:interface'
+package: word!
+fullName: Word.Interfaces.StyleData
+summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: baseStyle
+    uid: 'word!Word.Interfaces.StyleData#baseStyle:member'
+    package: word!
+    fullName: baseStyle
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseStyle?: string;'
+      return:
+        type: string
+  - name: builtIn
+    uid: 'word!Word.Interfaces.StyleData#builtIn:member'
+    package: word!
+    fullName: builtIn
+    summary: Gets whether the specified style is a built-in style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'builtIn?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: 'word!Word.Interfaces.StyleData#font:member'
+    package: word!
+    fullName: font
+    summary: Gets a font object that represents the character formatting of the specified style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+  - name: inUse
+    uid: 'word!Word.Interfaces.StyleData#inUse:member'
+    package: word!
+    fullName: inUse
+    summary: >-
+      Gets whether the specified style is a built-in style that has been modified or applied in the document or a new
+      style that has been created in the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inUse?: boolean;'
+      return:
+        type: boolean
+  - name: linked
+    uid: 'word!Word.Interfaces.StyleData#linked:member'
+    package: word!
+    fullName: linked
+    summary: Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linked?: boolean;'
+      return:
+        type: boolean
+  - name: nameLocal
+    uid: 'word!Word.Interfaces.StyleData#nameLocal:member'
+    package: word!
+    fullName: nameLocal
+    summary: Gets the name of a style in the language of the user.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameLocal?: string;'
+      return:
+        type: string
+  - name: nextParagraphStyle
+    uid: 'word!Word.Interfaces.StyleData#nextParagraphStyle:member'
+    package: word!
+    fullName: nextParagraphStyle
+    summary: >-
+      Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
+      formatted with the specified style.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextParagraphStyle?: string;'
+      return:
+        type: string
+  - name: paragraphFormat
+    uid: 'word!Word.Interfaces.StyleData#paragraphFormat:member'
+    package: word!
+    fullName: paragraphFormat
+    summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ParagraphFormatData:interface" />'
+  - name: priority
+    uid: 'word!Word.Interfaces.StyleData#priority:member'
+    package: word!
+    fullName: priority
+    summary: Specifies the priority.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type: number
+  - name: quickStyle
+    uid: 'word!Word.Interfaces.StyleData#quickStyle:member'
+    package: word!
+    fullName: quickStyle
+    summary: Specifies whether the style corresponds to an available quick style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'quickStyle?: boolean;'
+      return:
+        type: boolean
+  - name: shading
+    uid: 'word!Word.Interfaces.StyleData#shading:member'
+    package: word!
+    fullName: shading
+    summary: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShadingData:interface" />'
+  - name: tableStyle
+    uid: 'word!Word.Interfaces.StyleData#tableStyle:member'
+    package: word!
+    fullName: tableStyle
+    summary: Gets a TableStyle object representing Style properties that can be applied to a table.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableStyle?: Word.Interfaces.TableStyleData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableStyleData:interface" />'
+  - name: type
+    uid: 'word!Word.Interfaces.StyleData#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the style type.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";'
+      return:
+        type: '<xref uid="word!Word.StyleType:enum" /> | "Character" | "List" | "Paragraph" | "Table"'
+  - name: unhideWhenUsed
+    uid: 'word!Word.Interfaces.StyleData#unhideWhenUsed:member'
+    package: word!
+    fullName: unhideWhenUsed
+    summary: >-
+      Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task
+      pane in Microsoft Word after it's used in the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unhideWhenUsed?: boolean;'
+      return:
+        type: boolean
+  - name: visibility
+    uid: 'word!Word.Interfaces.StyleData#visibility:member'
+    package: word!
+    fullName: visibility
+    summary: >-
+      Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
+      task pane.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type: boolean

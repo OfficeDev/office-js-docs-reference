@@ -236,10 +236,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -403,6 +404,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         
+        
         /**
          * Gets the collection of content control objects in the content control.
          *
@@ -410,6 +412,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         
         
         /**
@@ -944,6 +947,8 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     
+    
+    
     /**
      * Represents a custom property.
      *
@@ -1187,6 +1192,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
+        
         
         
         
@@ -1512,6 +1518,8 @@ export declare namespace Word {
          */
         toJSON(): Word.Interfaces.DocumentPropertiesData;
     }
+    
+    
     
     
     /**
@@ -2705,10 +2713,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -3219,10 +3228,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         
         
         
@@ -6824,6 +6834,7 @@ export declare namespace Word {
     
     
     
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -7009,6 +7020,16 @@ export declare namespace Word {
         /** An interface for updating data on the `ContentControlCollection` object, for use in `contentControlCollection.set({ ... })`. */
         export interface ContentControlCollectionUpdateData {
             items?: Word.Interfaces.ContentControlData[];
+        }
+        /** An interface for updating data on the `ContentControlListItem` object, for use in `contentControlListItem.set({ ... })`. */
+        export interface ContentControlListItemUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the `ContentControlListItemCollection` object, for use in `contentControlListItemCollection.set({ ... })`. */
+        export interface ContentControlListItemCollectionUpdateData {
+            items?: Word.Interfaces.ContentControlListItemData[];
         }
         /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
@@ -7965,6 +7986,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             
+            
             /**
              * Gets the collection of content control objects in the content control.
              *
@@ -7972,6 +7994,7 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             
             /**
              * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
@@ -8112,6 +8135,16 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControlCollection.toJSON()`. */
         export interface ContentControlCollectionData {
             items?: Word.Interfaces.ContentControlData[];
+        }
+        /** An interface describing the data returned by calling `contentControlListItem.toJSON()`. */
+        export interface ContentControlListItemData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `contentControlListItemCollection.toJSON()`. */
+        export interface ContentControlListItemCollectionData {
+            items?: Word.Interfaces.ContentControlListItemData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
@@ -8333,6 +8366,12 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             title?: string;
+        }
+        /** An interface describing the data returned by calling `dropDownListContentControl.toJSON()`. */
+        export interface DropDownListContentControlData {
+        }
+        /** An interface describing the data returned by calling `comboBoxContentControl.toJSON()`. */
+        export interface ComboBoxContentControlData {
         }
         /** An interface describing the data returned by calling `field.toJSON()`. */
         export interface FieldData {
@@ -9673,6 +9712,8 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        
+        
         /**
          * Represents a custom property.
          *
