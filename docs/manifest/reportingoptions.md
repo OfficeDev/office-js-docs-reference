@@ -31,7 +31,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 | Attribute | Required | Description |
 |:-----|:-----:|:-----|
-| **inputType** (preview)* | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. |
+| **inputType** (preview)* | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. You can only use one input type in the dialog. |
 
 > \* The `inputType` attribute is currently in preview in classic Outlook on Windows starting in Version 2411 (Build 18227.20034).
 
@@ -40,7 +40,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 | Element | Required | Description |
 | :------ | :------: | :------ |
 | **Title** | Yes | Specifies a custom title for the reporting options in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| **Option** | Yes | Specifies a custom option with a checkbox that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
+| **Option** | Yes | Specifies a custom option that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
 
 ## Example
 
