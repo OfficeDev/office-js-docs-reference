@@ -47,8 +47,10 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 The following table lists the Excel JavaScript APIs currently included in the `ExcelApiOnline` requirement set. For a complete list of all Excel JavaScript APIs (including `ExcelApiOnline` APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/excel?view=excel-js-online&preserve-view=true).
 
 [!INCLUDE[API table](../../includes/excel-online.md)]
+
 ## See also
 
 - [Excel JavaScript API Reference Documentation](/javascript/api/excel?view=excel-js-online&preserve-view=true)
 - [Excel JavaScript preview APIs](excel-preview-apis.md)
 - [Excel JavaScript API requirement sets](excel-api-requirement-sets.md)
+- [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets)
