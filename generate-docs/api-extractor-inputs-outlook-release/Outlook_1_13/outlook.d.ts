@@ -1574,7 +1574,7 @@ export declare namespace Office {
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * @remarks
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -1582,8 +1582,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
          * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
@@ -1618,7 +1621,7 @@ export declare namespace Office {
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * @remarks
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -1626,8 +1629,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
          * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
@@ -2932,6 +2938,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: In Outlook on the web and on Windows (new and classic), the appointment organizer is included in the object returned by the `requiredAttendees` property.
          */
         requiredAttendees: EmailAddressDetails[];
         /**
@@ -7430,7 +7438,7 @@ export declare namespace Office {
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * @remarks
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -7438,8 +7446,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
          * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
@@ -7473,7 +7484,7 @@ export declare namespace Office {
          * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * @remarks
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
@@ -7481,8 +7492,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
+         * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
-         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * this action (whether using this API or the Outlook UI). To work around this issue, use the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
          * - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't return a `Cache-Control` header that
@@ -10030,6 +10044,9 @@ export declare namespace Office {
          * - Android, iOS: 100 recipients
          *
          * - Mac (new UI): No limit
+         *
+         * In classic Outlook on Windows, the appointment organizer is included in the object returned by the `getAsync` method when you create a new appointment or edit an
+         * existing one. In Outlook on the web and new Outlook on Windows, the organizer is only included in the returned object when you edit an existing appointment.
          *
          * The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
          *
