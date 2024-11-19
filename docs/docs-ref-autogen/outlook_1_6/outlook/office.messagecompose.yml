@@ -619,7 +619,8 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
       compose form.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new
+      Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -635,9 +636,14 @@ methods:
       **Important**:
 
 
+      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization:
-      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try
-      using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, use the
+      `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
 
 
       - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't
@@ -728,7 +734,8 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
       compose form.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new
+      Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -744,9 +751,14 @@ methods:
       **Important**:
 
 
+      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization:
-      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try
-      using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+      Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, use the
+      `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
 
 
       - The URI of the file to be attached must support caching in production. The server hosting the image shouldn't

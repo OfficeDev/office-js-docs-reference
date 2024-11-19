@@ -239,6 +239,11 @@ methods:
       - Mac (new UI): No limit
 
 
+      In classic Outlook on Windows, the appointment organizer is included in the object returned by the `getAsync`
+      method when you create a new appointment or edit an existing one. In Outlook on the web and new Outlook on
+      Windows, the organizer is only included in the returned object when you edit an existing appointment.
+
+
       The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the
       following characteristics.
 

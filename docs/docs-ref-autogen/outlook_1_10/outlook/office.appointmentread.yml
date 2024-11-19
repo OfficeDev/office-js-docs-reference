@@ -977,6 +977,10 @@ properties:
       -->**: Appointment Attendee
 
 
+      **Important**: In Outlook on the web and on Windows (new and classic), the appointment organizer is included
+      in the object returned by the `requiredAttendees` property.
+
+
       #### Examples
 
 
