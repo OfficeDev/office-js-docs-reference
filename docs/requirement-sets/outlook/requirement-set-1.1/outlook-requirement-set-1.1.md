@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.1
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.1.
-ms.date: 11/07/2024
+ms.date: 11/19/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
