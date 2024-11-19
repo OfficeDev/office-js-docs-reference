@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.1
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.1.
-ms.date: 02/02/2024
+ms.date: 11/19/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,7 +26,7 @@ Requirement set 1.1 includes all of the [Common API requirement sets](../../comm
 - Added [Recipients](/javascript/api/outlook/office.recipients?view=outlook-js-1.1&preserve-view=true) object: Provides methods to get and set the recipients of an appointment or message in an Outlook add-in.
 - Added [Subject](/javascript/api/outlook/office.subject?view=outlook-js-1.1&preserve-view=true) object: Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 - Added [Time](/javascript/api/outlook/office.time?view=outlook-js-1.1&preserve-view=true) object: Provides methods to get and set the start or end time of a meeting in an Outlook add-in.
-- Added [Office.context.mailbox.item.addFileAttachmentAsync](office.context.mailbox.item.md#methods): Adds a file to a message or appointment as an attachment.
+- Added [Office.context.mailbox.item.addFileAttachmentAsync](office.context.mailbox.item.md#methods): Adds a file as an attachment to a message or appointment. This method is available in Outlook on Windows (classic) and on Mac.
 - Added [Office.context.mailbox.item.addItemAttachmentAsync](office.context.mailbox.item.md#methods): Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 - Added [Office.context.mailbox.item.removeAttachmentAsync](office.context.mailbox.item.md#methods): Removes an attachment from a message or appointment.
 - Added [Office.context.mailbox.item.body](office.context.mailbox.item.md#properties): Gets an object that provides methods for manipulating the body of an item.

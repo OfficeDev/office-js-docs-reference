@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.8
 description: Requirement set 1.8 for Outlook add-in API.
-ms.date: 09/15/2022
+ms.date: 11/19/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -36,6 +36,7 @@ Requirement set 1.8 includes all of the features of [requirement set 1.7](../req
 - Added [SupportsSharedFolders manifest element](/javascript/api/manifest/supportssharedfolders): Adds a child element to the [DesktopFormFactor](/javascript/api/manifest/desktopformfactor) manifest element. It defines whether the add-in is available in delegate scenarios.
 - Added [Office.context.mailbox.masterCategories](office.context.mailbox.md#properties): Adds a new property that represents the categories master list on a mailbox.
 - Added [Office.context.mailbox.item.categories](office.context.mailbox.item.md#properties): Adds a new property that represents the set of categories on an item.
+- Modified [Office.context.mailbox.item.addItemAttachmentAsync](office.context.mailbox.item.md#methods): Adds support in Outlook on the web and new Outlook on Windows.
 - Added [Office.context.mailbox.item.addFileAttachmentFromBase64Async](office.context.mailbox.item.md#methods): Adds a new method that allows you to attach a file represented as a base64 encoded string to a message or appointment.
 - Added [Office.context.mailbox.item.enhancedLocation](office.context.mailbox.item.md#properties): Adds a new property that represents the set of locations on an appointment.
 - Added [Office.context.mailbox.item.getAllInternetHeadersAsync](office.context.mailbox.item.md#methods): Adds a new method that gets all the internet headers for a message item. Read mode only.
@@ -43,7 +44,7 @@ Requirement set 1.8 includes all of the features of [requirement set 1.7](../req
 - Added [Office.context.mailbox.item.getAttachmentsAsync](office.context.mailbox.item.md#methods): Adds a new method that gets an item's attachments in compose mode.
 - Added [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#methods): Adds a new method to get initialization data when an actionable message is activated.
 - Added [Office.context.mailbox.item.getItemIdAsync](office.context.mailbox.item.md#methods): Adds a new method that gets the ID of a saved appointment or message item.
-- Added [Office.context.mailbox.item.getSharedPropertiesAsync](office.context.mailbox.item.md#methods): Adds a new method that gets an object which represents the sharedProperties of an appointment or message item.
+- Added [Office.context.mailbox.item.getSharedPropertiesAsync](office.context.mailbox.item.md#methods): Adds a new method that gets an object which represents the properties of an appointment or message item in a shared folder.
 - Added [Office.context.mailbox.item.internetHeaders](office.context.mailbox.item.md#properties): Adds a new property that represents the custom internet headers on a message item. Compose mode only.
 - Modified [Event.completed](/javascript/api/office/office.addincommands.event?view=outlook-js-1.8&preserve-view=true#completed_options_): Adds a new optional parameter `options`, which is a dictionary with one valid value `allowEvent`. This value is used to cancel execution of an event.
 - Added [Office.MailboxEnums.AttachmentContentFormat](/javascript/api/outlook/office.mailboxenums.attachmentcontentformat?view=outlook-js-1.8&preserve-view=true): Adds a new enum that specifies the formatting that applies to an attachment's content.
