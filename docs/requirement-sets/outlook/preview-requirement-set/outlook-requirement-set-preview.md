@@ -117,7 +117,7 @@ Added an `event.completed` option to format a message in a Smart Alerts dialog u
 
 ### Spam reporting improvements
 
-#### Prevent the preprocessing dialog from appearing again
+#### Suppress the preprocessing dialog
 
 Added the [NeverShowAgainOption](/javascript/api/manifest/preprocessingdialog?view=common-js-preview&preserve-view=true#child-elements) element as a child of the **\<PreProcessingDialog\>** element. This element adds a "Don't show me this message again" checkbox to the preprocessing dialog to prevent it from appearing again.
 
