@@ -19,12 +19,16 @@ items:
                 uid: 'outlook!Office.MailboxEnums.EntityType:enum'
               - name: ItemType
                 uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+              - name: OpenLocation
+                uid: 'outlook!Office.MailboxEnums.OpenLocation:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
                 uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
               - name: ResponseType
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
+              - name: SaveLocation
+                uid: 'outlook!Office.MailboxEnums.SaveLocation:enum'
               - name: SourceProperty
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
           - name: AppointmentCompose
