@@ -1373,6 +1373,124 @@ methods:
       return:
         type: void
         description: ''
+  - name: getIsIdentityManaged()
+    uid: 'outlook!Office.Mailbox#getIsIdentityManaged:member(1)'
+    package: outlook!
+    fullName: getIsIdentityManaged()
+    summary: >-
+      Returns true if the current mailbox is managed by [Microsoft
+      Intune](https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune)<!-- -->.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose, Read
+
+
+      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0.To
+      learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      **Errors**:
+
+
+      - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the mobile application management (MAM) policy.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsIdentityManaged(): boolean;'
+      return:
+        type: boolean
+        description: True if the current mailbox is managed by Microsoft Intune.
+  - name: getIsOpenFromLocationAllowed(openLocation)
+    uid: 'outlook!Office.Mailbox#getIsOpenFromLocationAllowed:member(1)'
+    package: outlook!
+    fullName: getIsOpenFromLocationAllowed(openLocation)
+    summary: >-
+      Returns true if an organization's [Intune mobile application management (MAM)
+      policy](https://learn.microsoft.com/mem/intune/apps/app-management) allows an add-in to access data from the
+      specified location.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose, Read
+
+
+      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To
+      learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      **Errors**:
+
+
+      - `InvalidOpenLocationInput`<!-- -->: The value of the specified location is invalid.
+
+
+      - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsOpenFromLocationAllowed(openLocation: MailboxEnums.OpenLocation): boolean;'
+      parameters:
+        - id: openLocation
+          description: The location from which the add-in is attempting to access data.
+          type: '<xref uid="outlook!Office.MailboxEnums.OpenLocation:enum" />'
+      return:
+        type: boolean
+        description: True if an organization's Intune MAM policy allows an add-in to access data from the specified location.
+  - name: getIsSaveToLocationAllowed(saveLocation)
+    uid: 'outlook!Office.Mailbox#getIsSaveToLocationAllowed:member(1)'
+    package: outlook!
+    fullName: getIsSaveToLocationAllowed(saveLocation)
+    summary: >-
+      Returns true if an organization's [Intune mobile application management (MAM)
+      policy](https://learn.microsoft.com/mem/intune/apps/app-management) allows an add-in to save data to the specified
+      location.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose, Read
+
+
+      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To
+      learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on
+      mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      **Errors**:
+
+
+      - `InvalidSaveLocationInput`<!-- -->: The value of the specified location is invalid.
+
+
+      - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsSaveToLocationAllowed(saveLocation: MailboxEnums.SaveLocation): boolean;'
+      parameters:
+        - id: saveLocation
+          description: The location in which the add-in is attempting to save data.
+          type: '<xref uid="outlook!Office.MailboxEnums.SaveLocation:enum" />'
+      return:
+        type: boolean
+        description: True if an organization's Intune MAM policy allows an add-in to save data to the specified location.
   - name: 'getUserIdentityTokenAsync(callback, userContext)'
     uid: 'outlook!Office.Mailbox#getUserIdentityTokenAsync:member(1)'
     package: outlook!

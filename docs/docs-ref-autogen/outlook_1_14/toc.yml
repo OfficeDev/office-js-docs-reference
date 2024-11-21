@@ -47,6 +47,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.Month:enum'
               - name: MoveSpamItemTo
                 uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
+              - name: OpenLocation
+                uid: 'outlook!Office.MailboxEnums.OpenLocation:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
@@ -59,6 +61,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
               - name: RestVersion
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SaveLocation
+                uid: 'outlook!Office.MailboxEnums.SaveLocation:enum'
               - name: SendModeOverride
                 uid: 'outlook!Office.MailboxEnums.SendModeOverride:enum'
               - name: SourceProperty

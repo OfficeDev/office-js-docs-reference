@@ -8988,6 +8988,9 @@ Office.Mailbox,"displayNewMessageFormAsync(parameters, options, callback)",Metho
 Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
+Office.Mailbox,"getIsIdentityManaged()",Method,Fine,false
+Office.Mailbox,"getIsOpenFromLocationAllowed(openLocation)",Method,Fine,false
+Office.Mailbox,"getIsSaveToLocationAllowed(saveLocation)",Method,Fine,false
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
 Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
@@ -9108,6 +9111,14 @@ Office.MailboxEnums.MoveSpamItemTo,"CustomFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"DeletedItemsFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"JunkFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"NoMove",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,N/A,Enum,Good,false
+Office.MailboxEnums.OpenLocation,"AccountDocument",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"Camera",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"Local",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"OnedriveForBusiness",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"Other",EnumField,Fine,false
+Office.MailboxEnums.OpenLocation,"PhotoLibrary",EnumField,Poor,false
+Office.MailboxEnums.OpenLocation,"SharePoint",EnumField,Good,false
 Office.MailboxEnums.OWAView,N/A,Enum,Fine,true
 Office.MailboxEnums.OWAView,"OneColumnNarrow",EnumField,Good,false
 Office.MailboxEnums.OWAView,"OneColumn",EnumField,Good,false
@@ -9271,6 +9282,16 @@ Office.MailboxEnums.RestVersion,N/A,Enum,Good,true
 Office.MailboxEnums.RestVersion,"v1_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v2_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"Beta",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,N/A,Enum,Good,false
+Office.MailboxEnums.SaveLocation,"AccountDocument",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"Box",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"Dropbox",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"GoogleDrive",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"Local",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"OnedriveForBusiness",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"Other",EnumField,Fine,false
+Office.MailboxEnums.SaveLocation,"PhotoLibrary",EnumField,Poor,false
+Office.MailboxEnums.SaveLocation,"SharePoint",EnumField,Good,false
 Office.MailboxEnums.SendModeOverride,N/A,Enum,Good,true
 Office.MailboxEnums.SendModeOverride,"PromptUser",EnumField,Good,false
 Office.MailboxEnums.SourceProperty,N/A,Enum,Good,true
