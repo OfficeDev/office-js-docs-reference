@@ -914,6 +914,20 @@ methods:
 
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the mobile application management (MAM) policy.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Checks if the mailbox is managed by Microsoft Intune.
+
+      const isIdentityManaged = Office.context.mailbox.getIsIdentityManaged();
+
+      console.log(`Intune-managed mailbox: ${isIdentityManaged}`);
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -952,6 +966,26 @@ methods:
 
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Checks if the add-in can access data from the device's photo library.
+
+      const isOpenFromPhotoLibraryAllowed =
+      Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
+
+      if (isOpenFromPhotoLibraryAllowed) {
+          console.log("Access to the photo library is allowed.");
+          // Do something.
+      } else {
+          console.log("Access to the photo library isn't allowed.");
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -994,6 +1028,26 @@ methods:
 
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Checks if the add-in can save data to SharePoint.
+
+      const isSaveToSharePointAllowed =
+      Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
+
+      if (isSaveToSharePointAllowed) {
+          console.log("Saving to SharePoint is allowed.");
+          // Do something.
+      } else {
+          console.log("Saving to SharePoint isn't allowed.");
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

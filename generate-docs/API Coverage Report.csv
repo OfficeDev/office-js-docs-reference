@@ -8988,9 +8988,9 @@ Office.Mailbox,"displayNewMessageFormAsync(parameters, options, callback)",Metho
 Office.Mailbox,"displayNewMessageFormAsync(parameters, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(options, callback)",Method,Fine,false
 Office.Mailbox,"getCallbackTokenAsync(callback, userContext)",Method,Fine,true
-Office.Mailbox,"getIsIdentityManaged()",Method,Fine,false
-Office.Mailbox,"getIsOpenFromLocationAllowed(openLocation)",Method,Fine,false
-Office.Mailbox,"getIsSaveToLocationAllowed(saveLocation)",Method,Fine,false
+Office.Mailbox,"getIsIdentityManaged()",Method,Fine,true
+Office.Mailbox,"getIsOpenFromLocationAllowed(openLocation)",Method,Fine,true
+Office.Mailbox,"getIsSaveToLocationAllowed(saveLocation)",Method,Fine,true
 Office.Mailbox,"getSelectedItemsAsync(options, callback)",Method,Poor,false
 Office.Mailbox,"getSelectedItemsAsync(callback)",Method,Poor,true
 Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method,Fine,true
@@ -9111,7 +9111,7 @@ Office.MailboxEnums.MoveSpamItemTo,"CustomFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"DeletedItemsFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"JunkFolder",EnumField,Fine,false
 Office.MailboxEnums.MoveSpamItemTo,"NoMove",EnumField,Fine,false
-Office.MailboxEnums.OpenLocation,N/A,Enum,Good,false
+Office.MailboxEnums.OpenLocation,N/A,Enum,Good,true
 Office.MailboxEnums.OpenLocation,"AccountDocument",EnumField,Fine,false
 Office.MailboxEnums.OpenLocation,"Camera",EnumField,Poor,false
 Office.MailboxEnums.OpenLocation,"Local",EnumField,Poor,false
@@ -9282,7 +9282,7 @@ Office.MailboxEnums.RestVersion,N/A,Enum,Good,true
 Office.MailboxEnums.RestVersion,"v1_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"v2_0",EnumField,Poor,false
 Office.MailboxEnums.RestVersion,"Beta",EnumField,Poor,false
-Office.MailboxEnums.SaveLocation,N/A,Enum,Good,false
+Office.MailboxEnums.SaveLocation,N/A,Enum,Good,true
 Office.MailboxEnums.SaveLocation,"AccountDocument",EnumField,Fine,false
 Office.MailboxEnums.SaveLocation,"Box",EnumField,Poor,false
 Office.MailboxEnums.SaveLocation,"Dropbox",EnumField,Poor,false
