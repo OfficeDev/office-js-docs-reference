@@ -55,9 +55,15 @@ if (process.argv[3] === "Mailbox 1.14") {
 }
 
 if (process.argv[3] === "Mailbox 1.12") {
-    console.log("Address SmartAlertsEventCompletedOptions reference when removing Mailbox 1.14");
+    console.log("Address SmartAlertsEventCompletedOptions reference when removing Mailbox 1.12");
     wholeDts = wholeDts.replace(/options\?: SmartAlertsEventCompletedOptions/g, "");
     wholeDts = wholeDts.replace(/@param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event./g, "");
+}
+
+if (process.argv[3] === "WordApiDesktop 1.1") {
+    console.log("Address ImportedStylesConflictBehavior reference when removing WordApiDesktop 1.1");
+    wholeDts = wholeDts.replace(/importedStylesConflictBehavior\?: Word.ImportedStylesConflictBehavior/g, "");
+    wholeDts = wholeDts.replace(/@param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document./g, "");
 }
 
 fsx.writeFileSync(process.argv[4], wholeDts);
