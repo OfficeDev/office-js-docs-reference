@@ -72,7 +72,7 @@ properties:
 
 
       Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was added in WordApi 1.7. 'DropDownList'
-      and 'ComboBox' support was added in WordApi 1.9.
+      and 'ComboBox' support are currently in preview.
     isPreview: false
     isDeprecated: false
     syntax:

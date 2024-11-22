@@ -73,8 +73,6 @@ items:
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
                 uid: 'word!Word.ImageFormat:enum'
-              - name: ImportedStylesConflictBehavior
-                uid: 'word!Word.ImportedStylesConflictBehavior:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
               - name: ListBuiltInNumberStyle

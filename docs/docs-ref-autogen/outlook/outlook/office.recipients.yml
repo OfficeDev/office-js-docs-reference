@@ -39,12 +39,9 @@ methods:
       -->**: Compose
 
 
-      **Important**:
-
-
-      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on
-      Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac
-      (classic UI), on Android, and on iOS. However, take note of the following:
+      **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
+      on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and
+      classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
       - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
@@ -59,11 +56,6 @@ methods:
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
-
-
-      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -150,11 +142,8 @@ methods:
       -->**: Compose
 
 
-      **Important**:
-
-
-      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on
-      Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
+      on the web, on Windows, on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
 
       - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target
@@ -169,11 +158,6 @@ methods:
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
-
-
-      - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -237,11 +221,6 @@ methods:
 
 
       - Mac (new UI): No limit
-
-
-      In classic Outlook on Windows, the appointment organizer is included in the object returned by the `getAsync`
-      method when you create a new appointment or edit an existing one. In Outlook on the web and new Outlook on
-      Windows, the organizer is only included in the returned object when you edit an existing appointment.
 
 
       The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the
@@ -506,12 +485,9 @@ methods:
       -->**: Compose
 
 
-      **Important**:
-
-
-      With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic
-      UI), on Android, and on iOS. However, take note of the following:
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
+      Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac
+      (classic UI), on Android, and on iOS. However, take note of the following:
 
 
       - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
@@ -526,11 +502,6 @@ methods:
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
-
-
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -588,12 +559,9 @@ methods:
       -->**: Compose
 
 
-      **Important**:
-
-
-      With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic
-      UI), on Android, and on iOS. However, take note of the following:
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on
+      Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac
+      (classic UI), on Android, and on iOS. However, take note of the following:
 
 
       - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500
@@ -608,11 +576,6 @@ methods:
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
-
-
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
-      For more information, see [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:

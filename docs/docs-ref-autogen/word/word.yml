@@ -31,7 +31,6 @@ enums:
   - 'word!Word.FieldType:enum'
   - 'word!Word.HeaderFooterType:enum'
   - 'word!Word.ImageFormat:enum'
-  - 'word!Word.ImportedStylesConflictBehavior:enum'
   - 'word!Word.InsertLocation:enum'
   - 'word!Word.ListBuiltInNumberStyle:enum'
   - 'word!Word.ListBullet:enum'

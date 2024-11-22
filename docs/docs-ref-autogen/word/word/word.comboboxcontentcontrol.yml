@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ComboBoxContentControl
 summary: The data specific to content controls of type 'ComboBox'.
 remarks: >-
-  \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -28,7 +28,7 @@ remarks: >-
   });
 
   ```
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: class
 properties:
@@ -40,7 +40,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -52,7 +52,7 @@ properties:
     fullName: listItems
     summary: Gets the collection of list items in the combo box content control.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -111,7 +111,7 @@ properties:
       });
 
       ```
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'readonly listItems: Word.ContentControlListItemCollection;'
@@ -126,7 +126,7 @@ methods:
       Adds a new list item to this combo box content control and returns a
       [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) object.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -174,7 +174,7 @@ methods:
       });
 
       ```
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;'
@@ -199,7 +199,7 @@ methods:
     fullName: deleteAllListItems()
     summary: Deletes all list items in this combo box content control.
     remarks: >-
-      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -244,7 +244,7 @@ methods:
       });
 
       ```
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'deleteAllListItems(): void;'
@@ -259,7 +259,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.ComboBoxContentControl;'
@@ -278,7 +278,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -310,7 +310,7 @@ methods:
       returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.ComboBoxContentControlData;'
@@ -330,7 +330,7 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'track(): Word.ComboBoxContentControl;'
@@ -347,7 +347,7 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.ComboBoxContentControl;'
