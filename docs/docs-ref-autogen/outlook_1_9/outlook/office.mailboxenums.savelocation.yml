@@ -13,6 +13,26 @@ remarks: >-
   **Important**: This enum is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn
   more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile
   devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Checks if the add-in can save data to SharePoint.
+
+  const isSaveToSharePointAllowed =
+  Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
+
+  if (isSaveToSharePointAllowed) {
+      console.log("Saving to SharePoint is allowed.");
+      // Do something.
+  } else {
+      console.log("Saving to SharePoint isn't allowed.");
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

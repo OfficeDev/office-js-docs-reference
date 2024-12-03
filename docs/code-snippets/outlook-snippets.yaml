@@ -769,6 +769,31 @@ Office.Mailbox#convertToUtcClientTime:member(1):
     
     // Output should be "2019-08-26T22:37:02.002Z".
     console.log(result.toISOString());
+Office.Mailbox#getIsIdentityManaged:member(1):
+  - |-
+    // Checks if the mailbox is managed by Microsoft Intune.
+    const isIdentityManaged = Office.context.mailbox.getIsIdentityManaged();
+    console.log(`Intune-managed mailbox: ${isIdentityManaged}`);
+Office.Mailbox#getIsOpenFromLocationAllowed:member(1):
+  - |-
+    // Checks if the add-in can access data from the device's photo library.
+    const isOpenFromPhotoLibraryAllowed = Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
+    if (isOpenFromPhotoLibraryAllowed) {
+        console.log("Access to the photo library is allowed.");
+        // Do something.
+    } else {
+        console.log("Access to the photo library isn't allowed.");
+    }
+Office.Mailbox#getIsSaveToLocationAllowed:member(1):
+  - |-
+    // Checks if the add-in can save data to SharePoint.
+    const isSaveToSharePointAllowed = Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
+    if (isSaveToSharePointAllowed) {
+        console.log("Saving to SharePoint is allowed.");
+        // Do something.
+    } else {
+        console.log("Saving to SharePoint isn't allowed.");
+    }
 Office.Mailbox#makeEwsRequestAsync:member(1):
   - |-
     function getSubjectRequest(id) {
@@ -974,6 +999,26 @@ Office.MailboxEnums.MoveSpamItemTo:enum:
                 },
             });
         });
+    }
+Office.MailboxEnums.OpenLocation:enum:
+  - |-
+    // Checks if the add-in can access data from the device's photo library.
+    const isOpenFromPhotoLibraryAllowed = Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
+    if (isOpenFromPhotoLibraryAllowed) {
+        console.log("Access to the photo library is allowed.");
+        // Do something.
+    } else {
+        console.log("Access to the photo library isn't allowed.");
+    }
+Office.MailboxEnums.SaveLocation:enum:
+  - |-
+    // Checks if the add-in can save data to SharePoint.
+    const isSaveToSharePointAllowed = Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
+    if (isSaveToSharePointAllowed) {
+        console.log("Saving to SharePoint is allowed.");
+        // Do something.
+    } else {
+        console.log("Saving to SharePoint isn't allowed.");
     }
 Office.MailboxEnums.SendModeOverride:enum:
   - |-
