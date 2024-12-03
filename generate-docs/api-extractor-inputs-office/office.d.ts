@@ -3514,8 +3514,6 @@ export declare namespace Office {
          *
          * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
          *
-         * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
-         *
          * @deprecated Use `Office.auth.getAccessToken` instead.
          *
          * @remarks
@@ -3538,8 +3536,6 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
          *
          * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-         *
-         * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
          *
          * @deprecated Use `Office.auth.getAccessToken` instead.
          *
@@ -3624,16 +3620,12 @@ export declare namespace Office {
         /**
          * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.
          *
-         * **Warning**: `forceAddAccount` has been deprecated. Use `allowSignInPrompt` instead.
-         *
          * @deprecated Use `allowSignInPrompt` instead.
          */
         forceAddAccount?: boolean;
         /**
          * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has
          * been revoked. Default value is `false`.
-         *
-         * **Warning**: `forceConsent` has been deprecated. Use `allowConsentPrompt` instead.
          *
          * @deprecated Use `allowConsentPrompt` instead.
          */
@@ -7207,8 +7199,6 @@ export declare namespace Office {
  
         /**
          * Check if the specified requirement set is supported by the Office application.
-         *
-         * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the string overload of `isSetSupported` instead.
          *
          * @deprecated Use the string overload of `isSetSupported` instead.
          * @param name - The requirement set name (e.g., "ExcelApi").
