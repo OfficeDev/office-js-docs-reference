@@ -2522,6 +2522,90 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         line = "Line",
+        /**
+         * The shape is a table.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        table = "Table",
+        /**
+         * The shape is a callout.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        callout = "Callout",
+        /**
+         * The shape is a chart.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        chart = "Chart",
+        /**
+         * The shape is a content Office Add-in.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        contentApp = "ContentApp",
+        /**
+         * The shape is a diagram.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        diagram = "Diagram",
+        /**
+         * The shape is a freeform object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        freeform = "Freeform",
+        /**
+         * The shape is a graphic.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        graphic = "Graphic",
+        /**
+         * The shape is an ink object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        ink = "Ink",
+        /**
+         * The shape is a media object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        media = "Media",
+        /**
+         * The shape is a 3D model.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        model3D = "Model3D",
+        /**
+         * The shape is an OLE (Object Linking and Embedding) object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        ole = "Ole",
+        /**
+         * The shape is a placeholder.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        placeholder = "Placeholder",
+        /**
+         * The shape is a SmartArt graphic.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        smartArt = "SmartArt",
+        /**
+         * The shape is a text box.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        textBox = "TextBox",
     }
     /**
      * Determines the type of automatic sizing allowed.
