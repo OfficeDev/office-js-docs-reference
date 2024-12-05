@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/14/2024
+ms.date: 12/12/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -101,7 +101,27 @@ Added a new object that represents the properties and methods of a selected mess
 
 ---
 
-### Smart Alerts: Format the dialog message using Markdown
+### Programmatically send a message or appointment
+
+#### [Office.context.mailbox.item.sendAsync](office.context.mailbox.item.md#methods)
+
+Added a new method to programmatically send a message or appointment. For a sample implementation of the `sendAsync` method, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#programmatically-send-the-item-from-the-task-pane-optional-preview).
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Smart Alerts improvements
+
+#### [Implement the Take Action button in the dialog](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)
+
+Updated the implementation of the `cancelLabel` and `commandId` options of the `event.completed` method. The updated implementation adds a **Take Action** button to the Smart Alerts dialog.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.SmartAlertsEventCompletedOptions.errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member)
 
