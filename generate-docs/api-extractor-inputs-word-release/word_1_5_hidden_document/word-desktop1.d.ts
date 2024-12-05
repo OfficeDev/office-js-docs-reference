@@ -2927,9 +2927,9 @@ export declare namespace Word {
          * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
-         * 
+         * @param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
          */
-        importStylesFromJson(stylesJson: string, ): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;
         /**
          * Import styles from a JSON-formatted string.
          *
