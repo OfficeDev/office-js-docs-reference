@@ -113,6 +113,9 @@ methods:
 
       **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
       mailbox.
+
+
+      **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
     remarks: >-
       **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
@@ -173,6 +176,9 @@ methods:
 
       **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
       mailbox.
+
+
+      **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
     remarks: >-
       **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 

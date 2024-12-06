@@ -2864,85 +2864,99 @@ export declare namespace PowerPoint {
         /**
          * The shape is a table.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         table = "Table",
         /**
          * The shape is a callout.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         callout = "Callout",
         /**
          * The shape is a chart.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chart = "Chart",
         /**
          * The shape is a content Office Add-in.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         contentApp = "ContentApp",
         /**
          * The shape is a diagram.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         diagram = "Diagram",
         /**
          * The shape is a freeform object.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         freeform = "Freeform",
         /**
          * The shape is a graphic.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         graphic = "Graphic",
         /**
          * The shape is an ink object.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ink = "Ink",
         /**
          * The shape is a media object.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         media = "Media",
         /**
          * The shape is a 3D model.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         model3D = "Model3D",
         /**
          * The shape is an OLE (Object Linking and Embedding) object.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ole = "Ole",
         /**
          * The shape is a placeholder.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         placeholder = "Placeholder",
         /**
          * The shape is a SmartArt graphic.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         smartArt = "SmartArt",
         /**
          * The shape is a text box.
          * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         textBox = "TextBox",
     }

@@ -8664,6 +8664,8 @@ Office.AppointmentCompose,"removeHandlerAsync(eventType, options, callback)",Met
 Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.AppointmentCompose,"saveAsync(options, callback)",Method,Poor,true
 Office.AppointmentCompose,"saveAsync(callback)",Method,Poor,true
+Office.AppointmentCompose,"sendAsync(options, callback)",Method,Fine,false
+Office.AppointmentCompose,"sendAsync(callback)",Method,Poor,false
 Office.AppointmentCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
 Office.AppointmentCompose,"setSelectedDataAsync(data, callback)",Method,Fine,false
 Office.AppointmentForm,N/A,Class,Good,false
@@ -9377,6 +9379,8 @@ Office.MessageCompose,"removeHandlerAsync(eventType, options, callback)",Method,
 Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Poor,true
 Office.MessageCompose,"saveAsync(options, callback)",Method,Poor,false
 Office.MessageCompose,"saveAsync(callback)",Method,Poor,true
+Office.MessageCompose,"sendAsync(options, callback)",Method,Fine,false
+Office.MessageCompose,"sendAsync(callback)",Method,Poor,false
 Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Fine,true
 Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Fine,false
 Office.MessageRead,N/A,Class,Good,true
