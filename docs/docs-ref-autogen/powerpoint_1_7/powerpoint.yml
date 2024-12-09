@@ -1,0 +1,265 @@
+### YamlMime:TSPackage
+uid: powerpoint!
+name: powerpoint
+type: package
+summary: ''
+interfaces:
+  - 'powerpoint!PowerPoint.AddSlideOptions:interface'
+  - 'powerpoint!PowerPoint.InsertSlideOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.BulletFormatData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.PresentationData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFillData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFillUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFontData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TagUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextFrameData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextFrameLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextRangeData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface'
+  - 'powerpoint!PowerPoint.ShapeAddOptions:interface'
+classes:
+  - 'powerpoint!PowerPoint.Application:class'
+  - 'powerpoint!PowerPoint.BulletFormat:class'
+  - 'powerpoint!PowerPoint.CustomProperty:class'
+  - 'powerpoint!PowerPoint.CustomPropertyCollection:class'
+  - 'powerpoint!PowerPoint.CustomXmlPart:class'
+  - 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
+  - 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+  - 'powerpoint!PowerPoint.DocumentProperties:class'
+  - 'powerpoint!PowerPoint.Hyperlink:class'
+  - 'powerpoint!PowerPoint.HyperlinkCollection:class'
+  - 'powerpoint!PowerPoint.ParagraphFormat:class'
+  - 'powerpoint!PowerPoint.Presentation:class'
+  - 'powerpoint!PowerPoint.RequestContext:class'
+  - 'powerpoint!PowerPoint.Shape:class'
+  - 'powerpoint!PowerPoint.ShapeCollection:class'
+  - 'powerpoint!PowerPoint.ShapeFill:class'
+  - 'powerpoint!PowerPoint.ShapeFont:class'
+  - 'powerpoint!PowerPoint.ShapeLineFormat:class'
+  - 'powerpoint!PowerPoint.ShapeScopedCollection:class'
+  - 'powerpoint!PowerPoint.Slide:class'
+  - 'powerpoint!PowerPoint.SlideCollection:class'
+  - 'powerpoint!PowerPoint.SlideLayout:class'
+  - 'powerpoint!PowerPoint.SlideLayoutCollection:class'
+  - 'powerpoint!PowerPoint.SlideMaster:class'
+  - 'powerpoint!PowerPoint.SlideMasterCollection:class'
+  - 'powerpoint!PowerPoint.SlideScopedCollection:class'
+  - 'powerpoint!PowerPoint.Tag:class'
+  - 'powerpoint!PowerPoint.TagCollection:class'
+  - 'powerpoint!PowerPoint.TextFrame:class'
+  - 'powerpoint!PowerPoint.TextRange:class'
+enums:
+  - 'powerpoint!PowerPoint.ConnectorType:enum'
+  - 'powerpoint!PowerPoint.DocumentPropertyType:enum'
+  - 'powerpoint!PowerPoint.ErrorCodes:enum'
+  - 'powerpoint!PowerPoint.GeometricShapeType:enum'
+  - 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+  - 'powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum'
+  - 'powerpoint!PowerPoint.ShapeAutoSize:enum'
+  - 'powerpoint!PowerPoint.ShapeFillType:enum'
+  - 'powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum'
+  - 'powerpoint!PowerPoint.ShapeLineDashStyle:enum'
+  - 'powerpoint!PowerPoint.ShapeLineStyle:enum'
+  - 'powerpoint!PowerPoint.ShapeType:enum'
+  - 'powerpoint!PowerPoint.TextVerticalAlignment:enum'
+functions:
+  - name: PowerPoint.createPresentation(base64File)
+    uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
+    package: powerpoint!
+    summary: >-
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded
+      .pptx file.
+
+
+      \[ [API set: PowerPointApi 1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function createPresentation(base64File?: string): Promise<void>;'
+      parameters:
+        - id: base64File
+          description: Optional. The Base64-encoded .pptx file. The default value is null.
+          type: string
+      return:
+        type: Promise&lt;void&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          const myFile = <HTMLInputElement>document.getElementById("file");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+            // Remove the metadata before the base64-encoded string.
+            const startIndex = reader.result.toString().indexOf("base64,");
+            const copyBase64 = reader.result.toString().substr(startIndex + 7);
+
+            PowerPoint.createPresentation(copyBase64);
+          };
+
+          // Read in the file as a data URL so we can parse the base64-encoded string.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+  - name: PowerPoint.run(batch)
+    uid: 'powerpoint!PowerPoint.run:function(1)'
+    package: powerpoint!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
+  - name: 'PowerPoint.run(object, batch)'
+    uid: 'powerpoint!PowerPoint.run:function(2)'
+    package: powerpoint!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
+  - name: 'PowerPoint.run(objects, batch)'
+    uid: 'powerpoint!PowerPoint.run:function(3)'
+    package: powerpoint!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of
+      previously-created API objects.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
