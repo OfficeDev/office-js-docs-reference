@@ -31,6 +31,42 @@ remarks: >-
 
   - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`<!-- -->, you must call
   `unloadAsync` after processing the item. This must be done before calling `loadItemByIdAsync` on another item.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Gets the sender's email address of each selected message.
+
+  async function getSenderEmailAddress(item) {
+      const itemId = item.itemId;
+      await new Promise((resolve) => {
+          Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.log(result.error.message);
+                  return;
+              }
+
+              const loadedItem = result.value;
+              const sender = loadedItem.from.emailAddress;
+              appendToListItem(sender);
+
+              // Unload the current message before processing another selected message.
+              loadedItem.unloadAsync((asyncResult) => {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                      return;
+                  }
+
+                  resolve();
+              });
+          });
+      });
+  }
+
+  ```
 isPreview: true
 isDeprecated: false
 type: interface

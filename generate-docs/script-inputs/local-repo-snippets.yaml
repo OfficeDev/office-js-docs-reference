@@ -8281,6 +8281,62 @@ Office.InfobarClickedEventArgs:interface:
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
     }
+Office.LoadedMessageCompose:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                appendToListItem(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
+Office.LoadedMessageRead:interface:
+  - |-
+    // Gets the sender's email address of each selected message.
+    async function getSenderEmailAddress(item) {
+        const itemId = item.itemId;
+        await new Promise((resolve) => {
+            Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    console.log(result.error.message);
+                    return;
+                }
+
+                const loadedItem = result.value;
+                const sender = loadedItem.from.emailAddress;
+                appendToListItem(sender);
+
+                // Unload the current message before processing another selected message.
+                loadedItem.unloadAsync((asyncResult) => {
+                    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                        console.log(asyncResult.error.message);
+                        return;
+                    }
+
+                    resolve();
+                });
+            });
+        });
+    }
 Office.Location#getAsync:member(1):
   - |-
     const userContext = { value : 1 };
