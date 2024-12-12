@@ -586,15 +586,14 @@ methods:
       **Important**:
 
 
-      - In October 2024, legacy Exchange [user
+      - In February 2025, legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
       turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
-      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
-      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
-      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+      tokens will still work for Exchange on-premises. Nested app authentication (NAA) is the recommended approach for
+      tokens going forward. For more information, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
 
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
@@ -1205,15 +1204,14 @@ methods:
       **Important**:
 
 
-      - In October 2024, legacy Exchange [user
+      - In February 2025, legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
       turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
-      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
-      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
-      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+      tokens will still work for Exchange on-premises. Nested app authentication (NAA) is the recommended approach for
+      tokens going forward. For more information, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
 
 
       - The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted
@@ -1300,16 +1298,28 @@ methods:
       **Errors**:
 
 
-      - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
-      code.
+      If your call fails, use the
+      [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member)
+      property to view details about the error.
 
 
-      - `InternalServerError`<!-- -->: The Exchange server returned an error. Please look at the diagnostics object for
-      more information.
+      - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when
+      the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+      NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the [FAQ
+      page](https://aka.ms/naafaq)<!-- -->.
 
 
-      - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
-      try again.
+      - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
+
+
+      - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more
+      information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because
+      legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for
+      your add-in. For guidance on how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+
+
+      - `NetworkError: The user is no longer connected to the network. Please check your network connection and try
+      again.`
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1364,15 +1374,14 @@ methods:
       **Important**:
 
 
-      - In October 2024, legacy Exchange [user
+      - In February 2025, legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
       turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
-      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
-      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
-      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+      tokens will still work for Exchange on-premises. Nested app authentication (NAA) is the recommended approach for
+      tokens going forward. For more information, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
 
 
       - You can pass both the token and either an attachment identifier or item identifier to an external system. That
@@ -1408,16 +1417,28 @@ methods:
       **Errors**:
 
 
-      - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
-      code.
+      If your call fails, use the
+      [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member)
+      property to view details about the error.
 
 
-      - `InternalServerError`<!-- -->: The Exchange server returned an error. Please look at the diagnostics object for
-      more information.
+      - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when
+      the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+      NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the [FAQ
+      page](https://aka.ms/naafaq)<!-- -->.
 
 
-      - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
-      try again.
+      - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
+
+
+      - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more
+      information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because
+      legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for
+      your add-in. For guidance on how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+
+
+      - `NetworkError: The user is no longer connected to the network. Please check your network connection and try
+      again.`
 
 
       #### Examples
@@ -1651,15 +1672,14 @@ methods:
       **Important**:
 
 
-      - In October 2024, legacy Exchange [user
+      - In February 2025, legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
       turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
-      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
-      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
-      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+      tokens will still work for Exchange on-premises. Nested app authentication (NAA) is the recommended approach for
+      tokens going forward. For more information, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
 
 
       - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
@@ -1672,16 +1692,28 @@ methods:
       **Errors**:
 
 
-      - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
-      code.
+      If your call fails, use the
+      [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member)
+      property to view details about the error.
 
 
-      - `InternalServerError`<!-- -->: The Exchange server returned an error. Please look at the diagnostics object for
-      more information.
+      - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when
+      the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+      NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the [FAQ
+      page](https://aka.ms/naafaq)<!-- -->.
 
 
-      - `NetworkError`<!-- -->: The user is no longer connected to the network. Please check your network connection and
-      try again.
+      - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
+
+
+      - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more
+      information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because
+      legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for
+      your add-in. For guidance on how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+
+
+      - `NetworkError: The user is no longer connected to the network. Please check your network connection and try
+      again.`
 
 
       #### Examples
@@ -1750,15 +1782,14 @@ methods:
       **Important**:
 
 
-      - In October 2024, legacy Exchange [user
+      - In February 2025, legacy Exchange [user
       identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and
       [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) tokens will be
       turned off by default for all Exchange Online tenants. This is part of [Microsoft's Secure Future
       Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
       -->, which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity
-      tokens will still work for Exchange on-premises. Nested app authentication is the recommended approach for tokens
-      going forward. For more information, see our [blog post](https://aka.ms/NAApreviewblog) and [FAQ
-      page](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
+      tokens will still work for Exchange on-premises. Nested app authentication (NAA) is the recommended approach for
+      tokens going forward. For more information, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
 
 
       - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set
