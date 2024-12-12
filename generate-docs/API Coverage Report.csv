@@ -8858,7 +8858,7 @@ Office.IsAllDayEvent,"setAsync(isAllDayEvent, callback)",Method,Poor,false
 Office.Item,N/A,Class,Good,true
 Office.ItemCompose,N/A,Class,Good,false
 Office.ItemRead,N/A,Class,Good,false
-Office.LoadedMessageCompose,N/A,Class,Good,false
+Office.LoadedMessageCompose,N/A,Class,Good,true
 Office.LoadedMessageCompose,"bcc",Property,Good,false
 Office.LoadedMessageCompose,"body",Property,Good,false
 Office.LoadedMessageCompose,"categories",Property,Good,false
@@ -8897,7 +8897,7 @@ Office.LoadedMessageCompose,"saveAsync(options, callback)",Method,Poor,false
 Office.LoadedMessageCompose,"saveAsync(callback)",Method,Poor,false
 Office.LoadedMessageCompose,"unloadAsync(options, callback)",Method,Fine,false
 Office.LoadedMessageCompose,"unloadAsync(callback)",Method,Poor,false
-Office.LoadedMessageRead,N/A,Class,Good,false
+Office.LoadedMessageRead,N/A,Class,Good,true
 Office.LoadedMessageRead,"attachments",Property,Good,false
 Office.LoadedMessageRead,"body",Property,Good,false
 Office.LoadedMessageRead,"categories",Property,Good,false
