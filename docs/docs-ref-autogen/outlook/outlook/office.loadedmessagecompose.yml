@@ -51,7 +51,7 @@ remarks: >-
 
               const loadedItem = result.value;
               const sender = loadedItem.from.emailAddress;
-              appendToListItem(sender);
+              console.log(sender);
 
               // Unload the current message before processing another selected message.
               loadedItem.unloadAsync((asyncResult) => {
