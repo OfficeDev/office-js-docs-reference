@@ -100,13 +100,12 @@ export declare namespace Office {
          */
         enum AttachmentType {
             /**
-             * The attachment is a file.
+             * The attachment is a Base64-encoded file.
+             *
+             * **Important**: The `base64` attachment type is only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+             * `displayReplyFormAsync` methods.
              */
-            File = "file",
-            /**
-             * The attachment is an Exchange item.
-             */
-            Item = "item",
+            Base64 = "base64",
             /**
              * The attachment is stored in a cloud location, such as OneDrive.
              *
@@ -114,8 +113,19 @@ export declare namespace Office {
              * contains a URL to the file.
              * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
              * contains a URL to the file in Compose mode.
+             *
+             * The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+             * `displayReplyForm`, and `displayReplyFormAsync` methods.
              */
-            Cloud = "cloud"
+            Cloud = "cloud",
+            /**
+             * The attachment is a file.
+             */
+            File = "file",
+            /**
+             * The attachment is an Exchange item.
+             */
+            Item = "item"
         }
         /**
          * Specifies the category color.
@@ -8374,11 +8384,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -8803,9 +8814,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -8854,9 +8866,10 @@ export declare namespace Office {
          *
          *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
          *
-         *        `attachments`: An array of JSON objects that are either file or item attachments.
+         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
          *
-         *        `attachments.type`: Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.
+         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
+         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
@@ -8890,11 +8903,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted add-ins are able to use the REST service
          * until extended support ends for Outlook 2019 on October 14, 2025. Traffic from these add-ins is automatically identified for exemption. This exemption also
@@ -8954,20 +8968,11 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * If your call fails, use the {@link https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member | asyncResult.diagnostics}
-         * property to view details about the error.
+         * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
          *
-         * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
          *
-         * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
-         *
-         * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
-         *
-         * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
+         * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `isRest`: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`.
@@ -8994,11 +8999,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
          * the token as a bearer authorization token to call the Exchange Web Services (EWS)
@@ -9023,20 +9029,11 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * If your call fails, use the {@link https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member | asyncResult.diagnostics}
-         * property to view details about the error.
+         * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
          *
-         * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
          *
-         * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
-         *
-         * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
-         *
-         * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
+         * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. The token is returned as a string in the `asyncResult.value` property.
@@ -9168,11 +9165,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with an external system}.
@@ -9181,20 +9179,11 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * If your call fails, use the {@link https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member | asyncResult.diagnostics}
-         * property to view details about the error.
+         * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
          *
-         * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
          *
-         * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
-         *
-         * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
-         *
-         * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
+         * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -9287,11 +9276,12 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - In February 2025, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
+         * - In October 2024, legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens will be turned off by default for all Exchange Online tenants.
          * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
          * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * Nested app authentication is the recommended approach for tokens going forward. For more information, see our {@link https://aka.ms/NAApreviewblog | blog post} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens | FAQ page}.
          *
          * - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set `OAuthAuthentication` to `true` on the
          * Client Access Server EWS directory .
@@ -13406,29 +13396,45 @@ export declare namespace Office {
      */
     export interface ReplyFormAttachment {
         /**
-         * Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         * Indicates the type of attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `base64` attachment type is only supported by the `displayReplyAllForm`, `displayReplyAllFormAsync`, `displayReplyForm`, and
+         * `displayReplyFormAsync` methods.
+         *
+         * - The `cloud` attachment type isn't supported by the `displayNewMessageForm`, `displayNewMessageFormAsync`, `displayReplyAllForm`, `displayReplyAllFormAsync`,
+         * `displayReplyForm`, and `displayReplyFormAsync` methods.
          */
-        type: string;
+        type: MailboxEnums.AttachmentType | "base64" | "file" | "item";
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
          */
         name: string;
         /**
-         * Only used if type is set to file. The URI of the location for the file.
+         * The URI of the location for the file. Only use if `type` is set to `file`.
          *
-         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * @remarks
+         *
+         * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
-         * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be
-         * displayed in the attachment list.
+         * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
+         * Only use if `type` is set to `file`.
          */
         inLine?: boolean;
         /**
-         * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
+         * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
          */
         itemId?: string;
+        /**
+         * The Base64-encoded string of the file to be attached. Only use if `type` is set to `base64`.
+         */
+        base64File?: string;
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
@@ -13439,7 +13445,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**
