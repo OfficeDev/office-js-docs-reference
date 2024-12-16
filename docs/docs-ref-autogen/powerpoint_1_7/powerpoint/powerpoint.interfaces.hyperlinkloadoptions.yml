@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.HyperlinkLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.HyperlinkLoadOptions
+summary: Represents a single hyperlink.
+remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: address
+    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions#address:member'
+    package: powerpoint!
+    fullName: address
+    summary: Specifies the URL target of the hyperlink.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type: boolean
+  - name: screenTip
+    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions#screenTip:member'
+    package: powerpoint!
+    fullName: screenTip
+    summary: Specifies the string displayed when hovering over the hyperlink.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: boolean;'
+      return:
+        type: boolean

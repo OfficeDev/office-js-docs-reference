@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.HyperlinkData
+uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.HyperlinkData
+summary: An interface describing the data returned by calling `hyperlink.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkData#address:member'
+    package: powerpoint!
+    fullName: address
+    summary: Specifies the URL target of the hyperlink.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: screenTip
+    uid: 'powerpoint!PowerPoint.Interfaces.HyperlinkData#screenTip:member'
+    package: powerpoint!
+    fullName: screenTip
+    summary: Specifies the string displayed when hovering over the hyperlink.
+    remarks: '\[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type: string

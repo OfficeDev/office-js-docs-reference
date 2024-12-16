@@ -17,9 +17,9 @@ export declare namespace PowerPoint {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): PowerPoint.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): {
             [key: string]: string;
         };
@@ -31,6 +31,8 @@ export declare namespace PowerPoint {
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
@@ -134,9 +136,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Presentation;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
     /**
@@ -166,6 +168,9 @@ export declare namespace PowerPoint {
          */
         slideMasterId?: string;
     }
+    
+    
+    
     
     
     /**
@@ -1715,9 +1720,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.ShapeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
     }
     /**
@@ -1729,6 +1734,7 @@ export declare namespace PowerPoint {
     export class SlideLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Returns a collection of shapes in the slide layout.
          *
@@ -1772,9 +1778,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.SlideLayout;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.SlideLayoutData;
     }
     /**
@@ -1846,9 +1852,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideLayoutCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideLayoutCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideLayoutCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.SlideLayoutCollectionData;
     }
     /**
@@ -1860,6 +1866,7 @@ export declare namespace PowerPoint {
     export class SlideMaster extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the collection of layouts provided by the Slide Master for slides.
          *
@@ -1910,9 +1917,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.SlideMaster;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideMaster` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideMaster` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.SlideMasterData;
     }
     /**
@@ -1960,9 +1967,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Tag;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.Tag` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Tag` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TagData;
     }
     /**
@@ -2052,9 +2059,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TagCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.TagCollectionData;
     }
     /**
@@ -2066,6 +2073,7 @@ export declare namespace PowerPoint {
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         
         /**
          * Gets the layout of the slide.
@@ -2140,9 +2148,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Slide;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
     /**
@@ -2257,10 +2265,83 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.ShapeFill;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.ShapeFillData;
+    }
+    /**
+     * Represents a collection of shapes.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.5]
+     */
+    export class ShapeScopedCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.Shape[];
+        /**
+         * Gets the number of shapes in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         * @returns The number of shapes in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         *
+         * @param key - The ID of the shape.
+         * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
+         */
+        getItem(key: string): PowerPoint.Shape;
+        /**
+         * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         *
+         * @param index - The index of the shape in the collection.
+         * @returns The shape at the given index. An error is thrown if index is out of range.
+         */
+        getItemAt(index: number): PowerPoint.Shape;
+        /**
+         * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         *
+         * @param id - The ID of the shape.
+         * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
+         */
+        getItemOrNullObject(id: string): PowerPoint.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.ShapeScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.ShapeScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.ShapeScopedCollection;
+        /**
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ShapeScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
+        toJSON(): PowerPoint.Interfaces.ShapeScopedCollectionData;
     }
     /**
      * Specifies the style for a line.
@@ -2373,9 +2454,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.ShapeLineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ShapeLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ShapeLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.ShapeLineFormatData;
     }
     /**
@@ -2570,9 +2651,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.BulletFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.BulletFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BulletFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.BulletFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BulletFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.BulletFormatData;
     }
     /**
@@ -2620,9 +2701,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.ParagraphFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.ParagraphFormatData;
     }
     /**
@@ -2698,9 +2779,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.ShapeFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ShapeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.ShapeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
     /**
@@ -2795,9 +2876,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TextRange;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.TextRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextRangeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TextRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextRangeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TextRangeData;
     }
     /**
@@ -2908,9 +2989,9 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.TextFrame;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.TextFrameData;
     }
     /**
@@ -2922,6 +3003,7 @@ export declare namespace PowerPoint {
     export class Shape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Returns the fill formatting of this shape.
          *
@@ -2991,7 +3073,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
+        readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox";
         /**
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
@@ -3070,11 +3152,15 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Shape;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.Shape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.Shape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
+         */
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
+    
+    
+    
+    
     /**
      * Specifies the formatting options for when slides are inserted.
      *
@@ -3129,79 +3215,6 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         targetSlideId?: string;
-    }
-    /**
-     * Represents a collection of shapes.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.5]
-     */
-    export class ShapeScopedCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: PowerPoint.Shape[];
-        /**
-         * Gets the number of shapes in the collection.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.5]
-         * @returns The number of shapes in the collection.
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.5]
-         *
-         * @param key - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
-         */
-        getItem(key: string): PowerPoint.Shape;
-        /**
-         * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.5]
-         *
-         * @param index - The index of the shape in the collection.
-         * @returns The shape at the given index. An error is thrown if index is out of range.
-         */
-        getItemAt(index: number): PowerPoint.Shape;
-        /**
-         * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.5]
-         *
-         * @param id - The ID of the shape.
-         * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
-         */
-        getItemOrNullObject(id: string): PowerPoint.Shape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.ShapeScopedCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.ShapeScopedCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.ShapeScopedCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.ShapeScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): PowerPoint.Interfaces.ShapeScopedCollectionData;
     }
     /**
      * Represents the collection of slides in the presentation.
@@ -3282,9 +3295,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.SlideCollectionData;
     }
     /**
@@ -3356,9 +3369,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideScopedCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.SlideScopedCollectionData;
     }
     /**
@@ -3430,9 +3443,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideMasterCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.SlideMasterCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
+         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+         * Whereas the original `PowerPoint.SlideMasterCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+         */
         toJSON(): PowerPoint.Interfaces.SlideMasterCollectionData;
     }
     enum ErrorCodes {
@@ -3451,6 +3464,14 @@ export declare namespace PowerPoint {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        export interface CustomXmlPartScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
+        export interface CustomXmlPartCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
         /** An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`. */
         export interface HyperlinkUpdateData {
@@ -3499,6 +3520,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             transparency?: number;
+        }
+        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
+        export interface ShapeScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the `ShapeLineFormat` object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
@@ -3726,9 +3751,25 @@ export declare namespace PowerPoint {
              */
             width?: number;
         }
-        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
-        export interface ShapeScopedCollectionUpdateData {
-            items?: PowerPoint.Interfaces.ShapeData[];
+        /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
+        export interface CustomPropertyUpdateData {
+            
+        }
+        /** An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({ ... })`. */
+        export interface CustomPropertyCollectionUpdateData {
+            items?: PowerPoint.Interfaces.CustomPropertyData[];
+        }
+        /** An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`. */
+        export interface DocumentPropertiesUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `SlideCollection` object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
@@ -3752,6 +3793,19 @@ export declare namespace PowerPoint {
              */
             id?: string;
             title?: string;
+        }
+        /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
+        export interface CustomXmlPartData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
+        export interface CustomXmlPartScopedCollectionData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
+        export interface CustomXmlPartCollectionData {
+            items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
@@ -3858,6 +3912,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "SlideBackground";
+        }
+        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
+        export interface ShapeScopedCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -4097,7 +4155,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
+            type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox";
             /**
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
@@ -4106,9 +4164,29 @@ export declare namespace PowerPoint {
              */
             width?: number;
         }
-        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
-        export interface ShapeScopedCollectionData {
-            items?: PowerPoint.Interfaces.ShapeData[];
+        /** An interface describing the data returned by calling `customProperty.toJSON()`. */
+        export interface CustomPropertyData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `customPropertyCollection.toJSON()`. */
+        export interface CustomPropertyCollectionData {
+            items?: PowerPoint.Interfaces.CustomPropertyData[];
+        }
+        /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
+        export interface DocumentPropertiesData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
@@ -4131,6 +4209,7 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              * Gets the ID of the presentation.
              *
@@ -4140,6 +4219,9 @@ export declare namespace PowerPoint {
             id?: boolean;
             title?: boolean;
         }
+        
+        
+        
         
         
         /**
@@ -4419,6 +4501,88 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             type?: boolean;
+        }
+        /**
+         * Represents a collection of shapes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.5]
+         */
+        export interface ShapeScopedCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.5]
+            */
+            fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Returns the line formatting of this shape.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.5]
+            */
+            lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Returns the text frame object of this shape.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.5]
+            */
+            textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            left?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the name of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            top?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            type?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            width?: boolean;
         }
         /**
          * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
@@ -4779,88 +4943,9 @@ export declare namespace PowerPoint {
              */
             width?: boolean;
         }
-        /**
-         * Represents a collection of shapes.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.5]
-         */
-        export interface ShapeScopedCollectionLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-            * For EACH ITEM in the collection: Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
-            fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
-            /**
-            * For EACH ITEM in the collection: Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
-            lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
-            /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
-            textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
-            /**
-             * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            height?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the unique ID of the shape.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            id?: boolean;
-            /**
-             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            left?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the name of this shape.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            name?: boolean;
-            /**
-             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            top?: boolean;
-            /**
-             * For EACH ITEM in the collection: Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            type?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            width?: boolean;
-        }
+        
+        
+        
         /**
          * Represents the collection of slides in the presentation.
          *
