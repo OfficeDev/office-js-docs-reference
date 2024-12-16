@@ -53,6 +53,10 @@ PowerPoint JavaScript API 1.5 includes APIs to get and manage existing hyperlink
 
 PowerPoint JavaScript API 1.6 includes APIs to select slides, text ranges, and shapes within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.6](powerpoint-api-1-6-requirement-set.md).
 
+## PowerPoint JavaScript API 1.7
+
+PowerPoint JavaScript API 1.7 includes APIs to manage custom and document properties within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.7](powerpoint-api-1-7-requirement-set.md).
+
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 
 > [!NOTE]
