@@ -33,7 +33,7 @@ jobs:
         run: |
           echo "Undoing script file chmod"
           chmod -x ./GenerateDocs.sh
-      - name: Get list of remote branches
+      - name: Get if autogen-docs branch exists
         run: |
           echo "Getting list that includes remote branches"
           git config user.name github-actions
