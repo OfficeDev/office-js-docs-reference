@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomXmlPartCollectionData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomXmlPartCollectionData
+summary: An interface describing the data returned by calling `customXmlPartCollection.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member'
+    package: powerpoint!
+    fullName: items
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.CustomXmlPartData[];'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface" />[]'

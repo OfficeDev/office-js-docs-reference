@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyUpdateData
+uid: 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyUpdateData
+summary: 'An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

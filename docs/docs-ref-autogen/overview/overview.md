@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 10/07/2024
+ms.date: 12/17/2024
 ---
 
 # Office Add-ins JavaScript API reference
@@ -93,6 +93,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <h3>PowerPoint APIs</h3>
         <ul>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true">PowerPointApi Preview</a></li>
+            <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.7&preserve-view=true">PowerPointApi 1.7</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.6&preserve-view=true">PowerPointApi 1.6</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.5&preserve-view=true">PowerPointApi 1.5</a></li>
             <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.4&preserve-view=true">PowerPointApi 1.4</a></li>
