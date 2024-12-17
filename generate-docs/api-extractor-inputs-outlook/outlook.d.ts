@@ -2670,10 +2670,23 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
          * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
          *                  callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
-         *                   parameter is an `Office.AsyncResult` object. The callback function only runs if `asyncResult.status` is `Office.AsyncResultStatus.Failed`.
+         *                   parameter is an `Office.AsyncResult` object.
          *
          * @beta
          */
@@ -2688,12 +2701,27 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * **Important**: The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
-         *                   parameter is an `Office.AsyncResult` object. The callback function only runs if `asyncResult.status` is `Office.AsyncResultStatus.Failed`.
+         *                   parameter is an `Office.AsyncResult` object.
          *
          * @beta
          */
@@ -11150,14 +11178,29 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
+         *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
          *
          * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
          *                  callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
-         *                   parameter is an `Office.AsyncResult` object. The callback function only runs if `asyncResult.status` is `Office.AsyncResultStatus.Failed`.
+         *                   parameter is an `Office.AsyncResult` object.
          *
          * @beta
          */
@@ -11172,12 +11215,27 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
+         * **Important**:
+         *
+         * - The `sendAsync` method is only supported in task pane and function command implementations. It isn't supported in
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based handlers} or
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | item multi-select scenarios}.
          *
+         * - In a function command implementation, the value returned in `asyncResult.status` may not reflect whether the appointment being composed is successfully sent.
+         * This is because the `sendAsync` method is an asynchronous API and events outside the add-in's control (for example, events handled by a separately installed
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events| Smart Alerts add-in}) could block the item from being sent.
+         * Since you can't rely on the status returned in `asyncResult.status` to run certain operations, you should only call the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | event.completed }
+         * method in the callback function. The `event.completed` call signals that the add-in has completed processing. Other than this call, other code in the callback function
+         * isn't guaranteed to run. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - In a task pane implementation, any code included to run when `asyncResult.status` is `Office.AsyncResultStatus.Success` isn't guaranteed to be processed.
+         * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
+         *
+         * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
-         *                   parameter is an `Office.AsyncResult` object. The callback function only runs if `asyncResult.status` is `Office.AsyncResultStatus.Failed`.
+         *                   parameter is an `Office.AsyncResult` object.
          *
          * @beta
          */
