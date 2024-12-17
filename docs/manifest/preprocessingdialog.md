@@ -1,7 +1,7 @@
 ---
 title: PreProcessingDialog element in the manifest file
 description: The PreProcessingDialog element configures the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 11/21/2024
+ms.date: 12/19/2024
 ms.localizationpriority: medium
 ---
 
