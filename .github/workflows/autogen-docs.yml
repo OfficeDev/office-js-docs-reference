@@ -2,7 +2,7 @@ name: autogen-docs
 run-name: Automatically run GenerateDocs
 on:
   schedule:
-    - cron: '05 20 * * TUE'
+    - cron: '20 20 * * TUE'
     - cron: '45 10 * * TUE'
     - cron: '45 10 * * THU'
 jobs:
