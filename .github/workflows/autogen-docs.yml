@@ -2,6 +2,7 @@ name: autogen-docs
 run-name: Automatically run GenerateDocs
 on:
   schedule:
+    - cron: '05 20 * * TUE'
     - cron: '45 10 * * TUE'
     - cron: '45 10 * * THU'
 jobs:
@@ -32,6 +33,22 @@ jobs:
         run: |
           echo "Undoing script file chmod"
           chmod -x ./GenerateDocs.sh
+      - name: Get list of remote branches
+        run: |
+          echo "Getting list that includes remote branches"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          {
+            echo 'git_branch_a<<EOF'
+            git branch -a
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+        id: run_git_branch_a
+      - name: Delete autogen-docs if it exists
+        if: ${{ contains(steps.run_git_branch_a.outputs.git_branch_a, 'remotes/origin/autogen-docs') }}
+        run: |
+          echo "Deleting remote autogen-docs branch"
+          git push origin --delete autogen-docs
       - name: Add any changes
         run: |
           echo "Determining if there are any changes"
