@@ -26,6 +26,7 @@ interfaces:
   - 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
   - 'outlook!Office.Entities:interface'
   - 'outlook!Office.From:interface'
+  - 'outlook!Office.InitializationContextChangedEventArgs:interface'
   - 'outlook!Office.InternetHeaders:interface'
   - 'outlook!Office.Item:interface'
   - 'outlook!Office.ItemCompose:interface'

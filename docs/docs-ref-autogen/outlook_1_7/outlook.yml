@@ -19,6 +19,7 @@ interfaces:
   - 'outlook!Office.EmailUser:interface'
   - 'outlook!Office.Entities:interface'
   - 'outlook!Office.From:interface'
+  - 'outlook!Office.InitializationContextChangedEventArgs:interface'
   - 'outlook!Office.Item:interface'
   - 'outlook!Office.ItemCompose:interface'
   - 'outlook!Office.ItemRead:interface'

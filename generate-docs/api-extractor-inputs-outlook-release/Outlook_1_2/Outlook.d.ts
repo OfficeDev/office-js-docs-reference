@@ -2284,6 +2284,33 @@ export declare namespace Office {
     
     
     
+    /**
+     * Provides data from an {@link https://learn.microsoft.com/outlook/actionable-messages | actionable message},
+     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage} notification,
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts} dialog, or
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting} dialog when the
+     * `Office.EventType.InitializationContextChanged` event occurs.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.15]
+     */
+    export interface InitializationContextChangedEventArgs {
+        /**
+         * Represents the data to be passed to an add-in's task pane from an actionable message, notification message, Smart Alerts dialog, or integrated
+         * spam-reporting dialog.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         */
+        initializationContextData: string;
+        /**
+         * Represents the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.15]
+         */
+        type: "olkInitializationContextChanged";
+    }
     
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment.

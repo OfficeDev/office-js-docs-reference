@@ -71,6 +71,8 @@ items:
             uid: 'outlook!Office.Entities:interface'
           - name: From
             uid: 'outlook!Office.From:interface'
+          - name: InitializationContextChangedEventArgs
+            uid: 'outlook!Office.InitializationContextChangedEventArgs:interface'
           - name: Item
             uid: 'outlook!Office.Item:interface'
           - name: LocalClientTime

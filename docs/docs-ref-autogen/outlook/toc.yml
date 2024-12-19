@@ -121,6 +121,8 @@ items:
             uid: 'outlook!Office.InfobarClickedEventArgs:interface'
           - name: InfobarDetails
             uid: 'outlook!Office.InfobarDetails:interface'
+          - name: InitializationContextChangedEventArgs
+            uid: 'outlook!Office.InitializationContextChangedEventArgs:interface'
           - name: InternetHeaders
             uid: 'outlook!Office.InternetHeaders:interface'
           - name: IsAllDayEvent

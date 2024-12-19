@@ -7057,6 +7057,7 @@ Office.EventType,"DialogParentMessageReceived",EnumField,Fine,false
 Office.EventType,"DocumentSelectionChanged",EnumField,Fine,false
 Office.EventType,"EnhancedLocationsChanged",EnumField,Good,false
 Office.EventType,"InfobarClicked",EnumField,Good,false
+Office.EventType,"InitializationContextChanged",EnumField,Good,false
 Office.EventType,"ItemChanged",EnumField,Good,false
 Office.EventType,"NodeDeleted",EnumField,Fine,false
 Office.EventType,"NodeInserted",EnumField,Fine,false
@@ -8843,6 +8844,9 @@ Office.InfobarClickedEventArgs,"type",Property,Good,false
 Office.InfobarDetails,N/A,Class,Good,true
 Office.InfobarDetails,"actionType",Property,Good,false
 Office.InfobarDetails,"infobarType",Property,Good,false
+Office.InitializationContextChangedEventArgs,N/A,Class,Good,false
+Office.InitializationContextChangedEventArgs,"initializationContextData",Property,Good,false
+Office.InitializationContextChangedEventArgs,"type",Property,Good,false
 Office.InternetHeaders,N/A,Class,Good,false
 Office.InternetHeaders,"getAsync(names, options, callback)",Method,Poor,true
 Office.InternetHeaders,"getAsync(names, callback)",Method,Poor,false
