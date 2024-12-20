@@ -269,7 +269,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission level
@@ -296,7 +296,7 @@ properties:
       - If you format the dialog message using the `errorMessageMarkdown` property, we recommend you also add a
       plaintext version of the message using the `errorMessage` property. This ensures that the message is displayed
       properly in Outlook clients that don't support Markdown.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'errorMessageMarkdown?: string;'

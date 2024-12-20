@@ -2562,7 +2562,7 @@ methods:
       Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
       and methods of the loaded item.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2598,7 +2598,7 @@ methods:
 
 
       - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2634,7 +2634,7 @@ methods:
       Loads a single mail item by its Exchange Web Services (EWS) ID. Then, gets an object that provides the properties
       and methods of the loaded item.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2670,7 +2670,7 @@ methods:
 
 
       - The `loadItemByIdAsync` method can only be called on messages in the same mailbox.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

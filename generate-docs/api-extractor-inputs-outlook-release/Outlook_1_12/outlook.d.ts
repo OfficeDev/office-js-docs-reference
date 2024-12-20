@@ -5600,6 +5600,8 @@ export declare namespace Office {
      */
     export interface ItemRead extends Item {
     }
+    
+    
     /**
      * Represents a date and time in the local client's time zone. Read mode only.
      *
@@ -6763,6 +6765,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.
          *
@@ -11008,6 +11012,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          */
         errorMessage?: string;
+        
         
     }
     

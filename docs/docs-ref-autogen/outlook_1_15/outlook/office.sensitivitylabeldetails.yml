@@ -1,0 +1,126 @@
+### YamlMime:TSType
+name: Office.SensitivityLabelDetails
+uid: 'outlook!Office.SensitivityLabelDetails:interface'
+package: outlook!
+fullName: Office.SensitivityLabelDetails
+summary: Represents the properties of available sensitivity labels in Outlook.
+remarks: >-
+  \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
+  or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
+
+  Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+      // If the catalog is enabled, get all available sensitivity labels.
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+          Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                  const catalog = asyncResult.value;
+                  console.log("Sensitivity Labels Catalog:");
+                  
+                  // Log the details of the available sensitivity labels to the console.
+                  catalog.forEach((sensitivityLabel) => {
+                      console.log(`Name: ${sensitivityLabel.name}`);
+                      console.log(`ID: ${sensitivityLabel.id}`);
+                      console.log(`Tooltip: ${sensitivityLabel.tooltip}`);
+                      console.log(`Color: ${sensitivityLabel.color}`);
+                      console.log(`Sublabels: ${JSON.stringify(sensitivityLabel.children)}`);
+                  });
+              } else {
+                  console.log("Action failed with error: " + asyncResult.error.message);
+              }
+          });
+      } else {
+          console.log("Action failed with error: " + asyncResult.error.message);
+      }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: children
+    uid: 'outlook!Office.SensitivityLabelDetails#children:member'
+    package: outlook!
+    fullName: children
+    summary: >-
+      The [sublabels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels)
+      of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'children: SensitivityLabelDetails[];'
+      return:
+        type: '<xref uid="outlook!Office.SensitivityLabelDetails:interface" />[]'
+  - name: color
+    uid: 'outlook!Office.SensitivityLabelDetails#color:member'
+    package: outlook!
+    fullName: color
+    summary: The color of the sensitivity label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'outlook!Office.SensitivityLabelDetails#id:member'
+    package: outlook!
+    fullName: id
+    summary: The unique identifier (GUID) of the sensitivity label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
+  - name: name
+    uid: 'outlook!Office.SensitivityLabelDetails#name:member'
+    package: outlook!
+    fullName: name
+    summary: The name of the sensitivity label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: tooltip
+    uid: 'outlook!Office.SensitivityLabelDetails#tooltip:member'
+    package: outlook!
+    fullName: tooltip
+    summary: The description of the sensitivity label.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tooltip: string;'
+      return:
+        type: string
