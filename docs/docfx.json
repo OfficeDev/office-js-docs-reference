@@ -300,6 +300,12 @@
         "dest": "api"
       },
       {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "outlook-js-1.15",
+        "src": "docs-ref-autogen/outlook_1_15",
+        "dest": "api"
+      },
+      {
         "files": ["**/toc.yml"],
         "group": "excel-js-preview",
         "src": "docs-ref-autogen/excel",
@@ -903,6 +909,10 @@
         "dest": "outlook-js-1.14",
         "moniker_range": "outlook-js-1.14"
       },
+      "outlook-js-1.15": {
+        "dest": "outlook-js-1.15",
+        "moniker_range": "outlook-js-1.15"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
@@ -1168,6 +1178,7 @@
         "docs-ref-autogen/outlook_1_12/**": "outlook",
         "docs-ref-autogen/outlook_1_13/**": "outlook",
         "docs-ref-autogen/outlook_1_14/**": "outlook",
+        "docs-ref-autogen/outlook_1_15/**": "outlook",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_1/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_2/**": "powerpoint",
