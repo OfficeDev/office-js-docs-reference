@@ -171,7 +171,7 @@ For more details about your client version, see the update history page for [Mic
 
 ## Reference the Office JavaScript API production library
 
-To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
+To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
 
 ## Test preview APIs
 
