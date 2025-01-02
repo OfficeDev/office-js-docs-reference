@@ -287,7 +287,7 @@ methods:
     summary: >-
       Gets a setting object by its key, which is case-sensitive. If the setting doesn't exist, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: |-

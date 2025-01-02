@@ -14,7 +14,7 @@ fields:
     summary: |-
       An error caused by privacy settings. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTypePrivacySetting"'
   - name: dataTypeRestrictedDomain
     uid: 'excel!Excel.BlockedErrorCellValueSubType.dataTypeRestrictedDomain:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       An error caused by a service not supporting a linked data type. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTypeRestrictedDomain"'
   - name: dataTypeUnsupportedApp
     uid: 'excel!Excel.BlockedErrorCellValueSubType.dataTypeUnsupportedApp:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       An error caused by an unsupported data type. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTypeUnsupportedApp"'
   - name: environmentConnectionExceedQuota
     uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentConnectionExceedQuota:member'
@@ -40,7 +40,7 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentConnectionExceedQuota"'
   - name: environmentExceedsComputeResourceCountDaily
@@ -50,7 +50,7 @@ fields:
       An error caused by a user exceeding their daily quota of compute. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsComputeResourceCountDaily"'
   - name: environmentExceedsComputeResourceEver
@@ -61,7 +61,7 @@ fields:
       error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsComputeResourceEver"'
   - name: environmentExceedsQuota
@@ -72,7 +72,7 @@ fields:
       environments. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsQuota"'
   - name: environmentExceedsQuotaDaily
@@ -83,7 +83,7 @@ fields:
       as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsQuotaDaily"'
   - name: environmentExceedsQuotaMonthly
@@ -94,7 +94,7 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsQuotaMonthly"'
   - name: environmentExceedsTakerQuotaMonthly
@@ -105,7 +105,7 @@ fields:
       monthly quota of external code service execution environments. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"EnvironmentExceedsTakerQuotaMonthly"'
   - name: externalLinksGeneric
@@ -114,7 +114,7 @@ fields:
     summary: |-
       An error caused by external links. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ExternalLinksGeneric"'
   - name: imageDownloadBlocked
     uid: 'excel!Excel.BlockedErrorCellValueSubType.imageDownloadBlocked:member'
@@ -123,7 +123,7 @@ fields:
       An error caused by the image download coming from an untrusted URL. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ImageDownloadBlocked"'
   - name: imageExceedsSizeLimit
@@ -135,7 +135,7 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ImageExceedsSizeLimit"'
   - name: imageExceedsTotalSizeLimit
@@ -146,7 +146,7 @@ fields:
       -->. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ImageExceedsTotalSizeLimit"'
   - name: imageInvalidUrlNonHttps
@@ -156,7 +156,7 @@ fields:
       An error caused by the image URL not being HTTPS. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ImageInvalidUrlNonHttps"'
   - name: noLicense
@@ -165,7 +165,7 @@ fields:
     summary: |-
       An error caused by a license verification failure. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"NoLicense"'
   - name: pythonFunction
     uid: 'excel!Excel.BlockedErrorCellValueSubType.pythonFunction:member'
@@ -174,7 +174,7 @@ fields:
       An error caused by the PY function being disabled. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"PythonFunction"'
   - name: pythonUnsupportedOnThisPlatform
@@ -184,7 +184,7 @@ fields:
       An error caused by Python not being supported in Excel on a platform. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"PythonUnsupportedOnThisPlatform"'
   - name: richDataLinkDisabled
@@ -193,7 +193,7 @@ fields:
     summary: |-
       An error caused by disabled rich data links. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RichDataLinkDisabled"'
   - name: signInError
     uid: 'excel!Excel.BlockedErrorCellValueSubType.signInError:member'
@@ -201,7 +201,7 @@ fields:
     summary: |-
       An error caused by sign in failure. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"SignInError"'
   - name: unknown
     uid: 'excel!Excel.BlockedErrorCellValueSubType.unknown:member'
@@ -209,7 +209,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#BLOCKED! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'
   - name: unmetRequirements
     uid: 'excel!Excel.BlockedErrorCellValueSubType.unmetRequirements:member'
@@ -219,7 +219,7 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"UnmetRequirements"'
   - name: unsupportedEnvironment
@@ -230,7 +230,7 @@ fields:
       type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"UnsupportedEnvironment"'
   - name: unsupportedInCalculationMode
@@ -241,7 +241,7 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"UnsupportedInCalculationMode"'
   - name: wrongAccountType
@@ -251,7 +251,7 @@ fields:
       An error caused by using an unsupported identity provider. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"WrongAccountType"'
   - name: xlmDisabledInTrustCenter
@@ -261,7 +261,7 @@ fields:
       An error caused by Excel 4.0 macros being disabled in Trust Center. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"XlmDisabledInTrustCenter"'
   - name: xlmNotSupportedOnPlatform
@@ -272,6 +272,6 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"XlmNotSupportedOnPlatform"'

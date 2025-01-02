@@ -51,7 +51,7 @@ fields:
     summary: |-
       Clears everything in the range.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
     uid: 'excel!Excel.ClearApplyTo.contents:member'
@@ -59,7 +59,7 @@ fields:
     summary: |-
       Clears the contents of the range, leaving formatting intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
     uid: 'excel!Excel.ClearApplyTo.formats:member'
@@ -67,7 +67,7 @@ fields:
     summary: |-
       Clears all formatting for the range, leaving values intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
   - name: hyperlinks
     uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
@@ -75,7 +75,7 @@ fields:
     summary: |-
       Clears all hyperlinks, but leaves all content and formatting intact.
 
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
@@ -85,7 +85,7 @@ fields:
       intact.
 
 
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'
   - name: resetContents
     uid: 'excel!Excel.ClearApplyTo.resetContents:member'
@@ -95,6 +95,6 @@ fields:
       by each control. Cells without cell controls are set to blank.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ResetContents"'

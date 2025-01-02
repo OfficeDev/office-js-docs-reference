@@ -15,7 +15,7 @@ fields:
       An unknown type of error. Displays as error type \#NAME? in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'
   - name: unsupportedFunction
@@ -25,6 +25,6 @@ fields:
       An error caused by a formula containing an unsupported function. Displays as error type \#NAME? in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"UnsupportedFunction"'

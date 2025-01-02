@@ -5,12 +5,12 @@ package: outlook!
 fullName: Office.MailboxEnums.OpenLocation
 summary: Specifies the location from which an add-in wants to access data.
 remarks: >-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose, Read
 
 
-  **Important**: This enum is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn
+  \*\*Important\*\*: This enum is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn
   more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile
   devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -54,7 +54,7 @@ fields:
     summary: |-
       OneDrive for Business.
 
-      **Important**: For OneDrive Personal, use OTHER.
+      \*\*Important\*\*: For OneDrive Personal, use OTHER.
   - name: Other
     uid: 'outlook!Office.MailboxEnums.OpenLocation.Other:member'
     package: outlook!

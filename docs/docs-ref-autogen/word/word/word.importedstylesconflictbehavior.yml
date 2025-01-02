@@ -18,7 +18,7 @@ fields:
       already exists in the document, then the imported version could be added as MyStyle1.
 
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CreateNew"'
   - name: ignore
     uid: 'word!Word.ImportedStylesConflictBehavior.ignore:member'
@@ -26,7 +26,7 @@ fields:
     summary: |-
       Ignore conflicting imported styles and keep the existing version of those styles in the current document.
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ignore"'
   - name: overwrite
     uid: 'word!Word.ImportedStylesConflictBehavior.overwrite:member'
@@ -34,5 +34,5 @@ fields:
     summary: |-
       Overwrite the existing styles in the current document.
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Overwrite"'

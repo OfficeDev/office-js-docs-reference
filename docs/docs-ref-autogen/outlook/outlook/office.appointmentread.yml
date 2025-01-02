@@ -7,7 +7,7 @@ summary: >-
   The appointment attendee mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should
   treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item)
   page.
@@ -31,17 +31,17 @@ properties:
     fullName: attachments
     summary: Gets the item's attachments as an array.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      \*\*Note\*\*: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
       Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
 
@@ -102,14 +102,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -152,14 +152,14 @@ properties:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -253,14 +253,14 @@ properties:
     fullName: dateTimeCreated
     summary: Gets the date and time that an item was created.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -290,17 +290,17 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on
+      \*\*Important\*\*: This property isn't supported in Outlook on Android or on iOS. For more information on
       supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -338,14 +338,14 @@ properties:
       When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -381,14 +381,14 @@ properties:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -434,14 +434,14 @@ properties:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -471,17 +471,17 @@ properties:
       Returns `IPM.Appointment` for non-recurring appointments and `IPM.Appointment.Occurrence` for recurring
       appointments.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**: You can create custom classes that extend a default item class. For example,
+      \*\*Important\*\*: You can create custom classes that extend a default item class. For example,
       `IPM.Appointment.Contoso`<!-- -->.
 
 
@@ -512,17 +512,17 @@ properties:
       identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
       of the current item.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - The `itemId` property isn't available in compose mode. If an item identifier is required, the
@@ -579,14 +579,14 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
       instance is a message or an appointment.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -625,14 +625,14 @@ properties:
 
       The `location` property returns a string that contains the location of the appointment.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -673,14 +673,14 @@ properties:
       that are added by email programs. To get the subject of the item with the prefixes intact, use the `subject`
       property.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -710,14 +710,14 @@ properties:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -845,14 +845,14 @@ properties:
 
       - New Mac UI, web browser: No limit
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -891,14 +891,14 @@ properties:
     fullName: organizer
     summary: Gets the meeting organizer's email properties.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -934,23 +934,23 @@ properties:
       appointments and meeting requests of single appointments.
 
 
-      **Note**: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`<!-- -->.
+      \*\*Note\*\*: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`<!-- -->.
 
 
-      **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a
+      \*\*Note\*\*: If the recurrence object is null, this indicates that the object is a single appointment or a
       meeting request of a single appointment and NOT a part of a series.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -1002,17 +1002,17 @@ properties:
 
       - New Mac UI, web browser: No limit
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**: In Outlook on the web and on Windows (new and classic), the appointment organizer is included
+      \*\*Important\*\*: In Outlook on the web and on Windows (new and classic), the appointment organizer is included
       in the object returned by the `requiredAttendees` property.
 
 
@@ -1055,17 +1055,17 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**: Outlook on the web, [new Outlook on
+      \*\*Important\*\*: Outlook on the web, [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac
       only support Normal and Private sensitivity levels.
 
@@ -1100,7 +1100,7 @@ properties:
       However, on iOS and Android, the seriesId returns the REST ID of the parent item.
 
 
-      **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
+      \*\*Note\*\*: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
       identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
       making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
       -->. For more details, see [Use the Outlook REST APIs from an Outlook
@@ -1113,14 +1113,14 @@ properties:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -1161,14 +1161,14 @@ properties:
       The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You
       can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -1203,14 +1203,14 @@ properties:
       The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading
       prefixes such as RE: and FW:.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -1237,7 +1237,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -1248,14 +1248,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -1309,7 +1309,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -1320,14 +1320,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1363,17 +1363,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       In Outlook on the web and [new Outlook on
@@ -1517,17 +1517,17 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1601,17 +1601,17 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1662,17 +1662,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1750,17 +1750,17 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1855,17 +1855,17 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1924,17 +1924,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
@@ -2017,17 +2017,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
@@ -2065,7 +2065,7 @@ methods:
       Gets the entities found in the selected item's body.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -2073,14 +2073,14 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
@@ -2099,7 +2099,7 @@ methods:
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -2107,14 +2107,14 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
@@ -2147,7 +2147,7 @@ methods:
       file.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -2155,14 +2155,14 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
@@ -2198,14 +2198,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -2262,14 +2262,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2295,17 +2295,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
@@ -2414,17 +2414,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
@@ -2525,7 +2525,7 @@ methods:
       add-ins.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -2533,14 +2533,14 @@ methods:
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
@@ -2562,17 +2562,17 @@ methods:
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported.
@@ -2594,7 +2594,7 @@ methods:
 
       - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item doesn't always return the expected results. Instead,
+      expression such as .\* to obtain the entire body of an item doesn't always return the expected results. Instead,
       use the `Body.getAsync` method to retrieve the entire body.
 
 
@@ -2689,17 +2689,17 @@ methods:
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
+      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2738,17 +2738,17 @@ methods:
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
+      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
 
 
       #### Examples
@@ -2812,14 +2812,14 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples
@@ -2869,7 +2869,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -2880,14 +2880,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2916,7 +2916,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -2927,14 +2927,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Attendee
+      -->\*\*: Appointment Attendee
 
 
       #### Examples

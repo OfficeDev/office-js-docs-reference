@@ -59,7 +59,7 @@ properties:
       selection UI.
 
 
-      **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method
+      \*\*Note\*\*: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method
       in an add-in for Excel.
     remarks: ''
     isPreview: false

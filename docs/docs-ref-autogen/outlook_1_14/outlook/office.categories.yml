@@ -12,20 +12,20 @@ summary: >-
   one or more categories to an item.
 
 
-  **Important**: In Outlook on the web and [new Outlook on
+  \*\*Important\*\*: In Outlook on the web and [new Outlook on
   Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API to
   manage categories applied to a message in Compose mode.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -40,24 +40,24 @@ methods:
       unique name but multiple categories can use the same color.
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
       to manage categories applied to a message or appointment item in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidCategory`<!-- -->: Invalid categories were provided.
@@ -131,24 +131,24 @@ methods:
       unique name but multiple categories can use the same color.
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
       to manage categories applied to a message or appointment item in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidCategory`<!-- -->: Invalid categories were provided.
@@ -176,7 +176,7 @@ methods:
       Gets an item's categories.
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook
@@ -190,14 +190,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,7 +229,7 @@ methods:
       Gets an item's categories.
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook
@@ -243,14 +243,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
 
 
       #### Examples
@@ -301,21 +301,21 @@ methods:
       Removes categories from an item.
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
       to manage categories applied to a message in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
 
 
       #### Examples
@@ -381,21 +381,21 @@ methods:
       Removes categories from an item.
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
       to manage categories applied to a message in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->\*\*: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:

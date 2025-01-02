@@ -11,13 +11,13 @@ remarks: >-
   \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission level
+  \*\*[Minimum permission level
   (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **restricted**
+  -->\*\*: \*\*restricted\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 
 
@@ -82,14 +82,14 @@ properties:
       \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +104,7 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      customizes the text of the **Don't Send** button in the Smart Alerts dialog. Custom text must be 20 characters
+      customizes the text of the \*\*Don't Send\*\* button in the Smart Alerts dialog. Custom text must be 20 characters
       or less.
 
 
@@ -115,14 +115,14 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +137,7 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      specifies the ID of the task pane or function that runs when the **Don't Send** button is selected from the
+      specifies the ID of the task pane or function that runs when the \*\*Don't Send\*\* button is selected from the
       Smart Alerts dialog.
 
 
@@ -148,29 +148,29 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       The `commandId` value must match the task pane or function ID specified in the manifest of your add-in. The markup
       depends on the type of manifest your add-in uses.
 
 
-      - **Add-in only manifest**: The `id` attribute of the
+      - \*\*Add-in only manifest\*\*: The `id` attribute of the
       [Control](https://learn.microsoft.com/javascript/api/manifest/control) element representing the task pane or
       function.
 
 
-      - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the
+      - \*\*Unified manifest for Microsoft 365\*\*: The "id" property of the task pane or function command in the
       "controls" array.
 
 
@@ -190,23 +190,23 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from
+      specifies any JSON data passed to the add-in for processing when the \*\*Don't Send\*\* button is selected from
       the Smart Alerts dialog.
     remarks: >-
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier
@@ -242,14 +242,14 @@ properties:
       \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,17 +272,17 @@ properties:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**
+      \*\*Important\*\*
 
 
       - The formatted error message must be 500 characters or less.
@@ -322,17 +322,17 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**: Currently, `sendModeOverride` can only be set to the [prompt
+      \*\*Important\*\*: Currently, `sendModeOverride` can only be set to the [prompt
       user](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user)
       option.
     isPreview: false

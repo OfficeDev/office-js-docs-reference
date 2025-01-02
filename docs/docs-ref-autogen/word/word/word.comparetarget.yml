@@ -47,7 +47,7 @@ fields:
     summary: |-
       Places comparison differences in the current document.
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetCurrent"'
   - name: compareTargetNew
     uid: 'word!Word.CompareTarget.compareTargetNew:member'
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Places comparison differences in a new document.
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetNew"'
   - name: compareTargetSelected
     uid: 'word!Word.CompareTarget.compareTargetSelected:member'
@@ -63,5 +63,5 @@ fields:
     summary: |-
       Places comparison differences in the target document.
 
-      * \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetSelected"'

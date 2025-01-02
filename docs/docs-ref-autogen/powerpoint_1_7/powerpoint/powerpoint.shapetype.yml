@@ -44,7 +44,7 @@ fields:
     summary: |-
       The shape is a callout.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Callout"'
   - name: chart
     uid: 'powerpoint!PowerPoint.ShapeType.chart:member'
@@ -52,7 +52,7 @@ fields:
     summary: |-
       The shape is a chart.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Chart"'
   - name: contentApp
     uid: 'powerpoint!PowerPoint.ShapeType.contentApp:member'
@@ -60,7 +60,7 @@ fields:
     summary: |-
       The shape is a content Office Add-in.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ContentApp"'
   - name: diagram
     uid: 'powerpoint!PowerPoint.ShapeType.diagram:member'
@@ -68,7 +68,7 @@ fields:
     summary: |-
       The shape is a diagram.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Diagram"'
   - name: freeform
     uid: 'powerpoint!PowerPoint.ShapeType.freeform:member'
@@ -76,7 +76,7 @@ fields:
     summary: |-
       The shape is a freeform object.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Freeform"'
   - name: geometricShape
     uid: 'powerpoint!PowerPoint.ShapeType.geometricShape:member'
@@ -84,7 +84,7 @@ fields:
     summary: |-
       The shape is a geometric shape such as rectangle.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"GeometricShape"'
   - name: graphic
     uid: 'powerpoint!PowerPoint.ShapeType.graphic:member'
@@ -92,7 +92,7 @@ fields:
     summary: |-
       The shape is a graphic.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Graphic"'
   - name: group
     uid: 'powerpoint!PowerPoint.ShapeType.group:member'
@@ -100,7 +100,7 @@ fields:
     summary: |-
       The shape is a group shape which contains sub-shapes.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Group"'
   - name: image
     uid: 'powerpoint!PowerPoint.ShapeType.image:member'
@@ -108,7 +108,7 @@ fields:
     summary: |-
       The shape is an image.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Image"'
   - name: ink
     uid: 'powerpoint!PowerPoint.ShapeType.ink:member'
@@ -116,7 +116,7 @@ fields:
     summary: |-
       The shape is an ink object.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Ink"'
   - name: line
     uid: 'powerpoint!PowerPoint.ShapeType.line:member'
@@ -124,7 +124,7 @@ fields:
     summary: |-
       The shape is a line.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Line"'
   - name: media
     uid: 'powerpoint!PowerPoint.ShapeType.media:member'
@@ -132,7 +132,7 @@ fields:
     summary: |-
       The shape is a media object.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Media"'
   - name: model3D
     uid: 'powerpoint!PowerPoint.ShapeType.model3D:member'
@@ -140,7 +140,7 @@ fields:
     summary: |-
       The shape is a 3D model.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Model3D"'
   - name: ole
     uid: 'powerpoint!PowerPoint.ShapeType.ole:member'
@@ -148,7 +148,7 @@ fields:
     summary: |-
       The shape is an OLE (Object Linking and Embedding) object.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Ole"'
   - name: placeholder
     uid: 'powerpoint!PowerPoint.ShapeType.placeholder:member'
@@ -156,7 +156,7 @@ fields:
     summary: |-
       The shape is a placeholder.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Placeholder"'
   - name: smartArt
     uid: 'powerpoint!PowerPoint.ShapeType.smartArt:member'
@@ -164,7 +164,7 @@ fields:
     summary: |-
       The shape is a SmartArt graphic.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SmartArt"'
   - name: table
     uid: 'powerpoint!PowerPoint.ShapeType.table:member'
@@ -172,7 +172,7 @@ fields:
     summary: |-
       The shape is a table.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Table"'
   - name: textBox
     uid: 'powerpoint!PowerPoint.ShapeType.textBox:member'
@@ -180,7 +180,7 @@ fields:
     summary: |-
       The shape is a text box.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"TextBox"'
   - name: unsupported
     uid: 'powerpoint!PowerPoint.ShapeType.unsupported:member'
@@ -188,5 +188,5 @@ fields:
     summary: |-
       The given shape's type is unsupported.
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Unsupported"'

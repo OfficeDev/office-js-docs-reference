@@ -78,7 +78,7 @@ fields:
     summary: |-
       Berry color.
 
-      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Berry"'
   - name: blue
     uid: 'word!Word.CritiqueColorScheme.blue:member'
@@ -86,7 +86,7 @@ fields:
     summary: |-
       Blue color.
 
-      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Blue"'
   - name: green
     uid: 'word!Word.CritiqueColorScheme.green:member'
@@ -94,7 +94,7 @@ fields:
     summary: |-
       Green color.
 
-      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Green"'
   - name: lavender
     uid: 'word!Word.CritiqueColorScheme.lavender:member'
@@ -102,7 +102,7 @@ fields:
     summary: |-
       Lavender color.
 
-      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lavender"'
   - name: red
     uid: 'word!Word.CritiqueColorScheme.red:member'
@@ -110,5 +110,5 @@ fields:
     summary: |-
       Red color.
 
-      * \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Red"'

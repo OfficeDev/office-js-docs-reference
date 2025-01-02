@@ -62,7 +62,7 @@ fields:
       Occurs when any date or time of the selected appointment or series is changed in Outlook.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -80,7 +80,7 @@ fields:
       Occurs when an attachment is added to or removed from an item.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -134,7 +134,7 @@ fields:
       Occurs when the appointment location is changed in Outlook.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -154,7 +154,7 @@ fields:
       Currently, "Dismiss" is the only supported action that fires this event.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -172,7 +172,7 @@ fields:
       Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -205,7 +205,7 @@ fields:
       -->.
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler
@@ -224,7 +224,7 @@ fields:
       Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -242,7 +242,7 @@ fields:
       Occurs when the recurrence pattern of the selected series is changed in Outlook.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -264,7 +264,7 @@ fields:
       Occurs in Outlook when one or more messages are selected or deselected.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 
@@ -280,7 +280,7 @@ fields:
       Occurs in Outlook when the sensitivity label of a message or appointment changes.
 
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for
       this event.
 
 

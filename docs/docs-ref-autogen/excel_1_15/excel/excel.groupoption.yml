@@ -41,7 +41,7 @@ fields:
     summary: |-
       Group by columns.
 
-      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ByColumns"'
   - name: byRows
     uid: 'excel!Excel.GroupOption.byRows:member'
@@ -49,5 +49,5 @@ fields:
     summary: |-
       Group by rows.
 
-      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ByRows"'

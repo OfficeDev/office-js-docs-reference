@@ -15,7 +15,7 @@ remarks: >-
   for Outlook.
 
 
-  **Important**: In Outlook, support is only available with the [event-based
+  \*\*Important\*\*: In Outlook, support is only available with the [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
   Windows. This interface isn't supported in Outlook on Mac or on the web.
 
@@ -43,7 +43,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -75,7 +75,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -105,7 +105,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -131,7 +131,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -161,7 +161,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -191,7 +191,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
@@ -224,7 +224,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with the [event-based
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
       Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false

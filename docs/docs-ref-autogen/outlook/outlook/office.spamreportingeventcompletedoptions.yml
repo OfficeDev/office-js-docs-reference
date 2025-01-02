@@ -11,13 +11,13 @@ remarks: >-
   \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Message Read
 
 
@@ -76,24 +76,24 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      -->\*\*: Message Read
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - If the specified folder doesn't exist yet, it will be created before the message is moved.
 
 
       - If the `postProcessingAction` property is set to `moveToCustomFolder`<!-- -->, the `folderName` property must be
-      specified. Otherwise, the reported message is moved to the **Junk Email** folder of the mailbox. If
+      specified. Otherwise, the reported message is moved to the \*\*Junk Email\*\* folder of the mailbox. If
       `postProcessingAction` is set to another action other than `moveToCustomFolder`<!-- -->, the `folderName` property
       is ignored.
     isPreview: false
@@ -115,17 +115,17 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      -->\*\*: Message Read
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - You can only use this property in a spam-reporting add-in in Outlook on the web, on Windows
@@ -137,7 +137,7 @@ properties:
       - If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`<!-- -->, you must specify the name
       of the folder to which the message will be moved in the `folderName` property of the `event.completed` call.
       Otherwise, the `moveItemTo` property will default to `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the
-      reported message to the **Junk Email** folder.
+      reported message to the \*\*Junk Email\*\* folder.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,14 +157,14 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      -->\*\*: Message Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,14 +182,14 @@ properties:
       a different folder in the mailbox. The following post-processing actions are available.
 
 
-      - `delete` - Moves the reported message to the **Deleted Items** folder of the mailbox.
+      - `delete` - Moves the reported message to the \*\*Deleted Items\*\* folder of the mailbox.
 
 
       - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder
       in the `folderName` property.
 
 
-      - `moveToSpamFolder` - Moves the reported message to the **Junk Email** folder of the mailbox.
+      - `moveToSpamFolder` - Moves the reported message to the \*\*Junk Email\*\* folder of the mailbox.
 
 
       - `noMove` - Leaves the reported message in its current folder.
@@ -197,17 +197,17 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      -->\*\*: Message Read
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on Windows, you can only use this property in earlier builds that support the integrated
@@ -222,8 +222,8 @@ properties:
 
       - If the property is set to `moveToCustomFolder`<!-- -->, you must specify the name of the folder to which the
       message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the
-      `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the **Junk
-      Email** folder.
+      `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the \*\*Junk
+      Email\*\* folder.
 
 
       #### Examples
@@ -280,14 +280,14 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission level
+      \*\*[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      -->\*\*: Message Read
     isPreview: false
     isDeprecated: false
     syntax:

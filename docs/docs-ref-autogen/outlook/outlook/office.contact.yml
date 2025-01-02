@@ -13,18 +13,18 @@ summary: >-
   method of the current item.
 
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
+  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
   supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
   For guidance on how to implement these rules, see [Contextual Outlook
   add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: >-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **restricted**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*restricted\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Read
 
 
@@ -92,7 +92,7 @@ properties:
       An array of strings containing the mailing and street addresses associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -114,7 +114,7 @@ properties:
       A string containing the name of the business associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -136,7 +136,7 @@ properties:
       An array of strings containing the SMTP email addresses associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -158,7 +158,7 @@ properties:
       A string containing the name of the person associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -180,7 +180,7 @@ properties:
       An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -202,7 +202,7 @@ properties:
       An array of strings containing the Internet URLs associated with the contact. Nullable.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.

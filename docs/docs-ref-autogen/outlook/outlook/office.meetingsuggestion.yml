@@ -15,18 +15,18 @@ summary: >-
   suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
 
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
+  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
   supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
   For guidance on how to implement these rules, see [Contextual Outlook
   add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: >-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Read
 
 
@@ -68,7 +68,7 @@ properties:
       Gets the attendees for a suggested meeting.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -90,7 +90,7 @@ properties:
       Gets the date and time that a suggested meeting is to end.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -112,7 +112,7 @@ properties:
       Gets the location of a suggested meeting.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -134,7 +134,7 @@ properties:
       Gets a string that was identified as a meeting suggestion.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -156,7 +156,7 @@ properties:
       Gets the date and time that a suggested meeting is to begin.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
@@ -178,7 +178,7 @@ properties:
       Gets the subject of a suggested meeting.
 
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are
       still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative
       solution. For guidance on how to implement these rules, see [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.

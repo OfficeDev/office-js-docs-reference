@@ -32,7 +32,7 @@ fields:
     summary: |-
       This will mark all cells as dirty and then recalculate them.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Full"'
   - name: fullRebuild
     uid: 'excel!Excel.CalculationType.fullRebuild:member'
@@ -40,7 +40,7 @@ fields:
     summary: |-
       This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FullRebuild"'
   - name: recalculate
     uid: 'excel!Excel.CalculationType.recalculate:member'
@@ -50,5 +50,5 @@ fields:
       programmatically marked as dirty.
 
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Recalculate"'

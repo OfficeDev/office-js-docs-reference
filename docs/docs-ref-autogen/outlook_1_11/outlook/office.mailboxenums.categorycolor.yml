@@ -8,12 +8,12 @@ remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 
 
-  **Important**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on
+  \*\*Important\*\*: The actual color depends on how the Outlook client renders it. In this case, the colors noted on
   each preset apply to Outlook on the web, on Windows
   ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac (starting
   in Version 16.78).

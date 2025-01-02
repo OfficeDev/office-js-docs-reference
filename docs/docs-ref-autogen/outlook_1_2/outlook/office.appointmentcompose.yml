@@ -7,7 +7,7 @@ summary: >-
   The appointment organizer mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should
   treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item)
   page.
@@ -34,14 +34,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -90,16 +90,16 @@ properties:
       convert the local time on the client to UTC for the server.
 
 
-      **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
+      \*\*Important\*\*: In the Windows client, you can't use this property to update the end of a recurrence.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -182,14 +182,14 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the `item` object
       instance is a message or an appointment.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -228,14 +228,14 @@ properties:
       [Location](xref:outlook!Office.Location:interface) object that provides methods that are used to get and set the
       location of the appointment.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -304,14 +304,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -394,14 +394,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -488,16 +488,16 @@ properties:
       to convert the local time on the client to UTC for the server.
 
 
-      **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
+      \*\*Important\*\*: In the Windows client, you can't use this property to update the start of a recurrence.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -551,14 +551,14 @@ properties:
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -615,17 +615,17 @@ methods:
       Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -647,7 +647,7 @@ methods:
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -730,17 +730,17 @@ methods:
       Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -762,7 +762,7 @@ methods:
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -825,17 +825,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -926,17 +926,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -985,14 +985,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -1059,14 +1059,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -1134,14 +1134,14 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
       #### Examples
@@ -1204,23 +1204,23 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
       an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
       Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
       of an item.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1294,23 +1294,23 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
       an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
       Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
       of an item.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1350,17 +1350,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1445,17 +1445,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Appointment Organizer
+      -->\*\*: Appointment Organizer
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.

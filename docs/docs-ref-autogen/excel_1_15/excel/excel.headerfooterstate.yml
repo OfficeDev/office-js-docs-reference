@@ -14,7 +14,7 @@ fields:
     summary: |-
       Only one general header/footer is used for all pages printed.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Default"'
   - name: firstAndDefault
     uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       There is a separate first page header/footer, and a general header/footer used for all other pages.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FirstAndDefault"'
   - name: firstOddAndEven
     uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FirstOddAndEven"'
   - name: oddAndEven
     uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
@@ -38,5 +38,5 @@ fields:
     summary: |-
       There is a different header/footer for odd and even pages.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OddAndEven"'

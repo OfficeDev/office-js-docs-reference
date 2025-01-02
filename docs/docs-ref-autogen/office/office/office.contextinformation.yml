@@ -5,7 +5,7 @@ package: office!
 fullName: Office.ContextInformation
 summary: Provides information about the environment in which the add-in is running.
 remarks: >-
-  **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. For all Mailbox requirement
+  \*\*Important\*\*: In Outlook, this object is available from Mailbox requirement set 1.5. For all Mailbox requirement
   sets, you can use the
   [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
   property to get similar information.
@@ -40,7 +40,7 @@ properties:
     fullName: platform
     summary: Gets the platform on which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new
+      \*\*Important\*\*: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new
       Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
 

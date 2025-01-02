@@ -8,13 +8,13 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 isPreview: false
 isDeprecated: false
@@ -29,17 +29,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on
@@ -66,7 +66,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -140,17 +140,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on
@@ -176,7 +176,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -213,17 +213,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       The maximum number of recipients returned by this method varies per Outlook client.
@@ -261,7 +261,7 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
       suggested contact or email address from the auto-complete list.
 
 
@@ -309,17 +309,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       The maximum number of recipients returned by this method varies per Outlook client.
@@ -352,7 +352,7 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
       suggested contact or email address from the auto-complete list.
 
 
@@ -496,17 +496,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
@@ -533,7 +533,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -578,17 +578,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      -->\*\*: Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
@@ -615,7 +615,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.

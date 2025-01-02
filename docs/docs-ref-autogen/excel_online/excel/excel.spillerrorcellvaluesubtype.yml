@@ -16,7 +16,7 @@ fields:
       \#SPILL! in Excel.
 
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Collision"'
   - name: indeterminateSize
     uid: 'excel!Excel.SpillErrorCellValueSubType.indeterminateSize:member'
@@ -26,7 +26,7 @@ fields:
       \#SPILL! in Excel.
 
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"IndeterminateSize"'
   - name: mergedCell
     uid: 'excel!Excel.SpillErrorCellValueSubType.mergedCell:member'
@@ -34,7 +34,7 @@ fields:
     summary: |-
       An error caused by a merged cell blocking a dynamic array. Displays as error type \#SPILL! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"MergedCell"'
   - name: outOfMemoryWhileCalc
     uid: 'excel!Excel.SpillErrorCellValueSubType.outOfMemoryWhileCalc:member'
@@ -44,7 +44,7 @@ fields:
       type \#SPILL! in Excel.
 
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OutOfMemoryWhileCalc"'
   - name: table
     uid: 'excel!Excel.SpillErrorCellValueSubType.table:member'
@@ -52,7 +52,7 @@ fields:
     summary: |-
       An error caused by entering a dynamic array formula in a table. Displays as error type \#SPILL! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Table"'
   - name: unknown
     uid: 'excel!Excel.SpillErrorCellValueSubType.unknown:member'
@@ -60,7 +60,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#SPILL! in Excel.
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'
   - name: worksheetEdge
     uid: 'excel!Excel.SpillErrorCellValueSubType.worksheetEdge:member'
@@ -70,5 +70,5 @@ fields:
       \#SPILL! in Excel.
 
 
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WorksheetEdge"'

@@ -7,7 +7,7 @@ summary: >-
   The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**:
+  \*\*Important\*\*:
 
 
   - This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a
@@ -38,7 +38,7 @@ properties:
     package: outlook!
     fullName: bcc
     summary: >-
-      Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line
+      Gets an object that provides methods to get or update the recipients on the \*\*Bcc\*\* (blind carbon copy) line
       of a message.
 
 
@@ -48,14 +48,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -127,14 +127,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -175,17 +175,17 @@ properties:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
       to manage categories on a message in Compose mode.
 
@@ -285,18 +285,18 @@ properties:
 
 
       The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
-      **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
+      \*\*Cc\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
       apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
       object for more details.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -375,14 +375,14 @@ properties:
       You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
       the `conversationId` property will return a value.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -417,14 +417,14 @@ properties:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -474,17 +474,17 @@ properties:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
+      \*\*Important\*\*: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
       [Implement event-based activation in Outlook mobile
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
 
@@ -523,17 +523,17 @@ properties:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on Windows, the `inReplyTo` value is maintained on all replies regardless of changes made by the
@@ -590,17 +590,17 @@ properties:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: The internet headers API is supported in Outlook on Android and on iOS starting in Version
+      \*\*Important\*\*: The internet headers API is supported in Outlook on Android and on iOS starting in Version
       4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs
       supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
@@ -644,14 +644,14 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
       instance is a message or an appointment.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -690,14 +690,14 @@ properties:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -814,17 +814,17 @@ properties:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
       subscription.
 
 
@@ -881,17 +881,17 @@ properties:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services
+      \*\*Important\*\*: The identifier returned by the `seriesId` property is the same as the Exchange Web Services
       item identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
       making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
       -->. For more details, see [Use the Outlook REST APIs from an Outlook
@@ -936,19 +936,19 @@ properties:
     summary: |-
       Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.
 
-      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+      \*\*Important\*\*: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -986,14 +986,14 @@ properties:
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -1039,23 +1039,23 @@ properties:
     package: outlook!
     fullName: to
     summary: >-
-      Provides access to the recipients on the **To** line of a message. The type of object and level of access
+      Provides access to the recipients on the \*\*To\*\* line of a message. The type of object and level of access
       depend on the mode of the current item.
 
 
       The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the
-      **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
+      \*\*To\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
       apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
       object for more details.
     remarks: >-
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -1134,17 +1134,17 @@ methods:
       Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -1166,7 +1166,7 @@ methods:
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -1249,17 +1249,17 @@ methods:
       Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook
@@ -1281,7 +1281,7 @@ methods:
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -1336,17 +1336,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For
@@ -1368,7 +1368,7 @@ methods:
       -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -1484,17 +1484,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For
@@ -1516,7 +1516,7 @@ methods:
       -->.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -1558,7 +1558,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -1569,14 +1569,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -1630,7 +1630,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -1641,14 +1641,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1699,17 +1699,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -1800,17 +1800,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -1856,23 +1856,23 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: In Outlook on the web and [new Outlook on
+      \*\*Important\*\*: In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the item is an
       appointment and it has previously been saved using `saveAsync`<!-- -->, the user is prompted to save, discard, or
       cancel even if no changes have occurred since the item was last saved.
 
 
-      **Tip**: Use the
+      \*\*Tip\*\*: Use the
       [closeAsync](https://learn.microsoft.com/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))
       method instead of the `close` method if you want your add-in to:
 
@@ -1916,20 +1916,20 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
-      - `The operation was cancelled by the user`<!-- -->: The user selects **Cancel** from the save dialog and the
+      - `The operation was cancelled by the user`<!-- -->: The user selects \*\*Cancel\*\* from the save dialog and the
       `discardItem` property isn't defined or is set to `false`<!-- -->.
 
 
@@ -1977,20 +1977,20 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
-      - `The operation was cancelled by the user`<!-- -->: The user selects **Cancel** from the save dialog.
+      - `The operation was cancelled by the user`<!-- -->: The user selects \*\*Cancel\*\* from the save dialog.
 
 
       - `The operation is not supported`<!-- -->: The `closeAsync` method attempts to close a reply in the Reading Pane
@@ -2052,8 +2052,8 @@ methods:
       for new mails, replies, and forwards is disabled. A signature that's selected is also disabled by the method.
 
 
-      - In Outlook on Windows (classic) and on Mac, the signature under the **New messages** and
-      **Replies/forwards** sections of the sending account is set to **(none)**.
+      - In Outlook on Windows (classic) and on Mac, the signature under the \*\*New messages\*\* and
+      \*\*Replies/forwards\*\* sections of the sending account is set to \*\*(none)\*\*.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -2061,17 +2061,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: This method is supported in Message Compose on Outlook on Android and on iOS starting in
+      \*\*Important\*\*: This method is supported in Message Compose on Outlook on Android and on iOS starting in
       Version 4.2352.0. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported
       in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -2132,8 +2132,8 @@ methods:
       for new mails, replies, and forwards is disabled. A signature that's selected is also disabled by the method.
 
 
-      - In Outlook on Windows (classic) and on Mac, the signature under the **New messages** and
-      **Replies/forwards** sections of the sending account is set to **(none)**.
+      - In Outlook on Windows (classic) and on Mac, the signature under the \*\*New messages\*\* and
+      \*\*Replies/forwards\*\* sections of the sending account is set to \*\*(none)\*\*.
 
 
       - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
@@ -2141,17 +2141,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: This method is supported in Message Compose on Outlook on Android and on iOS starting in
+      \*\*Important\*\*: This method is supported in Message Compose on Outlook on Android and on iOS starting in
       Version 4.2352.0. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported
       in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
@@ -2185,17 +2185,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
@@ -2286,17 +2286,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
@@ -2335,14 +2335,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -2430,14 +2430,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2465,17 +2465,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0. For
+      \*\*Important\*\*: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0. For
       more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
@@ -2510,17 +2510,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0. For
+      \*\*Important\*\*: This method is supported in Outlook on Android and on iOS starting in Version 4.2352.0. For
       more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -2573,17 +2573,17 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      \*\*Tip\*\*: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
     isPreview: false
     isDeprecated: false
@@ -2615,17 +2615,17 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Tip**: You can use the conversation index to locate a message in a conversation thread. Then, use its
+      \*\*Tip\*\*: You can use the conversation index to locate a message in a conversation thread. Then, use its
       contents to provide context for the current message being composed.
 
 
@@ -2683,14 +2683,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -2747,14 +2747,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2778,17 +2778,17 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       The following table lists the default message classes.
@@ -2832,17 +2832,17 @@ methods:
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       The following table lists the default message classes.
@@ -2910,17 +2910,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
@@ -2933,7 +2933,7 @@ methods:
       is synced, the item ID isn't recognized and using it returns an error.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
@@ -2973,17 +2973,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
@@ -2996,7 +2996,7 @@ methods:
       is synced, the item ID isn't recognized and using it returns an error.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
@@ -3055,14 +3055,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -3129,14 +3129,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -3195,50 +3195,50 @@ methods:
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
+      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      \*\*Important\*\*: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
       following conditions are met.
 
 
-      a. **Delegate access/Shared folders**
+      a. \*\*Delegate access/Shared folders\*\*
 
 
       1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
 
 
-      2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+      2. They save the message then move it from their own \*\*Drafts\*\* folder to a folder shared with the delegate.
 
 
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. \*\*Shared mailbox (applies to classic Outlook on Windows only)\*\*
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
 
 
-      2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+      2. They save the message then move it from their own \*\*Drafts\*\* folder to a folder in the shared mailbox.
 
 
       3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
 
 
       The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared
-      properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+      properties. After the message has been sent, it's usually found in the sender's \*\*Sent Items\*\* folder.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3277,50 +3277,50 @@ methods:
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Note**: This method isn't supported in Outlook on iOS or on Android.
+      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
 
 
-      **Important**: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
+      \*\*Important\*\*: In Message Compose mode, this API isn't supported in Outlook on the web or on Windows
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic) unless the
       following conditions are met.
 
 
-      a. **Delegate access/Shared folders**
+      a. \*\*Delegate access/Shared folders\*\*
 
 
       1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
 
 
-      2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+      2. They save the message then move it from their own \*\*Drafts\*\* folder to a folder shared with the delegate.
 
 
       3. The delegate opens the draft from the shared folder then continues composing.
 
 
-      b. **Shared mailbox (applies to classic Outlook on Windows only)**
+      b. \*\*Shared mailbox (applies to classic Outlook on Windows only)\*\*
 
 
       1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
 
 
-      2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+      2. They save the message then move it from their own \*\*Drafts\*\* folder to a folder in the shared mailbox.
 
 
       3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
 
 
       The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared
-      properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+      properties. After the message has been sent, it's usually found in the sender's \*\*Sent Items\*\* folder.
 
 
       #### Examples
@@ -3378,14 +3378,14 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -3446,14 +3446,14 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3491,14 +3491,14 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -3561,23 +3561,23 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
       an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
       Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
       of an item.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -3651,23 +3651,23 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove
       an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
       Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body
       of an item.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -3697,7 +3697,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -3708,14 +3708,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3744,7 +3744,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
       implementation.
 
 
@@ -3755,14 +3755,14 @@ methods:
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
       #### Examples
@@ -3807,17 +3807,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web, [new Outlook on
@@ -3845,13 +3845,13 @@ methods:
 
       - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
       `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
-      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
-      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
-      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
-      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      message from their personal mailbox and selects the shared mailbox account in the \*\*From\*\* field, `saveAsync`
+      saves the draft to the \*\*Drafts\*\* folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the \*\*Open another mailbox\*\* option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the \*\*Drafts\*\* folder of the shared mailbox.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -3885,17 +3885,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook on the web, [new Outlook on
@@ -3923,13 +3923,13 @@ methods:
 
       - In Outlook on the web and new Outlook on Windows, the mailbox account to which a draft is saved varies when
       `saveAsync` is called on a message that will be sent from a shared mailbox account. If the sender creates a new
-      message from their personal mailbox and selects the shared mailbox account in the **From** field, `saveAsync`
-      saves the draft to the **Drafts** folder of the user's personal mailbox. If the sender opens the shared
-      mailbox account in a separate browser tab (through the **Open another mailbox** option, for example) and
-      creates a new message there, `saveAsync` saves the draft to the **Drafts** folder of the shared mailbox.
+      message from their personal mailbox and selects the shared mailbox account in the \*\*From\*\* field, `saveAsync`
+      saves the draft to the \*\*Drafts\*\* folder of the user's personal mailbox. If the sender opens the shared
+      mailbox account in a separate browser tab (through the \*\*Open another mailbox\*\* option, for example) and
+      creates a new message there, `saveAsync` saves the draft to the \*\*Drafts\*\* folder of the shared mailbox.
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -3990,17 +3990,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -4085,17 +4085,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
+      \*\*[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
+      \*\*[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.

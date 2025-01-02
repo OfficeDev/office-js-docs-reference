@@ -7,13 +7,13 @@ summary: >-
   Specifies an entity's type.
 
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
+  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still
   supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution.
   For guidance on how to implement these rules, see [Contextual Outlook
   add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: >-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 isPreview: false
 isDeprecated: true

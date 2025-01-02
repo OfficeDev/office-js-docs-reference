@@ -493,7 +493,7 @@ methods:
     fullName: 'getFormatsAsync(cellReference, formats, options, callback)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
-      **Returned format structure**
+      \*\*Returned format structure\*\*
 
 
       Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition
@@ -503,7 +503,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -517,8 +517,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
-      **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select \*\*Format Cells\*\*, or
+      \*\*Home\*\* &gt; \*\*Format\*\* &gt; \*\*Format Cells\*\*).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -553,7 +553,7 @@ methods:
     fullName: 'getFormatsAsync(cellReference, formats, callback)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
-      **Returned format structure**
+      \*\*Returned format structure\*\*
 
 
       Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition
@@ -563,7 +563,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -577,8 +577,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
-      **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select \*\*Format Cells\*\*, or
+      \*\*Home\*\* &gt; \*\*Format\*\* &gt; \*\*Format Cells\*\*).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -610,7 +610,7 @@ methods:
     fullName: 'setFormatsAsync(cellFormat, options, callback)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
-      **Specifying the cellFormat parameter**
+      \*\*Specifying the cellFormat parameter\*\*
 
 
       Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background,
@@ -626,7 +626,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -640,8 +640,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
-      **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select \*\*Format Cells\*\*, or
+      \*\*Home\*\* &gt; \*\*Format\*\* &gt; \*\*Format Cells\*\*).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -779,7 +779,7 @@ methods:
     fullName: 'setFormatsAsync(cellFormat, callback)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
-      **Specifying the cellFormat parameter**
+      \*\*Specifying the cellFormat parameter\*\*
 
 
       Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background,
@@ -795,7 +795,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -809,8 +809,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Open the context menu (right-click or select and hold) then select **Format Cells**, or
-      **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Open the context menu (right-click or select and hold) then select \*\*Format Cells\*\*, or
+      \*\*Home\*\* &gt; \*\*Format\*\* &gt; \*\*Format Cells\*\*).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -898,7 +898,7 @@ methods:
     fullName: 'setTableOptionsAsync(tableOptions, options, callback)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
@@ -961,7 +961,7 @@ methods:
     fullName: 'setTableOptionsAsync(tableOptions, callback)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 

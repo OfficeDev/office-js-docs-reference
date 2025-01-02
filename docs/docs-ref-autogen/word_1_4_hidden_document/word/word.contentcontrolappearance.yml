@@ -64,7 +64,7 @@ fields:
     summary: |-
       Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BoundingBox"'
   - name: hidden
     uid: 'word!Word.ContentControlAppearance.hidden:member'
@@ -72,7 +72,7 @@ fields:
     summary: |-
       Represents a content control that isn't shown.
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: tags
     uid: 'word!Word.ContentControlAppearance.tags:member'
@@ -80,5 +80,5 @@ fields:
     summary: |-
       Represents a content control shown as start and end markers.
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tags"'

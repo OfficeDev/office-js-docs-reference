@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlPrefixMappings:interface'
 package: office!
 fullName: Office.CustomXmlPrefixMappings
 summary: Represents a collection of CustomXmlPart objects.
-remarks: '**Applications**: Word'
+remarks: '\*\*Applications\*\*: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,7 +15,7 @@ methods:
     fullName: 'addNamespaceAsync(prefix, ns, options, callback)'
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -50,7 +50,7 @@ methods:
     fullName: 'addNamespaceAsync(prefix, ns, callback)'
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -80,7 +80,7 @@ methods:
     fullName: 'getNamespaceAsync(prefix, options, callback)'
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -114,7 +114,7 @@ methods:
     fullName: 'getNamespaceAsync(prefix, callback)'
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -143,7 +143,7 @@ methods:
     fullName: 'getPrefixAsync(ns, options, callback)'
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -178,7 +178,7 @@ methods:
     fullName: 'getPrefixAsync(ns, callback)'
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 

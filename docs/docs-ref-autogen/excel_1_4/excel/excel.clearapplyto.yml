@@ -51,7 +51,7 @@ fields:
     summary: |-
       Clears everything in the range.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
     uid: 'excel!Excel.ClearApplyTo.contents:member'
@@ -59,7 +59,7 @@ fields:
     summary: |-
       Clears the contents of the range, leaving formatting intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
     uid: 'excel!Excel.ClearApplyTo.formats:member'
@@ -67,5 +67,5 @@ fields:
     summary: |-
       Clears all formatting for the range, leaving values intact.
 
-      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'

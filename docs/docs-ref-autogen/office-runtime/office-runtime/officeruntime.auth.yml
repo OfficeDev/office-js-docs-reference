@@ -42,10 +42,10 @@ methods:
       users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for
       both user account types to access resources in the Microsoft Graph.
     remarks: >-
-      **Applications**: Excel, Outlook, PowerPoint, Word
+      \*\*Applications\*\*: Excel, Outlook, PowerPoint, Word
 
 
-      **Important**:
+      \*\*Important\*\*:
 
 
       - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
