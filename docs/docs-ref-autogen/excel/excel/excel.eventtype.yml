@@ -8,16 +8,6 @@ remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/exce
 isPreview: false
 isDeprecated: false
 fields:
-  - name: agaveVisualUpdate
-    uid: 'excel!Excel.EventType.agaveVisualUpdate:member'
-    package: excel!
-    summary: >-
-      `AgaveVisualUpdate` represents the type of an event that is associated with an agave visual and carries a new data
-      view following a data change.
-
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"AgaveVisualUpdate"'
   - name: annotationAdded
     uid: 'excel!Excel.EventType.annotationAdded:member'
     package: excel!

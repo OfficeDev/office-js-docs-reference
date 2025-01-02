@@ -2335,10 +2335,8 @@ Excel.DataPivotHierarchyCollection,"load(propertyNamesAndPaths)",Method,Poor,fal
 Excel.DataPivotHierarchyCollection,"remove(DataPivotHierarchy)",Method,Poor,false
 Excel.DataPivotHierarchyCollection,"toJSON()",Method,Poor,false
 Excel.DataSourceType,N/A,Enum,Good,false
-Excel.DataSourceType,"cube",EnumField,Fine,false
 Excel.DataSourceType,"localRange",EnumField,Fine,false
 Excel.DataSourceType,"localTable",EnumField,Fine,false
-Excel.DataSourceType,"oledbDefault",EnumField,Fine,false
 Excel.DataSourceType,"unknown",EnumField,Fine,false
 Excel.DataValidation,N/A,Class,Good,false
 Excel.DataValidation,"context",Property,Good,false
@@ -3271,7 +3269,6 @@ Excel.EventTriggerSource,N/A,Enum,Fine,false
 Excel.EventTriggerSource,"thisLocalAddin",EnumField,Fine,false
 Excel.EventTriggerSource,"unknown",EnumField,Fine,false
 Excel.EventType,N/A,Enum,Fine,false
-Excel.EventType,"agaveVisualUpdate",EnumField,Fine,false
 Excel.EventType,"annotationAdded",EnumField,Fine,false
 Excel.EventType,"chartActivated",EnumField,Fine,false
 Excel.EventType,"chartAdded",EnumField,Fine,false
@@ -4493,6 +4490,31 @@ Excel.NotAvailableErrorCellValueSubType,"stockHistoryInvalidProperty",EnumField,
 Excel.NotAvailableErrorCellValueSubType,"stockHistoryNoData",EnumField,Good,false
 Excel.NotAvailableErrorCellValueSubType,"unknown",EnumField,Good,false
 Excel.NotAvailableErrorCellValueSubType,"vlookupValueNotFound",EnumField,Good,false
+Excel.Note,N/A,Class,Good,false
+Excel.Note,"authorName",Property,Good,false
+Excel.Note,"content",Property,Good,false
+Excel.Note,"context",Property,Good,false
+Excel.Note,"height",Property,Good,false
+Excel.Note,"visible",Property,Good,false
+Excel.Note,"width",Property,Good,false
+Excel.Note,"delete()",Method,Poor,false
+Excel.Note,"getLocation()",Method,Poor,false
+Excel.Note,"load(options)",Method,Poor,false
+Excel.Note,"load(propertyNames)",Method,Poor,false
+Excel.Note,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.Note,"set(properties, options)",Method,Poor,false
+Excel.Note,"set(properties)",Method,Poor,false
+Excel.Note,"toJSON()",Method,Poor,false
+Excel.NoteCollection,N/A,Class,Good,false
+Excel.NoteCollection,"context",Property,Good,false
+Excel.NoteCollection,"items",Property,Fine,false
+Excel.NoteCollection,"add(cellAddress, content)",Method,Poor,false
+Excel.NoteCollection,"getCount()",Method,Poor,false
+Excel.NoteCollection,"getItemAt(index)",Method,Poor,false
+Excel.NoteCollection,"load(options)",Method,Poor,false
+Excel.NoteCollection,"load(propertyNames)",Method,Poor,false
+Excel.NoteCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.NoteCollection,"toJSON()",Method,Poor,false
 Excel.NullErrorCellValue,N/A,Class,Good,false
 Excel.NullErrorCellValue,"basicType",Property,Good,false
 Excel.NullErrorCellValue,"basicValue",Property,Good,false
@@ -5043,6 +5065,7 @@ Excel.Range,"getColumnsBefore(count)",Method,Poor,false
 Excel.Range,"getDependents()",Method,Poor,true
 Excel.Range,"getDirectDependents()",Method,Poor,true
 Excel.Range,"getDirectPrecedents()",Method,Poor,true
+Excel.Range,"getDisplayedCellProperties(cellPropertiesLoadOptions)",Method,Fine,false
 Excel.Range,"getEntireColumn()",Method,Poor,true
 Excel.Range,"getEntireRow()",Method,Poor,true
 Excel.Range,"getExtendedRange(direction, activeCell)",Method,Poor,true
@@ -5143,6 +5166,7 @@ Excel.RangeAreas,"getUsedRangeAreasOrNullObject(valuesOnly)",Method,Poor,false
 Excel.RangeAreas,"load(options)",Method,Poor,false
 Excel.RangeAreas,"load(propertyNames)",Method,Poor,false
 Excel.RangeAreas,"load(propertyNamesAndPaths)",Method,Poor,false
+Excel.RangeAreas,"select()",Method,Poor,false
 Excel.RangeAreas,"set(properties, options)",Method,Poor,false
 Excel.RangeAreas,"set(properties)",Method,Poor,false
 Excel.RangeAreas,"setDirty()",Method,Poor,false
@@ -6374,17 +6398,15 @@ Excel.ValueErrorCellValueSubType,"imageFormulaTooManyArgs",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"invalidCellValueTypeCoercion",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"invalidImageUrl",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"lambdaWrongParamCount",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexBadrepescape",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexBadreplacement",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexBadsubspattern",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexBadsubstitution",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexDepthlimit",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexBadReplacement",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexBadReplacementEscape",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexBadSubstitution",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexDepthLimit",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"mRegexErrorGeneric",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexMatchlimit",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexNosubstring",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexNouniquesubstring",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexRecurseLoop",EnumField,Good,false
-Excel.ValueErrorCellValueSubType,"mRegexRepmissingbrace",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexMatchLimit",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexNoSubstring",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexRecursiveLoop",EnumField,Good,false
+Excel.ValueErrorCellValueSubType,"mRegexReplacementMissingBrace",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"stockHistoryEndBeforeStart",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"stockHistoryInvalidDate",EnumField,Good,false
 Excel.ValueErrorCellValueSubType,"stockHistoryInvalidEnum",EnumField,Good,false
@@ -6448,6 +6470,7 @@ Excel.Workbook,"linkedWorkbooks",Property,Good,false
 Excel.Workbook,"localImage",Property,Good,false
 Excel.Workbook,"name",Property,Good,false
 Excel.Workbook,"names",Property,Good,false
+Excel.Workbook,"notes",Property,Good,false
 Excel.Workbook,"pivotTables",Property,Good,true
 Excel.Workbook,"pivotTableStyles",Property,Good,false
 Excel.Workbook,"previouslySaved",Property,Good,false
@@ -6534,6 +6557,7 @@ Excel.Worksheet,"id",Property,Good,false
 Excel.Worksheet,"name",Property,Good,false
 Excel.Worksheet,"namedSheetViews",Property,Good,false
 Excel.Worksheet,"names",Property,Good,false
+Excel.Worksheet,"notes",Property,Good,false
 Excel.Worksheet,"pageLayout",Property,Good,false
 Excel.Worksheet,"pivotTables",Property,Good,true
 Excel.Worksheet,"position",Property,Good,true

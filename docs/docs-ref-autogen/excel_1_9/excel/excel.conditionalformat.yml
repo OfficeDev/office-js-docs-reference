@@ -541,7 +541,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: >-
-      Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
+      Returns the range the conditional format is applied to. Throws an error if the conditional format is applied to
       multiple ranges.
     remarks: >-
       \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -595,7 +595,7 @@ methods:
     package: excel!
     fullName: getRangeOrNullObject()
     summary: >-
-      Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple
+      Returns the range to which the conditional format is applied. If the conditional format is applied to multiple
       ranges, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -613,7 +613,7 @@ methods:
     package: excel!
     fullName: getRanges()
     summary: >-
-      Returns the `RangeAreas`<!-- -->, comprising one or more rectangular ranges, to which the conditonal format is
+      Returns the `RangeAreas`<!-- -->, comprising one or more rectangular ranges, to which the conditional format is
       applied.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
@@ -737,7 +737,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Excel.ConditionalFormat` object is an API object, the `toJSON` method returns
       a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.

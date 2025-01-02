@@ -64,7 +64,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashGSyntax:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. \\<!-- -->g is not followed by a braced, angle-bracketed, or quoted name
+      An error in the regex `pattern`<!-- -->. \\<!-- -->g isn't followed by a braced, angle-bracketed, or quoted name
       or number, or by a plain number. Displays as error type \#VALUE! in Excel.
 
 
@@ -75,7 +75,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashKInLookaround:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. \\<!-- -->K is not allowed in `lookarounds=`<!-- -->. Displays as error
+      An error in the regex `pattern`<!-- -->. \\<!-- -->K isn't allowed in `lookarounds=`<!-- -->. Displays as error
       type \#VALUE! in Excel.
 
 
@@ -86,7 +86,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexBackslashNInClass:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. \\<!-- -->N is not supported in class. Displays as error type \#VALUE! in
+      An error in the regex `pattern`<!-- -->. \\<!-- -->N isn't supported in class. Displays as error type \#VALUE! in
       Excel.
 
 
@@ -347,7 +347,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexLookbehindNotFixedLength:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. Length of `lookbehind` assertion is not limited. Displays as error type
+      An error in the regex `pattern`<!-- -->. Length of `lookbehind` assertion isn't limited. Displays as error type
       \#VALUE! in Excel.
 
 
@@ -544,7 +544,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexPosixNoSupportCollating:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. POSIX collating elements are not supported. Displays as error type
+      An error in the regex `pattern`<!-- -->. POSIX collating elements aren't supported. Displays as error type
       \#VALUE! in Excel.
 
 
@@ -555,7 +555,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierInvalid:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. Quantifier does not follow a repeatable item. Displays as error type
+      An error in the regex `pattern`<!-- -->. Quantifier doesn't follow a repeatable item. Displays as error type
       \#VALUE! in Excel.
 
 
@@ -609,7 +609,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNamesMismatch:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. Different names for subpatterns of the same number are not allowed.
+      An error in the regex `pattern`<!-- -->. Different names for subpatterns of the same number aren't allowed.
       Displays as error type \#VALUE! in Excel.
 
 
@@ -684,7 +684,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnicodePropertiesUnavailable:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. This version of PCRE2 does not have support for \\<!-- -->P, \\<!-- -->p,
+      An error in the regex `pattern`<!-- -->. This version of PCRE2 doesn't have support for \\<!-- -->P, \\<!-- -->p,
       or \\<!-- -->X. Displays as error type \#VALUE! in Excel.
 
 
@@ -748,7 +748,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexUnsupportedEscapeSequence:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. PCRE2 does not support \\<!-- -->F, \\<!-- -->L, \\<!-- -->l, \\<!--
+      An error in the regex `pattern`<!-- -->. PCRE2 doesn't support \\<!-- -->F, \\<!-- -->L, \\<!-- -->l, \\<!--
       -->N<!-- -->{<!-- -->name<!-- -->}<!-- -->, \\<!-- -->U, or \\<!-- -->u. Displays as error type \#VALUE! in Excel.
 
 
@@ -770,7 +770,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexVerbUnknown:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. The (*VERB) is not recognized or is malformed. Displays as error type
+      An error in the regex `pattern`<!-- -->. The (*VERB) isn't recognized or is malformed. Displays as error type
       \#VALUE! in Excel.
 
 
@@ -781,7 +781,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexVersionConditionSyntax:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. There is a syntax error, or a number is too big in the (?(VERSION
+      An error in the regex `pattern`<!-- -->. There's a syntax error, or a number is too big in the (?(VERSION
       condition. Displays as error type \#VALUE! in Excel.
 
 
@@ -792,7 +792,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.cRegexZeroRelativeReference:member'
     package: excel!
     summary: >-
-      An error in the regex `pattern`<!-- -->. A relative value of zero is not allowed. Displays as error type \#VALUE!
+      An error in the regex `pattern`<!-- -->. A relative value of zero isn't allowed. Displays as error type \#VALUE!
       in Excel.
 
 
@@ -950,61 +950,48 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LambdaWrongParamCount"'
-  - name: mRegexBadrepescape
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadrepescape:member'
+  - name: mRegexBadReplacement
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadReplacement:member'
+    package: excel!
+    summary: >-
+      An error in regex match. Invalid replacement string. Displays as error type \#VALUE! in Excel.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"MRegexBadReplacement"'
+  - name: mRegexBadReplacementEscape
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadReplacementEscape:member'
     package: excel!
     summary: >-
       An error in regex match. There's an incorrect escape sequence in the replacement string. Displays as error type
-      \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
+      \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexBadrepescape"'
-  - name: mRegexBadreplacement
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadreplacement:member'
-    package: excel!
-    summary: >-
-      An error in regex match. Invalid replacement string. Displays as error type \#VALUE! in Excel. Note: The name of
-      this API is likely to change in the near future.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"MRegexBadreplacement"'
-  - name: mRegexBadsubspattern
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadsubspattern:member'
-    package: excel!
-    summary: >-
-      An error in regex match. Match with end before start or start moved backwards is not supported. Displays as error
-      type \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"MRegexBadsubspattern"'
-  - name: mRegexBadsubstitution
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadsubstitution:member'
+    value: '"MRegexBadReplacementEscape"'
+  - name: mRegexBadSubstitution
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexBadSubstitution:member'
     package: excel!
     summary: >-
       An error in regex match. There's an incorrect substitution in the replacement string. Displays as error type
-      \#VALUE! in Excel. Note: The name of this API is likely to change in the near future.
+      \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexBadsubstitution"'
-  - name: mRegexDepthlimit
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexDepthlimit:member'
+    value: '"MRegexBadSubstitution"'
+  - name: mRegexDepthLimit
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexDepthLimit:member'
     package: excel!
     summary: >-
-      An error in regex match. Matching depth limit exceeded. Displays as error type \#VALUE! in Excel. Note: The name
-      of this API is likely to change in the near future.
+      An error in regex match. Matching depth limit exceeded. Displays as error type \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexDepthlimit"'
+    value: '"MRegexDepthLimit"'
   - name: mRegexErrorGeneric
     uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexErrorGeneric:member'
     package: excel!
@@ -1015,61 +1002,47 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"MRegexErrorGeneric"'
-  - name: mRegexMatchlimit
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexMatchlimit:member'
+  - name: mRegexMatchLimit
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexMatchLimit:member'
     package: excel!
     summary: >-
-      An error in regex match. Match limit exceeded. Displays as error type \#VALUE! in Excel. Note: The name of this
-      API is likely to change in the near future.
+      An error in regex match. Match limit exceeded. Displays as error type \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexMatchlimit"'
-  - name: mRegexNosubstring
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexNosubstring:member'
+    value: '"MRegexMatchLimit"'
+  - name: mRegexNoSubstring
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexNoSubstring:member'
     package: excel!
     summary: >-
-      An error in regex match. Unknown substring. Displays as error type \#VALUE! in Excel. Note: The name of this API
-      is likely to change in the near future.
+      An error in regex match. Unknown substring. Displays as error type \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexNosubstring"'
-  - name: mRegexNouniquesubstring
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexNouniquesubstring:member'
+    value: '"MRegexNoSubstring"'
+  - name: mRegexRecursiveLoop
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexRecursiveLoop:member'
     package: excel!
     summary: >-
-      An error in regex match. Nonunique substring name. Displays as error type \#VALUE! in Excel. Note: The name of
-      this API is likely to change in the near future.
+      An error in regex match. Recursive loop. Displays as error type \#VALUE! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexNouniquesubstring"'
-  - name: mRegexRecurseLoop
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexRecurseLoop:member'
-    package: excel!
-    summary: >-
-      An error in regex match. Recursive loop. Displays as error type \#VALUE! in Excel. Note: The name of this API is
-      likely to change in the near future.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-    value: '"MRegexRecurseLoop"'
-  - name: mRegexRepmissingbrace
-    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexRepmissingbrace:member'
+    value: '"MRegexRecursiveLoop"'
+  - name: mRegexReplacementMissingBrace
+    uid: 'excel!Excel.ValueErrorCellValueSubType.mRegexReplacementMissingBrace:member'
     package: excel!
     summary: >-
       An error in regex match. Expected closing curly bracket in replacement string. Displays as error type \#VALUE! in
-      Excel. Note: The name of this API is likely to change in the near future.
+      Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    value: '"MRegexRepmissingbrace"'
+    value: '"MRegexReplacementMissingBrace"'
   - name: stockHistoryEndBeforeStart
     uid: 'excel!Excel.ValueErrorCellValueSubType.stockHistoryEndBeforeStart:member'
     package: excel!
@@ -1178,7 +1151,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.translateUnsupportedSrcLanguage:member'
     package: excel!
     summary: >-
-      An error caused because the `source_language` parameter to `TRANSLATE` is not supported. Displays as error type
+      An error caused because the `source_language` parameter to `TRANSLATE` isn't supported. Displays as error type
       \#VALUE! in Excel.
 
 
@@ -1189,7 +1162,7 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.translateUnsupportedTargetLanguage:member'
     package: excel!
     summary: >-
-      An error caused because the `target_language` parameter to `TRANSLATE` is not supported. Displays as error type
+      An error caused because the `target_language` parameter to `TRANSLATE` isn't supported. Displays as error type
       \#VALUE! in Excel.
 
 

@@ -36,7 +36,7 @@ export declare namespace Excel {
     /**
     * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+    * @beta
     */
     export interface CheckboxCellControl {
         type: CellControlType.checkbox;
@@ -44,52 +44,52 @@ export declare namespace Excel {
     /**
     * Represents an interactable control inside of a cell.
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+    * @beta
     */
     export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
     /**
-    * Represents a 2D array of cell values.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a 2D array of cell values.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ArrayCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.array | ReferenceValueType.array | "Array";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the elements of the array. May not directly contain an `ArrayCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the elements of the array. May not directly contain an `ArrayCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         elements: CellValue[][];
         /**
-        * Represents the cell values which are referenced within `ArrayCellValue.elements`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the cell values which are referenced within `ArrayCellValue.elements`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         referencedValues?: ReferencedValue[];
     }
     /**
@@ -109,5615 +109,5617 @@ export declare namespace Excel {
         */
         type: Base64EncodingType | "BMP" | "GIF" | "ICO" | "JPG" | "PNG" | "TIF" | "WEBP";
         /**
-        * The Base64-encoded string.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The Base64-encoded string.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         data: string;
     }
     /**
-    * The file type represented by the Base64 encoding.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * The file type represented by the Base64 encoding.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     enum Base64EncodingType {
         /**
-        * The BMP file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The BMP file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         BMP = "BMP",
         /**
-        * The GIF file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The GIF file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         GIF = "GIF",
         /**
-        * The ICO file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The ICO file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         ICO = "ICO",
         /**
-        * The JPG (or JPEG) file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The JPG (or JPEG) file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         JPG = "JPG",
         /**
-        * The PNG file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The PNG file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         PNG = "PNG",
         /**
-        * The TIFF file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The TIFF file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         TIF = "TIF",
         /**
-        * The WEBP file type.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * The WEBP file type.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         WEBP = "WEBP"
     }
     /**
-    * Represents a card layout that is best used for an array.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents a card layout that is best used for an array.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface EntityArrayCardLayout {
         /**
-        * Represents the type of this layout.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of this layout.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         layout: EntityCardLayoutType.array | "Array";
         /**
-        * Represents name of the property that contains the array shown in the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents name of the property that contains the array shown in the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         arrayProperty: string;
         /**
-        * Represents name of the property that contains the array shown in the card. Default value is "Array".
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents name of the property that contains the array shown in the card. Default value is "Array".
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         displayName?: string;
         /**
-        * Represents the count of rows which the card claims are in the array. A card may report a different number of rows than it actually has to display smaller amounts of preview data.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the count of rows which the card claims are in the array. 
+         * A card may report fewer rows than actually exist to display a smaller amount of preview data.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         rowsToReport?: number;
         /**
-        * Represents the count of columns which the card claims are in the array. A card may report a different number of columns than it actually has to display smaller amounts of preview data.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the count of columns which the card claims are in the array. 
+         * A card may report fewer columns than actually exist to display a smaller amount of preview data.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         columnsToReport?: number;
         /**
-        * Represents whether the first row of the array is treated as a header.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents whether the first row of the array is treated as a header.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         firstRowIsHeader?: boolean;
     }
     /**
-    * Represents types of #BLOCKED! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #BLOCKED! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum BlockedErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a service not supporting a linked data type. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a service not supporting a linked data type. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTypeRestrictedDomain = "DataTypeRestrictedDomain",
         /**
-        * An error caused by privacy settings. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by privacy settings. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTypePrivacySetting = "DataTypePrivacySetting",
         /**
-        * An error caused by an unsupported data type. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an unsupported data type. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTypeUnsupportedApp = "DataTypeUnsupportedApp",
         /**
-        * An error caused by external links. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by external links. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksGeneric = "ExternalLinksGeneric",
         /**
-        * An error caused by disabled rich data links. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by disabled rich data links. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         richDataLinkDisabled = "RichDataLinkDisabled",
         /**
-        * An error caused by sign in failure. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by sign in failure. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         signInError = "SignInError",
         /**
-        * An error caused by a license verification failure. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a license verification failure. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         noLicense = "NoLicense",
         /**
-        * An error caused by Excel 4.0 macros being disabled in Trust Center. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Excel 4.0 macros being disabled in Trust Center. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         xlmDisabledInTrustCenter = "XlmDisabledInTrustCenter",
         /**
-        * An error caused by Excel 4.0 macros not being supported on the platform. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Excel 4.0 macros not being supported on the platform. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         xlmNotSupportedOnPlatform = "XlmNotSupportedOnPlatform",
         /**
-        * An error caused by the image download coming from an untrusted URL. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the image download coming from an untrusted URL. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageDownloadBlocked = "ImageDownloadBlocked",
         /**
-        * An error caused by the image URL not being HTTPS. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the image URL not being HTTPS. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageInvalidUrlNonHttps = "ImageInvalidUrlNonHttps",
         /**
-        * An error caused by the image exceeding the size limit set in ExcelServerSettings.CacheBackedAsyncImageDownloaderMaxFileSizeInKBytes. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the image exceeding the size limit set in ExcelServerSettings.CacheBackedAsyncImageDownloaderMaxFileSizeInKBytes. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageExceedsSizeLimit = "ImageExceedsSizeLimit",
         /**
-        * An error caused by the image exceeding the size limit for an entire workbook set in `ExcelWorkbookSizeMax`. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the image exceeding the size limit for an entire workbook set in `ExcelWorkbookSizeMax`. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageExceedsTotalSizeLimit = "ImageExceedsTotalSizeLimit",
         /**
-        * An error caused by the user exceeding their quota of concurrently active external code service execution environments. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the user exceeding their quota of concurrently active external code service execution environments. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsQuota = "EnvironmentExceedsQuota",
         /**
-        * An error caused by the user exceeding their daily quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the user exceeding their daily quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsQuotaDaily = "EnvironmentExceedsQuotaDaily",
         /**
-        * An error caused by the user exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the user exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsQuotaMonthly = "EnvironmentExceedsQuotaMonthly",
         /**
-        * An error caused by the user who is not licensed for a feature which uses an external code service exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the user who isn't licensed for a feature which uses an external code service exceeding their monthly quota of external code service execution environments. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsTakerQuotaMonthly = "EnvironmentExceedsTakerQuotaMonthly",
         /**
-        * An error caused by using an unsupported identity provider. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by using an unsupported identity provider. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         wrongAccountType = "WrongAccountType",
         /**
-        * An error caused by an external code service execution environment exceeding its lifetime resource use. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service execution environment exceeding its lifetime resource use. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsComputeResourceEver = "EnvironmentExceedsComputeResourceEver",
         /**
-        * An error caused by a user exceeding their daily quota of compute. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a user exceeding their daily quota of compute. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentExceedsComputeResourceCountDaily = "EnvironmentExceedsComputeResourceCountDaily",
         /**
-        * An error caused by Python not being supported in Excel on a platform. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Python not being supported in Excel on a platform. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonUnsupportedOnThisPlatform = "PythonUnsupportedOnThisPlatform",
         /**
-        * An error caused by Excel not meeting the requirements to use a feature. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Excel not meeting the requirements to use a feature. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unmetRequirements = "UnmetRequirements",
         /**
-        * An error caused by the PY function being disabled. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the PY function being disabled. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonFunction = "PythonFunction",
         /**
-        * An error caused by the user exceeding their quota of concurrent connections to external code service environments.  Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the user exceeding their quota of concurrent connections to external code service environments. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         environmentConnectionExceedQuota = "EnvironmentConnectionExceedQuota",
         /**
-        * An error caused by an environment definition not being supported by an external code service. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an environment definition not being supported by an external code service. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unsupportedEnvironment = "UnsupportedEnvironment",
         /**
-        * An error caused by function being unavailable in Partial or Manual calculation modes. Displays as error type #BLOCKED! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by function being unavailable in Partial or Manual calculation modes. Displays as error type #BLOCKED! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unsupportedInCalculationMode = "UnsupportedInCalculationMode"
     }
     /**
-    * Represents the value of a cell containing a #BLOCKED! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #BLOCKED! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface BlockedErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#BLOCKED!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.blocked | "Blocked";
         /**
-        * Represents the type of `BlockedErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `BlockedErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
     }
     /**
-    * Represents the value of a cell containing a boolean.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a boolean.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface BooleanCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.boolean | "Boolean";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue: boolean;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.boolean | "Boolean";
     }
     /**
-    * Represents types of #BUSY! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #BUSY! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum BusyErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #BUSY! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #BUSY! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by external links. Displays as error type #BUSY! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by external links. Displays as error type #BUSY! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksGeneric = "ExternalLinksGeneric",
         /**
-        * An error that displays while an image is loading. Displays as error type #BUSY! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error that displays while an image is loading. Displays as error type #BUSY! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         loadingImage = "LoadingImage",
         /**
-        * An error caused by a function being unable to process a placeholder value. Displays as error type #BUSY! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a function being unable to process a placeholder value. Displays as error type #BUSY! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         placeholderInFormula = "PlaceholderInFormula"
     }
     /**
-    * Represents the value of a cell containing a #BUSY! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #BUSY! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface BusyErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#BUSY!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.busy | "Busy";
         /**
-        * Represents the type of `BusyErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `BusyErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage" | "PlaceholderInFormula";
     }
     /**
-    * Represents types of #CALC! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #CALC! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum CalcErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by including an array in an array. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by including an array in an array. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         arrayOfArrays = "ArrayOfArrays",
         /**
-        * An error caused by including a range in an array. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by including a range in an array. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         arrayOfRanges = "ArrayOfRanges",
         /**
-        * An error caused by an empty array. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an empty array. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emptyArray = "EmptyArray",
         /**
-        * An error caused by attempting to lift an unsupported formula (such as a Dynamic UDF) over an array. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by attempting to lift an unsupported formula (such as a Dynamic UDF) over an array. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unsupportedLifting = "UnsupportedLifting",
         /**
-        * An error caused by a data table referencing a pending formula. The pending formula is likely asynchronous. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a data table referencing a pending formula. The pending formula is likely asynchronous. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTableReferencedPendingFormula = "DataTableReferencedPendingFormula",
         /**
-        * An error caused by a function referencing too many cells. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a function referencing too many cells. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tooManyCells = "TooManyCells",
         /**
-        * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lambdaInCell = "LambdaInCell",
         /**
-        * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tooDeeplyNested = "TooDeeplyNested",
         /**
-        * An error caused by a cell's formula returning a string that exceeds the maximum of 32767 characters. Displays as error type #CALC! in Excel.
-        * Some characters, like emoji, may appear to be one character in the Excel UI but are actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum character limit.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a cell's formula returning a string that exceeds the maximum of 32767 characters. Displays as error type #CALC! in Excel.
+         * Some characters, like emoji, may appear to be one character in the Excel UI but are actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum character limit.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         textOverflow = "TextOverflow",
         /**
-        * An error caused by a formula generating too large a request for an external code service. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a formula generating too large a request for an external code service. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         requestTooLarge = "RequestTooLarge",
         /**
-        * An error caused by a Power Query query referencing data in a sheet. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a Power Query query referencing data in a sheet. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonGridQuery = "PythonGridQuery",
         /**
-        * An error caused by a Power Query query ID change. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a Power Query query ID change. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonPowerQueryDataUploadEtagChanged = "PythonPowerQueryDataUploadEtagChanged",
         /**
-        * An error caused by Power Query exceeding the limit for data uploaded to an external code service. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Power Query exceeding the limit for data uploaded to an external code service. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonPowerQueryDataUploadSizeLimitExceeded = "PythonPowerQueryDataUploadSizeLimitExceeded",
         /**
-        * An error caused by a formula referencing a value returned by an external code service in a different workbook. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a formula referencing a value returned by an external code service in a different workbook. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         invalidPythonObject = "InvalidPythonObject",
         /**
-        * An error caused by a formula returning a reference to a Power Query query. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a formula returning a reference to a Power Query query. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         queryInCell = "QueryInCell",
         /**
-        * An error caused by an uninitialized Python Object. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an uninitialized Python Object. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         uninitializedPythonObject = "UninitializedPythonObject",
         /**
-        * An error caused by a reference to a Power Query query in a different workbook. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a reference to a Power Query query in a different workbook. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalQueryRef = "ExternalQueryRef",
         /**
-        * An error caused by text that is longer than 65,535 characters. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by text that's longer than 65,535 characters. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexReplaceCharLimit = "ERegexReplaceCharLimit",
         /**
-        * An error caused by an external code service returning an unexpected result. Displays as error type #CALC! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service returning an unexpected result. Displays as error type #CALC! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unexpectedReturnValue = "UnexpectedReturnValue"
     }
     /**
-    * Represents the value of a cell containing a #CALC! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #CALC! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CalcErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#CALC!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.calc | "Calc";
         /**
-        * Represents the type of `CalcErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `CalcErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue";
         /**
-        * Represents the name of the function causing the error.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the name of the function causing the error.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         functionName?: string;
     }
     /**
-    * Represents a reference to a property used by the card layout.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a reference to a property used by the card layout.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CardLayoutPropertyReference {
         /**
-        * Represents the name of the property referenced by the card layout.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the name of the property referenced by the card layout.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         property: string;
     }
     /**
-    * Properties of a card layout relevant to most card layouts.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Properties of a card layout relevant to most card layouts.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CardLayoutSectionStandardProperties {
         /**
-        * Represents the title of this section of the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the title of this section of the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         title?: string;
         /**
-        * Represents whether this section of the card is collapsible.
-        * If the card section has a title, the default value is `true`.
-        * If the card section doesn't have a title, the default value is `false`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents whether this section of the card is collapsible.
+         * If the card section has a title, the default value is `true`.
+         * If the card section doesn't have a title, the default value is `false`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         collapsible?: boolean;
         /**
-        * Represents whether this section of the card is initially collapsed.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents whether this section of the card is initially collapsed.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         collapsed?: boolean;
         /**
-        * Represents the names of the properties in this section.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the names of the properties in this section.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         properties: string[];
     }
     /**
-    * Represents a section of a card that is arranged as a list in card view.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a section of a card that is arranged as a list in card view.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CardLayoutListSection extends CardLayoutSectionStandardProperties {
         /**
-        * Represents the type of layout for this section.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of layout for this section.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layout: "List";
     }
     /**
-    * Represents a section of a card that is arranged as a table in card view.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a section of a card that is arranged as a table in card view.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CardLayoutTableSection extends CardLayoutSectionStandardProperties {
         /**
-        * Represents the type of layout for this section.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of layout for this section.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layout: "Table";
     }
     /**
-    * Represents the layout of a section of a card in card view.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the layout of a section of a card in card view.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;
     /**
-    * Properties of a card layout relevant to most card layouts.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Properties of a card layout relevant to most card layouts.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CardLayoutStandardProperties {
         /**
-        * Specifies a property which will be used as the main image of the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Specifies a property which will be used as the main image of the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mainImage?: CardLayoutPropertyReference;
         /**
-        * Represents the title of the card or the specification of which property contains the title of the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the title of the card or the specification of which property contains the title of the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         title?: string | CardLayoutPropertyReference;
         /**
-        * Represents a specification of which property contains the subtitle of the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a specification of which property contains the subtitle of the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         subTitle?: CardLayoutPropertyReference;
         /**
-        * Represents the sections of the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the sections of the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sections?: CardLayoutSection[];
     }
     /**
-    * Represents the layout of a card in card view.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the layout of a card in card view.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type CardLayout = EntityCardLayout | EntityArrayCardLayout;
     /**
-    * Types of entity card layouts.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Types of entity card layouts.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     enum EntityCardLayoutType {
         /**
-        * Entity layout of the entity card.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Entity layout of the entity card.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         entity = "Entity",
         /**
-        * Array layout of the entity card.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Array layout of the entity card.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         array = "Array"
     }
     /**
-    * The compact layout properties for an entity.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * The compact layout properties for an entity.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EntityCompactLayout {
         /**
-        * Specifies the name of the icon which is used to open the card.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Specifies the name of the icon which is used to open the card.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         icon?: string | EntityCompactLayoutIcons;
     }
     /**
-    * Represents the layout used when there is limited space to represent the entity.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the layout used when there is limited space to represent the entity.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type CompactLayout = EntityCompactLayout;
     /**
-    * The list of icons available for `EntityCompactLayout`. An icon displays in the Excel UI, either to the left of the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity card. Selecting the icon opens the entity card.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * The list of icons available for `EntityCompactLayout`. An icon displays in the Excel UI, either to the left of the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity card. Selecting the icon opens the entity card.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum EntityCompactLayoutIcons {
         /**
-        * The default icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * The default icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         generic = "Generic",
         /**
-        * Accessibility icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Accessibility icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         accessibility = "Accessibility",
         /**
-        * Airplane icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Airplane icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         airplane = "Airplane",
         /**
-        * Airplane taking off icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Airplane taking off icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         airplaneTakeOff = "AirplaneTakeOff",
         /**
-        * Album icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Album icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         album = "Album",
         /**
-        * Alert icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Alert icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         alert = "Alert",
         /**
-        * Alert urgent icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Alert urgent icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         alertUrgent = "AlertUrgent",
         /**
-        * Animal icon. Displays as a pawprint.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Animal icon. Displays as a pawprint.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         animal = "Animal",
         /**
-        * Animal cat icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Animal cat icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         animalCat = "AnimalCat",
         /**
-        * Animal dog icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Animal dog icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         animalDog = "AnimalDog",
         /**
-        * Animal rabbit icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Animal rabbit icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         animalRabbit = "AnimalRabbit",
         /**
-        * Animal turtle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Animal turtle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         animalTurtle = "AnimalTurtle",
         /**
-        * App folder icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * App folder icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         appFolder = "AppFolder",
         /**
-        * App generic icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * App generic icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         appGeneric = "AppGeneric",
         /**
-        * Apple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Apple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         apple = "Apple",
         /**
-        * Approvals app icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Approvals app icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         approvalsApp = "ApprovalsApp",
         /**
-        * Archive icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Archive icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         archive = "Archive",
         /**
-        * Archive multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Archive multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         archiveMultiple = "ArchiveMultiple",
         /**
-        * Arrow trending lines icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Arrow trending lines icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         arrowTrendingLines = "ArrowTrendingLines",
         /**
-        * Art icon. Displays as a paint palette.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Art icon. Displays as a paint palette.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         art = "Art",
         /**
-        * Atom icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Atom icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         atom = "Atom",
         /**
-        * Attach icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Attach icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         attach = "Attach",
         /**
-        * Automobile icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Automobile icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         automobile = "Automobile",
         /**
-        * Autosum icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Autosum icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         autosum = "Autosum",
         /**
-        * Backpack icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Backpack icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         backpack = "Backpack",
         /**
-        * Badge icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Badge icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         badge = "Badge",
         /**
-        * Balloon icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Balloon icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         balloon = "Balloon",
         /**
-        * Bank icon. Displays as a building with pillars and a triangular roof.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bank icon. Displays as a building with pillars and a triangular roof.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bank = "Bank",
         /**
-        * Barcode scanner icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Barcode scanner icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         barcodeScanner = "BarcodeScanner",
         /**
-        * Basketball icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Basketball icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basketball = "Basketball",
         /**
-        * Battery empty icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Battery empty icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         battery0 = "Battery0",
         /**
-        * Battery full icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Battery full icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         battery10 = "Battery10",
         /**
-        * Beach icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Beach icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         beach = "Beach",
         /**
-        * Beaker icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Beaker icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         beaker = "Beaker",
         /**
-        * Bed icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bed icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bed = "Bed",
         /**
-        * Bin full icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bin full icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         binFull = "BinFull",
         /**
-        * Bird icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bird icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bird = "Bird",
         /**
-        * Bluetooth icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bluetooth icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bluetooth = "Bluetooth",
         /**
-        * Board icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Board icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         board = "Board",
         /**
-        * Board games icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Board games icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         boardGames = "BoardGames",
         /**
-        * Book icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Book icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         book = "Book",
         /**
-        * Bookmark icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bookmark icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bookmark = "Bookmark",
         /**
-        * Bookmark multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bookmark multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bookmarkMultiple = "BookmarkMultiple",
         /**
-        * Bot icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bot icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bot = "Bot",
         /**
-        * Bowl chopsticks icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bowl chopsticks icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bowlChopsticks = "BowlChopsticks",
         /**
-        * Box icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Box icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         box = "Box",
         /**
-        * Box multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Box multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         boxMultiple = "BoxMultiple",
         /**
-        * Brain circuit icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Brain circuit icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         brainCircuit = "BrainCircuit",
         /**
-        * Branch icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Branch icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         branch = "Branch",
         /**
-        * Branch fork icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Branch fork icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         branchFork = "BranchFork",
         /**
-        * Branch request icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Branch request icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         branchRequest = "BranchRequest",
         /**
-        * Bridge icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bridge icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bridge = "Bridge",
         /**
-        * Briefcase icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Briefcase icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         briefcase = "Briefcase",
         /**
-        * Briefcase medical icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Briefcase medical icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         briefcaseMedical = "BriefcaseMedical",
         /**
-        * Broad activity feed icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Broad activity feed icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         broadActivityFeed = "BroadActivityFeed",
         /**
-        * Broom icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Broom icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         broom = "Broom",
         /**
-        * Bug icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Bug icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         bug = "Bug",
         /**
-        * Building icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         building = "Building",
         /**
-        * Building bank icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building bank icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingBank = "BuildingBank",
         /**
-        * Building factory icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building factory icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingFactory = "BuildingFactory",
         /**
-        * Building government icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building government icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingGovernment = "BuildingGovernment",
         /**
-        * Building home icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building home icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingHome = "BuildingHome",
         /**
-        * Building lighthouse icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building lighthouse icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingLighthouse = "BuildingLighthouse",
         /**
-        * Building multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingMultiple = "BuildingMultiple",
         /**
-        * Building retail icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building retail icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingRetail = "BuildingRetail",
         /**
-        * Building retail more icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building retail more icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingRetailMore = "BuildingRetailMore",
         /**
-        * Building retail toolbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building retail toolbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingRetailToolbox = "BuildingRetailToolbox",
         /**
-        * Building shop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building shop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingShop = "BuildingShop",
         /**
-        * Building skyscraper icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Building skyscraper icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         buildingSkyscraper = "BuildingSkyscraper",
         /**
-        * Calculator icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Calculator icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calculator = "Calculator",
         /**
-        * Calendar left to right icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Calendar left to right icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calendarLtr = "CalendarLtr",
         /**
-        * Calendar right to left icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Calendar right to left icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calendarRtl = "CalendarRtl",
         /**
-        * Call icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Call icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         call = "Call",
         /**
-        * Calligraphy pen icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Calligraphy pen icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calligraphyPen = "CalligraphyPen",
         /**
-        * Camera icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Camera icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         camera = "Camera",
         /**
-        * Camera dome icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Camera dome icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cameraDome = "CameraDome",
         /**
-        * Car icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Car icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         car = "Car",
         /**
-        * Cart icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cart icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cart = "Cart",
         /**
-        * Cat icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cat icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cat = "Cat",
         /**
-        * Certificate icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Certificate icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         certificate = "Certificate",
         /**
-        * Chart multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Chart multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         chartMultiple = "ChartMultiple",
         /**
-        * Chat icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Chat icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         chat = "Chat",
         /**
-        * Chat multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Chat multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         chatMultiple = "ChatMultiple",
         /**
-        * Chat video icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Chat video icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         chatVideo = "ChatVideo",
         /**
-        * Check icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Check icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         check = "Check",
         /**
-        * Checkbox checked icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Checkbox checked icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         checkboxChecked = "CheckboxChecked",
         /**
-        * Checkbox unchecked icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Checkbox unchecked icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         checkboxUnchecked = "CheckboxUnchecked",
         /**
-        * Checkmark icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Checkmark icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         checkmark = "Checkmark",
         /**
-        * Chess icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Chess icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         chess = "Chess",
         /**
-        * City icon. Displays as multiple tall buildings.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * City icon. Displays as multiple tall buildings.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         city = "City",
         /**
-        * Class icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Class icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         class = "Class",
         /**
-        * Classification icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Classification icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         classification = "Classification",
         /**
-        * Clipboard icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clipboard icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clipboard = "Clipboard",
         /**
-        * Clipboard data bar icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clipboard data bar icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clipboardDataBar = "ClipboardDataBar",
         /**
-        * Clipboard pulse icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clipboard pulse icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clipboardPulse = "ClipboardPulse",
         /**
-        * Clipboard task icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clipboard task icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clipboardTask = "ClipboardTask",
         /**
-        * Clock icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clock icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clock = "Clock",
         /**
-        * Clock alarm icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Clock alarm icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         clockAlarm = "ClockAlarm",
         /**
-        * Cloud icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cloud icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cloud = "Cloud",
         /**
-        * Cloud words icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cloud words icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cloudWords = "CloudWords",
         /**
-        * Code icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Code icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         code = "Code",
         /**
-        * Collections icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Collections icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         collections = "Collections",
         /**
-        * Comment icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Comment icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         comment = "Comment",
         /**
-        * Comment multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Comment multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         commentMultiple = "CommentMultiple",
         /**
-        * Communication icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Communication icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         communication = "Communication",
         /**
-        * Compass northwest icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Compass northwest icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         compassNorthwest = "CompassNorthwest",
         /**
-        * Conference room icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Conference room icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         conferenceRoom = "ConferenceRoom",
         /**
-        * Connector icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Connector icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         connector = "Connector",
         /**
-        * Constellation icon. Displays dots in the shape of Ursa Major.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Constellation icon. Displays dots in the shape of Ursa Major.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         constellation = "Constellation",
         /**
-        * Contact card icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Contact card icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         contactCard = "ContactCard",
         /**
-        * Cookies icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cookies icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cookies = "Cookies",
         /**
-        * Couch icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Couch icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         couch = "Couch",
         /**
-        * Credit card person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Credit card person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         creditCardPerson = "CreditCardPerson",
         /**
-        * Credit card toolbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Credit card toolbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         creditCardToolbox = "CreditCardToolbox",
         /**
-        * Cube icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cube icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cube = "Cube",
         /**
-        * Cube multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cube multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cubeMultiple = "CubeMultiple",
         /**
-        * Cube tree icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Cube tree icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cubeTree = "CubeTree",
         /**
-        * Currency dollar euro icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Currency dollar euro icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         currencyDollarEuro = "CurrencyDollarEuro",
         /**
-        * Currency dollar rupee icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Currency dollar rupee icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         currencyDollarRupee = "CurrencyDollarRupee",
         /**
-        * Data area icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data area icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataArea = "DataArea",
         /**
-        * Database icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Database icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         database = "Database",
         /**
-        * Database multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Database multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         databaseMultiple = "DatabaseMultiple",
         /**
-        * Data funnel icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data funnel icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataFunnel = "DataFunnel",
         /**
-        * Data histogram icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data histogram icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataHistogram = "DataHistogram",
         /**
-        * Data line icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data line icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataLine = "DataLine",
         /**
-        * Data pie icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data pie icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataPie = "DataPie",
         /**
-        * Data scatter icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data scatter icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataScatter = "DataScatter",
         /**
-        * Data sunburst icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data sunburst icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataSunburst = "DataSunburst",
         /**
-        * Data treemap icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data treemap icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTreemap = "DataTreemap",
         /**
-        * Data waterfall icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data waterfall icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataWaterfall = "DataWaterfall",
         /**
-        * Data whisker icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Data whisker icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataWhisker = "DataWhisker",
         /**
-        * Dentist icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dentist icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dentist = "Dentist",
         /**
-        * Design ideas icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Design ideas icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         designIdeas = "DesignIdeas",
         /**
-        * Desktop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Desktop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         desktop = "Desktop",
         /**
-        * Desktop Mac icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Desktop Mac icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         desktopMac = "DesktopMac",
         /**
-        * Developer board icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Developer board icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         developerBoard = "DeveloperBoard",
         /**
-        * Device meeting room icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Device meeting room icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         deviceMeetingRoom = "DeviceMeetingRoom",
         /**
-        * Diagram icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Diagram icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         diagram = "Diagram",
         /**
-        * Dialpad icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dialpad icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dialpad = "Dialpad",
         /**
-        * Diamond icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Diamond icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         diamond = "Diamond",
         /**
-        * Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dinosaur = "Dinosaur",
         /**
-        * Directions icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Directions icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         directions = "Directions",
         /**
-        * Disaster icon. Displays as a house sinking in a flood.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Disaster icon. Displays as a house sinking in a flood.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         disaster = "Disaster",
         /**
-        * Diversity icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Diversity icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         diversity = "Diversity",
         /**
-        * DNA icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * DNA icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dNA = "DNA",
         /**
-        * Doctor icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Doctor icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         doctor = "Doctor",
         /**
-        * Document icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         document = "Document",
         /**
-        * Document data icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document data icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentData = "DocumentData",
         /**
-        * Document landscape icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document landscape icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentLandscape = "DocumentLandscape",
         /**
-        * Document multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentMultiple = "DocumentMultiple",
         /**
-        * Document PDF icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document PDF icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentPdf = "DocumentPdf",
         /**
-        * Document queue icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document queue icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentQueue = "DocumentQueue",
         /**
-        * Document text icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Document text icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         documentText = "DocumentText",
         /**
-        * Dog icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dog icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dog = "Dog",
         /**
-        * Door icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Door icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         door = "Door",
         /**
-        * Door tag icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Door tag icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         doorTag = "DoorTag",
         /**
-        * Drafts icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drafts icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drafts = "Drafts",
         /**
-        * Drama icon. Displays as a pair of theatre masks.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drama icon. Displays as a pair of theatre masks.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drama = "Drama",
         /**
-        * Drink beer icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drink beer icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drinkBeer = "DrinkBeer",
         /**
-        * Drink coffee icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drink coffee icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drinkCoffee = "DrinkCoffee",
         /**
-        * Drink margarita icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drink margarita icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drinkMargarita = "DrinkMargarita",
         /**
-        * Drink to go icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drink to go icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drinkToGo = "DrinkToGo",
         /**
-        * Drink wine icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drink wine icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drinkWine = "DrinkWine",
         /**
-        * Drive train icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drive train icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         driveTrain = "DriveTrain",
         /**
-        * Drop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Drop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         drop = "Drop",
         /**
-        * Dual screen icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dual screen icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dualScreen = "DualScreen",
         /**
-        * Dumbbell icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Dumbbell icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dumbbell = "Dumbbell",
         /**
-        * Earth icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Earth icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         earth = "Earth",
         /**
-        * Emoji icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emoji = "Emoji",
         /**
-        * Emoji angry icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji angry icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiAngry = "EmojiAngry",
         /**
-        * Emoji hand icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji hand icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiHand = "EmojiHand",
         /**
-        * Emoji laugh icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji laugh icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiLaugh = "EmojiLaugh",
         /**
-        * Emoji meh icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji meh icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiMeh = "EmojiMeh",
         /**
-        * Emoji multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiMultiple = "EmojiMultiple",
         /**
-        * Emoji sad icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji sad icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiSad = "EmojiSad",
         /**
-        * Emoji sad slight icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji sad slight icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiSadSlight = "EmojiSadSlight",
         /**
-        * Emoji smile slight icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji smile slight icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiSmileSlight = "EmojiSmileSlight",
         /**
-        * Emoji sparkle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji sparkle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiSparkle = "EmojiSparkle",
         /**
-        * Emoji surprise icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Emoji surprise icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         emojiSurprise = "EmojiSurprise",
         /**
-        * Engine icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Engine icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         engine = "Engine",
         /**
-        * Eraser icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Eraser icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         eraser = "Eraser",
         /**
-        * Eye icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Eye icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         eye = "Eye",
         /**
-        * Eyedropper icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Eyedropper icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         eyedropper = "Eyedropper",
         /**
-        * Fax icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Fax icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         fax = "Fax",
         /**
-        * Fingerprint icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Fingerprint icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         fingerprint = "Fingerprint",
         /**
-        * First aid icon. Displays as a briefcase with a medical cross symbol.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * First aid icon. Displays as a briefcase with a medical cross symbol.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         firstAid = "FirstAid",
         /**
-        * Flag icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Flag icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         flag = "Flag",
         /**
-        * Flash icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Flash icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         flash = "Flash",
         /**
-        * Flashlight icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Flashlight icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         flashlight = "Flashlight",
         /**
-        * Flow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Flow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         flow = "Flow",
         /**
-        * Flowchart icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Flowchart icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         flowchart = "Flowchart",
         /**
-        * Folder icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Folder icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         folder = "Folder",
         /**
-        * Folder open icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Folder open icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         folderOpen = "FolderOpen",
         /**
-        * Folder open vertical icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Folder open vertical icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         folderOpenVertical = "FolderOpenVertical",
         /**
-        * Folder person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Folder person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         folderPerson = "FolderPerson",
         /**
-        * Folder zip icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Folder zip icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         folderZip = "FolderZip",
         /**
-        * Food icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         food = "Food",
         /**
-        * Food apple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food apple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodApple = "FoodApple",
         /**
-        * Food cake icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food cake icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodCake = "FoodCake",
         /**
-        * Food egg icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food egg icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodEgg = "FoodEgg",
         /**
-        * Food grains icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food grains icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodGrains = "FoodGrains",
         /**
-        * Food pizza icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food pizza icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodPizza = "FoodPizza",
         /**
-        * Food toast icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Food toast icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         foodToast = "FoodToast",
         /**
-        * Galaxy icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Galaxy icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         galaxy = "Galaxy",
         /**
-        * Games icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Games icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         games = "Games",
         /**
-        * Gantt chart icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gantt chart icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ganttChart = "GanttChart",
         /**
-        * Gas icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gas icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gas = "Gas",
         /**
-        * Gas pump icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gas pump icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gasPump = "GasPump",
         /**
-        * Gauge icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gauge icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gauge = "Gauge",
         /**
-        * Gavel icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gavel icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gavel = "Gavel",
         /**
-        * Gift icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gift icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gift = "Gift",
         /**
-        * Gift card icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Gift card icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         giftCard = "GiftCard",
         /**
-        * Glasses icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Glasses icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         glasses = "Glasses",
         /**
-        * Globe icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Globe icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         globe = "Globe",
         /**
-        * Globe surface icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Globe surface icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         globeSurface = "GlobeSurface",
         /**
-        * Grid icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Grid icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         grid = "Grid",
         /**
-        * Grid dots icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Grid dots icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gridDots = "GridDots",
         /**
-        * Grid Kanban icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Grid Kanban icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gridKanban = "GridKanban",
         /**
-        * Guardian icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Guardian icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         guardian = "Guardian",
         /**
-        * Guest icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Guest icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         guest = "Guest",
         /**
-        * Guitar icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Guitar icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         guitar = "Guitar",
         /**
-        * Hand left icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Hand left icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         handLeft = "HandLeft",
         /**
-        * Hand right icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Hand right icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         handRight = "HandRight",
         /**
-        * Handshake icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Handshake icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         handshake = "Handshake",
         /**
-        * Hard drive icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Hard drive icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         hardDrive = "HardDrive",
         /**
-        * Graduation hat icon. Displays as a hat with a tassel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Graduation hat icon. Displays as a hat with a tassel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         hatGraduation = "HatGraduation",
         /**
-        * Headphones icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Headphones icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         headphones = "Headphones",
         /**
-        * Headphones sound wave icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Headphones sound wave icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         headphonesSoundWave = "HeadphonesSoundWave",
         /**
-        * Headset icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Headset icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         headset = "Headset",
         /**
-        * Headset VR icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Headset VR icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         headsetVr = "HeadsetVr",
         /**
-        * Heart icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Heart icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         heart = "Heart",
         /**
-        * Heart broken icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Heart broken icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         heartBroken = "HeartBroken",
         /**
-        * Heart circle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Heart circle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         heartCircle = "HeartCircle",
         /**
-        * Human heart icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Human heart icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         heartHuman = "HeartHuman",
         /**
-        * Heart pulse icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Heart pulse icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         heartPulse = "HeartPulse",
         /**
-        * History icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * History icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         history = "History",
         /**
-        * Home icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Home icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         home = "Home",
         /**
-        * Home more icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Home more icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         homeMore = "HomeMore",
         /**
-        * Home person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Home person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         homePerson = "HomePerson",
         /**
-        * Icons icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Icons icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         icons = "Icons",
         /**
-        * Image icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Image icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         image = "Image",
         /**
-        * Image globe icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Image globe icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         imageGlobe = "ImageGlobe",
         /**
-        * Image multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Image multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         imageMultiple = "ImageMultiple",
         /**
-        * IoT icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * IoT icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         iot = "Iot",
         /**
-        * Joystick icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Joystick icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         joystick = "Joystick",
         /**
-        * Justice icon. Displays as the scales of justice.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Justice icon. Displays as the scales of justice.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         justice = "Justice",
         /**
-        * Key icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Key icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         key = "Key",
         /**
-        * Keyboard icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Keyboard icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         keyboard = "Keyboard",
         /**
-        * Keyboard layout split icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Keyboard layout split icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         keyboardLayoutSplit = "KeyboardLayoutSplit",
         /**
-        * Key multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Key multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         keyMultiple = "KeyMultiple",
         /**
-        * Languages icon. Displays as a document and a globe.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Languages icon. Displays as a document and a globe.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         languages = "Languages",
         /**
-        * Laptop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Laptop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         laptop = "Laptop",
         /**
-        * Lasso icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lasso icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lasso = "Lasso",
         /**
-        * Launcher settings icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Launcher settings icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         launcherSettings = "LauncherSettings",
         /**
-        * Layer icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Layer icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layer = "Layer",
         /**
-        * Leaf icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Leaf icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         leaf = "Leaf",
         /**
-        * Leaf one icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Leaf one icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         leafOne = "LeafOne",
         /**
-        * Leaf three icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Leaf three icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         leafThree = "LeafThree",
         /**
-        * Leaf two icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Leaf two icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         leafTwo = "LeafTwo",
         /**
-        * Library icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Library icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         library = "Library",
         /**
-        * Lightbulb icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lightbulb icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lightbulb = "Lightbulb",
         /**
-        * Lightbulb filament icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lightbulb filament icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lightbulbFilament = "LightbulbFilament",
         /**
-        * Likert icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Likert icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         likert = "Likert",
         /**
-        * Link icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Link icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         link = "Link",
         /**
-        * Local language icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Local language icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         localLanguage = "LocalLanguage",
         /**
-        * Location icon. Displays as a map marker.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Location icon. Displays as a map marker.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         location = "Location",
         /**
-        * Lock closed icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lock closed icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lockClosed = "LockClosed",
         /**
-        * Lock multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lock multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lockMultiple = "LockMultiple",
         /**
-        * Lock open icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lock open icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lockOpen = "LockOpen",
         /**
-        * Lottery icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Lottery icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lottery = "Lottery",
         /**
-        * Luggage icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Luggage icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         luggage = "Luggage",
         /**
-        * Mail icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mail icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mail = "Mail",
         /**
-        * Mail inbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mail inbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mailInbox = "MailInbox",
         /**
-        * Mail multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mail multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mailMultiple = "MailMultiple",
         /**
-        * Map icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Map icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         map = "Map",
         /**
-        * Map pin icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Map pin icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mapPin = "MapPin",
         /**
-        * Markdown icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Markdown icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         markdown = "Markdown",
         /**
-        * Math formula icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Math formula icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mathFormula = "MathFormula",
         /**
-        * Math symbols icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Math symbols icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mathSymbols = "MathSymbols",
         /**
-        * Max icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Max icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         max = "Max",
         /**
-        * Megaphone icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Megaphone icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         megaphone = "Megaphone",
         /**
-        * Megaphone loud icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Megaphone loud icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         megaphoneLoud = "MegaphoneLoud",
         /**
-        * Mention icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mention icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mention = "Mention",
         /**
-        * Mic icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mic icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mic = "Mic",
         /**
-        * Microscope icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Microscope icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         microscope = "Microscope",
         /**
-        * Midi icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Midi icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         midi = "Midi",
         /**
-        * Molecule icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Molecule icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         molecule = "Molecule",
         /**
-        * Money icon. Displays as paper money and coins.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Money icon. Displays as paper money and coins.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         money = "Money",
         /**
-        * Money hand icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Money hand icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         moneyHand = "MoneyHand",
         /**
-        * Mountain icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Mountain icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mountain = "Mountain",
         /**
-        * Movie camera icon. Displays as a video camera.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Movie camera icon. Displays as a video camera.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         movieCamera = "MovieCamera",
         /**
-        * Movies and TV icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Movies and TV icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         moviesAndTv = "MoviesAndTv",
         /**
-        * Music note icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Music note icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         musicNote = "MusicNote",
         /**
-        * Music note icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Music note icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         musicNote1 = "MusicNote1",
         /**
-        * Music double note icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Music double note icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         musicNote2 = "MusicNote2",
         /**
-        * My location icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * My location icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         myLocation = "MyLocation",
         /**
-        * N by N icon. Displays as a three by three grid.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * N by N icon. Displays as a three by three grid.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         nByN = "NByN",
         /**
-        * N by one icon. Displays as a three by one grid.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * N by one icon. Displays as a three by one grid.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         nByOne = "NByOne",
         /**
-        * News icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * News icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         news = "News",
         /**
-        * Notable people icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Notable people icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notablePeople = "NotablePeople",
         /**
-        * Note icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Note icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         note = "Note",
         /**
-        * Notebook icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Notebook icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notebook = "Notebook",
         /**
-        * Notepad icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Notepad icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notepad = "Notepad",
         /**
-        * Notepad person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Notepad person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notepadPerson = "NotepadPerson",
         /**
-        * One by N icon. Displays as a one by three grid.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * One by N icon. Displays as a one by three grid.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         oneByN = "OneByN",
         /**
-        * One by one icon. Displays as a one by one grid.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * One by one icon. Displays as a one by one grid.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         oneByOne = "OneByOne",
         /**
-        * Options icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Options icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         options = "Options",
         /**
-        * Organization icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Organization icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         organization = "Organization",
         /**
-        * Organization horizontal icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Organization horizontal icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         organizationHorizontal = "OrganizationHorizontal",
         /**
-        * Oval icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Oval icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         oval = "Oval",
         /**
-        * Paint brush icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Paint brush icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         paintBrush = "PaintBrush",
         /**
-        * Paint bucket icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Paint bucket icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         paintBucket = "PaintBucket",
         /**
-        * Partly sunny weather icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Partly sunny weather icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         partlySunnyWeather = "PartlySunnyWeather",
         /**
-        * Password icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Password icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         password = "Password",
         /**
-        * Patch icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Patch icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         patch = "Patch",
         /**
-        * Patient icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Patient icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         patient = "Patient",
         /**
-        * Payment icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Payment icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         payment = "Payment",
         /**
-        * Pen icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pen icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pen = "Pen",
         /**
-        * Pentagon icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pentagon icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pentagon = "Pentagon",
         /**
-        * People icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         people = "People",
         /**
-        * People audience icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People audience icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleAudience = "PeopleAudience",
         /**
-        * People call icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People call icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleCall = "PeopleCall",
         /**
-        * People community icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People community icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleCommunity = "PeopleCommunity",
         /**
-        * People money icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People money icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleMoney = "PeopleMoney",
         /**
-        * People queue icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People queue icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleQueue = "PeopleQueue",
         /**
-        * People team icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People team icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleTeam = "PeopleTeam",
         /**
-        * People toolbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * People toolbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         peopleToolbox = "PeopleToolbox",
         /**
-        * Person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         person = "Person",
         /**
-        * Person board icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person board icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personBoard = "PersonBoard",
         /**
-        * Person call icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person call icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personCall = "PersonCall",
         /**
-        * Person chat icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person chat icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personChat = "PersonChat",
         /**
-        * Person feedback icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person feedback icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personFeedback = "PersonFeedback",
         /**
-        * Person support icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person support icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personSupport = "PersonSupport",
         /**
-        * Person voice icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Person voice icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         personVoice = "PersonVoice",
         /**
-        * Phone icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phone = "Phone",
         /**
-        * Phone desktop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone desktop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phoneDesktop = "PhoneDesktop",
         /**
-        * Phone laptop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone laptop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phoneLaptop = "PhoneLaptop",
         /**
-        * Phone shake icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone shake icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phoneShake = "PhoneShake",
         /**
-        * Phone tablet icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone tablet icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phoneTablet = "PhoneTablet",
         /**
-        * Phone vibrate icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Phone vibrate icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         phoneVibrate = "PhoneVibrate",
         /**
-        * Photo filter icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Photo filter icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         photoFilter = "PhotoFilter",
         /**
-        * Pi icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pi icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pi = "Pi",
         /**
-        * Picture in picture icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Picture in picture icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pictureInPicture = "PictureInPicture",
         /**
-        * Pilates icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pilates icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pilates = "Pilates",
         /**
-        * Pill icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pill icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pill = "Pill",
         /**
-        * Pin icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pin icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pin = "Pin",
         /**
-        * Pipeline icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pipeline icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pipeline = "Pipeline",
         /**
-        * Planet icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Planet icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         planet = "Planet",
         /**
-        * Playing cards icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Playing cards icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         playingCards = "PlayingCards",
         /**
-        * Plug connected icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Plug connected icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         plugConnected = "PlugConnected",
         /**
-        * Plug disconnected icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Plug disconnected icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         plugDisconnected = "PlugDisconnected",
         /**
-        * Point scan icon. Displays as a target focus symbol.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Point scan icon. Displays as a target focus symbol.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pointScan = "PointScan",
         /**
-        * Poll icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Poll icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         poll = "Poll",
         /**
-        * Power icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Power icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         power = "Power",
         /**
-        * Predictions icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Predictions icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         predictions = "Predictions",
         /**
-        * Premium icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Premium icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         premium = "Premium",
         /**
-        * Presenter icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Presenter icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         presenter = "Presenter",
         /**
-        * Preview link icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Preview link icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         previewLink = "PreviewLink",
         /**
-        * Print icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Print icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         print = "Print",
         /**
-        * Production icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Production icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         production = "Production",
         /**
-        * Prohibited icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Prohibited icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         prohibited = "Prohibited",
         /**
-        * Projection screen icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Projection screen icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         projectionScreen = "ProjectionScreen",
         /**
-        * Protocol handler icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Protocol handler icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         protocolHandler = "ProtocolHandler",
         /**
-        * Pulse icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pulse icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pulse = "Pulse",
         /**
-        * Pulse square icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Pulse square icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         pulseSquare = "PulseSquare",
         /**
-        * Puzzle piece icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Puzzle piece icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         puzzlePiece = "PuzzlePiece",
         /**
-        * QR code icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * QR code icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         qrCode = "QrCode",
         /**
-        * Radar icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Radar icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         radar = "Radar",
         /**
-        * Ram icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ram icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ram = "Ram",
         /**
-        * Reading list icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Reading list icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         readingList = "ReadingList",
         /**
-        * Real estate icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Real estate icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         realEstate = "RealEstate",
         /**
-        * Receipt icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Receipt icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         receipt = "Receipt",
         /**
-        * Reward icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Reward icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         reward = "Reward",
         /**
-        * Rhombus icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Rhombus icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         rhombus = "Rhombus",
         /**
-        * Ribbon icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ribbon icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ribbon = "Ribbon",
         /**
-        * Ribbon star icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ribbon star icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ribbonStar = "RibbonStar",
         /**
-        * Road cone icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Road cone icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         roadCone = "RoadCone",
         /**
-        * Rocket icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Rocket icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         rocket = "Rocket",
         /**
-        * Router icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Router icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         router = "Router",
         /**
-        * RSS icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * RSS icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         rss = "Rss",
         /**
-        * Ruler icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ruler icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ruler = "Ruler",
         /**
-        * Run icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Run icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         run = "Run",
         /**
-        * Running icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Running icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         running = "Running",
         /**
-        * Satellite icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Satellite icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         satellite = "Satellite",
         /**
-        * Save icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Save icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         save = "Save",
         /**
-        * Savings icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Savings icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         savings = "Savings",
         /**
-        * Scales icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Scales icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         scales = "Scales",
         /**
-        * Scan icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Scan icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         scan = "Scan",
         /**
-        * Scratchpad icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Scratchpad icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         scratchpad = "Scratchpad",
         /**
-        * Screen person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Screen person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         screenPerson = "ScreenPerson",
         /**
-        * Screenshot icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Screenshot icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         screenshot = "Screenshot",
         /**
-        * Search icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Search icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         search = "Search",
         /**
-        * Serial port icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Serial port icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         serialPort = "SerialPort",
         /**
-        * Server icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Server icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         server = "Server",
         /**
-        * Server multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Server multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         serverMultiple = "ServerMultiple",
         /**
-        * Service bell icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Service bell icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         serviceBell = "ServiceBell",
         /**
-        * Settings icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Settings icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         settings = "Settings",
         /**
-        * Shapes icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Shapes icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         shapes = "Shapes",
         /**
-        * Shield icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Shield icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         shield = "Shield",
         /**
-        * Shield task icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Shield task icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         shieldTask = "ShieldTask",
         /**
-        * Shopping bag icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Shopping bag icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         shoppingBag = "ShoppingBag",
         /**
-        * Signature icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Signature icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         signature = "Signature",
         /**
-        * Sim icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sim icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sim = "Sim",
         /**
-        * Sleep icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sleep icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sleep = "Sleep",
         /**
-        * Smartwatch icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Smartwatch icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         smartwatch = "Smartwatch",
         /**
-        * Sound source icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sound source icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         soundSource = "SoundSource",
         /**
-        * Sound wave circle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sound wave circle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         soundWaveCircle = "SoundWaveCircle",
         /**
-        * Sparkle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sparkle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sparkle = "Sparkle",
         /**
-        * Speaker icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Speaker icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         speaker0 = "Speaker0",
         /**
-        * Speaker with sound wave icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Speaker with sound wave icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         speaker2 = "Speaker2",
         /**
-        * Sport icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sport = "Sport",
         /**
-        * Sport american football icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport american football icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sportAmericanFootball = "SportAmericanFootball",
         /**
-        * Sport baseball icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport baseball icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sportBaseball = "SportBaseball",
         /**
-        * Sport basketball icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport basketball icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sportBasketball = "SportBasketball",
         /**
-        * Sport hockey icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport hockey icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sportHockey = "SportHockey",
         /**
-        * Sport soccer icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sport soccer icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sportSoccer = "SportSoccer",
         /**
-        * Square multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Square multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         squareMultiple = "SquareMultiple",
         /**
-        * Square shadow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Square shadow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         squareShadow = "SquareShadow",
         /**
-        * Squares nested icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Squares nested icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         squaresNested = "SquaresNested",
         /**
-        * Stack icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stack icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stack = "Stack",
         /**
-        * Stack star icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stack star icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stackStar = "StackStar",
         /**
-        * Star icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         star = "Star",
         /**
-        * Star filled icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star filled icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         starFilled = "StarFilled",
         /**
-        * Star half icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star half icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         starHalf = "StarHalf",
         /**
-        * Star with 3 horizontal lines icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star with 3 horizontal lines icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         starLineHorizontal3 = "StarLineHorizontal3",
         /**
-        * Star one quarter icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star one quarter icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         starOneQuarter = "StarOneQuarter",
         /**
-        * Star three quarter icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Star three quarter icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         starThreeQuarter = "StarThreeQuarter",
         /**
-        * Status icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Status icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         status = "Status",
         /**
-        * Steps icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Steps icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         steps = "Steps",
         /**
-        * Stethoscope icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stethoscope icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stethoscope = "Stethoscope",
         /**
-        * Sticker icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sticker icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sticker = "Sticker",
         /**
-        * Storage icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Storage icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         storage = "Storage",
         /**
-        * Stream icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stream icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stream = "Stream",
         /**
-        * Stream input icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stream input icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         streamInput = "StreamInput",
         /**
-        * Stream input output icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stream input output icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         streamInputOutput = "StreamInputOutput",
         /**
-        * Stream output icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Stream output icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         streamOutput = "StreamOutput",
         /**
-        * Style guide icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Style guide icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         styleGuide = "StyleGuide",
         /**
-        * Sub grid icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Sub grid icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         subGrid = "SubGrid",
         /**
-        * Subtitles icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Subtitles icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         subtitles = "Subtitles",
         /**
-        * Surface earbuds icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Surface earbuds icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         surfaceEarbuds = "SurfaceEarbuds",
         /**
-        * Surface hub icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Surface hub icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         surfaceHub = "SurfaceHub",
         /**
-        * Symbols icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Symbols icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         symbols = "Symbols",
         /**
-        * Syringe icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Syringe icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         syringe = "Syringe",
         /**
-        * System icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * System icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         system = "System",
         /**
-        * Tab desktop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tab desktop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tabDesktop = "TabDesktop",
         /**
-        * Tab InPrivate account icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tab InPrivate account icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tabInprivateAccount = "TabInprivateAccount",
         /**
-        * Table icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Table icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         table = "Table",
         /**
-        * Table image icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Table image icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tableImage = "TableImage",
         /**
-        * Table multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Table multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tableMultiple = "TableMultiple",
         /**
-        * Tablet icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tablet icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tablet = "Tablet",
         /**
-        * Tabs icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tabs icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tabs = "Tabs",
         /**
-        * Tag icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tag icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tag = "Tag",
         /**
-        * Tag circle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tag circle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tagCircle = "TagCircle",
         /**
-        * Tag multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tag multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tagMultiple = "TagMultiple",
         /**
-        * Target icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Target icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         target = "Target",
         /**
-        * Target arrow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Target arrow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         targetArrow = "TargetArrow",
         /**
-        * Teddy icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Teddy icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         teddy = "Teddy",
         /**
-        * Temperature icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Temperature icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         temperature = "Temperature",
         /**
-        * Tent icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tent icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tent = "Tent",
         /**
-        * Tetris app icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tetris app icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tetrisApp = "TetrisApp",
         /**
-        * Textbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Textbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         textbox = "Textbox",
         /**
-        * Text quote icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Text quote icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         textQuote = "TextQuote",
         /**
-        * Thinking icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Thinking icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         thinking = "Thinking",
         /**
-        * Thumb dislike icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Thumb dislike icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         thumbDislike = "ThumbDislike",
         /**
-        * Thumb like icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Thumb like icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         thumbLike = "ThumbLike",
         /**
-        * Ticket diagonal icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ticket diagonal icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ticketDiagonal = "TicketDiagonal",
         /**
-        * Ticket horizontal icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Ticket horizontal icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ticketHorizontal = "TicketHorizontal",
         /**
-        * Time and weather icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Time and weather icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         timeAndWeather = "TimeAndWeather",
         /**
-        * Timeline icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Timeline icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         timeline = "Timeline",
         /**
-        * Timer icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Timer icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         timer = "Timer",
         /**
-        * Toolbox icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Toolbox icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         toolbox = "Toolbox",
         /**
-        * Top speed icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Top speed icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         topSpeed = "TopSpeed",
         /**
-        * Translate icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Translate icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         translate = "Translate",
         /**
-        * Transmission icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Transmission icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         transmission = "Transmission",
         /**
-        * Tree deciduous icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tree deciduous icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         treeDeciduous = "TreeDeciduous",
         /**
-        * Tree evergreen icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Tree evergreen icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         treeEvergreen = "TreeEvergreen",
         /**
-        * Trophy icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Trophy icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         trophy = "Trophy",
         /**
-        * TV icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * TV icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tv = "Tv",
         /**
-        * TV USB icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * TV USB icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         tvUsb = "TvUsb",
         /**
-        * Umbrella icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Umbrella icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         umbrella = "Umbrella",
         /**
-        * USB plug icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * USB plug icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         usbPlug = "UsbPlug",
         /**
-        * USB stick icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * USB stick icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         usbStick = "UsbStick",
         /**
-        * Vault icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vault icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vault = "Vault",
         /**
-        * Vehicle bicycle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle bicycle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleBicycle = "VehicleBicycle",
         /**
-        * Vehicle bus icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle bus icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleBus = "VehicleBus",
         /**
-        * Vehicle cab icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle cab icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleCab = "VehicleCab",
         /**
-        * Vehicle car icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle car icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleCar = "VehicleCar",
         /**
-        * Vehicle car collision icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle car collision icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleCarCollision = "VehicleCarCollision",
         /**
-        * Vehicle car profile left-to-right icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle car profile left-to-right icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleCarProfileLtr = "VehicleCarProfileLtr",
         /**
-        * Vehicle car profile right-to-left icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle car profile right-to-left icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleCarProfileRtl = "VehicleCarProfileRtl",
         /**
-        * Vehicle ship icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle ship icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleShip = "VehicleShip",
         /**
-        * Vehicle subway icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle subway icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleSubway = "VehicleSubway",
         /**
-        * Vehicle truck icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle truck icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleTruck = "VehicleTruck",
         /**
-        * Vehicle truck bag icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle truck bag icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleTruckBag = "VehicleTruckBag",
         /**
-        * Vehicle truck cube icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle truck cube icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleTruckCube = "VehicleTruckCube",
         /**
-        * Vehicle truck profile icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vehicle truck profile icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vehicleTruckProfile = "VehicleTruckProfile",
         /**
-        * Video icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         video = "Video",
         /**
-        * Video 360 icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video 360 icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         video360 = "Video360",
         /**
-        * Video chat icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video chat icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoChat = "VideoChat",
         /**
-        * Video clip icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video clip icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoClip = "VideoClip",
         /**
-        * Video clip multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video clip multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoClipMultiple = "VideoClipMultiple",
         /**
-        * Video person icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video person icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoPerson = "VideoPerson",
         /**
-        * Video recording icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video recording icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoRecording = "VideoRecording",
         /**
-        * Video security icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Video security icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         videoSecurity = "VideoSecurity",
         /**
-        * View desktop icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * View desktop icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         viewDesktop = "ViewDesktop",
         /**
-        * View desktop mobile icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * View desktop mobile icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         viewDesktopMobile = "ViewDesktopMobile",
         /**
-        * Violin icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Violin icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         violin = "Violin",
         /**
-        * Virtual network icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Virtual network icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         virtualNetwork = "VirtualNetwork",
         /**
-        * Voicemail icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Voicemail icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         voicemail = "Voicemail",
         /**
-        * Vote icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Vote icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vote = "Vote",
         /**
-        * Walkie talkie icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Walkie talkie icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         walkieTalkie = "WalkieTalkie",
         /**
-        * Wallet icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wallet icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wallet = "Wallet",
         /**
-        * Wallet credit card icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wallet credit card icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         walletCreditCard = "WalletCreditCard",
         /**
-        * Wallpaper icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wallpaper icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wallpaper = "Wallpaper",
         /**
-        * Wand icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wand icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wand = "Wand",
         /**
-        * Warning icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Warning icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         warning = "Warning",
         /**
-        * Weather blowing snow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather blowing snow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherBlowingSnow = "WeatherBlowingSnow",
         /**
-        * Weather cloudy icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather cloudy icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherCloudy = "WeatherCloudy",
         /**
-        * Weather drizzle icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather drizzle icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherDrizzle = "WeatherDrizzle",
         /**
-        * Weather duststorm icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather duststorm icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherDuststorm = "WeatherDuststorm",
         /**
-        * Weather fog icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather fog icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherFog = "WeatherFog",
         /**
-        * Weather hail day icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather hail day icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherHailDay = "WeatherHailDay",
         /**
-        * Weather hail night icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather hail night icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherHailNight = "WeatherHailNight",
         /**
-        * Weather haze icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather haze icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherHaze = "WeatherHaze",
         /**
-        * Weather moon icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather moon icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherMoon = "WeatherMoon",
         /**
-        * Weather partly cloudy day icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather partly cloudy day icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherPartlyCloudyDay = "WeatherPartlyCloudyDay",
         /**
-        * Weather partly cloudy night icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather partly cloudy night icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherPartlyCloudyNight = "WeatherPartlyCloudyNight",
         /**
-        * Weather rain icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather rain icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherRain = "WeatherRain",
         /**
-        * Weather rain showers day icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather rain showers day icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherRainShowersDay = "WeatherRainShowersDay",
         /**
-        * Weather rain showers night icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather rain showers night icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherRainShowersNight = "WeatherRainShowersNight",
         /**
-        * Weather rain snow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather rain snow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherRainSnow = "WeatherRainSnow",
         /**
-        * Weather snow icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather snow icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSnow = "WeatherSnow",
         /**
-        * Weather snowflake icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather snowflake icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSnowflake = "WeatherSnowflake",
         /**
-        * Weather snow shower day icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather snow shower day icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSnowShowerDay = "WeatherSnowShowerDay",
         /**
-        * Weather snow shower night icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather snow shower night icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSnowShowerNight = "WeatherSnowShowerNight",
         /**
-        * Weather squalls icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather squalls icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSqualls = "WeatherSqualls",
         /**
-        * Weather sunny high icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather sunny high icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSunnyHigh = "WeatherSunnyHigh",
         /**
-        * Weather sunny low icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather sunny low icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherSunnyLow = "WeatherSunnyLow",
         /**
-        * Weather thunderstorm icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Weather thunderstorm icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         weatherThunderstorm = "WeatherThunderstorm",
         /**
-        * Web asset icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Web asset icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         webAsset = "WebAsset",
         /**
-        * Whiteboard icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Whiteboard icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         whiteboard = "Whiteboard",
         /**
-        * Wifi signal with 3 bars icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wifi signal with 3 bars icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wifi1 = "Wifi1",
         /**
-        * Wifi signal with 2 bars icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wifi signal with 2 bars icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wifi2 = "Wifi2",
         /**
-        * Window icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Window icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         window = "Window",
         /**
-        * Window multiple icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Window multiple icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         windowMultiple = "WindowMultiple",
         /**
-        * Window wrench icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Window wrench icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         windowWrench = "WindowWrench",
         /**
-        * Wrench icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wrench icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wrench = "Wrench",
         /**
-        * Wrench screwdriver icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Wrench screwdriver icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         wrenchScrewdriver = "WrenchScrewdriver",
         /**
-        * X-ray icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * X-ray icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         xray = "Xray",
         /**
-        * Yoga icon.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Yoga icon.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         yoga = "Yoga"
     }
     /**
-    * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ReferenceCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.reference | "Reference";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: boolean | number | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
         /**
-        * Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         reference: number;
     }
     /**
-    * Represents a reference to the value which contains `referencedValues`.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a reference to the value which contains `referencedValues`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface RootReferenceCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: ReferenceValueType.root | "Root";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: boolean | number | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
     }
     /**
-    * Represents the types of the `ReferenceValue` object.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the types of the `ReferenceValue` object.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum ReferenceValueType {
         /**
-        * Represents an `ArrayCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `ArrayCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         array = "Array",
         /**
-        * Represents an `EntityCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `EntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         entity = "Entity",
         /**
-        * Represents a `RootReferenceCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `RootReferenceCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         root = "Root"
     }
     /**
-    * Represents the value in a cell.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value in a cell.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;
     /**
-    * Represents the types of the `CellValue` object.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the types of the `CellValue` object.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum CellValueType {
         /**
-        * Represents an `ArrayCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `ArrayCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         array = "Array",
         /**
-        * Represents a `BooleanCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `BooleanCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         boolean = "Boolean",
         /**
-        * Represents a `DoubleCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `DoubleCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         double = "Double",
         /**
-        * Represents an `EntityCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `EntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         entity = "Entity",
         /**
-        * Represents an `EmptyCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `EmptyCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         empty = "Empty",
         /**
-        * Represents an `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         error = "Error",
         /**
-        * Represents an `ExternalCodeServiceObjectCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents an `ExternalCodeServiceObjectCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceObject = "ExternalCodeServiceObject",
         /**
-        * Represents a `FormattedNumberCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `FormattedNumberCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         formattedNumber = "FormattedNumber",
         /**
-        * Represents a `LinkedEntityCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         linkedEntity = "LinkedEntity",
         /**
-        * Represents a `LocalImageCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents a `LocalImageCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         localImage = "LocalImage",
         /**
-        * Represents a `ReferenceCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `ReferenceCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         reference = "Reference",
         /**
-        * Represents a `StringCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `StringCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         string = "String",
         /**
-        * Represents a `ValueTypeNotAvailableCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `ValueTypeNotAvailableCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notAvailable = "NotAvailable",
         /**
-        * Represents a `WebImageCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `WebImageCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         webImage = "WebImage"
     }
     /**
-    * Represents the value in a cell.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value in a cell.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | ExternalCodeServiceObjectCellValue | FormattedNumberCellValue | LinkedEntityCellValue | LocalImageCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
     /**
-    * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CellValueExtraProperties {
         /**
-        * Represents whether this `CellValue` will be used to overwrite a cell.
-        * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-        * The default value is true.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents whether this `CellValue` will be used to overwrite a cell.
+         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+         * The default value is true.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         writable?: boolean;
         /**
-        * Represents an explanation about why `CellValue.writable` is specified as false.
-        * Note: This string is only available if `writable` is specified as false.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an explanation about why `CellValue.writable` is specified as false.
+         * Note: This string is only available if `writable` is specified as false.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         writableNote?: string;
     }
     /**
-    * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type CellValueAndPropertyMetadata = (CellValue) & EntityPropertyExtraProperties;
     /**
-    * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CellValueAttributionAttributes {
         /**
-        * Represents a URL to the source of the `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a URL to the source of the `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sourceAddress?: string;
         /**
-        * Represents a name for the source of the `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a name for the source of the `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sourceText?: string;
         /**
-        * Represents a URL to a license or source that describes how this property can be used.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a URL to a license or source that describes how this property can be used.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         licenseAddress?: string;
         /**
-        * Represents a name for the license that governs this property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a name for the license that governs this property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         licenseText?: string;
     }
     /**
-    * Represents the value of a cell containing a #BUSY! error.
-    * This type of error is used as a placeholder while the value of a cell is downloaded.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #BUSY! error.
+     * This type of error is used as a placeholder while the value of a cell is downloaded.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface PlaceholderErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#BUSY!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.placeholder | "Placeholder";
         /**
-        * `PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * `PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         target: LinkedEntityCellValue | WebImageCellValue;
     }
     /**
-    * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CellValueProviderAttributes {
         /**
-        * Represents the provider description property that is used in card view if no logo is specified.
-        * If a logo is specified, this will be used as tooltip text.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the provider description property that is used in card view if no logo is specified.
+         * If a logo is specified, this will be used as tooltip text.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         description?: string;
         /**
-        * Represents a URL used to download an image that will be used as a logo in card view.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a URL used to download an image that will be used as a logo in card view.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         logoSourceAddress?: string;
         /**
-        * Represents a URL that is the navigation target if the user clicks on the logo element in card view.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a URL that is the navigation target if the user clicks on the logo element in card view.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         logoTargetAddress?: string;
     }
     /**
-    * Metadata about a property in `EntityCellValue.properties`.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Metadata about a property in `EntityCellValue.properties`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CellValuePropertyMetadata {
         /**
-        * Represents which features this property is excluded from.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents which features this property is excluded from.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         excludeFrom?: CellValuePropertyMetadataExclusions;
         /**
-        * Represents the sublabel for this property shown in card view.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the sublabel for this property shown in card view.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         sublabel?: string;
         /**
-        * Represents attribution information to describe the source and license requirements for using this property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents attribution information to describe the source and license requirements for using this property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         attribution?: CellValueAttributionAttributes[];
     }
     /**
-    * Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface CellValuePropertyMetadataExclusions {
         /**
-        * True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         cardView?: boolean;
         /**
-        * True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         autoComplete?: boolean;
         /**
-        * True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calcCompare?: boolean;
         /**
-        * True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dotNotation?: boolean;
     }
     /**
-    * Represents the value of a cell containing a #PYTHON! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents the value of a cell containing a #PYTHON! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface PythonErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicValue?: "#PYTHON!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         errorType?: ErrorCellValueType.python | "Python";
     }
     /**
-    * Represents types of #CONNECT! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #CONNECT! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum ConnectErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a problem with the service. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a problem with the service. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         serviceError = "ServiceError",
         /**
-        * An error caused by an issue with the external links. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an issue with the external links. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinks = "ExternalLinks",
         /**
-        * An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a local computer instead of to a cloud location. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a local computer instead of to a cloud location. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksNonCloudLocation = "ExternalLinksNonCloudLocation",
         /**
-        * An error caused by no service connection for linked data types. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by no service connection for linked data types. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTypeNoConnection = "DataTypeNoConnection",
         /**
-        * An error caused by an issue in the service for linked data types. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an issue in the service for linked data types. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataTypeServiceError = "DataTypeServiceError",
         /**
-        * An error caused by missing content. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by missing content. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         missingContent = "MissingContent",
         /**
-        * An error caused by request throttling. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by request throttling. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         requestThrottle = "RequestThrottle",
         /**
-        * An error caused by external links failing to refresh. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by external links failing to refresh. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksFailedToRefresh = "ExternalLinksFailedToRefresh",
         /**
-        * An error caused by a failure to access external links. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a failure to access external links. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksAccessFailed = "ExternalLinksAccessFailed",
         /**
-        * An error caused by a server error while resolving an external link. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a server error while resolving an external link. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksServerError = "ExternalLinksServerError",
         /**
-        * An error caused by an invalid request while resolving an external link. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an invalid request while resolving an external link. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksInvalidRequest = "ExternalLinksInvalidRequest",
         /**
-        * An error caused by a lack of authentication for external links. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a lack of authentication for external links. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksUnAuthenticated = "ExternalLinksUnAuthenticated",
         /**
-        * An error caused by throttling from an external link host. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by throttling from an external link host. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksThrottledByHost = "ExternalLinksThrottledByHost",
         /**
-        * An error caused by an external link to a file which exceeds file size capacity. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an external link to a file which exceeds file size capacity. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksFileTooLarge = "ExternalLinksFileTooLarge",
         /**
-        * An error caused by an outdated linked entity. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an outdated linked entity. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         outdatedLinkedEntity = "OutdatedLinkedEntity",
         /**
-        * An error caused by an error returned from the server. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an error returned from the server. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         genericServerError = "GenericServerError",
         /**
-        * An error caused by an image download receiving an HTTP response code between 300 and 499. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an image download receiving an HTTP response code between 300 and 499. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageUnableToRetrieve = "ImageUnableToRetrieve",
         /**
-        * An error caused by not being able to find an external code service execution environment. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by not being able to find an external code service execution environment. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceEnvironmentNotFound = "ExternalCodeServiceEnvironmentNotFound",
         /**
-        * An error caused by not being able to find the runtime in an external code service's execution environment. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by not being able to find the runtime in an external code service's execution environment. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceRuntimeNotFound = "ExternalCodeServiceRuntimeNotFound",
         /**
-        * An error caused by an external code service execution environment being in an inoperative state. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service execution environment being in an inoperative state. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceEnvironmentBadState = "ExternalCodeServiceEnvironmentBadState",
         /**
-        * An error caused by an external code service runtime being in an inoperative state. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service runtime being in an inoperative state. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceRuntimeBadState = "ExternalCodeServiceRuntimeBadState",
         /**
-        * An error caused by an external code service compute resource not being available. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service compute resource not being available. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         externalCodeServiceComputeResourceNotAvailable = "ExternalCodeServiceComputeResourceNotAvailable",
         /**
-        * An error caused by Power Query not having started upload of data to an external code service. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Power Query not having started upload of data to an external code service. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonPowerQueryDataUploadHasNotStarted = "PythonPowerQueryDataUploadHasNotStarted",
         /**
-        * An error caused by Excel being incorrectly configured for connection to an external code service. Displays as error type #CONNECT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by Excel being incorrectly configured for connection to an external code service. Displays as error type #CONNECT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         excelClientMisconfigurationError = "ExcelClientMisconfigurationError"
     }
     /**
-    * Represents the value of a cell containing a #CONNECT! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #CONNECT! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ConnectErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#CONNECT!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.connect | "Connect";
         /**
-        * Represents the type of `ConnectErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ConnectErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError" | "ImageUnableToRetrieve" | "ExternalCodeServiceEnvironmentNotFound" | "ExternalCodeServiceRuntimeNotFound" | "ExternalCodeServiceEnvironmentBadState" | "ExternalCodeServiceRuntimeBadState" | "ExternalCodeServiceComputeResourceNotAvailable" | "PythonPowerQueryDataUploadHasNotStarted" | "ExcelClientMisconfigurationError";
     }
     /**
-    * Represents the value of a cell containing a #DIV/0! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #DIV/0! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface Div0ErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#DIV/0!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.div0 | "Div0";
     }
     /**
-    * Represents the value of a cell containing a double.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a double.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface DoubleCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.double | "Double";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue: number;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.double | "Double";
     }
     /**
-    * Represents the value of a cell that's empty and has no formulas or data.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell that's empty and has no formulas or data.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EmptyCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.empty | "Empty";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "";
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.empty | "Empty";
     }
     /**
-    * Represents the value of a property.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a property.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;
     /**
-    * Properties used by `CellValueAndPropertyMetadata`. These properties refer to the metadata and not to a `CellValue`.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Properties used by `CellValueAndPropertyMetadata`. These properties refer to the metadata and not to a `CellValue`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EntityPropertyExtraProperties {
         /**
-        * Represents metadata about the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents metadata about the property.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         propertyMetadata?: CellValuePropertyMetadata;
     }
     /**
-    * Represents a set of properties without a schema or defined structure.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a set of properties without a schema or defined structure.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EntityCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.entity | ReferenceValueType.entity | "Entity";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the text shown when a cell with this value is rendered.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the text shown when a cell with this value is rendered.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         text?: string;
         /**
         * Represents the properties of this entity and their metadata.
@@ -5729,308 +5731,308 @@ export declare namespace Excel {
             [key: string]: EntityPropertyType;
         };
         /**
-        * Represents layout information for views of this entity.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents layout information for views of this entity.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layouts?: EntityViewLayouts;
         /**
-        * Represents information that describes the service that provided the data in this `EntityCellValue`.
-        * This information can be used for branding in entity cards.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents information that describes the service that provided the data in this `EntityCellValue`.
+         * This information can be used for branding in entity cards.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         provider?: CellValueProviderAttributes;
         /**
-        * Represents the cell values which are referenced within `EntityCellValue.properties`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the cell values which are referenced within `EntityCellValue.properties`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         referencedValues?: ReferencedValue[];
     }
     /**
-    * Represents layout information for various views of the entity.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents layout information for various views of the entity.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EntityViewLayouts {
         /**
-        * Represents the layout of this entity in card view.
-        * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the layout of this entity in card view.
+         * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         card?: CardLayout;
         /**
-        * Represents the layout used when there is limited space to represent the entity.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the layout used when there is limited space to represent the entity.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         compact?: CompactLayout;
     }
     /**
-    * Represents a card layout that is best used for an entity.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a card layout that is best used for an entity.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface EntityCardLayout extends CardLayoutStandardProperties {
         /**
-        * Represents the type of this layout.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this layout.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layout?: EntityCardLayoutType.entity | "Entity";
     }
     /**
-    * Represents the types of the `ErrorCellValue` object.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the types of the `ErrorCellValue` object.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum ErrorCellValueType {
         /**
-        * Represents a `BlockedErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `BlockedErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         blocked = "Blocked",
         /**
-        * Represents a `BusyErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `BusyErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         busy = "Busy",
         /**
-        * Represents a `CalcErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `CalcErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         calc = "Calc",
         /**
-        * Represents a `ConnectErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `ConnectErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         connect = "Connect",
         /**
-        * Represents a `Div0ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `Div0ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         div0 = "Div0",
         /**
-        * Represents an `ExternalErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an `ExternalErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         external = "External",
         /**
-        * Represents a `FieldErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `FieldErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         field = "Field",
         /**
-        * Represents a `GettingDataErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `GettingDataErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         gettingData = "GettingData",
         /**
-        * Represents a `NotAvailableErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `NotAvailableErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         notAvailable = "NotAvailable",
         /**
-        * Represents a `NameErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `NameErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         name = "Name",
         /**
-        * Represents a `NullErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `NullErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         null = "Null",
         /**
-        * Represents a `NumErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `NumErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         num = "Num",
         /**
-        * Represents a `PlaceholderErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `PlaceholderErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         placeholder = "Placeholder",
         /**
-        * Represents a `PythonErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents a `PythonErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         python = "Python",
         /**
-        * Represents a `RefErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `RefErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         ref = "Ref",
         /**
-        * Represents a `SpillErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `SpillErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         spill = "Spill",
         /**
-        * Represents a `TimeoutErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents a `TimeoutErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         timeout = "Timeout",
         /**
-        * Represents a `ValueErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a `ValueErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         value = "Value"
     }
     /**
-    * Represents a cell value which contains an error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a cell value which contains an error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | PythonErrorCellValue | RefErrorCellValue | SpillErrorCellValue | TimeoutErrorCellValue | ValueErrorCellValue;
     /**
-    * Represents types of #EXTERNAL! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #EXTERNAL! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum ExternalErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #EXTERNAL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #EXTERNAL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown"
     }
     /**
-    * Represents the value of a cell containing an #EXTERNAL! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing an #EXTERNAL! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ExternalErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#EXTERNAL!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.external | "External";
         /**
-        * Represents the type of `ExternalErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ExternalErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: ExternalErrorCellValueSubType | "Unknown";
     }
     /**
-    * Represents the value of a cell containing an External Code Service Object, such as Python code formula.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents the value of a cell containing an External Code Service Object, such as Python code formula.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface ExternalCodeServiceObjectCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: CellValueType.externalCodeServiceObject | "ExternalCodeServiceObject";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicValue?: boolean | number | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
         /**
-        * Represents the preview value shown in the cell.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the preview value shown in the cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         preview?: CellValue;
         /**
         * Represents the runtime language of this external code service.
@@ -6065,260 +6067,260 @@ export declare namespace Excel {
         */
         Python_str: string;
         /**
-        * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
-        * This field is not writable.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.
+         * This field isn't writable.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         provider?: CellValueProviderAttributes;
     }
     /**
-    * Represents types of #FIELD! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #FIELD! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum FieldErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #FIELD! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #FIELD! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         webImageMissingFilePart = "WebImageMissingFilePart",
         /**
-        * An error caused by an error from a data provider. Displays as error type #FIELD! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by an error from a data provider. Displays as error type #FIELD! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         dataProviderError = "DataProviderError",
         /**
-        * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         richValueRelMissingFilePart = "RichValueRelMissingFilePart"
     }
     /**
-    * Represents the value of a cell containing a #FIELD! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #FIELD! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface FieldErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#FIELD!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.field | "Field";
         /**
-        * Represents the type of `FieldErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `FieldErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError" | "RichValueRelMissingFilePart";
         /**
-        * Represents the field which was not found by FIELDVALUE.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the field which was not found by FIELDVALUE.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         fieldName?: string;
     }
     /**
-    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
-    * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
+     * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface FormattedNumberCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.formattedNumber | "FormattedNumber";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue: number;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.double | "Double";
         /**
-        * Returns the number format string that is used to display this value.
-        * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
-        * Number format strings must conform to Excel guidelines.
-        * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Returns the number format string that is used to display this value.
+         * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
+         * Number format strings must conform to Excel guidelines.
+         * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         numberFormat: string;
     }
     /**
-    * Represents the value of a cell containing a #GETTING_DATA error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #GETTING_DATA error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface GettingDataErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#GETTING_DATA" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.gettingData | "GettingData";
     }
     /**
-    * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface LinkedEntityId {
         /**
-        * Represents which service was used to create the `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents which service was used to create the `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         serviceId: number;
         /**
-        * Represents a domain specific to a service used to create the `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents a domain specific to a service used to create the `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         domainId?: string;
         /**
-        * Represents an identifier specific to a service used to create the `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents an identifier specific to a service used to create the `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         entityId: string;
         /**
-        * Represents which language culture was used to create this `CellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents which language culture was used to create this `CellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         culture: string;
     }
     /**
-    * Represents a value whose properties derive from a service.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents a value whose properties derive from a service.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface LinkedEntityCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.linkedEntity | "LinkedEntity";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the service source that provided the information in this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the service source that provided the information in this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         id: LinkedEntityId;
         /**
-        * Represents the text shown when a cell with this value is rendered.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the text shown when a cell with this value is rendered.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         text?: string;
         /**
         * Represents the properties of this linked entity and their metadata.
@@ -6327,1783 +6329,1755 @@ export declare namespace Excel {
         * [Api set: ExcelApi 1.16]
         */
         properties?: {
-            [key: string]: CellValue & {
-                propertyMetadata?: CellValuePropertyMetadata;
-            };
+            [key: string]: EntityPropertyType;
         };
         /**
-        * Represents layout information for views of this linked entity.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents layout information for views of this linked entity.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         layouts?: EntityViewLayouts;
         /**
-        * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
-        * This information can be used for branding in entity cards.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
+         * This information can be used for branding in entity cards.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         provider?: CellValueProviderAttributes;
     }
     /**
-    * Represents the value of a cell containing a locally stored or generated image.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents the value of a cell containing a locally stored or generated image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface LocalImageCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: CellValueType.localImage | "LocalImage";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the image itself, either cached or encoded.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the image itself, either cached or encoded.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         image: LocalImageCellValueCacheId | Base64EncodedImage;
         /**
-        * Represents the alternate text used in accessibility scenarios to describe what the image represents.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the alternate text used in accessibility scenarios to describe what the image represents.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         altText?: string;
         /**
-        * Represents attribution information to describe the source and license requirements for this image.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents attribution information to describe the source and license requirements for this image.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         attribution?: CellValueAttributionAttributes[];
         /**
-        * Represents information that describes the entity or individual who provided the image.
-        * This information is used for branding purposes in image cards.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents information that describes the entity or individual who provided the image.
+         * This information is used for branding purposes in image cards.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         provider?: CellValueProviderAttributes;
     }
     /**
-    * The UID of a previously cached image.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * The UID of a previously cached image.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface LocalImageCellValueCacheId {
         /**
-        * Represents the image's UID as it appears in the cache.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the image's UID as it appears in the cache.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cachedUid: string;
     }
     /**
-    * Represents types of #N/A! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents types of #N/A! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     enum NotAvailableErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An unknown type of error. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unknown = "Unknown",
         /**
-        * An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by `VLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         vlookupValueNotFound = "VlookupValueNotFound",
         /**
-        * An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by `HLOOKUP` not finding its `lookup_value` in the search range. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         hlookupValueNotFound = "HlookupValueNotFound",
         /**
-        * An error caused by an invalid property argument to `STOCKHISTORY`. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an invalid property argument to `STOCKHISTORY`. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         stockHistoryInvalidProperty = "StockHistoryInvalidProperty",
         /**
-        * An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         stockHistoryNoData = "StockHistoryNoData",
         /**
-        * An error caused by an external code service returning an unknown object. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an external code service returning an unknown object. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonObjectUnknown = "PythonObjectUnknown",
         /**
-        * No match was found for the pattern in the text provided. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * No match was found for the pattern in the text provided. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexMatchNoResult = "ERegexMatchNoResult",
         /**
-        * Occurrence is greater than the total number of matches. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Occurrence is greater than the total number of matches. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexReplaceOccurrenceNoResult = "ERegexReplaceOccurrenceNoResult",
         /**
-        * No capture groups were matched. Displays as error type #N/A! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * No capture groups were matched. Displays as error type #N/A! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexMatchNoCapture = "ERegexMatchNoCapture"
     }
     /**
-    * Represents the value of a cell containing a #N/A! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #N/A! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface NotAvailableErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#N/A!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.notAvailable | "NotAvailable";
         /**
-        * Represents the type of `NotAvailableErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of `NotAvailableErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         errorSubType?: NotAvailableErrorCellValueSubType | "Unknown" | "VlookupValueNotFound" | "HlookupValueNotFound" | "StockHistoryInvalidProperty" | "StockHistoryNoData" | "PythonObjectUnknown" | "ERegexMatchNoResult" | "ERegexReplaceOccurrenceNoResult" | "ERegexMatchNoCapture";
     }
     /**
-    * Represents types of #NAME? errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents types of #NAME? errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     enum NameErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #NAME? in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An unknown type of error. Displays as error type #NAME? in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a formula containing an unsupported function. Displays as error type #NAME? in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a formula containing an unsupported function. Displays as error type #NAME? in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unsupportedFunction = "UnsupportedFunction"
     }
     /**
-    * Represents the value of a cell containing a #NAME? error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #NAME? error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface NameErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#NAME?" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.name | "Name";
         /**
-        * Represents the type of `NameErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of `NameErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         errorSubType?: NameErrorCellValueSubType | "Unknown" | "UnsupportedFunction";
     }
     /**
-    * Represents the value of a cell containing a #NULL! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #NULL! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface NullErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#NULL!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.null | "Null";
     }
     /**
-    * Represents types of #NUM! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #NUM! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum NumErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #NUM! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #NUM! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a cell's formula having an array parameter with too many rows or columns. The maximum number of rows and columns in an array parameter is 1048576. Displays as error type #NUM! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a cell's formula having an array parameter with too many rows or columns. The maximum number of rows and columns in an array parameter is 1048576. Displays as error type #NUM! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         arrayTooLarge = "ArrayTooLarge"
     }
     /**
-    * Represents the value of a cell containing a #NUM! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #NUM! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface NumErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#NUM!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.num | "Num";
         /**
-        * Represents the type of `NumErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `NumErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: NumErrorCellValueSubType | "Unknown" | "ArrayTooLarge";
         /**
-        * Represents the name of the function causing the error.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the name of the function causing the error.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         functionName?: string;
     }
     /**
-    * Represents types of #REF! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #REF! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum RefErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #REF! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksStructuredRef = "ExternalLinksStructuredRef",
         /**
-        * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         externalLinksCalculatedRef = "ExternalLinksCalculatedRef",
         /**
-        * An error caused by a corrupt formula. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a corrupt formula. Displays as error type #REF! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         corruptCellRef = "CorruptCellRef"
     }
     /**
-    * Represents the value of a cell containing a #REF! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #REF! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface RefErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#REF!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.ref | "Ref";
         /**
-        * Represents the type of `RefErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `RefErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef" | "CorruptCellRef";
     }
     /**
-    * Represents types of #SPILL! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #SPILL! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum SpillErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a dynamic array attempting to spill data into a cell that isn't empty. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a dynamic array attempting to spill data into a cell that isn't empty. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         collision = "Collision",
         /**
-        * An error caused by a dynamic array formula that can't be evaluated in a single calculation. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a dynamic array formula that can't be evaluated in a single calculation. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         indeterminateSize = "IndeterminateSize",
         /**
-        * An error caused by a dynamic array attempting to spill over the edge of the worksheet. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a dynamic array attempting to spill over the edge of the worksheet. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         worksheetEdge = "WorksheetEdge",
         /**
-        * An error caused by insufficient memory when attempting to calculate a dynamic array formula. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by insufficient memory when attempting to calculate a dynamic array formula. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         outOfMemoryWhileCalc = "OutOfMemoryWhileCalc",
         /**
-        * An error caused by entering a dynamic array formula in a table. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by entering a dynamic array formula in a table. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         table = "Table",
         /**
-        * An error caused by a merged cell blocking a dynamic array. Displays as error type #SPILL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a merged cell blocking a dynamic array. Displays as error type #SPILL! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         mergedCell = "MergedCell"
     }
     /**
-    * Represents the value of a cell containing a #SPILL! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #SPILL! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface SpillErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#SPILL!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.spill | "Spill";
         /**
-        * Represents the type of `SpillErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `SpillErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorSubType?: SpillErrorCellValueSubType | "Unknown" | "Collision" | "IndeterminateSize" | "WorksheetEdge" | "OutOfMemoryWhileCalc" | "Table" | "MergedCell";
         /**
-        * Represents the number of rows that would spill if there were no #SPILL! error.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the number of rows that would spill if there were no #SPILL! error.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         rowCount?: number;
         /**
-        * Represents the number of columns that would spill if there were no #SPILL! error.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the number of columns that would spill if there were no #SPILL! error.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         columnCount?: number;
     }
     /**
-    * Represents the value of a cell containing a string.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a string.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface StringCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.string | "String";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue: string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.string | "String";
     }
     /**
-    * Represents types of #TIMEOUT! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents types of #TIMEOUT! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     enum TimeoutErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #TIMEOUT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An unknown type of error. Displays as error type #TIMEOUT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         unknown = "Unknown",
         /**
-        * Python function timed out. Displays as error type #TIMEOUT! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Python function timed out. Displays as error type #TIMEOUT! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         pythonTimeoutLimitReached = "PythonTimeoutLimitReached"
     }
     /**
-    * Represents the value of a cell containing a #TIMEOUT! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents the value of a cell containing a #TIMEOUT! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
     export interface TimeoutErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicValue?: "#TIMEOUT!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         errorType?: ErrorCellValueType.timeout | "Timeout";
         /**
-        * Represents the type of `TimeoutErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * Represents the type of `TimeoutErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         errorSubType?: TimeoutErrorCellValueSubType | "Unknown" | "PythonTimeoutLimitReached";
     }
     /**
-    * Represents types of #VALUE! errors.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents types of #VALUE! errors.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     enum ValueErrorCellValueSubType {
         /**
-        * An unknown type of error. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An unknown type of error. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         unknown = "Unknown",
         /**
-        * An error caused by a column_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a column_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vlookupColumnIndexLessThanOne = "VlookupColumnIndexLessThanOne",
         /**
-        * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         vlookupResultNotFound = "VlookupResultNotFound",
         /**
-        * An error caused by a row_index_num parameter of HLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a row_index_num parameter of HLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         hlookupRowIndexLessThanOne = "HlookupRowIndexLessThanOne",
         /**
-        * An error caused by HLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by HLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         hlookupResultNotFound = "HlookupResultNotFound",
         /**
-        * An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         coerceStringToNumberInvalid = "CoerceStringToNumberInvalid",
         /**
-        * An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         coerceStringToBoolInvalid = "CoerceStringToBoolInvalid",
         /**
-        * An error caused by conversion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by conversion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         coerceStringToInvalidType = "CoerceStringToInvalidType",
         /**
-        * An error caused by SUBARRAY missing a start row. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by SUBARRAY missing a start row. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         subArrayStartRowMissingEndRowNot = "SubArrayStartRowMissingEndRowNot",
         /**
-        * An error caused by SUBARRAY missing a start column. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by SUBARRAY missing a start column. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         subArrayStartColumnMissingEndColumnNot = "SubArrayStartColumnMissingEndColumnNot",
         /**
-        * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         invalidImageUrl = "InvalidImageUrl",
         /**
-        * An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryNonTradingDays = "StockHistoryNonTradingDays",
         /**
-        * An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryNotAStock = "StockHistoryNotAStock",
         /**
-        * An error caused by passing an invalid date to STOCKHISTORY. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by passing an invalid date to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryInvalidDate = "StockHistoryInvalidDate",
         /**
-        * An error caused by passing an end_date parameter that precedes the start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by passing an end_date parameter that precedes the start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryEndBeforeStart = "StockHistoryEndBeforeStart",
         /**
-        * An error caused by passing a future start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by passing a future start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryStartInFuture = "StockHistoryStartInFuture",
         /**
-        * An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryInvalidEnum = "StockHistoryInvalidEnum",
         /**
-        * An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryOnlyDateRequested = "StockHistoryOnlyDateRequested",
         /**
-        * An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         stockHistoryNotFound = "StockHistoryNotFound",
         /**
-        * An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         lambdaWrongParamCount = "LambdaWrongParamCount",
         /**
-        * An error caused by passing too many arguments to an `IMAGE` function. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by passing too many arguments to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaTooManyArgs = "ImageFormulaTooManyArgs",
         /**
-        * An error caused by an unsupported image formula. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an unsupported image formula. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidImageFormat = "ImageFormulaInvalidImageFormat",
         /**
-        * An error caused by a non-string `source` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a non-string `source` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidSource = "ImageFormulaInvalidSource",
         /**
-        * An error caused by a non-string `alt_text` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a non-string `alt_text` parameter to an `IMAGE` function. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidAltText = "ImageFormulaInvalidAltText",
         /**
-        * An error caused by invalid size parameters to `IMAGE`. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by invalid size parameters to `IMAGE`. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidSizing = "ImageFormulaInvalidSizing",
         /**
-        * An error caused by too few arguments passed to `IMAGE`. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by too few arguments passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaNotEnoughArgs = "ImageFormulaNotEnoughArgs",
         /**
-        * An error caused by a non-numerical or invalid `height` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a non-numerical or invalid `height` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidHeight = "ImageFormulaInvalidHeight",
         /**
-        * An error caused by a non-numerical or invalid `width` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by a non-numerical or invalid `width` argument passed to `IMAGE`. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         imageFormulaInvalidWidth = "ImageFormulaInvalidWidth",
         /**
-        * An error caused by an argument with the wrong data type passed to a custom function. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by an argument with the wrong data type passed to a custom function. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         invalidCellValueTypeCoercion = "InvalidCellValueTypeCoercion",
         /**
-        * An error in the regex `pattern`. An unknown compile error has occurred. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. An unknown compile error has occurred. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexErrorGeneric = "CRegexErrorGeneric",
         /**
-        * An error in the regex `pattern`. \ at end of pattern. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \ at end of pattern. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexEndBackslash = "CRegexEndBackslash",
         /**
-        * An error in the regex `pattern`. \c at end of pattern. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \c at end of pattern. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexEndBackslashC = "CRegexEndBackslashC",
         /**
-        * An error in the regex `pattern`. Unrecognized character follows \. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unrecognized character follows \. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnknownEscape = "CRegexUnknownEscape",
         /**
-        * An error in the regex `pattern`. Number out of order in {} quantifier. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Number out of order in {} quantifier. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexQuantifierOutOfOrder = "CRegexQuantifierOutOfOrder",
         /**
-        * An error in the regex `pattern`. Number too big in quantifier {}. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Number too big in quantifier {}. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexQuantifierTooBig = "CRegexQuantifierTooBig",
         /**
-        * An error in the regex `pattern`. Missing terminating ] for character class. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing terminating ] for character class. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingSquareBracket = "CRegexMissingSquareBracket",
         /**
-        * An error in the regex `pattern`. Escape sequence is invalid in character class. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Escape sequence is invalid in character class. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexEscapeInvalidInClass = "CRegexEscapeInvalidInClass",
         /**
-        * An error in the regex `pattern`. Quantifier does not follow a repeatable item. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Quantifier doesn't follow a repeatable item. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexQuantifierInvalid = "CRegexQuantifierInvalid",
         /**
-        * An error in the regex `pattern`. Unrecognized character after (? or (?-. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unrecognized character after (? or (?-. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexInvalidAfterParensQuery = "CRegexInvalidAfterParensQuery",
         /**
-        * An error in the regex `pattern`. POSIX named classes are supported only within a class. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. POSIX named classes are supported only within a class. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexPosixClassNotInClass = "CRegexPosixClassNotInClass",
         /**
-        * An error in the regex `pattern`. POSIX collating elements are not supported. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. POSIX collating elements aren't supported. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexPosixNoSupportCollating = "CRegexPosixNoSupportCollating",
         /**
-        * An error in the regex `pattern`. Missing closing parenthesis. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing closing parenthesis. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingClosingParenthesis = "CRegexMissingClosingParenthesis",
         /**
-        * An error in the regex `pattern`. Reference to nonexistent subpattern. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Reference to nonexistent subpattern. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBadSubpatternReference = "CRegexBadSubpatternReference",
         /**
-        * An error in the regex `pattern`. Missing ) after (?# comment. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing ) after (?# comment. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingCommentClosing = "CRegexMissingCommentClosing",
         /**
-        * An error in the regex `pattern`. Parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexParenthesesNestTooDeep = "CRegexParenthesesNestTooDeep",
         /**
-        * An error in the regex `pattern`. Regular expression is too large. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Regular expression is too large. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexPatternTooLarge = "CRegexPatternTooLarge",
         /**
-        * An error in the regex `pattern`. Unmatched closing parenthesis. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unmatched closing parenthesis. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnmatchedClosingParenthesis = "CRegexUnmatchedClosingParenthesis",
         /**
-        * An error in the regex `pattern`. Missing closing parenthesis for condition. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing closing parenthesis for condition. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingConditionClosing = "CRegexMissingConditionClosing",
         /**
-        * An error in the regex `pattern`. Length of `lookbehind` assertion is not limited. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Length of `lookbehind` assertion isn't limited. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexLookbehindNotFixedLength = "CRegexLookbehindNotFixedLength",
         /**
-        * An error in the regex `pattern`. A relative value of zero is not allowed. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. A relative value of zero isn't allowed. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexZeroRelativeReference = "CRegexZeroRelativeReference",
         /**
-        * An error in the regex `pattern`. Conditional subpattern contains more than two branches. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Conditional subpattern contains more than two branches. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexTooManyConditionBranches = "CRegexTooManyConditionBranches",
         /**
-        * An error in the regex `pattern`. Digit expected after (?+ or (?-. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Digit expected after (?+ or (?-. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBadRelativeReference = "CRegexBadRelativeReference",
         /**
-        * An error in the regex `pattern`. Unknown POSIX class name. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unknown POSIX class name. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnknownPosixClass = "CRegexUnknownPosixClass",
         /**
-        * An error in the regex `pattern`. Character code point value in \x{} or \o{} is too large. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Character code point value in \x{} or \o{} is too large. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexCodePointTooBig = "CRegexCodePointTooBig",
         /**
-        * An error in the regex `pattern`. `lookbehind` is too complicated. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. `lookbehind` is too complicated. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexLookbehindTooComplicated = "CRegexLookbehindTooComplicated",
         /**
-        * An error in the regex `pattern`. PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. PCRE2 doesn't support \F, \L, \l, \N{name}, \U, or \u. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnsupportedEscapeSequence = "CRegexUnsupportedEscapeSequence",
         /**
-        * An error in the regex `pattern`. Number after (?C is greater than 255. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Number after (?C is greater than 255. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexCalloutNumberTooBig = "CRegexCalloutNumberTooBig",
         /**
-        * An error in the regex `pattern`. Closing parenthesis for (?C expected. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Closing parenthesis for (?C expected. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingCalloutClosing = "CRegexMissingCalloutClosing",
         /**
-        * An error in the regex `pattern`. Invalid escape sequence in (*VERB) name. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Invalid escape sequence in (*VERB) name. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexEscapeInvalidInVerb = "CRegexEscapeInvalidInVerb",
         /**
-        * An error in the regex `pattern`. Unrecongnized character after (?P. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unrecongnized character after (?P. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnrecognizedAfterQueryP = "CRegexUnrecognizedAfterQueryP",
         /**
-        * An error in the regex `pattern`. Syntax error in subpattern name (missing terminator?). Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Syntax error in subpattern name (missing terminator?). Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingNameTerminator = "CRegexMissingNameTerminator",
         /**
-        * An error in the regex `pattern`. Two named subpatterns have the same name. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Two named subpatterns have the same name. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexDuplicateSubpatternName = "CRegexDuplicateSubpatternName",
         /**
-        * An error in the regex `pattern`. Subpattern name must start with a non-digit. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Subpattern name must start with a non-digit. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexInvalidSubpatternName = "CRegexInvalidSubpatternName",
         /**
-        * An error in the regex `pattern`. This version of PCRE2 does not have support for \P, \p, or \X. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. This version of PCRE2 doesn't have support for \P, \p, or \X. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnicodePropertiesUnavailable = "CRegexUnicodePropertiesUnavailable",
         /**
-        * An error in the regex `pattern`. Malformed \P or \p sequence. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Malformed \P or \p sequence. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMalformedUnicodeProperty = "CRegexMalformedUnicodeProperty",
         /**
-        * An error in the regex `pattern`. Unknown property after \P or \p. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unknown property after \P or \p. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnknownUnicodeProperty = "CRegexUnknownUnicodeProperty",
         /**
-        * An error in the regex `pattern`. Subpattern name is too long. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Subpattern name is too long. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexSubpatternNameTooLong = "CRegexSubpatternNameTooLong",
         /**
-        * An error in the regex `pattern`. Too many named subpatterns. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Too many named subpatterns. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexTooManyNamedSubpatterns = "CRegexTooManyNamedSubpatterns",
         /**
-        * An error in the regex `pattern`. Invalid range in character class. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Invalid range in character class. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexClassInvalidRange = "CRegexClassInvalidRange",
         /**
-        * An error in the regex `pattern`. `DEFINE` subpattern contains more than one branch. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. `DEFINE` subpattern contains more than one branch. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexDefineTooManyBranches = "CRegexDefineTooManyBranches",
         /**
-        * An error in the regex `pattern`. Missing opening brace after \o. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing opening brace after \o. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashOMissingBrace = "CRegexBackslashOMissingBrace",
         /**
-        * An error in the regex `pattern`. \g is not followed by a braced, angle-bracketed, or quoted name or number, or by a plain number. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \g isn't followed by a braced, angle-bracketed, or quoted name or number, or by a plain number. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashGSyntax = "CRegexBackslashGSyntax",
         /**
-        * An error in the regex `pattern`. The recursive pattern call (?R must be followed by a closing parenthesis. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The recursive pattern call (?R must be followed by a closing parenthesis. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexParensQueryRMissingClosing = "CRegexParensQueryRMissingClosing",
         /**
-        * An error in the regex `pattern`. The (*VERB) is not recognized or is malformed. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The (*VERB) isn't recognized or is malformed. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexVerbUnknown = "CRegexVerbUnknown",
         /**
-        * An error in the regex `pattern`. The subpattern number exceeds the limit of 65,535. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The subpattern number exceeds the limit of 65,535. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexSubpatternNumberTooBig = "CRegexSubpatternNumberTooBig",
         /**
-        * An error in the regex `pattern`. Subpattern name expected. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Subpattern name expected. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexSubpatternNameExpected = "CRegexSubpatternNameExpected",
         /**
-        * An error in the regex `pattern`. A non-octal character in \o{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. A non-octal character in \o{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexInvalidOctal = "CRegexInvalidOctal",
         /**
-        * An error in the regex `pattern`. Different names for subpatterns of the same number are not allowed. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Different names for subpatterns of the same number aren't allowed. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexSubpatternNamesMismatch = "CRegexSubpatternNamesMismatch",
         /**
-        * An error in the regex `pattern`. The (*MARK) must have an argument. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The (*MARK) must have an argument. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMarkMissingArgument = "CRegexMarkMissingArgument",
         /**
-        * An error in the regex `pattern`. A non-hexadecimal character in \x{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. A non-hexadecimal character in \x{} is present. The most common reason for this error is a missing closing brace. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexInvalidHexadecimal = "CRegexInvalidHexadecimal",
         /**
-        * An error in the regex `pattern`. \c must be followed by a printable American Standard Code for Information Interchange (ASCII) character. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \c must be followed by a printable American Standard Code for Information Interchange (ASCII) character. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashCSyntax = "CRegexBackslashCSyntax",
         /**
-        * An error in the regex `pattern`. \N is not supported in class. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \N isn't supported in class. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashNInClass = "CRegexBackslashNInClass",
         /**
-        * An error in the regex `pattern`. The callout string is too long. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The callout string is too long. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexCalloutStringTooLong = "CRegexCalloutStringTooLong",
         /**
-        * An error in the regex `pattern`. Disallowed Unicode point (>= 0xD800 && <= 0xDFFF). Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Disallowed Unicode point (>= 0xD800 && <= 0xDFFF). Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexUnicodeDisallowedCodePoint = "CRegexUnicodeDisallowedCodePoint",
         /**
-        * An error in the regex `pattern`. A name is too long in (*MARK), (*PRUNE), (*SKIP), or (*THEN). Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. A name is too long in (*MARK), (*PRUNE), (*SKIP), or (*THEN). Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexVerbNameTooLong = "CRegexVerbNameTooLong",
         /**
-        * An error in the regex `pattern`. A character code point value in the \u... sequence is too large. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. A character code point value in the \u... sequence is too large. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashUCodePointTooBig = "CRegexBackslashUCodePointTooBig",
         /**
-        * An error in the regex `pattern`. Digits are missing in \x{}, \o{}, or \N{U+}. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Digits are missing in \x{}, \o{}, or \N{U+}. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexMissingOctalOrHexDigits = "CRegexMissingOctalOrHexDigits",
         /**
-        * An error in the regex `pattern`. There is a syntax error, or a number is too big in the (?(VERSION condition. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. There's a syntax error, or a number is too big in the (?(VERSION condition. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexVersionConditionSyntax = "CRegexVersionConditionSyntax",
         /**
-        * An error in the regex `pattern`. Missing terminating delimiter for callout with string argument. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Missing terminating delimiter for callout with string argument. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexCalloutNoStringDelimiter = "CRegexCalloutNoStringDelimiter",
         /**
-        * An error in the regex `pattern`. Unrecognized string delimiter follows (?C. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Unrecognized string delimiter follows (?C. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexCalloutBadStringDelimiter = "CRegexCalloutBadStringDelimiter",
         /**
-        * An error in the regex `pattern`. The (?|, (?J:, or (?x: parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The (?|, (?J:, or (?x: parentheses are too deeply nested. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexQueryBarjxNestTooDeep = "CRegexQueryBarjxNestTooDeep",
         /**
-        * An error in the regex `pattern`. Regular expression is too complicated. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Regular expression is too complicated. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexPatternTooComplicated = "CRegexPatternTooComplicated",
         /**
-        * An error in the regex `pattern`. `lookbehind` assertion is too long. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. `lookbehind` assertion is too long. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexLookbehindTooLong = "CRegexLookbehindTooLong",
         /**
-        * An error in the regex `pattern`. Pattern string is longer than the limit set by the application. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Pattern string is longer than the limit set by the application. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexPatternStringTooLong = "CRegexPatternStringTooLong",
         /**
-        * An error in the regex `pattern`. Invalid hyphen in option setting. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Invalid hyphen in option setting. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexInvalidHyphenInOptions = "CRegexInvalidHyphenInOptions",
         /**
-        * An error in the regex `pattern`. The (*alpha_assertion) isn't recognized. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. The (*alpha_assertion) isn't recognized. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexAlphaAssertionUnknown = "CRegexAlphaAssertionUnknown",
         /**
-        * An error in the regex `pattern`. Too many capturing groups (maximum 65535). Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Too many capturing groups (maximum 65535). Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexTooManyCaptures = "CRegexTooManyCaptures",
         /**
-        * An error in the regex `pattern`. Atomic assertion expected after (?( or (?(?C). Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. Atomic assertion expected after (?( or (?(?C). Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexConditionAtomicAssertionExpected = "CRegexConditionAtomicAssertionExpected",
         /**
-        * An error in the regex `pattern`. \K is not allowed in `lookarounds=`. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in the regex `pattern`. \K isn't allowed in `lookarounds=`. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         cRegexBackslashKInLookaround = "CRegexBackslashKInLookaround",
         /**
-        * An error in regex match. An unknown match error has occurred. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error in regex match. An unknown match error has occurred. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         mRegexErrorGeneric = "MRegexErrorGeneric",
         /**
-        * An error in regex match. Invalid replacement string. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexBadreplacement = "MRegexBadreplacement",
+         * An error in regex match. Invalid replacement string. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexBadReplacement = "MRegexBadReplacement",
         /**
-        * An error in regex match. Match limit exceeded. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexMatchlimit = "MRegexMatchlimit",
+         * An error in regex match. Match limit exceeded. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexMatchLimit = "MRegexMatchLimit",
         /**
-        * An error in regex match. Unknown substring. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexNosubstring = "MRegexNosubstring",
+         * An error in regex match. Unknown substring. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexNoSubstring = "MRegexNoSubstring",
         /**
-        * An error in regex match. Nonunique substring name. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexNouniquesubstring = "MRegexNouniquesubstring",
+         * An error in regex match. Matching depth limit exceeded. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexDepthLimit = "MRegexDepthLimit",
         /**
-        * An error in regex match. Matching depth limit exceeded. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexDepthlimit = "MRegexDepthlimit",
+         * An error in regex match. There's an incorrect escape sequence in the replacement string. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexBadReplacementEscape = "MRegexBadReplacementEscape",
         /**
-        * An error in regex match. There's an incorrect escape sequence in the replacement string. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexBadrepescape = "MRegexBadrepescape",
+         * An error in regex match. Expected closing curly bracket in replacement string. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexReplacementMissingBrace = "MRegexReplacementMissingBrace",
         /**
-        * An error in regex match. Expected closing curly bracket in replacement string. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexRepmissingbrace = "MRegexRepmissingbrace",
+         * An error in regex match. There's an incorrect substitution in the replacement string. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexBadSubstitution = "MRegexBadSubstitution",
         /**
-        * An error in regex match. There's an incorrect substitution in the replacement string. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexBadsubstitution = "MRegexBadsubstitution",
+         * An error in regex match. Recursive loop. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mRegexRecursiveLoop = "MRegexRecursiveLoop",
         /**
-        * An error in regex match. Match with end before start or start moved backwards is not supported. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexBadsubspattern = "MRegexBadsubspattern",
-        /**
-        * An error in regex match. Recursive loop. Displays as error type #VALUE! in Excel.
-        * Note: The name of this API is likely to change in the near future.
-        * 
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        mRegexRecurseLoop = "MRegexRecurseLoop",
-        /**
-        * An unknown regex error occurred. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An unknown regex error occurred. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexErrorGeneric = "ERegexErrorGeneric",
         /**
-        * No capture groups were found in the regex pattern. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * No capture groups were found in the regex pattern. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         eRegexNoCaptureGroups = "ERegexNoCaptureGroups",
         /**
-        * An error caused by the `text` parameter to `TRANSLATE` being too long. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused by the `text` parameter to `TRANSLATE` being too long. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         translateStringTooLong = "TranslateStringTooLong",
         /**
-        * An error caused because the `source_language` parameter to `TRANSLATE` is not supported. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused because the `source_language` parameter to `TRANSLATE` isn't supported. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         translateUnsupportedSrcLanguage = "TranslateUnsupportedSrcLanguage",
         /**
-        * An error caused because the `target_language` parameter to `TRANSLATE` is not supported. Displays as error type #VALUE! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
+         * An error caused because the `target_language` parameter to `TRANSLATE` isn't supported. Displays as error type #VALUE! in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
         translateUnsupportedTargetLanguage = "TranslateUnsupportedTargetLanguage"
     }
     /**
-    * Represents the value of a cell containing a #VALUE! error.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a #VALUE! error.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ValueErrorCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.error | "Error";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the type of `ErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of `ErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         errorType?: ErrorCellValueType.value | "Value";
         /**
-        * Represents the type of `ValueErrorCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
-        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount" | "ImageFormulaTooManyArgs" | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" | "ImageFormulaInvalidAltText" | "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" | "ImageFormulaInvalidHeight" | "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric" | "CRegexEndBackslash" | "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" | "CRegexQuantifierTooBig" | "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" | "CRegexQuantifierInvalid" | "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" | "CRegexPosixNoSupportCollating" | "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" | "CRegexMissingCommentClosing" | "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" | "CRegexUnmatchedClosingParenthesis" | "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" | "CRegexZeroRelativeReference" | "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" | "CRegexUnknownPosixClass" | "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" | "CRegexUnsupportedEscapeSequence" | "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" | "CRegexEscapeInvalidInVerb" | "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" | "CRegexDuplicateSubpatternName" | "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" | "CRegexMalformedUnicodeProperty" | "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" | "CRegexTooManyNamedSubpatterns" | "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" | "CRegexBackslashOMissingBrace" | "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" | "CRegexVerbUnknown" | "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" | "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" | "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" | "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" | "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" | "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" | "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" | "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" | "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadreplacement" | "MRegexMatchlimit" | "MRegexNosubstring" | "MRegexNouniquesubstring" | "MRegexDepthlimit" | "MRegexBadrepescape" | "MRegexRepmissingbrace" | "MRegexBadsubstitution" | "MRegexBadsubspattern" | "MRegexRecurseLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage";
+         * Represents the type of `ValueErrorCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount" | "ImageFormulaTooManyArgs" | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" | "ImageFormulaInvalidAltText" | "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" | "ImageFormulaInvalidHeight" | "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric" | "CRegexEndBackslash" | "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" | "CRegexQuantifierTooBig" | "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" | "CRegexQuantifierInvalid" | "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" | "CRegexPosixNoSupportCollating" | "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" | "CRegexMissingCommentClosing" | "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" | "CRegexUnmatchedClosingParenthesis" | "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" | "CRegexZeroRelativeReference" | "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" | "CRegexUnknownPosixClass" | "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" | "CRegexUnsupportedEscapeSequence" | "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" | "CRegexEscapeInvalidInVerb" | "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" | "CRegexDuplicateSubpatternName" | "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" | "CRegexMalformedUnicodeProperty" | "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" | "CRegexTooManyNamedSubpatterns" | "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" | "CRegexBackslashOMissingBrace" | "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" | "CRegexVerbUnknown" | "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" | "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" | "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" | "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" | "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" | "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" | "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" | "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" | "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadReplacement" | "MRegexMatchLimit" | "MRegexNoSubstring" | "MRegexDepthLimit" | "MRegexBadReplacementEscape" | "MRegexReplacementMissingBrace" | "MRegexBadSubstitution" | "MRegexRecursiveLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage";
     }
     /**
-    * Represents the value of a cell containing a type of value which cannot be serialized.
-    * For example, an #UNKNOWN! error which represents a type of rich value not known to this version of Excel.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing a type of value which cannot be serialized.
+     * For example, an #UNKNOWN! error which represents a type of rich value not known to this version of Excel.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface ValueTypeNotAvailableCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.notAvailable | "NotAvailable";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue: boolean | number | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
     }
     /**
-    * Represents the value of a cell containing an image downloaded from the internet.
-    *
-    * @remarks
-    * [Api set: ExcelApi 1.16]
-    */
+     * Represents the value of a cell containing an image downloaded from the internet.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
     export interface WebImageCellValue {
         /**
-        * Represents the type of this cell value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the type of this cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         type: CellValueType.webImage | "WebImage";
         /**
-        * Represents the value that would be returned by `Range.values` for a cell with this value.
-        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
-        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+         * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicValue?: "#VALUE!" | string;
         /**
-        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         basicType?: RangeValueType.error | "Error";
         /**
-        * Represents the URL from which the image will be downloaded.
-        * This image must be hosted on a server that supports HTTPS.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the URL from which the image will be downloaded.
+         * This image must be hosted on a server that supports HTTPS.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         address: string;
         /**
-        * Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         altText?: string;
         /**
-        * Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         relatedImagesAddress?: string;
         /**
-        * Represents attribution information to describe the source and license requirements for using this image.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents attribution information to describe the source and license requirements for using this image.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         attribution?: CellValueAttributionAttributes[];
         /**
-        * Represents information that describes the entity or individual who provided the image.
-        * This information can be used for branding in image cards.
-        *
-        * @remarks
-        * [Api set: ExcelApi 1.16]
-        */
+         * Represents information that describes the entity or individual who provided the image.
+         * This information can be used for branding in image cards.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
         provider?: CellValueProviderAttributes;
     }
     /**
@@ -8873,7 +8847,7 @@ export declare namespace Excel {
          */
         getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.LocalImage` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LocalImageData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -8980,7 +8954,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.AllowEditRange;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.AllowEditRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.AllowEditRangeData;
@@ -9078,7 +9052,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.AllowEditRangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.AllowEditRangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.AllowEditRangeCollectionData;
@@ -9359,7 +9333,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Query;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Query` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.QueryData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.QueryData;
@@ -9419,7 +9393,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.QueryCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.QueryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.QueryCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.QueryCollectionData;
@@ -9524,7 +9498,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.LinkedWorkbook;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.LinkedWorkbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.LinkedWorkbookData;
@@ -9601,7 +9575,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedWorkbookCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.LinkedWorkbookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.LinkedWorkbookCollectionData;
@@ -9855,7 +9829,7 @@ export declare namespace Excel {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Excel.DocumentTaskChange;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DocumentTaskChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DocumentTaskChangeData;
@@ -9910,7 +9884,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskChangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DocumentTaskChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.DocumentTaskChangeCollectionData;
@@ -10154,7 +10128,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DocumentTask;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DocumentTask` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DocumentTaskData;
@@ -10232,7 +10206,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DocumentTaskCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.DocumentTaskCollectionData;
@@ -10251,13 +10225,6 @@ export declare namespace Excel {
          */
         unknown = "Unknown",
         /**
-         * Contains a cube name for an OLAP data source.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        cube = "Cube",
-        /**
          * The data source type is a range in the current workbook.
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -10269,13 +10236,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.15]
          */
         localTable = "LocalTable",
-        /**
-         * Contains command text that the OLE DB provider (such as Power BI) understands.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        oledbDefault = "OledbDefault"
     }
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
@@ -13600,7 +13560,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Runtime;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Runtime` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RuntimeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RuntimeData;
@@ -13746,7 +13706,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ApplicationData;
@@ -13811,7 +13771,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.IterativeCalculation;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.IterativeCalculation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IterativeCalculationData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.IterativeCalculationData;
@@ -13898,6 +13858,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly names: Excel.NamedItemCollection;
+        /**
+         * Returns a collection of all the notes objects in the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly notes: Excel.NoteCollection;
         /**
          * Represents a collection of PivotTableStyles associated with the workbook.
          *
@@ -14255,7 +14223,7 @@ export declare namespace Excel {
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Workbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorkbookData;
@@ -14316,7 +14284,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorkbookProtection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorkbookProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookProtectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorkbookProtectionData;
@@ -14346,7 +14314,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorkbookCreated;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorkbookCreated` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorkbookCreatedData;
@@ -14417,6 +14385,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         readonly names: Excel.NamedItemCollection;
+        /**
+         * Returns a collection of all the notes objects in the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly notes: Excel.NoteCollection;
         /**
          * Gets the `PageLayout` object of the worksheet.
          *
@@ -14915,7 +14891,7 @@ export declare namespace Excel {
          */
         readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Worksheet` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorksheetData;
@@ -15209,7 +15185,7 @@ export declare namespace Excel {
          */
         readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
@@ -15371,7 +15347,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorksheetProtection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorksheetProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorksheetProtectionData;
@@ -15543,7 +15519,7 @@ export declare namespace Excel {
          */
         unfreeze(): void;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorksheetFreezePanes` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetFreezePanesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -16136,6 +16112,18 @@ export declare namespace Excel {
          */
         getDirectPrecedents(): Excel.WorkbookRangeAreas;
         /**
+         * Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.
+         * Unlike `getCellProperties`, which only shows properties that are set directly for the cell, this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param cellPropertiesLoadOptions - An object that represents which cell properties to load.
+         * @returns A 2D array where each item represents the requested display properties of the corresponding cell.
+         */
+        getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): OfficeExtension.ClientResult<CellProperties[][]>;
+        /**
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
          *
          * @remarks
@@ -16659,11 +16647,11 @@ export declare namespace Excel {
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeData;
@@ -17017,6 +17005,14 @@ export declare namespace Excel {
          */
         getUsedRangeAreasOrNullObject(valuesOnly?: boolean): Excel.RangeAreas;
         /**
+         * Selects the specified range areas in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        select(): void;
+        /**
          * Sets the `RangeAreas` to be recalculated when the next recalculation occurs.
          *
          * @remarks
@@ -17049,11 +17045,11 @@ export declare namespace Excel {
          */
         track(): Excel.RangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.RangeAreas;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeAreas` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeAreasData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeAreasData;
@@ -17133,11 +17129,11 @@ export declare namespace Excel {
          */
         track(): Excel.WorkbookRangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.WorkbookRangeAreas;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorkbookRangeAreas` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookRangeAreasData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorkbookRangeAreasData;
@@ -17778,7 +17774,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeView;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeView` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeViewData;
@@ -17829,7 +17825,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeViewCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.RangeViewCollectionData;
@@ -17909,7 +17905,7 @@ export declare namespace Excel {
          */
         readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.SettingCollectionData;
@@ -17974,7 +17970,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Setting;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Setting` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.SettingData;
@@ -18059,7 +18055,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.NamedItemCollectionData;
@@ -18215,7 +18211,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NamedItem;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NamedItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NamedItemData;
@@ -18283,7 +18279,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NamedItemArrayValues;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NamedItemArrayValues` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemArrayValuesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NamedItemArrayValuesData;
@@ -18381,7 +18377,7 @@ export declare namespace Excel {
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Binding` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.BindingData;
@@ -18526,7 +18522,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.BindingCollectionData;
@@ -18650,7 +18646,7 @@ export declare namespace Excel {
          */
         readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TableCollectionData;
@@ -18719,7 +18715,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableScopedCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TableScopedCollectionData;
@@ -18997,7 +18993,7 @@ export declare namespace Excel {
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableData;
@@ -19097,7 +19093,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TableColumnCollectionData;
@@ -19230,7 +19226,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableColumn;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableColumn` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableColumnData;
@@ -19353,7 +19349,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TableRowCollectionData;
@@ -19449,7 +19445,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableRow;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableRowData;
@@ -19559,7 +19555,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DataValidation;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DataValidation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataValidationData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DataValidationData;
@@ -19666,7 +19662,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RemoveDuplicatesResult;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RemoveDuplicatesResult` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RemoveDuplicatesResultData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RemoveDuplicatesResultData;
@@ -20027,7 +20023,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFormatData;
@@ -20085,7 +20081,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.FormatProtection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.FormatProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.FormatProtectionData;
@@ -20174,7 +20170,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFill;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFillData;
@@ -20254,7 +20250,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeBorder;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeBorderData;
@@ -20331,7 +20327,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.RangeBorderCollectionData;
@@ -20452,7 +20448,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RangeFontData;
@@ -20587,7 +20583,7 @@ export declare namespace Excel {
          */
         readonly onDeleted: OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartCollectionData;
@@ -20920,7 +20916,7 @@ export declare namespace Excel {
          */
         readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Chart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartData;
@@ -20992,7 +20988,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPivotOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPivotOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPivotOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPivotOptionsData;
@@ -21071,7 +21067,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAreaFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAreaFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAreaFormatData;
@@ -21139,7 +21135,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartSeriesCollectionData;
@@ -21596,7 +21592,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeries;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartSeries` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartSeriesData;
@@ -21654,7 +21650,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartSeriesFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartSeriesFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartSeriesFormatData;
@@ -21712,7 +21708,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartPointsCollectionData;
@@ -21813,7 +21809,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPoint;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPoint` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPointData;
@@ -21871,7 +21867,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPointFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPointFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPointFormatData;
@@ -21956,7 +21952,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxes;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAxes` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxesData;
@@ -22300,7 +22296,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxis;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAxis` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisData;
@@ -22365,7 +22361,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAxisFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisFormatData;
@@ -22446,7 +22442,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAxisTitle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisTitleData;
@@ -22511,7 +22507,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartAxisTitleFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartAxisTitleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;
@@ -22662,7 +22658,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabels;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartDataLabels` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataLabelsData;
@@ -22855,7 +22851,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabel;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartDataLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataLabelData;
@@ -22920,7 +22916,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataLabelFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartDataLabelFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
@@ -23006,7 +23002,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataTable;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartDataTable` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataTableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataTableData;
@@ -23071,7 +23067,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartDataTableFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartDataTableFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataTableFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartDataTableFormatData;
@@ -23150,7 +23146,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartErrorBars;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartErrorBars` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartErrorBarsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartErrorBarsData;
@@ -23201,7 +23197,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartErrorBarsFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartErrorBarsFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartErrorBarsFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartErrorBarsFormatData;
@@ -23259,7 +23255,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlines;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartGridlines` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartGridlinesData;
@@ -23310,7 +23306,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartGridlinesFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartGridlinesFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartGridlinesFormatData;
@@ -23424,7 +23420,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegend;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartLegend` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLegendData;
@@ -23510,7 +23506,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegendEntry;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartLegendEntry` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLegendEntryData;
@@ -23561,7 +23557,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartLegendEntryCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartLegendEntryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;
@@ -23626,7 +23622,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLegendFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartLegendFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLegendFormatData;
@@ -23691,7 +23687,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartMapOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartMapOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartMapOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartMapOptionsData;
@@ -23845,7 +23841,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTitle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTitleData;
@@ -23896,7 +23892,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartFormatString;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartFormatString` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFormatStringData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartFormatStringData;
@@ -23961,7 +23957,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTitleFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTitleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTitleFormatData;
@@ -23999,7 +23995,7 @@ export declare namespace Excel {
          */
         setSolidColor(color: string): void;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -24073,7 +24069,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartBorder;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBorderData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartBorderData;
@@ -24166,7 +24162,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartBinOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartBinOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBinOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartBinOptionsData;
@@ -24245,7 +24241,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartBoxwhiskerOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartBoxwhiskerOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBoxwhiskerOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartBoxwhiskerOptionsData;
@@ -24317,7 +24313,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartLineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartLineFormatData;
@@ -24403,7 +24399,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartFontData;
@@ -24531,7 +24527,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTrendline;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTrendline` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTrendlineData;
@@ -24600,7 +24596,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTrendlineCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;
@@ -24651,7 +24647,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTrendlineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTrendlineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTrendlineFormatData;
@@ -24788,7 +24784,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTrendlineLabel;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTrendlineLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTrendlineLabelData;
@@ -24853,7 +24849,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartTrendlineLabelFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartTrendlineLabelFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartTrendlineLabelFormatData;
@@ -24967,7 +24963,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPlotArea;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPlotArea` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPlotAreaData;
@@ -25025,7 +25021,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ChartPlotAreaFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ChartPlotAreaFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ChartPlotAreaFormatData;
@@ -25066,7 +25062,7 @@ export declare namespace Excel {
          */
         apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", methodString?: "PinYin" | "StrokeCount"): void;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -25161,7 +25157,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableSort;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableSort` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableSortData;
@@ -25389,7 +25385,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Filter;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Filter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.FilterData;
@@ -25602,7 +25598,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.AutoFilter;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.AutoFilter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AutoFilterData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.AutoFilterData;
@@ -25659,7 +25655,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CultureInfo;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CultureInfo` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CultureInfoData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CultureInfoData;
@@ -25716,7 +25712,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NumberFormatInfo;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NumberFormatInfo` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NumberFormatInfoData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NumberFormatInfoData;
@@ -25795,7 +25791,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DatetimeFormatInfo;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DatetimeFormatInfo` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DatetimeFormatInfoData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DatetimeFormatInfoData;
@@ -25897,7 +25893,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;
@@ -25977,7 +25973,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;
@@ -26050,7 +26046,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CustomXmlPart;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CustomXmlPartData;
@@ -26127,7 +26123,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableScopedCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotTableScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotTableScopedCollectionData;
@@ -26207,7 +26203,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotTableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotTableCollectionData;
@@ -26421,7 +26417,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotTable;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotTable` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotTableData;
@@ -26697,7 +26693,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotLayout;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotLayoutData;
@@ -26758,7 +26754,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotHierarchyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotHierarchyCollectionData;
@@ -26823,7 +26819,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotHierarchy;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotHierarchy` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotHierarchyData;
@@ -26899,7 +26895,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RowColumnPivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.RowColumnPivotHierarchyCollectionData;
@@ -26978,7 +26974,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RowColumnPivotHierarchy;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RowColumnPivotHierarchy` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.RowColumnPivotHierarchyData;
@@ -27054,7 +27050,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.FilterPivotHierarchyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.FilterPivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterPivotHierarchyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.FilterPivotHierarchyCollectionData;
@@ -27140,7 +27136,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.FilterPivotHierarchy;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.FilterPivotHierarchy` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.FilterPivotHierarchyData;
@@ -27215,7 +27211,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DataPivotHierarchyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DataPivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataPivotHierarchyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.DataPivotHierarchyCollectionData;
@@ -27315,7 +27311,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DataPivotHierarchy;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DataPivotHierarchy` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DataPivotHierarchyData;
@@ -27403,7 +27399,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotFieldCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotFieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotFieldCollectionData;
@@ -27584,7 +27580,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotField;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotField` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotFieldData;
@@ -27645,7 +27641,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotItemCollectionData;
@@ -27717,7 +27713,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotItem;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotItemData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotItemData;
@@ -28100,7 +28096,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorksheetCustomProperty;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorksheetCustomProperty` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.WorksheetCustomPropertyData;
@@ -28171,7 +28167,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCustomPropertyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.WorksheetCustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.WorksheetCustomPropertyCollectionData;
@@ -28299,7 +28295,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DocumentProperties;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DocumentProperties` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DocumentPropertiesData;
@@ -28371,7 +28367,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CustomProperty;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomProperty` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CustomPropertyData;
@@ -28449,7 +28445,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CustomPropertyCollectionData;
@@ -28546,7 +28542,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalFormatCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;
@@ -28792,14 +28788,14 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges.
+         * Returns the range the conditional format is applied to. Throws an error if the conditional format is applied to multiple ranges.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
+         * Returns the range to which the conditional format is applied. If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -28807,14 +28803,14 @@ export declare namespace Excel {
          */
         getRangeOrNullObject(): Excel.Range;
         /**
-         * Returns the `RangeAreas`, comprising one or more rectangular ranges, to which the conditonal format is applied.
+         * Returns the `RangeAreas`, comprising one or more rectangular ranges, to which the conditional format is applied.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         getRanges(): Excel.RangeAreas;
         /**
-         * Set the ranges that the conditonal format rule is applied to.
+         * Set the ranges that the conditional format rule is applied to.
          *
          * @remarks
          * [Api set: ExcelApi 1.17]
@@ -28844,7 +28840,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalFormatData;
@@ -28947,7 +28943,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.DataBarConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DataBarConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.DataBarConditionalFormatData;
@@ -29013,7 +29009,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalDataBarPositiveFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalDataBarPositiveFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;
@@ -29086,7 +29082,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalDataBarNegativeFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalDataBarNegativeFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarNegativeFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;
@@ -29166,7 +29162,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CustomConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CustomConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CustomConditionalFormatData;
@@ -29231,7 +29227,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalFormatRule;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalFormatRule` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalFormatRuleData;
@@ -29303,7 +29299,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.IconSetConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.IconSetConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.IconSetConditionalFormatData;
@@ -29397,7 +29393,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ColorScaleConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ColorScaleConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;
@@ -29513,7 +29509,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TopBottomConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TopBottomConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TopBottomConditionalFormatData;
@@ -29593,7 +29589,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PresetCriteriaConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PresetCriteriaConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;
@@ -29666,7 +29662,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TextConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TextConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TextConditionalFormatData;
@@ -29746,7 +29742,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CellValueConditionalFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CellValueConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CellValueConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CellValueConditionalFormatData;
@@ -29855,7 +29851,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalRangeFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeFormatData;
@@ -29941,7 +29937,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalRangeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeFontData;
@@ -29999,7 +29995,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeFill;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalRangeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeFillData;
@@ -30064,7 +30060,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ConditionalRangeBorder;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalRangeBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderData;
@@ -30161,7 +30157,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
@@ -30373,7 +30369,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Style;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Style` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.StyleData;
@@ -30453,7 +30449,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.StyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.StyleCollectionData;
@@ -30544,7 +30540,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableStyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TableStyleCollectionData;
@@ -30617,7 +30613,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TableStyle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableStyleData;
@@ -30708,7 +30704,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableStyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotTableStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableStyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PivotTableStyleCollectionData;
@@ -30781,7 +30777,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PivotTableStyle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PivotTableStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableStyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PivotTableStyleData;
@@ -30872,7 +30868,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SlicerStyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SlicerStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerStyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.SlicerStyleCollectionData;
@@ -30945,7 +30941,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.SlicerStyle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SlicerStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerStyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.SlicerStyleData;
@@ -31036,7 +31032,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TimelineStyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TimelineStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.TimelineStyleCollectionData;
@@ -31109,7 +31105,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TimelineStyle;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TimelineStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TimelineStyleData;
@@ -31386,7 +31382,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PageLayout;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PageLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageLayoutData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PageLayoutData;
@@ -31555,7 +31551,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.HeaderFooter;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.HeaderFooter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.HeaderFooterData;
@@ -31646,7 +31642,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.HeaderFooterGroup;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.HeaderFooterGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterGroupData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.HeaderFooterGroupData;
@@ -31708,7 +31704,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.PageBreak;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PageBreak` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageBreakData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.PageBreakData;
@@ -31773,7 +31769,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PageBreakCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.PageBreakCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageBreakCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.PageBreakCollectionData;
@@ -31796,7 +31792,7 @@ export declare namespace Excel {
          */
         refreshAll(): void;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.DataConnectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataConnectionCollectionData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -31847,7 +31843,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.RangeCollectionData;
@@ -31898,7 +31894,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeAreasCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.RangeAreasCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeAreasCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.RangeAreasCollectionData;
@@ -32087,7 +32083,7 @@ export declare namespace Excel {
          */
         readonly onDeleted: OfficeExtension.EventHandlers<Excel.CommentDeletedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CommentCollectionData;
@@ -32251,7 +32247,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Comment;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Comment` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CommentData;
@@ -32342,7 +32338,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentReplyCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.CommentReplyCollectionData;
@@ -32506,7 +32502,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.CommentReply;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.CommentReply` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.CommentReplyData;
@@ -32669,7 +32665,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ShapeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.ShapeCollectionData;
@@ -33045,7 +33041,7 @@ export declare namespace Excel {
          */
         readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Shape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeData;
@@ -33095,7 +33091,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.GeometricShape;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.GeometricShape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.GeometricShapeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.GeometricShapeData;
@@ -33152,7 +33148,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Image;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Image` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ImageData;
@@ -33216,7 +33212,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ShapeGroup;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ShapeGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeGroupData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeGroupData;
@@ -33287,7 +33283,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.GroupShapeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.GroupShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.GroupShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.GroupShapeCollectionData;
@@ -33470,7 +33466,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Line;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Line` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LineData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.LineData;
@@ -33551,7 +33547,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ShapeFill;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeFillData;
@@ -33637,7 +33633,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ShapeLineFormat;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ShapeLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeLineFormatData;
@@ -33779,7 +33775,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TextFrame;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TextFrameData;
@@ -33847,7 +33843,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.TextRange;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TextRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextRangeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TextRangeData;
@@ -33933,7 +33929,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.ShapeFont;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.ShapeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeFontData;
@@ -34122,7 +34118,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Slicer;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Slicer` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.SlicerData;
@@ -34204,7 +34200,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SlicerCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SlicerCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.SlicerCollectionData;
@@ -34278,7 +34274,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.SlicerItem;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SlicerItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerItemData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.SlicerItemData;
@@ -34348,7 +34344,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SlicerItemCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SlicerItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
@@ -34475,7 +34471,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.LinkedDataType;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.LinkedDataType` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.LinkedDataTypeData;
@@ -34560,7 +34556,7 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedDataTypeCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.LinkedDataTypeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.LinkedDataTypeCollectionData;
@@ -38857,12 +38853,6 @@ export declare namespace Excel {
          */
         visualSelectionChanged = "VisualSelectionChanged",
         /**
-         * `AgaveVisualUpdate` represents the type of an event that is associated with an agave visual and carries a new data view following a data change.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        agaveVisualUpdate = "AgaveVisualUpdate",
-        /**
          * `TableAdded` represents the type of event registered on a `TableCollection` and occurs when a table is added.
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -41771,7 +41761,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.NamedSheetView;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NamedSheetView` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedSheetViewData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.NamedSheetViewData;
@@ -41884,10 +41874,179 @@ export declare namespace Excel {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedSheetViewCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.NamedSheetViewCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedSheetViewCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.NamedSheetViewCollectionData;
+    }
+    /**
+     * Represents a collection of note objects that are part of the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class NoteCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.Note[];
+        /**
+         * Adds a new note to the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param cellAddress
+        - * @param content
+        - * @returns
+         */
+        add(cellAddress: Range | string, content: any): Excel.Note;
+        /**
+         * Gets the number of notes in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a note object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index
+        - * @returns
+         */
+        getItemAt(index: number): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.NoteCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NoteCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.NoteCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NoteCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.NoteCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NoteCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.NoteCollectionData;
+    }
+    /**
+     * Represents a note in the workbook or worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Note extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the author of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly authorName: string;
+        /**
+         * Gets or sets the text of the note. The string must be fewer than 256 characters.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content: string;
+        /**
+         * Specifies the height of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height: number;
+        /**
+         * Specifies the visibility of the note. A value of `true` means the note is shown.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        visible: boolean;
+        /**
+         * Specifies the width of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.NoteUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Note): void;
+        /**
+         * Deletes the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Gets the cell where this note is located.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getLocation(): Excel.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.NoteLoadOptions): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Note;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.Note` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NoteData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.NoteData;
     }
     /**
      * An object containing the result of a function-evaluation operation
@@ -41934,7 +42093,7 @@ export declare namespace Excel {
             expand?: string;
         }): FunctionResult<T>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `FunctionResult<T>` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Interfaces.FunctionResultData<T>;
@@ -45685,7 +45844,7 @@ export declare namespace Excel {
          */
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.Functions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
@@ -50736,6 +50895,45 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface for updating data on the `NoteCollection` object, for use in `noteCollection.set({ ... })`. */
+        export interface NoteCollectionUpdateData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
+        export interface NoteUpdateData {
+            /**
+             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             /**
@@ -51164,6 +51362,14 @@ export declare namespace Excel {
             */
             names?: Excel.Interfaces.NamedItemData[];
             /**
+            * Returns a collection of all the notes objects in the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            notes?: Excel.Interfaces.NoteData[];
+            /**
             * Represents a collection of PivotTableStyles associated with the workbook.
             *
             * @remarks
@@ -51389,6 +51595,14 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.4]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            /**
+            * Returns a collection of all the notes objects in the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            notes?: Excel.Interfaces.NoteData[];
             /**
             * Gets the `PageLayout` object of the worksheet.
             *
@@ -57697,6 +57911,53 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `namedSheetViewCollection.toJSON()`. */
         export interface NamedSheetViewCollectionData {
             items?: Excel.Interfaces.NamedSheetViewData[];
+        }
+        /** An interface describing the data returned by calling `noteCollection.toJSON()`. */
+        export interface NoteCollectionData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface describing the data returned by calling `note.toJSON()`. */
+        export interface NoteData {
+            /**
+             * Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: string;
+            /**
+             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
         }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
@@ -69527,6 +69788,112 @@ export declare namespace Excel {
              * [Api set: ExcelApiOnline 1.1]
              */
             name?: boolean;
+        }
+        /**
+         * Represents a collection of note objects that are part of the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface NoteCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the text of the note. The string must be fewer than 256 characters.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
+         * Represents a note in the workbook or worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface NoteLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
         }
         /**
          * An object containing the result of a function-evaluation operation

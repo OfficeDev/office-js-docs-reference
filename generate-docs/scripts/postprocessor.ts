@@ -176,13 +176,13 @@ tryCatch(async () => {
                             
                             fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
                                 .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                                .replace(/\\\*/gm, "*")); // Fix asterisk protection.
+                                ); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                            .replace(/\\\*/gm, "*")); // Fix asterisk protection.
+                            ); // Fix asterisk protection.
                     }
                 });
         });

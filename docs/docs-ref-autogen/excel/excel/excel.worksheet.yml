@@ -232,6 +232,18 @@ properties:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
+  - name: notes
+    uid: 'excel!Excel.Worksheet#notes:member'
+    package: excel!
+    fullName: notes
+    summary: Returns a collection of all the notes objects in the worksheet.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly notes: Excel.NoteCollection;'
+      return:
+        type: '<xref uid="excel!Excel.NoteCollection:class" />'
   - name: pageLayout
     uid: 'excel!Excel.Worksheet#pageLayout:member'
     package: excel!
@@ -1358,7 +1370,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Excel.Worksheet` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
