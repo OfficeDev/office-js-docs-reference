@@ -182,7 +182,8 @@ tryCatch(async () => {
                         
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                            .replace(/\\\*(.+)/gm, "*$1")); // Fix asterisk protection.
+                            .replace(/description: \\\*\n/g, "*") // Remove descriptions that are just "\*".
+                            .replace(/\\\*/g, "*")); // Fix asterisk protection.
                     }
                 });
         });
