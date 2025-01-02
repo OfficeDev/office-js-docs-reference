@@ -11,25 +11,25 @@ fields:
   - name: brokenLinkedData
     uid: 'excel!Excel.LinkedDataTypeState.brokenLinkedData:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BrokenLinkedData"'
   - name: disambiguationNeeded
     uid: 'excel!Excel.LinkedDataTypeState.disambiguationNeeded:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"DisambiguationNeeded"'
   - name: fetchingData
     uid: 'excel!Excel.LinkedDataTypeState.fetchingData:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FetchingData"'
   - name: none
     uid: 'excel!Excel.LinkedDataTypeState.none:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: validLinkedData
     uid: 'excel!Excel.LinkedDataTypeState.validLinkedData:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ValidLinkedData"'

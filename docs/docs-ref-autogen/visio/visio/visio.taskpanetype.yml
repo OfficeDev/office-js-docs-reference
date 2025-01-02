@@ -16,7 +16,7 @@ fields:
     summary: |-
       Data Visualizer Organization Mapping pane.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"DataVisualizerOrgChartMappings"'
   - name: dataVisualizerProcessMappings
     uid: 'visio!Visio.TaskPaneType.dataVisualizerProcessMappings:member'
@@ -24,7 +24,7 @@ fields:
     summary: |-
       Data Visualizer Process Mapping pane.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"DataVisualizerProcessMappings"'
   - name: none
     uid: 'visio!Visio.TaskPaneType.none:member'
@@ -32,5 +32,5 @@ fields:
     summary: |-
       No task pane.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"None"'

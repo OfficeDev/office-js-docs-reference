@@ -46,7 +46,7 @@ fields:
     summary: |-
       Error state.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Error"'
   - name: warning
     uid: 'word!Word.ContentControlState.warning:member'
@@ -54,5 +54,5 @@ fields:
     summary: |-
       Warning state.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Warning"'

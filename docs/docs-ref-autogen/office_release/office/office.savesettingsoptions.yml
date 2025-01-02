@@ -28,7 +28,7 @@ properties:
     package: office!
     fullName: overwriteIfStale
     summary: >-
-      \*\*Warning\*\*: This setting has been deprecated and should not be used. It has no effect on most platforms and
+      **Warning**: This setting has been deprecated and should not be used. It has no effect on most platforms and
       will cause errors if set to `false` in Excel on the web.
     remarks: ''
     isPreview: false

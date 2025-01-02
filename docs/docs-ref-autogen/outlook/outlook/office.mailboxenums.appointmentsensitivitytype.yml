@@ -8,8 +8,8 @@ remarks: >-
   \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -48,7 +48,7 @@ fields:
     summary: |-
       Treat the item as personal.
 
-      \*\*Important\*\*: The Personal sensitivity level is only supported in Outlook on Windows.
+      **Important**: The Personal sensitivity level is only supported in Outlook on Windows.
     value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
@@ -61,5 +61,5 @@ fields:
     summary: |-
       Treat the item as confidential.
 
-      \*\*Important\*\*: The Confidential sensitivity level is only supported in Outlook on Windows.
+      **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
     value: '"confidential"'

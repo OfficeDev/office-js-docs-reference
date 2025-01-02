@@ -10,7 +10,7 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*Known issue with HTML table border colors\*\*
+  **Known issue with HTML table border colors**
 
 
   Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a
@@ -18,13 +18,13 @@ remarks: >-
   \#1818](https://github.com/OfficeDev/office-js/issues/1818)<!-- -->.
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -91,21 +91,21 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - If the user is running add-ins that implement the [on-send
@@ -132,7 +132,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
@@ -221,21 +221,21 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - If the user is running add-ins that implement the [on-send
@@ -262,7 +262,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
@@ -299,17 +299,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
@@ -382,17 +382,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
@@ -476,17 +476,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
+      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
       the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
       [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
@@ -545,17 +545,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
+      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
       the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
       [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
@@ -584,21 +584,21 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
@@ -618,7 +618,7 @@ methods:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -638,7 +638,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -718,21 +718,21 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
@@ -752,7 +752,7 @@ methods:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -772,7 +772,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -809,21 +809,21 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
 
 
       - In a [Smart Alerts
@@ -853,7 +853,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
@@ -943,21 +943,21 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
 
 
       - In a [Smart Alerts
@@ -987,7 +987,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
@@ -1023,21 +1023,21 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - After the body is replaced with the specified content, the position of the cursor depends on which client the
@@ -1055,11 +1055,11 @@ methods:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
-      \*\*Undo\*\* command.
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -1079,7 +1079,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -1195,21 +1195,21 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
       parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - After the body is replaced with the specified content, the position of the cursor depends on which client the
@@ -1227,11 +1227,11 @@ methods:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
-      \*\*Undo\*\* command.
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -1251,7 +1251,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -1292,24 +1292,24 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
@@ -1323,7 +1323,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
@@ -1414,24 +1414,24 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       - SVG files aren't supported. Use JPG or PNG files instead.
@@ -1445,7 +1445,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
@@ -1481,17 +1481,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1524,7 +1524,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.
@@ -1628,17 +1628,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - In Outlook on the web and [new Outlook on
@@ -1671,7 +1671,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.

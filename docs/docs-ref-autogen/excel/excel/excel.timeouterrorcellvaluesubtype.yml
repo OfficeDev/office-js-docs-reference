@@ -15,7 +15,7 @@ fields:
       Python function timed out. Displays as error type \#TIMEOUT! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"PythonTimeoutLimitReached"'
   - name: unknown
@@ -25,6 +25,6 @@ fields:
       An unknown type of error. Displays as error type \#TIMEOUT! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'

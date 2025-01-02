@@ -13,17 +13,17 @@ remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*restricted\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **restricted**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
-  \*\*Important\*\*: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
+  **Important**: Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -37,17 +37,17 @@ methods:
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.

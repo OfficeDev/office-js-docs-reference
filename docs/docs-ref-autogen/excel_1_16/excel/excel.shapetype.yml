@@ -11,25 +11,25 @@ fields:
   - name: geometricShape
     uid: 'excel!Excel.ShapeType.geometricShape:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"GeometricShape"'
   - name: group
     uid: 'excel!Excel.ShapeType.group:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Group"'
   - name: image
     uid: 'excel!Excel.ShapeType.image:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Image"'
   - name: line
     uid: 'excel!Excel.ShapeType.line:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Line"'
   - name: unsupported
     uid: 'excel!Excel.ShapeType.unsupported:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Unsupported"'

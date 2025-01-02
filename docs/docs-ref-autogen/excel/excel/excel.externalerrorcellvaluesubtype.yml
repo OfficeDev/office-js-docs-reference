@@ -14,5 +14,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
 
-      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

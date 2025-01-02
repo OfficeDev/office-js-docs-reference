@@ -18,7 +18,7 @@ methods:
       Office application. For more information, see [Add custom keyboard shortcuts to your Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts)<!-- -->.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       - [KeyboardShortcuts
@@ -112,7 +112,7 @@ methods:
       add-ins](https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins)<!--
       -->.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       - [KeyboardShortcuts
@@ -155,7 +155,7 @@ methods:
     fullName: replaceShortcuts(shortcuts)
     summary: Replaces existing add-in shortcuts with custom shortcuts for the user.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       - [KeyboardShortcuts

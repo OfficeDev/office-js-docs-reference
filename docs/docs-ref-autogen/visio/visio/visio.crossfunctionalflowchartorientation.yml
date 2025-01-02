@@ -14,7 +14,7 @@ fields:
     summary: |-
       Horizontal Cross Functional Flowchart.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Horizontal"'
   - name: vertical
     uid: 'visio!Visio.CrossFunctionalFlowchartOrientation.vertical:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       Vertical Cross Functional Flowchart.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Vertical"'

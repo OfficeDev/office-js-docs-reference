@@ -33,7 +33,7 @@ fields:
     summary: |-
       ContentControlAdded represents the event a content control has been added to the document.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: 'word!Word.EventType.contentControlDataChanged:member'
@@ -41,7 +41,7 @@ fields:
     summary: |-
       ContentControlDataChanged represents the event that the data in the content control have been changed.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: 'word!Word.EventType.contentControlDeleted:member'
@@ -49,7 +49,7 @@ fields:
     summary: |-
       ContentControlDeleted represents the event that the content control has been deleted.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: 'word!Word.EventType.contentControlEntered:member'
@@ -57,7 +57,7 @@ fields:
     summary: |-
       Represents that a content control has been entered.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: 'word!Word.EventType.contentControlExited:member'
@@ -65,7 +65,7 @@ fields:
     summary: |-
       Represents that a content control has been exited.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'
@@ -73,5 +73,5 @@ fields:
     summary: |-
       ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
 
-      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'

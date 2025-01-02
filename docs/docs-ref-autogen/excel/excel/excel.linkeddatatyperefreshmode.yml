@@ -15,7 +15,7 @@ fields:
       Manual refresh. Refresh does not get triggered automatically.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Manual"'
   - name: onLoad
@@ -25,7 +25,7 @@ fields:
       Refresh on workbook load only.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"OnLoad"'
   - name: periodic
@@ -35,7 +35,7 @@ fields:
       Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Periodic"'
   - name: unknown
@@ -45,6 +45,6 @@ fields:
       Refresh mode is unknown or unsupported.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'

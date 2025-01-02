@@ -7,14 +7,14 @@ summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
   exists as a property of Office. It's accessed using `Office.context`<!-- -->.
 remarks: >-
-  \*\*Support details\*\*
+  **Support details**
 
 
   For more information about Office application and server requirements, see [Requirements for running Office
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-  \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+  *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
   </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel
   </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable
   </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td>
@@ -33,7 +33,7 @@ properties:
     fullName: commerceAllowed
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
-      \*\*Applications\*\*: Excel, Word
+      **Applications**: Excel, Word
 
 
       `commerceAllowed` is only supported in Office on iPad.
@@ -74,18 +74,18 @@ properties:
     fullName: contentLanguage
     summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
-      The `contentLanguage` value reflects the \*\*Editing Language\*\* setting specified with \*\*File\*\* &gt;
-      \*\*Options\*\* &gt; \*\*Language\*\* in the Office application.
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt;
+      **Options** &gt; **Language** in the Office application.
 
 
-      \*\*Support details\*\*
+      **Support details**
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
       </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong>
       Excel </strong></td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not
       applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td>
@@ -132,7 +132,7 @@ properties:
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
     remarks: >-
-      \*\*Important\*\*: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
+      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
@@ -167,21 +167,21 @@ properties:
       The returned value is a string in the RFC 1766 Language tag format, such as en-US.
 
 
-      The `displayLanguage` value reflects the current \*\*Display Language\*\* setting specified with \*\*File\*\* &gt;
-      \*\*Options\*\* &gt; \*\*Language\*\* in the Office application.
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File** &gt;
+      **Options** &gt; **Language** in the Office application.
 
 
       When using in Outlook, the applicable modes are Compose or Read.
 
 
-      \*\*Support details\*\*
+      **Support details**
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows
       </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong>
       Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not
       applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td>
@@ -259,7 +259,7 @@ properties:
     fullName: host
     summary: Contains the Office application in which the add-in is running.
     remarks: >-
-      \*\*Important\*\*: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
@@ -313,17 +313,17 @@ properties:
     fullName: mailbox
     summary: Provides access to the Microsoft Outlook add-in object model.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Key properties\*\*:
+      **Key properties**:
 
 
       - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook add-in.
@@ -465,7 +465,7 @@ properties:
     fullName: platform
     summary: Provides the platform on which the add-in is running.
     remarks: >-
-      \*\*Important\*\*:
+      **Important**:
 
 
       - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
@@ -560,14 +560,14 @@ properties:
       The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox,
       so it's available to that add-in when it is running from any client application used to access that mailbox.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -605,14 +605,14 @@ properties:
       \[ [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -654,7 +654,7 @@ properties:
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
       device, such as an iPad; false otherwise.
     remarks: >-
-      \*\*Applications\*\*: Excel, PowerPoint, Word
+      **Applications**: Excel, PowerPoint, Word
 
 
       `touchEnabled` is only supported in Office on iPad.
@@ -724,24 +724,24 @@ properties:
     fullName: urls
     summary: Gets the object to retrieve the runtime URLs of an add-in.
     remarks: >-
-      \*\*Applications\*\*: Outlook on the web and on Windows
+      **Applications**: Outlook on the web and on Windows
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic clients)
 
 
       \[ [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task

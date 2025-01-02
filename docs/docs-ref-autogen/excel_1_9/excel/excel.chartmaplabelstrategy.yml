@@ -11,15 +11,15 @@ fields:
   - name: bestFit
     uid: 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BestFit"'
   - name: none
     uid: 'excel!Excel.ChartMapLabelStrategy.none:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: showAll
     uid: 'excel!Excel.ChartMapLabelStrategy.showAll:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ShowAll"'

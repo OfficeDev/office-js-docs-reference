@@ -14,7 +14,7 @@ fields:
     summary: |-
       The Boolean document property type.
 
-      \* \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Boolean"'
   - name: date
     uid: 'powerpoint!PowerPoint.DocumentPropertyType.date:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       The Date document property type.
 
-      \* \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Date"'
   - name: number
     uid: 'powerpoint!PowerPoint.DocumentPropertyType.number:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       The Number document property type.
 
-      \* \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Number"'
   - name: string
     uid: 'powerpoint!PowerPoint.DocumentPropertyType.string:member'
@@ -38,5 +38,5 @@ fields:
     summary: |-
       The String document property type.
 
-      \* \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"String"'

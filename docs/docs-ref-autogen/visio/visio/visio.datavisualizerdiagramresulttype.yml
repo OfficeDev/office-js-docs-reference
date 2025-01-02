@@ -14,7 +14,7 @@ fields:
     summary: |-
       Conflict error in operation.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"ConflictError"'
   - name: success
     uid: 'visio!Visio.DataVisualizerDiagramResultType.success:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Operation is successful.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Success"'
   - name: unexpected
     uid: 'visio!Visio.DataVisualizerDiagramResultType.unexpected:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       Unexpected error during operation.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Unexpected"'
   - name: validationError
     uid: 'visio!Visio.DataVisualizerDiagramResultType.validationError:member'
@@ -38,5 +38,5 @@ fields:
     summary: |-
       Validation error in operation.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"ValidationError"'

@@ -14,12 +14,12 @@ remarks: >-
   \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Message Read
 
 
-  \*\*Important\*\*: This enum can only be used to assign values to the
+  **Important**: This enum can only be used to assign values to the
   [moveItemTo](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member)
   property of the
   [event.completed](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
@@ -78,12 +78,12 @@ fields:
   - name: DeletedItemsFolder
     uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder:member'
     package: outlook!
-    summary: Specifies that a reported message is moved to the \*\*Deleted Items\*\* folder of the mailbox.
+    summary: Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.
     value: '"deletedItemsFolder"'
   - name: JunkFolder
     uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.JunkFolder:member'
     package: outlook!
-    summary: Specifies that a reported message is moved to the \*\*Junk Email\*\* folder of the mailbox.
+    summary: Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.
     value: '"junkFolder"'
   - name: NoMove
     uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.NoMove:member'

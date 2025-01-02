@@ -7,7 +7,7 @@ summary: >-
   Provides methods for an add-in to request permission from a user to access their device capabilities. A user's device
   capabilities include their camera, geolocation, and microphone.
 remarks: >-
-  \*\*Applications\*\*: This API is supported by the following Office applications when running in Chromium-based
+  **Applications**: This API is supported by the following Office applications when running in Chromium-based
   browsers, such as Microsoft Edge and Google Chrome.
 
 
@@ -27,7 +27,7 @@ remarks: >-
   Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
 
-  \*\*Requirement set\*\*: [DevicePermission
+  **Requirement set**: [DevicePermission
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 isPreview: false
 isDeprecated: false
@@ -42,7 +42,7 @@ methods:
 
 
       All the requested permissions are displayed in a single modal dialog to the user. The dialog includes options to
-      \*\*Allow\*\*, \*\*Allow once\*\*, or \*\*Deny\*\* the requested permissions.
+      **Allow**, **Allow once**, or **Deny** the requested permissions.
 
 
       This method returns a promise. Use it with Excel, PowerPoint, and Word add-ins.
@@ -55,7 +55,7 @@ methods:
       capability, as the permission is already set. If a user denies access to a device capability, the promise rejects
       with a "User denied the permission request" error message.
     remarks: >-
-      \*\*Important\*\*:
+      **Important**:
 
 
       - This method isn't supported in Outlook add-ins. Use the `requestPermissionsAsync` method instead.
@@ -68,16 +68,16 @@ methods:
       will return an error.
 
 
-      - If a user selects \*\*Allow\*\* from the dialog, the permission persists until the add-in is uninstalled or
+      - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or
       until the cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s
       access to their camera or microphone, they must uninstall the add-in or clear their browser cache.
 
 
-      - If a user selects \*\*Allow Once\*\* from the dialog, the permission persists until the browser tab or window in
+      - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in
       which the add-in is running is closed.
 
 
-      - If a user selects \*\*Deny\*\* from the dialog, the user will be requested for permissions again the next time
+      - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time
       the add-in requires access to the user's device capabilities.
 
 
@@ -140,12 +140,12 @@ methods:
 
 
       All the requested permissions are displayed in a single modal dialog to the user. The dialog includes options to
-      \*\*Allow\*\*, \*\*Allow once\*\*, or \*\*Deny\*\* the requested permissions.
+      **Allow**, **Allow once**, or **Deny** the requested permissions.
 
 
       This method accepts a callback function. Use it with Outlook add-ins.
     remarks: >-
-      \*\*Important\*\*:
+      **Important**:
 
 
       - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
@@ -158,16 +158,16 @@ methods:
       error.
 
 
-      - If a user selects \*\*Allow\*\* from the dialog, the permission persists until the add-in is uninstalled or
+      - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or
       until the cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s
       access to their camera or microphone, they must uninstall the add-in or clear their browser cache.
 
 
-      - If a user selects \*\*Allow Once\*\* from the dialog, the permission persists until the browser tab or window in
+      - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in
       which the add-in is running is closed.
 
 
-      - If a user selects \*\*Deny\*\* from the dialog, the user will be requested for permissions again the next time
+      - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time
       the add-in requires access to the user's device capabilities.
 
 
@@ -216,12 +216,12 @@ methods:
 
 
       All the requested permissions are displayed in a single modal dialog to the user. The dialog includes options to
-      \*\*Allow\*\*, \*\*Allow once\*\*, or \*\*Deny\*\* the requested permissions.
+      **Allow**, **Allow once**, or **Deny** the requested permissions.
 
 
       This method accepts a callback function. Use it with Outlook add-ins.
     remarks: >-
-      \*\*Important\*\*:
+      **Important**:
 
 
       - For Excel, PowerPoint, and Word add-ins, use the `requestPermissions` method instead.
@@ -234,16 +234,16 @@ methods:
       error.
 
 
-      - If a user selects \*\*Allow\*\* from the dialog, the permission persists until the add-in is uninstalled or
+      - If a user selects **Allow** from the dialog, the permission persists until the add-in is uninstalled or
       until the cache of the browser on which the add-in is running is cleared. If a user wants to change an add-in’s
       access to their camera or microphone, they must uninstall the add-in or clear their browser cache.
 
 
-      - If a user selects \*\*Allow Once\*\* from the dialog, the permission persists until the browser tab or window in
+      - If a user selects **Allow Once** from the dialog, the permission persists until the browser tab or window in
       which the add-in is running is closed.
 
 
-      - If a user selects \*\*Deny\*\* from the dialog, the user will be requested for permissions again the next time
+      - If a user selects **Deny** from the dialog, the user will be requested for permissions again the next time
       the add-in requires access to the user's device capabilities.
 
 

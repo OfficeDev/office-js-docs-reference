@@ -10,7 +10,7 @@ remarks: >-
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 
 
-  \*\*Requirement set\*\*: [RibbonAPI
+  **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false

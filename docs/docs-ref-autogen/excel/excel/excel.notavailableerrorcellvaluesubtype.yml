@@ -15,7 +15,7 @@ fields:
       No capture groups were matched. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ERegexMatchNoCapture"'
   - name: eRegexMatchNoResult
@@ -25,7 +25,7 @@ fields:
       No match was found for the pattern in the text provided. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ERegexMatchNoResult"'
   - name: eRegexReplaceOccurrenceNoResult
@@ -35,7 +35,7 @@ fields:
       Occurrence is greater than the total number of matches. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ERegexReplaceOccurrenceNoResult"'
   - name: hlookupValueNotFound
@@ -46,7 +46,7 @@ fields:
       Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"HlookupValueNotFound"'
   - name: pythonObjectUnknown
@@ -56,7 +56,7 @@ fields:
       An error caused by an external code service returning an unknown object. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"PythonObjectUnknown"'
   - name: stockHistoryInvalidProperty
@@ -66,7 +66,7 @@ fields:
       An error caused by an invalid property argument to `STOCKHISTORY`<!-- -->. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"StockHistoryInvalidProperty"'
   - name: stockHistoryNoData
@@ -76,7 +76,7 @@ fields:
       An error caused by no data being available for a `STOCKHISTORY` function. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"StockHistoryNoData"'
   - name: unknown
@@ -86,7 +86,7 @@ fields:
       An unknown type of error. Displays as error type \#N/A! in Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'
   - name: vlookupValueNotFound
@@ -97,6 +97,6 @@ fields:
       Excel.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"VlookupValueNotFound"'

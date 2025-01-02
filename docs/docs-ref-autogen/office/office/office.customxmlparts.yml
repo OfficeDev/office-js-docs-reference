@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlParts:interface'
 package: office!
 fullName: Office.CustomXmlParts
 summary: Represents a collection of CustomXmlPart objects.
-remarks: '\*\*Applications\*\*: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,7 +15,7 @@ methods:
     fullName: 'addAsync(xml, options, callback)'
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     fullName: 'addAsync(xml, callback)'
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -107,7 +107,7 @@ methods:
     fullName: 'getByIdAsync(id, options, callback)'
     summary: Asynchronously gets the specified custom XML part by its ID.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -164,7 +164,7 @@ methods:
     fullName: 'getByIdAsync(id, callback)'
     summary: Asynchronously gets the specified custom XML part by its ID.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -192,7 +192,7 @@ methods:
     fullName: 'getByNamespaceAsync(ns, options, callback)'
     summary: Asynchronously gets the specified custom XML parts by its namespace.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -224,7 +224,7 @@ methods:
     fullName: 'getByNamespaceAsync(ns, callback)'
     summary: Asynchronously gets the specified custom XML parts by its namespace.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 

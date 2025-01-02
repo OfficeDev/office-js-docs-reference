@@ -14,7 +14,7 @@ fields:
     summary: |-
       Microsoft Excel workbook.
 
-      \* \[ [API set: 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Excel"'
   - name: unknown
     uid: 'visio!Visio.DataSourceType.unknown:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       Unknown Data Source.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Unknown"'

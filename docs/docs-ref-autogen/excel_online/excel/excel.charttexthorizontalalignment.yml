@@ -11,25 +11,25 @@ fields:
   - name: center
     uid: 'excel!Excel.ChartTextHorizontalAlignment.center:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Center"'
   - name: distributed
     uid: 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Distributed"'
   - name: justify
     uid: 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Justify"'
   - name: left
     uid: 'excel!Excel.ChartTextHorizontalAlignment.left:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Left"'
   - name: right
     uid: 'excel!Excel.ChartTextHorizontalAlignment.right:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Right"'

@@ -8,8 +8,8 @@ remarks: >-
   \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 
 

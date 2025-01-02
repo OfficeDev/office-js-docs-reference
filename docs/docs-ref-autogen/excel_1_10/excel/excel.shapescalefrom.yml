@@ -11,15 +11,15 @@ fields:
   - name: scaleFromBottomRight
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ScaleFromBottomRight"'
   - name: scaleFromMiddle
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ScaleFromMiddle"'
   - name: scaleFromTopLeft
     uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ScaleFromTopLeft"'

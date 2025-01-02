@@ -16,8 +16,8 @@ remarks: >-
   \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 
 
@@ -64,8 +64,8 @@ fields:
     uid: 'outlook!Office.MailboxEnums.SendModeOverride.PromptUser:member'
     package: outlook!
     summary: >-
-      Provides the \*\*Send Anyway\*\* option in a Smart Alerts dialog when the mail item doesn't meet the conditions of
-      the event-based add-in. To learn more, see the [\*\*prompt user\*\* send mode
+      Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of
+      the event-based add-in. To learn more, see the [**prompt user** send mode
       option](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user)<!--
       -->.
     value: '"promptUser"'

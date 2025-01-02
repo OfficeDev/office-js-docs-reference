@@ -33,7 +33,7 @@ fields:
       previously saved.
 
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Prompt"'
   - name: save
     uid: 'excel!Excel.SaveBehavior.save:member'
@@ -43,5 +43,5 @@ fields:
       default location.
 
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Save"'

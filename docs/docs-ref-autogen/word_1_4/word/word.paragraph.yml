@@ -321,7 +321,7 @@ properties:
     fullName: listItemOrNullObject
     summary: >-
       Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -337,7 +337,7 @@ properties:
     fullName: listOrNullObject
     summary: >-
       Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -393,7 +393,7 @@ properties:
     summary: >-
       Gets the content control that contains the paragraph. If there isn't a parent content control, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -436,7 +436,7 @@ properties:
     summary: >-
       Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -452,7 +452,7 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -934,7 +934,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next paragraph. If the paragraph is the last one, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -1004,7 +1004,7 @@ methods:
     fullName: getPreviousOrNullObject()
     summary: >-
       Gets the previous paragraph. If the paragraph is the first one, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: |-

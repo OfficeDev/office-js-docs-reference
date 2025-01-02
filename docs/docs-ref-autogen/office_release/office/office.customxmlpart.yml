@@ -6,7 +6,7 @@ fullName: Office.CustomXmlPart
 summary: >-
   Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
   collection.
-remarks: '\*\*Applications\*\*: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -108,7 +108,7 @@ methods:
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -151,7 +151,7 @@ methods:
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -261,7 +261,7 @@ methods:
     fullName: 'deleteAsync(options, callback)'
     summary: Deletes the Custom XML Part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -285,7 +285,7 @@ methods:
     fullName: deleteAsync(callback)
     summary: Deletes the Custom XML Part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -330,7 +330,7 @@ methods:
     fullName: 'getNodesAsync(xPath, options, callback)'
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -361,9 +361,9 @@ methods:
     uid: 'office!Office.CustomXmlPart#getNodesAsync:member(2)'
     package: office!
     fullName: 'getNodesAsync(xPath, callback)'
-    summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath. / \*
+    summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath. / *
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -418,7 +418,7 @@ methods:
     fullName: 'getXmlAsync(options, callback)'
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -443,7 +443,7 @@ methods:
     fullName: getXmlAsync(callback)
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -489,7 +489,7 @@ methods:
     fullName: 'removeHandlerAsync(eventType, handler, options, callback)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -524,7 +524,7 @@ methods:
     fullName: 'removeHandlerAsync(eventType, handler, callback)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 

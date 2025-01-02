@@ -11,17 +11,17 @@ remarks: >-
   \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read/write item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 
 
-  \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
 
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
@@ -39,17 +39,17 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
       subscription.
 
 
@@ -86,17 +86,17 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
       subscription.
 
 
@@ -154,17 +154,17 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
@@ -175,7 +175,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Tip\*\*: To determine the sensitivity labels available for use, call the
+      **Tip**: To determine the sensitivity labels available for use, call the
       `Office.context.sensitivityLabelsCatalog.getAsync` method.
 
 
@@ -217,17 +217,17 @@ methods:
       \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*:
+      **Important**:
 
 
       - To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
@@ -238,7 +238,7 @@ methods:
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
-      \*\*Tip\*\*: To determine the sensitivity labels available for use, call the
+      **Tip**: To determine the sensitivity labels available for use, call the
       `Office.context.sensitivityLabelsCatalog.getAsync` method.
 
 

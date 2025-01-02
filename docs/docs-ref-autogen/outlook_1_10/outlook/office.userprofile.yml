@@ -7,13 +7,13 @@ summary: >-
   Information about the user associated with the mailbox. This includes their account type, display name, email address,
   and time zone.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -26,19 +26,19 @@ properties:
     summary: |-
       Gets the account type of the user associated with the mailbox.
 
-      \*\*Note\*\*: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
+      **Note**: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       The possible account types are listed in the following table.
@@ -51,9 +51,9 @@ properties:
       account.</td> </tr> </table>
 
 
-      \*\*Note\*\*: For hybrid Exchange environments, the returned account type value depends on where the mailbox is
-      hosted. If the mailbox is on an on-premises server, the account type value is \*\*enterprise\*\*. However, if it's
-      hosted on Exchange Online, the account type value is \*\*office365\*\*.
+      **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is
+      hosted. If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's
+      hosted on Exchange Online, the account type value is **office365**.
 
 
       #### Examples
@@ -76,14 +76,14 @@ properties:
     fullName: displayName
     summary: Gets the user's display name.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -108,14 +108,14 @@ properties:
     fullName: emailAddress
     summary: Gets the user's SMTP email address.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -146,14 +146,14 @@ properties:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->), the default time
       zone in the calendar preferences is returned instead.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples

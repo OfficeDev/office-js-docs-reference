@@ -33,16 +33,16 @@ fields:
   - name: Black
     uid: 'office!Office.ThemeId.Black:member'
     package: office!
-    summary: The currently selected Office theme is \*\*Black\*\*.
+    summary: The currently selected Office theme is **Black**.
   - name: Colorful
     uid: 'office!Office.ThemeId.Colorful:member'
     package: office!
-    summary: The currently selected Office theme is \*\*Colorful\*\*.
+    summary: The currently selected Office theme is **Colorful**.
   - name: DarkGray
     uid: 'office!Office.ThemeId.DarkGray:member'
     package: office!
-    summary: The currently selected Office theme is \*\*Dark Gray\*\*.
+    summary: The currently selected Office theme is **Dark Gray**.
   - name: White
     uid: 'office!Office.ThemeId.White:member'
     package: office!
-    summary: The currently selected Office theme is \*\*White\*\*.
+    summary: The currently selected Office theme is **White**.

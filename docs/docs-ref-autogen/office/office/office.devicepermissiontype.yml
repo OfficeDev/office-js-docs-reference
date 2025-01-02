@@ -5,7 +5,7 @@ package: office!
 fullName: Office.DevicePermissionType
 summary: Specifies the device capability to which an add-in is requesting access.
 remarks: >-
-  \*\*Applications\*\*: This API is supported by the following Office applications when running in Chromium-based
+  **Applications**: This API is supported by the following Office applications when running in Chromium-based
   browsers, such as Microsoft Edge and Google Chrome.
 
 
@@ -25,7 +25,7 @@ remarks: >-
   Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
 
-  \*\*Requirement set\*\*: [DevicePermission
+  **Requirement set**: [DevicePermission
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
 
@@ -113,7 +113,7 @@ fields:
       The add-in is requesting access to the user's geolocation.
 
 
-      \*\*Important\*\*: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on
+      **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on
       Windows.
   - name: microphone
     uid: 'office!Office.DevicePermissionType.microphone:member'

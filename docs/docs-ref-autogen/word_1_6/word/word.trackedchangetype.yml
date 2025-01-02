@@ -46,7 +46,7 @@ fields:
     summary: |-
       Add change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Added"'
   - name: deleted
     uid: 'word!Word.TrackedChangeType.deleted:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       Delete change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Deleted"'
   - name: formatted
     uid: 'word!Word.TrackedChangeType.formatted:member'
@@ -62,7 +62,7 @@ fields:
     summary: |-
       Format change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Formatted"'
   - name: none
     uid: 'word!Word.TrackedChangeType.none:member'
@@ -70,5 +70,5 @@ fields:
     summary: |-
       No revision.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'

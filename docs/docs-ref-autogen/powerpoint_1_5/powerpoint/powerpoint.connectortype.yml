@@ -50,7 +50,7 @@ fields:
     summary: |-
       Curve connector type
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Curve"'
   - name: elbow
     uid: 'powerpoint!PowerPoint.ConnectorType.elbow:member'
@@ -58,7 +58,7 @@ fields:
     summary: |-
       Elbow connector type
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Elbow"'
   - name: straight
     uid: 'powerpoint!PowerPoint.ConnectorType.straight:member'
@@ -66,5 +66,5 @@ fields:
     summary: |-
       Straight connector type
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Straight"'

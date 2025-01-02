@@ -14,7 +14,7 @@ fields:
     summary: |-
       DataVisualizer diagram operation complete Event Message.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '1'
   - name: none
     uid: 'visio!Visio.MessageType.none:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       No message.
 
-      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      * \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '0'
