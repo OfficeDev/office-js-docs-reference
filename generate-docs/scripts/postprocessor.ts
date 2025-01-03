@@ -176,14 +176,14 @@ tryCatch(async () => {
                             
                             fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
                                 .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                                .replace(/description: \\\*\n/g, "description:") // Remove descriptions that are just "\*".
+                                .replace(/description: \\\*[\r\n]/gm, "description:") // Remove descriptions that are just "\*".
                                 .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
                         
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
                             .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
-                            .replace(/description: \\\*\n/g, "description:") // Remove descriptions that are just "\*".
+                            .replace(/description: \\\*[\r\n]/g, "description:") // Remove descriptions that are just "\*".
                             .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                     }
                 });

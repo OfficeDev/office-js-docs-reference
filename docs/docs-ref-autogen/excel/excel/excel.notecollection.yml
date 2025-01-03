@@ -48,10 +48,10 @@ methods:
       content: 'add(cellAddress: Range | string, content: any): Excel.Note;'
       parameters:
         - id: cellAddress
-          description: *
+          description:
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
-          description: *
+          description:
           type: any
       return:
         type: '<xref uid="excel!Excel.Note:class" />'
@@ -81,7 +81,7 @@ methods:
       content: 'getItemAt(index: number): Excel.Note;'
       parameters:
         - id: index
-          description: *
+          description:
           type: number
       return:
         type: '<xref uid="excel!Excel.Note:class" />'
