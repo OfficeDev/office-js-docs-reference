@@ -40,7 +40,7 @@ methods:
     uid: 'excel!Excel.NoteCollection#add:member(1)'
     package: excel!
     fullName: 'add(cellAddress, content)'
-    summary: Adds a new note to the collection.
+    summary: Adds a new note with the given content on the given cell.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -48,10 +48,12 @@ methods:
       content: 'add(cellAddress: Range | string, content: any): Excel.Note;'
       parameters:
         - id: cellAddress
-          description: ''
+          description: >-
+            The cell to which the note is added. This can be a `Range` object or a string such as "A1". If the string is
+            invalid, or the range is not a single cell, an `InvalidCellAddress` error is thrown.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
-          description: ''
+          description: The text of the note.
           type: any
       return:
         type: '<xref uid="excel!Excel.Note:class" />'
@@ -81,7 +83,7 @@ methods:
       content: 'getItemAt(index: number): Excel.Note;'
       parameters:
         - id: index
-          description: ''
+          description: The index value of the note to be retrieved. Zero-indexed.
           type: number
       return:
         type: '<xref uid="excel!Excel.Note:class" />'

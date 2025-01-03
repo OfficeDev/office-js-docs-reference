@@ -8132,7 +8132,7 @@ export declare namespace Excel {
         /**
         * Specifies whether to load on the `textRuns` property.
         *
-        * [Api set: RangeTextRun]
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         */
         textRuns?: boolean;
     }
@@ -8335,7 +8335,7 @@ export declare namespace Excel {
         /**
         * Represents the `textRuns` property.
         *
-        * [Api set: RangeTextRun]
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         */
         textRuns?: RangeTextRun[];
     }
@@ -41892,15 +41892,14 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Note[];
         /**
-         * Adds a new note to the collection.
+         * Adds a new note with the given content on the given cell.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param cellAddress
-        - * @param content
-        - * @returns
+         * @param cellAddress - The cell to which the note is added. This can be a `Range` object or a string such as "A1". If the string is invalid, or the range is not a single cell, an `InvalidCellAddress` error is thrown.
+         * @param content - The text of the note.
          */
         add(cellAddress: Range | string, content: any): Excel.Note;
         /**
@@ -41909,7 +41908,6 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
-         * @returns
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
@@ -41919,8 +41917,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param index
-        - * @returns
+         * @param index - The index value of the note to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Note;
         /**
