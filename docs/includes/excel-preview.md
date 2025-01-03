@@ -107,6 +107,17 @@
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
+|[Note](/javascript/api/excel/excel.note)|[authorName](/javascript/api/excel/excel.note#excel-excel-note-authorname-member)|Gets the author of the note.|
+||[content](/javascript/api/excel/excel.note#excel-excel-note-content-member)|Gets or sets the text of the note.|
+||[delete()](/javascript/api/excel/excel.note#excel-excel-note-delete-member(1))|Deletes the note.|
+||[getLocation()](/javascript/api/excel/excel.note#excel-excel-note-getlocation-member(1))|Gets the cell where this note is located.|
+||[height](/javascript/api/excel/excel.note#excel-excel-note-height-member)|Specifies the height of the note.|
+||[visible](/javascript/api/excel/excel.note#excel-excel-note-visible-member)|Specifies the visibility of the note.|
+||[width](/javascript/api/excel/excel.note#excel-excel-note-width-member)|Specifies the width of the note.|
+|[NoteCollection](/javascript/api/excel/excel.notecollection)|[add(cellAddress: Range \| string, content: any)](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1))|Adds a new note to the collection.|
+||[getCount()](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getcount-member(1))|Gets the number of notes in the collection.|
+||[getItemAt(index: number)](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemat-member(1))|Gets a note object by its index in the collection.|
+||[items](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-items-member)|Gets the loaded child items in this collection.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
@@ -119,7 +130,9 @@
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
 |[Range](/javascript/api/excel/excel.range)|[clearOrResetContents()](/javascript/api/excel/excel.range#excel-excel-range-clearorresetcontents-member(1))|Clears the values of the cells in the range, with special consideration given to cells containing controls.|
 ||[control](/javascript/api/excel/excel.range#excel-excel-range-control-member)|Accesses the cell control applied to this range.|
+||[getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions)](/javascript/api/excel/excel.range#excel-excel-range-getdisplayedcellproperties-member(1))|Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other properties.|
 |[RangeAreas](/javascript/api/excel/excel.rangeareas)|[clearOrResetContents()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clearorresetcontents-member(1))|Clears the values of the cells in the ranges, with special consideration given to cells containing controls.|
+||[select()](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-select-member(1))|Selects the specified range areas in the Excel UI.|
 |[RangeTextRun](/javascript/api/excel/excel.rangetextrun)|[font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)||
 ||[text](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-text-member)||
 |[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
@@ -156,10 +169,12 @@
 |[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[linkedDataTypes](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkeddatatypes-member)|Returns a collection of linked data types that are part of the workbook.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
+||[notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)|Returns a collection of all the notes objects in the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
+|[Worksheet](/javascript/api/excel/excel.worksheet)|[notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)|Returns a collection of all the notes objects in the worksheet.|
+||[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
 ||[tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)|Returns a collection of tasks that are present in the worksheet.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))|Inserts the specified worksheets of a workbook into the current workbook.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)|Occurs when any worksheet's filter is applied in the workbook.|

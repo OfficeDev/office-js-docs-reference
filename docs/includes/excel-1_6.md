@@ -32,8 +32,8 @@
 ||[dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member)|Returns the data bar properties if the current conditional format is a data bar.|
 ||[dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databarornullobject-member)|Returns the data bar properties if the current conditional format is a data bar.|
 ||[delete()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-delete-member(1))|Deletes this conditional format.|
-||[getRange()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrange-member(1))|Returns the range the conditonal format is applied to.|
-||[getRangeOrNullObject()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrangeornullobject-member(1))|Returns the range to which the conditonal format is applied.|
+||[getRange()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrange-member(1))|Returns the range the conditional format is applied to.|
+||[getRangeOrNullObject()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrangeornullobject-member(1))|Returns the range to which the conditional format is applied.|
 ||[iconSet](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconset-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
 ||[iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconsetornullobject-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
 ||[id](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-id-member)|The priority of the conditional format in the current `ConditionalFormatCollection`.|

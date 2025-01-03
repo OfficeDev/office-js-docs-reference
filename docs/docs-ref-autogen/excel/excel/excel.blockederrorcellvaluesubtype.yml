@@ -101,7 +101,7 @@ fields:
     uid: 'excel!Excel.BlockedErrorCellValueSubType.environmentExceedsTakerQuotaMonthly:member'
     package: excel!
     summary: >-
-      An error caused by the user who is not licensed for a feature which uses an external code service exceeding their
+      An error caused by the user who isn't licensed for a feature which uses an external code service exceeding their
       monthly quota of external code service execution environments. Displays as error type \#BLOCKED! in Excel.
 
 

@@ -1583,6 +1583,30 @@ methods:
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
+  - name: getDisplayedCellProperties(cellPropertiesLoadOptions)
+    uid: 'excel!Excel.Range#getDisplayedCellProperties:member(1)'
+    package: excel!
+    fullName: getDisplayedCellProperties(cellPropertiesLoadOptions)
+    summary: >-
+      Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other
+      properties. Unlike `getCellProperties`<!-- -->, which only shows properties that are set directly for the cell,
+      this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions):
+        OfficeExtension.ClientResult<CellProperties[][]>;
+      parameters:
+        - id: cellPropertiesLoadOptions
+          description: An object that represents which cell properties to load.
+          type: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
+          />[][]&gt;
+        description: A 2D array where each item represents the requested display properties of the corresponding cell.
   - name: getEntireColumn()
     uid: 'excel!Excel.Range#getEntireColumn:member(1)'
     package: excel!
@@ -3523,7 +3547,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Excel.Range` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
@@ -3647,7 +3671,7 @@ methods:
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
