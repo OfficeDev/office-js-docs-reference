@@ -46,7 +46,7 @@ fields:
     uid: 'excel!Excel.CalcErrorCellValueSubType.eRegexReplaceCharLimit:member'
     package: excel!
     summary: >-
-      An error caused by text that is longer than 65,535 characters. Displays as error type \#CALC! in Excel.
+      An error caused by text that's longer than 65,535 characters. Displays as error type \#CALC! in Excel.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

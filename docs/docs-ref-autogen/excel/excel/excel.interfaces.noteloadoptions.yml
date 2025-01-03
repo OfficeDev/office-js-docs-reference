@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: Excel.Interfaces.NoteLoadOptions
+uid: 'excel!Excel.Interfaces.NoteLoadOptions:interface'
+package: excel!
+fullName: Excel.Interfaces.NoteLoadOptions
+summary: Represents a note in the workbook or worksheet.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#$all:member'
+    package: excel!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: authorName
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#authorName:member'
+    package: excel!
+    fullName: authorName
+    summary: Gets the author of the note.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type: boolean
+  - name: content
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#content:member'
+    package: excel!
+    fullName: content
+    summary: Gets or sets the text of the note. The string must be fewer than 256 characters.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#height:member'
+    package: excel!
+    fullName: height
+    summary: Specifies the height of the note.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#visible:member'
+    package: excel!
+    fullName: visible
+    summary: Specifies the visibility of the note. A value of `true` means the note is shown.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'excel!Excel.Interfaces.NoteLoadOptions#width:member'
+    package: excel!
+    fullName: width
+    summary: Specifies the width of the note.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

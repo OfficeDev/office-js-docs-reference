@@ -63,7 +63,7 @@ properties:
     fullName: provider
     summary: >-
       Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`<!--
-      -->. This field is not writable.
+      -->. This field isn't writable.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

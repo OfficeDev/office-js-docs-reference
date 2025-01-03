@@ -857,6 +857,10 @@ items:
             uid: 'excel!Excel.NameErrorCellValue:interface'
           - name: NotAvailableErrorCellValue
             uid: 'excel!Excel.NotAvailableErrorCellValue:interface'
+          - name: Note
+            uid: 'excel!Excel.Note:class'
+          - name: NoteCollection
+            uid: 'excel!Excel.NoteCollection:class'
           - name: NullErrorCellValue
             uid: 'excel!Excel.NullErrorCellValue:interface'
           - name: NumberFormatInfo
