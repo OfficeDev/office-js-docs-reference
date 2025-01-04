@@ -149,7 +149,7 @@ properties:
     summary: |-
       Represents the `textRuns` property.
 
-      \[ [API set: RangeTextRun](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -114,7 +114,7 @@
 ||[height](/javascript/api/excel/excel.note#excel-excel-note-height-member)|Specifies the height of the note.|
 ||[visible](/javascript/api/excel/excel.note#excel-excel-note-visible-member)|Specifies the visibility of the note.|
 ||[width](/javascript/api/excel/excel.note#excel-excel-note-width-member)|Specifies the width of the note.|
-|[NoteCollection](/javascript/api/excel/excel.notecollection)|[add(cellAddress: Range \| string, content: any)](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1))|Adds a new note to the collection.|
+|[NoteCollection](/javascript/api/excel/excel.notecollection)|[add(cellAddress: Range \| string, content: any)](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1))|Adds a new note with the given content on the given cell.|
 ||[getCount()](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getcount-member(1))|Gets the number of notes in the collection.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemat-member(1))|Gets a note object by its index in the collection.|
 ||[items](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-items-member)|Gets the loaded child items in this collection.|
