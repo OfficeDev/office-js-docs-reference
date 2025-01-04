@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript preview APIs
 description: Details about upcoming Excel JavaScript APIs.
-ms.date: 10/10/2022
+ms.date: 01/03/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -18,6 +18,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 |:--- |:--- |:--- |
 | Document tasks | Turn comments into tasks assigned to users. | [DocumentTask](/javascript/api/excel/excel.documenttask), [DocumentTaskChange](/javascript/api/excel/excel.documenttaskchange), [DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection), [DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection) |
 | Linked data types | Adds support for data types connected to Excel from external sources. | [LinkedDataType](/javascript/api/excel/excel.linkeddatatype), [LinkedDataTypeAddedEventArgs](/javascript/api/excel/excel.linkeddatatypeaddedeventargs), [LinkedDataTypeCollection](/javascript/api/excel/excel.linkeddatatypecollection) |
+| Notes | Create, delete, and manage notes in a worksheet. Also supports setting the height, width, and visibility of notes. | [Note](/javascript/api/excel/excel.note), [NoteCollecction](/javascript/api/excel/excel.notecollection) |
 | Table styles | Provides control for font, border, fill color, and other aspects of table styles. | [Table](/javascript/api/excel/excel.table), [PivotTable](/javascript/api/excel/excel.pivottable), [Slicer](/javascript/api/excel/excel.slicer) |
 
 ## API list
