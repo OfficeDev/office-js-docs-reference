@@ -5487,6 +5487,14 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.RequirementSetSupport:interface:
+  - |-
+    const requirements : Office.RequirementSetSupport = Office.context.requirements; 
+    if (requirements.isSetSupported('Mailbox', '1.14')) {
+        // Code that uses APIs from the 'Mailbox 1.14' requirement set.
+    } else {
+        // An alternate path (such as a message to the user) for when the requirement set isn't supported.
+    }
 Office.Ribbon#requestCreateControls:member(1):
   - |-
     // Registers a custom contextual tab with Office.
