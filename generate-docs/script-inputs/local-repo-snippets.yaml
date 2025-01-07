@@ -5493,7 +5493,7 @@ Office.RequirementSetSupport:interface:
     if (requirements.isSetSupported('Mailbox', '1.14')) {
         // Code that uses APIs from the 'Mailbox 1.14' requirement set.
     } else {
-        // An alternate path (such as a message to the user) for when the requirement set isn't supported.
+        // An alternate path (such as a message to the user) when the requirement set isn't supported.
     }
 Office.Ribbon#requestCreateControls:member(1):
   - |-
