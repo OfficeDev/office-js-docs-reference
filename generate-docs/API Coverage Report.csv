@@ -7713,7 +7713,7 @@ Office.RangeFormatConfiguration,"format",Property,Good,false
 Office.RemoveHandlerOptions,N/A,Class,Fine,false
 Office.RemoveHandlerOptions,"asyncContext",Property,Fine,false
 Office.RemoveHandlerOptions,"handler",Property,Good,false
-Office.RequirementSetSupport,N/A,Class,Fine,false
+Office.RequirementSetSupport,N/A,Class,Fine,true
 Office.RequirementSetSupport,"isSetSupported(name, minVersion)",Method,Poor,false
 Office.RequirementSetSupport,"isSetSupported(name, minVersionNumber)",Method,Deprecated,false
 Office.Ribbon,N/A,Class,Good,false
