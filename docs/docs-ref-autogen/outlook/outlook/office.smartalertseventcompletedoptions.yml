@@ -223,9 +223,9 @@ properties:
       function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
 
 
-      When you configure a button in the Smart Alerts dialog to open a task pane or run a function, a button for the
-      implemented add-in command is also added to the ribbon or action bar of the Outlook client. Use the `contextData`
-      option to distinguish when a user runs the add-in command from the Smart Alerts dialog.
+      When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added
+      to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user runs
+      the function from the Smart Alerts dialog.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,8 +240,8 @@ properties:
       When you use the [completed
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
       to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property
-      specifies any JSON data passed to the add-in for processing when the **Don't Send** button is selected from
-      the Smart Alerts dialog.
+      specifies any JSON data passed to the add-in for processing when the applicable button is selected from the Smart
+      Alerts dialog.
     remarks: >-
       \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -263,8 +263,14 @@ properties:
       versions of Outlook on Windows, only the `string` type is supported.
 
 
-      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to
-      the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or
+      function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
+
+
+      - The dialog button that passes the `contextData` value to the add-in varies depending on the Outlook client and
+      its version. For more information, see [Customize the text and functionality of a button in the
+      dialog](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
+      -->.
 
 
       - To retrieve the value of the `contextData` property, you must call
@@ -273,9 +279,9 @@ properties:
       string using `JSON.parse()` once you retrieve it.
 
 
-      - When you configure a button in the Smart Alerts dialog to open a task pane or run a function, a button for the
-      implemented add-in command is also added to the ribbon or action bar of the Outlook client. Use the `contextData`
-      option to distinguish when a user runs the add-in command from the Smart Alerts dialog.
+      - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also
+      added to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user
+      runs the function from the Smart Alerts dialog.
     isPreview: false
     isDeprecated: false
     syntax:
