@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 12/19/2024
+ms.date: 11/14/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -106,32 +106,6 @@ Added a new object that represents the properties and methods of a selected mess
 #### [Office.SmartAlertsEventCompletedOptions.errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member)
 
 Added an `event.completed` option to format a message in a Smart Alerts dialog using Markdown. To learn more, see the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough) and [Limitations to formatting the dialog message using Markdown](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown).
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Spam reporting improvements
-
-#### Suppress the preprocessing dialog
-
-Added the [NeverShowAgainOption](/javascript/api/manifest/preprocessingdialog?view=common-js-preview&preserve-view=true#child-elements) element as a child of the **\<PreProcessingDialog\>** element. This element adds a "Don't show me this message again" checkbox to the preprocessing dialog to prevent it from appearing again.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-#### Use radio buttons for reporting options
-
-Added the `inputType` attribute to the [ReportingOptions](/javascript/api/manifest/reportingoptions?view=outlook-js-preview&preserve-view=true#attributes) element. This attribute uses radio buttons for the reporting options of a preprocessing dialog.
-
-**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
-
-#### Open a task pane from the preprocessing dialog
-
-Added the [commandId](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-commandid-member) and [contextData](/javascript/api/outlook/office.spamreportingeventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-spamreportingeventcompletedoptions-contextdata-member) options to the `event.completed` call. These options configure a task pane to open after a user selects **Report** from the preprocessing dialog.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
