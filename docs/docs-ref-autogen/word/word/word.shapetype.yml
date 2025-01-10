@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Word.ShapeType
+uid: 'word!Word.ShapeType:enum'
+package: word!
+fullName: Word.ShapeType
+summary: Represents the shape type.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: textBox
+    uid: 'word!Word.ShapeType.textBox:member'
+    package: word!
+    summary: |-
+      Text box shape.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TextBox"'
+  - name: unsupported
+    uid: 'word!Word.ShapeType.unsupported:member'
+    package: word!
+    summary: |-
+      Unsupported shape type.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Unsupported"'

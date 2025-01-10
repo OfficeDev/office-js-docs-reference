@@ -6,7 +6,8 @@ fullName: Word.ContentControl
 summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
-  paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+  paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content
+  controls are supported.
 remarks: |-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -1196,8 +1197,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeUpdateData
+uid: 'word!Word.Interfaces.ShapeUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeUpdateData
+summary: 'An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.ShapeUpdateData#body:member'
+    package: word!
+    fullName: body
+    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
+  - name: height
+    uid: 'word!Word.Interfaces.ShapeUpdateData#height:member'
+    package: word!
+    fullName: height
+    summary: 'The height, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: left
+    uid: 'word!Word.Interfaces.ShapeUpdateData#left:member'
+    package: word!
+    fullName: left
+    summary: >-
+      The distance, in points, from the left side of the shape to the horizontal relative position. For a floating
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: relativeHorizontalPosition
+    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member'
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: 'The relative horizontal position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" |
+        "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
+          "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalPosition
+    uid: 'word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member'
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: 'The relative vertical position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" |
+        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
+          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+  - name: top
+    uid: 'word!Word.Interfaces.ShapeUpdateData#top:member'
+    package: word!
+    fullName: top
+    summary: >-
+      The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape,
+      it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: width
+    uid: 'word!Word.Interfaces.ShapeUpdateData#width:member'
+    package: word!
+    fullName: width
+    summary: 'The width, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number
