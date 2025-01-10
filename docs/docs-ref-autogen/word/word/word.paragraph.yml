@@ -499,6 +499,20 @@ properties:
       content: 'rightIndent: number;'
       return:
         type: number
+  - name: shapes
+    uid: 'word!Word.Paragraph#shapes:member'
+    package: word!
+    fullName: shapes
+    summary: >-
+      Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.
+      Currently, only TextBox shapes are supported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: Word.ShapeCollection;'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
   - name: spaceAfter
     uid: 'word!Word.Paragraph#spaceAfter:member'
     package: word!
@@ -1606,8 +1620,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1860,6 +1874,26 @@ methods:
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: 'insertTextBox(text, insertShapeOptions)'
+    uid: 'word!Word.Paragraph#insertTextBox:member(1)'
+    package: word!
+    fullName: 'insertTextBox(text, insertShapeOptions)'
+    summary: Inserts a floating text box with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
+      parameters:
+        - id: text
+          description: Optional. The text to insert into the text box.
+          type: string
+        - id: insertShapeOptions
+          description: 'Optional. The size and location of the text box. The default location and size is (0, 0, 100, 100).'
+          type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
         description: ''
   - name: load(options)
     uid: 'word!Word.Paragraph#load:member(1)'

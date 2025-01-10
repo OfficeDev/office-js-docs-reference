@@ -460,6 +460,20 @@ properties:
       content: 'readonly parentSectionOrNullObject: Word.Section;'
       return:
         type: '<xref uid="word!Word.Section:class" />'
+  - name: shapes
+    uid: 'word!Word.Body#shapes:member'
+    package: word!
+    fullName: shapes
+    summary: >-
+      Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only
+      TextBox shapes are supported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: Word.ShapeCollection;'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
   - name: style
     uid: 'word!Word.Body#style:member'
     package: word!
@@ -672,11 +686,11 @@ properties:
     syntax:
       content: >-
         readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" |
-        "Footnote" | "Endnote" | "NoteItem";
+        "Footnote" | "Endnote" | "NoteItem" | "Shape";
       return:
         type: >-
           <xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
-          | "Footnote" | "Endnote" | "NoteItem"
+          | "Footnote" | "Endnote" | "NoteItem" | "Shape"
 methods:
   - name: clear()
     uid: 'word!Word.Body#clear:member(1)'
@@ -1098,8 +1112,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
 
       #### Examples

@@ -1,0 +1,247 @@
+### YamlMime:TSType
+name: Word.ShapeCollection
+uid: 'word!Word.ShapeCollection:class'
+package: word!
+fullName: Word.ShapeCollection
+summary: >-
+  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only TextBox shapes are
+  supported.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.ShapeCollection#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.ShapeCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Shape[];'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />[]'
+methods:
+  - name: getById(id)
+    uid: 'word!Word.ShapeCollection#getById:member(1)'
+    package: word!
+    fullName: getById(id)
+    summary: >-
+      Gets a shape by its identifier. Throws an `ItemNotFound` error if there isn't a shape with the identifier in this
+      collection.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getById(id: number): Word.Shape;'
+      parameters:
+        - id: id
+          description: Required. A shape identifier.
+          type: number
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: getByIdOrNullObject(id)
+    uid: 'word!Word.ShapeCollection#getByIdOrNullObject:member(1)'
+    package: word!
+    fullName: getByIdOrNullObject(id)
+    summary: >-
+      Gets a shape by its identifier. If there isn't a shape with the identifier in this collection, then this method
+      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByIdOrNullObject(id: number): Word.Shape;'
+      parameters:
+        - id: id
+          description: Required. A shape identifier.
+          type: number
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: getByTypes(types)
+    uid: 'word!Word.ShapeCollection#getByTypes:member(1)'
+    package: word!
+    fullName: getByTypes(types)
+    summary: Gets the shapes that have the specified types.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByTypes(types: Word.ShapeType[]): Word.ShapeCollection;'
+      parameters:
+        - id: types
+          description: Required. An array of shape types.
+          type: '<xref uid="word!Word.ShapeType:enum" />[]'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+  - name: getFirst()
+    uid: 'word!Word.ShapeCollection#getFirst:member(1)'
+    package: word!
+    fullName: getFirst()
+    summary: Gets the first shape in this collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirst(): Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: getFirstOrNullObject()
+    uid: 'word!Word.ShapeCollection#getFirstOrNullObject:member(1)'
+    package: word!
+    fullName: getFirstOrNullObject()
+    summary: >-
+      Gets the first shape in this collection. If this collection is empty, then this method will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.ShapeCollection#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ShapeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ShapeCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions:interface" /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.ShapeCollection#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ShapeCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.ShapeCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ShapeCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.ShapeCollection#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.ShapeCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ShapeCollectionData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeCollectionData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.ShapeCollection#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.ShapeCollection;'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.ShapeCollection#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.ShapeCollection;'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
