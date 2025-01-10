@@ -1,0 +1,131 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeData
+uid: 'word!Word.Interfaces.ShapeData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeData
+summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.ShapeData#body:member'
+    package: word!
+    fullName: body
+    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
+  - name: height
+    uid: 'word!Word.Interfaces.ShapeData#height:member'
+    package: word!
+    fullName: height
+    summary: 'The height, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: id
+    uid: 'word!Word.Interfaces.ShapeData#id:member'
+    package: word!
+    fullName: id
+    summary: Gets an integer that represents the shape identifier.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: number;'
+      return:
+        type: number
+  - name: left
+    uid: 'word!Word.Interfaces.ShapeData#left:member'
+    package: word!
+    fullName: left
+    summary: >-
+      The distance, in points, from the left side of the shape to the horizontal relative position. For a floating
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: relativeHorizontalPosition
+    uid: 'word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member'
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: 'The relative horizontal position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" |
+        "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
+          "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
+  - name: relativeVerticalPosition
+    uid: 'word!Word.Interfaces.ShapeData#relativeVerticalPosition:member'
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: 'The relative vertical position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" |
+        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+      return:
+        type: >-
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
+          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+  - name: top
+    uid: 'word!Word.Interfaces.ShapeData#top:member'
+    package: word!
+    fullName: top
+    summary: >-
+      The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape,
+      it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeData#type:member'
+    package: word!
+    fullName: type
+    summary: 'Gets the shape type. Currently, only TextBox shapes are supported.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.ShapeType | "Unsupported" | "TextBox";'
+      return:
+        type: '<xref uid="word!Word.ShapeType:enum" /> | "Unsupported" | "TextBox"'
+  - name: width
+    uid: 'word!Word.Interfaces.ShapeData#width:member'
+    package: word!
+    fullName: width
+    summary: 'The width, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

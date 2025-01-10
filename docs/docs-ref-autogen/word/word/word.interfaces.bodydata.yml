@@ -86,6 +86,20 @@ properties:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
+  - name: shapes
+    uid: 'word!Word.Interfaces.BodyData#shapes:member'
+    package: word!
+    fullName: shapes
+    summary: >-
+      Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only
+      TextBox shapes are supported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shapes?: Word.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeData:interface" />[]'
   - name: style
     uid: 'word!Word.Interfaces.BodyData#style:member'
     package: word!
@@ -214,8 +228,8 @@ properties:
     syntax:
       content: >-
         type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" |
-        "Endnote" | "NoteItem";
+        "Endnote" | "NoteItem" | "Shape";
       return:
         type: >-
           <xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
-          | "Footnote" | "Endnote" | "NoteItem"
+          | "Footnote" | "Endnote" | "NoteItem" | "Shape"

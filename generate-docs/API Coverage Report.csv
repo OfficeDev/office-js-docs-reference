@@ -10670,6 +10670,7 @@ Word.Body,"parentContentControl",Property,Good,false
 Word.Body,"parentContentControlOrNullObject",Property,Good,false
 Word.Body,"parentSection",Property,Good,false
 Word.Body,"parentSectionOrNullObject",Property,Good,false
+Word.Body,"shapes",Property,Good,false
 Word.Body,"style",Property,Good,false
 Word.Body,"styleBuiltIn",Property,Good,false
 Word.Body,"tables",Property,Good,true
@@ -10704,7 +10705,7 @@ Word.Body,"set(properties)",Method,Poor,false
 Word.Body,"toJSON()",Method,Poor,false
 Word.Body,"track()",Method,Poor,false
 Word.Body,"untrack()",Method,Poor,false
-Word.BodyType,N/A,Enum,Fine,true
+Word.BodyType,N/A,Enum,Good,true
 Word.BodyType,"endnote",EnumField,Fine,false
 Word.BodyType,"footer",EnumField,Fine,false
 Word.BodyType,"footnote",EnumField,Fine,false
@@ -10712,6 +10713,7 @@ Word.BodyType,"header",EnumField,Fine,false
 Word.BodyType,"mainDoc",EnumField,Fine,false
 Word.BodyType,"noteItem",EnumField,Fine,false
 Word.BodyType,"section",EnumField,Fine,false
+Word.BodyType,"shape",EnumField,Fine,false
 Word.BodyType,"tableCell",EnumField,Fine,false
 Word.BodyType,"unknown",EnumField,Fine,false
 Word.Border,N/A,Class,Good,true
@@ -11492,7 +11494,10 @@ Word.EventSource,N/A,Enum,Good,true
 Word.EventSource,"local",EnumField,Fine,false
 Word.EventSource,"remote",EnumField,Fine,false
 Word.EventType,N/A,Enum,Good,true
+Word.EventType,"annotationAdded",EnumField,Fine,false
+Word.EventType,"annotationChanged",EnumField,Fine,false
 Word.EventType,"annotationClicked",EnumField,Fine,false
+Word.EventType,"annotationDeleted",EnumField,Fine,false
 Word.EventType,"annotationHovered",EnumField,Fine,false
 Word.EventType,"annotationInserted",EnumField,Fine,false
 Word.EventType,"annotationPopupAction",EnumField,Fine,false
@@ -11508,6 +11513,7 @@ Word.EventType,"contentControlDeleted",EnumField,Fine,false
 Word.EventType,"contentControlEntered",EnumField,Fine,false
 Word.EventType,"contentControlExited",EnumField,Fine,false
 Word.EventType,"contentControlSelectionChanged",EnumField,Fine,false
+Word.EventType,"documentWordCountChanged",EnumField,Good,false
 Word.EventType,"paragraphAdded",EnumField,Fine,false
 Word.EventType,"paragraphChanged",EnumField,Fine,false
 Word.EventType,"paragraphDeleted",EnumField,Fine,false
@@ -11762,6 +11768,11 @@ Word.InsertLocation,"before",EnumField,Fine,false
 Word.InsertLocation,"end",EnumField,Fine,false
 Word.InsertLocation,"replace",EnumField,Fine,false
 Word.InsertLocation,"start",EnumField,Fine,false
+Word.InsertShapeOptions,N/A,Class,Good,false
+Word.InsertShapeOptions,"height",Property,Good,false
+Word.InsertShapeOptions,"left",Property,Good,false
+Word.InsertShapeOptions,"top",Property,Good,false
+Word.InsertShapeOptions,"width",Property,Good,false
 Word.List,N/A,Class,Good,true
 Word.List,"context",Property,Good,false
 Word.List,"id",Property,Good,false
@@ -12036,6 +12047,7 @@ Word.Paragraph,"parentTableCell",Property,Good,false
 Word.Paragraph,"parentTableCellOrNullObject",Property,Good,false
 Word.Paragraph,"parentTableOrNullObject",Property,Good,false
 Word.Paragraph,"rightIndent",Property,Good,false
+Word.Paragraph,"shapes",Property,Good,false
 Word.Paragraph,"spaceAfter",Property,Good,true
 Word.Paragraph,"spaceBefore",Property,Good,false
 Word.Paragraph,"style",Property,Good,true
@@ -12072,6 +12084,7 @@ Word.Paragraph,"insertOoxml(ooxml, insertLocation)",Method,Fine,false
 Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,false
 Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 Word.Paragraph,"insertText(text, insertLocation)",Method,Poor,true
+Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"load(options)",Method,Poor,false
 Word.Paragraph,"load(propertyNames)",Method,Poor,false
 Word.Paragraph,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -12153,6 +12166,7 @@ Word.Range,"parentTable",Property,Good,false
 Word.Range,"parentTableCell",Property,Good,false
 Word.Range,"parentTableCellOrNullObject",Property,Good,false
 Word.Range,"parentTableOrNullObject",Property,Good,false
+Word.Range,"shapes",Property,Good,false
 Word.Range,"style",Property,Good,false
 Word.Range,"styleBuiltIn",Property,Good,true
 Word.Range,"tables",Property,Good,false
@@ -12191,6 +12205,7 @@ Word.Range,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
 Word.Range,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
 Word.Range,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 Word.Range,"insertText(text, insertLocation)",Method,Poor,true
+Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
 Word.Range,"intersectWith(range)",Method,Poor,false
 Word.Range,"intersectWithOrNullObject(range)",Method,Poor,false
 Word.Range,"load(options)",Method,Poor,false
@@ -12224,6 +12239,24 @@ Word.RangeLocation,"content",EnumField,Fine,false
 Word.RangeLocation,"end",EnumField,Good,false
 Word.RangeLocation,"start",EnumField,Good,false
 Word.RangeLocation,"whole",EnumField,Good,false
+Word.RelativeHorizontalPosition,N/A,Enum,Good,false
+Word.RelativeHorizontalPosition,"character",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"column",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"insideMargin",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"leftMargin",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"margin",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"outsideMargin",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"page",EnumField,Fine,false
+Word.RelativeHorizontalPosition,"rightMargin",EnumField,Fine,false
+Word.RelativeVerticalPosition,N/A,Enum,Good,false
+Word.RelativeVerticalPosition,"bottomMargin",EnumField,Fine,false
+Word.RelativeVerticalPosition,"insideMargin",EnumField,Fine,false
+Word.RelativeVerticalPosition,"line",EnumField,Fine,false
+Word.RelativeVerticalPosition,"margin",EnumField,Fine,false
+Word.RelativeVerticalPosition,"outsideMargin",EnumField,Fine,false
+Word.RelativeVerticalPosition,"page",EnumField,Fine,false
+Word.RelativeVerticalPosition,"paragraph",EnumField,Fine,false
+Word.RelativeVerticalPosition,"topMargin",EnumField,Fine,false
 Word.RequestContext,N/A,Class,Good,true
 Word.RequestContext,"application",Property,Fine,false
 Word.RequestContext,"document",Property,Missing,false
@@ -12356,6 +12389,44 @@ Word.ShadingTextureType,"percent87Pt5",EnumField,Fine,false
 Word.ShadingTextureType,"percent90",EnumField,Fine,false
 Word.ShadingTextureType,"percent95",EnumField,Fine,false
 Word.ShadingTextureType,"solid",EnumField,Fine,false
+Word.Shape,N/A,Class,Good,false
+Word.Shape,"body",Property,Good,false
+Word.Shape,"context",Property,Good,false
+Word.Shape,"height",Property,Good,false
+Word.Shape,"id",Property,Good,false
+Word.Shape,"left",Property,Good,false
+Word.Shape,"relativeHorizontalPosition",Property,Good,false
+Word.Shape,"relativeVerticalPosition",Property,Good,false
+Word.Shape,"top",Property,Good,false
+Word.Shape,"type",Property,Good,false
+Word.Shape,"width",Property,Good,false
+Word.Shape,"delete()",Method,Poor,false
+Word.Shape,"load(options)",Method,Poor,false
+Word.Shape,"load(propertyNames)",Method,Poor,false
+Word.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.Shape,"select(selectMultipleShapes)",Method,Poor,false
+Word.Shape,"set(properties, options)",Method,Poor,false
+Word.Shape,"set(properties)",Method,Poor,false
+Word.Shape,"toJSON()",Method,Poor,false
+Word.Shape,"track()",Method,Poor,false
+Word.Shape,"untrack()",Method,Poor,false
+Word.ShapeCollection,N/A,Class,Good,false
+Word.ShapeCollection,"context",Property,Good,false
+Word.ShapeCollection,"items",Property,Fine,false
+Word.ShapeCollection,"getById(id)",Method,Poor,false
+Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Poor,false
+Word.ShapeCollection,"getByTypes(types)",Method,Poor,false
+Word.ShapeCollection,"getFirst()",Method,Poor,false
+Word.ShapeCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.ShapeCollection,"load(options)",Method,Poor,false
+Word.ShapeCollection,"load(propertyNames)",Method,Poor,false
+Word.ShapeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ShapeCollection,"toJSON()",Method,Poor,false
+Word.ShapeCollection,"track()",Method,Poor,false
+Word.ShapeCollection,"untrack()",Method,Poor,false
+Word.ShapeType,N/A,Enum,Good,false
+Word.ShapeType,"textBox",EnumField,Fine,false
+Word.ShapeType,"unsupported",EnumField,Fine,false
 Word.Style,N/A,Class,Good,true
 Word.Style,"baseStyle",Property,Good,false
 Word.Style,"borders",Property,Good,true

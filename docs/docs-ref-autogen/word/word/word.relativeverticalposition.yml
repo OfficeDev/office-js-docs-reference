@@ -1,0 +1,76 @@
+### YamlMime:TSEnum
+name: Word.RelativeVerticalPosition
+uid: 'word!Word.RelativeVerticalPosition:enum'
+package: word!
+fullName: Word.RelativeVerticalPosition
+summary: >-
+  Represents what the vertical position of a shape is relative to. For more information about margins, see [Change the
+  margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bottomMargin
+    uid: 'word!Word.RelativeVerticalPosition.bottomMargin:member'
+    package: word!
+    summary: |-
+      Relative to bottom margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"BottomMargin"'
+  - name: insideMargin
+    uid: 'word!Word.RelativeVerticalPosition.insideMargin:member'
+    package: word!
+    summary: |-
+      Relative to inside margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"InsideMargin"'
+  - name: line
+    uid: 'word!Word.RelativeVerticalPosition.line:member'
+    package: word!
+    summary: |-
+      Relative to line.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Line"'
+  - name: margin
+    uid: 'word!Word.RelativeVerticalPosition.margin:member'
+    package: word!
+    summary: |-
+      Relative to margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Margin"'
+  - name: outsideMargin
+    uid: 'word!Word.RelativeVerticalPosition.outsideMargin:member'
+    package: word!
+    summary: |-
+      Relative to outside margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutsideMargin"'
+  - name: page
+    uid: 'word!Word.RelativeVerticalPosition.page:member'
+    package: word!
+    summary: |-
+      Relative to page.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Page"'
+  - name: paragraph
+    uid: 'word!Word.RelativeVerticalPosition.paragraph:member'
+    package: word!
+    summary: |-
+      Relative to paragraph.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Paragraph"'
+  - name: topMargin
+    uid: 'word!Word.RelativeVerticalPosition.topMargin:member'
+    package: word!
+    summary: |-
+      Relative to top margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TopMargin"'

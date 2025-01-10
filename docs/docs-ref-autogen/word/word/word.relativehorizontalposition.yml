@@ -1,0 +1,76 @@
+### YamlMime:TSEnum
+name: Word.RelativeHorizontalPosition
+uid: 'word!Word.RelativeHorizontalPosition:enum'
+package: word!
+fullName: Word.RelativeHorizontalPosition
+summary: >-
+  Represents what the horizontal position of a shape is relative to. For more information about margins, see [Change the
+  margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: character
+    uid: 'word!Word.RelativeHorizontalPosition.character:member'
+    package: word!
+    summary: |-
+      Relative to character.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Character"'
+  - name: column
+    uid: 'word!Word.RelativeHorizontalPosition.column:member'
+    package: word!
+    summary: |-
+      Relative to column.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Column"'
+  - name: insideMargin
+    uid: 'word!Word.RelativeHorizontalPosition.insideMargin:member'
+    package: word!
+    summary: |-
+      Relative to inside margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"InsideMargin"'
+  - name: leftMargin
+    uid: 'word!Word.RelativeHorizontalPosition.leftMargin:member'
+    package: word!
+    summary: |-
+      Relative to left margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"LeftMargin"'
+  - name: margin
+    uid: 'word!Word.RelativeHorizontalPosition.margin:member'
+    package: word!
+    summary: |-
+      Relative to margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Margin"'
+  - name: outsideMargin
+    uid: 'word!Word.RelativeHorizontalPosition.outsideMargin:member'
+    package: word!
+    summary: |-
+      Relative to outside margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutsideMargin"'
+  - name: page
+    uid: 'word!Word.RelativeHorizontalPosition.page:member'
+    package: word!
+    summary: |-
+      Relative to page.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Page"'
+  - name: rightMargin
+    uid: 'word!Word.RelativeHorizontalPosition.rightMargin:member'
+    package: word!
+    summary: |-
+      Relative to right margin.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"RightMargin"'

@@ -72,6 +72,20 @@ properties:
       content: 'isEmpty?: boolean;'
       return:
         type: boolean
+  - name: shapes
+    uid: 'word!Word.Interfaces.RangeData#shapes:member'
+    package: word!
+    fullName: shapes
+    summary: >-
+      Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently,
+      only TextBox shapes are supported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shapes?: Word.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeData:interface" />[]'
   - name: style
     uid: 'word!Word.Interfaces.RangeData#style:member'
     package: word!

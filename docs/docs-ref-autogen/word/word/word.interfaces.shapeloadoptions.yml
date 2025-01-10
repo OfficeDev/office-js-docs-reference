@@ -1,0 +1,137 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeLoadOptions
+uid: 'word!Word.Interfaces.ShapeLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ShapeLoadOptions
+summary: 'Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: body
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#body:member'
+    package: word!
+    fullName: body
+    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: height
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#height:member'
+    package: word!
+    fullName: height
+    summary: 'The height, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#id:member'
+    package: word!
+    fullName: id
+    summary: Gets an integer that represents the shape identifier.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#left:member'
+    package: word!
+    fullName: left
+    summary: >-
+      The distance, in points, from the left side of the shape to the horizontal relative position. For a floating
+      shape, it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: relativeHorizontalPosition
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#relativeHorizontalPosition:member'
+    package: word!
+    fullName: relativeHorizontalPosition
+    summary: 'The relative horizontal position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'relativeHorizontalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: relativeVerticalPosition
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#relativeVerticalPosition:member'
+    package: word!
+    fullName: relativeVerticalPosition
+    summary: 'The relative vertical position of the shape. For a floating shape, it can''t be set.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'relativeVerticalPosition?: boolean;'
+      return:
+        type: boolean
+  - name: top
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#top:member'
+    package: word!
+    fullName: top
+    summary: >-
+      The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape,
+      it will return 0 and can't be set.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: 'Gets the shape type. Currently, only TextBox shapes are supported.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: 'The width, in points, of the shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

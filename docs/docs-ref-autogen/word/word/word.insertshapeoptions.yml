@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: Word.InsertShapeOptions
+uid: 'word!Word.InsertShapeOptions:interface'
+package: word!
+fullName: Word.InsertShapeOptions
+summary: Specifies the options to determine size and location when inserting a shape.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: 'word!Word.InsertShapeOptions#height:member'
+    package: word!
+    fullName: height
+    summary: Represents the height of the shape being inserted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: left
+    uid: 'word!Word.InsertShapeOptions#left:member'
+    package: word!
+    fullName: left
+    summary: Represents the left position of the shape being inserted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: top
+    uid: 'word!Word.InsertShapeOptions#top:member'
+    package: word!
+    fullName: top
+    summary: Represents the top position of the shape being inserted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: width
+    uid: 'word!Word.InsertShapeOptions#width:member'
+    package: word!
+    fullName: width
+    summary: Represents the width of the shape being inserted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number
