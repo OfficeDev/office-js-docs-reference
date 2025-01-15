@@ -47,3 +47,17 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
+  - name: type
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: 'For EACH ITEM in the collection: Returns the type of the slide layout.'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

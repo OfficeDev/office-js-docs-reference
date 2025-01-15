@@ -5400,6 +5400,23 @@ Office.DocumentMode:enum:
   - |-
     const mode : Office.DocumentMode = Office.context.document.mode;
     console.log("Document mode: " + mode);
+Office.DocumentSelectionChangedEventArgs:interface:
+  - |-
+    // The following example adds an event handler for the SelectionChanged event of a document
+    function addSelectionChangedEventHandler() {
+        Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+    }
+
+    // The SelectionChanged event handler.
+    function MyHandler(eventArgs: Office.DocumentSelectionChangedEventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithDocument(eventArgs.document);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.EventType:enum:
   - |-
     // This sample shows how to register an event handler in Outlook.

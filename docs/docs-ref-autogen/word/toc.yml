@@ -69,6 +69,8 @@ items:
                 uid: 'word!Word.FieldKind:enum'
               - name: FieldType
                 uid: 'word!Word.FieldType:enum'
+              - name: GeometricShapeType
+                uid: 'word!Word.GeometricShapeType:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat

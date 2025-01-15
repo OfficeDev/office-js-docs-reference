@@ -11057,8 +11057,6 @@ export declare namespace Office {
         /**
          * Gets the account type of the user associated with the mailbox.
          *
-         * **Note**: This member is currently only supported in Outlook on Mac starting in Version 16.9 (17121200).
-         *
          * @remarks
          * [Api set: Mailbox 1.6]
          *
@@ -11090,8 +11088,15 @@ export declare namespace Office {
          *     <td>The mailbox is associated with a personal Outlook.com account.</td>
          *   </tr>
          * </table>
-         * 
-         * **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted.
+         *
+         * **Important**:
+         *
+         * - Volume-licensed perpetual Outlook 2016 doesn’t support the `accountType` property.
+         * To work around this, use Exchange Web Services (EWS) to call the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/resolvenames-operation | ResolveNames}
+         * operation on the Exchange on-premise server.
+         *
+         * - For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted.
          * If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's hosted on 
          * Exchange Online, the account type value is **office365**.
          */

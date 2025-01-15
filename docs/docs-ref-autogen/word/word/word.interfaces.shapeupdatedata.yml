@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeUpdateData#body:member'
     package: word!
     fullName: body
-    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

@@ -47,6 +47,27 @@ properties:
       content: 'left?: number;'
       return:
         type: number
+  - name: level
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeData#level:member'
+    package: powerpoint!
+    fullName: level
+    summary: |-
+      Returns the level of the specified shape.
+
+      - A level of 0 means the shape isn't part of a group.
+
+      - A level of 1 means the shape is part of a top-level group.
+
+      - A level greater than 1 indicates the shape is a nested group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'level?: number;'
+      return:
+        type: number
   - name: name
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeData#name:member'
     package: powerpoint!

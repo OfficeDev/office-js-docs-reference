@@ -35,6 +35,22 @@ properties:
       content: 'id?: boolean;'
       return:
         type: boolean
+  - name: index
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#index:member'
+    package: powerpoint!
+    fullName: index
+    summary: >-
+      For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
   - name: layout
     uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#layout:member'
     package: powerpoint!

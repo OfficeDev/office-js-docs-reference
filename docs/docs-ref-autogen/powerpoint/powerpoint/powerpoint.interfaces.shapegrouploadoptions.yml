@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeGroupLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeGroupLoadOptions
+summary: 'Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`<!-- -->.'
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#id:member'
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the shape group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: shape
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#shape:member'
+    package: powerpoint!
+    fullName: shape
+    summary: Returns the `Shape` object associated with the group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shape?: PowerPoint.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />'

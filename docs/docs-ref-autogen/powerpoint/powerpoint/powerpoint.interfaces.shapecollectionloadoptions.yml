@@ -35,6 +35,22 @@ properties:
       content: 'fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface" />'
+  - name: group
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#group:member'
+    package: powerpoint!
+    fullName: group
+    summary: >-
+      For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape. If the shape type isn't
+      `group`<!-- -->, then this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions:interface" />'
   - name: height
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#height:member'
     package: powerpoint!
@@ -75,6 +91,27 @@ properties:
       content: 'left?: boolean;'
       return:
         type: boolean
+  - name: level
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#level:member'
+    package: powerpoint!
+    fullName: level
+    summary: |-
+      For EACH ITEM in the collection: Returns the level of the specified shape.
+
+      - A level of 0 means the shape isn't part of a group.
+
+      - A level of 1 means the shape is part of a top-level group.
+
+      - A level greater than 1 indicates the shape is a nested group.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type: boolean
   - name: lineFormat
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member'
     package: powerpoint!
@@ -99,6 +136,22 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
+  - name: parentGroup
+    uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#parentGroup:member'
+    package: powerpoint!
+    fullName: parentGroup
+    summary: >-
+      For EACH ITEM in the collection: Returns the parent group of this shape. If the shape isn't part of a group, then
+      this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />'
   - name: textFrame
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#textFrame:member'
     package: powerpoint!
