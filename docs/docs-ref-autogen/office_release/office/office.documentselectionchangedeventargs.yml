@@ -4,7 +4,28 @@ uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
 package: office!
 fullName: Office.DocumentSelectionChangedEventArgs
 summary: Provides information about the document that raised the SelectionChanged event.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // The following example adds an event handler for the SelectionChanged event of a document
+  function addSelectionChangedEventHandler() {
+      Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+  }
+
+  // The SelectionChanged event handler.
+  function MyHandler(eventArgs: Office.DocumentSelectionChangedEventArgs) {
+      write('Event raised: ' + eventArgs.type);
+      doSomethingWithDocument(eventArgs.document);
+  }
+
+  // Function that writes to a div with id='message' on the page.
+  function write(message){
+      document.getElementById('message').innerText += message; 
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

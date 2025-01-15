@@ -8,6 +8,14 @@ remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-
 isPreview: true
 isDeprecated: false
 fields:
+  - name: geometricShape
+    uid: 'word!Word.ShapeType.geometricShape:member'
+    package: word!
+    summary: |-
+      Geometric shape.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"GeometricShape"'
   - name: textBox
     uid: 'word!Word.ShapeType.textBox:member'
     package: word!

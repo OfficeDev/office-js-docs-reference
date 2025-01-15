@@ -29,6 +29,7 @@ enums:
   - 'word!Word.EventType:enum'
   - 'word!Word.FieldKind:enum'
   - 'word!Word.FieldType:enum'
+  - 'word!Word.GeometricShapeType:enum'
   - 'word!Word.HeaderFooterType:enum'
   - 'word!Word.ImageFormat:enum'
   - 'word!Word.ImportedStylesConflictBehavior:enum'

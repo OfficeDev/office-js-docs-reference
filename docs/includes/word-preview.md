@@ -31,7 +31,8 @@
 ||[left](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-left-member)|Represents the left position of the shape being inserted.|
 ||[top](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-top-member)|Represents the top position of the shape being inserted.|
 ||[width](/javascript/api/word/word.insertshapeoptions#word-word-insertshapeoptions-width-member)|Represents the width of the shape being inserted.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))|Inserts a floating text box with its anchor at the beginning of the paragraph.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))|Inserts a geometric shape with its anchor at the beginning of the paragraph.|
+||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))|Inserts a floating text box with its anchor at the beginning of the paragraph.|
 ||[onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)|Occurs when comments are deleted.|
@@ -41,7 +42,8 @@
 |[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
 |[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
 |[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
-|[Range](/javascript/api/word/word.range)|[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))|Inserts a floating text box with its anchor at the beginning of the range.|
+|[Range](/javascript/api/word/word.range)|[insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))|Inserts a geometric shape with its anchor at the beginning of the range.|
+||[insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions)](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))|Inserts a floating text box with its anchor at the beginning of the range.|
 ||[onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)|Occurs when a comment is deselected.|
@@ -58,7 +60,8 @@
 ||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position.|
 ||[type](/javascript/api/word/word.shape#word-word-shape-type-member)|Gets the shape type.|
 ||[width](/javascript/api/word/word.shape#word-word-shape-width-member)|The width, in points, of the shape.|
-|[ShapeCollection](/javascript/api/word/word.shapecollection)|[getById(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1))|Gets a shape by its identifier.|
+|[ShapeCollection](/javascript/api/word/word.shapecollection)|[getByGeometricTypes(types: Word.GeometricShapeType[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))|Gets the shapes that have the specified geometric types.|
+||[getById(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1))|Gets a shape by its identifier.|
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyidornullobject-member(1))|Gets a shape by its identifier.|
 ||[getByTypes(types: Word.ShapeType[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))|Gets the shapes that have the specified types.|
 ||[getFirst()](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirst-member(1))|Gets the first shape in this collection.|

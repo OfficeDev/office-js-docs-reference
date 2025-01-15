@@ -4,8 +4,8 @@ uid: 'word!Word.ShapeCollection:class'
 package: word!
 fullName: Word.ShapeCollection
 summary: >-
-  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only TextBox shapes are
-  supported.
+  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only text boxes and geometric
+  shapes are supported.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -38,6 +38,23 @@ properties:
       return:
         type: '<xref uid="word!Word.Shape:class" />[]'
 methods:
+  - name: getByGeometricTypes(types)
+    uid: 'word!Word.ShapeCollection#getByGeometricTypes:member(1)'
+    package: word!
+    fullName: getByGeometricTypes(types)
+    summary: Gets the shapes that have the specified geometric types. Only applied to geometric shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByGeometricTypes(types: Word.GeometricShapeType[]): Word.ShapeCollection;'
+      parameters:
+        - id: types
+          description: Required. An array of geometric shape subtypes.
+          type: '<xref uid="word!Word.GeometricShapeType:enum" />[]'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
   - name: getById(id)
     uid: 'word!Word.ShapeCollection#getById:member(1)'
     package: word!

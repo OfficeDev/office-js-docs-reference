@@ -1976,6 +1976,17 @@ export declare namespace PowerPoint {
          */
         addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
         /**
+         * Create a shape group for several shapes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param values - An array of shape IDs or `Shape` objects.
+         * @returns A `Shape` object that represents the shape group. Use the `Shape.group` property to access the `ShapeGroup` object for the group.
+         */
+        addGroup(values: Array<string | Shape>): PowerPoint.Shape;
+        /**
          * Adds a line to the slide. Returns a `Shape` object that represents the new line.
          *
          * @remarks
@@ -2096,6 +2107,274 @@ export declare namespace PowerPoint {
         width?: number;
     }
     /**
+     * Specifies the type of a slide layout.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SlideLayoutType {
+        /**
+         * Blank layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blank = "Blank",
+        /**
+         * Chart layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chart = "Chart",
+        /**
+         * Chart and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartAndText = "ChartAndText",
+        /**
+         * ClipArt and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clipArtAndText = "ClipArtAndText",
+        /**
+         * ClipArt and vertical text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clipArtAndVerticalText = "ClipArtAndVerticalText",
+        /**
+         * Comparison layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comparison = "Comparison",
+        /**
+         * Content with caption layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contentWithCaption = "ContentWithCaption",
+        /**
+         * Custom layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        custom = "Custom",
+        /**
+         * Four objects layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fourObjects = "FourObjects",
+        /**
+         * Large object layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        largeObject = "LargeObject",
+        /**
+         * MediaClip and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mediaClipAndText = "MediaClipAndText",
+        /**
+         * Mixed layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mixed = "Mixed",
+        /**
+         * Object layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        object = "Object",
+        /**
+         * Object and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        objectAndText = "ObjectAndText",
+        /**
+         * Object and two objects layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        objectAndTwoObjects = "ObjectAndTwoObjects",
+        /**
+         * Object over text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        objectOverText = "ObjectOverText",
+        /**
+         * Organization chart layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        organizationChart = "OrganizationChart",
+        /**
+         * Picture with caption layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pictureWithCaption = "PictureWithCaption",
+        /**
+         * Section header layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sectionHeader = "SectionHeader",
+        /**
+         * Table layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        table = "Table",
+        /**
+         * Text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        text = "Text",
+        /**
+         * Text and chart layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textAndChart = "TextAndChart",
+        /**
+         * Text and ClipArt layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textAndClipArt = "TextAndClipArt",
+        /**
+         * Text and MediaClip layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textAndMediaClip = "TextAndMediaClip",
+        /**
+         * Text and object layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textAndObject = "TextAndObject",
+        /**
+         * Text and two objects layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textAndTwoObjects = "TextAndTwoObjects",
+        /**
+         * Text over object layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textOverObject = "TextOverObject",
+        /**
+         * Title layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        title = "Title",
+        /**
+         * Title only layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        titleOnly = "TitleOnly",
+        /**
+         * Two-column text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoColumnText = "TwoColumnText",
+        /**
+         * Two objects layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoObjects = "TwoObjects",
+        /**
+         * Two objects and object layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoObjectsAndObject = "TwoObjectsAndObject",
+        /**
+         * Two objects and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoObjectsAndText = "TwoObjectsAndText",
+        /**
+         * Two objects over text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        twoObjectsOverText = "TwoObjectsOverText",
+        /**
+         * Vertical text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalText = "VerticalText",
+        /**
+         * Vertical title and text layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalTitleAndText = "VerticalTitleAndText",
+        /**
+         * Vertical title and text over chart layout.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalTitleAndTextOverChart = "VerticalTitleAndTextOverChart",
+    }
+    /**
      * Represents the layout of a slide.
      *
      * @remarks
@@ -2132,6 +2411,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
+        /**
+         * Returns the type of the slide layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2505,6 +2792,24 @@ export declare namespace PowerPoint {
          */
         readonly id: string;
         /**
+         * Returns the zero-based index of the slide representing its position in the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly index: number;
+        /**
+         * Applies the specified layout to the slide, changing its design and structure according to the chosen layout.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param slideLayout - The layout to be applied to the slide. This is typically an instance of a predefined layout from the slide master.
+         */
+        applyLayout(slideLayout: PowerPoint.SlideLayout): void;
+        /**
          * Deletes the slide from the presentation. Does nothing if the slide does not exist.
          *
          * @remarks
@@ -2532,6 +2837,16 @@ export declare namespace PowerPoint {
          * @returns A base64 string of the slide image in PNG format.
          */
         getImageAsBase64(options?: PowerPoint.SlideGetImageOptions): OfficeExtension.ClientResult<string>;
+        /**
+         * Moves the slide to a new position within the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param slideIndex - The zero-based index where the slide should be moved.
+         */
+        moveTo(slideIndex: number): void;
         /**
          * Selects the specified shapes. Existing shape selection is replaced with the new selection.
          *
@@ -2735,6 +3050,16 @@ export declare namespace PowerPoint {
          */
         getItemOrNullObject(id: string): PowerPoint.Shape;
         /**
+         * Groups all shapes in this collection into a single shape.
+                    If the collection contains fewer than two shapes, then this method returns the `GeneralException` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The newly created grouped shape as a {@link PowerPoint.Shape}.
+         */
+        group(): PowerPoint.Shape;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -2757,6 +3082,75 @@ export declare namespace PowerPoint {
          * Whereas the original `PowerPoint.ShapeScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
          */
         toJSON(): PowerPoint.Interfaces.ShapeScopedCollectionData;
+    }
+    /**
+     * Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShapeGroup extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the `Shape` object associated with the group.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shape: PowerPoint.Shape;
+        /**
+         * Returns the collection of `Shape` objects in the group.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shapes: PowerPoint.ShapeScopedCollection;
+        /**
+         * Gets the unique ID of the shape group.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Ungroups any grouped shapes in the specified shape group.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ungroup(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.ShapeGroupLoadOptions): PowerPoint.ShapeGroup;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.ShapeGroup;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.ShapeGroup;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.ShapeGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeGroupData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.ShapeGroupData;
     }
     /**
      * Specifies the style for a line.
@@ -3433,12 +3827,30 @@ export declare namespace PowerPoint {
          */
         readonly fill: PowerPoint.ShapeFill;
         /**
+         * Returns the `ShapeGroup` associated with the shape.
+                    If the shape type isn't `group`, then this method returns the `GeneralException` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly group: PowerPoint.ShapeGroup;
+        /**
          * Returns the line formatting of this shape.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         readonly lineFormat: PowerPoint.ShapeLineFormat;
+        /**
+         * Returns the parent group of this shape.
+                    If the shape isn't part of a group, then this method returns the `GeneralException` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentGroup: PowerPoint.Shape;
         /**
          * Returns a collection of tags in the shape.
          *
@@ -3474,6 +3886,20 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         left: number;
+        /**
+         * Returns the level of the specified shape.
+                    
+                    - A level of 0 means the shape isn't part of a group.
+                    
+                    - A level of 1 means the shape is part of a top-level group.
+                    
+                    - A level greater than 1 indicates the shape is a nested group.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly level: number;
         /**
          * Specifies the name of this shape.
          *
@@ -4651,6 +5077,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: string;
+            /**
+             * Returns the type of the slide layout.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
         }
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
@@ -4703,6 +5137,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
+            /**
+             * Returns the zero-based index of the slide representing its position in the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: number;
         }
         /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
         export interface ShapeFillData {
@@ -4731,6 +5173,17 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
+        export interface ShapeGroupData {
+            /**
+             * Gets the unique ID of the shape group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -4950,6 +5403,20 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: number;
+            /**
+             * Returns the level of the specified shape.
+                        
+                        - A level of 0 means the shape isn't part of a group.
+                        
+                        - A level of 1 means the shape is part of a top-level group.
+                        
+                        - A level greater than 1 indicates the shape is a nested group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: number;
             /**
              * Specifies the name of this shape.
              *
@@ -5276,12 +5743,30 @@ export declare namespace PowerPoint {
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
+            * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
+            If the shape type isn't `group`, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
+            /**
             * For EACH ITEM in the collection: Returns the line formatting of this shape.
             *
             * @remarks
             * [Api set: PowerPointApi 1.4]
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Returns the parent group of this shape.
+            If the shape isn't part of a group, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
@@ -5310,6 +5795,20 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the level of the specified shape.
+                        
+                        - A level of 0 means the shape isn't part of a group.
+                        
+                        - A level of 1 means the shape is part of a top-level group.
+                        
+                        - A level greater than 1 indicates the shape is a nested group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the name of this shape.
              *
@@ -5364,6 +5863,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            /**
+             * Returns the type of the slide layout.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents the collection of layouts provided by the Slide Master for slides.
@@ -5390,6 +5897,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the type of the slide layout.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents the Slide Master of a slide.
@@ -5501,6 +6016,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            /**
+             * Returns the zero-based index of the slide representing its position in the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
         }
         /**
          * Represents the fill formatting of a shape object.
@@ -5554,12 +6077,30 @@ export declare namespace PowerPoint {
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
+            * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
+            If the shape type isn't `group`, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
+            /**
             * For EACH ITEM in the collection: Returns the line formatting of this shape.
             *
             * @remarks
             * [Api set: PowerPointApi 1.5]
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Returns the parent group of this shape.
+            If the shape isn't part of a group, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
             * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
@@ -5589,6 +6130,20 @@ export declare namespace PowerPoint {
              */
             left?: boolean;
             /**
+             * For EACH ITEM in the collection: Returns the level of the specified shape.
+                        
+                        - A level of 0 means the shape isn't part of a group.
+                        
+                        - A level of 1 means the shape is part of a top-level group.
+                        
+                        - A level greater than 1 indicates the shape is a nested group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies the name of this shape.
              *
              * @remarks
@@ -5616,6 +6171,35 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             width?: boolean;
+        }
+        /**
+         * Represents a shape group inside a presentation. To get the corresponding Shape object, use `ShapeGroup.shape`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeGroupLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns the `Shape` object associated with the group.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: PowerPoint.Interfaces.ShapeLoadOptions;
+            /**
+             * Gets the unique ID of the shape group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
         }
         /**
          * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
@@ -5913,12 +6497,30 @@ export declare namespace PowerPoint {
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
+            * Returns the `ShapeGroup` associated with the shape.
+            If the shape type isn't `group`, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
+            /**
             * Returns the line formatting of this shape.
             *
             * @remarks
             * [Api set: PowerPointApi 1.4]
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            * Returns the parent group of this shape.
+            If the shape isn't part of a group, then this method returns the `GeneralException` error.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
             * Returns the text frame object of this shape.
             *
@@ -5947,6 +6549,20 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             left?: boolean;
+            /**
+             * Returns the level of the specified shape.
+                        
+                        - A level of 0 means the shape isn't part of a group.
+                        
+                        - A level of 1 means the shape is part of a top-level group.
+                        
+                        - A level greater than 1 indicates the shape is a nested group.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
             /**
              * Specifies the name of this shape.
              *
@@ -6165,6 +6781,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
         }
         /**
          * Represents a collection of slides in the presentation.
@@ -6198,6 +6822,14 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the presentation.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            index?: boolean;
         }
         /**
          * Represents the collection of Slide Masters in the presentation.

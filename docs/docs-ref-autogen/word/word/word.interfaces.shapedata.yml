@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeData#body:member'
     package: word!
     fullName: body
-    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -109,14 +109,14 @@ properties:
     uid: 'word!Word.Interfaces.ShapeData#type:member'
     package: word!
     fullName: type
-    summary: 'Gets the shape type. Currently, only TextBox shapes are supported.'
+    summary: 'Gets the shape type. Currently, only text boxes and geometric shapes are supported.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'type?: Word.ShapeType | "Unsupported" | "TextBox";'
+      content: 'type?: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape";'
       return:
-        type: '<xref uid="word!Word.ShapeType:enum" /> | "Unsupported" | "TextBox"'
+        type: '<xref uid="word!Word.ShapeType:enum" /> | "Unsupported" | "TextBox" | "GeometricShape"'
   - name: width
     uid: 'word!Word.Interfaces.ShapeData#width:member'
     package: word!

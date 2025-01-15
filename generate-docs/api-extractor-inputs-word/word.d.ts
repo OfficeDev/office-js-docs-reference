@@ -613,7 +613,7 @@ export declare namespace Word {
          */
         readonly parentSectionOrNullObject: Word.Section;
         /**
-         * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -5825,7 +5825,7 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6160,6 +6160,28 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        /**
+         * Inserts a geometric shape with its anchor at the beginning of the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param geometricShapeType - The geometric type of the shape to insert.
+         * @param insertShapeOptions - Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).
+         */
+        insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        /**
+         * Inserts a geometric shape with its anchor at the beginning of the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param geometricShapeTypeString - The geometric type of the shape to insert.
+         * @param insertShapeOptions - Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).
+         */
+        insertGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -6710,7 +6732,7 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -7057,6 +7079,28 @@ export declare namespace Word {
          * @param insertText - Optional. Text to be inserted into the footnote body. The default is "".
          */
         insertFootnote(insertText?: string): Word.NoteItem;
+        /**
+         * Inserts a geometric shape with its anchor at the beginning of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param geometricShapeType - The geometric type of the shape to insert.
+         * @param insertShapeOptions - Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).
+         */
+        insertGeometricShape(geometricShapeType: Word.GeometricShapeType, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        /**
+         * Inserts a geometric shape with its anchor at the beginning of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param geometricShapeTypeString - The geometric type of the shape to insert.
+         * @param insertShapeOptions - Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).
+         */
+        insertGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
          * Inserts HTML at the specified location.
          *
@@ -9882,7 +9926,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
     }
     /**
-     * Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.
+     * Represents a shape in the header footer or document body. Currently, only text boxes and geometric shapes are supported.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9892,7 +9936,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Represents the body object of the shape. Only applies to TextBox shapes.
+         * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9948,13 +9992,13 @@ export declare namespace Word {
          */
         top: number;
         /**
-         * Gets the shape type. Currently, only TextBox shapes are supported.
+         * Gets the shape type. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly type: Word.ShapeType | "Unsupported" | "TextBox";
+        readonly type: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape";
         /**
          * The width, in points, of the shape.
          *
@@ -10025,7 +10069,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ShapeData;
     }
     /**
-     * Contains a collection of {@link Word.Shape} objects. Currently, only TextBox shapes are supported.
+     * Contains a collection of {@link Word.Shape} objects. Currently, only text boxes and geometric shapes are supported.
      *
      * @remarks
      * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -10036,6 +10080,16 @@ export declare namespace Word {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Shape[];
+        /**
+         * Gets the shapes that have the specified geometric types. Only applied to geometric shapes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param types - Required. An array of geometric shape subtypes.
+         */
+        getByGeometricTypes(types: Word.GeometricShapeType[]): Word.ShapeCollection;
         /**
          * Gets a shape by its identifier. Throws an `ItemNotFound` error if there isn't a shape with the identifier in this collection.
          *
@@ -14113,6 +14167,13 @@ export declare namespace Word {
          * @beta
          */
         textBox = "TextBox",
+        /**
+         * Geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        geometricShape = "GeometricShape",
     }
     /**
      * Represents what the horizontal position of a shape is relative to.
@@ -14245,6 +14306,1254 @@ export declare namespace Word {
          * @beta
          */
         outsideMargin = "OutsideMargin",
+    }
+    /**
+     * Specifies the shape type for a `GeometricShape` object.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum GeometricShapeType {
+        /**
+         * Line inverse geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineInverse = "LineInverse",
+        /**
+         * Triangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        triangle = "Triangle",
+        /**
+         * Right triangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightTriangle = "RightTriangle",
+        /**
+         * Rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rectangle = "Rectangle",
+        /**
+         * Diamond geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diamond = "Diamond",
+        /**
+         * Parallelogram geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parallelogram = "Parallelogram",
+        /**
+         * Trapezoid geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trapezoid = "Trapezoid",
+        /**
+         * Non-isosceles trapezoid geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nonIsoscelesTrapezoid = "NonIsoscelesTrapezoid",
+        /**
+         * Pentagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pentagon = "Pentagon",
+        /**
+         * Hexagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hexagon = "Hexagon",
+        /**
+         * Heptagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        heptagon = "Heptagon",
+        /**
+         * Octagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        octagon = "Octagon",
+        /**
+         * Decagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        decagon = "Decagon",
+        /**
+         * Dodecagon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dodecagon = "Dodecagon",
+        /**
+         * Star 4-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star4 = "Star4",
+        /**
+         * Star 5-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star5 = "Star5",
+        /**
+         * Star 6-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star6 = "Star6",
+        /**
+         * Star 7-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star7 = "Star7",
+        /**
+         * Star 8-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star8 = "Star8",
+        /**
+         * Star 10-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star10 = "Star10",
+        /**
+         * Star 12-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star12 = "Star12",
+        /**
+         * Star 16-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star16 = "Star16",
+        /**
+         * Star 24-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star24 = "Star24",
+        /**
+         * Star 32-point geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        star32 = "Star32",
+        /**
+         * Round rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        roundRectangle = "RoundRectangle",
+        /**
+         * Round one rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        round1Rectangle = "Round1Rectangle",
+        /**
+         * Round two same rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        round2SameRectangle = "Round2SameRectangle",
+        /**
+         * Round two diagonal rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        round2DiagonalRectangle = "Round2DiagonalRectangle",
+        /**
+         * Snip round rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        snipRoundRectangle = "SnipRoundRectangle",
+        /**
+         * Snip one rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        snip1Rectangle = "Snip1Rectangle",
+        /**
+         * Snip two same rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        snip2SameRectangle = "Snip2SameRectangle",
+        /**
+         * Snip two diagonal rectangle geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        snip2DiagonalRectangle = "Snip2DiagonalRectangle",
+        /**
+         * Plaque geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plaque = "Plaque",
+        /**
+         * Ellipse geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ellipse = "Ellipse",
+        /**
+         * Teardrop geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        teardrop = "Teardrop",
+        /**
+         * Home plate geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        homePlate = "HomePlate",
+        /**
+         * Chevron geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chevron = "Chevron",
+        /**
+         * Pie wedge geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pieWedge = "PieWedge",
+        /**
+         * Pie geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pie = "Pie",
+        /**
+         * Block arc geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        blockArc = "BlockArc",
+        /**
+         * Donut geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        donut = "Donut",
+        /**
+         * No smoking geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noSmoking = "NoSmoking",
+        /**
+         * Right arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightArrow = "RightArrow",
+        /**
+         * Left arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftArrow = "LeftArrow",
+        /**
+         * Up arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upArrow = "UpArrow",
+        /**
+         * Down arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        downArrow = "DownArrow",
+        /**
+         * Striped right arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        stripedRightArrow = "StripedRightArrow",
+        /**
+         * Notched right arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        notchedRightArrow = "NotchedRightArrow",
+        /**
+         * Bent up arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bentUpArrow = "BentUpArrow",
+        /**
+         * Left-right arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftRightArrow = "LeftRightArrow",
+        /**
+         * Up-down arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upDownArrow = "UpDownArrow",
+        /**
+         * Left-up arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftUpArrow = "LeftUpArrow",
+        /**
+         * Left-right-up arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftRightUpArrow = "LeftRightUpArrow",
+        /**
+         * Quad arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        quadArrow = "QuadArrow",
+        /**
+         * Left arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftArrowCallout = "LeftArrowCallout",
+        /**
+         * Right arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightArrowCallout = "RightArrowCallout",
+        /**
+         * Up arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upArrowCallout = "UpArrowCallout",
+        /**
+         * Down arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        downArrowCallout = "DownArrowCallout",
+        /**
+         * Left-right arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftRightArrowCallout = "LeftRightArrowCallout",
+        /**
+         * Up-down arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        upDownArrowCallout = "UpDownArrowCallout",
+        /**
+         * Quad arrow callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        quadArrowCallout = "QuadArrowCallout",
+        /**
+         * Bent arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bentArrow = "BentArrow",
+        /**
+         * U-turn arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        uturnArrow = "UturnArrow",
+        /**
+         * Circular arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        circularArrow = "CircularArrow",
+        /**
+         * Left circular arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftCircularArrow = "LeftCircularArrow",
+        /**
+         * Left-right circular arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftRightCircularArrow = "LeftRightCircularArrow",
+        /**
+         * Curved right arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        curvedRightArrow = "CurvedRightArrow",
+        /**
+         * Curved left arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        curvedLeftArrow = "CurvedLeftArrow",
+        /**
+         * Curved up arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        curvedUpArrow = "CurvedUpArrow",
+        /**
+         * Curved down arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        curvedDownArrow = "CurvedDownArrow",
+        /**
+         * Swoosh arrow geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        swooshArrow = "SwooshArrow",
+        /**
+         * Cube geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cube = "Cube",
+        /**
+         * Can geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        can = "Can",
+        /**
+         * Lightning bolt geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lightningBolt = "LightningBolt",
+        /**
+         * Heart geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        heart = "Heart",
+        /**
+         * Sun geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sun = "Sun",
+        /**
+         * Moon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        moon = "Moon",
+        /**
+         * Smiley face geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smileyFace = "SmileyFace",
+        /**
+         * Irregular seal 1 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        irregularSeal1 = "IrregularSeal1",
+        /**
+         * Irregular seal 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        irregularSeal2 = "IrregularSeal2",
+        /**
+         * Folded corner geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        foldedCorner = "FoldedCorner",
+        /**
+         * Bevel geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bevel = "Bevel",
+        /**
+         * Frame geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        frame = "Frame",
+        /**
+         * Half frame geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        halfFrame = "HalfFrame",
+        /**
+         * Corner geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        corner = "Corner",
+        /**
+         * Diagonal stripe geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        diagonalStripe = "DiagonalStripe",
+        /**
+         * Chord geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chord = "Chord",
+        /**
+         * Arc geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        arc = "Arc",
+        /**
+         * Left bracket geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftBracket = "LeftBracket",
+        /**
+         * Right bracket geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightBracket = "RightBracket",
+        /**
+         * Left brace geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftBrace = "LeftBrace",
+        /**
+         * Right brace geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightBrace = "RightBrace",
+        /**
+         * Bracket pair geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bracketPair = "BracketPair",
+        /**
+         * Brace pair geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bracePair = "BracePair",
+        /**
+         * Callout 1 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        callout1 = "Callout1",
+        /**
+         * Callout 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        callout2 = "Callout2",
+        /**
+         * Callout 3 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        callout3 = "Callout3",
+        /**
+         * Accent callout 1 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentCallout1 = "AccentCallout1",
+        /**
+         * Accent callout 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentCallout2 = "AccentCallout2",
+        /**
+         * Accent callout 3 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentCallout3 = "AccentCallout3",
+        /**
+         * Border callout 1 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        borderCallout1 = "BorderCallout1",
+        /**
+         * Border callout 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        borderCallout2 = "BorderCallout2",
+        /**
+         * Border callout 3 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        borderCallout3 = "BorderCallout3",
+        /**
+         * Accent border callout 1 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentBorderCallout1 = "AccentBorderCallout1",
+        /**
+         * Accent border callout 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentBorderCallout2 = "AccentBorderCallout2",
+        /**
+         * Accent border callout 3 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        accentBorderCallout3 = "AccentBorderCallout3",
+        /**
+         * Wedge rectangle callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wedgeRectCallout = "WedgeRectCallout",
+        /**
+         * Wedge rounded rectangle callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wedgeRRectCallout = "WedgeRRectCallout",
+        /**
+         * Wedge ellipse callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wedgeEllipseCallout = "WedgeEllipseCallout",
+        /**
+         * Cloud callout geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cloudCallout = "CloudCallout",
+        /**
+         * Cloud geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cloud = "Cloud",
+        /**
+         * Ribbon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ribbon = "Ribbon",
+        /**
+         * Ribbon 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ribbon2 = "Ribbon2",
+        /**
+         * Ellipse ribbon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ellipseRibbon = "EllipseRibbon",
+        /**
+         * Ellipse ribbon 2 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ellipseRibbon2 = "EllipseRibbon2",
+        /**
+         * Left-right ribbon geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftRightRibbon = "LeftRightRibbon",
+        /**
+         * Vertical scroll geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalScroll = "VerticalScroll",
+        /**
+         * Horizontal scroll geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        horizontalScroll = "HorizontalScroll",
+        /**
+         * Wave geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        wave = "Wave",
+        /**
+         * Double wave geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        doubleWave = "DoubleWave",
+        /**
+         * Plus geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plus = "Plus",
+        /**
+         * Flow chart process geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartProcess = "FlowChartProcess",
+        /**
+         * Flow chart decision geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartDecision = "FlowChartDecision",
+        /**
+         * Flow chart input-output geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartInputOutput = "FlowChartInputOutput",
+        /**
+         * Flow chart predefined process geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartPredefinedProcess = "FlowChartPredefinedProcess",
+        /**
+         * Flow chart internal storage geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartInternalStorage = "FlowChartInternalStorage",
+        /**
+         * Flow chart document geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartDocument = "FlowChartDocument",
+        /**
+         * Flow chart multidocument geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartMultidocument = "FlowChartMultidocument",
+        /**
+         * Flow chart terminator geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartTerminator = "FlowChartTerminator",
+        /**
+         * Flow chart preparation geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartPreparation = "FlowChartPreparation",
+        /**
+         * Flow chart manual input geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartManualInput = "FlowChartManualInput",
+        /**
+         * Flow chart manual operation geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartManualOperation = "FlowChartManualOperation",
+        /**
+         * Flow chart connector geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartConnector = "FlowChartConnector",
+        /**
+         * Flow chart punched card geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartPunchedCard = "FlowChartPunchedCard",
+        /**
+         * Flow chart punched tape geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartPunchedTape = "FlowChartPunchedTape",
+        /**
+         * Flow chart summing junction geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartSummingJunction = "FlowChartSummingJunction",
+        /**
+         * Flow chart OR geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartOr = "FlowChartOr",
+        /**
+         * Flow chart collate geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartCollate = "FlowChartCollate",
+        /**
+         * Flow chart sort geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartSort = "FlowChartSort",
+        /**
+         * Flow chart extract geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartExtract = "FlowChartExtract",
+        /**
+         * Flow chart merge geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartMerge = "FlowChartMerge",
+        /**
+         * Flow chart offline storage geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartOfflineStorage = "FlowChartOfflineStorage",
+        /**
+         * Flow chart online storage geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartOnlineStorage = "FlowChartOnlineStorage",
+        /**
+         * Flow chart magnetic tape geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartMagneticTape = "FlowChartMagneticTape",
+        /**
+         * Flow chart magnetic disk geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartMagneticDisk = "FlowChartMagneticDisk",
+        /**
+         * Flow chart magnetic drum geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartMagneticDrum = "FlowChartMagneticDrum",
+        /**
+         * Flow chart display geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartDisplay = "FlowChartDisplay",
+        /**
+         * Flow chart delay geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartDelay = "FlowChartDelay",
+        /**
+         * Flow chart alternate process geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartAlternateProcess = "FlowChartAlternateProcess",
+        /**
+         * Flow chart off-page connector geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        flowChartOffpageConnector = "FlowChartOffpageConnector",
+        /**
+         * Action button blank geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonBlank = "ActionButtonBlank",
+        /**
+         * Action button home geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonHome = "ActionButtonHome",
+        /**
+         * Action button help geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonHelp = "ActionButtonHelp",
+        /**
+         * Action button information geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonInformation = "ActionButtonInformation",
+        /**
+         * Action button forward next geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonForwardNext = "ActionButtonForwardNext",
+        /**
+         * Action button back previous geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonBackPrevious = "ActionButtonBackPrevious",
+        /**
+         * Action button end geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonEnd = "ActionButtonEnd",
+        /**
+         * Action button beginning geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonBeginning = "ActionButtonBeginning",
+        /**
+         * Action button return geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonReturn = "ActionButtonReturn",
+        /**
+         * Action button document geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonDocument = "ActionButtonDocument",
+        /**
+         * Action button sound geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonSound = "ActionButtonSound",
+        /**
+         * Action button movie geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        actionButtonMovie = "ActionButtonMovie",
+        /**
+         * Gear 6 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gear6 = "Gear6",
+        /**
+         * Gear 9 geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gear9 = "Gear9",
+        /**
+         * Funnel geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        funnel = "Funnel",
+        /**
+         * Math plus geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathPlus = "MathPlus",
+        /**
+         * Math minus geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathMinus = "MathMinus",
+        /**
+         * Math multiply geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathMultiply = "MathMultiply",
+        /**
+         * Math divide geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathDivide = "MathDivide",
+        /**
+         * Math equal geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathEqual = "MathEqual",
+        /**
+         * Math not equal geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mathNotEqual = "MathNotEqual",
+        /**
+         * Corner tabs geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cornerTabs = "CornerTabs",
+        /**
+         * Square tabs geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        squareTabs = "SquareTabs",
+        /**
+         * Plaque tabs geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        plaqueTabs = "PlaqueTabs",
+        /**
+         * Chart X geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartX = "ChartX",
+        /**
+         * Chart star geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartStar = "ChartStar",
+        /**
+         * Chart plus geometric shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chartPlus = "ChartPlus",
     }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
@@ -15777,7 +17086,7 @@ export declare namespace Word {
         /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             /**
-            * Represents the body object of the shape. Only applies to TextBox shapes.
+            * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -15915,7 +17224,7 @@ export declare namespace Word {
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-            * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17113,7 +18422,7 @@ export declare namespace Word {
             */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
-            * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17369,7 +18678,7 @@ export declare namespace Word {
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only text boxes and geometric shapes are supported.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18087,7 +19396,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             /**
-            * Represents the body object of the shape. Only applies to TextBox shapes.
+            * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -18143,13 +19452,13 @@ export declare namespace Word {
              */
             top?: number;
             /**
-             * Gets the shape type. Currently, only TextBox shapes are supported.
+             * Gets the shape type. Currently, only text boxes and geometric shapes are supported.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            type?: Word.ShapeType | "Unsupported" | "TextBox";
+            type?: Word.ShapeType | "Unsupported" | "TextBox" | "GeometricShape";
             /**
              * The width, in points, of the shape.
              *
@@ -22543,7 +23852,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.
+         * Represents a shape in the header footer or document body. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -22555,7 +23864,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Represents the body object of the shape. Only applies to TextBox shapes.
+            * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -22611,7 +23920,7 @@ export declare namespace Word {
              */
             top?: boolean;
             /**
-             * Gets the shape type. Currently, only TextBox shapes are supported.
+             * Gets the shape type. Currently, only text boxes and geometric shapes are supported.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -22628,7 +23937,7 @@ export declare namespace Word {
             width?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.Shape} objects. Currently, only TextBox shapes are supported.
+         * Contains a collection of {@link Word.Shape} objects. Currently, only text boxes and geometric shapes are supported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -22640,7 +23949,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents the body object of the shape. Only applies to TextBox shapes.
+            * For EACH ITEM in the collection: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -22696,7 +24005,7 @@ export declare namespace Word {
              */
             top?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the shape type. Currently, only TextBox shapes are supported.
+             * For EACH ITEM in the collection: Gets the shape type. Currently, only text boxes and geometric shapes are supported.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
