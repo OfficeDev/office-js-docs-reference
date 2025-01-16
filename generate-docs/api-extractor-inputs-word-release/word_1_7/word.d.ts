@@ -2855,7 +2855,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          *
-         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         * 
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
          * 
@@ -2867,10 +2867,10 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          *
-         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         * 
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
-         * @param 
+         * 
          */
         importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
         /**
