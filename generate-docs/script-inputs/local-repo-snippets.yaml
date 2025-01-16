@@ -5402,7 +5402,7 @@ Office.DocumentMode:enum:
     console.log("Document mode: " + mode);
 Office.DocumentSelectionChangedEventArgs:interface:
   - |-
-    // The following example adds an event handler for the SelectionChanged event of a document
+    // The following example adds an event handler for the SelectionChanged event of a document.
     function addSelectionChangedEventHandler() {
         Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
     }
