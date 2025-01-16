@@ -2425,9 +2425,9 @@ export declare namespace Word {
          * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
-         * @param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
+         * 
          */
-        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
         /**
          * Import styles from a JSON-formatted string.
          *
@@ -2437,9 +2437,9 @@ export declare namespace Word {
          * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
          *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
-         * @param importedStylesConflictBehaviorString - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
+         * @param 
          */
-        importStylesFromJson(stylesJson: string, importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
