@@ -48,6 +48,8 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.ShapeFontData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
@@ -106,6 +108,7 @@ classes:
   - 'powerpoint!PowerPoint.ShapeCollection:class'
   - 'powerpoint!PowerPoint.ShapeFill:class'
   - 'powerpoint!PowerPoint.ShapeFont:class'
+  - 'powerpoint!PowerPoint.ShapeGroup:class'
   - 'powerpoint!PowerPoint.ShapeLineFormat:class'
   - 'powerpoint!PowerPoint.ShapeScopedCollection:class'
   - 'powerpoint!PowerPoint.Slide:class'
@@ -132,6 +135,7 @@ enums:
   - 'powerpoint!PowerPoint.ShapeLineDashStyle:enum'
   - 'powerpoint!PowerPoint.ShapeLineStyle:enum'
   - 'powerpoint!PowerPoint.ShapeType:enum'
+  - 'powerpoint!PowerPoint.SlideLayoutType:enum'
   - 'powerpoint!PowerPoint.TextVerticalAlignment:enum'
 functions:
   - name: PowerPoint.createPresentation(base64File)

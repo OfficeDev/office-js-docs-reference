@@ -1,0 +1,382 @@
+### YamlMime:TSEnum
+name: PowerPoint.SlideLayoutType
+uid: 'powerpoint!PowerPoint.SlideLayoutType:enum'
+package: powerpoint!
+fullName: PowerPoint.SlideLayoutType
+summary: Specifies the type of a slide layout.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+fields:
+  - name: blank
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.blank:member'
+    package: powerpoint!
+    summary: >-
+      Blank layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Blank"'
+  - name: chart
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.chart:member'
+    package: powerpoint!
+    summary: >-
+      Chart layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Chart"'
+  - name: chartAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.chartAndText:member'
+    package: powerpoint!
+    summary: >-
+      Chart and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ChartAndText"'
+  - name: clipArtAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.clipArtAndText:member'
+    package: powerpoint!
+    summary: >-
+      ClipArt and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ClipArtAndText"'
+  - name: clipArtAndVerticalText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.clipArtAndVerticalText:member'
+    package: powerpoint!
+    summary: >-
+      ClipArt and vertical text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ClipArtAndVerticalText"'
+  - name: comparison
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.comparison:member'
+    package: powerpoint!
+    summary: >-
+      Comparison layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Comparison"'
+  - name: contentWithCaption
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.contentWithCaption:member'
+    package: powerpoint!
+    summary: >-
+      Content with caption layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ContentWithCaption"'
+  - name: custom
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.custom:member'
+    package: powerpoint!
+    summary: >-
+      Custom layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Custom"'
+  - name: fourObjects
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.fourObjects:member'
+    package: powerpoint!
+    summary: >-
+      Four objects layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"FourObjects"'
+  - name: largeObject
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.largeObject:member'
+    package: powerpoint!
+    summary: >-
+      Large object layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"LargeObject"'
+  - name: mediaClipAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.mediaClipAndText:member'
+    package: powerpoint!
+    summary: >-
+      MediaClip and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"MediaClipAndText"'
+  - name: mixed
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.mixed:member'
+    package: powerpoint!
+    summary: >-
+      Mixed layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: object
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.object:member'
+    package: powerpoint!
+    summary: >-
+      Object layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Object"'
+  - name: objectAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.objectAndText:member'
+    package: powerpoint!
+    summary: >-
+      Object and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ObjectAndText"'
+  - name: objectAndTwoObjects
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.objectAndTwoObjects:member'
+    package: powerpoint!
+    summary: >-
+      Object and two objects layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ObjectAndTwoObjects"'
+  - name: objectOverText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.objectOverText:member'
+    package: powerpoint!
+    summary: >-
+      Object over text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"ObjectOverText"'
+  - name: organizationChart
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.organizationChart:member'
+    package: powerpoint!
+    summary: >-
+      Organization chart layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"OrganizationChart"'
+  - name: pictureWithCaption
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.pictureWithCaption:member'
+    package: powerpoint!
+    summary: >-
+      Picture with caption layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"PictureWithCaption"'
+  - name: sectionHeader
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.sectionHeader:member'
+    package: powerpoint!
+    summary: >-
+      Section header layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"SectionHeader"'
+  - name: table
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.table:member'
+    package: powerpoint!
+    summary: >-
+      Table layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Table"'
+  - name: text
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.text:member'
+    package: powerpoint!
+    summary: >-
+      Text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Text"'
+  - name: textAndChart
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textAndChart:member'
+    package: powerpoint!
+    summary: >-
+      Text and chart layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextAndChart"'
+  - name: textAndClipArt
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textAndClipArt:member'
+    package: powerpoint!
+    summary: >-
+      Text and ClipArt layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextAndClipArt"'
+  - name: textAndMediaClip
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textAndMediaClip:member'
+    package: powerpoint!
+    summary: >-
+      Text and MediaClip layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextAndMediaClip"'
+  - name: textAndObject
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textAndObject:member'
+    package: powerpoint!
+    summary: >-
+      Text and object layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextAndObject"'
+  - name: textAndTwoObjects
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textAndTwoObjects:member'
+    package: powerpoint!
+    summary: >-
+      Text and two objects layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextAndTwoObjects"'
+  - name: textOverObject
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.textOverObject:member'
+    package: powerpoint!
+    summary: >-
+      Text over object layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TextOverObject"'
+  - name: title
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.title:member'
+    package: powerpoint!
+    summary: >-
+      Title layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"Title"'
+  - name: titleOnly
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.titleOnly:member'
+    package: powerpoint!
+    summary: >-
+      Title only layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TitleOnly"'
+  - name: twoColumnText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.twoColumnText:member'
+    package: powerpoint!
+    summary: >-
+      Two-column text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TwoColumnText"'
+  - name: twoObjects
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.twoObjects:member'
+    package: powerpoint!
+    summary: >-
+      Two objects layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TwoObjects"'
+  - name: twoObjectsAndObject
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.twoObjectsAndObject:member'
+    package: powerpoint!
+    summary: >-
+      Two objects and object layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TwoObjectsAndObject"'
+  - name: twoObjectsAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.twoObjectsAndText:member'
+    package: powerpoint!
+    summary: >-
+      Two objects and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TwoObjectsAndText"'
+  - name: twoObjectsOverText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.twoObjectsOverText:member'
+    package: powerpoint!
+    summary: >-
+      Two objects over text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"TwoObjectsOverText"'
+  - name: verticalText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.verticalText:member'
+    package: powerpoint!
+    summary: >-
+      Vertical text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"VerticalText"'
+  - name: verticalTitleAndText
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.verticalTitleAndText:member'
+    package: powerpoint!
+    summary: >-
+      Vertical title and text layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"VerticalTitleAndText"'
+  - name: verticalTitleAndTextOverChart
+    uid: 'powerpoint!PowerPoint.SlideLayoutType.verticalTitleAndTextOverChart:member'
+    package: powerpoint!
+    summary: >-
+      Vertical title and text over chart layout.
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    value: '"VerticalTitleAndTextOverChart"'

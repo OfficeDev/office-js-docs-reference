@@ -3,7 +3,9 @@ name: Word.Interfaces.ShapeLoadOptions
 uid: 'word!Word.Interfaces.ShapeLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.ShapeLoadOptions
-summary: 'Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.'
+summary: >-
+  Represents a shape in the header footer or document body. Currently, only text boxes and geometric shapes are
+  supported.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -27,7 +29,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeLoadOptions#body:member'
     package: word!
     fullName: body
-    summary: Represents the body object of the shape. Only applies to TextBox shapes.
+    summary: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -115,7 +117,7 @@ properties:
     uid: 'word!Word.Interfaces.ShapeLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: 'Gets the shape type. Currently, only TextBox shapes are supported.'
+    summary: 'Gets the shape type. Currently, only text boxes and geometric shapes are supported.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

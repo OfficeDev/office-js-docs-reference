@@ -163,6 +163,23 @@ methods:
         description: >-
           The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to
           true is returned.
+  - name: group()
+    uid: 'powerpoint!PowerPoint.ShapeScopedCollection#group:member(1)'
+    package: powerpoint!
+    fullName: group()
+    summary: >-
+      Groups all shapes in this collection into a single shape. If the collection contains fewer than two shapes, then
+      this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'group(): PowerPoint.Shape;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: 'The newly created grouped shape as a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->.'
   - name: load(options)
     uid: 'powerpoint!PowerPoint.ShapeScopedCollection#load:member(1)'
     package: powerpoint!

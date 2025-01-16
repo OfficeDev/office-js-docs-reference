@@ -39,6 +39,8 @@ items:
                 uid: 'powerpoint!PowerPoint.ShapeLineStyle:enum'
               - name: ShapeType
                 uid: 'powerpoint!PowerPoint.ShapeType:enum'
+              - name: SlideLayoutType
+                uid: 'powerpoint!PowerPoint.SlideLayoutType:enum'
               - name: TextVerticalAlignment
                 uid: 'powerpoint!PowerPoint.TextVerticalAlignment:enum'
           - name: AddSlideOptions
@@ -81,6 +83,8 @@ items:
             uid: 'powerpoint!PowerPoint.ShapeFill:class'
           - name: ShapeFont
             uid: 'powerpoint!PowerPoint.ShapeFont:class'
+          - name: ShapeGroup
+            uid: 'powerpoint!PowerPoint.ShapeGroup:class'
           - name: ShapeLineFormat
             uid: 'powerpoint!PowerPoint.ShapeLineFormat:class'
           - name: ShapeScopedCollection
