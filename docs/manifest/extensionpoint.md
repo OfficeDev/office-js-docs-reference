@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 09/05/2024
+ms.date: 01/23/2025
 ms.localizationpriority: medium
 ---
 
@@ -88,7 +88,7 @@ A context menu is a shortcut menu that appears when you right-click (or select a
 
 #### Example
 
-The following customizes the context menu opened on the selected text in a supported Office application. Note that the child control must be of type **Button**.
+The following customizes the context menu opened on the selected text in a supported Office application. The context menu control used is of type **Button**.
 
 ```xml
 <ExtensionPoint xsi:type="ContextMenu">
