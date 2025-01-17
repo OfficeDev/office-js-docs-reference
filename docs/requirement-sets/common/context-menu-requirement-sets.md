@@ -6,7 +6,7 @@ ms.topic: overview
 ms.localizationpriority: medium
 ---
 
-# Ribbon API requirement sets
+# Context Menu requirement sets
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
