@@ -237,6 +237,10 @@ export declare namespace Office {
      */
     const auth: Auth;
     /**
+     * Represents the context menu object associated with the Office application.
+     */
+    const contextMenu: ContextMenu;
+    /**
      * Represents the Device Permission interface.
      */
     const devicePermission: DevicePermission;
@@ -4738,6 +4742,59 @@ export declare namespace Office {
         * Gets the version of Office on which the add-in is running.
         */
         version: string;
+    }
+    /**
+     * Provides options to manage the state of the Office context menu.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-requirement-sets | ContextMenu 1.1}
+     */
+    export interface ContextMenu {
+        /**
+         * Sends a request to Office to update the context menu.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-requirement-sets | ContextMenu 1.1}
+         *
+         * **Important**: This API is only used to request an update. The actual UI update to the context menu is controlled by the Office application,
+         * so the exact timing of the context menu update (or refresh) can't be determined by the completion of this API.
+         *
+         * @param input - Represents the updates to be made to the context menu controls. Only the changes specified in the `control` parameter are made.
+         *                Other context menu controls that aren't specified remain as is in the Office application.
+         */
+        requestUpdate(input: ContextMenuUpdaterData): Promise<void>;
+    }
+    /**
+     * Represents an individual context menu control and its state.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-requirement-sets | ContextMenu 1.1}
+     */
+    export interface ContextMenuControl {
+        /**
+         * Identifier of the context menu control as specified in the manifest.
+         */
+        id: string;
+        /**
+         * Indicates whether the control is available on the context menu.
+         */
+        enabled?: boolean;
+    }
+    /**
+     * Represents the changes to the context menu.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-requirement-sets | ContextMenu 1.1}
+     */
+    export interface ContextMenuUpdaterData {
+        /**
+         * Collection of context menu controls whose state is set using `Office.contextMenu.requestUpdate`.
+         */
+        controls: ContextMenuControl[];
     }
     /**
      * Represents an individual control or command and the state it should have.
