@@ -6927,6 +6927,13 @@ Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,"host",Property,Fine,true
 Office.ContextInformation,"platform",Property,Good,true
 Office.ContextInformation,"version",Property,Fine,true
+Office.ContextMenu,N/A,Class,Good,false
+Office.ContextMenu,"requestUpdate(input)",Method,Poor,false
+Office.ContextMenuControl,N/A,Class,Good,false
+Office.ContextMenuControl,"enabled",Property,Fine,false
+Office.ContextMenuControl,"id",Property,Fine,false
+Office.ContextMenuUpdaterData,N/A,Class,Good,false
+Office.ContextMenuUpdaterData,"controls",Property,Fine,false
 Office.Control,N/A,Class,Good,false
 Office.Control,"enabled",Property,Good,false
 Office.Control,"id",Property,Fine,false
