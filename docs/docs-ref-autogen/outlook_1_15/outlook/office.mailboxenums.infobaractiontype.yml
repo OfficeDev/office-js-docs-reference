@@ -1,0 +1,54 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.InfobarActionType
+uid: 'outlook!Office.MailboxEnums.InfobarActionType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.InfobarActionType
+summary: >-
+  Action types supported by
+  [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+remarks: |-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  /*
+  * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+  * The event handler logs the custom action and notification type to the console.
+  */
+  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+  function eventHandler(event) {
+      const infobarDetails = event.infobarDetails;
+
+      // Log the custom action type.
+      console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+      // Log the notification type.
+      switch (infobarDetails.infobarType) {
+          case Office.MailboxEnums.InfobarType.Error:
+              console.log("Notification type: Error message");
+              break;
+          case Office.MailboxEnums.InfobarType.Informational:
+              console.log("Notification type: Informational message");
+              break;
+          case Office.MailboxEnums.InfobarType.Insight:
+              console.log("Notification type: Informational message with available actions from the task pane");
+              break;
+          case Office.MailboxEnums.InfobarType.ProgressIndicator:
+              console.log("Notification type: Progress indicator");
+              break;
+      }
+  }
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Dismiss
+    uid: 'outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member'
+    package: outlook!
+    summary: |-
+      Dismiss action was selected.
+
+      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '1'

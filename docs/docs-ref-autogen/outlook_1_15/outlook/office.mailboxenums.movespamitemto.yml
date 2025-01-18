@@ -1,0 +1,92 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.MoveSpamItemTo
+uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo:enum'
+package: outlook!
+fullName: Office.MailboxEnums.MoveSpamItemTo
+summary: >-
+  Specifies the folder to which a reported spam or phishing message is moved once it's processed by a spam-reporting
+  add-in.
+
+
+  To learn more about the integrated spam-reporting feature, see [Implement an integrated spam-reporting
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Message Read
+
+
+  **Important**: This enum can only be used to assign values to the
+  [moveItemTo](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member)
+  property of the
+  [event.completed](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+  method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property, you must
+  assign it different string values. For a list of supported string values, see
+  [Office.SpamReportingEventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member)<!--
+  -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+  function onSpamReport(event) {
+      // Get the Base64-encoded EML format of a reported message.
+      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+              return;
+          }
+
+          // Run additional processing operations here.
+
+          /**
+           * Signal that the spam-reporting event has completed processing.
+           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+           * and shows a post-processing dialog to the user.
+           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+           * property determines whether the message will be deleted.
+           */
+          const event = asyncResult.asyncContext;
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message.",
+              },
+          });
+      });
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: CustomFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.CustomFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to a custom folder in the mailbox.
+    value: '"customFolder"'
+  - name: DeletedItemsFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.DeletedItemsFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.
+    value: '"deletedItemsFolder"'
+  - name: JunkFolder
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.JunkFolder:member'
+    package: outlook!
+    summary: Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.
+    value: '"junkFolder"'
+  - name: NoMove
+    uid: 'outlook!Office.MailboxEnums.MoveSpamItemTo.NoMove:member'
+    package: outlook!
+    summary: Specifies that a reported message remains in its current folder in the mailbox.
+    value: '"noMove"'

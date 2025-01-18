@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.SourceProperty
+uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
+package: outlook!
+fullName: Office.MailboxEnums.SourceProperty
+summary: Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
+remarks: >-
+  \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
+
+
+  Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+      const text = asyncResult.value.data;
+      const prop = asyncResult.value.sourceProperty;
+      console.log("Selected text in " + prop + ": " + text);
+    } else {
+      console.error(asyncResult.error);
+    }
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Body
+    uid: 'outlook!Office.MailboxEnums.SourceProperty.Body:member'
+    package: outlook!
+    summary: The source of the data is from the body of the item.
+    value: '"body"'
+  - name: Subject
+    uid: 'outlook!Office.MailboxEnums.SourceProperty.Subject:member'
+    package: outlook!
+    summary: The source of the data is from the subject of the item.
+    value: '"subject"'
