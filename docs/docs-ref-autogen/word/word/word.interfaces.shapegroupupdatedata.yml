@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeGroupUpdateData
+uid: 'word!Word.Interfaces.ShapeGroupUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.ShapeGroupUpdateData
+summary: 'An interface for updating data on the `ShapeGroup` object, for use in `shapeGroup.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: shape
+    uid: 'word!Word.Interfaces.ShapeGroupUpdateData#shape:member'
+    package: word!
+    fullName: shape
+    summary: Gets the Shape object associated with the group.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shape?: Word.Interfaces.ShapeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'

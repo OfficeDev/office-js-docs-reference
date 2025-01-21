@@ -137,6 +137,10 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
+    
+    
     /**
      * Represents the collection of shapes.
      *
@@ -643,10 +647,6 @@ export declare namespace PowerPoint {
     
     
     
-    
-    
-    
-    
     /**
      * Represents a single shape in the slide.
      *
@@ -972,6 +972,20 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
+        export interface ShapeFillUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
+        export interface ShapeFontUpdateData {
+            
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -994,11 +1008,6 @@ export declare namespace PowerPoint {
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
         }
-        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
-        export interface ShapeFillUpdateData {
-            
-            
-        }
         /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
         export interface ShapeScopedCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -1018,15 +1027,6 @@ export declare namespace PowerPoint {
         }
         /** An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
-            
-        }
-        /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
-        export interface ShapeFontUpdateData {
-            
-            
-            
-            
-            
             
         }
         /** An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`. */
@@ -1112,6 +1112,21 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
+        export interface ShapeFillData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
+        export interface ShapeFontData {
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -1185,12 +1200,6 @@ export declare namespace PowerPoint {
              */
             id?: string;
         }
-        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
-        export interface ShapeFillData {
-            
-            
-            
-        }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -1210,15 +1219,6 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
         export interface ParagraphFormatData {
-            
-        }
-        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
-        export interface ShapeFontData {
-            
-            
-            
-            
-            
             
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
@@ -1303,6 +1303,8 @@ export declare namespace PowerPoint {
             
             title?: boolean;
         }
+        
+        
         
         
         
@@ -1499,8 +1501,6 @@ export declare namespace PowerPoint {
              */
             id?: boolean;
         }
-        
-        
         
         
         

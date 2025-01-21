@@ -505,7 +505,7 @@ properties:
     fullName: shapes
     summary: >-
       Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes.
-      Currently, only text boxes and geometric shapes are supported.
+      Currently, only the following shapes are supported: text boxes, geometric, grouped, and picture.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -1657,7 +1657,7 @@ methods:
           description: The geometric type of the shape to insert.
           type: '<xref uid="word!Word.GeometricShapeType:enum" />'
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'
@@ -1739,7 +1739,7 @@ methods:
             "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual"
             | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the geometric shape. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the geometric shape. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'
@@ -1903,6 +1903,28 @@ methods:
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
+  - name: 'insertPictureFromBase64(base64EncodedImage, insertShapeOptions)'
+    uid: 'word!Word.Paragraph#insertPictureFromBase64:member(1)'
+    package: word!
+    fullName: 'insertPictureFromBase64(base64EncodedImage, insertShapeOptions)'
+    summary: Inserts a floating picture with its anchor at the beginning of the paragraph.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertPictureFromBase64(base64EncodedImage: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;'
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The Base64-encoded image to be inserted.
+          type: string
+        - id: insertShapeOptions
+          description: >-
+            Optional. The location and size of the picture. The default location is (0, 0) and the default size is the
+            image's original size.
+          type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     uid: 'word!Word.Paragraph#insertTable:member(1)'
     package: word!
@@ -1994,7 +2016,7 @@ methods:
           description: Optional. The text to insert into the text box.
           type: string
         - id: insertShapeOptions
-          description: 'Optional. The size and location of the text box. The default location and size is (0, 0, 100, 100).'
+          description: 'Optional. The location and size of the text box. The default location and size is (0, 0, 100, 100).'
           type: '<xref uid="word!Word.InsertShapeOptions:interface" />'
       return:
         type: '<xref uid="word!Word.Shape:class" />'

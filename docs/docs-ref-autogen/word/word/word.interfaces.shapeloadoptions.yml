@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.ShapeLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.ShapeLoadOptions
 summary: >-
-  Represents a shape in the header footer or document body. Currently, only text boxes and geometric shapes are
-  supported.
+  Represents a shape in the header, footer, or document body. Currently, only the following shapes are supported: text
+  boxes, geometric, grouped, and picture.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -37,6 +37,18 @@ properties:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: geometricShapeType
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#geometricShapeType:member'
+    package: word!
+    fullName: geometricShapeType
+    summary: The geometric shape type of the shape. It will be null if isn't a geometric shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'geometricShapeType?: boolean;'
+      return:
+        type: boolean
   - name: height
     uid: 'word!Word.Interfaces.ShapeLoadOptions#height:member'
     package: word!
@@ -66,8 +78,9 @@ properties:
     package: word!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the horizontal relative position. For a floating
-      shape, it will return 0 and can't be set.
+      The distance, in points, from the left side of the shape to the horizontal relative position, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->. For an inline shape, it
+      will return 0 and can't be set.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -75,11 +88,25 @@ properties:
       content: 'left?: boolean;'
       return:
         type: boolean
+  - name: name
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#name:member'
+    package: word!
+    fullName: name
+    summary: The name of the shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
   - name: relativeHorizontalPosition
     uid: 'word!Word.Interfaces.ShapeLoadOptions#relativeHorizontalPosition:member'
     package: word!
     fullName: relativeHorizontalPosition
-    summary: 'The relative horizontal position of the shape. For a floating shape, it can''t be set.'
+    summary: >-
+      The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -91,7 +118,9 @@ properties:
     uid: 'word!Word.Interfaces.ShapeLoadOptions#relativeVerticalPosition:member'
     package: word!
     fullName: relativeVerticalPosition
-    summary: 'The relative vertical position of the shape. For a floating shape, it can''t be set.'
+    summary: >-
+      The relative vertical position of the shape. For an inline shape, it can't be set. For details, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -99,13 +128,30 @@ properties:
       content: 'relativeVerticalPosition?: boolean;'
       return:
         type: boolean
+  - name: shapeGroup
+    uid: 'word!Word.Interfaces.ShapeLoadOptions#shapeGroup:member'
+    package: word!
+    fullName: shapeGroup
+    summary: >-
+      Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't "GroupShape". For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shapeGroup?: Word.Interfaces.ShapeGroupLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeGroupLoadOptions:interface" />'
   - name: top
     uid: 'word!Word.Interfaces.ShapeLoadOptions#top:member'
     package: word!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape,
-      it will return 0 and can't be set.
+      The distance, in points, from the top edge of the shape to the vertical relative position, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->. For an inline shape, it
+      will return 0 and can't be set.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -117,7 +163,9 @@ properties:
     uid: 'word!Word.Interfaces.ShapeLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: 'Gets the shape type. Currently, only text boxes and geometric shapes are supported.'
+    summary: >-
+      Gets the shape type. Currently, only the following shapes are supported: text boxes, geometric, grouped, and
+      picture.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
