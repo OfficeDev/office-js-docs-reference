@@ -3,7 +3,7 @@ name: Word.InsertShapeOptions
 uid: 'word!Word.InsertShapeOptions:interface'
 package: word!
 fullName: Word.InsertShapeOptions
-summary: Specifies the options to determine size and location when inserting a shape.
+summary: Specifies the options to determine location and size when inserting a shape.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false

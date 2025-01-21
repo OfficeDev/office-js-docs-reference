@@ -273,6 +273,8 @@ items:
             uid: 'word!Word.Shape:class'
           - name: ShapeCollection
             uid: 'word!Word.ShapeCollection:class'
+          - name: ShapeGroup
+            uid: 'word!Word.ShapeGroup:class'
           - name: Style
             uid: 'word!Word.Style:class'
           - name: StyleCollection

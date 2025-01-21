@@ -4,8 +4,8 @@ uid: 'word!Word.ShapeCollection:class'
 package: word!
 fullName: Word.ShapeCollection
 summary: >-
-  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only text boxes and geometric
-  shapes are supported.
+  Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only the following shapes are
+  supported: text boxes, geometric, grouped, and picture.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
@@ -96,6 +96,23 @@ methods:
       return:
         type: '<xref uid="word!Word.Shape:class" />'
         description: ''
+  - name: getByIds(ids)
+    uid: 'word!Word.ShapeCollection#getByIds:member(1)'
+    package: word!
+    fullName: getByIds(ids)
+    summary: Gets the shapes by the identifiers.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByIds(ids: number[]): Word.ShapeCollection;'
+      parameters:
+        - id: ids
+          description: Required. An array of shape identifiers.
+          type: 'number[]'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
   - name: getByTypes(types)
     uid: 'word!Word.ShapeCollection#getByTypes:member(1)'
     package: word!
@@ -140,6 +157,21 @@ methods:
     isDeprecated: false
     syntax:
       content: 'getFirstOrNullObject(): Word.Shape;'
+      return:
+        type: '<xref uid="word!Word.Shape:class" />'
+        description: ''
+  - name: group()
+    uid: 'word!Word.ShapeCollection#group:member(1)'
+    package: word!
+    fullName: group()
+    summary: >-
+      Groups floating shapes in this collection, inline shapes will be skipped. Returns a Shape object that represents
+      the new group of shapes.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'group(): Word.Shape;'
       return:
         type: '<xref uid="word!Word.Shape:class" />'
         description: ''

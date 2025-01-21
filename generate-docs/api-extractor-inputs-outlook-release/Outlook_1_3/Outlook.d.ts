@@ -5287,9 +5287,10 @@ export declare namespace Office {
      * your add-in has persisted changes.
      * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
      *
-     * - When set and saved through Outlook on Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} or classic) or on Mac,
-     * these settings are reflected in Outlook on the web only after a browser refresh.
-     * 
+     * - In classic Outlook on Windows, if roaming settings were configured on another Outlook client, the desktop client doesn't need to be restarted.
+     * However, the add-in needs to be reloaded to access these settings. In Outlook on the web, on Mac, and in the new Outlook on Windows,
+     * you must refresh the browser or restart the client to access roaming settings set on another client.
+     *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read

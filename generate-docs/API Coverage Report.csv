@@ -12319,6 +12319,7 @@ Word.Paragraph,"insertHtml(html, insertLocation)",Method,Fine,true
 Word.Paragraph,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 Word.Paragraph,"insertOoxml(ooxml, insertLocation)",Method,Fine,false
 Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,false
+Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 Word.Paragraph,"insertText(text, insertLocation)",Method,Poor,true
 Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
@@ -12442,6 +12443,7 @@ Word.Range,"insertHtml(html, insertLocation)",Method,Fine,true
 Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
 Word.Range,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
 Word.Range,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
+Word.Range,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 Word.Range,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 Word.Range,"insertText(text, insertLocation)",Method,Poor,true
 Word.Range,"insertTextBox(text, insertShapeOptions)",Method,Fine,false
@@ -12631,11 +12633,14 @@ Word.ShadingTextureType,"solid",EnumField,Fine,false
 Word.Shape,N/A,Class,Good,false
 Word.Shape,"body",Property,Good,false
 Word.Shape,"context",Property,Good,false
+Word.Shape,"geometricShapeType",Property,Good,false
 Word.Shape,"height",Property,Good,false
 Word.Shape,"id",Property,Good,false
 Word.Shape,"left",Property,Good,false
+Word.Shape,"name",Property,Good,false
 Word.Shape,"relativeHorizontalPosition",Property,Good,false
 Word.Shape,"relativeVerticalPosition",Property,Good,false
+Word.Shape,"shapeGroup",Property,Good,false
 Word.Shape,"top",Property,Good,false
 Word.Shape,"type",Property,Good,false
 Word.Shape,"width",Property,Good,false
@@ -12643,6 +12648,8 @@ Word.Shape,"delete()",Method,Poor,false
 Word.Shape,"load(options)",Method,Poor,false
 Word.Shape,"load(propertyNames)",Method,Poor,false
 Word.Shape,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.Shape,"moveHorizontally(distance)",Method,Poor,false
+Word.Shape,"moveVertically(distance)",Method,Poor,false
 Word.Shape,"select(selectMultipleShapes)",Method,Poor,false
 Word.Shape,"set(properties, options)",Method,Poor,false
 Word.Shape,"set(properties)",Method,Poor,false
@@ -12655,17 +12662,35 @@ Word.ShapeCollection,"items",Property,Fine,false
 Word.ShapeCollection,"getByGeometricTypes(types)",Method,Poor,false
 Word.ShapeCollection,"getById(id)",Method,Poor,false
 Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Poor,false
+Word.ShapeCollection,"getByIds(ids)",Method,Poor,false
 Word.ShapeCollection,"getByTypes(types)",Method,Poor,false
 Word.ShapeCollection,"getFirst()",Method,Poor,false
 Word.ShapeCollection,"getFirstOrNullObject()",Method,Poor,false
+Word.ShapeCollection,"group()",Method,Poor,false
 Word.ShapeCollection,"load(options)",Method,Poor,false
 Word.ShapeCollection,"load(propertyNames)",Method,Poor,false
 Word.ShapeCollection,"load(propertyNamesAndPaths)",Method,Poor,false
 Word.ShapeCollection,"toJSON()",Method,Poor,false
 Word.ShapeCollection,"track()",Method,Poor,false
 Word.ShapeCollection,"untrack()",Method,Poor,false
+Word.ShapeGroup,N/A,Class,Good,false
+Word.ShapeGroup,"context",Property,Good,false
+Word.ShapeGroup,"id",Property,Good,false
+Word.ShapeGroup,"shape",Property,Good,false
+Word.ShapeGroup,"shapes",Property,Good,false
+Word.ShapeGroup,"load(options)",Method,Poor,false
+Word.ShapeGroup,"load(propertyNames)",Method,Poor,false
+Word.ShapeGroup,"load(propertyNamesAndPaths)",Method,Poor,false
+Word.ShapeGroup,"set(properties, options)",Method,Poor,false
+Word.ShapeGroup,"set(properties)",Method,Poor,false
+Word.ShapeGroup,"toJSON()",Method,Poor,false
+Word.ShapeGroup,"track()",Method,Poor,false
+Word.ShapeGroup,"unGroup()",Method,Poor,false
+Word.ShapeGroup,"untrack()",Method,Poor,false
 Word.ShapeType,N/A,Enum,Good,false
 Word.ShapeType,"geometricShape",EnumField,Fine,false
+Word.ShapeType,"group",EnumField,Fine,false
+Word.ShapeType,"picture",EnumField,Fine,false
 Word.ShapeType,"textBox",EnumField,Fine,false
 Word.ShapeType,"unsupported",EnumField,Fine,false
 Word.Style,N/A,Class,Good,true

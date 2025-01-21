@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeGroupLoadOptions
+uid: 'word!Word.Interfaces.ShapeGroupLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ShapeGroupLoadOptions
+summary: 'Represents a shape group in the document. To get the corresponding Shape object, use ShapeGroup.shape.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ShapeGroupLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'word!Word.Interfaces.ShapeGroupLoadOptions#id:member'
+    package: word!
+    fullName: id
+    summary: Gets an integer that represents the shape group identifier.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: shape
+    uid: 'word!Word.Interfaces.ShapeGroupLoadOptions#shape:member'
+    package: word!
+    fullName: shape
+    summary: Gets the Shape object associated with the group.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'shape?: Word.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
