@@ -171,6 +171,128 @@ export declare namespace PowerPoint {
     
     
     
+    /**
+     * Specifies the type of a shape.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeType {
+        /**
+         * The given shape's type is unsupported.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        unsupported = "Unsupported",
+        /**
+         * The shape is an image.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        image = "Image",
+        /**
+         * The shape is a geometric shape such as rectangle.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        geometricShape = "GeometricShape",
+        /**
+         * The shape is a group shape which contains sub-shapes.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        group = "Group",
+        /**
+         * The shape is a line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        line = "Line",
+        /**
+         * The shape is a table.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        table = "Table",
+        /**
+         * The shape is a callout.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        callout = "Callout",
+        /**
+         * The shape is a chart.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        chart = "Chart",
+        /**
+         * The shape is a content Office Add-in.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        contentApp = "ContentApp",
+        /**
+         * The shape is a diagram.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        diagram = "Diagram",
+        /**
+         * The shape is a freeform object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        freeform = "Freeform",
+        /**
+         * The shape is a graphic.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        graphic = "Graphic",
+        /**
+         * The shape is an ink object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        ink = "Ink",
+        /**
+         * The shape is a media object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        media = "Media",
+        /**
+         * The shape is a 3D model.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        model3D = "Model3D",
+        /**
+         * The shape is an OLE (Object Linking and Embedding) object.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        ole = "Ole",
+        /**
+         * The shape is a placeholder.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        placeholder = "Placeholder",
+        /**
+         * The shape is a SmartArt graphic.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        smartArt = "SmartArt",
+        /**
+         * The shape is a text box.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        textBox = "TextBox",
+    }
     
     
     /**
@@ -1392,6 +1514,173 @@ export declare namespace PowerPoint {
         systemDashDot = "SystemDashDot",
     }
     /**
+     * Represents the horizontal alignment of the {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ParagraphHorizontalAlignment {
+        /**
+         * Align text to the left margin.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        left = "Left",
+        /**
+         * Align text in the center.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        center = "Center",
+        /**
+         * Align text to the right margin.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        right = "Right",
+        /**
+         * Align text so that it is justified across the whole line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        justify = "Justify",
+        /**
+         * Specifies the alignment or adjustment of kashida length in Arabic text.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        justifyLow = "JustifyLow",
+        /**
+         * Distributes the text words across an entire text line.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        distributed = "Distributed",
+        /**
+         * Distributes Thai text specially, because each character is treated as a word.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        thaiDistributed = "ThaiDistributed",
+    }
+    /**
+     * Specifies a shape's fill type.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    enum ShapeFillType {
+        /**
+         * Specifies that the shape should have no fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        noFill = "NoFill",
+        /**
+         * Specifies that the shape should have regular solid fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        solid = "Solid",
+        /**
+         * Specifies that the shape should have gradient fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        gradient = "Gradient",
+        /**
+         * Specifies that the shape should have pattern fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        pattern = "Pattern",
+        /**
+         * Specifies that the shape should have picture or texture fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        pictureAndTexture = "PictureAndTexture",
+        /**
+         * Specifies that the shape should have slide background fill.
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        slideBackground = "SlideBackground",
+    }
+    /**
+     * Represents the fill formatting of a shape object.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.4]
+     */
+    export class ShapeFill extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        foregroundColor: string;
+        /**
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        transparency: number;
+        /**
+         * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        readonly type: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "SlideBackground";
+        /**
+         * Clears the fill formatting of this shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        clear(): void;
+        /**
+         * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         *
+         * @param color - A string that specifies the fill color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+         */
+        setSolidColor(color: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.ShapeFillLoadOptions): PowerPoint.ShapeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.ShapeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.ShapeFill;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.ShapeFillData;
+    }
+    /**
      * The type of underline applied to a font.
      *
      * @remarks
@@ -1502,54 +1791,82 @@ export declare namespace PowerPoint {
         wavyDouble = "WavyDouble",
     }
     /**
-     * Represents the horizontal alignment of the {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
+     * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
      *
      * @remarks
      * [Api set: PowerPointApi 1.4]
      */
-    enum ParagraphHorizontalAlignment {
+    export class ShapeFont extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
-         * Align text to the left margin.
+         * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        left = "Left",
+        bold: boolean;
         /**
-         * Align text in the center.
+         * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        center = "Center",
+        color: string;
         /**
-         * Align text to the right margin.
+         * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        right = "Right",
+        italic: boolean;
         /**
-         * Align text so that it is justified across the whole line.
+         * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        justify = "Justify",
+        name: string;
         /**
-         * Specifies the alignment or adjustment of kashida length in Arabic text.
+         * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        justifyLow = "JustifyLow",
+        size: number;
         /**
-         * Distributes the text words across an entire text line.
+         * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+         *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        distributed = "Distributed",
+        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         /**
-         * Distributes Thai text specially, because each character is treated as a word.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
-        thaiDistributed = "ThaiDistributed",
+        load(options?: PowerPoint.Interfaces.ShapeFontLoadOptions): PowerPoint.ShapeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.ShapeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.ShapeFont;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.ShapeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
     /**
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
@@ -2154,123 +2471,6 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
     /**
-     * Specifies a shape's fill type.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeFillType {
-        /**
-         * Specifies that the shape should have no fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        noFill = "NoFill",
-        /**
-         * Specifies that the shape should have regular solid fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        solid = "Solid",
-        /**
-         * Specifies that the shape should have gradient fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        gradient = "Gradient",
-        /**
-         * Specifies that the shape should have pattern fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        pattern = "Pattern",
-        /**
-         * Specifies that the shape should have picture or texture fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        pictureAndTexture = "PictureAndTexture",
-        /**
-         * Specifies that the shape should have slide background fill.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        slideBackground = "SlideBackground",
-    }
-    /**
-     * Represents the fill formatting of a shape object.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    export class ShapeFill extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        foregroundColor: string;
-        /**
-         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        transparency: number;
-        /**
-         * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        readonly type: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "SlideBackground";
-        /**
-         * Clears the fill formatting of this shape.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        clear(): void;
-        /**
-         * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         *
-         * @param color - A string that specifies the fill color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-         */
-        setSolidColor(color: string): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.ShapeFillLoadOptions): PowerPoint.ShapeFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.ShapeFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.ShapeFill;
-        /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
-         */
-        toJSON(): PowerPoint.Interfaces.ShapeFillData;
-    }
-    /**
      * Represents a collection of shapes.
      *
      * @remarks
@@ -2460,128 +2660,6 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeLineFormatData;
     }
     /**
-     * Specifies the type of a shape.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    enum ShapeType {
-        /**
-         * The given shape's type is unsupported.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        unsupported = "Unsupported",
-        /**
-         * The shape is an image.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        image = "Image",
-        /**
-         * The shape is a geometric shape such as rectangle.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        geometricShape = "GeometricShape",
-        /**
-         * The shape is a group shape which contains sub-shapes.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        group = "Group",
-        /**
-         * The shape is a line.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        line = "Line",
-        /**
-         * The shape is a table.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        table = "Table",
-        /**
-         * The shape is a callout.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        callout = "Callout",
-        /**
-         * The shape is a chart.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        chart = "Chart",
-        /**
-         * The shape is a content Office Add-in.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        contentApp = "ContentApp",
-        /**
-         * The shape is a diagram.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        diagram = "Diagram",
-        /**
-         * The shape is a freeform object.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        freeform = "Freeform",
-        /**
-         * The shape is a graphic.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        graphic = "Graphic",
-        /**
-         * The shape is an ink object.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        ink = "Ink",
-        /**
-         * The shape is a media object.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        media = "Media",
-        /**
-         * The shape is a 3D model.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        model3D = "Model3D",
-        /**
-         * The shape is an OLE (Object Linking and Embedding) object.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        ole = "Ole",
-        /**
-         * The shape is a placeholder.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        placeholder = "Placeholder",
-        /**
-         * The shape is a SmartArt graphic.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        smartArt = "SmartArt",
-        /**
-         * The shape is a text box.
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        textBox = "TextBox",
-    }
-    /**
      * Determines the type of automatic sizing allowed.
      *
      * @remarks
@@ -2705,84 +2783,6 @@ export declare namespace PowerPoint {
          * Whereas the original `PowerPoint.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
          */
         toJSON(): PowerPoint.Interfaces.ParagraphFormatData;
-    }
-    /**
-     * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.4]
-     */
-    export class ShapeFont extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        bold: boolean;
-        /**
-         * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        color: string;
-        /**
-         * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        italic: boolean;
-        /**
-         * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        name: string;
-        /**
-         * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        size: number;
-        /**
-         * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.ShapeFontLoadOptions): PowerPoint.ShapeFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.ShapeFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.ShapeFont;
-        /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.ShapeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
-        toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
     /**
      * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
@@ -3482,6 +3482,68 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
+        export interface ShapeFillUpdateData {
+            /**
+             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            transparency?: number;
+        }
+        /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
+        export interface ShapeFontUpdateData {
+            /**
+             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            bold?: boolean;
+            /**
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            color?: string;
+            /**
+             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            italic?: boolean;
+            /**
+             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            name?: string;
+            /**
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            size?: number;
+            /**
+             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+        }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -3503,23 +3565,6 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `TagCollection` object, for use in `tagCollection.set({ ... })`. */
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
-        }
-        /** An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`. */
-        export interface ShapeFillUpdateData {
-            /**
-             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            foregroundColor?: string;
-            /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            transparency?: number;
         }
         /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
         export interface ShapeScopedCollectionUpdateData {
@@ -3589,51 +3634,6 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
-        }
-        /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
-        export interface ShapeFontUpdateData {
-            /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            bold?: boolean;
-            /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            color?: string;
-            /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            italic?: boolean;
-            /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            name?: string;
-            /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            size?: number;
-            /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
         /** An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
@@ -3816,6 +3816,75 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
+        export interface ShapeFillData {
+            /**
+             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            foregroundColor?: string;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            transparency?: number;
+            /**
+             * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            type?: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "SlideBackground";
+        }
+        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
+        export interface ShapeFontData {
+            /**
+             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            bold?: boolean;
+            /**
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            color?: string;
+            /**
+             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            italic?: boolean;
+            /**
+             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            name?: string;
+            /**
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            size?: number;
+            /**
+             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -3889,30 +3958,6 @@ export declare namespace PowerPoint {
              */
             id?: string;
         }
-        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
-        export interface ShapeFillData {
-            /**
-             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            foregroundColor?: string;
-            /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            transparency?: number;
-            /**
-             * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            type?: PowerPoint.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "SlideBackground";
-        }
         /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
         export interface ShapeScopedCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -3981,51 +4026,6 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed";
-        }
-        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
-        export interface ShapeFontData {
-            /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            bold?: boolean;
-            /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            color?: string;
-            /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            italic?: boolean;
-            /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            name?: string;
-            /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            size?: number;
-            /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
@@ -4224,6 +4224,93 @@ export declare namespace PowerPoint {
         
         
         
+        /**
+         * Represents the fill formatting of a shape object.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        export interface ShapeFillLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            foregroundColor?: boolean;
+            /**
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            transparency?: boolean;
+            /**
+             * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            type?: boolean;
+        }
+        /**
+         * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.4]
+         */
+        export interface ShapeFontLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            bold?: boolean;
+            /**
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            color?: boolean;
+            /**
+             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            italic?: boolean;
+            /**
+             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            name?: boolean;
+            /**
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            size?: boolean;
+            /**
+             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
+            underline?: boolean;
+        }
         /**
          * Represents the collection of shapes.
          *
@@ -4470,39 +4557,6 @@ export declare namespace PowerPoint {
             id?: boolean;
         }
         /**
-         * Represents the fill formatting of a shape object.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        export interface ShapeFillLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            foregroundColor?: boolean;
-            /**
-             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            transparency?: boolean;
-            /**
-             * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            type?: boolean;
-        }
-        /**
          * Represents a collection of shapes.
          *
          * @remarks
@@ -4682,60 +4736,6 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.4]
              */
             horizontalAlignment?: boolean;
-        }
-        /**
-         * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.4]
-         */
-        export interface ShapeFontLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            bold?: boolean;
-            /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            color?: boolean;
-            /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            italic?: boolean;
-            /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            name?: boolean;
-            /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            size?: boolean;
-            /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.4]
-             */
-            underline?: boolean;
         }
         /**
          * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
