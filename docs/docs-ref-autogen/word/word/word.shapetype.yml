@@ -16,6 +16,22 @@ fields:
 
       * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GeometricShape"'
+  - name: group
+    uid: 'word!Word.ShapeType.group:member'
+    package: word!
+    summary: |-
+      Group shape.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Group"'
+  - name: picture
+    uid: 'word!Word.ShapeType.picture:member'
+    package: word!
+    summary: |-
+      Picture shape.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Picture"'
   - name: textBox
     uid: 'word!Word.ShapeType.textBox:member'
     package: word!

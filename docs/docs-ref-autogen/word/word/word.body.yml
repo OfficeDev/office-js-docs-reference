@@ -465,8 +465,8 @@ properties:
     package: word!
     fullName: shapes
     summary: >-
-      Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only text
-      boxes and geometric shapes are supported.
+      Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only the
+      following shapes are supported: text boxes, geometric, grouped, and picture.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
