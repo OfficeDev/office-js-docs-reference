@@ -56,11 +56,11 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ---
 
-### ContextMenu
+### ContextMenuApi
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Context Menu requirement sets](context-menu-requirement-sets.md). | <ul><li>Office.contextMenu.requestUpdate</li></ul> |
+| See [Context Menu API requirement sets](context-menu-api-requirement-sets.md). | <ul><li>Office.contextMenu.requestUpdate</li></ul> |
 
 ---
 
