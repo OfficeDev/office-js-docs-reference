@@ -50,7 +50,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Examples
 
-In the following example, the button executes a function. It's also configured to be disabled when the add-in launches. It can be programmatically enabled. For more information, see [Enable and Disable Add-in Commands](/office/dev/add-ins/design/disable-add-in-commands).
+In the following example, the button executes a function. It's also configured to be disabled when the add-in launches. It can be programmatically enabled. For more information, see [Change the availability of add-in commands](/office/dev/add-ins/design/disable-add-in-commands).
 
 ```xml
 <Control xsi:type="Button" id="Contoso.msgReadFunctionButton">
