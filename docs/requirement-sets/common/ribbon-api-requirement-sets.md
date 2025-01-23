@@ -31,7 +31,7 @@ For information about Common API requirement sets, see [Office Common API requir
 
 ## Ribbon API 1.1
 
-The Ribbon API 1.1 includes support for enabling and disabling Add-in Commands. To learn the patterns for this functionality, see [Enable and Disable Add-in Commands](/office/dev/add-ins/design/disable-add-in-commands). For details about the API, see the [Office.ribbon](/javascript/api/office/office.ribbon) reference topic.
+The Ribbon API 1.1 includes support for enabling and disabling Add-in Commands. To learn the patterns for this functionality, see [Change the availability of add-in commands](/office/dev/add-ins/design/disable-add-in-commands). For details about the API, see the [Office.ribbon](/javascript/api/office/office.ribbon) reference topic.
 
 ## Ribbon API 1.2
 

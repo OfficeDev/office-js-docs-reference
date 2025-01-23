@@ -26,7 +26,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 This element is only valid in **Excel**, **PowerPoint**, and **Word**; that is, when the `Name` attribute of the [Host](host.md) element is "Workbook", "Presentation", or "Document".
 
-The parent control can also be programmatically enabled and disabled. For more information, see [Enable and Disable Add-in Commands](/office/dev/add-ins/design/disable-add-in-commands).
+The parent control can also be programmatically enabled and disabled. For more information, see [Change the availability of add-in commands](/office/dev/add-ins/design/disable-add-in-commands).
 
 ## Example
 
