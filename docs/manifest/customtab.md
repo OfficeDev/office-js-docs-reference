@@ -1,7 +1,7 @@
 ---
 title: CustomTab element in the manifest file
 description: On the ribbon, you specify which tab and group for their add-in commands.
-ms.date: 05/25/2022
+ms.date: 01/28/2025
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Defines a custom tab for the Office ribbon. Add ribbon controls and groups for the add-in either to one of the build-in Office tabs or to your own custom tab. Use the **\<CustomTab\>** element to add a custom tab to the ribbon. On custom tabs, the add-in can have custom or built-in groups. Add-ins are limited to one custom tab.
 
 > [!IMPORTANT]
-> In Outlook on Mac, the **\<CustomTab\>** element is not available, but you can put *custom* groups of controls on one of the built-in [OfficeTab](officetab.md)s instead. You cannot put *built-in* groups on *built-in* tabs in Outlook on any platform.
+> In Outlook on the web, on Mac, and in the new Outlook on Windows, the **\<CustomTab\>** element isn't available, but you can put *custom* groups of controls on one of the built-in [OfficeTab](officetab.md)s instead. You can't put *built-in* groups on *built-in* tabs in Outlook on any platform.
 
 **Add-in type:** Task pane, Mail
 
@@ -128,7 +128,6 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
-
 
 ## Examples
 
