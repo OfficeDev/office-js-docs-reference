@@ -135,6 +135,18 @@ properties:
       content: 'name?: string;'
       return:
         type: string
+  - name: parentGroup
+    uid: 'word!Word.Interfaces.ShapeUpdateData#parentGroup:member'
+    package: word!
+    fullName: parentGroup
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentGroup?: Word.Interfaces.ShapeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeUpdateData:interface" />'
   - name: relativeHorizontalPosition
     uid: 'word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member'
     package: word!

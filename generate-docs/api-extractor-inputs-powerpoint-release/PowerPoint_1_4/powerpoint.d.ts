@@ -1757,47 +1757,47 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+         * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        bold: boolean;
+        bold: boolean | null;
         /**
-         * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+         * Specifies the HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` contains text fragments with different colors.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        color: string;
+        color: string | null;
         /**
-         * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+         * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        italic: boolean;
+        italic: boolean | null;
         /**
-         * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+         * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        name: string;
+        name: string | null;
         /**
-         * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+         * Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with different font sizes.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        size: number;
+        size: number | null;
         /**
-         * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+         * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
          *
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
-        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3238,47 +3238,47 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            bold?: boolean;
+            bold?: boolean | null;
             /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             * Specifies the HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` contains text fragments with different colors.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            color?: string;
+            color?: string | null;
             /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            italic?: boolean;
+            italic?: boolean | null;
             /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            name?: string;
+            name?: string | null;
             /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with different font sizes.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            size?: number;
+            size?: number | null;
             /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+            underline?: ShapeFontUnderlineStyle | null;
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -3559,47 +3559,47 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            bold?: boolean;
+            bold?: boolean | null;
             /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             * Specifies the HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` contains text fragments with different colors.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            color?: string;
+            color?: string | null;
             /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            italic?: boolean;
+            italic?: boolean | null;
             /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            name?: string;
+            name?: string | null;
             /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with different font sizes.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            size?: number;
+            size?: number | null;
             /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+            underline?: ShapeFontUnderlineStyle | null;
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -3965,42 +3965,42 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
+             * Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             bold?: boolean;
             /**
-             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
+             * Specifies the HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` contains text fragments with different colors.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             color?: boolean;
             /**
-             * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
+             * Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text fragments.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             italic?: boolean;
             /**
-             * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             name?: boolean;
             /**
-             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with different font sizes.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             size?: boolean;
             /**
-             * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
+             * Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]

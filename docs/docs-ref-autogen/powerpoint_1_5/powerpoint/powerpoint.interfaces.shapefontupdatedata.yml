@@ -14,89 +14,84 @@ properties:
     package: powerpoint!
     fullName: bold
     summary: >-
-      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
+      Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text
       fragments.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'bold?: boolean;'
+      content: 'bold?: boolean | null;'
       return:
-        type: boolean
+        type: boolean | null
   - name: color
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#color:member'
     package: powerpoint!
     fullName: color
     summary: >-
-      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
-      `TextRange` includes text fragments with different colors.
+      Specifies the HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null`
+      if the `TextRange` contains text fragments with different colors.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'color?: string;'
+      content: 'color?: string | null;'
       return:
-        type: string
+        type: string | null
   - name: italic
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#italic:member'
     package: powerpoint!
     fullName: italic
     summary: >-
-      Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text
+      Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text
       fragments.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'italic?: boolean;'
+      content: 'italic?: boolean | null;'
       return:
-        type: boolean
+        type: boolean | null
   - name: name
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#name:member'
     package: powerpoint!
     fullName: name
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
-      corresponding font name; otherwise it is the Latin font name.
+      Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text
+      fragments with different font names.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'name?: string;'
+      content: 'name?: string | null;'
       return:
-        type: string
+        type: string | null
   - name: size
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#size:member'
     package: powerpoint!
     fullName: size
     summary: >-
-      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
-      font sizes.
+      Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with
+      different font sizes.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'size?: number;'
+      content: 'size?: number | null;'
       return:
-        type: number
+        type: number | null
   - name: underline
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member'
     package: powerpoint!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
-      underline styles. See
+      Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments
+      with different underline styles. See
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum) for details.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
-        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
-        | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+      content: 'underline?: ShapeFontUnderlineStyle | null;'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
-          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
-          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | null'
