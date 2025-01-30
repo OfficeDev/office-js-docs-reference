@@ -3661,7 +3661,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            underline?: ShapeFontUnderlineStyle | null;
+            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
         }
         /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
@@ -4014,7 +4014,7 @@ export declare namespace PowerPoint {
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
-            underline?: ShapeFontUnderlineStyle | null;
+            underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble" | null;
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
