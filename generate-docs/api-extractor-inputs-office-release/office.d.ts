@@ -3672,7 +3672,7 @@ export declare namespace Office {
          *
          * 1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
          * 
-         * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+         * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the <kbd>Esc</kbd> key.
          *
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * @param handler - The event handler that is called when the dialog is cancelled.
