@@ -113,6 +113,23 @@ methods:
       return:
         type: '<xref uid="word!Word.ShapeCollection:class" />'
         description: ''
+  - name: getByNames(names)
+    uid: 'word!Word.ShapeCollection#getByNames:member(1)'
+    package: word!
+    fullName: getByNames(names)
+    summary: Gets the shapes that have the specified names.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByNames(names: string[]): Word.ShapeCollection;'
+      parameters:
+        - id: names
+          description: Required. An array of shape names.
+          type: 'string[]'
+      return:
+        type: '<xref uid="word!Word.ShapeCollection:class" />'
+        description: ''
   - name: getByTypes(types)
     uid: 'word!Word.ShapeCollection#getByTypes:member(1)'
     package: word!

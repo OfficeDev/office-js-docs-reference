@@ -9966,6 +9966,14 @@ export declare namespace Word {
          */
         readonly body: Word.Body;
         /**
+         * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentGroup: Word.Shape;
+        /**
          * Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -9997,6 +10005,14 @@ export declare namespace Word {
          * @beta
          */
         readonly id: number;
+        /**
+         * Check whether this shape is a child of a group shape or a canvas shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isChild: boolean;
         /**
          * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
          *
@@ -10183,7 +10199,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        unGroup(): Word.ShapeCollection;
+        ungroup(): Word.ShapeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10271,6 +10287,16 @@ export declare namespace Word {
          * @param ids - Required. An array of shape identifiers.
          */
         getByIds(ids: number[]): Word.ShapeCollection;
+        /**
+         * Gets the shapes that have the specified names.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param names - Required. An array of shape names.
+         */
+        getByNames(names: string[]): Word.ShapeCollection;
         /**
          * Gets the shapes that have the specified types.
          *
@@ -17269,13 +17295,21 @@ export declare namespace Word {
         /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             /**
-            * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             body?: Word.Interfaces.BodyUpdateData;
+            /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentGroup?: Word.Interfaces.ShapeUpdateData;
             /**
              * Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
              *
@@ -19622,6 +19656,14 @@ export declare namespace Word {
              */
             body?: Word.Interfaces.BodyData;
             /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentGroup?: Word.Interfaces.ShapeData;
+            /**
              * Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
              *
              * @remarks
@@ -19653,6 +19695,14 @@ export declare namespace Word {
              * @beta
              */
             id?: number;
+            /**
+             * Check whether this shape is a child of a group shape or a canvas shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChild?: boolean;
             /**
              * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
              *
@@ -24133,13 +24183,21 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * Represents the body object of the shape. Only applies to text boxes and geometric shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             body?: Word.Interfaces.BodyLoadOptions;
+            /**
+             * Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentGroup?: Word.Interfaces.ShapeLoadOptions;
             /**
              * Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
              *
@@ -24172,6 +24230,14 @@ export declare namespace Word {
              * @beta
              */
             id?: boolean;
+            /**
+             * Check whether this shape is a child of a group shape or a canvas shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChild?: boolean;
             /**
              * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
              *
@@ -24271,13 +24337,21 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
-            *
-            * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Represents the body object of the shape. Only applies to text boxes and geometric shapes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             body?: Word.Interfaces.BodyLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentGroup?: Word.Interfaces.ShapeLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be returned if the shape type isn't "GroupShape". For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
              *
@@ -24310,6 +24384,14 @@ export declare namespace Word {
              * @beta
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Check whether this shape is a child of a group shape or a canvas shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isChild?: boolean;
             /**
              * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set.
              *

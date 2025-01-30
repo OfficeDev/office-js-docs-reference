@@ -12636,8 +12636,10 @@ Word.Shape,"context",Property,Good,false
 Word.Shape,"geometricShapeType",Property,Good,false
 Word.Shape,"height",Property,Good,false
 Word.Shape,"id",Property,Good,false
+Word.Shape,"isChild",Property,Good,false
 Word.Shape,"left",Property,Good,false
 Word.Shape,"name",Property,Good,false
+Word.Shape,"parentGroup",Property,Good,false
 Word.Shape,"relativeHorizontalPosition",Property,Good,false
 Word.Shape,"relativeVerticalPosition",Property,Good,false
 Word.Shape,"shapeGroup",Property,Good,false
@@ -12663,6 +12665,7 @@ Word.ShapeCollection,"getByGeometricTypes(types)",Method,Poor,false
 Word.ShapeCollection,"getById(id)",Method,Poor,false
 Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Poor,false
 Word.ShapeCollection,"getByIds(ids)",Method,Poor,false
+Word.ShapeCollection,"getByNames(names)",Method,Poor,false
 Word.ShapeCollection,"getByTypes(types)",Method,Poor,false
 Word.ShapeCollection,"getFirst()",Method,Poor,false
 Word.ShapeCollection,"getFirstOrNullObject()",Method,Poor,false
@@ -12685,7 +12688,7 @@ Word.ShapeGroup,"set(properties, options)",Method,Poor,false
 Word.ShapeGroup,"set(properties)",Method,Poor,false
 Word.ShapeGroup,"toJSON()",Method,Poor,false
 Word.ShapeGroup,"track()",Method,Poor,false
-Word.ShapeGroup,"unGroup()",Method,Poor,false
+Word.ShapeGroup,"ungroup()",Method,Poor,false
 Word.ShapeGroup,"untrack()",Method,Poor,false
 Word.ShapeType,N/A,Enum,Good,false
 Word.ShapeType,"geometricShape",EnumField,Fine,false

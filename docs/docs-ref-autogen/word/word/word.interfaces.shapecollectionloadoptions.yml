@@ -77,6 +77,18 @@ properties:
       content: 'id?: boolean;'
       return:
         type: boolean
+  - name: isChild
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#isChild:member'
+    package: word!
+    fullName: isChild
+    summary: 'For EACH ITEM in the collection: Check whether this shape is a child of a group shape or a canvas shape.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isChild?: boolean;'
+      return:
+        type: boolean
   - name: left
     uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#left:member'
     package: word!
@@ -104,6 +116,20 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
+  - name: parentGroup
+    uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member'
+    package: word!
+    fullName: parentGroup
+    summary: >-
+      For EACH ITEM in the collection: Gets the top-level parent group shape of this child shape. It will be null if it
+      isn't a child shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentGroup?: Word.Interfaces.ShapeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeLoadOptions:interface" />'
   - name: relativeHorizontalPosition
     uid: 'word!Word.Interfaces.ShapeCollectionLoadOptions#relativeHorizontalPosition:member'
     package: word!

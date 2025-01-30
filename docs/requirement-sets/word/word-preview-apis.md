@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 01/21/2025
+ms.date: 01/30/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -58,10 +58,12 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)|The geometric shape type of the shape.|
 ||[height](/javascript/api/word/word.shape#word-word-shape-height-member)|The height, in points, of the shape.|
 ||[id](/javascript/api/word/word.shape#word-word-shape-id-member)|Gets an integer that represents the shape identifier.|
+||[isChild](/javascript/api/word/word.shape#word-word-shape-ischild-member)|Check whether this shape is a child of a group shape or a canvas shape.|
 ||[left](/javascript/api/word/word.shape#word-word-shape-left-member)|The distance, in points, from the left side of the shape to the horizontal relative position, see Word.RelativeHorizontalPosition.|
 ||[moveHorizontally(distance: number)](/javascript/api/word/word.shape#word-word-shape-movehorizontally-member(1))|Moves the shape horizontally by the number of points.|
 ||[moveVertically(distance: number)](/javascript/api/word/word.shape#word-word-shape-movevertically-member(1))|Moves the shape vertically by the number of points.|
 ||[name](/javascript/api/word/word.shape#word-word-shape-name-member)|The name of the shape.|
+||[parentGroup](/javascript/api/word/word.shape#word-word-shape-parentgroup-member)|Gets the top-level parent group shape of this child shape.|
 ||[relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)|The relative horizontal position of the shape.|
 ||[relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)|The relative vertical position of the shape.|
 ||[select(selectMultipleShapes?: boolean)](/javascript/api/word/word.shape#word-word-shape-select-member(1))|Selects the shape.|
@@ -73,6 +75,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[getById(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1))|Gets a shape by its identifier.|
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyidornullobject-member(1))|Gets a shape by its identifier.|
 ||[getByIds(ids: number[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyids-member(1))|Gets the shapes by the identifiers.|
+||[getByNames(names: string[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbynames-member(1))|Gets the shapes that have the specified names.|
 ||[getByTypes(types: Word.ShapeType[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))|Gets the shapes that have the specified types.|
 ||[getFirst()](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirst-member(1))|Gets the first shape in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirstornullobject-member(1))|Gets the first shape in this collection.|
@@ -81,7 +84,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[ShapeGroup](/javascript/api/word/word.shapegroup)|[id](/javascript/api/word/word.shapegroup#word-word-shapegroup-id-member)|Gets an integer that represents the shape group identifier.|
 ||[shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)|Gets the Shape object associated with the group.|
 ||[shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)|Gets the collection of Shape objects.|
-||[unGroup()](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))|Ungroups any grouped shapes in the specified shape group.|
+||[ungroup()](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))|Ungroups any grouped shapes in the specified shape group.|
 |[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the specified style.|
 
 ## Web-only API list

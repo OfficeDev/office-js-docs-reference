@@ -206,16 +206,16 @@ methods:
       return:
         type: '<xref uid="word!Word.ShapeGroup:class" />'
         description: ''
-  - name: unGroup()
-    uid: 'word!Word.ShapeGroup#unGroup:member(1)'
+  - name: ungroup()
+    uid: 'word!Word.ShapeGroup#ungroup:member(1)'
     package: word!
-    fullName: unGroup()
+    fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'unGroup(): Word.ShapeCollection;'
+      content: 'ungroup(): Word.ShapeCollection;'
       return:
         type: '<xref uid="word!Word.ShapeCollection:class" />'
         description: ''
