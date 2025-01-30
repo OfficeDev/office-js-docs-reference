@@ -120,6 +120,18 @@ properties:
       content: 'id?: number;'
       return:
         type: number
+  - name: isChild
+    uid: 'word!Word.Interfaces.ShapeData#isChild:member'
+    package: word!
+    fullName: isChild
+    summary: Check whether this shape is a child of a group shape or a canvas shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isChild?: boolean;'
+      return:
+        type: boolean
   - name: left
     uid: 'word!Word.Interfaces.ShapeData#left:member'
     package: word!
@@ -147,6 +159,18 @@ properties:
       content: 'name?: string;'
       return:
         type: string
+  - name: parentGroup
+    uid: 'word!Word.Interfaces.ShapeData#parentGroup:member'
+    package: word!
+    fullName: parentGroup
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'parentGroup?: Word.Interfaces.ShapeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ShapeData:interface" />'
   - name: relativeHorizontalPosition
     uid: 'word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member'
     package: word!

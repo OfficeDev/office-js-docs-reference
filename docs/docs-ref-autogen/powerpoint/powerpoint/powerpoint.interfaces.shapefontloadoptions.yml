@@ -28,7 +28,7 @@ properties:
     package: powerpoint!
     fullName: bold
     summary: >-
-      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
+      Specifies the bold status of font. Returns `null` if the `TextRange` contains both bold and non-bold text
       fragments.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
@@ -42,8 +42,8 @@ properties:
     package: powerpoint!
     fullName: color
     summary: >-
-      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
-      `TextRange` includes text fragments with different colors.
+      Specifies the HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null`
+      if the `TextRange` contains text fragments with different colors.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -56,7 +56,7 @@ properties:
     package: powerpoint!
     fullName: italic
     summary: >-
-      Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text
+      Specifies the italic status of font. Returns 'null' if the 'TextRange' contains both italic and non-italic text
       fragments.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
@@ -70,8 +70,9 @@ properties:
     package: powerpoint!
     fullName: name
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
-      corresponding font name; otherwise it is the Latin font name.
+      Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name. Returns `null` if the `TextRange` contains text
+      fragments with different font names.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -84,8 +85,8 @@ properties:
     package: powerpoint!
     fullName: size
     summary: >-
-      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
-      font sizes.
+      Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with
+      different font sizes.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -98,8 +99,8 @@ properties:
     package: powerpoint!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
-      underline styles. See
+      Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments
+      with different underline styles. See
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum) for details.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
