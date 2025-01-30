@@ -89,7 +89,7 @@ methods:
 
 
       2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog,
-      clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+      clicks the Close button in the upper right corner of the dialog, or presses the <kbd>Esc</kbd> key.
 
 
       The `BeforeDocumentCloseNotification` API is only supported in Excel.
