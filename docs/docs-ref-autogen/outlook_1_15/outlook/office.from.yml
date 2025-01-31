@@ -1,0 +1,165 @@
+### YamlMime:TSType
+name: Office.From
+uid: 'outlook!Office.From:interface'
+package: outlook!
+fullName: Office.From
+summary: Provides a method to get the from value of a message in an Outlook add-in.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  **Important**: This interface is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement
+  event-based activation in Outlook mobile
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.From#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
+    summary: >-
+      Gets the from value of a message.
+
+
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+
+      The from value of the item is provided as an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - This method is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement event-based
+      activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - A `recipientType` property value isn't returned by the `getAsync` method. The email sender is always a user
+      whose email address is on the Exchange server.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
+
+
+      Office.context.mailbox.item.from.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const msgFrom = asyncResult.value;
+          console.log("Message from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
+            result is the item's from value, as an `EmailAddressDetails` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.From#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: >-
+      Gets the from value of a message.
+
+
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+
+      The from value of the item is provided as an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
+    remarks: >-
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - This method is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement event-based
+      activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - A `recipientType` property value isn't returned by the `getAsync` method. The email sender is always a user
+      whose email address is on the Exchange server.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `value` property of the
+            result is the item's from value, as an `EmailAddressDetails` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''

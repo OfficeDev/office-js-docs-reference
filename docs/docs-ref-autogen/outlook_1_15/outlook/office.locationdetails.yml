@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Office.LocationDetails
+uid: 'outlook!Office.LocationDetails:interface'
+package: outlook!
+fullName: Office.LocationDetails
+summary: Represents a location. Read-only.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+  function callbackFunction(asyncResult) {
+      asyncResult.value.forEach(function (place) {
+          console.log("Display name: " + place.displayName);
+          console.log("Type: " + place.locationIdentifier.type);
+          if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+              console.log("Email address: " + place.emailAddress);
+          }
+      });
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: 'outlook!Office.LocationDetails#displayName:member'
+    package: outlook!
+    fullName: displayName
+    summary: The location's display name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type: string
+  - name: emailAddress
+    uid: 'outlook!Office.LocationDetails#emailAddress:member'
+    package: outlook!
+    fullName: emailAddress
+    summary: The email address associated with the location. Only locations of type `Room` have an email address.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type: string
+  - name: locationIdentifier
+    uid: 'outlook!Office.LocationDetails#locationIdentifier:member'
+    package: outlook!
+    fullName: locationIdentifier
+    summary: The `LocationIdentifier` of the location.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locationIdentifier: LocationIdentifier;'
+      return:
+        type: '<xref uid="outlook!Office.LocationIdentifier:interface" />'

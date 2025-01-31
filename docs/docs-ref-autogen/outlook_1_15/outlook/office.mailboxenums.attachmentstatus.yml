@@ -1,0 +1,47 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.AttachmentStatus
+uid: 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
+package: outlook!
+fullName: Office.MailboxEnums.AttachmentStatus
+summary: Specifies whether an attachment was added to or removed from an item.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the attachment that was just added to a message or appointment.
+
+  function myHandlerFunction(eventarg) {
+      if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+          const attachment = eventarg.attachmentDetails;
+          console.log("Event Fired and Attachment Added!");
+          getAttachmentContentAsync(attachment.id, options, callback);
+      }
+  }
+
+
+  Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Added
+    uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Added:member'
+    package: outlook!
+    summary: An attachment was added to the item.
+    value: '"added"'
+  - name: Removed
+    uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Removed:member'
+    package: outlook!
+    summary: An attachment was removed from the item.
+    value: '"removed"'

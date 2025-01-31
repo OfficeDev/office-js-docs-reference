@@ -1,0 +1,98 @@
+### YamlMime:TSType
+name: Office.ReplyFormData
+uid: 'outlook!Office.ReplyFormData:interface'
+package: outlook!
+fullName: Office.ReplyFormData
+summary: >-
+  A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
+  form.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+  // The async version is only available starting with requirement set 1.9.
+
+  // It provides a callback when the new appointment form has been created.
+
+  Office.context.mailbox.item.displayReplyFormAsync(
+    {
+      htmlBody: "This is a reply with an inline image and an item attachment.<br><img src='cid:dog.jpg'>",
+      attachments: [
+        { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", inLine: true },
+        { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
+      ]
+    },
+    (asyncResult) => {
+      console.log(JSON.stringify(asyncResult));
+    }
+  );
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attachments
+    uid: 'outlook!Office.ReplyFormData#attachments:member'
+    package: outlook!
+    fullName: attachments
+    summary: >-
+      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file or item
+      attachments.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attachments?: ReplyFormAttachment[];'
+      return:
+        type: '<xref uid="outlook!Office.ReplyFormAttachment:interface" />[]'
+  - name: callback
+    uid: 'outlook!Office.ReplyFormData#callback:member'
+    package: outlook!
+    fullName: callback
+    summary: >-
+      When the reply display call completes, the function passed in the callback parameter is called with a single
+      parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
+      return:
+        type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
+  - name: htmlBody
+    uid: 'outlook!Office.ReplyFormData#htmlBody:member'
+    package: outlook!
+    fullName: htmlBody
+    summary: >-
+      A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
+      KB.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'htmlBody?: string;'
+      return:
+        type: string
+  - name: options
+    uid: 'outlook!Office.ReplyFormData#options:member'
+    package: outlook!
+    fullName: options
+    summary: >-
+      An object literal that contains the following property:- `asyncContext`<!-- -->: Developers can provide any object
+      they wish to access in the callback function.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'options?: Office.AsyncContextOptions;'
+      return:
+        type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
