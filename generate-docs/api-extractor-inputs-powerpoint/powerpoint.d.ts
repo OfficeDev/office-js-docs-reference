@@ -416,6 +416,155 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.CustomXmlPartCollectionData;
     }
     /**
+     * Specifies the type of a placeholder.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum PlaceholderType {
+        /**
+         * The placeholder is unsupported.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupported = "Unsupported",
+        /**
+         * The placeholder is for a date.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        date = "Date",
+        /**
+         * The placeholder is for a slide number.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slideNumber = "SlideNumber",
+        /**
+         * The placeholder is for a footer.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        footer = "Footer",
+        /**
+         * The placeholder is for a header.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        header = "Header",
+        /**
+         * The placeholder is for a title.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        title = "Title",
+        /**
+         * The placeholder is for a body.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        body = "Body",
+        /**
+         * The placeholder is for a center title.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        centerTitle = "CenterTitle",
+        /**
+         * The placeholder is for a subtitle.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subtitle = "Subtitle",
+        /**
+         * The placeholder is for a vertical title.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalTitle = "VerticalTitle",
+        /**
+         * The placeholder is for a vertical body.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalBody = "VerticalBody",
+        /**
+         * The placeholder is for generic content.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content = "Content",
+        /**
+         * The placeholder is for a chart.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        chart = "Chart",
+        /**
+         * The placeholder is for a table.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        table = "Table",
+        /**
+         * The placeholder is for an online picture.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        onlinePicture = "OnlinePicture",
+        /**
+         * The placeholder is for a SmartArt.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        smartArt = "SmartArt",
+        /**
+         * The placeholder is for media.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        media = "Media",
+        /**
+         * The placeholder is for generic vertical content.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        verticalContent = "VerticalContent",
+        /**
+         * The placeholder is for a picture.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        picture = "Picture",
+        /**
+         * The placeholder is for a cameo.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cameo = "Cameo",
+    }
+    /**
      * Specifies the type of a shape.
      *
      * @remarks
@@ -536,6 +685,60 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.4]
          */
         textBox = "TextBox",
+    }
+    /**
+     * Represents the properties of a `placeholder` shape.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class PlaceholderFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the type of the shape contained within the placeholder. See {@link PowerPoint.ShapeType} for details.
+                    Returns `null` if the placeholder is empty.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly containedType: ShapeType | null;
+        /**
+         * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: PowerPoint.PlaceholderType | "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo";
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions): PowerPoint.PlaceholderFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.PlaceholderFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.PlaceholderFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.PlaceholderFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PlaceholderFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.PlaceholderFormatData;
     }
     /**
      * Represents a single hyperlink.
@@ -3852,6 +4055,15 @@ export declare namespace PowerPoint {
          */
         readonly parentGroup: PowerPoint.Shape;
         /**
+         * Returns the properties that apply specifically to this placeholder.
+                    If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly placeholderFormat: PowerPoint.PlaceholderFormat;
+        /**
          * Returns a collection of tags in the shape.
          *
          * @remarks
@@ -5036,6 +5248,26 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface describing the data returned by calling `placeholderFormat.toJSON()`. */
+        export interface PlaceholderFormatData {
+            /**
+             * Gets the type of the shape contained within the placeholder. See {@link PowerPoint.ShapeType} for details.
+                        Returns `null` if the placeholder is empty.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            containedType?: ShapeType | null;
+            /**
+             * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: PowerPoint.PlaceholderType | "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo";
+        }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
             /**
@@ -5673,6 +5905,36 @@ export declare namespace PowerPoint {
             namespaceUri?: boolean;
         }
         /**
+         * Represents the properties of a `placeholder` shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface PlaceholderFormatLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the type of the shape contained within the placeholder. See {@link PowerPoint.ShapeType} for details.
+                        Returns `null` if the placeholder is empty.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            containedType?: boolean;
+            /**
+             * Returns the type of this placeholder. See {@link PowerPoint.PlaceholderType} for details.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
          * Represents a single hyperlink.
          *
          * @remarks
@@ -5823,43 +6085,52 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
+             * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the line formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the parent group of this shape.
+             * For EACH ITEM in the collection: Returns the parent group of this shape.
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * For EACH ITEM in the collection: Returns the properties that apply specifically to this placeholder.
+            If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns the text frame object of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
@@ -6124,43 +6395,52 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
-            If the shape type isn't `group`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             * For EACH ITEM in the collection: Returns the `ShapeGroup` associated with the shape.
+             If the shape type isn't `group`, then this method returns the `GeneralException` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Returns the line formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the parent group of this shape.
+             * For EACH ITEM in the collection: Returns the parent group of this shape.
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.5]
-            */
+             * For EACH ITEM in the collection: Returns the properties that apply specifically to this placeholder.
+             If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns the text frame object of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.5]
+             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
@@ -6490,43 +6770,52 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            * Returns the fill formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the fill formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            * Returns the `ShapeGroup` associated with the shape.
+             * Returns the `ShapeGroup` associated with the shape.
             If the shape type isn't `group`, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             group?: PowerPoint.Interfaces.ShapeGroupLoadOptions;
             /**
-            * Returns the line formatting of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the line formatting of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            * Returns the parent group of this shape.
+             * Returns the parent group of this shape.
             If the shape isn't part of a group, then this method returns the `GeneralException` error.
-            *
-            * @remarks
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
             parentGroup?: PowerPoint.Interfaces.ShapeLoadOptions;
             /**
-            * Returns the text frame object of this shape.
-            *
-            * @remarks
-            * [Api set: PowerPointApi 1.4]
-            */
+             * Returns the properties that apply specifically to this placeholder.
+            If the shape type isn't `placeholder`, then this method returns the `GeneralException` error.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placeholderFormat?: PowerPoint.Interfaces.PlaceholderFormatLoadOptions;
+            /**
+             * Returns the text frame object of this shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.4]
+             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.

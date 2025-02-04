@@ -290,6 +290,22 @@ properties:
       content: 'readonly parentGroup: PowerPoint.Shape;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+  - name: placeholderFormat
+    uid: 'powerpoint!PowerPoint.Shape#placeholderFormat:member'
+    package: powerpoint!
+    fullName: placeholderFormat
+    summary: >-
+      Returns the properties that apply specifically to this placeholder. If the shape type isn't `placeholder`<!-- -->,
+      then this method returns the `GeneralException` error.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly placeholderFormat: PowerPoint.PlaceholderFormat;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.PlaceholderFormat:class" />'
   - name: tags
     uid: 'powerpoint!PowerPoint.Shape#tags:member'
     package: powerpoint!
