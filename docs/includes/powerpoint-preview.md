@@ -1,8 +1,11 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[PlaceholderFormat](/javascript/api/powerpoint/powerpoint.placeholderformat)|[containedType](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-containedtype-member)|Gets the type of the shape contained within the placeholder.|
+||[type](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-type-member)|Returns the type of this placeholder.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[group](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-group-member)|Returns the `ShapeGroup` associated with the shape.|
 ||[level](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-level-member)|Returns the level of the specified shape.|
 ||[parentGroup](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-parentgroup-member)|Returns the parent group of this shape.|
+||[placeholderFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-placeholderformat-member)|Returns the properties that apply specifically to this placeholder.|
 |[ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection)|[addGroup(values: Array<string \| Shape>)](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgroup-member(1))|Create a shape group for several shapes.|
 |[ShapeGroup](/javascript/api/powerpoint/powerpoint.shapegroup)|[id](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-id-member)|Gets the unique ID of the shape group.|
 ||[shape](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shape-member)|Returns the `Shape` object associated with the group.|
