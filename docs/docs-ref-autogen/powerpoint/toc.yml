@@ -27,6 +27,8 @@ items:
                 uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
               - name: ParagraphHorizontalAlignment
                 uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum'
+              - name: PlaceholderType
+                uid: 'powerpoint!PowerPoint.PlaceholderType:enum'
               - name: ShapeAutoSize
                 uid: 'powerpoint!PowerPoint.ShapeAutoSize:enum'
               - name: ShapeFillType
@@ -69,6 +71,8 @@ items:
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
           - name: ParagraphFormat
             uid: 'powerpoint!PowerPoint.ParagraphFormat:class'
+          - name: PlaceholderFormat
+            uid: 'powerpoint!PowerPoint.PlaceholderFormat:class'
           - name: Presentation
             uid: 'powerpoint!PowerPoint.Presentation:class'
           - name: RequestContext

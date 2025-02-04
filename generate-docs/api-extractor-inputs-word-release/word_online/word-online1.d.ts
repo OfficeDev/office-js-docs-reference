@@ -5326,6 +5326,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.7]
+         *
+         * Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying service's requirement. For more about this, see {@link https://github.com/OfficeDev/office-js/issues/4953 | GitHub issue 4953}.
          */
         getAnnotations(): Word.AnnotationCollection;
         /**
@@ -5452,6 +5454,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.7]
+         *
+         * Important: This API requires a Microsoft 365 subscription in order to work properly because of an underlying service's requirement. For more about this, see {@link https://github.com/OfficeDev/office-js/issues/4953 | GitHub issue 4953}.
          *
          * @param annotations - Annotations to set.
          * @returns An array of the inserted annotations identifiers.
