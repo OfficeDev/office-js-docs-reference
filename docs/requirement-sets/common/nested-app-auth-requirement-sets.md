@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 11/22/2024
+ms.date: 02/05/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Outlook on the web | Outlook on Windows<ul><li>Microsoft 365 subscription</li></ul> | Office on Windows<ul><li>retail perpetual</li><li>volume-licensed perpetual</li></ul> | Outlook on Mac | Outlook on iOS | Outlook on Android |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Not available | Version 16.89 (Build 24090815) | Build v4.2433.0 | Build v4.2433.0 |
+| NestedAppAuth 1.1 | Supported | Version 2409 (Build 18025.20000) | Office 2024: Version 2408 (Build 17932.20222) | Version 16.89 (Build 24090815) | Build v4.2433.0 | Build v4.2433.0 |
 
 > [!IMPORTANT]
 >
@@ -28,7 +28,7 @@ NAA supports both Microsoft Accounts and Microsoft Entra ID (work/school) identi
 | Application | Web        | Windows                                              | Mac        | iOS/iPad           | Android        |
 |-------------|------------|------------------------------------------------------|------------|--------------------|----------------|
 | Excel       | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
-| Outlook     | GA         | GA in Current Channel and Monthly Enterprise Channel, Preview in Semi-Annual Channels | GA         | GA (iOS)           | GA             |
+| Outlook     | GA         | GA in Current Channel, Monthly Enterprise Channel, Semi-Annual Channel. Preview in Semi-Annual Channel Extended | GA         | GA (iOS)           | GA             |
 | PowerPoint  | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 | Word        | In preview | In preview                                           | In preview | In preview on iPad | Not applicable |
 
