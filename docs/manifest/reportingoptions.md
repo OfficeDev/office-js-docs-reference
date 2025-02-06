@@ -1,7 +1,7 @@
 ---
 title: ReportingOptions element in the manifest file
 description: The ReportingOptions element specifies the reporting options listed in the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 06/12/2024
+ms.date: 01/16/2025
 ms.localizationpriority: medium
 ---
 
@@ -29,14 +29,16 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Attributes
 
-None.
+| Attribute | Required | Description |
+|:-----|:-----:|:-----|
+| **inputType** | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. You can only use one input type in the dialog.<br><br>**Important**: The **inputType** attribute was introduced in [requirement set 1.15](../requirement-sets/outlook/requirement-set-1.15/outlook-requirement-set-1.15.md). Learn more about its [supported clients and platforms](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets). |
 
 ## Child elements
 
 | Element | Required | Description |
 | :------ | :------: | :------ |
 | **Title** | Yes | Specifies a custom title for the reporting options in the preprocessing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| **Option** | Yes | Specifies a custom option with a checkbox that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
+| **Option** | Yes | Specifies a custom option that a user can select from the preprocessing dialog to provide a reason for reporting a message. You can add up to *five* options, but must specify at least one option. |
 
 ## Example
 
