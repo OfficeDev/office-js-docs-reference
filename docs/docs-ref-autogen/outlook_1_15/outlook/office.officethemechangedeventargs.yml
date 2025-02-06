@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: Office.OfficeThemeChangedEventArgs
+uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
+package: outlook!
+fullName: Office.OfficeThemeChangedEventArgs
+summary: Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
+remarks: |-
+  \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Adds an event handler for the OfficeThemeChanged event.
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.OfficeThemeChanged, officeThemeChangedHandler, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              console.log("Event handler added successfully.");
+          });
+      });
+  });
+
+  // Handles the OfficeThemeChanged event.
+  function officeThemeChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      const currentTheme = event.officeTheme;
+      // Perform operations based on the current theme.
+  }
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: officeTheme
+    uid: 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+    package: outlook!
+    fullName: officeTheme
+    summary: Gets the updated Office theme.
+    remarks: '\[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'officeTheme: Office.OfficeTheme;'
+      return:
+        type: '<xref uid="office!Office.OfficeTheme:interface" />'
+  - name: type
+    uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
+    package: outlook!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "officeThemeChanged";'
+      return:
+        type: '"officeThemeChanged"'

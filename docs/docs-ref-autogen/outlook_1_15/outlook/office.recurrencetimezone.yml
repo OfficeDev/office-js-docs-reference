@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: Office.RecurrenceTimeZone
+uid: 'outlook!Office.RecurrenceTimeZone:interface'
+package: outlook!
+fullName: Office.RecurrenceTimeZone
+summary: Represents the time zone of the recurrence.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // This example gets the Recurrence object of an appointment item.
+
+  Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+  function callback(asyncResult) {
+      const context = asyncResult.context;
+      const recurrence = asyncResult.value;
+      if (!recurrence) {
+      //if (recurrence == null) {
+          console.log("One-time appointment or meeting");
+      } else {
+          console.log(JSON.stringify(recurrence));
+      }
+  }
+
+
+  // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+
+  // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+
+  // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+
+  // recurrence date and time properties.
+
+  Recurrence = {
+      "recurrenceType": "weekly",
+      "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+      "seriesTime": {seriesTimeObject},
+      "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: 'outlook!Office.RecurrenceTimeZone#name:member'
+    package: outlook!
+    fullName: name
+    summary: Represents the name of the recurrence time zone.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: MailboxEnums.RecurrenceTimeZone | string;'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.RecurrenceTimeZone:enum" /> | string'
+  - name: offset
+    uid: 'outlook!Office.RecurrenceTimeZone#offset:member'
+    package: outlook!
+    fullName: offset
+    summary: >-
+      Integer value representing the difference in minutes between the local time zone and UTC at the date that the
+      meeting series began.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset?: number;'
+      return:
+        type: number
