@@ -550,6 +550,7 @@ Excel.CellBorderCollection,"vertical",Property,Good,false
 Excel.CellControl,N/A,TypeAlias,Good,false
 Excel.CellControlType,N/A,Enum,Good,false
 Excel.CellControlType,"checkbox",EnumField,Fine,false
+Excel.CellControlType,"dropdown",EnumField,Fine,false
 Excel.CellControlType,"empty",EnumField,Fine,false
 Excel.CellControlType,"mixed",EnumField,Fine,false
 Excel.CellControlType,"unknown",EnumField,Good,false
@@ -4510,7 +4511,9 @@ Excel.NoteCollection,"context",Property,Good,false
 Excel.NoteCollection,"items",Property,Fine,false
 Excel.NoteCollection,"add(cellAddress, content)",Method,Poor,false
 Excel.NoteCollection,"getCount()",Method,Poor,false
+Excel.NoteCollection,"getItem(key)",Method,Fine,false
 Excel.NoteCollection,"getItemAt(index)",Method,Poor,false
+Excel.NoteCollection,"getItemOrNullObject(key)",Method,Fine,false
 Excel.NoteCollection,"load(options)",Method,Poor,false
 Excel.NoteCollection,"load(propertyNames)",Method,Poor,false
 Excel.NoteCollection,"load(propertyNamesAndPaths)",Method,Poor,false
@@ -5294,9 +5297,9 @@ Excel.RangeSort,"context",Property,Good,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Fine,false
 Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientationString, methodString)",Method,Fine,false
 Excel.RangeSort,"toJSON()",Method,Poor,false
-Excel.RangeTextRun,N/A,Class,Fine,false
-Excel.RangeTextRun,"font",Property,Missing,false
-Excel.RangeTextRun,"text",Property,Missing,false
+Excel.RangeTextRun,N/A,Class,Good,false
+Excel.RangeTextRun,"font",Property,Good,false
+Excel.RangeTextRun,"text",Property,Good,false
 Excel.RangeUnderlineStyle,N/A,Enum,Fine,true
 Excel.RangeUnderlineStyle,"double",EnumField,Fine,false
 Excel.RangeUnderlineStyle,"doubleAccountant",EnumField,Fine,false

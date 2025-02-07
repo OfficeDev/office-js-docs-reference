@@ -572,11 +572,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: >-
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"):
+        void;
       parameters:
         - id: applyToString
           description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
-          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"'
       return:
         type: void
         description: ''

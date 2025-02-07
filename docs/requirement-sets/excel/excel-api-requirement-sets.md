@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement sets
 description: Office Add-in requirement set information for Excel builds.
-ms.date: 10/17/2024
+ms.date: 02/07/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -23,6 +23,7 @@ Excel add-ins run across multiple versions of Office, including Office 2016 or l
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [ExcelApiOnline](excel-api-online-requirement-set.md) | Latest (see [requirement set page](excel-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
+| [ExcelApi 1.18](excel-api-1-18-requirement-set.md) | Supported | Version 2501 (Build 18429.20040) | Not supported | Version 16.93 (25011212) | Version 16.93 |
 | [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Office 2024: Version 2302 (Build 16130.20332) | Version 16.70 (23021201) | Version 16.70 |
 | [ExcelApi 1.16](excel-api-1-16-requirement-set.md) | Supported | Version 2208 (Build 15601.20148) | Office 2024: Version 2208 (Build 15601.20148) | Version 16.64 (22081401) | Version 16.66 |
 | [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Supported | Version 2202 (Build 14931.20132) | Office 2024: Version 2202 (Build 14931.20132) | Version 16.58 (22021501) | Version 16.59 |

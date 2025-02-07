@@ -517,6 +517,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "excel-js-1.18",
+        "src": "docs-ref-autogen/excel_1_18",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "excel-js-1.18",
+        "src": "docs-ref-autogen/excel_1_18",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "excel-js-online",
         "src": "docs-ref-autogen/excel_online",
         "dest": "api/office-js-docs-reference"
@@ -974,7 +986,11 @@
       "excel-js-1.17": {
         "dest": "excel-js-1.17",
         "moniker_range": "excel-js-1.17"
-      },      
+      },
+      "excel-js-1.18": {
+        "dest": "excel-js-1.18",
+        "moniker_range": "excel-js-1.18"
+      }, 
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -1151,6 +1167,7 @@
         "docs-ref-autogen/excel_1_15/**": "excel",
         "docs-ref-autogen/excel_1_16/**": "excel",
         "docs-ref-autogen/excel_1_17/**": "excel",
+        "docs-ref-autogen/excel_1_18/**": "excel",
         "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/onenote/**": "onenote",
         "docs-ref-autogen/outlook/**": "outlook",
