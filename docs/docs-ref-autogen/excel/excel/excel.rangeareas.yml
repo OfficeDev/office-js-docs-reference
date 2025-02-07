@@ -267,8 +267,8 @@ methods:
       the ranges contain only blank values and controls set to their default value, then the values and control
       formatting are removed. Otherwise, this sets the cells with controls to their default value and clears the values
       of the other cells in the ranges.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearOrResetContents(): void;'
@@ -734,8 +734,8 @@ methods:
     package: excel!
     fullName: select()
     summary: Selects the specified range areas in the Excel UI.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(): void;'
