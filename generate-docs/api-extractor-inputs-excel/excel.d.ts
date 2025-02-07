@@ -9,8 +9,9 @@ export declare namespace Excel {
     /**
      * Represents an unknown cell control.
      * This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
      */
     export interface UnknownCellControl {
         type: CellControlType.unknown;
@@ -18,8 +19,9 @@ export declare namespace Excel {
     /**
      * Represents an empty cell control.
      * This represents the state where a cell does not have a control.
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
      */
     export interface EmptyCellControl {
         type: CellControlType.empty;
@@ -27,25 +29,28 @@ export declare namespace Excel {
     /**
      * Represents the result of a query that resulted in multiple cell controls.
      * If the result has multiple controls, then they can't be represented as a single result.
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
      */
     export interface MixedCellControl {
         type: CellControlType.mixed;
     }
     /**
-    * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
     export interface CheckboxCellControl {
         type: CellControlType.checkbox;
     }
     /**
-    * Represents an interactable control inside of a cell.
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
+     * Represents an interactable control inside of a cell.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
     export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
     /**
      * Represents a 2D array of cell values.
@@ -8132,7 +8137,7 @@ export declare namespace Excel {
         /**
         * Specifies whether to load on the `textRuns` property.
         *
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * [Api set: ExcelApi 1.18]  
         */
         textRuns?: boolean;
     }
@@ -8335,7 +8340,7 @@ export declare namespace Excel {
         /**
         * Represents the `textRuns` property.
         *
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * [Api set: ExcelApi 1.18]  
         */
         textRuns?: RangeTextRun[];
     }
@@ -12264,39 +12269,41 @@ export declare namespace Excel {
      * Represents the type of cell control.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.18]
      */
     enum CellControlType {
         /**
          * Type representing an unknown control.
                     This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         unknown = "Unknown",
         /**
          * Type representing an empty control.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         empty = "Empty",
         /**
          * Type representing a query that results in a mix of control results.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         mixed = "Mixed",
         /**
          * Type representing a checkbox control.
          * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        checkbox = "Checkbox",
+        /**
+         * Type representing a dropdown control.
+         * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        checkbox = "Checkbox"
+        dropdown = "Dropdown"
     }
     /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
@@ -13862,8 +13869,7 @@ export declare namespace Excel {
          * Returns a collection of all the notes objects in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         readonly notes: Excel.NoteCollection;
         /**
@@ -14389,8 +14395,7 @@ export declare namespace Excel {
          * Returns a collection of all the notes objects in the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         readonly notes: Excel.NoteCollection;
         /**
@@ -15647,8 +15652,7 @@ export declare namespace Excel {
                     If the range has multiple cell controls, this returns `EmptyCellControl`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         control: CellControl;
         /**
@@ -15913,8 +15917,7 @@ export declare namespace Excel {
                     Otherwise, this sets the cells with controls to their default value and clears the values of the other cells in the range.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         clearOrResetContents(): void;
         /**
@@ -16842,8 +16845,7 @@ export declare namespace Excel {
                     Otherwise, this sets the cells with controls to their default value and clears the values of the other cells in the ranges.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         clearOrResetContents(): void;
         /**
@@ -17008,8 +17010,7 @@ export declare namespace Excel {
          * Selects the specified range areas in the Excel UI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         select(): void;
         /**
@@ -17375,12 +17376,25 @@ export declare namespace Excel {
         weight?: boolean;
     }
     /**
+     * Represents a sequence of one or more characters that share the same font attributes in a cell. Can be used as the `textRuns` properties of `getCellProperties` or the `textRuns` input parameter of `setCellProperties`.
+     * 
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.18]
      */
     export interface RangeTextRun {
+        /**
+         * The font attributes (such as font name, font size, and color) applied to this text run.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
         font?: Excel.CellPropertiesFont;
+        /**
+         * The text of this text run.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */        
         text: string;
     }
     /**
@@ -37023,8 +37037,7 @@ export declare namespace Excel {
                     Cells with cell controls are set to the default value defined by each control.
                     Cells without cell controls are set to blank.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         resetContents = "ResetContents"
     }
@@ -41883,8 +41896,7 @@ export declare namespace Excel {
      * Represents a collection of note objects that are part of the workbook.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.18]
      */
     export class NoteCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -41895,8 +41907,7 @@ export declare namespace Excel {
          * Adds a new note with the given content on the given cell.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          *
          * @param cellAddress - The cell to which the note is added. This can be a `Range` object or a string such as "A1". If the string is invalid, or the range is not a single cell, an `InvalidCellAddress` error is thrown.
          * @param content - The text of the note.
@@ -41906,20 +41917,38 @@ export declare namespace Excel {
          * Gets the number of notes in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a note object by its index in the collection.
+         * Gets a note by its cell address.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param key - The cell address of the note.
+         * @returns The note with the given cell address. If there is no note with the given cell address, then the `ItemNotFound` error is thrown.
+         */
+        getItem(key: string): Excel.Note;
+        /**
+         * Gets a note from the collection based on its position.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
          *
          * @param index - The index value of the note to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Note;
+        /**
+         * Gets a note by its cell address. If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param key - The cell address of the note.
+         * @returns The note with the given cell address or null object.
+         */
+        getItemOrNullObject(key: string): Excel.Note;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -41948,8 +41977,7 @@ export declare namespace Excel {
      * Represents a note in the workbook or worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.18]
      */
     export class Note extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -41958,40 +41986,35 @@ export declare namespace Excel {
          * Gets the author of the note.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         readonly authorName: string;
         /**
-         * Gets or sets the text of the note. The string must be fewer than 256 characters.
+         * Gets or sets the text of the note.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         content: string;
         /**
          * Specifies the height of the note.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         height: number;
         /**
          * Specifies the visibility of the note. A value of `true` means the note is shown.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         visible: boolean;
         /**
          * Specifies the width of the note.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         width: number;
         /**
@@ -42006,16 +42029,14 @@ export declare namespace Excel {
          * Deletes the note.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         delete(): void;
         /**
          * Gets the cell where this note is located.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         getLocation(): Excel.Range;
         /**
@@ -46203,8 +46224,7 @@ export declare namespace Excel {
                         If the range has multiple cell controls, this returns `EmptyCellControl`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
             /**
@@ -50899,35 +50919,31 @@ export declare namespace Excel {
         /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
         export interface NoteUpdateData {
             /**
-             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             * Gets or sets the text of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             content?: string;
             /**
              * Specifies the height of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             visible?: boolean;
             /**
              * Specifies the width of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             width?: number;
         }
@@ -51362,8 +51378,7 @@ export declare namespace Excel {
             * Returns a collection of all the notes objects in the workbook.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.18]
             */
             notes?: Excel.Interfaces.NoteData[];
             /**
@@ -51596,8 +51611,7 @@ export declare namespace Excel {
             * Returns a collection of all the notes objects in the worksheet.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.18]
             */
             notes?: Excel.Interfaces.NoteData[];
             /**
@@ -51859,8 +51873,7 @@ export declare namespace Excel {
                         If the range has multiple cell controls, this returns `EmptyCellControl`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
             /**
@@ -57919,40 +57932,35 @@ export declare namespace Excel {
              * Gets the author of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             authorName?: string;
             /**
-             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             * Gets or sets the text of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             content?: string;
             /**
              * Specifies the height of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             visible?: boolean;
             /**
              * Specifies the width of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             width?: number;
         }
@@ -59313,8 +59321,7 @@ export declare namespace Excel {
                         If the range has multiple cell controls, this returns `EmptyCellControl`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
             /**
@@ -67645,8 +67652,7 @@ export declare namespace Excel {
                         If the range has multiple cell controls, this returns `EmptyCellControl`.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
             /**
@@ -69790,8 +69796,7 @@ export declare namespace Excel {
          * Represents a collection of note objects that are part of the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         export interface NoteCollectionLoadOptions {
             /**
@@ -69802,40 +69807,35 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Gets the author of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             authorName?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the text of the note. The string must be fewer than 256 characters.
+             * For EACH ITEM in the collection: Gets or sets the text of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             width?: boolean;
         }
@@ -69843,8 +69843,7 @@ export declare namespace Excel {
          * Represents a note in the workbook or worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.18]
          */
         export interface NoteLoadOptions {
             /**
@@ -69855,40 +69854,35 @@ export declare namespace Excel {
              * Gets the author of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             authorName?: boolean;
             /**
-             * Gets or sets the text of the note. The string must be fewer than 256 characters.
+             * Gets or sets the text of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             content?: boolean;
             /**
              * Specifies the height of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             height?: boolean;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             visible?: boolean;
             /**
              * Specifies the width of the note.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.18]
              */
             width?: boolean;
         }

@@ -106,6 +106,11 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
     export interface Session {
     }
     /**
@@ -158,6 +163,7 @@ export declare namespace Excel {
     export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
+    
     
     
     
@@ -346,6 +352,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Represents a collection of tables associated with the workbook.
          *
@@ -447,6 +454,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
+        
         
         
         
@@ -746,6 +754,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly columnIndex: number;
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -849,7 +858,8 @@ export declare namespace Excel {
          *
          * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        
         
         
         
@@ -1078,6 +1088,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeData;
     }
+    
     
     
     
@@ -5108,7 +5119,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         contents = "Contents",
-                    }
+                            }
     
     
     
@@ -5428,6 +5439,8 @@ export declare namespace Excel {
     
     
     
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         apiNotFound = "ApiNotFound",
@@ -5566,6 +5579,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.RangeFormatUpdateData;
+            
             
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
@@ -7164,6 +7178,17 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface for updating data on the `NoteCollection` object, for use in `noteCollection.set({ ... })`. */
+        export interface NoteCollectionUpdateData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
+        export interface NoteUpdateData {
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -7249,6 +7274,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
             * Represents a collection of tables associated with the workbook.
             *
@@ -7290,6 +7316,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             charts?: Excel.Interfaces.ChartData[];
+            
             
             
             
@@ -7404,6 +7431,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: number;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -9337,6 +9365,18 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `noteCollection.toJSON()`. */
+        export interface NoteCollectionData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface describing the data returned by calling `note.toJSON()`. */
+        export interface NoteData {
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             
@@ -9615,6 +9655,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -11433,6 +11474,8 @@ export declare namespace Excel {
              */
             underline?: boolean;
         }
+        
+        
         
         
         

@@ -8,6 +8,52 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace Excel {
     /**
+     * Represents an unknown cell control.
+     * This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]    
+     */
+    export interface UnknownCellControl {
+        type: CellControlType.unknown;
+    }
+    /**
+     * Represents an empty cell control.
+     * This represents the state where a cell does not have a control.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
+    export interface EmptyCellControl {
+        type: CellControlType.empty;
+    }
+    /**
+     * Represents the result of a query that resulted in multiple cell controls.
+     * If the result has multiple controls, then they can't be represented as a single result.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
+    export interface MixedCellControl {
+        type: CellControlType.mixed;
+    }
+    /**
+     * Represents a checkbox. This is a cell control that allows a user to toggle the boolean value in a cell.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
+    export interface CheckboxCellControl {
+        type: CellControlType.checkbox;
+    }
+    /**
+     * Represents an interactable control inside of a cell.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]  
+     */
+    export type CellControl = UnknownCellControl | EmptyCellControl | MixedCellControl | CheckboxCellControl;
+    /**
      * Represents a 2D array of cell values.
      *
      * @remarks
@@ -8363,6 +8409,39 @@ export declare namespace Excel {
         type: "WorkbookAutoSaveSettingChanged";
     }
     /**
+     * Represents the type of cell control.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.18]
+     */
+    enum CellControlType {
+        /**
+         * Type representing an unknown control.
+                    This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        unknown = "Unknown",
+        /**
+         * Type representing an empty control.
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        empty = "Empty",
+        /**
+         * Type representing a query that results in a mix of control results.
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        mixed = "Mixed",
+        /**
+         * Type representing a checkbox control.
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        checkbox = "Checkbox"
+    }
+    /**
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
      *
      * @remarks
@@ -9816,6 +9895,13 @@ export declare namespace Excel {
          */
         readonly names: Excel.NamedItemCollection;
         /**
+         * Returns a collection of all the notes objects in the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        readonly notes: Excel.NoteCollection;
+        /**
          * Represents a collection of PivotTableStyles associated with the workbook.
          *
          * @remarks
@@ -10295,6 +10381,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         readonly names: Excel.NamedItemCollection;
+        /**
+         * Returns a collection of all the notes objects in the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        readonly notes: Excel.NoteCollection;
         /**
          * Gets the `PageLayout` object of the worksheet.
          *
@@ -11402,6 +11495,14 @@ export declare namespace Excel {
          */
         readonly columnIndex: number;
         /**
+         * Accesses the cell control applied to this range.
+                    If the range has multiple cell controls, this returns `EmptyCellControl`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        control: CellControl;
+        /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
          * @remarks
@@ -11656,7 +11757,16 @@ export declare namespace Excel {
          *
          * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        /**
+         * Clears the values of the cells in the range, with special consideration given to cells containing controls.
+                    If the range contains only blank values and controls set to their default value, then the values and control formatting are removed.
+                    Otherwise, this sets the cells with controls to their default value and clears the values of the other cells in the range.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        clearOrResetContents(): void;
         /**
          * Converts the range cells with data types into text.
          *
@@ -12563,7 +12673,16 @@ export declare namespace Excel {
          *
          * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
          */
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;
+        /**
+         * Clears the values of the cells in the ranges, with special consideration given to cells containing controls.
+                    If the ranges contain only blank values and controls set to their default value, then the values and control formatting are removed.
+                    Otherwise, this sets the cells with controls to their default value and clears the values of the other cells in the ranges.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        clearOrResetContents(): void;
         /**
          * Converts all cells in the `RangeAreas` with data types into text.
          *
@@ -12722,6 +12841,13 @@ export declare namespace Excel {
          * @param valuesOnly - Whether to only consider cells with values as used cells.
          */
         getUsedRangeAreasOrNullObject(valuesOnly?: boolean): Excel.RangeAreas;
+        /**
+         * Selects the specified range areas in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        select(): void;
         /**
          * Sets the `RangeAreas` to be recalculated when the next recalculation occurs.
          *
@@ -13083,6 +13209,28 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         weight?: boolean;
+    }
+    /**
+     * Represents a sequence of one or more characters that share the same font attributes in a cell. Can be used as the `textRuns` properties of `getCellProperties` or the `textRuns` input parameter of `setCellProperties`.
+     * 
+     * @remarks
+     * [Api set: ExcelApi 1.18]
+     */
+    export interface RangeTextRun {
+        /**
+         * The font attributes (such as font name, font size, and color) applied to this text run.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        font?: Excel.CellPropertiesFont;
+        /**
+         * The text of this text run.
+         * 
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */        
+        text: string;
     }
     /**
      * Represents the `format.protection` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.protection` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
@@ -32074,7 +32222,15 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        removeHyperlinks = "RemoveHyperlinks"
+        removeHyperlinks = "RemoveHyperlinks",
+        /**
+         * Sets all cells in the range to their default state.
+                    Cells with cell controls are set to the default value defined by each control.
+                    Cells without cell controls are set to blank.
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        resetContents = "ResetContents"
     }
     /**
      * Represents the format options for a data bar axis.
@@ -36705,6 +36861,182 @@ export declare namespace Excel {
     
     
     /**
+     * Represents a collection of note objects that are part of the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.18]
+     */
+    export class NoteCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.Note[];
+        /**
+         * Adds a new note with the given content on the given cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param cellAddress - The cell to which the note is added. This can be a `Range` object or a string such as "A1". If the string is invalid, or the range is not a single cell, an `InvalidCellAddress` error is thrown.
+         * @param content - The text of the note.
+         */
+        add(cellAddress: Range | string, content: any): Excel.Note;
+        /**
+         * Gets the number of notes in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a note by its cell address.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param key - The cell address of the note.
+         * @returns The note with the given cell address. If there is no note with the given cell address, then the `ItemNotFound` error is thrown.
+         */
+        getItem(key: string): Excel.Note;
+        /**
+         * Gets a note from the collection based on its position.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param index - The index value of the note to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.Note;
+        /**
+         * Gets a note by its cell address.
+                    If the note object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         *
+         * @param key - The cell address of the note.
+         * @returns The note with the given cell address or null object.
+         */
+        getItemOrNullObject(key: string): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.NoteCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NoteCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.NoteCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NoteCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.NoteCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NoteCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.NoteCollectionData;
+    }
+    /**
+     * Represents a note in the workbook or worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.18]
+     */
+    export class Note extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the author of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        readonly authorName: string;
+        /**
+         * Gets or sets the text of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        content: string;
+        /**
+         * Specifies the height of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        height: number;
+        /**
+         * Specifies the visibility of the note. A value of `true` means the note is shown.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        visible: boolean;
+        /**
+         * Specifies the width of the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        width: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.NoteUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Note): void;
+        /**
+         * Deletes the note.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        delete(): void;
+        /**
+         * Gets the cell where this note is located.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        getLocation(): Excel.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.NoteLoadOptions): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Note;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Note;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.Note` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NoteData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.NoteData;
+    }
+    /**
      * An object containing the result of a function-evaluation operation
      *
      * @remarks
@@ -40757,6 +41089,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             columnHidden?: boolean;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            control?: CellControl;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -45399,6 +45739,41 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface for updating data on the `NoteCollection` object, for use in `noteCollection.set({ ... })`. */
+        export interface NoteCollectionUpdateData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface for updating data on the `Note` object, for use in `note.set({ ... })`. */
+        export interface NoteUpdateData {
+            /**
+             * Gets or sets the text of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            content?: string;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            height?: number;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            width?: number;
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -45594,6 +45969,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            /**
+            * Returns a collection of all the notes objects in the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.18]
+            */
+            notes?: Excel.Interfaces.NoteData[];
             /**
             * Represents a collection of PivotTableStyles associated with the workbook.
             *
@@ -45795,6 +46177,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.4]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            /**
+            * Returns a collection of all the notes objects in the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.18]
+            */
+            notes?: Excel.Interfaces.NoteData[];
             /**
             * Gets the `PageLayout` object of the worksheet.
             *
@@ -46017,6 +46406,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: number;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            control?: CellControl;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -51952,6 +52349,48 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `noteCollection.toJSON()`. */
+        export interface NoteCollectionData {
+            items?: Excel.Interfaces.NoteData[];
+        }
+        /** An interface describing the data returned by calling `note.toJSON()`. */
+        export interface NoteData {
+            /**
+             * Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            authorName?: string;
+            /**
+             * Gets or sets the text of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            content?: string;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            height?: number;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            width?: number;
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -52697,6 +53136,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            /**
+             * Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            control?: boolean;
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -60981,6 +61428,14 @@ export declare namespace Excel {
              */
             columnIndex?: boolean;
             /**
+             * For EACH ITEM in the collection: Accesses the cell control applied to this range.
+                        If the range has multiple cell controls, this returns `EmptyCellControl`.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            control?: boolean;
+            /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
              * @remarks
@@ -62905,6 +63360,100 @@ export declare namespace Excel {
         }
         
         
+        /**
+         * Represents a collection of note objects that are part of the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        export interface NoteCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            authorName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the text of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            content?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            visible?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            width?: boolean;
+        }
+        /**
+         * Represents a note in the workbook or worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.18]
+         */
+        export interface NoteLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the author of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            authorName?: boolean;
+            /**
+             * Gets or sets the text of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            content?: boolean;
+            /**
+             * Specifies the height of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            height?: boolean;
+            /**
+             * Specifies the visibility of the note. A value of `true` means the note is shown.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            visible?: boolean;
+            /**
+             * Specifies the width of the note.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.18]
+             */
+            width?: boolean;
+        }
         /**
          * An object containing the result of a function-evaluation operation
          *

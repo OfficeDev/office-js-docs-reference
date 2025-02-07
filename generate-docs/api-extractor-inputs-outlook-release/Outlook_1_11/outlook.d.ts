@@ -10784,7 +10784,7 @@ export declare namespace Office {
     /**
      * Provides methods to manage an item's session data.
      *
-     * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+     * Session data is specific to a single mail item. It isn't shared among multiple items even if the same add-in is used to set or retrieve data.
      *
      * @remarks
      * [Api set: Mailbox 1.11]
@@ -10792,6 +10792,8 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
      */
     export interface SessionData {
         /**
@@ -10837,7 +10839,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<object>) => void): void;
         /**
          * Gets the session data value of the specified key.
          *
@@ -10888,15 +10890,15 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
-         *
          * @remarks
          * [Api set: Mailbox 1.11]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-
+         *
+         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         *
          * @param name - The session data key.
          * @param value - The session data value as a string.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -10908,15 +10910,15 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
-         *
          * @remarks
          * [Api set: Mailbox 1.11]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-
+         *
+         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         *
          * @param name - The session data key.
          * @param value - The session data value as a string.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
