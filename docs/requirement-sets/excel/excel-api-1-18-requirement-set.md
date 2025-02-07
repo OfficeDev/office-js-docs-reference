@@ -8,13 +8,9 @@ ms.localizationpriority: medium
 
 # What's new in Excel JavaScript API 1.18
 
-The ExcelApi 1.18...
+The ExcelApi 1.18 adds support for managing [notes](https://support.microsoft.com/office/the-difference-between-threaded-comments-and-notes-75a51eec-4092-42ab-abf8-7669077b7be3) in a workbook (support for comments was added in ExcelApi 1.10 and 1.11).
 
-The following table provides a concise summary of the APIs, while the subsequent [API list](#api-list) table gives a detailed list.
-
-| Feature area | Description | Relevant objects |
-|:--- |:--- |:--- |
-| Notes | Create, delete, and manage notes in a worksheet. Also supports setting the height, width, and visibility of notes. | [Note](/javascript/api/excel/excel.note), [NoteCollecction](/javascript/api/excel/excel.notecollection) |
+ExcelApi 1.18 also expands support for cell formatting with [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol) and [Excel.RangeTextRun](/javascript/api/excel/excel.rangetextrun).
 
 ## API list
 
